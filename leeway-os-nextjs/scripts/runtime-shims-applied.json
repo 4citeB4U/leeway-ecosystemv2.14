@@ -1,0 +1,63 @@
+{
+  "appliedShims": [
+    {
+      "slug": "leeway_home_1",
+      "reason": "null-safe: .bg-yellow-500 element may be absent when the inline script runs",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "leeway_home_1",
+      "reason": "null-safe: .bg-yellow-500 element may be absent when the inline script runs",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "leeway_home_1",
+      "reason": "null-safe: .bg-yellow-500 element may be absent when the inline script runs",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "leeway_home_1",
+      "reason": "null-safe: .bg-yellow-500 element may be absent when the inline script runs",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "leeway_home_1",
+      "reason": "null-safe: .bg-yellow-500 element may be absent when the inline script runs",
+      "shimmed": true
+    },
+    {
+      "slug": "quick_settings",
+      "reason": "invalid CSS selector :contains() is jQuery-only; replaced with equivalent find()",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "quick_settings",
+      "reason": "invalid CSS selector :contains() is jQuery-only; replaced with equivalent find()",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "quick_settings",
+      "reason": "invalid CSS selector :contains() is jQuery-only; replaced with equivalent find()",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "quick_settings",
+      "reason": "invalid CSS selector :contains() is jQuery-only; replaced with equivalent find()",
+      "shimmed": false,
+      "note": "pattern not found in extracted source"
+    },
+    {
+      "slug": "quick_settings",
+      "reason": "invalid CSS selector :contains() is jQuery-only; replaced with equivalent find()",
+      "shimmed": true
+    }
+  ],
+  "generatedAt": "2026-08-04T04:29:34.250Z"
+}
