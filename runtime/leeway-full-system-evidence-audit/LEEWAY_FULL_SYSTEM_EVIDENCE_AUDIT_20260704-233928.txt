@@ -1,0 +1,24 @@
+LEEWAY FULL SYSTEM EVIDENCE AUDIT
+Created: 2026-07-04T23:39:28.8288893-05:00
+Root: E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4
+
+Architecture containers: 52
+Docker containers found: 52
+Docker images found: 76
+
+Container evidence status:
+NOT_RUNNING: 5
+RUNNING_BUT_NO_HEALTH_PROOF: 3
+RUNNING_WITH_BASIC_PROOF: 31
+RUNNING_WITH_TRUTH_LIMITATION: 13
+
+Placeholder scan files: 5000
+Placeholder scan matches: 2
+
+Verdict: LEEWAY_FULL_SYSTEM_EVIDENCE_AUDIT_COMPLETE_GAPS_FOUND
+Capability gaps: 18
+Release files: 7
+Update files: 4
+
+Top placeholder matches:
+:: : 

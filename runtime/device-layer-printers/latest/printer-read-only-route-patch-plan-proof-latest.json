@@ -1,0 +1,29 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_ROUTE_PATCH_PLAN_222",
+    "timestamp":  "2026-07-05T21:18:16",
+    "verdict":  "LEEWAY_PRINTER_READ_ONLY_ROUTE_PATCH_PLAN_NO_EXECUTE_CLEAN",
+    "family":  "printers",
+    "patch_applied":  false,
+    "printer_discover_present":  true,
+    "printer_status_present":  false,
+    "printer_registry_present":  false,
+    "route_patch_required":  true,
+    "discovered_count":  1,
+    "patch_plan":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\plans\\printer-read-only-route-patch-plan-20260705-211816.json",
+    "patch_plan_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-route-patch-plan-latest.json",
+    "response_contract":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\plans\\printer-read-only-route-response-contract-20260705-211816.json",
+    "response_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-route-response-contract-latest.json",
+    "windows_locked":  true,
+    "blocked_probe_executed":  false,
+    "safety":  {
+                   "plan_only":  true,
+                   "physical_actions_executed":  0,
+                   "print_jobs_sent":  0,
+                   "queue_mutations":  0,
+                   "spooler_mutations":  0,
+                   "driver_installs":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "223-apply-printer-read-only-routes-patch-no-print-execute.ps1"
+}

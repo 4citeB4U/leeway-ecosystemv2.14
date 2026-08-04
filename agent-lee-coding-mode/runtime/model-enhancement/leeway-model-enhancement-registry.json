@@ -1,0 +1,44 @@
+{
+  "schema": "leeway.model-enhancement-registry.v1",
+  "engines": [
+    {
+      "engineId": "AGENT_LEE_QWEN3_REASONING_ENHANCEMENT_ENGINE",
+      "primaryRuntimeLane": "qwen3",
+      "currentModelOrKernel": "qwen3:latest",
+      "replacementAllowed": false,
+      "enhancementMode": "ENGINE_LAYER_GRAFT",
+      "route": "http://127.0.0.1:11434",
+      "manifest": "agent-lee-coding-mode/runtime/qwen/qwen3-reasoning-enhancement-engine.manifest.json",
+      "status": "QWEN3_REASONING_ENHANCEMENT_ENGINE_PARTIAL",
+      "lastTestReceipt": null,
+      "blockers": [],
+      "truthLabels": ["NO_FAKE_MODEL_UPGRADE"]
+    },
+    {
+      "engineId": "AGENT_LEE_QWEN3V_VISION_ENHANCEMENT_ENGINE",
+      "primaryRuntimeLane": "qwen3v",
+      "currentModelOrKernel": "qwen2.5vl:7b",
+      "replacementAllowed": false,
+      "enhancementMode": "ENGINE_LAYER_GRAFT",
+      "route": "http://127.0.0.1:11434",
+      "manifest": "agent-lee-coding-mode/runtime/vision/vision-control-engine.manifest.json",
+      "status": "VISION_CONTROL_ENGINE_PARTIAL",
+      "lastTestReceipt": null,
+      "blockers": [],
+      "truthLabels": ["QWEN3V_VISION_ENHANCEMENT_REGISTERED"]
+    },
+    {
+      "engineId": "AGENT_LEE_VOICE_KERNEL_ENHANCEMENT_ENGINE",
+      "primaryRuntimeLane": "voice-kernel",
+      "currentModelOrKernel": "agent-lee-voice-kernel",
+      "replacementAllowed": false,
+      "enhancementMode": "ENGINE_LAYER_GRAFT",
+      "route": "http://127.0.0.1:8092",
+      "manifest": "agent-lee-voice-kernel/voice_enhancement_engine.py",
+      "status": "VOICE_KERNEL_ENHANCEMENT_READY",
+      "lastTestReceipt": null,
+      "blockers": [],
+      "truthLabels": ["VOICE_KERNEL_FULL_VOICE_OWNERSHIP_CONFIRMED"]
+    }
+  ]
+}

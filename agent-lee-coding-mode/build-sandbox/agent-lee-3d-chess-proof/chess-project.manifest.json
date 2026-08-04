@@ -1,0 +1,34 @@
+{
+  "schema": "leeway.agent-lee.chess-proof.v1",
+  "projectId": "agent-lee-3d-chess-proof",
+  "projectName": "Agent Lee 3D Chess Proof",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "entrySurface": "vscode-chat",
+  "createdAt": "2026-06-11T00:00:00.000Z",
+  "updatedAt": "2026-06-11T00:00:00.000Z",
+  "pipelineStatus": "AR_3D_PIPELINE_PARTIAL",
+  "missingBackends": [
+    "glTF/GLB exporter",
+    "device AR preview backend",
+    "engine-backed move search"
+  ],
+  "themes": [
+    "knights_and_dragons",
+    "ninjas_and_samurai",
+    "kung_fu_masters",
+    "modern_military",
+    "classic_grandmaster"
+  ],
+  "assets": {
+    "scene": "scene.graph.json",
+    "themes": "themes.json",
+    "rulesEngine": "chess-rules-engine.js",
+    "research": "research-notes.md"
+  },
+  "proofNotes": [
+    "Visible board preview is browser-native and interactive.",
+    "Theme switching changes the board mood and labels.",
+    "Move validation is partial and honest about advanced gaps.",
+    "Research sources are listed in research-notes.md."
+  ]
+}

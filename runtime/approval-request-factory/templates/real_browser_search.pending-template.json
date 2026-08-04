@@ -1,0 +1,19 @@
+﻿{
+    "action":  "real_browser_search",
+    "risk_tier":  "controlled_physical_network",
+    "required_fields":  [
+                            "query",
+                            "browser",
+                            "engine",
+                            "target_device_id",
+                            "human_summary",
+                            "requested_by"
+                        ],
+    "default_state":  "PENDING",
+    "approval_state_on_create":  "PENDING",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "dry_run_preview_required":  true,
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "notes":  "Search query must be user-visible before approval."
+}

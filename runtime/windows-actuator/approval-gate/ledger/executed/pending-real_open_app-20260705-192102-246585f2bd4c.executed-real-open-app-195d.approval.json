@@ -1,0 +1,10 @@
+{
+  "approval_id": "pending-real_open_app-20260705-192102-246585f2bd4c",
+  "executed_at": "2026-07-05T19:38:24",
+  "action": "real_open_app",
+  "app_id": "notepad",
+  "process_pid": 12692,
+  "execution_status": "EXECUTED",
+  "used": true,
+  "source": "script_195d_bom_safe_isolated_module"
+}

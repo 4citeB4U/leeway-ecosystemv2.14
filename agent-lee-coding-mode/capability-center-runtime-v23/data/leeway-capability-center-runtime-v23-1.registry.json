@@ -1,0 +1,23 @@
+{
+    "schema":  "leeway-capability-center-runtime-v23-1",
+    "sourceInventory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-true-agent-worker-mcp-scan-v4-20260627-223626\\leeway-true-agent-worker-mcp-inventory-v4.json",
+    "corePrecheck":  {
+                         "hybridFabric":  "HYBRID_FABRIC_DOCKER_LIVE_READY",
+                         "agentLee":  "READY",
+                         "runtimeFabric":  "READY",
+                         "ollama":  "READY",
+                         "seafile":  true
+                     },
+    "counts":  {
+                   "trueRegularLeewayAgents":  9,
+                   "trueMcpAgents":  21,
+                   "trueWorkers":  10,
+                   "trueMcpPackages":  11
+               },
+    "endpoints":  {
+                      "agentCenter":  "http://127.0.0.1:8860",
+                      "mcpAgentCenter":  "http://127.0.0.1:8861",
+                      "workerCenter":  "http://127.0.0.1:8862",
+                      "mcpCenter":  "http://127.0.0.1:8863"
+                  }
+}

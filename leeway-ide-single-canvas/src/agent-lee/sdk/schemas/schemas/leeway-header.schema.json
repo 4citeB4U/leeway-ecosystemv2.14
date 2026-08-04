@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://leeway-standards.dev/schemas/leeway-header.schema.json",
+  "title": "LEEWAY Header Schema",
+  "description": "Validates the LEEWAY identity header structure embedded in source files",
+  "type": "object",
+  "required": ["region", "tag", "fiveWH", "license"],
+  "properties": {
+    "region": {
+      "type": "string",
+      "description": "System region in dot-notation: DOMAIN.SUBDOMAIN.CONTEXT",
+      "pattern": "^[A-Z][A-Z0-9]*(\\.[A-Z][A-Z0-9]*)*$",
+      "examples": ["UI.APP.SURFACE", "CORE.SDK.ENTRY", "AI.AGENT.GOVERNANCE"]
+    },
+    "tag": {
+      "type": "string",
+      "description": "Discoverable tag in DOMAIN.SUBDOMAIN.ASSET.PURPOSE format",
+      "pattern": "^[A-Z][A-Z0-9]*(\\.[A-Z][A-Z0-9]*){2,}$",
+      "examples": ["UI.COMPONENT.NEXUS.BUTTON", "AI.AGENT.ASSESS.MAIN"]
+    },
+    "colorOnionHex": {
+      "type": "object",
+      "description": "Color classification for system layer visualization",
+      "properties": {
+        "NEON": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "FLUO": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "PASTEL": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+      }
+    },
+    "iconAscii": {
+      "type": "object",
+      "description": "Icon reference for IDE and tooling visualization",
+      "properties": {
+        "family": { "type": "string", "enum": ["lucide", "heroicons", "material", "custom"] },
+        "glyph": { "type": "string" }
+      }
+    },
+    "fiveWH": {
+      "type": "object",
+      "description": "The 5WH identity block — answers fundamental questions about the file",
+      "required": ["WHAT", "WHY", "WHO", "WHERE", "WHEN", "HOW"],
+      "properties": {
+        "WHAT": { "type": "string", "description": "What does this file do?" },
+        "WHY": { "type": "string", "description": "Why does this file exist?" },
+        "WHO": { "type": "string", "description": "Who created or owns this file?" },
+        "WHERE": { "type": "string", "description": "Where does this file live in the system?" },
+        "WHEN": { "type": "string", "description": "When was this file created or last reviewed?" },
+        "HOW": { "type": "string", "description": "How does this file operate?" }
+      }
+    },
+    "agents": {
+      "type": "array",
+      "description": "List of LEEWAY agents authorized to act on this file",
+      "items": { "type": "string" },
+      "examples": [["ASSESS", "ALIGN", "AUDIT"]]
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier for this file",
+      "examples": ["MIT", "Apache-2.0", "GPL-3.0", "PROPRIETARY"]
+    }
+  }
+}

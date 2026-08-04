@@ -1,0 +1,62 @@
+﻿{
+    "timestamp":  "2026-07-06T18:12:44",
+    "held_lanes":  [
+                       {
+                           "lane":  "device-readiness",
+                           "page":  "/device-readiness",
+                           "api_base":  "/api/device-readiness",
+                           "status":  "held_get_only",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_42_DEVICE_READINESS_FINAL_SUMMARY_319_CLEAN"
+                       },
+                       {
+                           "lane":  "printer-ipp-locked-stub",
+                           "page":  "/printer-ipp-locked-stub",
+                           "api_base":  "/api/printer-ipp-locked-stub",
+                           "status":  "held_locked_no_print",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_43_PRINTER_IPP_LOCKED_STUB_UI_FINAL_SUMMARY_332_CLEAN"
+                       },
+                       {
+                           "lane":  "phone-satellite",
+                           "page":  "/phone-satellite",
+                           "api_base":  "/api/phone-satellite",
+                           "status":  "held_draft_only_no_phone_action",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_43_PHONE_SATELLITE_UI_FINAL_SUMMARY_339_CLEAN"
+                       },
+                       {
+                           "lane":  "router-status",
+                           "page":  "/router-status",
+                           "api_base":  "/api/router-status",
+                           "status":  "held_read_only_no_router_action",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_44_ROUTER_STATUS_UI_FINAL_SUMMARY_346_CLEAN"
+                       },
+                       {
+                           "lane":  "device-layer-index",
+                           "page":  "/device-layer-index",
+                           "api_base":  "/api/device-layer-index",
+                           "status":  "held_get_only_index",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_44_DEVICE_LAYER_INDEX_FINAL_SUMMARY_350_CLEAN"
+                       },
+                       {
+                           "lane":  "device-layer-master-status",
+                           "page":  "/device-layer-master-status",
+                           "api_base":  "/api/device-layer-master-status",
+                           "status":  "held_get_only_master",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_45_DEVICE_LAYER_MASTER_STATUS_FINAL_SUMMARY_354_CLEAN"
+                       },
+                       {
+                           "lane":  "device-layer-hold-and-lock",
+                           "page":  "/device-layer-hold-and-lock",
+                           "api_base":  "/api/device-layer-hold-and-lock",
+                           "status":  "held_get_only_lock",
+                           "action_authority":  false,
+                           "source_verdict":  "LEEWAY_PHASE_45_DEVICE_LAYER_HOLD_AND_LOCK_FINAL_SUMMARY_358_CLEAN"
+                       }
+                   ],
+    "held_lane_count":  7
+}

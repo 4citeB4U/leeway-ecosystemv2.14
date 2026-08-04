@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agent Lee Monitor Target Test</title>
+<style>
+  body { margin:0; background:#070a12; color:white; font-family:Segoe UI,Arial,sans-serif; overflow:hidden; }
+  h1 { margin:48px; font-size:46px; }
+  .target {
+    position:absolute; width:180px; height:180px; border-radius:999px;
+    display:grid; place-items:center; font-size:28px; font-weight:800;
+    background:rgba(255,255,255,0.15); border:5px solid white;
+  }
+  .target:hover {
+    background:rgba(0,255,140,0.55);
+    box-shadow:0 0 90px rgba(0,255,140,1);
+    transform:scale(1.15);
+  }
+  #a { left:140px; top:260px; }
+  #b { left:460px; top:560px; }
+  #c { left:760px; top:260px; }
+</style>
+</head>
+<body>
+  <h1>Agent Lee Target Monitor Test</h1>
+  <div class="target" id="a">ONE</div>
+  <div class="target" id="b">TWO</div>
+  <div class="target" id="c">THREE</div>
+</body>
+</html>

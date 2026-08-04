@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://leeway-standards.dev/schemas/leeway-config.schema.json",
+  "title": "LEEWAY SDK Configuration Schema",
+  "description": "Validates the .leeway/config.json project configuration file",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "LEEWAY standard version this project targets",
+      "default": "1.0.0"
+    },
+    "project": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "author": { "type": "string" },
+        "license": { "type": "string", "default": "MIT" }
+      }
+    },
+    "rootDir": {
+      "type": "string",
+      "description": "Root directory for LEEWAY governance (relative to config file)",
+      "default": "src"
+    },
+    "agents": {
+      "type": "object",
+      "description": "Agent-specific configuration overrides",
+      "properties": {
+        "assess": { "type": "object" },
+        "align": { "type": "object", "properties": { "dryRun": { "type": "boolean", "default": true } } },
+        "audit": { "type": "object", "properties": { "outputDir": { "type": "string", "default": "reports" } } },
+        "secret-scan": { "type": "object" },
+        "health": { "type": "object", "properties": { "timeout": { "type": "number", "default": 5000 } } }
+      }
+    },
+    "policies": {
+      "type": "object",
+      "description": "Policy enforcement overrides",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "enforced": { "type": "boolean" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "properties": {
+        "minimumScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 60,
+          "description": "Minimum average compliance score to pass audit"
+        },
+        "blockOnFail": {
+          "type": "boolean",
+          "default": false,
+          "description": "Exit with error code if compliance is below minimum"
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "properties": {
+        "baseUrl": { "type": "string", "format": "uri" },
+        "generateSitemap": { "type": "boolean", "default": false },
+        "generateSchema": { "type": "boolean", "default": false }
+      }
+    },
+    "ignore": {
+      "type": "array",
+      "description": "Glob patterns to ignore during governance scans",
+      "items": { "type": "string" },
+      "default": ["node_modules/**", "dist/**", "build/**", ".next/**", "coverage/**"]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "satellite_standard":  {
+                               "command_policy":  "ALLOWLISTED_COMMANDS_ONLY",
+                               "auth":  "LEEWAY_DEVICE_TOKEN_REQUIRED",
+                               "approval":  "REQUIRED_FOR_RISKY_ACTIONS",
+                               "receipts":  "EVERY_ACTION",
+                               "heartbeat_seconds":  30,
+                               "transport":  [
+                                                 "tailscale",
+                                                 "lan",
+                                                 "local_loopback"
+                                             ]
+                           },
+    "windows":  {
+                    "target_binary":  "leeway-satellite-windows.exe or PowerShell service",
+                    "capabilities":  [
+                                         "mouse_move",
+                                         "mouse_click",
+                                         "keyboard_type",
+                                         "open_app",
+                                         "browser_search",
+                                         "file_explorer",
+                                         "screenshot",
+                                         "screen_stream",
+                                         "printer_bridge",
+                                         "camera_snapshot",
+                                         "microphone_status",
+                                         "multi_monitor_state",
+                                         "clipboard_read_write_with_approval"
+                                     ],
+                    "risky":  [
+                                  "send_message",
+                                  "publish_content",
+                                  "delete_file",
+                                  "financial_action",
+                                  "install_software",
+                                  "credential_access"
+                              ],
+                    "role":  "COMPUTER_ACTUATOR"
+                },
+    "linux":  {
+                  "target_binary":  "leeway-satellite-linux",
+                  "notes":  "Wayland may require portal-safe implementation.",
+                  "capabilities":  [
+                                       "xdotool_or_ydotool",
+                                       "open_app",
+                                       "browser_search",
+                                       "terminal_command_allowlist",
+                                       "file_manager",
+                                       "screenshot",
+                                       "screen_stream",
+                                       "cups_printer_bridge",
+                                       "systemd_service_status"
+                                   ],
+                  "role":  "COMPUTER_ACTUATOR"
+              },
+    "macos":  {
+                  "target_binary":  "leeway-satellite-macos",
+                  "capabilities":  [
+                                       "applescript",
+                                       "shortcuts",
+                                       "accessibility_click",
+                                       "open_app",
+                                       "browser_search",
+                                       "finder",
+                                       "screenshot",
+                                       "screen_stream",
+                                       "airplay_casting",
+                                       "notifications"
+                                   ],
+                  "required_permissions":  [
+                                               "Accessibility",
+                                               "Screen Recording",
+                                               "Automation"
+                                           ],
+                  "role":  "COMPUTER_ACTUATOR"
+              },
+    "android":  {
+                    "prototype_stack":  [
+                                            "Tailscale",
+                                            "Termux",
+                                            "FastAPI",
+                                            "Termux API"
+                                        ],
+                    "production_stack":  [
+                                             "Kotlin",
+                                             "Foreground service",
+                                             "Accessibility service with approval",
+                                             "Device token"
+                                         ],
+                    "capabilities":  [
+                                         "gps_location",
+                                         "camera_snapshot",
+                                         "notification_push",
+                                         "dialer_with_approval",
+                                         "sms_with_approval",
+                                         "contacts_with_approval",
+                                         "calendar_with_approval",
+                                         "files_with_approval",
+                                         "app_launch",
+                                         "accessibility_tap_with_approval",
+                                         "screen_stream"
+                                     ],
+                    "target":  "Android companion app or Termux prototype",
+                    "role":  "MOBILE_ACTUATOR"
+                },
+    "ios":  {
+                "limitation":  "iOS direct automation is restricted; use Shortcuts and approved companion actions.",
+                "capabilities":  [
+                                     "push_notification",
+                                     "shortcut_trigger",
+                                     "location_share_with_permission",
+                                     "camera_upload_with_permission",
+                                     "artifact_viewer",
+                                     "approval_buttons"
+                                 ],
+                "target":  "PWA + Shortcuts + notifications bridge",
+                "role":  "MOBILE_COMPANION"
+            }
+}

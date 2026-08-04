@@ -1,0 +1,12 @@
+{
+    "schema":  "agent-lee-creative-session-control-v13-6",
+    "updatedAt":  "2026-06-28T00:31:04.0083119Z",
+    "creativeSessionActive":  true,
+    "requestedMode":  "HOT_CREATION_MODE",
+    "reason":  "Leonard requested adaptive preload and keep-warm behavior for Creation Kernel.",
+    "allowedModes":  [
+                         "IDLE_STANDBY",
+                         "PRELOAD_NEXT_IMAGE",
+                         "HOT_CREATION_MODE"
+                     ]
+}

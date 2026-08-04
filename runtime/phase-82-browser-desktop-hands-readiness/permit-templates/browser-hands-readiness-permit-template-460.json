@@ -1,0 +1,40 @@
+﻿{
+    "permit_version":  "LEEWAY_BROWSER_HANDS_PERMIT_TEMPLATE_V1",
+    "permit_id":  "BROWSER_HANDS_READINESS_460_TEMPLATE",
+    "target":  "browser",
+    "action":  "prepare browser hands operation",
+    "action_type":  "BROWSER_READINESS_ONLY",
+    "risk":  "critical",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_action":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use browser action only. I understand this does not authorize broad browsing, repeated clicking, login bypass, credential access, payment submission, message posting, file download, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "460 browser readiness passed",
+                          "specific URL or local app target approved",
+                          "specific one-step action approved",
+                          "no credential bypass",
+                          "no payment or message submission without separate approval",
+                          "receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "single approved browser action",
+                                                    "write browser action receipt"
+                                                ],
+    "blocked_operations":  [
+                               "credential theft or bypass",
+                               "login bypass",
+                               "payment submission",
+                               "message posting",
+                               "bulk clicking",
+                               "unbounded browsing",
+                               "file download without approval",
+                               "malicious automation",
+                               "physical action"
+                           ],
+    "rollback_plan":  "For one browser action, stop after action and write receipt. No repeated action.",
+    "simulation_required_before_real_browser_control":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "browser_control_allowed_now":  false
+}

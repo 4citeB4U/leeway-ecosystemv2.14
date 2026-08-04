@@ -1,0 +1,39 @@
+{
+  "migration": "MIG-006B1",
+  "target": "n8n Local Runtime Provisioning",
+  "status": "Implemented",
+  "scope": [
+    "n8n Docker runtime provisioning",
+    "persistent storage configuration",
+    "port and health check documentation",
+    "startup and shutdown commands",
+    "secure credential storage",
+    "harmless test workflow",
+    "allowlist configuration",
+    "encryption key generation",
+    "basic auth configuration",
+    "webhook URL configuration",
+    "evidence",
+    "rollback"
+  ],
+  "excluded": [
+    "live workflow execution through LeeWay",
+    "UI integration",
+    "server.ts replacement",
+    "Vite removal",
+    "Next.js migration",
+    "OpenCode integration",
+    "Agent Lee Core changes",
+    "AutomationCanvas modification"
+  ],
+  "files": [
+    "docker-compose.n8n.yml",
+    ".env.n8n",
+    "leeway-test-workflow.json",
+    "..\\..\\n8n-data\\workflows\\leeway-test-workflow.json",
+    ".leeway\\n8n-allowlist.json",
+    "migration\\MIG-006B1-n8n-provisioning.md",
+    "migration\\MIG-006B1-manifest.json"
+  ],
+  "timestampUtc": "2026-07-30T01:35:40.7948434+00:00"
+}

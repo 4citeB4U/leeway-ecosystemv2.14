@@ -1,0 +1,102 @@
+﻿{
+    "version":  "LEEWAY_ONBOARDING_REVIEW_UI_PATCH_PLAN_291",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:47:50",
+    "verdict":  "LEEWAY_ONBOARDING_REVIEW_UI_PATCH_PLAN_291_NO_EXECUTE_CLEAN",
+    "patch_plan_only":  true,
+    "patch_applied":  false,
+    "execution_performed":  false,
+    "clear_skies":  true,
+    "frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "proposed_page":  "/device-onboarding",
+    "proposed_files":  [
+                           {
+                               "file_id":  "api_proxy_route",
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+                               "exists_now":  false,
+                               "operation":  "CREATE_GET_ONLY_ROUTE",
+                               "purpose":  "Expose 289 enriched onboarding data through same-origin GET-only proxy.",
+                               "allowed_methods":  [
+                                                       "GET"
+                                                   ],
+                               "forbidden_methods":  [
+                                                         "POST",
+                                                         "PUT",
+                                                         "PATCH",
+                                                         "DELETE"
+                                                     ],
+                               "execution":  false,
+                               "writes_runtime_state":  false
+                           },
+                           {
+                               "file_id":  "api_client",
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceOnboardingReviewClient.ts",
+                               "exists_now":  false,
+                               "operation":  "CREATE_READ_ONLY_CLIENT",
+                               "purpose":  "Fetch onboarding summary, network assets, Bluetooth assets, printer assets, and queue from GET-only route.",
+                               "execution":  false,
+                               "writes_runtime_state":  false
+                           },
+                           {
+                               "file_id":  "review_panel_component",
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceOnboardingReviewPanel.tsx",
+                               "exists_now":  false,
+                               "operation":  "CREATE_READ_ONLY_COMPONENT",
+                               "purpose":  "Render Clear Skies, discovered asset totals, tabs, blocked action warnings, and onboarding queue.",
+                               "execution":  false,
+                               "writes_runtime_state":  false
+                           },
+                           {
+                               "file_id":  "device_onboarding_page",
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-onboarding\\page.tsx",
+                               "exists_now":  false,
+                               "operation":  "CREATE_PAGE",
+                               "purpose":  "Mount AgentLeeDeviceOnboardingReviewPanel at /device-onboarding.",
+                               "execution":  false,
+                               "writes_runtime_state":  false
+                           }
+                       ],
+    "required_runtime_reads":  [
+                                   "runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                                   "runtime\\onboarding-review-ui-contract\\latest\\onboarding-review-ui-contract-latest.json",
+                                   "runtime\\universal-iot-bridge\\latest\\universal-iot-bridge-plan-latest.json",
+                                   "runtime\\agent-lee-approval-gated-action-lanes\\latest\\final-device-action-lane-summary-latest.json"
+                               ],
+    "forbidden_patch_content":  [
+                                    "fetch POST",
+                                    "method POST",
+                                    "docker",
+                                    "pair",
+                                    "print submit",
+                                    "mqtt publish",
+                                    "real/open-app",
+                                    "real/arm-approved-action",
+                                    "general unlock"
+                                ],
+    "acceptance_gates":  [
+                             "Page /device-onboarding exists",
+                             "API proxy supports only GET",
+                             "No POST routes are created",
+                             "No execution buttons are rendered",
+                             "UI displays 26 onboarding queue items from 289 if data remains unchanged",
+                             "UI displays network/bluetooth/printer totals",
+                             "UI displays Clear Skies and lockback proof",
+                             "No runtime state is mutated"
+                         ],
+    "source_contract":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-contract\\latest\\onboarding-review-ui-contract-latest.json",
+    "source_enrichment":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+    "safety":  {
+                   "no_file_patch_in_291":  true,
+                   "no_device_control":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "292-apply-onboarding-review-ui-get-only-patch-no-execute.ps1"
+}

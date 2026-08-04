@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leeway Device Layer Final Dashboard After Type Text</title>
+<style>
+body { font-family: Segoe UI, Arial, sans-serif; background:#09111f; color:#eaf1ff; margin:0; padding:32px; }
+.card { background:#111c32; border:1px solid #263b63; border-radius:16px; padding:20px; margin-bottom:18px; }
+.good { color:#7CFF9B; font-weight:700; }
+.grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:14px; }
+.metric { background:#0b1426; border:1px solid #263b63; border-radius:14px; padding:14px; }
+.label { color:#a9b8dd; font-size:13px; }
+.value { font-size:20px; font-weight:700; margin-top:6px; word-break:break-word; }
+code { color:#91d7ff; }
+</style>
+</head>
+<body>
+<h1>Leeway Device Layer Final Dashboard After Type Text</h1>
+
+<div class="card">
+  <h2>Verdict</h2>
+  <p class="good">FINAL_DEVICE_LAYER_READY_AFTER_APPROVED_TYPE_TEXT</p>
+  <p>Device Layer is locked clean after approved type-text proof.</p>
+</div>
+
+<div class="grid">
+  <div class="metric"><div class="label">Approved Used</div><div class="value">True</div></div>
+  <div class="metric"><div class="label">Executed Exists</div><div class="value">True</div></div>
+  <div class="metric"><div class="label">Still Locked</div><div class="value">True</div></div>
+  <div class="metric"><div class="label">Real Execution</div><div class="value">False</div></div>
+  <div class="metric"><div class="label">Physical Execution</div><div class="value">False</div></div>
+  <div class="metric"><div class="label">Read Only</div><div class="value">False</div></div>
+</div>
+
+<div class="card">
+  <h2>Type Text Proof</h2>
+  <p><b>Approval ID:</b> <code>pending-real_type_text-20260705-202442</code></p>
+  <p><b>Target:</b> <code>controlled_notepad</code></p>
+  <p><b>Text:</b> <code>Leeway approved type-text proof.</code></p>
+  <p><b>Notepad PID:</b> <code>5236</code></p>
+  <p><b>Type launcher PID:</b> <code>32432</code></p>
+  <p><b>Executed ledger:</b> <code>E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\runtime\windows-actuator\approval-gate\ledger\executed\pending-real_type_text-20260705-202442.executed-real-type-text-209.approval.json</code></p>
+</div>
+
+<div class="card">
+  <h2>Ledger Counts</h2>
+  <p>Pending: 6 | Approved: 13 | Executed: 13 | Denied: 0 | Expired: 0</p>
+  <p>Proof receipts: 88</p>
+</div>
+
+<div class="card">
+  <h2>Safety</h2>
+  <p>No type text, mouse, keyboard, hotkey, app open, browser search, shell command, message, phone call, Docker prune, or destructive cleanup was executed by this dashboard script.</p>
+</div>
+</body>
+</html>

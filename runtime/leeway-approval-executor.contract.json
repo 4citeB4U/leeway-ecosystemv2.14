@@ -1,0 +1,27 @@
+{
+  "purpose": "Prepare user-approved action requests for phone calls, emails, and calendar events without executing them until execution lanes are proven.",
+  "verdict": "LEEWAY_APPROVAL_EXECUTOR_CONTRACT_CREATED",
+  "endpoints": {
+    "request_email": "/approval/request-email",
+    "request_phone_call": "/approval/request-phone-call",
+    "history": "/approvals/history",
+    "reject": "/approvals/reject",
+    "pending": "/approvals/pending",
+    "approve": "/approvals/approve",
+    "request_calendar_event": "/approval/request-calendar-event"
+  },
+  "storage": {
+    "approval_queue": "runtime\\approval-queue",
+    "crm_memory": "runtime\\crm-memory",
+    "receipts": "Archive\\proofs\\sovereign-runtime"
+  },
+  "created_at": "2026-07-03T20:09:25.8695294-05:00",
+  "execution_policy": {
+    "current_layer": "approval_records_only",
+    "calendar_events_execute": false,
+    "phone_calls_execute": false,
+    "emails_execute": false,
+    "reason": "Real action execution requires separate proven phone/email/calendar executor lanes."
+  },
+  "lane": "leeway_api_gateway"
+}

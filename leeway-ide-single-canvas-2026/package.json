@@ -1,0 +1,38 @@
+{
+  "name": "leeway-ide-single-canvas-2026",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "d3": "7.9.0",
+    "d3-force-3d": "3.0.5",
+    "framer-motion": "12.43.0",
+    "idb": "8.0.0",
+    "jszip": "3.10.1",
+    "lucide-react": "0.469.0",
+    "next": "16.2.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/d3": "7.4.0",
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.8",
+    "@types/react-dom": "19.2.4",
+    "@types/three": "0.160.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.2.12",
+    "playwright-core": "1.62.1",
+    "postcss": "8.5.23",
+    "tailwindcss": "4.3.3",
+    "typescript": "^6.0.3"
+  }
+}

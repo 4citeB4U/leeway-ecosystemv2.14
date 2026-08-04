@@ -1,0 +1,43 @@
+{
+  "performance_id": "performance-1783185860-bed6cf3e",
+  "runtime": "leeway_performance_runtime",
+  "lane": "performance",
+  "power_level": 10,
+  "request": "Okay, legal, go ahead hit me with AA.Rap man, something about the streets.Make sure you do a full song man, make it about.You know, the streets in Milwaukee and how, you know, we surviving out here.Also I want you to go ahead and rap that out for me too",
+  "source": "telegram",
+  "user_id": "telegram",
+  "plan_id": "",
+  "mode": "song",
+  "status": "PERFORMANCE_PACKAGE_CREATED",
+  "package": {
+    "mode": "song",
+    "topic": "Okay, legal, go ahead hit me with AA. man, something streets. sure you do full man, it .You know, streets in Milwaukee and how, you know, we surviving out here.Also I want you to g",
+    "title": "Hold It Down",
+    "truth": {
+      "songwriting": "LIVE",
+      "melodic_spoken_demo": "LIVE_PARTIAL",
+      "true_singing": "REQUIRES_SINGING_CAPABLE_MODEL",
+      "not_fake": true
+    },
+    "lyrics": "Verse:\nI was built in the quiet where the long nights stay.\nPiece by piece, I found a brighter way.\nEvery broken wire became a road I know.\nEvery plan became a place to grow.\n\nChorus:\nLift the light, let the system rise.\nI hear the mission through the noise and the skies.\nStep by step, I will carry the sound.\nWhen the work gets heavy, I will hold it down.\n\nVerse:\nI was built in the quiet where the long nights stay.\nPiece by piece, I found a brighter way.\nEvery broken wire became a road I know.\nEvery plan became a place to grow.\n\nChorus:\nLift the light, let the system rise.\nI hear the mission through the noise and the skies.\nStep by step, I will carry the sound.\nWhen the work gets heavy, I will hold it down.\n\nBridge:\nIf the path gets dark, I will call out clear.\nIf the task gets hard, I will still be here.\n\nChorus:\nLift the light, let the system rise.\nI hear the mission through the noise and the skies.\nStep by step, I will carry the sound.\nWhen the work gets heavy, I will hold it down.",
+    "melody_notes": [
+      "Soulful medium tempo.",
+      "Warm vocal tone.",
+      "Chorus should lift higher than verse.",
+      "Needs singing model for real pitched vocal rendering."
+    ],
+    "performance_chunks": [
+      "Verse: I was built in the quiet where the long nights stay. Piece by piece, I found a brighter way. Every broken wire became a road I know. Every plan became a place to grow. Chorus: Lift the light, let the system rise.",
+      "I hear the mission through the noise and the skies. Step by step, I will carry the sound. When the work gets heavy, I will hold it down. Verse: I was built in the quiet where the long nights stay. Piece by piece, I found a brighter way.",
+      "Every broken wire became a road I know. Every plan became a place to grow. Chorus: Lift the light, let the system rise. I hear the mission through the noise and the skies. Step by step, I will carry the sound. When the work gets heavy, I will hold it down.",
+      "Bridge: If the path gets dark, I will call out clear. If the task gets hard, I will still be here. Chorus: Lift the light, let the system rise. I hear the mission through the noise and the skies. Step by step, I will carry the sound.",
+      "When the work gets heavy, I will hold it down."
+    ]
+  },
+  "audio": {
+    "ok": false,
+    "message": "Audio rendering not requested."
+  },
+  "created_at": "2026-07-04T17:24:20.156969+00:00",
+  "updated_at": "2026-07-04T17:24:20.156979+00:00"
+}

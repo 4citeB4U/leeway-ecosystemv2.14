@@ -1,0 +1,28 @@
+services:
+  agent-lee-vision-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-lee-vision-kernel
+    ports:
+      - "8093:8093"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - VISION_RECEIPT_ROOT=/app/receipts
+    volumes:
+      - agent-lee-vision-kernel-receipts:/app/receipts
+      - agent-lee-vision-kernel-reports:/app/reports
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - leeway-network
+
+networks:
+  leeway-network:
+    name: leeway-network
+    external: true
+
+volumes:
+  agent-lee-vision-kernel-receipts:
+  agent-lee-vision-kernel-reports:

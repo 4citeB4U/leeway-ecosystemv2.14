@@ -1,0 +1,13 @@
+{
+    "schema":  "leeway-agent-lee-media-router-runtime-v24-2",
+    "status":  "LEEWAY_V24_2_AGENT_LEE_MEDIA_ROUTING_READY",
+    "recordedAt":  "2026-06-28T04:46:28.0026750Z",
+    "container":  "leeway_media_router",
+    "hostEndpoint":  "http://127.0.0.1:5301",
+    "internalEndpoint":  "http://leeway-media-router:5301",
+    "dispatch":  "http://leeway-media-router:5301/dispatch",
+    "route":  "http://leeway-media-router:5301/route",
+    "routes":  "http://leeway-media-router:5301/routes",
+    "health":  "http://leeway-media-router:5301/health",
+    "agentLeeInstruction":  "When a task includes video, movie, audio, image, PDF, spreadsheet, document, or media ingestion language, Agent Lee should POST the request to /dispatch on this router."
+}

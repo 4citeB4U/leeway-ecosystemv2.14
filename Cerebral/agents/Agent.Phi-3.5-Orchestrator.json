@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Phi-3.5-Orchestrator",
+  "wave": 3,
+  "rank": "Executive",
+  "primary_function": "Present final approval handshake to Commander",
+  "tool": "executive_handshake",
+  "uniform": "Administrative"
+}

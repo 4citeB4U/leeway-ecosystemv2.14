@@ -1,0 +1,22 @@
+LEEWAY U2A UPDATE PLANNER RUNTIME
+Created: 2026-07-05T01:30:36.9661086-05:00
+Verdict: LEEWAY_U2A_CRITICAL_LANE_REMEDIATION_PLAN_CREATED
+
+CURRENT TRUTH
+Enterprise ready: NO
+Phone/desktop/browser/email/calendar autonomous operation: NOT PROVEN
+No bridge sprawl policy: ACTIVE
+
+LOCK ORDER
+1. archive_disable_old_backups -> Stop treating old backup containers as active product lanes.
+2. storage_and_conference_health_mapping -> Create correct health proof for infra services instead of assuming app /health endpoints.
+3. desktop_operator_proof -> Prove Agent Lee can read desktop state and perform approved click/type/open action through existing desktop runtime lane.
+4. browser_operator_proof -> Prove Agent Lee can operate a controlled Playwright/Chromium session.
+5. email_provider_proof -> Prove authenticated draft/create/send path with approval gate.
+6. calendar_provider_proof -> Prove authenticated read/create/update calendar event path with approval gate.
+7. phone_provider_or_device_proof -> Prove phone/SMS/call lane only with explicit approval and either provider credentials or device bridge policy.
+8. license_and_installer_proof -> Prove customer entitlement, package validation, install/update/rollback workflow.
+9. vision_and_image_kernel_proof -> Restore/disable experimental vision/image/3D lanes based on product readiness.
+
+NEXT
+Run U2B first remediation: archive/disable old backup containers from active truth without deletion.

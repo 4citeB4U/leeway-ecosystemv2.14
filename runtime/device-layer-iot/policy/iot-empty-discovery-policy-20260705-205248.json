@@ -1,0 +1,48 @@
+﻿{
+    "version":  "LEEWAY_IOT_EMPTY_DISCOVERY_POLICY_AND_SIMULATED_LOW_RISK_PLAN_2026-07-05",
+    "timestamp":  "2026-07-05T20:52:48",
+    "family":  "iot",
+    "policy_name":  "empty_discovery_policy",
+    "current_truth":  "IoT discovery route exists, but no IoT devices are discovered and no status/registry/devices routes exist.",
+    "discovery_route_present":  true,
+    "discovered_count":  0,
+    "no_devices_found":  true,
+    "missing_routes":  [
+                           {
+                               "route":  "/iot/status",
+                               "present":  false,
+                               "required_for":  "read_only_status_surface"
+                           },
+                           {
+                               "route":  "/iot/registry",
+                               "present":  false,
+                               "required_for":  "normalized_iot_registry_surface"
+                           },
+                           {
+                               "route":  "/iot/devices",
+                               "present":  false,
+                               "required_for":  "device_inventory_surface"
+                           }
+                       ],
+    "allowed_now":  [
+                        "read /iot/discover",
+                        "write local registry/contract/proof artifacts",
+                        "simulate plan only"
+                    ],
+    "denied_now":  [
+                       "iot_control",
+                       "iot_toggle",
+                       "iot_write_state",
+                       "iot_pair_device",
+                       "iot_delete_device",
+                       "iot_scene_run",
+                       "iot_group_action",
+                       "print",
+                       "cast",
+                       "phone_action",
+                       "shell_action"
+                   ],
+    "route_patch_required":  true,
+    "no_execute_now":  true,
+    "next_engineering_step":  "add read-only Device Operator routes for /iot/status, /iot/registry, and /iot/devices"
+}

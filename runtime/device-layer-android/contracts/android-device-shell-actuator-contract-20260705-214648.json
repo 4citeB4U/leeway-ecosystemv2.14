@@ -1,0 +1,97 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_DEVICE_SHELL_ACTUATOR_CONTRACT_236",
+    "timestamp":  "2026-07-05T21:46:48",
+    "family":  "android",
+    "capability_status":  "SHELL_AND_ACTUATOR_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "android_discover":  false,
+                            "android_status":  false,
+                            "android_registry":  false,
+                            "android_shell_status":  false,
+                            "android_actuator_status":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/android/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/android/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/android/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/android/shell/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/android/actuator/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/android/shell/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/android/input/tap",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/android/input/swipe",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/android/text/send",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/android/call/start",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_adb_invoked":  true,
+                   "no_phone_connected":  true,
+                   "no_tap":  true,
+                   "no_swipe":  true,
+                   "no_text":  true,
+                   "no_call":  true,
+                   "no_file_read":  true,
+                   "no_permission_mutation":  true,
+                   "no_device_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

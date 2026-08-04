@@ -1,0 +1,19 @@
+LEEWAY U2C STORAGE / CONFERENCE HEALTH MAPPING
+Created: 2026-07-05T02:23:32.3269665-05:00
+Verdict: STORAGE_CONFERENCE_BASIC_HEALTH_MAPPED
+
+SERVICE RESULTS
+- seafile_storage | container=leeway-seafile | state=running | mapped=RUNNING_BUT_NOT_HTTP_REACHABLE | http_ok=False
+- jitsi_web | container=leeway-jitsi-meet-web-1 | state=running | mapped=HTTP_REACHABLE | http_ok=True
+- jitsi_jicofo | container=leeway-jitsi-meet-jicofo-1 | state=running | mapped=RUNNING_INTERNAL_COMPONENT_NEEDS_BEHAVIOR_PROOF | http_ok=False
+- jitsi_jvb | container=leeway-jitsi-meet-jvb-1 | state=running | mapped=HTTP_REACHABLE | http_ok=True
+
+TRUTH
+Seafile basic reachable: YES
+Jitsi web basic reachable: YES
+Jitsi infra running: YES
+Storage fully proven: NO until authenticated file behavior proof
+Conference fully proven: NO until browser room join proof
+
+NEXT
+Run U2D desktop operator proof plan.

@@ -1,0 +1,9 @@
+{
+  "status": "EVENT_RECEIVED",
+  "updatedAt": "2026-06-28T18:01:05.026Z",
+  "lastEvent": {
+    "at": "2026-06-28T18:01:05.024Z",
+    "type": "speech_error",
+    "error": "aborted"
+  }
+}

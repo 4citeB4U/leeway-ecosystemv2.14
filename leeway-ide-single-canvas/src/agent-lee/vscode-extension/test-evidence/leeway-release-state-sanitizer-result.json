@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-06-06T03:00:35.714Z",
+  "packageVersion": "1.2.27",
+  "packageBuildHash": "lee-vscode-20260605-runtime-fabric-local-worker-bridge-20",
+  "runtimeJsonFiles": [
+    "runtime\\leeway-extension-update-registry.json"
+  ],
+  "runtimeRegistryPath": "runtime/leeway-extension-update-registry.json",
+  "detectedViolationsBeforeSanitization": [],
+  "missingIgnoreRules": [],
+  "sanitizedRegistry": {
+    "extensionId": "leeway.agent-lee-leeway-coding-system",
+    "channel": "stable",
+    "approvedCanonicalVersion": "1.2.27",
+    "approvedCanonicalBuildHash": "lee-vscode-20260605-runtime-fabric-local-worker-bridge-20",
+    "approvedBuildTimestamp": "2026-06-05T19:40:00.000Z",
+    "sourceCommit": "unknown",
+    "vsixSha256": "unknown",
+    "packageUri": "unknown",
+    "installedVersion": "",
+    "installedBuildHash": "",
+    "activeHostVersion": "",
+    "activeHostBuildHash": "",
+    "updateState": "ACTIVE_HOST_EVALUATION_REQUIRED",
+    "reloadRequired": false,
+    "restartRequired": false,
+    "canonicalReplacementAvailable": false,
+    "canonicalReplacementVersion": "",
+    "canonicalReplacementBuildHash": "",
+    "staleBuildRejected": false,
+    "failClosedReason": "",
+    "promotionAllowed": false,
+    "promotionBlocker": "AWAITING_ACTIVATION_ATTESTATION",
+    "currentTruthReceiptId": "",
+    "canonicalInstallReceiptId": "",
+    "evidenceRegenerationRequired": false,
+    "policyState": "evaluation-required",
+    "leeway": {
+      "LEEWAY_HEADER": "DO NOT REMOVE",
+      "REGION": "CORE",
+      "TAG": "CORE.RUNTIME.EXTENSION.UPDATE_REGISTRY",
+      "PURPOSE": "Release-safe lifecycle seed and activation-updated host truth registry for the packaged Agent Lee extension.",
+      "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+    }
+  },
+  "remainingViolationsAfterSanitization": [],
+  "passed": true
+}

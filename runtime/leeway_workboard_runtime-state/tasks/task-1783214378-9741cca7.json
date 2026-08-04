@@ -1,0 +1,96 @@
+{
+  "task_id": "task-1783214378-9741cca7",
+  "request": "Create a full website package and show me the production steps.",
+  "source": "truth-sync-test",
+  "user_id": "owner",
+  "task_type": "website",
+  "status": "THINKING",
+  "message": "Thinking through the request and preparing the plan.",
+  "current_step": 1,
+  "todo": [
+    {
+      "index": 1,
+      "text": "Capture the request exactly.",
+      "status": "ACTIVE"
+    },
+    {
+      "index": 2,
+      "text": "Classify task type, urgency, risk, and approval requirement.",
+      "status": "PENDING"
+    },
+    {
+      "index": 3,
+      "text": "Check discovery and available runtime lanes.",
+      "status": "PENDING"
+    },
+    {
+      "index": 4,
+      "text": "Create Workboard task and visible status.",
+      "status": "PENDING"
+    },
+    {
+      "index": 5,
+      "text": "Build work breakdown and to-do list.",
+      "status": "PENDING"
+    },
+    {
+      "index": 6,
+      "text": "Route to required runtime lanes.",
+      "status": "PENDING"
+    },
+    {
+      "index": 7,
+      "text": "Create site map and page strategy.",
+      "status": "PENDING"
+    },
+    {
+      "index": 8,
+      "text": "Draft copy and visual direction.",
+      "status": "PENDING"
+    },
+    {
+      "index": 9,
+      "text": "Generate or collect assets.",
+      "status": "PENDING"
+    },
+    {
+      "index": 10,
+      "text": "Build preview package.",
+      "status": "PENDING"
+    },
+    {
+      "index": 11,
+      "text": "Validate files, links, and preview.",
+      "status": "PENDING"
+    },
+    {
+      "index": 12,
+      "text": "Update visible operational trace after major steps.",
+      "status": "PENDING"
+    },
+    {
+      "index": 13,
+      "text": "Validate against original request.",
+      "status": "PENDING"
+    },
+    {
+      "index": 14,
+      "text": "Deliver result or exact blocker.",
+      "status": "PENDING"
+    },
+    {
+      "index": 15,
+      "text": "Store receipt and learning event if needed.",
+      "status": "PENDING"
+    }
+  ],
+  "blocker": "",
+  "artifact_url": "",
+  "artifact_path": "",
+  "metadata": {
+    "created_by": "leeway_executive_runtime",
+    "power_level": 10
+  },
+  "created_at": "2026-07-05T01:19:38.913176+00:00",
+  "updated_at": "2026-07-05T01:19:38.913187+00:00"
+}

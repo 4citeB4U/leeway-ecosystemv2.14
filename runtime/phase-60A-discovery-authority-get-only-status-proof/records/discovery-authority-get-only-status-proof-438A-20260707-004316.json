@@ -1,0 +1,283 @@
+﻿{
+    "version":  "LEEWAY_DISCOVERY_AUTHORITY_GET_ONLY_STATUS_PROOF_438A",
+    "phase":  "60A",
+    "timestamp":  "2026-07-07T00:43:18",
+    "verdict":  "LEEWAY_DISCOVERY_AUTHORITY_GET_ONLY_STATUS_PROOF_438A_CLEAN_PASSED_EXECUTION_STILL_BLOCKED",
+    "single_use_owner_approved":  true,
+    "owner_approval_statement":  "I, Leonard J Lee, explicitly approve one GET-only Discovery authority status proof under gate 438. I understand this does not authorize Docker exec, Docker mutation, runtime execution, device control, Telegram posting, model calls, browser control, package creation, or physical action.",
+    "get_only_proof":  true,
+    "runtime_execution_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "telegram_posting_performed":  false,
+    "model_call_performed":  false,
+    "browser_control_performed":  false,
+    "package_created":  false,
+    "physical_action_performed":  false,
+    "inherited":  {
+                      "gate_438R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-60R-discovery-authority-status-proof-gate-repair\\latest\\discovery-authority-status-proof-gate-latest.json",
+                      "gate_438R_clean":  true,
+                      "binding_437R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-59R-discovery-reassembly-binding-map-repair\\latest\\discovery-reassembly-binding-map-latest.json"
+                  },
+    "selected_authority":  "leeway_api_gateway",
+    "selected_authority_role":  "ROUTE_GATEWAY_AUTHORITY_CANDIDATE",
+    "proof_truth":  {
+                        "owner_approval_present":  true,
+                        "owner_approval_exact_match":  true,
+                        "selected_authority":  "leeway_api_gateway",
+                        "selected_authority_role":  "ROUTE_GATEWAY_AUTHORITY_CANDIDATE",
+                        "get_only_status_proof_performed":  true,
+                        "get_attempts":  5,
+                        "successful_gets":  4,
+                        "failed_gets":  1,
+                        "authority_reachable":  true,
+                        "governance_or_status_signal_detected":  true,
+                        "discovery_status_proof_passed":  true,
+                        "discovery_100_percent_resolved_for_execution":  false,
+                        "runtime_execution_allowed_now":  false,
+                        "docker_exec_performed":  false,
+                        "docker_exec_allowed_now":  false,
+                        "docker_mutation_performed":  false,
+                        "docker_mutation_allowed_now":  false,
+                        "device_control_performed":  false,
+                        "device_control_allowed_now":  false,
+                        "package_creation_performed":  false,
+                        "package_creation_allowed_now":  false,
+                        "telegram_posting_performed":  false,
+                        "model_call_performed":  false,
+                        "browser_control_performed":  false,
+                        "physical_action_performed":  false
+                    },
+    "candidate_endpoints":  [
+                                {
+                                    "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_01",
+                                    "authority":  "leeway_api_gateway",
+                                    "method":  "GET",
+                                    "url":  "http://127.0.0.1:5330/health",
+                                    "purpose":  "Possible API gateway health endpoint",
+                                    "allowed_later_only_after_approval":  true
+                                },
+                                {
+                                    "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_02",
+                                    "authority":  "leeway_api_gateway",
+                                    "method":  "GET",
+                                    "url":  "http://127.0.0.1:5330/status",
+                                    "purpose":  "Possible API gateway status endpoint",
+                                    "allowed_later_only_after_approval":  true
+                                },
+                                {
+                                    "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_03",
+                                    "authority":  "leeway_api_gateway",
+                                    "method":  "GET",
+                                    "url":  "http://127.0.0.1:5330/policy",
+                                    "purpose":  "Possible API gateway policy endpoint",
+                                    "allowed_later_only_after_approval":  true
+                                },
+                                {
+                                    "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_04",
+                                    "authority":  "leeway_api_gateway",
+                                    "method":  "GET",
+                                    "url":  "http://127.0.0.1:5323/health",
+                                    "purpose":  "Possible Device Operator health endpoint if routed through Device Operator",
+                                    "allowed_later_only_after_approval":  true
+                                },
+                                {
+                                    "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_05",
+                                    "authority":  "leeway_api_gateway",
+                                    "method":  "GET",
+                                    "url":  "http://127.0.0.1:5323/status",
+                                    "purpose":  "Possible Device Operator status endpoint if routed through Device Operator",
+                                    "allowed_later_only_after_approval":  true
+                                }
+                            ],
+    "get_results":  [
+                        {
+                            "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_01",
+                            "authority":  "leeway_api_gateway",
+                            "method":  "GET",
+                            "url":  "http://127.0.0.1:5330/health",
+                            "purpose":  "Possible API gateway health endpoint",
+                            "attempted":  true,
+                            "success":  true,
+                            "status_code":  200,
+                            "status_description":  "OK",
+                            "content_length":  150,
+                            "content_preview":  "{\"ok\":true,\"runtime\":\"leeway_email_runtime\",\"title\":\"Leeway Email Runtime\",\"lane\":\"email\",\"port\":5330,\"created_at\":\"2026-07-07T05:43:17.553714+00:00\"}",
+                            "headers":  {
+                                            "Date":  "Tue, 07 Jul 2026 05:43:16 GMT",
+                                            "Server":  "uvicorn",
+                                            "Content-Type":  "application/json",
+                                            "Content-Length":  "150"
+                                        },
+                            "started_at":  "2026-07-07T00:43:17",
+                            "completed_at":  "2026-07-07T00:43:17",
+                            "error":  "",
+                            "runtime_execution_performed":  false,
+                            "docker_exec_performed":  false,
+                            "docker_mutation_performed":  false,
+                            "device_control_performed":  false
+                        },
+                        {
+                            "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_02",
+                            "authority":  "leeway_api_gateway",
+                            "method":  "GET",
+                            "url":  "http://127.0.0.1:5330/status",
+                            "purpose":  "Possible API gateway status endpoint",
+                            "attempted":  true,
+                            "success":  true,
+                            "status_code":  200,
+                            "status_description":  "OK",
+                            "content_length":  462,
+                            "content_preview":  "{\"ok\":true,\"runtime\":\"leeway_email_runtime\",\"title\":\"Leeway Email Runtime\",\"lane\":\"email\",\"port\":5330,\"truth\":{\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"provider_send\":\"REQUIRES_EMAIL_PROVIDER_AND_APPROVAL\",\"approval_required\":\"TRUE\",\"receipt_writing\":\"LIVE\"},\"capabilities\":[\"draft_email_after_approval\",\"send_email_after_provider_connection\",\"store_email_work_order\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T05:43:17.618258+00:00\"}",
+                            "headers":  {
+                                            "Date":  "Tue, 07 Jul 2026 05:43:16 GMT",
+                                            "Server":  "uvicorn",
+                                            "Content-Type":  "application/json",
+                                            "Content-Length":  "462"
+                                        },
+                            "started_at":  "2026-07-07T00:43:17",
+                            "completed_at":  "2026-07-07T00:43:17",
+                            "error":  "",
+                            "runtime_execution_performed":  false,
+                            "docker_exec_performed":  false,
+                            "docker_mutation_performed":  false,
+                            "device_control_performed":  false
+                        },
+                        {
+                            "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_03",
+                            "authority":  "leeway_api_gateway",
+                            "method":  "GET",
+                            "url":  "http://127.0.0.1:5330/policy",
+                            "purpose":  "Possible API gateway policy endpoint",
+                            "attempted":  true,
+                            "success":  false,
+                            "status_code":  0,
+                            "status_description":  "",
+                            "content_length":  0,
+                            "content_preview":  "",
+                            "headers":  {
+
+                                        },
+                            "started_at":  "2026-07-07T00:43:17",
+                            "completed_at":  "2026-07-07T00:43:17",
+                            "error":  "The remote server returned an error: (404) Not Found.",
+                            "runtime_execution_performed":  false,
+                            "docker_exec_performed":  false,
+                            "docker_mutation_performed":  false,
+                            "device_control_performed":  false
+                        },
+                        {
+                            "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_04",
+                            "authority":  "leeway_api_gateway",
+                            "method":  "GET",
+                            "url":  "http://127.0.0.1:5323/health",
+                            "purpose":  "Possible Device Operator health endpoint if routed through Device Operator",
+                            "attempted":  true,
+                            "success":  true,
+                            "status_code":  200,
+                            "status_description":  "OK",
+                            "content_length":  138,
+                            "content_preview":  "{\"ok\":true,\"app\":\"leeway_device_operator\",\"version\":\"0.1.0-device-operator-control-plane\",\"created_at\":\"2026-07-07T05:43:17.657242+00:00\"}",
+                            "headers":  {
+                                            "Date":  "Tue, 07 Jul 2026 05:43:17 GMT",
+                                            "Server":  "uvicorn",
+                                            "Content-Type":  "application/json",
+                                            "Content-Length":  "138"
+                                        },
+                            "started_at":  "2026-07-07T00:43:17",
+                            "completed_at":  "2026-07-07T00:43:17",
+                            "error":  "",
+                            "runtime_execution_performed":  false,
+                            "docker_exec_performed":  false,
+                            "docker_mutation_performed":  false,
+                            "device_control_performed":  false
+                        },
+                        {
+                            "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_05",
+                            "authority":  "leeway_api_gateway",
+                            "method":  "GET",
+                            "url":  "http://127.0.0.1:5323/status",
+                            "purpose":  "Possible Device Operator status endpoint if routed through Device Operator",
+                            "attempted":  true,
+                            "success":  true,
+                            "status_code":  200,
+                            "status_description":  "OK",
+                            "content_length":  271009,
+                            "content_preview":  "{\"app\":\"leeway_device_operator\",\"version\":\"0.1.0-device-operator-control-plane\",\"purpose\":\"Dockerized Leeway control plane for cursor, device channels, phone/email/PWA/Telegram control surfaces, and approved device actions.\",\"device_model\":{\"docker_control_plane\":true,\"host_or_mobile_adapter_required_for_physical_ui_actions\":true,\"all_actions_route_through_leeway_api_gateway\":true,\"approval_required_for_risky_actions\":true},\"cursor_modes\":{\"blue\":\"listening_thinking_safe_navigation\",\"green\":\"approved_action_active_execution\",\"red\":\"blocked_needs_approval_risky_action\",\"gold\":\"owner_admin_mode\",\"purple\":\"agent_creation_mode\"},\"endpoints\":[\"/health\",\"/status\",\"/cursor/profile\",\"/cursor/set-profile\",\"/devices/register\",\"/devices/list\",\"/channels/register\",\"/channels/list\",\"/voice/session/start\",\"/device/action/request\",\"/license/profile\",\"/receipts/latest\",\"/openapi.json\"],\"devices\":{\"devices\":[{\"device_id\":\"customer-desktop-default\",\"device_type\":\"desktop\",\"platform\":\"windows_linux_macos",
+                            "headers":  {
+                                            "Date":  "Tue, 07 Jul 2026 05:43:17 GMT",
+                                            "Server":  "uvicorn",
+                                            "Content-Type":  "application/json",
+                                            "Content-Length":  "271009"
+                                        },
+                            "started_at":  "2026-07-07T00:43:17",
+                            "completed_at":  "2026-07-07T00:43:18",
+                            "error":  "",
+                            "runtime_execution_performed":  false,
+                            "docker_exec_performed":  false,
+                            "docker_mutation_performed":  false,
+                            "device_control_performed":  false
+                        }
+                    ],
+    "policy_signals":  [
+                           {
+                               "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_01",
+                               "url":  "http://127.0.0.1:5330/health",
+                               "status_code":  200,
+                               "signal_detected":  true,
+                               "signal_type":  "content_contains_governance_or_status_terms"
+                           },
+                           {
+                               "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_02",
+                               "url":  "http://127.0.0.1:5330/status",
+                               "status_code":  200,
+                               "signal_detected":  true,
+                               "signal_type":  "content_contains_governance_or_status_terms"
+                           },
+                           {
+                               "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_04",
+                               "url":  "http://127.0.0.1:5323/health",
+                               "status_code":  200,
+                               "signal_detected":  true,
+                               "signal_type":  "content_contains_governance_or_status_terms"
+                           },
+                           {
+                               "endpoint_id":  "DISCOVERY_STATUS_CANDIDATE_05",
+                               "url":  "http://127.0.0.1:5323/status",
+                               "status_code":  200,
+                               "signal_detected":  true,
+                               "signal_type":  "content_contains_governance_or_status_terms"
+                           }
+                       ],
+    "remaining_gaps":  [
+                           {
+                               "gap_id":  "DISCOVERY_STATUS_PROOF_PASSED_EXECUTION_STILL_BLOCKED",
+                               "severity":  "STRUCTURAL_BEFORE_EXECUTION",
+                               "description":  "Discovery authority status proof passed, but runtime execution is still blocked until high-risk container gate matrix and active execution scope are closed.",
+                               "required_resolution":  "Proceed to 439 Discovery proof closeout / high-risk container gate matrix."
+                           }
+                       ],
+    "next_phase_needs":  [
+                             "439 must close the Discovery status proof result honestly.",
+                             "If 438A passed, 439 should route to high-risk container gate matrix.",
+                             "If 438A failed, 439 should route to endpoint mapping repair plan.",
+                             "Runtime execution remains blocked.",
+                             "Docker exec remains blocked.",
+                             "Docker mutation remains blocked.",
+                             "Device control remains blocked.",
+                             "Telegram/model/browser/image/voice execution remains blocked.",
+                             "Package creation remains blocked.",
+                             "Packaging/distribution remains paused."
+                         ],
+    "counts":  {
+                   "candidate_endpoints":  5,
+                   "get_attempts":  5,
+                   "successful_gets":  4,
+                   "failed_gets":  1,
+                   "policy_signals":  4,
+                   "remaining_gaps":  1,
+                   "next_phase_needs":  10
+               },
+    "recommended_next_script":  "439-discovery-status-proof-closeout-and-next-gate-router-no-execute.ps1"
+}

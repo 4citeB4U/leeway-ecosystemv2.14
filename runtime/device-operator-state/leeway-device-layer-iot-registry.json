@@ -1,0 +1,138 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "doctrine":  "IOT_AND_PHYSICAL_DEVICES_ARE_DEVICE_LAYER_CHILDREN",
+    "discovery_methods":  [
+                              "tailscale_status",
+                              "mdns_zeroconf",
+                              "upnp_ssdp",
+                              "ipp_printer_discovery",
+                              "manual_registration",
+                              "qr_pairing"
+                          ],
+    "categories":  {
+                       "cameras":  {
+                                       "approval":  "REQUIRED_FOR_PRIVATE_SPACES",
+                                       "actions":  [
+                                                       "snapshot",
+                                                       "stream",
+                                                       "analyze_frame"
+                                                   ],
+                                       "protocols":  [
+                                                         "USB",
+                                                         "RTSP",
+                                                         "ONVIF",
+                                                         "Phone camera bridge"
+                                                     ]
+                                   },
+                       "speakers":  {
+                                        "approval":  "SAFE_FOR_STATUS; REQUIRED_FOR_LOUD_OR_PUBLIC_PLAYBACK",
+                                        "actions":  [
+                                                        "speak",
+                                                        "play_audio",
+                                                        "volume"
+                                                    ],
+                                        "protocols":  [
+                                                          "local_audio",
+                                                          "bluetooth",
+                                                          "cast",
+                                                          "phone_satellite"
+                                                      ]
+                                    },
+                       "printers":  {
+                                        "approval":  "REQUIRED_FOR_PRINT",
+                                        "actions":  [
+                                                        "discover",
+                                                        "status",
+                                                        "print_pdf",
+                                                        "print_image",
+                                                        "queue_status"
+                                                    ],
+                                        "protocols":  [
+                                                          "IPP",
+                                                          "CUPS",
+                                                          "Windows Print Spooler",
+                                                          "AirPrint"
+                                                      ]
+                                    },
+                       "smart_plugs":  {
+                                           "approval":  "REQUIRED_FOR_POWER_CONTROL",
+                                           "actions":  [
+                                                           "on",
+                                                           "off",
+                                                           "status"
+                                                       ],
+                                           "protocols":  [
+                                                             "Matter",
+                                                             "TP-Link",
+                                                             "UPnP",
+                                                             "manual_bridge"
+                                                         ]
+                                       },
+                       "microphones":  {
+                                           "approval":  "SESSION_PERMISSION_REQUIRED",
+                                           "actions":  [
+                                                           "status",
+                                                           "listen",
+                                                           "transcribe"
+                                                       ],
+                                           "protocols":  [
+                                                             "local_audio",
+                                                             "phone_satellite",
+                                                             "browser_mic"
+                                                         ]
+                                       },
+                       "thermostats":  {
+                                           "approval":  "REQUIRED_FOR_CHANGE",
+                                           "actions":  [
+                                                           "status",
+                                                           "set_temperature"
+                                                       ],
+                                           "protocols":  [
+                                                             "Matter",
+                                                             "vendor_api",
+                                                             "manual_bridge"
+                                                         ]
+                                       },
+                       "tv_casting":  {
+                                          "approval":  "REQUIRED_FOR_CASTING",
+                                          "actions":  [
+                                                          "discover",
+                                                          "cast_url",
+                                                          "cast_video",
+                                                          "stop_cast"
+                                                      ],
+                                          "protocols":  [
+                                                            "Chromecast",
+                                                            "AirPlay",
+                                                            "DLNA_UPnP",
+                                                            "HDMI_local"
+                                                        ]
+                                      },
+                       "wake_on_lan":  {
+                                           "approval":  "REQUIRED",
+                                           "actions":  [
+                                                           "wake_device"
+                                                       ],
+                                           "protocols":  [
+                                                             "WOL"
+                                                         ]
+                                       },
+                       "smart_lights":  {
+                                            "approval":  "SAFE_WITH_OWNER_POLICY",
+                                            "actions":  [
+                                                            "on",
+                                                            "off",
+                                                            "brightness",
+                                                            "color"
+                                                        ],
+                                            "protocols":  [
+                                                              "Matter",
+                                                              "HomeKit",
+                                                              "Hue",
+                                                              "UPnP",
+                                                              "manual_bridge"
+                                                          ]
+                                        }
+                   }
+}

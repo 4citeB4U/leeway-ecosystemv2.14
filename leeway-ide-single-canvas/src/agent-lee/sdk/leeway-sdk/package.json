@@ -1,0 +1,25 @@
+{
+  "name": "leeway-sdk",
+  "version": "0.1.0",
+  "description": "SDK for enforcing LEEWAY Standards across codebases.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "leeway": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js start",
+    "doctor": "node src/cli.js doctor",
+    "scan": "node src/cli.js scan",
+    "align": "node src/cli.js align",
+    "forge": "node src/cli.js forge",
+    "hive": "node src/cli.js hive",
+    "test": "node src/cli.js help"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

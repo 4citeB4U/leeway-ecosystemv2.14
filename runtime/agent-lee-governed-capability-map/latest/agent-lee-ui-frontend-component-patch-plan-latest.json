@@ -1,0 +1,84 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_UI_FRONTEND_COMPONENT_PATCH_PLAN_272B_CORRECTED",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:32:15",
+    "plan_status":  "READY_FOR_FRONTEND_COMPONENT_PATCH_NO_EXECUTE",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "corrected_after_272_warning":  true,
+    "frontend_target":  {
+                            "frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                            "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\package.json",
+                            "app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+                            "component_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components",
+                            "lib_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib",
+                            "planned_component_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceLayerCapabilityPanel.tsx",
+                            "planned_api_client_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceLayerCapabilityClient.ts",
+                            "target_colocated":  true
+                        },
+    "files_to_create":  [
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceLayerCapabilityClient.ts",
+                                "type":  "TypeScript API client",
+                                "purpose":  "GET-only client for /agent-lee/device-layer/* routes.",
+                                "no_post_methods":  true,
+                                "no_execution_methods":  true
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceLayerCapabilityPanel.tsx",
+                                "type":  "React component",
+                                "purpose":  "Render governed Device Layer capability map with locked/no-execute state.",
+                                "no_execute_buttons":  true,
+                                "no_post_forms":  true
+                            }
+                        ],
+    "files_to_modify":  [
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+                                "modification":  "Import and render AgentLeeDeviceLayerCapabilityPanel in dashboard/cockpit area.",
+                                "required":  true,
+                                "no_execution_controls":  true
+                            }
+                        ],
+    "validation_plan":  [
+                            "create backup for every modified frontend file",
+                            "create GET-only API client with no POST methods",
+                            "create locked/no-execute React component",
+                            "patch app page only inside resolved colocated frontend root",
+                            "scan generated files for forbidden execute/unlock/post action controls",
+                            "run npm build or npm run typecheck if scripts exist",
+                            "revalidate Device Operator UI routes remain no-execute",
+                            "confirm Windows real-alpha remains locked"
+                        ],
+    "forbidden_frontend_changes":  [
+                                       "execute button",
+                                       "run button",
+                                       "unlock button",
+                                       "approve and execute button",
+                                       "POST action route",
+                                       "server action that executes devices",
+                                       "shell command form",
+                                       "ADB command form",
+                                       "SSH command form",
+                                       "Tailscale command form",
+                                       "smart home command form",
+                                       "camera stream start",
+                                       "microphone start",
+                                       "printer submit",
+                                       "casting start",
+                                       "background polling that triggers action"
+                                   ],
+    "safety":  {
+                   "plan_only":  true,
+                   "no_frontend_patch_applied":  true,
+                   "no_execution_enabled":  true,
+                   "execute_buttons_visible":  false,
+                   "post_execution_routes_added":  false,
+                   "action_cards_enabled":  false,
+                   "physical_actions_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "source_reconciliation_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-frontend-target-reconciliation-latest.json",
+    "recommended_next":  "273-apply-agent-lee-ui-frontend-component-no-execute.ps1"
+}

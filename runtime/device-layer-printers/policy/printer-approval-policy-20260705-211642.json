@@ -1,0 +1,31 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_APPROVAL_POLICY_221",
+    "timestamp":  "2026-07-05T21:16:42",
+    "family":  "printers",
+    "policy_status":  "READ_ONLY_DISCOVERY_ALLOWED_PRINTING_REQUIRES_APPROVAL",
+    "allowed_without_approval":  [
+                                     "GET /printers/discover",
+                                     "GET /printers/status when implemented",
+                                     "GET /printers/registry when implemented",
+                                     "GET /printers/{printer_id}/status"
+                                 ],
+    "requires_approval":  [
+                              "POST /printers/{printer_id}/print",
+                              "any print job",
+                              "any queue mutation",
+                              "any printer configuration change",
+                              "any driver install",
+                              "any paper tray/device setting change"
+                          ],
+    "forbidden_without_specific_proof":  [
+                                             "silent print",
+                                             "bulk print",
+                                             "remote printer config",
+                                             "driver install",
+                                             "default printer mutation",
+                                             "spooler clear",
+                                             "printer delete"
+                                         ],
+    "physical_actions_executed":  0,
+    "print_jobs_sent":  0
+}

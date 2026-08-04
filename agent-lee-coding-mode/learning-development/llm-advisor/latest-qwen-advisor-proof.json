@@ -1,0 +1,13 @@
+{
+    "role":  "ADVISORY_PROCESSOR_NOT_CONTROLLER",
+    "availableModels":  [
+                            "qwen2.5vl:7b",
+                            "qwen2.5-coder:7b",
+                            "qwen2.5-coder:latest",
+                            "qwen3:latest"
+                        ],
+    "preferredModel":  "qwen2.5-coder:7b",
+    "advisorStatus":  "SKIPPED_THIS_CYCLE",
+    "advisorModel":  "",
+    "advisorProof":  null
+}

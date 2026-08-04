@@ -1,0 +1,25 @@
+{
+  "schema": "leeway.voice-kernel.enhancement-policy.v1",
+  "voiceKernelId": "agent-lee-voice-kernel",
+  "agentId": "agent-lee",
+  "engine": "XTTS-v2",
+  "quality": {
+    "targetSampleRate": 24000,
+    "preferredSpeakerSampleRate": 22050,
+    "preferredChannels": 1,
+    "maxAllowedNoiseFloorDb": -35,
+    "maxAllowedPeakDb": -1,
+    "maxAllowedDurationSkewSeconds": 0.5
+  },
+  "voiceTone": {
+    "cadence": "natural",
+    "pace": "moderate",
+    "clarity": "high",
+    "roboticArtifacts": "minimize"
+  },
+  "enforcement": {
+    "singleEngineOnly": true,
+    "fallbackAllowed": false,
+    "desktopRuntimePlaybackOwnedByKernel": true
+  }
+}

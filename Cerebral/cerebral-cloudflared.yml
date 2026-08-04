@@ -1,0 +1,9 @@
+ tunnel: ebd2103c-6982-47c2-b814-356027f4e245
+ protocol: http2
+ingress:
+  - hostname: cerebral.rapidwebdevelop.com
+    service: http://127.0.0.1:8765
+    originRequest:
+      noTLSVerify: true
+      # caPool removed for default Cloudflare certificate
+  - service: http_status:404

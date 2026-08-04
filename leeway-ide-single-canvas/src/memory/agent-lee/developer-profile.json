@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-05-18T02:34:04.927Z",
+  "communicationStyle": {
+    "defaultTechnicalDepth": "plain",
+    "encouragementStyle": "balanced",
+    "voicePresence": "calm-grounded"
+  },
+  "skillProfile": {
+    "level": "working",
+    "noCodeFriendly": false
+  },
+  "visualPreferences": {
+    "favoriteColors": [],
+    "preferredTheme": "adaptive",
+    "likes3D": false
+  },
+  "interests": [],
+  "notes": []
+}

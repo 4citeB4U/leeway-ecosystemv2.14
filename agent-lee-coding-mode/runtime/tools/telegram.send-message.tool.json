@@ -1,0 +1,20 @@
+{
+    "schema":  "leeway.agent-lee.tool.v1",
+    "id":  "telegram.send_message.tool",
+    "name":  "Telegram Send Message Tool",
+    "status":  "READY",
+    "category":  "communications",
+    "provider":  "telegram",
+    "canSendText":  true,
+    "canSendMedia":  false,
+    "defaultMethod":  "sendMessage",
+    "toolAliases":  [
+                        "send_text",
+                        "telegram_text",
+                        "text_me",
+                        "notify_user"
+                    ],
+    "invokeScript":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\scripts\\Invoke-AgentLeeTelegramText.ps1",
+    "envPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.env.local",
+    "createdAt":  "2026-06-28T16:28:09.8574651Z"
+}

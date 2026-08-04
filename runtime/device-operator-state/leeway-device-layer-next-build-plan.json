@@ -1,0 +1,48 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "current_truth":  {
+                          "windows_only_actuator_is_not_master":  true,
+                          "master_port":  5323,
+                          "leeway_device_operator_running":  true,
+                          "device_layer_registry_created":  true
+                      },
+    "scripts":  [
+                    {
+                        "name":  "162-inspect-leeway-device-operator-routes-and-contract.ps1",
+                        "id":  162,
+                        "purpose":  "Read /routes and /openapi.json deeply; determine actual existing execute/register endpoints before patching."
+                    },
+                    {
+                        "name":  "163-build-device-layer-registry-endpoint-plan.ps1",
+                        "id":  163,
+                        "purpose":  "If missing, create a source-level patch plan for /devices, /iot, /printers, /shells, /approval, /receipts."
+                    },
+                    {
+                        "name":  "164-register-windows-satellite-under-device-operator.ps1",
+                        "id":  164,
+                        "purpose":  "Register this Windows machine as a child actuator, not as the master layer."
+                    },
+                    {
+                        "name":  "165-register-telegram-and-whatsapp-shells-under-device-layer.ps1",
+                        "id":  165,
+                        "purpose":  "Register Telegram and WhatsApp as shells that route to device operator."
+                    },
+                    {
+                        "name":  "166-register-android-satellite-contract.ps1",
+                        "id":  166,
+                        "purpose":  "Create Android Termux/prototype and production companion app contracts."
+                    },
+                    {
+                        "name":  "167-register-iot-printer-tv-discovery-contracts.ps1",
+                        "id":  167,
+                        "purpose":  "Add printer, casting, mDNS, UPnP, IPP, Wake-on-LAN, and camera contracts."
+                    },
+                    {
+                        "name":  "168-build-device-layer-admin-dashboard.ps1",
+                        "id":  168,
+                        "purpose":  "Create dashboard page showing devices, shells, IoT, receipts, and approvals."
+                    }
+                ],
+    "immediate_next":  "Run 162 to inspect existing leeway_device_operator routes before modifying code."
+}

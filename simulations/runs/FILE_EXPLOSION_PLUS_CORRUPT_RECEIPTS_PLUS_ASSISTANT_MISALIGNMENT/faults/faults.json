@@ -1,0 +1,9 @@
+{
+  "simulationId": "FILE_EXPLOSION_PLUS_CORRUPT_RECEIPTS_PLUS_ASSISTANT_MISALIGNMENT",
+  "injectedFaults": [
+    "many temporary files",
+    "duplicate corrupt receipts",
+    "assistant ignores LeeWay Standards",
+    "archive file referenced as current"
+  ]
+}

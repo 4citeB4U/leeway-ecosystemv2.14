@@ -1,0 +1,25 @@
+{
+  "creative_id": "creative-1783140852-a51d7f6b",
+  "creative_type": "infographic",
+  "title": "Leeway Runtime Fabric Map",
+  "prompt": "Create an infographic package showing open notebook, skill router, artifact viewer, meeting runtime, Seafile storage, and creation lanes.",
+  "audience": "Leeway users",
+  "goal": "explain the system visually",
+  "tone": "simple and polished",
+  "duration_minutes": 0,
+  "slide_count": 0,
+  "sections": 0,
+  "content": "# Leeway Runtime Fabric Map\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: infographic\nAudience: Leeway users\nGoal: explain the system visually\nTone: simple and polished\nPrompt: Create an infographic package showing open notebook, skill router, artifact viewer, meeting runtime, Seafile storage, and creation lanes.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Infographic Package\n\n## Headline\nWrite a headline that explains the value in under 8 words.\n\n## Visual Thesis\nOne sentence explaining what the viewer should understand visually.\n\n## Layout\nTop: headline and hook visual\nMiddle: 3 to 6 data/content blocks\nBottom: action step, brand, source/receipt line\n\n## Data Blocks\n1. Key point or statistic\n2. Supporting point\n3. Comparison or before/after\n4. Practical takeaway\n\n## Icon and Graphic Notes\n- Icon 1\n- Icon 2\n- Arrow/flow direction\n- Color hierarchy\n\n## Export Text Blocks\nProvide short copy blocks ready for designer/image generation.\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+  "versions": [
+    {
+      "version": 1,
+      "created_at": "2026-07-04T04:54:12.185801+00:00",
+      "source": "creation-layer-lock-proof",
+      "instructions": "initial_create_creative",
+      "content": "# Leeway Runtime Fabric Map\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: infographic\nAudience: Leeway users\nGoal: explain the system visually\nTone: simple and polished\nPrompt: Create an infographic package showing open notebook, skill router, artifact viewer, meeting runtime, Seafile storage, and creation lanes.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Infographic Package\n\n## Headline\nWrite a headline that explains the value in under 8 words.\n\n## Visual Thesis\nOne sentence explaining what the viewer should understand visually.\n\n## Layout\nTop: headline and hook visual\nMiddle: 3 to 6 data/content blocks\nBottom: action step, brand, source/receipt line\n\n## Data Blocks\n1. Key point or statistic\n2. Supporting point\n3. Comparison or before/after\n4. Practical takeaway\n\n## Icon and Graphic Notes\n- Icon 1\n- Icon 2\n- Arrow/flow direction\n- Color hierarchy\n\n## Export Text Blocks\nProvide short copy blocks ready for designer/image generation.\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+    }
+  ],
+  "metadata": {},
+  "created_at": "2026-07-04T04:54:12.185813+00:00",
+  "updated_at": "2026-07-04T04:54:12.185814+00:00"
+}

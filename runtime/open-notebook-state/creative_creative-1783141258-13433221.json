@@ -1,0 +1,29 @@
+{
+  "creative_id": "creative-1783141258-13433221",
+  "creative_type": "video_script",
+  "title": "Agent Lee Runtime Explainer Video",
+  "prompt": "Create a video script package for an Agent Lee runtime explainer video",
+  "audience": "",
+  "goal": "Create a complete usable creative production package.",
+  "tone": "clear, practical, production-ready",
+  "duration_minutes": 0,
+  "slide_count": 0,
+  "sections": 0,
+  "content": "# Agent Lee Runtime Explainer Video\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: video_script\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a video script package for an Agent Lee runtime explainer video\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Video Production Package\nEstimated Runtime: 5 minutes\n\n## Video Promise\nThis video should quickly capture attention, explain the value, and move the viewer toward action.\n\n## Hook\nStart with the strongest visual or verbal hook in the first 3 seconds.\n\n## Scene List\nScene 1: Hook visual and opening line\nScene 2: Problem/context\nScene 3: Main value or story\nScene 4: Proof/example\nScene 5: Call to action\n\n## Voiceover Script\nWrite the narration here in a concise, high-retention format.\n\n## Shot List\n- Presenter shot\n- Screen recording\n- Product/demo shot\n- B-roll\n- Text overlay\n\n## Captions\nCreate short caption lines that match the voiceover beats.\n\n## Thumbnail Prompt\nDescribe the thumbnail image, text, emotion, and composition.\n\n## Export Notes\n- 9:16 vertical version\n- 16:9 landscape version\n- 1:1 square version if needed\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+  "versions": [
+    {
+      "version": 1,
+      "created_at": "2026-07-04T05:00:58.472094+00:00",
+      "source": "creative-router-proof",
+      "instructions": "initial_create_creative",
+      "content": "# Agent Lee Runtime Explainer Video\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: video_script\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a video script package for an Agent Lee runtime explainer video\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Video Production Package\nEstimated Runtime: 5 minutes\n\n## Video Promise\nThis video should quickly capture attention, explain the value, and move the viewer toward action.\n\n## Hook\nStart with the strongest visual or verbal hook in the first 3 seconds.\n\n## Scene List\nScene 1: Hook visual and opening line\nScene 2: Problem/context\nScene 3: Main value or story\nScene 4: Proof/example\nScene 5: Call to action\n\n## Voiceover Script\nWrite the narration here in a concise, high-retention format.\n\n## Shot List\n- Presenter shot\n- Screen recording\n- Product/demo shot\n- B-roll\n- Text overlay\n\n## Captions\nCreate short caption lines that match the voiceover beats.\n\n## Thumbnail Prompt\nDescribe the thumbnail image, text, emotion, and composition.\n\n## Export Notes\n- 9:16 vertical version\n- 16:9 landscape version\n- 1:1 square version if needed\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+    }
+  ],
+  "metadata": {
+    "original_request": "Create a video script package for an Agent Lee runtime explainer video",
+    "router": "leeway_skill_router",
+    "creation_layer": "leeway_open_notebook"
+  },
+  "created_at": "2026-07-04T05:00:58.472103+00:00",
+  "updated_at": "2026-07-04T05:00:58.472104+00:00"
+}

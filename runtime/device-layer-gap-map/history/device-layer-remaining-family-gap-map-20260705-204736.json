@@ -1,0 +1,316 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_REMAINING_FAMILY_GAP_MAP_2026-07-05",
+    "timestamp":  "2026-07-05T20:47:36",
+    "verdict":  "LEEWAY_DEVICE_LAYER_REMAINING_FAMILY_GAP_MAP_WITH_WARNINGS",
+    "current_truth":  "Windows control plane is complete. Full Device Layer is not complete yet.",
+    "completed_families":  1,
+    "remaining_families":  9,
+    "families":  [
+                     {
+                         "family":  "windows",
+                         "current_status":  "PROVEN_CONTROL_PLANE_READY_LOCKED_CLEAN",
+                         "done":  true,
+                         "proven_lanes":  [
+                                              "real_open_app",
+                                              "real_browser_search",
+                                              "real_type_text"
+                                          ],
+                         "remaining_work":  [
+                                                "optional mouse-click lane",
+                                                "optional hotkey lane",
+                                                "optional screenshot/read-only lane",
+                                                "optional shell allowlist lane"
+                                            ],
+                         "risk":  "medium",
+                         "next_script":  "none_required_for_windows_core"
+                     },
+                     {
+                         "family":  "iot",
+                         "current_status":  "DISCOVERY_ROUTE_PRESENT_NOT_PROVEN",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "normalize IoT registry schema",
+                                                "create IoT approval policy",
+                                                "separate read-only discovery from physical control",
+                                                "add device capability map",
+                                                "create no-execute approval lane",
+                                                "prove lockback for any physical IoT command"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "214-iot-discovery-registry-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "printers",
+                         "current_status":  "DISCOVERY_ROUTE_PRESENT_NOT_PROVEN",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "normalize printer registry",
+                                                "separate status/read-only from print action",
+                                                "approval gate print-job lane",
+                                                "dry-run print preview",
+                                                "one approved print proof only after explicit approval"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "215-printer-discovery-registry-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "casting_tv",
+                         "current_status":  "DISCOVERY_ROUTE_PRESENT_NOT_PROVEN",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "normalize cast targets",
+                                                "separate discover/status from launch media",
+                                                "approval gate cast action",
+                                                "no autoplay without approval",
+                                                "one approved cast proof only after explicit approval"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "216-casting-discovery-registry-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "android",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "ADB adapter contract",
+                                                "device pairing policy",
+                                                "read-only inventory",
+                                                "approval gate tap/text/open-app",
+                                                "never run bulk phone control without approval"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "217-android-adb-adapter-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "ios",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "iOS capability assessment",
+                                                "Shortcuts/automation contract where available",
+                                                "read-only connection inventory",
+                                                "approval-gated action model",
+                                                "document limitations and manual-confirm boundaries"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "218-ios-adapter-capability-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "linux",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "Linux satellite contract",
+                                                "SSH/local agent boundary",
+                                                "read-only status",
+                                                "approval-gated shell allowlist",
+                                                "one approved action then lockback"
+                                            ],
+                         "risk":  "medium",
+                         "next_script":  "219-linux-satellite-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "macos",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "macOS satellite contract",
+                                                "accessibility permission boundary",
+                                                "read-only status",
+                                                "approval-gated app/open/type lane",
+                                                "one approved action then lockback"
+                                            ],
+                         "risk":  "medium",
+                         "next_script":  "220-macos-satellite-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "audio_camera_microphone",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "read-only device inventory",
+                                                "permission detection",
+                                                "no recording without approval",
+                                                "separate live-stream analysis contract",
+                                                "receipt-backed capture only after explicit approval"
+                                            ],
+                         "risk":  "high",
+                         "next_script":  "221-audio-camera-mic-registry-contract-no-execute.ps1"
+                     },
+                     {
+                         "family":  "smart_home",
+                         "current_status":  "NOT_STARTED",
+                         "done":  false,
+                         "proven_lanes":  [
+
+                                          ],
+                         "remaining_work":  [
+                                                "Home Assistant or vendor gateway decision",
+                                                "read-only entity inventory",
+                                                "approval-gated entity control",
+                                                "deny locks/doors/security-critical commands until separate policy",
+                                                "one approved low-risk command proof only"
+                                            ],
+                         "risk":  "critical",
+                         "next_script":  "222-smart-home-contract-no-execute.ps1"
+                     }
+                 ],
+    "safe_discovery_results":  {
+                                   "iot_discover":  {
+                                                        "ok":  true,
+                                                        "name":  "IoT Discover",
+                                                        "uri":  "http://127.0.0.1:5323/iot/discover",
+                                                        "data":  {
+                                                                     "ok":  true,
+                                                                     "route":  "/iot/discover",
+                                                                     "version":  "LEEWAY_DEVICE_LAYER_163_EXTENSION_2026-07-05",
+                                                                     "discovery_methods":  [
+                                                                                               "manual_registration",
+                                                                                               "mdns_zeroconf_contract",
+                                                                                               "upnp_ssdp_contract",
+                                                                                               "ipp_printer_discovery_contract",
+                                                                                               "tailscale_peer_contract"
+                                                                                           ],
+                                                                     "discovered":  {
+
+                                                                                    },
+                                                                     "note":  "Discovery contract route is active. This safe GET route does not write receipts. Active scan is added in the next approved implementation layer."
+                                                                 },
+                                                        "error":  ""
+                                                    },
+                                   "printers_discover":  {
+                                                             "ok":  true,
+                                                             "name":  "Printers Discover",
+                                                             "uri":  "http://127.0.0.1:5323/printers/discover",
+                                                             "data":  {
+                                                                          "ok":  true,
+                                                                          "route":  "/printers/discover",
+                                                                          "version":  "LEEWAY_DEVICE_LAYER_163_EXTENSION_2026-07-05",
+                                                                          "printer_protocols":  [
+                                                                                                    "IPP",
+                                                                                                    "CUPS",
+                                                                                                    "Windows Print Spooler",
+                                                                                                    "AirPrint"
+                                                                                                ],
+                                                                          "printers":  {
+
+                                                                                       },
+                                                                          "note":  "Printer discovery contract route is active. This safe GET route does not write receipts. Active IPP/CUPS scan is added in the next approved implementation layer."
+                                                                      },
+                                                             "error":  ""
+                                                         },
+                                   "casting_discover":  {
+                                                            "ok":  true,
+                                                            "name":  "Casting Discover",
+                                                            "uri":  "http://127.0.0.1:5323/casting/discover",
+                                                            "data":  {
+                                                                         "ok":  true,
+                                                                         "route":  "/casting/discover",
+                                                                         "version":  "LEEWAY_DEVICE_LAYER_163_EXTENSION_2026-07-05",
+                                                                         "casting_protocols":  [
+                                                                                                   "Chromecast",
+                                                                                                   "AirPlay",
+                                                                                                   "DLNA_UPnP",
+                                                                                                   "HDMI_local"
+                                                                                               ],
+                                                                         "targets":  {
+
+                                                                                     },
+                                                                         "note":  "Casting discovery contract route is active. This safe GET route does not write receipts. Active cast discovery is added in the next approved implementation layer."
+                                                                     },
+                                                            "error":  ""
+                                                        },
+                                   "tailscale_status":  {
+                                                            "ok":  true,
+                                                            "name":  "Tailscale Status",
+                                                            "uri":  "http://127.0.0.1:5323/network/tailscale/status",
+                                                            "data":  {
+                                                                         "ok":  false,
+                                                                         "status":  "TAILSCALE_NOT_AVAILABLE_IN_CONTAINER_OR_NOT_CONFIGURED",
+                                                                         "result":  {
+                                                                                        "ok":  false,
+                                                                                        "error":  "[Errno 2] No such file or directory: \u0027tailscale\u0027"
+                                                                                    }
+                                                                     },
+                                                            "error":  ""
+                                                        },
+                                   "network_status":  {
+                                                          "ok":  false,
+                                                          "name":  "Network Status",
+                                                          "uri":  "http://127.0.0.1:5323/network/status",
+                                                          "data":  null,
+                                                          "error":  "The remote server returned an error: (404) Not Found."
+                                                      }
+                               },
+    "windows_lock_posture":  {
+                                 "real_execution_enabled":  false,
+                                 "physical_execution_enabled":  false,
+                                 "read_only_status_enabled":  false,
+                                 "locked_clean":  true
+                             },
+    "recommended_next":  "214-iot-discovery-registry-contract-no-execute.ps1",
+    "safety":  {
+                   "gap_map_only":  true,
+                   "physical_actions_executed":  0,
+                   "iot_actions_executed":  0,
+                   "print_jobs_sent":  0,
+                   "casting_started":  0,
+                   "phone_actions_executed":  0,
+                   "messages_sent":  0,
+                   "shell_commands_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "actions":  [
+                    "PASS | GET Device Operator Health | http://127.0.0.1:5323/health",
+                    "PASS | GET Device Operator Status | http://127.0.0.1:5323/status",
+                    "PASS | GET Device Operator Routes | http://127.0.0.1:5323/routes",
+                    "PASS | GET Device Operator Admin Dashboard | http://127.0.0.1:5323/admin/device-layer/dashboard-data",
+                    "PASS | GET Devices Registry | http://127.0.0.1:5323/devices",
+                    "PASS | GET Satellites Registry | http://127.0.0.1:5323/satellites",
+                    "PASS | GET Shells Registry | http://127.0.0.1:5323/shells",
+                    "PASS | GET Device Operator Receipts | http://127.0.0.1:5323/receipts",
+                    "PASS | GET Real Alpha Health | http://127.0.0.1:7332/health",
+                    "PASS | GET Real Alpha Policy | http://127.0.0.1:7332/policy",
+                    "PASS | GET Real Alpha Approval Ledger | http://127.0.0.1:7332/approval-ledger",
+                    "PASS | Confirm Windows real-alpha remains locked | real=false physical=false read_only=false",
+                    "PASS | GET IoT Discover | http://127.0.0.1:5323/iot/discover",
+                    "PASS | GET Printers Discover | http://127.0.0.1:5323/printers/discover",
+                    "PASS | GET Casting Discover | http://127.0.0.1:5323/casting/discover",
+                    "PASS | GET Tailscale Status | http://127.0.0.1:5323/network/tailscale/status",
+                    "FAIL | GET Network Status | http://127.0.0.1:5323/network/status | The remote server returned an error: (404) Not Found.",
+                    "PASS | Write gap map JSON | E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-gap-map\\history\\device-layer-remaining-family-gap-map-20260705-204736.json",
+                    "PASS | Write latest gap map JSON | E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-gap-map\\latest\\device-layer-remaining-family-gap-map-latest.json",
+                    "PASS | Write gap map Markdown | E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-gap-map\\history\\device-layer-remaining-family-gap-map-20260705-204736.md",
+                    "PASS | POST Remaining Family Gap Map Device Heartbeat | http://127.0.0.1:5323/devices/agent-lee-device-layer-remaining-family-gap-map/heartbeat",
+                    "PASS | POST Remaining Family Gap Map Satellite Heartbeat | http://127.0.0.1:5323/satellites/agent-lee-device-layer-remaining-family-gap-map/heartbeat",
+                    "PASS | GET Admin Dashboard After Gap Map | http://127.0.0.1:5323/admin/device-layer/dashboard-data"
+                ],
+    "warnings":  [
+
+                 ]
+}

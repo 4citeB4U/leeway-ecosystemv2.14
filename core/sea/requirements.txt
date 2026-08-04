@@ -1,0 +1,13 @@
+# SEA (Single Execution Authority) Requirements
+
+# Core dependencies
+psutil>=5.9.0          # System monitoring
+
+# Phase 2: Control Plane API
+fastapi>=0.104.0       # API framework
+uvicorn[standard]>=0.24.0  # ASGI server
+pydantic>=2.0.0        # Data validation
+websockets>=12.0       # WebSocket support
+
+# Phase 3: Node UI (optional - installed separately in UI directory)
+# See core/sea/ui/package.json for Node.js dependencies

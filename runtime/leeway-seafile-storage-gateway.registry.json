@@ -1,0 +1,23 @@
+{
+  "seafile_shared_source": "/var/lib/docker/volumes/leeway-seafile-data/_data",
+  "created_at": "2026-07-03T19:49:31.7876548-05:00",
+  "host_url": "http://localhost:5314",
+  "container": "leeway_seafile_storage_gateway",
+  "service": "leeway_seafile_storage_gateway",
+  "image": "leeway_seafile_storage_gateway:local",
+  "docker_url": "http://leeway_seafile_storage_gateway:5314",
+  "endpoints": {
+    "store_generated_image": "/store/generated-image",
+    "backup_run": "/backup/run",
+    "backup_status": "/backup/status",
+    "health": "/health",
+    "store_receipt": "/store/receipt",
+    "store_3d_package": "/store/3d-package",
+    "status": "/status",
+    "latest_receipt": "/receipts/latest",
+    "openapi": "/openapi.json",
+    "store_notebook_export": "/store/notebook-export",
+    "store_research_brief": "/store/research-brief"
+  },
+  "network": "leeway-ecosystemv214_leeway-net"
+}

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "targetUrl": "https://example.com",
+  "source": "remote-url",
+  "screenshotPath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-shot-2026-05-04T11-12-21-480Z.png",
+  "reportPath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-report-2026-05-04T11-12-21-480Z.json",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "domSummary": {
+    "title": "Example Domain",
+    "headings": [
+      "Example Domain"
+    ],
+    "buttons": [],
+    "landmarks": [],
+    "forms": 0,
+    "images": 0,
+    "links": 1
+  },
+  "summary": "Visual browser source: remote-url\nTarget URL: https://example.com\nPage title: Example Domain\nHeadings: Example Domain\nButtons: none detected\nLandmarks: none detected\nForms: 0 | Images: 0 | Links: 1\nConsole errors: 1 | Page errors: 0\nScreenshot: C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-shot-2026-05-04T11-12-21-480Z.png\nBrowser report: C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-report-2026-05-04T11-12-21-480Z.json"
+}

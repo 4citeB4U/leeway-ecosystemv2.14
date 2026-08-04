@@ -1,0 +1,29 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "MCP",
+    "TAG": "CORE.AGENT_LEE.MCP.MCP_REGISTRY",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+  "name": "agent-lee-leeway-mcp-registry",
+  "tools": [
+    "leeway-visual-intelligence-system",
+    "leeway.scan",
+    "leeway.fix",
+    "leeway.verify",
+    "leeway.model.route",
+    "persona.runtime.bridge",
+    "write.policy",
+    "engineering.loop",
+    "sdk.validator",
+    "agent.registry.loader",
+    "agents-mcp/novelist-recursive",
+    "agents-mcp/character-consistency",
+    "agents-mcp/scholar-storm",
+    "agents-mcp/context-expander",
+    "agents-mcp/cinematic-video",
+    "agents-mcp/universal-publisher",
+    "markmap-mcp"
+  ]
+}
+

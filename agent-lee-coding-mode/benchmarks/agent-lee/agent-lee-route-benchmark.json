@@ -1,0 +1,58 @@
+﻿[
+    {
+        "Mode":  "casual-fast",
+        "Seconds":  0.02,
+        "Route":  "casual-fast",
+        "FirstLine":  "Route: casual-fast",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "status-fast",
+        "Seconds":  0,
+        "Route":  "status-fast",
+        "FirstLine":  "Agent Lee\u0027s Coding Mode is online.",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "light-fast",
+        "Seconds":  0,
+        "Route":  "light-fast",
+        "FirstLine":  "Route: light-fast",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "turbo-template",
+        "Seconds":  0,
+        "Route":  "turbo-template",
+        "FirstLine":  "Route: turbo-template",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "turbo-code",
+        "Seconds":  0,
+        "Route":  "turbo-template",
+        "FirstLine":  "Route: turbo-template",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "coding-fast",
+        "Seconds":  15.79,
+        "Route":  "coding-speed",
+        "FirstLine":  "Route: coding-speed",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "review-governed",
+        "Seconds":  0,
+        "Route":  "review-template",
+        "FirstLine":  "Route: review-template",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "full-heavy-governed",
+        "Seconds":  150.03,
+        "Route":  "",
+        "FirstLine":  "The remote server returned an error: (500) Internal Server Error.",
+        "Status":  "FAIL"
+    }
+]

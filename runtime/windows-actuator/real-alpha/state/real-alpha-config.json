@@ -1,0 +1,38 @@
+﻿{
+    "version":  "LEEWAY_APPROVED_REAL_WINDOWS_ACTUATOR_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:05:44",
+    "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha",
+    "windows_device_id":  "windows-agent-lee",
+    "host":  "127.0.0.1",
+    "port":  7332,
+    "url":  "http://127.0.0.1:7332",
+    "device_operator_url":  "http://127.0.0.1:5323",
+    "dry_run_actuator_url":  "http://127.0.0.1:7331",
+    "approval_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate",
+    "approval_policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\policy\\real-windows-actuator-approval-policy.json",
+    "approval_index_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approval-index.json",
+    "real_execution_block_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\policies\\real-execution-blocked-until-approved.json",
+    "receipt_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\receipts",
+    "mode":  "LOCKED_APPROVAL_REQUIRED",
+    "real_execution_default_enabled":  false,
+    "allowed_real_actions_alpha":  [
+                                       "open_app",
+                                       "open_url"
+                                   ],
+    "blocked_real_actions_alpha":  [
+                                       "mouse_move",
+                                       "mouse_click",
+                                       "type_text",
+                                       "hotkey",
+                                       "screenshot",
+                                       "file_open",
+                                       "file_reveal",
+                                       "print",
+                                       "cast",
+                                       "shell_allowed_command",
+                                       "send_message",
+                                       "send_email",
+                                       "send_sms",
+                                       "dial_phone"
+                                   ]
+}

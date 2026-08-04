@@ -1,0 +1,26 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="0.5" cy="0.5" r="0.7" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7FFFD4" />
+      <stop offset="100%" stop-color="#0B3D91" />
+    </radialGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5F3FC" />
+      <stop offset="100%" stop-color="#0B3D91" />
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="256" fill="#02020B" />
+  <circle cx="512" cy="512" r="400" fill="url(#g1)" opacity="0.18" />
+  <circle cx="512" cy="512" r="312" fill="url(#g2)" opacity="0.22" />
+  <g filter="url(#shadow)">
+    <path d="M284 364L512 216L740 364V660L512 808L284 660V364Z" fill="#00FFF0" fill-opacity="0.2" />
+    <path d="M284 364L512 216L740 364V660L512 808L284 660V364Z" stroke="#7EFFD9" stroke-width="48" />
+    <path d="M298 496H726" stroke="#9BFFFE" stroke-width="32" stroke-linecap="round" />
+    <path d="M452 640L512 704L572 640" stroke="#9BFFFE" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="28" stdDeviation="52" flood-color="#00FFE0" flood-opacity="0.15" />
+    </filter>
+  </defs>
+</svg>

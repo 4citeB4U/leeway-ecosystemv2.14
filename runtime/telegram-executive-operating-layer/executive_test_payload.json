@@ -1,0 +1,6 @@
+{
+  "source": "powershell-test",
+  "user_id": "owner",
+  "request": "Create a full story with pictures and put it into a PDF.",
+  "urgency": "normal"
+}

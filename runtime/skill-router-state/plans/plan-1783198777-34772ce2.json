@@ -1,0 +1,83 @@
+{
+  "plan_id": "plan-1783198777-34772ce2",
+  "status": "AWAITING_APPROVAL",
+  "source": "powershell-test",
+  "user_id": "owner",
+  "original_request": "Create a full story with pictures and put it into a PDF.",
+  "domain": "story",
+  "planning_depth": "HEAVY",
+  "requires_approval": true,
+  "created_at": "2026-07-04T20:59:37.087666+00:00",
+  "updated_at": "2026-07-04T20:59:37.087720+00:00",
+  "steps": [
+    "Define story premise, genre, theme, and target emotion.",
+    "Create characters, hero/lead, conflict, setting, stakes, and ending.",
+    "Outline beginning, middle, turning point, climax, and resolution.",
+    "Write the full story without repeated chapters or filler loops.",
+    "Run quality check for repetition, arc, emotional payoff, and completeness.",
+    "Ask for human review and revise if needed.",
+    "Export final story and receipt."
+  ],
+  "tools": [
+    {
+      "tool": "leeway_open_notebook",
+      "role": "Create the plan, creative package, version history, and structured content."
+    },
+    {
+      "tool": "leeway_agent_skills",
+      "role": "Select available skills, worker lanes, and capability requirements."
+    },
+    {
+      "tool": "leeway_skill_router",
+      "role": "Coordinate planning, approval, routing, and receipts."
+    },
+    {
+      "tool": "leeway_artifact_viewer",
+      "role": "Expose plan rooms, previews, website rooms, infographic rooms, and delivery links."
+    },
+    {
+      "tool": "leeway_seafile_storage_gateway",
+      "role": "Govern durable storage, manifests, receipts, and memory control."
+    },
+    {
+      "tool": "voice_lane",
+      "role": "Perform narration, rap, singing, or podcast voice when performance mode is available."
+    },
+    {
+      "tool": "document_runtime",
+      "role": "Export written script/package."
+    }
+  ],
+  "mockups": [],
+  "failovers": [
+    {
+      "plan": "Plan A",
+      "rule": "Use the best matching runtime lane and return the intended artifact."
+    },
+    {
+      "plan": "Plan B",
+      "rule": "If a render lane fails, return the plan room, text package, and receipt instead of pretending the final artifact exists."
+    },
+    {
+      "plan": "Plan C",
+      "rule": "If execution is blocked, create a work order for the missing lane and ask Leonard for approval or more data."
+    }
+  ],
+  "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+  "execution": {
+    "approved": false,
+    "started": false,
+    "completed": false,
+    "result": null
+  },
+  "standards": [
+    "Do not pretend the work is complete.",
+    "Plan before major creation.",
+    "Use the correct tool or worker lane.",
+    "Ask for approval before heavy execution.",
+    "Return links, files, receipts, and next actions.",
+    "Keep Agent Lee's public voice poetic, grounded, brief, and disciplined."
+  ],
+  "visual_previews": [],
+  "visual_preview_status": "NOT_REQUIRED"
+}

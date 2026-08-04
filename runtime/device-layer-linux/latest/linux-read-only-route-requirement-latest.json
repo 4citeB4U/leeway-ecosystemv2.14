@@ -1,0 +1,56 @@
+﻿{
+    "version":  "LEEWAY_LINUX_READ_ONLY_ROUTE_REQUIREMENT_246",
+    "timestamp":  "2026-07-05T22:14:20",
+    "family":  "linux",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_LINUX_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/linux/discover",
+                                         "purpose":  "Return Linux inventory stub without SSH or shell execution.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/linux/status",
+                                         "purpose":  "Return Linux family readiness with shell/actuator disabled and approval required.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/linux/registry",
+                                         "purpose":  "Return normalized Linux registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/linux/shell/status",
+                                         "purpose":  "Return shell disabled status and approval contract.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/linux/actuator/status",
+                                         "purpose":  "Return actuator disabled status and action categories requiring approval.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no SSH connection",
+                      "no shell command",
+                      "no remote host connection",
+                      "no file read",
+                      "no file write",
+                      "no app open",
+                      "no click",
+                      "no typing",
+                      "no hotkey",
+                      "no service/package/system mutation",
+                      "no physical action"
+                  ]
+}

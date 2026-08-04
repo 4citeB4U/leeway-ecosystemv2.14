@@ -1,0 +1,83 @@
+{
+  "schema": "leeway-skills-manifest-v1",
+  "applicationId": "leeway-ide-single-canvas",
+  "skills": [
+    {
+      "name": "graphify",
+      "source": "C:/Users/Leona/.agents/skills/graphify",
+      "description": "Knowledge graph builder for codebases, docs, and media",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.GRAPHIFY"
+    },
+    {
+      "name": "loopy",
+      "source": "C:/Users/Leona/.agents/skills/loopy",
+      "description": "Loop crafting, discovery, audit, run, and debrief",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.LOOPY"
+    },
+    {
+      "name": "loop-library",
+      "source": "C:/Users/Leona/.agents/skills/loop-library",
+      "description": "Legacy alias for loopy",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.LOOP_LIBRARY"
+    },
+    {
+      "name": "agent-browser",
+      "source": "C:/Users/Leona/.agents/skills/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.AGENT_BROWSER"
+    },
+    {
+      "name": "plan",
+      "source": "C:/Users/Leona/.agents/skills/plan",
+      "description": "Planning agent for task breakdown",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.PLAN"
+    },
+    {
+      "name": "research",
+      "source": "C:/Users/Leona/.agents/skills/research",
+      "description": "Explore and search codebases",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.RESEARCH"
+    },
+    {
+      "name": "skill-creator",
+      "source": "C:/Users/Leona/.agents/skills/skill-creator",
+      "description": "Create, modify, and test skills",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.SKILL_CREATOR"
+    },
+    {
+      "name": "microsoft-foundry",
+      "source": "C:/Users/Leona/.agents/skills/microsoft-foundry",
+      "description": "Deploy, evaluate, and manage Foundry agents",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.MICROSOFT_FOUNDRY"
+    },
+    {
+      "name": "frontend-design",
+      "source": "C:/Users/Leona/.agents/skills/frontend-design",
+      "description": "Design and mockup frontend interfaces",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.FRONTEND_DESIGN"
+    },
+    {
+      "name": "init",
+      "source": "C:/Users/Leona/.agents/skills/init",
+      "description": "Initialize repo with AGENTS.md",
+      "connectedTo": ["opencode", "leeway-ide"],
+      "leewayTag": "SKILL.INIT"
+    }
+  ],
+  "ecosystem": {
+    "opencodeConfigPath": "C:/Users/Leona/.config/opencode/opencode.jsonc",
+    "opencodeSkillPaths": ["C:/Users/Leona/.agents/skills"],
+    "loopCatalog": "https://signals.forwardfuture.com/loop-library/catalog.json",
+    "runtimeFabric": "http://127.0.0.1:4001"
+  },
+  "updatedAt": "2026-07-29T23:01:02.0000000+00:00"
+}

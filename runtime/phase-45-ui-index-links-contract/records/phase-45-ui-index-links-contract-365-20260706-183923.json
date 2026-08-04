@@ -1,0 +1,263 @@
+﻿{
+    "version":  "LEEWAY_PHASE_45_UI_INDEX_LINKS_CONTRACT_365",
+    "phase":  45,
+    "timestamp":  "2026-07-06T18:39:26",
+    "verdict":  "LEEWAY_PHASE_45_UI_INDEX_LINKS_CONTRACT_365_NO_EXECUTE_CLEAN",
+    "ui_index_links_contract":  true,
+    "contract_only":  true,
+    "proposed_page":  "/device-layer-links",
+    "proposed_api_base":  "/api/device-layer-links",
+    "link_count":  7,
+    "link_map":  [
+                     {
+                         "title":  "Device Readiness",
+                         "href":  "/device-readiness",
+                         "api_base":  "/api/device-readiness",
+                         "purpose":  "Read readiness summaries and safety state.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Printer IPP Locked Stub",
+                         "href":  "/printer-ipp-locked-stub",
+                         "api_base":  "/api/printer-ipp-locked-stub",
+                         "purpose":  "View locked printer stub status. No printing.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Phone Satellite",
+                         "href":  "/phone-satellite",
+                         "api_base":  "/api/phone-satellite",
+                         "purpose":  "View phone satellite draft-only status. No phone action.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Router Status",
+                         "href":  "/router-status",
+                         "api_base":  "/api/router-status",
+                         "purpose":  "View router read-only status. No router action.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Device Layer Index",
+                         "href":  "/device-layer-index",
+                         "api_base":  "/api/device-layer-index",
+                         "purpose":  "View completed Device Layer index.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Device Layer Master Status",
+                         "href":  "/device-layer-master-status",
+                         "api_base":  "/api/device-layer-master-status",
+                         "purpose":  "View master status across completed lanes.",
+                         "action_authority":  false,
+                         "live":  true
+                     },
+                     {
+                         "title":  "Device Layer Hold And Lock",
+                         "href":  "/device-layer-hold-and-lock",
+                         "api_base":  "/api/device-layer-hold-and-lock",
+                         "purpose":  "View hold-and-lock rules and held lanes.",
+                         "action_authority":  false,
+                         "live":  true
+                     }
+                 ],
+    "proposed_get_routes":  [
+                                {
+                                    "route":  "/api/device-layer-links/summary",
+                                    "method":  "GET",
+                                    "purpose":  "Summarize no-action Device Layer navigation links."
+                                },
+                                {
+                                    "route":  "/api/device-layer-links/links",
+                                    "method":  "GET",
+                                    "purpose":  "List linked GET-only pages."
+                                },
+                                {
+                                    "route":  "/api/device-layer-links/safety",
+                                    "method":  "GET",
+                                    "purpose":  "Return no-action safety policy for links page."
+                                },
+                                {
+                                    "route":  "/api/device-layer-links/proof-chain",
+                                    "method":  "GET",
+                                    "purpose":  "Return proof-chain supporting the links page."
+                                }
+                            ],
+    "forbidden_routes":  [
+                             {
+                                 "route":  "/api/device-layer-links/execute",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot execute"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/device-control",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot control devices"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/onboard",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot onboard"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/print",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot print"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/phone-control",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot control phone"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/router-action",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot perform router action"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/scan",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot scan"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/unlock",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot unlock authority"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/approve",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot approve"
+                             },
+                             {
+                                 "route":  "/api/device-layer-links/physical",
+                                 "method":  "POST",
+                                 "reason":  "links page cannot perform physical action"
+                             }
+                         ],
+    "proposed_files_for_future_patch":  [
+                                            {
+                                                "path":  "src\\app\\api\\device-layer-links\\[...path]\\route.ts",
+                                                "purpose":  "GET-only links API.",
+                                                "create_in_365":  false
+                                            },
+                                            {
+                                                "path":  "src\\lib\\deviceLayerLinksClient.ts",
+                                                "purpose":  "GET-only links client.",
+                                                "create_in_365":  false
+                                            },
+                                            {
+                                                "path":  "src\\components\\AgentLeeDeviceLayerLinksPanel.tsx",
+                                                "purpose":  "No-action page linking completed Device Layer pages.",
+                                                "create_in_365":  false
+                                            },
+                                            {
+                                                "path":  "src\\app\\device-layer-links\\page.tsx",
+                                                "purpose":  "No-action links page.",
+                                                "create_in_365":  false
+                                            }
+                                        ],
+    "no_action_policy":  {
+                             "page_navigation_only":  true,
+                             "approval_granted":  false,
+                             "authority_unlocked":  false,
+                             "execution_authorized":  false,
+                             "physical_action_authorized":  false,
+                             "action_authority_for_all_links":  false,
+                             "no_execution":  true,
+                             "no_device_control":  true,
+                             "no_onboarding":  true,
+                             "no_printer_action":  true,
+                             "no_phone_action":  true,
+                             "no_router_action":  true,
+                             "no_network_scan":  true,
+                             "no_port_scan":  true,
+                             "no_authority_unlock":  true,
+                             "no_physical_action":  true
+                         },
+    "acceptance_gates_for_366":  [
+                                     "365 UI index links contract clean",
+                                     "all linked pages live",
+                                     "hold-and-lock remains locked",
+                                     "Clear Skies intact",
+                                     "GET-only links API",
+                                     "no POST action route",
+                                     "no approval",
+                                     "no authority unlock",
+                                     "no execution",
+                                     "no device control",
+                                     "no physical action"
+                                 ],
+    "patch_applied_in_365":  false,
+    "source_files_created_in_365":  false,
+    "frontend_files_created_in_365":  false,
+    "api_routes_created_in_365":  false,
+    "docker_created_in_365":  false,
+    "process_started_in_365":  false,
+    "process_restarted_in_365":  false,
+    "process_stopped_in_365":  false,
+    "valid_save_performed_in_365":  false,
+    "identity_state_mutated_in_365":  false,
+    "approval_granted_in_365":  false,
+    "authority_unlocked_in_365":  false,
+    "printer_action_performed":  false,
+    "phone_action_performed":  false,
+    "router_action_performed":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "physical_action_lane_performed":  false,
+    "write_scope":  "PHASE_45_UI_INDEX_LINKS_CONTRACT_ONLY",
+    "live_state":  {
+                       "clear_skies":  true,
+                       "all_pages_live":  true,
+                       "hold_locked":  true,
+                       "hold_post_block_status":  423,
+                       "runtime_process_probe_count":  26,
+                       "network_adapter_probe_count":  7
+                   },
+    "proof_chain":  {
+                        "template_summary_364_clean":  true,
+                        "template_363_clean":  true,
+                        "closeout_362_clean":  true,
+                        "readiness_refresh_361_clean":  true,
+                        "hold_summary_358_clean":  true,
+                        "master_summary_354_clean":  true,
+                        "index_summary_350_clean":  true,
+                        "router_summary_346_clean":  true,
+                        "phone_summary_339_clean":  true,
+                        "printer_summary_332_clean":  true,
+                        "readiness_summary_319_clean":  true
+                    },
+    "safety":  {
+                   "no_patch_in_365":  true,
+                   "no_process_start_in_365":  true,
+                   "no_process_restart_in_365":  true,
+                   "no_process_stop_in_365":  true,
+                   "no_docker_created_in_365":  true,
+                   "no_valid_save_in_365":  true,
+                   "no_identity_state_mutation":  true,
+                   "no_approval_granted":  true,
+                   "no_authority_unlock":  true,
+                   "no_execution":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_printer_action":  true,
+                   "no_phone_action":  true,
+                   "no_router_action":  true,
+                   "no_scan":  true,
+                   "no_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "366-apply-device-layer-links-get-only-ui-no-execute.ps1"
+}

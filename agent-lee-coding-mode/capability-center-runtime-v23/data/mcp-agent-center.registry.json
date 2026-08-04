@@ -1,0 +1,293 @@
+{
+    "schema":  "leeway-mcp-agent-center-registry-v23-1",
+    "centerId":  "leeway-mcp-agent-center",
+    "sourceInventory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-true-agent-worker-mcp-scan-v4-20260627-223626\\leeway-true-agent-worker-mcp-inventory-v4.json",
+    "status":  "WARM_CENTER_READY_DECLARED",
+    "mcpAgents":  [
+                      {
+                          "id":  "aaa-helper-agents",
+                          "name":  "AAAHelperAgents",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "scan_endpoints",
+                          "capabilities":  [
+                                               "cap:verify.http",
+                                               "cap:verify.ui"
+                                           ]
+                      },
+                      {
+                          "id":  "agent-registry-mcp",
+                          "name":  "AgentRegistryMCP",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "list_agents",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:memory.write"
+                                           ]
+                      },
+                      {
+                          "id":  "clerk-archive-mcp",
+                          "name":  "ClerkArchive",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "governance",
+                          "healthCheck":  "coverage_report",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:memory.write"
+                                           ]
+                      },
+                      {
+                          "id":  "desktop-commander-agent-mcp",
+                          "name":  "DesktopCommanderAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "execution",
+                          "healthCheck":  "capture_state",
+                          "capabilities":  [
+                                               "cap:terminal.exec",
+                                               "cap:fs.write"
+                                           ]
+                      },
+                      {
+                          "id":  "docs-librarian-mcp",
+                          "name":  "LibrarianAegis",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "governance",
+                          "healthCheck":  "scan_docs",
+                          "capabilities":  [
+                                               "cap:memory.read"
+                                           ]
+                      },
+                      {
+                          "id":  "docs-rag-agent-mcp",
+                          "name":  "DocsRAGAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "data",
+                          "healthCheck":  "fetch_doc_snippet",
+                          "capabilities":  [
+                                               "cap:memory.read"
+                                           ]
+                      },
+                      {
+                          "id":  "health-agent-mcp",
+                          "name":  "HealthAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "ping_service",
+                          "capabilities":  [
+                                               "cap:verify.http"
+                                           ]
+                      },
+                      {
+                          "id":  "insforge-agent-mcp",
+                          "name":  "InsForgeAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "data",
+                          "healthCheck":  "fetch_memory",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:memory.write"
+                                           ]
+                      },
+                      {
+                          "id":  "leeway-standards-agent",
+                          "name":  "LeewayStandardsAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "browser",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "governance",
+                          "healthCheck":  "get_last_snapshot",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:memory.write"
+                                           ]
+                      },
+                      {
+                          "id":  "marshal-verify",
+                          "name":  "MarshalVerify",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "browser",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "governance",
+                          "healthCheck":  "quick_check",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:verify.http"
+                                           ]
+                      },
+                      {
+                          "id":  "memory-agent-mcp",
+                          "name":  "MemoryAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "recall_context",
+                          "capabilities":  [
+                                               "cap:memory.read",
+                                               "cap:memory.write"
+                                           ]
+                      },
+                      {
+                          "id":  "planner-agent-mcp",
+                          "name":  "PlannerAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "make_plan",
+                          "capabilities":  [
+                                               "cap:plan"
+                                           ]
+                      },
+                      {
+                          "id":  "playwright-agent-mcp",
+                          "name":  "PlaywrightAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "execution",
+                          "healthCheck":  "open_page",
+                          "capabilities":  [
+                                               "cap:browser.navigate",
+                                               "cap:browser.extract"
+                                           ]
+                      },
+                      {
+                          "id":  "retention-janitor-mcp",
+                          "name":  "JanitorSentinel",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "governance",
+                          "healthCheck":  "compute_retention_plan",
+                          "capabilities":  [
+                                               "cap:fs.write",
+                                               "cap:memory.read"
+                                           ]
+                      },
+                      {
+                          "id":  "scheduling-agent-mcp",
+                          "name":  "SchedulingAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "data",
+                          "healthCheck":  "list_events",
+                          "capabilities":  [
+                                               "cap:schedule.read",
+                                               "cap:schedule.write"
+                                           ]
+                      },
+                      {
+                          "id":  "spline-agent-mcp",
+                          "name":  "SplineAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "data",
+                          "healthCheck":  "generate_3d_spec",
+                          "capabilities":  [
+                                               "cap:vision.3d"
+                                           ]
+                      },
+                      {
+                          "id":  "stitch-agent-mcp",
+                          "name":  "StitchAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "delivery",
+                          "healthCheck":  "generate_component",
+                          "capabilities":  [
+                                               "cap:ui.generate"
+                                           ]
+                      },
+                      {
+                          "id":  "testsprite-agent-mcp",
+                          "name":  "TestSpriteAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "run_unit_tests",
+                          "capabilities":  [
+                                               "cap:verify.tests"
+                                           ]
+                      },
+                      {
+                          "id":  "validation-agent-mcp",
+                          "name":  "ValidationAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "backbone",
+                          "healthCheck":  "discover_agents",
+                          "capabilities":  [
+                                               "cap:verify.http"
+                                           ]
+                      },
+                      {
+                          "id":  "vision-agent-mcp",
+                          "name":  "VisionAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "data",
+                          "healthCheck":  "describe_screenshot",
+                          "capabilities":  [
+                                               "cap:vision.analyze"
+                                           ]
+                      },
+                      {
+                          "id":  "voice-agent-mcp",
+                          "name":  "VoiceAgent",
+                          "category":  "TRUE_MCP_AGENT",
+                          "status":  "online",
+                          "runtime":  "node",
+                          "deploymentLocation":  "cerebral",
+                          "layer":  "delivery",
+                          "healthCheck":  "speak_response",
+                          "capabilities":  [
+                                               "cap:voice.tts",
+                                               "cap:voice.translate"
+                                           ]
+                      }
+                  ]
+}

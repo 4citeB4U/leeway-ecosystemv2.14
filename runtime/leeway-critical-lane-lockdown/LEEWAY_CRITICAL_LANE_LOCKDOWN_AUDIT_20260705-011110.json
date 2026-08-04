@@ -1,0 +1,1202 @@
+{
+  "verdict": "LEEWAY_CRITICAL_LANE_LOCKDOWN_AUDIT_COMPLETE",
+  "created_at": "2026-07-05T02:44:12.8822115-05:00",
+  "root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+  "architecture_path": {
+    "Length": 121
+  },
+  "critical_lane_count": 20,
+  "critical_failure_count": 15,
+  "autonomous_operator_proof": {
+    "phone": "NO",
+    "desktop": "NO",
+    "browser": "NO",
+    "email": "NO",
+    "calendar": "NO"
+  },
+  "lane_audits": [
+    {
+      "lane": "phone",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_phone_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_phone_runtime:local",
+        "role": "provider_phone_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_DEVICE_OR_TELEPHONY_PROVIDER_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5332/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        },
+        "log_tail": {
+          "Length": 1055
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "adb"
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "desktop",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": [
+        {
+          "name": "leeway_desktop_runtime",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 15 hours",
+          "image": "leeway_desktop_runtime:local",
+          "role": "operator_desktop_runtime",
+          "lane_truth": "PARTIAL_REQUIRES_NATIVE_DESKTOP_OPERATOR_WIRING_AND_APPROVAL",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5334/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 175
+            }
+          },
+          "log_tail": {
+            "Length": 1055
+          }
+        },
+        {
+          "name": "leeway_device_operator",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 28 hours",
+          "image": "leeway_device_operator:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5323/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 157
+            }
+          },
+          "log_tail": "INFO:     Started server process [1]\r\nINFO:     172.18.0.1:50894 - \"POST /cursor/set-profile HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50904 - \"POST /channels/register HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50910 - \"POST /channels/register HTTP/1.1\" 200 OK\r\nINFO:     Waiting for application startup.\r\nINFO:     Application startup complete.\r\nINFO:     Uvicorn running on http://0.0.0.0:5323 (Press CTRL+C to quit)\r\nINFO:     172.18.0.1:50912 - \"POST /channels/register HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50916 - \"POST /devices/register HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50932 - \"POST /devices/register HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50934 - \"POST /device/action/request HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50938 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50944 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50958 - \"GET /channels/list HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:50970 - \"GET /devices/list HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35912 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35924 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35926 - \"GET /cursor/profile HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35928 - \"GET /channels/list HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35932 - \"GET /devices/list HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42698 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:36790 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:36804 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:59204 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34922 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34938 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34952 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:44026 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:44028 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:44036 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:48014 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:33582 - \"GET /healt"
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "PowerShell"
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "browser",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_browser_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_browser_runtime:local",
+        "role": "operator_browser_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PLAYWRIGHT_OR_BROWSER_OPERATOR_WIRING",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5333/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 175
+          }
+        },
+        "log_tail": {
+          "Length": 1055
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "browser"
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "email",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_email_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_email_runtime:local",
+        "role": "provider_email_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PROVIDER_CREDENTIALS_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5330/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        },
+        "log_tail": {
+          "Length": 1115
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "PROVIDER"
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "calendar",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_calendar_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_calendar_runtime:local",
+        "role": "provider_calendar_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_CALENDAR_PROVIDER_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5331/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 178
+          }
+        },
+        "log_tail": {
+          "Length": 1115
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "PROVIDER"
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "license",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_license_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_license_runtime:local",
+        "role": "business_license_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_POLICY_KEYS",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5335/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 175
+          }
+        },
+        "log_tail": {
+          "Length": 1115
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "policy"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "installer",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_installer_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_installer_runtime:local",
+        "role": "distribution_installer_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PACKAGE_BUILDER_WIRING",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5336/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 181
+          }
+        },
+        "log_tail": {
+          "Length": 1283
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "Update"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "pwa",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "container_reports": {
+        "name": "leeway_pwa_dashboard",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_pwa_dashboard:local",
+        "role": "agent_interface_pwa",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5337/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 177
+          }
+        },
+        "log_tail": {
+          "Length": 1115
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "manifest"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "skills_room",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "container_reports": [
+        {
+          "name": "leeway_skill_router",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 15 hours",
+          "image": "leeway_skill_router:local",
+          "role": "core_planning_router",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5324/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 142
+            }
+          },
+          "log_tail": "INFO:     Started server process [1]\r\nINFO:     172.18.0.1:37364 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     Waiting for application startup.\r\nINFO:     Application startup complete.\r\nINFO:     172.18.0.1:37376 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:37386 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:37392 - \"GET /plan/latest HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:40690 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:56068 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:56080 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:34778 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34438 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34454 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:34468 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54556 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:55706 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:50688 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:51604 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42740 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42752 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     Uvicorn running on http://0.0.0.0:5324 (Press CTRL+C to quit)\r\nINFO:     172.18.0.1:42756 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:34766 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:40556 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:40568 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:40576 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:60804 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:44662 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:55714 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:38026 - \"POST /route HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:43976 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:51090 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:37352 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:43548 - \"G"
+        },
+        {
+          "name": "leeway_agent_skills",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 5 hours",
+          "image": "leeway_agent_skills:local",
+          "role": "core_discovery_registry",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5327/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 139
+            }
+          },
+          "log_tail": "INFO:     172.18.0.1:47556 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     Uvicorn running on http://0.0.0.0:5327 (Press CTRL+C to quit)\r\nINFO:     172.18.0.1:47570 - \"GET /truth/summary HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:47584 - \"GET /discovery/agent-lee-truth-map HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:47600 - \"GET /truth/task/phone HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:39380 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:39392 - \"GET /discovery/agent-lee-capabilities HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:39396 - \"GET /discovery/containers HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:39406 - \"GET /discovery/routes HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:38238 - \"GET /truth/summary HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52878 - \"GET /truth/task/phone HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52890 - \"GET /truth/task/desktop HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52896 - \"GET /truth/task/website HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52900 - \"GET /truth/task/email HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:56742 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:56758 - \"GET /discovery/agent-lee-capabilities HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:56764 - \"GET /discovery/containers HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:56780 - \"GET /discovery/routes HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49966 - \"GET /truth/task/image HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49982 - \"GET /truth/summary HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:34090 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:34094 - \"GET /discovery/agent-lee-capabilities HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:34098 - \"GET /discovery/containers HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:34108 - \"GET /discovery/routes HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:47462 - \"GET /truth/task/image HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:47470 - \"GET /truth/summary HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:45066 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.39:45074 - \"GET /discovery/agent-lee-capabilities HTTP/1"
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "truth"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "conference_room",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "container_reports": [
+        {
+          "name": "leeway-jitsi-meet-jicofo-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/jicofo:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": false,
+          "probes": [
+            {
+              "url": "http://localhost:8888/health",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/status",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/truth/summary",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/capabilities",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/docs",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            }
+          ],
+          "log_tail": "\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJicofo 2026-07-05 01:52:54.413 SEVERE: [41] [xmpp_connection=client] XmppProvider.doConnect#219: Failed to connect/login: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJicofo 2026-07-05 01:52:54.413 WARNING: [41] [xmpp_connection=client] XmppProvider.scheduleConnectTask$lambda$3$lambda$2#113: Failed to connect, will re-try after 1 second\r\nJicofo 2026-07-05 01:52:54.413 WARNING: [521551] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[not-authenticated] (0) closed with error\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftw"
+        },
+        {
+          "name": "leeway-jitsi-meet-jvb-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/jvb:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": [
+            {
+              "Length": 5
+            },
+            {
+              "Length": 4
+            }
+          ],
+          "healthy_probe": false,
+          "probes": [
+            {
+              "url": "http://localhost:10000/health",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/status",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/truth/summary",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/capabilities",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/docs",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8081/health",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 382
+              }
+            },
+            {
+              "url": "http://localhost:8081/status",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 382
+              }
+            },
+            {
+              "url": "http://localhost:8081/truth/summary",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 389
+              }
+            },
+            {
+              "url": "http://localhost:8081/capabilities",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 388
+              }
+            },
+            {
+              "url": "http://localhost:8081/",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 376
+              }
+            },
+            {
+              "url": "http://localhost:8081/docs",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 380
+              }
+            }
+          ],
+          "log_tail": "\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJVB 2026-07-05 01:53:08.913 WARNING: [1382940] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[not-authenticated] (0) closed with error\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJVB 2026-07-05 01:53:08.913 WARNING: [1382940] [hostname=xmpp.meet.jitsi id=shard0] MucClient$2.connectionClosedOnError#392: Closed on error:\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJVB"
+        },
+        {
+          "name": "leeway-jitsi-meet-prosody-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/prosody:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null,
+          "log_tail": "2026-07-05 01:53:08 c2s5a0441694350                                  info\tClient connected\r\n2026-07-05 01:53:08 c2s5a0441694350                                  error\tNo TLS context available for c2s. Earlier error was: error loading private key ((null))\r\n2026-07-05 01:53:08 c2s5a0441694350                                  warn\tNo stream features to offer on insecure session. Check encryption and security settings.\r\n2026-07-05 01:53:08 c2s5a0441694350                                  info\tClient disconnected: connection closed\r\n2026-07-05 01:53:08 c2s5a0484f6b030                                  info\tClient connected\r\n2026-07-05 01:53:08 c2s5a0484f6b030                                  error\tNo TLS context available for c2s. Earlier error was: error loading private key ((null))\r\n2026-07-05 01:53:08 c2s5a0484f6b030                                  warn\tNo stream features to offer on insecure session. Check encryption and security settings.\r\n2026-07-05 01:53:08 c2s5a0484f6b030                                  info\tClient disconnected: connection closed\r\n2026-07-05 01:53:08 c2s5a047473ad40                                  info\tClient connected\r\n2026-07-05 01:53:08 c2s5a047473ad40                                  error\tNo TLS context available for c2s. Earlier error was: error loading private key ((null))\r\n2026-07-05 01:53:08 c2s5a047473ad40                                  warn\tNo stream features to offer on insecure session. Check encryption and security settings.\r\n2026-07-05 01:53:08 c2s5a047473ad40                                  info\tClient disconnected: connection closed\r\n2026-07-05 01:53:08 c2s5a043e5bfa70                                  info\tClient connected\r\n2026-07-05 01:53:08 c2s5a043e5bfa70                                  error\tNo TLS context available for c2s. Earlier error was: error loading private key ((null))\r\n2026-07-05 01:53:08 c2s5a043e5bfa70                                  warn\tNo stream features to offer on insecure session. Check encryption an"
+        },
+        {
+          "name": "leeway-jitsi-meet-web-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/web:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": [
+            {
+              "Length": 4
+            },
+            {
+              "Length": 4
+            }
+          ],
+          "healthy_probe": true,
+          "probes": [
+            {
+              "url": "http://localhost:8008/health",
+              "ok": true,
+              "http_status": "200",
+              "error": "",
+              "sample": "<html itemscope itemtype=\"http://schema.org/Product\" prefix=\"og: http://ogp.me/ns#\" xmlns=\"http://www.w3.org/1999/html\">\r\n  <head>\r\n    \r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">\r\n    <meta name=\"theme-color\" content=\"#2A3A4B\">\r\n    <base href=\"/\" />\r\n\r\n\r\n    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">\r\n    <link rel=\"stylesheet\" href=\"css/all.css?v=9318\">\r\n    \r\n    <link rel=\"manifest\" id=\"manifest-placeholder\">\r\n\r\n    <"
+            },
+            {
+              "url": "http://localhost:8443/health",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/status",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/truth/summary",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/capabilities",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/docs",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            }
+          ],
+          "log_tail": "172.24.0.1 - - [04/Jul/2026:18:03:42 -0500] \"GET //shop/wp-includes/wlwmanifest.xml HTTP/1.1\" 200 8694 \"\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36\"\r\n172.24.0.1 - - [04/Jul/2026:18:03:42 -0500] \"GET //test/wp-includes/wlwmanifest.xml HTTP/1.1\" 200 8694 \"\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36\"\r\n172.24.0.1 - - [04/Jul/2026:18:03:43 -0500] \"GET //wp2/wp-includes/wlwmanifest.xml HTTP/1.1\" 200 8694 \"\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36\"\r\n172.24.0.1 - - [04/Jul/2026:18:03:44 -0500] \"GET //cms/wp-includes/wlwmanifest.xml HTTP/1.1\" 200 8694 \"\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36\"\r\n172.24.0.1 - - [04/Jul/2026:18:40:27 -0500] \"GET /robots.txt HTTP/1.1\" 200 36 \"\" \"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:54 -0500] \"GET /health HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:54 -0500] \"GET /status HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:54 -0500] \"GET /openapi.json HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:55 -0500] \"GET /health HTTP/1.1\" 400 259 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:55 -0500] \"GET /status HTTP/1.1\" 400 259 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:10:55 -0500] \"GET /openapi.json HTTP/1.1\" 400 259 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:15:31 -0500] \"GET /health HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:15:31 -0500] \"GET /status HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:15:31 -0500] \"GET /openapi.json HTTP/1.1\" 200 22757 \"\" \"curl/8.19.0\"\r\n172.24.0.1 - - [04/Jul/2026:20:15:31 -0"
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "MEETING"
+      },
+      "immediate_decision": "Complete conference health mapping and browser-visible room proof."
+    },
+    {
+      "lane": "storage",
+      "status": "RUNNING_BUT_NO_HEALTH_PROOF",
+      "proof_level": "RUNNING_BUT_NO_HEALTH_PROOF",
+      "container_reports": {
+        "name": "leeway-seafile",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "seafileltd/seafile-mc:latest",
+        "role": "storage_stack",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": false,
+        "probes": [
+          {
+            "url": "http://localhost:8082/health",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/status",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/truth/summary",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/capabilities",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/docs",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          }
+        ],
+        "log_tail": {
+          "Length": 1858
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "FileS"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "research",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_research_lane",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 29 hours",
+        "image": "leeway_research_lane:local",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5310/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 146
+          }
+        },
+        "log_tail": "INFO:     Started server process [1]\r\nINFO:     172.18.0.21:39578 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     Waiting for application startup.\r\nINFO:     Application startup complete.\r\nINFO:     Uvicorn running on http://0.0.0.0:5310 (Press CTRL+C to quit)\r\nINFO:     172.18.0.21:39582 - \"POST /search/quick HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:39598 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:39614 - \"POST /search/quick HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:38446 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:42382 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:60052 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:49382 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:47292 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:47308 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:49392 - \"POST /search/quick HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:49396 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:49398 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:35448 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:49134 - \"POST /search/quick HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:48432 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:57872 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:57880 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42812 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42828 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:42836 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.21:34570 - \"POST /search/deep HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54680 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54686 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54688 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52140 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52142 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52148 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:"
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "research"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "code_mode",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "agent_lee_code_mode",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-agent-lee",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8080/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "{\r\n  \"ok\": true,\r\n  \"router\": \"agent-lee-brainfix\",\r\n  \"port\": 8080,\r\n  \"ollama\": \"http://ollama:11434\",\r\n  \"ollamaModel\": \"qwen3:latest\",\r\n  \"runtimeDir\": \"/app/runtime\",\r\n  \"languagePolicyPath\": \"/app/runtime/agent-lee-language-policy.json\",\r\n  \"conversationManifestPath\": \"/app/runtime/agent-lee-conversation-abilities.manifest.json\",\r\n  \"canonical\": true,\r\n  \"agentId\": \"agent-lee\",\r\n  \"agentMode\": \"code-mode\",\r\n  \"role\": \"supreme-agent-lead\",\r\n  \"instanceContract\": \"canonical-agent-lee-code-mode\",\r\n  \"sourceOfEmbodiment\": \"agent-lee-coding-mode\",\r\n  \"identityManifestPath\": null,\r\n  \"activeRu"
+        },
+        "log_tail": {
+          "Length": 1131
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "Workspace"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "agent_center",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_agent_center",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-leeway-agent-center",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8860/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 172
+          }
+        },
+        "log_tail": {
+          "Length": 1008
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "agents"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "hybrid_fabric",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway_hybrid_fabric",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-hybrid-fabric",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8777/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 174
+          }
+        },
+        "log_tail": "[6:52:46 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=LLM_ADVISOR_READY\r\n[6:53:16 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:53:46 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:54:16 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:54:47 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=LLM_ADVISOR_READY\r\n[6:55:16 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:55:46 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:56:16 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED | agent=true | runtime=true | ollama=true | qwen=true | voice=true | vision=true | creation=true | seafile=false | advisor=SKIPPED_THIS_CYCLE\r\n[6:56:47 AM] Docker Hybrid V18.2 | status=HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_"
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "runtime"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "legacy_bridge",
+      "status": "REVIEW_DISABLE_OR_MERGE_NO_BRIDGE_SPRAWL",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "container_reports": {
+        "name": "leeway-local-assistant-bridge",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "local-assistant-bridge-leeway-local-assistant-bridge",
+        "role": "legacy_bridge_review_required",
+        "lane_truth": "REVIEW_DO_NOT_EXPAND_BRIDGE_SPRAWL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8787/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "{\r\n  \"ok\": true,\r\n  \"bridge\": {\r\n    \"port\": 8787,\r\n    \"defaultModel\": \"qwen3:latest\",\r\n    \"visionModel\": \"qwen2.5vl:7b\"\r\n  },\r\n  \"services\": {\r\n    \"bridge\": \"http://localhost:8787\",\r\n    \"ollama\": \"http://host.docker.internal:11434\",\r\n    \"runtimeFabric\": \"http://host.docker.internal:4001\",\r\n    \"hybridFabric\": \"http://host.docker.internal:8777\",\r\n    \"mediaIngestion\": \"http://host.docker.internal:5300\",\r\n    \"mediaRouter\": \"http://host.docker.internal:5301\",\r\n    \"agentCenter\": \"http://host.docker.internal:8860\",\r\n    \"mcpAgentCenter\": \"http://host.docker.internal:8861\",\r\n    \"workerCente"
+        },
+        "log_tail": {
+          "Length": 699
+        }
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "bridge"
+      },
+      "immediate_decision": "Do not expand. Merge needed behavior into canonical lane or disable."
+    },
+    {
+      "lane": "voice_kernel",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "container_reports": [
+        {
+          "name": "agent-lee-qwen-voice",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 34 hours",
+          "image": "agent-lee-qwen-voice:cuda",
+          "role": "model_voice_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8097/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": "{\"ok\":true,\"engine\":\"qwen3-tts\",\"model_path\":\"/models/voice/qwen3-tts\",\"output_dir\":\"/voice-output\",\"cuda_ok\":true,\"device\":\"cuda:0\",\"gpu_name\":\"NVIDIA GeForce RTX 5060 Laptop GPU\",\"dtype\":\"torch.float16\",\"voice_mode\":\"clone\",\"clone_mode\":\"speaker_vector\",\"reference_audio\":\"/voice-seeds/Agent_Voice_One.m4a\",\"language\":\"English\",\"available_generate_methods\":[\"generate_custom_voice\",\"generate_defaults\",\"generate_voice_clone\",\"generate_voice_design\"],\"generate_voice_clone_signature\":\"(text: Union[str, List[str]], language: Union[str, List[str]] = None, ref_audio: Union[str, numpy.ndarray, Tuple[n"
+          },
+          "log_tail": "Calling generate_voice_clone\r\nSetting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\r\nSetting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\r\nSetting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\r\nSetting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\r\nSetting `pad_token_id` to `eos_token_id`:2150 for open-end generation.\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:36412 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:43604 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:55060 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:60398 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:33070 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:40350 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:37656 - \"GET / HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.1:37656 - \"GET /favicon.ico HTTP/1.1\" 404 Not Found\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:36666 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:45226 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nCalling generate_voice_clone\r\nclone_mode=speaker_vector\r\nref_audio=/voice-output/agent_lee_reference_Agent_Voice_One.wav\r\nINFO:     172.18.0.11:60754 - \"POST /speak-file HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52610 - \"GET /health HTTP/1.1\" 200 OK\r\nSetting `pad_toke"
+        },
+        {
+          "name": "agent-lee-voice-kernel",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 34 hours (healthy)",
+          "image": "agent-lee-voice-kernel-voice-kernel",
+          "role": "model_voice_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8092/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 23
+            }
+          },
+          "log_tail": "INFO:     172.18.0.1:58584 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52180 - \"GET / HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:60040 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:48754 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:54900 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:43864 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:41328 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:57388 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:53870 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54034 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:41948 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:36760 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:51688 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:55756 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:50544 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:59026 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:52742 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:58734 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:45148 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:49212 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:54542 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:39748 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:39846 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:56704 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:33906 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:35290 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:47988 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:45980 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:60768 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:46418 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:54938 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:43826 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     127.0.0.1:50270 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:35088 - \"GET /health "
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "Voice"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "ears_kernel",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "container_reports": {
+        "name": "agent-lee-ears-kernel",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 34 hours",
+        "image": "agent-lee-ears-kernel-agent-lee-ears-kernel",
+        "role": "model_hearing_lane",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8094/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 115
+          }
+        },
+        "log_tail": "INFO:     172.22.0.1:46708 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:57508 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:57520 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:59310 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:59316 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:47040 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:47056 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:37464 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:37478 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:60490 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:60494 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:32894 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:32902 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:32834 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:32844 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:38260 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:38274 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:41044 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:41058 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:42920 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:42932 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:45350 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:45364 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:57574 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:57576 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:32880 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:32882 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:36154 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:36160 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:60198 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.22.0.1:60204 - \"GET /status HTTP/1.1\" 404 Not Found\r\nINFO:     172.22.0.1:33244 -"
+      },
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "listen"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "vision_kernel",
+      "status": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "proof_level": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "container_reports": [
+        {
+          "name": "agent-lee-vision-kernel",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "agent-lee-vision-kernel-agent-lee-vision-kernel",
+          "role": "model_vision_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8093/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 153
+            }
+          },
+          "log_tail": "INFO:     172.21.0.1:39764 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:41340 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:46640 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:38564 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:59622 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:49406 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:57688 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:36774 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:43206 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:52530 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:49116 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:55042 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:56332 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:34534 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:45014 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:44282 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:38680 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:56844 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:39526 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:60690 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:58708 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:42008 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:33724 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:37646 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:45968 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:37066 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:57438 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:45074 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:49484 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:50656 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:50072 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:37390 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1:53620 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.21.0.1"
+        },
+        {
+          "name": "agent-lee-telegram-vision-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-telegram-vision-lane:local",
+          "role": "agent_interface_telegram",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null,
+          "log_tail": {
+            "Length": 856
+          }
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "image"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    },
+    {
+      "lane": "image_3d_kernels",
+      "status": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "proof_level": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "container_reports": [
+        {
+          "name": "agent-lee-sdxl-lightning-image-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 12 hours",
+          "image": "agent-lee-sdxl-lightning-image-lane:local",
+          "role": "creative_model_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8099/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": "{\"ok\":true,\"app\":\"agent-lee-sdxl-lightning-image-lane\",\"model\":\"ByteDance/SDXL-Lightning-LoRA-UltraLowMemory\",\"base_model\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"lightning_repo\":\"ByteDance/SDXL-Lightning\",\"lightning_lora\":\"sdxl_lightning_4step_lora.safetensors\",\"device\":\"cuda\",\"cuda\":{\"torch_version\":\"2.12.1+cu130\",\"cuda_available\":true,\"cuda_device_count\":1,\"cuda_device_name\":\"NVIDIA GeForce RTX 5060 Laptop GPU\",\"cuda_memory_allocated_mb\":0.0,\"cuda_memory_reserved_mb\":0.0},\"pipe_loaded\":false,\"pipe_loaded_at\":null,\"load_error\":null,\"created_at\":\"2026-07-05T07:40:21.618716+00:00\"}\r\nHTTP_S"
+          },
+          "log_tail": "\r\nLoading weights:  31%|ΓûêΓûêΓûê       | 60/196 [00:00<00:00, 195.36it/s]\u001b[A\r\nINFO:     172.18.0.11:41972 - \"POST /image/generate-fast HTTP/1.1\" 422 Unprocessable Entity\r\nINFO:     172.18.0.11:41978 - \"POST /image/generate-fast HTTP/1.1\" 422 Unprocessable Entity\r\nINFO:     172.18.0.11:41992 - \"POST /generate-fast HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42002 - \"POST /generate-fast HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42018 - \"POST /generate-fast HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42024 - \"POST /generate HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42038 - \"POST /generate HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42048 - \"POST /generate HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42060 - \"POST /render HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:42070 - \"POST /render HTTP/1.1\" 404 Not Found\r\n\r\nLoading weights:  48%|ΓûêΓûêΓûêΓûêΓûè     | 94/196 [00:00<00:00, 248.06it/s]\u001b[A\r\n\r\nLoading weights:  67%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûï   | 131/196 [00:00<00:00, 289.46it/s]\u001b[A\r\n\r\nLoading weights:  82%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûÅ | 161/196 [00:00<00:00, 255.40it/s]\u001b[A\r\nLoading weights: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 196/196 [00:00<00:00, 255.58it/s]\r\n\r\nINFO:     172.18.0.11:42072 - \"POST /render HTTP/1.1\" 404 Not Found\r\nLoading pipeline components...:  86%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûî | 6/7 [00:11<00:02,  2.26s/it]\r\nLoading pipeline components...: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 7/7 [00:12<00:00,  1.73s/it]\r\nLoading pipeline components...: 100%|ΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûêΓûê| 7/7 [00:12<00:00,  1.79s/it]\r\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\nINFO:     172.18.0.1:38496 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:38506 - \"GET /status HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:38512 - \"GET /openapi.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:53316 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.1:53318 - \"GET /status HTTP/1.1\" 2"
+        },
+        {
+          "name": "agent-lee-image-to-3d-pattern-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 33 hours",
+          "image": "agent-lee-image-to-3d-pattern-lane:local",
+          "role": "creative_model_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8101/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 205
+            }
+          },
+          "log_tail": "INFO:     172.18.0.11:38568 - \"GET /health HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:58598 - \"POST /convert/latest-sdxl HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:58608 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/agent_lee_3d_object_package.zip HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:58620 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/agent_lee_rigid_object_package.zip HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:58630 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/viewer.html HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:58644 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/index.html HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:58646 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/model.obj HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:58652 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/model.mtl HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:58654 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/texture.png HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49672 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/height.png HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49688 - \"GET /artifacts/c633fa23-9547-4d3f-a37b-81acfd51ef80/receipt.json HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49464 - \"POST /convert/latest-sdxl HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:49468 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3146fe063c/agent_lee_3d_object_package.zip HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:49484 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3146fe063c/agent_lee_rigid_object_package.zip HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:49500 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3146fe063c/viewer.html HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:49502 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3146fe063c/index.html HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.11:49516 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3146fe063c/model.obj HTTP/1.1\" 200 OK\r\nINFO:     172.18.0.11:33940 - \"GET /artifacts/d4609406-9319-47f8-bb0f-2c3"
+        },
+        {
+          "name": "agent-lee-true-character-mesh-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-true-character-mesh-lane:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null,
+          "log_tail": {
+            "Length": 1866
+          }
+        },
+        {
+          "name": "agent-lee-character-cutout-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-character-cutout-lane:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null,
+          "log_tail": "INFO:     Started server process [7]\r\nINFO:     172.18.0.1:32922 - \"GET /latest/character_cutout_preview.png HTTP/1.1\" 404 Not Found\r\nINFO:     Waiting for application startup.\r\nINFO:     Application startup complete.\r\nINFO:     Uvicorn running on http://0.0.0.0:8102 (Press CTRL+C to quit)\r\nDownloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx' to file '/models/rembg/u2net.onnx'.\r\nINFO:     172.18.0.1:32922 - \"GET /latest/character_cutout.png HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.1:32922 - \"GET /favicon.ico HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.1:32922 - \"GET /favicon.ico HTTP/1.1\" 404 Not Found\r\nINFO:     172.18.0.1:51916 - \"GET /status HTTP/1.1\" 200 OK\r\n\r\n  0%|                                               | 0.00/176M [00:00<?, ?B/s]\r\n  0%|ΓûÅ                                      | 744k/176M [00:00<00:23, 7.44MB/s]\r\n  1%|ΓûÄ                                     | 1.49M/176M [00:00<00:24, 7.08MB/s]\r\n  1%|Γûì                                     | 2.20M/176M [00:00<00:24, 7.10MB/s]\r\n  2%|Γûï                                     | 2.93M/176M [00:00<00:24, 7.18MB/s]\r\n  2%|Γûè                                     | 3.65M/176M [00:00<00:25, 6.87MB/s]\r\n  2%|Γûë                                     | 4.34M/176M [00:00<00:25, 6.72MB/s]\r\n  3%|Γûê                                     | 5.05M/176M [00:00<00:25, 6.82MB/s]\r\n  3%|ΓûêΓûÅ                                    | 5.74M/176M [00:00<00:24, 6.84MB/s]\r\n  4%|ΓûêΓûì                                    | 6.44M/176M [00:00<00:24, 6.91MB/s]\r\n  4%|ΓûêΓûî                                    | 7.18M/176M [00:01<00:23, 7.06MB/s]\r\n  4%|ΓûêΓûï                                    | 7.89M/176M [00:01<00:24, 6.96MB/s]\r\n  5%|ΓûêΓûè                                    | 8.59M/176M [00:01<00:24, 6.93MB/s]\r\n  5%|ΓûêΓûê                                    | 9.28M/176M [00:01<00:24, 6.89MB/s]\r\n  6%|ΓûêΓûêΓûÅ                                   | 10.0M/176M [00:01<00:23, 7.03MB/s]\r\n  6%|ΓûêΓûêΓûÄ       "
+        }
+      ],
+      "code_evidence_count": 1,
+      "code_evidence": {
+        "0": "image"
+      },
+      "immediate_decision": "Classify and move to lane-specific proof plan."
+    }
+  ],
+  "truth": {
+    "enterprise_ready": "NO",
+    "phone_autonomous_operator_proven": "NO",
+    "desktop_autonomous_operator_proven": "NO",
+    "email_send_proven": "NO",
+    "calendar_write_proven": "NO",
+    "conference_room_fully_proven": "BASIC_ONLY_NEEDS_ROOM_BEHAVIOR_PROOF",
+    "license_runtime_fully_proven": "NO",
+    "installer_runtime_fully_proven": "NO",
+    "no_bridge_sprawl": "ENFORCED_POLICY_REQUIRED"
+  },
+  "next_action": "Create U2 update planner runtime, then use it to generate scoped remediation plans for desktop, phone, browser, email, calendar, license, installer, PWA, skills, conference, and storage."
+}

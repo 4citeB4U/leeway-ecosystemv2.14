@@ -1,0 +1,12 @@
+{
+  "coreBusRoot": "C:\\AgentLee\\CoreBus",
+  "tasksDir": "C:\\AgentLee\\CoreBus\\tasks",
+  "outboxDir": "C:\\AgentLee\\CoreBus\\outbox",
+  "failedDir": "C:\\AgentLee\\CoreBus\\failed",
+  "processedDir": "C:\\AgentLee\\CoreBus\\processed",
+  "heartbeatDir": "C:\\AgentLee\\CoreBus\\heartbeat",
+  "toolsRoot": "C:\\Tools",
+  "portableMcpKit": "C:\\Tools\\Portable-VSCode-MCP-Kit",
+  "cerebralRoot": "C:\\Cerebral",
+  "reportsRoot": "C:\\Tools\\reports"
+}

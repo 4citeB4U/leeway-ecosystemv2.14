@@ -1,0 +1,60 @@
+﻿{
+    "version":  "LEEWAY_HARDEN_ONBOARDING_UI_STATIC_SAFETY_292F_R",
+    "phase":  40,
+    "timestamp":  "2026-07-06T11:12:07",
+    "verdict":  "LEEWAY_HARDEN_ONBOARDING_UI_STATIC_SAFETY_292F_R_CLEAN",
+    "hardening_applied":  true,
+    "file_patch_only":  true,
+    "execution_performed":  false,
+    "clear_skies":  true,
+    "route":  "/device-onboarding",
+    "files":  {
+                  "api_route":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+                  "api_client":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceOnboardingReviewClient.ts",
+                  "component":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceOnboardingReviewPanel.tsx",
+                  "page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-onboarding\\page.tsx"
+              },
+    "backups":  [
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+                        "backup":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-patch\\backups\\292F-R-20260706-111207\\route.ts.before-292F-R-20260706-111207.bak"
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceOnboardingReviewClient.ts",
+                        "backup":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-patch\\backups\\292F-R-20260706-111207\\deviceOnboardingReviewClient.ts.before-292F-R-20260706-111207.bak"
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceOnboardingReviewPanel.tsx",
+                        "backup":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-patch\\backups\\292F-R-20260706-111207\\AgentLeeDeviceOnboardingReviewPanel.tsx.before-292F-R-20260706-111207.bak"
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-onboarding\\page.tsx",
+                        "backup":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-patch\\backups\\292F-R-20260706-111207\\page.tsx.before-292F-R-20260706-111207.bak"
+                    }
+                ],
+    "static_safety":  {
+                          "api_get_only":  true,
+                          "client_get_only":  true,
+                          "no_real_open_app":  true,
+                          "no_real_arm":  true,
+                          "no_docker_deploy":  true,
+                          "no_bluetooth_pairing_call":  true,
+                          "no_print_action":  true,
+                          "no_mqtt_publish":  true,
+                          "no_execution_buttons":  true,
+                          "static_clean":  true
+                      },
+    "safety":  {
+                   "no_device_control_in_292f_r":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "293-onboarding-review-ui-post-patch-audit-no-execute.ps1"
+}

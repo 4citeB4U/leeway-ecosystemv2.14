@@ -1,0 +1,174 @@
+﻿{
+    "version":  "LEEWAY_WINDOWS_SATELLITE_REGISTRATION_2026-07-05",
+    "created_at":  "2026-07-05T17:38:23",
+    "device_id":  "windows-agent-lee",
+    "satellite_id":  "windows-agent-lee",
+    "display_name":  "AGENT-LEE Windows Satellite",
+    "device_type":  "computer",
+    "platform":  "windows",
+    "role":  "CHILD_ACTUATOR_UNDER_LEEWAY_DEVICE_OPERATOR",
+    "master_device_operator":  "http://127.0.0.1:5323",
+    "owner":  "Leonard J Lee",
+    "doctrine":  {
+                     "physical_execution_enabled":  false,
+                     "windows_only_master":  false,
+                     "receipts_required":  true,
+                     "master_is":  "leeway_device_operator:5323",
+                     "approval_required_for_risky_actions":  true,
+                     "physical_execution_requires_future_adapter":  true,
+                     "is_master":  false
+                 },
+    "capabilities":  [
+                         "windows_host_satellite",
+                         "screen_status_contract",
+                         "screen_stream_future",
+                         "screenshot_future",
+                         "cursor_contract",
+                         "mouse_move_future",
+                         "mouse_click_future",
+                         "keyboard_type_future",
+                         "hotkey_future",
+                         "open_app_future",
+                         "open_url_future",
+                         "browser_search_future",
+                         "file_explorer_future",
+                         "filesystem_scoped_access_future",
+                         "printer_bridge_contract",
+                         "windows_print_spooler_future",
+                         "camera_status_contract",
+                         "microphone_status_contract",
+                         "speaker_output_contract",
+                         "multi_monitor_contract",
+                         "powershell_allowlist_contract",
+                         "docker_local_status",
+                         "tailscale_mesh_contract",
+                         "approval_required_for_physical_execution",
+                         "receipt_required_for_every_action"
+                     ],
+    "approval_required":  [
+                              "mouse_click",
+                              "keyboard_type",
+                              "send_message",
+                              "send_email",
+                              "send_sms",
+                              "dial_phone",
+                              "publish_content",
+                              "print_document",
+                              "cast_to_tv",
+                              "delete_file",
+                              "install_software",
+                              "credential_access",
+                              "financial_action",
+                              "admin_system_change",
+                              "clipboard_read",
+                              "clipboard_write"
+                          ],
+    "os":  {
+               "caption":  "Microsoft Windows 11 Home",
+               "version":  "10.0.26200",
+               "build_number":  "26200",
+               "architecture":  "64-bit",
+               "computer_name":  "AGENT-LEE",
+               "last_boot":  "\/Date(1782953660499)\/"
+           },
+    "hardware":  {
+                     "manufacturer":  "LENOVO",
+                     "model":  "83NX",
+                     "total_physical_memory_bytes":  33752997888,
+                     "cpu":  "Intel(R) Core(TM) Ultra 9 275HX",
+                     "cpu_cores":  24,
+                     "cpu_logical_processors":  24,
+                     "gpus":  [
+                                  {
+                                      "name":  "Intel(R) Graphics",
+                                      "driver_version":  "32.0.101.8243",
+                                      "adapter_ram":  2147479552,
+                                      "status":  "OK"
+                                  },
+                                  {
+                                      "name":  "NVIDIA GeForce RTX 5060 Laptop GPU",
+                                      "driver_version":  "32.0.15.9201",
+                                      "adapter_ram":  4293918720,
+                                      "status":  "OK"
+                                  }
+                              ]
+                 },
+    "monitors":  [
+                     {
+                         "instance_name":  "DISPLAY\\BOE0D20\\4\u0026173bac7d\u00260\u0026UID8388688_0",
+                         "user_friendly_name":  "NE160QDM-NZB",
+                         "active":  true
+                     },
+                     {
+                         "instance_name":  "DISPLAY\\DELA11E\\5\u0026322ea91\u00260\u0026UID8449_0",
+                         "user_friendly_name":  "DELL P2419HC",
+                         "active":  true
+                     },
+                     {
+                         "instance_name":  "DISPLAY\\HGC2700\\4\u0026173bac7d\u00260\u0026UID4165_0",
+                         "user_friendly_name":  "CR270BM",
+                         "active":  true
+                     }
+                 ],
+    "network":  [
+                    {
+                        "interface_alias":  "vEthernet (WSL (Hyper-V firewall))",
+                        "ip_address":  "172.26.160.1",
+                        "prefix_length":  20,
+                        "address_state":  4
+                    },
+                    {
+                        "interface_alias":  "Ethernet",
+                        "ip_address":  "192.168.1.140",
+                        "prefix_length":  24,
+                        "address_state":  4
+                    },
+                    {
+                        "interface_alias":  "Tailscale",
+                        "ip_address":  "100.80.10.39",
+                        "prefix_length":  32,
+                        "address_state":  4
+                    },
+                    {
+                        "interface_alias":  "Loopback Pseudo-Interface 1",
+                        "ip_address":  "127.0.0.1",
+                        "prefix_length":  8,
+                        "address_state":  4
+                    }
+                ],
+    "tooling":  {
+                    "powershell":  {
+                                       "pwsh":  "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                                       "windows_powershell":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+                                   },
+                    "docker":  "C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe",
+                    "git":  "C:\\Program Files\\Git\\cmd\\git.exe",
+                    "node":  "C:\\Program Files\\nodejs\\node.exe",
+                    "python":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                    "tailscale":  {
+                                      "installed":  true,
+                                      "path":  "C:\\Program Files\\Tailscale\\tailscale.exe",
+                                      "status":  "STATUS_CAPTURED",
+                                      "ip4":  "100.80.10.39",
+                                      "raw_status":  "100.80.10.39    agent-lee       4citeB4U@  windows  -                          \r\n100.107.134.36  galaxy-z-fold6  4citeB4U@  android  offline, last seen 1d ago  \r\n\r\n# Funnel on:\r\n#     - https://agent-lee.tail4baa5f.ts.net\r\n"
+                                  }
+                },
+    "runtime_paths":  {
+                          "proof_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+                          "windows_satellite_logs":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-satellite\\logs",
+                          "windows_satellite_state":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-satellite\\state",
+                          "windows_satellite_receipts":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-satellite\\receipts",
+                          "leeway_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                          "windows_satellite_contracts":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-satellite\\contracts",
+                          "runtime_device_state":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state",
+                          "windows_satellite_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-satellite"
+                      },
+    "local_policy":  {
+                         "no_hidden_remote_control":  true,
+                         "no_docker_prune":  true,
+                         "no_unapproved_physical_ui":  true,
+                         "no_destructive_cleanup":  true,
+                         "all_actions_write_receipts":  true,
+                         "no_credential_access_without_owner_approval":  true
+                     }
+}

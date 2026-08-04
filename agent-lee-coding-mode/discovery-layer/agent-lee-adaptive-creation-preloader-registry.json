@@ -1,0 +1,15 @@
+{
+    "schema":  "agent-lee-adaptive-creation-preloader-registry-v13-6",
+    "updatedAt":  "2026-06-28T00:29:41.0603122Z",
+    "official":  true,
+    "status":  "ADAPTIVE_PRELOADER_ACTIVE",
+    "processId":  45840,
+    "script":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\Start-AgentLeeAdaptiveCreationPreloaderV13_6.ps1",
+    "controlFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\discovery-layer\\agent-lee-creative-session-control.json",
+    "stateFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\discovery-layer\\agent-lee-adaptive-creation-preloader-state.json",
+    "baseUrl":  "http://127.0.0.1:8094",
+    "activeIntervalSeconds":  45,
+    "idleIntervalSeconds":  180,
+    "currentMode":  "HOT_CREATION_MODE",
+    "truth":  "Fast creation comes from predictive prewarming, not cold-loading SDXL in under one second on CPU."
+}

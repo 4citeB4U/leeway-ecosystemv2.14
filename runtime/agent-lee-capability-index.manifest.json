@@ -1,0 +1,163 @@
+{
+  "created_at": "2026-07-03T21:49:04.8260571-05:00",
+  "capabilities": [
+    {
+      "route": "/search/quick",
+      "lane": "leeway_research_lane",
+      "status": "LIVE",
+      "name": "search_web"
+    },
+    {
+      "route": "/search/deep",
+      "lane": "leeway_research_lane",
+      "status": "LIVE",
+      "name": "deep_research"
+    },
+    {
+      "route": "/search/quick",
+      "lane": "leeway_research_lane",
+      "status": "LIVE",
+      "name": "weather_lookup"
+    },
+    {
+      "route": "/plan/date-night",
+      "lane": "leeway_api_gateway",
+      "status": "LIVE",
+      "name": "plan_date_night"
+    },
+    {
+      "route": "/crm/search",
+      "lane": "leeway_api_gateway",
+      "status": "LIVE",
+      "name": "crm_memory"
+    },
+    {
+      "route": "/approvals/pending",
+      "lane": "leeway_api_gateway",
+      "status": "LIVE",
+      "name": "approval_queue"
+    },
+    {
+      "route": "/approval/request-phone-call",
+      "lane": "leeway_api_gateway",
+      "status": "APPROVAL_ONLY",
+      "name": "request_phone_call"
+    },
+    {
+      "route": "/approval/request-email",
+      "lane": "leeway_api_gateway",
+      "status": "APPROVAL_ONLY",
+      "name": "request_email"
+    },
+    {
+      "route": "/approval/request-calendar-event",
+      "lane": "leeway_api_gateway",
+      "status": "APPROVAL_ONLY",
+      "name": "request_calendar_event"
+    },
+    {
+      "route": "/compress",
+      "lane": "leeway_context_gateway",
+      "status": "LIVE",
+      "name": "context_compress"
+    },
+    {
+      "route": "/retrieve",
+      "lane": "leeway_context_gateway",
+      "status": "LIVE",
+      "name": "context_retrieve"
+    },
+    {
+      "route": "/status",
+      "lane": "leeway_device_operator",
+      "status": "CONTROL_PLANE_LIVE",
+      "name": "device_operator"
+    },
+    {
+      "route": "/cursor/profile",
+      "lane": "leeway_device_operator",
+      "status": "CONTROL_PLANE_LIVE",
+      "name": "agent_lee_cursor"
+    },
+    {
+      "route": "/health",
+      "lane": "agent-lee-qwen-voice",
+      "status": "LIVE",
+      "name": "voice_tts"
+    },
+    {
+      "route": "/health",
+      "lane": "agent-lee-ears-kernel",
+      "status": "LIVE",
+      "name": "ears_stt"
+    },
+    {
+      "route": "/health",
+      "lane": "agent-lee-vision-kernel",
+      "status": "LIVE",
+      "name": "vision"
+    },
+    {
+      "route": "/image/generate",
+      "lane": "agent-lee-sdxl-lightning-image-lane",
+      "status": "LIVE",
+      "name": "image_generation"
+    },
+    {
+      "route": "/convert/latest-sdxl",
+      "lane": "agent-lee-image-to-3d-pattern-lane",
+      "status": "LIVE",
+      "name": "image_to_3d"
+    },
+    {
+      "route": "/store/receipt",
+      "lane": "leeway_seafile_storage_gateway",
+      "status": "LIVE",
+      "name": "storage"
+    },
+    {
+      "route": "/health",
+      "lane": "leeway_runtime_fabric",
+      "status": "LIVE",
+      "name": "runtime_fabric"
+    },
+    {
+      "route": "/health",
+      "lane": "agent_lee_code_mode",
+      "status": "LIVE",
+      "name": "code_mode"
+    },
+    {
+      "route": "/license/validate",
+      "lane": "leeway_license_runtime",
+      "status": "PLANNED",
+      "name": "license_runtime"
+    },
+    {
+      "route": "/calendar/create-after-approval",
+      "lane": "leeway_calendar_runtime",
+      "status": "PLANNED",
+      "name": "calendar_execute"
+    },
+    {
+      "route": "/email/send-after-approval",
+      "lane": "leeway_email_runtime",
+      "status": "PLANNED",
+      "name": "email_execute"
+    },
+    {
+      "route": "/phone/call-after-approval",
+      "lane": "leeway_phone_runtime",
+      "status": "PLANNED",
+      "name": "phone_execute"
+    },
+    {
+      "route": "/desktop/action-after-approval",
+      "lane": "leeway_desktop_adapter",
+      "status": "PLANNED",
+      "name": "desktop_execute"
+    }
+  ],
+  "purpose": "Machine-readable capability list for Agent Lee self-awareness, Discovery, skill creation, and orchestration.",
+  "verdict": "AGENT_LEE_CAPABILITY_INDEX_CREATED"
+}

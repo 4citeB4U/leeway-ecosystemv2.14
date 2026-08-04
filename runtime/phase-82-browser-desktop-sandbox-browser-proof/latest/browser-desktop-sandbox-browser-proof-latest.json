@@ -1,0 +1,60 @@
+﻿{
+    "version":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_BROWSER_PROOF_465",
+    "phase":  82,
+    "timestamp":  "2026-07-07T19:31:26",
+    "verdict":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_BROWSER_PROOF_465_CLEAN_GET_ONLY_NO_REAL_ACTION",
+    "proof_type":  "source_only_browser_proof_no_browser_open",
+    "source_464J_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-464J-20260707-192839\\reports\\LEEWAY_BROWSER_DESKTOP_SANDBOX_GET_ONLY_UI_464J_20260707-192839.txt",
+    "app_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "file_count":  7,
+    "files_verified":  [
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\browserDesktopSandboxContract.ts",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\components\\AgentLeeBrowserDesktopSandboxPanel.tsx",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox\\page.tsx",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-contract\\page.tsx",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-hold-and-lock\\page.tsx",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-proof-chain\\page.tsx",
+                           "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\browser-desktop-sandbox\\[...path]\\route.ts"
+                       ],
+    "source_proof_clean":  true,
+    "source_checks":  {
+                          "has_browser_page":  true,
+                          "has_contract_page":  true,
+                          "has_hold_page":  true,
+                          "has_proof_page":  true,
+                          "has_panel":  true,
+                          "has_contract_lib":  true,
+                          "has_api_get":  true,
+                          "has_api_post_locked_423":  true,
+                          "no_browser_open_code":  true,
+                          "no_automation_code":  true,
+                          "no_runtime_exec_code":  true
+                      },
+    "live_state":  {
+                       "device_operator_reachable":  true,
+                       "browser_runtime_live_endpoint_reachable_advisory":  false,
+                       "desktop_runtime_live_endpoint_reachable_advisory":  false,
+                       "passive_process_probe_count":  47
+                   },
+    "safety":  {
+                   "browser_source_proof_only":  true,
+                   "browser_open_performed":  false,
+                   "browser_navigation_performed":  false,
+                   "browser_click_performed":  false,
+                   "typing_performed":  false,
+                   "mouse_control_performed":  false,
+                   "keyboard_control_performed":  false,
+                   "window_control_performed":  false,
+                   "desktop_control_performed":  false,
+                   "runtime_execution_performed":  false,
+                   "npm_install_performed":  false,
+                   "build_performed":  false,
+                   "test_performed":  false,
+                   "post_performed":  false,
+                   "sandbox_action_performed":  false,
+                   "real_action_performed":  false,
+                   "approval_granted":  false,
+                   "authority_unlocked":  false
+               },
+    "recommended_next_script":  "466-browser-desktop-sandbox-api-proof-get-only-no-real-action.ps1"
+}

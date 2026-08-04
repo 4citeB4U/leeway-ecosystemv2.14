@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_APPROVED_REQUEST_282",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:23:18",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "prior_request_status":  "PENDING_APPROVAL",
+    "request_status":  "APPROVED",
+    "approval_state":  "APPROVED",
+    "execution_state":  "APPROVED_NOT_EXECUTED",
+    "execution_performed":  false,
+    "approved_by":  "script_282_no_execute",
+    "approval_reason":  "Promoted pending governed Windows open-app request to approved artifact only. Execution still blocked until validation and explicit execution script.",
+    "lane_id":  "windows_open_app_controlled",
+    "action":  "real_open_app",
+    "action_label":  "Open Notepad",
+    "target_device_id":  "windows-agent-lee",
+    "target_family":  "windows_desktop_control_plane",
+    "risk_level":  "low",
+    "app_name":  "notepad.exe",
+    "payload":  {
+                    "app":  "notepad.exe",
+                    "app_label":  "Notepad",
+                    "args":  [
+
+                             ],
+                    "controlled_target":  true
+                },
+    "governance_required":  {
+                                "blocked_until_execution_validation":  true,
+                                "execute_once_only":  true,
+                                "lockback_required":  true,
+                                "post_execution_audit_required":  true,
+                                "dashboard_update_required":  true
+                            },
+    "current_safety_state":  {
+                                 "ui_no_execute_clean":  true,
+                                 "execution_enabled":  false,
+                                 "execute_buttons_visible":  false,
+                                 "post_execution_routes_added":  false,
+                                 "physical_actions_executed":  0,
+                                 "windows_locked":  true,
+                                 "blocked_probe_executed":  false
+                             },
+    "safety":  {
+                   "approved_only":  true,
+                   "no_execution_in_282":  true,
+                   "no_execute_buttons_added":  true,
+                   "no_post_execution_routes_added":  true,
+                   "next_step_must_validate_blocked_until_execution":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "283-approved-request-blocked-until-execution-validation-no-execute.ps1"
+}

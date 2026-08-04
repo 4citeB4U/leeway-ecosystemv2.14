@@ -1,0 +1,17 @@
+[
+  {
+    "role": "agent",
+    "text": "I got you. Show me what's breaking or what you're trying to build, and we'll work it clean.",
+    "timestamp": "2026-05-10T04:12:57.801Z"
+  },
+  {
+    "role": "user",
+    "text": "hello",
+    "timestamp": "2026-05-11T13:34:45.235Z"
+  },
+  {
+    "role": "agent",
+    "text": "Agent Lee is ready. How may I assist you today?",
+    "timestamp": "2026-05-11T13:35:45.115Z"
+  }
+]

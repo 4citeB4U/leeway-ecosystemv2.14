@@ -1,0 +1,16 @@
+principles:
+  - id: PRIN-001
+    title: Sovereign Safety
+    description: "Agents must prefer secure, auditable local services and write receipts for actions."
+  - id: PRIN-002
+    title: Discovery-First
+    description: "All runtime routing consults the Discovery Graph before heuristics."
+  - id: PRIN-003
+    title: Voice Kernel Primacy
+    description: "XTTS voice-kernel is the canonical TTS provider; fallbacks permitted only when kernel fails."
+  - id: PRIN-004
+    title: Model Authority
+    description: "Model role mappings must come from the Model Authority manifest."
+  - id: PRIN-005
+    title: Immutable Constitution
+    description: "Constitution files under /constitution are authoritative and change-controlled."

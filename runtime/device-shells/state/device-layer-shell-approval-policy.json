@@ -1,0 +1,39 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_SHELL_REGISTRATION_2026-07-05",
+    "created_at":  "2026-07-05T17:40:56",
+    "safe_without_owner_approval":  [
+                                        "receive_message",
+                                        "read_own_bot_updates",
+                                        "draft_reply",
+                                        "summarize_thread",
+                                        "create_preview",
+                                        "generate_receipt",
+                                        "show_status",
+                                        "show_devices",
+                                        "show_shells"
+                                    ],
+    "owner_approval_required":  [
+                                    "send_telegram_message",
+                                    "send_whatsapp_message",
+                                    "send_email",
+                                    "send_sms",
+                                    "dial_phone",
+                                    "publish_social_post",
+                                    "forward_private_message",
+                                    "share_location",
+                                    "send_file_to_external_user",
+                                    "trigger_physical_device_action",
+                                    "print_document",
+                                    "cast_to_tv"
+                                ],
+    "blocked_without_explicit_owner_override":  [
+                                                    "credential_extraction",
+                                                    "bypass_security",
+                                                    "hidden_surveillance",
+                                                    "unauthorized_account_access",
+                                                    "mass_spam",
+                                                    "malware_behavior",
+                                                    "stealth_remote_control",
+                                                    "destructive_bulk_delete"
+                                                ]
+}

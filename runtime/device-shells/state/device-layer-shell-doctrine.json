@@ -1,0 +1,23 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_SHELL_REGISTRATION_2026-07-05",
+    "created_at":  "2026-07-05T17:40:56",
+    "master_operator":  "leeway_device_operator:5323",
+    "doctrine":  {
+                     "no_hidden_automation":  true,
+                     "shells_are_not_actuators":  true,
+                     "telegram_is_remote_control_shell":  true,
+                     "physical_execution_routes_to_satellites":  true,
+                     "receipts_required_for_all_send_or_call_requests":  true,
+                     "phone_is_voice_call_shell":  true,
+                     "no_unapproved_message_send":  true,
+                     "approvals_required_for_external_send_or_call":  true,
+                     "whatsapp_is_remote_control_shell":  true,
+                     "email_is_communication_shell":  true,
+                     "sms_is_phone_shell":  true
+                 },
+    "default_route":  {
+                          "physical_action":  "shell command -\u003e approval -\u003e device_operator -\u003e satellite actuator -\u003e receipt",
+                          "outbound_shell_message":  "agent draft -\u003e approval policy -\u003e approved shell adapter -\u003e receipt",
+                          "inbound_shell_message":  "shell -\u003e leeway_api_gateway -\u003e runtime_fabric -\u003e leeway_device_operator -\u003e selected satellite or creative/tool lane"
+                      }
+}

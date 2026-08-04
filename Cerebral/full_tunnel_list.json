@@ -1,0 +1,73 @@
+[
+  {
+    "id": "e3c0668e-7cff-40ed-a77b-3fe831ad9e04",
+    "name": "AGENT_LEE",
+    "created_at": "2026-02-27T02:56:17.58931Z",
+    "deleted_at": "0001-01-01T00:00:00Z",
+    "connections": [
+      {
+        "colo_name": "ord02",
+        "id": "6b7d3ddf-a613-4060-acb9-8870a66b8416",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T00:27:45.865388Z"
+      },
+      {
+        "colo_name": "ord12",
+        "id": "ae0e9463-7cb2-4884-8dc9-b8a3b36f0f8c",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T00:27:45.530963Z"
+      },
+      {
+        "colo_name": "ord10",
+        "id": "b1eed181-fd58-4cf7-8a2d-b7075239ee2a",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T00:27:45.461203Z"
+      },
+      {
+        "colo_name": "ord11",
+        "id": "d5f2cdc1-3691-4b23-946a-94f163489542",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T03:28:31.44178Z"
+      },
+      {
+        "colo_name": "ord16",
+        "id": "a1330482-c73f-4fe1-8a23-bcb1721d1da5",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T03:28:31.588649Z"
+      },
+      {
+        "colo_name": "ord11",
+        "id": "e8815ccc-2a17-48db-ab7c-326e8743e40f",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T03:28:32.709476Z"
+      },
+      {
+        "colo_name": "ord02",
+        "id": "ca248966-f415-4368-9991-2245b1a0dd76",
+        "is_pending_reconnect": false,
+        "origin_ip": "24.163.137.234",
+        "opened_at": "2026-03-07T03:28:33.594608Z"
+      }
+    ]
+  },
+  {
+    "id": "ebd2103c-6982-47c2-b814-356027f4e245",
+    "name": "Cerebral",
+    "created_at": "2026-03-06T22:03:27.088078Z",
+    "deleted_at": "0001-01-01T00:00:00Z",
+    "connections": []
+  },
+  {
+    "id": "ce855183-9e81-4da1-8694-b5cdf3f266f2",
+    "name": "Cerebral-Lee",
+    "created_at": "2026-03-06T22:04:37.547617Z",
+    "deleted_at": "0001-01-01T00:00:00Z",
+    "connections": []
+  }
+]

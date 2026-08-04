@@ -1,0 +1,58 @@
+{
+  "agent_control": {
+    "primary_agent": "Agent Lee",
+    "human_approval_required_for": [
+      "external sending",
+      "phone calls or texts",
+      "desktop control",
+      "deleting files",
+      "publishing",
+      "financial action",
+      "customer production update",
+      "credential changes",
+      "system-wide restart"
+    ],
+    "standards_role": "Leeway Standards controls all decisions, permission gates, claims, and update rules.",
+    "agent_role": "Executive operator, planner, update coordinator, and receipt writer."
+  },
+  "update_modes": {
+    "hot_patch": "Patch a live lane and restart only that container.",
+    "distribution_update": "Create customer update pack with manifest, installer, validation, and rollback.",
+    "rolling_lane_update": "Update one container at a time with health checks between.",
+    "staged_update": "Apply patch to staging copy, validate, then promote.",
+    "model_swap": "Switch model provider or image tag through config and restart only affected model lane.",
+    "standards_update": "Update governance policy and force all agents to reload standards."
+  },
+  "next_build_phases": [
+    "Phase U1: Full system evidence audit across every container, file, image, port, endpoint, and placeholder.",
+    "Phase U2: Update planner and patch receipt runtime.",
+    "Phase U3: Per-lane hot restart and rollback scripts.",
+    "Phase U4: Model hot-swap config and validation gates.",
+    "Phase U5: Customer update pack builder.",
+    "Phase U6: Phone/Desktop/Email/Calendar/Browser true wiring with proof.",
+    "Phase U7: Enterprise-grade proof dashboard."
+  ],
+  "mandatory_truth_layers": {
+    "architecture_truth": "containers, images, roles, ports, mounts, lane truth, running state",
+    "customer_truth": "installed packs, enabled modules, configured providers, local machine constraints",
+    "evidence_truth": "proof receipts, validation outputs, behavior checks",
+    "runtime_truth": "health endpoints, status endpoints, logs, active ports, container state",
+    "capability_truth": "what each lane can actually do today",
+    "code_truth": "source files, hashes, compile checks, tests, placeholder scans"
+  },
+  "purpose": "Provide safe continuous updates from laser-focused patches to full system upgrades without destroying or blindly restarting the whole ecosystem.",
+  "near_term_gaps_to_close": [
+    "Phone lane is not fully proven true.",
+    "Desktop control is not fully proven true.",
+    "Email provider/send flow is not fully proven true.",
+    "Calendar provider flow is not fully proven true.",
+    "Browser operator is not fully proven true.",
+    "Placeholder scan across code/assets is not complete.",
+    "Every container has not yet received deep code/runtime/evidence audit.",
+    "Customer updater service has not yet been implemented.",
+    "Model hot-swap governance exists as blueprint only, not fully wired."
+  ],
+  "created_at": "2026-07-04T22:31:10.3407930-05:00",
+  "core_requirement": "Every part of the system must know itself through architecture truth, code inventory, container state, health probes, artifact hashes, and receipts.",
+  "verdict": "LEEWAY_UPDATE_FABRIC_BLUEPRINT_CREATED"
+}

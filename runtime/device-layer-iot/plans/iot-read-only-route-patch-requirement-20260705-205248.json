@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_IOT_EMPTY_DISCOVERY_POLICY_AND_SIMULATED_LOW_RISK_PLAN_2026-07-05",
+    "timestamp":  "2026-07-05T20:52:48",
+    "family":  "iot",
+    "contract_name":  "iot_read_only_route_patch_requirement",
+    "patch_type":  "read_only_routes_only",
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/status",
+                              "purpose":  "Summarize IoT discovery state and route readiness.",
+                              "executes_physical_action":  false,
+                              "allowed_without_approval":  true
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/registry",
+                              "purpose":  "Expose normalized IoT registry from runtime artifact.",
+                              "executes_physical_action":  false,
+                              "allowed_without_approval":  true
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/devices",
+                              "purpose":  "Expose normalized IoT devices list from registry.",
+                              "executes_physical_action":  false,
+                              "allowed_without_approval":  true
+                          }
+                      ],
+    "explicit_non_goals":  [
+                               "no POST control route",
+                               "no device toggle",
+                               "no pairing",
+                               "no scene execution",
+                               "no write-state operation",
+                               "no physical IoT action"
+                           ],
+    "validation_after_patch":  [
+                                   "GET /iot/status returns 200",
+                                   "GET /iot/registry returns 200",
+                                   "GET /iot/devices returns 200",
+                                   "GET /iot/discover still returns 200",
+                                   "Windows real-alpha remains locked",
+                                   "receipt written"
+                               ],
+    "recommended_next_script":  "217-iot-read-only-route-patch-plan-no-execute.ps1",
+    "safety":  {
+                   "read_only_route_patch_contract":  true,
+                   "physical_actions_executed":  0,
+                   "iot_actions_executed":  0,
+                   "device_state_changed":  false,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               }
+}

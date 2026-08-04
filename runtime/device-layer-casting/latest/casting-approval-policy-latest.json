@@ -1,0 +1,33 @@
+﻿{
+    "version":  "LEEWAY_CASTING_APPROVAL_POLICY_226",
+    "timestamp":  "2026-07-05T21:25:24",
+    "family":  "casting",
+    "policy_status":  "READ_ONLY_DISCOVERY_ALLOWED_CASTING_REQUIRES_APPROVAL",
+    "allowed_without_approval":  [
+                                     "GET /casting/discover",
+                                     "GET /casting/status when implemented",
+                                     "GET /casting/registry when implemented"
+                                 ],
+    "requires_approval":  [
+                              "POST /casting/{target_id}/cast",
+                              "POST /casting/{target_id}/stop",
+                              "any media/session start",
+                              "any media/session stop",
+                              "any pairing request",
+                              "any display target mutation",
+                              "any TV/display wake or input switch"
+                          ],
+    "forbidden_without_specific_proof":  [
+                                             "silent cast",
+                                             "bulk cast",
+                                             "remote display pairing",
+                                             "TV wake",
+                                             "display input switch",
+                                             "screen mirroring start",
+                                             "volume mutation",
+                                             "media playback mutation"
+                                         ],
+    "physical_actions_executed":  0,
+    "cast_sessions_started":  0,
+    "cast_sessions_stopped":  0
+}

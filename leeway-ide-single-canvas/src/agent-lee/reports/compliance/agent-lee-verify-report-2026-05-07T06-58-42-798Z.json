@@ -1,0 +1,1886 @@
+{
+  "generatedAt": "2026-05-07T06:58:42.798Z",
+  "kind": "verify",
+  "scannedRoot": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+  "scanMode": "self",
+  "inspected": 208,
+  "fullyCompliant": 200,
+  "averageScore": 99.04,
+  "blockingFiles": [],
+  "blockingPaths": [],
+  "excludedFiles": 0,
+  "results": [
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\agents\\registry\\agent-registry.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\01_SUPERIOR_PROMPT\\Agent_Lee_Superior_Prompt.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\02_ENGINE\\agentlee_persona_engine_v1_1.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\03_POETRY\\agentlee_poetry_bank.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\04_LINGO\\agentlee_lingo_worker.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\05_MANIFEST\\agentlee_persona_manifest.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\06_HERITAGE\\agentlee_heritage_canon.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\06_HERITAGE\\agentlee_heritage_canon.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\agentlee_persona_manifest.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Agent_Lee_Persona_System\\Agent_Lee_All_In_One_Paste_Pack.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\core\\drift.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\core\\law-engine.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\core\\scheduler.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\docs\\Agent-Lee-Packaged-Validation.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\github\\github-registry.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\github\\GITHUB_POLICY.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\github\\Invoke-AgentLeeGitHub.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\AllowedTransitions.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\collaboration\\AllowedTransitions.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\collaboration\\CollaborationContract.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\collaboration\\ReceiptSchema.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\CollaborationContract.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\ReceiptSchema.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\guard\\gold-guard.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\Log-AgentLeeEvent.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\generated-capability-catalog.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\leeway-mcp-registry.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\models\\model-routing.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\01_SUPERIOR_PROMPT\\Agent_Lee_Superior_Prompt.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\02_ENGINE\\agentlee_persona_engine_v1_1.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\03_POETRY\\agentlee_poetry_bank.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\04_LINGO\\agentlee_lingo_worker.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\05_MANIFEST\\agentlee_persona_manifest.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\06_HERITAGE\\agentlee_heritage_canon.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\assets\\06_HERITAGE\\agentlee_heritage_canon.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\index.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\package.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\README.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\anti-generic-filter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\heritage-loader.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\persona-module.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\persona-validator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\prompt-builder.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\response-formatter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\persona\\src\\voice-modes.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\queue\\repair-broker.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\queue\\repair-queue.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Build-AgentLeeVSIX.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Collect-AgentLeeEvidence.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Convert-AgentLeeToStandalone.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Install-AgentLeeVSIX.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Invoke-AgentLeeCurrentWindowClickthrough.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Invoke-AgentLeeDoctor.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Invoke-AgentLeeUIClickthrough.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Invoke-LeeWayComplianceRepair.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Launch-AgentLee-Isolated.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Resolve-AgentLeeExtension.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\Run-AgentLeePackagedValidation.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\standards\\AGENT_REGISTRY.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\standards\\leeway-standards-canon.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\validators\\audit.mjs",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\validators\\compliance-check.mjs",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\validators\\enforce.mjs",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\sdk\\validators\\generate-mcps.mjs",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\self-heal\\self-heal.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\standards\\LEEWAY_STANDARDS.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\supervisor\\planner.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\supervisor\\state-logger.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\supervisor\\state-machine.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\tools\\image-tool.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\tools\\image-tool.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\tools\\web-search.js",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\tools\\web-search.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\verification\\rca.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\verification\\verifier.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\Speak-AgentLee.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\Speak-AgentLeePiper.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\voice-policy.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\voice-runtime.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\VOICE_LOCK.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\.vscode\\launch.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\.vscode\\tasks.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\package.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\README.md",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\scripts\\Test-AgentLeePerformanceOverrides.ps1",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\agent-engineering-loop.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\agent-governance.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\agent-lee-engineering-prompt.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\agent-lee-runtime-bootstrap.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\ast.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\browser-engine.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\capability-registry.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\conversation-store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\drift-filter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\drift-watch.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\editor-bridge.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\file-intelligence.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\file-ops.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\governance-loader.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\law-engine.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\leeway-connectivity-loader.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\leeway-write-policy.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\LLMProvider.ts",
+      "score": 75,
+      "grade": "SILVER",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": false
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\memory.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\model-governance.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\model-hive.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\orchestrator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\persona.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\plan-store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\remote-context.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\reporting.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\runtime-settings.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\scheduler.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\settings-catalog.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\task-planner.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\core\\voice-adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.apply.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.codeLens.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.commands.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.conflict.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.decorations.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.diffProvider.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.receipts.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\edit-buffer\\editBuffer.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\conflictDetector.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\databaseTransaction.planner.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\dependencyGraph.builder.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\dependencyGraph.query.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\dependencyImpactAnalyzer.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\diagnosticRepair.loop.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\executionBrain.orchestrator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\executionBrain.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\executionReceipt.logger.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\executionToEditBuffer.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\hunkRebase.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\minimalHunk.generator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\repairNarration.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\repairSynthesizer.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\terminalVerification.runner.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\execution-brain\\verificationRepairToEditBuffer.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\backgroundIndexer.commands.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\backgroundIndexer.service.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\backgroundIndexer.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\backgroundIndexer.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\indexQuery.service.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\indexing\\indexToDependencyGraph.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\ingestPlugins.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayContextBuilder.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayInstructionLoader.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayKnowledge.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayKnowledgeReceipts.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayKnowledgeStore.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\leewayRepoIndexer.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\knowledge\\prepareCodexLevelContext.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveContextResolver.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveConversation.controller.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveProcessNarrator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveTaskEvents.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveTranscript.receipts.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveTranscriptBridge.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoice.commands.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoice.policy.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoice.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoiceCommandContext.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoiceInterrupts.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\liveVoiceSession.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\lazyServiceRegistry.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\modelBudget.policy.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performance.commands.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performance.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performanceGovernor.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performanceOverrides.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performanceProfile.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\performanceStatusView.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\runtimeBudget.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\runtimeServices.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\performance\\taskThrottle.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\persona\\persona-runtime-bridge.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\base.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\bridge.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\github.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\gmail.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\huggingface.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\adapters\\vercel.adapter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\agentLeePluginRouter.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\plugin.adapters.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\plugin.guard.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\plugin.registry.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\plugin.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\plugins\\pluginIntentMapper.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.commands.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.orchestrator.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.store.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.summary.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.timeline.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\session-orchestrator\\codingSession.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\image-tool.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\leeway-scanner.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\logger.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\permissions.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\router.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\web-search.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\workqueue\\workPackage.types.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\tsconfig.json",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    },
+    {
+      "file": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\workers\\executor.ts",
+      "score": 100,
+      "grade": "GOLD",
+      "header": true,
+      "region": true,
+      "tag": true,
+      "pipeline": true
+    }
+  ]
+}

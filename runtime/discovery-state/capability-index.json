@@ -1,0 +1,534 @@
+[
+  {
+    "running": false,
+    "lane": "discovery",
+    "name": "leeway_agent_skills",
+    "capabilities": [
+      "capability_registry",
+      "system_discovery",
+      "skill_catalog"
+    ],
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "dashboard",
+    "name": "leeway_pwa_dashboard",
+    "capabilities": [
+      "runtime_status_view",
+      "task_status_view",
+      "mobile_pwa_shell"
+    ],
+    "ports": [
+      5337
+    ]
+  },
+  {
+    "running": true,
+    "lane": "installer",
+    "name": "leeway_installer_runtime",
+    "capabilities": [
+      "installer_manifest",
+      "deployment_bundle_plan"
+    ],
+    "ports": [
+      5336
+    ]
+  },
+  {
+    "running": true,
+    "lane": "license",
+    "name": "leeway_license_runtime",
+    "capabilities": [
+      "license_records",
+      "customer_authorization_plan"
+    ],
+    "ports": [
+      5335
+    ]
+  },
+  {
+    "running": true,
+    "lane": "desktop",
+    "name": "leeway_desktop_runtime",
+    "capabilities": [
+      "desktop_work_orders",
+      "host_control_disabled_until_rewired"
+    ],
+    "ports": [
+      5334
+    ]
+  },
+  {
+    "running": true,
+    "lane": "browser",
+    "name": "leeway_browser_runtime",
+    "capabilities": [
+      "browser_work_orders",
+      "research_page_plan",
+      "playwright_wiring_needed"
+    ],
+    "ports": [
+      5333
+    ]
+  },
+  {
+    "running": true,
+    "lane": "phone",
+    "name": "leeway_phone_runtime",
+    "capabilities": [
+      "phone_work_orders",
+      "approval_required",
+      "device_or_provider_required"
+    ],
+    "ports": [
+      5332
+    ]
+  },
+  {
+    "running": true,
+    "lane": "calendar",
+    "name": "leeway_calendar_runtime",
+    "capabilities": [
+      "calendar_work_orders",
+      "approval_required",
+      "provider_required_for_write"
+    ],
+    "ports": [
+      5331
+    ]
+  },
+  {
+    "running": true,
+    "lane": "email",
+    "name": "leeway_email_runtime",
+    "capabilities": [
+      "email_work_orders",
+      "approval_required",
+      "provider_required_for_send"
+    ],
+    "ports": [
+      5330
+    ]
+  },
+  {
+    "running": true,
+    "lane": "router",
+    "name": "leeway_skill_router",
+    "capabilities": [
+      "planning_governor",
+      "approval_routing",
+      "work_order_dispatch"
+    ],
+    "ports": [
+      5324
+    ]
+  },
+  {
+    "running": true,
+    "lane": "telegram",
+    "name": "agent-lee-telegram-shell",
+    "capabilities": [
+      "telegram_shell",
+      "mobile_operator_interface"
+    ],
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "viewer",
+    "name": "leeway_artifact_viewer",
+    "capabilities": [
+      "artifact_rooms",
+      "plan_rooms",
+      "visual_preview_rooms"
+    ],
+    "ports": [
+      5328
+    ]
+  },
+  {
+    "running": true,
+    "lane": "creation",
+    "name": "leeway_open_notebook",
+    "capabilities": [
+      "creative_planning",
+      "open_notebook",
+      "drafts",
+      "creative_packages"
+    ],
+    "ports": [
+      5326
+    ]
+  },
+  {
+    "running": true,
+    "lane": "meeting",
+    "name": "leeway_meeting_runtime",
+    "capabilities": [
+      "meeting_rooms",
+      "jitsi_links",
+      "ics_generation"
+    ],
+    "ports": [
+      5329
+    ]
+  },
+  {
+    "running": true,
+    "lane": "document",
+    "name": "leeway_document_runtime",
+    "capabilities": [
+      "pdf_export",
+      "text_export",
+      "document_receipts"
+    ],
+    "ports": [
+      5325
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_device_operator",
+    "capabilities": "unknown_capability",
+    "ports": [
+      5323
+    ]
+  },
+  {
+    "running": true,
+    "lane": "context",
+    "name": "leeway_context_gateway",
+    "capabilities": "unknown_capability",
+    "ports": [
+      5321
+    ]
+  },
+  {
+    "running": true,
+    "lane": "entrypoint",
+    "name": "leeway_api_gateway",
+    "capabilities": [
+      "single_entrypoint",
+      "api_gateway"
+    ],
+    "ports": [
+      5320
+    ]
+  },
+  {
+    "running": true,
+    "lane": "research",
+    "name": "leeway_research_lane",
+    "capabilities": [
+      "research_lane",
+      "source_collection"
+    ],
+    "ports": [
+      5310
+    ]
+  },
+  {
+    "running": true,
+    "lane": "storage",
+    "name": "leeway_seafile_storage_gateway",
+    "capabilities": [
+      "artifact_storage",
+      "receipt_storage",
+      "durable_memory"
+    ],
+    "ports": [
+      5314
+    ]
+  },
+  {
+    "running": false,
+    "lane": "telegram",
+    "name": "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+    "capabilities": [
+      "telegram_shell",
+      "mobile_operator_interface"
+    ],
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "image",
+    "name": "agent-lee-sdxl-lightning-image-lane",
+    "capabilities": [
+      "image_generation",
+      "visual_rendering"
+    ],
+    "ports": [
+      8099
+    ]
+  },
+  {
+    "running": false,
+    "lane": "unknown",
+    "name": "agent-lee-true-character-mesh-lane",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8103
+    ]
+  },
+  {
+    "running": false,
+    "lane": "vision",
+    "name": "agent-lee-telegram-vision-lane",
+    "capabilities": [
+      "vision_kernel",
+      "camera_analysis"
+    ],
+    "ports": [
+      8104
+    ]
+  },
+  {
+    "running": false,
+    "lane": "unknown",
+    "name": "agent-lee-character-cutout-lane",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8102
+    ]
+  },
+  {
+    "running": true,
+    "lane": "image",
+    "name": "agent-lee-image-to-3d-pattern-lane",
+    "capabilities": [
+      "image_generation",
+      "visual_rendering"
+    ],
+    "ports": [
+      8101
+    ]
+  },
+  {
+    "running": false,
+    "lane": "telegram",
+    "name": "agent-lee-telegram-shell-backup-20260703-144921",
+    "capabilities": [
+      "telegram_shell",
+      "mobile_operator_interface"
+    ],
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "voice",
+    "name": "agent-lee-qwen-voice",
+    "capabilities": [
+      "tts",
+      "voice_reply",
+      "voice_walkthrough"
+    ],
+    "ports": [
+      8097
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "agent_lee_code_mode",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8080
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_runtime_fabric",
+    "capabilities": "unknown_capability",
+    "ports": [
+      4001,
+      8111
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway-jitsi-meet-web-1",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8443,
+      8008
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway-jitsi-meet-jicofo-1",
+    "capabilities": "unknown_capability",
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway-jitsi-meet-jvb-1",
+    "capabilities": "unknown_capability",
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway-jitsi-meet-prosody-1",
+    "capabilities": "unknown_capability",
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway-local-assistant-bridge",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8787
+    ]
+  },
+  {
+    "running": true,
+    "lane": "hearing",
+    "name": "agent-lee-ears-kernel",
+    "capabilities": [
+      "ears_kernel",
+      "audio_input"
+    ],
+    "ports": [
+      8094
+    ]
+  },
+  {
+    "running": true,
+    "lane": "model",
+    "name": "leeway_ollama",
+    "capabilities": [
+      "local_model_server",
+      "ollama_models"
+    ],
+    "ports": [
+      11434
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_media_router",
+    "capabilities": "unknown_capability",
+    "ports": [
+      5301
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_media_ingestion_layer",
+    "capabilities": "unknown_capability",
+    "ports": [
+      5300
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_worker_center",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8862
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_mcp_center",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8863
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_mcp_agent_center",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8861
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_agent_center",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8860
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "leeway_hybrid_fabric",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8777
+    ]
+  },
+  {
+    "running": true,
+    "lane": "vision",
+    "name": "agent-lee-vision-kernel",
+    "capabilities": [
+      "vision_kernel",
+      "camera_analysis"
+    ],
+    "ports": [
+      8093
+    ]
+  },
+  {
+    "running": true,
+    "lane": "unknown",
+    "name": "agent-lee-voice-kernel",
+    "capabilities": "unknown_capability",
+    "ports": [
+      8092
+    ]
+  },
+  {
+    "running": true,
+    "lane": "storage",
+    "name": "leeway-seafile",
+    "capabilities": [
+      "artifact_storage",
+      "receipt_storage",
+      "durable_memory"
+    ],
+    "ports": [
+      8082
+    ]
+  },
+  {
+    "running": true,
+    "lane": "storage",
+    "name": "leeway-seafile-cache",
+    "capabilities": [
+      "artifact_storage",
+      "receipt_storage",
+      "durable_memory"
+    ],
+    "ports": []
+  },
+  {
+    "running": true,
+    "lane": "storage",
+    "name": "leeway-seafile-db",
+    "capabilities": [
+      "artifact_storage",
+      "receipt_storage",
+      "durable_memory"
+    ],
+    "ports": []
+  }
+]

@@ -1,0 +1,11 @@
+﻿{
+    "version":  "LEEWAY_LOCK_REAL_ALPHA_BACK_AFTER_TYPE_TEXT_PROOF_2026-07-05",
+    "created_at":  "2026-07-05T18:40:54",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_TYPE_TEXT_PROOF",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "approval_validation_available":  true,
+    "all_physical_actions_blocked":  true,
+    "previous_milestone_preserved":  "178 proved approved real_type_text typed approved text into controlled Notepad target once",
+    "next_extension_requires_new_script":  true
+}

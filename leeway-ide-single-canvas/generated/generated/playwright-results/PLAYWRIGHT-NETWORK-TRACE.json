@@ -1,0 +1,72 @@
+[
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "method": "GET"
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "method": "GET"
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "status": 200
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "status": 200
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "method": "GET"
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/map-data",
+    "status": 200
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+    "method": "GET"
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+    "method": "GET"
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+    "method": "GET"
+  },
+  {
+    "type": "API",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+    "method": "GET"
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+    "status": 200
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+    "status": 200
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+    "status": 200
+  },
+  {
+    "type": "API_RESPONSE",
+    "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+    "status": 200
+  }
+]

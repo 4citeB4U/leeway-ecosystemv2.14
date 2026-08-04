@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "text": "OK So what are your workflow? How do you use the agents that you have?",
+    "timestamp": "2026-05-04T10:00:59.505Z"
+  },
+  {
+    "role": "agent",
+    "text": "As an AI language model, I don't have a physical presence and cannot use agents in the traditional sense. However, I can provide some general guidance on how to use workflows with agents.\n\nA typical workflow using agents involves several steps:\n\n1. Define the task or goal: Determine what you want to achieve with the workflow.\n2. Identify the relevant agents: Choose the agents that are best suited for completing each step of the task.\n3. Create a sequence of tasks: Determine the order in which the agents should be executed to complete the overall task.\n4. Set up communication between agents: Ensure that the agents can communicate and share information with one another as needed.\n5. Execute the workflow: Run the workflow and monitor its progress.\n\nBy following these steps, you can create a robust workflow using agents that will help you achieve your goals more efficiently.",
+    "timestamp": "2026-05-04T10:01:23.863Z"
+  }
+]

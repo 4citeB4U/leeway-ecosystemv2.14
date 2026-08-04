@@ -1,0 +1,33 @@
+﻿{
+    "version":  "LEEWAY_WINDOWS_SATELLITE_REGISTRATION_2026-07-05",
+    "created_at":  "2026-07-05T17:38:23",
+    "device_id":  "windows-agent-lee",
+    "contract_type":  "windows_satellite_contract",
+    "target_future_service":  "leeway_windows_satellite_actuator",
+    "target_future_port":  7331,
+    "master_operator":  "http://127.0.0.1:5323",
+    "safe_contract_routes":  [
+                                 "/health",
+                                 "/status",
+                                 "/capabilities",
+                                 "/heartbeat",
+                                 "/screen/status",
+                                 "/monitors",
+                                 "/tools",
+                                 "/receipts"
+                             ],
+    "future_approval_gated_routes":  [
+                                         "/execute/open-app",
+                                         "/execute/open-url",
+                                         "/execute/mouse-move",
+                                         "/execute/mouse-click",
+                                         "/execute/type-text",
+                                         "/execute/hotkey",
+                                         "/execute/screenshot",
+                                         "/execute/file-open",
+                                         "/execute/print",
+                                         "/execute/browser-search"
+                                     ],
+    "operating_rule":  "This script registers Windows as a satellite only. Physical execution comes later through an allowlisted local actuator service.",
+    "rollback":  "No rollback required for registry-only action. Remove device record manually if needed."
+}

@@ -1,0 +1,39 @@
+{
+  "org": "Ballers Club Barbershop GO",
+  "category": "Barbershops",
+  "priority": "Hot",
+  "address": "Milwaukee / W Wells St and N 27th St area",
+  "phone": "",
+  "fax": "",
+  "email": "",
+  "contact": "Marcus",
+  "role": "Manager",
+  "website": "",
+  "stage": "Visited",
+  "offer": "Local Business AI Tune-Up - $250",
+  "value": 250,
+  "summary": "Marcus at Ballers Club Barbershop expressed interest in AI support for no-show management, memberships, reviews, and social media. Follow-up should be scheduled for tomorrow.",
+  "painPoints": [
+    "No-show management",
+    "Membership retention",
+    "Review requests and review tracking",
+    "Social media engagement",
+    "Rebooking and customer follow-up"
+  ],
+  "missingInfo": [
+    "Direct phone number",
+    "Email",
+    "Website or booking link",
+    "Owner name",
+    "Best follow-up time"
+  ],
+  "nextFollow": "tomorrow",
+  "nextAction": "Follow up with Marcus, confirm decision-maker, collect direct phone/email, and schedule a 20-minute AI Growth Tune-Up conversation.",
+  "research": "Barbershop lead. Strong fit for appointment reminders, no-show reduction, membership follow-up, review requests, social media content, and rebooking workflows.",
+  "notes": "Day 1 walk-in lead. Pitch: $250 Local Business AI Tune-Up. Do not use Leonard Lee's phone, fax, or email as the lead's contact information. Leonard's contact info belongs only in outbound messages and signature blocks.",
+  "activity": {
+    "type": "walk-in",
+    "loggedAt": "2026-07-01T00:00:00Z",
+    "notes": "Captured by field agent; mark as Visited and Hot."
+  }
+}

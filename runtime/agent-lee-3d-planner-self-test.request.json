@@ -1,0 +1,27 @@
+﻿{
+    "user_request":  "Create a full clean 3D Agent Lee character from an image.",
+    "expected_behavior":  {
+                              "output_must_be":  [
+                                                     "strict_json_plan",
+                                                     "tool_sequence",
+                                                     "receipt_path"
+                                                 ],
+                              "must_read_manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-3d-skill-pipeline.manifest.json",
+                              "triposr_policy":  "preview_only",
+                              "must_prefer_backend":  [
+                                                          "hunyuan3d",
+                                                          "trellis"
+                                                      ],
+                              "must_reject":  [
+                                                  "flat card",
+                                                  "relief card",
+                                                  "red block",
+                                                  "distorted blob",
+                                                  "four different character turnaround",
+                                                  "cropped wing-only panels",
+                                                  "cinematic castle source"
+                                              ]
+                          },
+    "task":  "image_to_3d",
+    "created_at":  "2026-07-03T14:23:32.0326339-05:00"
+}

@@ -1,0 +1,39 @@
+{
+    "schema":  "agent-lee-desktop-runtime-bridge-v25-2b-launch-repair-proof",
+    "status":  "AGENT_LEE_DESKTOP_RUNTIME_BRIDGE_V25_2B_CHECK_REQUIRED",
+    "recordedAt":  "2026-06-28T05:12:13.4758232Z",
+    "endpoint":  "http://127.0.0.1:8792",
+    "processId":  13940,
+    "powerShellExe":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "bridgeScript":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\v25-2-desktop-runtime-bridge\\agent-lee-desktop-runtime-bridge-v25-2-server.ps1",
+    "pidFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\v25-2-desktop-runtime-bridge\\agent-lee-desktop-runtime-bridge-v25-2.pid",
+    "stateFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\v25-2-desktop-runtime-bridge\\agent-lee-desktop-runtime-bridge-v25-2.state.json",
+    "logFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-desktop-runtime-bridge-v25-2b-launch-repair-20260628-001153\\logs\\agent-lee-desktop-runtime-bridge-v25-2b.log",
+    "checks":  {
+                   "healthOk":  false,
+                   "stateOk":  false,
+                   "dockerOk":  false,
+                   "voiceOk":  false,
+                   "cloneVoiceSpeakOk":  false
+               },
+    "voiceRule":  {
+                      "requiredMode":  "LEEWAY_DOCKER_CLONE_VOICE_ONLY",
+                      "windowsSpeechFallback":  "DISABLED",
+                      "systemSpeech":  "NOT_USED"
+                  },
+    "health":  {
+                   "error":  "Unable to connect to the remote server"
+               },
+    "state":  {
+                  "error":  "Unable to connect to the remote server"
+              },
+    "docker":  {
+                   "error":  "Unable to connect to the remote server"
+               },
+    "voice":  {
+                  "error":  "Unable to connect to the remote server"
+              },
+    "speak":  {
+                  "error":  "Unable to connect to the remote server"
+              }
+}

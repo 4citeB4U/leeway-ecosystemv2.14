@@ -1,0 +1,29 @@
+﻿{
+    "version":  "LEEWAY_ENABLE_ONE_REAL_OPEN_NOTEPAD_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:22:20",
+    "mode":  "ONE_ACTION_REAL_OPEN_NOTEPAD_ONLY",
+    "real_execution_enabled":  true,
+    "physical_execution_enabled":  true,
+    "enabled_real_action":  "real_open_app",
+    "enabled_app":  "notepad",
+    "approval_required":  true,
+    "one_time_approval_required":  true,
+    "all_other_actions_blocked":  true,
+    "blocked_actions":  [
+                            "open_url",
+                            "mouse_move",
+                            "mouse_click",
+                            "type_text",
+                            "hotkey",
+                            "screenshot",
+                            "file_open",
+                            "file_reveal",
+                            "print",
+                            "cast",
+                            "shell_allowed_command",
+                            "send_message",
+                            "send_email",
+                            "send_sms",
+                            "dial_phone"
+                        ]
+}

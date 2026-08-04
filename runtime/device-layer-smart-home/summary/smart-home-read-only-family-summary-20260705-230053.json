@@ -1,0 +1,100 @@
+﻿{
+    "version":  "LEEWAY_SMART_HOME_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_265",
+    "timestamp":  "2026-07-05T23:00:54",
+    "verdict":  "LEEWAY_SMART_HOME_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "smart_home",
+    "family_status":  "SMART_HOME_ADAPTER_CONTRACT_READY",
+    "device_layer_status":  "FULL_MULTI_FAMILY_DEVICE_LAYER_READY_LOCKED_CLEAN",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status",
+                               "audio_vision_read_only_discovery_registry_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "remaining_families":  [
+
+                           ],
+    "routes":  {
+                   "smart_home_discover":  true,
+                   "smart_home_status":  true,
+                   "smart_home_registry":  true,
+                   "smart_home_adapter_status":  true,
+                   "smart_home_policy":  true,
+                   "all_smart_home_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "discovered_count":  0,
+                         "home_assistant_api_invoked":  false,
+                         "matter_invoked":  false,
+                         "zigbee_invoked":  false,
+                         "zwave_invoked":  false,
+                         "mqtt_invoked":  false,
+                         "google_home_api_invoked":  false,
+                         "alexa_api_invoked":  false,
+                         "homekit_invoked":  false,
+                         "cloud_api_invoked":  false,
+                         "local_device_api_invoked":  false,
+                         "device_command_executed":  false,
+                         "home_state_mutation_executed":  false,
+                         "lock_unlocked":  false,
+                         "door_opened":  false,
+                         "garage_opened":  false,
+                         "alarm_changed":  false,
+                         "thermostat_changed":  false,
+                         "light_changed":  false,
+                         "camera_stream_opened":  false,
+                         "microphone_accessed":  false,
+                         "speaker_playback_started":  false,
+                         "automation_triggered":  false,
+                         "physical_action_executed":  false
+                     },
+    "proof_chain":  {
+                        "contract_261_exists":  true,
+                        "contract_261_clean":  true,
+                        "plan_262_exists":  true,
+                        "plan_262_clean":  true,
+                        "patch_263_exists":  true,
+                        "patch_263_clean":  true,
+                        "audit_264_exists":  true,
+                        "audit_264_clean":  true,
+                        "contract_261_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-adapter-contract-proof-latest.json",
+                        "plan_262_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-read-only-route-patch-plan-proof-latest.json",
+                        "patch_263_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-read-only-routes-patch-263-latest.json",
+                        "audit_264_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "home_assistant_api_invoked":  false,
+                   "matter_invoked":  false,
+                   "zigbee_invoked":  false,
+                   "zwave_invoked":  false,
+                   "mqtt_invoked":  false,
+                   "cloud_api_invoked":  false,
+                   "local_device_api_invoked":  false,
+                   "device_command_executed":  false,
+                   "home_state_mutations":  0,
+                   "physical_actions_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "DEVICE_LAYER_FULL_MULTI_FAMILY_READY"
+}

@@ -1,0 +1,288 @@
+{
+  "packet_id": "exec-1783236101-8e64e3e9",
+  "request": "Okay give me the rap",
+  "source": "telegram",
+  "user_id": "telegram",
+  "task_type": "rap",
+  "complexity": "simple",
+  "approval_required": false,
+  "required_lanes": [
+    "leeway_performance_runtime",
+    "agent-lee-qwen-voice",
+    "agent-lee-voice-kernel"
+  ],
+  "truth_source": "/architecture/latest-canonical-architecture.json",
+  "truth_blockers": [],
+  "workboard_task_id": "task-1783236100-538715a4",
+  "status_phrase": "I'm here. Let's tighten it up.",
+  "visible_trace": {
+    "state": "THINKING",
+    "message": "Request captured. Capability and routing checks are active.",
+    "steps": [
+      {
+        "index": 1,
+        "text": "Capture the request exactly.",
+        "status": "ACTIVE"
+      },
+      {
+        "index": 2,
+        "text": "Classify task type, urgency, risk, and approval requirement.",
+        "status": "PENDING"
+      },
+      {
+        "index": 3,
+        "text": "Check discovery and available runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 4,
+        "text": "Create Workboard task and visible status.",
+        "status": "PENDING"
+      },
+      {
+        "index": 5,
+        "text": "Build work breakdown and to-do list.",
+        "status": "PENDING"
+      },
+      {
+        "index": 6,
+        "text": "Route to required runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 7,
+        "text": "Create theme, hook, verses, bridge, outro, and performance notes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 8,
+        "text": "Prepare one voice-first performance summary.",
+        "status": "PENDING"
+      },
+      {
+        "index": 9,
+        "text": "Send lyrics and truth status.",
+        "status": "PENDING"
+      },
+      {
+        "index": 10,
+        "text": "Write receipt.",
+        "status": "PENDING"
+      },
+      {
+        "index": 11,
+        "text": "Update visible operational trace after major steps.",
+        "status": "PENDING"
+      },
+      {
+        "index": 12,
+        "text": "Validate against original request.",
+        "status": "PENDING"
+      },
+      {
+        "index": 13,
+        "text": "Deliver result or exact blocker.",
+        "status": "PENDING"
+      },
+      {
+        "index": 14,
+        "text": "Store receipt and learning event if needed.",
+        "status": "PENDING"
+      }
+    ]
+  },
+  "truth_summary": {
+    "ok": true,
+    "truth_source": "/architecture/latest-canonical-architecture.json",
+    "created_at": "2026-07-04T20:15:41.1925591-05:00",
+    "verdict": "LEEWAY_CANONICAL_ARCHITECTURE_LOCKDOWN_V2_CREATED",
+    "container_count": 52,
+    "placeholder_review_count": 17,
+    "missing_known_count": 1,
+    "secrets_detected_count": 76,
+    "doctrine": {
+      "discovery_registry": "leeway_agent_skills:5327",
+      "truth_rule": "Agent Lee must classify LIVE, PARTIAL, SHELL_ONLY, NEEDS_PROVIDER, NEEDS_DEVICE_WIRING, DOWN, or UNKNOWN before claiming capability.",
+      "workboard": "leeway_workboard_runtime:5339",
+      "no_bridge_sprawl": true,
+      "installer_runtime": "leeway_installer_runtime:5336",
+      "one_system": true,
+      "planning_router": "leeway_skill_router:5324",
+      "executive_layer": "leeway_executive_runtime:5340",
+      "distribution_goal": "Replicable Leeway Ecosystem package with customer onboarding, Telegram setup, startup scripts, and capability awareness.",
+      "external_entrypoint": "leeway_api_gateway:5320"
+    },
+    "core_order": [
+      "leeway_api_gateway",
+      "leeway_executive_runtime",
+      "leeway_workboard_runtime",
+      "leeway_agent_skills",
+      "leeway_skill_router",
+      "leeway_context_gateway",
+      "leeway_runtime_fabric",
+      "agent-lee-telegram-shell",
+      "leeway_pwa_dashboard"
+    ],
+    "distribution": {
+      "customer_config_dir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\customer-config",
+      "installer_dir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\installer",
+      "scripts_dir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\scripts",
+      "package_root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution",
+      "manifest_dir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\manifests"
+    }
+  },
+  "accord_applied": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "workboard": {
+    "ok": true,
+    "status_code": 200,
+    "data": {
+      "ok": true,
+      "task": {
+        "task_id": "task-1783236100-538715a4",
+        "request": "Okay give me the rap",
+        "source": "telegram",
+        "user_id": "telegram",
+        "task_type": "rap",
+        "status": "THINKING",
+        "message": "Thinking through the request and preparing the plan.",
+        "current_step": 1,
+        "todo": [
+          {
+            "index": 1,
+            "text": "Capture the request exactly.",
+            "status": "ACTIVE"
+          },
+          {
+            "index": 2,
+            "text": "Classify task type, urgency, risk, and approval requirement.",
+            "status": "PENDING"
+          },
+          {
+            "index": 3,
+            "text": "Check discovery and available runtime lanes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 4,
+            "text": "Create Workboard task and visible status.",
+            "status": "PENDING"
+          },
+          {
+            "index": 5,
+            "text": "Build work breakdown and to-do list.",
+            "status": "PENDING"
+          },
+          {
+            "index": 6,
+            "text": "Route to required runtime lanes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 7,
+            "text": "Create theme, hook, verses, bridge, outro, and performance notes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 8,
+            "text": "Prepare one voice-first performance summary.",
+            "status": "PENDING"
+          },
+          {
+            "index": 9,
+            "text": "Send lyrics and truth status.",
+            "status": "PENDING"
+          },
+          {
+            "index": 10,
+            "text": "Write receipt.",
+            "status": "PENDING"
+          },
+          {
+            "index": 11,
+            "text": "Update visible operational trace after major steps.",
+            "status": "PENDING"
+          },
+          {
+            "index": 12,
+            "text": "Validate against original request.",
+            "status": "PENDING"
+          },
+          {
+            "index": 13,
+            "text": "Deliver result or exact blocker.",
+            "status": "PENDING"
+          },
+          {
+            "index": 14,
+            "text": "Store receipt and learning event if needed.",
+            "status": "PENDING"
+          }
+        ],
+        "blocker": "",
+        "artifact_url": "",
+        "artifact_path": "",
+        "metadata": {
+          "created_by": "leeway_executive_runtime",
+          "power_level": 10
+        },
+        "created_at": "2026-07-05T07:21:40.880794+00:00",
+        "updated_at": "2026-07-05T07:21:40.880842+00:00"
+      },
+      "receipt": {
+        "verdict": "LEEWAY_WORKBOARD_TASK_CREATED",
+        "runtime": "leeway_workboard_runtime",
+        "kind": "task_created",
+        "created_at": "2026-07-05T07:21:41.077634+00:00",
+        "task_id": "task-1783236100-538715a4",
+        "status": "THINKING",
+        "receipt_path": "/app/receipts/workboard_task_created_1783236101_4814af16.receipt.json"
+      }
+    }
+  },
+  "discovery": {
+    "health": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"created_at\":\"2026-07-05T07:21:41.236583+00:00\"}"
+    },
+    "capabilities": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"summary\":\"Agent Lee capability registry loaded from Docker discovery.\",\"total_runtime_items\":0,\"running_count\":0,\"entrypoint\":{},\"capability_index\":[],\"rules\":[]}"
+    },
+    "containers": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"containers\":[],\"count\":0}"
+    },
+    "routes": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"routes\":[],\"count\":0}"
+    }
+  },
+  "router_plan": {},
+  "created_at": "2026-07-05T07:21:41.265304+00:00",
+  "status": "EXECUTIVE_PACKET_CREATED"
+}

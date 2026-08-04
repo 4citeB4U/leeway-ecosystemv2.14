@@ -1,0 +1,59 @@
+{
+  "voice_kernel": {
+    "name": "Agent Lee Voice Kernel",
+    "version": "1.0.0",
+    "engine": "XTTS-v2",
+    "model": "coqui/XTTS-v2"
+  },
+  "agent_identity": {
+    "agent_id": "agent-lee",
+    "voice_sample": "/app/voice-samples/agent-lee.wav",
+    "voice_sample_source": "/app/voice-samples/agent-lee-source.m4a"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8092,
+    "log_level": "info"
+  },
+  "xtts": {
+    "language": "en",
+    "temperature": 0.75,
+    "length_penalty": 1.0,
+    "repetition_penalty": 5.0,
+    "top_k": 50,
+    "top_p": 0.85,
+    "speed": 0.92,
+    "enable_text_splitting": true
+  },
+  "runtime_fabric": {
+    "enabled": true,
+    "endpoint": "http://host.docker.internal:4001",
+    "register_on_boot": true
+  },
+  "desktop_runtime": {
+    "enabled": true,
+    "endpoint": "http://host.docker.internal:8091",
+    "playback_enabled": true,
+    "speaker_profile": "default-local-speakers",
+    "speaker_volume": 0.95
+  },
+  "router": {
+    "enabled": true,
+    "endpoint": "http://host.docker.internal:8080"
+  },
+  "boot_speech": {
+    "enabled": true,
+    "text": "System online. Agent Lee runtime initialized. All systems operational.",
+    "auto_play": true
+  },
+  "cache": {
+    "model_cache_dir": "/app/cache",
+    "speaker_embedding_cache": true,
+    "preload_model": true
+  },
+  "output": {
+    "format": "wav",
+    "sample_rate": 24000,
+    "output_dir": "/app/output"
+  }
+}

@@ -1,0 +1,50 @@
+# Agent Lee Voice Kernel - Docker Compose Configuration
+# Single-engine XTTS-v2 voice system
+
+services:
+  voice-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-lee-voice-kernel
+    ports:
+      - "8092:8092"
+    volumes:
+      # Persistent cache for model
+      - voice-kernel-cache:/app/cache
+      # Output directory for generated audio
+      - voice-kernel-output:/app/output
+      # Logs directory
+      - voice-kernel-logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - COQUI_TOS_AGREED=1
+      - XTTS_CACHE_DIR=/app/cache
+      - XTTS_OUTPUT_DIR=/app/output
+    extra_hosts:
+      # Allow container to reach host services
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8092/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - leeway-network
+
+networks:
+  leeway-network:
+    name: leeway-network
+    external: true
+
+volumes:
+  voice-kernel-cache:
+    name: agent-lee-voice-kernel-cache
+  voice-kernel-output:
+    name: agent-lee-voice-kernel-output
+  voice-kernel-logs:
+    name: agent-lee-voice-kernel-logs
+
+# Made with Bob

@@ -1,0 +1,62 @@
+{
+    "schema":  "agent-lee-adaptive-creation-preloader-state-v13-6",
+    "updatedAt":  "2026-06-28T02:14:45.0186384Z",
+    "authority":  "Discovery Layer",
+    "baseUrl":  "http://127.0.0.1:8094",
+    "mode":  "ADAPTIVE_PRELOAD_AND_KEEP_WARM",
+    "requestedMode":  "HOT_CREATION_MODE",
+    "creativeSessionActive":  true,
+    "action":  "ALREADY_WARM_ACTIVE",
+    "serviceReady":  true,
+    "pipeLoadedBefore":  true,
+    "pipeLoadedAfter":  true,
+    "health":  {
+                   "status":  "READY",
+                   "kernel":  "agent-lee-creation-kernel",
+                   "model_id":  "stabilityai/sdxl-turbo",
+                   "device_mode":  "auto",
+                   "resolved_device":  "cpu",
+                   "optimization_profile":  "PI_SAFE",
+                   "uptime_seconds":  6720.612
+               },
+    "statusBefore":  {
+                         "status":  "READY",
+                         "kernel":  "agent-lee-creation-kernel",
+                         "model_id":  "stabilityai/sdxl-turbo",
+                         "device_mode":  "auto",
+                         "resolved_device":  "cpu",
+                         "resolved_dtype":  "float32",
+                         "pipe_loaded":  true,
+                         "pipe_error":  "",
+                         "optimization_profile":  "PI_SAFE",
+                         "torch_version":  "2.12.1+cu130",
+                         "cuda_available":  false,
+                         "python":  "3.11.15"
+                     },
+    "warmup":  null,
+    "statusAfter":  {
+                        "status":  "READY",
+                        "kernel":  "agent-lee-creation-kernel",
+                        "model_id":  "stabilityai/sdxl-turbo",
+                        "device_mode":  "auto",
+                        "resolved_device":  "cpu",
+                        "resolved_dtype":  "float32",
+                        "pipe_loaded":  true,
+                        "pipe_error":  "",
+                        "optimization_profile":  "PI_SAFE",
+                        "torch_version":  "2.12.1+cu130",
+                        "cuda_available":  false,
+                        "python":  "3.11.15"
+                    },
+    "currentTruth":  "CREATION_MODEL_HOT_READY",
+    "speedTruth":  "Under-one-second cold load is not guaranteed on CPU. Near-instant readiness comes from prewarming before the request.",
+    "packageTruth":  "Metadata, tags, receipts, and documents should start immediately while image rendering runs.",
+    "guardrails":  [
+                       "No Docker build.",
+                       "No Docker restart.",
+                       "No duplicate Creation Kernel.",
+                       "No second SDXL pipeline.",
+                       "No fake instant-generation claim.",
+                       "3D remains source-patched and build-held."
+                   ]
+}

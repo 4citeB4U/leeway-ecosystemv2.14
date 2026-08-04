@@ -1,0 +1,33 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_SOURCE_PATH_FINALIZATION_284C_WR",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:04:13",
+    "verdict":  "LEEWAY_REAL_ALPHA_SOURCE_PATH_FINALIZATION_NO_EXECUTE_CLEAN",
+    "conclusion":  "REAL_ALPHA_SOURCE_PATH_FINALIZED_READY_FOR_284D_TARGETED_PATCH",
+    "primary_source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+    "primary_working_directory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service",
+    "primary_exists":  true,
+    "primary_looks_correct":  true,
+    "source_signal_scan_ok":  true,
+    "command_line":  "python  -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 ",
+    "command_line_matches_module":  true,
+    "port_7332_process_info":  [
+                                   {
+                                       "pid":  45808,
+                                       "process_name":  "python.exe",
+                                       "executable_path":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                                       "command_line":  "python  -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 "
+                                   }
+                               ],
+    "windows_locked":  true,
+    "open_app_executed_during_finalization":  false,
+    "safety":  {
+                   "finalization_only":  true,
+                   "patch_applied":  false,
+                   "no_execution_in_284cwr":  true,
+                   "open_app_remained_blocked":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284D-apply-real-alpha-single-approved-action-window-patch-no-execute.ps1"
+}

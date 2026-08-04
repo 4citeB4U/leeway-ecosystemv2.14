@@ -1,0 +1,21 @@
+{
+    "schema":  "agent-lee-v26-25-real-pointer-auto-live-state",
+    "timestamp":  "2026-06-29T03:19:12.9086666Z",
+    "status":  "FLOW_COMPLETE",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "proofRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-25-real-pointer-auto-live-20260628-124842",
+    "eventsPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-25-real-pointer-auto-live-20260628-124842\\events\\agent-lee-pointer-events.jsonl",
+    "statePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-real-pointer-auto-live\\state\\agent-lee-real-pointer-auto-live-state.json",
+    "pointerState":  "complete",
+    "pointerMessage":  "Full proof complete. Receipts written.",
+    "pointerX":  512,
+    "pointerY":  168,
+    "flowStarted":  true,
+    "flowDone":  true,
+    "voiceMode":  "XTTS_V2_CLONE_VOICE",
+    "data":  {
+                 "proofJson":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-25-real-pointer-auto-live-20260628-124842\\agent-lee-v26-25-full-proof.json",
+                 "finalReport":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-25-real-pointer-auto-live-20260628-124842\\reports\\agent-lee-v26-25-final-report.txt",
+                 "receiptPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\leeway-system-completion\\agent-lee-v26-25-real-pointer-auto-live-20260628-221846.json"
+             }
+}

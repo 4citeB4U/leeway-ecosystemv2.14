@@ -1,0 +1,32 @@
+﻿{
+    "approval_id":  "approved-real-open-notepad-20260705-182220-28bb64277de4",
+    "created_at":  "2026-07-05T18:22:21",
+    "expires_at":  "2026-07-05T18:32:21",
+    "requested_by":  "script_172",
+    "decided_at":  "2026-07-05T18:22:21",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "One-time approval to physically open Notepad through the real-alpha one-action actuator.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "arguments":  [
+
+                                  ]
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  false,
+    "rollback_or_stop":  "Close the new Notepad window manually, or run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 to stop the actuator service.",
+    "safety_expectation":  {
+                               "no_url":  true,
+                               "no_keyboard":  true,
+                               "no_mouse":  true,
+                               "only_notepad_should_open":  true,
+                               "no_shell":  true
+                           }
+}

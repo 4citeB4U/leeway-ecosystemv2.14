@@ -1,0 +1,24 @@
+﻿{
+    "version":  "LEEWAY_REAL_WINDOWS_ACTUATOR_APPROVAL_GATE_2026-07-05",
+    "schema_id":  "leeway-real-windows-actuator-approval-decision-schema",
+    "required_fields":  [
+                            "approval_id",
+                            "decision",
+                            "decided_at",
+                            "decided_by",
+                            "decision_summary"
+                        ],
+    "allowed_decisions":  [
+                              "APPROVED",
+                              "DENIED",
+                              "CANCELLED"
+                          ],
+    "model":  {
+                  "decision_summary":  "plain_english_reason",
+                  "decided_by":  "Leonard J Lee",
+                  "one_time_use":  true,
+                  "decision":  "APPROVED_DENIED_CANCELLED",
+                  "decided_at":  "iso_datetime",
+                  "approval_id":  "string"
+              }
+}

@@ -1,0 +1,100 @@
+{
+  "channels": [
+    {
+      "channel_type": "phone",
+      "channel_name": "agent_lee_phone_number",
+      "config": {
+        "future_lane": "leeway_phone_runtime",
+        "options": [
+          "sip_provider",
+          "android_companion_runtime",
+          "desktop_softphone_control"
+        ],
+        "purpose": "Dedicated phone identity for Agent Lee.",
+        "execution_policy": "call_or_sms_only_after_approval"
+      },
+      "enabled": true,
+      "registered_at": "2026-07-04T01:41:24.165536+00:00"
+    },
+    {
+      "channel_type": "telegram",
+      "channel_name": "agent_lee_telegram",
+      "config": {
+        "routes_through": "leeway_device_operator",
+        "device_layer_route": "/shells/telegram/status",
+        "purpose": "Primary mobile control surface for Agent Lee.",
+        "windows_satellite": "windows-agent-lee",
+        "receive_policy": "safe_to_receive_and_parse",
+        "shell_role": "primary_remote_control_shell",
+        "runtime_container": "agent-lee-telegram-shell",
+        "send_policy": "approval_required_for_external_send"
+      },
+      "enabled": true,
+      "registered_at": "2026-07-05T22:40:56.612367+00:00"
+    },
+    {
+      "channel_type": "whatsapp",
+      "channel_name": "agent_lee_whatsapp",
+      "config": {
+        "shell_role": "secondary_business_customer_shell",
+        "routes_through": "leeway_device_operator",
+        "device_layer_route": "/shells/whatsapp/status",
+        "purpose": "Business messaging and customer follow-up shell.",
+        "windows_satellite": "windows-agent-lee",
+        "receive_policy": "future_safe_to_receive_and_parse",
+        "production_adapter": "whatsapp_business_cloud_api_or_approved_local_bridge",
+        "send_policy": "approval_required_for_external_send"
+      },
+      "enabled": true,
+      "registered_at": "2026-07-05T22:40:56.685295+00:00"
+    },
+    {
+      "channel_type": "email",
+      "channel_name": "agent_lee_email",
+      "config": {
+        "shell_role": "proposal_and_customer_communication_shell",
+        "windows_satellite": "windows-agent-lee",
+        "purpose": "Email drafting, proposal delivery, and receipt delivery shell.",
+        "receive_policy": "future_read_with_scope",
+        "send_policy": "draft_or_approve_before_send",
+        "device_layer_route": "/shells/email/send",
+        "routes_through": "leeway_device_operator"
+      },
+      "enabled": true,
+      "registered_at": "2026-07-05T22:40:56.755515+00:00"
+    },
+    {
+      "channel_type": "sms",
+      "channel_name": "agent_lee_sms",
+      "config": {
+        "shell_role": "phone_text_shell",
+        "adapter": "android_companion_or_carrier_bridge_future",
+        "windows_satellite": "windows-agent-lee",
+        "send_policy": "approval_required",
+        "device_layer_route": "/shells/sms/send",
+        "routes_through": "leeway_device_operator",
+        "purpose": "Approved text-message shell."
+      },
+      "enabled": true,
+      "registered_at": "2026-07-05T22:40:56.835744+00:00"
+    },
+    {
+      "channel_type": "phone",
+      "channel_name": "agent_lee_phone",
+      "config": {
+        "shell_role": "voice_call_shell",
+        "dial_policy": "approval_required",
+        "windows_satellite": "windows-agent-lee",
+        "purpose": "Approved outbound/inbound phone call shell.",
+        "routes_through": "leeway_device_operator",
+        "adapter_options": [
+          "sip_provider_future",
+          "android_companion_runtime_future",
+          "desktop_softphone_future"
+        ]
+      },
+      "enabled": true,
+      "registered_at": "2026-07-05T22:40:56.915127+00:00"
+    }
+  ]
+}

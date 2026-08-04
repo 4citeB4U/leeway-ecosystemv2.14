@@ -1,0 +1,38 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_READ_ONLY_ROUTE_REQUIREMENT_231",
+    "timestamp":  "2026-07-05T21:37:17",
+    "family":  "audio_vision",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_AUDIO_VISION_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/audio-vision/discover",
+                                         "purpose":  "Return normalized audio/vision discovery without activating devices.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/audio-vision/status",
+                                         "purpose":  "Return audio/vision readiness, discovered counts, control disabled, approval required for capture/playback.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/audio-vision/registry",
+                                         "purpose":  "Return normalized audio/vision registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no camera activation",
+                      "no microphone activation",
+                      "no speaker playback",
+                      "no audio/video recording",
+                      "no permission mutation",
+                      "no default device mutation",
+                      "no physical action"
+                  ]
+}

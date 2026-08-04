@@ -1,0 +1,125 @@
+﻿{
+    "version":  "LEEWAY_IOT_READ_ONLY_ROUTE_PATCH_PLAN_NO_EXECUTE_2026-07-05",
+    "timestamp":  "2026-07-05T20:54:35",
+    "plan_id":  "iot-read-only-route-patch-plan-20260705-205435",
+    "family":  "iot",
+    "plan_status":  "PLAN_CREATED_NO_PATCH_APPLIED",
+    "purpose":  "Add read-only IoT status, registry, and devices routes to Device Operator.",
+    "current_truth":  {
+                          "iot_discover_present":  true,
+                          "iot_status_present":  false,
+                          "iot_registry_present":  false,
+                          "iot_devices_present":  false,
+                          "discovered_count":  0,
+                          "no_devices_found":  true,
+                          "patch_needed":  true
+                      },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/status",
+                              "handler_name":  "iot_status",
+                              "purpose":  "Return IoT route readiness, discovered count, registry path, and no-execute policy summary.",
+                              "read_only":  true,
+                              "executes_physical_action":  false,
+                              "approval_required":  false,
+                              "expected_response_fields":  [
+                                                               "ok",
+                                                               "family",
+                                                               "mode",
+                                                               "discovery_route_present",
+                                                               "status_route_present",
+                                                               "registry_route_present",
+                                                               "devices_route_present",
+                                                               "discovered_count",
+                                                               "control_enabled",
+                                                               "approval_required_for_control",
+                                                               "registry_path",
+                                                               "policy_path",
+                                                               "contract_path"
+                                                           ]
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/registry",
+                              "handler_name":  "iot_registry",
+                              "purpose":  "Return normalized IoT registry artifact from runtime/device-layer-iot/latest/iot-registry-latest.json.",
+                              "read_only":  true,
+                              "executes_physical_action":  false,
+                              "approval_required":  false,
+                              "expected_response_fields":  [
+                                                               "ok",
+                                                               "family",
+                                                               "registry_status",
+                                                               "discovered_count",
+                                                               "normalized_devices",
+                                                               "control_enabled",
+                                                               "source_path"
+                                                           ]
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/iot/devices",
+                              "handler_name":  "iot_devices",
+                              "purpose":  "Return IoT device list from normalized registry.",
+                              "read_only":  true,
+                              "executes_physical_action":  false,
+                              "approval_required":  false,
+                              "expected_response_fields":  [
+                                                               "ok",
+                                                               "family",
+                                                               "count",
+                                                               "devices",
+                                                               "control_enabled",
+                                                               "source_path"
+                                                           ]
+                          }
+                      ],
+    "explicit_non_goals":  [
+                               "no POST /iot/control",
+                               "no POST /iot/toggle",
+                               "no device state mutation",
+                               "no pairing",
+                               "no discovery beyond existing /iot/discover behavior",
+                               "no real IoT physical action",
+                               "no Docker prune",
+                               "no destructive cleanup"
+                           ],
+    "patch_constraints":  [
+                              "Patch must modify Device Operator only enough to expose read-only routes.",
+                              "Patch must preserve leeway_device_operator as master.",
+                              "Patch must not create a new bridge or replacement control plane.",
+                              "Patch must not enable any IoT physical control.",
+                              "Patch must write receipt and verification report.",
+                              "Patch must verify Windows real-alpha stays locked after patch."
+                          ],
+    "validation_after_patch":  [
+                                   "GET /iot/discover returns 200",
+                                   "GET /iot/status returns 200",
+                                   "GET /iot/registry returns 200",
+                                   "GET /iot/devices returns 200",
+                                   "GET /health returns 200",
+                                   "GET /admin/device-layer/dashboard-data returns 200",
+                                   "Windows real-alpha real_execution_enabled remains false",
+                                   "Windows real-alpha physical_execution_enabled remains false",
+                                   "No IoT actions executed"
+                               ],
+    "artifacts_used":  {
+                           "registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-registry-latest.json",
+                           "approval_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-approval-policy-latest.json",
+                           "capability_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-capability-contract-latest.json",
+                           "empty_discovery_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-empty-discovery-policy-latest.json",
+                           "simulated_plan_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-simulated-low-risk-plan-latest.json",
+                           "route_patch_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-read-only-route-patch-requirement-latest.json"
+                       },
+    "safety":  {
+                   "plan_only":  true,
+                   "patch_applied":  false,
+                   "physical_actions_executed":  0,
+                   "iot_actions_executed":  0,
+                   "device_state_changed":  false,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "218-apply-iot-read-only-routes-patch-no-physical-execute.ps1"
+}

@@ -1,0 +1,32 @@
+﻿{
+    "version":  "LEEWAY_ARM_ENDPOINT_500_DIAGNOSIS_284E_DIAG",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:17:18",
+    "verdict":  "LEEWAY_ARM_ENDPOINT_500_DIAGNOSIS_NO_EXECUTE_CLEAN",
+    "conclusion":  "ARM_ENDPOINT_500_FROM_PATCH_VALIDATION_FUNCTION_ERROR_PATCH_FIX_REQUIRED",
+    "source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+    "active_processes":  {
+                             "pid":  10684,
+                             "process_name":  "python.exe",
+                             "executable_path":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                             "command_line":  "\"C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 "
+                         },
+    "arm_route_in_openapi":  true,
+    "open_app_route_in_openapi":  true,
+    "invalid_arm_status":  500,
+    "invalid_arm_error":  "The remote server returned an error: (500) Internal Server Error.",
+    "invalid_arm_response_body":  "",
+    "local_import_ok":  true,
+    "local_has_arm_function":  true,
+    "local_validation_function_ok":  false,
+    "open_app_executed_during_diag":  false,
+    "safety":  {
+                   "diagnosis_only":  true,
+                   "no_valid_arm_window_created":  true,
+                   "no_execution_in_284e_diag":  true,
+                   "open_app_remained_blocked":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284E-FIX-plan-or-apply-arm-endpoint-500-fix-no-execute.ps1"
+}

@@ -1,0 +1,12 @@
+{
+    "schema":  "agent-lee-docker-hybrid-fabric-seafile-network-bridge-v18-4",
+    "updatedAt":  "2026-06-28T01:18:25.6642367Z",
+    "status":  "V18_4_SEAFILE_NETWORK_BRIDGE_FILES_WRITTEN",
+    "reason":  "Seafile is on leeway-seafile-net while Hybrid Fabric was only on leeway-ecosystemv214_leeway-net.",
+    "worker":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker-nobind\\worker.mjs",
+    "compose":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.nobind.yml",
+    "hybridContainer":  "leeway_hybrid_fabric",
+    "addedNetwork":  "leeway-seafile-net",
+    "seafileDirectProbe":  "http://leeway-seafile",
+    "hostFallbackProbe":  "http://host.docker.internal:8082"
+}

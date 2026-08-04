@@ -1,0 +1,67 @@
+﻿/*
+FILE: leeway-agents\src\index.css
+PURPOSE: LeeWay governed asset for leeway-employment-center.
+TAG: AI.ORCHESTRATION.I_ND_EX.MAIN
+REGION: 🧠 AI
+GOVERNED_BY: LeeWay Standards
+OWNED_BY: Agent Lee / LeeWay Runtime
+DISCOVERY_PIPELINE: Voice → Intent → Location → Vertical → Ranking → Render
+IMPORTS: Inferred by verification scanner
+EXPORTS: Inferred by verification scanner
+STATUS: ACTIVE
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-cyber-blue: #00f2ff;
+  --color-cyber-green: #00ff9d;
+  --color-cyber-orange: #ff9d00;
+  --color-cyber-red: #ff4d4d;
+  --color-cyber-bg: #05070a;
+  --color-cyber-card: #0d1117;
+  --color-cyber-border: #1f2937;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-bg text-slate-300 font-mono antialiased overflow-hidden;
+  }
+}
+
+@layer components {
+  .console-panel {
+    @apply bg-cyber-card border border-cyber-border rounded-sm shadow-lg overflow-hidden;
+  }
+  
+  .console-header {
+    @apply bg-cyber-border/30 px-3 py-1 border-b border-cyber-border flex items-center justify-between text-[10px] font-bold uppercase tracking-widest text-slate-400;
+  }
+
+  .cyber-button {
+    @apply relative overflow-hidden px-3 py-1.5 rounded-sm font-mono text-[11px] uppercase tracking-wider transition-all duration-200 
+           border border-cyber-blue/30 bg-cyber-blue/5 text-cyber-blue hover:bg-cyber-blue/20 
+           active:bg-cyber-blue/30 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .cyber-input {
+    @apply bg-black/40 border border-cyber-border rounded-sm px-3 py-1.5 text-xs font-mono focus:outline-none 
+           focus:border-cyber-blue/50 transition-colors placeholder:text-slate-700 text-cyber-blue;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-cyber-border rounded-full hover:bg-slate-600;
+}
+
+

@@ -1,0 +1,18 @@
+{
+    "schema":  "agent-lee-v26-23b-visible-operator-state",
+    "updatedAt":  "2026-06-28T17:44:48.1310102Z",
+    "status":  "VOICE_ASYNC_STARTED",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "operatorRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-visible-operator-v26-23b",
+    "proofDir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-23b-visible-operator-20260628-123816",
+    "statePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-visible-operator-v26-23b\\state\\agent-lee-visible-operator-state.json",
+    "transcriptPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-23b-visible-operator-20260628-123816\\agent-lee-visible-operator-transcript.txt",
+    "errorPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-v26-23b-visible-operator-20260628-123816\\agent-lee-visible-operator-error.txt",
+    "paused":  false,
+    "stopRequested":  false,
+    "voiceMode":  "WINDOWS_SAPI_ASYNC",
+    "runCount":  1,
+    "extra":  {
+                  "textPreview":  "Leonard, full visible proof run is complete. Report, website, receipts, Telegram, and print lane are written. Any check "
+              }
+}

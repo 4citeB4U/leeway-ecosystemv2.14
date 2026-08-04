@@ -1,0 +1,19 @@
+﻿{
+    "agentId":  "agent-lee",
+    "createdAt":  "2026-06-22T05:42:54.6536440-05:00",
+    "role":  "supreme-agent-lead",
+    "memoryRepoId":  "3b990071-3f8f-44fb-be91-a76b23510eba",
+    "memoryStructure":  {
+                            "artifacts":  "/artifacts",
+                            "logs":  "/logs",
+                            "governance":  "/governance",
+                            "semantic":  "/semantic",
+                            "working":  "/working",
+                            "episodic":  "/episodic",
+                            "coreMemory":  "/core-memory"
+                        },
+    "agentMode":  "code-mode",
+    "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+    "schema":  "agent-lee-core-identity-v1",
+    "memorySystemInitialized":  true
+}

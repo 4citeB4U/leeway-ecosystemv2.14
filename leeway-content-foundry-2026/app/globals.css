@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-primary: #3b82f6;
+  --color-brand-dark: #0f1115;
+  --color-brand-surface: #1a1d24;
+  --color-brand-border: rgba(255, 255, 255, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+  @apply bg-brand-dark text-slate-200 font-sans antialiased overflow-hidden selection:bg-brand-primary/30;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-brand-dark;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
+
+.text-glow-primary {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.glass {
+  @apply bg-slate-900/70 backdrop-blur-xl border border-brand-border;
+}
+
+.port {
+  @apply w-3 h-3 rounded-full border-2 border-brand-dark bg-slate-600 transition-all hover:scale-125 hover:bg-brand-primary;
+}
+
+.port-connected {
+  @apply bg-brand-primary shadow-[0_0_8px_rgba(59,130,246,0.6)];
+}
+
+.node-selected {
+  @apply border-brand-primary ring-2 ring-brand-primary/20 shadow-xl;
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #050506;
+  color: #e2e8f0;
+}

@@ -1,0 +1,37 @@
+{
+    "timestamp": "2026-06-03T15:13:24.7504451-05:00",
+    "report": "active-installed-version-current-audit",
+    "codeBinary": "C:\\Users\\Leona\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd",
+    "codeVersion": "1.122.1",
+    "activeExtension": "leeway.agent-lee-leeway-coding-system@1.2.13",
+    "installedDirs": [
+        {
+            "name": "leeway.agent-lee-leeway-coding-system-1.2.13",
+            "fullName": "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.13",
+            "lastWriteTime": "2026-06-03T15:11:14.2890000-05:00"
+        }
+    ],
+    "staleVersionPresent": false,
+    "staleDirs": [],
+    "vsixPath": "e:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.2.13.vsix",
+    "vsixPackageManifest": {
+        "name": "agent-lee-leeway-coding-system",
+        "publisher": "leeway",
+        "version": "1.2.13"
+    },
+    "vsixContentFiles": [
+        "extension/package.json",
+        "extension/out/extension.js",
+        "extension/README.md",
+        "extension/media/leeway-standards-logo.png"
+    ],
+    "readmeAssets": [
+        "extension/media/leeway-standards-logo.png",
+        "extension/media/readme-header.png",
+        "extension/media/readme-system-flow.png"
+    ],
+    "sendMessageFixPresent": true,
+    "mainExists": true,
+    "readmeExists": true,
+    "readmeMediaAssetExists": true
+}

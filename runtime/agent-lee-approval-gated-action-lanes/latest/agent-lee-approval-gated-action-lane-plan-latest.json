@@ -1,0 +1,113 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_APPROVAL_GATED_ACTION_LANE_PLAN_280",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:14:37",
+    "plan_status":  "READY_FOR_PENDING_APPROVAL_REQUEST_FACTORY_NO_EXECUTE",
+    "plan_only":  true,
+    "execution_performed":  false,
+    "selected_lane":  {
+                          "lane_id":  "windows_open_app_controlled",
+                          "title":  "Windows controlled open-app",
+                          "family":  "windows_desktop_control_plane",
+                          "first_action":  "open_notepad",
+                          "target_device_id":  "windows-agent-lee",
+                          "risk_level":  "low",
+                          "prior_proof":  "Previously proven open-app alpha with lockback",
+                          "required_sequence":  [
+                                                    "pending_request",
+                                                    "approve_no_execute",
+                                                    "blocked_until_execute_validation",
+                                                    "execute_once",
+                                                    "lockback",
+                                                    "post_execution_audit",
+                                                    "dashboard_update"
+                                                ],
+                          "recommended_first":  true
+                      },
+    "candidate_lanes":  [
+                            {
+                                "lane_id":  "windows_open_app_controlled",
+                                "title":  "Windows controlled open-app",
+                                "family":  "windows_desktop_control_plane",
+                                "first_action":  "open_notepad",
+                                "target_device_id":  "windows-agent-lee",
+                                "risk_level":  "low",
+                                "prior_proof":  "Previously proven open-app alpha with lockback",
+                                "required_sequence":  [
+                                                          "pending_request",
+                                                          "approve_no_execute",
+                                                          "blocked_until_execute_validation",
+                                                          "execute_once",
+                                                          "lockback",
+                                                          "post_execution_audit",
+                                                          "dashboard_update"
+                                                      ],
+                                "recommended_first":  true
+                            },
+                            {
+                                "lane_id":  "windows_browser_search_controlled",
+                                "title":  "Windows controlled browser search",
+                                "family":  "windows_desktop_control_plane",
+                                "first_action":  "browser_search",
+                                "target_device_id":  "windows-agent-lee",
+                                "risk_level":  "low_medium",
+                                "prior_proof":  "Previously proven approved browser search with lockback",
+                                "required_sequence":  [
+                                                          "pending_request",
+                                                          "approve_no_execute",
+                                                          "blocked_until_execute_validation",
+                                                          "execute_once",
+                                                          "lockback",
+                                                          "post_execution_audit",
+                                                          "dashboard_update"
+                                                      ],
+                                "recommended_first":  false
+                            },
+                            {
+                                "lane_id":  "windows_type_text_controlled",
+                                "title":  "Windows controlled type-text",
+                                "family":  "windows_desktop_control_plane",
+                                "first_action":  "type_text_into_controlled_notepad",
+                                "target_device_id":  "windows-agent-lee",
+                                "risk_level":  "medium",
+                                "prior_proof":  "Previously proven approved controlled Notepad typing with lockback",
+                                "required_sequence":  [
+                                                          "pending_request",
+                                                          "approve_no_execute",
+                                                          "blocked_until_execute_validation",
+                                                          "execute_once",
+                                                          "lockback",
+                                                          "post_execution_audit",
+                                                          "dashboard_update"
+                                                      ],
+                                "recommended_first":  false
+                            }
+                        ],
+    "required_governance_sequence":  [
+                                         "281-create-pending-approval-request-no-execute.ps1",
+                                         "282-promote-pending-to-approved-no-execute.ps1",
+                                         "283-approved-request-blocked-until-execution-validation.ps1",
+                                         "284-execute-one-approved-action-and-lockback.ps1",
+                                         "285-post-execution-lockback-audit.ps1",
+                                         "286-dashboard-update-after-approved-action.ps1"
+                                     ],
+    "current_lock_state":  {
+                               "windows_locked":  true,
+                               "blocked_probe_executed":  false,
+                               "execution_enabled":  false,
+                               "execute_buttons_visible":  false,
+                               "physical_actions_executed":  0
+                           },
+    "safety":  {
+                   "no_execution_in_280":  true,
+                   "no_files_modified":  true,
+                   "no_execute_buttons_added":  true,
+                   "no_post_execution_routes_added":  true,
+                   "action_requires_future_explicit_approval":  true,
+                   "one_action_only_when_execution_script_arrives":  true,
+                   "lockback_required_after_execution":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "281-create-pending-approval-request-for-windows-open-app-no-execute.ps1"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+LEEWAY_HEADER - DO NOT REMOVE
+REGION: CORE
+TAG: CORE.RUNTIME.EXTENSION.UI.CHAT_AVATAR
+PURPOSE: Dedicated Agent Lee chat avatar for the top-left webview header identity surface.
+DISCOVERY_PIPELINE: Voice -> Intent -> Location -> Vertical -> Ranking -> Render
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <rect x="2" y="2" width="44" height="44" rx="14" fill="#0E1118" stroke="#223244" stroke-width="2"/>
+  <path
+    d="M17 11h14l9 9v8l-9 9H17l-9-9v-8l9-9Z"
+    stroke="#8DF04D"
+    stroke-linejoin="round"
+    stroke-width="2.4"
+  />
+  <path
+    d="m20.6 18  -3 6.7h5.7L21.7 31l7.1-10.1h-5l1.5-2.9Z"
+    fill="#8DF04D"
+  />
+</svg>

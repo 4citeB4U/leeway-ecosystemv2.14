@@ -1,0 +1,26 @@
+services:
+  leeway-local-assistant-bridge:
+    build:
+      context: ./bridge
+    container_name: leeway-local-assistant-bridge
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      LEEWAY_BRIDGE_PORT: "8787"
+      OLLAMA_URL: "http://host.docker.internal:11434"
+      LEEWAY_DEFAULT_MODEL: "qwen3:latest"
+      LEEWAY_VISION_MODEL: "qwen2.5vl:7b"
+      LEEWAY_ALLOWED_ORIGIN: "*"
+      LEEWAY_RUNTIME_FABRIC: "http://host.docker.internal:4001"
+      LEEWAY_HYBRID_FABRIC: "http://host.docker.internal:8777"
+      LEEWAY_MEDIA_INGESTION: "http://host.docker.internal:5300"
+      LEEWAY_MEDIA_ROUTER: "http://host.docker.internal:5301"
+      LEEWAY_AGENT_CENTER: "http://host.docker.internal:8860"
+      LEEWAY_MCP_AGENT_CENTER: "http://host.docker.internal:8861"
+      LEEWAY_WORKER_CENTER: "http://host.docker.internal:8862"
+      LEEWAY_MCP_CENTER: "http://host.docker.internal:8863"
+      LEEWAY_VOICE_KERNEL: "http://host.docker.internal:8092"
+      LEEWAY_VISION_KERNEL: "http://host.docker.internal:8093"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

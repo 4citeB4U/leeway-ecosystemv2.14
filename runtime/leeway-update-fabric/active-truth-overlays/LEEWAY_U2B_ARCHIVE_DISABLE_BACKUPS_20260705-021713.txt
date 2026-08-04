@@ -1,0 +1,15 @@
+LEEWAY U2B ARCHIVE/DISABLE BACKUP CONTAINERS
+Created: 2026-07-05T02:17:20.6758726-05:00
+Verdict: LEEWAY_U2B_ACTIVE_TRUTH_OVERLAY_CREATED
+
+POLICY
+No deletion: YES
+No restart: YES
+No bridge sprawl: YES
+
+ARCHIVED/DISABLED FROM ACTIVE TRUTH
+- agent-lee-telegram-shell-backup-fullroutes-20260703-150635 | state=exited | status=Exited (137) 35 hours ago | keep_for_recovery=YES
+- agent-lee-telegram-shell-backup-20260703-144921 | state=exited | status=Exited (137) 35 hours ago | keep_for_recovery=YES
+
+NEXT
+Run U2C storage/conference health mapping, then U2D desktop operator proof plan.

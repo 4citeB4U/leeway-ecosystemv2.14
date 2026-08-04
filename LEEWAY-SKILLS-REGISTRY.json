@@ -1,0 +1,21 @@
+﻿{
+    "updated_at":  "2026-07-03T14:37:24.6812547-05:00",
+    "name":  "LEEWAY_SKILLS_REGISTRY",
+    "version":  "1.0.0",
+    "skills":  [
+                   {
+                       "version":  "1.0.0",
+                       "name":  "agent-lee-learning-memory",
+                       "enabled":  true,
+                       "description":  "Persistent learning memory for Agent Lee runtime mistakes, successes, corrections, Telegram failures, and standards.",
+                       "ledger":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\agent-lee-learning-ledger.jsonl",
+                       "paths":  {
+                                     "code_mode":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills\\agent-lee-learning-memory",
+                                     "skills_university_exports":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university-exports\\agent-lee-learning-memory",
+                                     "skills_university":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university\\agent-lee-learning-memory",
+                                     "runtime_fabric":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills\\agent-lee-learning-memory"
+                                 },
+                       "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-learning-memory.manifest.json"
+                   }
+               ]
+}

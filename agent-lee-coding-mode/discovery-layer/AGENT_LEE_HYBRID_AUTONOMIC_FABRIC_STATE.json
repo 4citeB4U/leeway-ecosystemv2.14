@@ -1,0 +1,1587 @@
+{
+    "schema":  "agent-lee-docker-native-hybrid-fabric-state-v18-2",
+    "updatedAt":  "2026-06-28T01:09:37.598Z",
+    "authority":  "Docker Native Hybrid Fabric",
+    "status":  "HYBRID_FABRIC_DOCKER_CORE_READY_SUPPORT_CHECK_REQUIRED",
+    "cycle":  1,
+    "topology":  {
+                     "ecosystem":  "leeway-ecosystemv214",
+                     "network":  "leeway-ecosystemv214_leeway-net",
+                     "actualContainers":  {
+                                              "agentLee":  "agent_lee_code_mode",
+                                              "runtimeFabric":  "leeway_runtime_fabric",
+                                              "ollama":  "leeway_ollama",
+                                              "hybridFabric":  "leeway_hybrid_fabric",
+                                              "voiceKernel":  "agent-lee-voice-kernel",
+                                              "visionKernel":  "agent-lee-vision-kernel",
+                                              "creationKernel":  "agent-lee-creation-kernel",
+                                              "seafile":  "leeway-seafile",
+                                              "seafileDb":  "leeway-seafile-db",
+                                              "seafileCache":  "leeway-seafile-cache"
+                                          }
+                 },
+    "containers":  {
+                       "agentLee":  {
+                                        "id":  "0f3d016bd6a39256aa61c248a74ef97169100e1dc263ca37357dca4cb4676257",
+                                        "shortId":  "0f3d016bd6a3",
+                                        "names":  [
+                                                      "/agent-lee-creation-kernel"
+                                                  ],
+                                        "image":  "agent-lee-creation-kernel:local",
+                                        "state":  "running",
+                                        "statusText":  "Up 46 minutes",
+                                        "ports":  [
+                                                      {
+                                                          "IP":  "0.0.0.0",
+                                                          "PrivatePort":  8094,
+                                                          "PublicPort":  8094,
+                                                          "Type":  "tcp"
+                                                      },
+                                                      {
+                                                          "IP":  "::",
+                                                          "PrivatePort":  8094,
+                                                          "PublicPort":  8094,
+                                                          "Type":  "tcp"
+                                                      }
+                                                  ],
+                                        "labels":  {
+                                                       "desktop.docker.io/ports.scheme":  "v2",
+                                                       "desktop.docker.io/ports/8094/tcp":  ":8094"
+                                                   }
+                                    },
+                       "runtimeFabric":  {
+                                             "id":  "18825c394552b093e23b3806dc6022b13d713625533bcfdefe64a3552e88c47a",
+                                             "shortId":  "18825c394552",
+                                             "names":  [
+                                                           "/leeway_runtime_fabric"
+                                                       ],
+                                             "image":  "leeway-ecosystemv214-runtime-fabric",
+                                             "state":  "running",
+                                             "statusText":  "Up 44 hours",
+                                             "ports":  [
+                                                           {
+                                                               "IP":  "0.0.0.0",
+                                                               "PrivatePort":  4001,
+                                                               "PublicPort":  4001,
+                                                               "Type":  "tcp"
+                                                           },
+                                                           {
+                                                               "IP":  "::",
+                                                               "PrivatePort":  4001,
+                                                               "PublicPort":  4001,
+                                                               "Type":  "tcp"
+                                                           },
+                                                           {
+                                                               "IP":  "0.0.0.0",
+                                                               "PrivatePort":  8111,
+                                                               "PublicPort":  8111,
+                                                               "Type":  "tcp"
+                                                           },
+                                                           {
+                                                               "IP":  "::",
+                                                               "PrivatePort":  8111,
+                                                               "PublicPort":  8111,
+                                                               "Type":  "tcp"
+                                                           }
+                                                       ],
+                                             "labels":  {
+                                                            "com.docker.compose.config-hash":  "cffd5fc42331b60368c9d52ae2534e0bb264fc82cfe70c446e9e5996d975d566",
+                                                            "com.docker.compose.container-number":  "1",
+                                                            "com.docker.compose.depends_on":  "",
+                                                            "com.docker.compose.image":  "sha256:9ba873f14f01a1bad51277ba4d2bcb273c50c1004131aa10d2902cfc5246eaff",
+                                                            "com.docker.compose.oneoff":  "False",
+                                                            "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                            "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.leeway.yml",
+                                                            "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                            "com.docker.compose.replace":  "leeway_runtime_fabric",
+                                                            "com.docker.compose.service":  "runtime-fabric",
+                                                            "com.docker.compose.version":  "5.1.4",
+                                                            "desktop.docker.io/ports.scheme":  "v2",
+                                                            "desktop.docker.io/ports/4001/tcp":  ":4001",
+                                                            "desktop.docker.io/ports/8111/tcp":  ":8111"
+                                                        }
+                                         },
+                       "ollama":  {
+                                      "id":  "c51c68e315753b77b10cad3e812061b63f619727a200d5efa502355acdf28a6f",
+                                      "shortId":  "c51c68e31575",
+                                      "names":  [
+                                                    "/leeway_ollama"
+                                                ],
+                                      "image":  "ollama/ollama:latest",
+                                      "state":  "running",
+                                      "statusText":  "Up 44 hours (healthy)",
+                                      "ports":  [
+                                                    {
+                                                        "IP":  "0.0.0.0",
+                                                        "PrivatePort":  11434,
+                                                        "PublicPort":  11434,
+                                                        "Type":  "tcp"
+                                                    },
+                                                    {
+                                                        "IP":  "::",
+                                                        "PrivatePort":  11434,
+                                                        "PublicPort":  11434,
+                                                        "Type":  "tcp"
+                                                    }
+                                                ],
+                                      "labels":  {
+                                                     "com.docker.compose.config-hash":  "b635963d62dded741e247348b31be05a70bfaf9b5bd38251ea28f0f4bd597522",
+                                                     "com.docker.compose.container-number":  "1",
+                                                     "com.docker.compose.depends_on":  "",
+                                                     "com.docker.compose.image":  "sha256:bfc9c6d53cc6989aa5131a6fde6b162b2802d4d337657f3253b5f69579bddeee",
+                                                     "com.docker.compose.oneoff":  "False",
+                                                     "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                     "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.leeway.yml",
+                                                     "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                     "com.docker.compose.service":  "ollama",
+                                                     "com.docker.compose.version":  "5.1.4",
+                                                     "desktop.docker.io/ports.scheme":  "v2",
+                                                     "desktop.docker.io/ports/11434/tcp":  ":11434",
+                                                     "org.opencontainers.image.version":  "24.04"
+                                                 }
+                                  },
+                       "voiceKernel":  {
+                                           "id":  "63f7c5d71e433b1fdd93bba22e7d6193210466a5ade836c472057a7ab69e01da",
+                                           "shortId":  "63f7c5d71e43",
+                                           "names":  [
+                                                         "/agent-lee-voice-kernel"
+                                                     ],
+                                           "image":  "agent-lee-voice-kernel-voice-kernel",
+                                           "state":  "running",
+                                           "statusText":  "Up 5 hours (healthy)",
+                                           "ports":  [
+                                                         {
+                                                             "IP":  "0.0.0.0",
+                                                             "PrivatePort":  8092,
+                                                             "PublicPort":  8092,
+                                                             "Type":  "tcp"
+                                                         },
+                                                         {
+                                                             "IP":  "::",
+                                                             "PrivatePort":  8092,
+                                                             "PublicPort":  8092,
+                                                             "Type":  "tcp"
+                                                         }
+                                                     ],
+                                           "labels":  {
+                                                          "com.docker.compose.config-hash":  "18dfccb8430f5687fbdec83af1858d4f4b306aa9595c25e63bff6637e2eb7787",
+                                                          "com.docker.compose.container-number":  "1",
+                                                          "com.docker.compose.depends_on":  "",
+                                                          "com.docker.compose.image":  "sha256:5d57f7b4d9e617f912330597109b8547c2a4fbf0e98f62d14e9ae44b0ddf41ce",
+                                                          "com.docker.compose.oneoff":  "False",
+                                                          "com.docker.compose.project":  "agent-lee-voice-kernel",
+                                                          "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-voice-kernel\\docker-compose.yml",
+                                                          "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-voice-kernel",
+                                                          "com.docker.compose.replace":  "agent-lee-voice-kernel",
+                                                          "com.docker.compose.service":  "voice-kernel",
+                                                          "com.docker.compose.version":  "5.1.4",
+                                                          "desktop.docker.io/ports.scheme":  "v2",
+                                                          "desktop.docker.io/ports/8092/tcp":  ":8092"
+                                                      }
+                                       },
+                       "visionKernel":  {
+                                            "id":  "a8648af221403f6fd4abcbd2a95bd03cdb4494415b48eb06f0094370e6cfa35c",
+                                            "shortId":  "a8648af22140",
+                                            "names":  [
+                                                          "/agent-lee-vision-kernel"
+                                                      ],
+                                            "image":  "agent-lee-vision-kernel-agent-lee-vision-kernel",
+                                            "state":  "running",
+                                            "statusText":  "Up 9 hours",
+                                            "ports":  [
+                                                          {
+                                                              "IP":  "0.0.0.0",
+                                                              "PrivatePort":  8093,
+                                                              "PublicPort":  8093,
+                                                              "Type":  "tcp"
+                                                          },
+                                                          {
+                                                              "IP":  "::",
+                                                              "PrivatePort":  8093,
+                                                              "PublicPort":  8093,
+                                                              "Type":  "tcp"
+                                                          }
+                                                      ],
+                                            "labels":  {
+                                                           "com.docker.compose.config-hash":  "6244fc61032aca99b0e2ea797386f74910441e928c1c3cf97b3ea787e9e59315",
+                                                           "com.docker.compose.container-number":  "1",
+                                                           "com.docker.compose.depends_on":  "",
+                                                           "com.docker.compose.image":  "sha256:38aef20ebffb3e35141967045ee45a9b1d627817cf139f6a8ff8bad50a5702c8",
+                                                           "com.docker.compose.oneoff":  "False",
+                                                           "com.docker.compose.project":  "agent-lee-vision-kernel",
+                                                           "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-vision-kernel\\docker-compose.yml",
+                                                           "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-vision-kernel",
+                                                           "com.docker.compose.service":  "agent-lee-vision-kernel",
+                                                           "com.docker.compose.version":  "5.1.4",
+                                                           "desktop.docker.io/ports.scheme":  "v2",
+                                                           "desktop.docker.io/ports/8093/tcp":  ":8093"
+                                                       }
+                                        },
+                       "creationKernel":  {
+                                              "id":  "0f3d016bd6a39256aa61c248a74ef97169100e1dc263ca37357dca4cb4676257",
+                                              "shortId":  "0f3d016bd6a3",
+                                              "names":  [
+                                                            "/agent-lee-creation-kernel"
+                                                        ],
+                                              "image":  "agent-lee-creation-kernel:local",
+                                              "state":  "running",
+                                              "statusText":  "Up 46 minutes",
+                                              "ports":  [
+                                                            {
+                                                                "IP":  "0.0.0.0",
+                                                                "PrivatePort":  8094,
+                                                                "PublicPort":  8094,
+                                                                "Type":  "tcp"
+                                                            },
+                                                            {
+                                                                "IP":  "::",
+                                                                "PrivatePort":  8094,
+                                                                "PublicPort":  8094,
+                                                                "Type":  "tcp"
+                                                            }
+                                                        ],
+                                              "labels":  {
+                                                             "desktop.docker.io/ports.scheme":  "v2",
+                                                             "desktop.docker.io/ports/8094/tcp":  ":8094"
+                                                         }
+                                          },
+                       "seafile":  {
+                                       "id":  "e2c9b4c662e3fef4e9ac7c6b5ef68f61c152b5b14b76dff1687973051c8adf95",
+                                       "shortId":  "e2c9b4c662e3",
+                                       "names":  [
+                                                     "/leeway-seafile"
+                                                 ],
+                                       "image":  "seafileltd/seafile-mc:latest",
+                                       "state":  "running",
+                                       "statusText":  "Up 44 hours",
+                                       "ports":  [
+                                                     {
+                                                         "IP":  "0.0.0.0",
+                                                         "PrivatePort":  80,
+                                                         "PublicPort":  8082,
+                                                         "Type":  "tcp"
+                                                     },
+                                                     {
+                                                         "IP":  "::",
+                                                         "PrivatePort":  80,
+                                                         "PublicPort":  8082,
+                                                         "Type":  "tcp"
+                                                     }
+                                                 ],
+                                       "labels":  {
+                                                      "desktop.docker.io/ports.scheme":  "v2",
+                                                      "desktop.docker.io/ports/80/tcp":  ":8082",
+                                                      "org.opencontainers.image.ref.name":  "ubuntu",
+                                                      "org.opencontainers.image.version":  "22.04"
+                                                  }
+                                   },
+                       "seafileDb":  {
+                                         "id":  "ed6cd5cf110a5aa4e8a680b432ccd24bab33aeddb5a5817f27b246257b49faa6",
+                                         "shortId":  "ed6cd5cf110a",
+                                         "names":  [
+                                                       "/leeway-seafile-db"
+                                                   ],
+                                         "image":  "mariadb:10.11",
+                                         "state":  "running",
+                                         "statusText":  "Up 44 hours (healthy)",
+                                         "ports":  [
+                                                       {
+                                                           "IP":  "",
+                                                           "PrivatePort":  3306,
+                                                           "Type":  "tcp"
+                                                       }
+                                                   ],
+                                         "labels":  {
+                                                        "desktop.docker.io/ports.scheme":  "v2",
+                                                        "org.opencontainers.image.authors":  "MariaDB Community",
+                                                        "org.opencontainers.image.base.name":  "docker.io/library/ubuntu:jammy",
+                                                        "org.opencontainers.image.description":  "MariaDB Database for relational SQL",
+                                                        "org.opencontainers.image.documentation":  "https://hub.docker.com/_/mariadb/",
+                                                        "org.opencontainers.image.licenses":  "GPL-2.0",
+                                                        "org.opencontainers.image.source":  "https://github.com/MariaDB/mariadb-docker",
+                                                        "org.opencontainers.image.title":  "MariaDB Database",
+                                                        "org.opencontainers.image.url":  "https://github.com/MariaDB/mariadb-docker",
+                                                        "org.opencontainers.image.vendor":  "MariaDB Community",
+                                                        "org.opencontainers.image.version":  "10.11.18"
+                                                    }
+                                     },
+                       "seafileCache":  {
+                                            "id":  "1c062315ff80481d387649fa8683c627e202ed8fd40362ce4c141b5a1304e05c",
+                                            "shortId":  "1c062315ff80",
+                                            "names":  [
+                                                          "/leeway-seafile-cache"
+                                                      ],
+                                            "image":  "memcached:1.6",
+                                            "state":  "running",
+                                            "statusText":  "Up 44 hours",
+                                            "ports":  [
+                                                          {
+                                                              "IP":  "",
+                                                              "PrivatePort":  11211,
+                                                              "Type":  "tcp"
+                                                          }
+                                                      ],
+                                            "labels":  {
+                                                           "desktop.docker.io/ports.scheme":  "v2"
+                                                       }
+                                        },
+                       "hybridFabric":  {
+                                            "id":  "1218c1689043a14cace7875339259c6a8afb168d236570cf5564b203ec970d10",
+                                            "shortId":  "1218c1689043",
+                                            "names":  [
+                                                          "/leeway_hybrid_fabric"
+                                                      ],
+                                            "image":  "leeway-ecosystemv214-hybrid-fabric",
+                                            "state":  "running",
+                                            "statusText":  "Up Less than a second",
+                                            "ports":  [
+                                                          {
+                                                              "IP":  "0.0.0.0",
+                                                              "PrivatePort":  8777,
+                                                              "PublicPort":  8777,
+                                                              "Type":  "tcp"
+                                                          },
+                                                          {
+                                                              "IP":  "::",
+                                                              "PrivatePort":  8777,
+                                                              "PublicPort":  8777,
+                                                              "Type":  "tcp"
+                                                          }
+                                                      ],
+                                            "labels":  {
+                                                           "com.docker.compose.config-hash":  "eb173c38b417fdf7c76833a9a2751b9d0b191da7a60920b626ed2b9cc4b7d279",
+                                                           "com.docker.compose.container-number":  "1",
+                                                           "com.docker.compose.depends_on":  "",
+                                                           "com.docker.compose.image":  "sha256:d7659cd0c6b93cb19e1af387377ca2b731eec6f54b62dfeb738ca2416cf21dba",
+                                                           "com.docker.compose.oneoff":  "False",
+                                                           "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                           "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.nobind.yml",
+                                                           "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                           "com.docker.compose.service":  "hybrid-fabric",
+                                                           "com.docker.compose.version":  "5.1.4",
+                                                           "desktop.docker.io/binds/1/Source":  "/var/run/docker.sock",
+                                                           "desktop.docker.io/binds/1/SourceKind":  "dockerSocketProxied",
+                                                           "desktop.docker.io/binds/1/Target":  "/var/run/docker.sock",
+                                                           "desktop.docker.io/ports.scheme":  "v2",
+                                                           "desktop.docker.io/ports/8777/tcp":  ":8777"
+                                                       }
+                                        }
+                   },
+    "dockerInventory":  {
+                            "ready":  true,
+                            "status":  "DOCKER_SOCKET_READY",
+                            "containers":  [
+                                               {
+                                                   "id":  "1218c1689043a14cace7875339259c6a8afb168d236570cf5564b203ec970d10",
+                                                   "shortId":  "1218c1689043",
+                                                   "names":  [
+                                                                 "/leeway_hybrid_fabric"
+                                                             ],
+                                                   "image":  "leeway-ecosystemv214-hybrid-fabric",
+                                                   "state":  "running",
+                                                   "statusText":  "Up Less than a second",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8777,
+                                                                     "PublicPort":  8777,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8777,
+                                                                     "PublicPort":  8777,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "eb173c38b417fdf7c76833a9a2751b9d0b191da7a60920b626ed2b9cc4b7d279",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "",
+                                                                  "com.docker.compose.image":  "sha256:d7659cd0c6b93cb19e1af387377ca2b731eec6f54b62dfeb738ca2416cf21dba",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.nobind.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                                  "com.docker.compose.service":  "hybrid-fabric",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/binds/1/Source":  "/var/run/docker.sock",
+                                                                  "desktop.docker.io/binds/1/SourceKind":  "dockerSocketProxied",
+                                                                  "desktop.docker.io/binds/1/Target":  "/var/run/docker.sock",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/8777/tcp":  ":8777"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "0f3d016bd6a39256aa61c248a74ef97169100e1dc263ca37357dca4cb4676257",
+                                                   "shortId":  "0f3d016bd6a3",
+                                                   "names":  [
+                                                                 "/agent-lee-creation-kernel"
+                                                             ],
+                                                   "image":  "agent-lee-creation-kernel:local",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 46 minutes",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8094,
+                                                                     "PublicPort":  8094,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8094,
+                                                                     "PublicPort":  8094,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/8094/tcp":  ":8094"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "a8648af221403f6fd4abcbd2a95bd03cdb4494415b48eb06f0094370e6cfa35c",
+                                                   "shortId":  "a8648af22140",
+                                                   "names":  [
+                                                                 "/agent-lee-vision-kernel"
+                                                             ],
+                                                   "image":  "agent-lee-vision-kernel-agent-lee-vision-kernel",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 9 hours",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8093,
+                                                                     "PublicPort":  8093,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8093,
+                                                                     "PublicPort":  8093,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "6244fc61032aca99b0e2ea797386f74910441e928c1c3cf97b3ea787e9e59315",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "",
+                                                                  "com.docker.compose.image":  "sha256:38aef20ebffb3e35141967045ee45a9b1d627817cf139f6a8ff8bad50a5702c8",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "agent-lee-vision-kernel",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-vision-kernel\\docker-compose.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-vision-kernel",
+                                                                  "com.docker.compose.service":  "agent-lee-vision-kernel",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/8093/tcp":  ":8093"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "63f7c5d71e433b1fdd93bba22e7d6193210466a5ade836c472057a7ab69e01da",
+                                                   "shortId":  "63f7c5d71e43",
+                                                   "names":  [
+                                                                 "/agent-lee-voice-kernel"
+                                                             ],
+                                                   "image":  "agent-lee-voice-kernel-voice-kernel",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 5 hours (healthy)",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8092,
+                                                                     "PublicPort":  8092,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8092,
+                                                                     "PublicPort":  8092,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "18dfccb8430f5687fbdec83af1858d4f4b306aa9595c25e63bff6637e2eb7787",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "",
+                                                                  "com.docker.compose.image":  "sha256:5d57f7b4d9e617f912330597109b8547c2a4fbf0e98f62d14e9ae44b0ddf41ce",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "agent-lee-voice-kernel",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-voice-kernel\\docker-compose.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-voice-kernel",
+                                                                  "com.docker.compose.replace":  "agent-lee-voice-kernel",
+                                                                  "com.docker.compose.service":  "voice-kernel",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/8092/tcp":  ":8092"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "ddae90d7d8a073e08531d685597d6d2dfe476f66b5ad7395319b2577f83fef97",
+                                                   "shortId":  "ddae90d7d8a0",
+                                                   "names":  [
+                                                                 "/agent_lee_code_mode"
+                                                             ],
+                                                   "image":  "leeway-ecosystemv214-agent-lee",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8080,
+                                                                     "PublicPort":  8080,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8080,
+                                                                     "PublicPort":  8080,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "a25da3d866db02e336399d1e920b1af177f30de15a59c2a2b23941f2822997ac",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "ollama:service_healthy:false,runtime-fabric:service_started:false",
+                                                                  "com.docker.compose.image":  "sha256:51961763582a3e1de7feecacf1c16915d86177795a30833ed88ee22c5e6f6211",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.leeway.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                                  "com.docker.compose.service":  "agent-lee",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/8080/tcp":  ":8080"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "e2c9b4c662e3fef4e9ac7c6b5ef68f61c152b5b14b76dff1687973051c8adf95",
+                                                   "shortId":  "e2c9b4c662e3",
+                                                   "names":  [
+                                                                 "/leeway-seafile"
+                                                             ],
+                                                   "image":  "seafileltd/seafile-mc:latest",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  80,
+                                                                     "PublicPort":  8082,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  80,
+                                                                     "PublicPort":  8082,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/80/tcp":  ":8082",
+                                                                  "org.opencontainers.image.ref.name":  "ubuntu",
+                                                                  "org.opencontainers.image.version":  "22.04"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "1c062315ff80481d387649fa8683c627e202ed8fd40362ce4c141b5a1304e05c",
+                                                   "shortId":  "1c062315ff80",
+                                                   "names":  [
+                                                                 "/leeway-seafile-cache"
+                                                             ],
+                                                   "image":  "memcached:1.6",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "",
+                                                                     "PrivatePort":  11211,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "desktop.docker.io/ports.scheme":  "v2"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "ed6cd5cf110a5aa4e8a680b432ccd24bab33aeddb5a5817f27b246257b49faa6",
+                                                   "shortId":  "ed6cd5cf110a",
+                                                   "names":  [
+                                                                 "/leeway-seafile-db"
+                                                             ],
+                                                   "image":  "mariadb:10.11",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours (healthy)",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "",
+                                                                     "PrivatePort":  3306,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "org.opencontainers.image.authors":  "MariaDB Community",
+                                                                  "org.opencontainers.image.base.name":  "docker.io/library/ubuntu:jammy",
+                                                                  "org.opencontainers.image.description":  "MariaDB Database for relational SQL",
+                                                                  "org.opencontainers.image.documentation":  "https://hub.docker.com/_/mariadb/",
+                                                                  "org.opencontainers.image.licenses":  "GPL-2.0",
+                                                                  "org.opencontainers.image.source":  "https://github.com/MariaDB/mariadb-docker",
+                                                                  "org.opencontainers.image.title":  "MariaDB Database",
+                                                                  "org.opencontainers.image.url":  "https://github.com/MariaDB/mariadb-docker",
+                                                                  "org.opencontainers.image.vendor":  "MariaDB Community",
+                                                                  "org.opencontainers.image.version":  "10.11.18"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "18825c394552b093e23b3806dc6022b13d713625533bcfdefe64a3552e88c47a",
+                                                   "shortId":  "18825c394552",
+                                                   "names":  [
+                                                                 "/leeway_runtime_fabric"
+                                                             ],
+                                                   "image":  "leeway-ecosystemv214-runtime-fabric",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  4001,
+                                                                     "PublicPort":  4001,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  4001,
+                                                                     "PublicPort":  4001,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  8111,
+                                                                     "PublicPort":  8111,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  8111,
+                                                                     "PublicPort":  8111,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "cffd5fc42331b60368c9d52ae2534e0bb264fc82cfe70c446e9e5996d975d566",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "",
+                                                                  "com.docker.compose.image":  "sha256:9ba873f14f01a1bad51277ba4d2bcb273c50c1004131aa10d2902cfc5246eaff",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.leeway.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                                  "com.docker.compose.replace":  "leeway_runtime_fabric",
+                                                                  "com.docker.compose.service":  "runtime-fabric",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/4001/tcp":  ":4001",
+                                                                  "desktop.docker.io/ports/8111/tcp":  ":8111"
+                                                              }
+                                               },
+                                               {
+                                                   "id":  "c51c68e315753b77b10cad3e812061b63f619727a200d5efa502355acdf28a6f",
+                                                   "shortId":  "c51c68e31575",
+                                                   "names":  [
+                                                                 "/leeway_ollama"
+                                                             ],
+                                                   "image":  "ollama/ollama:latest",
+                                                   "state":  "running",
+                                                   "statusText":  "Up 44 hours (healthy)",
+                                                   "ports":  [
+                                                                 {
+                                                                     "IP":  "0.0.0.0",
+                                                                     "PrivatePort":  11434,
+                                                                     "PublicPort":  11434,
+                                                                     "Type":  "tcp"
+                                                                 },
+                                                                 {
+                                                                     "IP":  "::",
+                                                                     "PrivatePort":  11434,
+                                                                     "PublicPort":  11434,
+                                                                     "Type":  "tcp"
+                                                                 }
+                                                             ],
+                                                   "labels":  {
+                                                                  "com.docker.compose.config-hash":  "b635963d62dded741e247348b31be05a70bfaf9b5bd38251ea28f0f4bd597522",
+                                                                  "com.docker.compose.container-number":  "1",
+                                                                  "com.docker.compose.depends_on":  "",
+                                                                  "com.docker.compose.image":  "sha256:bfc9c6d53cc6989aa5131a6fde6b162b2802d4d337657f3253b5f69579bddeee",
+                                                                  "com.docker.compose.oneoff":  "False",
+                                                                  "com.docker.compose.project":  "leeway-ecosystemv214",
+                                                                  "com.docker.compose.project.config_files":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.leeway.yml",
+                                                                  "com.docker.compose.project.working_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                                                                  "com.docker.compose.service":  "ollama",
+                                                                  "com.docker.compose.version":  "5.1.4",
+                                                                  "desktop.docker.io/ports.scheme":  "v2",
+                                                                  "desktop.docker.io/ports/11434/tcp":  ":11434",
+                                                                  "org.opencontainers.image.version":  "24.04"
+                                                              }
+                                               }
+                                           ]
+                        },
+    "endpoints":  {
+                      "agentLeeHealth":  {
+                                             "ready":  true,
+                                             "statusCode":  200,
+                                             "status":  "READY",
+                                             "response":  {
+                                                              "ok":  true,
+                                                              "router":  "agent-lee-brainfix",
+                                                              "port":  8080,
+                                                              "ollama":  "http://ollama:11434",
+                                                              "ollamaModel":  "qwen3:latest",
+                                                              "runtimeDir":  "/app/runtime",
+                                                              "languagePolicyPath":  "/app/runtime/agent-lee-language-policy.json",
+                                                              "conversationManifestPath":  "/app/runtime/agent-lee-conversation-abilities.manifest.json",
+                                                              "canonical":  true,
+                                                              "agentId":  "agent-lee",
+                                                              "agentMode":  "code-mode",
+                                                              "role":  "supreme-agent-lead",
+                                                              "instanceContract":  "canonical-agent-lee-code-mode",
+                                                              "sourceOfEmbodiment":  "agent-lee-coding-mode",
+                                                              "identityManifestPath":  null,
+                                                              "activeRuntimeAdapterPath":  "Leeway Runtime Fabric/capability-registry/registry/leeway-universe-loader.mjs",
+                                                              "orchestrationManifestPath":  "/app/runtime/agent-lee-orchestration.manifest.json",
+                                                              "orchestrationStatePath":  "/app/runtime/agent-lee-orchestration-state.json",
+                                                              "preferenceLedgerPath":  "/app/runtime/agent-lee-preference-ledger.json",
+                                                              "workLedgerPath":  "/Archive/agent-lee-work-ledger/work-ledger.jsonl",
+                                                              "orchestrationReceiptDir":  "/Archive/receipts/agent-lee-orchestration",
+                                                              "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                              "agentState":  {
+                                                                                 "status":  "CONSTRAINED",
+                                                                                 "authority":  "Agent Lee Prime",
+                                                                                 "constitutionVersion":  "lee-prime-runtime-state.v1",
+                                                                                 "sovereign":  true,
+                                                                                 "modelStateObserved":  "FAILED",
+                                                                                 "receiptStateObserved":  "DEGRADED",
+                                                                                 "executionStateObserved":  "DEGRADED",
+                                                                                 "reason":  "Agent state is constrained by execution health."
+                                                                             },
+                                                              "executionState":  {
+                                                                                     "status":  "DEGRADED",
+                                                                                     "routerState":  "HEALTHY",
+                                                                                     "adapterState":  "FAILED",
+                                                                                     "orchestrationState":  "HEALTHY",
+                                                                                     "routerOnline":  true,
+                                                                                     "adapterOnline":  false,
+                                                                                     "orchestrationOnline":  true,
+                                                                                     "routerPort":  8080,
+                                                                                     "adapterPort":  8787,
+                                                                                     "runtimeFabricPort":  4001
+                                                                                 },
+                                                              "modelState":  {
+                                                                                 "status":  "FAILED",
+                                                                                 "activeModel":  "qwen2.5-coder:14b",
+                                                                                 "warmedModels":  [
+                                                                                                      "qwen2.5-coder:14b",
+                                                                                                      "qwen2.5-coder:7b",
+                                                                                                      "qwen2.5:latest",
+                                                                                                      "qwen2.5vl:7b",
+                                                                                                      "qwen3:latest"
+                                                                                                  ],
+                                                                                 "loadedBackends":  [
+                                                                                                        "qwen2.5-coder:14b",
+                                                                                                        "qwen2.5-coder:7b",
+                                                                                                        "qwen2.5:latest",
+                                                                                                        "qwen2.5vl:7b",
+                                                                                                        "qwen3:latest"
+                                                                                                    ],
+                                                                                 "healthyRoles":  [
+
+                                                                                                  ],
+                                                                                 "degradedRoles":  [
+                                                                                                       "light_conversation_model",
+                                                                                                       "monetization_narration_model",
+                                                                                                       "coding_model",
+                                                                                                       "creative_3d_ar_model",
+                                                                                                       "research_reasoning_model",
+                                                                                                       "vision_model",
+                                                                                                       "security_audit_model"
+                                                                                                   ],
+                                                                                 "backendCount":  4,
+                                                                                 "classificationCounts":  {
+                                                                                                              "SEMI_WARM":  6,
+                                                                                                              "COLD":  1
+                                                                                                          },
+                                                                                 "source":  "live_model_pool"
+                                                                             },
+                                                              "receiptState":  {
+                                                                                   "status":  "DEGRADED",
+                                                                                   "ledgerIntact":  false,
+                                                                                   "chainLength":  7836,
+                                                                                   "lastReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx3cpg4-2e2a6bbb.receipt.json",
+                                                                                   "lastReceiptExists":  true,
+                                                                                   "lastStateReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx3cpg4-2e2a6bbb.receipt.json",
+                                                                                   "lastStateHash":  "b6ec3139c7f48404e7114d2e630c3da98ff17e90dd8a83894ec6f679220533e1",
+                                                                                   "lastRecordedAt":  "2026-06-28T01:09:26.356Z"
+                                                                               },
+                                                              "leePrimeRuntimeState":  {
+                                                                                           "schema":  "leeway.agent-lee.runtime-state.v1",
+                                                                                           "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                           "version":  1,
+                                                                                           "recordedAt":  "2026-06-28T01:09:37.776Z",
+                                                                                           "reason":  "orchestration_health_probe",
+                                                                                           "sourceOfTruth":  "agent-lee-coding-mode/runtime/agent-lee-orchestration-runtime.mjs",
+                                                                                           "agentState":  {
+                                                                                                              "status":  "CONSTRAINED",
+                                                                                                              "authority":  "Agent Lee Prime",
+                                                                                                              "constitutionVersion":  "lee-prime-runtime-state.v1",
+                                                                                                              "sovereign":  true,
+                                                                                                              "modelStateObserved":  "FAILED",
+                                                                                                              "receiptStateObserved":  "DEGRADED",
+                                                                                                              "executionStateObserved":  "DEGRADED",
+                                                                                                              "reason":  "Agent state is constrained by execution health."
+                                                                                                          },
+                                                                                           "executionState":  {
+                                                                                                                  "status":  "DEGRADED",
+                                                                                                                  "routerState":  "HEALTHY",
+                                                                                                                  "adapterState":  "FAILED",
+                                                                                                                  "orchestrationState":  "HEALTHY",
+                                                                                                                  "routerOnline":  true,
+                                                                                                                  "adapterOnline":  false,
+                                                                                                                  "orchestrationOnline":  true,
+                                                                                                                  "routerPort":  8080,
+                                                                                                                  "adapterPort":  8787,
+                                                                                                                  "runtimeFabricPort":  4001
+                                                                                                              },
+                                                                                           "modelState":  {
+                                                                                                              "status":  "FAILED",
+                                                                                                              "activeModel":  "qwen2.5-coder:14b",
+                                                                                                              "warmedModels":  [
+                                                                                                                                   "qwen2.5-coder:14b",
+                                                                                                                                   "qwen2.5-coder:7b",
+                                                                                                                                   "qwen2.5:latest",
+                                                                                                                                   "qwen2.5vl:7b",
+                                                                                                                                   "qwen3:latest"
+                                                                                                                               ],
+                                                                                                              "loadedBackends":  [
+                                                                                                                                     "qwen2.5-coder:14b",
+                                                                                                                                     "qwen2.5-coder:7b",
+                                                                                                                                     "qwen2.5:latest",
+                                                                                                                                     "qwen2.5vl:7b",
+                                                                                                                                     "qwen3:latest"
+                                                                                                                                 ],
+                                                                                                              "healthyRoles":  [
+
+                                                                                                                               ],
+                                                                                                              "degradedRoles":  [
+                                                                                                                                    "light_conversation_model",
+                                                                                                                                    "monetization_narration_model",
+                                                                                                                                    "coding_model",
+                                                                                                                                    "creative_3d_ar_model",
+                                                                                                                                    "research_reasoning_model",
+                                                                                                                                    "vision_model",
+                                                                                                                                    "security_audit_model"
+                                                                                                                                ],
+                                                                                                              "backendCount":  4,
+                                                                                                              "classificationCounts":  {
+                                                                                                                                           "SEMI_WARM":  6,
+                                                                                                                                           "COLD":  1
+                                                                                                                                       },
+                                                                                                              "source":  "live_model_pool"
+                                                                                                          },
+                                                                                           "receiptState":  {
+                                                                                                                "status":  "DEGRADED",
+                                                                                                                "ledgerIntact":  false,
+                                                                                                                "chainLength":  7836,
+                                                                                                                "lastReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx3cpg4-2e2a6bbb.receipt.json",
+                                                                                                                "lastReceiptExists":  true,
+                                                                                                                "lastStateReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx3cpg4-2e2a6bbb.receipt.json",
+                                                                                                                "lastStateHash":  "b6ec3139c7f48404e7114d2e630c3da98ff17e90dd8a83894ec6f679220533e1",
+                                                                                                                "lastRecordedAt":  "2026-06-28T01:09:26.356Z"
+                                                                                                            },
+                                                                                           "stateHash":  "c49debb33b0d223e750f1b7f56e7fe814a053290cd3a063a502b9ca3518b0d9a",
+                                                                                           "ledgerSequence":  7837,
+                                                                                           "previousStateHash":  "b6ec3139c7f48404e7114d2e630c3da98ff17e90dd8a83894ec6f679220533e1",
+                                                                                           "receiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx3cy9c-42bea3c7.receipt.json"
+                                                                                       }
+                                                          }
+                                         },
+                      "agentLeeRoot":  {
+                                           "ready":  true,
+                                           "statusCode":  200,
+                                           "status":  "READY",
+                                           "response":  {
+                                                            "ok":  true,
+                                                            "message":  "Agent Lee router. See /health for details.",
+                                                            "routes":  "/routes",
+                                                            "health":  "/health"
+                                                        }
+                                       },
+                      "runtimeFabricHealth":  {
+                                                  "ready":  true,
+                                                  "statusCode":  200,
+                                                  "status":  "READY",
+                                                  "response":  {
+                                                                   "ok":  true,
+                                                                   "agentId":  "agent-lee",
+                                                                   "canonical":  true,
+                                                                   "agentMode":  "code-mode",
+                                                                   "role":  "supreme-agent-lead",
+                                                                   "instanceContract":  "canonical-agent-lee-code-mode",
+                                                                   "identityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                   "canonicalProof":  {
+                                                                                          "expectedIdentityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                          "matches":  true,
+                                                                                          "canonical":  true,
+                                                                                          "agentMode":  "code-mode",
+                                                                                          "role":  "supreme-agent-lead",
+                                                                                          "instanceContract":  "canonical-agent-lee-code-mode"
+                                                                                      },
+                                                                   "sourceOfEmbodiment":  "agent-lee-coding-mode",
+                                                                   "corePath":  "/agent-lee-coding-mode",
+                                                                   "identityManifestPath":  "/agent-lee-coding-mode/agent-lee-identity.manifest.json",
+                                                                   "universeManifestPath":  "/app/capability-registry/registry/leeway-universe.manifest.json",
+                                                                   "activeRuntimeAdapterPath":  "/app/capability-registry/registry/leeway-universe-loader.mjs",
+                                                                   "router":  {
+                                                                                  "name":  "agent-lee-brainfix",
+                                                                                  "path":  "/agent-lee-coding-mode/router/server-brainfix.mjs",
+                                                                                  "port":  8080,
+                                                                                  "health":  "http://127.0.0.1:8080/health",
+                                                                                  "chat":  "http://127.0.0.1:8080/v1/chat/completions",
+                                                                                  "model":  "deepseek-coder:latest"
+                                                                              },
+                                                                   "desktopRuntime":  {
+                                                                                          "path":  "/agent-lee-coding-mode/desktop-runtime/server.mjs",
+                                                                                          "port":  8091,
+                                                                                          "status":  "http://127.0.0.1:8091/runtime/status"
+                                                                                      },
+                                                                   "voice":  {
+                                                                                 "localVoiceRoute":  "http://127.0.0.1:8765/api/local-voice/agent-lee-capture",
+                                                                                 "daemonPath":  "/app/Cerebral/CerebralDaemon.py",
+                                                                                 "engine":  "local-mic -\u003e faster-whisper -\u003e edge-tts"
+                                                                             },
+                                                                   "sight":  {
+                                                                                 "browserSearchRoute":  "http://127.0.0.1:8091/runtime/web-search",
+                                                                                 "browserProofPath":  "/agent-lee-coding-mode/desktop-runtime/browser-agent.mjs"
+                                                                             },
+                                                                   "terminalFabric":  {
+                                                                                          "status":  "http://127.0.0.1:4001/terminal/status",
+                                                                                          "plan":  "http://127.0.0.1:4001/terminal/plan",
+                                                                                          "execute":  "http://127.0.0.1:4001/terminal/execute",
+                                                                                          "wslStatus":  "http://127.0.0.1:4001/device/wsl/status",
+                                                                                          "wslStart":  "http://127.0.0.1:4001/device/wsl/start"
+                                                                                      },
+                                                                   "skillsUniversity":  {
+                                                                                            "registryPath":  "/LEEWAY-SKILLS-REGISTRY.json",
+                                                                                            "path":  "/app/skills-university",
+                                                                                            "exportsPath":  "/app/skills-university-exports",
+                                                                                            "rootPointerPath":  "/Skills University",
+                                                                                            "registryExists":  false,
+                                                                                            "exists":  false
+                                                                                        },
+                                                                   "universe":  {
+                                                                                    "manifestPath":  "/app/capability-registry/registry/leeway-universe.manifest.json",
+                                                                                    "manifestExists":  true,
+                                                                                    "manifestReadable":  true,
+                                                                                    "manifestError":  null,
+                                                                                    "canonicalAgentLee":  {
+                                                                                                              "agentName":  "Agent Lee",
+                                                                                                              "agentMode":  "code-mode",
+                                                                                                              "role":  "supreme-agent-lead",
+                                                                                                              "canonical":  true,
+                                                                                                              "instanceContract":  "canonical-agent-lee-code-mode",
+                                                                                                              "identityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                                              "embodimentPath":  {
+                                                                                                                                     "relative":  "agent-lee-coding-mode",
+                                                                                                                                     "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode"
+                                                                                                                                 },
+                                                                                                              "identityManifestPath":  {
+                                                                                                                                           "relative":  "agent-lee-coding-mode/agent-lee-identity.manifest.json",
+                                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\agent-lee-identity.manifest.json"
+                                                                                                                                       }
+                                                                                                          },
+                                                                                    "precedence":  [
+                                                                                                       "agent-lee-coding-mode/skills",
+                                                                                                       "Leeway Runtime Fabric/skills",
+                                                                                                       "Leeway Runtime Fabric/skills-university",
+                                                                                                       "Leeway Runtime Fabric/skills-university-exports",
+                                                                                                       "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                       "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                       "leeway-80-bench/skills"
+                                                                                                   ],
+                                                                                    "activeSkillSearchPaths":  [
+                                                                                                                   {
+                                                                                                                       "relative":  "agent-lee-coding-mode/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills",
+                                                                                                                       "source":  "agent-lee-coding-mode",
+                                                                                                                       "role":  "canonical-agent-lee-skill-source"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "runtime-fabric-skill-source"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills-university",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "skills-university-canonical"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills-university-exports",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university-exports",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "skills-university-export-surface"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\stateful-research-harness",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "stateful-research-harness-root-copy"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills\\stateful-research-harness",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "stateful-research-harness-skill-mirror"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "leeway-80-bench/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\skills",
+                                                                                                                       "source":  "benchmark",
+                                                                                                                       "role":  "benchmark-skill-discovery"
+                                                                                                                   }
+                                                                                                               ],
+                                                                                    "activeCapabilitySearchPaths":  [
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/capability-registry",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "canonical-capability-registry"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/capability-augmentation",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-augmentation",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "capability-augmentation-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/provider-fabric",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\provider-fabric",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "provider-fabric-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "leeway-presentation-engine",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-presentation-engine",
+                                                                                                                            "source":  "presentation-engine",
+                                                                                                                            "role":  "presentation-engine-root"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "leeway-cli",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-cli",
+                                                                                                                            "source":  "presentation-cli",
+                                                                                                                            "role":  "presentation-cli-root"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/automation-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\automation-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "automation-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/deployment-ownership-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\deployment-ownership-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "deployment-ownership-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/ledger",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\ledger",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "ledger-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/risk",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\risk",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "risk-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/device-intelligence",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\device-intelligence",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "device-intelligence-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/device-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\device-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "device-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/hardware-intelligence",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\hardware-intelligence",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "hardware-intelligence-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/iot-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\iot-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "iot-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/real-world-hardware",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\real-world-hardware",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "real-world-hardware-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/real-device-hardening",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\real-device-hardening",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "real-device-hardening-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/robotics-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\robotics-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "robotics-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/physical-intelligence-engine",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\physical-intelligence-engine",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "physical-intelligence-engine-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/sim-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\sim-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "sim-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/simulations",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\simulations",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "simulations-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/multimodal-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\multimodal-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "multimodal-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/human-voice-platform",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\human-voice-platform",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "human-voice-platform-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/vision-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\vision-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "vision-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/model-gateway",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\model-gateway",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "model-gateway-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/model-execution-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\model-execution-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "model-execution-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/enterprise-proof",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\enterprise-proof",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "enterprise-proof-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/production-proof",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\production-proof",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "production-proof-lane"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                    "activeAgentSearchPaths":  [
+                                                                                                                   {
+                                                                                                                       "relative":  "agent-lee-coding-mode",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+                                                                                                                       "source":  "canonical-agent-lee"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/agent-lee-entity-identity-runtime",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\agent-lee-entity-identity-runtime",
+                                                                                                                       "source":  "runtime-fabric"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Cerebral",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral",
+                                                                                                                       "source":  "surface"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "leeway-ide-single-canvas",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas",
+                                                                                                                       "source":  "surface"
+                                                                                                                   }
+                                                                                                               ],
+                                                                                    "activeToolSearchPaths":  [
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/tools",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\tools",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "agent-lee-coding-mode/tools",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\tools",
+                                                                                                                      "source":  "code-mode"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/server",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\server",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/agent-api",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\agent-api",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  }
+                                                                                                              ],
+                                                                                    "activeWorkflowSearchPaths":  [
+                                                                                                                      {
+                                                                                                                          "relative":  "agent-lee-coding-mode/workflows",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\workflows",
+                                                                                                                          "source":  "code-mode"
+                                                                                                                      },
+                                                                                                                      {
+                                                                                                                          "relative":  "leeway-80-bench/workflows",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\workflows",
+                                                                                                                          "source":  "benchmark"
+                                                                                                                      },
+                                                                                                                      {
+                                                                                                                          "relative":  "Leeway Runtime Fabric/standards/skills-university/benchmarks/leeway-80-bench",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\benchmarks\\leeway-80-bench",
+                                                                                                                          "source":  "standards",
+                                                                                                                          "role":  "benchmark-canonical-reference"
+                                                                                                                      }
+                                                                                                                  ],
+                                                                                    "activeBenchmarkSearchPaths":  [
+                                                                                                                       {
+                                                                                                                           "relative":  "leeway-80-bench",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench",
+                                                                                                                           "source":  "benchmark-root"
+                                                                                                                       },
+                                                                                                                       {
+                                                                                                                           "relative":  "leeway-80-bench/skills",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\skills",
+                                                                                                                           "source":  "benchmark-root",
+                                                                                                                           "role":  "benchmark-skill-index"
+                                                                                                                       },
+                                                                                                                       {
+                                                                                                                           "relative":  "Leeway Runtime Fabric/standards/skills-university/benchmarks/leeway-80-bench",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\benchmarks\\leeway-80-bench",
+                                                                                                                           "source":  "standards",
+                                                                                                                           "role":  "benchmark-canonical-reference"
+                                                                                                                       }
+                                                                                                                   ],
+                                                                                    "statefulResearchHarnessCopies":  {
+                                                                                                                          "activeCopy":  {
+                                                                                                                                             "relative":  "agent-lee-coding-mode/skills/stateful-research-harness",
+                                                                                                                                             "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills\\stateful-research-harness"
+                                                                                                                                         },
+                                                                                                                          "runtimeFabricRootCopy":  {
+                                                                                                                                                        "relative":  "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                                                                        "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\stateful-research-harness"
+                                                                                                                                                    },
+                                                                                                                          "runtimeFabricSkillsCopy":  {
+                                                                                                                                                          "relative":  "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills\\stateful-research-harness"
+                                                                                                                                                      }
+                                                                                                                      }
+                                                                                },
+                                                                   "statefulResearchHarness":  {
+                                                                                                   "rootCopy":  {
+                                                                                                                    "path":  "/app/stateful-research-harness",
+                                                                                                                    "exists":  false,
+                                                                                                                    "directSkillMd":  false
+                                                                                                                },
+                                                                                                   "skillsCopy":  {
+                                                                                                                      "path":  "/app/skills/stateful-research-harness",
+                                                                                                                      "exists":  false,
+                                                                                                                      "directSkillMd":  false
+                                                                                                                  },
+                                                                                                   "codeModeCopy":  {
+                                                                                                                        "path":  "/agent-lee-coding-mode/skills/stateful-research-harness",
+                                                                                                                        "exists":  false,
+                                                                                                                        "directSkillMd":  false
+                                                                                                                    }
+                                                                                               },
+                                                                   "benchmarkSkills":  {
+                                                                                           "path":  "/leeway-80-bench/skills",
+                                                                                           "exists":  false
+                                                                                       },
+                                                                   "startScript":  {
+                                                                                       "path":  "/agent-lee-coding-mode/start-agent-lee.ps1",
+                                                                                       "exists":  false
+                                                                                   },
+                                                                   "status":  "ACTIVE_HEALTHY",
+                                                                   "route":  "/runtime/health",
+                                                                   "timestamp":  "2026-06-28T01:09:38.033Z"
+                                                               }
+                                              },
+                      "runtimeFabricRoot":  {
+                                                "ready":  true,
+                                                "statusCode":  200,
+                                                "status":  "READY",
+                                                "response":  {
+                                                                 "status":  "LEEWAY_RUNTIME_FABRIC_API_READY",
+                                                                 "service":  "leeway-runtime-fabric",
+                                                                 "profile":  "local-lite",
+                                                                 "routes":  {
+                                                                                "health":  "/runtime/health",
+                                                                                "agentLeeHealth":  "/agent-lee/health",
+                                                                                "runtimeStatus":  "/runtime/status"
+                                                                            },
+                                                                 "time":  "2026-06-28T01:09:38.036Z"
+                                                             }
+                                            },
+                      "runtimeFabricAux8111":  {
+                                                   "ready":  false,
+                                                   "status":  "BLOCKED",
+                                                   "error":  "fetch failed"
+                                               },
+                      "ollamaRoot":  {
+                                         "ready":  true,
+                                         "statusCode":  200,
+                                         "status":  "READY",
+                                         "response":  {
+                                                          "text":  "Ollama is running"
+                                                      }
+                                     },
+                      "ollamaTags":  {
+                                         "ready":  true,
+                                         "statusCode":  200,
+                                         "status":  "READY",
+                                         "response":  {
+                                                          "models":  [
+                                                                         {
+                                                                             "name":  "qwen2.5vl:7b",
+                                                                             "model":  "qwen2.5vl:7b",
+                                                                             "modified_at":  "2026-06-27T03:41:57.455302262Z",
+                                                                             "size":  5969245856,
+                                                                             "digest":  "5ced39dfa4bac325dc183dd1e4febaa1c46b3ea28bce48896c8e69c1e79611cc",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen25vl",
+                                                                                             "families":  [
+                                                                                                              "qwen25vl"
+                                                                                                          ],
+                                                                                             "parameter_size":  "8.3B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  128000,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "vision",
+                                                                                                  "completion"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen2.5-coder:7b",
+                                                                             "model":  "qwen2.5-coder:7b",
+                                                                             "modified_at":  "2026-06-25T21:30:49.761962275Z",
+                                                                             "size":  4683087561,
+                                                                             "digest":  "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen2",
+                                                                                             "families":  [
+                                                                                                              "qwen2"
+                                                                                                          ],
+                                                                                             "parameter_size":  "7.6B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  32768,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "insert"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen2.5-coder:latest",
+                                                                             "model":  "qwen2.5-coder:latest",
+                                                                             "modified_at":  "2026-06-18T19:53:30.459770604Z",
+                                                                             "size":  4683087561,
+                                                                             "digest":  "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen2",
+                                                                                             "families":  [
+                                                                                                              "qwen2"
+                                                                                                          ],
+                                                                                             "parameter_size":  "7.6B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  32768,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "insert"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen3:latest",
+                                                                             "model":  "qwen3:latest",
+                                                                             "modified_at":  "2026-06-18T19:53:11.471592511Z",
+                                                                             "size":  5225388164,
+                                                                             "digest":  "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen3",
+                                                                                             "families":  [
+                                                                                                              "qwen3"
+                                                                                                          ],
+                                                                                             "parameter_size":  "8.2B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  40960,
+                                                                                             "embedding_length":  4096
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "thinking"
+                                                                                              ]
+                                                                         }
+                                                                     ]
+                                                      }
+                                     },
+                      "voiceKernel":  {
+                                          "ready":  true,
+                                          "statusCode":  200,
+                                          "status":  "READY",
+                                          "response":  null
+                                      },
+                      "visionKernel":  {
+                                           "ready":  true,
+                                           "statusCode":  200,
+                                           "status":  "READY",
+                                           "response":  {
+                                                            "status":  "healthy",
+                                                            "service":  "agent-lee-vision-kernel",
+                                                            "selectedModel":  "qwen2.5vl:7b",
+                                                            "timestamp":  "2026-06-28T01:09:38.192034+00:00"
+                                                        }
+                                       },
+                      "creationKernelHealth":  {
+                                                   "ready":  true,
+                                                   "statusCode":  200,
+                                                   "status":  "READY",
+                                                   "response":  {
+                                                                    "status":  "READY",
+                                                                    "kernel":  "agent-lee-creation-kernel",
+                                                                    "model_id":  "stabilityai/sdxl-turbo",
+                                                                    "device_mode":  "auto",
+                                                                    "resolved_device":  "cpu",
+                                                                    "optimization_profile":  "PI_SAFE",
+                                                                    "uptime_seconds":  2813.822
+                                                                }
+                                               },
+                      "creationKernelStatus":  {
+                                                   "ready":  true,
+                                                   "statusCode":  200,
+                                                   "status":  "READY",
+                                                   "response":  {
+                                                                    "status":  "READY",
+                                                                    "kernel":  "agent-lee-creation-kernel",
+                                                                    "model_id":  "stabilityai/sdxl-turbo",
+                                                                    "device_mode":  "auto",
+                                                                    "resolved_device":  "cpu",
+                                                                    "resolved_dtype":  "float32",
+                                                                    "pipe_loaded":  true,
+                                                                    "pipe_error":  "",
+                                                                    "optimization_profile":  "PI_SAFE",
+                                                                    "torch_version":  "2.12.1+cu130",
+                                                                    "cuda_available":  false,
+                                                                    "python":  "3.11.15"
+                                                                }
+                                               },
+                      "seafile":  {
+                                      "ready":  false,
+                                      "status":  "BLOCKED",
+                                      "error":  "This operation was aborted"
+                                  }
+                  },
+    "qwen":  {
+                 "role":  "ADVISORY_PROCESSOR_NOT_CONTROLLER",
+                 "availableModels":  [
+                                         "qwen2.5vl:7b",
+                                         "qwen2.5-coder:7b",
+                                         "qwen2.5-coder:latest",
+                                         "qwen3:latest"
+                                     ],
+                 "preferredModel":  "qwen2.5-coder:7b",
+                 "advisorStatus":  "SKIPPED_THIS_CYCLE",
+                 "advisorModel":  "",
+                 "advisorProof":  null
+             },
+    "checks":  {
+                   "dockerSocketReady":  true,
+                   "agentLeeContainerRunning":  true,
+                   "runtimeFabricContainerRunning":  true,
+                   "ollamaContainerRunning":  true,
+                   "hybridFabricContainerRunning":  true,
+                   "voiceKernelContainerRunning":  true,
+                   "visionKernelContainerRunning":  true,
+                   "creationKernelContainerRunning":  true,
+                   "seafileContainerRunning":  true,
+                   "seafileDbContainerRunning":  true,
+                   "seafileCacheContainerRunning":  true,
+                   "agentLeeEndpointReady":  true,
+                   "runtimeFabricEndpointReady":  true,
+                   "ollamaEndpointReady":  true,
+                   "voiceKernelEndpointReady":  true,
+                   "visionKernelEndpointReady":  true,
+                   "creationKernelEndpointReady":  true,
+                   "seafileEndpointReady":  false,
+                   "qwenModelAvailable":  true
+               },
+    "blockingCore":  [
+
+                     ],
+    "supportCheckRequired":  [
+                                 "seafileEndpointReady"
+                             ],
+    "worker":  {
+                   "container":  "leeway_hybrid_fabric",
+                   "process":  "node worker.mjs",
+                   "runningInsideDocker":  true,
+                   "storage":  "Docker named volume leeway_hybrid_fabric_state",
+                   "intervalMs":  30000,
+                   "advisorEveryCycles":  4
+               },
+    "guardrails":  [
+                       "No Docker restart from worker loop",
+                       "No Docker stop from worker loop",
+                       "No Docker remove from worker loop",
+                       "No Docker prune from worker loop",
+                       "No model retraining",
+                       "No unknown MCP autostart",
+                       "Qwen advisor does not execute actions"
+                   ],
+    "truth":  "V18.2 is no-bind Docker-native. It avoids host path bind mounts and exposes state through HTTP."
+}

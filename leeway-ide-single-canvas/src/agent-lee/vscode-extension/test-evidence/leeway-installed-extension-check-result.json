@@ -1,0 +1,44 @@
+﻿{
+    "timestamp":  "2026-06-03T13:42:53.0165371-05:00",
+    "sourceVersion":  "1.2.13",
+    "installedVersion":  "1.2.13",
+    "installedPath":  "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.13",
+    "packageJsonIconPath":  "media/leeway-activity.svg",
+    "packageIconPath":  "media/leeway-standards-logo.png",
+    "readmeAssetPaths":  [
+                             "media/leeway-standards-logo.png",
+                             "media/readme-header.png",
+                             "media/readme-system-flow.png"
+                         ],
+    "installedAssetsPresent":  {
+                                   "media/leeway-activity.svg":  true,
+                                   "media/agent-lee-chat-avatar.svg":  true,
+                                   "media/leeway-logo.svg":  true,
+                                   "media/top-right-button-new.png":  true,
+                                   "media/bottom-button-for-agent-lee.png":  true,
+                                   "media/leeway-standards-button.png":  true,
+                                   "media/leeway-standards-logo.png":  true,
+                                   "media/readme-header.png":  true,
+                                   "media/readme-system-flow.png":  true
+                               },
+    "missingInstalledAssets":  [
+
+                               ],
+    "readmeContainsBrandingText":  true,
+    "readmeContainsPairedAdminOS":  true,
+    "readmeContainsRuntimeTruth":  true,
+    "repoRuntimeHash":  "269E959E5C8635E1CD079BC103D91ECA9ADB83E9A1202C6CEEEA6D6574783A4C",
+    "installedRuntimeHash":  "269E959E5C8635E1CD079BC103D91ECA9ADB83E9A1202C6CEEEA6D6574783A4C",
+    "staleDetected":  false,
+    "staleReason":  [
+
+                    ],
+    "liveRuntime":  {
+                        "version":  "",
+                        "path":  "",
+                        "status":  "unknown",
+                        "error":  "",
+                        "logPath":  "C:\\Users\\Leona\\AppData\\Roaming\\Code\\logs\\20260602T182310\\window3\\exthost\\exthost.log"
+                    },
+    "finalVerdict":  "PASS"
+}

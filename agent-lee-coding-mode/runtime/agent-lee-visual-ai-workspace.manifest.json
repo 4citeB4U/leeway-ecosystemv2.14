@@ -1,0 +1,60 @@
+{
+  "schema": "leeway.agent-lee.visual-ai-workspace.manifest.v1",
+  "agentId": "agent-lee",
+  "agentMode": "code-mode",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "status": "active",
+  "capabilityId": "LEEWAY_VISUAL_AI_WORKSPACE",
+  "displayName": "Visual AI Workspace",
+  "backingModules": [
+    "Leeway Runtime Fabric/standards/vscode-extension/src/visual-intelligence",
+    "Leeway Runtime Fabric/standards/vscode-extension/src/panels/LeewayLVISPanel.ts"
+  ],
+  "purpose": [
+    "generate image prompts and outputs",
+    "open local image previews",
+    "generate simple web page previews",
+    "generate 3D object or scene previews",
+    "export assets only after approval",
+    "revise live from audience feedback"
+  ],
+  "supportedOutputs": [
+    "image",
+    "web",
+    "3d",
+    "diagram"
+  ],
+  "previewPolicy": {
+    "localPreviewBeforeExport": true,
+    "projectorDisplayRequiresLeonardApproval": true,
+    "browserPreviewAllowed": true,
+    "exportRequiresLeonardApproval": true,
+    "keepLocalUntilApproved": true
+  },
+  "governance": {
+    "publicAudience": [
+      "Can request a visual concept",
+      "Can give feedback on the live preview"
+    ],
+    "leonardLee": [
+      "Can authorize generation",
+      "Can authorize preview display routing",
+      "Can authorize export",
+      "Can override mode"
+    ]
+  },
+  "previewLoop": [
+    "Receive concept",
+    "Confirm Leonard approval for generation",
+    "Generate local preview",
+    "Show preview in the workspace",
+    "Revise from feedback",
+    "Export only after approval"
+  ],
+  "truthLabels": [
+    "VISUAL_WORKSPACE_READY",
+    "LOCAL_PREVIEW_READY",
+    "EXPORT_LOCKED_BY_DEFAULT",
+    "LEONARD_APPROVAL_REQUIRED"
+  ]
+}

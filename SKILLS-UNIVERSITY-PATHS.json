@@ -1,0 +1,21 @@
+﻿{
+    "schema":  "leeway.skills.paths.v2",
+    "pathMode":  "generated-from-leeway-runtime-contract",
+    "rootEnv":  "LEEWAY_ROOT",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "agentLeeCodingMode":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+    "runtimeFabric":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric",
+    "canonicalSkillsUniversity":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university",
+    "skillsUniversityExports":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university-exports",
+    "rootSkillsUniversityPointer":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Skills University",
+    "relative":  {
+                     "agentLeeCodingMode":  "agent-lee-coding-mode",
+                     "runtimeFabric":  "Leeway Runtime Fabric",
+                     "canonicalSkillsUniversity":  "Leeway Runtime Fabric\\skills-university",
+                     "skillsUniversityExports":  "Leeway Runtime Fabric\\skills-university-exports",
+                     "rootSkillsUniversityPointer":  "Skills University"
+                 },
+    "rootSkillsAction":  "resolve-from-leeway-runtime-contract",
+    "rule":  "Agent Lee canonical embodiment is agent-lee-coding-mode. Runtime Fabric exposes it. Skills live under Leeway Runtime Fabric skills-university unless explicitly mirrored.",
+    "generatedAt":  "2026-06-28T03:38:34.3229996-05:00"
+}

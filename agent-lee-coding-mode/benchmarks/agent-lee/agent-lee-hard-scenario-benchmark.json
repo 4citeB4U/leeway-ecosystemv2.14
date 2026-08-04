@@ -1,0 +1,23 @@
+﻿[
+    {
+        "Mode":  "coding-speed-3d-change",
+        "Seconds":  17.21,
+        "Route":  "coding-speed",
+        "FirstLine":  "Route: coding-speed",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "full-heavy-3d-chess-league",
+        "Seconds":  0,
+        "Route":  "full-heavy-blueprint",
+        "FirstLine":  "Route: full-heavy-blueprint",
+        "Status":  "PASS"
+    },
+    {
+        "Mode":  "deep-recovery-sleeper-bug",
+        "Seconds":  12.88,
+        "Route":  "coding-speed",
+        "FirstLine":  "Route: coding-speed",
+        "Status":  "PASS"
+    }
+]

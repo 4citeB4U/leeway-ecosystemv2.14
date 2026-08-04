@@ -1,0 +1,44 @@
+﻿{
+    "permit_version":  "LEEWAY_PHONE_MEDIA_TRANSFER_PERMIT_TEMPLATE_V1",
+    "permit_id":  "PHONE_MEDIA_TRANSFER_READINESS_459_TEMPLATE",
+    "target":  "phone_media",
+    "action":  "prepare authorized phone media transfer",
+    "action_type":  "TRANSFER_READINESS_ONLY",
+    "risk":  "critical",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_transfer":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use phone media transfer from the approved phone source to the approved computer destination only. I understand this does not authorize delete, sync, full backup, hidden folder access, app data access, SMS/call access, phone control, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "Phone status permit passed",
+                          "Phone inventory record confirmed",
+                          "Source folder explicitly approved",
+                          "Destination folder explicitly approved",
+                          "Transfer mode simulated first",
+                          "No deletion or sync allowed",
+                          "Receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "read approved source path",
+                                                    "copy approved media files only",
+                                                    "write transfer receipt"
+                                                ],
+    "blocked_operations":  [
+                               "delete files",
+                               "move files",
+                               "sync folders",
+                               "full phone backup",
+                               "read SMS/calls",
+                               "read app private data",
+                               "hidden folder traversal",
+                               "phone control",
+                               "physical action"
+                           ],
+    "rollback_plan":  "Copy-only operation later; if failure, stop and write partial receipt. No deletion allowed.",
+    "simulation_required_before_real_transfer":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "phone_file_transfer_allowed_now":  false,
+    "delete_allowed_now":  false,
+    "sync_allowed_now":  false
+}

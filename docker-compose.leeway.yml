@@ -1,0 +1,58 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: leeway_ollama
+    ports: ["11434:11434"]
+    volumes: ["leeway_brain_data:/root/.ollama"]
+    environment: [OLLAMA_NO_TELEMETRY=1]
+    restart: always
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks: [leeway-net]
+
+  runtime-fabric:
+    build:
+      context: "./Leeway Runtime Fabric"
+      dockerfile: "build-context/Dockerfile"
+    container_name: leeway_runtime_fabric
+    environment:
+      - NODE_ENV=production
+      - LEEWAY_MANAGEMENT_API_HOST=0.0.0.0
+      - LEEWAY_MANAGEMENT_API_PORT=4001
+      - OLLAMA_HOST=http://ollama:11434
+      - WARM_MODELS=
+      - AGENT_LEE_ROUTER_URL=http://agent-lee:8080
+    ports: ["4001:4001", "8111:8111"]
+    privileged: true
+    restart: unless-stopped
+    networks:
+      leeway-net:
+        aliases: [runtime-fabric]
+
+  agent-lee:
+    build:
+      context: "./agent-lee-coding-mode"
+      dockerfile: "Dockerfile"
+    container_name: agent_lee_code_mode
+    environment:
+      - PORT=8080
+      - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_BASE=http://ollama:11434
+      - RUNTIME_FABRIC_URL=http://runtime-fabric:4001
+      - CEREBRAL_BASE=http://host.docker.internal:8765
+      - WARM_MODELS=
+    ports: ["8080:8080"]
+    depends_on:
+      ollama: { condition: service_healthy }
+      runtime-fabric: { condition: service_started }
+    restart: unless-stopped
+    networks: [leeway-net]
+
+networks:
+  leeway-net: { driver: bridge }
+
+volumes:
+  leeway_brain_data:

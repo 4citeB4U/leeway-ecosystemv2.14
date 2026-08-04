@@ -1,0 +1,12 @@
+﻿{
+    "version":  "LEEWAY_EXECUTE_APPROVED_TYPE_TEXT_ONE_ACTION_THEN_LOCKBACK_2026-07-05",
+    "created_at":  "2026-07-05T20:31:16",
+    "mode":  "ONE_ACTION_APPROVED_TYPE_TEXT_209",
+    "approval_id":  "pending-real_type_text-20260705-202442",
+    "allowed_action":  "real_type_text",
+    "target":  "controlled_notepad",
+    "text":  "Leeway approved type-text proof.",
+    "isolated_module":  "leeway_real_windows_actuator_alpha_209_20260705_203116",
+    "lockback_required":  true,
+    "bom_safe_json_read":  true
+}

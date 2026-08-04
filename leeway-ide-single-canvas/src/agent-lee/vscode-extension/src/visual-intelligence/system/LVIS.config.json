@@ -1,0 +1,14 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🟢 CORE",
+    "TAG": "CORE.VISUAL.LVIS.CONFIG",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "id": "LVIS",
+  "host": "Leeway VS Code",
+  "mission": "Governed visual reconstruction, validation, export, and project integration under Leeway sovereignty.",
+  "localOnly": true,
+  "forbiddenProviders": ["external-cloud-provider", "non-leeway-provider"],
+  "orchestrator": "leeway-visual-orchestrator-agent"
+}

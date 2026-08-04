@@ -1,0 +1,1033 @@
+{
+  "verdict": "LEEWAY_CRITICAL_LANE_LOCKDOWN_FAST_COMPLETE",
+  "created_at": "2026-07-05T01:24:46.6494556-05:00",
+  "critical_lane_count": 20,
+  "critical_failure_count": 15,
+  "proof_summary": {
+    "phone": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+    "desktop": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+    "browser": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+    "email": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+    "calendar": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION"
+  },
+  "lane_audits": [
+    {
+      "lane": "phone",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "phone calls/text/device-or-provider action with approval gate",
+      "container_reports": {
+        "name": "leeway_phone_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_phone_runtime:local",
+        "role": "provider_phone_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_DEVICE_OR_TELEPHONY_PROVIDER_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5332/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        }
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "desktop",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "desktop click/type/read/operate through existing runtime lane, preferably CerebralDaemon path, with approval gate",
+      "container_reports": [
+        {
+          "name": "leeway_desktop_runtime",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 15 hours",
+          "image": "leeway_desktop_runtime:local",
+          "role": "operator_desktop_runtime",
+          "lane_truth": "PARTIAL_REQUIRES_NATIVE_DESKTOP_OPERATOR_WIRING_AND_APPROVAL",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5334/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 175
+            }
+          }
+        },
+        {
+          "name": "leeway_device_operator",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 29 hours",
+          "image": "leeway_device_operator:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5323/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 157
+            }
+          }
+        }
+      ],
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "browser",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "real browser operation through Playwright/Chromium with proof",
+      "container_reports": {
+        "name": "leeway_browser_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_browser_runtime:local",
+        "role": "operator_browser_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PLAYWRIGHT_OR_BROWSER_OPERATOR_WIRING",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5333/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 175
+          }
+        }
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "email",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "provider-authenticated draft/send flow with approval gate",
+      "container_reports": {
+        "name": "leeway_email_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_email_runtime:local",
+        "role": "provider_email_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PROVIDER_CREDENTIALS_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5330/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        }
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "calendar",
+      "status": "NOT_PROVEN_FOR_AUTONOMOUS_OPERATION",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "provider-authenticated read/create/update event flow with approval gate",
+      "container_reports": {
+        "name": "leeway_calendar_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_calendar_runtime:local",
+        "role": "provider_calendar_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_CALENDAR_PROVIDER_AND_APPROVAL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5331/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 178
+          }
+        }
+      },
+      "immediate_decision": "Do not claim autonomous capability until behavior proof exists with approval gate and receipt."
+    },
+    {
+      "lane": "license",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "license policy, activation, entitlement, customer gating",
+      "container_reports": {
+        "name": "leeway_license_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_license_runtime:local",
+        "role": "business_license_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_POLICY_KEYS",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5335/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 175
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "installer",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "install/update/rollback workflow and customer package validation",
+      "container_reports": {
+        "name": "leeway_installer_runtime",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_installer_runtime:local",
+        "role": "distribution_installer_runtime",
+        "lane_truth": "PARTIAL_REQUIRES_PACKAGE_BUILDER_WIRING",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5336/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 181
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "pwa",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "must_prove": "customer dashboard/PWA routes, live status, and update visibility",
+      "container_reports": {
+        "name": "leeway_pwa_dashboard",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 15 hours",
+        "image": "leeway_pwa_dashboard:local",
+        "role": "agent_interface_pwa",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5337/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 177
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "skills_room",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "must_prove": "truth-backed skill discovery, route, plan, approval, receipt",
+      "container_reports": [
+        {
+          "name": "leeway_skill_router",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 16 hours",
+          "image": "leeway_skill_router:local",
+          "role": "core_planning_router",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5324/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 142
+            }
+          }
+        },
+        {
+          "name": "leeway_agent_skills",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 5 hours",
+          "image": "leeway_agent_skills:local",
+          "role": "core_discovery_registry",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:5327/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 139
+            }
+          }
+        }
+      ],
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "conference_room",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "must_prove": "browser-visible conference room and infrastructure health mapping",
+      "container_reports": [
+        {
+          "name": "leeway-jitsi-meet-jicofo-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/jicofo:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": false,
+          "probes": [
+            {
+              "url": "http://localhost:8888/health",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/status",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/truth/summary",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/capabilities",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8888/",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            }
+          ]
+        },
+        {
+          "name": "leeway-jitsi-meet-jvb-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/jvb:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": [
+            {
+              "Length": 5
+            },
+            {
+              "Length": 4
+            }
+          ],
+          "healthy_probe": false,
+          "probes": [
+            {
+              "url": "http://localhost:10000/health",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/status",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/truth/summary",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/capabilities",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:10000/",
+              "ok": false,
+              "http_status": "000",
+              "error": "",
+              "sample": {
+                "Length": 19
+              }
+            },
+            {
+              "url": "http://localhost:8081/health",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 382
+              }
+            },
+            {
+              "url": "http://localhost:8081/status",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 382
+              }
+            },
+            {
+              "url": "http://localhost:8081/truth/summary",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 389
+              }
+            },
+            {
+              "url": "http://localhost:8081/capabilities",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 388
+              }
+            },
+            {
+              "url": "http://localhost:8081/",
+              "ok": false,
+              "http_status": "404",
+              "error": "",
+              "sample": {
+                "Length": 376
+              }
+            }
+          ]
+        },
+        {
+          "name": "leeway-jitsi-meet-prosody-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/prosody:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null
+        },
+        {
+          "name": "leeway-jitsi-meet-web-1",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "ghcr.io/jitsi/web:unstable",
+          "role": "conference_room_stack",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": [
+            {
+              "Length": 4
+            },
+            {
+              "Length": 4
+            }
+          ],
+          "healthy_probe": true,
+          "probes": [
+            {
+              "url": "http://localhost:8008/health",
+              "ok": true,
+              "http_status": "200",
+              "error": "",
+              "sample": "<html itemscope itemtype=\"http://schema.org/Product\" prefix=\"og: http://ogp.me/ns#\" xmlns=\"http://www.w3.org/1999/html\">\r\n  <head>\r\n    \r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">\r\n    <meta name=\"theme-color\" content=\"#2A3A4B\">\r\n    <base href=\"/\" />\r\n\r\n\r\n    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">\r\n    <link rel=\"styles"
+            },
+            {
+              "url": "http://localhost:8443/health",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/status",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/truth/summary",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/capabilities",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            },
+            {
+              "url": "http://localhost:8443/",
+              "ok": false,
+              "http_status": "400",
+              "error": "",
+              "sample": {
+                "Length": 267
+              }
+            }
+          ]
+        }
+      ],
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "storage",
+      "status": "RUNNING_BUT_NO_HEALTH_PROOF",
+      "proof_level": "RUNNING_BUT_NO_HEALTH_PROOF",
+      "must_prove": "storage login/API/file proof and correct health mapping",
+      "container_reports": {
+        "name": "leeway-seafile",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "seafileltd/seafile-mc:latest",
+        "role": "storage_stack",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": false,
+        "probes": [
+          {
+            "url": "http://localhost:8082/health",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/status",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/truth/summary",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/capabilities",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          },
+          {
+            "url": "http://localhost:8082/",
+            "ok": false,
+            "http_status": "502",
+            "error": "",
+            "sample": {
+              "Length": 169
+            }
+          }
+        ]
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "research",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "research query/result/citation workflow",
+      "container_reports": {
+        "name": "leeway_research_lane",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 29 hours",
+        "image": "leeway_research_lane:local",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:5310/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 146
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "code_mode",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "safe code inspect/patch/validate workflow",
+      "container_reports": {
+        "name": "agent_lee_code_mode",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-agent-lee",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8080/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "{\r\n  \"ok\": true,\r\n  \"router\": \"agent-lee-brainfix\",\r\n  \"port\": 8080,\r\n  \"ollama\": \"http://ollama:11434\",\r\n  \"ollamaModel\": \"qwen3:latest\",\r\n  \"runtimeDir\": \"/app/runtime\",\r\n  \"languagePolicyPath\": \"/app/runtime/agent-lee-language-policy.json\",\r\n  \"conversationManifestPath\": \"/app/runtime/agent-lee-conversation-abilities.manifest.json\",\r\n  \"canonical\": true,\r\n  \"agentId\": \"agent-lee\",\r\n  \"agentMode\": \"code-mode\",\r\n  \"role\": \"supreme-agent-lead\",\r\n  \"instanceContract\": \"canonical-agent-lee-code-mo"
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "agent_center",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "agent registry/orchestration proof",
+      "container_reports": {
+        "name": "leeway_agent_center",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-leeway-agent-center",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8860/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 172
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "hybrid_fabric",
+      "status": "RUNNING_BUT_TRUTH_LIMITED",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "hybrid routing/runtime proof",
+      "container_reports": {
+        "name": "leeway_hybrid_fabric",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "leeway-ecosystemv214-hybrid-fabric",
+        "role": "unclassified_review_required",
+        "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8777/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 174
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "legacy_bridge",
+      "status": "REVIEW_DISABLE_OR_MERGE_NO_BRIDGE_SPRAWL",
+      "proof_level": "RUNNING_BUT_TRUTH_LIMITED",
+      "must_prove": "disable or merge; no bridge sprawl",
+      "container_reports": {
+        "name": "leeway-local-assistant-bridge",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 36 hours",
+        "image": "local-assistant-bridge-leeway-local-assistant-bridge",
+        "role": "legacy_bridge_review_required",
+        "lane_truth": "REVIEW_DO_NOT_EXPAND_BRIDGE_SPRAWL",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8787/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "{\r\n  \"ok\": true,\r\n  \"bridge\": {\r\n    \"port\": 8787,\r\n    \"defaultModel\": \"qwen3:latest\",\r\n    \"visionModel\": \"qwen2.5vl:7b\"\r\n  },\r\n  \"services\": {\r\n    \"bridge\": \"http://localhost:8787\",\r\n    \"ollama\": \"http://host.docker.internal:11434\",\r\n    \"runtimeFabric\": \"http://host.docker.internal:4001\",\r\n    \"hybridFabric\": \"http://host.docker.internal:8777\",\r\n    \"mediaIngestion\": \"http://host.docker.internal:5300\",\r\n    \"mediaRouter\": \"http://host.docker.internal:5301\",\r\n    \"agentCenter\": \"http://host"
+        }
+      },
+      "immediate_decision": "Do not expand bridge. Merge needed behavior into canonical lane or disable."
+    },
+    {
+      "lane": "voice_kernel",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "must_prove": "voice/TTS generation endpoint proof",
+      "container_reports": [
+        {
+          "name": "agent-lee-qwen-voice",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 34 hours",
+          "image": "agent-lee-qwen-voice:cuda",
+          "role": "model_voice_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8097/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": "{\"ok\":true,\"engine\":\"qwen3-tts\",\"model_path\":\"/models/voice/qwen3-tts\",\"output_dir\":\"/voice-output\",\"cuda_ok\":true,\"device\":\"cuda:0\",\"gpu_name\":\"NVIDIA GeForce RTX 5060 Laptop GPU\",\"dtype\":\"torch.float16\",\"voice_mode\":\"clone\",\"clone_mode\":\"speaker_vector\",\"reference_audio\":\"/voice-seeds/Agent_Voice_One.m4a\",\"language\":\"English\",\"available_generate_methods\":[\"generate_custom_voice\",\"generate_defaults\",\"generate_voice_clone\",\"generate_voice_design\"],\"generate_voice_clone_signature\":\"(text: Union[s"
+          }
+        },
+        {
+          "name": "agent-lee-voice-kernel",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 34 hours (healthy)",
+          "image": "agent-lee-voice-kernel-voice-kernel",
+          "role": "model_voice_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8092/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 23
+            }
+          }
+        }
+      ],
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "ears_kernel",
+      "status": "BASIC_RUNTIME_PROOF",
+      "proof_level": "BASIC_RUNTIME_PROOF",
+      "must_prove": "STT/listening proof",
+      "container_reports": {
+        "name": "agent-lee-ears-kernel",
+        "in_architecture": true,
+        "docker_exists": true,
+        "docker_state": "running",
+        "docker_status": "Up 34 hours",
+        "image": "agent-lee-ears-kernel-agent-lee-ears-kernel",
+        "role": "model_hearing_lane",
+        "lane_truth": "LIVE_OR_NEEDS_PROBE",
+        "ports": {
+          "Length": 4
+        },
+        "healthy_probe": true,
+        "probes": {
+          "url": "http://localhost:8094/health",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 115
+          }
+        }
+      },
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "vision_kernel",
+      "status": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "proof_level": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "must_prove": "vision/camera/image analysis proof",
+      "container_reports": [
+        {
+          "name": "agent-lee-vision-kernel",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 36 hours",
+          "image": "agent-lee-vision-kernel-agent-lee-vision-kernel",
+          "role": "model_vision_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8093/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 153
+            }
+          }
+        },
+        {
+          "name": "agent-lee-telegram-vision-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-telegram-vision-lane:local",
+          "role": "agent_interface_telegram",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null
+        }
+      ],
+      "immediate_decision": "Move into lane-specific proof plan."
+    },
+    {
+      "lane": "image_3d_kernels",
+      "status": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "proof_level": "CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING",
+      "must_prove": "image/3D generation behavior proof",
+      "container_reports": [
+        {
+          "name": "agent-lee-sdxl-lightning-image-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 12 hours",
+          "image": "agent-lee-sdxl-lightning-image-lane:local",
+          "role": "creative_model_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8099/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": "{\"ok\":true,\"app\":\"agent-lee-sdxl-lightning-image-lane\",\"model\":\"ByteDance/SDXL-Lightning-LoRA-UltraLowMemory\",\"base_model\":\"stabilityai/stable-diffusion-xl-base-1.0\",\"lightning_repo\":\"ByteDance/SDXL-Lightning\",\"lightning_lora\":\"sdxl_lightning_4step_lora.safetensors\",\"device\":\"cuda\",\"cuda\":{\"torch_version\":\"2.12.1+cu130\",\"cuda_available\":true,\"cuda_device_count\":1,\"cuda_device_name\":\"NVIDIA GeForce RTX 5060 Laptop GPU\",\"cuda_memory_allocated_mb\":0.0,\"cuda_memory_reserved_mb\":0.0},\"pipe_loaded\":fa"
+          }
+        },
+        {
+          "name": "agent-lee-image-to-3d-pattern-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "running",
+          "docker_status": "Up 33 hours",
+          "image": "agent-lee-image-to-3d-pattern-lane:local",
+          "role": "creative_model_lane",
+          "lane_truth": "LIVE_OR_NEEDS_PROBE",
+          "ports": {
+            "Length": 4
+          },
+          "healthy_probe": true,
+          "probes": {
+            "url": "http://localhost:8101/health",
+            "ok": true,
+            "http_status": "200",
+            "error": "",
+            "sample": {
+              "Length": 205
+            }
+          }
+        },
+        {
+          "name": "agent-lee-true-character-mesh-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-true-character-mesh-lane:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null
+        },
+        {
+          "name": "agent-lee-character-cutout-lane",
+          "in_architecture": true,
+          "docker_exists": true,
+          "docker_state": "exited",
+          "docker_status": "Exited (255) 36 hours ago",
+          "image": "agent-lee-character-cutout-lane:local",
+          "role": "unclassified_review_required",
+          "lane_truth": "UNKNOWN_REQUIRES_CLASSIFICATION",
+          "ports": null,
+          "healthy_probe": false,
+          "probes": null
+        }
+      ],
+      "immediate_decision": "Move into lane-specific proof plan."
+    }
+  ],
+  "truth": {
+    "enterprise_ready": "NO",
+    "autonomous_operator_phone_proven": "NO",
+    "autonomous_operator_desktop_proven": "NO",
+    "browser_operator_proven": "NO_UNTIL_BEHAVIOR_PROOF",
+    "email_send_proven": "NO_UNTIL_PROVIDER_AND_APPROVAL_PROOF",
+    "calendar_write_proven": "NO_UNTIL_PROVIDER_AND_APPROVAL_PROOF",
+    "no_bridge_sprawl": "ENFORCE_NOW"
+  },
+  "next_action": "Build U2A Update Planner Runtime before patching phone, desktop, browser, email, or calendar."
+}

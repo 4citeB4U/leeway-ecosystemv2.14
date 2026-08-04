@@ -1,0 +1,178 @@
+{
+  "verdict": "STORAGE_CONFERENCE_BASIC_HEALTH_MAPPED",
+  "created_at": "2026-07-05T02:23:32.1312614-05:00",
+  "purpose": "Map storage and conference health correctly instead of requiring generic /health endpoints.",
+  "service_results": [
+    {
+      "service": "seafile_storage",
+      "container": "leeway-seafile",
+      "role": "storage_stack",
+      "proof_type": "storage_web_or_api_reachability",
+      "docker_exists": true,
+      "docker_state": "running",
+      "docker_status": "Up 37 hours",
+      "probes": [
+        {
+          "url": "http://localhost:8082/",
+          "ok": false,
+          "http_status": "502",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        },
+        {
+          "url": "http://localhost:8082/accounts/login/",
+          "ok": false,
+          "http_status": "502",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        },
+        {
+          "url": "http://localhost:8082/api2/server-info/",
+          "ok": false,
+          "http_status": "502",
+          "error": "",
+          "sample": {
+            "Length": 169
+          }
+        }
+      ],
+      "any_http_probe_ok": false,
+      "mapped_health_status": "RUNNING_BUT_NOT_HTTP_REACHABLE",
+      "required_for_full_proof": "Storage web login or API server info reachable, plus later authenticated file list/upload/download proof.",
+      "log_tail": "2026-07-03 18:13:32 Nginx ready \r\n*** Running /etc/my_init.d/01_create_data_links.sh...\r\n*** Booting runit daemon...\r\n*** Runit started as PID 20\r\n*** Running /scripts/enterpoint.sh...\r\n[2026-07-03 18:13:35] Skip running setup-seafile-mysql.py because there is existing seafile-data folder.\r\n2026-07-03 18:13:32 This is an idle script (infinite loop) to keep container running. \r\n\r\nStarting seafile server, please wait ...\r\nSeafile server started\r\n\r\nDone.\r\n\r\nTraceback (most recent call last):\r\nStarting seahub at port 8000 ...\r\n\u001b[33mError:Seahub failed to start.\u001b[m\r\nPlease try to run \"./seahub.sh start\" again\r\nwaiting for mysql server to be ready: %s (2003, \"Can't connect to MySQL server on 'leeway-seafile-db' ([Errno 111] Connection refused)\")\r\n  File \"/scripts/start.py\", line 94, in <module>\r\n    main()\r\n  File \"/scripts/start.py\", line 80, in main\r\n    call('{} start'.format(get_script('seahub.sh')))\r\n  File \"/scripts/utils.py\", line 70, in call\r\n    return subprocess.check_call(*a, **kw)\r\n  File \"/usr/lib/python3.10/subprocess.py\", line 369, in check_call\r\n    raise CalledProcessError(retcode, cmd)\r\nsubprocess.CalledProcessError: Command '/opt/seafile/seafile-server-11.0.13/seahub.sh start' returned non-zero exit status 1.\r\n*** Shutting down /scripts/enterpoint.sh (PID 21)...\r\n*** Shutting down runit daemon (PID 20)...\r\n2026-07-03 18:14:14 Waiting Nginx \r\n2026-07-03 18:14:14 Nginx ready \r\n2026-07-03 18:14:14 This is an idle script (infinite loop) to keep container running. \r\n*** Running /etc/my_init.post_shutdown.d/10_syslog-ng.shutdown...\r\n*** Init system aborted.\r\n*** Killing all processes...\r\n*** Running /etc/my_init.d/01_create_data_links.sh...\r\n*** Booting runit daemon...\r\n*** Runit started as PID 20\r\n*** Running /scripts/enterpoint.sh...\r\n[2026-07-03 18:14:14] Skip running setup-seafile-mysql.py because there is existing seafile-data folder.\r\n\r\nStarting seafile server, please wait ...\r\nSeafile server started\r\n\r\nDone.\r\n\r\nStarting seahub at port 8000 ...\r\n\u001b[33mEr"
+    },
+    {
+      "service": "jitsi_web",
+      "container": "leeway-jitsi-meet-web-1",
+      "role": "conference_room_stack",
+      "proof_type": "conference_web_reachability",
+      "docker_exists": true,
+      "docker_state": "running",
+      "docker_status": "Up 37 hours",
+      "probes": [
+        {
+          "url": "http://localhost:8008/",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "<html itemscope itemtype=\"http://schema.org/Product\" prefix=\"og: http://ogp.me/ns#\" xmlns=\"http://www.w3.org/1999/html\">\r\n  <head>\r\n    \r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">\r\n    <meta name=\"theme-color\" content=\"#2A3A4B\">\r\n    <base href=\"/\" />\r\n\r\n\r\n    <link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">\r\n    <link rel=\"stylesheet\" href=\"css/all.css?v=9318\">\r\n    \r\n    <link rel=\"manifest\" id=\"manifest-placeholder\">\r\n\r\n    <script>\r\n        function contextRoot(pathname) {\r\n            const contextRootEndIndex = pathname.lastIndexOf('/');\r\n\r\n            return (\r\n                contextRootEndIndex === -1\r\n             "
+        },
+        {
+          "url": "http://localhost:8008/http-bind",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 623
+          }
+        },
+        {
+          "url": "http://localhost:8008/config.js",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "// Jitsi Meet configuration.\r\n\r\nvar config = {};\r\n\r\nconfig.hosts = {};\r\nconfig.hosts.domain = 'meet.jitsi';\r\n\r\nvar subdir = '';\r\nvar subdomain = '';\r\nif (subdir.startsWith('<!--')) {\r\n    subdir = '';\r\n}\r\nif (subdomain) {\r\n    subdomain = subdomain.substring(0,subdomain.length-1).split('.').join('_').toLowerCase() + '.';\r\n}\r\nconfig.hosts.muc = 'muc.' + subdomain + 'meet.jitsi';\r\nconfig.bosh = 'https://100.80.10.39:8443/' + subdir + 'http-bind';\r\nconfig.websocket = 'wss://100.80.10.39:8443/' + subdir + 'xmpp-websocket';\r\nconfig.bridgeChannel = {\r\n    preferSctp: true\r\n};\r\n\r\n\r\n// Video configuration.\r\n//\r\n\r\nconfig.resolution = 720;\r\nconfig.constraints = {\r\n    video: {\r\n        height: { ideal: 720, max: 720, min: 180 },\r\n        width: { ideal: 1280, max: 1280, min: 320},\r\n    }\r\n};\r\n\r\nconf"
+        }
+      ],
+      "any_http_probe_ok": true,
+      "mapped_health_status": "HTTP_REACHABLE",
+      "required_for_full_proof": "Browser-visible Jitsi landing/room page reachable, then room join proof.",
+      "log_tail": "172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /images/google-play-badge.png HTTP/1.1\" 200 2729 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /static/pwa/icons/icon192.png HTTP/1.1\" 200 31410 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/e2eeOff.mp3 HTTP/1.1\" 206 10264 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/incomingMessage.mp3 HTTP/1.1\" 206 4024 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/e2eeOn.mp3 HTTP/1.1\" 206 9979 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/knock.mp3 HTTP/1.1\" 206 8053 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/reactions-thumbs-up.mp3 HTTP/1.1\" 206 10212 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/Jul/2026:01:58:35 -0500] \"GET /sounds/asked-unmute.mp3 HTTP/1.1\" 206 6234 \"http://localhost:8008/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0\"\r\n172.24.0.1 - - [05/"
+    },
+    {
+      "service": "jitsi_jicofo",
+      "container": "leeway-jitsi-meet-jicofo-1",
+      "role": "conference_room_stack",
+      "proof_type": "internal_conference_component",
+      "docker_exists": true,
+      "docker_state": "running",
+      "docker_status": "Up 37 hours",
+      "probes": [
+        {
+          "url": "http://localhost:8888/",
+          "ok": false,
+          "http_status": "000",
+          "error": "",
+          "sample": {
+            "Length": 19
+          }
+        },
+        {
+          "url": "http://localhost:8888/debug",
+          "ok": false,
+          "http_status": "000",
+          "error": "",
+          "sample": {
+            "Length": 19
+          }
+        },
+        {
+          "url": "http://localhost:8888/metrics",
+          "ok": false,
+          "http_status": "000",
+          "error": "",
+          "sample": {
+            "Length": 19
+          }
+        }
+      ],
+      "any_http_probe_ok": false,
+      "mapped_health_status": "RUNNING_INTERNAL_COMPONENT_NEEDS_BEHAVIOR_PROOF",
+      "required_for_full_proof": "May not expose normal HTTP health. Validate through container running state, logs, and Jitsi web room behavior.",
+      "log_tail": "<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJicofo 2026-07-05 02:23:28.324 SEVERE: [41] [xmpp_connection=client] XmppProvider.doConnect#219: Failed to connect/login: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJicofo 2026-07-05 02:23:28.324 WARNING: [41] [xmpp_connection=client] XmppProvider.scheduleConnectTask$lambda$3$lambda$2#113: Failed to connect, will re-try after 1 second\r\nJicofo 2026-07-05 02:23:28.324 WARNING: [529795] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[not-authenticated] (0) closed with error\r\norg.jivesoftware."
+    },
+    {
+      "service": "jitsi_jvb",
+      "container": "leeway-jitsi-meet-jvb-1",
+      "role": "conference_room_stack",
+      "proof_type": "media_bridge_component",
+      "docker_exists": true,
+      "docker_state": "running",
+      "docker_status": "Up 37 hours",
+      "probes": [
+        {
+          "url": "http://localhost:8081/",
+          "ok": false,
+          "http_status": "404",
+          "error": "",
+          "sample": {
+            "Length": 376
+          }
+        },
+        {
+          "url": "http://localhost:8081/debug",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": {
+            "Length": 282
+          }
+        },
+        {
+          "url": "http://localhost:8081/metrics",
+          "ok": true,
+          "http_status": "200",
+          "error": "",
+          "sample": "# TYPE jitsi_jvb_preemptive_keyframe_requests_sent counter\r\n# HELP jitsi_jvb_preemptive_keyframe_requests_sent Number of preemptive keyframe requests that were sent.\r\njitsi_jvb_preemptive_keyframe_requests_sent_total 0.0\r\njitsi_jvb_preemptive_keyframe_requests_sent_created 1.783102414573E9\r\n# TYPE jitsi_jvb_rejected_data_channels counter\r\n# HELP jitsi_jvb_rejected_data_channels Number of data channels rejected by the bridge.\r\njitsi_jvb_rejected_data_channels_total 0.0\r\njitsi_jvb_rejected_data_channels_created 1.783102414576E9\r\n# TYPE jitsi_jvb_colibri_web_socket_messages_sent counter\r\n# HELP jitsi_jvb_colibri_web_socket_messages_sent Number of messages sent via the data channels of the endpoints of this conference.\r\njitsi_jvb_colibri_web_socket_messages_sent_total 0.0\r\njitsi_jvb_colibri_we"
+        }
+      ],
+      "any_http_probe_ok": true,
+      "mapped_health_status": "HTTP_REACHABLE",
+      "required_for_full_proof": "May not expose normal HTTP health. Validate through container running state, logs, exposed UDP/TCP ports, and room media behavior.",
+      "log_tail": "JVB 2026-07-05 02:23:27.784 WARNING: [1416202] [hostname=xmpp.meet.jitsi id=shard0] MucClient$2.connectionClosedOnError#392: Closed on error:\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJVB 2026-07-05 02:23:27.785 WARNING: [53] [hostname=xmpp.meet.jitsi id=shard0] MucClient.lambda$getConnectAndLoginCallable$8#697: Error connecting:\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions\r\n<stream:error><undefined-condition xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>No stream features to proceed with</text></stream:error>\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:984)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:916)\r\n\tat org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:939)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\nJVB 2026-07-05 02:23:27.786 WARNING: [1416205] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[not-authenticated] (0) closed with error\r\norg.jivesoftware.smack.XMPPException$StreamErrorException: undefined-condition You can read more about the "
+    }
+  ],
+  "truth": {
+    "seafile_basic_reachable": "YES",
+    "jitsi_web_basic_reachable": "YES",
+    "jitsi_infra_running": "YES",
+    "storage_fully_proven": "NO_UNTIL_AUTHENTICATED_FILE_BEHAVIOR_PROOF",
+    "conference_fully_proven": "NO_UNTIL_BROWSER_ROOM_JOIN_PROOF",
+    "enterprise_ready": "NO"
+  },
+  "next_action": "Run U2D desktop operator proof plan."
+}

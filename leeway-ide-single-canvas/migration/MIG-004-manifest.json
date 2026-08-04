@@ -1,0 +1,35 @@
+{
+  "migration": "MIG-004",
+  "target": "LeeWay Runtime Contract",
+  "status": "Implemented",
+  "scope": [
+    "Runtime Fabric API types",
+    "request/response envelopes",
+    "health contract",
+    "error contract",
+    "capability execution contract",
+    "event contract",
+    "version contract",
+    "client interface",
+    "mock contract validation",
+    "evidence",
+    "rollback"
+  ],
+  "excluded": [
+    "server.ts replacement",
+    "existing route migration",
+    "OpenCode integration",
+    "n8n integration",
+    "studio migration",
+    "Vite removal"
+  ],
+  "files": [
+    "src\\core\\runtime\\runtime-types.ts",
+    "src\\core\\runtime\\runtime-contract.ts",
+    "src\\core\\runtime\\runtime-client.ts",
+    "src\\core\\runtime\\runtime-mock.ts",
+    "src\\core\\runtime\\index.ts",
+    "migration\\MIG-004-manifest.json"
+  ],
+  "timestampUtc": "2026-07-29T23:05:45.8379173+00:00"
+}

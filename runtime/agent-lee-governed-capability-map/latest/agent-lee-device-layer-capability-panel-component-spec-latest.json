@@ -1,0 +1,97 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_DEVICE_LAYER_CAPABILITY_PANEL_COMPONENT_SPEC_271",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:16:35",
+    "component":  {
+                      "name":  "AgentLeeDeviceLayerCapabilityPanel",
+                      "framework_targets":  [
+                                                "Next.js",
+                                                "React",
+                                                "TypeScript"
+                                            ],
+                      "data_source":  "/agent-lee/device-layer/capability-map",
+                      "refresh_strategy":  "manual_refresh_plus_safe_interval_optional",
+                      "default_view":  "read_only_governed_capability_map"
+                  },
+    "props":  [
+                  {
+                      "name":  "deviceOperatorBaseUrl",
+                      "type":  "string",
+                      "required":  true,
+                      "default":  "http://127.0.0.1:5323"
+                  },
+                  {
+                      "name":  "showProofLinks",
+                      "type":  "boolean",
+                      "required":  false,
+                      "default":  true
+                  },
+                  {
+                      "name":  "showDisabledActions",
+                      "type":  "boolean",
+                      "required":  false,
+                      "default":  true
+                  },
+                  {
+                      "name":  "allowExecutionControls",
+                      "type":  "boolean",
+                      "required":  false,
+                      "default":  false
+                  }
+              ],
+    "required_render_states":  [
+                                   "loading",
+                                   "ready_locked_clean",
+                                   "route_warning",
+                                   "proof_warning",
+                                   "operator_unreachable"
+                               ],
+    "required_ui_sections":  [
+                                 {
+                                     "key":  "lock_banner",
+                                     "title":  "Locked Clean",
+                                     "source":  "/agent-lee/device-layer/lock-state",
+                                     "must_show":  true
+                                 },
+                                 {
+                                     "key":  "families",
+                                     "title":  "Device Families",
+                                     "source":  "/agent-lee/device-layer/families",
+                                     "must_show":  true
+                                 },
+                                 {
+                                     "key":  "routes",
+                                     "title":  "Read-only Routes",
+                                     "source":  "/agent-lee/device-layer/read-only-routes",
+                                     "must_show":  true
+                                 },
+                                 {
+                                     "key":  "approval_actions",
+                                     "title":  "Approval Required Actions",
+                                     "source":  "/agent-lee/device-layer/approval-required-actions",
+                                     "must_show":  true
+                                 },
+                                 {
+                                     "key":  "proofs",
+                                     "title":  "Proof Chain",
+                                     "source":  "runtime proof paths",
+                                     "must_show":  true
+                                 }
+                             ],
+    "forbidden_ui_elements":  [
+                                  "execute button",
+                                  "run button",
+                                  "unlock button",
+                                  "approve and execute button",
+                                  "POST action form",
+                                  "shell command input",
+                                  "ADB command input",
+                                  "SSH command input",
+                                  "smart home command input",
+                                  "Tailscale command input",
+                                  "camera stream start",
+                                  "microphone start",
+                                  "printer job submit",
+                                  "casting start"
+                              ]
+}

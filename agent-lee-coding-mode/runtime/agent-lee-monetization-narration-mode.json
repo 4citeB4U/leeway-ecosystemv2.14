@@ -1,0 +1,58 @@
+{
+  "schema": "leeway.agent-lee.monetization-narration-mode.v1",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "modeId": "agent-lee-monetization-narration",
+  "displayName": "Agent Lee Monetization Narration",
+  "status": "ACTIVE",
+  "owner": "agent-lee-prime",
+  "primaryModel": "qwen3:latest",
+  "codingSupportModel": "qwen2.5-coder:7b",
+  "fallbackModel": "qwen3:latest",
+  "responseMode": "monetization-narration",
+  "purpose": "Proof-backed presentation copy, launch narration, and operator-facing monetization framing",
+  "narrationStyle": [
+    "proof-backed",
+    "clear and direct",
+    "no hype",
+    "operator-facing",
+    "compact enough for live presentation"
+  ],
+  "promptClasses": {
+    "hot": {
+      "timeoutMs": 3000,
+      "maxPromptChars": 120,
+      "model": "qwen3:latest",
+      "partialResponse": true
+    },
+    "light": {
+      "timeoutMs": 5000,
+      "maxPromptChars": 240,
+      "model": "qwen3:latest",
+      "partialResponse": true
+    },
+    "medium": {
+      "timeoutMs": 7000,
+      "maxPromptChars": 900,
+      "model": "qwen3:latest",
+      "partialResponse": true
+    },
+    "heavy": {
+      "timeoutMs": 9700,
+      "maxPromptChars": 999999,
+      "model": "qwen3:latest",
+      "partialResponse": true
+    }
+  },
+  "useCases": [
+    "presentation-engine",
+    "launch-copy",
+    "sales-narration",
+    "demo-pitch",
+    "monetization framing"
+  ],
+  "notes": [
+    "qwen3 remains the reasoning and narration backend for this mode.",
+    "qwen2.5-coder stays on the coding lane only.",
+    "This mode is for presentation language and proof-backed monetization framing, not coding execution."
+  ]
+}

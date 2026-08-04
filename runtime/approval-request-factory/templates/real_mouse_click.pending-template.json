@@ -1,0 +1,19 @@
+﻿{
+    "action":  "real_mouse_click",
+    "risk_tier":  "high_risk_physical_pointer",
+    "required_fields":  [
+                            "x",
+                            "y",
+                            "button",
+                            "target_device_id",
+                            "human_summary",
+                            "requested_by"
+                        ],
+    "default_state":  "PENDING",
+    "approval_state_on_create":  "PENDING",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "dry_run_preview_required":  true,
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "notes":  "Not yet proven. Must remain blocked until separate controlled proof."
+}

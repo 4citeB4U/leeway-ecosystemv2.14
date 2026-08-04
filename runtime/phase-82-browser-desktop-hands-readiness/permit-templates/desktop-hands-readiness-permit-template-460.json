@@ -1,0 +1,40 @@
+﻿{
+    "permit_version":  "LEEWAY_DESKTOP_HANDS_PERMIT_TEMPLATE_V1",
+    "permit_id":  "DESKTOP_HANDS_READINESS_460_TEMPLATE",
+    "target":  "desktop",
+    "action":  "prepare desktop hands operation",
+    "action_type":  "DESKTOP_READINESS_ONLY",
+    "risk":  "critical",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_action":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use desktop action only. I understand this does not authorize broad mouse/keyboard control, file deletion, credential access, app installation, system setting mutation, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "460 desktop readiness passed",
+                          "specific window/app target approved",
+                          "specific one-step action approved",
+                          "no credential access",
+                          "no file deletion",
+                          "receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "single approved desktop action",
+                                                    "write desktop action receipt"
+                                                ],
+    "blocked_operations":  [
+                               "credential access",
+                               "file deletion",
+                               "bulk file mutation",
+                               "app installation",
+                               "system setting mutation",
+                               "unbounded mouse movement",
+                               "unbounded keyboard input",
+                               "malicious automation",
+                               "physical action"
+                           ],
+    "rollback_plan":  "For one desktop action, stop after action and write receipt. No repeated action.",
+    "simulation_required_before_real_desktop_control":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "desktop_control_allowed_now":  false
+}

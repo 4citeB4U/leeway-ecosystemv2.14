@@ -1,0 +1,71 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_OPERATOR_TO_WINDOWS_DRY_RUN_ACTUATOR_LINK_2026-07-05",
+    "created_at":  "2026-07-05T17:58:26",
+    "contract_id":  "device-operator-to-windows-dry-run-actuator",
+    "device_operator_url":  "http://127.0.0.1:5323",
+    "windows_device_id":  "windows-agent-lee",
+    "actuator_device_id":  "windows-agent-lee-local-actuator-dry-run",
+    "actuator_url":  "http://127.0.0.1:7331",
+    "link_status":  "LINKED_DRY_RUN_ONLY",
+    "physical_execution_enabled":  false,
+    "dry_run_only":  true,
+    "doctrine":  {
+                     "approval_required_before_real_execution":  true,
+                     "no_hidden_remote_control":  true,
+                     "no_physical_execution":  true,
+                     "dry_run_only":  true,
+                     "windows_actuator_is_child_satellite":  true,
+                     "leeway_device_operator_is_master":  true,
+                     "receipts_required":  true
+                 },
+    "route_map":  {
+                      "mouse_move":  "http://127.0.0.1:7331/execute/mouse-move",
+                      "shell_allowed_command":  "http://127.0.0.1:7331/execute/shell-allowed-command",
+                      "capabilities":  "http://127.0.0.1:7331/capabilities",
+                      "open_app":  "http://127.0.0.1:7331/execute/open-app",
+                      "allowlist":  "http://127.0.0.1:7331/allowlist",
+                      "hotkey":  "http://127.0.0.1:7331/execute/hotkey",
+                      "print":  "http://127.0.0.1:7331/execute/print",
+                      "browser_search":  "http://127.0.0.1:7331/execute/browser-search",
+                      "file_reveal":  "http://127.0.0.1:7331/execute/file-reveal",
+                      "cast":  "http://127.0.0.1:7331/execute/cast",
+                      "health":  "http://127.0.0.1:7331/health",
+                      "type_text":  "http://127.0.0.1:7331/execute/type-text",
+                      "mouse_click":  "http://127.0.0.1:7331/execute/mouse-click",
+                      "screenshot":  "http://127.0.0.1:7331/execute/screenshot",
+                      "file_open":  "http://127.0.0.1:7331/execute/file-open",
+                      "status":  "http://127.0.0.1:7331/status",
+                      "policy":  "http://127.0.0.1:7331/policy",
+                      "receipts":  "http://127.0.0.1:7331/receipts",
+                      "open_url":  "http://127.0.0.1:7331/execute/open-url"
+                  },
+    "policy":  {
+                   "safe_read_without_approval":  [
+                                                      "health",
+                                                      "status",
+                                                      "capabilities",
+                                                      "policy",
+                                                      "allowlist",
+                                                      "receipts"
+                                                  ],
+                   "real_execution_requires_future_scripts":  [
+                                                                  "169-create-approval-gate-for-real-windows-actuator.ps1",
+                                                                  "170-build-approved-real-windows-actuator-alpha.ps1"
+                                                              ],
+                   "dry_run_probe_without_physical_execution":  [
+                                                                    "open_app",
+                                                                    "open_url",
+                                                                    "browser_search",
+                                                                    "mouse_move",
+                                                                    "mouse_click",
+                                                                    "type_text",
+                                                                    "hotkey",
+                                                                    "screenshot",
+                                                                    "file_open",
+                                                                    "file_reveal",
+                                                                    "print",
+                                                                    "cast",
+                                                                    "shell_allowed_command"
+                                                                ]
+               }
+}

@@ -1,0 +1,43 @@
+{
+    "schema":  "leeway.agent-lee.operation.v1",
+    "id":  "telegram.send_text",
+    "name":  "Send Text Via Telegram",
+    "status":  "READY",
+    "enabled":  true,
+    "discoverable":  true,
+    "provider":  "telegram",
+    "operationLevel":  "communications",
+    "action":  "sendMessage",
+    "input":  {
+                  "text":  {
+                               "type":  "string",
+                               "required":  true,
+                               "maxLength":  4096
+                           },
+                  "chat_id":  {
+                                  "type":  "string",
+                                  "required":  false,
+                                  "defaultFromEnv":  "TELEGRAM_CHAT_ID"
+                              }
+              },
+    "approval":  {
+                     "required":  true,
+                     "reason":  "Outbound message to user device",
+                     "userConfirmationPhraseExamples":  [
+                                                            "yes send it",
+                                                            "send that text",
+                                                            "go ahead and text me"
+                                                        ]
+                 },
+    "execution":  {
+                      "script":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\scripts\\Invoke-AgentLeeTelegramText.ps1",
+                      "commandExample":  "powershell -ExecutionPolicy Bypass -File \"E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\scripts\\Invoke-AgentLeeTelegramText.ps1\" -Text \"Agent Lee test message\"",
+                      "envPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.env.local"
+                  },
+    "successCriteria":  [
+                            "Telegram Bot API returns ok=true",
+                            "message_id is returned",
+                            "receipt is written"
+                        ],
+    "createdAt":  "2026-06-28T16:28:09.7782806Z"
+}

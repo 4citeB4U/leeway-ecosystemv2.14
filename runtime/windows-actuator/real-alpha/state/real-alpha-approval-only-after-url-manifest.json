@@ -1,0 +1,14 @@
+﻿{
+    "version":  "LEEWAY_LOCK_REAL_ALPHA_BACK_AFTER_URL_PROOF_2026-07-05",
+    "created_at":  "2026-07-05T18:30:13",
+    "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha",
+    "real_alpha_url":  "http://127.0.0.1:7332",
+    "policy":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\policy\\real-alpha-approval-only-after-url-policy.json",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_URL_PROOF",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "approval_validation_available":  true,
+    "all_physical_actions_blocked":  true,
+    "preserved_milestone":  "174 opened approved URL in Edge once with approval",
+    "next_extension_requires_new_script":  "176-extend-approved-real-browser-search-alpha.ps1"
+}

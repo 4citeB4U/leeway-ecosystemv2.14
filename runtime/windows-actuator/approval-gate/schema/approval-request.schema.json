@@ -1,0 +1,36 @@
+﻿{
+    "version":  "LEEWAY_REAL_WINDOWS_ACTUATOR_APPROVAL_GATE_2026-07-05",
+    "schema_id":  "leeway-real-windows-actuator-approval-request-schema",
+    "required_fields":  [
+                            "approval_id",
+                            "created_at",
+                            "expires_at",
+                            "requested_by",
+                            "target_device_id",
+                            "target_adapter_id",
+                            "action",
+                            "risk_tier",
+                            "human_summary",
+                            "payload",
+                            "approval_state",
+                            "dry_run_preview_required",
+                            "real_execution_enabled"
+                        ],
+    "model":  {
+                  "created_at":  "iso_datetime",
+                  "expires_at":  "iso_datetime",
+                  "receipt_path":  "string",
+                  "risk_tier":  "safe_read_low_risk_preview_controlled_physical_communication_external_high_risk_admin_blocked",
+                  "payload":  "object",
+                  "rollback_or_stop":  "string",
+                  "dry_run_preview_required":  "boolean",
+                  "target_adapter_id":  "future_real_windows_actuator",
+                  "target_device_id":  "windows-agent-lee",
+                  "approval_state":  "PENDING_APPROVED_DENIED_EXPIRED",
+                  "requested_by":  "agent_lee_or_owner",
+                  "action":  "action_name",
+                  "human_summary":  "plain_english_description",
+                  "real_execution_enabled":  "boolean_must_be_false_until_future_enablement",
+                  "approval_id":  "string"
+              }
+}

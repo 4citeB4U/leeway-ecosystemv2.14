@@ -1,0 +1,31 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_ROUTE_REQUIREMENT_226",
+    "timestamp":  "2026-07-05T21:25:24",
+    "family":  "casting",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_GLOBAL_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/casting/status",
+                                         "purpose":  "Return casting family readiness, discovered count, registry path, control disabled, approval required for cast actions.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/casting/registry",
+                                         "purpose":  "Return normalized casting/display target registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no cast start",
+                      "no cast stop",
+                      "no pairing",
+                      "no display mutation",
+                      "no TV wake",
+                      "no input switch",
+                      "no physical action"
+                  ]
+}

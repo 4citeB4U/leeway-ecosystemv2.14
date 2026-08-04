@@ -1,0 +1,66 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_UI_FRONTEND_GOVERNED_DEVICE_LAYER_CONTRACT_271",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:16:35",
+    "contract_status":  "READY_FOR_FRONTEND_COMPONENT_PATCH_PLAN_NO_EXECUTE",
+    "source_routes":  {
+                          "capability_map":  "http://127.0.0.1:5323/agent-lee/device-layer/capability-map",
+                          "families":  "http://127.0.0.1:5323/agent-lee/device-layer/families",
+                          "read_only_routes":  "http://127.0.0.1:5323/agent-lee/device-layer/read-only-routes",
+                          "approval_required_actions":  "http://127.0.0.1:5323/agent-lee/device-layer/approval-required-actions",
+                          "lock_state":  "http://127.0.0.1:5323/agent-lee/device-layer/lock-state"
+                      },
+    "required_frontend_view":  {
+                                   "component_name":  "AgentLeeDeviceLayerCapabilityPanel",
+                                   "display_name":  "Device Layer Capability Map",
+                                   "placement":  "Agent Lee dashboard / cockpit sidebar or dedicated device-layer tab",
+                                   "required_sections":  [
+                                                             "global lock-state banner",
+                                                             "family readiness cards",
+                                                             "read-only route table",
+                                                             "approval-required action catalog",
+                                                             "proof and receipt links",
+                                                             "no-execute safety banner"
+                                                         ],
+                                   "allowed_interactions":  [
+                                                                "refresh capability map",
+                                                                "filter families",
+                                                                "expand family card",
+                                                                "view read-only route record",
+                                                                "copy route URL",
+                                                                "view proof path",
+                                                                "view approval-required action as disabled card"
+                                                            ],
+                                   "forbidden_interactions":  [
+                                                                  "execute button",
+                                                                  "POST action button",
+                                                                  "unlock real alpha",
+                                                                  "run shell",
+                                                                  "open app",
+                                                                  "click",
+                                                                  "type",
+                                                                  "ADB action",
+                                                                  "SSH action",
+                                                                  "Tailscale action",
+                                                                  "smart home action",
+                                                                  "camera stream",
+                                                                  "microphone access",
+                                                                  "printer job",
+                                                                  "casting action",
+                                                                  "background execution"
+                                                              ]
+                               },
+    "safety_rules":  {
+                         "execution_enabled":  false,
+                         "execute_buttons_visible":  false,
+                         "post_execution_routes_allowed":  false,
+                         "action_cards_enabled":  false,
+                         "approval_required":  true,
+                         "default_execution_state":  "LOCKED",
+                         "physical_actions_executed":  0,
+                         "no_silent_execution":  true,
+                         "no_background_physical_actions":  true,
+                         "no_unapproved_real_action":  true
+                     },
+    "recommended_next":  "272-agent-lee-ui-frontend-component-patch-plan-no-execute.ps1"
+}

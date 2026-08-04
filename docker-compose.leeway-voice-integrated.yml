@@ -1,0 +1,92 @@
+# Leeway Ecosystem with Integrated Voice Kernel
+# This compose file manages Agent Lee and Voice Kernel as one unified system
+
+networks:
+  leeway-network:
+    external: true
+
+volumes:
+  voice-kernel-cache:
+    driver: local
+  voice-kernel-output:
+    driver: local
+  voice-kernel-logs:
+    driver: local
+
+services:
+  # Voice Kernel Service - XTTS-v2 Engine
+  voice-kernel:
+    build:
+      context: ./agent-lee-voice-kernel
+      dockerfile: Dockerfile
+    container_name: agent-lee-voice-kernel
+    hostname: voice-kernel
+    networks:
+      - leeway-network
+    ports:
+      - "8092:8092"
+    volumes:
+      # Mount Agent Lee voice sample
+      - type: bind
+        source: ./Agent Lee, audio voice.m4a
+        target: /app/voice-samples/agent-lee.m4a
+        read_only: true
+      # Persistent volumes
+      - voice-kernel-cache:/app/cache
+      - voice-kernel-output:/app/output
+      - voice-kernel-logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - VOICE_KERNEL_PORT=8092
+      - RUNTIME_FABRIC_URL=http://leeway-runtime-fabric:4001
+      - DESKTOP_RUNTIME_URL=http://host.docker.internal:8091
+      - AGENT_LEE_ROUTER_URL=http://leeway-ecosystemv214-agent-lee:8080
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8092/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    depends_on:
+      - voice-kernel-enforcer
+
+  # Voice Kernel Enforcer - Policy Enforcement
+  voice-kernel-enforcer:
+    image: alpine:latest
+    container_name: voice-kernel-enforcer
+    hostname: voice-kernel-enforcer
+    networks:
+      - leeway-network
+    volumes:
+      - type: bind
+        source: ./agent-lee-voice-kernel/runtime-fabric-enforcement.json
+        target: /enforcement/policy.json
+        read_only: true
+    command: >
+      sh -c "
+      echo 'Voice Kernel Enforcer: Policy loaded';
+      echo 'Allowed engines: XTTS-v2 ONLY';
+      echo 'Forbidden engines: RVC, Piper, F5-TTS, Sopro, Edge-TTS';
+      tail -f /dev/null
+      "
+    restart: unless-stopped
+
+  # Agent Lee Router (existing container reference)
+  # This service definition allows docker-compose to manage the existing container
+  agent-lee:
+    image: agent-lee-router:latest
+    container_name: leeway-ecosystemv214-agent-lee
+    hostname: agent-lee
+    networks:
+      - leeway-network
+    ports:
+      - "8081:8080"
+    environment:
+      - VOICE_KERNEL_URL=http://voice-kernel:8092
+      - VOICE_KERNEL_ENABLED=true
+    restart: unless-stopped
+    external_links:
+      - leeway-ecosystemv214-agent-lee
+
+# Made with Bob

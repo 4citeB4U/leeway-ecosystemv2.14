@@ -1,0 +1,17 @@
+services:
+  agent-lee-qwen-voice:
+    build:
+      context: "./Leeway Runtime Fabric/deploy/docker/agent-lee-qwen-voice"
+    container_name: agent-lee-qwen-voice
+    ports:
+      - "8097:8097"
+    environment:
+      QWEN_TTS_MODEL_PATH: /models/voice/qwen3-tts
+      AGENT_LEE_VOICE_OUTPUT_DIR: /voice-output
+      QWEN_TTS_SPEAKER: Aiden
+      QWEN_TTS_LANGUAGE: English
+      QWEN_TTS_ATTN: sdpa
+    volumes:
+      - "./models/voice/qwen3-tts:/models/voice/qwen3-tts"
+      - "./Archive/voice-output:/voice-output"
+    restart: unless-stopped

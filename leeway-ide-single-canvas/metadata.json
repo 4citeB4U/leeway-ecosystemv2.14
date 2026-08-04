@@ -1,0 +1,6 @@
+{
+  "name": "Leeway IDE",
+  "description": "Leeway-standard single-canvas IDE connected to Agent Lee, Live Wallet, Foundry-compatible nodes, and the Leeway Runtime Fabric.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["LEEWAY_RUNTIME_FABRIC", "LIVE_WALLET", "FOUNDRY_NODE_CANVAS"]
+}

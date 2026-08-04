@@ -1,0 +1,135 @@
+﻿{
+    "version":  "LEEWAY_SMART_HOME_ADAPTER_CONTRACT_261",
+    "timestamp":  "2026-07-05T22:53:27",
+    "family":  "smart_home",
+    "capability_status":  "SMART_HOME_ADAPTER_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "smart_home_discover":  false,
+                            "smart_home_status":  false,
+                            "smart_home_registry":  false,
+                            "smart_home_adapter_status":  false,
+                            "smart_home_policy":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/smart-home/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "home_state_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/smart-home/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "home_state_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/smart-home/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "home_state_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/smart-home/adapter/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "home_state_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/smart-home/policy",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "home_state_mutation":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/device/command",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/light/set",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/thermostat/set",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/lock/unlock",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/garage/open",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/security/arm",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/security/disarm",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/scene/run",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/smart-home/mqtt/publish",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "home_state_mutation":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_home_assistant_api_invoked":  true,
+                   "no_matter_invoked":  true,
+                   "no_zigbee_invoked":  true,
+                   "no_zwave_invoked":  true,
+                   "no_mqtt_invoked":  true,
+                   "no_google_home_api_invoked":  true,
+                   "no_alexa_api_invoked":  true,
+                   "no_homekit_invoked":  true,
+                   "no_cloud_api_invoked":  true,
+                   "no_local_device_api_invoked":  true,
+                   "no_device_command":  true,
+                   "no_home_state_mutation":  true,
+                   "no_unlock":  true,
+                   "no_door_or_garage_open":  true,
+                   "no_security_state_change":  true,
+                   "no_thermostat_change":  true,
+                   "no_light_change":  true,
+                   "no_camera_or_microphone_access":  true,
+                   "no_scene_or_automation_trigger":  true,
+                   "no_physical_action":  true
+               }
+}

@@ -1,0 +1,10 @@
+﻿{
+    "collectedAt":  "2026-05-04T05:56:37.7814989-05:00",
+    "rootDir":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+    "vsixPath":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-1.1.0-sovereign-runtime.vsix",
+    "userDataDir":  "C:\\Users\\Leona\\AppData\\Local\\Temp\\agent-lee-vscode-profile",
+    "extensionsDir":  "C:\\Users\\Leona\\AppData\\Local\\Temp\\agent-lee-vscode-extensions",
+    "outputDir":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\scripts\\..\\reports\\packaged-validation-2026-05-04T05-56-36",
+    "globalLogDir":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\agent-lee",
+    "globalChatDir":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\chats"
+}

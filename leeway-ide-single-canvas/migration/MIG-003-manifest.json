@@ -1,0 +1,32 @@
+{
+  "migration": "MIG-003",
+  "target": "LeeWay Module Framework",
+  "status": "Implemented",
+  "scope": [
+    "module contract",
+    "module registry",
+    "lifecycle states",
+    "module metadata",
+    "navigation registration",
+    "discovery interface",
+    "evidence",
+    "rollback"
+  ],
+  "excluded": [
+    "studio migration",
+    "OpenCode integration",
+    "n8n integration",
+    "Vite removal",
+    "runtime execution integration"
+  ],
+  "files": [
+    "src\\core\\modules\\module-types.ts",
+    "src\\core\\modules\\module-lifecycle.ts",
+    "src\\core\\modules\\module-registry.ts",
+    "src\\core\\modules\\module-navigation.ts",
+    "src\\core\\modules\\module-discovery.ts",
+    "src\\core\\modules\\index.ts",
+    "migration\\MIG-003-manifest.json"
+  ],
+  "timestampUtc": "2026-07-29T23:03:33.1351029+00:00"
+}

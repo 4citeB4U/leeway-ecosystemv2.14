@@ -1,0 +1,20 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🧠 AI",
+    "TAG": "AI.VISUAL.LVIS.WORKER_REGISTRY",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "workers": [
+    { "id": "leeway-visual-orchestrator-agent", "name": "Leeway Visual Orchestrator Agent" },
+    { "id": "leeway-vector-reconstruction-worker", "name": "Leeway Vector Reconstruction Worker" },
+    { "id": "leeway-voxel-reconstruction-worker", "name": "Leeway Voxel Reconstruction Worker" },
+    { "id": "leeway-scene-reconstruction-worker", "name": "Leeway Scene Reconstruction Worker" },
+    { "id": "leeway-depth-synthesis-worker", "name": "Leeway Depth Synthesis Worker" },
+    { "id": "leeway-structural-fidelity-worker", "name": "Leeway Structural Fidelity Worker" },
+    { "id": "leeway-asset-repair-worker", "name": "Leeway Asset Repair Worker" },
+    { "id": "leeway-manifest-export-worker", "name": "Leeway Manifest Export Worker" },
+    { "id": "leeway-project-integration-worker", "name": "Leeway Project Integration Worker" },
+    { "id": "leeway-visual-memory-worker", "name": "Leeway Visual Memory Worker" }
+  ]
+}

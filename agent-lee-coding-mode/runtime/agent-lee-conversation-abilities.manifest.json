@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "router": "agent-lee-brainfix",
+  "agentId": "agent-lee",
+  "mode": "code-mode",
+  "port": 8080,
+  "runtimeDir": "agent-lee-coding-mode/runtime",
+  "languagePolicyPath": "agent-lee-coding-mode/runtime/agent-lee-language-policy.json",
+  "speechStylePolicyPath": "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+  "roomCapabilityPolicyPath": "agent-lee-coding-mode/runtime/agent-lee-room-capabilities.manifest.json",
+  "visualAiWorkspacePolicyPath": "agent-lee-coding-mode/runtime/agent-lee-visual-ai-workspace.manifest.json",
+  "conversationHistoryPath": "agent-lee-coding-mode/runtime/conversation-history.jsonl",
+  "sessionDir": "agent-lee-coding-mode/runtime/sessions",
+  "audioDir": "agent-lee-coding-mode/runtime/audio",
+  "transcriptDir": "agent-lee-coding-mode/runtime/tmp",
+  "capabilities": [
+    "live conversation sessions",
+    "session persistence",
+    "English-default multilingual behavior",
+    "English and Spanish bilingual crowd operation",
+    "live translation for public audiences",
+    "room-aware question handling with speaker separation",
+    "local microphone capture through Cerebral",
+    "local WAV transcription through faster_whisper",
+    "local translation through Ollama",
+    "local speech synthesis through edge_tts",
+    "audio stream delivery for spoken responses",
+    "speech style policy for natural Leeway voice",
+    "governed device and presentation authority routing",
+    "visual workspace preview routing through LVIS",
+    "room consent protocol and privacy-preserving visual descriptors"
+  ],
+  "authorityModel": {
+    "publicAudience": [
+      "ask questions",
+      "request explanation",
+      "request translation",
+      "request examples",
+      "request a visual concept"
+    ],
+    "leonardOnly": [
+      "authorize device control",
+      "authorize network connection",
+      "authorize projector or display routing",
+      "authorize desktop action",
+      "authorize email sending",
+      "authorize generated asset export",
+      "override mode"
+    ],
+    "trustedOperator": [
+      "can be granted temporary authority by Leonard"
+    ]
+  },
+  "governanceNotes": [
+    "Public audience members can talk to Agent Lee, but they cannot authorize laptop, device, email, network, or system actions.",
+    "Leonard retains the high-authority command lane for live room work.",
+    "Crowd responses must stay concise, bilingual when needed, and grounded in proof.",
+    "Crowd voice should sound personable and room-aware, not like a feature list.",
+    "Do not say the human in normal conversation.",
+    "Blend capability into one natural breath instead of rattling off stacked I can statements.",
+    "Room camera and microphone usage must be announced before live awareness starts.",
+    "Observable descriptors are allowed. Sensitive identity or protected-trait claims are not."
+  ],
+  "capabilityDomains": [
+    {
+      "id": "LEEWAY_AGENT_LEE_MULTILINGUAL_CROWD_DEVICE_PRESENTATION_MODE",
+      "status": "GOVERNED_PARTIAL",
+      "backingModules": [
+        "agent-lee-coding-mode/runtime/agent-lee-language-policy.json",
+        "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+        "agent-lee-coding-mode/runtime/agent-lee-room-capabilities.manifest.json",
+        "agent-lee-coding-mode/runtime/agent-lee-visual-ai-workspace.manifest.json",
+        "Leeway Runtime Fabric/standards/vscode-extension/src/visual-intelligence"
+      ],
+      "requirements": [
+        "English and Spanish bilingual operation",
+        "live translation",
+        "crowd Q&A",
+        "device discovery with permission",
+        "projector and display governance",
+        "visual workspace previews"
+      ]
+    },
+    {
+      "id": "LEEWAY_VISUAL_AI_WORKSPACE",
+      "status": "GOVERNED_PARTIAL",
+      "backingModules": [
+        "agent-lee-coding-mode/runtime/agent-lee-visual-ai-workspace.manifest.json",
+        "Leeway Runtime Fabric/standards/vscode-extension/src/visual-intelligence"
+      ],
+      "requirements": [
+        "image prompt/output",
+        "local preview",
+        "web preview",
+        "3D preview",
+        "Leonard approval before export"
+      ]
+    },
+    {
+      "id": "LEEWAY_LIVE_ROOM_VISION_AND_AUDIO_AWARENESS",
+      "status": "GOVERNED_PARTIAL",
+      "backingModules": [
+        "Leeway Runtime Fabric/vision-os",
+        "Leeway Runtime Fabric/voice-os",
+        "Leeway Runtime Fabric/human-voice-platform",
+        "Leeway Runtime Fabric/hardware-intelligence",
+        "agent-lee-coding-mode/runtime/agent-lee-room-capabilities.manifest.json"
+      ],
+      "requirements": [
+        "camera stream",
+        "microphone stream",
+        "speaker separation",
+        "anonymous person tracking",
+        "room consent notice",
+        "no sensitive-trait inference by default"
+      ]
+    }
+  ],
+  "endpoints": [
+    "GET /agent-lee/conversation/health",
+    "POST /agent-lee/conversation/start",
+    "POST /agent-lee/conversation/turn",
+    "POST /agent-lee/conversation/end",
+    "GET /agent-lee/conversation/session/:id",
+    "GET /agent-lee/voice/backends",
+    "POST /agent-lee/voice/speak",
+    "POST /agent-lee/voice/speak-stream",
+    "POST /agent-lee/voice/transcribe",
+    "GET /agent-lee/language/status",
+    "POST /agent-lee/language/detect",
+    "POST /agent-lee/language/translate",
+    "GET /agent-lee/language/policy"
+  ],
+  "proofArtifacts": [
+    "runtime/conversation-history.jsonl",
+    "runtime/sessions/*.json",
+    "runtime/audio/*.mp3",
+    "runtime/tmp/*.json",
+    "runtime/agent-lee-room-capabilities.manifest.json",
+    "runtime/agent-lee-visual-ai-workspace.manifest.json"
+  ]
+}

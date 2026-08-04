@@ -1,0 +1,17 @@
+{
+    "schema":  "agent-lee-hybrid-fabric-bootstrap-v17-4",
+    "updatedAt":  "2026-06-28T00:56:40.2517529Z",
+    "status":  "HYBRID_FABRIC_WORKER_STARTED",
+    "processId":  44368,
+    "script":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\Start-AgentLeeHybridAutonomicFabricV17.ps1",
+    "topology":  {
+                     "agentLeeContainer":  "agent_lee_code_mode",
+                     "runtimeFabricContainer":  "leeway_runtime_fabric",
+                     "ollamaContainer":  "leeway_ollama",
+                     "ollamaAlias":  "ollama",
+                     "preferredQwenModel":  "qwen2.5-coder:7b"
+                 },
+    "statePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\discovery-layer\\AGENT_LEE_HYBRID_AUTONOMIC_FABRIC_STATE.json",
+    "runtimeMirror":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime-fabric\\AGENT_LEE_HYBRID_AUTONOMIC_FABRIC_STATE.json",
+    "truth":  "V17.4 replaced the stub with a live hybrid worker loop and uses the real Leeway container topology."
+}

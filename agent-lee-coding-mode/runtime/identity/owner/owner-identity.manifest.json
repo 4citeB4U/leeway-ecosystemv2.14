@@ -1,0 +1,59 @@
+{
+  "schema": "leeway.agent-lee.owner-identity.manifest.v1",
+  "ownerId": "LEONARD_J_LEE",
+  "ownerName": "Leonard J Lee",
+  "ownerRole": [
+    "Creator of Agent Lee",
+    "Root authority of the Leeway ecosystem",
+    "Primary human-in-the-loop",
+    "Final approval authority"
+  ],
+  "vscodeAuthorityRole": "none",
+  "creatorRootAuthority": true,
+  "ecosystem": "leeway",
+  "createdBy": "agent-lee-coding-mode",
+  "createdAt": "2026-06-26T01:28:21Z",
+  "updatedAt": "2026-06-26T01:28:21Z",
+  "faceEnrollment": {
+    "status": "OWNER_IDENTITY_NOT_ENROLLED",
+    "localOnly": true,
+    "receiptRequired": true,
+    "cameraRequired": true,
+    "modelRequired": true,
+    "rawSamplesStored": false
+  },
+  "voiceEnrollment": {
+    "status": "OWNER_IDENTITY_NOT_ENROLLED",
+    "localOnly": true,
+    "receiptRequired": true,
+    "micRequired": true,
+    "modelRequired": true,
+    "rawSamplesStored": false
+  },
+  "passphraseFallback": {
+    "enabled": true,
+    "status": "OWNER_IDENTITY_NOT_ENROLLED",
+    "receiptRequired": true
+  },
+  "localDeviceTrust": {
+    "enabled": true,
+    "scope": "trusted local session only"
+  },
+  "biometricStoragePolicy": {
+    "rawSamplesStored": false,
+    "embeddingsStored": false,
+    "localOnly": true,
+    "protectedPathRequired": true
+  },
+  "approvalAuthority": {
+    "creatorRootAuthority": true,
+    "highRiskActionsRequireApproval": true
+  },
+  "receiptDirectory": "Archive/receipts/agent-lee-owner-identity",
+  "blockers": [
+    "Owner identity has not been biometrically enrolled yet.",
+    "No live camera verification has been proven in this turn.",
+    "No live microphone verification has been proven in this turn."
+  ],
+  "status": "OWNER_IDENTITY_NOT_ENROLLED"
+}

@@ -1,0 +1,64 @@
+﻿{
+    "version":  "LEEWAY_SMART_HOME_READ_ONLY_ROUTE_REQUIREMENT_261",
+    "timestamp":  "2026-07-05T22:53:27",
+    "family":  "smart_home",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_SMART_HOME_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/smart-home/discover",
+                                         "purpose":  "Return smart home inventory stub without adapter/cloud/local device calls.",
+                                         "read_only":  true,
+                                         "home_state_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/smart-home/status",
+                                         "purpose":  "Return smart home readiness with all command lanes disabled and approval required.",
+                                         "read_only":  true,
+                                         "home_state_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/smart-home/registry",
+                                         "purpose":  "Return normalized smart home registry artifact.",
+                                         "read_only":  true,
+                                         "home_state_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/smart-home/adapter/status",
+                                         "purpose":  "Return adapter disabled status without invoking Home Assistant, Matter, Zigbee, Z-Wave, MQTT, Google Home, Alexa, HomeKit, or SmartThings.",
+                                         "read_only":  true,
+                                         "home_state_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/smart-home/policy",
+                                         "purpose":  "Return smart home approval policy without cloud/local device mutation.",
+                                         "read_only":  true,
+                                         "home_state_mutation":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no Home Assistant API",
+                      "no Matter command",
+                      "no Zigbee command",
+                      "no Z-Wave command",
+                      "no MQTT publish",
+                      "no cloud API",
+                      "no local device API",
+                      "no device command",
+                      "no unlock",
+                      "no door open",
+                      "no garage open",
+                      "no alarm arm or disarm",
+                      "no thermostat change",
+                      "no light change",
+                      "no camera stream",
+                      "no microphone access",
+                      "no speaker playback",
+                      "no automation trigger",
+                      "no home state mutation"
+                  ]
+}

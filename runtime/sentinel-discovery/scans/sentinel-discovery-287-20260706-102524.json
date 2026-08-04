@@ -1,0 +1,452 @@
+﻿{
+    "version":  "LEEWAY_SENTINEL_DISCOVERY_287",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:25:30",
+    "verdict":  "LEEWAY_SENTINEL_DISCOVERY_287_CLEAN",
+    "clear_skies_gate":  {
+                             "phase_39_closed":  true,
+                             "post_execution_lockback_clean":  true,
+                             "execution_clean":  true,
+                             "actuator_resting_locked":  true,
+                             "clear_skies":  true
+                         },
+    "discovery_mode":  "PASSIVE_READ_ONLY",
+    "registry_path":  "C:\\Users\\Leona\\LeeWay-Runtime\\config\\physical_assets_registry.json",
+    "totals":  {
+                   "total_assets":  36,
+                   "local_interfaces":  5,
+                   "network_neighbors":  9,
+                   "mdns_assets":  0,
+                   "dns_sd_assets":  0,
+                   "bluetooth_assets":  19,
+                   "printer_assets":  3,
+                   "translator_needs":  3
+               },
+    "assets":  {
+                   "local_interfaces":  [
+                                            {
+                                                "asset_kind":  "local_network_interface",
+                                                "interface_alias":  "Ethernet",
+                                                "interface_index":  12,
+                                                "ipv4":  [
+                                                             "192.168.1.140"
+                                                         ],
+                                                "ipv6":  [
+                                                             "2603:6000:b400:5739:b2a9:172d:1b99:25b3",
+                                                             "2603:6000:b400:5739::1cd4"
+                                                         ],
+                                                "ipv4_default_gateway":  "192.168.1.1",
+                                                "dns_servers":  [
+                                                                    "2603:6000:b400:5739::1",
+                                                                    "2603:6000:b400:5739::1",
+                                                                    "192.168.1.1"
+                                                                ],
+                                                "discovery_source":  "Get-NetIPConfiguration",
+                                                "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                                            },
+                                            {
+                                                "asset_kind":  "local_network_interface",
+                                                "interface_alias":  "vEthernet (WSL (Hyper-V firewall))",
+                                                "interface_index":  26,
+                                                "ipv4":  [
+                                                             "172.26.160.1"
+                                                         ],
+                                                "ipv6":  [
+
+                                                         ],
+                                                "ipv4_default_gateway":  "",
+                                                "dns_servers":  [
+                                                                    "fec0:0:0:ffff::1",
+                                                                    "fec0:0:0:ffff::2",
+                                                                    "fec0:0:0:ffff::3"
+                                                                ],
+                                                "discovery_source":  "Get-NetIPConfiguration",
+                                                "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                                            },
+                                            {
+                                                "asset_kind":  "local_network_interface",
+                                                "interface_alias":  "Tailscale",
+                                                "interface_index":  37,
+                                                "ipv4":  [
+                                                             "100.80.10.39"
+                                                         ],
+                                                "ipv6":  [
+                                                             "fd7a:115c:a1e0::1901:acb"
+                                                         ],
+                                                "ipv4_default_gateway":  "",
+                                                "dns_servers":  [
+                                                                    "fec0:0:0:ffff::1",
+                                                                    "fec0:0:0:ffff::2",
+                                                                    "fec0:0:0:ffff::3"
+                                                                ],
+                                                "discovery_source":  "Get-NetIPConfiguration",
+                                                "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                                            },
+                                            {
+                                                "asset_kind":  "local_network_interface",
+                                                "interface_alias":  "Wi-Fi",
+                                                "interface_index":  8,
+                                                "ipv4":  [
+                                                             "169.254.204.41"
+                                                         ],
+                                                "ipv6":  [
+
+                                                         ],
+                                                "ipv4_default_gateway":  "",
+                                                "dns_servers":  [
+                                                                    "fec0:0:0:ffff::1",
+                                                                    "fec0:0:0:ffff::2",
+                                                                    "fec0:0:0:ffff::3"
+                                                                ],
+                                                "discovery_source":  "Get-NetIPConfiguration",
+                                                "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                                            },
+                                            {
+                                                "asset_kind":  "local_network_interface",
+                                                "interface_alias":  "Bluetooth Network Connection",
+                                                "interface_index":  21,
+                                                "ipv4":  [
+                                                             "169.254.163.223"
+                                                         ],
+                                                "ipv6":  [
+
+                                                         ],
+                                                "ipv4_default_gateway":  "",
+                                                "dns_servers":  [
+                                                                    "fec0:0:0:ffff::1",
+                                                                    "fec0:0:0:ffff::2",
+                                                                    "fec0:0:0:ffff::3"
+                                                                ],
+                                                "discovery_source":  "Get-NetIPConfiguration",
+                                                "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                                            }
+                                        ],
+                   "network_neighbors":  [
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                                 "mac":  "AE-5F-A0-77-4E-B2",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv6",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                                 "mac":  "AE-5F-A0-77-4E-B2",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv6",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "2603:6000:b400:5739::1",
+                                                 "mac":  "A0-55-1F-23-76-AE",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Reachable",
+                                                 "address_family":  "IPv6",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "172.26.169.72",
+                                                 "mac":  "00-15-5D-F5-62-08",
+                                                 "interface":  "vEthernet (WSL (Hyper-V firewall))",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "192.168.1.189",
+                                                 "mac":  "A6-71-11-E1-DC-78",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "192.168.1.183",
+                                                 "mac":  "90-6A-EB-B0-CC-DA",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "192.168.1.101",
+                                                 "mac":  "70-A6-CC-E6-81-83",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "192.168.1.36",
+                                                 "mac":  "AE-5F-A0-77-4E-B2",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Stale",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             },
+                                             {
+                                                 "asset_kind":  "network_neighbor",
+                                                 "ip":  "192.168.1.1",
+                                                 "mac":  "A0-55-1F-23-76-AE",
+                                                 "interface":  "Ethernet",
+                                                 "state":  "Reachable",
+                                                 "address_family":  "IPv4",
+                                                 "discovery_source":  "Get-NetNeighbor",
+                                                 "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                             }
+                                         ],
+                   "mdns":  [
+
+                            ],
+                   "dns_sd":  [
+
+                              ],
+                   "bluetooth":  [
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Microsoft Bluetooth LE Enumerator",
+                                         "instance_id":  "BTH\\MS_BTHLE\\6\u00261FED5926\u00261\u00263",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "ProtoArc KM100-A",
+                                         "instance_id":  "BTHLE\\DEV_DFA67358A5FE\\7\u0026DFB4422\u00260\u0026DFA67358A5FE",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "ProtoArc KM100-A",
+                                         "instance_id":  "BTHLE\\DEV_EF17ECD33255\\7\u0026DFB4422\u00260\u0026EF17ECD33255",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Bluetooth LE Generic Attribute Service",
+                                         "instance_id":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260025",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Device Information Service",
+                                         "instance_id":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000E",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "ANCOBER",
+                                         "instance_id":  "BTHENUM\\DEV_80F1667054C5\\7\u002632E0C4C1\u00260\u0026BLUETOOTHDEVICE_80F1667054C5",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "ANCOBER Avrcp Transport",
+                                         "instance_id":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Microsoft Bluetooth Enumerator",
+                                         "instance_id":  "BTH\\MS_BTHBRB\\6\u00261FED5926\u00261\u00261",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                                         "instance_id":  "BTH\\MS_RFCOMM\\6\u00261FED5926\u00261\u00260",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Generic Access Profile",
+                                         "instance_id":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260001",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "i2O",
+                                         "instance_id":  "BTHENUM\\DEV_DE086739775D\\7\u002632E0C4C1\u00260\u0026BLUETOOTHDEVICE_DE086739775D",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "i2O Avrcp Transport",
+                                         "instance_id":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID\u0026000105D6_PID\u0026000A\\7\u002632E0C4C1\u00260\u0026DE086739775D_C00000000",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Device Information Service",
+                                         "instance_id":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u0026000A",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Generic Attribute Profile",
+                                         "instance_id":  "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000A",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "i2O Avrcp Transport",
+                                         "instance_id":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID\u0026000105D6_PID\u0026000A\\7\u002632E0C4C1\u00260\u0026DE086739775D_C00000000",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Bluetooth LE Generic Attribute Service",
+                                         "instance_id":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260032",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "ANCOBER Avrcp Transport",
+                                         "instance_id":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Generic Access Profile",
+                                         "instance_id":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260001",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     },
+                                     {
+                                         "asset_kind":  "bluetooth_device",
+                                         "friendly_name":  "Realtek Bluetooth Adapter",
+                                         "instance_id":  "USB\\VID_0BDA\u0026PID_D922\\00E04C885A01",
+                                         "status":  "OK",
+                                         "discovery_source":  "Get-PnpDevice",
+                                         "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                     }
+                                 ],
+                   "printers":  [
+                                    {
+                                        "asset_kind":  "printer",
+                                        "name":  "OneNote (Desktop)",
+                                        "driver_name":  "Send to Microsoft OneNote 16 Driver",
+                                        "port_name":  "nul:",
+                                        "shared":  false,
+                                        "published":  false,
+                                        "discovery_source":  "Get-Printer",
+                                        "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                    },
+                                    {
+                                        "asset_kind":  "printer",
+                                        "name":  "Microsoft Print to PDF",
+                                        "driver_name":  "Microsoft Print To PDF",
+                                        "port_name":  "PORTPROMPT:",
+                                        "shared":  false,
+                                        "published":  false,
+                                        "discovery_source":  "Get-Printer",
+                                        "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                    },
+                                    {
+                                        "asset_kind":  "printer",
+                                        "name":  "HP OfficeJet Pro 8020 series",
+                                        "driver_name":  "HP OfficeJet Pro 8020 series PCL-3",
+                                        "port_name":  "USB001",
+                                        "shared":  false,
+                                        "published":  false,
+                                        "discovery_source":  "Get-Printer",
+                                        "control_status":  "DISCOVERED_READ_ONLY_NOT_ONBOARDED"
+                                    }
+                                ]
+               },
+    "translator_needs":  [
+                             {
+                                 "lane":  "bluetooth_layer",
+                                 "likely_protocols":  [
+                                                          "Bluetooth Classic",
+                                                          "Bluetooth LE"
+                                                      ],
+                                 "recommendation":  "Do not control BLE devices until explicit pairing, GATT map, and approval gate exist.",
+                                 "status":  "PENDING_HANDSHAKE"
+                             },
+                             {
+                                 "lane":  "printer_layer",
+                                 "likely_protocols":  [
+                                                          "Windows Print Spooler",
+                                                          "IPP"
+                                                      ],
+                                 "recommendation":  "Keep print actions approval-gated; discovery remains read-only.",
+                                 "status":  "PENDING_HANDSHAKE"
+                             },
+                             {
+                                 "lane":  "iot_network_layer",
+                                 "likely_protocols":  [
+                                                          "IP Neighbor",
+                                                          "ARP/NDP",
+                                                          "mDNS follow-up"
+                                                      ],
+                                 "recommendation":  "Use vendor identification and explicit onboarding before any actuator mapping.",
+                                 "status":  "PENDING_HANDSHAKE"
+                             }
+                         ],
+    "safety":  {
+                   "no_execution_in_287":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_docker_deploy":  true,
+                   "no_iot_control":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_write_to_device_operator_capability_map":  true,
+                   "discovery_only":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "288-universal-iot-bridge-plan-no-execute.ps1"
+}

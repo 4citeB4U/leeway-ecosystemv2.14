@@ -1,0 +1,15 @@
+﻿Archive/
+node_modules/
+.git/
+*.log
+*.zip
+*.wav
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.sqlite
+*.db
+agent-lee-coding-mode/logs/
+agent-lee-coding-mode/desktop-runtime/runs/

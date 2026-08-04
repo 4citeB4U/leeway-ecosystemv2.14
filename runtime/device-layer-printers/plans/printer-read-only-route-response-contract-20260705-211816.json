@@ -1,0 +1,45 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_ROUTE_RESPONSE_CONTRACT_222",
+    "timestamp":  "2026-07-05T21:18:16",
+    "family":  "printers",
+    "route_response_contract":  {
+                                    "/printers/status":  {
+                                                             "ok":  "bool",
+                                                             "family":  "printers",
+                                                             "mode":  "READ_ONLY_NO_PRINT",
+                                                             "patch":  "LEEWAY_PRINTER_READ_ONLY_ROUTES_PATCH_223",
+                                                             "discovery_route_present":  "bool",
+                                                             "status_route_present":  "bool",
+                                                             "registry_route_present":  "bool",
+                                                             "discovered_count":  "int",
+                                                             "control_enabled":  false,
+                                                             "approval_required_for_print":  true,
+                                                             "physical_action_executed":  false,
+                                                             "print_job_sent":  false,
+                                                             "queue_mutated":  false,
+                                                             "spooler_mutated":  false,
+                                                             "driver_installed":  false
+                                                         },
+                                    "/printers/registry":  {
+                                                               "ok":  "bool",
+                                                               "family":  "printers",
+                                                               "registry_status":  "READ_ONLY_REGISTRY_ROUTE_ACTIVE",
+                                                               "discovered_count":  "int",
+                                                               "normalized_printers":  "array",
+                                                               "control_enabled":  false,
+                                                               "physical_action_executed":  false,
+                                                               "print_job_sent":  false,
+                                                               "queue_mutated":  false,
+                                                               "spooler_mutated":  false,
+                                                               "driver_installed":  false
+                                                           }
+                                },
+    "non_goals":  [
+                      "no print jobs",
+                      "no queue mutation",
+                      "no spooler mutation",
+                      "no driver install",
+                      "no default printer mutation",
+                      "no physical action"
+                  ]
+}

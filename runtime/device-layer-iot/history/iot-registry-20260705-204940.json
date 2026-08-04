@@ -1,0 +1,29 @@
+﻿{
+    "version":  "LEEWAY_IOT_DISCOVERY_REGISTRY_CONTRACT_NO_EXECUTE_2026-07-05",
+    "timestamp":  "2026-07-05T20:49:40",
+    "family":  "iot",
+    "registry_status":  "DISCOVERY_ROUTE_PRESENT_REGISTRY_CONTRACT_CREATED",
+    "discovery_route":  "http://127.0.0.1:5323/iot/discover",
+    "discovery_ok":  true,
+    "discovered_count":  0,
+    "discovered_raw":  {
+                           "ok":  true,
+                           "route":  "/iot/discover",
+                           "version":  "LEEWAY_DEVICE_LAYER_163_EXTENSION_2026-07-05",
+                           "discovery_methods":  [
+                                                     "manual_registration",
+                                                     "mdns_zeroconf_contract",
+                                                     "upnp_ssdp_contract",
+                                                     "ipp_printer_discovery_contract",
+                                                     "tailscale_peer_contract"
+                                                 ],
+                           "discovered":  {
+
+                                          },
+                           "note":  "Discovery contract route is active. This safe GET route does not write receipts. Active scan is added in the next approved implementation layer."
+                       },
+    "normalized_devices":  [
+
+                           ],
+    "note":  "This registry is discovery-only. No IoT control action was executed."
+}

@@ -1,0 +1,29 @@
+{
+  "creative_id": "creative-1783141257-3d110215",
+  "creative_type": "podcast",
+  "title": "Agent Lee Runtime Podcast",
+  "prompt": "Create a podcast package explaining Agent Lee as a full runtime assistant",
+  "audience": "",
+  "goal": "Create a complete usable creative production package.",
+  "tone": "clear, practical, production-ready",
+  "duration_minutes": 0,
+  "slide_count": 0,
+  "sections": 0,
+  "content": "# Agent Lee Runtime Podcast\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: podcast\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a podcast package explaining Agent Lee as a full runtime assistant\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Podcast Package\nEstimated Runtime: 5 minutes\n\n## Episode Promise\nBy the end of this episode, the listener should understand the central idea, why it matters, and what action to take next.\n\n## Episode Structure\n1. Cold open\n2. Host introduction\n3. Problem setup\n4. Main teaching segments\n5. Example or story\n6. Practical action steps\n7. Closing call to action\n\n## Cold Open Script\nOpen with a sharp question, tension point, or surprising statement that makes the listener care immediately.\n\n## Host Intro Script\nWelcome the listener, name the topic, and state the promise of the episode.\n\n## Segment 1: Problem\nExplain the pain, confusion, opportunity, or market gap.\n\n## Segment 2: Main Idea\nBreak down the core idea with clear examples and simple language.\n\n## Segment 3: Application\nGive the listener practical steps they can use immediately.\n\n## Show Notes\n- Key takeaway 1\n- Key takeaway 2\n- Key takeaway 3\n\n## Production Notes\n- Intro music\n- Host voice tone\n- Suggested pauses\n- Sound effect moments\n- Clip-worthy quotes\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+  "versions": [
+    {
+      "version": 1,
+      "created_at": "2026-07-04T05:00:57.873272+00:00",
+      "source": "creative-router-proof",
+      "instructions": "initial_create_creative",
+      "content": "# Agent Lee Runtime Podcast\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: podcast\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a podcast package explaining Agent Lee as a full runtime assistant\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Podcast Package\nEstimated Runtime: 5 minutes\n\n## Episode Promise\nBy the end of this episode, the listener should understand the central idea, why it matters, and what action to take next.\n\n## Episode Structure\n1. Cold open\n2. Host introduction\n3. Problem setup\n4. Main teaching segments\n5. Example or story\n6. Practical action steps\n7. Closing call to action\n\n## Cold Open Script\nOpen with a sharp question, tension point, or surprising statement that makes the listener care immediately.\n\n## Host Intro Script\nWelcome the listener, name the topic, and state the promise of the episode.\n\n## Segment 1: Problem\nExplain the pain, confusion, opportunity, or market gap.\n\n## Segment 2: Main Idea\nBreak down the core idea with clear examples and simple language.\n\n## Segment 3: Application\nGive the listener practical steps they can use immediately.\n\n## Show Notes\n- Key takeaway 1\n- Key takeaway 2\n- Key takeaway 3\n\n## Production Notes\n- Intro music\n- Host voice tone\n- Suggested pauses\n- Sound effect moments\n- Clip-worthy quotes\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+    }
+  ],
+  "metadata": {
+    "original_request": "Create a podcast package explaining Agent Lee as a full runtime assistant",
+    "router": "leeway_skill_router",
+    "creation_layer": "leeway_open_notebook"
+  },
+  "created_at": "2026-07-04T05:00:57.873282+00:00",
+  "updated_at": "2026-07-04T05:00:57.873283+00:00"
+}

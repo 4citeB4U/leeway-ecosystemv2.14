@@ -1,0 +1,10 @@
+﻿node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+*.vsix
+*.log
+.env
+.env.*

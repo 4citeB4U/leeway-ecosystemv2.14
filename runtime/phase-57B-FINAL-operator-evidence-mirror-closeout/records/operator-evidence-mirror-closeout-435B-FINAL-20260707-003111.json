@@ -1,0 +1,270 @@
+﻿{
+    "version":  "LEEWAY_OPERATOR_EVIDENCE_MIRROR_CLOSEOUT_435B_FINAL",
+    "phase":  "57B-FINAL",
+    "timestamp":  "2026-07-07T00:31:13",
+    "verdict":  "LEEWAY_OPERATOR_EVIDENCE_MIRROR_CLOSEOUT_435B_FINAL_CLEAN",
+    "closeout_only":  true,
+    "package_created":  false,
+    "runtime_executed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "physical_action_performed":  false,
+    "source_operator_script_root":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts",
+    "mirror_latest_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest",
+    "closeout_truth":  {
+                           "source_root":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts",
+                           "mirror_latest_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest",
+                           "source_files_seen":  6180,
+                           "mirror_files_before_closeout":  6504,
+                           "missing_before_closeout":  12,
+                           "copied_missing_files":  12,
+                           "copy_errors":  0,
+                           "hash_mismatches_in_copied_missing":  0,
+                           "evidence_carried_inside_ecosystem":  true,
+                           "self_generated_closeout_artifacts_will_be_mirrored":  true,
+                           "runtime_execution_allowed_now":  false,
+                           "docker_mutation_allowed_now":  false,
+                           "docker_exec_allowed_now":  false,
+                           "device_control_allowed_now":  false,
+                           "package_creation_allowed_now":  false
+                       },
+    "missing_before_closeout":  [
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-hash-matches-435B.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-hash-matches-435B.json",
+                                        "source_length":  7461157,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\repair-copies-435B-R.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\repair-copies-435B-R.json",
+                                        "source_length":  315116,
+                                        "source_last_write_time":  "2026-07-07T00:28:06"
+                                    },
+                                    {
+                                        "relative_path":  "435B-FINAL-operator-evidence-mirror-closeout-no-execute.ps1",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\435B-FINAL-operator-evidence-mirror-closeout-no-execute.ps1",
+                                        "source_length":  14429,
+                                        "source_last_write_time":  "2026-07-07T00:31:09"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-verification-rows-435B.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-verification-rows-435B.json",
+                                        "source_length":  7785247,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-mirror-435B.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-mirror-435B.json",
+                                        "source_length":  4114,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-source-435B.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-source-435B.json",
+                                        "source_length":  316992,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.receipt.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.receipt.json",
+                                        "source_length":  506913,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\missing-in-mirror-before-repair-435B-R.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\missing-in-mirror-before-repair-435B-R.json",
+                                        "source_length":  136643,
+                                        "source_last_write_time":  "2026-07-07T00:28:05"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.txt",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.txt",
+                                        "source_length":  1686,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.receipt.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.receipt.json",
+                                        "source_length":  205589,
+                                        "source_last_write_time":  "2026-07-07T00:28:07"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.txt",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.txt",
+                                        "source_length":  1280,
+                                        "source_last_write_time":  "2026-07-07T00:28:07"
+                                    },
+                                    {
+                                        "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-volatile-live-logs-435B.json",
+                                        "source_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-volatile-live-logs-435B.json",
+                                        "source_length":  3008,
+                                        "source_last_write_time":  "2026-07-07T00:29:46"
+                                    }
+                                ],
+    "copied_missing":  [
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-hash-matches-435B.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-hash-matches-435B.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-hash-matches-435B.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "DBC59263E92B96E8AD5985BF47EBACE46862D7C3E7F4EE94FB3C15BB942D2D16",
+                               "destination_sha256":  "DBC59263E92B96E8AD5985BF47EBACE46862D7C3E7F4EE94FB3C15BB942D2D16",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\repair-copies-435B-R.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\repair-copies-435B-R.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\repair-copies-435B-R.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "95BBA3CAD12A12C4F4141CFC6B0E4FEC13BEA19353A60C3D40F095AB0F205CA7",
+                               "destination_sha256":  "95BBA3CAD12A12C4F4141CFC6B0E4FEC13BEA19353A60C3D40F095AB0F205CA7",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "435B-FINAL-operator-evidence-mirror-closeout-no-execute.ps1",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\435B-FINAL-operator-evidence-mirror-closeout-no-execute.ps1",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\435B-FINAL-operator-evidence-mirror-closeout-no-execute.ps1",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "EE9CEA0A6D12AD4C63D5C768956B375D2671C1B3BB33F4C7B9534FC2E5F06354",
+                               "destination_sha256":  "EE9CEA0A6D12AD4C63D5C768956B375D2671C1B3BB33F4C7B9534FC2E5F06354",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-verification-rows-435B.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-verification-rows-435B.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-verification-rows-435B.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "28070ACEEA17D6A531535343525BC20E2B756C9F839D045C6BE730CDD25FDCF8",
+                               "destination_sha256":  "28070ACEEA17D6A531535343525BC20E2B756C9F839D045C6BE730CDD25FDCF8",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-mirror-435B.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-mirror-435B.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-mirror-435B.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "F5A8F9AADF3952CEA739EF1B9CAE8A10EB9236597CC28C018837DD4090BE9A36",
+                               "destination_sha256":  "F5A8F9AADF3952CEA739EF1B9CAE8A10EB9236597CC28C018837DD4090BE9A36",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-source-435B.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-source-435B.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-missing-in-source-435B.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "5E08BC5F6A2F22EB03480551BAA8B002346C84466656450112203BE16774EEF1",
+                               "destination_sha256":  "5E08BC5F6A2F22EB03480551BAA8B002346C84466656450112203BE16774EEF1",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.receipt.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.receipt.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.receipt.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "5D937024959993B0EDC603D7620F031C7DEE970D427E0937CF2951255F08F360",
+                               "destination_sha256":  "5D937024959993B0EDC603D7620F031C7DEE970D427E0937CF2951255F08F360",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\missing-in-mirror-before-repair-435B-R.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\missing-in-mirror-before-repair-435B-R.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\json\\missing-in-mirror-before-repair-435B-R.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "F0627A6DEBCC724E0367A1300FD6966C223DFC3E5E779E2C958DE88CE8E1E571",
+                               "destination_sha256":  "F0627A6DEBCC724E0367A1300FD6966C223DFC3E5E779E2C958DE88CE8E1E571",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.txt",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.txt",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_VERIFICATION_435B_20260707-002935.txt",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "2E019B2C1A30E48FE27FCA8738B575A8A64FDCE2CBB28F4EFBC0173C59BD4A45",
+                               "destination_sha256":  "2E019B2C1A30E48FE27FCA8738B575A8A64FDCE2CBB28F4EFBC0173C59BD4A45",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.receipt.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.receipt.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\receipts\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.receipt.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "50B440A04FDC3BEF942E13581B66402B369BE0B87D5CDF264EA3AE1FDDB775AC",
+                               "destination_sha256":  "50B440A04FDC3BEF942E13581B66402B369BE0B87D5CDF264EA3AE1FDDB775AC",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.txt",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.txt",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-R-20260707-002803\\reports\\LEEWAY_OPERATOR_EVIDENCE_MIRROR_MISSING_FILE_REPAIR_435B_R_20260707-002803.txt",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "ED7F860E1D218F21DFCEF1F849BA39FECEFF65D72ADFF1D2DFF31AA9FE2A1D23",
+                               "destination_sha256":  "ED7F860E1D218F21DFCEF1F849BA39FECEFF65D72ADFF1D2DFF31AA9FE2A1D23",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           },
+                           {
+                               "relative_path":  "AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-volatile-live-logs-435B.json",
+                               "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-volatile-live-logs-435B.json",
+                               "destination":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-435B-20260707-002935\\json\\operator-evidence-volatile-live-logs-435B.json",
+                               "source_hash_ok":  true,
+                               "destination_hash_ok":  true,
+                               "source_sha256":  "9E021AA6790897695681EE5C81C9DB51B55B92742764AE7F92942B1215F38EF4",
+                               "destination_sha256":  "9E021AA6790897695681EE5C81C9DB51B55B92742764AE7F92942B1215F38EF4",
+                               "hash_match":  true,
+                               "source_hash_error":  "",
+                               "destination_hash_error":  ""
+                           }
+                       ],
+    "copy_errors":  [
+
+                    ],
+    "hard_blocks":  [
+                        "runtime_execution",
+                        "docker_exec",
+                        "docker_mutation",
+                        "docker_start",
+                        "docker_stop",
+                        "docker_restart",
+                        "docker_build",
+                        "docker_compose_up",
+                        "device_control",
+                        "physical_action",
+                        "package_creation",
+                        "sdk_distribution"
+                    ],
+    "recommended_next_script":  "436-docker-discovery-layer-resolution-contract-no-execute.ps1"
+}

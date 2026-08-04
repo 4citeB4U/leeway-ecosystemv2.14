@@ -1,0 +1,24 @@
+﻿{
+    "version":  "LEEWAY_EXTEND_APPROVED_REAL_HOTKEY_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:44:37",
+    "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha",
+    "real_alpha_url":  "http://127.0.0.1:7332",
+    "policy":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\policy\\real-alpha-one-action-hotkey-policy.json",
+    "mode":  "ONE_ACTION_REAL_HOTKEY_ONLY",
+    "real_execution_enabled":  true,
+    "physical_execution_enabled":  true,
+    "enabled_action":  "real_hotkey",
+    "controlled_target":  "notepad",
+    "approved_hotkey":  "F5",
+    "last_approval_id":  "approved-real-hotkey-20260705-184430-dfbae7eae1da",
+    "last_execution_result":  {
+                                  "sent_hotkey":  "F5",
+                                  "controlled_notepad_pid":  "21336",
+                                  "new_notepad_process_ids":  [
+                                                                  21336
+                                                              ],
+                                  "response_executed":  true,
+                                  "response_allowed":  true
+                              },
+    "all_other_actions_blocked":  true
+}

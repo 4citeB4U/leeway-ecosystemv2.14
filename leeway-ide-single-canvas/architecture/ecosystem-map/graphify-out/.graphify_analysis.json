@@ -1,0 +1,3504 @@
+{
+  "communities": {
+    "0": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_service_agentleebackgroundindexerservice",
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexerfilerecord",
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexergraphedge",
+      "src_agent_lee_vscode_extension_src_indexing_indexquery_service_knowledgeindexpayload"
+    ],
+    "1": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewaycodereviewreceipt",
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayreviewcontext",
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayriskassessment"
+    ],
+    "2": [
+      "src_core_code_engine_code_engine_types_leewaycodeengineregistration",
+      "src_core_modules_module_types_leewaymodulemetadata",
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineregistration"
+    ],
+    "3": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_plugintrustassessment",
+      "src_agent_lee_vscode_extension_src_core_zero_trust_provenanceenvelope"
+    ],
+    "4": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntime",
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeprovider"
+    ],
+    "5": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimestate",
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeproviderstate"
+    ],
+    "6": [
+      "src_agent_lee_vscode_extension_src_performance_lazyserviceregistry_lazyservice",
+      "src_agent_lee_vscode_extension_src_performance_performance_types_servicestate"
+    ],
+    "7": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_guard_pluginguardresult",
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_pluginpermission"
+    ],
+    "8": [
+      "src_data_layouttemplates_layouttemplate",
+      "src_types_nodetypes_nodeinstance"
+    ],
+    "9": [
+      "src_services_omniterminalfabric_omniterminalsnapshot",
+      "src_services_runtimeconnectionservice_runtimeendpointprobe"
+    ],
+    "10": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_contract_assertenginestatetransition"
+    ],
+    "11": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_contract_cantransitionenginestate"
+    ],
+    "12": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_contract_createleewaycodeengineregistration"
+    ],
+    "13": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_contract_mapenginerequesttoruntimeenvelope"
+    ],
+    "14": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeengineerror"
+    ],
+    "15": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeenginehealth"
+    ],
+    "16": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeengineid"
+    ],
+    "17": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeenginelifecyclestate"
+    ],
+    "18": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeenginemetadata"
+    ],
+    "19": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeengineprovider"
+    ],
+    "20": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeengineregistration"
+    ],
+    "21": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeenginerequest"
+    ],
+    "22": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewaycodeengineresult"
+    ],
+    "23": [
+      "evidence_mig_005_20260729_180817_rollback_src_core_code_engine_code_engine_types_leewayopencodeconfigvalidation"
+    ],
+    "24": [
+      "opencode_tools_collect_browser_evidence_collectbrowserevidenceparams"
+    ],
+    "25": [
+      "opencode_tools_collect_browser_evidence_collectbrowserevidenceresult"
+    ],
+    "26": [
+      "opencode_tools_find_latest_receipt_findlatestreceiptparams"
+    ],
+    "27": [
+      "opencode_tools_find_latest_receipt_findlatestreceiptresult"
+    ],
+    "28": [
+      "opencode_tools_generate_evidence_index_generateevidenceindexparams"
+    ],
+    "29": [
+      "opencode_tools_generate_evidence_index_generateevidenceindexresult"
+    ],
+    "30": [
+      "opencode_tools_hash_protected_files_hashprotectedfilesparams"
+    ],
+    "31": [
+      "opencode_tools_hash_protected_files_hashprotectedfilesresult"
+    ],
+    "32": [
+      "opencode_tools_inspect_build_log_inspectbuildlogparams"
+    ],
+    "33": [
+      "opencode_tools_inspect_build_log_inspectbuildlogresult"
+    ],
+    "34": [
+      "opencode_tools_probe_runtime_health_proberuntimehealthparams"
+    ],
+    "35": [
+      "opencode_tools_probe_runtime_health_proberuntimehealthresult"
+    ],
+    "36": [
+      "opencode_tools_validate_jsonc_validatejsoncparams"
+    ],
+    "37": [
+      "opencode_tools_validate_jsonc_validatejsoncresult"
+    ],
+    "38": [
+      "opencode_tools_validate_migration_boundary_validatemigrationboundaryparams"
+    ],
+    "39": [
+      "opencode_tools_validate_migration_boundary_validatemigrationboundaryresult"
+    ],
+    "40": [
+      "opencode_tools_validate_receipt_validatereceiptparams"
+    ],
+    "41": [
+      "opencode_tools_validate_receipt_validatereceiptresult"
+    ],
+    "42": [
+      "opencode_tools_validate_skill_manifest_validateskillmanifestparams"
+    ],
+    "43": [
+      "opencode_tools_validate_skill_manifest_validateskillmanifestresult"
+    ],
+    "44": [
+      "src_agent_lee_application_control_agentleeapplicationcontrol_agentleeapplicationclassification"
+    ],
+    "45": [
+      "src_agent_lee_application_control_agentleeapplicationcontrol_agentleeapplicationintent"
+    ],
+    "46": [
+      "src_agent_lee_application_control_agentleeapplicationcontrol_classifyagentleeapplicationintent"
+    ],
+    "47": [
+      "src_agent_lee_core_drift_trackerror"
+    ],
+    "48": [
+      "src_agent_lee_core_law_engine_enforcelaw"
+    ],
+    "49": [
+      "src_agent_lee_core_scheduler_releaseexecution"
+    ],
+    "50": [
+      "src_agent_lee_core_scheduler_requestexecution"
+    ],
+    "51": [
+      "src_agent_lee_mcp_adapters_src_dotenv_loaddotenv"
+    ],
+    "52": [
+      "src_agent_lee_mcp_adapters_src_dotenv_mergeenv"
+    ],
+    "53": [
+      "src_agent_lee_mcp_adapters_src_exec_run"
+    ],
+    "54": [
+      "src_agent_lee_mcp_adapters_vscode_mcp_tooling_src_dotenv_loaddotenv"
+    ],
+    "55": [
+      "src_agent_lee_mcp_adapters_vscode_mcp_tooling_src_dotenv_mergeenv"
+    ],
+    "56": [
+      "src_agent_lee_mcp_adapters_vscode_mcp_tooling_src_exec_run"
+    ],
+    "57": [
+      "src_agent_lee_persona_src_anti_generic_filter_applyantigenericfilter"
+    ],
+    "58": [
+      "src_agent_lee_persona_src_heritage_loader_loadagentleeheritage"
+    ],
+    "59": [
+      "src_agent_lee_persona_src_persona_validator_testagentleepersona"
+    ],
+    "60": [
+      "src_agent_lee_persona_src_persona_validator_validateagentleepersonamodule"
+    ],
+    "61": [
+      "src_agent_lee_persona_src_prompt_builder_buildagentleeruntimeprompt"
+    ],
+    "62": [
+      "src_agent_lee_persona_src_prompt_builder_getagentleepersonamoduleroot"
+    ],
+    "63": [
+      "src_agent_lee_persona_src_prompt_builder_loadagentleepersonamanifest"
+    ],
+    "64": [
+      "src_agent_lee_persona_src_prompt_builder_loadagentleesuperiorprompt"
+    ],
+    "65": [
+      "src_agent_lee_persona_src_response_formatter_formatagentleeresponse"
+    ],
+    "66": [
+      "src_agent_lee_persona_src_voice_modes_agentleevoicemode"
+    ],
+    "67": [
+      "src_agent_lee_persona_src_voice_modes_selectagentleevoicemode"
+    ],
+    "68": [
+      "src_agent_lee_sdk_validators_compliance_check_runcompliancecheck"
+    ],
+    "69": [
+      "src_agent_lee_supervisor_planner_createplan"
+    ],
+    "70": [
+      "src_agent_lee_supervisor_state_logger_logevent"
+    ],
+    "71": [
+      "src_agent_lee_supervisor_state_machine_runstatemachine"
+    ],
+    "72": [
+      "src_agent_lee_tools_image_tool_analyzeimage"
+    ],
+    "73": [
+      "src_agent_lee_tools_web_search_websearch"
+    ],
+    "74": [
+      "src_agent_lee_verification_rca_analyzefailure"
+    ],
+    "75": [
+      "src_agent_lee_verification_verifier_verify"
+    ],
+    "76": [
+      "src_agent_lee_visual_intelligence_system_lvis_schemas_lvisschemanote"
+    ],
+    "77": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticactiondisclosure_actiondisclosure"
+    ],
+    "78": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticactiondisclosure_agenticactiondisclosure"
+    ],
+    "79": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticgaterunner_agenticgaterunner"
+    ],
+    "80": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticgaterunner_gatedefinition"
+    ],
+    "81": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticgaterunner_gateresult"
+    ],
+    "82": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticintentclassifier_agenticintentclassifier"
+    ],
+    "83": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticintentclassifier_classifiedintent"
+    ],
+    "84": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticintentclassifier_intentclassification"
+    ],
+    "85": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticlearningrecorder_agenticlearningrecorder"
+    ],
+    "86": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticlearningrecorder_executionlearning"
+    ],
+    "87": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticlearningrecorder_learningpattern"
+    ],
+    "88": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticmodelteamrouter_agenticmodelteamrouter"
+    ],
+    "89": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticmodelteamrouter_codingrole"
+    ],
+    "90": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticmodelteamrouter_modelconflict"
+    ],
+    "91": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticmodelteamrouter_modelcontribution"
+    ],
+    "92": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticmodelteamrouter_modelteammember"
+    ],
+    "93": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticreceiptwriter_agenticreceiptwriter"
+    ],
+    "94": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticreceiptwriter_receipt"
+    ],
+    "95": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticstandardsresolver_agenticstandardsresolver"
+    ],
+    "96": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticstandardsresolver_standardscontext"
+    ],
+    "97": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictaskplanner_agentictaskplanner"
+    ],
+    "98": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictaskplanner_taskplan"
+    ],
+    "99": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictaskplanner_taskstep"
+    ],
+    "100": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictruthguard_agentictruthguard"
+    ],
+    "101": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictruthguard_runtimetruth"
+    ],
+    "102": [
+      "src_agent_lee_vscode_extension_src_agentic_agentictruthguard_truthviolation"
+    ],
+    "103": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticworkerorchestrator_agenticworkerorchestrator"
+    ],
+    "104": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticworkerorchestrator_workerdefinition"
+    ],
+    "105": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticworkerorchestrator_workerinvocation"
+    ],
+    "106": [
+      "src_agent_lee_vscode_extension_src_agentic_agenticworkerorchestrator_workerrole"
+    ],
+    "107": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_getleewayagent"
+    ],
+    "108": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_leewayagentbook"
+    ],
+    "109": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_leewayagentbookentry"
+    ],
+    "110": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_loadleewayagentbook"
+    ],
+    "111": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_readstandardsjson"
+    ],
+    "112": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentbookclient_resolveworkspaceroot"
+    ],
+    "113": [
+      "src_agent_lee_vscode_extension_src_agents_leewayagentrouter_assertregisteredleewayagent"
+    ],
+    "114": [
+      "src_agent_lee_vscode_extension_src_agents_leewayworkflowrouter_assertworkflowroute"
+    ],
+    "115": [
+      "src_agent_lee_vscode_extension_src_agents_leewayworkflowrouter_leewayworkflowentry"
+    ],
+    "116": [
+      "src_agent_lee_vscode_extension_src_agents_leewayworkflowrouter_loadleewayworkflows"
+    ],
+    "117": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationcertification_certifyleewaygeneratedapplication"
+    ],
+    "118": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationcertification_leewaycertificationresult"
+    ],
+    "119": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationcertification_leewaygeneratedpackage"
+    ],
+    "120": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationgenerator_generateleewayapplication"
+    ],
+    "121": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationgenerator_leewaygeneratorinput"
+    ],
+    "122": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayapplicationgenerator_leewaygeneratoroutput"
+    ],
+    "123": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayblueprintloader_leewayuniversalblueprint"
+    ],
+    "124": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewayblueprintloader_loadleewayuniversalblueprint"
+    ],
+    "125": [
+      "src_agent_lee_vscode_extension_src_application_generation_leewaygeneratedappreceipts_writeleewaygeneratedappreceipt"
+    ],
+    "126": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_applyapprovedpatch"
+    ],
+    "127": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_buildexecutionplan"
+    ],
+    "128": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_engineeringrunresult"
+    ],
+    "129": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_engineeringworkflowstate"
+    ],
+    "130": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_executionplan"
+    ],
+    "131": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_getlateststagedpatch"
+    ],
+    "132": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_inspectworkspace"
+    ],
+    "133": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_requestpatchapproval"
+    ],
+    "134": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_runagentengineeringtask"
+    ],
+    "135": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_runverification"
+    ],
+    "136": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_stagedpatch"
+    ],
+    "137": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_stagepatch"
+    ],
+    "138": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_workspaceinspection"
+    ],
+    "139": [
+      "src_agent_lee_vscode_extension_src_core_agent_engineering_loop_writeengineeringreceipt"
+    ],
+    "140": [
+      "src_agent_lee_vscode_extension_src_core_ast_indexworkspace"
+    ],
+    "141": [
+      "src_agent_lee_vscode_extension_src_core_ast_readcodebasecontext"
+    ],
+    "142": [
+      "src_agent_lee_vscode_extension_src_core_ast_walkfiles"
+    ],
+    "143": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_getleewayassetdefinition"
+    ],
+    "144": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_getleewayassetfspath"
+    ],
+    "145": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_getleewayassetrelativepath"
+    ],
+    "146": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_leewayassetdefinition"
+    ],
+    "147": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_leewayassetid"
+    ],
+    "148": [
+      "src_agent_lee_vscode_extension_src_core_branding_leewayassetregistry_resolveleewayassetwebviewuri"
+    ],
+    "149": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_browserflowaction"
+    ],
+    "150": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_browserflowplan"
+    ],
+    "151": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_browserflowresult"
+    ],
+    "152": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_browserinspectionresult"
+    ],
+    "153": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_inspectvisualtarget"
+    ],
+    "154": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_runvisualuserflow"
+    ],
+    "155": [
+      "src_agent_lee_vscode_extension_src_core_browser_engine_stopbrowserpreviews"
+    ],
+    "156": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_buildcapabilityanswer"
+    ],
+    "157": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_buildcapabilitycatalog"
+    ],
+    "158": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_capabilitycatalog"
+    ],
+    "159": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_capabilityentry"
+    ],
+    "160": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_formatcapabilitysummary"
+    ],
+    "161": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_iscapabilityquestion"
+    ],
+    "162": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_loadcapabilitycatalog"
+    ],
+    "163": [
+      "src_agent_lee_vscode_extension_src_core_capability_registry_searchcapabilitycatalog"
+    ],
+    "164": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_appendconversationmessage"
+    ],
+    "165": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_chatmessage"
+    ],
+    "166": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_conversationmeta"
+    ],
+    "167": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_createconversation"
+    ],
+    "168": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_getorcreateactiveconversation"
+    ],
+    "169": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_listconversations"
+    ],
+    "170": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_loadconversation"
+    ],
+    "171": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_migratelegacychats"
+    ],
+    "172": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_setactiveconversation"
+    ],
+    "173": [
+      "src_agent_lee_vscode_extension_src_core_conversation_store_startnewconversation"
+    ],
+    "174": [
+      "src_agent_lee_vscode_extension_src_core_developer_profile_builddeveloperprofilesummary"
+    ],
+    "175": [
+      "src_agent_lee_vscode_extension_src_core_developer_profile_developerprofile"
+    ],
+    "176": [
+      "src_agent_lee_vscode_extension_src_core_developer_profile_loaddeveloperprofile"
+    ],
+    "177": [
+      "src_agent_lee_vscode_extension_src_core_developer_profile_rememberdevelopersignal"
+    ],
+    "178": [
+      "src_agent_lee_vscode_extension_src_core_drift_filter_classifydrift"
+    ],
+    "179": [
+      "src_agent_lee_vscode_extension_src_core_drift_filter_isnoisepath"
+    ],
+    "180": [
+      "src_agent_lee_vscode_extension_src_core_drift_watch_resetdrift"
+    ],
+    "181": [
+      "src_agent_lee_vscode_extension_src_core_drift_watch_trackerror"
+    ],
+    "182": [
+      "src_agent_lee_vscode_extension_src_core_editor_bridge_detecteditors"
+    ],
+    "183": [
+      "src_agent_lee_vscode_extension_src_core_editor_bridge_editorbridge"
+    ],
+    "184": [
+      "src_agent_lee_vscode_extension_src_core_editor_bridge_installpycharmtooling"
+    ],
+    "185": [
+      "src_agent_lee_vscode_extension_src_core_editor_bridge_opentargetineditor"
+    ],
+    "186": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_buildcontext"
+    ],
+    "187": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_buildcontextoptions"
+    ],
+    "188": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_extractpathfromprompt"
+    ],
+    "189": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_extracturlfromprompt"
+    ],
+    "190": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_filecontexttelemetry"
+    ],
+    "191": [
+      "src_agent_lee_vscode_extension_src_core_file_intelligence_walkfiles"
+    ],
+    "192": [
+      "src_agent_lee_vscode_extension_src_core_file_ops_appendfilewithretries"
+    ],
+    "193": [
+      "src_agent_lee_vscode_extension_src_core_file_ops_describefileerror"
+    ],
+    "194": [
+      "src_agent_lee_vscode_extension_src_core_file_ops_ensuregovernedcontent"
+    ],
+    "195": [
+      "src_agent_lee_vscode_extension_src_core_file_ops_writejsonwithretries"
+    ],
+    "196": [
+      "src_agent_lee_vscode_extension_src_core_file_ops_writetextwithretries"
+    ],
+    "197": [
+      "src_agent_lee_vscode_extension_src_core_law_engine_enforcelaw"
+    ],
+    "198": [
+      "src_agent_lee_vscode_extension_src_core_law_engine_enforcestagelaw"
+    ],
+    "199": [
+      "src_agent_lee_vscode_extension_src_core_law_engine_runtimestage"
+    ],
+    "200": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_agentleerootresolution"
+    ],
+    "201": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_agentleerootsource"
+    ],
+    "202": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getagentleeroot"
+    ],
+    "203": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getagentleerootresolution"
+    ],
+    "204": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getinternalagentsroot"
+    ],
+    "205": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getinternalgovernanceroot"
+    ],
+    "206": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getinternalmcproot"
+    ],
+    "207": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getinternalsdkroot"
+    ],
+    "208": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getinternalstandardsroot"
+    ],
+    "209": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getpersonamoduleroot"
+    ],
+    "210": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_getpersonasystemroot"
+    ],
+    "211": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadagentregistry"
+    ],
+    "212": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadallowedtransitions"
+    ],
+    "213": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadcollaborationcontract"
+    ],
+    "214": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadleewaysdkmanifest"
+    ],
+    "215": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadmcpregistry"
+    ],
+    "216": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_loadstandardscanon"
+    ],
+    "217": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_resolveagentleeroot"
+    ],
+    "218": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_standaloneconnectivitypaths"
+    ],
+    "219": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_standaloneconnectivityresult"
+    ],
+    "220": [
+      "src_agent_lee_vscode_extension_src_core_leeway_connectivity_loader_validatestandaloneconnectivity"
+    ],
+    "221": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_builddefaultleewaylivevoicemanifest"
+    ],
+    "222": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_buildleewaylivevoiceruntimefacts"
+    ],
+    "223": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_detectonewordspeechfailure"
+    ],
+    "224": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_evaluateleewaylivevoiceroutes"
+    ],
+    "225": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoiceroutedecision"
+    ],
+    "226": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoiceroutehealth"
+    ],
+    "227": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoicerouteid"
+    ],
+    "228": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoiceroutekind"
+    ],
+    "229": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoiceroutemanifest"
+    ],
+    "230": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoiceruntimefacts"
+    ],
+    "231": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_leewaylivevoicesegmentplan"
+    ],
+    "232": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_loadleewaylivevoicemanifest"
+    ],
+    "233": [
+      "src_agent_lee_vscode_extension_src_core_leeway_live_voice_route_manager_planleewaylivevoicesegments"
+    ],
+    "234": [
+      "src_agent_lee_vscode_extension_src_core_memory_getagentmemoryledgerpath"
+    ],
+    "235": [
+      "src_agent_lee_vscode_extension_src_core_memory_getmemorystatus"
+    ],
+    "236": [
+      "src_agent_lee_vscode_extension_src_core_memory_store"
+    ],
+    "237": [
+      "src_agent_lee_vscode_extension_src_core_memory_storeagentmemory"
+    ],
+    "238": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_buildmodelhivestatus"
+    ],
+    "239": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_classifytasktype"
+    ],
+    "240": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_frontendmodelselection"
+    ],
+    "241": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_modelhivestatus"
+    ],
+    "242": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_modelrole"
+    ],
+    "243": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_modelrolestatus"
+    ],
+    "244": [
+      "src_agent_lee_vscode_extension_src_core_model_hive_summarizehive"
+    ],
+    "245": [
+      "src_agent_lee_vscode_extension_src_core_orchestrator_approvalmode"
+    ],
+    "246": [
+      "src_agent_lee_vscode_extension_src_core_orchestrator_runsupervisor"
+    ],
+    "247": [
+      "src_agent_lee_vscode_extension_src_core_orchestrator_supervisorresult"
+    ],
+    "248": [
+      "src_agent_lee_vscode_extension_src_core_orchestrator_supervisortelemetry"
+    ],
+    "249": [
+      "src_agent_lee_vscode_extension_src_core_persona_formatagentleemessage"
+    ],
+    "250": [
+      "src_agent_lee_vscode_extension_src_core_persona_getagentleepersonaprompt"
+    ],
+    "251": [
+      "src_agent_lee_vscode_extension_src_core_persona_getagentleepersonasummary"
+    ],
+    "252": [
+      "src_agent_lee_vscode_extension_src_core_plan_store_savetaskplan"
+    ],
+    "253": [
+      "src_agent_lee_vscode_extension_src_core_remote_context_fetchremotecontext"
+    ],
+    "254": [
+      "src_agent_lee_vscode_extension_src_core_remote_context_remotecontext"
+    ],
+    "255": [
+      "src_agent_lee_vscode_extension_src_core_reporting_frontendevidenceinput"
+    ],
+    "256": [
+      "src_agent_lee_vscode_extension_src_core_reporting_inferpreviewinstructions"
+    ],
+    "257": [
+      "src_agent_lee_vscode_extension_src_core_reporting_inferprojectframework"
+    ],
+    "258": [
+      "src_agent_lee_vscode_extension_src_core_reporting_writefrontendevidencereport"
+    ],
+    "259": [
+      "src_agent_lee_vscode_extension_src_core_scheduler_releaseexecution"
+    ],
+    "260": [
+      "src_agent_lee_vscode_extension_src_core_scheduler_requestexecution"
+    ],
+    "261": [
+      "src_agent_lee_vscode_extension_src_core_settings_catalog_agentcatalogentry"
+    ],
+    "262": [
+      "src_agent_lee_vscode_extension_src_core_settings_catalog_leewayvmidentity"
+    ],
+    "263": [
+      "src_agent_lee_vscode_extension_src_core_settings_catalog_mcpservercatalogentry"
+    ],
+    "264": [
+      "src_agent_lee_vscode_extension_src_core_settings_catalog_plugincatalogentry"
+    ],
+    "265": [
+      "src_agent_lee_vscode_extension_src_core_settings_catalog_workercatalogentry"
+    ],
+    "266": [
+      "src_agent_lee_vscode_extension_src_core_task_planner_createtaskplan"
+    ],
+    "267": [
+      "src_agent_lee_vscode_extension_src_core_task_planner_planphase"
+    ],
+    "268": [
+      "src_agent_lee_vscode_extension_src_core_task_planner_taskplan"
+    ],
+    "269": [
+      "src_agent_lee_vscode_extension_src_core_task_planner_taskplanstep"
+    ],
+    "270": [
+      "src_agent_lee_vscode_extension_src_core_task_planner_workmode"
+    ],
+    "271": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_getvoicestatus"
+    ],
+    "272": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_leewayvoicelifecycleevent"
+    ],
+    "273": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_leewayvoicelifecycleeventtype"
+    ],
+    "274": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_loadvoiceruntime"
+    ],
+    "275": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_savevoiceruntime"
+    ],
+    "276": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_speakwithclonedvoice"
+    ],
+    "277": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_speakwithvoice"
+    ],
+    "278": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_stopvoiceplayback"
+    ],
+    "279": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_voiceengine"
+    ],
+    "280": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_voiceplaybackcallbacks"
+    ],
+    "281": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_voiceruntimeconfig"
+    ],
+    "282": [
+      "src_agent_lee_vscode_extension_src_core_voice_adapter_voicestatus"
+    ],
+    "283": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_buildleewayvoiceidentity"
+    ],
+    "284": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_buildownerfacingvoicestatus"
+    ],
+    "285": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_classifyvoicereview"
+    ],
+    "286": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_containsblockedstatusphrase"
+    ],
+    "287": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_createvoiceeventid"
+    ],
+    "288": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_hashvoicetext"
+    ],
+    "289": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoiceauthoritystate"
+    ],
+    "290": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicebridgemessage"
+    ],
+    "291": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicebridgeruntimestate"
+    ],
+    "292": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicebridgestatuscode"
+    ],
+    "293": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicededuplicator"
+    ],
+    "294": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoiceeventsource"
+    ],
+    "295": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoiceidentity"
+    ],
+    "296": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicemessagesource"
+    ],
+    "297": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicereviewclassification"
+    ],
+    "298": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicereviewnextaction"
+    ],
+    "299": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicereviewrisk"
+    ],
+    "300": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicereviewstate"
+    ],
+    "301": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_leewayvoicetranscriptsource"
+    ],
+    "302": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_makevoicereviewstate"
+    ],
+    "303": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_normalizevoicetext"
+    ],
+    "304": [
+      "src_agent_lee_vscode_extension_src_core_voice_leewayvoicetruth_sourcelabelforvoiceevent"
+    ],
+    "305": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_assessplugintrust"
+    ],
+    "306": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_assessworkeridentity"
+    ],
+    "307": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_buildmemoryprovenance"
+    ],
+    "308": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_provenancesourcetype"
+    ],
+    "309": [
+      "src_agent_lee_vscode_extension_src_core_zero_trust_verificationstate"
+    ],
+    "310": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_apply_applyacceptedhunksconflictaware"
+    ],
+    "311": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_apply_applyacceptedresult"
+    ],
+    "312": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_codelens_agentleeeditbuffercodelensprovider"
+    ],
+    "313": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_commands_registeragentleeeditbuffercommands"
+    ],
+    "314": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_conflict_checkhunkconflict"
+    ],
+    "315": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_conflict_hunkconflictresult"
+    ],
+    "316": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_conflict_hunkconflictstatus"
+    ],
+    "317": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_decorations_refreshagentleedecorations"
+    ],
+    "318": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_diffprovider_openagentleediff"
+    ],
+    "319": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_receipts_editbufferreceipt"
+    ],
+    "320": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_receipts_writeeditbufferreceipt"
+    ],
+    "321": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_store_createid"
+    ],
+    "322": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_types_agentleeedithunk"
+    ],
+    "323": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_types_agentleeeditpackage"
+    ],
+    "324": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_types_agentleeeditrisk"
+    ],
+    "325": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_types_agentleeeditstatus"
+    ],
+    "326": [
+      "src_agent_lee_vscode_extension_src_edit_buffer_editbuffer_types_agentleefileedit"
+    ],
+    "327": [
+      "src_agent_lee_vscode_extension_src_execution_brain_conflictdetector_detecthunkconflict"
+    ],
+    "328": [
+      "src_agent_lee_vscode_extension_src_execution_brain_databasetransaction_planner_plandatabasetransactions"
+    ],
+    "329": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_builder_builddependencygraph"
+    ],
+    "330": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_query_getindexeddependencynodes"
+    ],
+    "331": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_query_queryindexedcommandmap"
+    ],
+    "332": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_query_queryindexedsymbol"
+    ],
+    "333": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_query_querymissingleewayheaders"
+    ],
+    "334": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencygraph_query_queryrelatedfilesfromindex"
+    ],
+    "335": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencyimpactanalyzer_analyzedependencyimpact"
+    ],
+    "336": [
+      "src_agent_lee_vscode_extension_src_execution_brain_dependencyimpactanalyzer_dependencyimpactanalysis"
+    ],
+    "337": [
+      "src_agent_lee_vscode_extension_src_execution_brain_diagnosticrepair_loop_collectrepaircandidates"
+    ],
+    "338": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_orchestrator_buildexecutionbrainplan"
+    ],
+    "339": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_conflictcheckresult"
+    ],
+    "340": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_dependencynode"
+    ],
+    "341": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_diagnosticrepaircandidate"
+    ],
+    "342": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_executionbrainphase"
+    ],
+    "343": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_executionbrainplan"
+    ],
+    "344": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_executionrisk"
+    ],
+    "345": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_minimalhunk"
+    ],
+    "346": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_planneddatabasetransaction"
+    ],
+    "347": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_rebasedhunkresult"
+    ],
+    "348": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_verificationcommand"
+    ],
+    "349": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionbrain_types_verificationresult"
+    ],
+    "350": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executionreceipt_logger_writeexecutionreceipt"
+    ],
+    "351": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executiontoeditbuffer_adapter_executionbrainhunk"
+    ],
+    "352": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executiontoeditbuffer_adapter_executionbrainplanlike"
+    ],
+    "353": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executiontoeditbuffer_adapter_sendexecutionplantoeditbuffer"
+    ],
+    "354": [
+      "src_agent_lee_vscode_extension_src_execution_brain_executiontoeditbuffer_adapter_sendrepaircandidatestoeditbuffer"
+    ],
+    "355": [
+      "src_agent_lee_vscode_extension_src_execution_brain_hunkrebase_rebasehunk"
+    ],
+    "356": [
+      "src_agent_lee_vscode_extension_src_execution_brain_minimalhunk_generator_generateminimalhunks"
+    ],
+    "357": [
+      "src_agent_lee_vscode_extension_src_execution_brain_repairnarration_summarizerepaircandidatesforspeech"
+    ],
+    "358": [
+      "src_agent_lee_vscode_extension_src_execution_brain_repairsynthesizer_rawverificationissue"
+    ],
+    "359": [
+      "src_agent_lee_vscode_extension_src_execution_brain_repairsynthesizer_synthesizerepaircandidates"
+    ],
+    "360": [
+      "src_agent_lee_vscode_extension_src_execution_brain_terminalverification_runner_defaultverificationcommands"
+    ],
+    "361": [
+      "src_agent_lee_vscode_extension_src_execution_brain_terminalverification_runner_runverificationcommand"
+    ],
+    "362": [
+      "src_agent_lee_vscode_extension_src_execution_brain_verificationrepairtoeditbuffer_adapter_sendverificationrepairstoeditbuffer"
+    ],
+    "363": [
+      "src_agent_lee_vscode_extension_src_execution_brain_verificationrepairtoeditbuffer_adapter_verificationrepaircandidate"
+    ],
+    "364": [
+      "src_agent_lee_vscode_extension_src_execution_leewayexecutionregistryclient_leewayexecutionenvironment"
+    ],
+    "365": [
+      "src_agent_lee_vscode_extension_src_execution_leewayexecutionregistryclient_loadleewayexecutionenvironments"
+    ],
+    "366": [
+      "src_agent_lee_vscode_extension_src_extension_activate"
+    ],
+    "367": [
+      "src_agent_lee_vscode_extension_src_extension_deactivate"
+    ],
+    "368": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_commands_registeragentleebackgroundindexercommands"
+    ],
+    "369": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_service_getorcreatebackgroundindexerservice"
+    ],
+    "370": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexerphase"
+    ],
+    "371": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexerreceipt"
+    ],
+    "372": [
+      "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexerstate"
+    ],
+    "373": [
+      "src_agent_lee_vscode_extension_src_indexing_indexquery_service_agentleeindexqueryservice"
+    ],
+    "374": [
+      "src_agent_lee_vscode_extension_src_indexing_indexquery_service_dependencystatussummary"
+    ],
+    "375": [
+      "src_agent_lee_vscode_extension_src_indexing_indexquery_service_getorcreateindexqueryservice"
+    ],
+    "376": [
+      "src_agent_lee_vscode_extension_src_indexing_indexquery_service_indexcommandmapentry"
+    ],
+    "377": [
+      "src_agent_lee_vscode_extension_src_indexing_indextodependencygraph_adapter_adaptindextodependencygraph"
+    ],
+    "378": [
+      "src_agent_lee_vscode_extension_src_knowledge_ingestplugins_ingestpluginknowledge"
+    ],
+    "379": [
+      "src_agent_lee_vscode_extension_src_knowledge_ingestplugins_pluginknowledgeinput"
+    ],
+    "380": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewaycontextbuilder_buildleewaycontextpack"
+    ],
+    "381": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewaycontextbuilder_formatcontextpackforprompt"
+    ],
+    "382": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayinstructionloader_loadprojectinstructions"
+    ],
+    "383": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewaycontextpack"
+    ],
+    "384": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewaydrive"
+    ],
+    "385": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewayknowledgekind"
+    ],
+    "386": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewayknowledgerecord"
+    ],
+    "387": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewayregion"
+    ],
+    "388": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewayretrievalmatch"
+    ],
+    "389": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledge_types_leewayretrievalquery"
+    ],
+    "390": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledgereceipts_writeknowledgereceipt"
+    ],
+    "391": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayknowledgestore_leewayknowledgestore"
+    ],
+    "392": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayrepoindexer_indexworkspace"
+    ],
+    "393": [
+      "src_agent_lee_vscode_extension_src_knowledge_leewayrepoindexer_repoindexstats"
+    ],
+    "394": [
+      "src_agent_lee_vscode_extension_src_knowledge_preparecodexlevelcontext_preparecodexlevelcontext"
+    ],
+    "395": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayapplicationidentitygraph_leewayapplicationidentitynode"
+    ],
+    "396": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayapplicationidentitygraph_leewayapplicationnodeclassification"
+    ],
+    "397": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayapplicationidentitygraph_leewayapplicationnodestatus"
+    ],
+    "398": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitymesh_leewayidentityfamily"
+    ],
+    "399": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitymesh_leewayidentityrecord"
+    ],
+    "400": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitymesh_leewayidentityrecordstatus"
+    ],
+    "401": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitymesh_leewayidentityrecordtype"
+    ],
+    "402": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitymesh_leewaysovereignlayeranatomy"
+    ],
+    "403": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitypulse_leewayidentitypulsecontroldefinition"
+    ],
+    "404": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitypulse_leewayidentitypulseextrafiledefinition"
+    ],
+    "405": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitypulse_leewayoriginstatus"
+    ],
+    "406": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitypulse_leewaypulsetruststatus"
+    ],
+    "407": [
+      "src_agent_lee_vscode_extension_src_leeway_application_leewayidentitypulse_leewaypulseverificationstatus"
+    ],
+    "408": [
+      "src_agent_lee_vscode_extension_src_live_voice_livecontextresolver_contextresolverresult"
+    ],
+    "409": [
+      "src_agent_lee_vscode_extension_src_live_voice_livecontextresolver_extractblockedfilepath"
+    ],
+    "410": [
+      "src_agent_lee_vscode_extension_src_live_voice_livecontextresolver_resolvecontext"
+    ],
+    "411": [
+      "src_agent_lee_vscode_extension_src_live_voice_livecontextresolver_resolvedcontext"
+    ],
+    "412": [
+      "src_agent_lee_vscode_extension_src_live_voice_liveprocessnarrator_agentleeliveprocessnarrator"
+    ],
+    "413": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscript_receipts_readtodaytranscripts"
+    ],
+    "414": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscript_receipts_summarizetodaysession"
+    ],
+    "415": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscript_receipts_transcriptreceiptentry"
+    ],
+    "416": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscript_receipts_writetranscriptreceipt"
+    ],
+    "417": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscriptbridge_agentleetranscriptbridge"
+    ],
+    "418": [
+      "src_agent_lee_vscode_extension_src_live_voice_livetranscriptbridge_transcriptbridgeoptions"
+    ],
+    "419": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_commands_registeragentleelivevoicecommands"
+    ],
+    "420": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_agentleeliveevent"
+    ],
+    "421": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_agentleeliveeventtype"
+    ],
+    "422": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_agentleerealtimevoiceeventtype"
+    ],
+    "423": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_agentleespeechrequest"
+    ],
+    "424": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_leewayvoiceruntimeeventtype"
+    ],
+    "425": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoice_types_leewayvoiceruntimeliveevent"
+    ],
+    "426": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoicecommandcontext_livevoicecommandsnapshot"
+    ],
+    "427": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoiceinterrupts_detectinterrupt"
+    ],
+    "428": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoiceinterrupts_handleinterrupt"
+    ],
+    "429": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoiceinterrupts_interruptkind"
+    ],
+    "430": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoicesession_store_agentleevoicesessionstore"
+    ],
+    "431": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoicesession_store_voicesessionphase"
+    ],
+    "432": [
+      "src_agent_lee_vscode_extension_src_live_voice_livevoicesession_store_voicesessionstate"
+    ],
+    "433": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimeevent"
+    ],
+    "434": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimeeventhandler"
+    ],
+    "435": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimeeventtype"
+    ],
+    "436": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimestatus"
+    ],
+    "437": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeeventhandler"
+    ],
+    "438": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeeventtype"
+    ],
+    "439": [
+      "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeproviderstatus"
+    ],
+    "440": [
+      "src_agent_lee_vscode_extension_src_models_leewaymodelhiveclient_leewaymodelhiveroute"
+    ],
+    "441": [
+      "src_agent_lee_vscode_extension_src_models_leewaymodelhiveclient_loadleewaymodelhiveroutes"
+    ],
+    "442": [
+      "src_agent_lee_vscode_extension_src_performance_performance_commands_registeragentleeperformancecommands"
+    ],
+    "443": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_governedtask"
+    ],
+    "444": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_performanceprofile"
+    ],
+    "445": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_runtimebudget"
+    ],
+    "446": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_runtimebudgetoverridekey"
+    ],
+    "447": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_runtimebudgetoverrides"
+    ],
+    "448": [
+      "src_agent_lee_vscode_extension_src_performance_performance_types_runtimeloadsnapshot"
+    ],
+    "449": [
+      "src_agent_lee_vscode_extension_src_performance_performancegovernor_agentleeperformancegovernor"
+    ],
+    "450": [
+      "src_agent_lee_vscode_extension_src_performance_performanceprofile_getperformancebudget"
+    ],
+    "451": [
+      "src_agent_lee_vscode_extension_src_performance_performancestatusview_registeragentleeperformancestatusview"
+    ],
+    "452": [
+      "src_agent_lee_vscode_extension_src_performance_taskthrottle_rungovernedtask"
+    ],
+    "453": [
+      "src_agent_lee_vscode_extension_src_plugins_adapters_base_adapter_createpluginerror"
+    ],
+    "454": [
+      "src_agent_lee_vscode_extension_src_plugins_adapters_base_adapter_createpluginresult"
+    ],
+    "455": [
+      "src_agent_lee_vscode_extension_src_plugins_adapters_base_adapter_createreceiptid"
+    ],
+    "456": [
+      "src_agent_lee_vscode_extension_src_plugins_adapters_base_adapter_safejsonfetch"
+    ],
+    "457": [
+      "src_agent_lee_vscode_extension_src_plugins_agentleepluginrouter_agentleepluginrouter"
+    ],
+    "458": [
+      "src_agent_lee_vscode_extension_src_plugins_agentleepluginrouter_agentleepluginrouteroptions"
+    ],
+    "459": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_getadapterforplugin"
+    ],
+    "460": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_getadapterforpluginorbridge"
+    ],
+    "461": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_getadapterhealthsummarylines"
+    ],
+    "462": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_getoptionaladapterhealth"
+    ],
+    "463": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_getpluginadapterhealth"
+    ],
+    "464": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_hasoptionaladaptercrashrisk"
+    ],
+    "465": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_adapters_pluginadapterhealth"
+    ],
+    "466": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_guard_guardplugincall"
+    ],
+    "467": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_guard_inferrequiredpermission"
+    ],
+    "468": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_guard_isdestructiveaction"
+    ],
+    "469": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_registry_getpluginbyid"
+    ],
+    "470": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_registry_getpluginsbycategory"
+    ],
+    "471": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_registry_normalizepluginid"
+    ],
+    "472": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_registry_resolveplugincatalog"
+    ],
+    "473": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_registry_searchplugins"
+    ],
+    "474": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_agentleeplugin"
+    ],
+    "475": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_pluginadapter"
+    ],
+    "476": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_pluginauthmode"
+    ],
+    "477": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_plugincallinput"
+    ],
+    "478": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_plugincallresult"
+    ],
+    "479": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_plugincategory"
+    ],
+    "480": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_pluginmeshentry"
+    ],
+    "481": [
+      "src_agent_lee_vscode_extension_src_plugins_plugin_types_pluginrisklevel"
+    ],
+    "482": [
+      "src_agent_lee_vscode_extension_src_plugins_pluginintentmapper_mapusertexttoplugincall"
+    ],
+    "483": [
+      "src_agent_lee_vscode_extension_src_review_leewaycodereviewrouter_routeleewaycodereview"
+    ],
+    "484": [
+      "src_agent_lee_vscode_extension_src_review_leewayreviewcontextbuilder_buildleewayreviewcontext"
+    ],
+    "485": [
+      "src_agent_lee_vscode_extension_src_review_leewayreviewreceiptwriter_writeleewayreviewreceipt"
+    ],
+    "486": [
+      "src_agent_lee_vscode_extension_src_review_leewayriskranker_rankleewayreviewrisk"
+    ],
+    "487": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayapprovalstatus"
+    ],
+    "488": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewaycodereviewrequest"
+    ],
+    "489": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayconfidenceranking"
+    ],
+    "490": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayfixitem"
+    ],
+    "491": [
+      "src_agent_lee_vscode_extension_src_review_review_types_leewayseverityranking"
+    ],
+    "492": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_commands_registeragentleecodingsessioncommands"
+    ],
+    "493": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_orchestrator_agentleecodingsessionorchestrator"
+    ],
+    "494": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_summary_buildcodingsessionsummary"
+    ],
+    "495": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_summary_exportcodingsessionreceipt"
+    ],
+    "496": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_summary_formatcodingsessionsummary"
+    ],
+    "497": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_timeline_formatsessionprogressforspeech"
+    ],
+    "498": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_timeline_formatsessiontimeline"
+    ],
+    "499": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_timeline_formattimelineevent"
+    ],
+    "500": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_timeline_getchangedfilesfromtimeline"
+    ],
+    "501": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsession"
+    ],
+    "502": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsessioneventtype"
+    ],
+    "503": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsessionphase"
+    ],
+    "504": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsessionsnapshot"
+    ],
+    "505": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsessionsummary"
+    ],
+    "506": [
+      "src_agent_lee_vscode_extension_src_session_orchestrator_codingsession_types_codingsessiontimelineevent"
+    ],
+    "507": [
+      "src_agent_lee_vscode_extension_src_skills_leewayskillregistryclient_leewayskillentry"
+    ],
+    "508": [
+      "src_agent_lee_vscode_extension_src_skills_leewayskillregistryclient_loadleewayskills"
+    ],
+    "509": [
+      "src_agent_lee_vscode_extension_src_telemetry_leewayagenttelemetry_createleewayagenttelemetryrecord"
+    ],
+    "510": [
+      "src_agent_lee_vscode_extension_src_telemetry_leewayagenttelemetry_leewayagenttelemetryrecord"
+    ],
+    "511": [
+      "src_agent_lee_vscode_extension_src_tools_image_tool_analyzeimage"
+    ],
+    "512": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_auditfile"
+    ],
+    "513": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_auditresult"
+    ],
+    "514": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_getfiles"
+    ],
+    "515": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_makeheader"
+    ],
+    "516": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_scanleewaycompliance"
+    ],
+    "517": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_scanoptions"
+    ],
+    "518": [
+      "src_agent_lee_vscode_extension_src_tools_leeway_scanner_scanresult"
+    ],
+    "519": [
+      "src_agent_lee_vscode_extension_src_tools_leewaytoolregistryclient_leewaytoolentry"
+    ],
+    "520": [
+      "src_agent_lee_vscode_extension_src_tools_leewaytoolregistryclient_loadleewaytools"
+    ],
+    "521": [
+      "src_agent_lee_vscode_extension_src_tools_logger_logevent"
+    ],
+    "522": [
+      "src_agent_lee_vscode_extension_src_tools_permissions_getpermissionmode"
+    ],
+    "523": [
+      "src_agent_lee_vscode_extension_src_tools_permissions_permissionmode"
+    ],
+    "524": [
+      "src_agent_lee_vscode_extension_src_tools_permissions_requiresapproval"
+    ],
+    "525": [
+      "src_agent_lee_vscode_extension_src_tools_router_classifytask"
+    ],
+    "526": [
+      "src_agent_lee_vscode_extension_src_tools_router_selectmodel"
+    ],
+    "527": [
+      "src_agent_lee_vscode_extension_src_tools_web_search_websearch"
+    ],
+    "528": [
+      "src_agent_lee_vscode_extension_src_types_jsdom_d_jsdom"
+    ],
+    "529": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_agents_visual_orchestrator_visualorchestrator_agent_runvisualorchestratoragent"
+    ],
+    "530": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_agents_visual_orchestrator_visualorchestrator_tools_classifyvisualrequest"
+    ],
+    "531": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_createbasereceipt"
+    ],
+    "532": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_lvisassetpackage"
+    ],
+    "533": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_lvisquality"
+    ],
+    "534": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_lvisreceipt"
+    ],
+    "535": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_lvisvalidation"
+    ],
+    "536": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_validatereceiptschema"
+    ],
+    "537": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_visualassetkind"
+    ],
+    "538": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_system_lvis_schemas_visualworkflowid"
+    ],
+    "539": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_filewriters_writeassetoutputpackage"
+    ],
+    "540": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_analyzerasterprofile"
+    ],
+    "541": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_buildedgemap"
+    ],
+    "542": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_buildheightmap"
+    ],
+    "543": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_buildmask"
+    ],
+    "544": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_preprocessrasterprofile"
+    ],
+    "545": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_rasterprofile"
+    ],
+    "546": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_readpixeltruth"
+    ],
+    "547": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_imageprocessing_visualimageinput"
+    ],
+    "548": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_renderpreview_buildassetscore"
+    ],
+    "549": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_renderpreview_renderpreviewtoken"
+    ],
+    "550": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_renderpreview_scoresimilarity"
+    ],
+    "551": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_svgprocessing_buildsvgcandidate"
+    ],
+    "552": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_svgprocessing_exportsvgtsx"
+    ],
+    "553": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_svgprocessing_optimizesvg"
+    ],
+    "554": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_svgprocessing_sanitizesvg"
+    ],
+    "555": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_svgprocessing_validatesvg"
+    ],
+    "556": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_voxelprocessing_exportvoxeljson"
+    ],
+    "557": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_voxelprocessing_imagetovoxelmodel"
+    ],
+    "558": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_voxelprocessing_optimizevoxelmodel"
+    ],
+    "559": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_voxelprocessing_svgtovoxelmodel"
+    ],
+    "560": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_tools_voxelprocessing_voxelcell"
+    ],
+    "561": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_ui_vectorreconstructionpanel_createvectorreconstructionpanelsummary"
+    ],
+    "562": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_ui_visualexportpanel_createvisualexportpanelsummary"
+    ],
+    "563": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_ui_visualqualitypanel_createvisualqualitypanelsummary"
+    ],
+    "564": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_ui_voxelreconstructionpanel_createvoxelreconstructionpanelsummary"
+    ],
+    "565": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_visualpanel_openlvispanel"
+    ],
+    "566": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_visualreceipts_writelvisreceipt"
+    ],
+    "567": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_schema_assetrepairinput"
+    ],
+    "568": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_tools_repairdepth"
+    ],
+    "569": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_tools_repairmask"
+    ],
+    "570": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_tools_repairsvg"
+    ],
+    "571": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_tools_repairvoxel"
+    ],
+    "572": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_tools_retrycandidate"
+    ],
+    "573": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_asset_repair_assetrepair_worker_runassetrepairworker"
+    ],
+    "574": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_schema_depthsynthesisinput"
+    ],
+    "575": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_tools_assignpartdepth"
+    ],
+    "576": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_tools_buildlayermap"
+    ],
+    "577": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_tools_estimatedepth"
+    ],
+    "578": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_tools_repairdepth"
+    ],
+    "579": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_tools_scoredepth"
+    ],
+    "580": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_depth_synthesis_depthsynthesis_worker_rundepthsynthesisworker"
+    ],
+    "581": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_manifest_export_manifestexport_schema_manifestexportinput"
+    ],
+    "582": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_manifest_export_manifestexport_tools_packageasset"
+    ],
+    "583": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_manifest_export_manifestexport_worker_runmanifestexportworker"
+    ],
+    "584": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_project_integration_projectintegration_schema_projectintegrationinput"
+    ],
+    "585": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_project_integration_projectintegration_tools_creatependingedits"
+    ],
+    "586": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_project_integration_projectintegration_tools_inspectworkspace"
+    ],
+    "587": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_project_integration_projectintegration_tools_proposeassetplacement"
+    ],
+    "588": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_project_integration_projectintegration_worker_runprojectintegrationworker"
+    ],
+    "589": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_schema_scenereconstructioninput"
+    ],
+    "590": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_createscenegraph"
+    ],
+    "591": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_exporthtml"
+    ],
+    "592": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_exporttsx"
+    ],
+    "593": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_generatematerials"
+    ],
+    "594": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_generatethreecomponent"
+    ],
+    "595": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_tools_validatescene"
+    ],
+    "596": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_scene_reconstruction_scenereconstruction_worker_runscenereconstructionworker"
+    ],
+    "597": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_schema_structuralfidelityinput"
+    ],
+    "598": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_compareedges"
+    ],
+    "599": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_comparepixels"
+    ],
+    "600": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_comparesilhouette"
+    ],
+    "601": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_recommendrepair"
+    ],
+    "602": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_renderpreview"
+    ],
+    "603": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_tools_scoreasset"
+    ],
+    "604": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_structural_fidelity_structuralfidelity_worker_runstructuralfidelityworker"
+    ],
+    "605": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_schema_validatevectorreconstructioninput"
+    ],
+    "606": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_schema_vectorreconstructioninput"
+    ],
+    "607": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_analyzeimage"
+    ],
+    "608": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_exportvectorsvg"
+    ],
+    "609": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_exportvectortsx"
+    ],
+    "610": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_preprocessimage"
+    ],
+    "611": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_sanitizevectorsvg"
+    ],
+    "612": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_scorefidelity"
+    ],
+    "613": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_tracecandidates"
+    ],
+    "614": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_tools_validatevectorsvg"
+    ],
+    "615": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_vector_reconstruction_vectorreconstruction_worker_runvectorreconstructionworker"
+    ],
+    "616": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_schema_visualmemoryinput"
+    ],
+    "617": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_tools_loadpreset"
+    ],
+    "618": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_tools_savefailurepattern"
+    ],
+    "619": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_tools_savepreset"
+    ],
+    "620": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_tools_suggeststrategy"
+    ],
+    "621": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_tools_writerunhistory"
+    ],
+    "622": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_visual_memory_visualmemory_worker_runvisualmemoryworker"
+    ],
+    "623": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_schema_validatevoxelreconstructioninput"
+    ],
+    "624": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_schema_voxelreconstructioninput"
+    ],
+    "625": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_buildvoxeledgemap"
+    ],
+    "626": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_buildvoxelheightmap"
+    ],
+    "627": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_buildvoxelmask"
+    ],
+    "628": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_exportvoxel"
+    ],
+    "629": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_imagetovoxel"
+    ],
+    "630": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_optimizevoxel"
+    ],
+    "631": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_readpixeltruthforvoxel"
+    ],
+    "632": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_tools_svgtovoxel"
+    ],
+    "633": [
+      "src_agent_lee_vscode_extension_src_visual_intelligence_workers_voxel_reconstruction_voxelreconstruction_worker_runvoxelreconstructionworker"
+    ],
+    "634": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_changerisk"
+    ],
+    "635": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_databasechange"
+    ],
+    "636": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_filechange"
+    ],
+    "637": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_filehunk"
+    ],
+    "638": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_pluginaction"
+    ],
+    "639": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_verificationstate"
+    ],
+    "640": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_workpackage"
+    ],
+    "641": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_workpackagestatus"
+    ],
+    "642": [
+      "src_agent_lee_vscode_extension_src_workqueue_workpackage_types_workreceipt"
+    ],
+    "643": [
+      "src_agent_lee_workers_executor_executestep"
+    ],
+    "644": [
+      "src_app_app"
+    ],
+    "645": [
+      "src_components_agentoverlay_agentleeoverlaycommandresult"
+    ],
+    "646": [
+      "src_components_agentoverlay_agentoverlay"
+    ],
+    "647": [
+      "src_components_audioworkspace_audioworkspace"
+    ],
+    "648": [
+      "src_components_automationcanvas_automationcanvas"
+    ],
+    "649": [
+      "src_components_camerafeed_camerafeed"
+    ],
+    "650": [
+      "src_components_canvasworkspace_canvasworkspace"
+    ],
+    "651": [
+      "src_components_codeeditor_codeeditor"
+    ],
+    "652": [
+      "src_components_codeworkspace_codeworkspace"
+    ],
+    "653": [
+      "src_components_consolepanel_consolepanel"
+    ],
+    "654": [
+      "src_components_consolepanel_logline"
+    ],
+    "655": [
+      "src_components_contentstudio_backup_contentstudio"
+    ],
+    "656": [
+      "src_components_contentstudio_contentstudio"
+    ],
+    "657": [
+      "src_components_devicesworkspace_devicesworkspace"
+    ],
+    "658": [
+      "src_components_fileexplorer_fileexplorer"
+    ],
+    "659": [
+      "src_components_forgestudio_forgestudio"
+    ],
+    "660": [
+      "src_components_forgestudioworkspace_forgestudioworkspace"
+    ],
+    "661": [
+      "src_components_foundrynodeinspector_foundrynodeinspector"
+    ],
+    "662": [
+      "src_components_galacticmeshbackground_galacticmeshbackground"
+    ],
+    "663": [
+      "src_components_galacticmeshbackground_galacticmeshbackgroundprops"
+    ],
+    "664": [
+      "src_components_livepreview_livepreview"
+    ],
+    "665": [
+      "src_components_livewallet_livewallet"
+    ],
+    "666": [
+      "src_components_livewallet_livewalletitem"
+    ],
+    "667": [
+      "src_components_livewallet_livewalletitemtype"
+    ],
+    "668": [
+      "src_components_livewallet_livewalletprops"
+    ],
+    "669": [
+      "src_components_minimap_minimap"
+    ],
+    "670": [
+      "src_components_nodecomponent_nodecomponent"
+    ],
+    "671": [
+      "src_components_nodegroup_nodegroup"
+    ],
+    "672": [
+      "src_components_nodegroup_nodegroupcomponent"
+    ],
+    "673": [
+      "src_components_nodepalette_nodepalette"
+    ],
+    "674": [
+      "src_components_noderenderer_noderenderer"
+    ],
+    "675": [
+      "src_components_settingsnodecontent_settingsnodecontent"
+    ],
+    "676": [
+      "src_components_sidebar_sidebar"
+    ],
+    "677": [
+      "src_components_studionode_studionode"
+    ],
+    "678": [
+      "src_components_studionode_studionodeprops"
+    ],
+    "679": [
+      "src_components_studioshell_studioshell"
+    ],
+    "680": [
+      "src_components_templateselector_templateselector"
+    ],
+    "681": [
+      "src_components_terminalfabricnodecontent_terminalfabricnodecontent"
+    ],
+    "682": [
+      "src_components_unifiedcanvas_unifiedcanvas"
+    ],
+    "683": [
+      "src_components_videoworkspace_videoworkspace"
+    ],
+    "684": [
+      "src_components_visionworkspace_visionworkspace"
+    ],
+    "685": [
+      "src_components_writerworkspace_writerworkspace"
+    ],
+    "686": [
+      "src_components_xrworkspace_xrworkspace"
+    ],
+    "687": [
+      "src_core_code_engine_code_engine_contract_assertenginestatetransition"
+    ],
+    "688": [
+      "src_core_code_engine_code_engine_contract_cantransitionenginestate"
+    ],
+    "689": [
+      "src_core_code_engine_code_engine_contract_createleewaycodeengineregistration"
+    ],
+    "690": [
+      "src_core_code_engine_code_engine_contract_mapenginerequesttoruntimeenvelope"
+    ],
+    "691": [
+      "src_core_code_engine_code_engine_mock_createmockcodeengine"
+    ],
+    "692": [
+      "src_core_code_engine_code_engine_mock_mockcodeengineoptions"
+    ],
+    "693": [
+      "src_core_code_engine_code_engine_mock_validatemockcodeengine"
+    ],
+    "694": [
+      "src_core_code_engine_code_engine_registry_leewaycodeengineregistry"
+    ],
+    "695": [
+      "src_core_code_engine_code_engine_types_leewaycodeengineerror"
+    ],
+    "696": [
+      "src_core_code_engine_code_engine_types_leewaycodeenginehealth"
+    ],
+    "697": [
+      "src_core_code_engine_code_engine_types_leewaycodeengineid"
+    ],
+    "698": [
+      "src_core_code_engine_code_engine_types_leewaycodeenginelifecyclestate"
+    ],
+    "699": [
+      "src_core_code_engine_code_engine_types_leewaycodeenginemetadata"
+    ],
+    "700": [
+      "src_core_code_engine_code_engine_types_leewaycodeengineprovider"
+    ],
+    "701": [
+      "src_core_code_engine_code_engine_types_leewaycodeenginerequest"
+    ],
+    "702": [
+      "src_core_code_engine_code_engine_types_leewaycodeengineresult"
+    ],
+    "703": [
+      "src_core_code_engine_code_engine_types_leewayopencodeconfigvalidation"
+    ],
+    "704": [
+      "src_core_code_engine_opencode_adapter_createopencodeadapter"
+    ],
+    "705": [
+      "src_core_code_engine_opencode_adapter_discoveropencodeconfig"
+    ],
+    "706": [
+      "src_core_modules_module_discovery_discoverleewaymodules"
+    ],
+    "707": [
+      "src_core_modules_module_discovery_leewaymodulediscoverysource"
+    ],
+    "708": [
+      "src_core_modules_module_lifecycle_assertmodulestatetransition"
+    ],
+    "709": [
+      "src_core_modules_module_lifecycle_cantransitionmodulestate"
+    ],
+    "710": [
+      "src_core_modules_module_lifecycle_getallowedmoduletransitions"
+    ],
+    "711": [
+      "src_core_modules_module_navigation_collectmodulenavigation"
+    ],
+    "712": [
+      "src_core_modules_module_registry_leewaymoduleregistry"
+    ],
+    "713": [
+      "src_core_modules_module_types_leewaymodulecontext"
+    ],
+    "714": [
+      "src_core_modules_module_types_leewaymodulecontract"
+    ],
+    "715": [
+      "src_core_modules_module_types_leewaymodulediscoveryrecord"
+    ],
+    "716": [
+      "src_core_modules_module_types_leewaymoduleid"
+    ],
+    "717": [
+      "src_core_modules_module_types_leewaymodulelifecyclestate"
+    ],
+    "718": [
+      "src_core_modules_module_types_leewaymodulenavigationregistration"
+    ],
+    "719": [
+      "src_core_modules_module_types_leewayregisteredmodule"
+    ],
+    "720": [
+      "src_core_runtime_runtime_client_isleewayruntimeclient"
+    ],
+    "721": [
+      "src_core_runtime_runtime_client_leewayruntimeclient"
+    ],
+    "722": [
+      "src_core_runtime_runtime_contract_createleewayruntimecontract"
+    ],
+    "723": [
+      "src_core_runtime_runtime_contract_createleewayruntimeerror"
+    ],
+    "724": [
+      "src_core_runtime_runtime_contract_createleewayruntimehealthstatus"
+    ],
+    "725": [
+      "src_core_runtime_runtime_contract_validateleewayruntimerequestenvelope"
+    ],
+    "726": [
+      "src_core_runtime_runtime_contract_validateleewayruntimeresponseenvelope"
+    ],
+    "727": [
+      "src_core_runtime_runtime_mock_createmockruntimeclient"
+    ],
+    "728": [
+      "src_core_runtime_runtime_mock_mockruntimeclientoptions"
+    ],
+    "729": [
+      "src_core_runtime_runtime_mock_validatemockruntimeclient"
+    ],
+    "730": [
+      "src_core_runtime_runtime_types_leewayruntimeapiversion"
+    ],
+    "731": [
+      "src_core_runtime_runtime_types_leewayruntimecapabilityexecution"
+    ],
+    "732": [
+      "src_core_runtime_runtime_types_leewayruntimecapabilitymethod"
+    ],
+    "733": [
+      "src_core_runtime_runtime_types_leewayruntimecontract"
+    ],
+    "734": [
+      "src_core_runtime_runtime_types_leewayruntimeerror"
+    ],
+    "735": [
+      "src_core_runtime_runtime_types_leewayruntimeevent"
+    ],
+    "736": [
+      "src_core_runtime_runtime_types_leewayruntimeeventsubscription"
+    ],
+    "737": [
+      "src_core_runtime_runtime_types_leewayruntimehealthstatus"
+    ],
+    "738": [
+      "src_core_runtime_runtime_types_leewayruntimerequestenvelope"
+    ],
+    "739": [
+      "src_core_runtime_runtime_types_leewayruntimeresponseenvelope"
+    ],
+    "740": [
+      "src_core_runtime_runtime_types_leewayruntimeresponsemeta"
+    ],
+    "741": [
+      "src_core_workflow_engine_n8n_adapter_createn8nadapter"
+    ],
+    "742": [
+      "src_core_workflow_engine_n8n_adapter_discovern8nconfig"
+    ],
+    "743": [
+      "src_core_workflow_engine_workflow_engine_contract_assertworkflowenginestatetransition"
+    ],
+    "744": [
+      "src_core_workflow_engine_workflow_engine_contract_cantransitionworkflowenginestate"
+    ],
+    "745": [
+      "src_core_workflow_engine_workflow_engine_contract_createleewayworkflowengineregistration"
+    ],
+    "746": [
+      "src_core_workflow_engine_workflow_engine_contract_mapruntimeresponsetoworkflowengineresult"
+    ],
+    "747": [
+      "src_core_workflow_engine_workflow_engine_contract_mapworkflowenginerequesttoruntimeenvelope"
+    ],
+    "748": [
+      "src_core_workflow_engine_workflow_engine_mock_createmockworkflowengine"
+    ],
+    "749": [
+      "src_core_workflow_engine_workflow_engine_mock_mockworkflowengineoptions"
+    ],
+    "750": [
+      "src_core_workflow_engine_workflow_engine_mock_validatemockworkflowengine"
+    ],
+    "751": [
+      "src_core_workflow_engine_workflow_engine_registry_leewayworkflowengineregistry"
+    ],
+    "752": [
+      "src_core_workflow_engine_workflow_engine_types_leewayn8nconfigvalidation"
+    ],
+    "753": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineerror"
+    ],
+    "754": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineexecution"
+    ],
+    "755": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowenginehealth"
+    ],
+    "756": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineid"
+    ],
+    "757": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowenginelifecyclestate"
+    ],
+    "758": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowenginemetadata"
+    ],
+    "759": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineprovider"
+    ],
+    "760": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowenginerequest"
+    ],
+    "761": [
+      "src_core_workflow_engine_workflow_engine_types_leewayworkflowengineresult"
+    ],
+    "762": [
+      "src_data_foundrynodecatalog_createfoundrynodedata"
+    ],
+    "763": [
+      "src_data_foundrynodecatalog_foundrynodecategory"
+    ],
+    "764": [
+      "src_data_foundrynodecatalog_foundrynodestatus"
+    ],
+    "765": [
+      "src_data_foundrynodecatalog_foundryplatformdefinition"
+    ],
+    "766": [
+      "src_data_foundrynodecatalog_foundrytemplatemeta"
+    ],
+    "767": [
+      "src_data_foundrynodecatalog_isfoundrynode"
+    ],
+    "768": [
+      "src_data_layouttemplates_getalltemplates"
+    ],
+    "769": [
+      "src_data_layouttemplates_gettemplatebyid"
+    ],
+    "770": [
+      "src_data_layouttemplates_gettemplatesbycategory"
+    ],
+    "771": [
+      "src_data_nodelibrary_getstudiopalette"
+    ],
+    "772": [
+      "src_hooks_usekeyboardshortcuts_getshortcutdisplay"
+    ],
+    "773": [
+      "src_hooks_usekeyboardshortcuts_keyboardshortcuthandlers"
+    ],
+    "774": [
+      "src_hooks_usekeyboardshortcuts_usekeyboardshortcuts"
+    ],
+    "775": [
+      "src_hooks_usenodepersistence_exportlayout"
+    ],
+    "776": [
+      "src_hooks_usenodepersistence_importlayout"
+    ],
+    "777": [
+      "src_hooks_usenodepersistence_loadsavedlayout"
+    ],
+    "778": [
+      "src_hooks_usenodepersistence_usenodepersistence"
+    ],
+    "779": [
+      "src_safety_backup_backupfile"
+    ],
+    "780": [
+      "src_safety_patcher_createpatch"
+    ],
+    "781": [
+      "src_safety_rollback_rollback"
+    ],
+    "782": [
+      "src_safety_scanner_scancodebase"
+    ],
+    "783": [
+      "src_services_liveadapters_audiocloneservice"
+    ],
+    "784": [
+      "src_services_liveadapters_cameravisionservice"
+    ],
+    "785": [
+      "src_services_liveadapters_devicediscoveryservice"
+    ],
+    "786": [
+      "src_services_liveadapters_hostbridgeclient"
+    ],
+    "787": [
+      "src_services_liveadapters_previewbuildservice"
+    ],
+    "788": [
+      "src_services_liveadapters_receiptservice"
+    ],
+    "789": [
+      "src_services_liveadapters_runtimefabricclient"
+    ],
+    "790": [
+      "src_services_liveadapters_scanneddevice"
+    ],
+    "791": [
+      "src_services_liveadapters_servicestatus"
+    ],
+    "792": [
+      "src_services_liveadapters_settingsregistry"
+    ],
+    "793": [
+      "src_services_liveadapters_systemcontextservice"
+    ],
+    "794": [
+      "src_services_liveadapters_workflowruntimeservice"
+    ],
+    "795": [
+      "src_services_liveadapters_workspacefileservice"
+    ],
+    "796": [
+      "src_services_liveadapters_xrruntimeservice"
+    ],
+    "797": [
+      "src_services_omniterminalfabric_createrequiredomniterminalsnapshot"
+    ],
+    "798": [
+      "src_services_omniterminalfabric_formatomniterminalsummary"
+    ],
+    "799": [
+      "src_services_omniterminalfabric_isomniterminalcommandplanapproved"
+    ],
+    "800": [
+      "src_services_omniterminalfabric_loadomniterminalsnapshot"
+    ],
+    "801": [
+      "src_services_omniterminalfabric_omniterminalcommandexecutionresult"
+    ],
+    "802": [
+      "src_services_omniterminalfabric_omniterminalcommandplanrequest"
+    ],
+    "803": [
+      "src_services_omniterminalfabric_omniterminalcommandplanresult"
+    ],
+    "804": [
+      "src_services_omniterminalfabric_omniterminaldevicerecord"
+    ],
+    "805": [
+      "src_services_omniterminalfabric_omniterminaldevicetag"
+    ],
+    "806": [
+      "src_services_omniterminalfabric_omniterminalprotocolstatus"
+    ],
+    "807": [
+      "src_services_omniterminalfabric_omniterminalreceiptsummary"
+    ],
+    "808": [
+      "src_services_omniterminalfabric_omniterminalsession"
+    ],
+    "809": [
+      "src_services_omniterminalfabric_omniterminaltruthcode"
+    ],
+    "810": [
+      "src_services_omniterminalfabric_protocolbridgestate"
+    ],
+    "811": [
+      "src_services_omniterminalfabric_requestomniterminalcommandexecution"
+    ],
+    "812": [
+      "src_services_omniterminalfabric_requestomniterminalcommandplan"
+    ],
+    "813": [
+      "src_services_runtimeconnectionservice_extractarraypayload"
+    ],
+    "814": [
+      "src_services_runtimeconnectionservice_loadruntimeconnectionsnapshot"
+    ],
+    "815": [
+      "src_services_runtimeconnectionservice_probebyid"
+    ],
+    "816": [
+      "src_types_agentlog"
+    ],
+    "817": [
+      "src_types_automationedge"
+    ],
+    "818": [
+      "src_types_automationnode"
+    ],
+    "819": [
+      "src_types_chatmessage"
+    ],
+    "820": [
+      "src_types_filetreenode"
+    ],
+    "821": [
+      "src_types_nodetypes_canvasstate"
+    ],
+    "822": [
+      "src_types_nodetypes_leewaycanvasbackgroundmode"
+    ],
+    "823": [
+      "src_types_nodetypes_leewaycanvasgalaxystyle"
+    ],
+    "824": [
+      "src_types_nodetypes_leewaycanvassettings"
+    ],
+    "825": [
+      "src_types_nodetypes_nodeconnection"
+    ],
+    "826": [
+      "src_types_nodetypes_nodedefinition"
+    ],
+    "827": [
+      "src_types_nodetypes_studiopalette"
+    ],
+    "828": [
+      "src_types_systemstate"
+    ],
+    "829": [
+      "src_types_workspacefile"
+    ],
+    "830": [
+      "src_utils_neuralconstants_layoutnode"
+    ],
+    "831": [
+      "src_utils_neuraldb_corruptionstatus"
+    ],
+    "832": [
+      "src_utils_neuraldb_driveid"
+    ],
+    "833": [
+      "src_utils_neuraldb_externalref"
+    ],
+    "834": [
+      "src_utils_neuraldb_filecategory"
+    ],
+    "835": [
+      "src_utils_neuraldb_neuralfile"
+    ],
+    "836": [
+      "src_utils_neuraldb_neurallink"
+    ],
+    "837": [
+      "src_utils_opfsstorage_coldarchiveentry"
+    ],
+    "838": [
+      "src_utils_opfsstorage_coldstoragelink"
+    ],
+    "839": [
+      "src_utils_opfsstorage_opfsdeletefile"
+    ],
+    "840": [
+      "src_utils_opfsstorage_opfsreadfile"
+    ],
+    "841": [
+      "src_utils_opfsstorage_opfswritefile"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5,
+    "1": 0.6666666666666666,
+    "2": 0.6666666666666666,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 1.0,
+    "264": 1.0,
+    "265": 1.0,
+    "266": 1.0,
+    "267": 1.0,
+    "268": 1.0,
+    "269": 1.0,
+    "270": 1.0,
+    "271": 1.0,
+    "272": 1.0,
+    "273": 1.0,
+    "274": 1.0,
+    "275": 1.0,
+    "276": 1.0,
+    "277": 1.0,
+    "278": 1.0,
+    "279": 1.0,
+    "280": 1.0,
+    "281": 1.0,
+    "282": 1.0,
+    "283": 1.0,
+    "284": 1.0,
+    "285": 1.0,
+    "286": 1.0,
+    "287": 1.0,
+    "288": 1.0,
+    "289": 1.0,
+    "290": 1.0,
+    "291": 1.0,
+    "292": 1.0,
+    "293": 1.0,
+    "294": 1.0,
+    "295": 1.0,
+    "296": 1.0,
+    "297": 1.0,
+    "298": 1.0,
+    "299": 1.0,
+    "300": 1.0,
+    "301": 1.0,
+    "302": 1.0,
+    "303": 1.0,
+    "304": 1.0,
+    "305": 1.0,
+    "306": 1.0,
+    "307": 1.0,
+    "308": 1.0,
+    "309": 1.0,
+    "310": 1.0,
+    "311": 1.0,
+    "312": 1.0,
+    "313": 1.0,
+    "314": 1.0,
+    "315": 1.0,
+    "316": 1.0,
+    "317": 1.0,
+    "318": 1.0,
+    "319": 1.0,
+    "320": 1.0,
+    "321": 1.0,
+    "322": 1.0,
+    "323": 1.0,
+    "324": 1.0,
+    "325": 1.0,
+    "326": 1.0,
+    "327": 1.0,
+    "328": 1.0,
+    "329": 1.0,
+    "330": 1.0,
+    "331": 1.0,
+    "332": 1.0,
+    "333": 1.0,
+    "334": 1.0,
+    "335": 1.0,
+    "336": 1.0,
+    "337": 1.0,
+    "338": 1.0,
+    "339": 1.0,
+    "340": 1.0,
+    "341": 1.0,
+    "342": 1.0,
+    "343": 1.0,
+    "344": 1.0,
+    "345": 1.0,
+    "346": 1.0,
+    "347": 1.0,
+    "348": 1.0,
+    "349": 1.0,
+    "350": 1.0,
+    "351": 1.0,
+    "352": 1.0,
+    "353": 1.0,
+    "354": 1.0,
+    "355": 1.0,
+    "356": 1.0,
+    "357": 1.0,
+    "358": 1.0,
+    "359": 1.0,
+    "360": 1.0,
+    "361": 1.0,
+    "362": 1.0,
+    "363": 1.0,
+    "364": 1.0,
+    "365": 1.0,
+    "366": 1.0,
+    "367": 1.0,
+    "368": 1.0,
+    "369": 1.0,
+    "370": 1.0,
+    "371": 1.0,
+    "372": 1.0,
+    "373": 1.0,
+    "374": 1.0,
+    "375": 1.0,
+    "376": 1.0,
+    "377": 1.0,
+    "378": 1.0,
+    "379": 1.0,
+    "380": 1.0,
+    "381": 1.0,
+    "382": 1.0,
+    "383": 1.0,
+    "384": 1.0,
+    "385": 1.0,
+    "386": 1.0,
+    "387": 1.0,
+    "388": 1.0,
+    "389": 1.0,
+    "390": 1.0,
+    "391": 1.0,
+    "392": 1.0,
+    "393": 1.0,
+    "394": 1.0,
+    "395": 1.0,
+    "396": 1.0,
+    "397": 1.0,
+    "398": 1.0,
+    "399": 1.0,
+    "400": 1.0,
+    "401": 1.0,
+    "402": 1.0,
+    "403": 1.0,
+    "404": 1.0,
+    "405": 1.0,
+    "406": 1.0,
+    "407": 1.0,
+    "408": 1.0,
+    "409": 1.0,
+    "410": 1.0,
+    "411": 1.0,
+    "412": 1.0,
+    "413": 1.0,
+    "414": 1.0,
+    "415": 1.0,
+    "416": 1.0,
+    "417": 1.0,
+    "418": 1.0,
+    "419": 1.0,
+    "420": 1.0,
+    "421": 1.0,
+    "422": 1.0,
+    "423": 1.0,
+    "424": 1.0,
+    "425": 1.0,
+    "426": 1.0,
+    "427": 1.0,
+    "428": 1.0,
+    "429": 1.0,
+    "430": 1.0,
+    "431": 1.0,
+    "432": 1.0,
+    "433": 1.0,
+    "434": 1.0,
+    "435": 1.0,
+    "436": 1.0,
+    "437": 1.0,
+    "438": 1.0,
+    "439": 1.0,
+    "440": 1.0,
+    "441": 1.0,
+    "442": 1.0,
+    "443": 1.0,
+    "444": 1.0,
+    "445": 1.0,
+    "446": 1.0,
+    "447": 1.0,
+    "448": 1.0,
+    "449": 1.0,
+    "450": 1.0,
+    "451": 1.0,
+    "452": 1.0,
+    "453": 1.0,
+    "454": 1.0,
+    "455": 1.0,
+    "456": 1.0,
+    "457": 1.0,
+    "458": 1.0,
+    "459": 1.0,
+    "460": 1.0,
+    "461": 1.0,
+    "462": 1.0,
+    "463": 1.0,
+    "464": 1.0,
+    "465": 1.0,
+    "466": 1.0,
+    "467": 1.0,
+    "468": 1.0,
+    "469": 1.0,
+    "470": 1.0,
+    "471": 1.0,
+    "472": 1.0,
+    "473": 1.0,
+    "474": 1.0,
+    "475": 1.0,
+    "476": 1.0,
+    "477": 1.0,
+    "478": 1.0,
+    "479": 1.0,
+    "480": 1.0,
+    "481": 1.0,
+    "482": 1.0,
+    "483": 1.0,
+    "484": 1.0,
+    "485": 1.0,
+    "486": 1.0,
+    "487": 1.0,
+    "488": 1.0,
+    "489": 1.0,
+    "490": 1.0,
+    "491": 1.0,
+    "492": 1.0,
+    "493": 1.0,
+    "494": 1.0,
+    "495": 1.0,
+    "496": 1.0,
+    "497": 1.0,
+    "498": 1.0,
+    "499": 1.0,
+    "500": 1.0,
+    "501": 1.0,
+    "502": 1.0,
+    "503": 1.0,
+    "504": 1.0,
+    "505": 1.0,
+    "506": 1.0,
+    "507": 1.0,
+    "508": 1.0,
+    "509": 1.0,
+    "510": 1.0,
+    "511": 1.0,
+    "512": 1.0,
+    "513": 1.0,
+    "514": 1.0,
+    "515": 1.0,
+    "516": 1.0,
+    "517": 1.0,
+    "518": 1.0,
+    "519": 1.0,
+    "520": 1.0,
+    "521": 1.0,
+    "522": 1.0,
+    "523": 1.0,
+    "524": 1.0,
+    "525": 1.0,
+    "526": 1.0,
+    "527": 1.0,
+    "528": 1.0,
+    "529": 1.0,
+    "530": 1.0,
+    "531": 1.0,
+    "532": 1.0,
+    "533": 1.0,
+    "534": 1.0,
+    "535": 1.0,
+    "536": 1.0,
+    "537": 1.0,
+    "538": 1.0,
+    "539": 1.0,
+    "540": 1.0,
+    "541": 1.0,
+    "542": 1.0,
+    "543": 1.0,
+    "544": 1.0,
+    "545": 1.0,
+    "546": 1.0,
+    "547": 1.0,
+    "548": 1.0,
+    "549": 1.0,
+    "550": 1.0,
+    "551": 1.0,
+    "552": 1.0,
+    "553": 1.0,
+    "554": 1.0,
+    "555": 1.0,
+    "556": 1.0,
+    "557": 1.0,
+    "558": 1.0,
+    "559": 1.0,
+    "560": 1.0,
+    "561": 1.0,
+    "562": 1.0,
+    "563": 1.0,
+    "564": 1.0,
+    "565": 1.0,
+    "566": 1.0,
+    "567": 1.0,
+    "568": 1.0,
+    "569": 1.0,
+    "570": 1.0,
+    "571": 1.0,
+    "572": 1.0,
+    "573": 1.0,
+    "574": 1.0,
+    "575": 1.0,
+    "576": 1.0,
+    "577": 1.0,
+    "578": 1.0,
+    "579": 1.0,
+    "580": 1.0,
+    "581": 1.0,
+    "582": 1.0,
+    "583": 1.0,
+    "584": 1.0,
+    "585": 1.0,
+    "586": 1.0,
+    "587": 1.0,
+    "588": 1.0,
+    "589": 1.0,
+    "590": 1.0,
+    "591": 1.0,
+    "592": 1.0,
+    "593": 1.0,
+    "594": 1.0,
+    "595": 1.0,
+    "596": 1.0,
+    "597": 1.0,
+    "598": 1.0,
+    "599": 1.0,
+    "600": 1.0,
+    "601": 1.0,
+    "602": 1.0,
+    "603": 1.0,
+    "604": 1.0,
+    "605": 1.0,
+    "606": 1.0,
+    "607": 1.0,
+    "608": 1.0,
+    "609": 1.0,
+    "610": 1.0,
+    "611": 1.0,
+    "612": 1.0,
+    "613": 1.0,
+    "614": 1.0,
+    "615": 1.0,
+    "616": 1.0,
+    "617": 1.0,
+    "618": 1.0,
+    "619": 1.0,
+    "620": 1.0,
+    "621": 1.0,
+    "622": 1.0,
+    "623": 1.0,
+    "624": 1.0,
+    "625": 1.0,
+    "626": 1.0,
+    "627": 1.0,
+    "628": 1.0,
+    "629": 1.0,
+    "630": 1.0,
+    "631": 1.0,
+    "632": 1.0,
+    "633": 1.0,
+    "634": 1.0,
+    "635": 1.0,
+    "636": 1.0,
+    "637": 1.0,
+    "638": 1.0,
+    "639": 1.0,
+    "640": 1.0,
+    "641": 1.0,
+    "642": 1.0,
+    "643": 1.0,
+    "644": 1.0,
+    "645": 1.0,
+    "646": 1.0,
+    "647": 1.0,
+    "648": 1.0,
+    "649": 1.0,
+    "650": 1.0,
+    "651": 1.0,
+    "652": 1.0,
+    "653": 1.0,
+    "654": 1.0,
+    "655": 1.0,
+    "656": 1.0,
+    "657": 1.0,
+    "658": 1.0,
+    "659": 1.0,
+    "660": 1.0,
+    "661": 1.0,
+    "662": 1.0,
+    "663": 1.0,
+    "664": 1.0,
+    "665": 1.0,
+    "666": 1.0,
+    "667": 1.0,
+    "668": 1.0,
+    "669": 1.0,
+    "670": 1.0,
+    "671": 1.0,
+    "672": 1.0,
+    "673": 1.0,
+    "674": 1.0,
+    "675": 1.0,
+    "676": 1.0,
+    "677": 1.0,
+    "678": 1.0,
+    "679": 1.0,
+    "680": 1.0,
+    "681": 1.0,
+    "682": 1.0,
+    "683": 1.0,
+    "684": 1.0,
+    "685": 1.0,
+    "686": 1.0,
+    "687": 1.0,
+    "688": 1.0,
+    "689": 1.0,
+    "690": 1.0,
+    "691": 1.0,
+    "692": 1.0,
+    "693": 1.0,
+    "694": 1.0,
+    "695": 1.0,
+    "696": 1.0,
+    "697": 1.0,
+    "698": 1.0,
+    "699": 1.0,
+    "700": 1.0,
+    "701": 1.0,
+    "702": 1.0,
+    "703": 1.0,
+    "704": 1.0,
+    "705": 1.0,
+    "706": 1.0,
+    "707": 1.0,
+    "708": 1.0,
+    "709": 1.0,
+    "710": 1.0,
+    "711": 1.0,
+    "712": 1.0,
+    "713": 1.0,
+    "714": 1.0,
+    "715": 1.0,
+    "716": 1.0,
+    "717": 1.0,
+    "718": 1.0,
+    "719": 1.0,
+    "720": 1.0,
+    "721": 1.0,
+    "722": 1.0,
+    "723": 1.0,
+    "724": 1.0,
+    "725": 1.0,
+    "726": 1.0,
+    "727": 1.0,
+    "728": 1.0,
+    "729": 1.0,
+    "730": 1.0,
+    "731": 1.0,
+    "732": 1.0,
+    "733": 1.0,
+    "734": 1.0,
+    "735": 1.0,
+    "736": 1.0,
+    "737": 1.0,
+    "738": 1.0,
+    "739": 1.0,
+    "740": 1.0,
+    "741": 1.0,
+    "742": 1.0,
+    "743": 1.0,
+    "744": 1.0,
+    "745": 1.0,
+    "746": 1.0,
+    "747": 1.0,
+    "748": 1.0,
+    "749": 1.0,
+    "750": 1.0,
+    "751": 1.0,
+    "752": 1.0,
+    "753": 1.0,
+    "754": 1.0,
+    "755": 1.0,
+    "756": 1.0,
+    "757": 1.0,
+    "758": 1.0,
+    "759": 1.0,
+    "760": 1.0,
+    "761": 1.0,
+    "762": 1.0,
+    "763": 1.0,
+    "764": 1.0,
+    "765": 1.0,
+    "766": 1.0,
+    "767": 1.0,
+    "768": 1.0,
+    "769": 1.0,
+    "770": 1.0,
+    "771": 1.0,
+    "772": 1.0,
+    "773": 1.0,
+    "774": 1.0,
+    "775": 1.0,
+    "776": 1.0,
+    "777": 1.0,
+    "778": 1.0,
+    "779": 1.0,
+    "780": 1.0,
+    "781": 1.0,
+    "782": 1.0,
+    "783": 1.0,
+    "784": 1.0,
+    "785": 1.0,
+    "786": 1.0,
+    "787": 1.0,
+    "788": 1.0,
+    "789": 1.0,
+    "790": 1.0,
+    "791": 1.0,
+    "792": 1.0,
+    "793": 1.0,
+    "794": 1.0,
+    "795": 1.0,
+    "796": 1.0,
+    "797": 1.0,
+    "798": 1.0,
+    "799": 1.0,
+    "800": 1.0,
+    "801": 1.0,
+    "802": 1.0,
+    "803": 1.0,
+    "804": 1.0,
+    "805": 1.0,
+    "806": 1.0,
+    "807": 1.0,
+    "808": 1.0,
+    "809": 1.0,
+    "810": 1.0,
+    "811": 1.0,
+    "812": 1.0,
+    "813": 1.0,
+    "814": 1.0,
+    "815": 1.0,
+    "816": 1.0,
+    "817": 1.0,
+    "818": 1.0,
+    "819": 1.0,
+    "820": 1.0,
+    "821": 1.0,
+    "822": 1.0,
+    "823": 1.0,
+    "824": 1.0,
+    "825": 1.0,
+    "826": 1.0,
+    "827": 1.0,
+    "828": 1.0,
+    "829": 1.0,
+    "830": 1.0,
+    "831": 1.0,
+    "832": 1.0,
+    "833": 1.0,
+    "834": 1.0,
+    "835": 1.0,
+    "836": 1.0,
+    "837": 1.0,
+    "838": 1.0,
+    "839": 1.0,
+    "840": 1.0,
+    "841": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexergraphedge",
+      "label": "BackgroundIndexerGraphEdge",
+      "degree": 2
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_indexing_indexquery_service_knowledgeindexpayload",
+      "label": "KnowledgeIndexPayload",
+      "degree": 2
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_review_review_types_leewaycodereviewreceipt",
+      "label": "LeewayCodeReviewReceipt",
+      "degree": 2
+    },
+    {
+      "id": "src_core_modules_module_types_leewaymodulemetadata",
+      "label": "LeeWayModuleMetadata",
+      "degree": 2
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_core_zero_trust_provenanceenvelope",
+      "label": "ProvenanceEnvelope",
+      "degree": 1
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_core_zero_trust_plugintrustassessment",
+      "label": "PluginTrustAssessment",
+      "degree": 1
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_service_agentleebackgroundindexerservice",
+      "label": "AgentLeeBackgroundIndexerService",
+      "degree": 1
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_indexing_backgroundindexer_types_backgroundindexerfilerecord",
+      "label": "BackgroundIndexerFileRecord",
+      "degree": 1
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_leewayvoiceruntimestate",
+      "label": "LeeWayVoiceRuntimeState",
+      "degree": 1
+    },
+    {
+      "id": "src_agent_lee_vscode_extension_src_live_voice_voicerealtimeprovider_voicerealtimeproviderstate",
+      "label": "VoiceRealtimeProviderState",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AgentLeeBackgroundIndexerService",
+      "target": "BackgroundIndexerGraphEdge",
+      "source_files": [
+        "src/agent-lee/vscode-extension/src/indexing/backgroundIndexer.service.ts",
+        "src/agent-lee/vscode-extension/src/indexing/backgroundIndexer.types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "KnowledgeIndexPayload",
+      "target": "BackgroundIndexerFileRecord",
+      "source_files": [
+        "src/agent-lee/vscode-extension/src/indexing/indexQuery.service.ts",
+        "src/agent-lee/vscode-extension/src/indexing/backgroundIndexer.types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "KnowledgeIndexPayload",
+      "target": "BackgroundIndexerGraphEdge",
+      "source_files": [
+        "src/agent-lee/vscode-extension/src/indexing/indexQuery.service.ts",
+        "src/agent-lee/vscode-extension/src/indexing/backgroundIndexer.types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "LazyService",
+      "target": "ServiceState",
+      "source_files": [
+        "src/agent-lee/vscode-extension/src/performance/lazyServiceRegistry.ts",
+        "src/agent-lee/vscode-extension/src/performance/performance.types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "PluginGuardResult",
+      "target": "PluginPermission",
+      "source_files": [
+        "src/agent-lee/vscode-extension/src/plugins/plugin.guard.ts",
+        "src/agent-lee/vscode-extension/src/plugins/plugin.types.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `CollectBrowserEvidenceParams`, `CollectBrowserEvidenceResult`, `FindLatestReceiptParams` to the rest of the system?",
+      "why": "852 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

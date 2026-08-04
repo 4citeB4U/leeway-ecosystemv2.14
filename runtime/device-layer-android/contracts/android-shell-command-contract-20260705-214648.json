@@ -1,0 +1,49 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_SHELL_COMMAND_CONTRACT_236",
+    "timestamp":  "2026-07-05T21:46:48",
+    "family":  "android",
+    "shell_status":  "CONTRACT_ONLY_NOT_ENABLED",
+    "command_classes":  {
+                            "read_only_inventory":  {
+                                                        "approval":  "required_until_android_read_only_status_lane_is_proven",
+                                                        "examples":  [
+                                                                         "adb devices",
+                                                                         "adb shell getprop ro.product.model"
+                                                                     ],
+                                                        "execute_now":  false
+                                                    },
+                            "physical_ui":  {
+                                                "approval":  "required",
+                                                "examples":  [
+                                                                 "adb shell input tap x y",
+                                                                 "adb shell input swipe x1 y1 x2 y2"
+                                                             ],
+                                                "execute_now":  false
+                                            },
+                            "communication":  {
+                                                  "approval":  "required",
+                                                  "examples":  [
+                                                                   "send text",
+                                                                   "start call",
+                                                                   "answer call"
+                                                               ],
+                                                  "execute_now":  false
+                                              },
+                            "file_data":  {
+                                              "approval":  "required",
+                                              "examples":  [
+                                                               "pull photos",
+                                                               "read downloads",
+                                                               "read notifications"
+                                                           ],
+                                              "execute_now":  false
+                                          }
+                        },
+    "guardrails":  [
+                       "no shell command without approval id",
+                       "no ADB until explicit actuator lane",
+                       "no phone data read in contract stage",
+                       "no phone UI action in contract stage",
+                       "no device mutation in contract stage"
+                   ]
+}

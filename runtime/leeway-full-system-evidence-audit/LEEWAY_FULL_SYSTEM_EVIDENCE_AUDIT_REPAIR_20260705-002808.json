@@ -1,0 +1,31 @@
+{
+  "verdict": "LEEWAY_FULL_SYSTEM_EVIDENCE_AUDIT_JSON_REPAIRED",
+  "created_at": "2026-07-05T00:28:09.0788474-05:00",
+  "source_receipt": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\full-system-evidence-audit\\LEEWAY_FULL_SYSTEM_EVIDENCE_AUDIT_20260704-233928.receipt.json",
+  "source_text": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\leeway-full-system-evidence-audit\\LEEWAY_FULL_SYSTEM_EVIDENCE_AUDIT_20260704-233928.txt",
+  "repaired_audit_json": {
+    "Length": 153
+  },
+  "source_counts": {
+    "container_count": 52,
+    "docker_container_count": 52,
+    "docker_image_count": 76,
+    "capability_gap_count": 18,
+    "placeholder_match_count": 2,
+    "release_file_count": 7,
+    "update_file_count": 4
+  },
+  "container_status_counts": {
+    "NOT_RUNNING": 5,
+    "RUNNING_BUT_NO_HEALTH_PROOF": 3,
+    "RUNNING_WITH_BASIC_PROOF": 31,
+    "RUNNING_WITH_TRUTH_LIMITATION": 13
+  },
+  "truth": {
+    "full_system_enterprise_proven": "NO",
+    "reason": "Phase U1 found capability gaps, containers not running, containers without health proof, truth-limited lanes, and placeholder markers.",
+    "can_continue": "YES",
+    "next_phase": "U1B gap extraction and remediation plan"
+  },
+  "corrected_issue": "Original full audit JSON failed because nested hashtables contained non-string keys. This repair writes a JSON-safe audit summary."
+}

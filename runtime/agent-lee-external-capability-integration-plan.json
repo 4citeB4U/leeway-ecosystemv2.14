@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-07-03T19:40:46.3082114-05:00",
+  "verdict": "AGENT_LEE_EXTERNAL_CAPABILITY_INTEGRATION_PLAN_CREATED",
+  "integrations": [
+    {
+      "name": "Palmier-style phone bridge",
+      "source_pattern": "Phone can control agents; agents can access phone capabilities.",
+      "approval_required_for": [
+        "send_sms",
+        "send_email",
+        "create_calendar_event",
+        "call_phone_action",
+        "share_contacts",
+        "share_location_continuously"
+      ],
+      "purpose": "Phone remote control and phone-side capabilities for Agent Lee.",
+      "safe_read_capabilities": [
+        "location_once",
+        "contacts_read",
+        "calendar_read",
+        "notifications_read"
+      ],
+      "status": "PLANNED",
+      "must_containerize": true,
+      "leeway_lane": "leeway_phone_runtime"
+    },
+    {
+      "search_modes": [
+        "quick_duckduckgo",
+        "deep_last30days_style"
+      ],
+      "name": "Last30Days-style research search",
+      "leeway_lane": "leeway_research_lane",
+      "status": "PLANNED",
+      "purpose": "High-signal current research across Reddit, HN, GitHub, YouTube, Polymarket, web, and optional social APIs.",
+      "must_containerize": true,
+      "approval_required_for": [
+        "paid_api_sources",
+        "browser_cookie_sources",
+        "posting_or_external_actions"
+      ]
+    },
+    {
+      "must_containerize": true,
+      "name": "Open Notebook",
+      "leeway_lane": "leeway_open_notebook",
+      "status": "PLANNED",
+      "data_policy": "Leeway-owned notebook_data and surreal_data volumes.",
+      "purpose": "Private NotebookLM-style research, source ingestion, document memory, citations, and notebook chat.",
+      "expected_ports": [
+        "8502",
+        "5055",
+        "8000"
+      ]
+    },
+    {
+      "leeway_lane": "leeway_agent_skills",
+      "status": "PLANNED",
+      "name": "Agent Skills",
+      "must_containerize": true,
+      "purpose": "Skill registry and workflow doctrine for spec, plan, build, test, review, ship, debug, security, and documentation."
+    }
+  ],
+  "universal_lane_contract": {
+    "must_define_approval_rules": true,
+    "must_register_with_discovery": true,
+    "required_endpoints": [
+      "/health",
+      "/status",
+      "/openapi.json",
+      "/capabilities",
+      "/execute",
+      "/receipts/latest"
+    ],
+    "must_write_receipts": true,
+    "must_not_bypass_leeway_runtime": true,
+    "must_route_through_runtime_fabric": true
+  },
+  "doctrine": "External tools are patterns or source projects only. Agent Lee capabilities must run through Leeway-owned Docker lanes, Runtime Fabric, Discovery, approval gates, and receipts."
+}

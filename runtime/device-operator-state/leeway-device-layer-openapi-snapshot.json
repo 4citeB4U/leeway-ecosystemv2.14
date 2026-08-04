@@ -1,0 +1,759 @@
+﻿{
+    "openapi":  "3.1.0",
+    "info":  {
+                 "title":  "leeway_device_operator",
+                 "version":  "0.1.0-device-operator-control-plane"
+             },
+    "paths":  {
+                  "/health":  {
+                                  "get":  {
+                                              "summary":  "Health",
+                                              "operationId":  "health_health_get",
+                                              "responses":  {
+                                                                "200":  {
+                                                                            "description":  "Successful Response",
+                                                                            "content":  {
+                                                                                            "application/json":  {
+                                                                                                                     "schema":  {
+
+                                                                                                                                }
+                                                                                                                 }
+                                                                                        }
+                                                                        }
+                                                            }
+                                          }
+                              },
+                  "/status":  {
+                                  "get":  {
+                                              "summary":  "Leeway Standard Status",
+                                              "operationId":  "leeway_standard_status_status_get",
+                                              "responses":  {
+                                                                "200":  {
+                                                                            "description":  "Successful Response",
+                                                                            "content":  {
+                                                                                            "application/json":  {
+                                                                                                                     "schema":  {
+
+                                                                                                                                }
+                                                                                                                 }
+                                                                                        }
+                                                                        }
+                                                            }
+                                          }
+                              },
+                  "/cursor/profile":  {
+                                          "get":  {
+                                                      "summary":  "Cursor Profile",
+                                                      "operationId":  "cursor_profile_cursor_profile_get",
+                                                      "responses":  {
+                                                                        "200":  {
+                                                                                    "description":  "Successful Response",
+                                                                                    "content":  {
+                                                                                                    "application/json":  {
+                                                                                                                             "schema":  {
+
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                                }
+                                                                                }
+                                                                    }
+                                                  }
+                                      },
+                  "/cursor/set-profile":  {
+                                              "post":  {
+                                                           "summary":  "Set Cursor Profile",
+                                                           "operationId":  "set_cursor_profile_cursor_set_profile_post",
+                                                           "requestBody":  {
+                                                                               "content":  {
+                                                                                               "application/json":  {
+                                                                                                                        "schema":  {
+                                                                                                                                       "$ref":  "#/components/schemas/CursorProfile"
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                           },
+                                                                               "required":  true
+                                                                           },
+                                                           "responses":  {
+                                                                             "200":  {
+                                                                                         "description":  "Successful Response",
+                                                                                         "content":  {
+                                                                                                         "application/json":  {
+                                                                                                                                  "schema":  {
+
+                                                                                                                                             }
+                                                                                                                              }
+                                                                                                     }
+                                                                                     },
+                                                                             "422":  {
+                                                                                         "description":  "Validation Error",
+                                                                                         "content":  {
+                                                                                                         "application/json":  {
+                                                                                                                                  "schema":  {
+                                                                                                                                                 "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                             }
+                                                                                                                              }
+                                                                                                     }
+                                                                                     }
+                                                                         }
+                                                       }
+                                          },
+                  "/devices/register":  {
+                                            "post":  {
+                                                         "summary":  "Register Device",
+                                                         "operationId":  "register_device_devices_register_post",
+                                                         "requestBody":  {
+                                                                             "content":  {
+                                                                                             "application/json":  {
+                                                                                                                      "schema":  {
+                                                                                                                                     "$ref":  "#/components/schemas/DeviceRegisterRequest"
+                                                                                                                                 }
+                                                                                                                  }
+                                                                                         },
+                                                                             "required":  true
+                                                                         },
+                                                         "responses":  {
+                                                                           "200":  {
+                                                                                       "description":  "Successful Response",
+                                                                                       "content":  {
+                                                                                                       "application/json":  {
+                                                                                                                                "schema":  {
+
+                                                                                                                                           }
+                                                                                                                            }
+                                                                                                   }
+                                                                                   },
+                                                                           "422":  {
+                                                                                       "description":  "Validation Error",
+                                                                                       "content":  {
+                                                                                                       "application/json":  {
+                                                                                                                                "schema":  {
+                                                                                                                                               "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                           }
+                                                                                                                            }
+                                                                                                   }
+                                                                                   }
+                                                                       }
+                                                     }
+                                        },
+                  "/devices/list":  {
+                                        "get":  {
+                                                    "summary":  "List Devices",
+                                                    "operationId":  "list_devices_devices_list_get",
+                                                    "responses":  {
+                                                                      "200":  {
+                                                                                  "description":  "Successful Response",
+                                                                                  "content":  {
+                                                                                                  "application/json":  {
+                                                                                                                           "schema":  {
+
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                              }
+                                                                              }
+                                                                  }
+                                                }
+                                    },
+                  "/channels/register":  {
+                                             "post":  {
+                                                          "summary":  "Register Channel",
+                                                          "operationId":  "register_channel_channels_register_post",
+                                                          "requestBody":  {
+                                                                              "content":  {
+                                                                                              "application/json":  {
+                                                                                                                       "schema":  {
+                                                                                                                                      "$ref":  "#/components/schemas/ChannelRegisterRequest"
+                                                                                                                                  }
+                                                                                                                   }
+                                                                                          },
+                                                                              "required":  true
+                                                                          },
+                                                          "responses":  {
+                                                                            "200":  {
+                                                                                        "description":  "Successful Response",
+                                                                                        "content":  {
+                                                                                                        "application/json":  {
+                                                                                                                                 "schema":  {
+
+                                                                                                                                            }
+                                                                                                                             }
+                                                                                                    }
+                                                                                    },
+                                                                            "422":  {
+                                                                                        "description":  "Validation Error",
+                                                                                        "content":  {
+                                                                                                        "application/json":  {
+                                                                                                                                 "schema":  {
+                                                                                                                                                "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                            }
+                                                                                                                             }
+                                                                                                    }
+                                                                                    }
+                                                                        }
+                                                      }
+                                         },
+                  "/channels/list":  {
+                                         "get":  {
+                                                     "summary":  "List Channels",
+                                                     "operationId":  "list_channels_channels_list_get",
+                                                     "responses":  {
+                                                                       "200":  {
+                                                                                   "description":  "Successful Response",
+                                                                                   "content":  {
+                                                                                                   "application/json":  {
+                                                                                                                            "schema":  {
+
+                                                                                                                                       }
+                                                                                                                        }
+                                                                                               }
+                                                                               }
+                                                                   }
+                                                 }
+                                     },
+                  "/voice/session/start":  {
+                                               "post":  {
+                                                            "summary":  "Voice Session Start",
+                                                            "operationId":  "voice_session_start_voice_session_start_post",
+                                                            "requestBody":  {
+                                                                                "content":  {
+                                                                                                "application/json":  {
+                                                                                                                         "schema":  {
+                                                                                                                                        "$ref":  "#/components/schemas/VoiceSessionRequest"
+                                                                                                                                    }
+                                                                                                                     }
+                                                                                            },
+                                                                                "required":  true
+                                                                            },
+                                                            "responses":  {
+                                                                              "200":  {
+                                                                                          "description":  "Successful Response",
+                                                                                          "content":  {
+                                                                                                          "application/json":  {
+                                                                                                                                   "schema":  {
+
+                                                                                                                                              }
+                                                                                                                               }
+                                                                                                      }
+                                                                                      },
+                                                                              "422":  {
+                                                                                          "description":  "Validation Error",
+                                                                                          "content":  {
+                                                                                                          "application/json":  {
+                                                                                                                                   "schema":  {
+                                                                                                                                                  "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                              }
+                                                                                                                               }
+                                                                                                      }
+                                                                                      }
+                                                                          }
+                                                        }
+                                           },
+                  "/device/action/request":  {
+                                                 "post":  {
+                                                              "summary":  "Device Action Request",
+                                                              "operationId":  "device_action_request_device_action_request_post",
+                                                              "requestBody":  {
+                                                                                  "content":  {
+                                                                                                  "application/json":  {
+                                                                                                                           "schema":  {
+                                                                                                                                          "$ref":  "#/components/schemas/DeviceActionRequest"
+                                                                                                                                      }
+                                                                                                                       }
+                                                                                              },
+                                                                                  "required":  true
+                                                                              },
+                                                              "responses":  {
+                                                                                "200":  {
+                                                                                            "description":  "Successful Response",
+                                                                                            "content":  {
+                                                                                                            "application/json":  {
+                                                                                                                                     "schema":  {
+
+                                                                                                                                                }
+                                                                                                                                 }
+                                                                                                        }
+                                                                                        },
+                                                                                "422":  {
+                                                                                            "description":  "Validation Error",
+                                                                                            "content":  {
+                                                                                                            "application/json":  {
+                                                                                                                                     "schema":  {
+                                                                                                                                                    "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                                }
+                                                                                                                                 }
+                                                                                                        }
+                                                                                        }
+                                                                            }
+                                                          }
+                                             },
+                  "/license/profile":  {
+                                           "post":  {
+                                                        "summary":  "License Profile",
+                                                        "operationId":  "license_profile_license_profile_post",
+                                                        "requestBody":  {
+                                                                            "content":  {
+                                                                                            "application/json":  {
+                                                                                                                     "schema":  {
+                                                                                                                                    "$ref":  "#/components/schemas/LicenseProfileRequest"
+                                                                                                                                }
+                                                                                                                 }
+                                                                                        },
+                                                                            "required":  true
+                                                                        },
+                                                        "responses":  {
+                                                                          "200":  {
+                                                                                      "description":  "Successful Response",
+                                                                                      "content":  {
+                                                                                                      "application/json":  {
+                                                                                                                               "schema":  {
+
+                                                                                                                                          }
+                                                                                                                           }
+                                                                                                  }
+                                                                                  },
+                                                                          "422":  {
+                                                                                      "description":  "Validation Error",
+                                                                                      "content":  {
+                                                                                                      "application/json":  {
+                                                                                                                               "schema":  {
+                                                                                                                                              "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                          }
+                                                                                                                           }
+                                                                                                  }
+                                                                                  }
+                                                                      }
+                                                    }
+                                       },
+                  "/receipts/latest":  {
+                                           "get":  {
+                                                       "summary":  "Latest Receipt",
+                                                       "operationId":  "latest_receipt_receipts_latest_get",
+                                                       "responses":  {
+                                                                         "200":  {
+                                                                                     "description":  "Successful Response",
+                                                                                     "content":  {
+                                                                                                     "application/json":  {
+                                                                                                                              "schema":  {
+
+                                                                                                                                         }
+                                                                                                                          }
+                                                                                                 }
+                                                                                 }
+                                                                     }
+                                                   }
+                                       },
+                  "/":  {
+                            "get":  {
+                                        "summary":  "Leeway Standard Root",
+                                        "operationId":  "leeway_standard_root__get",
+                                        "responses":  {
+                                                          "200":  {
+                                                                      "description":  "Successful Response",
+                                                                      "content":  {
+                                                                                      "application/json":  {
+                                                                                                               "schema":  {
+
+                                                                                                                          }
+                                                                                                           }
+                                                                                  }
+                                                                  }
+                                                      }
+                                    }
+                        },
+                  "/routes":  {
+                                  "get":  {
+                                              "summary":  "Leeway Standard Routes",
+                                              "operationId":  "leeway_standard_routes_routes_get",
+                                              "responses":  {
+                                                                "200":  {
+                                                                            "description":  "Successful Response",
+                                                                            "content":  {
+                                                                                            "application/json":  {
+                                                                                                                     "schema":  {
+
+                                                                                                                                }
+                                                                                                                 }
+                                                                                        }
+                                                                        }
+                                                            }
+                                          }
+                              },
+                  "/system-health/report":  {
+                                                "post":  {
+                                                             "summary":  "Leeway System Health Report",
+                                                             "operationId":  "leeway_system_health_report_system_health_report_post",
+                                                             "requestBody":  {
+                                                                                 "content":  {
+                                                                                                 "application/json":  {
+                                                                                                                          "schema":  {
+                                                                                                                                         "type":  "object",
+                                                                                                                                         "title":  "Payload"
+                                                                                                                                     }
+                                                                                                                      }
+                                                                                             },
+                                                                                 "required":  true
+                                                                             },
+                                                             "responses":  {
+                                                                               "200":  {
+                                                                                           "description":  "Successful Response",
+                                                                                           "content":  {
+                                                                                                           "application/json":  {
+                                                                                                                                    "schema":  {
+
+                                                                                                                                               }
+                                                                                                                                }
+                                                                                                       }
+                                                                                       },
+                                                                               "422":  {
+                                                                                           "description":  "Validation Error",
+                                                                                           "content":  {
+                                                                                                           "application/json":  {
+                                                                                                                                    "schema":  {
+                                                                                                                                                   "$ref":  "#/components/schemas/HTTPValidationError"
+                                                                                                                                               }
+                                                                                                                                }
+                                                                                                       }
+                                                                                       }
+                                                                           }
+                                                         }
+                                            }
+              },
+    "components":  {
+                       "schemas":  {
+                                       "ChannelRegisterRequest":  {
+                                                                      "properties":  {
+                                                                                         "channel_type":  {
+                                                                                                              "type":  "string",
+                                                                                                              "minLength":  1,
+                                                                                                              "title":  "Channel Type"
+                                                                                                          },
+                                                                                         "channel_name":  {
+                                                                                                              "type":  "string",
+                                                                                                              "minLength":  1,
+                                                                                                              "title":  "Channel Name"
+                                                                                                          },
+                                                                                         "config":  {
+                                                                                                        "type":  "object",
+                                                                                                        "title":  "Config",
+                                                                                                        "default":  {
+
+                                                                                                                    }
+                                                                                                    },
+                                                                                         "enabled":  {
+                                                                                                         "type":  "boolean",
+                                                                                                         "title":  "Enabled",
+                                                                                                         "default":  true
+                                                                                                     }
+                                                                                     },
+                                                                      "type":  "object",
+                                                                      "required":  [
+                                                                                       "channel_type",
+                                                                                       "channel_name"
+                                                                                   ],
+                                                                      "title":  "ChannelRegisterRequest"
+                                                                  },
+                                       "CursorProfile":  {
+                                                             "properties":  {
+                                                                                "mode":  {
+                                                                                             "type":  "string",
+                                                                                             "title":  "Mode",
+                                                                                             "default":  "blue"
+                                                                                         },
+                                                                                "label":  {
+                                                                                              "type":  "string",
+                                                                                              "title":  "Label",
+                                                                                              "default":  "Agent Lee"
+                                                                                          },
+                                                                                "meaning":  {
+                                                                                                "type":  "string",
+                                                                                                "title":  "Meaning",
+                                                                                                "default":  "listening_thinking_safe_navigation"
+                                                                                            },
+                                                                                "glow":  {
+                                                                                             "type":  "boolean",
+                                                                                             "title":  "Glow",
+                                                                                             "default":  true
+                                                                                         },
+                                                                                "tap_to_talk":  {
+                                                                                                    "type":  "boolean",
+                                                                                                    "title":  "Tap To Talk",
+                                                                                                    "default":  true
+                                                                                                }
+                                                                            },
+                                                             "type":  "object",
+                                                             "title":  "CursorProfile"
+                                                         },
+                                       "DeviceActionRequest":  {
+                                                                   "properties":  {
+                                                                                      "action_type":  {
+                                                                                                          "type":  "string",
+                                                                                                          "minLength":  1,
+                                                                                                          "title":  "Action Type"
+                                                                                                      },
+                                                                                      "target_device_id":  {
+                                                                                                               "anyOf":  [
+                                                                                                                             {
+                                                                                                                                 "type":  "string"
+                                                                                                                             },
+                                                                                                                             {
+                                                                                                                                 "type":  "null"
+                                                                                                                             }
+                                                                                                                         ],
+                                                                                                               "title":  "Target Device Id",
+                                                                                                               "default":  "default"
+                                                                                                           },
+                                                                                      "command":  {
+                                                                                                      "type":  "object",
+                                                                                                      "title":  "Command",
+                                                                                                      "default":  {
+
+                                                                                                                  }
+                                                                                                  },
+                                                                                      "requested_by":  {
+                                                                                                           "anyOf":  [
+                                                                                                                         {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                                         {
+                                                                                                                             "type":  "null"
+                                                                                                                         }
+                                                                                                                     ],
+                                                                                                           "title":  "Requested By",
+                                                                                                           "default":  "agent_lee"
+                                                                                                       },
+                                                                                      "requires_approval":  {
+                                                                                                                "type":  "boolean",
+                                                                                                                "title":  "Requires Approval",
+                                                                                                                "default":  true
+                                                                                                            },
+                                                                                      "source":  {
+                                                                                                     "anyOf":  [
+                                                                                                                   {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "type":  "null"
+                                                                                                                   }
+                                                                                                               ],
+                                                                                                     "title":  "Source",
+                                                                                                     "default":  "telegram"
+                                                                                                 }
+                                                                                  },
+                                                                   "type":  "object",
+                                                                   "required":  [
+                                                                                    "action_type"
+                                                                                ],
+                                                                   "title":  "DeviceActionRequest"
+                                                               },
+                                       "DeviceRegisterRequest":  {
+                                                                     "properties":  {
+                                                                                        "device_id":  {
+                                                                                                          "type":  "string",
+                                                                                                          "minLength":  1,
+                                                                                                          "title":  "Device Id"
+                                                                                                      },
+                                                                                        "device_type":  {
+                                                                                                            "type":  "string",
+                                                                                                            "minLength":  1,
+                                                                                                            "title":  "Device Type"
+                                                                                                        },
+                                                                                        "platform":  {
+                                                                                                         "type":  "string",
+                                                                                                         "minLength":  1,
+                                                                                                         "title":  "Platform"
+                                                                                                     },
+                                                                                        "display_name":  {
+                                                                                                             "type":  "string",
+                                                                                                             "minLength":  1,
+                                                                                                             "title":  "Display Name"
+                                                                                                         },
+                                                                                        "capabilities":  {
+                                                                                                             "items":  {
+                                                                                                                           "type":  "string"
+                                                                                                                       },
+                                                                                                             "type":  "array",
+                                                                                                             "title":  "Capabilities",
+                                                                                                             "default":  [
+
+                                                                                                                         ]
+                                                                                                         },
+                                                                                        "adapter_url":  {
+                                                                                                            "anyOf":  [
+                                                                                                                          {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                                          {
+                                                                                                                              "type":  "null"
+                                                                                                                          }
+                                                                                                                      ],
+                                                                                                            "title":  "Adapter Url",
+                                                                                                            "default":  ""
+                                                                                                        },
+                                                                                        "owner":  {
+                                                                                                      "anyOf":  [
+                                                                                                                    {
+                                                                                                                        "type":  "string"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "type":  "null"
+                                                                                                                    }
+                                                                                                                ],
+                                                                                                      "title":  "Owner",
+                                                                                                      "default":  "customer"
+                                                                                                  }
+                                                                                    },
+                                                                     "type":  "object",
+                                                                     "required":  [
+                                                                                      "device_id",
+                                                                                      "device_type",
+                                                                                      "platform",
+                                                                                      "display_name"
+                                                                                  ],
+                                                                     "title":  "DeviceRegisterRequest"
+                                                                 },
+                                       "HTTPValidationError":  {
+                                                                   "properties":  {
+                                                                                      "detail":  {
+                                                                                                     "items":  {
+                                                                                                                   "$ref":  "#/components/schemas/ValidationError"
+                                                                                                               },
+                                                                                                     "type":  "array",
+                                                                                                     "title":  "Detail"
+                                                                                                 }
+                                                                                  },
+                                                                   "type":  "object",
+                                                                   "title":  "HTTPValidationError"
+                                                               },
+                                       "LicenseProfileRequest":  {
+                                                                     "properties":  {
+                                                                                        "customer_name":  {
+                                                                                                              "type":  "string",
+                                                                                                              "minLength":  1,
+                                                                                                              "title":  "Customer Name"
+                                                                                                          },
+                                                                                        "license_id":  {
+                                                                                                           "type":  "string",
+                                                                                                           "minLength":  1,
+                                                                                                           "title":  "License Id"
+                                                                                                       },
+                                                                                        "expires_at":  {
+                                                                                                           "anyOf":  [
+                                                                                                                         {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                                         {
+                                                                                                                             "type":  "null"
+                                                                                                                         }
+                                                                                                                     ],
+                                                                                                           "title":  "Expires At",
+                                                                                                           "default":  ""
+                                                                                                       },
+                                                                                        "allowed_channels":  {
+                                                                                                                 "items":  {
+                                                                                                                               "type":  "string"
+                                                                                                                           },
+                                                                                                                 "type":  "array",
+                                                                                                                 "title":  "Allowed Channels",
+                                                                                                                 "default":  [
+                                                                                                                                 "telegram",
+                                                                                                                                 "pwa",
+                                                                                                                                 "email",
+                                                                                                                                 "phone"
+                                                                                                                             ]
+                                                                                                             },
+                                                                                        "allowed_device_types":  {
+                                                                                                                     "items":  {
+                                                                                                                                   "type":  "string"
+                                                                                                                               },
+                                                                                                                     "type":  "array",
+                                                                                                                     "title":  "Allowed Device Types",
+                                                                                                                     "default":  [
+                                                                                                                                     "windows",
+                                                                                                                                     "linux",
+                                                                                                                                     "macos",
+                                                                                                                                     "android",
+                                                                                                                                     "ios"
+                                                                                                                                 ]
+                                                                                                                 },
+                                                                                        "allowed_actions":  {
+                                                                                                                "items":  {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                                "type":  "array",
+                                                                                                                "title":  "Allowed Actions",
+                                                                                                                "default":  [
+                                                                                                                                "search",
+                                                                                                                                "voice",
+                                                                                                                                "crm",
+                                                                                                                                "approval_queue"
+                                                                                                                            ]
+                                                                                                            }
+                                                                                    },
+                                                                     "type":  "object",
+                                                                     "required":  [
+                                                                                      "customer_name",
+                                                                                      "license_id"
+                                                                                  ],
+                                                                     "title":  "LicenseProfileRequest"
+                                                                 },
+                                       "ValidationError":  {
+                                                               "properties":  {
+                                                                                  "loc":  {
+                                                                                              "items":  {
+                                                                                                            "anyOf":  [
+                                                                                                                          {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                                          {
+                                                                                                                              "type":  "integer"
+                                                                                                                          }
+                                                                                                                      ]
+                                                                                                        },
+                                                                                              "type":  "array",
+                                                                                              "title":  "Location"
+                                                                                          },
+                                                                                  "msg":  {
+                                                                                              "type":  "string",
+                                                                                              "title":  "Message"
+                                                                                          },
+                                                                                  "type":  {
+                                                                                               "type":  "string",
+                                                                                               "title":  "Error Type"
+                                                                                           }
+                                                                              },
+                                                               "type":  "object",
+                                                               "required":  [
+                                                                                "loc",
+                                                                                "msg",
+                                                                                "type"
+                                                                            ],
+                                                               "title":  "ValidationError"
+                                                           },
+                                       "VoiceSessionRequest":  {
+                                                                   "properties":  {
+                                                                                      "source":  {
+                                                                                                     "type":  "string",
+                                                                                                     "title":  "Source",
+                                                                                                     "default":  "cursor"
+                                                                                                 },
+                                                                                      "device_id":  {
+                                                                                                        "type":  "string",
+                                                                                                        "title":  "Device Id",
+                                                                                                        "default":  "default"
+                                                                                                    },
+                                                                                      "mode":  {
+                                                                                                   "type":  "string",
+                                                                                                   "title":  "Mode",
+                                                                                                   "default":  "push_to_talk"
+                                                                                               },
+                                                                                      "language":  {
+                                                                                                       "type":  "string",
+                                                                                                       "title":  "Language",
+                                                                                                       "default":  "English"
+                                                                                                   }
+                                                                                  },
+                                                                   "type":  "object",
+                                                                   "title":  "VoiceSessionRequest"
+                                                               }
+                                   }
+                   }
+}

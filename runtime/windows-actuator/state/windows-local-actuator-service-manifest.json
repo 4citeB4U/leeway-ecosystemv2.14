@@ -1,0 +1,21 @@
+﻿{
+    "version":  "LEEWAY_WINDOWS_LOCAL_ACTUATOR_SERVICE_CONTRACT_2026-07-05",
+    "created_at":  "2026-07-05T17:43:25",
+    "service_name":  "leeway_windows_local_actuator",
+    "service_kind":  "local_windows_http_actuator",
+    "future_port":  7331,
+    "host":  "127.0.0.1",
+    "url":  "http://127.0.0.1:7331",
+    "installed":  false,
+    "running":  false,
+    "started_by_this_script":  false,
+    "parent_device_operator":  "http://127.0.0.1:5323",
+    "parent_windows_device_id":  "windows-agent-lee",
+    "files":  {
+                  "policy":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\policies\\windows-local-actuator-policy.json",
+                  "scaffold":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\scaffold\\windows-local-actuator-service.README.txt",
+                  "routes":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\contracts\\windows-local-actuator-route-contract.json",
+                  "allowlist":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\policies\\windows-local-actuator-allowlist.json",
+                  "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\state\\windows-local-actuator-service-manifest.json"
+              }
+}

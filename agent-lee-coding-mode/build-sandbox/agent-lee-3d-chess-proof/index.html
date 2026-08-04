@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Lee 3D Chess Proof</title>
+  <meta name="description" content="A research-backed 3D chess proof with selectable themed piece families, partial legal move validation, and a scene manifest." />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./chess-rules-engine.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <header class="shell hero">
+    <div class="eyebrow">Research-backed 3D chess lane</div>
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="kicker">Agent Lee / chess / 3D / proof</p>
+        <h1>That chess set needs weight. I’m giving each family its own identity.</h1>
+        <p class="lede">
+          This proof blends serious chess rules, themed piece families, and a 3D-ready scene manifest.
+          The board is visible, the rules are checked, and the missing backend is called out honestly.
+        </p>
+        <div class="hero-pills">
+          <span>knights_and_dragons</span>
+          <span>ninjas_and_samurai</span>
+          <span>kung_fu_masters</span>
+          <span>modern_military</span>
+          <span>classic_grandmaster</span>
+        </div>
+      </section>
+
+      <aside class="hero-panel">
+        <div class="panel-heading">Chess lane status</div>
+        <div class="signal" id="engine-status">Web is up. I’ve got the rules lane, design lane, and 3D lane split clean.</div>
+        <div class="theme-pills" id="theme-pills"></div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="shell stack">
+    <section class="section stage">
+      <article class="panel board-panel">
+        <div class="section-head slim">
+          <p class="eyebrow">Visible board preview</p>
+          <h2>Pick a family, then read the board like a serious operator.</h2>
+        </div>
+
+        <div class="scene-controls">
+          <label>
+            Theme
+            <select id="theme-select"></select>
+          </label>
+          <label>
+            Test move
+            <select id="move-select">
+              <option value="e2e4">e2 to e4</option>
+              <option value="g1f3">g1 to f3</option>
+              <option value="e2e5">e2 to e5</option>
+              <option value="b1c3">b1 to c3</option>
+              <option value="e7e5">e7 to e5</option>
+            </select>
+          </label>
+          <button type="button" id="validate-move">Check move</button>
+        </div>
+
+        <div class="board-shell">
+          <div class="board-frame">
+            <div class="board" id="board"></div>
+          </div>
+          <div class="board-note">
+            <div class="note-head">Rules engine lane</div>
+            <p id="move-result">Validation is running now. I’m checking the pieces before I call it clean.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel aside-panel">
+        <div class="section-head slim">
+          <p class="eyebrow">Theme metadata</p>
+          <h2>Each family carries a different mood.</h2>
+        </div>
+        <div class="family-list" id="family-list"></div>
+      </article>
+    </section>
+
+    <section class="section split">
+      <article class="panel">
+        <p class="eyebrow">3D / AR-ready scene manifest</p>
+        <h2>The scene is ready for a real pipeline, but the export backend stays honest.</h2>
+        <pre class="code-block" id="scene-snippet"></pre>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Research summary</p>
+        <h2>Research first, then style.</h2>
+        <ul class="feature-list">
+          <li>FIDE laws establish legal-move discipline, castling, promotion, and draw rules.</li>
+          <li>Stockfish shows the engine lane: evaluation plus search is the serious chess backbone.</li>
+          <li>Three.js and Babylon.js document the scene, camera, materials, glTF, and WebXR path.</li>
+          <li>Bobby Fischer is the benchmark for public chess aura and grandmaster intensity.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section ledger">
+      <div class="section-head">
+        <p class="eyebrow">Stateful research ledger</p>
+        <h2>Research-backed build decisions, claim checks, and rejected sources.</h2>
+      </div>
+      <div class="ledger-shell">
+        <article class="panel ledger-summary">
+          <p class="label">Ledger path</p>
+          <p class="line mono" id="ledger-path">Waiting for a validator receipt.</p>
+          <p class="label">Counts</p>
+          <p class="line" id="ledger-counts">No ledger loaded yet.</p>
+          <p class="label">Claim checks</p>
+          <ul class="feature-list compact" id="ledger-claims"></ul>
+        </article>
+        <article class="panel ledger-evidence">
+          <p class="label">Curated evidence</p>
+          <div class="ledger-cards" id="ledger-cards"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section receipts">
+      <div class="section-head">
+        <p class="eyebrow">Receipt section</p>
+        <h2>Every lane leaves a trail.</h2>
+      </div>
+      <div class="receipt-strip">
+        <div>
+          <span>Project manifest</span>
+          <strong>chess-project.manifest.json</strong>
+        </div>
+        <div>
+          <span>Research notes</span>
+          <strong>research-notes.md</strong>
+        </div>
+        <div>
+          <span>Validator receipt</span>
+          <strong>Archive/receipts/agent-lee-vscode-chat-3d-chess-proof-YYYYMMDD-HHMMSS.json</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

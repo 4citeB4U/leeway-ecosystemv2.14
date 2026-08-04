@@ -1,0 +1,130 @@
+{
+  "schema": "leeway.agent-lee.research-harness.manifest.v1",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "researchHarness": {
+    "skillPath": "agent-lee-coding-mode/skills/stateful-research-harness",
+    "runtimePath": "agent-lee-coding-mode/runtime/agent-lee-research-runtime.mjs",
+    "evidenceLedgerSchemaPath": "agent-lee-coding-mode/runtime/agent-lee-evidence-ledger.schema.json"
+  },
+  "entrySurfaceRequirement": "vscode-chat",
+  "adapterEndpoint": "http://127.0.0.1:8787/v1/chat/completions",
+  "browserRuntimeIntegration": {
+    "desktopRuntimeEndpoint": "http://127.0.0.1:8091/runtime/web-search",
+    "browserSearchReceiptRoot": "Archive/receipts/agent-lee-research",
+    "screenshotAware": true,
+    "visibleProofRequired": true
+  },
+  "buildWorkflowIntegration": {
+    "usedByProjects": [
+      "agent-lee-coding-mode/build-sandbox/agent-lee-abilities-site",
+      "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof"
+    ],
+    "buildDecisionFields": [
+      "objective",
+      "sourceMap",
+      "candidateEvidence",
+      "curatedEvidence",
+      "rejectedEvidence",
+      "claimChecks",
+      "openGaps",
+      "buildDecisions",
+      "receipts"
+    ]
+  },
+  "pipelineIntegration": {
+    "threeDArProof": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof",
+    "researchAppliesTo3dAr": true,
+    "researchAppliesToAbilitySite": true
+  },
+  "sourceHierarchy": [
+    "User-provided files and pasted text",
+    "Leeway Runtime Fabric / Agent Lee runtime files",
+    "Workspace manifests, README files, registries, and receipts",
+    "Official docs and standards",
+    "Reputable secondary references",
+    "Community leads only when necessary"
+  ],
+  "evidenceStatuses": [
+    "candidate",
+    "curated",
+    "rejected",
+    "needs-check"
+  ],
+  "claimCheckSchema": {
+    "fields": [
+      "id",
+      "claim",
+      "claimType",
+      "evidenceIds",
+      "counterevidence",
+      "freshnessRequirement",
+      "result",
+      "confidence",
+      "finalWording",
+      "notes"
+    ],
+    "results": [
+      "supported",
+      "unsupported",
+      "contradicted",
+      "ambiguous",
+      "needs-review"
+    ]
+  },
+  "sourceQualityCriteria": {
+    "preferred": [
+      "official docs",
+      "source code",
+      "project READMEs",
+      "standards/specs",
+      "high-quality references",
+      "direct evidence"
+    ],
+    "rejected": [
+      "irrelevant content",
+      "obvious SEO filler",
+      "stale docs when newer docs exist",
+      "unverifiable claims",
+      "duplicate thin summaries"
+    ],
+    "scoringRules": {
+      "official_doc": 96,
+      "standards": 98,
+      "source_code": 94,
+      "project_readme": 88,
+      "documentation": 90,
+      "research_paper": 93,
+      "reputable_secondary": 72,
+      "browser_search": 64,
+      "local_receipt": 91,
+      "local_manifest": 90,
+      "local_doc": 84,
+      "community": 42,
+      "seo_filler": 16,
+      "duplicate": 18,
+      "stale": 28,
+      "unverifiable": 20
+    }
+  },
+  "receiptFormat": {
+    "directory": "Archive/receipts/agent-lee-research",
+    "fields": [
+      "researchId",
+      "objective",
+      "query",
+      "sourceMap",
+      "candidateEvidence",
+      "curatedEvidence",
+      "rejectedEvidence",
+      "claimChecks",
+      "openGaps",
+      "buildDecisions",
+      "receipts",
+      "entrySurface",
+      "adapterEndpoint",
+      "canonicalFingerprint",
+      "createdAt",
+      "updatedAt"
+    ]
+  }
+}

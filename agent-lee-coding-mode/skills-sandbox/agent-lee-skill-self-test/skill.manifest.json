@@ -1,0 +1,19 @@
+{
+  "skillId": "agent-lee-skill-self-test",
+  "name": "Agent Lee Skill Self Test",
+  "owner": "agent-lee-prime",
+  "classification": "SANDBOX",
+  "canonicalAttached": false,
+  "createdAt": "2026-06-11T22:25:24.784Z",
+  "purpose": "Harmless sandbox skill used to prove skill creation and validation runtime execution.",
+  "routes": [
+    "POST /agent-lee/skills/create",
+    "POST /agent-lee/skills/validate",
+    "POST /agent-lee/skills/simulate"
+  ],
+  "files": {
+    "skillMd": "SKILL.md",
+    "manifest": "skill.manifest.json",
+    "actions": "actions.json"
+  }
+}

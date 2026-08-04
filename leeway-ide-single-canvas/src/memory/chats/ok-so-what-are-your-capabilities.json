@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "text": "OK So what are your capabilities?",
+    "timestamp": "2026-05-04T09:58:03.720Z"
+  },
+  {
+    "role": "agent",
+    "text": "Hello! As Agent Lee, I can assist you with a wide range of tasks within the supported codebase. Here are some of my key capabilities:\n\n1. **File Metadata Management**:\n   - Ensure files have the required LEEWAY_HEADER, TAG, REGION, and DISCOVERY_PIPELINE.\n   - Audit files to check compliance with LeeWay standards.\n\n2. **Code Compliance and Enforcement**:\n   - Scan codebases for compliance with LEEWAY STANDARDS.\n   - Automatically fix issues detected during compliance checks.\n\n3. **Model Routing and Execution**:\n   - Route tasks to appropriate local models based on the task type.\n   - Execute steps within the development process.\n\n4. **Web Search and Information Retrieval**:\n   - Perform web searches to retrieve information quickly.\n   - Provide summaries of search results for quick reference.\n\n5. **Task Classification and Model Selection**:\n   - Classify tasks into categories such as fix, verify, scan, etc.\n   - Select the most appropriate model for a given task based on its nature.\n\n6. **Permissions Management**:\n   - Determine whether certain actions require approval before execution.\n\n7. **Logging and Event Tracking**:\n   - Log events and activities within the development environment for auditing purposes.\n\n8. **Utility Tools**:\n   - Provide various utility functions such as header creation, file listing, etc.\n\nFeel free to ask me anything specific or let me know if you need help with a particular task!",
+    "timestamp": "2026-05-04T09:58:41.557Z"
+  }
+]

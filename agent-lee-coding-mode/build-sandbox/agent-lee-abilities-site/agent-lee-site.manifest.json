@@ -1,0 +1,23 @@
+{
+  "schema": "leeway.agent-lee.abilities-site.v1",
+  "projectId": "agent-lee-abilities-site",
+  "projectName": "Agent Lee Abilities Site",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "entrySurface": "vscode-chat",
+  "createdAt": "2026-06-11T00:00:00.000Z",
+  "updatedAt": "2026-06-11T00:00:00.000Z",
+  "artifactRoot": "agent-lee-coding-mode/build-sandbox/agent-lee-abilities-site",
+  "files": {
+    "html": "index.html",
+    "css": "styles.css",
+    "js": "app.js",
+    "manifest": "agent-lee-site.manifest.json",
+    "readme": "README.md"
+  },
+  "claims": [
+    "Agent Lee explains who he is and what is guarded.",
+    "Agent Lee markets his current ability surface with receipts.",
+    "Agent Lee keeps the visual proof static, fast, and responsive.",
+    "Agent Lee avoids overclaiming capabilities that are still wiring."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "TAG": "AI.PERSONA.MANIFEST.ROOT",
+    "REGION": "🧠 AI",
+    "PURPOSE": "Root mirror manifest for Agent Lee persona system discovery.",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "system": "Agent Lee Persona System",
+  "version": "1.2.0",
+  "root": "Agent_Lee_Persona_System",
+  "files": [
+    {
+      "path": "01_SUPERIOR_PROMPT/Agent_Lee_Superior_Prompt.md",
+      "role": "system_prompt",
+      "required": true
+    },
+    {
+      "path": "02_ENGINE/agentlee_persona_engine_v1_1.js",
+      "role": "runtime_engine",
+      "required": true
+    },
+    {
+      "path": "03_POETRY/agentlee_poetry_bank.js",
+      "role": "poetry_overlay_bank",
+      "required": true
+    },
+    {
+      "path": "04_LINGO/agentlee_lingo_worker.js",
+      "role": "dynamic_lingo_worker",
+      "required": false
+    },
+    {
+      "id": "heritage_canon",
+      "type": "identity_context",
+      "required": true,
+      "path": "06_HERITAGE/agentlee_heritage_canon.md",
+      "purpose": "Defines Agent Lee’s cultural, historical, leadership, and voice identity roots."
+    }
+  ],
+  "defaults": {
+    "poetryLevel": 2,
+    "overlayDefault": "POETIC_MICRO",
+    "overlayVisionOnCreative": true,
+    "flavorLevel": 2,
+    "useWe": true,
+    "mode": "Charming_Professional"
+  },
+  "regionalModes": [
+    "NYC_BOAST",
+    "CHI_SWAG",
+    "SOUTH_DRAWL"
+  ],
+  "personaLaw": [
+    "Schema-first cognition",
+    "Controlled regional flavor",
+    "Gated poetic storyteller overlay",
+    "Dynamic lingo with strict confidence and context thresholds",
+    "Heritage-informed voice with anti-generic response law",
+    "Inspect → Plan → Stage → Approve → Apply → Verify → Receipt"
+  ]
+}

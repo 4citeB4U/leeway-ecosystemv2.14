@@ -1,0 +1,36 @@
+{
+  "sceneId": "agent-lee-3d-chess-scene",
+  "board": {
+    "type": "chess",
+    "dimensions": {
+      "files": 8,
+      "ranks": 8,
+      "levels": 1
+    },
+    "style": "concept-only"
+  },
+  "selectablePieceFamilies": [
+    "knights_and_dragons",
+    "ninjas_and_samurai",
+    "kung_fu_masters",
+    "modern_military"
+  ],
+  "pieces": [
+    {
+      "id": "white-king",
+      "family": "knights_and_dragons",
+      "type": "king",
+      "position": "e1"
+    },
+    {
+      "id": "black-king",
+      "family": "modern_military",
+      "type": "king",
+      "position": "e8"
+    }
+  ],
+  "renderNotes": [
+    "This is a scene manifest and not a compiled mesh export.",
+    "Use a real glTF/GLB exporter when available to move from partial to full."
+  ]
+}

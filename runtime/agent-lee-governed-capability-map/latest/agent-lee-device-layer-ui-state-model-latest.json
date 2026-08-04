@@ -1,0 +1,50 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_DEVICE_LAYER_UI_STATE_MODEL_271",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:16:35",
+    "state_keys":  {
+                       "deviceLayerStatus":  "FULL_MULTI_FAMILY_DEVICE_LAYER_READY_LOCKED_CLEAN",
+                       "completedFamilyCount":  11,
+                       "remainingFamilyCount":  0,
+                       "readOnlyRouteCount":  46,
+                       "familyCount":  11,
+                       "executionEnabled":  false,
+                       "executeButtonsVisible":  false,
+                       "postExecutionRoutesAdded":  false,
+                       "actionCardsEnabled":  false,
+                       "approvalRequired":  true,
+                       "windowsLocked":  true,
+                       "blockedProbeExecuted":  false,
+                       "physicalActionsExecuted":  0
+                   },
+    "computed_badges":  [
+                            {
+                                "key":  "locked_clean",
+                                "label":  "Locked Clean",
+                                "condition":  "windowsLocked === true \u0026\u0026 executionEnabled === false"
+                            },
+                            {
+                                "key":  "read_only",
+                                "label":  "Read-only",
+                                "condition":  "readOnlyRouteCount === 46"
+                            },
+                            {
+                                "key":  "approval_required",
+                                "label":  "Approval Required",
+                                "condition":  "approvalRequired === true"
+                            },
+                            {
+                                "key":  "no_execute",
+                                "label":  "No Execute",
+                                "condition":  "executeButtonsVisible === false \u0026\u0026 physicalActionsExecuted === 0"
+                            }
+                        ],
+    "hard_fail_conditions":  [
+                                 "executionEnabled !== false",
+                                 "executeButtonsVisible !== false",
+                                 "postExecutionRoutesAdded !== false",
+                                 "physicalActionsExecuted !== 0",
+                                 "windowsLocked !== true",
+                                 "blockedProbeExecuted !== false"
+                             ]
+}

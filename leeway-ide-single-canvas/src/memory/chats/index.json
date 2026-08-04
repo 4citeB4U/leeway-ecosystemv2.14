@@ -1,0 +1,263 @@
+{
+  "activeConversationId": "leeway-vscode-2026-05-09T20-56-55-231Z",
+  "conversations": [
+    {
+      "id": "leeway-vscode-2026-05-09T20-56-55-231Z",
+      "title": "Hello.",
+      "createdAt": "2026-05-09T20:56:55.231Z",
+      "updatedAt": "2026-05-18T02:34:55.269Z",
+      "workspaceRoot": "",
+      "active": true
+    },
+    {
+      "id": "leeway-vscode-2026-05-10T00-36-59-137Z",
+      "title": "Hello, Agent Lee. What's going on, brother?",
+      "createdAt": "2026-05-10T00:36:59.137Z",
+      "updatedAt": "2026-05-17T19:15:29.158Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-10T04-12-57-791Z",
+      "title": "hello",
+      "createdAt": "2026-05-10T04:12:57.791Z",
+      "updatedAt": "2026-05-11T13:35:45.115Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-10T03-27-10-415Z",
+      "title": "hello",
+      "createdAt": "2026-05-10T03:27:10.415Z",
+      "updatedAt": "2026-05-10T03:27:20.226Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-09T23-42-44-521Z",
+      "title": "Agent Lee Chat conversation",
+      "createdAt": "2026-05-09T23:42:44.521Z",
+      "updatedAt": "2026-05-09T23:42:44.530Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-09T22-05-42-026Z",
+      "title": "Still, you still don't know anything about me, so why am I helping you b",
+      "createdAt": "2026-05-09T22:05:42.026Z",
+      "updatedAt": "2026-05-09T22:09:44.444Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T20-50-22-042Z",
+      "title": "so what can you help build",
+      "createdAt": "2026-05-09T20:50:22.042Z",
+      "updatedAt": "2026-05-09T20:53:29.601Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T20-45-07-779Z",
+      "title": "campbell-&-co conversation",
+      "createdAt": "2026-05-09T20:45:07.779Z",
+      "updatedAt": "2026-05-09T20:45:07.787Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T20-44-57-261Z",
+      "title": "campbell-&-co conversation",
+      "createdAt": "2026-05-09T20:44:57.261Z",
+      "updatedAt": "2026-05-09T20:44:57.270Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T20-42-28-913Z",
+      "title": "campbell-&-co conversation",
+      "createdAt": "2026-05-09T20:42:28.913Z",
+      "updatedAt": "2026-05-09T20:42:28.922Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-09T20-25-59-303Z",
+      "title": ".leeway-vscode conversation",
+      "createdAt": "2026-05-09T20:25:59.303Z",
+      "updatedAt": "2026-05-09T20:25:59.312Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-09T20-21-13-070Z",
+      "title": ".leeway-vscode conversation",
+      "createdAt": "2026-05-09T20:21:13.070Z",
+      "updatedAt": "2026-05-09T20:21:13.080Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T20-03-26-133Z",
+      "title": "campbell-&-co conversation",
+      "createdAt": "2026-05-09T20:03:26.133Z",
+      "updatedAt": "2026-05-09T20:03:26.145Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-09T20-03-06-334Z",
+      "title": "Agent Lee Chat conversation",
+      "createdAt": "2026-05-09T20:03:06.334Z",
+      "updatedAt": "2026-05-09T20:03:06.344Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T19-31-25-369Z",
+      "title": "What's going on, Agent Lee? Tell me something about you.",
+      "createdAt": "2026-05-09T19:31:25.369Z",
+      "updatedAt": "2026-05-09T19:31:42.943Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-09T19-26-53-490Z",
+      "title": "Hey, what's up, Agent Lee? Talk to me, Dad. Tell me something about your",
+      "createdAt": "2026-05-09T19:26:53.490Z",
+      "updatedAt": "2026-05-09T19:27:02.548Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-09T05-48-10-825Z",
+      "title": "hello",
+      "createdAt": "2026-05-09T05:48:10.825Z",
+      "updatedAt": "2026-05-09T14:50:54.565Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-07T01-53-31-266Z",
+      "title": "hello",
+      "createdAt": "2026-05-07T01:53:31.266Z",
+      "updatedAt": "2026-05-09T04:46:07.126Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-06T23-59-13-621Z",
+      "title": "OK So what are you really saying here?",
+      "createdAt": "2026-05-06T23:59:13.621Z",
+      "updatedAt": "2026-05-07T00:48:11.720Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-06T20-37-59-805Z",
+      "title": "ok proceed",
+      "createdAt": "2026-05-06T20:37:59.805Z",
+      "updatedAt": "2026-05-06T20:57:29.298Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "campbell-co-2026-05-06T19-55-11-585Z",
+      "title": "begin fixes to code",
+      "createdAt": "2026-05-06T19:55:11.585Z",
+      "updatedAt": "2026-05-06T20:11:30.027Z",
+      "workspaceRoot": "e:\\campbell-&-co",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T18-21-43-815Z",
+      "title": ".leeway-vscode conversation",
+      "createdAt": "2026-05-06T18:21:43.815Z",
+      "updatedAt": "2026-05-06T18:41:37.920Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T13-04-18-689Z",
+      "title": "yes",
+      "createdAt": "2026-05-06T13:04:18.689Z",
+      "updatedAt": "2026-05-06T13:07:23.195Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T09-47-40-140Z",
+      "title": "OK. I need you to take a full look at this code base. Go ahead, give me ",
+      "createdAt": "2026-05-06T09:47:40.140Z",
+      "updatedAt": "2026-05-06T09:48:53.902Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T09-47-38-344Z",
+      "title": ".leeway-vscode conversation",
+      "createdAt": "2026-05-06T09:47:38.344Z",
+      "updatedAt": "2026-05-06T09:47:38.344Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T09-41-50-409Z",
+      "title": "This for you OK. Go ahead, tell me what your capabilities are.",
+      "createdAt": "2026-05-06T09:41:50.409Z",
+      "updatedAt": "2026-05-06T09:42:03.416Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T09-27-23-253Z",
+      "title": "All right. Why don't you tell me what kind of MCPS you are available to ",
+      "createdAt": "2026-05-06T09:27:23.253Z",
+      "updatedAt": "2026-05-06T09:29:23.734Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "leeway-vscode-2026-05-06T05-55-05-865Z",
+      "title": "look at code base tell me whats wrong",
+      "createdAt": "2026-05-06T05:55:05.865Z",
+      "updatedAt": "2026-05-06T09:01:07.272Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-06T05-33-45-797Z",
+      "title": "Agent Lee Chat conversation",
+      "createdAt": "2026-05-06T05:33:45.797Z",
+      "updatedAt": "2026-05-06T05:38:17.732Z",
+      "workspaceRoot": "",
+      "active": false
+    },
+    {
+      "id": "agent-lee-2026-05-04T10-53-04-074Z",
+      "title": "agent-lee conversation",
+      "createdAt": "2026-05-04T10:53:04.074Z",
+      "updatedAt": "2026-05-04T10:53:04.082Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+      "active": false
+    },
+    {
+      "id": "workspace-2026-05-04T10-41-44-071Z",
+      "title": "workspace conversation",
+      "createdAt": "2026-05-04T10:41:44.071Z",
+      "updatedAt": "2026-05-04T10:41:44.073Z",
+      "workspaceRoot": "c:/temp/workspace",
+      "active": false
+    },
+    {
+      "id": "recovered-legacy-2026-05-04T01-29-04-350Z",
+      "title": "Recovered legacy conversation",
+      "createdAt": "2026-05-04T01:29:04.350Z",
+      "updatedAt": "2026-05-04T10:04:51.262Z",
+      "workspaceRoot": "",
+      "active": false,
+      "recoveredFromLegacy": true,
+      "source": "legacy-chat-files"
+    }
+  ]
+}

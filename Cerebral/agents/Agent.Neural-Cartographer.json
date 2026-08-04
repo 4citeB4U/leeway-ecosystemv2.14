@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Neural-Cartographer",
+  "wave": 1,
+  "rank": "Scout",
+  "primary_function": "Map file system and runtime topology",
+  "tool": "discovery_wave1",
+  "uniform": "Administrative"
+}

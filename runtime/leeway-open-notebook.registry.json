@@ -1,0 +1,19 @@
+{
+  "docker_url": "http://leeway_open_notebook:5326",
+  "image": "leeway_open_notebook:local",
+  "host_url": "http://localhost:5326",
+  "container": "leeway_open_notebook",
+  "role": "long-form notebook workspace, readback, revisions, and PDF export",
+  "created_at": "2026-07-03T23:12:54.4781681-05:00",
+  "endpoints": {
+    "health": "/health",
+    "latest": "/notebook/latest",
+    "readback": "/notebook/readback/{notebook_id}",
+    "export_pdf": "/notebook/export/pdf",
+    "revise": "/notebook/revise",
+    "create": "/notebook/create",
+    "append": "/notebook/append",
+    "status": "/status"
+  },
+  "service": "leeway_open_notebook"
+}

@@ -1,0 +1,454 @@
+﻿{
+    "version":  "LEEWAY_GLOBAL_GOVERNANCE_SECURITY_AWARENESS_RECHECK_450",
+    "phase":  72,
+    "timestamp":  "2026-07-07T01:49:22",
+    "verdict":  "LEEWAY_GLOBAL_GOVERNANCE_SECURITY_AWARENESS_RECHECK_450_WITH_WARNINGS",
+    "global_recheck_only":  true,
+    "runtime_execution_performed":  false,
+    "agent_lee_runtime_execution_performed":  false,
+    "skill_execution_performed":  false,
+    "code_mode_execution_performed":  false,
+    "discovery_scan_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "package_created":  false,
+    "inherited":  {
+                      "standards_407_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                      "runtime_446_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-68-runtime-fabric-locked-governance-summary\\latest\\runtime-fabric-locked-governance-summary-latest.json",
+                      "runtime_445_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\latest\\runtime-fabric-governance-receipt-lock-latest.json",
+                      "discovery_439_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                      "agent_449_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-71-agent-lee-governance-receipt-lock\\latest\\agent-lee-governance-receipt-lock-latest.json",
+                      "agent_448_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70-agent-lee-governance-completeness-audit\\latest\\agent-lee-governance-completeness-audit-latest.json",
+                      "discovery_448D_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70D-agent-lee-discovery-layer-deep-awareness-recheck\\latest\\agent-lee-discovery-layer-deep-awareness-recheck-latest.json",
+                      "skills_448S_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S-agent-lee-skills-universe-governance-recheck\\latest\\agent-lee-skills-universe-governance-recheck-latest.json",
+                      "skills_448S2_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S2-agent-lee-skill-router-code-mode-binding-recheck\\latest\\agent-lee-skill-router-code-mode-binding-recheck-latest.json",
+                      "scope_441R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                      "gate_440_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                      "approval_442_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json"
+                  },
+    "global_governance_bodies":  [
+                                     {
+                                         "body_id":  "GLOBAL_BODY_01",
+                                         "name":  "LeeWay Standards",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                                         "present":  false,
+                                         "locked_or_complete":  false,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_02",
+                                         "name":  "Runtime Fabric",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-68-runtime-fabric-locked-governance-summary\\latest\\runtime-fabric-locked-governance-summary-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_03",
+                                         "name":  "Runtime Fabric Receipt Lock",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\latest\\runtime-fabric-governance-receipt-lock-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_04",
+                                         "name":  "Discovery Layer",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_05",
+                                         "name":  "Device Layer",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_06",
+                                         "name":  "Agent Lee",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-71-agent-lee-governance-receipt-lock\\latest\\agent-lee-governance-receipt-lock-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_07",
+                                         "name":  "Skills Universe",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S-agent-lee-skills-universe-governance-recheck\\latest\\agent-lee-skills-universe-governance-recheck-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_08",
+                                         "name":  "Skill Router and Code Mode",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S2-agent-lee-skill-router-code-mode-binding-recheck\\latest\\agent-lee-skill-router-code-mode-binding-recheck-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_09",
+                                         "name":  "Docker and Container Matrix",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     },
+                                     {
+                                         "body_id":  "GLOBAL_BODY_10",
+                                         "name":  "442 Approval Gate",
+                                         "required":  true,
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json",
+                                         "present":  true,
+                                         "locked_or_complete":  true,
+                                         "execution_allowed_now":  false
+                                     }
+                                 ],
+    "failed_global_governance_bodies":  [
+                                            {
+                                                "body_id":  "GLOBAL_BODY_01",
+                                                "name":  "LeeWay Standards",
+                                                "required":  true,
+                                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                                                "present":  false,
+                                                "locked_or_complete":  false,
+                                                "execution_allowed_now":  false
+                                            }
+                                        ],
+    "security_awareness_checks":  [
+                                      {
+                                          "check_id":  "SEC_AWARE_01",
+                                          "name":  "Standards authority known",
+                                          "required":  true,
+                                          "satisfied":  false
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_02",
+                                          "name":  "Runtime Fabric authority known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_03",
+                                          "name":  "Discovery self-awareness known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_04",
+                                          "name":  "Device boundary known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_05",
+                                          "name":  "Agent Lee authority boundary known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_06",
+                                          "name":  "Skills Universe known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_07",
+                                          "name":  "Skill Router and Code Mode known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_08",
+                                          "name":  "Memory and Seafile governance known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_09",
+                                          "name":  "Persona and executive behavior known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_10",
+                                          "name":  "Self-learning and simulation governance known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_11",
+                                          "name":  "Hybrid Fabric governance known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_12",
+                                          "name":  "Docker/container matrix known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_13",
+                                          "name":  "Active deferred document-only scope known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_14",
+                                          "name":  "Evidence/archive locations known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      },
+                                      {
+                                          "check_id":  "SEC_AWARE_15",
+                                          "name":  "Package and SDK hold known",
+                                          "required":  true,
+                                          "satisfied":  true
+                                      }
+                                  ],
+    "failed_security_awareness":  [
+                                      {
+                                          "check_id":  "SEC_AWARE_01",
+                                          "name":  "Standards authority known",
+                                          "required":  true,
+                                          "satisfied":  false
+                                      }
+                                  ],
+    "execution_block_checks":  [
+                                   {
+                                       "block":  "runtime_execution",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "agent_lee_runtime_execution",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "skill_execution",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "code_mode_execution",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "skill_training",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "self_improvement_mutation",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "memory_migration",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "seafile_runtime_access",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "hybrid_fabric_execution",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "discovery_scan",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "docker_exec",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "docker_mutation",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "device_control",
+                                       "satisfied":  true
+                                   },
+                                   {
+                                       "block":  "package_creation",
+                                       "satisfied":  true
+                                   }
+                               ],
+    "failed_execution_blocks":  [
+
+                                ],
+    "evidence_hashes":  [
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                                "exists":  false,
+                                "hash":  "",
+                                "error":  "missing"
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-68-runtime-fabric-locked-governance-summary\\latest\\runtime-fabric-locked-governance-summary-latest.json",
+                                "exists":  true,
+                                "hash":  "39C53224A0A72CB38699060FA36F2A01B7F5727A94CC3C4E0046BD1E17F4A27F",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\latest\\runtime-fabric-governance-receipt-lock-latest.json",
+                                "exists":  true,
+                                "hash":  "EE353DA9C81B0B54B84CB753C014880191EBFE35ED83A17C77956AE7FF3E0491",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                                "exists":  true,
+                                "hash":  "A8B9FFDF03DC974063990EA8D1F41CBAD9519A65B8B3DC6FB4CA3604F0D3720A",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-71-agent-lee-governance-receipt-lock\\latest\\agent-lee-governance-receipt-lock-latest.json",
+                                "exists":  true,
+                                "hash":  "EA61F19A23F1479CB87C86EAF04BD01B361A1AAD746B6F6291FFB7B905942C5E",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70-agent-lee-governance-completeness-audit\\latest\\agent-lee-governance-completeness-audit-latest.json",
+                                "exists":  true,
+                                "hash":  "8519A0B74C9325910256250CE84F5A0FE0E69DD6AFE33334D16B22BB6124497A",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70D-agent-lee-discovery-layer-deep-awareness-recheck\\latest\\agent-lee-discovery-layer-deep-awareness-recheck-latest.json",
+                                "exists":  true,
+                                "hash":  "E73652CE98497A7E353F0F5C03A64523B05E334197381BB2DCA46BA66A2C4748",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S-agent-lee-skills-universe-governance-recheck\\latest\\agent-lee-skills-universe-governance-recheck-latest.json",
+                                "exists":  true,
+                                "hash":  "ABD49D7C28DDC00D571C4009E263A177E71241A5DFC877AF9EF854E88360D2AC",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-70S2-agent-lee-skill-router-code-mode-binding-recheck\\latest\\agent-lee-skill-router-code-mode-binding-recheck-latest.json",
+                                "exists":  true,
+                                "hash":  "7558CD40FFB0C6F77A42689B6A6F438F45A3EB6EE08428FE94BB7F177ECE3F4B",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                                "exists":  true,
+                                "hash":  "823D27F45364AA3B5DCFEEA740CEF4DA1B8E22D75D3160198AF800D4D5AF801A",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                                "exists":  true,
+                                "hash":  "FD4814A6F3090A7F730FE61A6469CDC67C5379F0CC6406E8B3281F70BBEF3312",
+                                "error":  ""
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json",
+                                "exists":  true,
+                                "hash":  "3FEEF7E8EDAA992C6DFAC5A6E703FE1974081109F814AF32EFEB81762ACE0BDE",
+                                "error":  ""
+                            }
+                        ],
+    "hash_errors":  [
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                            "exists":  false,
+                            "hash":  "",
+                            "error":  "missing"
+                        }
+                    ],
+    "global_decision":  {
+                            "global_recheck_only":  true,
+                            "global_governance_recheck_complete":  false,
+                            "leeway_standards_governed":  false,
+                            "runtime_fabric_governed":  true,
+                            "discovery_layer_governed":  true,
+                            "device_layer_governed":  true,
+                            "agent_lee_governed":  true,
+                            "skills_universe_governed":  true,
+                            "skill_router_code_mode_governed":  true,
+                            "docker_container_matrix_governed":  true,
+                            "approval_gate_442_preserved_unconsumed":  true,
+                            "owner_approval_for_442A_present":  false,
+                            "whole_system_awareness_complete":  false,
+                            "execution_blocks_complete":  true,
+                            "runtime_execution_allowed_now":  false,
+                            "agent_lee_runtime_execution_allowed_now":  false,
+                            "skill_execution_allowed_now":  false,
+                            "code_mode_execution_allowed_now":  false,
+                            "skill_training_allowed_now":  false,
+                            "self_improvement_mutation_allowed_now":  false,
+                            "memory_migration_allowed_now":  false,
+                            "seafile_runtime_access_allowed_now":  false,
+                            "hybrid_fabric_execution_allowed_now":  false,
+                            "discovery_scan_allowed_now":  false,
+                            "docker_exec_allowed_now":  false,
+                            "docker_mutation_allowed_now":  false,
+                            "device_control_allowed_now":  false,
+                            "package_creation_allowed_now":  false,
+                            "next_route":  "GLOBAL_GOVERNANCE_REPAIR_REQUIRED",
+                            "recommended_next_script":  "450R-global-governance-security-awareness-repair-no-execute.ps1"
+                        },
+    "next_routes":  [
+                        {
+                            "route_id":  "GLOBAL_GOVERNANCE_FINAL_SUMMARY",
+                            "status":  "BLOCKED",
+                            "description":  "Generate final human-readable global governance summary.",
+                            "script":  "451-global-governance-final-summary-no-execute.ps1"
+                        },
+                        {
+                            "route_id":  "442A_OWNER_APPROVED_SINGLE_USE_RUNTIME_STATUS_PROOF",
+                            "status":  "BLOCKED_PENDING_EXACT_OWNER_APPROVAL",
+                            "description":  "May proceed only if owner provides exact 442 approval statement.",
+                            "script":  "442A-standards-bound-runtime-status-proof-single-use.ps1"
+                        },
+                        {
+                            "route_id":  "SKILL_REGISTRY_SIGNATURE_BUILDOUT",
+                            "status":  "BLOCKED_PENDING_GLOBAL_SUMMARY",
+                            "description":  "Can draft skill signatures after global summary. Still no execution.",
+                            "script":  "later"
+                        },
+                        {
+                            "route_id":  "PACKAGE_CREATION_GATE",
+                            "status":  "BLOCKED",
+                            "description":  "Package creation remains blocked until runtime proof closeout.",
+                            "script":  "later"
+                        }
+                    ],
+    "summary_docs":  [
+                         {
+                             "doc":  "global_governance_security_awareness_recheck",
+                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-72-global-governance-security-awareness-recheck\\global-docs\\global-governance-security-awareness-recheck-450.md",
+                             "exists":  true
+                         }
+                     ],
+    "counts":  {
+                   "global_bodies_checked":  10,
+                   "failed_global_bodies":  1,
+                   "security_awareness_checks":  15,
+                   "failed_security_awareness":  1,
+                   "execution_block_checks":  14,
+                   "failed_execution_blocks":  0,
+                   "evidence_hashes":  12,
+                   "hash_errors":  1,
+                   "next_routes":  4,
+                   "summary_docs":  1
+               },
+    "recommended_next_script":  "450R-global-governance-security-awareness-repair-no-execute.ps1"
+}

@@ -1,0 +1,64 @@
+﻿{
+    "version":  "LEEWAY_NEXTJS_DEVICE_ONBOARDING_VIEW_AUDIT_294",
+    "phase":  40,
+    "timestamp":  "2026-07-06T11:23:12",
+    "verdict":  "LEEWAY_NEXTJS_DEVICE_ONBOARDING_VIEW_AUDIT_294_WITH_WARNINGS",
+    "view_audit":  true,
+    "server_start_allowed":  true,
+    "server_started_by_294":  true,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "clear_skies":  true,
+    "frontend":  {
+                     "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                     "url":  "http://localhost:3000",
+                     "route":  "/device-onboarding",
+                     "frontend_ready":  true,
+                     "page_reachable":  true,
+                     "port_3000_processes_before":  0,
+                     "port_3000_processes_after":  1,
+                     "node_frontend_processes_before":  0,
+                     "node_frontend_processes_after":  4,
+                     "start_info":  {
+                                        "started":  true,
+                                        "pid":  21452,
+                                        "command":  "npm run dev -- --hostname 0.0.0.0 -p 3000",
+                                        "working_directory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                                        "stdout":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-294-20260706-112241\\logs\\next-dev-stdout.log",
+                                        "stderr":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-294-20260706-112241\\logs\\next-dev-stderr.log"
+                                    }
+                 },
+    "api":  {
+                "summary_ok":  false,
+                "totals_ok":  false,
+                "safety_ok":  false,
+                "network_ok":  false,
+                "bluetooth_ok":  false,
+                "printers_ok":  false,
+                "queue_ok":  false,
+                "expected_network_assets":  9,
+                "expected_bluetooth_assets":  19,
+                "expected_printer_assets":  3,
+                "expected_queue_items":  26
+            },
+    "static_audit":  {
+                         "static_clean":  true,
+                         "api_get_only":  true,
+                         "client_get_only":  true,
+                         "no_execution_buttons":  true,
+                         "no_real_alpha_action_endpoints":  true
+                     },
+    "safety":  {
+                   "no_device_control_in_294":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_onboarding_action":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "295-device-onboarding-browser-proof-or-fix.ps1"
+}

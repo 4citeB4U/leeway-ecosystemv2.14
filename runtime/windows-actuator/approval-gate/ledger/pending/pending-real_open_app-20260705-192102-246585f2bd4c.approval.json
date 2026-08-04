@@ -1,0 +1,36 @@
+﻿{
+    "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+    "created_at":  "2026-07-05T19:21:02",
+    "expires_at":  "2026-07-05T19:41:02",
+    "requested_by":  "script_192_pending_approval_ledger_write",
+    "source":  "approval_request_factory",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "DRY-RUN PREVIEW ONLY: request to open Notepad through real-alpha after separate human approval.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "app_label":  "Notepad"
+                },
+    "approval_state":  "PROMOTED_TO_APPROVED",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "used":  false,
+    "dry_run_preview_required":  true,
+    "source_preview_id":  "dryrun-pending-real_open_app-20260705-191856-0d5460c3788c",
+    "source_preview_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\dry-run-pending-previews\\latest\\pending-approval-dry-run-previews-latest.json",
+    "approval_factory_version":  "LEEWAY_CREATE_ONE_REAL_PENDING_APPROVAL_REQUEST_TO_LEDGER_2026-07-05",
+    "ledger_write_reason":  "Create one pending request only. No approval and no execution.",
+    "safety_expectation":  {
+                               "approvals_granted":  0,
+                               "actions_executed":  0,
+                               "real_alpha_unlock":  false,
+                               "real_execution_enabled":  false,
+                               "physical_execution_enabled":  false
+                           },
+    "promoted_to_approved":  true,
+    "promoted_at":  "2026-07-05T19:22:53",
+    "approved_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+    "execution_status":  "NOT_EXECUTED"
+}

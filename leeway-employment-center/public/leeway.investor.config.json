@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "LeeWay Investor Portal Configuration",
+  "generatedAt": "2026-04-27T00:00:00Z",
+  "baseUrl": "http://localhost:3000",
+  "defaultDeviceLimit": 1,
+  "defaultSessionLimit": 5,
+  "defaultExpirationHours": 168,
+  "allowQrCode": true,
+  "sendMode": "copy-link",
+  "emailEnabled": false,
+  "governedBy": "LeeWay Standards",
+  "investorAgentProfile": {
+    "name": "Investor Relations Agent",
+    "type": "Investor Relations Agent",
+    "description": "Specialized agent for investor engagement and product education",
+    "capabilities": {
+      "chat": true,
+      "voice": false,
+      "vision": false,
+      "documents": true
+    },
+    "responsibilities": [
+      "Present LeeWay / Agent Lee system overview",
+      "Answer investor questions",
+      "Explain architecture and governance",
+      "Show product lines and capabilities",
+      "Explain self-hosted runtime",
+      "Explain employment center",
+      "Explain learning platform",
+      "Explain Edge GPU / RTC / DEVICE / IOT",
+      "Explain governance and LeeWay Standards",
+      "Collect investor interest and feedback",
+      "Collect follow-up requests",
+      "Collect meeting requests",
+      "Produce investor conversation summary"
+    ]
+  },
+  "defaultPermissions": [
+    {
+      "id": "perm-view-overview",
+      "permission": "INVESTOR_VIEW_OVERVIEW",
+      "allowed": true,
+      "description": "View LeeWay system overview and architecture"
+    },
+    {
+      "id": "perm-view-products",
+      "permission": "INVESTOR_VIEW_PRODUCT_LINES",
+      "allowed": true,
+      "description": "View product lines and capabilities"
+    },
+    {
+      "id": "perm-view-demo",
+      "permission": "INVESTOR_VIEW_DEMO",
+      "allowed": true,
+      "description": "Access demo content and product previews"
+    },
+    {
+      "id": "perm-ask-agent",
+      "permission": "INVESTOR_ASK_AGENT",
+      "allowed": true,
+      "description": "Ask questions to the investor agent"
+    },
+    {
+      "id": "perm-request-meeting",
+      "permission": "INVESTOR_REQUEST_MEETING",
+      "allowed": true,
+      "description": "Request a follow-up meeting"
+    },
+    {
+      "id": "perm-submit-feedback",
+      "permission": "INVESTOR_SUBMIT_FEEDBACK",
+      "allowed": true,
+      "description": "Submit feedback and questions"
+    },
+    {
+      "id": "perm-view-docs",
+      "permission": "INVESTOR_VIEW_PUBLIC_DOCS",
+      "allowed": true,
+      "description": "View public documentation"
+    }
+  ],
+  "forbiddenPermissions": [
+    "ADMIN_CONTROL",
+    "SERVICE_START_STOP",
+    "DEVICE_CONTROL",
+    "GPU_EXECUTION",
+    "IOT_CONTROL",
+    "RTC_ADMIN",
+    "EMPLOYEE_PRIVATE_DATA",
+    "SYSTEM_FILE_WRITE",
+    "SECRET_ACCESS"
+  ],
+  "voiceSettings": {
+    "enabled": false,
+    "reason": "Voice service not available in this environment"
+  },
+  "emailNotification": {
+    "enabled": false,
+    "fallback": "Copy link manually to send to investor"
+  }
+}

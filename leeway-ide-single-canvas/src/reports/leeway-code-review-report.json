@@ -1,0 +1,55 @@
+{
+  "root": ".leeway-vscode",
+  "reviewTimestamp": "2026-05-20",
+  "filesReviewed": [
+    "agent-lee/vscode-extension/package.json",
+    "bridge-runtime/state/runtime-state.json",
+    "bridge-runtime/state/active-manifest.json",
+    "bridge-runtime/state/last-known-good.json",
+    "bridge-runtime/reports/voice-asset-authority-report.json",
+    "reports/projection-contract-status.json"
+  ],
+  "compileLintBuildStatus": {
+    "compile": "PASS (.leeway-vscode/agent-lee/vscode-extension npm run compile)",
+    "hostRuntime": "PARTIAL_RUNTIME_HOST",
+    "bridgeRuntimeAuthorityGate": "PASS"
+  },
+  "architectureStatus": "PARTIAL_CONTROL_PLANE_HOST",
+  "standardsComplianceStatus": "PASSING_GATED_RUNTIME_HOST",
+  "agentBookImpact": "CONSUMES_AGENT_BOOK_STATUS_VIA_STANDARDS",
+  "modelHiveImpact": "CONSUMES_MODEL_HIVE_STATUS_VIA_STANDARDS",
+  "edgeImpact": "EDGE_STATUS_TRACKING_EXISTS_BUT_EXECUTION_PROOF_IS_STILL_MISSING",
+  "adminosImpact": "CONTROL_INFRASTRUCTURE_NOT_USER_FACING",
+  "securityRisks": [
+    "Runtime state authority still depends on later hardening work for deterministic reconciliation, rollback semantics, and stale-asset control."
+  ],
+  "runtimeRisks": [
+    "Voice authority is still truth-labeled PARTIAL because human audible confirmation remains pending.",
+    "PASS 7 hardening evidence for authoritative reconciliation and asset lineage is not yet present."
+  ],
+  "deploymentRisks": [
+    "Control-plane host can project green governance before edge roots can prove real executable activation."
+  ],
+  "missingTests": [
+    "Deterministic activation/deactivation reconciliation proof",
+    "Rollback authority proof",
+    "Runtime garbage-collection lineage proof"
+  ],
+  "brokenImports": [],
+  "staleCode": [],
+  "forbiddenFallbackChecks": {
+    "status": "PASS",
+    "notes": "Bridge Runtime Authority gate reported no hard fallback violations on this pass."
+  },
+  "severityRanking": "HIGH",
+  "confidenceRanking": "HIGH",
+  "requiredFixes": [
+    "Land PASS 7 runtime hardening artifacts for reconciliation, rollback, garbage collection, and asset lineage.",
+    "Close human audible proof for clone voice embodiment so runtime voice authority can move from PARTIAL to fully proven."
+  ],
+  "recommendedFixes": [
+    "Write explicit edge power-grid aggregation from current edge root truth states.",
+    "Persist a gate matrix artifact directly under .leeway-vscode for current control-plane authority."
+  ],
+  "acceptanceStatus": "NEEDS_RUNTIME_PROOF"
+}

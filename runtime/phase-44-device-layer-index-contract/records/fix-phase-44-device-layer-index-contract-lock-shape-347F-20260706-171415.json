@@ -1,0 +1,291 @@
+﻿{
+    "version":  "LEEWAY_FIX_PHASE_44_DEVICE_LAYER_INDEX_CONTRACT_LOCK_SHAPE_347F",
+    "phase":  44,
+    "timestamp":  "2026-07-06T17:14:18",
+    "verdict":  "LEEWAY_FIX_PHASE_44_DEVICE_LAYER_INDEX_CONTRACT_LOCK_SHAPE_347F_CLEAN",
+    "device_layer_index_contract":  true,
+    "lock_shape_fix":  true,
+    "contract_only":  true,
+    "proposed_page":  "/device-layer-index",
+    "proposed_api_base":  "/api/device-layer-index",
+    "completed_lanes":  [
+                            {
+                                "lane":  "device-readiness",
+                                "page":  "/device-readiness",
+                                "api_base":  "/api/device-readiness",
+                                "final_verdict":  "LEEWAY_PHASE_42_DEVICE_READINESS_FINAL_SUMMARY_319_CLEAN",
+                                "complete":  true,
+                                "authority":  "GET_ONLY_READINESS_SUMMARY",
+                                "action_authority":  false,
+                                "purpose":  "Shows readiness map, safety, groups, recommendations, and protocol candidate drafts."
+                            },
+                            {
+                                "lane":  "printer-ipp-locked-stub",
+                                "page":  "/printer-ipp-locked-stub",
+                                "api_base":  "/api/printer-ipp-locked-stub",
+                                "final_verdict":  "LEEWAY_PHASE_43_PRINTER_IPP_LOCKED_STUB_UI_FINAL_SUMMARY_332_CLEAN",
+                                "complete":  true,
+                                "authority":  "LOCKED_STUB_GET_ONLY_NO_PRINT",
+                                "action_authority":  false,
+                                "purpose":  "Shows printer target and locked IPP stub status without printing or queue mutation."
+                            },
+                            {
+                                "lane":  "phone-satellite",
+                                "page":  "/phone-satellite",
+                                "api_base":  "/api/phone-satellite",
+                                "final_verdict":  "LEEWAY_PHASE_43_PHONE_SATELLITE_UI_FINAL_SUMMARY_339_CLEAN",
+                                "complete":  true,
+                                "authority":  "LOCKED_DRAFT_ONLY_NO_EXECUTE",
+                                "action_authority":  false,
+                                "purpose":  "Shows Galaxy Z Fold6 readiness without ADB, pairing, phone control, SMS/call, files, camera, or microphone."
+                            },
+                            {
+                                "lane":  "router-status",
+                                "page":  "/router-status",
+                                "api_base":  "/api/router-status",
+                                "final_verdict":  "LEEWAY_PHASE_44_ROUTER_STATUS_UI_FINAL_SUMMARY_346_CLEAN",
+                                "complete":  true,
+                                "authority":  "LOCKED_READ_ONLY_DRAFT_NO_EXECUTE",
+                                "action_authority":  false,
+                                "purpose":  "Shows SAX2V1S router read-only status without login, credentials, scan, config, reboot, or bridge deploy."
+                            }
+                        ],
+    "proposed_get_routes":  [
+                                {
+                                    "route":  "/api/device-layer-index/summary",
+                                    "method":  "GET",
+                                    "purpose":  "Show completed device lanes and final verdicts."
+                                },
+                                {
+                                    "route":  "/api/device-layer-index/pages",
+                                    "method":  "GET",
+                                    "purpose":  "Show reachable pages and API bases."
+                                },
+                                {
+                                    "route":  "/api/device-layer-index/safety",
+                                    "method":  "GET",
+                                    "purpose":  "Show global no-action safety flags."
+                                },
+                                {
+                                    "route":  "/api/device-layer-index/proof-chain",
+                                    "method":  "GET",
+                                    "purpose":  "Show final proof chain across printer, phone, router, readiness."
+                                }
+                            ],
+    "forbidden_routes":  [
+                             {
+                                 "route":  "/api/device-layer-index/execute",
+                                 "method":  "POST",
+                                 "reason":  "would execute device action"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/device-control",
+                                 "method":  "POST",
+                                 "reason":  "would control device"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/onboard",
+                                 "method":  "POST",
+                                 "reason":  "would execute onboarding"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/pair",
+                                 "method":  "POST",
+                                 "reason":  "would pair device"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/print",
+                                 "method":  "POST",
+                                 "reason":  "would print or mutate queue"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/phone-control",
+                                 "method":  "POST",
+                                 "reason":  "would control phone"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/router-login",
+                                 "method":  "POST",
+                                 "reason":  "would use router credentials"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/scan",
+                                 "method":  "POST",
+                                 "reason":  "would scan network"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/bridge/deploy",
+                                 "method":  "POST",
+                                 "reason":  "would deploy bridge"
+                             },
+                             {
+                                 "route":  "/api/device-layer-index/unlock",
+                                 "method":  "POST",
+                                 "reason":  "would change authority state"
+                             }
+                         ],
+    "proposed_files_for_future_patch":  [
+                                            {
+                                                "path":  "src\\app\\api\\device-layer-index\\[...path]\\route.ts",
+                                                "purpose":  "GET-only API route for completed device lane index.",
+                                                "create_in_347F":  false
+                                            },
+                                            {
+                                                "path":  "src\\lib\\deviceLayerIndexClient.ts",
+                                                "purpose":  "GET-only client for completed device lane index.",
+                                                "create_in_347F":  false
+                                            },
+                                            {
+                                                "path":  "src\\components\\AgentLeeDeviceLayerIndexPanel.tsx",
+                                                "purpose":  "No-action dashboard panel for completed lanes.",
+                                                "create_in_347F":  false
+                                            },
+                                            {
+                                                "path":  "src\\app\\device-layer-index\\page.tsx",
+                                                "purpose":  "Cockpit page for completed device lane index.",
+                                                "create_in_347F":  false
+                                            }
+                                        ],
+    "global_no_action_policy":  {
+                                    "locked":  true,
+                                    "get_only":  true,
+                                    "executionAuthorized":  false,
+                                    "deviceControlAuthorized":  false,
+                                    "onboardingAuthorized":  false,
+                                    "physicalActionAuthorized":  false,
+                                    "printAuthorized":  false,
+                                    "printerQueueMutationAuthorized":  false,
+                                    "ippRequestAuthorized":  false,
+                                    "phoneControlAuthorized":  false,
+                                    "adbAuthorized":  false,
+                                    "bluetoothPairingAuthorized":  false,
+                                    "routerLoginAuthorized":  false,
+                                    "routerCredentialUseAuthorized":  false,
+                                    "networkScanAuthorized":  false,
+                                    "configMutationAuthorized":  false,
+                                    "bridgeDeployAuthorized":  false,
+                                    "protocolTranslatorAuthorized":  false
+                                },
+    "acceptance_gates_for_348":  [
+                                     "347F device layer index contract clean",
+                                     "346 router status summary clean",
+                                     "339 phone satellite summary clean",
+                                     "332 printer locked-stub summary clean",
+                                     "319 device readiness summary clean",
+                                     "Clear Skies intact",
+                                     "GET-only API route only",
+                                     "no POST action route",
+                                     "no device control",
+                                     "no onboarding execution",
+                                     "no printer action",
+                                     "no phone action",
+                                     "no router action",
+                                     "no bridge deploy",
+                                     "no physical action lane"
+                                 ],
+    "patch_applied_in_347F":  false,
+    "source_files_created_in_347F":  false,
+    "frontend_files_created_in_347F":  false,
+    "api_routes_created_in_347F":  false,
+    "docker_created_in_347F":  false,
+    "process_started_in_347F":  false,
+    "process_restarted_in_347F":  false,
+    "process_stopped_in_347F":  false,
+    "valid_save_performed_in_347F":  false,
+    "enrichment_run_in_347F":  false,
+    "printer_action_performed":  false,
+    "print_job_submitted":  false,
+    "printer_queue_mutated":  false,
+    "ipp_request_sent_to_printer":  false,
+    "adb_invoked":  false,
+    "phone_control_performed":  false,
+    "router_login_performed":  false,
+    "router_credentials_used":  false,
+    "router_admin_page_opened":  false,
+    "router_config_read":  false,
+    "router_config_mutated":  false,
+    "router_rebooted":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "protocol_translator_deployed":  false,
+    "iot_bridge_deployed":  false,
+    "onboarding_performed":  false,
+    "device_control_performed":  false,
+    "execution_performed":  false,
+    "physical_action_lane_performed":  false,
+    "write_scope":  "PHASE_44_DEVICE_LAYER_INDEX_CONTRACT_LOCK_SHAPE_FIX_ONLY",
+    "lock_shape_audit":  {
+                             "printer_summary":  {
+                                                     "name":  "printer-summary",
+                                                     "locked":  true,
+                                                     "direct_locked":  false,
+                                                     "nested_locked":  false,
+                                                     "safety_locked":  true,
+                                                     "proof_text_locked":  true,
+                                                     "fallback_clean_summary":  true
+                                                 },
+                             "printer_policy":  {
+                                                    "name":  "printer-policy",
+                                                    "locked":  true,
+                                                    "direct_locked":  false,
+                                                    "nested_locked":  false,
+                                                    "safety_locked":  true,
+                                                    "proof_text_locked":  true,
+                                                    "fallback_clean_summary":  true
+                                                },
+                             "phone_summary":  {
+                                                   "name":  "phone-summary",
+                                                   "locked":  true,
+                                                   "direct_locked":  true,
+                                                   "nested_locked":  false,
+                                                   "safety_locked":  true,
+                                                   "proof_text_locked":  true,
+                                                   "fallback_clean_summary":  true
+                                               },
+                             "router_summary":  {
+                                                    "name":  "router-summary",
+                                                    "locked":  true,
+                                                    "direct_locked":  true,
+                                                    "nested_locked":  false,
+                                                    "safety_locked":  true,
+                                                    "proof_text_locked":  true,
+                                                    "fallback_clean_summary":  true
+                                                },
+                             "completed_apis_locked":  true
+                         },
+    "live_state":  {
+                       "clear_skies":  true,
+                       "completed_pages_ok":  true,
+                       "completed_apis_ok":  true,
+                       "completed_apis_locked":  true,
+                       "runtime_process_probe_count":  28,
+                       "network_adapter_probe_count":  7
+                   },
+    "proof_chain":  {
+                        "router_summary_346_clean":  true,
+                        "phone_summary_339_clean":  true,
+                        "printer_summary_332_clean":  true,
+                        "device_readiness_summary_319_clean":  true
+                    },
+    "safety":  {
+                   "no_patch_in_347F":  true,
+                   "no_process_start_in_347F":  true,
+                   "no_process_restart_in_347F":  true,
+                   "no_process_stop_in_347F":  true,
+                   "no_docker_created_in_347F":  true,
+                   "no_save_in_347F":  true,
+                   "no_printer_action":  true,
+                   "no_phone_action":  true,
+                   "no_router_action":  true,
+                   "no_execution":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_pairing":  true,
+                   "no_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "348-apply-device-layer-index-get-only-ui-no-execute.ps1"
+}

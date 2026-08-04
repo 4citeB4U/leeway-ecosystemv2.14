@@ -1,0 +1,55 @@
+{
+    "schema":  "leeway.agent-lee.discovery.capability.v1",
+    "id":  "telegram.messaging.discovery",
+    "name":  "Telegram Messaging Discovery",
+    "status":  "DISCOVERABLE",
+    "provider":  "telegram",
+    "providerType":  "bot_api",
+    "channel":  "text",
+    "operationIds":  [
+                         "telegram.send_text"
+                     ],
+    "intentPhrases":  [
+                          "send a text",
+                          "text me",
+                          "send me a message",
+                          "send a telegram",
+                          "message me on telegram",
+                          "notify me",
+                          "send this to my phone",
+                          "send this report to me",
+                          "send the update by text"
+                      ],
+    "routingRules":  {
+                         "whenUserAsksToSendText":  "telegram.send_text",
+                         "whenUserAsksToTextMe":  "telegram.send_text",
+                         "defaultTextProvider":  "telegram",
+                         "approvalRequired":  true
+                     },
+    "envRequired":  [
+                        "TELEGRAM_BOT_TOKEN",
+                        "TELEGRAM_CHAT_ID"
+                    ],
+    "envAliases":  {
+                       "token":  [
+                                     "TELEGRAM_BOT_TOKEN",
+                                     "AGENT_LEE_TELEGRAM_BOT_TOKEN",
+                                     "LEEWAY_TELEGRAM_BOT_TOKEN",
+                                     "TELEGRAM_API_TOKEN",
+                                     "TG_BOT_TOKEN",
+                                     "TELEGRAM_TOKEN",
+                                     "BOT_TOKEN"
+                                 ],
+                       "chat_id":  [
+                                       "TELEGRAM_CHAT_ID",
+                                       "AGENT_LEE_TELEGRAM_CHAT_ID",
+                                       "LEEWAY_TELEGRAM_CHAT_ID",
+                                       "LEONARD_TELEGRAM_CHAT_ID",
+                                       "TELEGRAM_USER_CHAT_ID",
+                                       "TG_CHAT_ID",
+                                       "TELEGRAM_TARGET_CHAT_ID"
+                                   ]
+                   },
+    "safeDisclosure":  "Agent Lee can send text messages through the configured Telegram bot after user approval.",
+    "createdAt":  "2026-06-28T16:28:09.6458249Z"
+}

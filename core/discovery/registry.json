@@ -1,0 +1,739 @@
+{
+  "schema": "leeway.discovery.registry.v1",
+  "created_at": "2026-06-21T21:58:44.729784",
+  "components": {
+    "sea-core": {
+      "component_id": "sea-core",
+      "component_type": "execution_engine",
+      "capabilities": [
+        "single_execution_authority",
+        "governance_validation",
+        "receipt_generation",
+        "deterministic_timing",
+        "subsystem_orchestration"
+      ],
+      "location": "core/sea/sea_core.py",
+      "registered_at": "2026-06-21T21:58:44.729961",
+      "status": "registered",
+      "metadata": {
+        "tick_rate": 0.01,
+        "frequency_hz": 100,
+        "layer": "execution",
+        "sublayer": "sea-core",
+        "leeway_standard": "SEA-100Hz-deterministic"
+      }
+    },
+    "governance-layer": {
+      "component_id": "governance-layer",
+      "component_type": "validation_engine",
+      "capabilities": [
+        "law_enforcement",
+        "standards_enforcement",
+        "inline_validation"
+      ],
+      "location": "core/governance/",
+      "registered_at": "2026-06-21T21:58:44.731876",
+      "status": "registered",
+      "metadata": {
+        "laws": 79,
+        "standards": 8,
+        "layer": "governance",
+        "sublayer": "validation",
+        "leeway_standard": "79-laws-8-standards"
+      }
+    },
+    "9e-learning-system": {
+      "component_id": "9e-learning-system",
+      "component_type": "cognitive_engine",
+      "capabilities": [
+        "reflection",
+        "pattern_extraction",
+        "learning_compilation",
+        "identity_mutation",
+        "cache_injection"
+      ],
+      "location": "core/reasoning/receipt_system/",
+      "registered_at": "2026-06-21T21:58:44.733042",
+      "status": "registered",
+      "metadata": {
+        "semantic_versioning": true,
+        "layer": "cognitive",
+        "sublayer": "learning",
+        "leeway_standard": "9E-semantic-versioning"
+      }
+    },
+    "identity-core": {
+      "component_id": "identity-core",
+      "component_type": "identity_engine",
+      "capabilities": [
+        "identity_validation",
+        "law_enforcement",
+        "authority_validation",
+        "evolution_boundaries"
+      ],
+      "location": "core/identity/identity_core.py",
+      "registered_at": "2026-06-21T21:58:44.734236",
+      "status": "registered",
+      "metadata": {
+        "agent_id": "agent-lee",
+        "immutable_laws": 10,
+        "values": 8,
+        "layer": "identity",
+        "sublayer": "core",
+        "leeway_standard": "10-immutable-laws"
+      }
+    },
+    "aloe-observation-engine": {
+      "component_id": "aloe-observation-engine",
+      "component_type": "observation_engine",
+      "capabilities": [
+        "monitor_detection",
+        "cursor_tracking",
+        "process_monitoring",
+        "system_state_observation"
+      ],
+      "location": "agent-lee-coding-mode/observation-engine/",
+      "registered_at": "2026-06-21T21:58:44.735647",
+      "status": "registered",
+      "metadata": {
+        "modules": [
+          "ALOE-Monitor",
+          "ALOE-State"
+        ],
+        "layer": "observation",
+        "sublayer": "system-state",
+        "leeway_standard": "ALOE-monitor-state"
+      }
+    },
+    "desktop-runtime": {
+      "component_id": "desktop-runtime",
+      "component_type": "runtime_server",
+      "capabilities": [
+        "browser_automation",
+        "consent_enforcement",
+        "voice_loop",
+        "camera_bridge"
+      ],
+      "location": "agent-lee-coding-mode/desktop-runtime/server.mjs",
+      "registered_at": "2026-06-21T21:58:44.736894",
+      "status": "registered",
+      "metadata": {
+        "port": 8091,
+        "playwright": true,
+        "layer": "runtime",
+        "sublayer": "desktop-server",
+        "leeway_standard": "consent-enforcement"
+      }
+    },
+    "agent-lee-router": {
+      "component_id": "agent-lee-router",
+      "component_type": "routing_server",
+      "capabilities": [
+        "model_routing",
+        "lane_management",
+        "timeout_coordination"
+      ],
+      "location": "agent-lee-coding-mode/router/server-brainfix.mjs",
+      "registered_at": "2026-06-21T21:58:44.738045",
+      "status": "registered",
+      "metadata": {
+        "port": 8080,
+        "layer": "routing",
+        "sublayer": "model-router",
+        "leeway_standard": "lane-management"
+      }
+    },
+    "command-brain": {
+      "component_id": "command-brain",
+      "component_type": "orchestration_engine",
+      "capabilities": [
+        "intent_parsing",
+        "command_orchestration",
+        "execution_bridge",
+        "voice_identity"
+      ],
+      "location": "core/reasoning/command_brain/",
+      "registered_at": "2026-06-21T21:58:44.739202",
+      "status": "registered",
+      "metadata": {
+        "voice_law_compliant": true,
+        "layer": "orchestration",
+        "sublayer": "command-orchestration",
+        "leeway_standard": "voice-law-compliant"
+      }
+    },
+    "discovery-kernel": {
+      "component_id": "discovery-kernel",
+      "component_type": "discovery_engine",
+      "capabilities": [
+        "topology_registry",
+        "bootstrap_import",
+        "receipt_binding",
+        "component_discovery"
+      ],
+      "location": "core/discovery/",
+      "registered_at": "2026-06-21T21:58:44.740382",
+      "status": "registered",
+      "metadata": {
+        "enforcement": true,
+        "layer": "discovery",
+        "sublayer": "topology-registry",
+        "leeway_standard": "discovery-enforcement"
+      }
+    },
+    "agent-lee-runtime-service": {
+      "component_id": "agent-lee-runtime-service",
+      "component_type": "service",
+      "capabilities": [
+        "24/7_persistence",
+        "startup_automation",
+        "failure_recovery",
+        "health_monitoring"
+      ],
+      "location": "core/runtime/agent_lee_service.py",
+      "registered_at": "2026-06-21T21:58:44.741536",
+      "status": "registered",
+      "metadata": {
+        "windows_service": true,
+        "pywin32_required": true,
+        "layer": "runtime",
+        "sublayer": "service-persistence",
+        "leeway_standard": "24-7-persistence"
+      }
+    },
+    "aloe-screen-capture": {
+      "component_id": "aloe-screen-capture",
+      "component_type": "observation",
+      "capabilities": [
+        "screen-capture",
+        "screenshot-save"
+      ],
+      "location": "agent-lee-coding-mode/observation-engine/modules/ALOE-Screen.psm1",
+      "registered_at": "2026-06-21T23:12:19.770150",
+      "status": "registered",
+      "metadata": {
+        "name": "ALOE Screen Capture",
+        "version": "1.0.0",
+        "module_type": "PowerShell",
+        "layer": "observation",
+        "sublayer": "screen-vision"
+      }
+    },
+    "aloe-ocr": {
+      "component_id": "aloe-ocr",
+      "component_type": "observation",
+      "capabilities": [
+        "ocr-text-extraction",
+        "ocr-region-extraction"
+      ],
+      "location": "agent-lee-coding-mode/observation-engine/modules/ALOE-OCR.psm1",
+      "registered_at": "2026-06-21T23:12:19.772222",
+      "status": "registered",
+      "metadata": {
+        "name": "ALOE OCR",
+        "version": "1.0.0",
+        "module_type": "PowerShell",
+        "layer": "observation",
+        "sublayer": "screen-vision",
+        "requires": "Windows.Media.Ocr"
+      }
+    },
+    "aloe-window-detection": {
+      "component_id": "aloe-window-detection",
+      "component_type": "observation",
+      "capabilities": [
+        "window-list",
+        "window-focus-detection",
+        "window-bounds"
+      ],
+      "location": "agent-lee-coding-mode/observation-engine/modules/ALOE-Window.psm1",
+      "registered_at": "2026-06-21T23:12:19.773569",
+      "status": "registered",
+      "metadata": {
+        "name": "ALOE Window Detection",
+        "version": "1.0.0",
+        "module_type": "PowerShell",
+        "layer": "observation",
+        "sublayer": "screen-vision"
+      }
+    },
+    "mouse-controller": {
+      "component_id": "mouse-controller",
+      "component_type": "action",
+      "capabilities": [
+        "mouse-move",
+        "mouse-click",
+        "mouse-drag"
+      ],
+      "location": "core/action/mouse_controller.py",
+      "registered_at": "2026-06-21T23:12:19.775276",
+      "status": "registered",
+      "metadata": {
+        "name": "Mouse Controller",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "action",
+        "sublayer": "desktop-control",
+        "requires": "pyautogui"
+      }
+    },
+    "keyboard-controller": {
+      "component_id": "keyboard-controller",
+      "component_type": "action",
+      "capabilities": [
+        "keyboard-type",
+        "keyboard-hotkey",
+        "keyboard-press"
+      ],
+      "location": "core/action/keyboard_controller.py",
+      "registered_at": "2026-06-21T23:12:19.776751",
+      "status": "registered",
+      "metadata": {
+        "name": "Keyboard Controller",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "action",
+        "sublayer": "desktop-control",
+        "requires": "pyautogui"
+      }
+    },
+    "app-launcher": {
+      "component_id": "app-launcher",
+      "component_type": "action",
+      "capabilities": [
+        "app-launch",
+        "app-launch-verify"
+      ],
+      "location": "core/action/app_launcher.py",
+      "registered_at": "2026-06-21T23:12:19.778525",
+      "status": "registered",
+      "metadata": {
+        "name": "Application Launcher",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "action",
+        "sublayer": "desktop-control"
+      }
+    },
+    "goal-parser": {
+      "component_id": "goal-parser",
+      "component_type": "orchestration",
+      "capabilities": [
+        "goal-parse",
+        "goal-validate"
+      ],
+      "location": "core/orchestration/goal_parser.py",
+      "registered_at": "2026-06-21T23:12:19.780179",
+      "status": "registered",
+      "metadata": {
+        "name": "Goal Parser",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "orchestration",
+        "sublayer": "autonomous-loop"
+      }
+    },
+    "action-planner": {
+      "component_id": "action-planner",
+      "component_type": "orchestration",
+      "capabilities": [
+        "action-plan",
+        "action-plan-optimize"
+      ],
+      "location": "core/orchestration/action_planner.py",
+      "registered_at": "2026-06-21T23:12:19.781699",
+      "status": "registered",
+      "metadata": {
+        "name": "Action Planner",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "orchestration",
+        "sublayer": "autonomous-loop"
+      }
+    },
+    "execution-orchestrator": {
+      "component_id": "execution-orchestrator",
+      "component_type": "orchestration",
+      "capabilities": [
+        "action-execute",
+        "action-monitor"
+      ],
+      "location": "core/orchestration/execution_orchestrator.py",
+      "registered_at": "2026-06-21T23:12:19.783089",
+      "status": "registered",
+      "metadata": {
+        "name": "Execution Orchestrator",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "orchestration",
+        "sublayer": "autonomous-loop"
+      }
+    },
+    "result-verifier": {
+      "component_id": "result-verifier",
+      "component_type": "orchestration",
+      "capabilities": [
+        "result-verify",
+        "result-compare"
+      ],
+      "location": "core/orchestration/result_verifier.py",
+      "registered_at": "2026-06-21T23:12:19.784676",
+      "status": "registered",
+      "metadata": {
+        "name": "Result Verifier",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "orchestration",
+        "sublayer": "autonomous-loop"
+      }
+    },
+    "failure-recovery": {
+      "component_id": "failure-recovery",
+      "component_type": "orchestration",
+      "capabilities": [
+        "failure-detect",
+        "failure-recover"
+      ],
+      "location": "core/orchestration/failure_recovery.py",
+      "registered_at": "2026-06-21T23:12:19.786232",
+      "status": "registered",
+      "metadata": {
+        "name": "Failure Recovery",
+        "version": "1.0.0",
+        "module_type": "Python",
+        "layer": "orchestration",
+        "sublayer": "autonomous-loop"
+      }
+    }
+  },
+  "capabilities": {
+    "single_execution_authority": [
+      "sea-core"
+    ],
+    "governance_validation": [
+      "sea-core"
+    ],
+    "receipt_generation": [
+      "sea-core"
+    ],
+    "deterministic_timing": [
+      "sea-core"
+    ],
+    "subsystem_orchestration": [
+      "sea-core"
+    ],
+    "law_enforcement": [
+      "governance-layer",
+      "identity-core"
+    ],
+    "standards_enforcement": [
+      "governance-layer"
+    ],
+    "inline_validation": [
+      "governance-layer"
+    ],
+    "reflection": [
+      "9e-learning-system"
+    ],
+    "pattern_extraction": [
+      "9e-learning-system"
+    ],
+    "learning_compilation": [
+      "9e-learning-system"
+    ],
+    "identity_mutation": [
+      "9e-learning-system"
+    ],
+    "cache_injection": [
+      "9e-learning-system"
+    ],
+    "identity_validation": [
+      "identity-core"
+    ],
+    "authority_validation": [
+      "identity-core"
+    ],
+    "evolution_boundaries": [
+      "identity-core"
+    ],
+    "monitor_detection": [
+      "aloe-observation-engine"
+    ],
+    "cursor_tracking": [
+      "aloe-observation-engine"
+    ],
+    "process_monitoring": [
+      "aloe-observation-engine"
+    ],
+    "system_state_observation": [
+      "aloe-observation-engine"
+    ],
+    "browser_automation": [
+      "desktop-runtime"
+    ],
+    "consent_enforcement": [
+      "desktop-runtime"
+    ],
+    "voice_loop": [
+      "desktop-runtime"
+    ],
+    "camera_bridge": [
+      "desktop-runtime"
+    ],
+    "model_routing": [
+      "agent-lee-router"
+    ],
+    "lane_management": [
+      "agent-lee-router"
+    ],
+    "timeout_coordination": [
+      "agent-lee-router"
+    ],
+    "intent_parsing": [
+      "command-brain"
+    ],
+    "command_orchestration": [
+      "command-brain"
+    ],
+    "execution_bridge": [
+      "command-brain"
+    ],
+    "voice_identity": [
+      "command-brain"
+    ],
+    "topology_registry": [
+      "discovery-kernel"
+    ],
+    "bootstrap_import": [
+      "discovery-kernel"
+    ],
+    "receipt_binding": [
+      "discovery-kernel"
+    ],
+    "component_discovery": [
+      "discovery-kernel"
+    ],
+    "24/7_persistence": [
+      "agent-lee-runtime-service"
+    ],
+    "startup_automation": [
+      "agent-lee-runtime-service"
+    ],
+    "failure_recovery": [
+      "agent-lee-runtime-service"
+    ],
+    "health_monitoring": [
+      "agent-lee-runtime-service"
+    ],
+    "screen-capture": [
+      "aloe-screen-capture",
+      "aloe-screen-capture",
+      "aloe-screen-capture",
+      "aloe-screen-capture"
+    ],
+    "screenshot-save": [
+      "aloe-screen-capture",
+      "aloe-screen-capture",
+      "aloe-screen-capture",
+      "aloe-screen-capture"
+    ],
+    "ocr-text-extraction": [
+      "aloe-ocr",
+      "aloe-ocr",
+      "aloe-ocr"
+    ],
+    "ocr-region-extraction": [
+      "aloe-ocr",
+      "aloe-ocr",
+      "aloe-ocr"
+    ],
+    "window-list": [
+      "aloe-window-detection",
+      "aloe-window-detection",
+      "aloe-window-detection"
+    ],
+    "window-focus-detection": [
+      "aloe-window-detection",
+      "aloe-window-detection",
+      "aloe-window-detection"
+    ],
+    "window-bounds": [
+      "aloe-window-detection",
+      "aloe-window-detection",
+      "aloe-window-detection"
+    ],
+    "mouse-move": [
+      "mouse-controller",
+      "mouse-controller",
+      "mouse-controller"
+    ],
+    "mouse-click": [
+      "mouse-controller",
+      "mouse-controller",
+      "mouse-controller"
+    ],
+    "mouse-drag": [
+      "mouse-controller",
+      "mouse-controller",
+      "mouse-controller"
+    ],
+    "keyboard-type": [
+      "keyboard-controller",
+      "keyboard-controller",
+      "keyboard-controller"
+    ],
+    "keyboard-hotkey": [
+      "keyboard-controller",
+      "keyboard-controller",
+      "keyboard-controller"
+    ],
+    "keyboard-press": [
+      "keyboard-controller",
+      "keyboard-controller",
+      "keyboard-controller"
+    ],
+    "app-launch": [
+      "app-launcher",
+      "app-launcher",
+      "app-launcher"
+    ],
+    "app-launch-verify": [
+      "app-launcher",
+      "app-launcher",
+      "app-launcher"
+    ],
+    "goal-parse": [
+      "goal-parser",
+      "goal-parser",
+      "goal-parser"
+    ],
+    "goal-validate": [
+      "goal-parser",
+      "goal-parser",
+      "goal-parser"
+    ],
+    "action-plan": [
+      "action-planner",
+      "action-planner",
+      "action-planner"
+    ],
+    "action-plan-optimize": [
+      "action-planner",
+      "action-planner",
+      "action-planner"
+    ],
+    "action-execute": [
+      "execution-orchestrator",
+      "execution-orchestrator",
+      "execution-orchestrator"
+    ],
+    "action-monitor": [
+      "execution-orchestrator",
+      "execution-orchestrator",
+      "execution-orchestrator"
+    ],
+    "result-verify": [
+      "result-verifier",
+      "result-verifier",
+      "result-verifier"
+    ],
+    "result-compare": [
+      "result-verifier",
+      "result-verifier",
+      "result-verifier"
+    ],
+    "failure-detect": [
+      "failure-recovery",
+      "failure-recovery",
+      "failure-recovery"
+    ],
+    "failure-recover": [
+      "failure-recovery",
+      "failure-recovery",
+      "failure-recovery"
+    ]
+  },
+  "health_checks": {
+    "sea-core": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.742976",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "governance-layer": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.744325",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "9e-learning-system": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.745546",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "identity-core": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.746873",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "aloe-observation-engine": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.748203",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "desktop-runtime": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.749447",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "agent-lee-router": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.750693",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "command-brain": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.751963",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "discovery-kernel": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.753330",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    },
+    "agent-lee-runtime-service": {
+      "status": "HEALTHY",
+      "reported_at": "2026-06-21T21:58:44.754605",
+      "details": {
+        "registered": true,
+        "operational": true
+      }
+    }
+  },
+  "updated_at": "2026-06-21T23:12:19.786237"
+}

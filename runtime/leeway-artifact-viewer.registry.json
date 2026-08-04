@@ -1,0 +1,17 @@
+{
+  "endpoints": {
+    "create_latest_room": "/rooms/create/latest",
+    "health": "/health",
+    "latest_room": "/rooms/latest",
+    "latest_artifact": "/artifacts/latest",
+    "status": "/status"
+  },
+  "docker_url": "http://leeway_artifact_viewer:5328",
+  "container": "leeway_artifact_viewer",
+  "role": "viewable artifact rooms and public local links for PDFs, notebooks, websites, images, and 3D viewers",
+  "image": "leeway_artifact_viewer:local",
+  "service": "leeway_artifact_viewer",
+  "host_url": "http://localhost:5328",
+  "created_at": "2026-07-03T23:21:26.1901847-05:00",
+  "lan_url": "http://172.26.160.1:5328"
+}

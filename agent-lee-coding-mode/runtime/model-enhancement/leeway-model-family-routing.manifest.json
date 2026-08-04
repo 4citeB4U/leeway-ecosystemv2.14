@@ -1,0 +1,16 @@
+{
+  "schema": "leeway.model-routing.manifest.v1",
+  "routingId": "LEEWAY_QWEN_MODEL_FAMILY_ROUTING",
+  "provider": "OLLAMA_LOCAL",
+  "containerName": "leeway_ollama",
+  "ollamaHost": "http://127.0.0.1:11434",
+  "models": {
+    "reasoning": "qwen3:latest",
+    "vision": "qwen2.5vl:7b",
+    "coderPrimary": "qwen2.5-coder:latest",
+    "coderFallback": "qwen2.5-coder:7b"
+  },
+  "status": "LEEWAY_MODEL_ROUTING_READY",
+  "noCloudFallback": true,
+  "noModelReplacement": true
+}

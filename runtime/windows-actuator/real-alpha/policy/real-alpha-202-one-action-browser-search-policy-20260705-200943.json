@@ -1,0 +1,11 @@
+﻿{
+    "version":  "LEEWAY_EXECUTE_APPROVED_BROWSER_SEARCH_ONE_ACTION_THEN_LOCKBACK_2026-07-05",
+    "created_at":  "2026-07-05T20:09:43",
+    "mode":  "ONE_ACTION_APPROVED_BROWSER_SEARCH_202",
+    "approval_id":  "pending-real_browser_search-20260705-194718",
+    "allowed_action":  "real_browser_search",
+    "query":  "Leeway Agent Lee post-execution proof",
+    "isolated_module":  "leeway_real_windows_actuator_alpha_202_20260705_200943",
+    "lockback_required":  true,
+    "bom_safe_json_read":  true
+}

@@ -1,0 +1,459 @@
+﻿{
+    "version":  "LEEWAY_DOCKER_DISCOVERY_LAYER_RESOLUTION_436",
+    "phase":  58,
+    "timestamp":  "2026-07-07T00:34:50",
+    "verdict":  "LEEWAY_DOCKER_DISCOVERY_LAYER_RESOLUTION_436_NO_EXECUTE_CLEAN_DISCOVERY_PRESENT_UNRESOLVED",
+    "discovery_resolution_contract_only":  true,
+    "docker_focused_scope":  true,
+    "broad_ecosystem_scan_performed":  false,
+    "known_discovery_paths_searched_first":  true,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "runtime_execution_allowed_now":  false,
+    "device_control_allowed_now":  false,
+    "physical_action_allowed_now":  false,
+    "package_creation_allowed_now":  false,
+    "purpose":  "Verify the Discovery Layer in known Leeway runtime, Archive, registry, operator carry-forward, and Docker responsibility locations before declaring it missing or creating new infrastructure.",
+    "inherited":  {
+                      "inventory_433B_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-55B-docker-layer-focused-inventory\\latest\\docker-layer-focused-inventory-latest.json",
+                      "inventory_433B_available":  true,
+                      "coherence_434_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-56-docker-contained-architecture-coherence-map\\latest\\docker-contained-architecture-coherence-map-latest.json",
+                      "coherence_434_available":  true,
+                      "carry_forward_435C_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-57C-package-carry-forward-manifest\\latest\\package-carry-forward-manifest-latest.json",
+                      "carry_forward_435C_available":  true,
+                      "evidence_closeout_435B_final_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-57B-FINAL-operator-evidence-mirror-closeout\\latest\\operator-evidence-mirror-closeout-latest.json",
+                      "evidence_closeout_435B_final_available":  true
+                  },
+    "roots":  {
+                  "ecosystem_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                  "standards_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards",
+                  "runtime_fabric_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric",
+                  "cerebral_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral",
+                  "digital_brain_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                  "operator_archive_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest"
+              },
+    "known_discovery_artifacts":  [
+                                      {
+                                          "role":  "sentinel_enrichment_master_list",
+                                          "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                                          "exists":  true,
+                                          "length":  83179,
+                                          "last_write_time":  "2026-07-06T10:40:23",
+                                          "json_loadable":  true,
+                                          "has_load_error":  false,
+                                          "top_level_keys":  [
+                                                                 "version",
+                                                                 "phase",
+                                                                 "timestamp",
+                                                                 "verdict",
+                                                                 "enrichment_only",
+                                                                 "no_execution",
+                                                                 "clear_skies",
+                                                                 "source",
+                                                                 "totals",
+                                                                 "local_interfaces",
+                                                                 "enriched_assets",
+                                                                 "onboarding_queue",
+                                                                 "policy",
+                                                                 "safety",
+                                                                 "recommended_next"
+                                                             ]
+                                      },
+                                      {
+                                          "role":  "phase_41_identity_confirmation_candidates",
+                                          "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-identity-confirmation\\latest\\phase-41-identity-confirmation-plan-latest.json",
+                                          "exists":  true,
+                                          "length":  199583,
+                                          "last_write_time":  "2026-07-06T11:37:33",
+                                          "json_loadable":  true,
+                                          "has_load_error":  false,
+                                          "top_level_keys":  [
+                                                                 "version",
+                                                                 "phase",
+                                                                 "timestamp",
+                                                                 "verdict",
+                                                                 "plan_only",
+                                                                 "no_execution",
+                                                                 "no_onboarding",
+                                                                 "no_pairing",
+                                                                 "no_protocol_translator",
+                                                                 "no_iot_bridge",
+                                                                 "no_physical_action_lane",
+                                                                 "clear_skies",
+                                                                 "source_proofs",
+                                                                 "totals",
+                                                                 "phase_41_policy",
+                                                                 "route_plan",
+                                                                 "identity_candidates",
+                                                                 "safety",
+                                                                 "recommended_next"
+                                                             ]
+                                      },
+                                      {
+                                          "role":  "phase_41_human_identity_review_state",
+                                          "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state\\latest\\human-identity-review-state-latest.json",
+                                          "exists":  true,
+                                          "length":  15103,
+                                          "last_write_time":  "2026-07-06T14:38:15",
+                                          "json_loadable":  true,
+                                          "has_load_error":  false,
+                                          "top_level_keys":  [
+                                                                 "version",
+                                                                 "created_at",
+                                                                 "updated_at",
+                                                                 "write_scope",
+                                                                 "execution_authorized",
+                                                                 "device_control_authorized",
+                                                                 "onboarding_authorized",
+                                                                 "records"
+                                                             ]
+                                      }
+                                  ],
+    "discovery_evidence_signals":  [
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_SENTINEL_LATEST",
+                                           "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                                           "present":  true,
+                                           "json_loadable":  true,
+                                           "signal":  "Sentinel enrichment master list"
+                                       },
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_IDENTITY_CONFIRMATION",
+                                           "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-identity-confirmation\\latest\\phase-41-identity-confirmation-plan-latest.json",
+                                           "present":  true,
+                                           "json_loadable":  true,
+                                           "signal":  "Phase 41 identity confirmation candidates"
+                                       },
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_HUMAN_REVIEW_STATE",
+                                           "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state\\latest\\human-identity-review-state-latest.json",
+                                           "present":  true,
+                                           "json_loadable":  true,
+                                           "signal":  "Human identity review state"
+                                       },
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_DEVICE_REGISTRY_PROOFS",
+                                           "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+                                           "present":  true,
+                                           "file_count":  1,
+                                           "signal":  "Device operator master registry proof chain"
+                                       },
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_WINS_REGISTRY",
+                                           "source":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Wins-Registry",
+                                           "archived_source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Wins-Registry",
+                                           "present":  true,
+                                           "file_count":  2,
+                                           "signal":  "Agent Lee wins registry / success registry"
+                                       },
+                                       {
+                                           "signal_id":  "DISCOVERY_SIGNAL_OPERATOR_ARCHIVE_CARRY_FORWARD",
+                                           "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest",
+                                           "present":  true,
+                                           "file_count":  1,
+                                           "signal":  "Discovery governance carried forward into E: Archive"
+                                       }
+                                   ],
+    "device_registry_proofs":  {
+                                   "role":  "device_registry_proof_chain",
+                                   "pattern":  "*device*registry*.json",
+                                   "full_name":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator\\LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_20260705-172759.receipt.json",
+                                   "name":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_20260705-172759.receipt.json",
+                                   "length":  8690,
+                                   "last_write_time":  "2026-07-05T17:28:00"
+                               },
+    "wins_registry_files":  [
+                                {
+                                    "role":  "agent_lee_wins_registry_source",
+                                    "pattern":  "*registry*.json",
+                                    "full_name":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Wins-Registry\\Run-20260705-162517\\json\\agentlee-wins-path-checks.json",
+                                    "name":  "agentlee-wins-path-checks.json",
+                                    "length":  14304,
+                                    "last_write_time":  "2026-07-05T16:25:22"
+                                },
+                                {
+                                    "role":  "agent_lee_wins_registry_archived",
+                                    "pattern":  "*registry*.json",
+                                    "full_name":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Wins-Registry\\Run-20260705-162517\\json\\agentlee-wins-path-checks.json",
+                                    "name":  "agentlee-wins-path-checks.json",
+                                    "length":  14304,
+                                    "last_write_time":  "2026-07-05T16:25:22"
+                                }
+                            ],
+    "sentinel_discovery_files":  {
+                                     "role":  "sentinel_discovery_files",
+                                     "pattern":  "*discovery*.json",
+                                     "full_name":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\scans\\sentinel-discovery-287-20260706-102524.json",
+                                     "name":  "sentinel-discovery-287-20260706-102524.json",
+                                     "length":  32285,
+                                     "last_write_time":  "2026-07-06T10:25:30"
+                                 },
+    "identity_discovery_files":  {
+                                     "role":  "identity_review_and_confirmation_files",
+                                     "pattern":  "*human-identity-review*.json",
+                                     "full_name":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state\\latest\\human-identity-review-state-latest.json",
+                                     "name":  "human-identity-review-state-latest.json",
+                                     "length":  15103,
+                                     "last_write_time":  "2026-07-06T14:38:15"
+                                 },
+    "operator_archive_discovery_files":  {
+                                             "role":  "operator_archive_discovery_carry_forward",
+                                             "pattern":  "*readiness*.json",
+                                             "full_name":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Device-Layer\\Run-347F-20260706-171415\\json\\device-readiness-safety-347F.json",
+                                             "name":  "device-readiness-safety-347F.json",
+                                             "length":  4017,
+                                             "last_write_time":  "2026-07-06T17:14:18"
+                                         },
+    "discovery_docker_candidates":  [
+                                        {
+                                            "container":  "leeway_device_operator",
+                                            "image":  "leeway_device_operator:device-layer-163b",
+                                            "status":  "Up 14 hours",
+                                            "role":  "master_discovery_coordinator_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_device_operator_rollback_163b_20260705-173630",
+                                            "image":  "leeway_device_operator:device-layer-163",
+                                            "status":  "Exited (0) 31 hours ago",
+                                            "role":  "master_discovery_coordinator_candidate",
+                                            "running_now":  false,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_executive_runtime",
+                                            "image":  "leeway_executive_runtime:truth-sync",
+                                            "status":  "Up 14 hours",
+                                            "role":  "truth_sync_human_review_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_agent_skills",
+                                            "image":  "leeway_agent_skills:truth-sync",
+                                            "status":  "Up 14 hours",
+                                            "role":  "truth_sync_human_review_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "agent-lee-telegram-shell",
+                                            "image":  "agent-lee-telegram-shell:plan-aware-20260704-092048",
+                                            "status":  "Up 14 hours",
+                                            "role":  "remote_alert_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_device_operator_rollback_20260705-173336",
+                                            "image":  "leeway_device_operator:local",
+                                            "status":  "Exited (0) 31 hours ago",
+                                            "role":  "master_discovery_coordinator_candidate",
+                                            "running_now":  false,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_api_gateway",
+                                            "image":  "leeway_api_gateway:local",
+                                            "status":  "Up 14 hours",
+                                            "role":  "runtime_discovery_authority_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+                                            "image":  "agent-lee-telegram-shell:latest",
+                                            "status":  "Exited (137) 3 days ago",
+                                            "role":  "remote_alert_candidate",
+                                            "running_now":  false,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "agent-lee-telegram-vision-lane",
+                                            "image":  "agent-lee-telegram-vision-lane:local",
+                                            "status":  "Exited (255) 3 days ago",
+                                            "role":  "remote_alert_candidate",
+                                            "running_now":  false,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "agent-lee-telegram-shell-backup-20260703-144921",
+                                            "image":  "agent-lee-telegram-shell:latest",
+                                            "status":  "Exited (137) 3 days ago",
+                                            "role":  "remote_alert_candidate",
+                                            "running_now":  false,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        },
+                                        {
+                                            "container":  "leeway_runtime_fabric",
+                                            "image":  "leeway-ecosystemv214-runtime-fabric",
+                                            "status":  "Up 14 hours",
+                                            "role":  "runtime_discovery_authority_candidate",
+                                            "running_now":  true,
+                                            "docker_exec_performed":  false,
+                                            "docker_mutation_performed":  false
+                                        }
+                                    ],
+    "discovery_resolution_decision":  {
+                                          "discovery_layer_missing":  false,
+                                          "discovery_layer_present":  true,
+                                          "discovery_layer_present_in_known_runtime_artifacts":  true,
+                                          "discovery_layer_present_in_operator_archive_carry_forward":  true,
+                                          "discovery_layer_present_in_docker_responsibility_candidates":  true,
+                                          "discovery_layer_fragmented":  true,
+                                          "discovery_layer_100_percent_resolved_for_execution":  false,
+                                          "execution_can_start_now":  false,
+                                          "resolution":  "PRESENT_FRAGMENTED_AND_DOCKER_MERGED_CANDIDATE",
+                                          "required_next":  "Build a Discovery Reassembly Binding Map that ties Sentinel, Identity Confirmation, Human Review, Device Registry, Wins Registry, operator archive carry-forward, and Docker candidates into one governed Discovery authority without execution."
+                                      },
+    "discovery_resolution_gaps":  [
+                                      {
+                                          "gap_id":  "DISCOVERY_RESOLUTION_GAP_FRAGMENTED_SOURCES",
+                                          "severity":  "BLOCKING_BEFORE_EXECUTION",
+                                          "description":  "Discovery exists, but it is split across Sentinel enrichment, identity confirmation, human review state, device registry proofs, wins registry, operator archive carry-forward, and Docker responsibility candidates.",
+                                          "required_resolution":  "Create a Discovery Reassembly Binding Map before execution."
+                                      },
+                                      {
+                                          "gap_id":  "DISCOVERY_RESOLUTION_GAP_MERGED_AUTHORITY_UNPROVEN",
+                                          "severity":  "BLOCKING_BEFORE_EXECUTION",
+                                          "description":  "Discovery appears to be merged into existing Docker participants, but the active authority is not yet proven.",
+                                          "required_resolution":  "Prove which container owns Discovery authority without docker exec or mutation."
+                                      }
+                                  ],
+    "discovery_reassembly_targets":  [
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_01",
+                                             "source":  "Sentinel enrichment",
+                                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                                             "present":  true,
+                                             "target_role":  "raw passive discovery observation"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_02",
+                                             "source":  "Phase 41 identity confirmation",
+                                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-identity-confirmation\\latest\\phase-41-identity-confirmation-plan-latest.json",
+                                             "present":  true,
+                                             "target_role":  "candidate identity bridge"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_03",
+                                             "source":  "Human identity review state",
+                                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state\\latest\\human-identity-review-state-latest.json",
+                                             "present":  true,
+                                             "target_role":  "human-verified identity authority"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_04",
+                                             "source":  "Device operator proof registry",
+                                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+                                             "present":  true,
+                                             "target_role":  "device registry proof chain"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_05",
+                                             "source":  "Agent Lee wins registry",
+                                             "path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Wins-Registry",
+                                             "archived_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest\\AgentLee-Wins-Registry",
+                                             "present":  true,
+                                             "target_role":  "system wins and runtime capability evidence"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_06",
+                                             "source":  "Operator archive carry-forward",
+                                             "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest",
+                                             "present":  true,
+                                             "target_role":  "evidence carried inside E: ecosystem Archive"
+                                         },
+                                         {
+                                             "target_id":  "DISCOVERY_REASSEMBLY_07",
+                                             "source":  "Docker responsibility candidates",
+                                             "path":  "docker ps -a metadata only",
+                                             "present":  true,
+                                             "target_role":  "runtime ownership candidates"
+                                         }
+                                     ],
+    "hard_blocks":  [
+                        "docker_exec",
+                        "docker_start",
+                        "docker_stop",
+                        "docker_restart",
+                        "docker_rm",
+                        "docker_prune",
+                        "docker_build",
+                        "docker_compose_up",
+                        "container_execution",
+                        "runtime_execution",
+                        "agent_lee_runtime_execution",
+                        "network_ping",
+                        "port_scan",
+                        "pnp_scan",
+                        "bluetooth_scan",
+                        "zeroconf_scan",
+                        "upnp_scan",
+                        "ssdp_scan",
+                        "model_execution",
+                        "provider_call",
+                        "tool_execution",
+                        "telegram_posting",
+                        "image_generation",
+                        "voice_generation",
+                        "browser_control",
+                        "device_control",
+                        "physical_action",
+                        "package_creation",
+                        "sdk_distribution"
+                    ],
+    "next_phase_needs":  [
+                             "437 must build Discovery Reassembly Binding Map.",
+                             "437 must unify Sentinel, Identity Confirmation, Human Review, Device Registry, Wins Registry, operator archive carry-forward, and Docker responsibility candidates.",
+                             "437 must not run network discovery, ping, port scan, PnP scan, Bluetooth scan, Zeroconf, UPnP, or SSDP.",
+                             "437 must decide active Discovery authority: Device Operator, Executive Runtime, API Gateway, Runtime Fabric, or future dedicated Discovery container.",
+                             "437 must mark Discovery as present but fragmented if multiple source bodies exist.",
+                             "437 must close the 434 Discovery blocker only if merged authority is proven.",
+                             "437 must keep runtime execution blocked.",
+                             "437 must keep Docker mutation blocked.",
+                             "437 must keep device control blocked.",
+                             "Packaging/distribution remains paused."
+                         ],
+    "counts":  {
+                   "known_discovery_artifact_paths_checked":  3,
+                   "known_discovery_artifacts_present":  3,
+                   "discovery_file_evidence_count":  6,
+                   "device_registry_proofs":  1,
+                   "wins_registry_files":  2,
+                   "sentinel_discovery_files":  1,
+                   "identity_discovery_files":  1,
+                   "operator_archive_discovery_files":  1,
+                   "discovery_docker_candidates":  11,
+                   "discovery_resolution_gaps":  2,
+                   "discovery_reassembly_targets":  7,
+                   "hard_blocks":  29,
+                   "next_phase_needs":  10
+               },
+    "package_created_in_436":  false,
+    "docker_exec_in_436":  false,
+    "docker_mutated_in_436":  false,
+    "runtime_executed_in_436":  false,
+    "agent_lee_executed_in_436":  false,
+    "network_ping_performed":  false,
+    "port_scan_performed":  false,
+    "pnp_scan_performed":  false,
+    "bluetooth_scan_performed":  false,
+    "zeroconf_scan_performed":  false,
+    "upnp_scan_performed":  false,
+    "ssdp_scan_performed":  false,
+    "device_control_performed":  false,
+    "physical_action_lane_performed":  false,
+    "recommended_next_script":  "437-discovery-reassembly-binding-map-no-execute.ps1"
+}

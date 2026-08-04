@@ -1,0 +1,71 @@
+{
+  "agentId": "agent-lee",
+  "agentLeePreferenceLearningEnabled": true,
+  "agentLeeLiveMicRecordingEnabled": false,
+  "updatedAt": "2026-06-11T18:43:29.611Z",
+  "notes": "Local inspectable preference ledger. Never record secrets. Never override explicit current instructions.",
+  "preferences": [
+    {
+      "key": "primaryLanguage",
+      "value": "English",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredUIStyle",
+      "value": "live, modular, node-based, N8N-like, not VS Code clone",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredAppBehavior",
+      "value": "live-editable, movable pieces, interactive canvas",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredDesign",
+      "value": "2D and 3D together",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredOutput",
+      "value": "working live apps, not static mockups",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredOptimization",
+      "value": "runs on Raspberry Pi, phones, small devices",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "preferredBehavior",
+      "value": "speaks progress while working unless in casual conversation",
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "creativeThemes",
+      "value": [
+        "dragons",
+        "knights",
+        "ninjas",
+        "samurai",
+        "kung fu",
+        "modern military",
+        "fantasy chess sets"
+      ],
+      "source": "user_request",
+      "confidence": "explicit"
+    },
+    {
+      "key": "runtimeFabricGoal",
+      "value": "improves and augments device capabilities when connected",
+      "source": "user_request",
+      "confidence": "explicit"
+    }
+  ]
+}

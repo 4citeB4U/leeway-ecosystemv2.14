@@ -1,0 +1,25 @@
+{
+    "schema":  "agent-lee-creation-kernel-3d-merge-hold-v13-3",
+    "updatedAt":  "2026-06-28T00:21:11.7214005Z",
+    "status":  "SOURCE_PATCHED_BUILD_HELD_LOW_RESOURCE",
+    "liveCreationKernel":  {
+                               "container":  "agent-lee-creation-kernel",
+                               "url":  "http://127.0.0.1:8094",
+                               "status":  "READY"
+                           },
+    "source":  {
+                   "appPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\creation-kernel\\app\\main.py",
+                   "sourcePatched":  true,
+                   "has3dExtensionMarker":  true
+               },
+    "staged":  {
+                   "stagedImage":  "agent-lee-creation-kernel:staged-3d",
+                   "stagedContainer":  "NOT_RUNNING_BY_POLICY",
+                   "stagedPort":  "DISABLED_LOW_RESOURCE"
+               },
+    "promotion":  {
+                      "approved":  false,
+                      "reason":  "Build froze/heavy. Promotion requires separate low-resource maintenance script."
+                  },
+    "truth":  "3D belongs inside Creation Kernel, but live 8094 has not been replaced. No fake 3D READY."
+}

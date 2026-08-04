@@ -1,0 +1,58 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_READ_ONLY_ROUTE_REQUIREMENT_256",
+    "timestamp":  "2026-07-05T22:38:16",
+    "family":  "network_mesh",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_NETWORK_MESH_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/network-mesh/discover",
+                                         "purpose":  "Return mesh inventory stub without invoking Tailscale CLI/API or network mutation.",
+                                         "read_only":  true,
+                                         "network_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/network-mesh/status",
+                                         "purpose":  "Return mesh readiness with all mutation lanes disabled and approval required.",
+                                         "read_only":  true,
+                                         "network_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/network-mesh/registry",
+                                         "purpose":  "Return normalized network mesh registry artifact.",
+                                         "read_only":  true,
+                                         "network_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/tailscale/status",
+                                         "purpose":  "Return Tailscale disabled/contract status without running tailscale.",
+                                         "read_only":  true,
+                                         "network_mutation":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/tailscale/policy",
+                                         "purpose":  "Return Tailscale approval policy without contacting Tailscale API.",
+                                         "read_only":  true,
+                                         "network_mutation":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no tailscale CLI",
+                      "no Tailscale API",
+                      "no login",
+                      "no auth key use",
+                      "no tailnet join",
+                      "no ACL mutation",
+                      "no route advertisement",
+                      "no exit node enablement",
+                      "no subnet router enablement",
+                      "no firewall mutation",
+                      "no DNS mutation",
+                      "no tunnel start",
+                      "no network settings mutation"
+                  ]
+}

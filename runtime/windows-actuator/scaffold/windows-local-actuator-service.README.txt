@@ -1,0 +1,30 @@
+﻿LEEWAY WINDOWS LOCAL ACTUATOR SERVICE SCAFFOLD
+Version: LEEWAY_WINDOWS_LOCAL_ACTUATOR_SERVICE_CONTRACT_2026-07-05
+Created: 07/05/2026 17:43:25
+
+This folder is a scaffold only.
+
+It does not start a service.
+It does not move the cursor.
+It does not click.
+It does not type.
+It does not open files.
+It does not print.
+It does not send messages.
+
+The future local service will run on:
+http://127.0.0.1:7331
+
+The service must obey:
+- leeway_device_operator remains the master Device Layer.
+- Windows is a child actuator only.
+- Every physical action requires policy evaluation.
+- Risky actions require approval_id.
+- Every action writes a receipt.
+- No hidden remote control.
+- No credential access.
+- No destructive cleanup.
+- No Docker prune without explicit owner approval.
+
+Next implementation script should be:
+167-build-windows-local-actuator-service-dry-run.ps1

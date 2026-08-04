@@ -1,0 +1,53 @@
+﻿{
+    "version":  "LEEWAY_IOT_DISCOVERY_REGISTRY_CONTRACT_NO_EXECUTE_2026-07-05",
+    "timestamp":  "2026-07-05T20:49:40",
+    "family":  "iot",
+    "device_family_status":  "CONTRACT_CREATED_NOT_PROVEN",
+    "master_device_operator":  "leeway_device_operator",
+    "registry_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-registry-latest.json",
+    "approval_policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-approval-policy-latest.json",
+    "capabilities":  {
+                         "discovery":  {
+                                           "route":  "http://127.0.0.1:5323/iot/discover",
+                                           "status":  "present",
+                                           "read_only":  true,
+                                           "executes_physical_action":  false
+                                       },
+                         "inventory":  {
+                                           "status":  "contract_defined",
+                                           "read_only":  true,
+                                           "executes_physical_action":  false
+                                       },
+                         "status":  {
+                                        "status":  "planned",
+                                        "read_only":  true,
+                                        "executes_physical_action":  false
+                                    },
+                         "control":  {
+                                         "status":  "not_enabled",
+                                         "approval_required":  true,
+                                         "one_action_only":  true,
+                                         "lockback_required":  true,
+                                         "executes_physical_action":  true
+                                     }
+                     },
+    "required_lanes":  [
+                           "215-iot-read-only-status-proof-no-execute.ps1",
+                           "216-iot-create-pending-low-risk-action-no-execute.ps1",
+                           "217-iot-promote-pending-low-risk-action-no-execute.ps1",
+                           "218-iot-validate-approved-low-risk-action-blocked.ps1",
+                           "219-iot-execute-approved-low-risk-one-action-then-lockback.ps1",
+                           "220-iot-post-action-audit-and-dashboard.ps1"
+                       ],
+    "safety":  {
+                   "contract_only":  true,
+                   "iot_actions_executed":  0,
+                   "device_state_changed":  false,
+                   "print_jobs_sent":  0,
+                   "casting_started":  0,
+                   "messages_sent":  0,
+                   "phone_calls_made":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               }
+}

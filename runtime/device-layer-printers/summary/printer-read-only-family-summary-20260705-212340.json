@@ -1,0 +1,74 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_225",
+    "timestamp":  "2026-07-05T21:23:41",
+    "verdict":  "LEEWAY_PRINTER_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "printers",
+    "family_status":  "PRINTER_READ_ONLY_DISCOVERY_REGISTRY_STATUS_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status"
+                           ],
+    "remaining_families":  [
+                               "casting_read_only_status_and_approval_contract",
+                               "camera_microphone_speaker_read_only_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "discover":  true,
+                   "status":  true,
+                   "registry":  true,
+                   "all_printer_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "control_enabled":  false,
+                         "print_job_sent":  false,
+                         "queue_mutated":  false,
+                         "spooler_mutated":  false,
+                         "driver_installed":  false,
+                         "discovered_count":  0
+                     },
+    "proof_chain":  {
+                        "contract_221_exists":  true,
+                        "contract_221_clean":  true,
+                        "plan_222_exists":  true,
+                        "plan_222_clean":  true,
+                        "patch_223_exists":  true,
+                        "patch_223_clean":  true,
+                        "audit_224_exists":  true,
+                        "audit_224_clean":  true,
+                        "contract_221_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-discovery-status-contract-latest.json",
+                        "plan_222_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-route-patch-plan-proof-latest.json",
+                        "patch_223_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-routes-patch-223-latest.json",
+                        "audit_224_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "physical_actions_executed":  0,
+                   "print_jobs_sent":  0,
+                   "queue_mutations":  0,
+                   "spooler_mutations":  0,
+                   "driver_installs":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "226-casting-read-only-discovery-and-status-contract-no-execute.ps1"
+}

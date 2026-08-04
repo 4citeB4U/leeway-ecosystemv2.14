@@ -1,0 +1,28 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_DEVICE_SHELL_ACTUATOR_CONTRACT_236",
+    "timestamp":  "2026-07-05T21:46:48",
+    "family":  "android",
+    "registry_status":  "ANDROID_DEVICE_SHELL_ACTUATOR_REGISTRY_CREATED",
+    "route_surface":  {
+                          "android_discover":  false,
+                          "android_status":  false,
+                          "android_registry":  false,
+                          "android_shell_status":  false,
+                          "android_actuator_status":  false
+                      },
+    "discovered_count":  0,
+    "normalized_devices":  [
+
+                           ],
+    "shell_enabled":  false,
+    "actuator_enabled":  false,
+    "adb_invoked":  false,
+    "phone_connected":  false,
+    "physical_actions_executed":  0,
+    "taps_executed":  0,
+    "swipes_executed":  0,
+    "texts_sent":  0,
+    "calls_started":  0,
+    "files_read":  0,
+    "device_mutations":  0
+}

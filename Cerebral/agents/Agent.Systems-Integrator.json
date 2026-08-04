@@ -1,0 +1,8 @@
+{
+    "name": "Cerebral.Systems-Integrator",
+    "wave": 2,
+    "rank": "Controller",
+    "primary_function": "Daemon Health, Telemetry Accuracy & Process Flow",
+    "tool": "run_env_check",
+    "uniform": "Operational-Sovereign"
+}

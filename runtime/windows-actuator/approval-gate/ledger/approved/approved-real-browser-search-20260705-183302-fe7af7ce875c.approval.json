@@ -1,0 +1,34 @@
+﻿{
+    "approval_id":  "approved-real-browser-search-20260705-183302-fe7af7ce875c",
+    "created_at":  "2026-07-05T18:33:04",
+    "expires_at":  "2026-07-05T18:43:04",
+    "requested_by":  "script_176",
+    "decided_at":  "2026-07-05T18:33:04",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_browser_search",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "One-time approval to physically open a Bing search in Microsoft Edge through the real-alpha one-search actuator.",
+    "payload":  {
+                    "query":  "Leeway Agent Lee device operator proof",
+                    "browser":  "edge",
+                    "engine":  "bing",
+                    "search_url":  "https://www.bing.com/search?q=Leeway+Agent+Lee+device+operator+proof"
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  false,
+    "rollback_or_stop":  "Close the new Edge tab/window manually, or run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 to stop the actuator service.",
+    "safety_expectation":  {
+                               "only_bing":  true,
+                               "no_keyboard":  true,
+                               "only_approved_query_should_search":  true,
+                               "no_file":  true,
+                               "no_shell":  true,
+                               "no_mouse":  true,
+                               "only_edge":  true
+                           }
+}

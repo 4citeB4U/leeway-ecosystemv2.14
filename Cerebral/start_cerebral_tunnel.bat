@@ -1,0 +1,4 @@
+@echo off
+echo Starting Cerebral Cloudflare Tunnel...
+cloudflared tunnel run --token eyJhIjoiOWM1YzgzZTJlOWI2YTg1Y2Q1NWY0MWIxMzM5Mjk2NTMiLCJ0IjoiZWJkMjEwM2MtNjk4Mi00N2MyLWI4MTQtMzU2MDI3ZjRlMjQ1IiwicyI6IllXSTVZbUppTjJRdFpqUXhPQzAwTW1Wa0xUaGhaVGN0WmpGallURmhaVGN3TUdVdyJ9
+

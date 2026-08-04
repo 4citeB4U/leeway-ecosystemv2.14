@@ -1,0 +1,13 @@
+﻿{
+  "version": 1,
+  "lastUpdated": "",
+  "currentTask": null,
+  "completedTasks": [],
+  "failedTasks": [],
+  "artifacts": [],
+  "constraints": {
+    "requireVerification": true,
+    "noSpeculation": true,
+    "mustReferenceExistingCode": true
+  }
+}

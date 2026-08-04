@@ -1,0 +1,21 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_DISCOVERY_STATUS_CONTRACT_221",
+    "timestamp":  "2026-07-05T21:16:42",
+    "family":  "printers",
+    "registry_status":  "PRINTER_READ_ONLY_REGISTRY_CREATED",
+    "discovery_route":  "/printers/discover",
+    "discovery_route_present":  true,
+    "global_status_route_present":  false,
+    "registry_route_present":  false,
+    "discovered_count":  1,
+    "normalized_printers":  [
+
+                            ],
+    "source":  {
+                   "route":  "http://127.0.0.1:5323/printers/discover",
+                   "raw_capture":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-221-20260705-211642\\json\\printers-discover.json"
+               },
+    "control_enabled":  false,
+    "print_jobs_sent":  0,
+    "physical_actions_executed":  0
+}

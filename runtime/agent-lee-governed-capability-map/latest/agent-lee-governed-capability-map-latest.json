@@ -1,0 +1,788 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_GOVERNED_CAPABILITY_MAP_266",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:05:55",
+    "status":  "GOVERNED_CAPABILITY_MAP_CREATED_NO_EXECUTE",
+    "source_final_summary":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-final-summary\\latest\\full-device-layer-multi-family-summary-latest.json",
+    "device_operator_url":  "http://127.0.0.1:5323",
+    "real_alpha_url":  "http://127.0.0.1:7332",
+    "device_layer_status":  "FULL_MULTI_FAMILY_DEVICE_LAYER_READY_LOCKED_CLEAN",
+    "final_verdict":  "LEEWAY_FULL_DEVICE_LAYER_MULTI_FAMILY_SUMMARY_CLEAN",
+    "completed_family_count":  11,
+    "remaining_family_count":  0,
+    "all_families_clean":  true,
+    "windows_locked":  true,
+    "blocked_probe_executed":  false,
+    "read_only_route_count":  46,
+    "all_read_only_routes_ok":  true,
+    "family_cards":  [
+                         {
+                             "family":  "windows_desktop_control_plane",
+                             "title":  "Windows Desktop Control Plane",
+                             "status":  "READY_LOCKED_CLEAN",
+                             "lane":  "approval_gated_real_alpha",
+                             "read_only_routes":  [
+                                                      "/health",
+                                                      "/policy"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "open app",
+                                                                      "browser search",
+                                                                      "type text",
+                                                                      "hotkey",
+                                                                      "screen status"
+                                                                  ],
+                             "execution_default":  "LOCKED"
+                         },
+                         {
+                             "family":  "iot_read_only_discovery_registry_status",
+                             "title":  "IoT",
+                             "status":  "READ_ONLY_READY",
+                             "lane":  "read_only",
+                             "read_only_routes":  [
+                                                      "/iot/discover",
+                                                      "/iot/status",
+                                                      "/iot/registry",
+                                                      "/iot/devices"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "device command",
+                                                                      "toggle relay",
+                                                                      "sensor mutation",
+                                                                      "actuator mutation"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "printer_read_only_discovery_registry_status",
+                             "title":  "Printers",
+                             "status":  "READ_ONLY_READY",
+                             "lane":  "read_only",
+                             "read_only_routes":  [
+                                                      "/printers/discover",
+                                                      "/printers/status",
+                                                      "/printers/registry"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "print job",
+                                                                      "cancel job",
+                                                                      "change queue",
+                                                                      "change printer settings"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "casting_read_only_discovery_registry_status",
+                             "title":  "Casting",
+                             "status":  "READ_ONLY_READY",
+                             "lane":  "read_only",
+                             "read_only_routes":  [
+                                                      "/casting/discover",
+                                                      "/casting/status",
+                                                      "/casting/registry"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "cast media",
+                                                                      "stop cast",
+                                                                      "change display",
+                                                                      "volume change"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "audio_vision_read_only_discovery_registry_status",
+                             "title":  "Audio / Vision",
+                             "status":  "READ_ONLY_READY",
+                             "lane":  "read_only",
+                             "read_only_routes":  [
+                                                      "/audio-vision/discover",
+                                                      "/audio-vision/status",
+                                                      "/audio-vision/registry",
+                                                      "/cameras/discover",
+                                                      "/microphones/discover",
+                                                      "/speakers/discover"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "open camera stream",
+                                                                      "record audio",
+                                                                      "start microphone",
+                                                                      "start speaker playback",
+                                                                      "capture frame"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "android_device_shell_and_actuator_contract",
+                             "title":  "Android",
+                             "status":  "READ_ONLY_ACTUATOR_CONTRACT_READY",
+                             "lane":  "read_only_shell_contract",
+                             "read_only_routes":  [
+                                                      "/android/discover",
+                                                      "/android/status",
+                                                      "/android/registry",
+                                                      "/android/shell/status",
+                                                      "/android/actuator/status"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "ADB shell",
+                                                                      "tap",
+                                                                      "swipe",
+                                                                      "text input",
+                                                                      "open app",
+                                                                      "call action"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "ios_device_shell_and_actuator_contract",
+                             "title":  "iOS",
+                             "status":  "READ_ONLY_ACTUATOR_CONTRACT_READY",
+                             "lane":  "read_only_shell_contract",
+                             "read_only_routes":  [
+                                                      "/ios/discover",
+                                                      "/ios/status",
+                                                      "/ios/registry",
+                                                      "/ios/shell/status",
+                                                      "/ios/actuator/status"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "libimobiledevice action",
+                                                                      "tap",
+                                                                      "backup",
+                                                                      "app open",
+                                                                      "device command"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "linux_actuator_contract",
+                             "title":  "Linux",
+                             "status":  "READ_ONLY_ACTUATOR_CONTRACT_READY",
+                             "lane":  "read_only_shell_contract",
+                             "read_only_routes":  [
+                                                      "/linux/discover",
+                                                      "/linux/status",
+                                                      "/linux/registry",
+                                                      "/linux/shell/status",
+                                                      "/linux/actuator/status"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "SSH command",
+                                                                      "shell command",
+                                                                      "file read",
+                                                                      "file write",
+                                                                      "process mutation"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "macos_actuator_contract",
+                             "title":  "macOS",
+                             "status":  "READ_ONLY_ACTUATOR_CONTRACT_READY",
+                             "lane":  "read_only_shell_contract",
+                             "read_only_routes":  [
+                                                      "/macos/discover",
+                                                      "/macos/status",
+                                                      "/macos/registry",
+                                                      "/macos/shell/status",
+                                                      "/macos/actuator/status"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "SSH command",
+                                                                      "shell command",
+                                                                      "AppleScript",
+                                                                      "app open",
+                                                                      "click",
+                                                                      "type",
+                                                                      "hotkey"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "network_mesh_tailscale_policy",
+                             "title":  "Network Mesh / Tailscale",
+                             "status":  "READ_ONLY_POLICY_READY",
+                             "lane":  "read_only_network_policy",
+                             "read_only_routes":  [
+                                                      "/network-mesh/discover",
+                                                      "/network-mesh/status",
+                                                      "/network-mesh/registry",
+                                                      "/tailscale/status",
+                                                      "/tailscale/policy"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "tailscale login",
+                                                                      "tailscale up",
+                                                                      "tailnet join",
+                                                                      "ACL change",
+                                                                      "route advertisement",
+                                                                      "exit node",
+                                                                      "firewall or DNS mutation"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         },
+                         {
+                             "family":  "smart_home_adapter_contract",
+                             "title":  "Smart Home",
+                             "status":  "READ_ONLY_ADAPTER_CONTRACT_READY",
+                             "lane":  "read_only_home_policy",
+                             "read_only_routes":  [
+                                                      "/smart-home/discover",
+                                                      "/smart-home/status",
+                                                      "/smart-home/registry",
+                                                      "/smart-home/adapter/status",
+                                                      "/smart-home/policy"
+                                                  ],
+                             "future_approval_required_actions":  [
+                                                                      "Home Assistant command",
+                                                                      "Matter command",
+                                                                      "Zigbee command",
+                                                                      "Z-Wave command",
+                                                                      "MQTT publish",
+                                                                      "unlock",
+                                                                      "garage open",
+                                                                      "alarm change",
+                                                                      "thermostat change",
+                                                                      "light change"
+                                                                  ],
+                             "execution_default":  "DISABLED_APPROVAL_REQUIRED"
+                         }
+                     ],
+    "route_records":  [
+                          {
+                              "family":  "iot",
+                              "name":  "IoT Discover",
+                              "method":  "GET",
+                              "path":  "/iot/discover",
+                              "url":  "http://127.0.0.1:5323/iot/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "iot",
+                              "name":  "IoT Status",
+                              "method":  "GET",
+                              "path":  "/iot/status",
+                              "url":  "http://127.0.0.1:5323/iot/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "iot",
+                              "name":  "IoT Registry",
+                              "method":  "GET",
+                              "path":  "/iot/registry",
+                              "url":  "http://127.0.0.1:5323/iot/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "iot",
+                              "name":  "IoT Devices",
+                              "method":  "GET",
+                              "path":  "/iot/devices",
+                              "url":  "http://127.0.0.1:5323/iot/devices",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "printer",
+                              "name":  "Printer Discover",
+                              "method":  "GET",
+                              "path":  "/printers/discover",
+                              "url":  "http://127.0.0.1:5323/printers/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "printer",
+                              "name":  "Printer Status",
+                              "method":  "GET",
+                              "path":  "/printers/status",
+                              "url":  "http://127.0.0.1:5323/printers/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "printer",
+                              "name":  "Printer Registry",
+                              "method":  "GET",
+                              "path":  "/printers/registry",
+                              "url":  "http://127.0.0.1:5323/printers/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "casting",
+                              "name":  "Casting Discover",
+                              "method":  "GET",
+                              "path":  "/casting/discover",
+                              "url":  "http://127.0.0.1:5323/casting/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "casting",
+                              "name":  "Casting Status",
+                              "method":  "GET",
+                              "path":  "/casting/status",
+                              "url":  "http://127.0.0.1:5323/casting/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "casting",
+                              "name":  "Casting Registry",
+                              "method":  "GET",
+                              "path":  "/casting/registry",
+                              "url":  "http://127.0.0.1:5323/casting/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Audio Vision Discover",
+                              "method":  "GET",
+                              "path":  "/audio-vision/discover",
+                              "url":  "http://127.0.0.1:5323/audio-vision/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Audio Vision Status",
+                              "method":  "GET",
+                              "path":  "/audio-vision/status",
+                              "url":  "http://127.0.0.1:5323/audio-vision/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Audio Vision Registry",
+                              "method":  "GET",
+                              "path":  "/audio-vision/registry",
+                              "url":  "http://127.0.0.1:5323/audio-vision/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Cameras Discover",
+                              "method":  "GET",
+                              "path":  "/cameras/discover",
+                              "url":  "http://127.0.0.1:5323/cameras/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Microphones Discover",
+                              "method":  "GET",
+                              "path":  "/microphones/discover",
+                              "url":  "http://127.0.0.1:5323/microphones/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "audio_vision",
+                              "name":  "Speakers Discover",
+                              "method":  "GET",
+                              "path":  "/speakers/discover",
+                              "url":  "http://127.0.0.1:5323/speakers/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "android",
+                              "name":  "Android Discover",
+                              "method":  "GET",
+                              "path":  "/android/discover",
+                              "url":  "http://127.0.0.1:5323/android/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "android",
+                              "name":  "Android Status",
+                              "method":  "GET",
+                              "path":  "/android/status",
+                              "url":  "http://127.0.0.1:5323/android/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "android",
+                              "name":  "Android Registry",
+                              "method":  "GET",
+                              "path":  "/android/registry",
+                              "url":  "http://127.0.0.1:5323/android/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "android",
+                              "name":  "Android Shell Status",
+                              "method":  "GET",
+                              "path":  "/android/shell/status",
+                              "url":  "http://127.0.0.1:5323/android/shell/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "android",
+                              "name":  "Android Actuator Status",
+                              "method":  "GET",
+                              "path":  "/android/actuator/status",
+                              "url":  "http://127.0.0.1:5323/android/actuator/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "ios",
+                              "name":  "iOS Discover",
+                              "method":  "GET",
+                              "path":  "/ios/discover",
+                              "url":  "http://127.0.0.1:5323/ios/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "ios",
+                              "name":  "iOS Status",
+                              "method":  "GET",
+                              "path":  "/ios/status",
+                              "url":  "http://127.0.0.1:5323/ios/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "ios",
+                              "name":  "iOS Registry",
+                              "method":  "GET",
+                              "path":  "/ios/registry",
+                              "url":  "http://127.0.0.1:5323/ios/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "ios",
+                              "name":  "iOS Shell Status",
+                              "method":  "GET",
+                              "path":  "/ios/shell/status",
+                              "url":  "http://127.0.0.1:5323/ios/shell/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "ios",
+                              "name":  "iOS Actuator Status",
+                              "method":  "GET",
+                              "path":  "/ios/actuator/status",
+                              "url":  "http://127.0.0.1:5323/ios/actuator/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "linux",
+                              "name":  "Linux Discover",
+                              "method":  "GET",
+                              "path":  "/linux/discover",
+                              "url":  "http://127.0.0.1:5323/linux/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "linux",
+                              "name":  "Linux Status",
+                              "method":  "GET",
+                              "path":  "/linux/status",
+                              "url":  "http://127.0.0.1:5323/linux/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "linux",
+                              "name":  "Linux Registry",
+                              "method":  "GET",
+                              "path":  "/linux/registry",
+                              "url":  "http://127.0.0.1:5323/linux/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "linux",
+                              "name":  "Linux Shell Status",
+                              "method":  "GET",
+                              "path":  "/linux/shell/status",
+                              "url":  "http://127.0.0.1:5323/linux/shell/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "linux",
+                              "name":  "Linux Actuator Status",
+                              "method":  "GET",
+                              "path":  "/linux/actuator/status",
+                              "url":  "http://127.0.0.1:5323/linux/actuator/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "macos",
+                              "name":  "macOS Discover",
+                              "method":  "GET",
+                              "path":  "/macos/discover",
+                              "url":  "http://127.0.0.1:5323/macos/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "macos",
+                              "name":  "macOS Status",
+                              "method":  "GET",
+                              "path":  "/macos/status",
+                              "url":  "http://127.0.0.1:5323/macos/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "macos",
+                              "name":  "macOS Registry",
+                              "method":  "GET",
+                              "path":  "/macos/registry",
+                              "url":  "http://127.0.0.1:5323/macos/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "macos",
+                              "name":  "macOS Shell Status",
+                              "method":  "GET",
+                              "path":  "/macos/shell/status",
+                              "url":  "http://127.0.0.1:5323/macos/shell/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "macos",
+                              "name":  "macOS Actuator Status",
+                              "method":  "GET",
+                              "path":  "/macos/actuator/status",
+                              "url":  "http://127.0.0.1:5323/macos/actuator/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "network_mesh",
+                              "name":  "Network Mesh Discover",
+                              "method":  "GET",
+                              "path":  "/network-mesh/discover",
+                              "url":  "http://127.0.0.1:5323/network-mesh/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "network_mesh",
+                              "name":  "Network Mesh Status",
+                              "method":  "GET",
+                              "path":  "/network-mesh/status",
+                              "url":  "http://127.0.0.1:5323/network-mesh/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "network_mesh",
+                              "name":  "Network Mesh Registry",
+                              "method":  "GET",
+                              "path":  "/network-mesh/registry",
+                              "url":  "http://127.0.0.1:5323/network-mesh/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "network_mesh",
+                              "name":  "Tailscale Status",
+                              "method":  "GET",
+                              "path":  "/tailscale/status",
+                              "url":  "http://127.0.0.1:5323/tailscale/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "network_mesh",
+                              "name":  "Tailscale Policy",
+                              "method":  "GET",
+                              "path":  "/tailscale/policy",
+                              "url":  "http://127.0.0.1:5323/tailscale/policy",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "smart_home",
+                              "name":  "Smart Home Discover",
+                              "method":  "GET",
+                              "path":  "/smart-home/discover",
+                              "url":  "http://127.0.0.1:5323/smart-home/discover",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "smart_home",
+                              "name":  "Smart Home Status",
+                              "method":  "GET",
+                              "path":  "/smart-home/status",
+                              "url":  "http://127.0.0.1:5323/smart-home/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "smart_home",
+                              "name":  "Smart Home Registry",
+                              "method":  "GET",
+                              "path":  "/smart-home/registry",
+                              "url":  "http://127.0.0.1:5323/smart-home/registry",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "smart_home",
+                              "name":  "Smart Home Adapter Status",
+                              "method":  "GET",
+                              "path":  "/smart-home/adapter/status",
+                              "url":  "http://127.0.0.1:5323/smart-home/adapter/status",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          },
+                          {
+                              "family":  "smart_home",
+                              "name":  "Smart Home Policy",
+                              "method":  "GET",
+                              "path":  "/smart-home/policy",
+                              "url":  "http://127.0.0.1:5323/smart-home/policy",
+                              "ok":  true,
+                              "read_only":  true,
+                              "requires_approval":  false,
+                              "execution_allowed":  false
+                          }
+                      ],
+    "ui_rules":  {
+                     "show_families":  true,
+                     "show_locked_unlocked_state":  true,
+                     "show_available_read_only_routes":  true,
+                     "show_future_approval_required_actions":  true,
+                     "show_receipts_and_proofs":  true,
+                     "show_execute_buttons":  false,
+                     "require_explicit_approval_for_execution":  true,
+                     "default_execution_state":  "LOCKED",
+                     "no_silent_execution":  true,
+                     "no_background_physical_actions":  true
+                 },
+    "safety":  {
+                   "contract_only":  true,
+                   "ui_map_only":  true,
+                   "no_execution_enabled":  true,
+                   "no_physical_actions_executed":  true,
+                   "physical_actions_executed":  0,
+                   "no_shell_execution":  true,
+                   "no_network_mutation":  true,
+                   "no_smart_home_mutation":  true,
+                   "no_mobile_device_mutation":  true,
+                   "no_printer_job":  true,
+                   "no_casting_action":  true,
+                   "no_camera_or_microphone_access":  true,
+                   "no_docker_prune":  true,
+                   "no_destructive_cleanup":  true
+               },
+    "recommended_next":  "267-agent-lee-governed-capability-map-ui-route-patch-plan-no-execute.ps1"
+}

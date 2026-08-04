@@ -1,0 +1,207 @@
+import React, { useState } from "react";
+import { createRoot } from "react-dom/client";
+
+type ChatResult = {
+  ok?: boolean;
+  agentId?: string;
+  response?: string;
+  route?: string;
+  mode?: string;
+  speak?: boolean;
+  tools?: unknown[];
+  proof?: unknown[];
+  error?: string;
+  message?: string;
+};
+
+function App() {
+  const [input, setInput] = useState("Who are you and what is your lineage?");
+  const [response, setResponse] = useState("");
+  const [status, setStatus] = useState("Ready");
+  const [raw, setRaw] = useState("");
+
+  async function askAgentLee() {
+    setStatus("Contacting CerebralDaemon on 8765...");
+    setResponse("");
+    setRaw("");
+
+    const body = {
+      input,
+      mode: "chat",
+      speak: false
+    };
+
+    try {
+      const res = await fetch("http://127.0.0.1:8765/api/agent-lee/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      });
+
+      const data = (await res.json()) as ChatResult;
+      setRaw(JSON.stringify(data, null, 2));
+
+      if (!res.ok || data.ok === false) {
+        setStatus("Cerebral route returned an error");
+        setResponse(data.message || data.error || "No error message returned.");
+        return;
+      }
+
+      setStatus("Connected to Agent Lee through Cerebral");
+      setResponse(data.response || "No response text returned.");
+    } catch (err) {
+      setStatus("Failed to reach CerebralDaemon");
+      setResponse(String(err));
+    }
+  }
+
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        margin: 0,
+        padding: "32px",
+        background: "linear-gradient(135deg, #07111f 0%, #10233c 55%, #162d4e 100%)",
+        color: "#f5f7fb",
+        fontFamily:
+          'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+      }}
+    >
+      <section
+        style={{
+          maxWidth: "1100px",
+          margin: "0 auto",
+          display: "grid",
+          gap: "24px"
+        }}
+      >
+        <header
+          style={{
+            padding: "24px",
+            border: "1px solid rgba(255,255,255,0.16)",
+            borderRadius: "20px",
+            background: "rgba(255,255,255,0.08)",
+            boxShadow: "0 24px 80px rgba(0,0,0,0.35)"
+          }}
+        >
+          <div style={{ fontSize: "14px", opacity: 0.8, letterSpacing: "0.14em" }}>
+            LEEWAY
+          </div>
+          <h1 style={{ margin: "8px 0 0", fontSize: "42px", lineHeight: 1.05 }}>
+            Cerebral Agent Lee
+          </h1>
+          <p style={{ margin: "12px 0 0", maxWidth: "760px", color: "#cbd5e1" }}>
+            Emergency working shell connected to the local Agent Lee stack through CerebralDaemon.
+          </p>
+        </header>
+
+        <section
+          style={{
+            display: "grid",
+            gap: "16px",
+            padding: "24px",
+            border: "1px solid rgba(255,255,255,0.16)",
+            borderRadius: "20px",
+            background: "rgba(3,7,18,0.72)"
+          }}
+        >
+          <label style={{ fontWeight: 700 }}>Message</label>
+          <textarea
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+            rows={4}
+            style={{
+              width: "100%",
+              boxSizing: "border-box",
+              resize: "vertical",
+              borderRadius: "14px",
+              border: "1px solid rgba(255,255,255,0.18)",
+              background: "#0f172a",
+              color: "#f8fafc",
+              padding: "16px",
+              fontSize: "16px",
+              outline: "none"
+            }}
+          />
+
+          <button
+            onClick={askAgentLee}
+            style={{
+              width: "fit-content",
+              border: 0,
+              borderRadius: "999px",
+              padding: "12px 20px",
+              background: "#38bdf8",
+              color: "#06121f",
+              fontWeight: 800,
+              cursor: "pointer"
+            }}
+          >
+            Ask Agent Lee
+          </button>
+
+          <div
+            style={{
+              padding: "12px 14px",
+              borderRadius: "12px",
+              background: "rgba(56,189,248,0.12)",
+              color: "#bae6fd",
+              border: "1px solid rgba(56,189,248,0.24)"
+            }}
+          >
+            Status: {status}
+          </div>
+
+          <article
+            style={{
+              minHeight: "140px",
+              whiteSpace: "pre-wrap",
+              padding: "18px",
+              borderRadius: "16px",
+              background: "#020617",
+              border: "1px solid rgba(255,255,255,0.12)",
+              color: "#e2e8f0",
+              lineHeight: 1.6
+            }}
+          >
+            {response || "Agent Lee response will appear here."}
+          </article>
+        </section>
+
+        <details
+          style={{
+            padding: "18px",
+            border: "1px solid rgba(255,255,255,0.16)",
+            borderRadius: "16px",
+            background: "rgba(255,255,255,0.06)"
+          }}
+        >
+          <summary style={{ cursor: "pointer", fontWeight: 700 }}>Raw response</summary>
+          <pre
+            style={{
+              overflow: "auto",
+              whiteSpace: "pre-wrap",
+              color: "#cbd5e1"
+            }}
+          >
+            {raw || "No raw response yet."}
+          </pre>
+        </details>
+      </section>
+    </main>
+  );
+}
+
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error("Missing #root element in index.html");
+}
+
+createRoot(root).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

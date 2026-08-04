@@ -1,0 +1,41 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_APPROVAL_POLICY_231",
+    "timestamp":  "2026-07-05T21:37:17",
+    "family":  "audio_vision",
+    "policy_status":  "READ_ONLY_DISCOVERY_ALLOWED_MEDIA_CAPTURE_REQUIRES_APPROVAL",
+    "allowed_without_approval":  [
+                                     "GET /audio-vision/discover when implemented",
+                                     "GET /audio-vision/status when implemented",
+                                     "GET /audio-vision/registry when implemented",
+                                     "GET /cameras/discover when implemented",
+                                     "GET /microphones/discover when implemented",
+                                     "GET /speakers/discover when implemented"
+                                 ],
+    "requires_approval":  [
+                              "camera stream start",
+                              "microphone stream start",
+                              "audio playback start",
+                              "screen or camera frame capture",
+                              "photo capture",
+                              "video recording",
+                              "audio recording",
+                              "speaker volume mutation",
+                              "camera/mic permission mutation",
+                              "device default input/output mutation"
+                          ],
+    "forbidden_without_specific_proof":  [
+                                             "silent camera activation",
+                                             "silent microphone activation",
+                                             "silent audio/video recording",
+                                             "background capture",
+                                             "speaker playback without approval",
+                                             "changing default microphone",
+                                             "changing default speaker",
+                                             "changing camera privacy settings"
+                                         ],
+    "physical_actions_executed":  0,
+    "camera_streams_started":  0,
+    "microphone_streams_started":  0,
+    "speaker_playback_started":  0,
+    "recordings_started":  0
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "leeway.agent-lee.cloned-voice-mode.manifest.v1",
+  "mode": "UNIFIED_CLONED_VOICE_MODE",
+  "status": "ACTIVE",
+  "savedAt": "2026-06-28T16:03:36.792Z",
+  "ttsProxy": "http://127.0.0.1:8871",
+  "voiceKernel": "http://127.0.0.1:8092",
+  "profilePath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\agent-lee-clone-tone-profile.active.json",
+  "capturedPresetPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\agent-lee-captured-voice-preset.latest.json",
+  "activeSamplePath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\agent-lee-active-cloned-voice.wav",
+  "activeEnvPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\agent-lee-active-voice.env",
+  "activeReceiptPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\receipts\\agent-lee-active-voice-save-receipt.latest.json",
+  "cacheDir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\cache",
+  "sampleDir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\voice-profiles\\samples",
+  "profileName": "agent-lee-unified-captured-fast-v1",
+  "fastDefault": true,
+  "cacheEnabled": true,
+  "postProcessing": false,
+  "maxVoiceChars": 180,
+  "engineSpeed": 1.3
+}

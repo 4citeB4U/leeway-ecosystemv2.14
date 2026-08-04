@@ -1,0 +1,39 @@
+{
+  "schema": "leeway.agent-lee.model-warmup.v1",
+  "enabled": true,
+  "ollamaBaseUrl": "http://127.0.0.1:11434",
+  "startupMode": "async",
+  "maxConcurrentWarmups": 1,
+  "perModelTimeoutMs": 90000,
+  "keepWarmIntervalMs": 900000,
+  "models": [
+    {
+      "id": "qwen3:latest",
+      "lane": "conversation_reasoning",
+      "required": true,
+      "warmPrompt": "Reply with exactly: ready",
+      "numPredict": 8
+    },
+    {
+      "id": "qwen2.5-coder:7b",
+      "lane": "coding",
+      "required": true,
+      "warmPrompt": "Reply with exactly: ready",
+      "numPredict": 8
+    },
+    {
+      "id": "deepseek-coder:latest",
+      "lane": "coding_fallback",
+      "required": false,
+      "warmPrompt": "Reply with exactly: ready",
+      "numPredict": 8
+    },
+    {
+      "id": "qwen2.5vl:7b",
+      "lane": "vision",
+      "required": false,
+      "warmPrompt": "Reply with exactly: ready",
+      "numPredict": 4
+    }
+  ]
+}

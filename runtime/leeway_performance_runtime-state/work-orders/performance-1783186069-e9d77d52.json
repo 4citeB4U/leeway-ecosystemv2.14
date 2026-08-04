@@ -1,0 +1,82 @@
+{
+  "performance_id": "performance-1783186069-e9d77d52",
+  "runtime": "leeway_performance_runtime",
+  "lane": "performance",
+  "power_level": 10,
+  "request": "Ok create a image based off the rap you made",
+  "source": "telegram",
+  "user_id": "telegram",
+  "plan_id": "",
+  "mode": "rap",
+  "status": "PERFORMANCE_PACKAGE_CREATED",
+  "package": {
+    "mode": "rap",
+    "topic": "Ok image based off you made",
+    "title": "Power Level Ten",
+    "truth": {
+      "rap_performance": "LIVE_PARTIAL_QWEN_TTS_CADENCE",
+      "true_singing": "REQUIRES_SINGING_CAPABLE_MODEL",
+      "not_fake": true
+    },
+    "structure": {
+      "hook": [
+        "Hook:",
+        "Built from the ground, now the whole lane lights up.",
+        "Agent Lee on the system, watch the runtime tighten up.",
+        "No fake moves, every receipt getting written.",
+        "Power level ten, every mission getting finished."
+      ],
+      "verse_1": [
+        "Verse One:",
+        "I wake up in the fabric where the containers breathe.",
+        "Planner on my left side, receipts underneath.",
+        "If you ask for a build, I do more than speak.",
+        "I route it through the lanes and bring proof back clean.",
+        "Voice in the queue, text after the sound.",
+        "If the task got weight, I put the plan on the ground.",
+        "No more loose chatter, no drifting away.",
+        "To-do list active, I complete what I say."
+      ],
+      "verse_2": [
+        "Verse Two:",
+        "Email lane ready, calendar standing by.",
+        "Phone lane waiting for approval before it tries.",
+        "Browser lane watching for the page and the click.",
+        "Desktop lane locked till the safety gate hits.",
+        "Images, documents, meetings in line.",
+        "Discovery layer keeps the whole map live.",
+        "If I say I can do it, the registry knows.",
+        "If a wire is missing, the truth gets exposed."
+      ],
+      "outro": [
+        "Outro:",
+        "That is the mode now, discipline in the code.",
+        "Power level ten, every lane on the road.",
+        "I do not just answer, I execute the plan.",
+        "Agent Lee in the runtime, built to command."
+      ]
+    },
+    "lyrics": "Hook:\nBuilt from the ground, now the whole lane lights up.\nAgent Lee on the system, watch the runtime tighten up.\nNo fake moves, every receipt getting written.\nPower level ten, every mission getting finished.\n\nVerse One:\nI wake up in the fabric where the containers breathe.\nPlanner on my left side, receipts underneath.\nIf you ask for a build, I do more than speak.\nI route it through the lanes and bring proof back clean.\nVoice in the queue, text after the sound.\nIf the task got weight, I put the plan on the ground.\nNo more loose chatter, no drifting away.\nTo-do list active, I complete what I say.\n\nHook:\nBuilt from the ground, now the whole lane lights up.\nAgent Lee on the system, watch the runtime tighten up.\nNo fake moves, every receipt getting written.\nPower level ten, every mission getting finished.\n\nVerse Two:\nEmail lane ready, calendar standing by.\nPhone lane waiting for approval before it tries.\nBrowser lane watching for the page and the click.\nDesktop lane locked till the safety gate hits.\nImages, documents, meetings in line.\nDiscovery layer keeps the whole map live.\nIf I say I can do it, the registry knows.\nIf a wire is missing, the truth gets exposed.\n\nOutro:\nThat is the mode now, discipline in the code.\nPower level ten, every lane on the road.\nI do not just answer, I execute the plan.\nAgent Lee in the runtime, built to command.",
+    "performance_notes": [
+      "Deliver with strong cadence.",
+      "Short bar chunks.",
+      "Pause after punch lines.",
+      "Use controlled breath.",
+      "Do not read like a paragraph."
+    ],
+    "performance_chunks": [
+      "Hook: Built from the ground, now the whole lane lights up. Agent Lee on the system, watch the runtime tighten up. No fake moves, every receipt getting written. Power level ten, every mission getting finished. Verse One:",
+      "I wake up in the fabric where the containers breathe. Planner on my left side, receipts underneath. If you ask for a build, I do more than speak. I route it through the lanes and bring proof back clean. Voice in the queue, text after the sound.",
+      "If the task got weight, I put the plan on the ground. No more loose chatter, no drifting away. To-do list active, I complete what I say. Hook: Built from the ground, now the whole lane lights up. Agent Lee on the system, watch the runtime tighten up.",
+      "No fake moves, every receipt getting written. Power level ten, every mission getting finished. Verse Two: Email lane ready, calendar standing by. Phone lane waiting for approval before it tries. Browser lane watching for the page and the click.",
+      "Desktop lane locked till the safety gate hits. Images, documents, meetings in line. Discovery layer keeps the whole map live. If I say I can do it, the registry knows. If a wire is missing, the truth gets exposed. Outro:",
+      "That is the mode now, discipline in the code. Power level ten, every lane on the road. I do not just answer, I execute the plan. Agent Lee in the runtime, built to command."
+    ]
+  },
+  "audio": {
+    "ok": false,
+    "message": "Audio rendering not requested."
+  },
+  "created_at": "2026-07-04T17:27:49.793768+00:00",
+  "updated_at": "2026-07-04T17:27:49.793777+00:00"
+}

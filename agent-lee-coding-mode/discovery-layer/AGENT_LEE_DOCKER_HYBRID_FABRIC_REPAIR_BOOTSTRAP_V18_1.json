@@ -1,0 +1,14 @@
+{
+    "schema":  "agent-lee-docker-native-hybrid-fabric-repair-bootstrap-v18-1",
+    "updatedAt":  "2026-06-28T01:06:25.7445790Z",
+    "status":  "V18_1_REPAIR_FILES_WRITTEN",
+    "repairReason":  "Direct E drive bind mount failed in Docker Desktop.",
+    "mountProxy":  "C:\\Users\\Leona\\LeewayDockerMounts\\Leeway-Ecosystem-v214",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "worker":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker\\worker.mjs",
+    "dockerfile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker\\Dockerfile",
+    "composeRepair":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.repair.yml",
+    "standard":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\leeway-standards\\agent-lee-docker-native-hybrid-fabric-repair-standard.md",
+    "container":  "leeway_hybrid_fabric",
+    "port":  8777
+}

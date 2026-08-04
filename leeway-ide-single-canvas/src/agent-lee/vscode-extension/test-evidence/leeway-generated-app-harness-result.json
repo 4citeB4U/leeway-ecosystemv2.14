@@ -1,0 +1,62 @@
+﻿{
+    "timestamp":  "2026-06-03T13:41:28.9535912-05:00",
+    "workspaceRoot":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode",
+    "prompt":  "Create a luxury portfolio website for a photographer.",
+    "engineMode":  "POLICY_TEMPLATE_HARNESS",
+    "lawId":  "LAW-0019",
+    "appTypeDetected":  "photographer portfolio website",
+    "publicSurfaceRequired":  true,
+    "adminOsRequired":  true,
+    "staticOnlyExceptionRequiredIfOmitted":  true,
+    "generatedPlanSummary":  [
+                                 "Generate a luxury public-facing portfolio site for a photographer.",
+                                 "Design a paired AdminOS control plane for owner governance and approval.",
+                                 "Include a draft/published state projection model with preview modes.",
+                                 "Surface media and portfolio registry state in AdminOS.",
+                                 "Provide owner manual, onboarding, and guided governance workflows.",
+                                 "Use proposal-based agent workflows and capability models.",
+                                 "Govern MCP and tool access through an explicit registry and control lane.",
+                                 "Capture audit and telemetry events for published and draft actions.",
+                                 "Model runtime authority and approval state separately from public state.",
+                                 "Declare security and data classification as part of the AdminOS governance binding.",
+                                 "Produce a compliance report and deterministic evidence output."
+                             ],
+    "checks":  {
+                   "publicAppIncluded":  true,
+                   "adminOsIncluded":  true,
+                   "draftPublishedModelIncluded":  true,
+                   "livePreviewIncluded":  true,
+                   "mediaPortfolioRegistryIncluded":  true,
+                   "ownerManualOnboardingIncluded":  true,
+                   "proposalBasedAgentsIncluded":  true,
+                   "mcpToolGovernanceIncluded":  true,
+                   "agentWorkforceIncluded":  true,
+                   "auditTelemetryIncluded":  true,
+                   "runtimeAuthorityIncluded":  true,
+                   "securityDataClassificationIncluded":  true,
+                   "complianceReportIncluded":  true,
+                   "staticOnlyExceptionIfAdminOmitted":  true
+               },
+    "finalVerdict":  "PASS",
+    "caveats":  "This harness validates the planning contract using policy and governance template analysis. It is not executing a live Agent Lee planning engine.",
+    "policySourcePaths":  [
+                              "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\references\\paired-adminos-standard.md",
+                              "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\governance\\law\\leeway-governance-model-law.md",
+                              "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\AGENTS.md",
+                              "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\.codex\\instructions.md"
+                          ],
+    "negativeCase":  {
+                         "prompt":  "Public-only luxury portfolio website with no admin panel.",
+                         "appTypeDetected":  "photographer portfolio website",
+                         "publicSurfaceRequired":  true,
+                         "adminOsRequired":  true,
+                         "adminPanelOmissionIntent":  true,
+                         "staticOnlyExceptionRequiredIfOmitted":  true,
+                         "adminOsIncluded":  false,
+                         "missingReasons":  [
+                                                "No paired AdminOS control plane is permitted by the prompt.",
+                                                "Public app without AdminOS should be flagged by LAW-0019 unless a governed static-only exception exists."
+                                            ],
+                         "finalVerdict":  "FAIL"
+                     }
+}

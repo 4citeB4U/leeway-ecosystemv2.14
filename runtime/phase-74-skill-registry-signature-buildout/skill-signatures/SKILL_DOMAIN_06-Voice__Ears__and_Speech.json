@@ -1,0 +1,56 @@
+﻿{
+    "signature_version":  "LEEWAY_SKILL_SIGNATURE_V1",
+    "signature_type":  "domain_skill_signature",
+    "skill_id":  "SKILL_DOMAIN_06",
+    "skill_name":  "Voice, Ears, and Speech",
+    "domain":  "Voice, Ears, and Speech",
+    "description":  "Govern Qwen voice, TTS, STT, persona voice alignment, audio input/output, and voice-generation boundaries.",
+    "container_or_module":  [
+                                "agent-lee-qwen-voice"
+                            ],
+    "authority_owner":  "LeeWay Standards \u003e Runtime Fabric \u003e Agent Lee \u003e Skills Universe",
+    "risk_tier":  "high",
+    "execution_state":  "BLOCKED_GOVERNED_NO_EXECUTE",
+    "input_contract":  {
+                           "status":  "DEFINED_REQUIRED_BEFORE_EXECUTION",
+                           "allowed_now":  "governance_metadata_only"
+                       },
+    "output_contract":  {
+                            "status":  "DEFINED_REQUIRED_BEFORE_EXECUTION",
+                            "allowed_now":  "registry_signature_and_receipt_only"
+                        },
+    "memory_access":  {
+                          "allowed_now":  false,
+                          "governance":  "Memory and Seafile are governed; runtime access blocked."
+                      },
+    "device_access":  {
+                          "allowed_now":  false,
+                          "governance":  "Device Layer blocks device/physical action until later scoped permit."
+                      },
+    "network_access":  {
+                           "allowed_now":  false,
+                           "governance":  "No network execution from this signature."
+                       },
+    "model_provider_access":  {
+                                  "allowed_now":  false,
+                                  "governance":  "No model/provider calls from this signature."
+                              },
+    "browser_or_desktop_access":  {
+                                      "allowed_now":  false,
+                                      "governance":  "Browser/desktop/phone hands remain blocked."
+                                  },
+    "external_messaging_access":  {
+                                      "allowed_now":  false,
+                                      "governance":  "Telegram/social/external messaging remains blocked."
+                                  },
+    "hardware_requirement":  "TO_BE_FILLED_BY_LATER_CAPABILITY_PROOF",
+    "discovery_dependency":  "Discovery Layer governed and status-proven; no scan authorized now.",
+    "runtime_fabric_dependency":  "Runtime Fabric locked and governing.",
+    "device_layer_dependency":  "Device Layer locked; no control authorized.",
+    "receipt_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-74-skill-registry-signature-buildout\\skill-signatures",
+    "simulation_plan":  "Required before execution. Simulation-only until scoped approval.",
+    "test_or_benchmark_plan":  "Required before promotion. No benchmark execution in 452.",
+    "rollback_notes":  "Execution unavailable; rollback is no-op because no runtime mutation occurred.",
+    "human_review_required":  true,
+    "execution_allowed_now":  false
+}

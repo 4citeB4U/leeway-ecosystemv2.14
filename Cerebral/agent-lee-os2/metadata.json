@@ -1,0 +1,5 @@
+{
+  "name": "Agent Lee OS",
+  "description": "A local-feeling immersive screensaver and AI assistant with a hip-hop persona, featuring real-time system monitoring and voice interaction.",
+  "requestFramePermissions": ["microphone"]
+}

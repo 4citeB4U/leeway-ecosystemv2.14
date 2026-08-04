@@ -1,0 +1,23 @@
+<toolSet name="LeeWay">
+  <tool name="Agent Lee: Scan" description="Scan workspace for LeeWay compliance" showInMainMenu="true" showInEditor="true" showInProjectTree="true" showInSearchForAnything="true">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="C:\Users\Leona\.leeway-vscode\LeeWay-Standards\src\cli\leeway.js scan" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Agent Lee: Fix" description="Auto fix LeeWay headers" showInMainMenu="true" showInEditor="true" showInProjectTree="true" showInSearchForAnything="true">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="C:\Users\Leona\.leeway-vscode\LeeWay-Standards\src\cli\leeway.js align --apply" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Agent Lee: Verify" description="Verify LeeWay standards" showInMainMenu="true" showInEditor="true" showInProjectTree="true" showInSearchForAnything="true">
+    <exec>
+      <option name="COMMAND" value="node" />
+      <option name="PARAMETERS" value="C:\Users\Leona\.leeway-vscode\LeeWay-Standards\src\cli\leeway.js audit" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

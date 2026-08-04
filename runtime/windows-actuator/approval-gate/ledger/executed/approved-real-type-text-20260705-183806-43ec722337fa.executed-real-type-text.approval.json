@@ -1,0 +1,45 @@
+﻿{
+    "approval_id":  "approved-real-type-text-20260705-183806-43ec722337fa",
+    "created_at":  "2026-07-05T18:38:08",
+    "expires_at":  "2026-07-05T18:48:08",
+    "requested_by":  "script_178",
+    "decided_at":  "2026-07-05T18:38:08",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_type_text",
+    "risk_tier":  "controlled_physical_keyboard",
+    "human_summary":  "One-time approval to open a controlled Notepad target and type the approved fixed text only.",
+    "payload":  {
+                    "target":  "notepad",
+                    "text":  "Leeway approved type-text alpha proof."
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  true,
+    "rollback_or_stop":  "Close the new Notepad window manually, or run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 to stop the actuator service.",
+    "safety_expectation":  {
+                               "no_url":  true,
+                               "no_click":  true,
+                               "controlled_target_notepad":  true,
+                               "no_mouse":  true,
+                               "no_file":  true,
+                               "no_shell":  true,
+                               "only_approved_text_should_type":  true
+                           },
+    "used_at":  "2026-07-05T18:38:12",
+    "execution_result":  "EXECUTED_REAL_TYPE_TEXT",
+    "response_allowed":  true,
+    "response_executed":  true,
+    "response_reason":  "approved_one_action_real_type_text_executed",
+    "controlled_notepad_pid":  "23260",
+    "typed_text":  "Leeway approved type-text alpha proof.",
+    "notepad_before_count":  9,
+    "notepad_after_count":  10,
+    "new_notepad_process_ids":  [
+                                    23260
+                                ],
+    "response_file":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-178-20260705-183806\\json\\approved-one-action-real-type-text-response.json"
+}

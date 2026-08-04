@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_FINAL_DEVICE_ACTION_LANE_SUMMARY_286",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:33:38",
+    "verdict":  "LEEWAY_FINAL_DEVICE_ACTION_LANE_SUMMARY_286_CLEAN",
+    "final_action_lane_status":  "ONE_APPROVED_REAL_ACTION_EXECUTED_ONCE_LOCKED_BACK_CLEAN",
+    "summary_only":  true,
+    "approved_execution_performed_in_286":  false,
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "target_device_id":  "windows-agent-lee",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "proofs":  {
+                   "patch_284d_r_clean":  true,
+                   "validation_fix_284e_fix_clean":  true,
+                   "fixed_endpoint_284e_r2_clean":  true,
+                   "arm_284f_clean":  true,
+                   "execution_284g_r3_clean":  true,
+                   "post_execution_audit_285_clean":  true,
+                   "approved_request_final_clean":  true
+               },
+    "execution":  {
+                      "performed_once":  true,
+                      "reason":  "single_approved_action_executed_once",
+                      "second_execute_performed":  false,
+                      "second_execute_reason":  "approved_window_already_consumed",
+                      "endpoint_proof_clean":  true,
+                      "lockback_verified":  true,
+                      "notepad_delta_observed":  1
+                  },
+    "final_live_state":  {
+                             "still_locked":  true,
+                             "real_execution_enabled":  false,
+                             "physical_execution_enabled":  false,
+                             "read_only_status_enabled":  false,
+                             "arm_route_in_openapi":  true,
+                             "open_app_route_in_openapi":  true,
+                             "live_notepad_count":  2,
+                             "final_invalid_probe_executed":  false,
+                             "final_invalid_probe_reason":  "real_alpha_locked_after_209_blocks_open_app",
+                             "final_invalid_probe_status":  200
+                         },
+    "safety":  {
+                   "no_approved_execution_in_286":  true,
+                   "invalid_probe_only_in_286":  true,
+                   "single_approved_real_action_executed_once":  true,
+                   "second_execution_blocked":  true,
+                   "lockback_confirmed":  true,
+                   "no_general_unlock":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "PHASE_39_DEVICE_ACTION_LANE_CLOSED_READY_FOR_NEXT_APPROVED_ACTION_OR_UI_INTEGRATION"
+}

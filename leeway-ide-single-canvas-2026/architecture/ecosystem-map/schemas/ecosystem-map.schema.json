@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://leeway-ecosystem/schema/ecosystem-map.schema.json",
+  "title": "LeeWay Ecosystem Map Schema v2",
+  "type": "object",
+  "required": ["nodes", "relationships", "metadata", "views", "knowledgeProviders", "timeMachine"],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "category", "status", "truthLevel"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"type": "string", "minLength": 1},
+          "category": {"type": "string"},
+          "fabricLayer": {"type": "string"},
+          "parentId": {"type": ["string", "null"]},
+          "description": {"type": "string"},
+          "responsibilities": {"type": "array", "items": {"type": "string"}},
+          "status": {"type": "string", "enum": ["PLANNED", "DEFINED", "CONFIGURED", "DISCOVERING", "DISCOVERED", "CONNECTED", "AUTHENTICATED", "LIVE_READ_ONLY", "LIVE_WRITE_BOUNDED", "UI_INTEGRATED", "END_TO_END_VALIDATED", "PORTABLE_VALIDATED", "PRODUCTION_READY", "DEGRADED", "BLOCKED", "DEPRECATED", "RECOVERY_PRESERVED", "UNKNOWN"]},
+          "truthLevel": {"type": "string", "enum": ["PROVEN", "PARTIALLY_PROVEN", "INFERRED", "UNKNOWN"]},
+          "owner": {"type": "string"},
+          "version": {"type": "string"},
+          "health": {"type": "string", "enum": ["HEALTHY", "DEGRADED", "UNHEALTHY", "UNKNOWN"]},
+          "sourcePaths": {"type": "array", "items": {"type": "string"}},
+          "contracts": {"type": "array", "items": {"type": "string"}},
+          "ports": {"type": "array", "items": {"type": "integer"}},
+          "containers": {"type": "array", "items": {"type": "string"}},
+          "networks": {"type": "array", "items": {"type": "string"}},
+          "dependencies": {"type": "array", "items": {"type": "string"}},
+          "dependents": {"type": "array", "items": {"type": "string"}},
+          "capabilities": {"type": "array", "items": {"type": "string"}},
+          "governance": {"type": "array", "items": {"type": "string"}},
+          "securityControls": {"type": "array", "items": {"type": "string"}},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "documentation": {"type": "array", "items": {"type": "string"}},
+          "knownGaps": {"type": "array", "items": {"type": "string"}},
+          "nextMigration": {"type": ["string", "null"]},
+          "migrationHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "migrationId": {"type": "string"},
+                "completedAt": {"type": "string", "format": "date-time"},
+                "status": {"type": "string"},
+                "receiptPath": {"type": "string"}
+              }
+            }
+          },
+          "deploymentTargets": {"type": "array", "items": {"type": "string"}},
+          "executionModes": {"type": "array", "items": {"type": "string"}},
+          "lastVerifiedUtc": {"type": ["string", "null"], "format": "date-time"},
+          "securityStatus": {"type": "string", "enum": ["DIRECTLY_ENFORCED", "INHERITED_ENFORCEMENT", "POLICY_DECLARED", "PARTIALLY_ENFORCED", "NOT_PROVEN", "UNKNOWN", "BLOCKED", "NOT_APPLICABLE"]},
+          "trustBoundary": {"type": "string", "enum": ["leeway-standards", "zta-perimeter", "runtime-fabric", "api-gateway", "docker-network", "external-provider", "browser-context", "unclassified"]},
+          "authenticationRequired": {"type": "boolean"},
+          "authorizationModel": {"type": "string"},
+          "roles": {"type": "array", "items": {"type": "string"}},
+          "riskClass": {"type": "string", "enum": ["critical", "high", "medium", "low", "none"]},
+          "securityEvidence": {"type": "array", "items": {"type": "string"}},
+          "securityConfidence": {"type": "string", "enum": ["verified", "high", "medium", "low", "unknown"]},
+          "graphPosition": {
+            "type": "object",
+            "properties": {
+              "x": {"type": "number"},
+              "y": {"type": "number"}
+            }
+          },
+          "graphStyle": {
+            "type": "object",
+            "properties": {
+              "shape": {"type": "string"},
+              "size": {"type": "string"},
+              "color": {"type": "string"},
+              "borderColor": {"type": "string"},
+              "borderWidth": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "from", "to", "type"],
+        "properties": {
+          "id": {"type": "string"},
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "type": {"type": "string"},
+          "subtype": {"type": "string"},
+          "direction": {"type": "string", "enum": ["forward", "bidirectional"]},
+          "contract": {"type": "string"},
+          "status": {"type": "string"},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"},
+          "securityStatus": {"type": "string", "enum": ["DIRECTLY_ENFORCED", "INHERITED_ENFORCEMENT", "POLICY_DECLARED", "PARTIALLY_ENFORCED", "NOT_PROVEN", "UNKNOWN", "BLOCKED", "NOT_APPLICABLE"]},
+          "trustTransition": {"type": "string", "enum": ["same-boundary", "cross-boundary", "external", "unclassified"]},
+          "enforcementPoint": {"type": "string"},
+          "policyId": {"type": "string"},
+          "animated": {"type": "boolean"},
+          "lineStyle": {"type": "string", "enum": ["solid", "dashed", "dotted"]}
+        }
+      }
+    },
+    "views": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "nodeFilter", "relationshipFilter"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "category": {"type": "string"},
+          "icon": {"type": "string"},
+          "nodeFilter": {
+            "type": "object",
+            "properties": {
+              "categories": {"type": "array", "items": {"type": "string"}},
+              "statuses": {"type": "array", "items": {"type": "string"}},
+              "fabricLayers": {"type": "array", "items": {"type": "string"}},
+              "excludeIds": {"type": "array", "items": {"type": "string"}},
+              "includeIds": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "relationshipFilter": {
+            "type": "object",
+            "properties": {
+              "types": {"type": "array", "items": {"type": "string"}},
+              "excludeTypes": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "layout": {"type": "string"},
+          "default": {"type": "boolean"}
+        }
+      }
+    },
+    "knowledgeProviders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "providerType", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "providerType": {"type": "string"},
+          "description": {"type": "string"},
+          "status": {"type": "string"},
+          "contributesTo": {"type": "array", "items": {"type": "string"}},
+          "syncInterval": {"type": "string"},
+          "lastSyncUtc": {"type": ["string", "null"], "format": "date-time"},
+          "evidencePath": {"type": "string"},
+          "contract": {"type": "string"}
+        }
+      }
+    },
+    "timeMachine": {
+      "type": "object",
+      "required": ["enabled", "snapshots"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "currentSnapshot": {"type": "string"},
+        "snapshots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["snapshotId", "timestamp", "label", "migrationId"],
+            "properties": {
+              "snapshotId": {"type": "string"},
+              "timestamp": {"type": "string", "format": "date-time"},
+              "label": {"type": "string"},
+              "migrationId": {"type": "string"},
+              "description": {"type": "string"},
+              "mapPath": {"type": "string"},
+              "receiptPath": {"type": "string"},
+              "nodeCount": {"type": "integer"},
+              "relationshipCount": {"type": "integer"},
+              "completionPercent": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["mapVersion", "schemaVersion", "generatedAtUtc", "lastMigrationIncluded", "gitCommit", "projectRoot", "gitRoot", "sourceCount", "nodeCount", "relationshipCount", "viewCount", "providerCount", "snapshotCount", "unverifiedNodeCount", "knownGapCount", "generatorVersion"],
+      "properties": {
+        "mapVersion": {"type": "string"},
+        "schemaVersion": {"type": "string"},
+        "generatedAtUtc": {"type": "string", "format": "date-time"},
+        "lastMigrationIncluded": {"type": "string"},
+        "gitCommit": {"type": "string"},
+        "projectRoot": {"type": "string"},
+        "gitRoot": {"type": "string"},
+        "sourceCount": {"type": "integer", "minimum": 0},
+        "nodeCount": {"type": "integer", "minimum": 0},
+        "relationshipCount": {"type": "integer", "minimum": 0},
+        "viewCount": {"type": "integer", "minimum": 0},
+        "providerCount": {"type": "integer", "minimum": 0},
+        "snapshotCount": {"type": "integer", "minimum": 0},
+        "unverifiedNodeCount": {"type": "integer", "minimum": 0},
+        "knownGapCount": {"type": "integer", "minimum": 0},
+        "generatorVersion": {"type": "string"},
+        "lastDriftValidatedUtc": {"type": ["string", "null"], "format": "date-time"},
+        "driftReportPath": {"type": "string"},
+        "allContainersRunning": {"type": "boolean"},
+        "allEvidenceFound": {"type": "boolean"},
+        "allSourcesResolved": {"type": "boolean"}
+      }
+    }
+  }
+}

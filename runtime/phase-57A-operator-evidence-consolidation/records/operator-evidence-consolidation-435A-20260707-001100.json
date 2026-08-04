@@ -1,0 +1,45 @@
+﻿{
+    "version":  "LEEWAY_OPERATOR_EVIDENCE_CONSOLIDATION_435A",
+    "phase":  "57A",
+    "timestamp":  "2026-07-07T00:12:29",
+    "verdict":  "LEEWAY_OPERATOR_EVIDENCE_CONSOLIDATION_435A_CLEAN",
+    "evidence_consolidation_only":  true,
+    "evidence_mirrored_into_ecosystem_archive":  true,
+    "source_operator_script_root":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts",
+    "ecosystem_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "archive_snapshot_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\snapshot-20260707-001100",
+    "archive_latest_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\latest",
+    "canonical_index_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-57A-operator-evidence-consolidation\\latest\\operator-evidence-canonical-index-latest.json",
+    "archive_index_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts\\operator-evidence-canonical-index-latest.json",
+    "docker_storage_policy":  {
+                                  "store_canonical_evidence_inside_docker_containers":  false,
+                                  "reason":  "Containers are runtime surfaces and may be rebuilt or replaced. Canonical evidence belongs in the ecosystem Archive and runtime directories. Containers may mount or reference the evidence later.",
+                                  "canonical_evidence_location":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\operator-scripts"
+                              },
+    "counts":  {
+                   "all_files_inventory":  6147,
+                   "powershell_scripts":  351,
+                   "phase_scripts":  329,
+                   "run_directories":  358,
+                   "json_artifacts":  4964,
+                   "receipt_files":  355,
+                   "mirror_results":  6147,
+                   "mirror_errors":  0,
+                   "device_layer_scripts":  262,
+                   "standards_scripts":  7,
+                   "runtime_fabric_scripts":  15,
+                   "agent_lee_binding_scripts":  3,
+                   "packaging_hold_scripts":  7,
+                   "docker_governance_scripts":  2
+               },
+    "mirror_errors":  [
+
+                      ],
+    "no_runtime_execution":  true,
+    "no_docker_mutation":  true,
+    "no_docker_exec":  true,
+    "no_device_control":  true,
+    "no_physical_action":  true,
+    "no_package_creation":  true,
+    "recommended_next_script":  "436-docker-discovery-layer-resolution-contract-no-execute.ps1"
+}

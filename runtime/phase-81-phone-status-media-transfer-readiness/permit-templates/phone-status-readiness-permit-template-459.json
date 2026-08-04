@@ -1,0 +1,49 @@
+﻿{
+    "permit_version":  "LEEWAY_PHONE_STATUS_PERMIT_TEMPLATE_V1",
+    "permit_id":  "PHONE_STATUS_READINESS_459_TEMPLATE",
+    "target":  "phone",
+    "action":  "read phone status only",
+    "action_type":  "STATUS_ONLY",
+    "risk":  "critical",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_status":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use phone status check only. I understand this does not authorize ADB scan, MTP scan, pairing, handshake, file listing, file pull, media transfer, delete, sync, phone control, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "456 Device Operator readiness proof clean",
+                          "Phone inventory record exists OR manual phone registration record exists",
+                          "No file listing requested",
+                          "No transfer requested",
+                          "Receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "GET phone status endpoint",
+                                                    "read known phone record",
+                                                    "write phone status receipt"
+                                                ],
+    "blocked_operations":  [
+                               "ADB scan",
+                               "MTP scan",
+                               "device pairing",
+                               "device handshake",
+                               "file listing",
+                               "file pull",
+                               "media transfer",
+                               "delete",
+                               "sync",
+                               "phone control",
+                               "screen control",
+                               "SMS/call action",
+                               "physical action"
+                           ],
+    "rollback_plan":  "No mutation allowed. If endpoint fails, stop and write failed receipt.",
+    "simulation_required_before_real_transfer":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "phone_control_allowed_now":  false,
+    "phone_file_transfer_allowed_now":  false,
+    "adb_allowed_now":  false,
+    "mtp_allowed_now":  false,
+    "discovery_scan_allowed_now":  false,
+    "device_control_allowed_now":  false
+}

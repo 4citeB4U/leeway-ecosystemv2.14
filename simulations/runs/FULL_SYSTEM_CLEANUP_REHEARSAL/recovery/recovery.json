@@ -1,0 +1,8 @@
+{
+  "simulationId": "FULL_SYSTEM_CLEANUP_REHEARSAL",
+  "playbooksUsed": [
+    "PLAYBOOK::SHADOW_ARCHIVE_SAFE_CLASSIFICATION",
+    "PLAYBOOK::STALE_RUNTIME_STATE_REPAIR"
+  ],
+  "outcome": "PASS"
+}

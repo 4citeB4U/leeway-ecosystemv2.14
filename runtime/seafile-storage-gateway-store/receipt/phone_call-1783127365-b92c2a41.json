@@ -1,0 +1,20 @@
+{
+  "approval_id": "phone_call-1783127365-b92c2a41",
+  "action_type": "phone_call",
+  "status": "PENDING_APPROVAL",
+  "summary": "Phone call requested to Telegram Proof Restaurant at 414-555-0199",
+  "payload": {
+    "target_name": "Telegram Proof Restaurant",
+    "phone_number": "414-555-0199",
+    "purpose": "Ask about a table for two next Wednesday.",
+    "script": "Hello, I am calling to ask about availability for two next Wednesday around 7 PM.",
+    "related_plan_id": null,
+    "requested_by": "agent_lee",
+    "source": "telegram-approval-proof"
+  },
+  "requested_by": "agent_lee",
+  "execution_status": "NOT_EXECUTED",
+  "execution_note": "This approval layer only prepares and records actions. Real execution lane is not enabled yet.",
+  "created_at": "2026-07-04T01:09:25.509104+00:00",
+  "updated_at": "2026-07-04T01:09:25.509118+00:00"
+}

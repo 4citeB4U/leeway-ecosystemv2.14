@@ -1,0 +1,29 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_DISCOVERY_STATUS_CONTRACT_226",
+    "timestamp":  "2026-07-05T21:25:24",
+    "verdict":  "LEEWAY_CASTING_READ_ONLY_DISCOVERY_STATUS_CONTRACT_NO_EXECUTE_CLEAN",
+    "family":  "casting",
+    "discovery_route_present":  true,
+    "global_status_route_present":  false,
+    "registry_route_present":  false,
+    "route_patch_required":  true,
+    "discovered_count":  1,
+    "casting_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-registry-latest.json",
+    "casting_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-approval-policy-latest.json",
+    "casting_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-capability-contract-latest.json",
+    "casting_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-route-requirement-latest.json",
+    "windows_locked":  true,
+    "blocked_probe_executed":  false,
+    "safety":  {
+                   "contract_only":  true,
+                   "discovery_only":  true,
+                   "physical_actions_executed":  0,
+                   "cast_sessions_started":  0,
+                   "cast_sessions_stopped":  0,
+                   "pairing_requests":  0,
+                   "display_mutations":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "227-casting-read-only-route-patch-plan-no-execute.ps1"
+}

@@ -1,0 +1,77 @@
+﻿{
+    "version":  "LEEWAY_APPLY_IDENTITY_CONFIRMATION_UI_GET_ONLY_PATCH_300",
+    "phase":  41,
+    "timestamp":  "2026-07-06T12:46:21",
+    "verdict":  "LEEWAY_APPLY_IDENTITY_CONFIRMATION_UI_GET_ONLY_PATCH_300_CLEAN",
+    "patch_applied":  true,
+    "file_patch_only":  true,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "no_write_routes":  true,
+    "no_onboarding":  true,
+    "no_pairing":  true,
+    "no_protocol_translator":  true,
+    "no_iot_bridge":  true,
+    "no_physical_action_lane":  true,
+    "clear_skies":  true,
+    "route":  "/identity-confirmation",
+    "api_base":  "/api/identity-confirmation",
+    "files":  {
+                  "api_route":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\identity-confirmation\\[...path]\\route.ts",
+                  "client":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\identityConfirmationClient.ts",
+                  "component":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeIdentityConfirmationPanel.tsx",
+                  "page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\identity-confirmation\\page.tsx"
+              },
+    "backups":  [
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\identity-confirmation\\[...path]\\route.ts",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\identityConfirmationClient.ts",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeIdentityConfirmationPanel.tsx",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\identity-confirmation\\page.tsx",
+                        "backup":  ""
+                    }
+                ],
+    "static_safety":  {
+                          "api_get_only":  true,
+                          "client_get_only":  true,
+                          "no_real_open_app":  true,
+                          "no_real_arm":  true,
+                          "no_docker_deploy":  true,
+                          "no_pairing_call":  true,
+                          "no_print_action":  true,
+                          "no_mqtt_publish":  true,
+                          "no_execution_buttons":  true,
+                          "static_clean":  true
+                      },
+    "totals":  {
+                   "identity_candidates":  31,
+                   "network_candidates":  9,
+                   "bluetooth_candidates":  19,
+                   "printer_candidates":  3,
+                   "get_routes":  6
+               },
+    "safety":  {
+                   "no_device_control_in_300":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_browser_open":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "301-identity-confirmation-ui-post-patch-audit-no-execute.ps1"
+}

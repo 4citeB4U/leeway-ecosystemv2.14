@@ -1,0 +1,30 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_TAILSCALE_POLICY_CONTRACT_256",
+    "timestamp":  "2026-07-05T22:38:16",
+    "family":  "network_mesh",
+    "registry_status":  "NETWORK_MESH_REGISTRY_CREATED",
+    "route_surface":  {
+                          "network_mesh_discover":  false,
+                          "network_mesh_status":  false,
+                          "network_mesh_registry":  false,
+                          "tailscale_status":  false,
+                          "tailscale_policy":  false
+                      },
+    "discovered_count":  0,
+    "normalized_nodes":  [
+
+                         ],
+    "tailscale_cli_invoked":  false,
+    "tailscale_api_invoked":  false,
+    "tailnet_authenticated":  false,
+    "tailnet_joined":  false,
+    "acl_changed":  false,
+    "route_advertised":  false,
+    "exit_node_enabled":  false,
+    "subnet_router_enabled":  false,
+    "firewall_mutated":  false,
+    "dns_mutated":  false,
+    "network_settings_mutated":  false,
+    "tunnel_started":  false,
+    "physical_actions_executed":  0
+}

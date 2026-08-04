@@ -1,0 +1,31 @@
+﻿{
+    "version":  "LEEWAY_IOS_DEVICE_SHELL_ACTUATOR_CONTRACT_241",
+    "timestamp":  "2026-07-05T22:02:17",
+    "family":  "ios",
+    "registry_status":  "IOS_DEVICE_SHELL_ACTUATOR_REGISTRY_CREATED",
+    "route_surface":  {
+                          "ios_discover":  false,
+                          "ios_status":  false,
+                          "ios_registry":  false,
+                          "ios_shell_status":  false,
+                          "ios_actuator_status":  false
+                      },
+    "discovered_count":  0,
+    "normalized_devices":  [
+
+                           ],
+    "shell_enabled":  false,
+    "actuator_enabled":  false,
+    "libimobiledevice_invoked":  false,
+    "idevice_tools_invoked":  false,
+    "phone_connected":  false,
+    "physical_actions_executed":  0,
+    "taps_executed":  0,
+    "swipes_executed":  0,
+    "texts_sent":  0,
+    "calls_started":  0,
+    "files_read":  0,
+    "backups_started":  0,
+    "app_installs":  0,
+    "device_mutations":  0
+}

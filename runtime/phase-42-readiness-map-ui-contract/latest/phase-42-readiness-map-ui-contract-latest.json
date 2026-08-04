@@ -1,0 +1,305 @@
+﻿{
+    "version":  "LEEWAY_PHASE_42_READINESS_MAP_UI_CONTRACT_315",
+    "phase":  42,
+    "timestamp":  "2026-07-06T14:41:05",
+    "verdict":  "LEEWAY_PHASE_42_READINESS_MAP_UI_CONTRACT_315_NO_EXECUTE_CLEAN",
+    "ui_contract_only":  true,
+    "patch_applied_in_315":  false,
+    "api_routes_created_in_315":  false,
+    "frontend_files_created_in_315":  false,
+    "valid_save_performed_in_315":  false,
+    "enrichment_run_in_315":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "pairing_performed":  false,
+    "protocol_translator_performed":  false,
+    "iot_bridge_performed":  false,
+    "physical_action_lane_performed":  false,
+    "browser_opened_by_315":  false,
+    "write_scope":  "READINESS_MAP_UI_CONTRACT_ONLY",
+    "inherited_readiness_scope":  "READINESS_MAP_REFRESH_ONLY",
+    "inherited_enrichment_scope":  "PASSIVE_READ_ONLY_ENRICHMENT_MAP_ONLY",
+    "clear_skies":  true,
+    "proposed_page":  "/device-readiness",
+    "proposed_api_base":  "/api/device-readiness",
+    "counts":  {
+                   "reviewed_records":  17,
+                   "enriched_records":  16,
+                   "read_only_monitoring_ready":  11,
+                   "future_onboarding_draft_only":  4,
+                   "research_only":  1,
+                   "protocol_candidate_drafts":  4
+               },
+    "proposed_get_routes":  [
+                                {
+                                    "route":  "/api/device-readiness/summary",
+                                    "method":  "GET",
+                                    "purpose":  "Return Phase 42 readiness summary counts and safety state.",
+                                    "source_artifact":  "phase-42-readiness-map-refresh-after-enrichment-latest.json"
+                                },
+                                {
+                                    "route":  "/api/device-readiness/groups",
+                                    "method":  "GET",
+                                    "purpose":  "Return read-only monitoring, future onboarding draft-only, research-only, matched, and unmatched groups.",
+                                    "source_artifact":  "phase-42-readiness-map-refresh-after-enrichment-latest.json"
+                                },
+                                {
+                                    "route":  "/api/device-readiness/protocol-candidate-drafts",
+                                    "method":  "GET",
+                                    "purpose":  "Return protocol hints as draft-only planning records.",
+                                    "source_artifact":  "phase-42-readiness-map-refresh-after-enrichment-latest.json"
+                                },
+                                {
+                                    "route":  "/api/device-readiness/safety",
+                                    "method":  "GET",
+                                    "purpose":  "Return still-blocked actions and no-control assertions.",
+                                    "source_artifact":  "phase-42-readiness-map-refresh-after-enrichment-latest.json"
+                                },
+                                {
+                                    "route":  "/api/device-readiness/recommendations",
+                                    "method":  "GET",
+                                    "purpose":  "Return Phase 42 planning-only recommendations.",
+                                    "source_artifact":  "phase-42-readiness-map-refresh-after-enrichment-latest.json"
+                                }
+                            ],
+    "forbidden_routes":  [
+                             {
+                                 "route":  "/api/device-readiness/onboard",
+                                 "method":  "POST",
+                                 "reason":  "onboarding execution remains forbidden"
+                             },
+                             {
+                                 "route":  "/api/device-readiness/pair",
+                                 "method":  "POST",
+                                 "reason":  "Bluetooth pairing remains forbidden"
+                             },
+                             {
+                                 "route":  "/api/device-readiness/print",
+                                 "method":  "POST",
+                                 "reason":  "printer output remains forbidden"
+                             },
+                             {
+                                 "route":  "/api/device-readiness/deploy-bridge",
+                                 "method":  "POST",
+                                 "reason":  "IoT bridge deploy remains forbidden"
+                             },
+                             {
+                                 "route":  "/api/device-readiness/deploy-translator",
+                                 "method":  "POST",
+                                 "reason":  "protocol translator deploy remains forbidden"
+                             },
+                             {
+                                 "route":  "/api/device-readiness/execute",
+                                 "method":  "POST",
+                                 "reason":  "physical execution remains forbidden"
+                             }
+                         ],
+    "proposed_files":  [
+                           {
+                               "path":  "src\\app\\api\\device-readiness\\[...path]\\route.ts",
+                               "action":  "future_patch_only",
+                               "purpose":  "GET-only API route reading Phase 42 refreshed readiness map.",
+                               "allowed_methods":  [
+                                                       "GET"
+                                                   ],
+                               "forbidden_methods":  [
+                                                         "POST",
+                                                         "PUT",
+                                                         "PATCH",
+                                                         "DELETE"
+                                                     ]
+                           },
+                           {
+                               "path":  "src\\lib\\deviceReadinessClient.ts",
+                               "action":  "future_patch_only",
+                               "purpose":  "Frontend client for GET-only readiness endpoints.",
+                               "allowed_methods":  [
+                                                       "GET"
+                                                   ],
+                               "forbidden_methods":  [
+                                                         "POST",
+                                                         "PUT",
+                                                         "PATCH",
+                                                         "DELETE"
+                                                     ]
+                           },
+                           {
+                               "path":  "components\\AgentLeeDeviceReadinessPanel.tsx",
+                               "action":  "future_patch_only",
+                               "purpose":  "Readiness dashboard panel with group cards and protocol draft-only indicators.",
+                               "forbidden_ui_controls":  [
+                                                             "Onboard now",
+                                                             "Pair now",
+                                                             "Print now",
+                                                             "Deploy bridge",
+                                                             "Deploy translator",
+                                                             "Execute"
+                                                         ]
+                           },
+                           {
+                               "path":  "src\\app\\device-readiness\\page.tsx",
+                               "action":  "future_patch_only",
+                               "purpose":  "Phase 42 device readiness page.",
+                               "forbidden_ui_controls":  [
+                                                             "Onboard now",
+                                                             "Pair now",
+                                                             "Print now",
+                                                             "Deploy bridge",
+                                                             "Deploy translator",
+                                                             "Execute"
+                                                         ]
+                           }
+                       ],
+    "ui_sections":  [
+                        {
+                            "section":  "Sovereign Readiness Header",
+                            "purpose":  "Show Phase 42 status, readiness grade, and no-control lock state.",
+                            "data":  [
+                                         "verdict",
+                                         "readiness_grade",
+                                         "write_scope",
+                                         "clear_skies"
+                                     ]
+                        },
+                        {
+                            "section":  "Readiness Counters",
+                            "purpose":  "Show reviewed, enriched, matched, unmatched, monitoring-ready, onboarding-draft-only, research-only counts.",
+                            "data":  [
+                                         "counts"
+                                     ]
+                        },
+                        {
+                            "section":  "Read-Only Monitoring Ready",
+                            "purpose":  "Show assets eligible only for future read-only monitoring plan drafts.",
+                            "data":  [
+                                         "groups.read_only_monitoring_ready"
+                                     ]
+                        },
+                        {
+                            "section":  "Future Onboarding Draft-Only",
+                            "purpose":  "Show assets eligible for future onboarding request drafts, not onboarding execution.",
+                            "data":  [
+                                         "groups.future_onboarding_draft_only"
+                                     ]
+                        },
+                        {
+                            "section":  "Research Only",
+                            "purpose":  "Show assets that need more identity context.",
+                            "data":  [
+                                         "groups.research_only"
+                                     ]
+                        },
+                        {
+                            "section":  "Protocol Candidate Drafts",
+                            "purpose":  "Show draft-only protocol hints without enabling translator or bridge.",
+                            "data":  [
+                                         "protocol_candidate_drafts"
+                                     ]
+                        },
+                        {
+                            "section":  "Safety Blockers",
+                            "purpose":  "Display every still-blocked action.",
+                            "data":  [
+                                         "still_blocked",
+                                         "final_assertions",
+                                         "safety"
+                                     ]
+                        }
+                    ],
+    "ui_copy_requirements":  [
+                                 "This page is readiness intelligence only.",
+                                 "No device action is authorized from this page.",
+                                 "Future onboarding request means draft-only, not execution.",
+                                 "Protocol candidate means planning hint only, not translator deployment.",
+                                 "Printer candidates cannot print from this page.",
+                                 "Bluetooth candidates cannot pair from this page.",
+                                 "IoT candidates cannot deploy bridges from this page.",
+                                 "Every action lane requires a later explicit approval gate."
+                             ],
+    "forbidden_ui_text":  [
+                              "Onboard now",
+                              "Pair now",
+                              "Print now",
+                              "Deploy bridge",
+                              "Deploy translator",
+                              "Execute now",
+                              "Control device",
+                              "Send job",
+                              "Toggle device",
+                              "Publish MQTT",
+                              "Arm Real Alpha"
+                          ],
+    "allowed_ui_text":  [
+                            "Readiness map",
+                            "Read-only monitoring candidate",
+                            "Future onboarding request draft-only",
+                            "Research only",
+                            "Protocol hint draft-only",
+                            "No device action",
+                            "No onboarding authorized",
+                            "No pairing authorized",
+                            "No bridge authorized",
+                            "No translator authorized"
+                        ],
+    "acceptance_gates_for_316":  [
+                                     "315 UI contract clean",
+                                     "314 readiness refresh clean",
+                                     "313 passive enrichment map clean",
+                                     "reviewed records \u003e= 10",
+                                     "enriched records \u003e= 10",
+                                     "all protocol candidates draft-only",
+                                     "API route must be GET-only",
+                                     "frontend client must be GET-only",
+                                     "UI must contain no execution buttons",
+                                     "static source audit must reject POST action lanes",
+                                     "no device control",
+                                     "no onboarding",
+                                     "no pairing",
+                                     "no printer action",
+                                     "no IoT bridge",
+                                     "no protocol translator",
+                                     "no physical action lane"
+                                 ],
+    "final_assertions":  {
+                             "refresh_314_clean":  true,
+                             "map_313_clean":  true,
+                             "contract_312_clean":  true,
+                             "reviewed_threshold_met":  true,
+                             "enriched_threshold_met":  true,
+                             "all_protocol_candidate_drafts_safe":  true,
+                             "ui_contract_only":  true,
+                             "no_file_patch":  true,
+                             "no_api_routes_created":  true,
+                             "no_frontend_files_created":  true,
+                             "no_save":  true,
+                             "no_enrichment_run":  true,
+                             "no_execution":  true,
+                             "no_device_control":  true,
+                             "no_onboarding":  true,
+                             "no_pairing":  true,
+                             "no_protocol_translator":  true,
+                             "no_iot_bridge":  true,
+                             "no_physical_action":  true
+                         },
+    "safety":  {
+                   "no_device_control_in_315":  true,
+                   "no_file_patch_in_315":  true,
+                   "no_save_in_315":  true,
+                   "no_enrichment_run_in_315":  true,
+                   "no_onboarding":  true,
+                   "no_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_desktop_cursor_action":  true,
+                   "no_browser_autonomy_action":  true,
+                   "no_port_scan":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "316-apply-phase-42-readiness-map-ui-get-only-patch-no-control.ps1"
+}

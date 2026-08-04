@@ -1,0 +1,54 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "doctrine":  "SHELLS_SEND_AND_RECEIVE_COMMANDS; DEVICE_OPERATOR_EXECUTES_DEVICE_ACTIONS",
+    "telegram":  {
+                     "current_container":  "agent-lee-telegram-shell",
+                     "required_integrations":  [
+                                                   "leeway_device_operator:5323",
+                                                   "agent-lee-qwen-voice:8097",
+                                                   "leeway_artifact_viewer:5328",
+                                                   "runtime_fabric:4001"
+                                               ],
+                     "capabilities":  [
+                                          "receive_command",
+                                          "send_text",
+                                          "send_voice",
+                                          "send_artifact_link",
+                                          "send_approval_buttons",
+                                          "receive_approval",
+                                          "route_to_device_operator"
+                                      ],
+                     "role":  "REMOTE_CONTROL_SHELL"
+                 },
+    "whatsapp":  {
+                     "caution":  "Use approved APIs and avoid brittle unauthorized web automation for production.",
+                     "capabilities":  [
+                                          "receive_command",
+                                          "send_text",
+                                          "send_artifact_link",
+                                          "send_approval_buttons",
+                                          "route_to_device_operator"
+                                      ],
+                     "target":  "WhatsApp Business Cloud API or approved local bridge",
+                     "role":  "REMOTE_CONTROL_SHELL"
+                 },
+    "sms":  {
+                "capabilities":  [
+                                     "send_sms_with_approval",
+                                     "receive_sms_if_permissioned",
+                                     "route_to_device_operator"
+                                 ],
+                "target":  "Android satellite or carrier-approved API",
+                "role":  "PHONE_SHELL"
+            },
+    "email":  {
+                  "capabilities":  [
+                                       "draft_email",
+                                       "send_email_with_approval",
+                                       "attach_artifact",
+                                       "route_to_device_operator"
+                                   ],
+                  "role":  "COMMUNICATION_SHELL"
+              }
+}

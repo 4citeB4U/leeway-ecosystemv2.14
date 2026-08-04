@@ -1,0 +1,33 @@
+{
+  "migration": "MIG-005A",
+  "target": "OpenCode Engineering Toolchain",
+  "status": "Implemented",
+  "scope": [
+    "OpenCode project commands (10)",
+    "OpenCode project agents (9)",
+    "OpenCode custom TypeScript tools (10)",
+    "MCP servers: GitHub, Context7, Playwright, Docker",
+    "Skills manifest synchronization",
+    "OpenCode configuration validation",
+    "TypeScript build validation",
+    "Protected file integrity",
+    "Evidence and rollback"
+  ],
+  "excluded": [
+    "Live MCP server execution",
+    "Browser validation execution",
+    "n8n integration",
+    "Vite removal",
+    "Server.ts replacement"
+  ],
+  "files": [
+    ".opencode\\commands",
+    ".opencode\\agents",
+    ".opencode\\tools",
+    "C:\\Users\\Leona\\.config\\opencode\\opencode.jsonc",
+    ".leeway\\skills\\skills-manifest.json",
+    "migration\\MIG-005A-opencode-engineering-toolchain.md",
+    "migration\\MIG-005A-manifest.json"
+  ],
+  "timestampUtc": "2026-07-30T00:37:46.7739956+00:00"
+}

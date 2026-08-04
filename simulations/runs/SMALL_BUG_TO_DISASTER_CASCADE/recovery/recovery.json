@@ -1,0 +1,8 @@
+{
+  "simulationId": "SMALL_BUG_TO_DISASTER_CASCADE",
+  "playbooksUsed": [
+    "PLAYBOOK::STALE_RUNTIME_STATE_REPAIR",
+    "PLAYBOOK::MODEL_ROUTE_TRUTH_DOWNGRADE"
+  ],
+  "outcome": "PASS"
+}

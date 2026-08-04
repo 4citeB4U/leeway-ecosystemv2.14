@@ -1,0 +1,16 @@
+{
+  "docker_url": "http://leeway_agent_skills:5327",
+  "image": "leeway_agent_skills:local",
+  "host_url": "http://localhost:5327",
+  "container": "leeway_agent_skills",
+  "role": "Agent Lee skill registry and skill composition lane",
+  "created_at": "2026-07-03T23:12:54.5601860-05:00",
+  "endpoints": {
+    "skills": "/skills",
+    "register": "/skills/register",
+    "health": "/health",
+    "status": "/status",
+    "search": "/skills/search?q="
+  },
+  "service": "leeway_agent_skills"
+}

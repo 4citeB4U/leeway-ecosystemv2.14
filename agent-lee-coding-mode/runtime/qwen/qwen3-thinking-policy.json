@@ -1,0 +1,79 @@
+{
+  "schema": "leeway.qwen3.thinking-policy.v1",
+  "primaryModel": "qwen3:latest",
+  "modelProvider": "OLLAMA_LOCAL",
+  "profiles": {
+    "FAST_RESPONSE": {
+      "thinkingDepth": "minimal",
+      "latencyTarget": 3000,
+      "retrievalRequired": false,
+      "standardsRequired": false,
+      "structuredOutputRequired": false,
+      "approvalRequired": false,
+      "receiptRequired": false
+    },
+    "DEEP_REASONING": {
+      "thinkingDepth": "high",
+      "latencyTarget": 12000,
+      "retrievalRequired": true,
+      "standardsRequired": false,
+      "structuredOutputRequired": true,
+      "approvalRequired": false,
+      "receiptRequired": true
+    },
+    "STANDARDS_GOVERNED": {
+      "thinkingDepth": "high",
+      "latencyTarget": 15000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    },
+    "TOOL_ORCHESTRATION": {
+      "thinkingDepth": "medium",
+      "latencyTarget": 10000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    },
+    "CODEX_WORKSPACE": {
+      "thinkingDepth": "medium",
+      "latencyTarget": 9000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    },
+    "VOICE_RUNTIME": {
+      "thinkingDepth": "medium",
+      "latencyTarget": 8000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    },
+    "VISION_RUNTIME": {
+      "thinkingDepth": "medium",
+      "latencyTarget": 10000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    },
+    "SAFETY_OR_HIGH_RISK": {
+      "thinkingDepth": "high",
+      "latencyTarget": 15000,
+      "retrievalRequired": true,
+      "standardsRequired": true,
+      "structuredOutputRequired": true,
+      "approvalRequired": true,
+      "receiptRequired": true
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "CORE",
+    "TAG": "CORE.AGENT_LEE.VOICE.LIVE_ROUTE_MANIFEST",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+  "voice": {
+    "mode": "live",
+    "ownership": "leeway-owned-only",
+    "fallbackPolicy": "leeway_live_identity_first",
+    "requireStreamingInput": true,
+    "requireStreamingOutput": true,
+    "allowExternalProviders": false,
+    "allowUsageBasedFallback": false,
+    "allowNonLeewayDefault": false,
+    "routes": [
+      {
+        "id": "leeway.voice.primary.clone.live",
+        "priority": 0,
+        "kind": "clone",
+        "engine": "primary",
+        "streaming": true,
+        "identityRequired": true
+      },
+      {
+        "id": "leeway.voice.compact.clone.live",
+        "priority": 1,
+        "kind": "compact-clone",
+        "engine": "compact",
+        "streaming": true,
+        "identityRequired": true
+      },
+      {
+        "id": "leeway.voice.branded.live",
+        "priority": 2,
+        "kind": "branded",
+        "engine": "branded",
+        "streaming": true,
+        "identityRequired": false
+      },
+      {
+        "id": "leeway.voice.text.emergency",
+        "priority": 3,
+        "kind": "text-only",
+        "engine": "none",
+        "streaming": false,
+        "identityRequired": false,
+        "emergencyOnly": true
+      }
+    ]
+  }
+}

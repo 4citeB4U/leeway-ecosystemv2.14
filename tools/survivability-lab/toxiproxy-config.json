@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "proxies": [
+    {
+      "name": "leeway-api",
+      "listen": "0.0.0.0:8666",
+      "upstream": "host.docker.internal:3000",
+      "toxics": [
+        { "name": "latency", "type": "latency", "stream": "downstream", "attributes": { "latency": 120, "jitter": 40 } },
+        { "name": "bandwidth", "type": "bandwidth", "stream": "downstream", "attributes": { "rate": 1200 } }
+      ]
+    }
+  ]
+}

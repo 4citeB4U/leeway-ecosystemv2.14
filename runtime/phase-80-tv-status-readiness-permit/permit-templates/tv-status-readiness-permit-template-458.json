@@ -1,0 +1,50 @@
+﻿{
+    "permit_version":  "LEEWAY_TV_STATUS_PERMIT_TEMPLATE_V1",
+    "permit_id":  "TV_STATUS_READINESS_458_TEMPLATE",
+    "target":  "tv",
+    "action":  "read TV status only",
+    "action_type":  "STATUS_ONLY",
+    "risk":  "critical",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_status":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use TV status check only. I understand this does not authorize power on/off, channel change, source change, app launch, media search, casting, pairing, network scan, discovery scan, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "456 Device Operator readiness proof clean",
+                          "TV inventory record exists OR manual TV registration record exists",
+                          "No power action requested",
+                          "No channel/source/media action requested",
+                          "Receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "GET TV status endpoint",
+                                                    "read known TV record",
+                                                    "write TV status receipt"
+                                                ],
+    "blocked_operations":  [
+                               "power on",
+                               "power off",
+                               "channel change",
+                               "source change",
+                               "volume change",
+                               "app launch",
+                               "movie search",
+                               "media playback",
+                               "casting",
+                               "pairing",
+                               "device handshake",
+                               "network scan",
+                               "discovery scan",
+                               "physical action"
+                           ],
+    "rollback_plan":  "No mutation allowed. If endpoint fails, stop and write failed receipt.",
+    "simulation_required_before_real_control":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "tv_control_allowed_now":  false,
+    "tv_power_allowed_now":  false,
+    "tv_channel_allowed_now":  false,
+    "tv_media_allowed_now":  false,
+    "discovery_scan_allowed_now":  false,
+    "device_control_allowed_now":  false
+}

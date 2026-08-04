@@ -1,0 +1,6 @@
+services:
+  agent-lee-vision-kernel:
+    extends:
+      file: docker-compose.yml
+      service: agent-lee-vision-kernel
+    restart: unless-stopped

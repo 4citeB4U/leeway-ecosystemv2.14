@@ -1,0 +1,21 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "TAG": "CORE.SDK.LEEWAY.MANIFEST",
+    "REGION": "🟢 CORE",
+    "PURPOSE": "Standalone LeeWay SDK manifest used by Agent Lee runtime connectivity.",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "name": "agent-lee-standalone-sdk",
+  "version": "1.0.0",
+  "roots": {
+    "sdk": "agent-lee/sdk/leeway-sdk",
+    "schemas": "agent-lee/sdk/schemas",
+    "validators": "agent-lee/sdk/validators"
+  },
+  "exports": [
+    "manifest",
+    "schemas",
+    "validators"
+  ]
+}

@@ -1,0 +1,65 @@
+﻿[
+    {
+        "RequestedVoice":  "Microsoft Andrew",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Andrew"
+    },
+    {
+        "RequestedVoice":  "Microsoft Andrew (Natural HD)",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Andrew (Natural HD)"
+    },
+    {
+        "RequestedVoice":  "Microsoft Ava",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Ava"
+    },
+    {
+        "RequestedVoice":  "Microsoft Ava (Natural HD)",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Ava (Natural HD)"
+    },
+    {
+        "RequestedVoice":  "Microsoft David",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft David"
+    },
+    {
+        "RequestedVoice":  "Microsoft Zira",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Zira"
+    },
+    {
+        "RequestedVoice":  "Microsoft Mark",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  false,
+        "Error":  "Requested voice not available to System.Speech: Microsoft Mark"
+    },
+    {
+        "RequestedVoice":  "Microsoft David Desktop",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft David Desktop",
+        "Applied":  true,
+        "Error":  ""
+    },
+    {
+        "RequestedVoice":  "Microsoft Zira Desktop",
+        "Ok":  true,
+        "SelectedVoice":  "Microsoft Zira Desktop",
+        "Applied":  true,
+        "Error":  ""
+    }
+]

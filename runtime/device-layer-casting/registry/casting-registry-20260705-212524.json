@@ -1,0 +1,22 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_DISCOVERY_STATUS_CONTRACT_226",
+    "timestamp":  "2026-07-05T21:25:24",
+    "family":  "casting",
+    "registry_status":  "CASTING_READ_ONLY_REGISTRY_CREATED",
+    "discovery_route":  "/casting/discover",
+    "discovery_route_present":  true,
+    "global_status_route_present":  false,
+    "registry_route_present":  false,
+    "discovered_count":  1,
+    "normalized_targets":  [
+
+                           ],
+    "source":  {
+                   "route":  "http://127.0.0.1:5323/casting/discover",
+                   "raw_capture":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-226-20260705-212524\\json\\casting-discover.json"
+               },
+    "control_enabled":  false,
+    "cast_sessions_started":  0,
+    "cast_sessions_stopped":  0,
+    "physical_actions_executed":  0
+}

@@ -1,0 +1,23 @@
+﻿{
+    "version":  "LEEWAY_EXTEND_APPROVED_REAL_OPEN_URL_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:28:10",
+    "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha",
+    "real_alpha_url":  "http://127.0.0.1:7332",
+    "policy":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\policy\\real-alpha-one-action-open-url-policy.json",
+    "mode":  "ONE_ACTION_REAL_OPEN_URL_ONLY",
+    "real_execution_enabled":  true,
+    "physical_execution_enabled":  true,
+    "enabled_action":  "real_open_url",
+    "enabled_browser":  "edge",
+    "approved_url":  "https://example.com",
+    "last_approval_id":  "approved-real-open-url-20260705-182805-9c52076cad7a",
+    "last_execution_result":  {
+                                  "new_edge_process_ids":  [
+                                                               53948
+                                                           ],
+                                  "launcher_pid":  "32464",
+                                  "response_executed":  true,
+                                  "response_allowed":  true
+                              },
+    "all_other_actions_blocked":  true
+}

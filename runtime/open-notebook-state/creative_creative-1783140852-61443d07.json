@@ -1,0 +1,25 @@
+{
+  "creative_id": "creative-1783140852-61443d07",
+  "creative_type": "slide_deck",
+  "title": "Leeway Agentic OS Pitch Deck",
+  "prompt": "Create a slide deck package for presenting Agent Lee to customers.",
+  "audience": "small business owners",
+  "goal": "explain value and close a meeting",
+  "tone": "professional and persuasive",
+  "duration_minutes": 0,
+  "slide_count": 10,
+  "sections": 0,
+  "content": "# Leeway Agentic OS Pitch Deck\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: slide_deck\nAudience: small business owners\nGoal: explain value and close a meeting\nTone: professional and persuasive\nPrompt: Create a slide deck package for presenting Agent Lee to customers.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Slide Deck Package\nSlide Count Target: 10\n\n## Deck Strategy\nThe deck should move from problem to solution to proof to action.\n\n## Slide 1\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 2\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 3\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 4\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 5\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 6\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 7\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 8\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 9\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 10\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+  "versions": [
+    {
+      "version": 1,
+      "created_at": "2026-07-04T04:54:12.586680+00:00",
+      "source": "creation-layer-lock-proof",
+      "instructions": "initial_create_creative",
+      "content": "# Leeway Agentic OS Pitch Deck\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: slide_deck\nAudience: small business owners\nGoal: explain value and close a meeting\nTone: professional and persuasive\nPrompt: Create a slide deck package for presenting Agent Lee to customers.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Slide Deck Package\nSlide Count Target: 10\n\n## Deck Strategy\nThe deck should move from problem to solution to proof to action.\n\n## Slide 1\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 2\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 3\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 4\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 5\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 6\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 7\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 8\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 9\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 10\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+    }
+  ],
+  "metadata": {},
+  "created_at": "2026-07-04T04:54:12.586689+00:00",
+  "updated_at": "2026-07-04T04:54:12.586690+00:00"
+}

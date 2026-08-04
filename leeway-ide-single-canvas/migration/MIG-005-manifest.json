@@ -1,0 +1,48 @@
+{
+  "migration": "MIG-005",
+  "target": "LeeWay Code Engine",
+  "status": "Implemented",
+  "scope": [
+    "Code Engine contract and metadata",
+    "engine lifecycle states",
+    "provider/adapter interface",
+    "OpenCode adapter discovery",
+    "OpenCode configuration validation",
+    "Code Engine registry",
+    "Runtime Contract linkage",
+    "module registration metadata",
+    "mock adapter validation",
+    "TypeScript build validation",
+    "evidence",
+    "rollback"
+  ],
+  "excluded": [
+    "remove OpenCode frontend",
+    "execute arbitrary terminal commands",
+    "migrate existing editor",
+    "change opencode.jsonc",
+    "replace server.ts",
+    "integrate n8n",
+    "remove Vite",
+    "alter existing Runtime Fabric routes"
+  ],
+  "consumesFromMIG003": [
+    "LeeWayModuleMetadata",
+    "LeeWayModuleContract",
+    "leeWayModuleRegistry"
+  ],
+  "consumesFromMIG004": [
+    "LeeWayRuntimeRequestEnvelope",
+    "LeeWayRuntimeResponseEnvelope"
+  ],
+  "files": [
+    "src\\core\\code-engine\\code-engine-types.ts",
+    "src\\core\\code-engine\\code-engine-contract.ts",
+    "src\\core\\code-engine\\code-engine-registry.ts",
+    "src\\core\\code-engine\\opencode-adapter.ts",
+    "src\\core\\code-engine\\code-engine-mock.ts",
+    "src\\core\\code-engine\\index.ts",
+    "migration\\MIG-005-manifest.json"
+  ],
+  "timestampUtc": "2026-07-29T23:08:17.8153502+00:00"
+}

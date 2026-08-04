@@ -1,0 +1,271 @@
+﻿{
+    "version":  "LEEWAY_IDENTITY_CONFIRMATION_UI_CONTRACT_298",
+    "phase":  41,
+    "timestamp":  "2026-07-06T11:40:08",
+    "verdict":  "LEEWAY_IDENTITY_CONFIRMATION_UI_CONTRACT_298_NO_EXECUTE_CLEAN",
+    "contract_only":  true,
+    "no_execution":  true,
+    "no_file_patch":  true,
+    "no_routes_created":  true,
+    "no_write_routes":  true,
+    "no_onboarding":  true,
+    "no_pairing":  true,
+    "no_protocol_translator":  true,
+    "no_iot_bridge":  true,
+    "no_physical_action_lane":  true,
+    "clear_skies":  true,
+    "source_plan":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-identity-confirmation\\latest\\phase-41-identity-confirmation-plan-latest.json",
+    "source_phase_40_proof":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-onboarding-final-proof\\latest\\device-onboarding-final-browser-proof-latest.json",
+    "totals":  {
+                   "identity_candidates":  31,
+                   "network_candidates":  9,
+                   "bluetooth_candidates":  19,
+                   "printer_candidates":  3,
+                   "ui_cards":  5,
+                   "ui_tabs":  6,
+                   "proposed_get_routes":  6
+               },
+    "ui_cards":  [
+                     {
+                         "card_id":  "phase_41_mode",
+                         "title":  "Phase 41 Mode",
+                         "value":  "Identity Confirmation Only",
+                         "status":  "NO_ONBOARDING_NO_CONTROL"
+                     },
+                     {
+                         "card_id":  "total_identity_candidates",
+                         "title":  "Identity Candidates",
+                         "value":  31,
+                         "status":  "PENDING_HUMAN_CONFIRMATION"
+                     },
+                     {
+                         "card_id":  "network_identity_candidates",
+                         "title":  "Network Candidates",
+                         "value":  9,
+                         "status":  "UNCONFIRMED"
+                     },
+                     {
+                         "card_id":  "bluetooth_identity_candidates",
+                         "title":  "Bluetooth Candidates",
+                         "value":  19,
+                         "status":  "PAIRING_BLOCKED"
+                     },
+                     {
+                         "card_id":  "printer_identity_candidates",
+                         "title":  "Printer Candidates",
+                         "value":  3,
+                         "status":  "PRINT_ACTIONS_BLOCKED"
+                     }
+                 ],
+    "ui_tabs":  [
+                    {
+                        "tab_id":  "overview",
+                        "label":  "Overview",
+                        "purpose":  "Show Phase 41 mode, Clear Skies, and blocked control state.",
+                        "allowed_actions":  [
+                                                "view_summary",
+                                                "refresh_get_only_data"
+                                            ],
+                        "blocked_actions":  [
+                                                "control",
+                                                "pair",
+                                                "print",
+                                                "deploy_translator",
+                                                "deploy_bridge"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "all_candidates",
+                        "label":  "All Candidates",
+                        "purpose":  "Review every unconfirmed asset before any onboarding lane exists.",
+                        "candidate_count":  31,
+                        "allowed_actions":  [
+                                                "view_candidate",
+                                                "read_confirmation_questions"
+                                            ],
+                        "blocked_actions":  [
+                                                "save_confirmation",
+                                                "onboard",
+                                                "control"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "network",
+                        "label":  "Network",
+                        "purpose":  "Review IP, MAC, hostname, inferred family, and trust questions.",
+                        "candidate_count":  9,
+                        "allowed_actions":  [
+                                                "view_candidate",
+                                                "read_evidence"
+                                            ],
+                        "blocked_actions":  [
+                                                "port_scan",
+                                                "login_attempt",
+                                                "network_control"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "bluetooth",
+                        "label":  "Bluetooth",
+                        "purpose":  "Review Bluetooth candidates without pairing or GATT writes.",
+                        "candidate_count":  19,
+                        "allowed_actions":  [
+                                                "view_candidate",
+                                                "read_evidence"
+                                            ],
+                        "blocked_actions":  [
+                                                "pair",
+                                                "gatt_write",
+                                                "hid_control"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "printers",
+                        "label":  "Printers",
+                        "purpose":  "Review printer identity without print or queue actions.",
+                        "candidate_count":  3,
+                        "allowed_actions":  [
+                                                "view_candidate",
+                                                "read_evidence"
+                                            ],
+                        "blocked_actions":  [
+                                                "test_page",
+                                                "print_job",
+                                                "queue_change"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "policy",
+                        "label":  "Policy",
+                        "purpose":  "Show Phase 41 allowed and blocked states.",
+                        "allowed_actions":  [
+                                                "view_policy"
+                                            ],
+                        "blocked_actions":  [
+                                                "change_policy",
+                                                "unlock",
+                                                "approve_action"
+                                            ]
+                    }
+                ],
+    "api_contract":  {
+                         "base_route":  "/api/identity-confirmation",
+                         "contract_type":  "GET_ONLY_CONTRACT_FOR_298",
+                         "routes_created_in_298":  false,
+                         "proposed_get_routes":  [
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/summary",
+                                                         "reads":  "runtime/phase-41-identity-confirmation/latest/phase-41-identity-confirmation-plan-latest.json",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     },
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/candidates",
+                                                         "reads":  "identity_candidates",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     },
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/candidates/network",
+                                                         "reads":  "identity_candidates filtered by source_family network",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     },
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/candidates/bluetooth",
+                                                         "reads":  "identity_candidates filtered by source_family bluetooth",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     },
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/candidates/printers",
+                                                         "reads":  "identity_candidates filtered by source_family printer",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     },
+                                                     {
+                                                         "method":  "GET",
+                                                         "path":  "/api/identity-confirmation/policy",
+                                                         "reads":  "phase_41_policy",
+                                                         "execution":  false,
+                                                         "writes_runtime_state":  false
+                                                     }
+                                                 ],
+                         "future_write_routes_not_in_298":  [
+                                                                "POST /api/identity-confirmation/mark-reviewed",
+                                                                "POST /api/identity-confirmation/set-human-name",
+                                                                "POST /api/identity-confirmation/set-location",
+                                                                "POST /api/identity-confirmation/set-disposition"
+                                                            ],
+                         "forbidden_routes":  [
+                                                  "POST /api/identity-confirmation/control",
+                                                  "POST /api/identity-confirmation/pair",
+                                                  "POST /api/identity-confirmation/print",
+                                                  "POST /api/identity-confirmation/deploy-translator",
+                                                  "POST /api/identity-confirmation/deploy-bridge",
+                                                  "POST /api/identity-confirmation/publish",
+                                                  "POST /api/identity-confirmation/arm"
+                                              ]
+                     },
+    "frontend_contract":  {
+                              "proposed_page":  "/identity-confirmation",
+                              "proposed_component":  "AgentLeeIdentityConfirmationPanel",
+                              "proposed_client":  "identityConfirmationClient",
+                              "ui_mode":  "IDENTITY_CONFIRMATION_READ_ONLY",
+                              "must_display":  [
+                                                   "Phase 41 Identity Confirmation Only",
+                                                   "Clear Skies status",
+                                                   "31 identity candidates",
+                                                   "9 network candidates",
+                                                   "19 Bluetooth candidates",
+                                                   "3 printer candidates",
+                                                   "confirmation questions",
+                                                   "observed evidence",
+                                                   "blocked action warning",
+                                                   "no onboarding/no control state"
+                                               ],
+                              "must_not_display":  [
+                                                       "control button",
+                                                       "pair button",
+                                                       "print button",
+                                                       "deploy translator button",
+                                                       "deploy IoT bridge button",
+                                                       "publish message button",
+                                                       "arm button",
+                                                       "unlock button"
+                                                   ]
+                          },
+    "acceptance_gates":  [
+                             "UI contract is read-only",
+                             "API contract is GET-only",
+                             "No files patched in 298",
+                             "No POST routes created in 298",
+                             "No identity confirmation writes created in 298",
+                             "No onboarding action exists",
+                             "No pairing action exists",
+                             "No translator action exists",
+                             "No IoT bridge action exists",
+                             "No physical action lane exists",
+                             "31 identity candidates preserved",
+                             "Phase 41 policy visible in contract"
+                         ],
+    "safety":  {
+                   "no_device_control_in_298":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_browser_open":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "299-identity-confirmation-ui-patch-plan-no-execute.ps1"
+}

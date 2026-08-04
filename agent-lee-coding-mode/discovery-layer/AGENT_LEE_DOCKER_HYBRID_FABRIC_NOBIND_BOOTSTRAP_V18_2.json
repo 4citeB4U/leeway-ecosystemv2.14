@@ -1,0 +1,14 @@
+{
+    "schema":  "agent-lee-docker-hybrid-fabric-nobind-bootstrap-v18-2",
+    "updatedAt":  "2026-06-28T01:09:35.2636001Z",
+    "status":  "V18_2_NOBIND_FILES_WRITTEN",
+    "reason":  "Prior V18 and V18.1 failed because Docker Desktop could not create host bind mount source paths.",
+    "worker":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker-nobind\\worker.mjs",
+    "dockerfile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker-nobind\\Dockerfile",
+    "compose":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.nobind.yml",
+    "syncScript":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\Sync-LeewayHybridFabricStateV18_2.ps1",
+    "container":  "leeway_hybrid_fabric",
+    "port":  8777,
+    "stateSource":  "http://127.0.0.1:8777/state",
+    "hostStateFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\discovery-layer\\AGENT_LEE_DOCKER_HYBRID_FABRIC_STATE.json"
+}

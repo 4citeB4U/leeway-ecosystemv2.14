@@ -1,0 +1,105 @@
+{
+  "plan_id": "plan-1783174860-f4c0d273",
+  "status": "AWAITING_APPROVAL",
+  "source": "telegram",
+  "user_id": "6939665945",
+  "original_request": "Create a full professional dark Leeway website with a header, footer, 3 different 3D objects, and a video section explaining the Leeway standards with an avatar.",
+  "domain": "website",
+  "planning_depth": "EXECUTIVE",
+  "requires_approval": true,
+  "created_at": "2026-07-04T14:21:00.097405+00:00",
+  "updated_at": "2026-07-04T14:21:00.097415+00:00",
+  "steps": [
+    "Translate the user request into a professional website brief.",
+    "Define audience, purpose, page map, brand feel, and required sections.",
+    "Create two visual mockup directions before building.",
+    "Ask Leonard to approve one mockup direction or request edits.",
+    "After approval, create the live website room.",
+    "Add 3D object concept blocks and video/avatar explainer section.",
+    "Review the website against Leeway standards.",
+    "Return website link, supporting PDF if needed, receipt, and revision options."
+  ],
+  "tools": [
+    {
+      "tool": "leeway_open_notebook",
+      "role": "Create the plan, creative package, version history, and structured content."
+    },
+    {
+      "tool": "leeway_agent_skills",
+      "role": "Select available skills, worker lanes, and capability requirements."
+    },
+    {
+      "tool": "leeway_skill_router",
+      "role": "Coordinate planning, approval, routing, and receipts."
+    },
+    {
+      "tool": "leeway_artifact_viewer",
+      "role": "Expose plan rooms, previews, website rooms, infographic rooms, and delivery links."
+    },
+    {
+      "tool": "leeway_seafile_storage_gateway",
+      "role": "Govern durable storage, manifests, receipts, and memory control."
+    },
+    {
+      "tool": "image_lane",
+      "role": "Generate website mockup images before build approval."
+    },
+    {
+      "tool": "three_d_lane",
+      "role": "Create or render 3D object concepts."
+    },
+    {
+      "tool": "video_lane",
+      "role": "Create avatar/video explainer package."
+    },
+    {
+      "tool": "browser_or_website_runtime",
+      "role": "Render live website preview and final package."
+    }
+  ],
+  "mockups": [
+    {
+      "mockup_id": "A",
+      "name": "Executive Dark Command Center",
+      "description": "Dark professional Leeway website with hero section, glowing 3D core, standards cards, video/avatar panel, and strong header/footer.",
+      "preview_type": "website_wireframe",
+      "approval_question": "Approve Mockup A for a premium technology/business feel?"
+    },
+    {
+      "mockup_id": "B",
+      "name": "Magazine-Style Brand Story",
+      "description": "Editorial layout with large headline, cinematic image blocks, 3D object cards, video explainer strip, and polished footer.",
+      "preview_type": "website_wireframe",
+      "approval_question": "Approve Mockup B for a storytelling and proposal-style feel?"
+    }
+  ],
+  "failovers": [
+    {
+      "plan": "Plan A",
+      "rule": "Use the best matching runtime lane and return the intended artifact."
+    },
+    {
+      "plan": "Plan B",
+      "rule": "If a render lane fails, return the plan room, text package, and receipt instead of pretending the final artifact exists."
+    },
+    {
+      "plan": "Plan C",
+      "rule": "If execution is blocked, create a work order for the missing lane and ask Leonard for approval or more data."
+    }
+  ],
+  "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+  "execution": {
+    "approved": false,
+    "started": false,
+    "completed": false,
+    "result": null
+  },
+  "standards": [
+    "Do not pretend the work is complete.",
+    "Plan before major creation.",
+    "Use the correct tool or worker lane.",
+    "Ask for approval before heavy execution.",
+    "Return links, files, receipts, and next actions.",
+    "Keep Agent Lee's public voice poetic, grounded, brief, and disciplined."
+  ]
+}

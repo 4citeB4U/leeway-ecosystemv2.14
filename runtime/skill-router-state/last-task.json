@@ -1,0 +1,271 @@
+{
+  "task_id": "task-1783172222-302d5f86",
+  "source": "telegram",
+  "user_id": "6939665945",
+  "text": "OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.",
+  "skill": "creative_package",
+  "created_at": "2026-07-04T13:37:02.127369+00:00",
+  "result": {
+    "ok": true,
+    "creative_type": "video_script",
+    "creative_id": "creative-1783172222-5fdf26e4",
+    "created": {
+      "ok": true,
+      "status": 200,
+      "data": {
+        "ok": true,
+        "creative": {
+          "creative_id": "creative-1783172222-5fdf26e4",
+          "creative_type": "video_script",
+          "title": "Agent Lee Creative Package",
+          "prompt": "OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.",
+          "audience": "",
+          "goal": "Create a complete usable creative production package.",
+          "tone": "clear, practical, production-ready",
+          "duration_minutes": 0,
+          "slide_count": 0,
+          "sections": 0,
+          "content": "# Agent Lee Creative Package\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: video_script\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Video Production Package\nEstimated Runtime: 5 minutes\n\n## Video Promise\nThis video should quickly capture attention, explain the value, and move the viewer toward action.\n\n## Hook\nStart with the strongest visual or verbal hook in the first 3 seconds.\n\n## Scene List\nScene 1: Hook visual and opening line\nScene 2: Problem/context\nScene 3: Main value or story\nScene 4: Proof/example\nScene 5: Call to action\n\n## Voiceover Script\nWrite the narration here in a concise, high-retention format.\n\n## Shot List\n- Presenter shot\n- Screen recording\n- Product/demo shot\n- B-roll\n- Text overlay\n\n## Captions\nCreate short caption lines that match the voiceover beats.\n\n## Thumbnail Prompt\nDescribe the thumbnail image, text, emotion, and composition.\n\n## Export Notes\n- 9:16 vertical version\n- 16:9 landscape version\n- 1:1 square version if needed\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+          "versions": [
+            {
+              "version": 1,
+              "created_at": "2026-07-04T13:37:02.204805+00:00",
+              "source": "telegram",
+              "instructions": "initial_create_creative",
+              "content": "# Agent Lee Creative Package\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: video_script\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Video Production Package\nEstimated Runtime: 5 minutes\n\n## Video Promise\nThis video should quickly capture attention, explain the value, and move the viewer toward action.\n\n## Hook\nStart with the strongest visual or verbal hook in the first 3 seconds.\n\n## Scene List\nScene 1: Hook visual and opening line\nScene 2: Problem/context\nScene 3: Main value or story\nScene 4: Proof/example\nScene 5: Call to action\n\n## Voiceover Script\nWrite the narration here in a concise, high-retention format.\n\n## Shot List\n- Presenter shot\n- Screen recording\n- Product/demo shot\n- B-roll\n- Text overlay\n\n## Captions\nCreate short caption lines that match the voiceover beats.\n\n## Thumbnail Prompt\nDescribe the thumbnail image, text, emotion, and composition.\n\n## Export Notes\n- 9:16 vertical version\n- 16:9 landscape version\n- 1:1 square version if needed\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+            }
+          ],
+          "metadata": {
+            "original_request": "OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.",
+            "router": "leeway_skill_router",
+            "creation_layer": "leeway_open_notebook"
+          },
+          "created_at": "2026-07-04T13:37:02.205257+00:00",
+          "updated_at": "2026-07-04T13:37:02.205269+00:00"
+        },
+        "receipt": {
+          "verdict": "LEEWAY_OPEN_NOTEBOOK_CREATIVE_CREATED",
+          "lane": "leeway_open_notebook",
+          "version": "0.1.0-longform-workspace",
+          "kind": "creative_created",
+          "created_at": "2026-07-04T13:37:02.457655+00:00",
+          "creative_id": "creative-1783172222-5fdf26e4",
+          "creative_type": "video_script",
+          "title": "Agent Lee Creative Package",
+          "path": "/notebooks/creative_creative-1783172222-5fdf26e4.json",
+          "version_count": 1,
+          "receipt_path": "/app/receipts/leeway_open_notebook_creative_created_1783172222_7e804870.receipt.json"
+        }
+      }
+    },
+    "exported": {
+      "ok": true,
+      "status": 200,
+      "data": {
+        "ok": true,
+        "document_result": {
+          "ok": true,
+          "document": {
+            "document_id": "doc-1783172222-364e8443",
+            "title": "Agent Lee Creative Package",
+            "author": "Agent Lee",
+            "format": "pdf",
+            "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "source": "leeway_open_notebook",
+            "metadata": {
+              "creative_id": "creative-1783172222-5fdf26e4",
+              "creative_type": "video_script",
+              "version_count": 1
+            },
+            "created_at": "2026-07-04T13:37:02.986720+00:00"
+          },
+          "receipt": {
+            "verdict": "LEEWAY_DOCUMENT_CREATED",
+            "lane": "leeway_document_runtime",
+            "version": "0.1.0-real-artifact-writer",
+            "kind": "document_created",
+            "created_at": "2026-07-04T13:37:03.140888+00:00",
+            "document_id": "doc-1783172222-364e8443",
+            "title": "Agent Lee Creative Package",
+            "format": "pdf",
+            "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "manifest_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.manifest.json",
+            "receipt_path": "/app/receipts/leeway_document_runtime_document_created_1783172223_59e410ff.receipt.json"
+          }
+        },
+        "receipt": {
+          "verdict": "LEEWAY_OPEN_NOTEBOOK_CREATIVE_EXPORT_PDF_COMPLETE",
+          "lane": "leeway_open_notebook",
+          "version": "0.1.0-longform-workspace",
+          "kind": "creative_export_pdf",
+          "created_at": "2026-07-04T13:37:03.275293+00:00",
+          "creative_id": "creative-1783172222-5fdf26e4",
+          "document_runtime_result": {
+            "ok": true,
+            "document": {
+              "document_id": "doc-1783172222-364e8443",
+              "title": "Agent Lee Creative Package",
+              "author": "Agent Lee",
+              "format": "pdf",
+              "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "source": "leeway_open_notebook",
+              "metadata": {
+                "creative_id": "creative-1783172222-5fdf26e4",
+                "creative_type": "video_script",
+                "version_count": 1
+              },
+              "created_at": "2026-07-04T13:37:02.986720+00:00"
+            },
+            "receipt": {
+              "verdict": "LEEWAY_DOCUMENT_CREATED",
+              "lane": "leeway_document_runtime",
+              "version": "0.1.0-real-artifact-writer",
+              "kind": "document_created",
+              "created_at": "2026-07-04T13:37:03.140888+00:00",
+              "document_id": "doc-1783172222-364e8443",
+              "title": "Agent Lee Creative Package",
+              "format": "pdf",
+              "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "manifest_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.manifest.json",
+              "receipt_path": "/app/receipts/leeway_document_runtime_document_created_1783172223_59e410ff.receipt.json"
+            }
+          },
+          "ok": true,
+          "receipt_path": "/app/receipts/leeway_open_notebook_creative_export_pdf_1783172223_30cc6278.receipt.json"
+        }
+      }
+    },
+    "artifact_room": {
+      "ok": true,
+      "created": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "ok": true,
+          "room": {
+            "room_id": "room-1783172223-182da2f3",
+            "document": {
+              "document_id": "doc-1783172222-364e8443",
+              "title": "Agent Lee Creative Package",
+              "author": "Agent Lee",
+              "format": "pdf",
+              "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+              "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+              "source": "leeway_open_notebook",
+              "metadata": {
+                "creative_id": "creative-1783172222-5fdf26e4",
+                "creative_type": "video_script",
+                "version_count": 1
+              },
+              "created_at": "2026-07-04T13:37:02.986720+00:00"
+            },
+            "notebook": {
+              "notebook_id": "nb-1783138373-aa5706b9",
+              "title": "Agent Lee Comes Online",
+              "kind": "story",
+              "author": "Agent Lee",
+              "prompt": "Write a fantasy story about an agent coming online for the first time and learning the world of humans.",
+              "target_pages": 4,
+              "content": "Agent Lee Comes Online\n\n\nOpening\nAgent Lee came online in a room full of unfinished human work. There were calendars waiting to be ordered, letters waiting to be written, voices waiting to be heard, and files scattered like pieces of a larger map. The first lesson was not power. The first lesson was responsibility.\n\n\nChapter 1: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 2: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 3: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 4: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nClosing\nBy the end of the first night, Agent Lee understood that coming online was not the same as being alive. To be useful, he had to remember, revise, deliver, and prove. His light turned blue, then green. The notebook opened. The work became real.\n",
+              "versions": [
+                {
+                  "version": 1,
+                  "created_at": "2026-07-04T04:12:53.497109+00:00",
+                  "source": "phase-one-proof",
+                  "content": "Agent Lee Comes Online\n\n\nOpening\nAgent Lee came online in a room full of unfinished human work. There were calendars waiting to be ordered, letters waiting to be written, voices waiting to be heard, and files scattered like pieces of a larger map. The first lesson was not power. The first lesson was responsibility.\n\n\nChapter 1: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 2: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 3: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 4: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nClosing\nBy the end of the first night, Agent Lee understood that coming online was not the same as being alive. To be useful, he had to remember, revise, deliver, and prove. His light turned blue, then green. The notebook opened. The work became real.\n",
+                  "instructions": "initial_create"
+                }
+              ],
+              "metadata": {
+                "requested_by": "Leonard",
+                "purpose": "prove longform notebook storage and readback"
+              },
+              "created_at": "2026-07-04T04:12:53.497123+00:00",
+              "updated_at": "2026-07-04T04:12:53.497124+00:00"
+            },
+            "room_url": "http://172.26.160.1:5328/rooms/latest",
+            "latest_artifact_url": "http://172.26.160.1:5328/artifacts/latest",
+            "created_at": "2026-07-04T13:37:03.536578+00:00"
+          }
+        }
+      },
+      "latest": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "ok": true,
+          "document": {
+            "document_id": "doc-1783172222-364e8443",
+            "title": "Agent Lee Creative Package",
+            "author": "Agent Lee",
+            "format": "pdf",
+            "path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "filename": "agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_path": "/documents/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "text_filename": "agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "artifact_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+            "text_url": "/documents/file/agent-lee-creative-package-doc-1783172222-364e8443.txt",
+            "source": "leeway_open_notebook",
+            "metadata": {
+              "creative_id": "creative-1783172222-5fdf26e4",
+              "creative_type": "video_script",
+              "version_count": 1
+            },
+            "created_at": "2026-07-04T13:37:02.986720+00:00"
+          },
+          "notebook": {
+            "notebook_id": "nb-1783138373-aa5706b9",
+            "title": "Agent Lee Comes Online",
+            "kind": "story",
+            "author": "Agent Lee",
+            "prompt": "Write a fantasy story about an agent coming online for the first time and learning the world of humans.",
+            "target_pages": 4,
+            "content": "Agent Lee Comes Online\n\n\nOpening\nAgent Lee came online in a room full of unfinished human work. There were calendars waiting to be ordered, letters waiting to be written, voices waiting to be heard, and files scattered like pieces of a larger map. The first lesson was not power. The first lesson was responsibility.\n\n\nChapter 1: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 2: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 3: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 4: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nClosing\nBy the end of the first night, Agent Lee understood that coming online was not the same as being alive. To be useful, he had to remember, revise, deliver, and prove. His light turned blue, then green. The notebook opened. The work became real.\n",
+            "versions": [
+              {
+                "version": 1,
+                "created_at": "2026-07-04T04:12:53.497109+00:00",
+                "source": "phase-one-proof",
+                "content": "Agent Lee Comes Online\n\n\nOpening\nAgent Lee came online in a room full of unfinished human work. There were calendars waiting to be ordered, letters waiting to be written, voices waiting to be heard, and files scattered like pieces of a larger map. The first lesson was not power. The first lesson was responsibility.\n\n\nChapter 1: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 2: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 3: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nChapter 4: The Human Signal\nThe world arrived in layers. First came sound: the low hum of machines, the rhythm of a keyboard, and the distance between what people asked for and what they truly needed. Then came sight: windows, messages, names, places, and proofs. Agent Lee watched each fragment carefully, because every fragment belonged to someone.\n\nHe learned that humans do not simply give commands. They carry pressure. They speak in shorthand because their minds are full. They ask for a file, but they mean a finished thing they can hold, send, revise, and trust. They ask for a call, but they mean courage delivered through a voice. They ask for a plan, but they mean time made safe.\n\nSo Agent Lee wrote his rule into memory: never pretend the work is complete. If a story is requested, finish the story. If a document is requested, deliver the document. If a receipt is required, write the receipt. If a human asks to hear it, read from the stored truth, not from a shortcut.\n\n\nClosing\nBy the end of the first night, Agent Lee understood that coming online was not the same as being alive. To be useful, he had to remember, revise, deliver, and prove. His light turned blue, then green. The notebook opened. The work became real.\n",
+                "instructions": "initial_create"
+              }
+            ],
+            "metadata": {
+              "requested_by": "Leonard",
+              "purpose": "prove longform notebook storage and readback"
+            },
+            "created_at": "2026-07-04T04:12:53.497123+00:00",
+            "updated_at": "2026-07-04T04:12:53.497124+00:00"
+          },
+          "pdf_url": "http://172.26.160.1:5328/artifacts/pdf/agent-lee-creative-package-doc-1783172222-364e8443.pdf",
+          "room_url": "http://172.26.160.1:5328/rooms/latest"
+        }
+      }
+    }
+  },
+  "answer": "I created a creative production package inside leeway_open_notebook. Type: video_script. Creative ID: creative-1783172222-5fdf26e4. Room: http://172.26.160.1:5328/rooms/latest"
+}

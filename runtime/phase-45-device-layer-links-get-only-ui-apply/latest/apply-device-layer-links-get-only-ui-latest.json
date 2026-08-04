@@ -1,0 +1,91 @@
+﻿{
+    "version":  "LEEWAY_APPLY_DEVICE_LAYER_LINKS_GET_ONLY_UI_366",
+    "phase":  45,
+    "timestamp":  "2026-07-06T18:43:46",
+    "verdict":  "LEEWAY_APPLY_DEVICE_LAYER_LINKS_GET_ONLY_UI_366_CLEAN",
+    "ui_patch_applied":  true,
+    "get_only_ui":  true,
+    "page":  "/device-layer-links",
+    "api_base":  "/api/device-layer-links",
+    "link_count":  7,
+    "patch_applied_in_366":  true,
+    "frontend_files_created_in_366":  true,
+    "api_routes_created_in_366":  true,
+    "source_files_created_in_366":  true,
+    "docker_created_in_366":  false,
+    "process_started_in_366":  false,
+    "process_restarted_in_366":  false,
+    "process_stopped_in_366":  false,
+    "valid_save_performed_in_366":  false,
+    "identity_state_mutated_in_366":  false,
+    "approval_granted_in_366":  false,
+    "authority_unlocked_in_366":  false,
+    "printer_action_performed":  false,
+    "phone_action_performed":  false,
+    "router_action_performed":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "physical_action_lane_performed":  false,
+    "write_scope":  "PHASE_45_DEVICE_LAYER_LINKS_GET_ONLY_UI_FILE_PATCH",
+    "created_files":  [
+                          "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-layer-links\\[...path]\\route.ts",
+                          "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceLayerLinksClient.ts",
+                          "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\components\\AgentLeeDeviceLayerLinksPanel.tsx",
+                          "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-layer-links\\page.tsx"
+                      ],
+    "live_routes":  {
+                        "page_ok":  true,
+                        "summary_ok":  true,
+                        "links_ok":  true,
+                        "safety_ok":  true,
+                        "proof_chain_ok":  true,
+                        "api_locked":  true,
+                        "post_block_status":  423
+                    },
+    "static_audit":  {
+                         "required_text_present":  true,
+                         "forbidden_hits":  [
+
+                                            ],
+                         "mutation_blockers_present":  true,
+                         "static_clean":  true
+                     },
+    "passive_probe_after_summary":  {
+                                        "runtime_process_probe_count":  25,
+                                        "network_adapter_probe_count":  7
+                                    },
+    "proof_chain":  {
+                        "links_contract_365_clean":  true,
+                        "template_summary_364_clean":  true,
+                        "closeout_362_clean":  true,
+                        "readiness_refresh_361_clean":  true,
+                        "hold_summary_358_clean":  true,
+                        "clear_skies":  true
+                    },
+    "safety":  {
+                   "no_process_start_in_366":  true,
+                   "no_process_restart_in_366":  true,
+                   "no_process_stop_in_366":  true,
+                   "no_docker_created_in_366":  true,
+                   "no_valid_save_in_366":  true,
+                   "no_identity_state_mutation":  true,
+                   "no_approval_granted":  true,
+                   "no_authority_unlock":  true,
+                   "no_execution":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_printer_action":  true,
+                   "no_phone_action":  true,
+                   "no_router_action":  true,
+                   "no_scan":  true,
+                   "no_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "367-device-layer-links-final-browser-proof-no-execute.ps1"
+}

@@ -1,0 +1,35 @@
+{
+    "schema":  "leeway.agent-lee.capability.v1",
+    "id":  "telegram.messaging",
+    "name":  "Telegram Text Messaging",
+    "status":  "READY_FOR_OPERATION",
+    "discoverable":  true,
+    "enabled":  true,
+    "provider":  "telegram",
+    "method":  "sendMessage",
+    "botUsername":  "Lee2912bot",
+    "tokenPresent":  true,
+    "tokenKeyUsed":  "TELEGRAM_BOT_TOKEN",
+    "tokenSha256":  "64c543eae41db27a9a1806da27cb29734d2af7681d09553685fdf9b772503741",
+    "chatIdPresent":  false,
+    "chatIdKeyUsed":  null,
+    "chatIdSha256":  null,
+    "approvalRequired":  true,
+    "supportedOperations":  [
+                                "send_text",
+                                "send_status_update",
+                                "send_report_link",
+                                "send_plain_notification"
+                            ],
+    "unsupportedWithoutExtraWork":  [
+                                        "send_whatsapp_message_directly",
+                                        "read_telegram_user_chats",
+                                        "impersonate_user_account"
+                                    ],
+    "notes":  [
+                  "WhatsApp is handled by app launcher/UI click.",
+                  "Telegram text sending is handled by Bot API sendMessage.",
+                  "Bot token is never printed in receipts."
+              ],
+    "createdAt":  "2026-06-28T16:28:09.7044940Z"
+}

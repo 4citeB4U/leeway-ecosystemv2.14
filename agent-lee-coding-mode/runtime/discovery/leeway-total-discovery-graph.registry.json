@@ -1,0 +1,10 @@
+﻿{
+    "schema":  "leeway.discovery.total-graph.pointer.v1",
+    "registryId":  "LEEWAY_APP::AGENT_LEE::DISCOVERY::PROOF_FIRST_POINTER",
+    "classification":  "CONFIGURATION",
+    "canonicalRegistry":  "Leeway Runtime Fabric/discovery/leeway-total-discovery-graph.registry.json",
+    "proofLedger":  "Archive/reports/leeway-proof-ledger.json",
+    "absoluteProofLaw":  "LeeWay-Standards/standards/BOOK-80-ABSOLUTE-PROOF-AND-NO-FALSE-COMPLETION-LAW.md",
+    "lastProofLedger":  "Archive/reports/leeway-proof-ledger.json",
+    "lastUpdated":  "2026-06-27T19:35:05.4920609Z"
+}

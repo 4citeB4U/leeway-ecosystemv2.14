@@ -1,0 +1,19 @@
+{
+  "lan_url": "http://172.26.160.1:5329",
+  "service": "leeway_meeting_runtime",
+  "image": "leeway_meeting_runtime:local",
+  "role": "Leeway meeting links, Jitsi-backed rooms, and calendar invite files",
+  "created_at": "2026-07-03T23:26:08.1870745-05:00",
+  "container": "leeway_meeting_runtime",
+  "jitsi_base_url": "https://meet.jit.si",
+  "endpoints": {
+    "room": "/rooms/{meeting_id}",
+    "latest": "/meeting/latest",
+    "health": "/health",
+    "create": "/meeting/create",
+    "ics": "/meeting/{meeting_id}.ics",
+    "status": "/status"
+  },
+  "host_url": "http://localhost:5329",
+  "docker_url": "http://leeway_meeting_runtime:5329"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_CAPABILITY_CONTRACT_231",
+    "timestamp":  "2026-07-05T21:37:17",
+    "family":  "audio_vision",
+    "capability_status":  "READ_ONLY_DISCOVERY_STATUS_CONTRACT_CREATED",
+    "existing_routes":  {
+                            "audio_vision_discover":  false,
+                            "cameras_discover":  false,
+                            "microphones_discover":  false,
+                            "speakers_discover":  false,
+                            "global_status":  false,
+                            "registry":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/audio-vision/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/audio-vision/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/audio-vision/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/cameras/discover",
+                                 "status":  "OPTIONAL_MISSING",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/microphones/discover",
+                                 "status":  "OPTIONAL_MISSING",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/speakers/discover",
+                                 "status":  "OPTIONAL_MISSING",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             }
+                         ],
+    "safety":  {
+                   "no_camera_started":  true,
+                   "no_microphone_started":  true,
+                   "no_speaker_playback":  true,
+                   "no_recording":  true,
+                   "no_permission_mutation":  true,
+                   "no_default_device_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

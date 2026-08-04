@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agent Lee Senses Test</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+  }
+  header {
+    padding: 16px 20px;
+    background: #020617;
+    border-bottom: 1px solid #334155;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 14px;
+    padding: 14px;
+  }
+  .card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  button {
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 4px 0;
+    width: 100%;
+  }
+  button:hover { background: #1d4ed8; }
+  video, canvas {
+    width: 100%;
+    max-height: 360px;
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 10px;
+  }
+  pre {
+    white-space: pre-wrap;
+    background: #020617;
+    border: 1px solid #334155;
+    padding: 12px;
+    border-radius: 10px;
+    min-height: 180px;
+    overflow: auto;
+  }
+  .status {
+    font-size: 13px;
+    color: #cbd5e1;
+  }
+  .good { color: #86efac; }
+  .warn { color: #fde68a; }
+  .bad { color: #fca5a5; }
+
+  /* This is the corrected pointer: arrow only, small, clickable. */
+  #agentPointer {
+    position: fixed;
+    z-index: 999999;
+    left: 28px;
+    top: 120px;
+    width: 38px;
+    height: 52px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #0ea5e9);
+    transition: left .45s ease, top .45s ease;
+  }
+  #agentPointer svg {
+    width: 38px;
+    height: 52px;
+    display: block;
+  }
+  #chatPanel {
+    position: fixed;
+    z-index: 1000000;
+    left: 80px;
+    top: 120px;
+    width: 420px;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    padding: 12px;
+    display: none;
+    box-shadow: 0 0 18px rgba(56,189,248,.35);
+  }
+  #chatText {
+    width: 100%;
+    height: 90px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #020617;
+    color: white;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  meter {
+    width: 100%;
+    height: 20px;
+  }
+</style>
+</head>
+<body>
+<div id="agentPointer" title="Agent Lee">
+  <svg viewBox="0 0 64 88">
+    <polygon points="4,2 56,31 36,39 52,76 34,84 19,47 5,61"
+      fill="#facc15" stroke="#0ea5e9" stroke-width="4"/>
+  </svg>
+</div>
+
+<div id="chatPanel">
+  <strong>Agent Lee Chat</strong>
+  <p class="status">Type a command. This test is focused on camera, mic, speaker, and screen.</p>
+  <textarea id="chatText">Agent Lee, prove you can see me, hear me, speak, and see my screen.</textarea>
+  <button onclick="sendChat()">Send</button>
+  <button onclick="hideChat()">Close</button>
+</div>
+
+<header>
+  <h1>Agent Lee Senses Test: Camera + Mic + Speaker + Screen</h1>
+  <div class="status">Click Allow for camera, microphone, and screen sharing when prompted.</div>
+</header>
+
+<main>
+  <section>
+    <div class="card">
+      <h2>Controls</h2>
+      <button onclick="startAll()">Start Camera + Mic + Speaker</button>
+      <button onclick="startScreen()">Start Screen Capture</button>
+      <button onclick="captureVision()">Capture Camera Frame + Analyze</button>
+      <button onclick="speak('Aight Leonard, Agent Lee senses test is live. Camera, mic, speaker, and screen lanes are being checked right now.')">Speaker Test</button>
+      <button onclick="stopAll()">Stop Camera/Mic/Screen</button>
+    </div>
+
+    <div class="card">
+      <h2>Mic Level</h2>
+      <meter id="micMeter" min="0" max="1" value="0"></meter>
+      <div id="micStatus" class="status">Mic not started.</div>
+    </div>
+
+    <div class="card">
+      <h2>Speech Recognition</h2>
+      <div id="speechStatus" class="status">Speech recognition not started.</div>
+      <pre id="speechText"></pre>
+    </div>
+
+    <div class="card">
+      <h2>System Status</h2>
+      <pre id="statusOut"></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>Camera Preview</h2>
+      <video id="camera" autoplay playsinline muted></video>
+      <canvas id="snapshot" style="display:none;"></canvas>
+    </div>
+
+    <div class="card">
+      <h2>Screen Preview</h2>
+      <video id="screen" autoplay playsinline muted></video>
+    </div>
+
+    <div class="card">
+      <h2>Vision Result</h2>
+      <pre id="visionOut">No frame analyzed yet.</pre>
+    </div>
+  </section>
+</main>
+
+<script>
+let cameraStream = null;
+let micStream = null;
+let screenStream = null;
+let audioCtx = null;
+let analyser = null;
+let micData = null;
+let recognition = null;
+let meterTimer = null;
+
+const pointer = document.getElementById('agentPointer');
+const chatPanel = document.getElementById('chatPanel');
+
+pointer.addEventListener('click', () => {
+  chatPanel.style.display = 'block';
+});
+
+function hideChat() {
+  chatPanel.style.display = 'none';
+}
+
+function setStatus(obj) {
+  document.getElementById('statusOut').textContent = JSON.stringify(obj, null, 2);
+}
+
+function logVision(obj) {
+  document.getElementById('visionOut').textContent = JSON.stringify(obj, null, 2);
+}
+
+function movePointer(x, y) {
+  pointer.style.left = x + 'px';
+  pointer.style.top = y + 'px';
+}
+
+function speak(text) {
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = 0.95;
+  u.pitch = 0.85;
+  u.volume = 1;
+  speechSynthesis.speak(u);
+  return fetch('/event', {
+    method: 'POST',
+    headers: {'content-type':'application/json'},
+    body: JSON.stringify({type:'browser_speech', text})
+  }).catch(() => {});
+}
+
+async function startAll() {
+  movePointer(90, 150);
+
+  setStatus({stage:'starting', message:'Requesting camera and microphone permissions.'});
+
+  try {
+    cameraStream = await navigator.mediaDevices.getUserMedia({
+      video: { width: {ideal: 1280}, height: {ideal: 720}, facingMode: 'user' },
+      audio: false
+    });
+    document.getElementById('camera').srcObject = cameraStream;
+
+    await fetch('/event', {
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({
+        type:'camera_started',
+        tracks: cameraStream.getVideoTracks().map(t => ({label:t.label, readyState:t.readyState, settings:t.getSettings()}))
+      })
+    });
+
+    movePointer(130, 220);
+  } catch (err) {
+    setStatus({stage:'camera_error', error:String(err)});
+    await fetch('/event', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({type:'camera_error', error:String(err)})});
+  }
+
+  try {
+    micStream = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
+
+    audioCtx = new AudioContext();
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 1024;
+    micData = new Uint8Array(analyser.frequencyBinCount);
+    const source = audioCtx.createMediaStreamSource(micStream);
+    source.connect(analyser);
+
+    document.getElementById('micStatus').textContent = 'Mic started. Speak now.';
+    meterTimer = setInterval(updateMicMeter, 90);
+
+    await fetch('/event', {
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({
+        type:'mic_started',
+        tracks: micStream.getAudioTracks().map(t => ({label:t.label, readyState:t.readyState, settings:t.getSettings()}))
+      })
+    });
+
+    movePointer(170, 290);
+  } catch (err) {
+    document.getElementById('micStatus').textContent = 'Mic error: ' + err;
+    await fetch('/event', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({type:'mic_error', error:String(err)})});
+  }
+
+  startSpeechRecognition();
+
+  await speak('Aight Leonard, Agent Lee senses test is live. Camera is coming up, mic is listening, speaker lane is speaking, and screen proof is next. I need you to allow the browser permissions when they pop.');
+  setStatus({stage:'ready', camera: !!cameraStream, mic: !!micStream});
+}
+
+function updateMicMeter() {
+  if (!analyser || !micData) return;
+  analyser.getByteTimeDomainData(micData);
+  let sum = 0;
+  for (let i = 0; i < micData.length; i++) {
+    let v = (micData[i] - 128) / 128;
+    sum += v * v;
+  }
+  let rms = Math.sqrt(sum / micData.length);
+  document.getElementById('micMeter').value = Math.min(1, rms * 8);
+}
+
+function startSpeechRecognition() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    document.getElementById('speechStatus').textContent = 'Browser speech recognition unavailable. Use Chrome/Edge.';
+    return;
+  }
+
+  recognition = new SR();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.onstart = () => {
+    document.getElementById('speechStatus').textContent = 'Listening. Say: Agent Lee can you hear me?';
+  };
+
+  recognition.onerror = async (e) => {
+    document.getElementById('speechStatus').textContent = 'Speech recognition error: ' + e.error;
+    await fetch('/event', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({type:'speech_error', error:e.error})});
+  };
+
+  recognition.onresult = async (event) => {
+    let text = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      text += event.results[i][0].transcript;
+    }
+    document.getElementById('speechText').textContent = text;
+
+    await fetch('/event', {
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({type:'speech_heard', text})
+    });
+
+    const lower = text.toLowerCase();
+    if (lower.includes('agent lee')) {
+      speak('I hear you, Leonard. Mic lane is live. Now capture a camera frame so I can send it to the vision lane.');
+    }
+  };
+
+  try {
+    recognition.start();
+  } catch (err) {
+    document.getElementById('speechStatus').textContent = 'Could not start recognition: ' + err;
+  }
+}
+
+async function startScreen() {
+  movePointer(210, 360);
+  try {
+    screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false });
+    document.getElementById('screen').srcObject = screenStream;
+
+    await fetch('/event', {
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({
+        type:'screen_started',
+        tracks: screenStream.getVideoTracks().map(t => ({label:t.label, readyState:t.readyState, settings:t.getSettings()}))
+      })
+    });
+
+    await speak('Screen capture lane is live. I can see the screen preview inside this browser test page.');
+    setStatus({stage:'screen_ready'});
+  } catch (err) {
+    setStatus({stage:'screen_error', error:String(err)});
+    await fetch('/event', {method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({type:'screen_error', error:String(err)})});
+  }
+}
+
+async function captureVision() {
+  movePointer(250, 430);
+
+  const video = document.getElementById('camera');
+  const canvas = document.getElementById('snapshot');
+
+  if (!cameraStream || video.videoWidth === 0) {
+    logVision({status:'CAMERA_NOT_READY'});
+    await speak('Camera is not ready yet. Click start camera and microphone, then allow camera access.');
+    return;
+  }
+
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+  const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+
+  logVision({status:'SENDING_FRAME_TO_LOCAL_VISION', width:canvas.width, height:canvas.height});
+
+  const res = await fetch('/vision/analyze-frame', {
+    method:'POST',
+    headers:{'content-type':'application/json'},
+    body: JSON.stringify({
+      imageDataUrl: dataUrl,
+      prompt: 'Describe the person, shirt color, posture, whether they are sitting or standing, and room cleanliness/clutter. Be careful and only say what is visible.'
+    })
+  });
+
+  const json = await res.json();
+  logVision(json);
+
+  if (json.status === 'VISION_READY' && json.answer) {
+    await speak(json.answer);
+  } else {
+    await speak('Camera frame was captured, but the local vision analysis route is not fully connected yet. The proof file was saved, and the result says check required.');
+  }
+}
+
+async function sendChat() {
+  const text = document.getElementById('chatText').value;
+  await fetch('/event', {
+    method:'POST',
+    headers:{'content-type':'application/json'},
+    body: JSON.stringify({type:'chat_command', text})
+  });
+
+  if (text.toLowerCase().includes('see') || text.toLowerCase().includes('camera')) {
+    await captureVision();
+  } else if (text.toLowerCase().includes('screen')) {
+    await startScreen();
+  } else if (text.toLowerCase().includes('hear') || text.toLowerCase().includes('mic')) {
+    await speak('I am listening through the browser mic lane. Say Agent Lee can you hear me and watch the speech box.');
+  } else {
+    await speak('Command received. This page is dedicated to senses: camera, mic, speaker, and screen.');
+  }
+}
+
+function stopAll() {
+  if (cameraStream) cameraStream.getTracks().forEach(t => t.stop());
+  if (micStream) micStream.getTracks().forEach(t => t.stop());
+  if (screenStream) screenStream.getTracks().forEach(t => t.stop());
+  if (recognition) recognition.stop();
+  if (meterTimer) clearInterval(meterTimer);
+
+  cameraStream = null;
+  micStream = null;
+  screenStream = null;
+
+  setStatus({stage:'stopped'});
+}
+
+// Auto-start enough to trigger browser permission prompts.
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    speak('Aight Leonard. Agent Lee senses test loaded. Click Start Camera plus Mic, then allow the browser permissions. After that click Start Screen Capture and Capture Camera Frame.');
+  }, 500);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_CAPABILITY_MAP_UI_ROUTE_PATCH_PLAN_267",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:07:36",
+    "family":  "agent_lee_ui_runtime",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_UI_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "app = FastAPI",
+                   "no_existing_family_anchor":  true
+               },
+    "current_routes":  {
+                           "capability_map":  false,
+                           "families":  false,
+                           "read_only_routes":  false,
+                           "approval_required_actions":  false,
+                           "lock_state":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/agent-lee/device-layer/capability-map",
+                              "function_name":  "leeway_agent_lee_device_layer_capability_map_268",
+                              "read_only":  true,
+                              "executes_device_action":  false,
+                              "purpose":  "Expose governed Device Layer capability map to Agent Lee UI/runtime."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/agent-lee/device-layer/families",
+                              "function_name":  "leeway_agent_lee_device_layer_families_268",
+                              "read_only":  true,
+                              "executes_device_action":  false,
+                              "purpose":  "Expose family cards, readiness, and lock/default state."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/agent-lee/device-layer/read-only-routes",
+                              "function_name":  "leeway_agent_lee_device_layer_read_only_routes_268",
+                              "read_only":  true,
+                              "executes_device_action":  false,
+                              "purpose":  "Expose all 46 read-only capability routes as UI-visible records."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/agent-lee/device-layer/approval-required-actions",
+                              "function_name":  "leeway_agent_lee_device_layer_approval_required_actions_268",
+                              "read_only":  true,
+                              "executes_device_action":  false,
+                              "purpose":  "Expose future action catalog as disabled and approval-required by default."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/agent-lee/device-layer/lock-state",
+                              "function_name":  "leeway_agent_lee_device_layer_lock_state_268",
+                              "read_only":  true,
+                              "executes_device_action":  false,
+                              "purpose":  "Expose Windows real-alpha lock/probe state and UI execution policy."
+                          }
+                      ],
+    "source_artifacts":  {
+                             "capability_map_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-governed-capability-map-latest.json",
+                             "ui_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-device-layer-ui-runtime-contract-latest.json",
+                             "proof_266_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-governed-capability-map-contract-proof-latest.json"
+                         },
+    "ui_policy":  {
+                      "show_families":  true,
+                      "show_locked_unlocked_state":  true,
+                      "show_available_read_only_routes":  true,
+                      "show_future_approval_required_actions":  true,
+                      "show_execute_buttons":  false,
+                      "show_disabled_action_cards":  true,
+                      "require_explicit_approval_for_execution":  true,
+                      "default_execution_state":  "LOCKED",
+                      "no_silent_execution":  true
+                  },
+    "safety":  {
+                   "plan_only":  true,
+                   "no_patch_applied":  true,
+                   "no_execution_enabled":  true,
+                   "no_post_execution_routes":  true,
+                   "no_execute_buttons":  true,
+                   "no_device_action":  true,
+                   "no_physical_action":  true,
+                   "no_shell_execution":  true,
+                   "no_network_mutation":  true,
+                   "no_smart_home_mutation":  true,
+                   "no_mobile_device_mutation":  true,
+                   "no_printer_job":  true,
+                   "no_casting_action":  true,
+                   "no_camera_or_microphone_access":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "rollback_required":  true,
+    "recommended_next":  "268-apply-agent-lee-governed-capability-map-ui-routes-patch-no-execute.ps1"
+}

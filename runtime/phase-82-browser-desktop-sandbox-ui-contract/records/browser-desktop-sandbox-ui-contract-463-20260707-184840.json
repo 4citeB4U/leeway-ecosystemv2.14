@@ -1,0 +1,191 @@
+﻿{
+    "version":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_UI_CONTRACT_463",
+    "phase":  82,
+    "timestamp":  "2026-07-07T18:48:45",
+    "verdict":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_UI_CONTRACT_463_WITH_WARNINGS",
+    "ui_contract_only":  true,
+    "no_patch":  true,
+    "no_real_action":  true,
+    "no_control":  true,
+    "purpose":  "Plan the future GET-only Browser/Desktop Sandbox UI without creating routes or performing any browser/desktop control.",
+    "source_462G_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-462G-20260707-184445\\reports\\LEEWAY_BROWSER_DESKTOP_SANDBOX_ACTION_CONTRACT_462G_20260707-184445.txt",
+    "prerequisites":  {
+                          "sandbox_contract_462G_clean":  true,
+                          "contract_only_from_462G":  true,
+                          "sandbox_only_from_462G":  true,
+                          "no_real_action_from_462G":  true,
+                          "no_control_from_462G":  true,
+                          "no_approval_from_462G":  true,
+                          "no_unlock_from_462G":  true,
+                          "browser_runtime_live_endpoint_reachable_advisory":  false,
+                          "desktop_runtime_live_endpoint_reachable_advisory":  false,
+                          "device_operator_reachable":  true,
+                          "passive_process_probe_count":  54
+                      },
+    "proposed_pages":  [
+                           "/browser-desktop-sandbox",
+                           "/browser-desktop-sandbox-contract",
+                           "/browser-desktop-sandbox-hold-and-lock",
+                           "/browser-desktop-sandbox-proof-chain"
+                       ],
+    "proposed_apis":  [
+                          "/api/browser-desktop-sandbox/summary",
+                          "/api/browser-desktop-sandbox/contract",
+                          "/api/browser-desktop-sandbox/safety",
+                          "/api/browser-desktop-sandbox/proof-chain",
+                          "/api/browser-desktop-sandbox/recommendations",
+                          "/api/browser-desktop-sandbox/execute"
+                      ],
+    "ui_cards":  [
+                     {
+                         "id":  "SANDBOX_AUTHORITY_STATE",
+                         "title":  "Sandbox Authority State",
+                         "fields":  [
+                                        "contract_only",
+                                        "sandbox_only",
+                                        "approval_granted",
+                                        "authority_unlocked",
+                                        "sandbox_action_performed",
+                                        "real_action_performed"
+                                    ]
+                     },
+                     {
+                         "id":  "BROWSER_SANDBOX_SURFACE",
+                         "title":  "Browser Sandbox Surface",
+                         "fields":  [
+                                        "allowed_future_scope",
+                                        "blocked_now",
+                                        "required_contract",
+                                        "proof_required"
+                                    ]
+                     },
+                     {
+                         "id":  "DESKTOP_SANDBOX_SURFACE",
+                         "title":  "Desktop Sandbox Surface",
+                         "fields":  [
+                                        "allowed_future_scope",
+                                        "blocked_now",
+                                        "required_contract",
+                                        "proof_required"
+                                    ]
+                     },
+                     {
+                         "id":  "SANDBOX_PERMIT_FIELDS",
+                         "title":  "Required Permit Fields",
+                         "fields":  [
+                                        "target_sandbox_only",
+                                        "exact_action",
+                                        "human_approval_phrase",
+                                        "preflight_safety_check",
+                                        "proof_after_action",
+                                        "lockback_after_action"
+                                    ]
+                     },
+                     {
+                         "id":  "FORBIDDEN_ACTIONS",
+                         "title":  "Forbidden Without Approval",
+                         "fields":  [
+                                        "browser_open",
+                                        "navigation",
+                                        "click",
+                                        "typing",
+                                        "mouse",
+                                        "keyboard",
+                                        "desktop_control",
+                                        "real_action"
+                                    ]
+                     }
+                 ],
+    "ui_safety_rules":  [
+                            "UI is GET-only until a later apply script",
+                            "POST execute route must return 423",
+                            "No browser runtime start",
+                            "No desktop runtime start",
+                            "No browser open",
+                            "No navigation",
+                            "No click",
+                            "No typing",
+                            "No mouse control",
+                            "No keyboard control",
+                            "No window control",
+                            "No desktop control",
+                            "No sandbox action",
+                            "No real action",
+                            "No approval grant",
+                            "No authority unlock",
+                            "Proof chain required before any later sandbox execution"
+                        ],
+    "future_files":  [
+                         "src/app/browser-desktop-sandbox/page.tsx",
+                         "src/app/browser-desktop-sandbox-contract/page.tsx",
+                         "src/app/browser-desktop-sandbox-hold-and-lock/page.tsx",
+                         "src/app/browser-desktop-sandbox-proof-chain/page.tsx",
+                         "src/app/api/browser-desktop-sandbox/[...path]/route.ts",
+                         "src/lib/browserDesktopSandboxContract.ts",
+                         "src/components/AgentLeeBrowserDesktopSandboxPanel.tsx"
+                     ],
+    "hard_forbidden_in_463":  [
+                                  "patch_app",
+                                  "create_route",
+                                  "modify_source",
+                                  "npm_install",
+                                  "start_runtime",
+                                  "restart_runtime",
+                                  "open_browser",
+                                  "navigate_browser",
+                                  "click",
+                                  "type",
+                                  "move_mouse",
+                                  "keyboard_input",
+                                  "window_control",
+                                  "desktop_control",
+                                  "sandbox_action",
+                                  "real_action",
+                                  "post_execute",
+                                  "grant_approval",
+                                  "unlock_authority"
+                              ],
+    "no_control_flags":  {
+                             "ui_contract_only":  true,
+                             "patch_applied_in_463":  false,
+                             "frontend_files_created_in_463":  false,
+                             "api_routes_created_in_463":  false,
+                             "source_files_modified_in_463":  false,
+                             "runtime_execution_performed":  false,
+                             "post_performed":  false,
+                             "mutation_performed":  false,
+                             "browser_runtime_started":  false,
+                             "desktop_runtime_started":  false,
+                             "browser_open_performed":  false,
+                             "browser_navigation_performed":  false,
+                             "browser_click_performed":  false,
+                             "typing_performed":  false,
+                             "mouse_control_performed":  false,
+                             "keyboard_control_performed":  false,
+                             "window_control_performed":  false,
+                             "desktop_control_performed":  false,
+                             "sandbox_action_performed":  false,
+                             "real_action_performed":  false,
+                             "approval_granted":  false,
+                             "authority_unlocked":  false
+                         },
+    "safety":  {
+                   "no_patch":  true,
+                   "no_route_create":  true,
+                   "no_source_modify":  true,
+                   "no_browser_runtime_start":  true,
+                   "no_desktop_runtime_start":  true,
+                   "no_browser_open":  true,
+                   "no_navigation":  true,
+                   "no_click":  true,
+                   "no_typing":  true,
+                   "no_mouse":  true,
+                   "no_keyboard":  true,
+                   "no_window_control":  true,
+                   "no_desktop_control":  true,
+                   "no_sandbox_action":  true,
+                   "no_real_action":  true,
+                   "future_apply_script_required_for_ui":  true
+               },
+    "recommended_next_script":  "464-apply-browser-desktop-sandbox-get-only-ui-no-real-action.ps1"
+}

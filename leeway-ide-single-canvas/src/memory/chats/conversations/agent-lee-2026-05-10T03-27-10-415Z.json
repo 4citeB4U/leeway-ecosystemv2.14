@@ -1,0 +1,12 @@
+[
+  {
+    "role": "agent",
+    "text": "I got you. Show me what's breaking or what you're trying to build, and we'll work it clean.",
+    "timestamp": "2026-05-10T03:27:10.426Z"
+  },
+  {
+    "role": "user",
+    "text": "hello",
+    "timestamp": "2026-05-10T03:27:20.226Z"
+  }
+]

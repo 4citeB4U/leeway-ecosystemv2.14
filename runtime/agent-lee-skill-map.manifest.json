@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-07-03T21:49:04.6543272-05:00",
+  "doctrine": "Agent Lee skills are executable workflows over registered lanes. Skills must select lanes, obey approvals, write receipts, and learn from failures.",
+  "verdict": "AGENT_LEE_SKILL_MAP_CREATED",
+  "skill_execution_rules": {
+    "agent_lee_must_not_claim_unproven_execution": true,
+    "all_failures_must_be_learned": true,
+    "all_risky_skills_must_request_approval": true,
+    "all_skills_must_write_receipts": true,
+    "all_skills_must_use_registered_lanes": true
+  },
+  "skill_groups": {
+    "device_operator_skills": [
+      "show_cursor_state",
+      "start_voice_session",
+      "register_device",
+      "register_channel",
+      "request_device_action"
+    ],
+    "crm_skills": [
+      "upsert_company_memory",
+      "upsert_contact_memory",
+      "upsert_plan_memory",
+      "search_memory",
+      "summarize_relationship_history"
+    ],
+    "code_skills": [
+      "debug_runtime",
+      "patch_lane",
+      "verify_container",
+      "write_receipt",
+      "append_learning_event",
+      "package_export"
+    ],
+    "appliance_skills": [
+      "create_customer_profile",
+      "generate_license_request",
+      "start_runtime",
+      "export_sovereign_package",
+      "import_sovereign_package",
+      "run_enterprise_scorecard"
+    ],
+    "planning_skills": [
+      "date_night_plan",
+      "outreach_plan",
+      "weekly_region_schedule",
+      "route_within_radius",
+      "budget_plan",
+      "meeting_prep"
+    ],
+    "creative_skills": [
+      "generate_image",
+      "convert_image_to_3d",
+      "store_generated_asset",
+      "create_preview_package"
+    ],
+    "approval_skills": [
+      "request_phone_call",
+      "request_email",
+      "request_calendar_event",
+      "list_pending_approvals",
+      "approve_action",
+      "reject_action"
+    ],
+    "research_skills": [
+      "quick_web_search",
+      "deep_research",
+      "weather_lookup",
+      "company_research",
+      "person_research",
+      "restaurant_planning",
+      "market_research"
+    ],
+    "performance_skills": [
+      "compress_context",
+      "retrieve_context",
+      "summarize_logs",
+      "learn_failure",
+      "measure_token_savings"
+    ]
+  }
+}

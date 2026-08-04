@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema": "leeway.agent-lee.owner-biometric-enrollment.schema.v1",
+  "title": "Agent Lee Owner Biometric Enrollment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ownerId",
+    "ownerName",
+    "creatorRootAuthority",
+    "status",
+    "faceEnrollment",
+    "voiceEnrollment",
+    "passphraseFallback",
+    "localDeviceTrust",
+    "biometricStoragePolicy",
+    "approvalAuthority",
+    "receiptDirectory",
+    "blockers"
+  ],
+  "properties": {
+    "ownerId": {
+      "type": "string",
+      "const": "LEONARD_J_LEE"
+    },
+    "ownerName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creatorRootAuthority": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OWNER_IDENTITY_NOT_ENROLLED",
+        "OWNER_FACE_ENROLLED",
+        "OWNER_VOICE_ENROLLED",
+        "OWNER_FACE_AND_VOICE_ENROLLED",
+        "OWNER_AUTHENTICATED",
+        "OWNER_AUTHENTICATION_PARTIAL",
+        "OWNER_AUTHENTICATION_BLOCKED_CAMERA_UNAVAILABLE",
+        "OWNER_AUTHENTICATION_BLOCKED_MIC_UNAVAILABLE",
+        "OWNER_AUTHENTICATION_BLOCKED_MODEL_UNAVAILABLE"
+      ]
+    },
+    "faceEnrollment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "localOnly", "receiptRequired"],
+      "properties": {
+        "status": { "type": "string" },
+        "localOnly": { "type": "boolean" },
+        "receiptRequired": { "type": "boolean" }
+      }
+    },
+    "voiceEnrollment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "localOnly", "receiptRequired"],
+      "properties": {
+        "status": { "type": "string" },
+        "localOnly": { "type": "boolean" },
+        "receiptRequired": { "type": "boolean" }
+      }
+    },
+    "passphraseFallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "status", "receiptRequired"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "status": { "type": "string" },
+        "receiptRequired": { "type": "boolean" }
+      }
+    },
+    "localDeviceTrust": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "scope"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "scope": { "type": "string" }
+      }
+    },
+    "biometricStoragePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rawSamplesStored", "embeddingsStored", "localOnly", "protectedPathRequired"],
+      "properties": {
+        "rawSamplesStored": { "type": "boolean" },
+        "embeddingsStored": { "type": "boolean" },
+        "localOnly": { "type": "boolean" },
+        "protectedPathRequired": { "type": "boolean" }
+      }
+    },
+    "approvalAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["creatorRootAuthority", "highRiskActionsRequireApproval"],
+      "properties": {
+        "creatorRootAuthority": { "type": "boolean" },
+        "highRiskActionsRequireApproval": { "type": "boolean" }
+      }
+    },
+    "receiptDirectory": {
+      "type": "string"
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
+

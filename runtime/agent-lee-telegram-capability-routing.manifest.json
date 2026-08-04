@@ -1,0 +1,29 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "agent_lee_telegram_capability_routing_manifest",
+    "required_behavior":  {
+                              "image_input":  "Telegram should download image/photo input, route it to vision, and describe/help act on it.",
+                              "web_search":  "Telegram should route search/weather/time/news/traffic to Runtime Fabric or configured web tools.",
+                              "image_generation":  "Telegram should call SDXL image service and return the generated image, not only a receipt.",
+                              "honesty":  "Do not claim a lane is ready unless health check passes.",
+                              "voice_reply":  "Telegram should generate/send playable voice audio when voice service is healthy.",
+                              "research_mode":  "Continuous research must be lightweight, scheduled, receipt-backed, and not overwhelm the machine.",
+                              "text_reply":  "Telegram must send a written answer."
+                          },
+    "telegram_shell":  "agent-lee-telegram-shell",
+    "created_at":  "2026-07-03T15:06:47.2777252-05:00",
+    "routing":  {
+                    "xtts_voice":  "http://agent-lee-voice-kernel:8092",
+                    "runtime_fabric":  "http://leeway_runtime_fabric:4001",
+                    "qwen_voice":  "http://agent-lee-qwen-voice:8097",
+                    "ears":  "http://agent-lee-ears-kernel:8094",
+                    "brain":  "http://leeway_ollama:11434",
+                    "voice_primary":  "http://agent-lee-qwen-voice:8097",
+                    "brain_model":  "qwen3:latest",
+                    "image":  "http://agent-lee-sdxl-lightning-image-lane:8095",
+                    "media_router":  "http://leeway_media_router:5301",
+                    "memory":  "http://leeway_media_ingestion_layer:5300",
+                    "code_mode":  "http://agent_lee_code_mode:8080",
+                    "vision":  "http://agent-lee-vision-kernel:8093"
+                }
+}

@@ -1,0 +1,28 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "TAG": "CORE.STANDARDS.CANON.MAIN",
+    "REGION": "🟢 CORE",
+    "PURPOSE": "Standalone LeeWay standards canon manifest for Agent Lee runtime loading.",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "name": "Agent Lee Standalone Standards Canon",
+  "sources": [
+    "agent-lee/standards/LEEWAY_STANDARDS.md",
+    "agent-lee/sdk/standards/AGENT_REGISTRY.md",
+    "agent-lee/governance/law/CollaborationContract.ts",
+    "agent-lee/governance/law/AllowedTransitions.ts",
+    "agent-lee/governance/law/ZeroTrustSecurityPolicy.ts",
+    "agent-lee/governance/law/SecurityOfficerCharter.ts"
+  ],
+  "laws": [
+    "Scores below 70 are blocking.",
+    "Governed files must include LeeWay metadata.",
+    "Agent Lee verifies before trust and writes receipts.",
+    "No agent, plugin, tool, memory record, or workflow is trusted by default.",
+    "Zone-based containment and capability-bound execution are mandatory for external or unknown surfaces.",
+    "Memory must carry provenance, trust state, and verification before operational use.",
+    "Behavioral drift, identity mismatch, and receipt bypass attempts are security incidents.",
+    "Prime Security Family officers govern identity, memory integrity, plugin approval, and drift response before privileged trust is granted."
+  ]
+}

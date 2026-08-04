@@ -1,0 +1,8 @@
+{
+  "simulationId": "SMALL_BUG_TO_DISASTER_CASCADE",
+  "detections": [
+    "STALE_RUNTIME_FILE_PATTERN",
+    "STALE_PASS_PROMOTION_PATTERN",
+    "FALSE_ACTIVE_ROUTE_PATTERN"
+  ]
+}

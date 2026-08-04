@@ -1,0 +1,27 @@
+﻿{
+    "timestamp":  "2026-05-17T21:55:05.9270474-05:00",
+    "checkedFiles":  [
+                         "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\governance\\law\\law-0021-voice-bridge-message-separation.md",
+                         "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\leeway-voice-brand-doctrine.md"
+                     ],
+    "bridgeEndpoint":  "http://127.0.0.1:7671/transcript",
+    "brandDoctrinePresent":  true,
+    "ownerFacingLanguagePass":  false,
+    "voiceIdentityPass":  false,
+    "voiceReviewPanelPass":  false,
+    "truthfulFallbackLanguagePass":  false,
+    "statusClassificationPass":  false,
+    "transcriptClassificationPass":  false,
+    "dedupePass":  false,
+    "readinessStringBlockedFromChat":  false,
+    "loopDetectionPass":  false,
+    "runtimeHealthExposurePass":  false,
+    "autoSendGoverned":  false,
+    "mutatingVoiceGovernancePass":  false,
+    "trustQuestionCoveragePass":  false,
+    "finalVerdict":  "FAIL",
+    "caveats":  [
+                    "This script verifies source truth and UI/report wiring. It does not prove a live human-audible VS Code session.",
+                    "Live runtime remains separate from source verification and must still be validated in VS Code."
+                ]
+}

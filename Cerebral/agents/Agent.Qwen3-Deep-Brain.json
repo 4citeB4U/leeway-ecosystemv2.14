@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Qwen3-Deep-Brain",
+  "wave": 3,
+  "rank": "Strategist",
+  "primary_function": "Generate logic-driven repair draft",
+  "tool": "repair_wave3",
+  "uniform": "Administrative"
+}

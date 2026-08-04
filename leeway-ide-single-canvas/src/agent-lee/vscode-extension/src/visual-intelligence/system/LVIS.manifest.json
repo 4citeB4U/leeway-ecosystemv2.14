@@ -1,0 +1,31 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "💾 DATA",
+    "TAG": "DATA.VISUAL.LVIS.MANIFEST",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "system": "LVIS",
+  "agents": [
+    "leeway-visual-orchestrator-agent"
+  ],
+  "workers": [
+    "leeway-visual-orchestrator-agent",
+    "leeway-vector-reconstruction-worker",
+    "leeway-voxel-reconstruction-worker",
+    "leeway-depth-synthesis-worker",
+    "leeway-scene-reconstruction-worker",
+    "leeway-structural-fidelity-worker",
+    "leeway-asset-repair-worker",
+    "leeway-manifest-export-worker",
+    "leeway-project-integration-worker",
+    "leeway-visual-memory-worker"
+  ],
+  "ui": [
+    "LeewayVisualPanel",
+    "VectorReconstructionPanel",
+    "VoxelReconstructionPanel",
+    "VisualQualityPanel",
+    "VisualExportPanel"
+  ]
+}

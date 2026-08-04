@@ -1,0 +1,20 @@
+{
+    "schema":  "leeway.agent-lee.messaging.provider.v1",
+    "id":  "agent-lee-text-provider.telegram",
+    "status":  "ACTIVE",
+    "provider":  "telegram",
+    "role":  "default_text_message_provider",
+    "botUsername":  "Lee2912bot",
+    "defaultOperation":  "telegram.send_text",
+    "fallbackProviders":  [
+
+                          ],
+    "approvalRequired":  true,
+    "discoveryManifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\discovery\\telegram.messaging.discovery.json",
+    "capabilityManifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\capabilities\\telegram.messaging.capability.json",
+    "operationManifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\operations\\telegram.send-text.operation.json",
+    "toolManifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\tools\\telegram.send-message.tool.json",
+    "invokeScript":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\scripts\\Invoke-AgentLeeTelegramText.ps1",
+    "envPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.env.local",
+    "createdAt":  "2026-06-28T16:28:09.8945629Z"
+}

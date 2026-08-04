@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-05-27T01:32:22.879Z",
+  "validationMode": "INSTALLED_EXTENSION",
+  "extensionVersion": "",
+  "runtimeSourceMode": "UNKNOWN",
+  "activityBarIconVisible": false,
+  "activityBarIconNotBlank": false,
+  "sidebarOpened": false,
+  "openSidebarCommandWorked": false,
+  "statusBarVisible": false,
+  "chatAvatarVisible": false,
+  "topRightButtonVisible": false,
+  "bottomButtonVisible": false,
+  "standardsButtonVisible": false,
+  "readmePreviewAvailable": false,
+  "readmeOrderCorrect": false,
+  "readmeHeaderVisible": false,
+  "readmeSystemFlowVisible": false,
+  "runtimeHealthVisible": false,
+  "staleRuntimeDetected": true,
+  "screenshots": [],
+  "manualObservationNotes": {
+    "error": "Agent Lee status bar item was not visible in the live VS Code shell."
+  },
+  "finalVerdict": "FAIL"
+}

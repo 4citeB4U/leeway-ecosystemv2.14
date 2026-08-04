@@ -1,0 +1,6404 @@
+{
+  "built_at": 1773017793.4478395,
+  "entries": [
+    {
+      "path": "C:\\\\Cerebral\\.cerebral_index.json",
+      "name": ".cerebral_index.json",
+      "ext": ".json",
+      "size": 165873,
+      "mtime": 1772846433.730846,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\.env.local",
+      "name": ".env.local",
+      "ext": ".local",
+      "size": 9629,
+      "mtime": 1773005661.7964518,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audit_log.json",
+      "name": "audit_log.json",
+      "ext": ".json",
+      "size": 6070,
+      "mtime": 1772844366.622239,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audit_log.py",
+      "name": "audit_log.py",
+      "ext": ".py",
+      "size": 283,
+      "mtime": 1772434866.1756668,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\body_state.py",
+      "name": "body_state.py",
+      "ext": ".py",
+      "size": 10147,
+      "mtime": 1772730006.7933805,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bootstrap-digital-brain.ps1",
+      "name": "bootstrap-digital-brain.ps1",
+      "ext": ".ps1",
+      "size": 7628,
+      "mtime": 1772616264.2002456,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\briefing_engine.py",
+      "name": "briefing_engine.py",
+      "ext": ".py",
+      "size": 1730,
+      "mtime": 1772434866.184076,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Category-ChartType-ScaleRange-Interaction-AlertThreshold.csv",
+      "name": "Category-ChartType-ScaleRange-Interaction-AlertThreshold.csv",
+      "ext": ".csv",
+      "size": 1253,
+      "mtime": 1772460984.08858,
+      "lang": "CSV",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral-cloudflared.yml",
+      "name": "cerebral-cloudflared.yml",
+      "ext": ".yml",
+      "size": 258,
+      "mtime": 1772957401.9364345,
+      "lang": "YAML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\CerebralCommander.lively.json",
+      "name": "CerebralCommander.lively.json",
+      "ext": ".json",
+      "size": 601,
+      "mtime": 1772515804.8492265,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\CerebralDaemon.py",
+      "name": "CerebralDaemon.py",
+      "ext": ".py",
+      "size": 82926,
+      "mtime": 1772844303.498273,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_bridge.py",
+      "name": "cerebral_bridge.py",
+      "ext": ".py",
+      "size": 5223,
+      "mtime": 1772666932.0518506,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_daemon.py",
+      "name": "cerebral_daemon.py",
+      "ext": ".py",
+      "size": 1743,
+      "mtime": 1772515804.8771467,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral_Dashboard.pyw",
+      "name": "Cerebral_Dashboard.pyw",
+      "ext": ".pyw",
+      "size": 1956,
+      "mtime": 1772515804.8771467,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral_FULL_SYSTEM_REPORT.md",
+      "name": "Cerebral_FULL_SYSTEM_REPORT.md",
+      "ext": ".md",
+      "size": 4261,
+      "mtime": 1772846542.9931543,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_icon.ico",
+      "name": "cerebral_icon.ico",
+      "ext": ".ico",
+      "size": 1767675,
+      "mtime": 1772392556.8783937,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_mcp_server.py",
+      "name": "cerebral_mcp_server.py",
+      "ext": ".py",
+      "size": 16688,
+      "mtime": 1772781698.130206,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_prime.py",
+      "name": "cerebral_prime.py",
+      "ext": ".py",
+      "size": 2681,
+      "mtime": 1772515804.8492265,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral_SAP7_Sovereign.py",
+      "name": "Cerebral_SAP7_Sovereign.py",
+      "ext": ".py",
+      "size": 41754,
+      "mtime": 1772596182.7099135,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral_SAP7_Sovereign.spec",
+      "name": "Cerebral_SAP7_Sovereign.spec",
+      "ext": ".spec",
+      "size": 746,
+      "mtime": 1772597953.1142707,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_ui.png",
+      "name": "cerebral_ui.png",
+      "ext": ".png",
+      "size": 4468,
+      "mtime": 1772600790.472145,
+      "lang": "Image",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral_ui.py",
+      "name": "Cerebral_ui.py",
+      "ext": ".py",
+      "size": 12186,
+      "mtime": 1772449307.4938183,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\cerebral_ui_check.png",
+      "name": "cerebral_ui_check.png",
+      "ext": ".png",
+      "size": 15480,
+      "mtime": 1772623039.854088,
+      "lang": "Image",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\convert_tools.py",
+      "name": "convert_tools.py",
+      "ext": ".py",
+      "size": 12503,
+      "mtime": 1772730210.5852134,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\daemon.err",
+      "name": "daemon.err",
+      "ext": ".err",
+      "size": 0,
+      "mtime": 1772788424.7022364,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\daemon.log",
+      "name": "daemon.log",
+      "ext": ".log",
+      "size": 109,
+      "mtime": 1772505475.213211,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\daemon_full_log.txt",
+      "name": "daemon_full_log.txt",
+      "ext": ".txt",
+      "size": 1614,
+      "mtime": 1772666514.1819556,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\desktop_hands.py",
+      "name": "desktop_hands.py",
+      "ext": ".py",
+      "size": 23937,
+      "mtime": 1772736936.7662027,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\file_engine.py",
+      "name": "file_engine.py",
+      "ext": ".py",
+      "size": 1734,
+      "mtime": 1772434866.1701221,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\file_indexer.py",
+      "name": "file_indexer.py",
+      "ext": ".py",
+      "size": 11781,
+      "mtime": 1772730006.8922453,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\foundry_8080.log",
+      "name": "foundry_8080.log",
+      "ext": ".log",
+      "size": 38821,
+      "mtime": 1772634567.157355,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\foundry_debug.log",
+      "name": "foundry_debug.log",
+      "ext": ".log",
+      "size": 28425,
+      "mtime": 1772633656.1010058,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\foundry_log.txt",
+      "name": "foundry_log.txt",
+      "ext": ".txt",
+      "size": 573,
+      "mtime": 1772626449.8989735,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\foundry_startup.log",
+      "name": "foundry_startup.log",
+      "ext": ".log",
+      "size": 191,
+      "mtime": 1772626566.162953,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\foundry_startup_v2.log",
+      "name": "foundry_startup_v2.log",
+      "ext": ".log",
+      "size": 191,
+      "mtime": 1772633065.7641933,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\full_tunnel_list.json",
+      "name": "full_tunnel_list.json",
+      "ext": ".json",
+      "size": 2208,
+      "mtime": 1772854996.4388828,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\get-pip-2.py",
+      "name": "get-pip-2.py",
+      "ext": ".py",
+      "size": 2193439,
+      "mtime": 1772692150.3205817,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\get-pip.py",
+      "name": "get-pip.py",
+      "ext": ".py",
+      "size": 2193439,
+      "mtime": 1772692057.96385,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\health_log.json",
+      "name": "health_log.json",
+      "ext": ".json",
+      "size": 267,
+      "mtime": 1772355617.0979989,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\INSTALL.md",
+      "name": "INSTALL.md",
+      "ext": ".md",
+      "size": 1310,
+      "mtime": 1773017712.4702802,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\install_uv.ps1",
+      "name": "install_uv.ps1",
+      "ext": ".ps1",
+      "size": 22650,
+      "mtime": 1772692928.0056858,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\llama_cpp.out",
+      "name": "llama_cpp.out",
+      "ext": ".out",
+      "size": 124,
+      "mtime": 1772659424.9418359,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\MASTER_RULES.md",
+      "name": "MASTER_RULES.md",
+      "ext": ".md",
+      "size": 1321,
+      "mtime": 1773017724.123179,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\memory.json",
+      "name": "memory.json",
+      "ext": ".json",
+      "size": 35256,
+      "mtime": 1772863105.7037508,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\memory_engine.py",
+      "name": "memory_engine.py",
+      "ext": ".py",
+      "size": 524,
+      "mtime": 1772434866.168109,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\model_router.py",
+      "name": "model_router.py",
+      "ext": ".py",
+      "size": 14452,
+      "mtime": 1772789299.9362118,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\my_voice.wav",
+      "name": "my_voice.wav",
+      "ext": ".wav",
+      "size": 2586020,
+      "mtime": 1771586947.5608957,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 87,
+      "mtime": 1772510142.4369812,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\persona.py",
+      "name": "persona.py",
+      "ext": ".py",
+      "size": 11034,
+      "mtime": 1772845128.2150314,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\planner_engine.py",
+      "name": "planner_engine.py",
+      "ext": ".py",
+      "size": 8254,
+      "mtime": 1772790010.5526962,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\playback_output.txt",
+      "name": "playback_output.txt",
+      "ext": ".txt",
+      "size": 79,
+      "mtime": 1772481578.7512693,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\pocket_tts.out",
+      "name": "pocket_tts.out",
+      "ext": ".out",
+      "size": 0,
+      "mtime": 1772659950.8144546,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\policy_engine.py",
+      "name": "policy_engine.py",
+      "ext": ".py",
+      "size": 8326,
+      "mtime": 1772788119.8046813,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\PORTS.md",
+      "name": "PORTS.md",
+      "ext": ".md",
+      "size": 1142,
+      "mtime": 1772846542.979623,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 2563,
+      "mtime": 1772846543.0294454,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\recover_services.ps1",
+      "name": "recover_services.ps1",
+      "ext": ".ps1",
+      "size": 2388,
+      "mtime": 1772658795.7174468,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\repo_map.json",
+      "name": "repo_map.json",
+      "ext": ".json",
+      "size": 116997,
+      "mtime": 1772846433.7390811,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\repo_map.md",
+      "name": "repo_map.md",
+      "ext": ".md",
+      "size": 45743,
+      "mtime": 1772846433.7406223,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\requirements.txt",
+      "name": "requirements.txt",
+      "ext": ".txt",
+      "size": 111,
+      "mtime": 1772494718.808592,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\server.py",
+      "name": "server.py",
+      "ext": ".py",
+      "size": 2203,
+      "mtime": 1772394096.9958484,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\settings.json",
+      "name": "settings.json",
+      "ext": ".json",
+      "size": 108,
+      "mtime": 1772731192.3870301,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\start_cerebral.bat",
+      "name": "start_cerebral.bat",
+      "ext": ".bat",
+      "size": 470,
+      "mtime": 1772842832.5544305,
+      "lang": "Batch",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\start_cerebral_tunnel.bat",
+      "name": "start_cerebral_tunnel.bat",
+      "ext": ".bat",
+      "size": 275,
+      "mtime": 1772835619.6397536,
+      "lang": "Batch",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\talk.py",
+      "name": "talk.py",
+      "ext": ".py",
+      "size": 3491,
+      "mtime": 1772614344.0553617,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\task_queue.py",
+      "name": "task_queue.py",
+      "ext": ".py",
+      "size": 480,
+      "mtime": 1772434866.168109,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\task_spine.py",
+      "name": "task_spine.py",
+      "ext": ".py",
+      "size": 22844,
+      "mtime": 1772788384.6676419,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\test_pockettts.mp3",
+      "name": "test_pockettts.mp3",
+      "ext": ".mp3",
+      "size": 36140,
+      "mtime": 1772480100.4621358,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tool_router.py",
+      "name": "tool_router.py",
+      "ext": ".py",
+      "size": 19932,
+      "mtime": 1772736936.7625272,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_cred.json",
+      "name": "tunnel_cred.json",
+      "ext": ".json",
+      "size": 175,
+      "mtime": 1772116193.5913622,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_info.txt",
+      "name": "tunnel_info.txt",
+      "ext": ".txt",
+      "size": 483,
+      "mtime": 1772855173.8689713,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_list.txt",
+      "name": "tunnel_list.txt",
+      "ext": ".txt",
+      "size": 564,
+      "mtime": 1772853869.1914127,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_list_clean.txt",
+      "name": "tunnel_list_clean.txt",
+      "ext": ".txt",
+      "size": 701,
+      "mtime": 1772855226.9650207,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_list_full.json",
+      "name": "tunnel_list_full.json",
+      "ext": ".json",
+      "size": 2411,
+      "mtime": 1772855183.8610878,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tunnel_new.json",
+      "name": "tunnel_new.json",
+      "ext": ".json",
+      "size": 175,
+      "mtime": 1772855035.8760047,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\utputFormat",
+      "name": "utputFormat",
+      "ext": "",
+      "size": 441,
+      "mtime": 1772417848.277718,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vision_llm.py",
+      "name": "vision_llm.py",
+      "ext": ".py",
+      "size": 11048,
+      "mtime": 1772736650.0007186,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vision_tools.py",
+      "name": "vision_tools.py",
+      "ext": ".py",
+      "size": 8784,
+      "mtime": 1772735411.7519803,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\websocket_ptt_server.py",
+      "name": "websocket_ptt_server.py",
+      "ext": ".py",
+      "size": 2126,
+      "mtime": 1772501977.0046375,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\.env",
+      "name": ".env",
+      "ext": "",
+      "size": 203,
+      "mtime": 1772634420.5753665,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\.env.example",
+      "name": ".env.example",
+      "ext": ".example",
+      "size": 445,
+      "mtime": 1772421313.1997502,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\.gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "size": 73,
+      "mtime": 1772421313.2128177,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 310,
+      "mtime": 1772604786.2049308,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\metadata.json",
+      "name": "metadata.json",
+      "ext": ".json",
+      "size": 234,
+      "mtime": 1772421313.1797454,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 257080,
+      "mtime": 1772721938.3735075,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "size": 1201,
+      "mtime": 1772721937.841814,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\playback_output.txt",
+      "name": "playback_output.txt",
+      "ext": ".txt",
+      "size": 156,
+      "mtime": 1772481559.208894,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 578,
+      "mtime": 1773017770.7538333,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\tsconfig.json",
+      "name": "tsconfig.json",
+      "ext": ".json",
+      "size": 508,
+      "mtime": 1772421313.4588506,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\vite.config.ts",
+      "name": "vite.config.ts",
+      "ext": ".ts",
+      "size": 1145,
+      "mtime": 1772626819.8648212,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\agent-lee-os2\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 1325,
+      "mtime": 1772487163.0480914,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\agent-lee-os2\\package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "size": 59,
+      "mtime": 1772487163.0439956,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\App.tsx",
+      "name": "App.tsx",
+      "ext": ".tsx",
+      "size": 9302,
+      "mtime": 1772862876.2998898,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\constants.ts",
+      "name": "constants.ts",
+      "ext": ".ts",
+      "size": 31,
+      "mtime": 1772421313.3017826,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\index.css",
+      "name": "index.css",
+      "ext": ".css",
+      "size": 645,
+      "mtime": 1772616958.7290406,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\main.tsx",
+      "name": "main.tsx",
+      "ext": ".tsx",
+      "size": 231,
+      "mtime": 1772421313.2758079,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\types.ts",
+      "name": "types.ts",
+      "ext": ".ts",
+      "size": 265,
+      "mtime": 1772421313.291129,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\AgentLee3D.tsx",
+      "name": "AgentLee3D.tsx",
+      "ext": ".tsx",
+      "size": 17479,
+      "mtime": 1772721204.8743775,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\ChatModal.tsx",
+      "name": "ChatModal.tsx",
+      "ext": ".tsx",
+      "size": 4780,
+      "mtime": 1772844303.9346974,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\DiagnosticsSidebar.tsx",
+      "name": "DiagnosticsSidebar.tsx",
+      "ext": ".tsx",
+      "size": 7756,
+      "mtime": 1772675934.2123592,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\MetallicBackground.tsx",
+      "name": "MetallicBackground.tsx",
+      "ext": ".tsx",
+      "size": 6049,
+      "mtime": 1772603466.9537356,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\PortMonitor.tsx",
+      "name": "PortMonitor.tsx",
+      "ext": ".tsx",
+      "size": 1030,
+      "mtime": 1772421313.4232705,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\PTTButton.tsx",
+      "name": "PTTButton.tsx",
+      "ext": ".tsx",
+      "size": 5282,
+      "mtime": 1772845023.518297,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\Screensaver.tsx",
+      "name": "Screensaver.tsx",
+      "ext": ".tsx",
+      "size": 39432,
+      "mtime": 1772847068.5685048,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\SpiritualCanvas.tsx",
+      "name": "SpiritualCanvas.tsx",
+      "ext": ".tsx",
+      "size": 5681,
+      "mtime": 1772678000.995144,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\SystemTelemetry.tsx",
+      "name": "SystemTelemetry.tsx",
+      "ext": ".tsx",
+      "size": 13049,
+      "mtime": 1772609139.7349367,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\TaskSpinePanel.tsx",
+      "name": "TaskSpinePanel.tsx",
+      "ext": ".tsx",
+      "size": 17451,
+      "mtime": 1772789509.2026873,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\TelemetryDashboard.tsx",
+      "name": "TelemetryDashboard.tsx",
+      "ext": ".tsx",
+      "size": 39352,
+      "mtime": 1772777386.4195986,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\TunnelPanel.tsx",
+      "name": "TunnelPanel.tsx",
+      "ext": ".tsx",
+      "size": 10743,
+      "mtime": 1772421313.4137256,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\UIModules.tsx",
+      "name": "UIModules.tsx",
+      "ext": ".tsx",
+      "size": 1687,
+      "mtime": 1772421313.398729,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\components\\Window.tsx",
+      "name": "Window.tsx",
+      "ext": ".tsx",
+      "size": 2956,
+      "mtime": 1772421313.38566,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\lib\\utils.ts",
+      "name": "utils.ts",
+      "ext": ".ts",
+      "size": 169,
+      "mtime": 1772421313.3174446,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\services\\ai.ts",
+      "name": "ai.ts",
+      "ext": ".ts",
+      "size": 8341,
+      "mtime": 1772729249.326714,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agent-lee-os2\\src\\services\\SovereignIdentity.ts",
+      "name": "SovereignIdentity.ts",
+      "ext": ".ts",
+      "size": 189,
+      "mtime": 1772421313.3572822,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Hardware-Guardian.json",
+      "name": "Agent.Hardware-Guardian.json",
+      "ext": ".json",
+      "size": 201,
+      "mtime": 1772587516.1482325,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Human-Link.json",
+      "name": "Agent.Human-Link.json",
+      "ext": ".json",
+      "size": 244,
+      "mtime": 1772616776.4557583,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Interface-Designer.json",
+      "name": "Agent.Interface-Designer.json",
+      "ext": ".json",
+      "size": 238,
+      "mtime": 1772616770.4896526,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Logistic-Preparer.json",
+      "name": "Agent.Logistic-Preparer.json",
+      "ext": ".json",
+      "size": 223,
+      "mtime": 1772587516.324771,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Neural-Cartographer.json",
+      "name": "Agent.Neural-Cartographer.json",
+      "ext": ".json",
+      "size": 204,
+      "mtime": 1772587516.0947149,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Neural-Navigator.json",
+      "name": "Agent.Neural-Navigator.json",
+      "ext": ".json",
+      "size": 226,
+      "mtime": 1772616774.8880725,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Phi-3.5-Orchestrator.json",
+      "name": "Agent.Phi-3.5-Orchestrator.json",
+      "ext": ".json",
+      "size": 222,
+      "mtime": 1772587516.5099945,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Qwen3-Deep-Brain.json",
+      "name": "Agent.Qwen3-Deep-Brain.json",
+      "ext": ".json",
+      "size": 201,
+      "mtime": 1772587516.4152887,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Sovereign-Auditor.json",
+      "name": "Agent.Sovereign-Auditor.json",
+      "ext": ".json",
+      "size": 214,
+      "mtime": 1772587516.2352574,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\Agent.Systems-Integrator.json",
+      "name": "Agent.Systems-Integrator.json",
+      "ext": ".json",
+      "size": 238,
+      "mtime": 1772616772.3155372,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\archivist_agent.py",
+      "name": "archivist_agent.py",
+      "ext": ".py",
+      "size": 11079,
+      "mtime": 1772781590.6359954,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\code_scout_agent.py",
+      "name": "code_scout_agent.py",
+      "ext": ".py",
+      "size": 14008,
+      "mtime": 1772781590.6359954,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\indexer.py",
+      "name": "indexer.py",
+      "ext": ".py",
+      "size": 1939,
+      "mtime": 1772587018.9839387,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\navigator_agent.py",
+      "name": "navigator_agent.py",
+      "ext": ".py",
+      "size": 8787,
+      "mtime": 1772781590.625288,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\sentinel_agent.py",
+      "name": "sentinel_agent.py",
+      "ext": ".py",
+      "size": 10222,
+      "mtime": 1772781446.8005798,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\agents\\__init__.py",
+      "name": "__init__.py",
+      "ext": ".py",
+      "size": 972,
+      "mtime": 1772781404.3698635,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\agent_lee_reference_voice_16k.wav",
+      "name": "agent_lee_reference_voice_16k.wav",
+      "ext": ".wav",
+      "size": 2586020,
+      "mtime": 1771586947.5608957,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\agent_lee_ref_16k.wav",
+      "name": "agent_lee_ref_16k.wav",
+      "ext": ".wav",
+      "size": 2586020,
+      "mtime": 1771598401.5694847,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\audit_runner.py",
+      "name": "audit_runner.py",
+      "ext": ".py",
+      "size": 5043,
+      "mtime": 1772593759.041009,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\barge_in_controller.py",
+      "name": "barge_in_controller.py",
+      "ext": ".py",
+      "size": 2986,
+      "mtime": 1772844303.5616028,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\piper_tts_worker.py",
+      "name": "piper_tts_worker.py",
+      "ext": ".py",
+      "size": 18707,
+      "mtime": 1772844303.553601,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\piper_voices.py",
+      "name": "piper_voices.py",
+      "ext": ".py",
+      "size": 1105,
+      "mtime": 1772723882.187868,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\speak_test.py",
+      "name": "speak_test.py",
+      "ext": ".py",
+      "size": 473,
+      "mtime": 1772593759.0470085,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\tts_worker.py",
+      "name": "tts_worker.py",
+      "ext": ".py",
+      "size": 4608,
+      "mtime": 1772685058.2303677,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\audio\\voice_probe.py",
+      "name": "voice_probe.py",
+      "ext": ".py",
+      "size": 951,
+      "mtime": 1772593759.0480099,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\libtashkeel_model.ort",
+      "name": "libtashkeel_model.ort",
+      "ext": ".ort",
+      "size": 10261536,
+      "mtime": 1700006074.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\af_dict",
+      "name": "af_dict",
+      "ext": "",
+      "size": 121473,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\am_dict",
+      "name": "am_dict",
+      "ext": "",
+      "size": 63878,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\an_dict",
+      "name": "an_dict",
+      "ext": "",
+      "size": 6691,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ar_dict",
+      "name": "ar_dict",
+      "ext": "",
+      "size": 478165,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\as_dict",
+      "name": "as_dict",
+      "ext": "",
+      "size": 5005,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\az_dict",
+      "name": "az_dict",
+      "ext": "",
+      "size": 43773,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ba_dict",
+      "name": "ba_dict",
+      "ext": "",
+      "size": 2098,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\be_dict",
+      "name": "be_dict",
+      "ext": "",
+      "size": 2652,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\bg_dict",
+      "name": "bg_dict",
+      "ext": "",
+      "size": 87051,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\bn_dict",
+      "name": "bn_dict",
+      "ext": "",
+      "size": 89979,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\bpy_dict",
+      "name": "bpy_dict",
+      "ext": "",
+      "size": 5226,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\bs_dict",
+      "name": "bs_dict",
+      "ext": "",
+      "size": 47068,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ca_dict",
+      "name": "ca_dict",
+      "ext": "",
+      "size": 45566,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\chr_dict",
+      "name": "chr_dict",
+      "ext": "",
+      "size": 2859,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\cmn_dict",
+      "name": "cmn_dict",
+      "ext": "",
+      "size": 1566335,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\cs_dict",
+      "name": "cs_dict",
+      "ext": "",
+      "size": 49645,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\cv_dict",
+      "name": "cv_dict",
+      "ext": "",
+      "size": 1344,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\cy_dict",
+      "name": "cy_dict",
+      "ext": "",
+      "size": 43130,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\da_dict",
+      "name": "da_dict",
+      "ext": "",
+      "size": 245287,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\de_dict",
+      "name": "de_dict",
+      "ext": "",
+      "size": 68276,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\el_dict",
+      "name": "el_dict",
+      "ext": "",
+      "size": 72841,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\en_dict",
+      "name": "en_dict",
+      "ext": "",
+      "size": 166944,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\eo_dict",
+      "name": "eo_dict",
+      "ext": "",
+      "size": 4666,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\es_dict",
+      "name": "es_dict",
+      "ext": "",
+      "size": 49252,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\et_dict",
+      "name": "et_dict",
+      "ext": "",
+      "size": 44263,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\eu_dict",
+      "name": "eu_dict",
+      "ext": "",
+      "size": 48841,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\fa_dict",
+      "name": "fa_dict",
+      "ext": "",
+      "size": 292423,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\fi_dict",
+      "name": "fi_dict",
+      "ext": "",
+      "size": 43928,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\fr_dict",
+      "name": "fr_dict",
+      "ext": "",
+      "size": 63727,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ga_dict",
+      "name": "ga_dict",
+      "ext": "",
+      "size": 52673,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\gd_dict",
+      "name": "gd_dict",
+      "ext": "",
+      "size": 49121,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\gn_dict",
+      "name": "gn_dict",
+      "ext": "",
+      "size": 3248,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\grc_dict",
+      "name": "grc_dict",
+      "ext": "",
+      "size": 3433,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\gu_dict",
+      "name": "gu_dict",
+      "ext": "",
+      "size": 82480,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\hak_dict",
+      "name": "hak_dict",
+      "ext": "",
+      "size": 3335,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\haw_dict",
+      "name": "haw_dict",
+      "ext": "",
+      "size": 2443,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\he_dict",
+      "name": "he_dict",
+      "ext": "",
+      "size": 6963,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\hi_dict",
+      "name": "hi_dict",
+      "ext": "",
+      "size": 92143,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\hr_dict",
+      "name": "hr_dict",
+      "ext": "",
+      "size": 49388,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ht_dict",
+      "name": "ht_dict",
+      "ext": "",
+      "size": 1803,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\hu_dict",
+      "name": "hu_dict",
+      "ext": "",
+      "size": 153785,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\hy_dict",
+      "name": "hy_dict",
+      "ext": "",
+      "size": 62263,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ia_dict",
+      "name": "ia_dict",
+      "ext": "",
+      "size": 331275,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\id_dict",
+      "name": "id_dict",
+      "ext": "",
+      "size": 43458,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\intonations",
+      "name": "intonations",
+      "ext": "",
+      "size": 2040,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\io_dict",
+      "name": "io_dict",
+      "ext": "",
+      "size": 2165,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\is_dict",
+      "name": "is_dict",
+      "ext": "",
+      "size": 44354,
+      "mtime": 1700010482.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\it_dict",
+      "name": "it_dict",
+      "ext": "",
+      "size": 152889,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ja_dict",
+      "name": "ja_dict",
+      "ext": "",
+      "size": 47652,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\jbo_dict",
+      "name": "jbo_dict",
+      "ext": "",
+      "size": 2243,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ka_dict",
+      "name": "ka_dict",
+      "ext": "",
+      "size": 87775,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\kk_dict",
+      "name": "kk_dict",
+      "ext": "",
+      "size": 1859,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\kl_dict",
+      "name": "kl_dict",
+      "ext": "",
+      "size": 2838,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\kn_dict",
+      "name": "kn_dict",
+      "ext": "",
+      "size": 87828,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\kok_dict",
+      "name": "kok_dict",
+      "ext": "",
+      "size": 6394,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ko_dict",
+      "name": "ko_dict",
+      "ext": "",
+      "size": 47523,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ku_dict",
+      "name": "ku_dict",
+      "ext": "",
+      "size": 2265,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ky_dict",
+      "name": "ky_dict",
+      "ext": "",
+      "size": 64977,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\la_dict",
+      "name": "la_dict",
+      "ext": "",
+      "size": 3806,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lb_dict",
+      "name": "lb_dict",
+      "ext": "",
+      "size": 687931,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lfn_dict",
+      "name": "lfn_dict",
+      "ext": "",
+      "size": 2793,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lt_dict",
+      "name": "lt_dict",
+      "ext": "",
+      "size": 49890,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lv_dict",
+      "name": "lv_dict",
+      "ext": "",
+      "size": 66337,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\mi_dict",
+      "name": "mi_dict",
+      "ext": "",
+      "size": 1346,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\mk_dict",
+      "name": "mk_dict",
+      "ext": "",
+      "size": 63859,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ml_dict",
+      "name": "ml_dict",
+      "ext": "",
+      "size": 92345,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\mr_dict",
+      "name": "mr_dict",
+      "ext": "",
+      "size": 87391,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ms_dict",
+      "name": "ms_dict",
+      "ext": "",
+      "size": 53541,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\mto_dict",
+      "name": "mto_dict",
+      "ext": "",
+      "size": 3960,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\mt_dict",
+      "name": "mt_dict",
+      "ext": "",
+      "size": 4384,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\my_dict",
+      "name": "my_dict",
+      "ext": "",
+      "size": 95948,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\nci_dict",
+      "name": "nci_dict",
+      "ext": "",
+      "size": 1534,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ne_dict",
+      "name": "ne_dict",
+      "ext": "",
+      "size": 95377,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\nl_dict",
+      "name": "nl_dict",
+      "ext": "",
+      "size": 65979,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\nog_dict",
+      "name": "nog_dict",
+      "ext": "",
+      "size": 3294,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\no_dict",
+      "name": "no_dict",
+      "ext": "",
+      "size": 4178,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\om_dict",
+      "name": "om_dict",
+      "ext": "",
+      "size": 2302,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\or_dict",
+      "name": "or_dict",
+      "ext": "",
+      "size": 89246,
+      "mtime": 1700010484.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\pap_dict",
+      "name": "pap_dict",
+      "ext": "",
+      "size": 2128,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\pa_dict",
+      "name": "pa_dict",
+      "ext": "",
+      "size": 79953,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\phondata",
+      "name": "phondata",
+      "ext": "",
+      "size": 550424,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\phondata-manifest",
+      "name": "phondata-manifest",
+      "ext": "",
+      "size": 22808,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\phonindex",
+      "name": "phonindex",
+      "ext": "",
+      "size": 39074,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\phontab",
+      "name": "phontab",
+      "ext": "",
+      "size": 55796,
+      "mtime": 1700010480.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\piqd_dict",
+      "name": "piqd_dict",
+      "ext": "",
+      "size": 1710,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\pl_dict",
+      "name": "pl_dict",
+      "ext": "",
+      "size": 76730,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\pt_dict",
+      "name": "pt_dict",
+      "ext": "",
+      "size": 67817,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\py_dict",
+      "name": "py_dict",
+      "ext": "",
+      "size": 2409,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\qdb_dict",
+      "name": "qdb_dict",
+      "ext": "",
+      "size": 3028,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\quc_dict",
+      "name": "quc_dict",
+      "ext": "",
+      "size": 1450,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\qu_dict",
+      "name": "qu_dict",
+      "ext": "",
+      "size": 1919,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\qya_dict",
+      "name": "qya_dict",
+      "ext": "",
+      "size": 1939,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ro_dict",
+      "name": "ro_dict",
+      "ext": "",
+      "size": 68538,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ru_dict",
+      "name": "ru_dict",
+      "ext": "",
+      "size": 8532392,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sd_dict",
+      "name": "sd_dict",
+      "ext": "",
+      "size": 59928,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\shn_dict",
+      "name": "shn_dict",
+      "ext": "",
+      "size": 88172,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\si_dict",
+      "name": "si_dict",
+      "ext": "",
+      "size": 85384,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sjn_dict",
+      "name": "sjn_dict",
+      "ext": "",
+      "size": 1783,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sk_dict",
+      "name": "sk_dict",
+      "ext": "",
+      "size": 50002,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sl_dict",
+      "name": "sl_dict",
+      "ext": "",
+      "size": 45047,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\smj_dict",
+      "name": "smj_dict",
+      "ext": "",
+      "size": 35095,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sq_dict",
+      "name": "sq_dict",
+      "ext": "",
+      "size": 45003,
+      "mtime": 1700010486.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sr_dict",
+      "name": "sr_dict",
+      "ext": "",
+      "size": 46832,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sv_dict",
+      "name": "sv_dict",
+      "ext": "",
+      "size": 47836,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\sw_dict",
+      "name": "sw_dict",
+      "ext": "",
+      "size": 47804,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ta_dict",
+      "name": "ta_dict",
+      "ext": "",
+      "size": 209553,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\te_dict",
+      "name": "te_dict",
+      "ext": "",
+      "size": 94837,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\th_dict",
+      "name": "th_dict",
+      "ext": "",
+      "size": 2301,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\tk_dict",
+      "name": "tk_dict",
+      "ext": "",
+      "size": 20868,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\tn_dict",
+      "name": "tn_dict",
+      "ext": "",
+      "size": 3072,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\tr_dict",
+      "name": "tr_dict",
+      "ext": "",
+      "size": 46793,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\tt_dict",
+      "name": "tt_dict",
+      "ext": "",
+      "size": 2121,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ug_dict",
+      "name": "ug_dict",
+      "ext": "",
+      "size": 2070,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\uk_dict",
+      "name": "uk_dict",
+      "ext": "",
+      "size": 3492,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\ur_dict",
+      "name": "ur_dict",
+      "ext": "",
+      "size": 133556,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\uz_dict",
+      "name": "uz_dict",
+      "ext": "",
+      "size": 2540,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\vi_dict",
+      "name": "vi_dict",
+      "ext": "",
+      "size": 52608,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\yue_dict",
+      "name": "yue_dict",
+      "ext": "",
+      "size": 563571,
+      "mtime": 1700010488.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\eu",
+      "name": "eu",
+      "ext": "",
+      "size": 54,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ko",
+      "name": "ko",
+      "ext": "",
+      "size": 51,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\qu",
+      "name": "qu",
+      "ext": "",
+      "size": 88,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\aav\\vi",
+      "name": "vi",
+      "ext": "",
+      "size": 111,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\aav\\vi-VN-x-central",
+      "name": "vi-VN-x-central",
+      "ext": "",
+      "size": 143,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\aav\\vi-VN-x-south",
+      "name": "vi-VN-x-south",
+      "ext": "",
+      "size": 142,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\eo",
+      "name": "eo",
+      "ext": "",
+      "size": 41,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\ia",
+      "name": "ia",
+      "ext": "",
+      "size": 29,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\io",
+      "name": "io",
+      "ext": "",
+      "size": 50,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\jbo",
+      "name": "jbo",
+      "ext": "",
+      "size": 69,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\lfn",
+      "name": "lfn",
+      "ext": "",
+      "size": 135,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\piqd",
+      "name": "piqd",
+      "ext": "",
+      "size": 56,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\py",
+      "name": "py",
+      "ext": "",
+      "size": 140,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\qdb",
+      "name": "qdb",
+      "ext": "",
+      "size": 57,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\qya",
+      "name": "qya",
+      "ext": "",
+      "size": 173,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\art\\sjn",
+      "name": "sjn",
+      "ext": "",
+      "size": 175,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\azc\\nci",
+      "name": "nci",
+      "ext": "",
+      "size": 114,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\bat\\lt",
+      "name": "lt",
+      "ext": "",
+      "size": 28,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\bat\\ltg",
+      "name": "ltg",
+      "ext": "",
+      "size": 312,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\bat\\lv",
+      "name": "lv",
+      "ext": "",
+      "size": 229,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\bnt\\sw",
+      "name": "sw",
+      "ext": "",
+      "size": 41,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\bnt\\tn",
+      "name": "tn",
+      "ext": "",
+      "size": 42,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ccs\\ka",
+      "name": "ka",
+      "ext": "",
+      "size": 124,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\cel\\cy",
+      "name": "cy",
+      "ext": "",
+      "size": 37,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\cel\\ga",
+      "name": "ga",
+      "ext": "",
+      "size": 66,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\cel\\gd",
+      "name": "gd",
+      "ext": "",
+      "size": 51,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\cus\\om",
+      "name": "om",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\dra\\kn",
+      "name": "kn",
+      "ext": "",
+      "size": 55,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\dra\\ml",
+      "name": "ml",
+      "ext": "",
+      "size": 57,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\dra\\ta",
+      "name": "ta",
+      "ext": "",
+      "size": 51,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\dra\\te",
+      "name": "te",
+      "ext": "",
+      "size": 70,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\esx\\kl",
+      "name": "kl",
+      "ext": "",
+      "size": 30,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmq\\da",
+      "name": "da",
+      "ext": "",
+      "size": 43,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmq\\is",
+      "name": "is",
+      "ext": "",
+      "size": 27,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmq\\nb",
+      "name": "nb",
+      "ext": "",
+      "size": 87,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmq\\sv",
+      "name": "sv",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\af",
+      "name": "af",
+      "ext": "",
+      "size": 123,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\de",
+      "name": "de",
+      "ext": "",
+      "size": 42,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en",
+      "name": "en",
+      "ext": "",
+      "size": 140,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-029",
+      "name": "en-029",
+      "ext": "",
+      "size": 335,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-GB-scotland",
+      "name": "en-GB-scotland",
+      "ext": "",
+      "size": 295,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-GB-x-gbclan",
+      "name": "en-GB-x-gbclan",
+      "ext": "",
+      "size": 238,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-GB-x-gbcwmd",
+      "name": "en-GB-x-gbcwmd",
+      "ext": "",
+      "size": 188,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-GB-x-rp",
+      "name": "en-GB-x-rp",
+      "ext": "",
+      "size": 249,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-US",
+      "name": "en-US",
+      "ext": "",
+      "size": 257,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\en-US-nyc",
+      "name": "en-US-nyc",
+      "ext": "",
+      "size": 271,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\lb",
+      "name": "lb",
+      "ext": "",
+      "size": 31,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\gmw\\nl",
+      "name": "nl",
+      "ext": "",
+      "size": 23,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\grk\\el",
+      "name": "el",
+      "ext": "",
+      "size": 23,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\grk\\grc",
+      "name": "grc",
+      "ext": "",
+      "size": 99,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\as",
+      "name": "as",
+      "ext": "",
+      "size": 42,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\bn",
+      "name": "bn",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\bpy",
+      "name": "bpy",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\gu",
+      "name": "gu",
+      "ext": "",
+      "size": 42,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\hi",
+      "name": "hi",
+      "ext": "",
+      "size": 23,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\kok",
+      "name": "kok",
+      "ext": "",
+      "size": 26,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\mr",
+      "name": "mr",
+      "ext": "",
+      "size": 41,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\ne",
+      "name": "ne",
+      "ext": "",
+      "size": 37,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\or",
+      "name": "or",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\pa",
+      "name": "pa",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\sd",
+      "name": "sd",
+      "ext": "",
+      "size": 66,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\si",
+      "name": "si",
+      "ext": "",
+      "size": 55,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\inc\\ur",
+      "name": "ur",
+      "ext": "",
+      "size": 94,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ine\\hy",
+      "name": "hy",
+      "ext": "",
+      "size": 61,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ine\\hyw",
+      "name": "hyw",
+      "ext": "",
+      "size": 365,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ine\\sq",
+      "name": "sq",
+      "ext": "",
+      "size": 103,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ira\\fa",
+      "name": "fa",
+      "ext": "",
+      "size": 90,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ira\\fa-Latn",
+      "name": "fa-Latn",
+      "ext": "",
+      "size": 269,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\ira\\ku",
+      "name": "ku",
+      "ext": "",
+      "size": 40,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\iro\\chr",
+      "name": "chr",
+      "ext": "",
+      "size": 569,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\itc\\la",
+      "name": "la",
+      "ext": "",
+      "size": 297,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\jpx\\ja",
+      "name": "ja",
+      "ext": "",
+      "size": 52,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\map\\haw",
+      "name": "haw",
+      "ext": "",
+      "size": 42,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\miz\\mto",
+      "name": "mto",
+      "ext": "",
+      "size": 183,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\myn\\quc",
+      "name": "quc",
+      "ext": "",
+      "size": 210,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\poz\\id",
+      "name": "id",
+      "ext": "",
+      "size": 134,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\poz\\mi",
+      "name": "mi",
+      "ext": "",
+      "size": 367,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\poz\\ms",
+      "name": "ms",
+      "ext": "",
+      "size": 430,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\an",
+      "name": "an",
+      "ext": "",
+      "size": 27,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\ca",
+      "name": "ca",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\es",
+      "name": "es",
+      "ext": "",
+      "size": 63,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\es-419",
+      "name": "es-419",
+      "ext": "",
+      "size": 167,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\fr",
+      "name": "fr",
+      "ext": "",
+      "size": 79,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\fr-BE",
+      "name": "fr-BE",
+      "ext": "",
+      "size": 84,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\fr-CH",
+      "name": "fr-CH",
+      "ext": "",
+      "size": 86,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\ht",
+      "name": "ht",
+      "ext": "",
+      "size": 140,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\it",
+      "name": "it",
+      "ext": "",
+      "size": 109,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\pap",
+      "name": "pap",
+      "ext": "",
+      "size": 62,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\pt",
+      "name": "pt",
+      "ext": "",
+      "size": 95,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\pt-BR",
+      "name": "pt-BR",
+      "ext": "",
+      "size": 109,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\roa\\ro",
+      "name": "ro",
+      "ext": "",
+      "size": 26,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sai\\gn",
+      "name": "gn",
+      "ext": "",
+      "size": 47,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sem\\am",
+      "name": "am",
+      "ext": "",
+      "size": 41,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sem\\ar",
+      "name": "ar",
+      "ext": "",
+      "size": 50,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sem\\he",
+      "name": "he",
+      "ext": "",
+      "size": 40,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sem\\mt",
+      "name": "mt",
+      "ext": "",
+      "size": 41,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\cmn",
+      "name": "cmn",
+      "ext": "",
+      "size": 686,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\cmn-Latn-pinyin",
+      "name": "cmn-Latn-pinyin",
+      "ext": "",
+      "size": 161,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\hak",
+      "name": "hak",
+      "ext": "",
+      "size": 128,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\my",
+      "name": "my",
+      "ext": "",
+      "size": 56,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\yue",
+      "name": "yue",
+      "ext": "",
+      "size": 194,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\sit\\yue-Latn-jyutping",
+      "name": "yue-Latn-jyutping",
+      "ext": "",
+      "size": 213,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\tai\\shn",
+      "name": "shn",
+      "ext": "",
+      "size": 92,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\tai\\th",
+      "name": "th",
+      "ext": "",
+      "size": 37,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\az",
+      "name": "az",
+      "ext": "",
+      "size": 45,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\ba",
+      "name": "ba",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\cv",
+      "name": "cv",
+      "ext": "",
+      "size": 40,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\kk",
+      "name": "kk",
+      "ext": "",
+      "size": 40,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\ky",
+      "name": "ky",
+      "ext": "",
+      "size": 43,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\nog",
+      "name": "nog",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\tk",
+      "name": "tk",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\tr",
+      "name": "tr",
+      "ext": "",
+      "size": 25,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\tt",
+      "name": "tt",
+      "ext": "",
+      "size": 23,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\ug",
+      "name": "ug",
+      "ext": "",
+      "size": 24,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\trk\\uz",
+      "name": "uz",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\urj\\et",
+      "name": "et",
+      "ext": "",
+      "size": 237,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\urj\\fi",
+      "name": "fi",
+      "ext": "",
+      "size": 237,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\urj\\hu",
+      "name": "hu",
+      "ext": "",
+      "size": 73,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\urj\\smj",
+      "name": "smj",
+      "ext": "",
+      "size": 45,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zle\\be",
+      "name": "be",
+      "ext": "",
+      "size": 52,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zle\\ru",
+      "name": "ru",
+      "ext": "",
+      "size": 57,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zle\\ru-cl",
+      "name": "ru-cl",
+      "ext": "",
+      "size": 91,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zle\\ru-LV",
+      "name": "ru-LV",
+      "ext": "",
+      "size": 280,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zle\\uk",
+      "name": "uk",
+      "ext": "",
+      "size": 97,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\bg",
+      "name": "bg",
+      "ext": "",
+      "size": 111,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\bs",
+      "name": "bs",
+      "ext": "",
+      "size": 230,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\hr",
+      "name": "hr",
+      "ext": "",
+      "size": 262,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\mk",
+      "name": "mk",
+      "ext": "",
+      "size": 28,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\sl",
+      "name": "sl",
+      "ext": "",
+      "size": 43,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zls\\sr",
+      "name": "sr",
+      "ext": "",
+      "size": 250,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zlw\\cs",
+      "name": "cs",
+      "ext": "",
+      "size": 23,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zlw\\pl",
+      "name": "pl",
+      "ext": "",
+      "size": 38,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\lang\\zlw\\sk",
+      "name": "sk",
+      "ext": "",
+      "size": 24,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\adam",
+      "name": "adam",
+      "ext": "",
+      "size": 75,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Alex",
+      "name": "Alex",
+      "ext": "",
+      "size": 128,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Alicia",
+      "name": "Alicia",
+      "ext": "",
+      "size": 474,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Andrea",
+      "name": "Andrea",
+      "ext": "",
+      "size": 357,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Andy",
+      "name": "Andy",
+      "ext": "",
+      "size": 320,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\anika",
+      "name": "anika",
+      "ext": "",
+      "size": 493,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\anikaRobot",
+      "name": "anikaRobot",
+      "ext": "",
+      "size": 512,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Annie",
+      "name": "Annie",
+      "ext": "",
+      "size": 315,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\announcer",
+      "name": "announcer",
+      "ext": "",
+      "size": 300,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\antonio",
+      "name": "antonio",
+      "ext": "",
+      "size": 381,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\AnxiousAndy",
+      "name": "AnxiousAndy",
+      "ext": "",
+      "size": 361,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\aunty",
+      "name": "aunty",
+      "ext": "",
+      "size": 358,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\belinda",
+      "name": "belinda",
+      "ext": "",
+      "size": 340,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\benjamin",
+      "name": "benjamin",
+      "ext": "",
+      "size": 201,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\boris",
+      "name": "boris",
+      "ext": "",
+      "size": 224,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\caleb",
+      "name": "caleb",
+      "ext": "",
+      "size": 57,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\croak",
+      "name": "croak",
+      "ext": "",
+      "size": 93,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\david",
+      "name": "david",
+      "ext": "",
+      "size": 112,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Demonic",
+      "name": "Demonic",
+      "ext": "",
+      "size": 3858,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Denis",
+      "name": "Denis",
+      "ext": "",
+      "size": 305,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Diogo",
+      "name": "Diogo",
+      "ext": "",
+      "size": 379,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\ed",
+      "name": "ed",
+      "ext": "",
+      "size": 287,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\edward",
+      "name": "edward",
+      "ext": "",
+      "size": 151,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\edward2",
+      "name": "edward2",
+      "ext": "",
+      "size": 152,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\f1",
+      "name": "f1",
+      "ext": "",
+      "size": 324,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\f2",
+      "name": "f2",
+      "ext": "",
+      "size": 357,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\f3",
+      "name": "f3",
+      "ext": "",
+      "size": 375,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\f4",
+      "name": "f4",
+      "ext": "",
+      "size": 350,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\f5",
+      "name": "f5",
+      "ext": "",
+      "size": 432,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\fast",
+      "name": "fast",
+      "ext": "",
+      "size": 149,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Gene",
+      "name": "Gene",
+      "ext": "",
+      "size": 281,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Gene2",
+      "name": "Gene2",
+      "ext": "",
+      "size": 283,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\grandma",
+      "name": "grandma",
+      "ext": "",
+      "size": 263,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\grandpa",
+      "name": "grandpa",
+      "ext": "",
+      "size": 256,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\gustave",
+      "name": "gustave",
+      "ext": "",
+      "size": 253,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Henrique",
+      "name": "Henrique",
+      "ext": "",
+      "size": 381,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Hugo",
+      "name": "Hugo",
+      "ext": "",
+      "size": 378,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\ian",
+      "name": "ian",
+      "ext": "",
+      "size": 3168,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\iven",
+      "name": "iven",
+      "ext": "",
+      "size": 261,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\iven2",
+      "name": "iven2",
+      "ext": "",
+      "size": 279,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\iven3",
+      "name": "iven3",
+      "ext": "",
+      "size": 262,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\iven4",
+      "name": "iven4",
+      "ext": "",
+      "size": 261,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Jacky",
+      "name": "Jacky",
+      "ext": "",
+      "size": 267,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\john",
+      "name": "john",
+      "ext": "",
+      "size": 3186,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\kaukovalta",
+      "name": "kaukovalta",
+      "ext": "",
+      "size": 361,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt",
+      "name": "klatt",
+      "ext": "",
+      "size": 38,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt2",
+      "name": "klatt2",
+      "ext": "",
+      "size": 38,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt3",
+      "name": "klatt3",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt4",
+      "name": "klatt4",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt5",
+      "name": "klatt5",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\klatt6",
+      "name": "klatt6",
+      "ext": "",
+      "size": 39,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Lee",
+      "name": "Lee",
+      "ext": "",
+      "size": 338,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\linda",
+      "name": "linda",
+      "ext": "",
+      "size": 350,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m1",
+      "name": "m1",
+      "ext": "",
+      "size": 335,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m2",
+      "name": "m2",
+      "ext": "",
+      "size": 264,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m3",
+      "name": "m3",
+      "ext": "",
+      "size": 300,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m4",
+      "name": "m4",
+      "ext": "",
+      "size": 290,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m5",
+      "name": "m5",
+      "ext": "",
+      "size": 262,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m6",
+      "name": "m6",
+      "ext": "",
+      "size": 188,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m7",
+      "name": "m7",
+      "ext": "",
+      "size": 254,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\m8",
+      "name": "m8",
+      "ext": "",
+      "size": 284,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\marcelo",
+      "name": "marcelo",
+      "ext": "",
+      "size": 251,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Marco",
+      "name": "Marco",
+      "ext": "",
+      "size": 467,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Mario",
+      "name": "Mario",
+      "ext": "",
+      "size": 270,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\max",
+      "name": "max",
+      "ext": "",
+      "size": 225,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Michael",
+      "name": "Michael",
+      "ext": "",
+      "size": 270,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\michel",
+      "name": "michel",
+      "ext": "",
+      "size": 404,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\miguel",
+      "name": "miguel",
+      "ext": "",
+      "size": 382,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Mike",
+      "name": "Mike",
+      "ext": "",
+      "size": 112,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\mike2",
+      "name": "mike2",
+      "ext": "",
+      "size": 188,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Mr serious",
+      "name": "Mr serious",
+      "ext": "",
+      "size": 3193,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Nguyen",
+      "name": "Nguyen",
+      "ext": "",
+      "size": 280,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\norbert",
+      "name": "norbert",
+      "ext": "",
+      "size": 3189,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\pablo",
+      "name": "pablo",
+      "ext": "",
+      "size": 3142,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\paul",
+      "name": "paul",
+      "ext": "",
+      "size": 284,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\pedro",
+      "name": "pedro",
+      "ext": "",
+      "size": 352,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\quincy",
+      "name": "quincy",
+      "ext": "",
+      "size": 354,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Reed",
+      "name": "Reed",
+      "ext": "",
+      "size": 202,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\RicishayMax",
+      "name": "RicishayMax",
+      "ext": "",
+      "size": 233,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\RicishayMax2",
+      "name": "RicishayMax2",
+      "ext": "",
+      "size": 435,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\RicishayMax3",
+      "name": "RicishayMax3",
+      "ext": "",
+      "size": 435,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\rob",
+      "name": "rob",
+      "ext": "",
+      "size": 265,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robert",
+      "name": "robert",
+      "ext": "",
+      "size": 274,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft",
+      "name": "robosoft",
+      "ext": "",
+      "size": 451,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft2",
+      "name": "robosoft2",
+      "ext": "",
+      "size": 454,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft3",
+      "name": "robosoft3",
+      "ext": "",
+      "size": 455,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft4",
+      "name": "robosoft4",
+      "ext": "",
+      "size": 447,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft5",
+      "name": "robosoft5",
+      "ext": "",
+      "size": 445,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft6",
+      "name": "robosoft6",
+      "ext": "",
+      "size": 287,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft7",
+      "name": "robosoft7",
+      "ext": "",
+      "size": 410,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\robosoft8",
+      "name": "robosoft8",
+      "ext": "",
+      "size": 243,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\sandro",
+      "name": "sandro",
+      "ext": "",
+      "size": 530,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\shelby",
+      "name": "shelby",
+      "ext": "",
+      "size": 280,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\steph",
+      "name": "steph",
+      "ext": "",
+      "size": 364,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\steph2",
+      "name": "steph2",
+      "ext": "",
+      "size": 367,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\steph3",
+      "name": "steph3",
+      "ext": "",
+      "size": 377,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Storm",
+      "name": "Storm",
+      "ext": "",
+      "size": 420,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\travis",
+      "name": "travis",
+      "ext": "",
+      "size": 383,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\Tweaky",
+      "name": "Tweaky",
+      "ext": "",
+      "size": 3189,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\UniRobot",
+      "name": "UniRobot",
+      "ext": "",
+      "size": 417,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\victor",
+      "name": "victor",
+      "ext": "",
+      "size": 253,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\whisper",
+      "name": "whisper",
+      "ext": "",
+      "size": 186,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\whisperf",
+      "name": "whisperf",
+      "ext": "",
+      "size": 392,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\bin\\piper\\espeak-ng-data\\voices\\!v\\zac",
+      "name": "zac",
+      "ext": "",
+      "size": 275,
+      "mtime": 1694653992.0,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\.env.example",
+      "name": ".env.example",
+      "ext": ".example",
+      "size": 445,
+      "mtime": 1772389078.8663142,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\.gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "size": 73,
+      "mtime": 1772389078.870458,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\agentvoice.m4a",
+      "name": "agentvoice.m4a",
+      "ext": ".m4a",
+      "size": 2063235,
+      "mtime": 1771376549.9881034,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\agent_lee_ref_16k.wav",
+      "name": "agent_lee_ref_16k.wav",
+      "ext": ".wav",
+      "size": 2586020,
+      "mtime": 1771598401.5694847,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 368,
+      "mtime": 1772397674.5844529,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\metadata.json",
+      "name": "metadata.json",
+      "ext": ".json",
+      "size": 234,
+      "mtime": 1772389078.8633196,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 252833,
+      "mtime": 1772450693.4827757,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "size": 1132,
+      "mtime": 1772515805.5417683,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 461,
+      "mtime": 1773017777.317815,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\tsconfig.json",
+      "name": "tsconfig.json",
+      "ext": ".json",
+      "size": 508,
+      "mtime": 1772389078.9121964,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\vite.config.ts",
+      "name": "vite.config.ts",
+      "ext": ".ts",
+      "size": 702,
+      "mtime": 1772515805.3162534,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\App.tsx",
+      "name": "App.tsx",
+      "ext": ".tsx",
+      "size": 7985,
+      "mtime": 1772515805.4288523,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\constants.ts",
+      "name": "constants.ts",
+      "ext": ".ts",
+      "size": 52,
+      "mtime": 1772515805.319772,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\index.css",
+      "name": "index.css",
+      "ext": ".css",
+      "size": 640,
+      "mtime": 1772389078.8860846,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\main.tsx",
+      "name": "main.tsx",
+      "ext": ".tsx",
+      "size": 231,
+      "mtime": 1772389078.8900864,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\types.ts",
+      "name": "types.ts",
+      "ext": ".ts",
+      "size": 265,
+      "mtime": 1772389077.0305123,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\Assistant.tsx",
+      "name": "Assistant.tsx",
+      "ext": ".tsx",
+      "size": 8479,
+      "mtime": 1772434638.2126052,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\Cerebral3D.tsx",
+      "name": "Cerebral3D.tsx",
+      "ext": ".tsx",
+      "size": 17750,
+      "mtime": 1772422081.7266102,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\DebugPanel.tsx",
+      "name": "DebugPanel.tsx",
+      "ext": ".tsx",
+      "size": 1198,
+      "mtime": 1772421182.868132,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\DiagnosticsSidebar.tsx",
+      "name": "DiagnosticsSidebar.tsx",
+      "ext": ".tsx",
+      "size": 5351,
+      "mtime": 1772421220.8112898,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\ErrorBoundary.tsx",
+      "name": "ErrorBoundary.tsx",
+      "ext": ".tsx",
+      "size": 1714,
+      "mtime": 1772421006.4181397,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\MetallicBackground.tsx",
+      "name": "MetallicBackground.tsx",
+      "ext": ".tsx",
+      "size": 7410,
+      "mtime": 1772421195.6780317,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\PortMonitor.tsx",
+      "name": "PortMonitor.tsx",
+      "ext": ".tsx",
+      "size": 1030,
+      "mtime": 1772389077.125961,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\Screensaver.tsx",
+      "name": "Screensaver.tsx",
+      "ext": ".tsx",
+      "size": 20070,
+      "mtime": 1772503300.5473194,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\SystemTelemetry.tsx",
+      "name": "SystemTelemetry.tsx",
+      "ext": ".tsx",
+      "size": 13912,
+      "mtime": 1772389077.1289656,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\Taskbar.tsx",
+      "name": "Taskbar.tsx",
+      "ext": ".tsx",
+      "size": 3359,
+      "mtime": 1772482399.1218677,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\TunnelPanel.tsx",
+      "name": "TunnelPanel.tsx",
+      "ext": ".tsx",
+      "size": 10743,
+      "mtime": 1772389077.1217678,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\UIModules.tsx",
+      "name": "UIModules.tsx",
+      "ext": ".tsx",
+      "size": 1687,
+      "mtime": 1772389077.1187694,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\components\\Window.tsx",
+      "name": "Window.tsx",
+      "ext": ".tsx",
+      "size": 3347,
+      "mtime": 1772398515.0311532,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\lib\\utils.ts",
+      "name": "utils.ts",
+      "ext": ".ts",
+      "size": 169,
+      "mtime": 1772389078.894083,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\services\\ai.ts",
+      "name": "ai.ts",
+      "ext": ".ts",
+      "size": 1227,
+      "mtime": 1772515805.3097284,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\Cerebral-os\\src\\services\\SovereignIdentity.ts",
+      "name": "SovereignIdentity.ts",
+      "ext": ".ts",
+      "size": 189,
+      "mtime": 1772389077.0566347,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\config\\policy.json",
+      "name": "policy.json",
+      "ext": ".json",
+      "size": 711,
+      "mtime": 1772664702.593522,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\core\\intent_router.py",
+      "name": "intent_router.py",
+      "ext": ".py",
+      "size": 2666,
+      "mtime": 1772685134.6855328,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\core\\streaming_stt.py",
+      "name": "streaming_stt.py",
+      "ext": ".py",
+      "size": 1289,
+      "mtime": 1772684994.4431207,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\core\\supervisor.py",
+      "name": "supervisor.py",
+      "ext": ".py",
+      "size": 3960,
+      "mtime": 1772685180.5209627,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\core\\voice_loop.py",
+      "name": "voice_loop.py",
+      "ext": ".py",
+      "size": 7432,
+      "mtime": 1772684996.4244597,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\deployments\\qwen3-coder.yaml",
+      "name": "qwen3-coder.yaml",
+      "ext": ".yaml",
+      "size": 1143,
+      "mtime": 1772403763.5404034,
+      "lang": "YAML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\deployments\\qwen3-health.yaml",
+      "name": "qwen3-health.yaml",
+      "ext": ".yaml",
+      "size": 926,
+      "mtime": 1772403708.356397,
+      "lang": "YAML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\deployments\\qwen3-vision.yaml",
+      "name": "qwen3-vision.yaml",
+      "ext": ".yaml",
+      "size": 849,
+      "mtime": 1772403763.5766025,
+      "lang": "YAML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\deployments\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 1028,
+      "mtime": 1773017747.3277044,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\.gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "size": 480,
+      "mtime": 1772616282.052124,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\eslint.config.mjs",
+      "name": "eslint.config.mjs",
+      "ext": ".mjs",
+      "size": 465,
+      "mtime": 1772616282.227721,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\next-env.d.ts",
+      "name": "next-env.d.ts",
+      "ext": ".ts",
+      "size": 247,
+      "mtime": 1772616282.2921746,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\next.config.ts",
+      "name": "next.config.ts",
+      "ext": ".ts",
+      "size": 185,
+      "mtime": 1772616503.661456,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 235568,
+      "mtime": 1772616351.5806746,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "size": 570,
+      "mtime": 1772616351.4723582,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\postcss.config.mjs",
+      "name": "postcss.config.mjs",
+      "ext": ".mjs",
+      "size": 94,
+      "mtime": 1772616282.24195,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 399,
+      "mtime": 1773017763.8222368,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\tsconfig.json",
+      "name": "tsconfig.json",
+      "ext": ".json",
+      "size": 670,
+      "mtime": 1772616296.9675531,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\public\\file.svg",
+      "name": "file.svg",
+      "ext": ".svg",
+      "size": 391,
+      "mtime": 1772616282.2467341,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\public\\globe.svg",
+      "name": "globe.svg",
+      "ext": ".svg",
+      "size": 1035,
+      "mtime": 1772616282.2558682,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\public\\next.svg",
+      "name": "next.svg",
+      "ext": ".svg",
+      "size": 1375,
+      "mtime": 1772616282.2676854,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\public\\vercel.svg",
+      "name": "vercel.svg",
+      "ext": ".svg",
+      "size": 128,
+      "mtime": 1772616282.2752275,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\public\\window.svg",
+      "name": "window.svg",
+      "ext": ".svg",
+      "size": 385,
+      "mtime": 1772616282.2815924,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\app\\favicon.ico",
+      "name": "favicon.ico",
+      "ext": ".ico",
+      "size": 25931,
+      "mtime": 1772616282.1046524,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\app\\globals.css",
+      "name": "globals.css",
+      "ext": ".css",
+      "size": 488,
+      "mtime": 1772616282.0793948,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\app\\layout.tsx",
+      "name": "layout.tsx",
+      "ext": ".tsx",
+      "size": 689,
+      "mtime": 1772616282.3216846,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+      "name": "page.tsx",
+      "ext": ".tsx",
+      "size": 3309,
+      "mtime": 1772616351.706367,
+      "lang": "TypeScript/React",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\app\\api\\nodes\\route.ts",
+      "name": "route.ts",
+      "ext": ".ts",
+      "size": 1284,
+      "mtime": 1772616351.7043688,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\digital-brain\\src\\lib\\db.ts",
+      "name": "db.ts",
+      "ext": ".ts",
+      "size": 678,
+      "mtime": 1772616351.7033672,
+      "lang": "TypeScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\DOCS\\ARCHITECTURE.md",
+      "name": "ARCHITECTURE.md",
+      "ext": ".md",
+      "size": 1442,
+      "mtime": 1773017699.7555196,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\DOCS\\DEVELOPER.md",
+      "name": "DEVELOPER.md",
+      "ext": ".md",
+      "size": 1208,
+      "mtime": 1773017690.4270387,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\DOCS\\SYSTEM_STATE.md",
+      "name": "SYSTEM_STATE.md",
+      "ext": ".md",
+      "size": 12687,
+      "mtime": 1773017681.1376264,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\bridge_audit.jsonl",
+      "name": "bridge_audit.jsonl",
+      "ext": ".jsonl",
+      "size": 13104,
+      "mtime": 1772832345.3298826,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\cf-cerebral-err.log",
+      "name": "cf-cerebral-err.log",
+      "ext": ".log",
+      "size": 3016,
+      "mtime": 1772835582.912871,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\cf-cerebral.log",
+      "name": "cf-cerebral.log",
+      "ext": ".log",
+      "size": 0,
+      "mtime": 1772835580.2819088,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\daemon_stderr.txt",
+      "name": "daemon_stderr.txt",
+      "ext": ".txt",
+      "size": 460,
+      "mtime": 1772731419.0095496,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\daemon_stdout.txt",
+      "name": "daemon_stdout.txt",
+      "ext": ".txt",
+      "size": 4223,
+      "mtime": 1772732092.150131,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\logs\\health.ndjson",
+      "name": "health.ndjson",
+      "ext": ".ndjson",
+      "size": 425026,
+      "mtime": 1772958226.809312,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\models\\phi_agent.py",
+      "name": "phi_agent.py",
+      "ext": ".py",
+      "size": 2066,
+      "mtime": 1772685200.7716491,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\models\\qwen_agent.py",
+      "name": "qwen_agent.py",
+      "ext": ".py",
+      "size": 1331,
+      "mtime": 1772685202.7720091,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\models\\voices\\en_US-bryce-medium.onnx.json",
+      "name": "en_US-bryce-medium.onnx.json",
+      "ext": ".json",
+      "size": 4966,
+      "mtime": 1772723026.543559,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\models\\voices\\en_US-lessac-medium.onnx.json",
+      "name": "en_US-lessac-medium.onnx.json",
+      "ext": ".json",
+      "size": 4885,
+      "mtime": 1772722546.277305,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\scripts\\play_pockettts_local.py",
+      "name": "play_pockettts_local.py",
+      "ext": ".py",
+      "size": 5281,
+      "mtime": 1772515804.93805,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\scripts\\test_ptt_http.py",
+      "name": "test_ptt_http.py",
+      "ext": ".py",
+      "size": 1088,
+      "mtime": 1772515963.3646028,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\scripts\\test_ptt_ws_client.py",
+      "name": "test_ptt_ws_client.py",
+      "ext": ".py",
+      "size": 1082,
+      "mtime": 1772494719.0837984,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\Cerebral_ui.py",
+      "name": "Cerebral_ui.py",
+      "ext": ".py",
+      "size": 12186,
+      "mtime": 1772449307.4938183,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\cmac.py",
+      "name": "cmac.py",
+      "ext": ".py",
+      "size": 338,
+      "mtime": 1772393567.949078,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\core.py",
+      "name": "core.py",
+      "ext": ".py",
+      "size": 132105,
+      "mtime": 1772393480.099573,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\exceptions.py",
+      "name": "exceptions.py",
+      "ext": ".py",
+      "size": 1977,
+      "mtime": 1772393563.410491,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\fernet.py",
+      "name": "fernet.py",
+      "ext": ".py",
+      "size": 6963,
+      "mtime": 1772393567.9243984,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\initialise.py",
+      "name": "initialise.py",
+      "ext": ".py",
+      "size": 3325,
+      "mtime": 1772393478.8385708,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\is64bit.py",
+      "name": "is64bit.py",
+      "ext": ".py",
+      "size": 1025,
+      "mtime": 1772393472.92449,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\keywrap.py",
+      "name": "keywrap.py",
+      "ext": ".py",
+      "size": 5650,
+      "mtime": 1772393567.954659,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\LICENSE",
+      "name": "LICENSE",
+      "ext": "",
+      "size": 1109,
+      "mtime": 1772393563.4189205,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\md__mypyc.cp313-win_amd64.pyd",
+      "name": "md__mypyc.cp313-win_amd64.pyd",
+      "ext": ".pyd",
+      "size": 126976,
+      "mtime": 1772393487.188527,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\pkcs7.pyi",
+      "name": "pkcs7.pyi",
+      "ext": ".pyi",
+      "size": 1601,
+      "mtime": 1772393567.9384456,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\PORTS.md",
+      "name": "PORTS.md",
+      "ext": ".md",
+      "size": 652,
+      "mtime": 1773017731.484876,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\py.typed",
+      "name": "py.typed",
+      "ext": ".typed",
+      "size": 0,
+      "mtime": 1772393563.635662,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\recompiler.py",
+      "name": "recompiler.py",
+      "ext": ".py",
+      "size": 65509,
+      "mtime": 1772393565.77265,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\RECORD",
+      "name": "RECORD",
+      "ext": "",
+      "size": 2174,
+      "mtime": 1772393478.9794738,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\task_queue.py",
+      "name": "task_queue.py",
+      "ext": ".py",
+      "size": 480,
+      "mtime": 1772434866.168109,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\text.py",
+      "name": "text.py",
+      "ext": ".py",
+      "size": 5765,
+      "mtime": 1772393563.6545842,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\top_level.txt",
+      "name": "top_level.txt",
+      "ext": ".txt",
+      "size": 6,
+      "mtime": 1772393563.6585913,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\utils.py",
+      "name": "utils.py",
+      "ext": ".py",
+      "size": 1079,
+      "mtime": 1772393478.8420715,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\Wave1_Discovery.json",
+      "name": "Wave1_Discovery.json",
+      "ext": ".json",
+      "size": 89134,
+      "mtime": 1772589463.3869445,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\WHEEL",
+      "name": "WHEEL",
+      "ext": "",
+      "size": 82,
+      "mtime": 1772393480.1058426,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\_cffi_backend.cp313-win_amd64.pyd",
+      "name": "_cffi_backend.cp313-win_amd64.pyd",
+      "ext": ".pyd",
+      "size": 180224,
+      "mtime": 1772393565.7633774,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\_sockets.py",
+      "name": "_sockets.py",
+      "ext": ".py",
+      "size": 34977,
+      "mtime": 1772393563.6444497,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\staging\\__init__.py",
+      "name": "__init__.py",
+      "ext": ".py",
+      "size": 511,
+      "mtime": 1772393565.7643816,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\e2e_cerebral.py",
+      "name": "e2e_cerebral.py",
+      "ext": ".py",
+      "size": 14876,
+      "mtime": 1772722429.985407,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\e2e_test.ipynb",
+      "name": "e2e_test.ipynb",
+      "ext": ".ipynb",
+      "size": 119,
+      "mtime": 1772482283.1259644,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\requirements.txt",
+      "name": "requirements.txt",
+      "ext": ".txt",
+      "size": 19,
+      "mtime": 1772482345.384734,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\smoke_test.py",
+      "name": "smoke_test.py",
+      "ext": ".py",
+      "size": 2687,
+      "mtime": 1772664704.260564,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\test_output.txt",
+      "name": "test_output.txt",
+      "ext": ".txt",
+      "size": 1182,
+      "mtime": 1772664929.6043324,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tests\\tts_direct_test.py",
+      "name": "tts_direct_test.py",
+      "ext": ".py",
+      "size": 1184,
+      "mtime": 1772723684.8608928,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\audit_system.py",
+      "name": "audit_system.py",
+      "ext": ".py",
+      "size": 7525,
+      "mtime": 1772781255.3581028,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\bench_kokoro.py",
+      "name": "bench_kokoro.py",
+      "ext": ".py",
+      "size": 1405,
+      "mtime": 1772748101.8436294,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\bench_tts.py",
+      "name": "bench_tts.py",
+      "ext": ".py",
+      "size": 605,
+      "mtime": 1772745703.1210253,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\proof_test_20260305_123102.png",
+      "name": "proof_test_20260305_123102.png",
+      "ext": ".png",
+      "size": 385017,
+      "mtime": 1772735463.5872717,
+      "lang": "Image",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\ptt-test-1772501854.wav",
+      "name": "ptt-test-1772501854.wav",
+      "ext": ".wav",
+      "size": 64078,
+      "mtime": 1772501854.451027,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\ptt-test-1772501854.webm",
+      "name": "ptt-test-1772501854.webm",
+      "ext": ".webm",
+      "size": 19372,
+      "mtime": 1772501854.2387223,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\ptt-test-1772501890.wav",
+      "name": "ptt-test-1772501890.wav",
+      "ext": ".wav",
+      "size": 64078,
+      "mtime": 1772501890.5516353,
+      "lang": "Audio",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\ptt-test-1772501890.webm",
+      "name": "ptt-test-1772501890.webm",
+      "ext": ".webm",
+      "size": 19372,
+      "mtime": 1772501890.297909,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\smoke_test.py",
+      "name": "smoke_test.py",
+      "ext": ".py",
+      "size": 608,
+      "mtime": 1772726484.9171667,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\speed_test.py",
+      "name": "speed_test.py",
+      "ext": ".py",
+      "size": 428,
+      "mtime": 1772725743.1106877,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\stream_test.py",
+      "name": "stream_test.py",
+      "ext": ".py",
+      "size": 1009,
+      "mtime": 1772727432.6532147,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_camera.py",
+      "name": "test_camera.py",
+      "ext": ".py",
+      "size": 406,
+      "mtime": 1772733138.837793,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_hello.py",
+      "name": "test_hello.py",
+      "ext": ".py",
+      "size": 345,
+      "mtime": 1772734372.0165617,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_hello2.py",
+      "name": "test_hello2.py",
+      "ext": ".py",
+      "size": 567,
+      "mtime": 1772735008.667176,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_paths.py",
+      "name": "test_paths.py",
+      "ext": ".py",
+      "size": 500,
+      "mtime": 1772734819.234691,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_results.txt",
+      "name": "test_results.txt",
+      "ext": ".txt",
+      "size": 632,
+      "mtime": 1772776701.970986,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_tone.webm",
+      "name": "test_tone.webm",
+      "ext": ".webm",
+      "size": 19372,
+      "mtime": 1772501890.195265,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\test_vision.py",
+      "name": "test_vision.py",
+      "ext": ".py",
+      "size": 203,
+      "mtime": 1772734569.4614193,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\tts_test.py",
+      "name": "tts_test.py",
+      "ext": ".py",
+      "size": 348,
+      "mtime": 1772725404.4536216,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\tts_test2.py",
+      "name": "tts_test2.py",
+      "ext": ".py",
+      "size": 407,
+      "mtime": 1772725569.8652706,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\vision_1772735455424.jpg",
+      "name": "vision_1772735455424.jpg",
+      "ext": ".jpg",
+      "size": 15027,
+      "mtime": 1772735455.4553597,
+      "lang": "Image",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\write_tts_worker.py",
+      "name": "write_tts_worker.py",
+      "ext": ".py",
+      "size": 15099,
+      "mtime": 1772747914.871592,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tmp\\_insert_models_route.py",
+      "name": "_insert_models_route.py",
+      "ext": ".py",
+      "size": 1099,
+      "mtime": 1772789316.0730095,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\Cerebral-Bootloader.ps1",
+      "name": "Cerebral-Bootloader.ps1",
+      "ext": ".ps1",
+      "size": 989,
+      "mtime": 1772400604.3411975,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\env_check.py",
+      "name": "env_check.py",
+      "ext": ".py",
+      "size": 2824,
+      "mtime": 1772587515.8959658,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\hardware_guardian.ps1",
+      "name": "hardware_guardian.ps1",
+      "ext": ".ps1",
+      "size": 1007,
+      "mtime": 1772587018.89788,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\insforge_shim.py",
+      "name": "insforge_shim.py",
+      "ext": ".py",
+      "size": 1785,
+      "mtime": 1772586849.7926867,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\master_bootloader.ps1",
+      "name": "master_bootloader.ps1",
+      "ext": ".ps1",
+      "size": 892,
+      "mtime": 1772417871.5268736,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\migration_purge.py",
+      "name": "migration_purge.py",
+      "ext": ".py",
+      "size": 1391,
+      "mtime": 1772391903.3812723,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\orchestrate_restart.ps1",
+      "name": "orchestrate_restart.ps1",
+      "ext": ".ps1",
+      "size": 7040,
+      "mtime": 1772517019.796125,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\os_audit.py",
+      "name": "os_audit.py",
+      "ext": ".py",
+      "size": 4113,
+      "mtime": 1772590119.1486132,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\os_enumerate.py",
+      "name": "os_enumerate.py",
+      "ext": ".py",
+      "size": 5921,
+      "mtime": 1772588790.3164656,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\port_fixup.py",
+      "name": "port_fixup.py",
+      "ext": ".py",
+      "size": 1218,
+      "mtime": 1772516102.9406488,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\rebind_and_launch.ps1",
+      "name": "rebind_and_launch.ps1",
+      "ext": ".ps1",
+      "size": 1057,
+      "mtime": 1772515963.3646028,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\repair_templater.py",
+      "name": "repair_templater.py",
+      "ext": ".py",
+      "size": 1858,
+      "mtime": 1772587018.9809349,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\SAP7_RUNBOOK.md",
+      "name": "SAP7_RUNBOOK.md",
+      "ext": ".md",
+      "size": 7827,
+      "mtime": 1773017737.393968,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\self_test.ps1",
+      "name": "self_test.ps1",
+      "ext": ".ps1",
+      "size": 810,
+      "mtime": 1772515963.363594,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\Setup-Persistence.ps1",
+      "name": "Setup-Persistence.ps1",
+      "ext": ".ps1",
+      "size": 957,
+      "mtime": 1772392138.9957001,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\speak_test.py",
+      "name": "speak_test.py",
+      "ext": ".py",
+      "size": 473,
+      "mtime": 1772515963.3595302,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\stager.py",
+      "name": "stager.py",
+      "ext": ".py",
+      "size": 12299,
+      "mtime": 1772592375.755586,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\start_cerebral_tunnel.bat",
+      "name": "start_cerebral_tunnel.bat",
+      "ext": ".bat",
+      "size": 443,
+      "mtime": 1772842979.1939857,
+      "lang": "Batch",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\start_lively_paths.ps1",
+      "name": "start_lively_paths.ps1",
+      "ext": ".ps1",
+      "size": 648,
+      "mtime": 1772417431.986593,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\tts_probe.ps1",
+      "name": "tts_probe.ps1",
+      "ext": ".ps1",
+      "size": 2720,
+      "mtime": 1772517967.5447872,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\ui_probe.py",
+      "name": "ui_probe.py",
+      "ext": ".py",
+      "size": 605,
+      "mtime": 1772515963.3585298,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\verify_audit.py",
+      "name": "verify_audit.py",
+      "ext": ".py",
+      "size": 5358,
+      "mtime": 1772590119.1506126,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\voice_probe.py",
+      "name": "voice_probe.py",
+      "ext": ".py",
+      "size": 951,
+      "mtime": 1772515804.9308698,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\Wave1_Discovery.ps1",
+      "name": "Wave1_Discovery.ps1",
+      "ext": ".ps1",
+      "size": 1185,
+      "mtime": 1772587018.8988824,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\camera\\vision_agent.py",
+      "name": "vision_agent.py",
+      "ext": ".py",
+      "size": 1552,
+      "mtime": 1772685225.893106,
+      "lang": "Python",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify.json",
+      "name": "AuditVerify.json",
+      "ext": ".json",
+      "size": 308,
+      "mtime": 1772589715.0155234,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_from_Wave2.json",
+      "name": "AuditVerify_from_Wave2.json",
+      "ext": ".json",
+      "size": 314,
+      "mtime": 1772589751.9189703,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_from_Wave2_strict.json",
+      "name": "AuditVerify_from_Wave2_strict.json",
+      "ext": ".json",
+      "size": 353,
+      "mtime": 1772590129.3474066,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_from_Wave2_strict_signed.json",
+      "name": "AuditVerify_from_Wave2_strict_signed.json",
+      "ext": ".json",
+      "size": 352,
+      "mtime": 1772590214.943485,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_latest.json",
+      "name": "AuditVerify_latest.json",
+      "ext": ".json",
+      "size": 362,
+      "mtime": 1772592398.4039,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_nonstrict.json",
+      "name": "AuditVerify_nonstrict.json",
+      "ext": ".json",
+      "size": 361,
+      "mtime": 1772590114.8626578,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_rotated.json",
+      "name": "AuditVerify_rotated.json",
+      "ext": ".json",
+      "size": 362,
+      "mtime": 1772590575.8822203,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_signed.json",
+      "name": "AuditVerify_signed.json",
+      "ext": ".json",
+      "size": 314,
+      "mtime": 1772589735.3623948,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_strict_mixed.json",
+      "name": "AuditVerify_strict_mixed.json",
+      "ext": ".json",
+      "size": 353,
+      "mtime": 1772590115.0220046,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\AuditVerify_tampered.json",
+      "name": "AuditVerify_tampered.json",
+      "ext": ".json",
+      "size": 388,
+      "mtime": 1772589743.6196764,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\EnvCheck_latest.json",
+      "name": "EnvCheck_latest.json",
+      "ext": ".json",
+      "size": 690,
+      "mtime": 1772587131.9594736,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\insforge_manifest.json",
+      "name": "insforge_manifest.json",
+      "ext": ".json",
+      "size": 1041,
+      "mtime": 1772587032.5808828,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\LATEST_AUDIT_LOG.txt",
+      "name": "LATEST_AUDIT_LOG.txt",
+      "ext": ".txt",
+      "size": 153,
+      "mtime": 1772592398.3051114,
+      "lang": "Text",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave1.json",
+      "name": "Wave1.json",
+      "ext": ".json",
+      "size": 278,
+      "mtime": 1772589465.8537624,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave1_Discovery.json",
+      "name": "Wave1_Discovery.json",
+      "ext": ".json",
+      "size": 89134,
+      "mtime": 1772589463.3869445,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave1_Hardware.json",
+      "name": "Wave1_Hardware.json",
+      "ext": ".json",
+      "size": 959,
+      "mtime": 1772589465.7620516,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Audit.json",
+      "name": "Wave2_Audit.json",
+      "ext": ".json",
+      "size": 2673,
+      "mtime": 1772589751.9269662,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Audit_strict.json",
+      "name": "Wave2_Audit_strict.json",
+      "ext": ".json",
+      "size": 2729,
+      "mtime": 1772590129.3554084,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Audit_strict_signed.json",
+      "name": "Wave2_Audit_strict_signed.json",
+      "ext": ".json",
+      "size": 2638,
+      "mtime": 1772590214.9504848,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging.json",
+      "name": "Wave2_Staging.json",
+      "ext": ".json",
+      "size": 1269,
+      "mtime": 1772592398.4140487,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit.jsonl",
+      "name": "Wave2_Staging_Audit.jsonl",
+      "ext": ".jsonl",
+      "size": 8069,
+      "mtime": 1772592160.8245356,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_20260304_021615Z.jsonl",
+      "name": "Wave2_Staging_Audit_20260304_021615Z.jsonl",
+      "ext": ".jsonl",
+      "size": 729,
+      "mtime": 1772590575.0900333,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_20260304_022138Z.jsonl",
+      "name": "Wave2_Staging_Audit_20260304_022138Z.jsonl",
+      "ext": ".jsonl",
+      "size": 724,
+      "mtime": 1772590898.2071576,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_20260304_024309Z.jsonl",
+      "name": "Wave2_Staging_Audit_20260304_024309Z.jsonl",
+      "ext": ".jsonl",
+      "size": 729,
+      "mtime": 1772592189.0980704,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_20260304_024315Z.jsonl",
+      "name": "Wave2_Staging_Audit_20260304_024315Z.jsonl",
+      "ext": ".jsonl",
+      "size": 732,
+      "mtime": 1772592195.7972367,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_20260304_024638Z.jsonl",
+      "name": "Wave2_Staging_Audit_20260304_024638Z.jsonl",
+      "ext": ".jsonl",
+      "size": 726,
+      "mtime": 1772592398.3236785,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_signed.jsonl",
+      "name": "Wave2_Staging_Audit_signed.jsonl",
+      "ext": ".jsonl",
+      "size": 1990,
+      "mtime": 1772589735.256771,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave2_Staging_Audit_tampered.jsonl",
+      "name": "Wave2_Staging_Audit_tampered.jsonl",
+      "ext": ".jsonl",
+      "size": 1963,
+      "mtime": 1772589743.5329401,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\tools\\reports\\Wave3_RepairDraft.json",
+      "name": "Wave3_RepairDraft.json",
+      "ext": ".json",
+      "size": 676,
+      "mtime": 1772588325.4376333,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\bridge.log",
+      "name": "bridge.log",
+      "ext": ".log",
+      "size": 738,
+      "mtime": 1771354593.2168558,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "size": 111649,
+      "mtime": 1771021706.3179886,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "size": 277,
+      "mtime": 1771985898.867388,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "size": 987,
+      "mtime": 1773017755.3985937,
+      "lang": "Markdown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\Run-All.ps1",
+      "name": "Run-All.ps1",
+      "ext": ".ps1",
+      "size": 455,
+      "mtime": 1771976161.2080765,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\Smoke-Test.ps1",
+      "name": "Smoke-Test.ps1",
+      "ext": ".ps1",
+      "size": 1498,
+      "mtime": 1771976161.2101352,
+      "lang": "PowerShell",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\vscode-mcp-settings-snippet.json",
+      "name": "vscode-mcp-settings-snippet.json",
+      "ext": ".json",
+      "size": 962,
+      "mtime": 1771009858.7348096,
+      "lang": "JSON",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\.env",
+      "name": ".env",
+      "ext": "",
+      "size": 22,
+      "mtime": 1771956487.6604912,
+      "lang": "Unknown",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\bridge.js",
+      "name": "bridge.js",
+      "ext": ".js",
+      "size": 9889,
+      "mtime": 1772084756.5997126,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\config.js",
+      "name": "config.js",
+      "ext": ".js",
+      "size": 430,
+      "mtime": 1771355489.007887,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\dotenv.js",
+      "name": "dotenv.js",
+      "ext": ".js",
+      "size": 862,
+      "mtime": 1771031402.0095966,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\exec.js",
+      "name": "exec.js",
+      "ext": ".js",
+      "size": 1634,
+      "mtime": 1771031402.666687,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\vscode-mcp-tooling\\src\\tool.js",
+      "name": "tool.js",
+      "ext": ".js",
+      "size": 5574,
+      "mtime": 1771745284.9109857,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 485,
+      "mtime": 1772862930.618774,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www\\assets\\index.D7SekV7U.css",
+      "name": "index.D7SekV7U.css",
+      "ext": ".css",
+      "size": 56155,
+      "mtime": 1772862930.618774,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www\\assets\\index.DSHwG1Hu.js",
+      "name": "index.DSHwG1Hu.js",
+      "ext": ".js",
+      "size": 95971,
+      "mtime": 1772862930.618774,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www\\assets\\vendor.CymQF__H.js",
+      "name": "vendor.CymQF__H.js",
+      "ext": ".js",
+      "size": 1248063,
+      "mtime": 1772862930.6207752,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_094538\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 409,
+      "mtime": 1772465772.1235864,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_094538\\assets\\index-6EpBTAaZ.js",
+      "name": "index-6EpBTAaZ.js",
+      "ext": ".js",
+      "size": 1318476,
+      "mtime": 1772517020.2517416,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_094538\\assets\\index-CNTvLE5p.css",
+      "name": "index-CNTvLE5p.css",
+      "ext": ".css",
+      "size": 37058,
+      "mtime": 1772465772.1235864,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_202853\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 409,
+      "mtime": 1772488366.7453296,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_202853\\assets\\index-B_CG3M-C.js",
+      "name": "index-B_CG3M-C.js",
+      "ext": ".js",
+      "size": 1341937,
+      "mtime": 1772517020.1970344,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_202853\\assets\\index-D0xg83Me.css",
+      "name": "index-D0xg83Me.css",
+      "ext": ".css",
+      "size": 39412,
+      "mtime": 1772488366.7453296,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 4104,
+      "mtime": 1772510564.1159449,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\assets\\index.RF6BIc17.css",
+      "name": "index.RF6BIc17.css",
+      "ext": ".css",
+      "size": 21751,
+      "mtime": 1772505110.7134933,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\assets\\index.RjgRi2_V.js",
+      "name": "index.RjgRi2_V.js",
+      "ext": ".js",
+      "size": 74475,
+      "mtime": 1772517020.1238513,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\assets\\vendor-animation.DKNg7Qj8.js",
+      "name": "vendor-animation.DKNg7Qj8.js",
+      "ext": ".js",
+      "size": 31206,
+      "mtime": 1772505110.7134933,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\assets\\vendor-libs.6yeuxnw_.js",
+      "name": "vendor-libs.6yeuxnw_.js",
+      "ext": ".js",
+      "size": 869448,
+      "mtime": 1772505110.714496,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260302_222400\\assets\\vendor-react.C5AAoLvH.js",
+      "name": "vendor-react.C5AAoLvH.js",
+      "ext": ".js",
+      "size": 348853,
+      "mtime": 1772505110.7134933,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260306_235542\\index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "size": 485,
+      "mtime": 1772844269.6031601,
+      "lang": "HTML",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260306_235542\\assets\\index.D9dQb4GV.css",
+      "name": "index.D9dQb4GV.css",
+      "ext": ".css",
+      "size": 55591,
+      "mtime": 1772844269.6031601,
+      "lang": "CSS",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260306_235542\\assets\\index.DuIfy9H6.js",
+      "name": "index.DuIfy9H6.js",
+      "ext": ".js",
+      "size": 95561,
+      "mtime": 1772844269.6031601,
+      "lang": "JavaScript",
+      "is_dir": false
+    },
+    {
+      "path": "C:\\\\Cerebral\\www_backup_20260306_235542\\assets\\vendor.CymQF__H.js",
+      "name": "vendor.CymQF__H.js",
+      "ext": ".js",
+      "size": 1248063,
+      "mtime": 1772844269.6041627,
+      "lang": "JavaScript",
+      "is_dir": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "context_id": "ctx-1783127869-76bd05cb5345b265",
+  "source": "telegram-context-proof",
+  "content_type": "log",
+  "compressed_text": "BEGIN CONTEXT SAMPLE:\nFAIL docker log line\nreceipt path preserved\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nEND CONTEXT SAMPLE:\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nFAIL docker log line\nreceipt path preserved",
+  "before_tokens_estimate": 425,
+  "after_tokens_estimate": 147,
+  "saved_tokens_estimate": 278,
+  "reduction_percent_estimate": 65.41,
+  "created_at": "2026-07-04T01:17:49.380588+00:00"
+}

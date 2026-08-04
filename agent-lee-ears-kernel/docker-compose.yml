@@ -1,0 +1,20 @@
+services:
+  agent-lee-ears-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-lee-ears-kernel
+    restart: unless-stopped
+    ports:
+      - "8094:8094"
+    environment:
+      AGENTLEE_EARS_MODEL: "tiny.en"
+      AGENTLEE_OPERATOR_INBOX: "/runtime/operator-os/inbox"
+      AGENTLEE_EARS_AUDIO: "/runtime/ears/audio"
+      AGENTLEE_EARS_TRANSCRIPTS: "/runtime/ears/transcripts"
+    volumes:
+      - "C:/Users/Leona/LeeWay-Runtime/operator-os/inbox:/runtime/operator-os/inbox"
+      - "C:/Users/Leona/LeeWay-Runtime/ears/audio:/runtime/ears/audio"
+      - "C:/Users/Leona/LeeWay-Runtime/ears/transcripts:/runtime/ears/transcripts"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

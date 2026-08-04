@@ -1,0 +1,95 @@
+﻿{
+    "version":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_GET_ONLY_UI_464J",
+    "phase":  82,
+    "timestamp":  "2026-07-07T19:26:12",
+    "verdict":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_GET_ONLY_UI_464J_CLEAN_NO_REAL_ACTION",
+    "applied_from":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_UI_CONTRACT_463F_CLEAN_NO_REAL_ACTION",
+    "recovered_from_invalid":  "464 and 464H",
+    "app_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "get_only_ui_applied":  true,
+    "no_browser_control":  true,
+    "no_desktop_control":  true,
+    "no_sandbox_action":  true,
+    "no_real_action":  true,
+    "source_463F_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-463F-20260707-190635\\reports\\LEEWAY_BROWSER_DESKTOP_SANDBOX_UI_CONTRACT_463F_20260707-190635.txt",
+    "source_464R_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-464R-20260707-191410\\reports\\LEEWAY_464R_INVALID_464_RECOVERY_20260707-191410.txt",
+    "files_written":  [
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\browserDesktopSandboxContract.ts",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  2390
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\components\\AgentLeeBrowserDesktopSandboxPanel.tsx",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  4169
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox\\page.tsx",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  261
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-contract\\page.tsx",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  279
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-hold-and-lock\\page.tsx",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  276
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-proof-chain\\page.tsx",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  276
+                          },
+                          {
+                              "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\browser-desktop-sandbox\\[...path]\\route.ts",
+                              "existed_before":  false,
+                              "backup_path":  "",
+                              "bytes":  2090
+                          }
+                      ],
+    "file_count":  7,
+    "all_files_exist":  true,
+    "source_safety_clean":  true,
+    "live_state":  {
+                       "device_operator_reachable":  true,
+                       "browser_runtime_live_endpoint_reachable_advisory":  false,
+                       "desktop_runtime_live_endpoint_reachable_advisory":  false
+                   },
+    "safety":  {
+                   "get_only_ui_applied":  true,
+                   "safe_apply_lane":  true,
+                   "frontend_files_created_or_updated_in_464J":  true,
+                   "api_routes_created_or_updated_in_464J":  true,
+                   "source_files_modified_in_464J":  true,
+                   "runtime_execution_performed":  false,
+                   "npm_install_performed":  false,
+                   "build_performed":  false,
+                   "test_performed":  false,
+                   "post_performed":  false,
+                   "browser_runtime_started":  false,
+                   "desktop_runtime_started":  false,
+                   "browser_open_performed":  false,
+                   "browser_navigation_performed":  false,
+                   "browser_click_performed":  false,
+                   "typing_performed":  false,
+                   "mouse_control_performed":  false,
+                   "keyboard_control_performed":  false,
+                   "window_control_performed":  false,
+                   "desktop_control_performed":  false,
+                   "sandbox_action_performed":  false,
+                   "real_action_performed":  false,
+                   "approval_granted":  false,
+                   "authority_unlocked":  false
+               },
+    "recommended_next_script":  "465-browser-desktop-sandbox-browser-proof-get-only-no-real-action.ps1"
+}

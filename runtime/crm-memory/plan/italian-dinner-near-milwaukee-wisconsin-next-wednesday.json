@@ -1,0 +1,190 @@
+{
+  "kind": "plan",
+  "name": "Italian dinner near Milwaukee, Wisconsin next Wednesday",
+  "data": {
+    "request_text": "Get started with plan complete it",
+    "location": "Milwaukee, Wisconsin",
+    "cuisine": "Italian",
+    "budget_usd": 200,
+    "day_hint": "next Wednesday",
+    "party_size": 2,
+    "candidates": [
+      {
+        "name": "The Neighborhood Draft",
+        "cuisine": null,
+        "phone": "+1 414-885-2028",
+        "website": "https://neighborhooddraft.com/",
+        "address": "5921 West Vliet Street, Milwaukee",
+        "source": "openstreetmap_overpass",
+        "score": 1
+      },
+      {
+        "name": "Riley\u2019s Social House",
+        "cuisine": "sandwich",
+        "phone": "+1-414-316-9118",
+        "website": "https://www.rileysandwich.com/",
+        "address": "411 East Menomonee Street, Milwaukee",
+        "source": "openstreetmap_overpass",
+        "score": 1
+      },
+      {
+        "name": "Cafe Hollander",
+        "cuisine": "dutch",
+        "phone": null,
+        "website": null,
+        "address": "",
+        "source": "openstreetmap_overpass",
+        "score": 1
+      },
+      {
+        "name": "Dairy Store",
+        "cuisine": null,
+        "phone": null,
+        "website": null,
+        "address": "",
+        "source": "openstreetmap_overpass",
+        "score": 1
+      },
+      {
+        "name": "Depot Snack Shop",
+        "cuisine": null,
+        "phone": null,
+        "website": null,
+        "address": "",
+        "source": "openstreetmap_overpass",
+        "score": 1
+      }
+    ],
+    "answer": "I got it. This is a Italian dinner plan for 2 near Milwaukee, Wisconsin, aiming around $200, for next Wednesday.\n\nBest working schedule:\n- Target reservation window: 6:30 PM to 7:30 PM.\n- Arrive 10 minutes early.\n- Keep the budget controlled with one appetizer, two entrees, and either shared dessert or two drinks.\n\nRestaurant research candidates:\n1. THE 10 BEST Italian Restaurants in Milwaukee (Updated 2026) \u2014  https://www.tripadvisor.com/Restaurants-g60097-c26-Milwaukee_Wisconsin.html\n2. THE 10 BEST Cheap Italian Restaurants in Milwaukee - Tripadvisor \u2014  https://www.tripadvisor.com/Restaurants-g60097-c26-zfp16-Milwaukee_Wisconsin.html\n3. The Best 10 Italian Restaurants near Downtown, Milwaukee, WI \u2014  https://www.yelp.com/search?cflt=italian&find_loc=Downtown,+Milwaukee,+WI\n4. The 2026 Best Italian Restaurants in Downtown Milwaukee List \u2014  https://milwauker.com/best-italian-restaurants-in-downtown-milwaukee\n5. THE BEST 10 ITALIAN RESTAURANTS IN MILWAUKEE, WI - Yelp \u2014  https://www.yelp.com/search?cflt=italian&find_loc=Milwaukee,+WI\n\nApproval-required next actions I can prepare:\n- Phone call request to book the table.\n- Email/message request if a restaurant has email or contact form.\n- Calendar event request after you choose the restaurant/time.\n\nI will not call, email, or calendar anything until you approve it.",
+    "approval_required_next_actions": [
+      "phone_call",
+      "email",
+      "calendar_event"
+    ],
+    "research": {
+      "ok": true,
+      "lane": "leeway_research_lane",
+      "mode": "deep_v1",
+      "query": "best Italian restaurant Milwaukee, Wisconsin dinner for two under $200",
+      "answer": "Research mode: deep_v1\nQuery: best Italian restaurant Milwaukee, Wisconsin dinner for two under $200\n\n1. [duckduckgo_html] THE 10 BEST Italian Restaurants in Milwaukee (Updated 2026) (https://www.tripadvisor.com/Restaurants-g60097-c26-Milwaukee_Wisconsin.html)\n2. [duckduckgo_html] THE 10 BEST Cheap Italian Restaurants in Milwaukee - Tripadvisor (https://www.tripadvisor.com/Restaurants-g60097-c26-zfp16-Milwaukee_Wisconsin.html)\n3. [duckduckgo_html] The Best 10 Italian Restaurants near Downtown, Milwaukee, WI (https://www.yelp.com/search?cflt=italian&find_loc=Downtown,+Milwaukee,+WI)\n4. [duckduckgo_html] The 2026 Best Italian Restaurants in Downtown Milwaukee List (https://milwauker.com/best-italian-restaurants-in-downtown-milwaukee)\n5. [duckduckgo_html] THE BEST 10 ITALIAN RESTAURANTS IN MILWAUKEE, WI - Yelp (https://www.yelp.com/search?cflt=italian&find_loc=Milwaukee,+WI)\n6. [duckduckgo_html] Milwaukee's coziest Italian restaurants (https://onmilwaukee.com/articles/milwaukees-coziest-italian-restaurants)\n7. [duckduckgo_html] Santino's Little Italy Restaurant - Milwaukee, WI | OpenTable (https://www.opentable.com/r/santinos-little-italy-milwaukee)\n8. [duckduckgo_html] Milwaukee Italian Dining Guide: 14 Italian Restaurants That Will Cure ... (https://www.milwaukeemag.com/milwaukee-italian-dining-guide-italian-restaurants-that-will-cure-your-pasta-cravings/)",
+      "results": [
+        {
+          "title": "THE 10 BEST Italian Restaurants in Milwaukee (Updated 2026)",
+          "url": "https://www.tripadvisor.com/Restaurants-g60097-c26-Milwaukee_Wisconsin.html",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "THE 10 BEST Cheap Italian Restaurants in Milwaukee - Tripadvisor",
+          "url": "https://www.tripadvisor.com/Restaurants-g60097-c26-zfp16-Milwaukee_Wisconsin.html",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "The Best 10 Italian Restaurants near Downtown, Milwaukee, WI",
+          "url": "https://www.yelp.com/search?cflt=italian&find_loc=Downtown,+Milwaukee,+WI",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "The 2026 Best Italian Restaurants in Downtown Milwaukee List",
+          "url": "https://milwauker.com/best-italian-restaurants-in-downtown-milwaukee",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "THE BEST 10 ITALIAN RESTAURANTS IN MILWAUKEE, WI - Yelp",
+          "url": "https://www.yelp.com/search?cflt=italian&find_loc=Milwaukee,+WI",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "Milwaukee's coziest Italian restaurants",
+          "url": "https://onmilwaukee.com/articles/milwaukees-coziest-italian-restaurants",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "Santino's Little Italy Restaurant - Milwaukee, WI | OpenTable",
+          "url": "https://www.opentable.com/r/santinos-little-italy-milwaukee",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        },
+        {
+          "title": "Milwaukee Italian Dining Guide: 14 Italian Restaurants That Will Cure ...",
+          "url": "https://www.milwaukeemag.com/milwaukee-italian-dining-guide-italian-restaurants-that-will-cure-your-pasta-cravings/",
+          "snippet": "",
+          "source": "duckduckgo_html"
+        }
+      ],
+      "errors": [],
+      "receipt": {
+        "verdict": "LEEWAY_RESEARCH_DEEP_SEARCH_COMPLETE",
+        "lane": "leeway_research_lane",
+        "version": "0.2.0-weather-web-fallback",
+        "kind": "deep_search",
+        "created_at": "2026-07-04T17:56:15.318792+00:00",
+        "query": "best Italian restaurant Milwaukee, Wisconsin dinner for two under $200",
+        "source": "leeway_gateway_planner",
+        "result_count": 8,
+        "results": [
+          {
+            "title": "THE 10 BEST Italian Restaurants in Milwaukee (Updated 2026)",
+            "url": "https://www.tripadvisor.com/Restaurants-g60097-c26-Milwaukee_Wisconsin.html",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "THE 10 BEST Cheap Italian Restaurants in Milwaukee - Tripadvisor",
+            "url": "https://www.tripadvisor.com/Restaurants-g60097-c26-zfp16-Milwaukee_Wisconsin.html",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "The Best 10 Italian Restaurants near Downtown, Milwaukee, WI",
+            "url": "https://www.yelp.com/search?cflt=italian&find_loc=Downtown,+Milwaukee,+WI",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "The 2026 Best Italian Restaurants in Downtown Milwaukee List",
+            "url": "https://milwauker.com/best-italian-restaurants-in-downtown-milwaukee",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "THE BEST 10 ITALIAN RESTAURANTS IN MILWAUKEE, WI - Yelp",
+            "url": "https://www.yelp.com/search?cflt=italian&find_loc=Milwaukee,+WI",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "Milwaukee's coziest Italian restaurants",
+            "url": "https://onmilwaukee.com/articles/milwaukees-coziest-italian-restaurants",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "Santino's Little Italy Restaurant - Milwaukee, WI | OpenTable",
+            "url": "https://www.opentable.com/r/santinos-little-italy-milwaukee",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          },
+          {
+            "title": "Milwaukee Italian Dining Guide: 14 Italian Restaurants That Will Cure ...",
+            "url": "https://www.milwaukeemag.com/milwaukee-italian-dining-guide-italian-restaurants-that-will-cure-your-pasta-cravings/",
+            "snippet": "",
+            "source": "duckduckgo_html"
+          }
+        ],
+        "errors": [],
+        "answer": "Research mode: deep_v1\nQuery: best Italian restaurant Milwaukee, Wisconsin dinner for two under $200\n\n1. [duckduckgo_html] THE 10 BEST Italian Restaurants in Milwaukee (Updated 2026) (https://www.tripadvisor.com/Restaurants-g60097-c26-Milwaukee_Wisconsin.html)\n2. [duckduckgo_html] THE 10 BEST Cheap Italian Restaurants in Milwaukee - Tripadvisor (https://www.tripadvisor.com/Restaurants-g60097-c26-zfp16-Milwaukee_Wisconsin.html)\n3. [duckduckgo_html] The Best 10 Italian Restaurants near Downtown, Milwaukee, WI (https://www.yelp.com/search?cflt=italian&find_loc=Downtown,+Milwaukee,+WI)\n4. [duckduckgo_html] The 2026 Best Italian Restaurants in Downtown Milwaukee List (https://milwauker.com/best-italian-restaurants-in-downtown-milwaukee)\n5. [duckduckgo_html] THE BEST 10 ITALIAN RESTAURANTS IN MILWAUKEE, WI - Yelp (https://www.yelp.com/search?cflt=italian&find_loc=Milwaukee,+WI)\n6. [duckduckgo_html] Milwaukee's coziest Italian restaurants (https://onmilwaukee.com/articles/milwaukees-coziest-italian-restaurants)\n7. [duckduckgo_html] Santino's Little Italy Restaurant - Milwaukee, WI | OpenTable (https://www.opentable.com/r/santinos-little-italy-milwaukee)\n8. [duckduckgo_html] Milwaukee Italian Dining Guide: 14 Italian Restaurants That Will Cure ... (https://www.milwaukeemag.com/milwaukee-italian-dining-guide-italian-restaurants-that-will-cure-your-pasta-cravings/)",
+        "note": "V1 deep search uses free/keyless public sources where possible. Paid/browser-cookie sources remain disabled until explicitly approved.",
+        "receipt_path": "/app/receipts/leeway_research_lane_deep_search_1783187775_4cd5e4a7.receipt.json"
+      }
+    }
+  },
+  "source": "telegram",
+  "updated_at": "2026-07-04T17:56:15.563002+00:00",
+  "created_at": "2026-07-04T01:03:43.851482+00:00"
+}

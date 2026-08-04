@@ -1,0 +1,46 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "purpose":  "Map every device capability into one unified Device Layer.",
+    "core":  {
+                 "iot_discovery":  "REQUIRED",
+                 "receipt_writer":  "REQUIRED",
+                 "capability_registry":  "REQUIRED",
+                 "shell_router":  "REQUIRED",
+                 "approval_engine":  "REQUIRED",
+                 "satellite_heartbeat":  "REQUIRED",
+                 "device_registry":  "REQUIRED",
+                 "route_registry":  "REQUIRED"
+             },
+    "command_flow":  [
+                         "User speaks or messages Agent Lee.",
+                         "Shell receives command: Telegram, WhatsApp, voice, local UI, email, SMS.",
+                         "Agent Lee router interprets intent.",
+                         "Runtime Fabric chooses device action.",
+                         "leeway_device_operator checks device registry and approval policy.",
+                         "Device satellite or IoT bridge executes.",
+                         "Receipt is written.",
+                         "Agent Lee narrates and returns result with artifact link if relevant."
+                     ],
+    "device_classes":  [
+                           "master_computer",
+                           "windows_computer",
+                           "linux_computer",
+                           "macos_computer",
+                           "android_phone",
+                           "ios_phone",
+                           "tablet",
+                           "printer",
+                           "tv_cast_target",
+                           "camera",
+                           "microphone",
+                           "speaker",
+                           "smart_light",
+                           "smart_plug",
+                           "thermostat",
+                           "network_storage",
+                           "browser_session",
+                           "vehicle_future",
+                           "robotics_future"
+                       ]
+}

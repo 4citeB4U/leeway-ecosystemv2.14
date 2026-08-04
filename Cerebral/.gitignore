@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Node/Vite
+node_modules/
+dist/
+.vite/
+
+# Runtime and local artifacts
+logs/runtime/
+*.log
+*.out
+*.err
+playback_output.txt
+cloudflared-tunnel.log
+
+# Local secrets and machine-specific files
+.env.local
+tunnel_cred.json
+
+# Build and temporary outputs
+build/
+tmp/

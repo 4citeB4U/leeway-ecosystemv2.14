@@ -1,0 +1,216 @@
+{
+  "plan_id": "plan-1783175914-08c14e87",
+  "status": "AWAITING_APPROVAL",
+  "source": "visual-plan-repair-proof",
+  "user_id": "owner",
+  "original_request": "Create a full professional dark Leeway website with a header, footer, 3 different 3D objects, and a video section explaining the Leeway standards with an avatar.",
+  "domain": "website",
+  "planning_depth": "EXECUTIVE",
+  "requires_approval": true,
+  "created_at": "2026-07-04T14:38:34.171933+00:00",
+  "updated_at": "2026-07-04T14:45:09.165860+00:00",
+  "steps": [
+    "Translate the user request into a professional website brief.",
+    "Define audience, purpose, page map, brand feel, and required sections.",
+    "Create two visual mockup directions before building.",
+    "Ask Leonard to approve one mockup direction or request edits.",
+    "After approval, create the live website room.",
+    "Add 3D object concept blocks and video/avatar explainer section.",
+    "Review the website against Leeway standards.",
+    "Return website link, supporting PDF if needed, receipt, and revision options."
+  ],
+  "tools": [
+    {
+      "tool": "leeway_open_notebook",
+      "role": "Create the plan, creative package, version history, and structured content."
+    },
+    {
+      "tool": "leeway_agent_skills",
+      "role": "Select available skills, worker lanes, and capability requirements."
+    },
+    {
+      "tool": "leeway_skill_router",
+      "role": "Coordinate planning, approval, routing, and receipts."
+    },
+    {
+      "tool": "leeway_artifact_viewer",
+      "role": "Expose plan rooms, previews, website rooms, infographic rooms, and delivery links."
+    },
+    {
+      "tool": "leeway_seafile_storage_gateway",
+      "role": "Govern durable storage, manifests, receipts, and memory control."
+    },
+    {
+      "tool": "image_lane",
+      "role": "Generate website mockup images before build approval."
+    },
+    {
+      "tool": "three_d_lane",
+      "role": "Create or render 3D object concepts."
+    },
+    {
+      "tool": "video_lane",
+      "role": "Create avatar/video explainer package."
+    },
+    {
+      "tool": "browser_or_website_runtime",
+      "role": "Render live website preview and final package."
+    }
+  ],
+  "mockups": [
+    {
+      "mockup_id": "A",
+      "name": "Executive Dark Command Center",
+      "description": "Dark professional Leeway website with hero section, glowing 3D core, standards cards, video/avatar panel, and strong header/footer.",
+      "preview_type": "website_wireframe",
+      "approval_question": "Approve Mockup A for a premium technology/business feel?"
+    },
+    {
+      "mockup_id": "B",
+      "name": "Magazine-Style Brand Story",
+      "description": "Editorial layout with large headline, cinematic image blocks, 3D object cards, video explainer strip, and polished footer.",
+      "preview_type": "website_wireframe",
+      "approval_question": "Approve Mockup B for a storytelling and proposal-style feel?"
+    }
+  ],
+  "failovers": [
+    {
+      "plan": "Plan A",
+      "rule": "Use the best matching runtime lane and return the intended artifact."
+    },
+    {
+      "plan": "Plan B",
+      "rule": "If a render lane fails, return the plan room, text package, and receipt instead of pretending the final artifact exists."
+    },
+    {
+      "plan": "Plan C",
+      "rule": "If execution is blocked, create a work order for the missing lane and ask Leonard for approval or more data."
+    }
+  ],
+  "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+  "execution": {
+    "approved": false,
+    "started": false,
+    "completed": false,
+    "result": null
+  },
+  "standards": [
+    "Do not pretend the work is complete.",
+    "Plan before major creation.",
+    "Use the correct tool or worker lane.",
+    "Ask for approval before heavy execution.",
+    "Return links, files, receipts, and next actions.",
+    "Keep Agent Lee's public voice poetic, grounded, brief, and disciplined."
+  ],
+  "visual_previews": [
+    {
+      "mockup_id": "A",
+      "name": "Executive Dark Command Center",
+      "description": "Dark professional Leeway website with hero section, glowing 3D core, standards cards, video/avatar panel, and strong header/footer.",
+      "prompt": "Professional website mockup preview, dark premium Leeway Industries style, full landing page layout, header navigation, hero section, modern 3D objects, video/avatar explainer section, footer, polished tech-business aesthetic, clean spacing, high contrast, executive presentation quality. Direction: Executive Dark Command Center. Details: Dark professional Leeway website with hero section, glowing 3D core, standards cards, video/avatar panel, and strong header/footer.. User request: Create a full professional dark Leeway website with a header, footer, 3 different 3D objects, and a video section explaining the Leeway standards with an avatar.",
+      "image_generation": {
+        "ok": false,
+        "image_url": "",
+        "attempts": [
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/image/generate-fast",
+            "ok": false,
+            "error": "ReadTimeout(ReadTimeoutError(\"HTTPConnectionPool(host='agent-lee-sdxl-lightning-image-lane', port=8095): Read timed out. (read timeout=240)\"))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/image/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /image/generate-fast (Caused by NameResolutionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to resolve \\'agent-lee-sdxl-lightning-image-lane\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate-fast (Caused by NameResolutionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to resolve \\'agent-lee-sdxl-lightning-image-lane\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate-fast (Caused by NameResolutionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to resolve \\'agent-lee-sdxl-lightning-image-lane\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate (Caused by NameResolutionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to resolve \\'agent-lee-sdxl-lightning-image-lane\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate",
+            "ok": false,
+            "error": "ConnectionError(ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/render",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /render (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/render",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /render (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          }
+        ]
+      },
+      "image_url": "",
+      "created_at": "2026-07-04T14:45:09.155608+00:00"
+    },
+    {
+      "mockup_id": "B",
+      "name": "Magazine-Style Brand Story",
+      "description": "Editorial layout with large headline, cinematic image blocks, 3D object cards, video explainer strip, and polished footer.",
+      "prompt": "Professional website mockup preview, dark premium Leeway Industries style, full landing page layout, header navigation, hero section, modern 3D objects, video/avatar explainer section, footer, polished tech-business aesthetic, clean spacing, high contrast, executive presentation quality. Direction: Magazine-Style Brand Story. Details: Editorial layout with large headline, cinematic image blocks, 3D object cards, video explainer strip, and polished footer.. User request: Create a full professional dark Leeway website with a header, footer, 3 different 3D objects, and a video section explaining the Leeway standards with an avatar.",
+      "image_generation": {
+        "ok": false,
+        "image_url": "",
+        "attempts": [
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/image/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /image/generate-fast (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/image/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /image/generate-fast (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate-fast (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate-fast",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate-fast (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/generate",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /generate (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/render",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /render (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          },
+          {
+            "endpoint": "http://agent-lee-sdxl-lightning-image-lane:8095/render",
+            "ok": false,
+            "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Max retries exceeded with url: /render (Caused by NewConnectionError(\"HTTPConnection(host=\\'agent-lee-sdxl-lightning-image-lane\\', port=8095): Failed to establish a new connection: [Errno 111] Connection refused\"))'))"
+          }
+        ]
+      },
+      "image_url": "",
+      "created_at": "2026-07-04T14:45:09.165846+00:00"
+    }
+  ],
+  "visual_preview_status": "ATTEMPTED_NO_IMAGE_RETURNED"
+}

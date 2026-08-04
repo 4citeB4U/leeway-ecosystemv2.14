@@ -1,0 +1,31 @@
+﻿{
+    "version":  "LEEWAY_284A_DIAGNOSE_OPEN_APP_EXECUTION_RESPONSE_NO_EXECUTE",
+    "timestamp":  "2026-07-06T00:29:02",
+    "prior_284_verdict":  "LEEWAY_EXECUTE_ONE_APPROVED_ACTION_AND_LOCKBACK_WITH_WARNINGS",
+    "execution_id":  "execute-real_open_app-20260706-002719",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "execution_performed":  false,
+    "lockback_clean":  true,
+    "windows_locked_after_execution":  true,
+    "post_lockback_probe_executed":  false,
+    "execute_result_raw":  {
+                               "ok":  true,
+                               "allowed":  false,
+                               "executed":  false,
+                               "reason":  "real_alpha_locked_after_209_blocks_open_app",
+                               "mode":  "APPROVAL_ONLY_LOCKED_AFTER_209",
+                               "real_execution_enabled":  false,
+                               "physical_execution_enabled":  false,
+                               "read_only_status_enabled":  false
+                           },
+    "execute_result_executed":  false,
+    "execute_result_status":  null,
+    "execute_result_reason":  "real_alpha_locked_after_209_blocks_open_app",
+    "execute_result_error":  null,
+    "execute_result_message":  null,
+    "conclusion":  "EXECUTION_NOT_CONFIRMED_REAL_ALPHA_DID_NOT_RETURN_EXECUTED_TRUE",
+    "recommended_next":  "284B-inspect-real-alpha-open-app-contract-no-execute.ps1"
+}

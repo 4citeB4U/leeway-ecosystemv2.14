@@ -1,0 +1,12 @@
+{
+  "simulationId": "FULL_SYSTEM_CLEANUP_REHEARSAL",
+  "injectedFaults": [
+    "generated reports",
+    "temp logs",
+    "old receipts",
+    "duplicate maps",
+    "malformed JSON",
+    "archive-only PASS file",
+    "current active receipt"
+  ]
+}

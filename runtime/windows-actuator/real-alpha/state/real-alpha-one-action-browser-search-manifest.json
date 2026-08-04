@@ -1,0 +1,26 @@
+﻿{
+    "version":  "LEEWAY_EXTEND_APPROVED_REAL_BROWSER_SEARCH_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:33:08",
+    "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha",
+    "real_alpha_url":  "http://127.0.0.1:7332",
+    "policy":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\policy\\real-alpha-one-action-browser-search-policy.json",
+    "mode":  "ONE_ACTION_REAL_BROWSER_SEARCH_ONLY",
+    "real_execution_enabled":  true,
+    "physical_execution_enabled":  true,
+    "enabled_action":  "real_browser_search",
+    "enabled_browser":  "edge",
+    "enabled_engine":  "bing",
+    "approved_query":  "Leeway Agent Lee device operator proof",
+    "approved_search_url":  "https://www.bing.com/search?q=Leeway+Agent+Lee+device+operator+proof",
+    "last_approval_id":  "approved-real-browser-search-20260705-183302-fe7af7ce875c",
+    "last_execution_result":  {
+                                  "search_url":  "https://www.bing.com/search?q=Leeway+Agent+Lee+device+operator+proof",
+                                  "new_edge_process_ids":  [
+                                                               30340
+                                                           ],
+                                  "launcher_pid":  "28344",
+                                  "response_executed":  true,
+                                  "response_allowed":  true
+                              },
+    "all_other_actions_blocked":  true
+}

@@ -1,0 +1,407 @@
+﻿{
+    "version":  "LEEWAY_STANDARDS_BOUND_EXECUTION_APPROVAL_GATE_442",
+    "phase":  64,
+    "timestamp":  "2026-07-07T00:50:48",
+    "verdict":  "LEEWAY_STANDARDS_BOUND_EXECUTION_APPROVAL_GATE_442_NO_EXECUTE_CLEAN_GATE_DEFINED",
+    "approval_gate_only":  true,
+    "runtime_execution_performed":  false,
+    "container_execution_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "package_created":  false,
+    "physical_action_performed":  false,
+    "inherited":  {
+                      "repair_441R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                      "repair_441R_clean":  true,
+                      "scope_441_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63-active-execution-scope-lock\\latest\\active-execution-scope-lock-latest.json",
+                      "gate_440_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                      "closeout_439_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                      "standards_407_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-407-leeway-standards-final-summary\\latest\\leeway-standards-final-summary-latest.json",
+                      "runtime_422_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-422-runtime-fabric-env-root-gap-closure-receipt\\latest\\runtime-fabric-env-root-gap-closure-receipt-latest.json",
+                      "agent_425_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-425-agent-lee-governed-binding-receipt\\latest\\agent-lee-governed-binding-receipt-latest.json"
+                  },
+    "locked_active_scope":  [
+                                {
+                                    "container":  "leeway_executive_runtime",
+                                    "image":  "leeway_executive_runtime:truth-sync",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric_or_agent_worker"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_agent_skills",
+                                    "image":  "leeway_agent_skills:truth-sync",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric_or_agent_worker"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_performance_runtime",
+                                    "image":  "leeway_performance_runtime:local",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric_or_agent_worker"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_skill_router",
+                                    "image":  "leeway_skill_router:local",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "gateway_proxy_network_surface",
+                                                     "runtime_fabric_or_agent_worker"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_context_gateway",
+                                    "image":  "leeway_context_gateway:local",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_api_gateway",
+                                    "image":  "leeway_api_gateway:local",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_runtime_fabric",
+                                    "image":  "leeway-ecosystemv214-runtime-fabric",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_mcp_center",
+                                    "image":  "leeway-ecosystemv214-leeway-mcp-center",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_mcp_agent_center",
+                                    "image":  "leeway-ecosystemv214-leeway-mcp-agent-center",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_agent_center",
+                                    "image":  "leeway-ecosystemv214-leeway-agent-center",
+                                    "status":  "Up 14 hours",
+                                    "families":  [
+                                                     "runtime_fabric"
+                                                 ],
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                }
+                            ],
+    "approval_gate":  {
+                          "gate_id":  "STANDARDS_BOUND_EXECUTION_APPROVAL_GATE_442",
+                          "phase":  64,
+                          "gate_defined":  true,
+                          "gate_executed":  false,
+                          "owner_approval_required":  true,
+                          "owner_approval_present":  false,
+                          "approval_statement_required":  "I, Leonard J Lee, explicitly approve one single-use Standards-bound runtime proof for the locked active scope from 441R. I understand this authorizes only the specific proof defined by the next gate and does not authorize Docker exec, Docker mutation, package creation, device control, Telegram posting, model calls, browser control, image generation, voice generation, or physical action.",
+                          "approval_scope":  "one single-use Standards-bound runtime proof for locked active scope from 441R",
+                          "locked_active_scope":  [
+                                                      {
+                                                          "container":  "leeway_executive_runtime",
+                                                          "image":  "leeway_executive_runtime:truth-sync",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric_or_agent_worker"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_agent_skills",
+                                                          "image":  "leeway_agent_skills:truth-sync",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric_or_agent_worker"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_performance_runtime",
+                                                          "image":  "leeway_performance_runtime:local",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric_or_agent_worker"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_skill_router",
+                                                          "image":  "leeway_skill_router:local",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "gateway_proxy_network_surface",
+                                                                           "runtime_fabric_or_agent_worker"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_context_gateway",
+                                                          "image":  "leeway_context_gateway:local",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_api_gateway",
+                                                          "image":  "leeway_api_gateway:local",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_runtime_fabric",
+                                                          "image":  "leeway-ecosystemv214-runtime-fabric",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_mcp_center",
+                                                          "image":  "leeway-ecosystemv214-leeway-mcp-center",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_mcp_agent_center",
+                                                          "image":  "leeway-ecosystemv214-leeway-mcp-agent-center",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      },
+                                                      {
+                                                          "container":  "leeway_agent_center",
+                                                          "image":  "leeway-ecosystemv214-leeway-agent-center",
+                                                          "status":  "Up 14 hours",
+                                                          "families":  [
+                                                                           "runtime_fabric"
+                                                                       ],
+                                                          "execution_allowed_now":  false,
+                                                          "docker_exec_allowed_now":  false,
+                                                          "docker_mutation_allowed_now":  false
+                                                      }
+                                                  ],
+                          "locked_active_scope_count":  10,
+                          "deferred_scope_count":  37,
+                          "document_only_scope_count":  7,
+                          "standards_authority":  "LeeWay-Standards",
+                          "runtime_authority":  "Leeway Runtime Fabric",
+                          "agent_authority":  "Agent Lee governed binding",
+                          "allowed_after_exact_owner_approval":  [
+                                                                     "create next single-use proof script",
+                                                                     "perform only the explicitly defined non-mutating runtime status proof",
+                                                                     "write pass/fail receipts",
+                                                                     "keep Docker exec blocked",
+                                                                     "keep Docker mutation blocked",
+                                                                     "keep device control blocked"
+                                                                 ],
+                          "approval_does_not_authorize":  [
+                                                              "docker exec",
+                                                              "docker mutation",
+                                                              "docker start/stop/restart/build/compose up/down/prune/rm",
+                                                              "package creation",
+                                                              "device control",
+                                                              "physical action",
+                                                              "Telegram posting",
+                                                              "model/provider calls",
+                                                              "browser control",
+                                                              "image generation",
+                                                              "voice generation",
+                                                              "unscoped runtime execution"
+                                                          ]
+                      },
+    "gate_truth":  {
+                       "approval_gate_defined":  true,
+                       "approval_gate_executed":  false,
+                       "owner_approval_required":  true,
+                       "owner_approval_present":  false,
+                       "locked_active_scope_available":  true,
+                       "locked_active_scope_count":  10,
+                       "runtime_execution_allowed_now":  false,
+                       "docker_exec_allowed_now":  false,
+                       "docker_mutation_allowed_now":  false,
+                       "device_control_allowed_now":  false,
+                       "package_creation_allowed_now":  false
+                   },
+    "forbidden_actions":  [
+                              "docker_exec",
+                              "docker_start",
+                              "docker_stop",
+                              "docker_restart",
+                              "docker_rm",
+                              "docker_prune",
+                              "docker_build",
+                              "docker_compose_up",
+                              "docker_compose_down",
+                              "container_shell",
+                              "unscoped_container_execution",
+                              "device_control",
+                              "physical_action",
+                              "telegram_posting",
+                              "model_execution",
+                              "provider_call",
+                              "tool_execution",
+                              "browser_control",
+                              "image_generation",
+                              "voice_generation",
+                              "package_creation",
+                              "sdk_distribution"
+                          ],
+    "next_proof_plan":  {
+                            "next_script":  "442A-standards-bound-runtime-status-proof-single-use.ps1",
+                            "may_be_created_or_run_only_after_exact_owner_approval":  true,
+                            "required_approval_statement":  "I, Leonard J Lee, explicitly approve one single-use Standards-bound runtime proof for the locked active scope from 441R. I understand this authorizes only the specific proof defined by the next gate and does not authorize Docker exec, Docker mutation, package creation, device control, Telegram posting, model calls, browser control, image generation, voice generation, or physical action.",
+                            "proof_type":  "non-mutating runtime status proof for locked active scope",
+                            "allowed_methods":  [
+                                                    "GET-only status/health/policy checks where endpoints are known",
+                                                    "read-only docker metadata only if required",
+                                                    "receipt writing"
+                                                ],
+                            "disallowed_methods":  [
+                                                       "docker_exec",
+                                                       "docker_start",
+                                                       "docker_stop",
+                                                       "docker_restart",
+                                                       "docker_rm",
+                                                       "docker_prune",
+                                                       "docker_build",
+                                                       "docker_compose_up",
+                                                       "docker_compose_down",
+                                                       "container_shell",
+                                                       "unscoped_container_execution",
+                                                       "device_control",
+                                                       "physical_action",
+                                                       "telegram_posting",
+                                                       "model_execution",
+                                                       "provider_call",
+                                                       "tool_execution",
+                                                       "browser_control",
+                                                       "image_generation",
+                                                       "voice_generation",
+                                                       "package_creation",
+                                                       "sdk_distribution"
+                                                   ],
+                            "runtime_execution_allowed_now":  false,
+                            "docker_exec_allowed_now":  false,
+                            "docker_mutation_allowed_now":  false
+                        },
+    "remaining_gates":  [
+                            {
+                                "gate_id":  "OWNER_APPROVAL_FOR_SINGLE_USE_RUNTIME_PROOF",
+                                "status":  "OPEN",
+                                "blocking_execution":  true,
+                                "description":  "Owner must provide exact approval statement before 442A can be created/run.",
+                                "next_script":  "442A only after exact owner approval"
+                            },
+                            {
+                                "gate_id":  "SINGLE_USE_RUNTIME_STATUS_PROOF",
+                                "status":  "OPEN",
+                                "blocking_execution":  true,
+                                "description":  "Single-use proof has not been run.",
+                                "next_script":  "442A-standards-bound-runtime-status-proof-single-use.ps1"
+                            },
+                            {
+                                "gate_id":  "PACKAGE_CREATION_GATE",
+                                "status":  "OPEN",
+                                "blocking_package_creation":  true,
+                                "description":  "Package creation remains blocked until runtime proof closeout.",
+                                "next_script":  "later"
+                            }
+                        ],
+    "next_phase_needs":  [
+                             "Owner must decide whether to approve exactly one Standards-bound runtime status proof.",
+                             "442A may only be created/run after exact approval statement.",
+                             "442A must use locked active scope from 441R.",
+                             "442A must not docker exec.",
+                             "442A must not mutate Docker.",
+                             "442A must not control devices.",
+                             "442A must not post Telegram, call models, run browser control, generate image, or generate voice.",
+                             "442A must write pass/fail receipt honestly.",
+                             "Runtime execution remains blocked until approval and proof.",
+                             "Packaging/distribution remains paused."
+                         ],
+    "counts":  {
+                   "locked_active_scope":  10,
+                   "deferred_scope":  37,
+                   "document_only_scope":  7,
+                   "forbidden_actions":  22,
+                   "remaining_gates":  3,
+                   "next_phase_needs":  10
+               },
+    "recommended_next_script":  "442A-standards-bound-runtime-status-proof-single-use.ps1 after exact owner approval only"
+}

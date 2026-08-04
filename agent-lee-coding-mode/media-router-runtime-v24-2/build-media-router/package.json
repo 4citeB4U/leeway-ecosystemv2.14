@@ -1,0 +1,9 @@
+{
+  "name": "leeway-media-router",
+  "version": "24.2.0",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

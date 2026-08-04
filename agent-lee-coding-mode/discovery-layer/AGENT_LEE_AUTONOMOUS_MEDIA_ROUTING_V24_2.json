@@ -1,0 +1,136 @@
+{
+    "schema":  "leeway-agent-lee-autonomous-media-routing-v24-2",
+    "createdAt":  "2026-06-28T04:46:15.3750800Z",
+    "status":  "REGISTERED_FOR_AGENT_LEE_ROUTING",
+    "primaryRouter":  {
+                          "container":  "leeway_media_router",
+                          "hostEndpoint":  "http://127.0.0.1:5301",
+                          "internalEndpoint":  "http://leeway-media-router:5301",
+                          "dispatch":  "http://leeway-media-router:5301/dispatch",
+                          "routes":  "http://leeway-media-router:5301/routes",
+                          "health":  "http://leeway-media-router:5301/health"
+                      },
+    "upstreams":  {
+                      "agentLee":  "http://agent-lee:8080",
+                      "runtimeFabric":  "http://runtime-fabric:4001",
+                      "mediaIngestion":  "http://leeway-media-ingestion-layer:5300",
+                      "agentCenter":  "http://leeway-agent-center:8860",
+                      "mcpAgentCenter":  "http://leeway-mcp-agent-center:8861",
+                      "workerCenter":  "http://leeway-worker-center:8862",
+                      "mcpCenter":  "http://leeway-mcp-center:8863"
+                  },
+    "triggerRules":  [
+                         {
+                             "route":  "video",
+                             "triggers":  [
+                                              "video",
+                                              "movie",
+                                              "film",
+                                              "mp4",
+                                              "webm",
+                                              "avi",
+                                              "mov",
+                                              "mkv",
+                                              "frame",
+                                              "scene",
+                                              "clip"
+                                          ],
+                             "mcp":  "leeway-video-analysis-ingestion-mcp",
+                             "workers":  [
+                                             "leeway-video-analysis-ingestion-mcp-execution-worker",
+                                             "leeway-video-analysis-ingestion-mcp-audit-worker"
+                                         ],
+                             "targetAreas":  [
+                                                 "runtime-fabric",
+                                                 "vision-kernel",
+                                                 "mcp-center",
+                                                 "worker-center"
+                                             ]
+                         },
+                         {
+                             "route":  "audio",
+                             "triggers":  [
+                                              "audio",
+                                              "sound",
+                                              "music",
+                                              "song",
+                                              "voice",
+                                              "mp3",
+                                              "wav",
+                                              "flac",
+                                              "ogg",
+                                              "m4a",
+                                              "aac"
+                                          ],
+                             "mcp":  "leeway-audio-analysis-ingestion-mcp",
+                             "workers":  [
+                                             "leeway-audio-analysis-ingestion-mcp-execution-worker",
+                                             "leeway-audio-analysis-ingestion-mcp-audit-worker"
+                                         ],
+                             "targetAreas":  [
+                                                 "runtime-fabric",
+                                                 "audio",
+                                                 "creation-kernel",
+                                                 "mcp-center",
+                                                 "worker-center"
+                                             ]
+                         },
+                         {
+                             "route":  "document",
+                             "triggers":  [
+                                              "pdf",
+                                              "document",
+                                              "docx",
+                                              "spreadsheet",
+                                              "excel",
+                                              "xlsx",
+                                              "csv",
+                                              "report",
+                                              "paper",
+                                              "book",
+                                              "text"
+                                          ],
+                             "mcp":  "leeway-document-media-ingestion-mcp",
+                             "workers":  [
+                                             "leeway-document-media-ingestion-mcp-execution-worker",
+                                             "leeway-document-media-ingestion-mcp-audit-worker"
+                                         ],
+                             "targetAreas":  [
+                                                 "runtime-fabric",
+                                                 "documents",
+                                                 "creation-kernel",
+                                                 "mcp-center",
+                                                 "worker-center"
+                                             ]
+                         },
+                         {
+                             "route":  "general-media",
+                             "triggers":  [
+                                              "media",
+                                              "upload",
+                                              "ingest",
+                                              "image",
+                                              "picture",
+                                              "photo",
+                                              "png",
+                                              "jpg",
+                                              "jpeg",
+                                              "gif",
+                                              "webp"
+                                          ],
+                             "mcp":  "leeway-media-ingestion-mcp",
+                             "workers":  [
+                                             "leeway-media-ingestion-mcp-execution-worker",
+                                             "leeway-media-ingestion-mcp-audit-worker"
+                                         ],
+                             "targetAreas":  [
+                                                 "runtime-fabric",
+                                                 "vision",
+                                                 "creation",
+                                                 "mcp-center",
+                                                 "worker-center"
+                                             ]
+                         }
+                     ],
+    "truthRule":  "This router delegates and records routing decisions. It does not itself perform full analysis, video generation, audio generation, legal review, or document authoring. It routes to MCPs, workers, centers, and downstream services."
+}

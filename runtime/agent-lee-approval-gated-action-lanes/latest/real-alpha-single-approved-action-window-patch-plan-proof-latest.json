@@ -1,0 +1,33 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_SINGLE_APPROVED_ACTION_UNLOCK_WINDOW_PATCH_PLAN_284C",
+    "phase":  39,
+    "timestamp":  "2026-07-06T08:30:19",
+    "verdict":  "LEEWAY_REAL_ALPHA_SINGLE_APPROVED_ACTION_UNLOCK_WINDOW_PATCH_PLAN_NO_EXECUTE_CLEAN",
+    "patch_plan_created":  true,
+    "patch_applied":  false,
+    "execution_performed":  false,
+    "conclusion":  "PATCH_PLAN_READY_FOR_SINGLE_APPROVED_ACTION_WINDOW",
+    "root_cause":  "real_alpha_locked_after_209_blocks_open_app",
+    "supported_approval_endpoint_count":  0,
+    "primary_candidate_source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\executions\\execute-real_open_app-20260706-002719.execution.json",
+    "candidate_source_file_count":  10547,
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "windows_locked":  true,
+    "open_app_executed_during_plan":  false,
+    "patch_plan":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\patch-plans\\real-alpha-single-approved-action-window-284C-20260706-081026.json",
+    "patch_plan_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\latest\\real-alpha-single-approved-action-window-patch-plan-latest.json",
+    "safety":  {
+                   "plan_only":  true,
+                   "patch_applied":  false,
+                   "no_execution_in_284c":  true,
+                   "open_app_remained_blocked":  true,
+                   "no_general_unlock":  true,
+                   "no_permanent_enable":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284D-apply-real-alpha-single-approved-action-window-patch-no-execute.ps1"
+}

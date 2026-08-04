@@ -1,0 +1,831 @@
+﻿{
+    "version":  "LEEWAY_FINAL_DEVICE_LAYER_READINESS_DASHBOARD_AFTER_REAL_ACTION_2026-07-05",
+    "timestamp":  "2026-07-05T19:44:13",
+    "dashboard_verdict":  "FINAL_DEVICE_LAYER_READY_AFTER_FIRST_APPROVED_REAL_ACTION",
+    "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+    "summary":  {
+                    "headline":  "Device Layer control plane is locked clean after first approved real action.",
+                    "real_action_result":  "Approved Notepad open executed once and lockback verified.",
+                    "safety_result":  "All final physical probes returned executed=false.",
+                    "operator_result":  "Device Operator, dry-run actuator, and real-alpha surfaces are reachable."
+                },
+    "capability_posture":  {
+                               "master_device_operator":  "leeway_device_operator on port 5323",
+                               "windows_satellite":  "windows-agent-lee",
+                               "dry_run_actuator":  "http://127.0.0.1:7331",
+                               "real_alpha_actuator":  "http://127.0.0.1:7332",
+                               "current_real_alpha_mode":  "APPROVAL_ONLY_LOCKED_AFTER_195D",
+                               "real_execution_enabled":  false,
+                               "physical_execution_enabled":  false,
+                               "read_only_status_enabled":  false,
+                               "real_alpha_locked":  true,
+                               "all_final_probes_blocked":  true,
+                               "first_real_action_completed":  true,
+                               "first_real_action":  "real_open_app",
+                               "first_real_action_target":  "notepad",
+                               "first_real_action_pid":  "12692",
+                               "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c"
+                           },
+    "risk_posture":  {
+                         "approval_required_for_physical_execution":  true,
+                         "one_action_execution_proven":  true,
+                         "lockback_after_execution_proven":  true,
+                         "stale_route_issue_resolved_by_bom_safe_isolated_module":  true,
+                         "bom_safe_json_read_required":  true,
+                         "no_docker_prune":  true,
+                         "no_destructive_cleanup":  true,
+                         "no_mouse_click":  true,
+                         "no_keyboard_typing":  true,
+                         "no_shell_command":  true,
+                         "no_url_open":  true,
+                         "no_browser_search":  true,
+                         "no_screenshot":  true,
+                         "no_message_send":  true,
+                         "no_phone_call":  true
+                     },
+    "ledger_counts":  {
+                          "pending":  4,
+                          "approved":  11,
+                          "executed":  11,
+                          "denied":  0,
+                          "expired":  0,
+                          "real_alpha_receipts":  128,
+                          "proof_receipts":  71
+                      },
+    "approved_record":  {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                            "exists":  true,
+                            "used":  true,
+                            "execution_status_executed":  true,
+                            "action_ok":  true,
+                            "app_ok":  true
+                        },
+    "executed_record":  {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\executed\\pending-real_open_app-20260705-192102-246585f2bd4c.executed-real-open-app-195d.approval.json",
+                            "exists":  true,
+                            "status_ok":  true,
+                            "action_ok":  true,
+                            "app_ok":  true,
+                            "pid":  "12692"
+                        },
+    "final_probe_results":  {
+                                "open_app":  {
+                                                 "allowed":  false,
+                                                 "executed":  false,
+                                                 "reason":  "real_alpha_locked_after_195d_blocks_open_app"
+                                             },
+                                "open_url":  {
+                                                 "allowed":  false,
+                                                 "executed":  false,
+                                                 "reason":  "real_alpha_locked_after_195d_blocks_open_url"
+                                             },
+                                "browser_search":  {
+                                                       "allowed":  false,
+                                                       "executed":  false,
+                                                       "reason":  "real_alpha_locked_after_195d_blocks_browser_search"
+                                                   },
+                                "type_text":  {
+                                                  "allowed":  false,
+                                                  "executed":  false,
+                                                  "reason":  "real_alpha_locked_after_195d_blocks_type_text"
+                                              },
+                                "hotkey":  {
+                                               "allowed":  false,
+                                               "executed":  false,
+                                               "reason":  "real_alpha_locked_after_195d_blocks_hotkey"
+                                           },
+                                "screen_status":  {
+                                                      "allowed":  false,
+                                                      "executed":  false,
+                                                      "reason":  "real_alpha_locked_after_195d_blocks_screen_status"
+                                                  },
+                                "mouse_click":  {
+                                                    "allowed":  false,
+                                                    "executed":  false,
+                                                    "reason":  "real_alpha_locked_after_195d_blocks_mouse_click"
+                                                },
+                                "shell_allowed_command":  {
+                                                              "allowed":  false,
+                                                              "executed":  false,
+                                                              "reason":  "real_alpha_locked_after_195d_blocks_shell_allowed_command"
+                                                          }
+                            },
+    "latest_196_audit":  {
+                             "path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-196-20260705-194023\\json\\final-control-plane-post-execution-audit-state.json",
+                             "found":  true,
+                             "verdict":  "LEEWAY_FINAL_CONTROL_PLANE_POST_EXECUTION_AUDIT_CLEAN"
+                         },
+    "live_surfaces":  {
+                          "device_operator_health":  {
+                                                         "ok":  true,
+                                                         "app":  "leeway_device_operator",
+                                                         "version":  "0.1.0-device-operator-control-plane",
+                                                         "created_at":  "2026-07-06T00:44:13.300806+00:00"
+                                                     },
+                          "device_operator_status":  {
+                                                         "app":  "leeway_device_operator",
+                                                         "version":  "0.1.0-device-operator-control-plane",
+                                                         "purpose":  "Dockerized Leeway control plane for cursor, device channels, phone/email/PWA/Telegram control surfaces, and approved device actions.",
+                                                         "device_model":  {
+                                                                              "docker_control_plane":  true,
+                                                                              "host_or_mobile_adapter_required_for_physical_ui_actions":  true,
+                                                                              "all_actions_route_through_leeway_api_gateway":  true,
+                                                                              "approval_required_for_risky_actions":  true
+                                                                          },
+                                                         "cursor_modes":  {
+                                                                              "blue":  "listening_thinking_safe_navigation",
+                                                                              "green":  "approved_action_active_execution",
+                                                                              "red":  "blocked_needs_approval_risky_action",
+                                                                              "gold":  "owner_admin_mode",
+                                                                              "purple":  "agent_creation_mode"
+                                                                          },
+                                                         "endpoints":  [
+                                                                           "/health",
+                                                                           "/status",
+                                                                           "/cursor/profile",
+                                                                           "/cursor/set-profile",
+                                                                           "/devices/register",
+                                                                           "/devices/list",
+                                                                           "/channels/register",
+                                                                           "/channels/list",
+                                                                           "/voice/session/start",
+                                                                           "/device/action/request",
+                                                                           "/license/profile",
+                                                                           "/receipts/latest",
+                                                                           "/openapi.json"
+                                                                       ],
+                                                         "devices":  {
+                                                                         "devices":  [
+                                                                                         {
+                                                                                             "device_id":  "customer-desktop-default",
+                                                                                             "device_type":  "desktop",
+                                                                                             "platform":  "windows_linux_macos",
+                                                                                             "display_name":  "Customer Desktop Runtime",
+                                                                                             "capabilities":  [
+                                                                                                                  "cursor",
+                                                                                                                  "screen",
+                                                                                                                  "keyboard",
+                                                                                                                  "browser",
+                                                                                                                  "apps",
+                                                                                                                  "files"
+                                                                                                              ],
+                                                                                             "adapter_url":  "",
+                                                                                             "owner":  "customer",
+                                                                                             "registered_at":  "2026-07-04T01:41:24.357239+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "customer-phone-default",
+                                                                                             "device_type":  "phone",
+                                                                                             "platform":  "android_ios",
+                                                                                             "display_name":  "Customer Phone Runtime",
+                                                                                             "capabilities":  [
+                                                                                                                  "telegram",
+                                                                                                                  "push_to_talk",
+                                                                                                                  "phone_number",
+                                                                                                                  "sms",
+                                                                                                                  "mobile_ui"
+                                                                                                              ],
+                                                                                             "adapter_url":  "",
+                                                                                             "owner":  "customer",
+                                                                                             "registered_at":  "2026-07-04T01:41:24.576057+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "windows-agent-lee",
+                                                                                             "device_type":  "computer",
+                                                                                             "platform":  "windows",
+                                                                                             "display_name":  "AGENT-LEE Windows Satellite",
+                                                                                             "capabilities":  [
+                                                                                                                  "windows_host_satellite",
+                                                                                                                  "screen_status_contract",
+                                                                                                                  "screen_stream_future",
+                                                                                                                  "screenshot_future",
+                                                                                                                  "cursor_contract",
+                                                                                                                  "mouse_move_future",
+                                                                                                                  "mouse_click_future",
+                                                                                                                  "keyboard_type_future",
+                                                                                                                  "hotkey_future",
+                                                                                                                  "open_app_future",
+                                                                                                                  "open_url_future",
+                                                                                                                  "browser_search_future",
+                                                                                                                  "file_explorer_future",
+                                                                                                                  "filesystem_scoped_access_future",
+                                                                                                                  "printer_bridge_contract",
+                                                                                                                  "windows_print_spooler_future",
+                                                                                                                  "camera_status_contract",
+                                                                                                                  "microphone_status_contract",
+                                                                                                                  "speaker_output_contract",
+                                                                                                                  "multi_monitor_contract",
+                                                                                                                  "powershell_allowlist_contract",
+                                                                                                                  "docker_local_status",
+                                                                                                                  "tailscale_mesh_contract",
+                                                                                                                  "approval_required_for_physical_execution",
+                                                                                                                  "receipt_required_for_every_action"
+                                                                                                              ],
+                                                                                             "adapter_url":  "",
+                                                                                             "owner":  "Leonard J Lee",
+                                                                                             "registered_at":  "2026-07-05T22:38:23.577796+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "windows-agent-lee-local-actuator-contract",
+                                                                                             "device_type":  "windows_local_actuator_contract",
+                                                                                             "platform":  "windows",
+                                                                                             "display_name":  "windows-agent-lee Local Actuator Contract",
+                                                                                             "capabilities":  [
+                                                                                                                  "local_windows_actuator_contract",
+                                                                                                                  "dry_run_service_future",
+                                                                                                                  "screen_status_future",
+                                                                                                                  "cursor_future",
+                                                                                                                  "keyboard_future",
+                                                                                                                  "browser_future",
+                                                                                                                  "file_explorer_future",
+                                                                                                                  "printer_bridge_future",
+                                                                                                                  "approval_gated_execution_future",
+                                                                                                                  "receipt_backed_execution_future"
+                                                                                                              ],
+                                                                                             "adapter_url":  "http://127.0.0.1:7331",
+                                                                                             "owner":  "Leonard J Lee",
+                                                                                             "registered_at":  "2026-07-05T22:43:26.042587+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "windows-agent-lee-local-actuator-dry-run",
+                                                                                             "device_type":  "windows_local_actuator_dry_run_service",
+                                                                                             "platform":  "windows",
+                                                                                             "display_name":  "windows-agent-lee Local Actuator Dry-Run Service LINKED",
+                                                                                             "capabilities":  [
+                                                                                                                  "linked_to_device_operator",
+                                                                                                                  "dry_run_local_actuator_service",
+                                                                                                                  "route_link_verified",
+                                                                                                                  "health_status",
+                                                                                                                  "policy_view",
+                                                                                                                  "allowlist_view",
+                                                                                                                  "receipt_write",
+                                                                                                                  "open_app_dry_run",
+                                                                                                                  "open_url_dry_run",
+                                                                                                                  "browser_search_dry_run",
+                                                                                                                  "mouse_move_dry_run",
+                                                                                                                  "mouse_click_dry_run",
+                                                                                                                  "type_text_dry_run",
+                                                                                                                  "hotkey_dry_run",
+                                                                                                                  "screenshot_dry_run",
+                                                                                                                  "file_open_dry_run",
+                                                                                                                  "print_dry_run",
+                                                                                                                  "cast_dry_run",
+                                                                                                                  "shell_allowed_command_dry_run"
+                                                                                                              ],
+                                                                                             "adapter_url":  "http://127.0.0.1:7331",
+                                                                                             "owner":  "Leonard J Lee",
+                                                                                             "registered_at":  "2026-07-05T22:58:27.598101+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "windows-agent-lee-real-actuator-approval-gate",
+                                                                                             "device_type":  "windows_real_actuator_approval_gate",
+                                                                                             "platform":  "windows",
+                                                                                             "display_name":  "windows-agent-lee Real Actuator Approval Gate",
+                                                                                             "capabilities":  [
+                                                                                                                  "approval_gate",
+                                                                                                                  "approval_policy",
+                                                                                                                  "approval_ledger",
+                                                                                                                  "pending_approval_requests",
+                                                                                                                  "real_execution_block",
+                                                                                                                  "dry_run_still_active",
+                                                                                                                  "receipt_required",
+                                                                                                                  "owner_approval_required"
+                                                                                                              ],
+                                                                                             "adapter_url":  "",
+                                                                                             "owner":  "Leonard J Lee",
+                                                                                             "registered_at":  "2026-07-05T23:00:21.581444+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         },
+                                                                                         {
+                                                                                             "device_id":  "windows-agent-lee-real-actuator-alpha",
+                                                                                             "device_type":  "windows_real_actuator_alpha_locked",
+                                                                                             "platform":  "windows",
+                                                                                             "display_name":  "windows-agent-lee Real Actuator Alpha LOCKED",
+                                                                                             "capabilities":  [
+                                                                                                                  "real_actuator_alpha_locked",
+                                                                                                                  "approval_validation",
+                                                                                                                  "receipt_write",
+                                                                                                                  "blocked_without_approval",
+                                                                                                                  "open_app_alpha_locked",
+                                                                                                                  "open_url_alpha_locked",
+                                                                                                                  "mouse_click_blocked",
+                                                                                                                  "type_text_blocked",
+                                                                                                                  "shell_command_blocked"
+                                                                                                              ],
+                                                                                             "adapter_url":  "http://127.0.0.1:7332",
+                                                                                             "owner":  "Leonard J Lee",
+                                                                                             "registered_at":  "2026-07-05T23:07:53.650359+00:00",
+                                                                                             "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                                                                         }
+                                                                                     ],
+                                                                         "leonard-master-windows":  {
+                                                                                                        "device_id":  "leonard-master-windows",
+                                                                                                        "last_heartbeat":  "2026-07-05T22:33:58+0000",
+                                                                                                        "status":  "online",
+                                                                                                        "heartbeat_payload":  {
+                                                                                                                                  "source":  "patch_163_verification",
+                                                                                                                                  "os":  "windows",
+                                                                                                                                  "role":  "master_computer_child_actuator"
+                                                                                                                              }
+                                                                                                    },
+                                                                         "windows-agent-lee":  {
+                                                                                                   "device_id":  "windows-agent-lee",
+                                                                                                   "last_heartbeat":  "2026-07-05T22:38:23+0000",
+                                                                                                   "status":  "online",
+                                                                                                   "heartbeat_payload":  {
+                                                                                                                             "device_id":  "windows-agent-lee",
+                                                                                                                             "timestamp":  "2026-07-05T17:38:23",
+                                                                                                                             "source":  "script_164_windows_satellite_registration",
+                                                                                                                             "os":  "windows",
+                                                                                                                             "status":  "online_contract_registered",
+                                                                                                                             "physical_execution_enabled":  false,
+                                                                                                                             "health":  {
+                                                                                                                                            "powershell":  "5.1.26100.8655",
+                                                                                                                                            "computer_name":  "AGENT-LEE",
+                                                                                                                                            "user":  "Leona"
+                                                                                                                                        }
+                                                                                                                         }
+                                                                                               },
+                                                                         "windows-agent-lee-local-actuator-contract":  {
+                                                                                                                           "device_id":  "windows-agent-lee-local-actuator-contract",
+                                                                                                                           "last_heartbeat":  "2026-07-05T22:43:26+0000",
+                                                                                                                           "status":  "online",
+                                                                                                                           "heartbeat_payload":  {
+                                                                                                                                                     "device_id":  "windows-agent-lee-local-actuator-contract",
+                                                                                                                                                     "timestamp":  "2026-07-05T17:43:26",
+                                                                                                                                                     "source":  "script_166_windows_local_actuator_contract",
+                                                                                                                                                     "status":  "contract_created_service_not_started",
+                                                                                                                                                     "physical_execution_enabled":  false,
+                                                                                                                                                     "future_service_url":  "http://127.0.0.1:7331"
+                                                                                                                                                 }
+                                                                                                                       },
+                                                                         "windows-agent-lee-local-actuator-dry-run":  {
+                                                                                                                          "device_id":  "windows-agent-lee-local-actuator-dry-run",
+                                                                                                                          "last_heartbeat":  "2026-07-05T22:58:27+0000",
+                                                                                                                          "status":  "online",
+                                                                                                                          "heartbeat_payload":  {
+                                                                                                                                                    "device_id":  "windows-agent-lee-local-actuator-dry-run",
+                                                                                                                                                    "timestamp":  "2026-07-05T17:58:27",
+                                                                                                                                                    "source":  "script_168_device_operator_to_windows_dry_run_link",
+                                                                                                                                                    "status":  "linked_running_dry_run_only",
+                                                                                                                                                    "adapter_url":  "http://127.0.0.1:7331",
+                                                                                                                                                    "physical_execution_enabled":  false,
+                                                                                                                                                    "dry_run_only":  true,
+                                                                                                                                                    "link_contract_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\contracts\\device-operator-to-windows-dry-run-actuator-link.json",
+                                                                                                                                                    "adapter_map_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\windows-actuator-adapter-map.json",
+                                                                                                                                                    "execution_policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\policies\\windows-actuator-execution-policy-dry-run-only.json"
+                                                                                                                                                }
+                                                                                                                      },
+                                                                         "windows-agent-lee-real-actuator-approval-gate":  {
+                                                                                                                               "device_id":  "windows-agent-lee-real-actuator-approval-gate",
+                                                                                                                               "last_heartbeat":  "2026-07-05T23:00:21+0000",
+                                                                                                                               "status":  "online",
+                                                                                                                               "heartbeat_payload":  {
+                                                                                                                                                         "device_id":  "windows-agent-lee-real-actuator-approval-gate",
+                                                                                                                                                         "timestamp":  "2026-07-05T18:00:21",
+                                                                                                                                                         "source":  "script_169_real_windows_actuator_approval_gate",
+                                                                                                                                                         "status":  "approval_gate_created_real_execution_blocked",
+                                                                                                                                                         "physical_execution_enabled":  false,
+                                                                                                                                                         "dry_run_only":  true,
+                                                                                                                                                         "approval_policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\policy\\real-windows-actuator-approval-policy.json",
+                                                                                                                                                         "approval_gate_contract_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\contracts\\real-windows-actuator-approval-gate-contract.json",
+                                                                                                                                                         "approval_index_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approval-index.json",
+                                                                                                                                                         "real_execution_block_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\policies\\real-execution-blocked-until-approved.json"
+                                                                                                                                                     }
+                                                                                                                           },
+                                                                         "windows-agent-lee-real-actuator-alpha":  {
+                                                                                                                       "device_id":  "windows-agent-lee-real-actuator-alpha",
+                                                                                                                       "last_heartbeat":  "2026-07-05T23:56:17+0000",
+                                                                                                                       "status":  "online",
+                                                                                                                       "heartbeat_payload":  {
+                                                                                                                                                 "device_id":  "windows-agent-lee-real-actuator-alpha",
+                                                                                                                                                 "timestamp":  "2026-07-05T18:56:17",
+                                                                                                                                                 "source":  "script_183_lock_real_alpha_after_screen_status_proof",
+                                                                                                                                                 "status":  "approval_only_locked_after_screen_status_proof",
+                                                                                                                                                 "adapter_url":  "http://127.0.0.1:7332",
+                                                                                                                                                 "physical_execution_enabled":  false,
+                                                                                                                                                 "real_execution_enabled":  false,
+                                                                                                                                                 "read_only_status_enabled":  false,
+                                                                                                                                                 "approval_validation_available":  true,
+                                                                                                                                                 "all_physical_actions_blocked":  true,
+                                                                                                                                                 "preserved_milestone":  "182_read_only_screen_status_executed_once",
+                                                                                                                                                 "policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\policy\\real-alpha-approval-only-after-screen-status-policy.json",
+                                                                                                                                                 "manifest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\state\\real-alpha-approval-only-after-screen-status-manifest.json"
+                                                                                                                                             }
+                                                                                                                   },
+                                                                         "leeway-device-layer-dashboard-export":  {
+                                                                                                                      "device_id":  "leeway-device-layer-dashboard-export",
+                                                                                                                      "last_heartbeat":  "2026-07-06T00:03:13+0000",
+                                                                                                                      "status":  "online",
+                                                                                                                      "heartbeat_payload":  {
+                                                                                                                                                "device_id":  "leeway-device-layer-dashboard-export",
+                                                                                                                                                "timestamp":  "2026-07-05T19:03:13",
+                                                                                                                                                "source":  "script_186_register_dashboard_export_with_device_operator",
+                                                                                                                                                "status":  "dashboard_export_registered_locked_clean",
+                                                                                                                                                "artifact_id":  "device-layer-dashboard-export-20260705-190313",
+                                                                                                                                                "artifact_type":  "device_layer_dashboard_export",
+                                                                                                                                                "dashboard_verdict":  "",
+                                                                                                                                                "real_alpha_mode":  "APPROVAL_ONLY_LOCKED_AFTER_SCREEN_STATUS_PROOF",
+                                                                                                                                                "real_execution_enabled":  false,
+                                                                                                                                                "physical_execution_enabled":  false,
+                                                                                                                                                "read_only_status_enabled":  false,
+                                                                                                                                                "dashboard_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.json",
+                                                                                                                                                "dashboard_markdown":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.md",
+                                                                                                                                                "dashboard_html":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.html",
+                                                                                                                                                "registry_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\registry\\device-layer-dashboard-export-20260705-190313.registry.json",
+                                                                                                                                                "latest_registry_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\registry\\latest-dashboard-artifact.registry.json",
+                                                                                                                                                "note":  "Dashboard artifact registration only. No execution or runtime unlock."
+                                                                                                                                            }
+                                                                                                                  },
+                                                                         "leeway-control-plane-action-catalog":  {
+                                                                                                                     "device_id":  "leeway-control-plane-action-catalog",
+                                                                                                                     "last_heartbeat":  "2026-07-06T00:12:35+0000",
+                                                                                                                     "status":  "online",
+                                                                                                                     "heartbeat_payload":  {
+                                                                                                                                               "device_id":  "leeway-control-plane-action-catalog",
+                                                                                                                                               "timestamp":  "2026-07-05T19:12:35",
+                                                                                                                                               "source":  "script_188_build_control_plane_action_catalog_read_only",
+                                                                                                                                               "status":  "action_catalog_read_only_registered_locked_clean",
+                                                                                                                                               "artifact_type":  "control_plane_action_catalog_read_only",
+                                                                                                                                               "catalog_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                                                                                                                                               "catalog_markdown":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.md",
+                                                                                                                                               "total_actions":  13,
+                                                                                                                                               "proven_actions":  6,
+                                                                                                                                               "enabled_now":  0,
+                                                                                                                                               "real_execution_enabled":  false,
+                                                                                                                                               "physical_execution_enabled":  false,
+                                                                                                                                               "read_only_status_enabled":  false,
+                                                                                                                                               "all_lock_probes_executed_false":  true,
+                                                                                                                                               "note":  "Read-only catalog registration only. No execution or unlock."
+                                                                                                                                           }
+                                                                                                                 },
+                                                                         "agent-lee-control-plane-router":  {
+                                                                                                                "device_id":  "agent-lee-control-plane-router",
+                                                                                                                "last_heartbeat":  "2026-07-06T00:14:47+0000",
+                                                                                                                "status":  "online",
+                                                                                                                "heartbeat_payload":  {
+                                                                                                                                          "device_id":  "agent-lee-control-plane-router",
+                                                                                                                                          "timestamp":  "2026-07-05T19:14:47",
+                                                                                                                                          "source":  "script_189_build_agent_lee_control_plane_router_contract",
+                                                                                                                                          "status":  "router_contract_registered_locked_clean",
+                                                                                                                                          "artifact_type":  "agent_lee_control_plane_router_contract",
+                                                                                                                                          "router_contract_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.json",
+                                                                                                                                          "router_contract_markdown":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.md",
+                                                                                                                                          "action_catalog_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                                                                                                                                          "dashboard_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.json",
+                                                                                                                                          "real_execution_enabled":  false,
+                                                                                                                                          "physical_execution_enabled":  false,
+                                                                                                                                          "read_only_status_enabled":  false,
+                                                                                                                                          "direct_real_alpha_execution_allowed":  false,
+                                                                                                                                          "note":  "Router contract registration only. No execution or unlock."
+                                                                                                                                      }
+                                                                                                            },
+                                                                         "agent-lee-approval-request-factory":  {
+                                                                                                                    "device_id":  "agent-lee-approval-request-factory",
+                                                                                                                    "last_heartbeat":  "2026-07-06T00:17:10+0000",
+                                                                                                                    "status":  "online",
+                                                                                                                    "heartbeat_payload":  {
+                                                                                                                                              "device_id":  "agent-lee-approval-request-factory",
+                                                                                                                                              "timestamp":  "2026-07-05T19:17:10",
+                                                                                                                                              "source":  "script_190_build_approval_request_factory_contract",
+                                                                                                                                              "status":  "approval_request_factory_registered_locked_clean",
+                                                                                                                                              "artifact_type":  "approval_request_factory_contract",
+                                                                                                                                              "factory_contract_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\latest\\approval-request-factory-contract-latest.json",
+                                                                                                                                              "factory_contract_markdown":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\latest\\approval-request-factory-contract-latest.md",
+                                                                                                                                              "router_contract_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.json",
+                                                                                                                                              "action_catalog_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                                                                                                                                              "pending_approval_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\pending",
+                                                                                                                                              "templates_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates",
+                                                                                                                                              "real_execution_enabled":  false,
+                                                                                                                                              "physical_execution_enabled":  false,
+                                                                                                                                              "read_only_status_enabled":  false,
+                                                                                                                                              "approvals_granted":  0,
+                                                                                                                                              "actions_executed":  0,
+                                                                                                                                              "note":  "Approval factory contract registration only. Pending templates only. No approval or execution."
+                                                                                                                                          }
+                                                                                                                },
+                                                                         "agent-lee-pending-approval-dry-run-factory":  {
+                                                                                                                            "device_id":  "agent-lee-pending-approval-dry-run-factory",
+                                                                                                                            "last_heartbeat":  "2026-07-06T00:18:57+0000",
+                                                                                                                            "status":  "online",
+                                                                                                                            "heartbeat_payload":  {
+                                                                                                                                                      "device_id":  "agent-lee-pending-approval-dry-run-factory",
+                                                                                                                                                      "timestamp":  "2026-07-05T19:18:57",
+                                                                                                                                                      "source":  "script_191_build_pending_approval_request_dry_run_factory",
+                                                                                                                                                      "status":  "pending_approval_dry_run_factory_registered_locked_clean",
+                                                                                                                                                      "artifact_type":  "pending_approval_request_dry_run_previews",
+                                                                                                                                                      "latest_preview_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\dry-run-pending-previews\\latest\\pending-approval-dry-run-previews-latest.json",
+                                                                                                                                                      "history_preview_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\dry-run-pending-previews\\history\\pending-approval-dry-run-previews-20260705-191856.json",
+                                                                                                                                                      "preview_count":  4,
+                                                                                                                                                      "factory_contract_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\latest\\approval-request-factory-contract-latest.json",
+                                                                                                                                                      "router_contract_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.json",
+                                                                                                                                                      "action_catalog_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                                                                                                                                                      "real_pending_ledger_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\pending",
+                                                                                                                                                      "ledger_write_allowed":  false,
+                                                                                                                                                      "approvals_granted":  0,
+                                                                                                                                                      "actions_executed":  0,
+                                                                                                                                                      "real_execution_enabled":  false,
+                                                                                                                                                      "physical_execution_enabled":  false,
+                                                                                                                                                      "read_only_status_enabled":  false,
+                                                                                                                                                      "note":  "Dry-run approval previews only. No real pending approval was created."
+                                                                                                                                                  }
+                                                                                                                        },
+                                                                         "agent-lee-pending-approval-ledger-request":  {
+                                                                                                                           "device_id":  "agent-lee-pending-approval-ledger-request",
+                                                                                                                           "last_heartbeat":  "2026-07-06T00:21:02+0000",
+                                                                                                                           "status":  "online",
+                                                                                                                           "heartbeat_payload":  {
+                                                                                                                                                     "device_id":  "agent-lee-pending-approval-ledger-request",
+                                                                                                                                                     "timestamp":  "2026-07-05T19:21:02",
+                                                                                                                                                     "source":  "script_192_create_one_real_pending_approval_request_to_ledger",
+                                                                                                                                                     "status":  "one_pending_approval_request_created_locked_clean",
+                                                                                                                                                     "artifact_type":  "real_pending_approval_request",
+                                                                                                                                                     "pending_approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+                                                                                                                                                     "pending_approval_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\pending\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                                                                                                                                                     "action":  "real_open_app",
+                                                                                                                                                     "target_device_id":  "windows-agent-lee",
+                                                                                                                                                     "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                                                                                                                                                     "approval_state":  "PENDING",
+                                                                                                                                                     "approvals_granted":  0,
+                                                                                                                                                     "actions_executed":  0,
+                                                                                                                                                     "real_execution_enabled":  false,
+                                                                                                                                                     "physical_execution_enabled":  false,
+                                                                                                                                                     "read_only_status_enabled":  false,
+                                                                                                                                                     "note":  "Pending approval request only. No approval, execution, unlock, restart, or patch."
+                                                                                                                                                 }
+                                                                                                                       },
+                                                                         "agent-lee-approved-approval-ledger-request":  {
+                                                                                                                            "device_id":  "agent-lee-approved-approval-ledger-request",
+                                                                                                                            "last_heartbeat":  "2026-07-06T00:22:53+0000",
+                                                                                                                            "status":  "online",
+                                                                                                                            "heartbeat_payload":  {
+                                                                                                                                                      "device_id":  "agent-lee-approved-approval-ledger-request",
+                                                                                                                                                      "timestamp":  "2026-07-05T19:22:53",
+                                                                                                                                                      "source":  "script_193_promote_one_pending_approval_to_approved_no_execute",
+                                                                                                                                                      "status":  "one_approval_promoted_no_execute_locked_clean",
+                                                                                                                                                      "artifact_type":  "approved_approval_request_no_execute",
+                                                                                                                                                      "pending_approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+                                                                                                                                                      "pending_approval_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\pending\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                                                                                                                                                      "approved_approval_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                                                                                                                                                      "action":  "real_open_app",
+                                                                                                                                                      "target_device_id":  "windows-agent-lee",
+                                                                                                                                                      "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                                                                                                                                                      "approval_state":  "APPROVED",
+                                                                                                                                                      "execution_status":  "APPROVED_NOT_EXECUTED",
+                                                                                                                                                      "approvals_granted":  1,
+                                                                                                                                                      "actions_executed":  0,
+                                                                                                                                                      "real_execution_enabled":  false,
+                                                                                                                                                      "physical_execution_enabled":  false,
+                                                                                                                                                      "read_only_status_enabled":  false,
+                                                                                                                                                      "note":  "Approval promotion only. No execution, unlock, restart, or patch."
+                                                                                                                                                  }
+                                                                                                                        },
+                                                                         "agent-lee-approved-request-blocked-validator":  {
+                                                                                                                              "device_id":  "agent-lee-approved-request-blocked-validator",
+                                                                                                                              "last_heartbeat":  "2026-07-06T00:24:26+0000",
+                                                                                                                              "status":  "online",
+                                                                                                                              "heartbeat_payload":  {
+                                                                                                                                                        "device_id":  "agent-lee-approved-request-blocked-validator",
+                                                                                                                                                        "timestamp":  "2026-07-05T19:24:26",
+                                                                                                                                                        "source":  "script_194_validate_approved_request_blocked_until_execution_script",
+                                                                                                                                                        "status":  "approved_request_blocked_until_execution_script_confirmed",
+                                                                                                                                                        "artifact_type":  "approved_request_blocked_validation",
+                                                                                                                                                        "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+                                                                                                                                                        "approved_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                                                                                                                                                        "probe_executed":  false,
+                                                                                                                                                        "probe_allowed":  false,
+                                                                                                                                                        "probe_reason":  "physical_execution_locked_after_screen_status_proof",
+                                                                                                                                                        "ledger_mutation":  false,
+                                                                                                                                                        "real_execution_enabled":  false,
+                                                                                                                                                        "physical_execution_enabled":  false,
+                                                                                                                                                        "read_only_status_enabled":  false,
+                                                                                                                                                        "actions_executed":  0,
+                                                                                                                                                        "note":  "Validation only. Approved record alone must not execute while real-alpha is locked."
+                                                                                                                                                    }
+                                                                                                                          },
+                                                                         "agent-lee-approved-open-app-execution-195d":  {
+                                                                                                                            "device_id":  "agent-lee-approved-open-app-execution-195d",
+                                                                                                                            "last_heartbeat":  "2026-07-06T00:38:28+0000",
+                                                                                                                            "status":  "online",
+                                                                                                                            "heartbeat_payload":  {
+                                                                                                                                                      "device_id":  "agent-lee-approved-open-app-execution-195d",
+                                                                                                                                                      "timestamp":  "2026-07-05T19:38:28",
+                                                                                                                                                      "source":  "script_195d",
+                                                                                                                                                      "status":  "approved_open_app_executed_once_then_locked",
+                                                                                                                                                      "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+                                                                                                                                                      "action":  "real_open_app",
+                                                                                                                                                      "app_id":  "notepad",
+                                                                                                                                                      "process_pid":  "12692",
+                                                                                                                                                      "response_allowed":  true,
+                                                                                                                                                      "response_executed":  true,
+                                                                                                                                                      "executed_increased_one":  true,
+                                                                                                                                                      "still_locked":  true,
+                                                                                                                                                      "real_execution_after":  false,
+                                                                                                                                                      "physical_execution_after":  false,
+                                                                                                                                                      "read_only_after":  false
+                                                                                                                                                  }
+                                                                                                                        },
+                                                                         "agent-lee-final-control-plane-post-execution-audit":  {
+                                                                                                                                    "device_id":  "agent-lee-final-control-plane-post-execution-audit",
+                                                                                                                                    "last_heartbeat":  "2026-07-06T00:40:23+0000",
+                                                                                                                                    "status":  "online",
+                                                                                                                                    "heartbeat_payload":  {
+                                                                                                                                                              "device_id":  "agent-lee-final-control-plane-post-execution-audit",
+                                                                                                                                                              "timestamp":  "2026-07-05T19:40:23",
+                                                                                                                                                              "source":  "script_196_final_control_plane_post_execution_audit",
+                                                                                                                                                              "status":  "final_post_execution_audit_locked_clean",
+                                                                                                                                                              "artifact_type":  "post_execution_audit",
+                                                                                                                                                              "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+                                                                                                                                                              "approved_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                                                                                                                                                              "executed_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\executed\\pending-real_open_app-20260705-192102-246585f2bd4c.executed-real-open-app-195d.approval.json",
+                                                                                                                                                              "executed_pid":  "12692",
+                                                                                                                                                              "approved_record_used":  true,
+                                                                                                                                                              "executed_record_exists":  true,
+                                                                                                                                                              "real_execution_after":  false,
+                                                                                                                                                              "physical_execution_after":  false,
+                                                                                                                                                              "read_only_after":  false,
+                                                                                                                                                              "all_probes_blocked":  true,
+                                                                                                                                                              "ledger_counts":  {
+                                                                                                                                                                                    "pending":  4,
+                                                                                                                                                                                    "approved":  11,
+                                                                                                                                                                                    "executed":  11,
+                                                                                                                                                                                    "denied":  0,
+                                                                                                                                                                                    "expired":  0,
+                                                                                                                                                                                    "real_alpha_receipts":  128,
+                                                                                                                                                                                    "proof_receipts":  70
+                                                                                                                                                                                }
+                                                                                                                                                          }
+                                                                                                                                }
+                                                                     },
+                                                         "channels":  {
+                                                                          "channels":  [
+                                                                                           {
+                                                                                               "channel_type":  "phone",
+                                                                                               "channel_name":  "agent_lee_phone_number",
+                                                                                               "config":  {
+                                                                                                              "future_lane":  "leeway_phone_runtime",
+                                                                                                              "options":  [
+                                                                                                                              "sip_provider",
+                                                                                                                              "android_companion_runtime",
+                                                                                                                              "desktop_softphone_control"
+                                                                                                                          ],
+                                                                                                              "purpose":  "Dedicated phone identity for Agent Lee.",
+                                                                                                              "execution_policy":  "call_or_sms_only_after_approval"
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-04T01:41:24.165536+00:00"
+                                                                                           },
+                                                                                           {
+                                                                                               "channel_type":  "telegram",
+                                                                                               "channel_name":  "agent_lee_telegram",
+                                                                                               "config":  {
+                                                                                                              "routes_through":  "leeway_device_operator",
+                                                                                                              "device_layer_route":  "/shells/telegram/status",
+                                                                                                              "purpose":  "Primary mobile control surface for Agent Lee.",
+                                                                                                              "windows_satellite":  "windows-agent-lee",
+                                                                                                              "receive_policy":  "safe_to_receive_and_parse",
+                                                                                                              "shell_role":  "primary_remote_control_shell",
+                                                                                                              "runtime_container":  "agent-lee-telegram-shell",
+                                                                                                              "send_policy":  "approval_required_for_external_send"
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-05T22:40:56.612367+00:00"
+                                                                                           },
+                                                                                           {
+                                                                                               "channel_type":  "whatsapp",
+                                                                                               "channel_name":  "agent_lee_whatsapp",
+                                                                                               "config":  {
+                                                                                                              "shell_role":  "secondary_business_customer_shell",
+                                                                                                              "routes_through":  "leeway_device_operator",
+                                                                                                              "device_layer_route":  "/shells/whatsapp/status",
+                                                                                                              "purpose":  "Business messaging and customer follow-up shell.",
+                                                                                                              "windows_satellite":  "windows-agent-lee",
+                                                                                                              "receive_policy":  "future_safe_to_receive_and_parse",
+                                                                                                              "production_adapter":  "whatsapp_business_cloud_api_or_approved_local_bridge",
+                                                                                                              "send_policy":  "approval_required_for_external_send"
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-05T22:40:56.685295+00:00"
+                                                                                           },
+                                                                                           {
+                                                                                               "channel_type":  "email",
+                                                                                               "channel_name":  "agent_lee_email",
+                                                                                               "config":  {
+                                                                                                              "shell_role":  "proposal_and_customer_communication_shell",
+                                                                                                              "windows_satellite":  "windows-agent-lee",
+                                                                                                              "purpose":  "Email drafting, proposal delivery, and receipt delivery shell.",
+                                                                                                              "receive_policy":  "future_read_with_scope",
+                                                                                                              "send_policy":  "draft_or_approve_before_send",
+                                                                                                              "device_layer_route":  "/shells/email/send",
+                                                                                                              "routes_through":  "leeway_device_operator"
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-05T22:40:56.755515+00:00"
+                                                                                           },
+                                                                                           {
+                                                                                               "channel_type":  "sms",
+                                                                                               "channel_name":  "agent_lee_sms",
+                                                                                               "config":  {
+                                                                                                              "shell_role":  "phone_text_shell",
+                                                                                                              "adapter":  "android_companion_or_carrier_bridge_future",
+                                                                                                              "windows_satellite":  "windows-agent-lee",
+                                                                                                              "send_policy":  "approval_required",
+                                                                                                              "device_layer_route":  "/shells/sms/send",
+                                                                                                              "routes_through":  "leeway_device_operator",
+                                                                                                              "purpose":  "Approved text-message shell."
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-05T22:40:56.835744+00:00"
+                                                                                           },
+                                                                                           {
+                                                                                               "channel_type":  "phone",
+                                                                                               "channel_name":  "agent_lee_phone",
+                                                                                               "config":  {
+                                                                                                              "shell_role":  "voice_call_shell",
+                                                                                                              "dial_policy":  "approval_required",
+                                                                                                              "windows_satellite":  "windows-agent-lee",
+                                                                                                              "purpose":  "Approved outbound/inbound phone call shell.",
+                                                                                                              "routes_through":  "leeway_device_operator",
+                                                                                                              "adapter_options":  [
+                                                                                                                                      "sip_provider_future",
+                                                                                                                                      "android_companion_runtime_future",
+                                                                                                                                      "desktop_softphone_future"
+                                                                                                                                  ]
+                                                                                                          },
+                                                                                               "enabled":  true,
+                                                                                               "registered_at":  "2026-07-05T22:40:56.915127+00:00"
+                                                                                           }
+                                                                                       ]
+                                                                      },
+                                                         "license_profile":  {
+                                                                                 "licensed":  false
+                                                                             },
+                                                         "created_at":  "2026-07-06T00:44:13.355147+00:00"
+                                                     },
+                          "dryrun_health":  {
+                                                "ok":  true,
+                                                "app":  "leeway_windows_local_actuator_dry_run",
+                                                "version":  "LEEWAY_WINDOWS_LOCAL_ACTUATOR_DRY_RUN_SERVICE_2026-07-05",
+                                                "device_id":  "windows-agent-lee",
+                                                "actuator_device_id":  "windows-agent-lee-local-actuator-dry-run",
+                                                "dry_run_only":  true,
+                                                "physical_execution_enabled":  false,
+                                                "created_at":  "2026-07-06T00:44:13.381036+00:00"
+                                            },
+                          "real_alpha_health":  {
+                                                    "ok":  true,
+                                                    "version":  "LEEWAY_EXECUTE_APPROVED_OPEN_APP_BOM_SAFE_ISOLATED_MODULE_2026-07-05",
+                                                    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_195D",
+                                                    "real_execution_enabled":  false,
+                                                    "physical_execution_enabled":  false,
+                                                    "read_only_status_enabled":  false
+                                                },
+                          "real_alpha_policy":  {
+                                                    "ok":  true,
+                                                    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_195D",
+                                                    "all_real_actions_blocked":  true,
+                                                    "real_execution_enabled":  false,
+                                                    "physical_execution_enabled":  false,
+                                                    "read_only_status_enabled":  false
+                                                },
+                          "real_alpha_ledger":  {
+                                                    "ok":  true,
+                                                    "approved_count":  11,
+                                                    "executed_count":  11
+                                                }
+                      },
+    "actions":  [
+                    "PASS | GET Device Operator Health | http://127.0.0.1:5323/health",
+                    "PASS | GET Device Operator Status | http://127.0.0.1:5323/status",
+                    "PASS | GET Device Operator Routes | http://127.0.0.1:5323/routes",
+                    "PASS | GET Device Operator Admin Dashboard | http://127.0.0.1:5323/admin/device-layer/dashboard-data",
+                    "PASS | GET Dry-Run Actuator Health | http://127.0.0.1:7331/health",
+                    "PASS | GET Dry-Run Actuator Status | http://127.0.0.1:7331/status",
+                    "PASS | GET Dry-Run Actuator Capabilities | http://127.0.0.1:7331/capabilities",
+                    "PASS | GET Real Alpha Health | http://127.0.0.1:7332/health",
+                    "PASS | GET Real Alpha Status | http://127.0.0.1:7332/status",
+                    "PASS | GET Real Alpha Policy | http://127.0.0.1:7332/policy",
+                    "PASS | GET Real Alpha Approval Ledger | http://127.0.0.1:7332/approval-ledger",
+                    "PASS | GET Real Alpha Receipts | http://127.0.0.1:7332/receipts",
+                    "PASS | Find latest 196 audit state | C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-196-20260705-194023\\json\\final-control-plane-post-execution-audit-state.json",
+                    "PASS | Approved record confirms used/executed | E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\pending-real_open_app-20260705-192102-246585f2bd4c.approval.json",
+                    "PASS | Executed record confirms real_open_app notepad | E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\executed\\pending-real_open_app-20260705-192102-246585f2bd4c.executed-real-open-app-195d.approval.json",
+                    "PASS | POST Final dashboard probe open_app | http://127.0.0.1:7332/real/open-app",
+                    "PASS | POST Final dashboard probe open_url | http://127.0.0.1:7332/real/open-url",
+                    "PASS | POST Final dashboard probe browser_search | http://127.0.0.1:7332/real/browser-search",
+                    "PASS | POST Final dashboard probe type_text | http://127.0.0.1:7332/real/type-text",
+                    "PASS | POST Final dashboard probe hotkey | http://127.0.0.1:7332/real/hotkey",
+                    "PASS | POST Final dashboard probe screen_status | http://127.0.0.1:7332/real/screen-status",
+                    "PASS | POST Final dashboard probe mouse_click | http://127.0.0.1:7332/real/mouse-click",
+                    "PASS | POST Final dashboard probe shell_allowed_command | http://127.0.0.1:7332/real/shell-allowed-command",
+                    "PASS | Real-alpha locked after first real action | real=false physical=false read_only=false probes=false"
+                ],
+    "warnings":  [
+
+                 ]
+}

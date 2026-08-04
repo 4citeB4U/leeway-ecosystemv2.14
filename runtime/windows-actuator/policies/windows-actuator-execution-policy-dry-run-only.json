@@ -1,0 +1,32 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_OPERATOR_TO_WINDOWS_DRY_RUN_ACTUATOR_LINK_2026-07-05",
+    "created_at":  "2026-07-05T17:58:26",
+    "mode":  "DRY_RUN_ONLY",
+    "physical_execution_enabled":  false,
+    "default_execution_mode":  "dry_run",
+    "default_target":  "windows-agent-lee-local-actuator-dry-run",
+    "real_execution_blocked_until":  "explicit_owner_approved_future_script",
+    "blocked_real_actions":  [
+                                 "mouse_move",
+                                 "mouse_click",
+                                 "keyboard_type",
+                                 "hotkey",
+                                 "open_app",
+                                 "open_url",
+                                 "file_open",
+                                 "screenshot",
+                                 "print",
+                                 "cast",
+                                 "shell_allowed_command",
+                                 "send_message",
+                                 "send_email",
+                                 "send_sms",
+                                 "dial_phone"
+                             ],
+    "allowed_now":  [
+                        "safe_status_read",
+                        "dry_run_probe",
+                        "receipt_write",
+                        "route_link_verification"
+                    ]
+}

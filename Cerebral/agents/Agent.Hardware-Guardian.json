@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Hardware-Guardian",
+  "wave": 1,
+  "rank": "Sentry",
+  "primary_function": "Capture hardware and OS baseline",
+  "tool": "hardware_baseline",
+  "uniform": "Administrative"
+}

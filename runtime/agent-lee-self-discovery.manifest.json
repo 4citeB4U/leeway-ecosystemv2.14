@@ -1,0 +1,285 @@
+{
+  "doctrine": "Agent Lee must know the Leeway ecosystem he operates. Every lane, skill, approval rule, route, and proof must be discoverable, learnable, and usable by Agent Lee.",
+  "verdict": "AGENT_LEE_SELF_DISCOVERY_MANIFEST_CREATED",
+  "approval_policy": {
+    "safe_navigation": "allowed_when_non_destructive",
+    "current_execution_truth": "approval_queue_live_real_executors_planned",
+    "calendar_create": "approval_required",
+    "email_send": "approval_required",
+    "plan_research_memory": "allowed_without_execution_approval",
+    "phone_call": "approval_required",
+    "desktop_click_submit_pay_delete": "approval_required"
+  },
+  "planned_or_partial_lanes": {
+    "phone_runtime": {
+      "container": "leeway_phone_runtime",
+      "purpose": "Dedicated Agent Lee phone number, SIP, Android companion, SMS/call handling after approval.",
+      "status": "PLANNED"
+    },
+    "installer": {
+      "purpose": "Customer CD-style offline package, image import, runtime start, activation, Telegram pairing.",
+      "status": "PLANNED",
+      "name": "Leeway Appliance Installer"
+    },
+    "desktop_adapter": {
+      "container": "leeway_desktop_adapter",
+      "purpose": "Physical cursor, click, scroll, type, open apps, browser control after approval.",
+      "status": "PLANNED"
+    },
+    "calendar_runtime": {
+      "container": "leeway_calendar_runtime",
+      "purpose": "Real calendar event creation after approval.",
+      "status": "PLANNED"
+    },
+    "pwa_dashboard": {
+      "container": "leeway_pwa_dashboard",
+      "purpose": "Customer-facing dashboard, tap-to-talk cursor, approvals, CRM, status.",
+      "status": "PLANNED"
+    },
+    "license_runtime": {
+      "container": "leeway_license_runtime",
+      "purpose": "Owner authorization, trial/permanent unlock, customer license gate.",
+      "status": "PLANNED_NEXT",
+      "port": 5322
+    },
+    "email_runtime": {
+      "container": "leeway_email_runtime",
+      "purpose": "Draft/send email after approval.",
+      "status": "PLANNED"
+    }
+  },
+  "self_training_rules": {
+    "no_fake_pass": true,
+    "every_success_must_have_receipt": true,
+    "no_bridge_sprawl": true,
+    "every_new_capability_must_register_in_capability_index": true,
+    "every_new_skill_must_register_in_skill_map": true,
+    "every_new_lane_must_register_in_discovery": true,
+    "every_failed_or_partial_pass_must_be_marked_truthfully": true,
+    "every_major_change_must_append_learning_event": true,
+    "prefer_existing_runtime_lanes": true
+  },
+  "authority": {
+    "standards": "Leeway Standards remain the highest authority. No lane, skill, model, worker, prompt, or external tool may supersede Leeway governance.",
+    "owner": "Leonard J Lee",
+    "runtime_identity": "Agent Lee as the customer-facing operator of a local Leeway Sovereign Appliance.",
+    "operating_model": "Fully agentic operating system with Dockerized lanes, receipts, approvals, CRM memory, Discovery, and skills."
+  },
+  "proof_paths": {
+    "learning_ledger": "Archive\\agent-lee-learning\\agent-lee-learning-ledger.jsonl",
+    "telegram_shell": "Archive\\proofs\\telegram-shell",
+    "device_operator": "Archive\\proofs\\device-operator",
+    "sovereign_runtime": "Archive\\proofs\\sovereign-runtime",
+    "enterprise_readiness": "Archive\\proofs\\enterprise-readiness",
+    "research": "Archive\\proofs\\leeway-research-lane",
+    "seafile": "Archive\\proofs\\seafile"
+  },
+  "docker_state_snapshot": "NAMES                                                        IMAGE                                                  STATUS                     PORTS\r\nleeway_device_operator                                       leeway_device_operator:local                           Up About an hour           0.0.0.0:5323->5323/tcp, [::]:5323->5323/tcp\r\nleeway_context_gateway                                       leeway_context_gateway:local                           Up 2 hours                 0.0.0.0:5321->5321/tcp, [::]:5321->5321/tcp\r\nleeway_api_gateway                                           leeway_api_gateway:local                               Up 2 hours                 0.0.0.0:5320->5320/tcp, [::]:5320->5320/tcp\r\nleeway_research_lane                                         leeway_research_lane:local                             Up 2 hours                 0.0.0.0:5310->5310/tcp, [::]:5310->5310/tcp\r\nleeway_seafile_storage_gateway                               leeway_seafile_storage_gateway:local                   Up 2 hours                 0.0.0.0:5314->5314/tcp, [::]:5314->5314/tcp\r\nagent-lee-telegram-shell                                     agent-lee-telegram-shell:latest                        Up 2 hours                 \r\nagent-lee-telegram-shell-backup-fullroutes-20260703-150635   agent-lee-telegram-shell:latest                        Exited (137) 7 hours ago   \r\nagent-lee-sdxl-lightning-image-lane                          agent-lee-sdxl-lightning-image-lane:local              Up 4 hours                 0.0.0.0:8099->8095/tcp, [::]:8099->8095/tcp\r\nagent-lee-true-character-mesh-lane                           agent-lee-true-character-mesh-lane:local               Exited (255) 9 hours ago   0.0.0.0:8103->8103/tcp\r\nagent-lee-telegram-vision-lane                               agent-lee-telegram-vision-lane:local                   Exited (255) 9 hours ago   0.0.0.0:8104->8104/tcp\r\nagent-lee-character-cutout-lane                              agent-lee-character-cutout-lane:local                  Exited (255) 9 hours ago   0.0.0.0:8102->8102/tcp\r\nagent-lee-image-to-3d-pattern-lane                           agent-lee-image-to-3d-pattern-lane:local               Up 6 hours                 0.0.0.0:8101->8101/tcp, [::]:8101->8101/tcp\r\nagent-lee-telegram-shell-backup-20260703-144921              agent-lee-telegram-shell:latest                        Exited (137) 7 hours ago   \r\nagent-lee-qwen-voice                                         agent-lee-qwen-voice:cuda                              Up 7 hours                 0.0.0.0:8097->8097/tcp, [::]:8097->8097/tcp\r\nagent_lee_code_mode                                          leeway-ecosystemv214-agent-lee                         Up 9 hours                 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp\r\nleeway_runtime_fabric                                        leeway-ecosystemv214-runtime-fabric                    Up 9 hours                 0.0.0.0:4001->4001/tcp, [::]:4001->4001/tcp, 0.0.0.0:8111->8111/tcp, [::]:8111->8111/tcp\r\nleeway-jitsi-meet-web-1                                      ghcr.io/jitsi/web:unstable                             Up 9 hours                 0.0.0.0:8443->8443/tcp, [::]:8443->8443/tcp, 0.0.0.0:8008->8000/tcp, [::]:8008->8000/tcp\r\nleeway-jitsi-meet-jicofo-1                                   ghcr.io/jitsi/jicofo:unstable                          Up 9 hours                 127.0.0.1:8888->8888/tcp\r\nleeway-jitsi-meet-jvb-1                                      ghcr.io/jitsi/jvb:unstable                             Up 9 hours                 0.0.0.0:10000->10000/udp, [::]:10000->10000/udp, 127.0.0.1:8081->8080/tcp\r\nleeway-jitsi-meet-prosody-1                                  ghcr.io/jitsi/prosody:unstable                         Up 9 hours                 5222/tcp, 5269/tcp, 5280/tcp, 5347/tcp\r\nleeway-local-assistant-bridge                                local-assistant-bridge-leeway-local-assistant-bridge   Up 9 hours                 0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp\r\nagent-lee-ears-kernel                                        agent-lee-ears-kernel-agent-lee-ears-kernel            Up 7 hours                 0.0.0.0:8094->8094/tcp, [::]:8094->8094/tcp\r\nleeway_ollama                                                ollama/ollama:latest                                   Up 9 hours (healthy)       0.0.0.0:11434->11434/tcp, [::]:11434->11434/tcp\r\nleeway_media_router                                          leeway-ecosystemv214-leeway-media-router               Up 9 hours                 0.0.0.0:5301->5301/tcp, [::]:5301->5301/tcp\r\nleeway_media_ingestion_layer                                 leeway-ecosystemv214-leeway-media-ingestion-layer      Up 9 hours                 0.0.0.0:5300->5300/tcp, [::]:5300->5300/tcp\r\nleeway_worker_center                                         leeway-ecosystemv214-leeway-worker-center              Up 9 hours                 0.0.0.0:8862->8862/tcp, [::]:8862->8862/tcp\r\nleeway_mcp_center                                            leeway-ecosystemv214-leeway-mcp-center                 Up 9 hours                 0.0.0.0:8863->8863/tcp, [::]:8863->8863/tcp\r\nleeway_mcp_agent_center                                      leeway-ecosystemv214-leeway-mcp-agent-center           Up 9 hours                 0.0.0.0:8861->8861/tcp, [::]:8861->8861/tcp\r\nleeway_agent_center                                          leeway-ecosystemv214-leeway-agent-center               Up 9 hours                 0.0.0.0:8860->8860/tcp, [::]:8860->8860/tcp\r\nleeway_hybrid_fabric                                         leeway-ecosystemv214-hybrid-fabric                     Up 9 hours                 0.0.0.0:8777->8777/tcp, [::]:8777->8777/tcp\r\nagent-lee-vision-kernel                                      agent-lee-vision-kernel-agent-lee-vision-kernel        Up 9 hours                 0.0.0.0:8093->8093/tcp, [::]:8093->8093/tcp\r\nagent-lee-voice-kernel                                       agent-lee-voice-kernel-voice-kernel                    Up 7 hours (healthy)       0.0.0.0:8092->8092/tcp, [::]:8092->8092/tcp\r\nleeway-seafile                                               seafileltd/seafile-mc:latest                           Up 9 hours                 0.0.0.0:8082->80/tcp, [::]:8082->80/tcp\r\nleeway-seafile-cache                                         memcached:1.6                                          Up 9 hours                 11211/tcp\r\nleeway-seafile-db                                            mariadb:10.11                                          Up 9 hours (healthy)       3306/tcp\r\n",
+  "control_surfaces": {
+    "phone_number": {
+      "status": "REGISTERED_CONTROL_SURFACE_NOT_EXECUTOR",
+      "purpose": "Dedicated Agent Lee phone identity."
+    },
+    "email_identity": {
+      "status": "REGISTERED_CONTROL_SURFACE_NOT_EXECUTOR",
+      "purpose": "Dedicated Agent Lee email identity."
+    },
+    "pwa": {
+      "status": "PLANNED",
+      "purpose": "Local dashboard and customer operator UI."
+    },
+    "cursor": {
+      "modes": {
+        "blue": "listening_thinking_safe_navigation",
+        "red": "blocked_needs_approval_risky_action",
+        "gold": "owner_admin_mode",
+        "green": "approved_action_active_execution",
+        "purple": "agent_creation_mode"
+      },
+      "purpose": "Agent Lee visible embodiment. Tap-to-talk and action-state identity.",
+      "status": "CONTROL_PLANE_LIVE"
+    },
+    "telegram": {
+      "status": "LIVE",
+      "purpose": "Remote phone-based control surface for Agent Lee."
+    }
+  },
+  "live_lanes": {
+    "image_lane": {
+      "url": "http://localhost:8099",
+      "capabilities": [
+        "sdxl_lightning",
+        "image_generate",
+        "latest_image"
+      ],
+      "role": "image generation lane",
+      "docker_url": "http://agent-lee-sdxl-lightning-image-lane:8095",
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "status": "LIVE"
+    },
+    "telegram_shell": {
+      "container": "agent-lee-telegram-shell",
+      "capabilities": [
+        "text",
+        "voice_reply",
+        "image_generation_route",
+        "research_route",
+        "planner_route"
+      ],
+      "role": "mobile remote control surface",
+      "status": "LIVE"
+    },
+    "runtime_fabric": {
+      "container": "leeway_runtime_fabric",
+      "capabilities": [
+        "health",
+        "canonical_identity",
+        "capability_registry",
+        "runtime_adapter"
+      ],
+      "role": "canonical Runtime Fabric",
+      "status": "LIVE",
+      "url": "http://localhost:4001"
+    },
+    "code_mode": {
+      "container": "agent_lee_code_mode",
+      "capabilities": [
+        "code_mode",
+        "qwen3_router",
+        "runtime_receipts"
+      ],
+      "role": "Agent Lee coding/runtime brain lane",
+      "status": "LIVE",
+      "url": "http://localhost:8080"
+    },
+    "ears": {
+      "container": "agent-lee-ears-kernel",
+      "capabilities": [
+        "stt",
+        "audio_ingestion"
+      ],
+      "role": "speech/listening lane",
+      "status": "LIVE",
+      "url": "http://localhost:8094"
+    },
+    "context_gateway": {
+      "url": "http://localhost:5321",
+      "capabilities": [
+        "compress",
+        "retrieve",
+        "stats",
+        "learn_failure",
+        "token_savings_estimate"
+      ],
+      "role": "performance and context compression layer",
+      "docker_url": "http://leeway_context_gateway:5321",
+      "container": "leeway_context_gateway",
+      "status": "LIVE"
+    },
+    "research_lane": {
+      "url": "http://localhost:5310",
+      "capabilities": [
+        "search_quick",
+        "search_deep",
+        "brief_html",
+        "weather_keyless"
+      ],
+      "role": "research, web search, weather, deep current research",
+      "docker_url": "http://leeway_research_lane:5310",
+      "container": "leeway_research_lane",
+      "status": "LIVE"
+    },
+    "device_operator": {
+      "limitation": "Physical UI execution requires approved device adapters.",
+      "url": "http://localhost:5323",
+      "capabilities": [
+        "cursor_profile",
+        "channel_registry",
+        "device_registry",
+        "voice_session_request",
+        "device_action_request"
+      ],
+      "role": "cursor, channel, device, and appliance control plane",
+      "docker_url": "http://leeway_device_operator:5323",
+      "container": "leeway_device_operator",
+      "status": "LIVE_CONTROL_PLANE"
+    },
+    "api_gateway": {
+      "url": "http://localhost:5320",
+      "capabilities": [
+        "routing",
+        "research_proxy",
+        "planner",
+        "crm",
+        "approval_queue",
+        "storage_proxy"
+      ],
+      "role": "single sovereign internal API source",
+      "docker_url": "http://leeway_api_gateway:5320",
+      "container": "leeway_api_gateway",
+      "status": "LIVE"
+    },
+    "three_d_lane": {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "capabilities": [
+        "convert_latest_sdxl",
+        "obj_package",
+        "viewer_html",
+        "3d_zip"
+      ],
+      "role": "image-to-3D pattern lane",
+      "status": "LIVE",
+      "url": "http://localhost:8101"
+    },
+    "seafile": {
+      "container": "leeway-seafile",
+      "capabilities": [
+        "storage",
+        "notebook_exports",
+        "receipts",
+        "proof_packets",
+        "research_files"
+      ],
+      "role": "durable customer storage/database file lane",
+      "status": "LIVE",
+      "url": "http://localhost:8082"
+    },
+    "vision": {
+      "container": "agent-lee-vision-kernel",
+      "capabilities": [
+        "qwen2.5vl",
+        "image_understanding"
+      ],
+      "role": "vision lane",
+      "status": "LIVE",
+      "url": "http://localhost:8093"
+    },
+    "storage_gateway": {
+      "url": "http://localhost:5314",
+      "capabilities": [
+        "store_receipt",
+        "store_research_brief",
+        "store_notebook_export",
+        "store_generated_image",
+        "store_3d_package",
+        "backup_run"
+      ],
+      "role": "governed artifact storage and backup gateway",
+      "docker_url": "http://leeway_seafile_storage_gateway:5314",
+      "container": "leeway_seafile_storage_gateway",
+      "status": "LIVE"
+    },
+    "voice_qwen": {
+      "container": "agent-lee-qwen-voice",
+      "capabilities": [
+        "voice_clone",
+        "qwen3_tts",
+        "cuda"
+      ],
+      "role": "primary Qwen TTS voice lane",
+      "status": "LIVE",
+      "url": "http://localhost:8097"
+    }
+  },
+  "created_at": "2026-07-03T21:49:04.5164860-05:00"
+}

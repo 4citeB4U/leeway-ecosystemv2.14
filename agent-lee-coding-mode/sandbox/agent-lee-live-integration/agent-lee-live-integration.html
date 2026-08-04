@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agent Lee Live Integration Test</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Segoe UI, Arial, sans-serif;
+      background: radial-gradient(circle at top, #20283a, #090b10);
+      color: white;
+      overflow: hidden;
+    }
+    .wrap {
+      padding: 48px;
+    }
+    h1 {
+      font-size: 48px;
+      margin: 0 0 12px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 1.45;
+      max-width: 900px;
+      color: #d7e2ff;
+    }
+    .stage {
+      position: relative;
+      height: 520px;
+      margin-top: 36px;
+      border: 2px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.06);
+    }
+    .target {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 20px;
+      background: rgba(255,255,255,0.18);
+      border: 3px solid rgba(255,255,255,0.6);
+      box-shadow: 0 0 32px rgba(255,255,255,0.18);
+    }
+    #a { left: 80px; top: 80px; }
+    #b { left: 420px; top: 250px; }
+    #c { left: 760px; top: 90px; }
+    .status {
+      position: absolute;
+      bottom: 32px;
+      left: 48px;
+      right: 48px;
+      font-size: 26px;
+      padding: 18px 24px;
+      border-radius: 16px;
+      background: rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Agent Lee Live Desktop Test</h1>
+    <p>Browser open, natural voice online, mouse movement visible, screenshot capture ready.</p>
+    <div class="stage">
+      <div class="target" id="a">Move 1</div>
+      <div class="target" id="b">Move 2</div>
+      <div class="target" id="c">Move 3</div>
+    </div>
+    <div class="status">Agent Lee is controlling the desktop bridge.</div>
+  </div>
+</body>
+</html>

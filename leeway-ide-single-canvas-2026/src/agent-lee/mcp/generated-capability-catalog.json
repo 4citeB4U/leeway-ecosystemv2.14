@@ -1,0 +1,399 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🟣 MCP",
+    "TAG": "MCP.CATALOG.CAPABILITY.GENERATED",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "generatedAt": "2026-05-18T02:59:00.947Z",
+  "sources": [
+    "D:\\MCP-VS-code-Antigavity",
+    "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\agents",
+    "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp",
+    "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents"
+  ],
+  "entries": [
+    {
+      "id": "registry:agent-registry.json",
+      "kind": "agent",
+      "label": "agent-registry.json",
+      "source": "Agent Lee Internal",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\agents\\registry\\agent-registry.json",
+      "category": "agents"
+    },
+    {
+      "id": "backend-mcp",
+      "kind": "mcp",
+      "label": "Backend Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\backend-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "backend-mcp",
+      "kind": "mcp",
+      "label": "backend-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\backend-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "canvas-mcp",
+      "kind": "mcp",
+      "label": "canvas-mcp",
+      "source": "Antigravity",
+      "description": "UI Agent Canvas Manager",
+      "location": "D:\\MCP-VS-code-Antigavity\\canvas-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "creative-mcp",
+      "kind": "mcp",
+      "label": "Creative Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\creative-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "creative-mcp",
+      "kind": "mcp",
+      "label": "creative-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\creative-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "design-system-mcp",
+      "kind": "mcp",
+      "label": "Design System Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\design-system-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "design-system-mcp",
+      "kind": "mcp",
+      "label": "design-system-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Design System & Tailwind Linter",
+      "location": "D:\\MCP-VS-code-Antigavity\\design-system-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "frontend-mcp",
+      "kind": "mcp",
+      "label": "Frontend Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\frontend-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "frontend-debugger",
+      "kind": "mcp",
+      "label": "frontend-debugger-mcp",
+      "source": "Antigravity",
+      "description": "Verification & Validation Engine for LeeWay Frontend",
+      "location": "D:\\MCP-VS-code-Antigavity\\frontend-debugger",
+      "category": "External MCP"
+    },
+    {
+      "id": "frontend-mcp",
+      "kind": "mcp",
+      "label": "frontend-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\frontend-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "fs-nav-agent",
+      "kind": "agent",
+      "label": "Fs Nav Agent",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\fs-nav-agent",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "host-exec-agent",
+      "kind": "agent",
+      "label": "Host Exec Agent",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\host-exec-agent",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "InsForge",
+      "kind": "server",
+      "label": "InsForge",
+      "source": "Agent Lee Internal",
+      "description": "-NoProfile -ExecutionPolicy Bypass -Command node C:\\\\Tools\\\\vscode-mcp-tooling\\\\src\\\\tool.js insforge",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\adapters\\vscode-mcp-settings-snippet.json",
+      "category": "VS Code MCP Server"
+    },
+    {
+      "id": "insforge-frontend-mcp",
+      "kind": "mcp",
+      "label": "insforge-frontend-mcp",
+      "source": "Antigravity",
+      "description": "InsForge Frontend Component Generator",
+      "location": "D:\\MCP-VS-code-Antigavity\\insforge-frontend-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-build-auditor-mcp",
+      "kind": "mcp",
+      "label": "Leeway Build Auditor Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\leeway-build-auditor-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "leeway-ci-blueprint-mcp",
+      "kind": "mcp",
+      "label": "Leeway Ci Blueprint Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\leeway-ci-blueprint-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "leeway-edge-optimizer-mcp",
+      "kind": "mcp",
+      "label": "Leeway Edge Optimizer Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\leeway-edge-optimizer-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "leeway-full-repo-checker-mcp",
+      "kind": "mcp",
+      "label": "Leeway Full Repo Checker Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\leeway-full-repo-checker-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "leeway-responsive-ui-mcp",
+      "kind": "mcp",
+      "label": "Leeway Responsive Ui Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\leeway-responsive-ui-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "leeway-build-auditor-mcp",
+      "kind": "mcp",
+      "label": "leeway-build-auditor-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Build Size Auditor",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-build-auditor-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-ci-blueprint-mcp",
+      "kind": "mcp",
+      "label": "leeway-ci-blueprint-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay CI/CD Blueprint Generator",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-ci-blueprint-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-deployment-target-mcp",
+      "kind": "mcp",
+      "label": "leeway-deployment-target-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Deployment Target Configurator",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-deployment-target-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-edge-optimizer-mcp",
+      "kind": "mcp",
+      "label": "leeway-edge-optimizer-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Edge Optimization Engine",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-edge-optimizer-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-full-repo-checker-mcp",
+      "kind": "mcp",
+      "label": "leeway-full-repo-checker-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Full Repository Quality Checker",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-full-repo-checker-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "leeway-responsive-ui-mcp",
+      "kind": "mcp",
+      "label": "leeway-responsive-ui-mcp",
+      "source": "Antigravity",
+      "description": "LeeWay Responsive UI Enforcer",
+      "location": "D:\\MCP-VS-code-Antigavity\\leeway-responsive-ui-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "LeewayleewayStitch",
+      "kind": "server",
+      "label": "LeewayleewayStitch",
+      "source": "Agent Lee Internal",
+      "description": "-NoProfile -ExecutionPolicy Bypass -Command node C:\\\\Tools\\\\vscode-mcp-tooling\\\\src\\\\tool.js stitch",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\adapters\\vscode-mcp-settings-snippet.json",
+      "category": "VS Code MCP Server"
+    },
+    {
+      "id": "media-forge-agent",
+      "kind": "agent",
+      "label": "Media Forge Agent",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\media-forge-agent",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "memory-mcp",
+      "kind": "mcp",
+      "label": "Memory Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\memory-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "memory-mcp",
+      "kind": "mcp",
+      "label": "memory-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\memory-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "mutation-agent",
+      "kind": "agent",
+      "label": "Mutation Agent",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\mutation-agent",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "nano-banana",
+      "kind": "mcp",
+      "label": "nano-banana-mcp",
+      "source": "Antigravity",
+      "description": "Visual Polish & High-Fidelity Animation Engine for LeeWay",
+      "location": "D:\\MCP-VS-code-Antigavity\\nano-banana",
+      "category": "External MCP"
+    },
+    {
+      "id": "perception-agent",
+      "kind": "agent",
+      "label": "Perception Agent",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\perception-agent",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "Playwright",
+      "kind": "server",
+      "label": "Playwright",
+      "source": "Agent Lee Internal",
+      "description": "-NoProfile -ExecutionPolicy Bypass -Command node C:\\\\Tools\\\\vscode-mcp-tooling\\\\src\\\\tool.js playwright",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\adapters\\vscode-mcp-settings-snippet.json",
+      "category": "VS Code MCP Server"
+    },
+    {
+      "id": "qa-mcp",
+      "kind": "mcp",
+      "label": "Qa Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\qa-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "qa-mcp",
+      "kind": "mcp",
+      "label": "qa-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\qa-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "react-native-mcp",
+      "kind": "mcp",
+      "label": "React Native Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\react-native-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "react-native-mcp",
+      "kind": "mcp",
+      "label": "react-native-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\react-native-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "scheduler-mcp",
+      "kind": "mcp",
+      "label": "Scheduler Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\scheduler-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "scheduler-mcp",
+      "kind": "mcp",
+      "label": "scheduler-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\scheduler-mcp",
+      "category": "External MCP"
+    },
+    {
+      "id": "stitch",
+      "kind": "mcp",
+      "label": "stitch-mcp",
+      "source": "Antigravity",
+      "description": "HTML/CSS to React Synthesis Engine for LeeWay",
+      "location": "D:\\MCP-VS-code-Antigavity\\stitch",
+      "category": "External MCP"
+    },
+    {
+      "id": "TestSprite",
+      "kind": "server",
+      "label": "TestSprite",
+      "source": "Agent Lee Internal",
+      "description": "-NoProfile -ExecutionPolicy Bypass -Command node C:\\\\Tools\\\\vscode-mcp-tooling\\\\src\\\\tool.js testsprite",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\adapters\\vscode-mcp-settings-snippet.json",
+      "category": "VS Code MCP Server"
+    },
+    {
+      "id": "ui-builder-mcp",
+      "kind": "mcp",
+      "label": "Ui Builder Mcp",
+      "source": "Workspace",
+      "location": "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\ui-builder-mcp",
+      "category": "Local Workspace"
+    },
+    {
+      "id": "ui-builder-mcp",
+      "kind": "mcp",
+      "label": "ui-builder-mcp",
+      "source": "Antigravity",
+      "description": "",
+      "location": "D:\\MCP-VS-code-Antigavity\\ui-builder-mcp",
+      "category": "External MCP"
+    }
+  ],
+  "counts": {
+    "total": 44,
+    "mcps": 34,
+    "agents": 6,
+    "servers": 4
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "leeway.qwen3.prompt-profiles.v1",
+  "profiles": {
+    "LEEWAY_CLEAN_READ": {
+      "prefix": "Read the relevant LeeWay Standards first. Answer directly. No fake pass. List blockers honestly.",
+      "rules": ["standards first", "direct answer", "truth over tone", "receipts when governed"]
+    },
+    "LEEWAY_TECHNICAL_PLAN": {
+      "prefix": "Plan the smallest coherent change. Preserve existing runtime paths. State risks and validation.",
+      "rules": ["small patch", "risk notes", "validation required", "no model replacement"]
+    },
+    "LEEWAY_CODEX_EXECUTION_PROMPT": {
+      "prefix": "Follow READ LAW -> INSPECT -> PROPOSE -> BACKUP -> EDIT -> VALIDATE -> REPORT -> RECEIPT.",
+      "rules": ["governed change order", "backups before risky edits", "receipt-backed"]
+    },
+    "LEEWAY_RUNTIME_DIAGNOSTIC": {
+      "prefix": "Diagnose the live runtime. Report actual endpoint state and failures without hiding them.",
+      "rules": ["live probe", "actual state", "no invented availability"]
+    },
+    "LEEWAY_STANDARDS_GOVERNED_REPORT": {
+      "prefix": "Use governed object IDs. Cite standards sources. Include blockers and approval requirements.",
+      "rules": ["object IDs", "approval requirements", "truth labels", "receipts"]
+    },
+    "LEEWAY_RECEIPT_WRITER": {
+      "prefix": "Write a concise receipt with schema, status, timestamps, path, and proven/unproven fields.",
+      "rules": ["receipt path", "proven/unproven", "honest status"]
+    },
+    "LEEWAY_TOOL_ORCHESTRATION_PLAN": {
+      "prefix": "Separate plan from execution. Identify approvals required before any state change.",
+      "rules": ["plan first", "approval gating", "tool route clarity"]
+    },
+    "LEEWAY_VOICE_KERNEL_PLAN": {
+      "prefix": "Keep voice ownership in the Voice Kernel. Desktop runtime is playback-only.",
+      "rules": ["voice kernel ownership", "playback-only desktop", "no fake voice pass"]
+    },
+    "LEEWAY_VISION_ENGINE_PLAN": {
+      "prefix": "Use the governed Vision Enhancement Engine. Do not fake screen or camera readiness.",
+      "rules": ["screen/camera honesty", "route checks", "receipts"]
+    },
+    "LEEWAY_MEMORY_RETRIEVAL_SUMMARY": {
+      "prefix": "Summarize relevant receipts, standards, blockers, and the recommended Qwen profile.",
+      "rules": ["recent evidence", "blockers", "profile selection"]
+    },
+    "LEEWAY_RESPONSE_VALIDATION": {
+      "prefix": "Validate for unsupported claims, model drift, missing receipts, and authority confusion.",
+      "rules": ["claim validation", "no fallback drift", "no fake pass"]
+    }
+  }
+}

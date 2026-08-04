@@ -1,0 +1,87 @@
+﻿{
+    "version":  "LEEWAY_NEXT_APPROVED_ACTION_TEMPLATE_BROWSER_SEARCH_OR_TYPE_TEXT_2026-07-05",
+    "timestamp":  "2026-07-05T19:45:47",
+    "verdict":  "LEEWAY_NEXT_APPROVED_ACTION_TEMPLATES_CREATED",
+    "note":  "Templates only. No approval created, no approval promoted, no action executed.",
+    "preferred_next_action":  "real_browser_search",
+    "alternate_next_action":  "real_type_text",
+    "real_alpha_locked_before_template":  true,
+    "browser_search_template":  {
+                                    "template_id":  "template-real_browser_search-20260705-194547",
+                                    "action":  "real_browser_search",
+                                    "label":  "Approved Browser Search",
+                                    "risk_level":  "controlled_physical_browser",
+                                    "approval_required":  true,
+                                    "execution_allowed_now":  false,
+                                    "creates_pending_approval":  false,
+                                    "promotes_approval":  false,
+                                    "executes_action":  false,
+                                    "recommended_next_script":  "199-create-pending-approval-for-real-browser-search-no-execute.ps1",
+                                    "target_device_id":  "windows-agent-lee",
+                                    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                                    "payload_template":  {
+                                                             "query":  "Leeway Agent Lee post-execution proof",
+                                                             "engine":  "bing",
+                                                             "expected_effect":  "open_browser_search_results"
+                                                         },
+                                    "safety":  {
+                                                   "one_action_only":  true,
+                                                   "approval_required":  true,
+                                                   "lockback_required":  true,
+                                                   "no_mouse_click":  true,
+                                                   "no_keyboard_type":  true,
+                                                   "no_shell":  true,
+                                                   "no_message_send":  true,
+                                                   "no_docker_prune":  true,
+                                                   "no_destructive_cleanup":  true
+                                               }
+                                },
+    "type_text_template":  {
+                               "template_id":  "template-real_type_text-20260705-194547",
+                               "action":  "real_type_text",
+                               "label":  "Approved Type Text Into Controlled Notepad",
+                               "risk_level":  "controlled_physical_keyboard",
+                               "approval_required":  true,
+                               "execution_allowed_now":  false,
+                               "creates_pending_approval":  false,
+                               "promotes_approval":  false,
+                               "executes_action":  false,
+                               "recommended_next_script":  "199-create-pending-approval-for-real-type-text-no-execute.ps1",
+                               "target_device_id":  "windows-agent-lee",
+                               "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                               "payload_template":  {
+                                                        "target":  "controlled_notepad",
+                                                        "text":  "Leeway approved type-text proof.",
+                                                        "expected_effect":  "type_text_into_new_controlled_notepad_window"
+                                                    },
+                               "safety":  {
+                                              "one_action_only":  true,
+                                              "approval_required":  true,
+                                              "lockback_required":  true,
+                                              "controlled_target_required":  true,
+                                              "no_mouse_click":  true,
+                                              "no_shell":  true,
+                                              "no_message_send":  true,
+                                              "no_docker_prune":  true,
+                                              "no_destructive_cleanup":  true
+                                          }
+                           },
+    "ledger_counts_before":  {
+                                 "pending":  4,
+                                 "approved":  11,
+                                 "executed":  11,
+                                 "denied":  0,
+                                 "expired":  0
+                             },
+    "safety":  {
+                   "template_only":  true,
+                   "approvals_created":  0,
+                   "approvals_promoted":  0,
+                   "actions_executed":  0,
+                   "real_execution_enabled":  false,
+                   "physical_execution_enabled":  false,
+                   "read_only_enabled":  false,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               }
+}

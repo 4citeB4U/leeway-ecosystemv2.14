@@ -1,0 +1,31 @@
+{
+    "selectedAt":  "2026-06-27T22:32:56.3575707Z",
+    "status":  "USB_WEBCAM_PROVEN_READY",
+    "selectedCameraName":  null,
+    "selectedCameraIndex":  null,
+    "selectedCameraFramePath":  null,
+    "selectedCameraLogPath":  null,
+    "selectedCameraBytes":  null,
+    "ffmpegInput":  "video=",
+    "rule":  "Agent Lee must use this USB/external webcam. Integrated Camera is blocked unless Leonard explicitly changes this config.",
+    "blockedIntegratedCameras":  [
+                                     "Integrated Camera"
+                                 ],
+    "detectedCameras":  [
+                            {
+                                "index":  0,
+                                "name":  "Integrated Camera",
+                                "isIntegrated":  true,
+                                "isExternalCandidate":  false,
+                                "score":  -1000,
+                                "status":  "NOT_TESTED",
+                                "framePath":  "",
+                                "logPath":  "",
+                                "bytes":  0
+                            }
+                        ],
+    "testedExternalCandidates":  [
+
+                                 ],
+    "proofRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-usb-webcam-hard-lock-20260627-173254"
+}

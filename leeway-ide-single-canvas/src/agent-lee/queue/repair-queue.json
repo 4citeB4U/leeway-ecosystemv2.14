@@ -1,0 +1,148 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "DATA",
+    "TAG": "CORE.AGENT_LEE.QUEUE.REPAIR_QUEUE",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+    "queue":  [
+                  {
+                      "status":  "completed",
+                      "reason":  "Manual test repair",
+                      "created":  {
+                                      "value":  "\/Date(1777852440641)\/",
+                                      "DisplayHint":  2,
+                                      "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                  },
+                      "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                  }
+              ],
+    "active":  [
+                   {
+                       "status":  "completed",
+                       "reason":  "Manual test repair",
+                       "created":  {
+                                       "value":  "\/Date(1777852440641)\/",
+                                       "DisplayHint":  2,
+                                       "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                   },
+                       "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                   }
+               ],
+    "completed":  [
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      },
+                      {
+                          "status":  "completed",
+                          "reason":  "Manual test repair",
+                          "created":  {
+                                          "value":  "\/Date(1777852440641)\/",
+                                          "DisplayHint":  2,
+                                          "DateTime":  "Sunday, May 3, 2026 6:54:00 PM"
+                                      },
+                          "id":  "603ab76d-1fb6-46dd-bdb6-7aeade6f59fc"
+                      }
+                  ],
+    "failed":  [
+
+               ]
+}
+

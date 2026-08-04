@@ -1,0 +1,27 @@
+﻿{
+  "servers": {
+    "agent-lee-coding-mode": {
+      "type": "http",
+      "url": "http://localhost:8080/v1/chat/completions"
+    },
+    "leeway-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+        "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-coding-mode"
+      ]
+    },
+    "leeway-github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_TOKEN}"
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+﻿{
+    "version":  "LEEWAY_PHASE_46_RISK_MATRIX_UI_CONTRACT_374",
+    "phase":  46,
+    "timestamp":  "2026-07-06T19:12:19",
+    "verdict":  "LEEWAY_PHASE_46_RISK_MATRIX_UI_CONTRACT_374_NO_EXECUTE_CLEAN",
+    "risk_matrix_ui_contract":  true,
+    "contract_only":  true,
+    "proposed_page":  "/risk-matrix",
+    "proposed_api_base":  "/api/risk-matrix",
+    "proposed_get_routes":  [
+                                {
+                                    "route":  "/api/risk-matrix/summary",
+                                    "method":  "GET",
+                                    "purpose":  "Summarize action-family risk matrix and draft status."
+                                },
+                                {
+                                    "route":  "/api/risk-matrix/families",
+                                    "method":  "GET",
+                                    "purpose":  "List all action families and risk classes."
+                                },
+                                {
+                                    "route":  "/api/risk-matrix/draft",
+                                    "method":  "GET",
+                                    "purpose":  "Show single-use approval draft state."
+                                },
+                                {
+                                    "route":  "/api/risk-matrix/safety",
+                                    "method":  "GET",
+                                    "purpose":  "Return no-action safety policy."
+                                },
+                                {
+                                    "route":  "/api/risk-matrix/proof-chain",
+                                    "method":  "GET",
+                                    "purpose":  "Return proof chain for governance UI."
+                                }
+                            ],
+    "forbidden_routes":  [
+                             {
+                                 "route":  "/api/risk-matrix/approve",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot approve."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/unlock",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot unlock."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/execute",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot execute."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/device-control",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot control devices."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/onboard",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot onboard."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/print",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot print."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/phone-control",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot control phone."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/router-action",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot perform router action."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/scan",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot scan."
+                             },
+                             {
+                                 "route":  "/api/risk-matrix/physical",
+                                 "method":  "POST",
+                                 "reason":  "Risk matrix UI cannot perform physical action."
+                             }
+                         ],
+    "proposed_files_for_future_patch":  [
+                                            {
+                                                "path":  "src\\app\\api\\risk-matrix\\[...path]\\route.ts",
+                                                "purpose":  "GET-only risk matrix API with mutation blockers.",
+                                                "create_in_374":  false
+                                            },
+                                            {
+                                                "path":  "src\\lib\\riskMatrixClient.ts",
+                                                "purpose":  "GET-only risk matrix client.",
+                                                "create_in_374":  false
+                                            },
+                                            {
+                                                "path":  "src\\components\\AgentLeeRiskMatrixPanel.tsx",
+                                                "purpose":  "No-action risk matrix panel.",
+                                                "create_in_374":  false
+                                            },
+                                            {
+                                                "path":  "src\\app\\risk-matrix\\page.tsx",
+                                                "purpose":  "No-action risk matrix page.",
+                                                "create_in_374":  false
+                                            }
+                                        ],
+    "no_action_policy":  {
+                             "display_only":  true,
+                             "approval_granted":  false,
+                             "authority_unlocked":  false,
+                             "execution_authorized":  false,
+                             "physical_action_authorized":  false,
+                             "no_execution":  true,
+                             "no_device_control":  true,
+                             "no_onboarding":  true,
+                             "no_printer_action":  true,
+                             "no_phone_action":  true,
+                             "no_router_action":  true,
+                             "no_network_scan":  true,
+                             "no_port_scan":  true,
+                             "no_bridge_deploy":  true,
+                             "no_protocol_translator_deploy":  true,
+                             "no_authority_unlock":  true,
+                             "no_physical_action":  true
+                         },
+    "ui_data_contract":  {
+                             "action_families":  12,
+                             "global_rules":  6,
+                             "denied_by_default":  13,
+                             "drafted_action_families":  12,
+                             "critical_families":  3,
+                             "page":  "/risk-matrix",
+                             "api_base":  "/api/risk-matrix"
+                         },
+    "acceptance_gates_for_375":  [
+                                     "374 risk matrix UI contract clean",
+                                     "risk matrix source clean",
+                                     "single-use draft source clean",
+                                     "hold-and-lock active",
+                                     "links page locked",
+                                     "GET-only API",
+                                     "mutation routes blocked with 423",
+                                     "no approval",
+                                     "no authority unlock",
+                                     "no execution",
+                                     "no physical action"
+                                 ],
+    "approval_granted_in_374":  false,
+    "authority_unlocked_in_374":  false,
+    "execution_authorized_in_374":  false,
+    "physical_action_authorized_in_374":  false,
+    "patch_applied_in_374":  false,
+    "source_files_created_in_374":  false,
+    "frontend_files_created_in_374":  false,
+    "api_routes_created_in_374":  false,
+    "docker_created_in_374":  false,
+    "process_started_in_374":  false,
+    "process_restarted_in_374":  false,
+    "process_stopped_in_374":  false,
+    "valid_save_performed_in_374":  false,
+    "identity_state_mutated_in_374":  false,
+    "printer_action_performed":  false,
+    "phone_action_performed":  false,
+    "router_action_performed":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "physical_action_lane_performed":  false,
+    "write_scope":  "PHASE_46_RISK_MATRIX_UI_CONTRACT_ONLY",
+    "live_state":  {
+                       "clear_skies":  true,
+                       "hold_locked":  true,
+                       "links_locked":  true,
+                       "links_post_block_status":  423,
+                       "runtime_process_probe_count":  27,
+                       "network_adapter_probe_count":  7
+                   },
+    "proof_chain":  {
+                        "draft_summary_373_clean":  true,
+                        "draft_372_clean":  true,
+                        "risk_summary_371_clean":  true,
+                        "risk_contract_370_clean":  true,
+                        "master_closeout_369_clean":  true,
+                        "template_summary_364_clean":  true,
+                        "hold_summary_358_clean":  true,
+                        "clear_skies":  true
+                    },
+    "safety":  {
+                   "no_patch_in_374":  true,
+                   "no_process_start_in_374":  true,
+                   "no_process_restart_in_374":  true,
+                   "no_process_stop_in_374":  true,
+                   "no_docker_created_in_374":  true,
+                   "no_valid_save_in_374":  true,
+                   "no_identity_state_mutation":  true,
+                   "no_approval_granted":  true,
+                   "no_authority_unlock":  true,
+                   "no_execution":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_printer_action":  true,
+                   "no_phone_action":  true,
+                   "no_router_action":  true,
+                   "no_scan":  true,
+                   "no_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "375-apply-risk-matrix-get-only-ui-no-execute.ps1"
+}

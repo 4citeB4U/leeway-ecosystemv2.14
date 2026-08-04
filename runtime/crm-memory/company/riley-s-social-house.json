@@ -1,0 +1,16 @@
+{
+  "kind": "company",
+  "name": "Riley\u2019s Social House",
+  "data": {
+    "type": "restaurant",
+    "location": "Milwaukee, Wisconsin",
+    "cuisine": "sandwich",
+    "phone": "+1-414-316-9118",
+    "website": "https://www.rileysandwich.com/",
+    "address": "411 East Menomonee Street, Milwaukee",
+    "source": "openstreetmap_overpass"
+  },
+  "source": "telegram",
+  "updated_at": "2026-07-04T01:06:17.671425+00:00",
+  "created_at": "2026-07-04T01:03:43.161354+00:00"
+}

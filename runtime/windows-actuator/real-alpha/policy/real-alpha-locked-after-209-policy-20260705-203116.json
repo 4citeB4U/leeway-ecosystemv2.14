@@ -1,0 +1,10 @@
+﻿{
+    "version":  "LEEWAY_EXECUTE_APPROVED_TYPE_TEXT_ONE_ACTION_THEN_LOCKBACK_2026-07-05",
+    "created_at":  "2026-07-05T20:31:25",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_209",
+    "prior_approval_id":  "pending-real_type_text-20260705-202442",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "read_only_status_enabled":  false,
+    "all_real_actions_blocked":  true
+}

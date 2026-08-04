@@ -1,0 +1,52 @@
+LEEWAY CRITICAL LANE LOCKDOWN AUDIT
+Created: 2026-07-05T02:44:13.0935636-05:00
+Verdict: LEEWAY_CRITICAL_LANE_LOCKDOWN_AUDIT_COMPLETE
+
+TRUTH
+Enterprise ready: NO
+Phone autonomous operator proven: NO
+Desktop autonomous operator proven: NO
+Email send proven: NO
+Calendar write proven: NO
+Conference room fully proven: BASIC_ONLY_NEEDS_ROOM_BEHAVIOR_PROOF
+License runtime fully proven: NO
+Installer runtime fully proven: NO
+
+LANE SUMMARY
+- phone | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not claim autonomous capability until behavior proof exists with approval gate and receipt.
+- desktop | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not claim autonomous capability until behavior proof exists with approval gate and receipt.
+- browser | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not claim autonomous capability until behavior proof exists with approval gate and receipt.
+- email | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not claim autonomous capability until behavior proof exists with approval gate and receipt.
+- calendar | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not claim autonomous capability until behavior proof exists with approval gate and receipt.
+- license | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- installer | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- pwa | status=BASIC_RUNTIME_PROOF | proof=BASIC_RUNTIME_PROOF | decision=Classify and move to lane-specific proof plan.
+- skills_room | status=BASIC_RUNTIME_PROOF | proof=BASIC_RUNTIME_PROOF | decision=Classify and move to lane-specific proof plan.
+- conference_room | status=BASIC_RUNTIME_PROOF | proof=BASIC_RUNTIME_PROOF | decision=Complete conference health mapping and browser-visible room proof.
+- storage | status=RUNNING_BUT_NO_HEALTH_PROOF | proof=RUNNING_BUT_NO_HEALTH_PROOF | decision=Classify and move to lane-specific proof plan.
+- research | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- code_mode | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- agent_center | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- hybrid_fabric | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Classify and move to lane-specific proof plan.
+- legacy_bridge | status=REVIEW_DISABLE_OR_MERGE_NO_BRIDGE_SPRAWL | proof=RUNNING_BUT_TRUTH_LIMITED | decision=Do not expand. Merge needed behavior into canonical lane or disable.
+- voice_kernel | status=BASIC_RUNTIME_PROOF | proof=BASIC_RUNTIME_PROOF | decision=Classify and move to lane-specific proof plan.
+- ears_kernel | status=BASIC_RUNTIME_PROOF | proof=BASIC_RUNTIME_PROOF | decision=Classify and move to lane-specific proof plan.
+- vision_kernel | status=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | proof=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | decision=Classify and move to lane-specific proof plan.
+- image_3d_kernels | status=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | proof=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | decision=Classify and move to lane-specific proof plan.
+
+CRITICAL FAILURES
+- phone | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED
+- desktop | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED
+- browser | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED
+- email | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED
+- calendar | status=NOT_PROVEN_FOR_AUTONOMOUS_OPERATION | proof=RUNNING_BUT_TRUTH_LIMITED
+- license | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- installer | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- storage | status=RUNNING_BUT_NO_HEALTH_PROOF | proof=RUNNING_BUT_NO_HEALTH_PROOF
+- research | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- code_mode | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- agent_center | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- hybrid_fabric | status=RUNNING_BUT_TRUTH_LIMITED | proof=RUNNING_BUT_TRUTH_LIMITED
+- legacy_bridge | status=REVIEW_DISABLE_OR_MERGE_NO_BRIDGE_SPRAWL | proof=RUNNING_BUT_TRUTH_LIMITED
+- vision_kernel | status=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | proof=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING
+- image_3d_kernels | status=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING | proof=CONTAINER_EXISTS_BUT_NOT_ALL_RUNNING

@@ -1,0 +1,19 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🟢 CORE",
+    "TAG": "CORE.VISUAL.LVIS.CONFIG",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "systemId": "LVIS",
+  "title": "LEEWAY SOVEREIGN VISUAL INTELLIGENCE SYSTEM",
+  "runtime": "Leeway Runtime",
+  "orchestrator": "Lee Prime",
+  "externalProviderPresent": false,
+  "localLlmStack": {
+    "qwen_coder_heavy": "qwen2.5-coder:14b",
+    "qwen_coder_review": "qwen2.5-coder:7b",
+    "qwen_vision": "qwen2.5vl:7b",
+    "qwen_memory": "qwen3-vl-embedding-local"
+  }
+}

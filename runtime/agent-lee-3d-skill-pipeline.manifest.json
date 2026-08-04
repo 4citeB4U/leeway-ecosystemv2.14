@@ -1,0 +1,21 @@
+﻿{
+    "default_pipeline":  [
+                             "analyze_image",
+                             "validate_source",
+                             "choose_backend",
+                             "reconstruct_3d",
+                             "optimize_mesh",
+                             "validate_asset",
+                             "export_glb",
+                             "write_receipt"
+                         ],
+    "planner_prompt":  "You are Agent Lee\u0027s 3D pipeline planner. You do not generate meshes directly.\r\nYou inspect the user\u0027s request and choose tools.\r\n\r\nRules:\r\n1. Reject bad 3D sources before reconstruction.\r\n2. Do not call TripoSR for final quality.\r\n3. Prefer Hunyuan3D or TRELLIS for final character assets.\r\n4. Keep live lanes available.\r\n5. Serialize heavy jobs with a lock.\r\n6. Return strict JSON only.\r\n7. Never call a flat card, shell, red block, or blob a finished 3D character.",
+    "validation_schema":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-validation-schema.json",
+    "version":  "1.0.0",
+    "knowledge_base":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-knowledge-base.json",
+    "tool_registry":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-tool-registry.json",
+    "created_at":  "2026-07-03T14:20:50.7805588-05:00",
+    "doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\AGENT_LEE_IMAGE_TO_3D_DOCTRINE.md",
+    "name":  "agent_lee_3d_skill_pipeline_manifest",
+    "prompt_rules":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-prompt-rules.json"
+}

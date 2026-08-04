@@ -1,0 +1,8 @@
+# Active canonical standards root:
+E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\LeeWay-Standards
+# Archived deprecated standards root:
+# Archive\docs\deprecated-standards-roots\Leeway-Standards
+E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\leeway-80-bench
+E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\.leeway-vscode
+E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\tools
+E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\core

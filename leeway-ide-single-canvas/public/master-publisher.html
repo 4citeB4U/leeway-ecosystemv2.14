@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <title>LeeWay Master Publisher</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background: #07100d;
+      color: #e3f2eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at 10% 0%,
+          #153a2e,
+          #07100d 42%
+        );
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 24px;
+      border-bottom: 1px solid #2b4e40;
+      background: rgba(7, 16, 13, .94);
+      backdrop-filter: blur(14px);
+    }
+
+    main {
+      display: grid;
+      gap: 18px;
+      padding: 22px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+    }
+
+    .muted {
+      color: #9bbcaf;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns:
+        repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .two-column {
+      display: grid;
+      gap: 16px;
+      grid-template-columns:
+        repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+    .card {
+      padding: 16px;
+      border: 1px solid #2b5142;
+      border-radius: 15px;
+      background: rgba(14, 30, 24, .94);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, .2);
+    }
+
+    .metric {
+      margin-top: 7px;
+      font-size: 1.45rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      font-weight: 650;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #3e6b59;
+      border-radius: 9px;
+      font: inherit;
+    }
+
+    input,
+    textarea,
+    select {
+      color: #e8f4ef;
+      background: #091813;
+    }
+
+    textarea {
+      min-height: 105px;
+      resize: vertical;
+    }
+
+    button {
+      cursor: pointer;
+      color: #07100d;
+      background: #78dab2;
+      font-weight: 750;
+    }
+
+    button.secondary {
+      color: #e2f2eb;
+      background: #24473a;
+    }
+
+    .actions {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+      grid-template-columns:
+        repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+    .project {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid #315748;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 3px 8px;
+      border: 1px solid #3f705d;
+      border-radius: 999px;
+      color: #b8ead4;
+      font-size: .76rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .86rem;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #294b3e;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #9edabb;
+    }
+
+    pre {
+      overflow: auto;
+      max-height: 360px;
+      padding: 12px;
+      border-radius: 10px;
+      background: #040a08;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div>
+    <h1>LeeWay Master Publisher</h1>
+    <div class="muted">
+      Recursive publishing, Open Notebook research,
+      Docker topology and local Qwen execution
+    </div>
+  </div>
+
+  <button
+    id="refresh"
+    style="max-width: 160px"
+  >
+    Refresh
+  </button>
+</header>
+
+<main>
+  <section
+    id="statusCards"
+    class="grid"
+  ></section>
+
+  <section class="card">
+    <h2>Runtime connection</h2>
+
+    <div
+      class="grid"
+      style="margin-top: 14px"
+    >
+      <label>
+        Runtime URL
+        <input
+          id="runtimeUrl"
+          value="http://127.0.0.1:8876"
+        >
+      </label>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Create project</h2>
+
+    <div
+      class="grid"
+      style="margin-top: 14px"
+    >
+      <label>
+        Title
+        <input
+          id="title"
+          value="LeeWay Validation Book"
+        >
+      </label>
+
+      <label>
+        Project type
+        <select id="kind">
+          <option value="book">Book</option>
+          <option value="novel">Novel</option>
+          <option value="children-book">Children's book</option>
+          <option value="scholarly-handbook">Scholarly handbook</option>
+        </select>
+      </label>
+
+      <label>
+        Audience
+        <input
+          id="audience"
+          value="General"
+        >
+      </label>
+    </div>
+
+    <label style="margin-top: 14px">
+      Brief
+      <textarea id="brief">Create a bounded three-section validation manuscript with durable checkpoints.</textarea>
+    </label>
+
+    <div class="actions">
+      <button id="createProject">
+        Create project
+      </button>
+    </div>
+  </section>
+
+  <section class="two-column">
+    <div class="card">
+      <h2>Projects</h2>
+      <div id="projects"></div>
+    </div>
+
+    <div class="card">
+      <h2>Open Notebook</h2>
+
+      <div class="actions">
+        <button
+          id="discoverRoutes"
+          class="secondary"
+        >
+          Discover live routes
+        </button>
+
+        <button
+          id="openNotebook"
+          class="secondary"
+        >
+          Open full interface
+        </button>
+      </div>
+
+      <pre id="openNotebookOutput">Not loaded.</pre>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Source provenance</h2>
+    <pre id="provenance">Not loaded.</pre>
+  </section>
+
+  <section class="card">
+    <h2>Docker service inventory</h2>
+
+    <div style="overflow: auto; margin-top: 14px">
+      <table>
+        <thead>
+          <tr>
+            <th>Container</th>
+            <th>Image</th>
+            <th>Status</th>
+            <th>Health</th>
+            <th>Classification</th>
+            <th>Networks</th>
+          </tr>
+        </thead>
+
+        <tbody id="dockerInventory"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Operation output</h2>
+    <pre id="output">Ready.</pre>
+  </section>
+</main>
+
+<script>
+  const state = {
+    config: null
+  };
+
+  const elements = {
+    runtimeUrl:
+      document.querySelector('#runtimeUrl'),
+
+    statusCards:
+      document.querySelector('#statusCards'),
+
+    projects:
+      document.querySelector('#projects'),
+
+    inventory:
+      document.querySelector('#dockerInventory'),
+
+    provenance:
+      document.querySelector('#provenance'),
+
+    openNotebookOutput:
+      document.querySelector('#openNotebookOutput'),
+
+    output:
+      document.querySelector('#output')
+  };
+
+  const savedRuntimeUrl =
+    localStorage.getItem(
+      'leeway.masterPublisher.runtimeUrl'
+    );
+
+  if (savedRuntimeUrl) {
+    elements.runtimeUrl.value =
+      savedRuntimeUrl;
+  }
+
+  function baseUrl() {
+    const value =
+      elements.runtimeUrl.value
+        .trim()
+        .replace(/\/$/, '');
+
+    localStorage.setItem(
+      'leeway.masterPublisher.runtimeUrl',
+      value
+    );
+
+    return value;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;');
+  }
+
+  function show(value) {
+    elements.output.textContent =
+      typeof value === 'string'
+        ? value
+        : JSON.stringify(value, null, 2);
+  }
+
+  async function api(path, options = {}) {
+    const response = await fetch(
+      baseUrl() + path,
+      {
+        headers: {
+          'content-type': 'application/json',
+          ...(options.headers || {})
+        },
+        ...options
+      }
+    );
+
+    const text = await response.text();
+
+    let body;
+
+    try {
+      body = text
+        ? JSON.parse(text)
+        : null;
+    }
+    catch {
+      body = text;
+    }
+
+    if (!response.ok) {
+      throw new Error(
+        `${response.status}: ` +
+        JSON.stringify(body)
+      );
+    }
+
+    return body;
+  }
+
+  async function loadHealth() {
+    const [health, config] =
+      await Promise.all([
+        api('/health'),
+        api('/api/config')
+      ]);
+
+    state.config = config;
+
+    const cards = [
+      ['Runtime', health.runtime],
+      [
+        'Open Notebook',
+        health.openNotebook.ok
+          ? 'HEALTHY'
+          : health.openNotebook.configured
+            ? 'DEGRADED'
+            : 'NOT CONFIGURED'
+      ],
+      [
+        'Ollama',
+        health.ollama.ok
+          ? 'HEALTHY'
+          : 'DEGRADED'
+      ],
+      ['Model', health.ollama.model],
+      [
+        'Pandoc',
+        health.pandoc.available
+          ? health.pandoc.version
+          : 'NOT AVAILABLE'
+      ],
+      [
+        'Docker containers',
+        config.containerCount
+      ]
+    ];
+
+    elements.statusCards.innerHTML =
+      cards.map(([label, value]) => `
+        <div class="card">
+          <div class="muted">
+            ${escapeHtml(label)}
+          </div>
+
+          <div class="metric">
+            ${escapeHtml(value)}
+          </div>
+        </div>
+      `).join('');
+  }
+
+  async function loadInventory() {
+    const inventory =
+      await api('/api/docker/inventory');
+
+    elements.inventory.innerHTML =
+      inventory.map(container => `
+        <tr>
+          <td>
+            ${escapeHtml(container.ContainerName)}
+          </td>
+
+          <td>
+            ${escapeHtml(container.Image)}
+          </td>
+
+          <td>
+            ${escapeHtml(container.Status)}
+          </td>
+
+          <td>
+            ${escapeHtml(container.Health)}
+          </td>
+
+          <td>
+            <span class="badge">
+              ${escapeHtml(container.Classification)}
+            </span>
+          </td>
+
+          <td>
+            ${escapeHtml(container.Networks)}
+          </td>
+        </tr>
+      `).join('');
+  }
+
+  async function loadProvenance() {
+    const provenance =
+      await api('/api/provenance');
+
+    elements.provenance.textContent =
+      JSON.stringify(
+        provenance,
+        null,
+        2
+      );
+  }
+
+  async function loadProjects() {
+    const projectSummaries =
+      await api('/api/projects');
+
+    if (projectSummaries.length === 0) {
+      elements.projects.innerHTML =
+        '<p class="muted">No projects yet.</p>';
+
+      return;
+    }
+
+    const projects =
+      await Promise.all(
+        projectSummaries.map(project =>
+          api(`/api/projects/${project.id}`)
+        )
+      );
+
+    elements.projects.innerHTML =
+      projects.map(project => {
+        const completed =
+          project.sections.filter(
+            section =>
+              section.status === 'COMPLETE'
+          ).length;
+
+        return `
+          <div class="project">
+            <h3>
+              ${escapeHtml(project.title)}
+            </h3>
+
+            <div class="muted">
+              ${escapeHtml(project.kind)}
+              · ${escapeHtml(project.audience)}
+              · ${completed}/${project.sections.length}
+              sections complete
+            </div>
+
+            <div class="actions">
+              <button
+                onclick="runProjectAction('${project.id}', 'plan')"
+              >
+                Generate plan
+              </button>
+
+              <button
+                onclick="runProjectAction('${project.id}', 'run-next')"
+              >
+                Write next section
+              </button>
+
+              <button
+                class="secondary"
+                onclick="runProjectAction('${project.id}', 'assemble')"
+              >
+                Assemble Markdown
+              </button>
+
+              <button
+                class="secondary"
+                onclick="runProjectAction('${project.id}', 'export/html')"
+              >
+                Export HTML
+              </button>
+
+              <button
+                class="secondary"
+                onclick="runProjectAction('${project.id}', 'export/epub')"
+              >
+                Export EPUB
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+  }
+
+  async function runProjectAction(
+    projectId,
+    action
+  ) {
+    try {
+      const result = await api(
+        `/api/projects/${projectId}/${action}`,
+        {
+          method: 'POST',
+          body: '{}'
+        }
+      );
+
+      show(result);
+      await loadProjects();
+      await loadHealth();
+    }
+    catch (error) {
+      show({
+        error: error.message
+      });
+    }
+  }
+
+  window.runProjectAction =
+    runProjectAction;
+
+  document
+    .querySelector('#createProject')
+    .addEventListener(
+      'click',
+      async () => {
+        try {
+          const project = await api(
+            '/api/projects',
+            {
+              method: 'POST',
+              body: JSON.stringify({
+                title:
+                  document.querySelector('#title').value,
+
+                kind:
+                  document.querySelector('#kind').value,
+
+                audience:
+                  document.querySelector('#audience').value,
+
+                brief:
+                  document.querySelector('#brief').value
+              })
+            }
+          );
+
+          show(project);
+          await loadProjects();
+        }
+        catch (error) {
+          show({
+            error: error.message
+          });
+        }
+      }
+    );
+
+  document
+    .querySelector('#discoverRoutes')
+    .addEventListener(
+      'click',
+      async () => {
+        try {
+          const routes = await api(
+            '/api/open-notebook/routes'
+          );
+
+          elements.openNotebookOutput.textContent =
+            JSON.stringify(
+              routes,
+              null,
+              2
+            );
+        }
+        catch (error) {
+          elements.openNotebookOutput.textContent =
+            error.message;
+        }
+      }
+    );
+
+  document
+    .querySelector('#openNotebook')
+    .addEventListener(
+      'click',
+      () => {
+        const url =
+          state.config?.openNotebookUiUrl;
+
+        if (!url) {
+          show({
+            error:
+              'Open Notebook UI URL was not discovered.'
+          });
+
+          return;
+        }
+
+        window.open(
+          url,
+          '_blank',
+          'noopener,noreferrer'
+        );
+      }
+    );
+
+  async function refresh() {
+    try {
+      await Promise.all([
+        loadHealth(),
+        loadInventory(),
+        loadProjects(),
+        loadProvenance()
+      ]);
+
+      show('Master Publisher refreshed.');
+    }
+    catch (error) {
+      show({
+        error: error.message,
+        instruction:
+          'Start the Master Publisher runtime.'
+      });
+    }
+  }
+
+  document
+    .querySelector('#refresh')
+    .addEventListener(
+      'click',
+      refresh
+    );
+
+  refresh();
+</script>
+</body>
+</html>

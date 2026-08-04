@@ -1,0 +1,19 @@
+{
+  "schema": "leeway.qwen3.reasoning-enhancement-engine.v1",
+  "engineId": "AGENT_LEE_QWEN3_REASONING_ENHANCEMENT_ENGINE",
+  "primaryModel": "qwen3:latest",
+  "modelProvider": "OLLAMA_LOCAL",
+  "modelReplacementAllowed": false,
+  "forbiddenProviderFallbackAllowed": false,
+  "enhancementMode": "ENGINE_LAYER_GRAFT",
+  "thinkingPolicy": "agent-lee-coding-mode/runtime/qwen/qwen3-thinking-policy.json",
+  "promptProfiles": "agent-lee-coding-mode/runtime/qwen/qwen3-prompt-profiles.json",
+  "memoryRetrieval": "agent-lee-coding-mode/runtime/qwen/qwen3-memory-retrieval.ps1",
+  "standardsRetrieval": "agent-lee-coding-mode/runtime/qwen/qwen3-standards-retrieval.ps1",
+  "toolPlanner": "agent-lee-coding-mode/runtime/qwen/qwen3-reasoning-enhancement-engine.ps1",
+  "responseValidator": "agent-lee-coding-mode/runtime/qwen/qwen3-response-validator.ps1",
+  "receiptsPath": "Archive/receipts/agent-lee-qwen",
+  "reportsPath": "Archive/reports",
+  "blockers": [],
+  "status": "QWEN3_REASONING_ENHANCEMENT_ENGINE_PARTIAL"
+}

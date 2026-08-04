@@ -1,0 +1,32 @@
+﻿{
+    "approval_id":  "approved-real-screen-status-20260705-185205-b6e9aae72fd3",
+    "created_at":  "2026-07-05T18:52:07",
+    "expires_at":  "2026-07-05T19:02:07",
+    "requested_by":  "script_182",
+    "decided_at":  "2026-07-05T18:52:07",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_screen_status",
+    "risk_tier":  "read_only_status",
+    "human_summary":  "One-time approval to read screen status only. No screenshot or physical control.",
+    "payload":  {
+                    "read_only":  true,
+                    "include_monitor_metrics":  true,
+                    "include_session_metrics":  true
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  false,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  false,
+    "safety_expectation":  {
+                               "no_screenshot":  true,
+                               "read_only":  true,
+                               "no_app":  true,
+                               "no_file":  true,
+                               "no_shell":  true,
+                               "no_mouse":  true,
+                               "no_keyboard":  true
+                           }
+}

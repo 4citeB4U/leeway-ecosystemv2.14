@@ -1,0 +1,16 @@
+{
+  "kind": "company",
+  "name": "Cafe Hollander",
+  "data": {
+    "type": "restaurant",
+    "location": "Milwaukee, Wisconsin",
+    "cuisine": "dutch",
+    "phone": null,
+    "website": null,
+    "address": "",
+    "source": "openstreetmap_overpass"
+  },
+  "source": "telegram",
+  "updated_at": "2026-07-04T01:06:17.751896+00:00",
+  "created_at": "2026-07-04T01:03:43.297675+00:00"
+}

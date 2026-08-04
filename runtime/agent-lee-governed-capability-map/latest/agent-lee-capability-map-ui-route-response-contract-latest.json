@@ -1,0 +1,75 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_CAPABILITY_MAP_UI_ROUTE_RESPONSE_CONTRACT_267",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:07:36",
+    "family":  "agent_lee_ui_runtime",
+    "route_response_contract":  {
+                                    "/agent-lee/device-layer/capability-map":  {
+                                                                                   "ok":  "bool",
+                                                                                   "phase":  38,
+                                                                                   "mode":  "READ_ONLY_UI_MAP_NO_EXECUTE",
+                                                                                   "completed_family_count":  "int",
+                                                                                   "remaining_family_count":  "int",
+                                                                                   "all_families_clean":  "bool",
+                                                                                   "all_read_only_routes_ok":  "bool",
+                                                                                   "execution_enabled":  false,
+                                                                                   "execute_buttons_visible":  false,
+                                                                                   "physical_actions_executed":  0
+                                                                               },
+                                    "/agent-lee/device-layer/families":  {
+                                                                             "ok":  "bool",
+                                                                             "phase":  38,
+                                                                             "mode":  "READ_ONLY_UI_MAP_NO_EXECUTE",
+                                                                             "family_count":  "int",
+                                                                             "families":  "array",
+                                                                             "execution_enabled":  false,
+                                                                             "execute_buttons_visible":  false
+                                                                         },
+                                    "/agent-lee/device-layer/read-only-routes":  {
+                                                                                     "ok":  "bool",
+                                                                                     "phase":  38,
+                                                                                     "mode":  "READ_ONLY_UI_MAP_NO_EXECUTE",
+                                                                                     "route_count":  "int",
+                                                                                     "routes":  "array",
+                                                                                     "all_read_only_routes_ok":  "bool",
+                                                                                     "execution_enabled":  false
+                                                                                 },
+                                    "/agent-lee/device-layer/approval-required-actions":  {
+                                                                                              "ok":  "bool",
+                                                                                              "phase":  38,
+                                                                                              "mode":  "READ_ONLY_UI_MAP_NO_EXECUTE",
+                                                                                              "action_cards_visible":  "bool",
+                                                                                              "action_cards_enabled":  false,
+                                                                                              "execute_buttons_visible":  false,
+                                                                                              "approval_required":  true,
+                                                                                              "actions":  "array"
+                                                                                          },
+                                    "/agent-lee/device-layer/lock-state":  {
+                                                                               "ok":  "bool",
+                                                                               "phase":  38,
+                                                                               "mode":  "READ_ONLY_UI_MAP_NO_EXECUTE",
+                                                                               "windows_locked":  "bool",
+                                                                               "blocked_probe_executed":  "bool",
+                                                                               "execution_enabled":  false,
+                                                                               "execute_buttons_visible":  false,
+                                                                               "physical_actions_executed":  0
+                                                                           }
+                                },
+    "forbidden_in_this_phase":  [
+                                    "POST execution routes",
+                                    "enable execute buttons",
+                                    "real app open",
+                                    "real click",
+                                    "real typing",
+                                    "shell command",
+                                    "SSH command",
+                                    "ADB command",
+                                    "iOS command",
+                                    "Tailscale command",
+                                    "smart home command",
+                                    "printer job",
+                                    "casting action",
+                                    "camera or microphone access",
+                                    "any physical action"
+                                ]
+}

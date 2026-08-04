@@ -1,0 +1,39 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_CONTINUITY_NAV_LINK_MANIFEST_393",
+    "timestamp":  "2026-07-06T21:26:24",
+    "locked":  true,
+    "no_execute":  true,
+    "no_approval":  true,
+    "no_authority_unlock":  true,
+    "master_status_page":  "/device-continuity-master-status",
+    "master_status_api":  "/api/device-continuity/master-status",
+    "nav_links":  [
+                      "/device-continuity-master-status",
+                      "/device-continuity",
+                      "/device-continuity-index",
+                      "/device-continuity-risk-matrix",
+                      "/android-samsung-continuity",
+                      "/wireless-debugging-locked-stub",
+                      "/smartthings-locked-stub",
+                      "/apple-continuity-locked-stub",
+                      "/display-casting-locked-stub"
+                  ],
+    "doctrine":  "Navigation only. Every linked page remains locked, GET-only/status-only, and no-execute.",
+    "forbidden":  [
+                      "approval_grant",
+                      "authority_unlock",
+                      "execution",
+                      "device_control",
+                      "physical_action",
+                      "adb_pair",
+                      "dex_launch",
+                      "smart_view_cast",
+                      "smartthings_action",
+                      "apple_control",
+                      "screen_recording",
+                      "camera_activation",
+                      "microphone_activation",
+                      "network_scan",
+                      "port_scan"
+                  ]
+}

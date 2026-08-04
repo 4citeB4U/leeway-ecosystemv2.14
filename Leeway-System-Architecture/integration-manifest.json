@@ -1,0 +1,11 @@
+﻿{
+    "created":  "2026-06-20T02:33:28.0426965-05:00",
+    "externalDirectories":  {
+                                "logs":  "C:\\Users\\Leona\\Leeway-System-Logs",
+                                "governor":  "C:\\Users\\Leona\\Leeway-System-Governor",
+                                "scripts":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts"
+                            },
+    "bridgeRoot":  "e:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway-System-Architecture",
+    "version":  "1.0.0",
+    "archiveRoot":  "e:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive"
+}

@@ -1,0 +1,74 @@
+{
+  "verdict": "LEEWAY_UPDATE_POLICY_CREATED",
+  "hot_swap_targets": {
+    "executive": [
+      "leeway_executive_runtime"
+    ],
+    "llm": [
+      "Ollama",
+      "local model runtime",
+      "remote provider gateway if configured"
+    ],
+    "stt": [
+      "ears kernel",
+      "future STT lane replacement"
+    ],
+    "tts": [
+      "Qwen voice lane",
+      "future voice lane replacement"
+    ],
+    "image": [
+      "SDXL lightning image lane",
+      "future image model lane"
+    ],
+    "vision": [
+      "vision kernel",
+      "future multimodal model lane"
+    ],
+    "telegram": [
+      "agent-lee-telegram-shell"
+    ],
+    "discovery": [
+      "leeway_agent_skills"
+    ]
+  },
+  "created_at": "2026-07-04T22:31:10.1556402-05:00",
+  "authority": {
+    "discovery_runtime": "leeway_agent_skills",
+    "top_authority": "Leeway Standards",
+    "primary_agent": "Agent Lee",
+    "truth_source": "runtime\\leeway-architecture-lockdown\\latest-canonical-architecture.json",
+    "executive_runtime": "leeway_executive_runtime",
+    "update_fabric_root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\leeway-update-fabric"
+  },
+  "required_update_lifecycle": [
+    "DISCOVER current state from architecture truth, files, containers, image hashes, and receipts.",
+    "CLASSIFY update scope.",
+    "CREATE patch plan with affected files, containers, ports, models, credentials, and user-facing behavior.",
+    "BACKUP affected files/manifests/images before mutation.",
+    "REQUEST approval for external, destructive, device, publishing, email, phone, financial, or customer-impacting changes.",
+    "APPLY changes only to declared scope.",
+    "RESTART only affected containers when possible.",
+    "VALIDATE health endpoints, compile checks, behavior checks, and truth endpoints.",
+    "WRITE receipt with evidence.",
+    "ROLLBACK automatically if validation fails."
+  ],
+  "update_scopes": {
+    "regional": "A connected subsystem such as creative production, business providers, device operators, user interfaces, or model lanes.",
+    "lane": "One container/runtime lane such as Telegram, voice, vision, browser, desktop, phone, email, calendar, document, or creative.",
+    "laser": "One file, one setting, one prompt, one visual style, one endpoint, one phrase, or one small behavior.",
+    "model": "Switching or upgrading LLM, TTS, STT, vision, embedding, image, or local model provider.",
+    "governance": "Standards, permissions, truth gate, approval policy, capability claims, audit requirements, or rollback rules.",
+    "system": "Full ecosystem update involving many lanes, shared manifests, routing, standards, or distribution packages."
+  },
+  "update_rules": {
+    "no_hidden_destructive_update": true,
+    "no_bridge_sprawl": true,
+    "no_placeholder_claimed_as_live": true,
+    "rollback_plan_required": true,
+    "every_update_needs_receipt": true,
+    "customer_secrets_never_in_release": true,
+    "restart_scope_minimum_required": true,
+    "no_unproven_claims": true
+  }
+}

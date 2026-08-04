@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-07-03T22:03:22.9795688-05:00",
+  "verdict": "AGENT_LEE_TELEGRAM_SKILL_EXECUTION_FAILURE_CONFIRMED",
+  "repair_doctrine": {
+    "no_fake_pdf": true,
+    "no_fake_sent": true,
+    "all_tasks_must_route_through_skill_router": true,
+    "no_pressure_without_receipt": true,
+    "all_skill_results_must_return_receipts": true,
+    "no_fake_done": true
+  },
+  "observed_failures": [
+    {
+      "user_message": "Ok i approve",
+      "actual": "No meaningful approval execution occurred.",
+      "expected": "Resolve most recent pending approval or ask which approval to approve.",
+      "missing": "approval follow-up resolver"
+    },
+    {
+      "user_message": "Make the call and send the email",
+      "actual": "Email work order placeholder; phone not handled.",
+      "expected": "Use plan context, create/execute approved phone and email actions if executor lanes exist.",
+      "missing": "phone/email executor lanes and stateful plan context"
+    },
+    {
+      "user_message": "Create image of a flying sports car red and black and green",
+      "actual": "Brain pressure / no image delivered.",
+      "expected": "Route directly to image lane.",
+      "missing": "high-priority image route before brain fallback"
+    },
+    {
+      "user_message": "Create a fantasy story and put in a PDF so I can send to email",
+      "actual": "Claimed PDF existed without proof.",
+      "expected": "Create real text artifact, render real PDF, store it, then request/send email via executor.",
+      "missing": "document/PDF runtime and email executor"
+    },
+    {
+      "user_message": "Read it back to me full story",
+      "actual": "Generated short invented summary.",
+      "expected": "Retrieve stored document/story and read full content.",
+      "missing": "artifact retrieval and document memory"
+    },
+    {
+      "user_message": "Fix yourself",
+      "actual": "Generic pressure message.",
+      "expected": "Run diagnostic skill, inspect routes, return concrete repair receipt.",
+      "missing": "self-repair diagnostic skill route"
+    }
+  ],
+  "cause": "Telegram shell is not consistently routing user requests through Discovery, skill map, capability index, approval queue, and executor lanes."
+}

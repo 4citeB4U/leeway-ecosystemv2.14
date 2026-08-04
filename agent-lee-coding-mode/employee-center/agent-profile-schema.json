@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Lee Employee Profile Schema",
+  "description": "Minimum schema for a Leeway child employee agent profile. Created by Agent Lee Employee Center.",
+  "type": "object",
+  "required": ["agentId", "role"],
+  "properties": {
+    "agentId":           { "type": "string", "description": "Unique identifier for this employee agent" },
+    "role":              { "type": "string", "description": "Role assignment (e.g., 'research-agent', 'content-agent')" },
+    "tools":             { "type": "array", "items": { "type": "string" }, "description": "List of tool names granted to this agent" },
+    "voiceInheritance":  { "type": "string", "default": "leeway-clone", "description": "Voice fabric inheritance rule" },
+    "approvalScope":     { "type": "array", "items": { "type": "string" }, "description": "Actions this agent may self-approve" },
+    "receiptDiscipline": { "type": "boolean", "default": true, "description": "Must write receipts for all actions" },
+    "parentAgentId":     { "type": "string", "default": "agent-lee", "description": "Parent agent who created this employee" },
+    "createdAt":         { "type": "string", "format": "date-time" },
+    "createdBy":         { "type": "string", "default": "agent-lee" },
+    "packagedAs":        { "type": ["string", "null"], "description": "App or worker package name if deployed" }
+  }
+}

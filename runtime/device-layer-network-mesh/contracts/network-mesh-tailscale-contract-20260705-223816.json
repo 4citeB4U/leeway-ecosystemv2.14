@@ -1,0 +1,107 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_TAILSCALE_CONTRACT_256",
+    "timestamp":  "2026-07-05T22:38:16",
+    "family":  "network_mesh",
+    "capability_status":  "NETWORK_MESH_TAILSCALE_POLICY_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "network_mesh_discover":  false,
+                            "network_mesh_status":  false,
+                            "network_mesh_registry":  false,
+                            "tailscale_status":  false,
+                            "tailscale_policy":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/network-mesh/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "network_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/network-mesh/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "network_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/network-mesh/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "network_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/tailscale/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "network_mutation":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/tailscale/policy",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "network_mutation":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/login",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/up",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/down",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/acl/apply",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/routes/advertise",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/tailscale/exit-node/enable",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "network_mutation":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_tailscale_cli_invoked":  true,
+                   "no_tailscale_api_invoked":  true,
+                   "no_tailnet_authentication":  true,
+                   "no_tailnet_join":  true,
+                   "no_acl_mutation":  true,
+                   "no_route_advertisement":  true,
+                   "no_exit_node_enablement":  true,
+                   "no_subnet_router_enablement":  true,
+                   "no_firewall_mutation":  true,
+                   "no_dns_mutation":  true,
+                   "no_network_settings_mutation":  true,
+                   "no_tunnel_start":  true,
+                   "no_physical_action":  true
+               }
+}

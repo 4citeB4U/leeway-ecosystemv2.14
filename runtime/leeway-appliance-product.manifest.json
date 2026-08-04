@@ -1,0 +1,58 @@
+{
+  "customer_experience": "Customer installs Leeway locally. Agent Lee starts as a local sovereign ecosystem and is reachable by Telegram, PWA, email identity, phone identity, and Agent Lee cursor.",
+  "doctrine": "The customer receives their own isolated Leeway ecosystem. All routes go through leeway_api_gateway. Risky actions require approval. Physical device actions require approved Leeway device adapters.",
+  "created_at": "2026-07-03T20:41:25.8792388-05:00",
+  "verdict": "LEEWAY_APPLIANCE_PRODUCT_MANIFEST_CREATED",
+  "product_name": "Leeway Sovereign Appliance",
+  "core_services": [
+    "leeway_api_gateway:5320",
+    "leeway_context_gateway:5321",
+    "leeway_device_operator:5323",
+    "leeway_research_lane:5310",
+    "leeway_seafile_storage_gateway:5314",
+    "agent-lee-telegram-shell",
+    "agent-lee-qwen-voice:8097",
+    "agent-lee-vision-kernel:8093",
+    "agent-lee-ears-kernel:8094",
+    "agent-lee-sdxl-lightning-image-lane:8099",
+    "agent-lee-image-to-3d-pattern-lane:8101",
+    "leeway_runtime_fabric:4001",
+    "agent_lee_code_mode:8080"
+  ],
+  "next_required_builds": [
+    "leeway_license_runtime",
+    "leeway_calendar_runtime",
+    "leeway_email_runtime",
+    "leeway_phone_runtime",
+    "leeway_desktop_adapter_package",
+    "Leeway PWA dashboard",
+    "clean-machine import proof",
+    "commercial installer"
+  ],
+  "customer_channels": {
+    "email": "dedicated Agent Lee email identity after email runtime",
+    "phone_number": "dedicated Agent Lee phone identity after phone runtime",
+    "telegram": "primary mobile remote control",
+    "pwa": "local dashboard and cursor tap-to-talk"
+  },
+  "safety": {
+    "customer_isolated_install": true,
+    "receipts_required": true,
+    "approval_required_for_phone_email_calendar_desktop_submit": true,
+    "all_actions_go_through_gateway": true
+  },
+  "install_media_shape": {
+    "includes_runtime_manifests": true,
+    "includes_docker_images": true,
+    "includes_installer_scripts": true,
+    "package_type": "offline_bundle_or_iso_or_usb",
+    "includes_license_activation": "planned",
+    "includes_services_source": true,
+    "includes_pwa_dashboard": "planned"
+  },
+  "device_modes": {
+    "desktop": "Windows/Linux/macOS through Leeway device adapter",
+    "android": "Android companion/runtime adapter",
+    "ios": "iOS companion/PWA/SIP limited adapter"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "projectId": "agent-lee-3d-chess-set-proof",
+  "projectName": "Agent Lee 3D Chess Set Proof",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "createdAt": "2026-06-11T22:27:08.711Z",
+  "updatedAt": "2026-06-11T22:27:08.711Z",
+  "pipelineStatus": "AR_3D_PIPELINE_PARTIAL",
+  "missingBackends": [
+    "glTF/GLB exporter",
+    "mesh baking pipeline",
+    "AR device preview"
+  ],
+  "themes": [
+    "knights_and_dragons",
+    "ninjas_and_samurai",
+    "kung_fu_masters",
+    "modern_military"
+  ],
+  "assets": {
+    "scene": "scene.json",
+    "pieceFamilies": "themes/piece-families.json",
+    "rulesStub": "rules/chess-rules.stub.mjs",
+    "evidence": "evidence/research.json"
+  }
+}

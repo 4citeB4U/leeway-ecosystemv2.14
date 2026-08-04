@@ -1,0 +1,78 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_230",
+    "timestamp":  "2026-07-05T21:35:29",
+    "verdict":  "LEEWAY_CASTING_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "casting",
+    "family_status":  "CASTING_READ_ONLY_DISCOVERY_REGISTRY_STATUS_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status"
+                           ],
+    "remaining_families":  [
+                               "camera_microphone_speaker_read_only_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "discover":  true,
+                   "status":  true,
+                   "registry":  true,
+                   "all_casting_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "control_enabled":  false,
+                         "cast_session_started":  false,
+                         "cast_session_stopped":  false,
+                         "pairing_requested":  false,
+                         "display_mutated":  false,
+                         "tv_wake_sent":  false,
+                         "input_switched":  false,
+                         "discovered_count":  0
+                     },
+    "proof_chain":  {
+                        "contract_226_exists":  true,
+                        "contract_226_clean":  true,
+                        "plan_227_exists":  true,
+                        "plan_227_clean":  true,
+                        "patch_228_exists":  true,
+                        "patch_228_clean":  true,
+                        "audit_229_exists":  true,
+                        "audit_229_clean":  true,
+                        "contract_226_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-discovery-status-contract-latest.json",
+                        "plan_227_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-route-patch-plan-proof-latest.json",
+                        "patch_228_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-routes-patch-228-latest.json",
+                        "audit_229_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "physical_actions_executed":  0,
+                   "cast_sessions_started":  0,
+                   "cast_sessions_stopped":  0,
+                   "pairing_requests":  0,
+                   "display_mutations":  0,
+                   "tv_wake_sent":  0,
+                   "input_switches":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "231-audio-vision-read-only-discovery-and-status-contract-no-execute.ps1"
+}

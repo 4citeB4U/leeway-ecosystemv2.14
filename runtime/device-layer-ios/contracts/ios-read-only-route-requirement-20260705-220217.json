@@ -1,0 +1,58 @@
+﻿{
+    "version":  "LEEWAY_IOS_READ_ONLY_ROUTE_REQUIREMENT_241",
+    "timestamp":  "2026-07-05T22:02:17",
+    "family":  "ios",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_IOS_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/ios/discover",
+                                         "purpose":  "Return iOS route/device inventory stub without invoking iOS tools.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/ios/status",
+                                         "purpose":  "Return iOS family readiness with iOS tools disabled and approval required for actuator actions.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/ios/registry",
+                                         "purpose":  "Return normalized iOS registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/ios/shell/status",
+                                         "purpose":  "Return shell disabled status and approval contract.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/ios/actuator/status",
+                                         "purpose":  "Return actuator disabled status and action categories requiring approval.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no libimobiledevice invocation",
+                      "no idevice tool invocation",
+                      "no phone connection",
+                      "no pairing or trust mutation",
+                      "no screen tap",
+                      "no screen swipe",
+                      "no text send",
+                      "no call start",
+                      "no phone data read",
+                      "no backup",
+                      "no app install",
+                      "no settings or permission mutation",
+                      "no physical action"
+                  ]
+}

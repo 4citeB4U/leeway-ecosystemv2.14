@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "workflows": [
+    {
+      "id": "leeway-test-workflow",
+      "name": "LeeWay Test Workflow",
+      "description": "Harmless test workflow for LeeWay IDE validation",
+      "allowlist": true,
+      "readonly": true
+    }
+  ],
+  "policy": {
+    "defaultAction": "deny",
+    "requireAllowlist": true,
+    "readonlyMode": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "leeway-presentation-engine",
+  "version": "0.1.0",
+  "description": "Slide deck and presentation visualizer engine",
+  "leewayMetadata": {
+    "objectId": "LW-ECO-014",
+    "classification": "FABRIC_CLIENT_APP",
+    "standardLinkage": "LEEWAY_POLICY::BOOK_40_PUBLIC-UI-ADMIN-UI-REQUIREMENT-LAW",
+    "status": "ACTIVE"
+  },
+  "scripts": {
+    "test": "node scripts/leeway-verify.mjs",
+    "verify": "node scripts/leeway-verify.mjs",
+    "launch": "node scripts/leeway-launch.mjs",
+    "prove": "node scripts/leeway-verify.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

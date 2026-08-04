@@ -1,0 +1,688 @@
+{
+  "timestamp": "2026-08-01T14:58:45.265Z",
+  "mapPath": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\architecture\\ecosystem-map\\ecosystem-map.json",
+  "valid": false,
+  "nodeCount": 120,
+  "relationshipCount": 118,
+  "containerChecks": [
+    {
+      "container": "leeway_runtime_fabric",
+      "running": true
+    },
+    {
+      "container": "leeway_ollama",
+      "running": true
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "running": true
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "running": true
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "running": true
+    },
+    {
+      "container": "leeway_media_router",
+      "running": true
+    },
+    {
+      "container": "leeway_media_ingestion_layer",
+      "running": true
+    },
+    {
+      "container": "leeway_device_operator",
+      "running": true
+    },
+    {
+      "container": "leeway-triposr-web",
+      "running": true
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "running": true
+    },
+    {
+      "container": "agent_lee_code_mode",
+      "running": true
+    },
+    {
+      "container": "leeway-local-assistant-bridge",
+      "running": true
+    },
+    {
+      "container": "leeway-n8n-dev",
+      "running": false
+    },
+    {
+      "container": "leeway_hybrid_fabric",
+      "running": true
+    },
+    {
+      "container": "leeway_agent_center",
+      "running": true
+    },
+    {
+      "container": "leeway_mcp_center",
+      "running": true
+    },
+    {
+      "container": "leeway_mcp_agent_center",
+      "running": true
+    },
+    {
+      "container": "leeway_worker_center",
+      "running": true
+    },
+    {
+      "container": "leeway_api_gateway",
+      "running": true
+    },
+    {
+      "container": "leeway_context_gateway",
+      "running": true
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway-seafile",
+      "running": true
+    },
+    {
+      "container": "leeway-seafile-cache",
+      "running": true
+    },
+    {
+      "container": "leeway-seafile-db",
+      "running": true
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "running": true
+    },
+    {
+      "container": "leeway-jitsi-meet-web-1",
+      "running": true
+    },
+    {
+      "container": "leeway-jitsi-meet-jicofo-1",
+      "running": true
+    },
+    {
+      "container": "leeway-jitsi-meet-jvb-1",
+      "running": true
+    },
+    {
+      "container": "leeway-jitsi-meet-prosody-1",
+      "running": true
+    },
+    {
+      "container": "leeway_email_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_document_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_workboard_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_performance_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_license_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_research_lane",
+      "running": true
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "running": true
+    },
+    {
+      "container": "leeway_open_notebook",
+      "running": true
+    },
+    {
+      "container": "leeway-triposr-backend",
+      "running": true
+    },
+    {
+      "container": "leeway-triposr-reconstruction",
+      "running": true
+    },
+    {
+      "container": "agent-lee-telegram-shell",
+      "running": true
+    },
+    {
+      "container": "leeway_executive_runtime",
+      "running": true
+    },
+    {
+      "container": "leeway_skill_router",
+      "running": true
+    },
+    {
+      "container": "leeway_agent_skills",
+      "running": true
+    }
+  ],
+  "evidenceChecks": [
+    {
+      "evidence": "MIG-001",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-002",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-003",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-004",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-005",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-006B1",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-006B1R",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-006B2",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-006A",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-006B",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-005A",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-002B",
+      "exists": true
+    },
+    {
+      "evidence": "MIG-002C",
+      "exists": true
+    },
+    {
+      "evidence": "MP-R2-Phase9",
+      "exists": true
+    },
+    {
+      "evidence": "MP-R2-Phase10",
+      "exists": true
+    },
+    {
+      "evidence": "MP-R2-Phase11",
+      "exists": true
+    },
+    {
+      "evidence": "MP-R2-Phase13",
+      "exists": true
+    },
+    {
+      "evidence": "MP-R2-Phase14",
+      "exists": true
+    }
+  ],
+  "sourceChecks": [
+    {
+      "sourcePath": "LeeWay-Standards/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards"
+    },
+    {
+      "sourcePath": "leeway-runtime-fabric/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-runtime-fabric"
+    },
+    {
+      "sourcePath": "architecture/ecosystem-map/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\architecture\\ecosystem-map"
+    },
+    {
+      "sourcePath": "C:\\Users\\Leona\\.agents\\skills\\graphify",
+      "exists": true,
+      "resolvedTo": "C:\\Users\\Leona\\.agents\\skills\\graphify"
+    },
+    {
+      "sourcePath": "architecture/ecosystem-map/viewer.html",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\architecture\\ecosystem-map\\viewer.html"
+    },
+    {
+      "sourcePath": "architecture/ecosystem-map/generated/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\architecture\\ecosystem-map\\generated"
+    },
+    {
+      "sourcePath": "leeway-ide-single-canvas/src/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\src"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode"
+    },
+    {
+      "sourcePath": ".env.n8n",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\.env.n8n"
+    },
+    {
+      "sourcePath": "docker-compose.n8n.yml",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\docker-compose.n8n.yml"
+    },
+    {
+      "sourcePath": "leeway-ide-single-canvas/src/core/code-engine/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\src\\core\\code-engine"
+    },
+    {
+      "sourcePath": "leeway-ide-single-canvas/src/core/modules/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\src\\core\\modules"
+    },
+    {
+      "sourcePath": "leeway-ide-single-canvas/src/core/runtime/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\src\\core\\runtime"
+    },
+    {
+      "sourcePath": "leeway-ide-single-canvas/src/core/workflow-engine/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\src\\core\\workflow-engine"
+    },
+    {
+      "sourcePath": ".opencode/commands/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\.opencode\\commands"
+    },
+    {
+      "sourcePath": ".opencode/agents/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\.opencode\\agents"
+    },
+    {
+      "sourcePath": ".opencode/tools/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas\\.opencode\\tools"
+    },
+    {
+      "sourcePath": "Archive/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\Archive"
+    },
+    {
+      "sourcePath": "C:\\Users\\Leona\\.agents\\skills\\",
+      "exists": true,
+      "resolvedTo": "C:\\Users\\Leona\\.agents\\skills\\"
+    },
+    {
+      "sourcePath": "C:\\Users\\Leona\\.config\\opencode\\opencode.jsonc",
+      "exists": true,
+      "resolvedTo": "C:\\Users\\Leona\\.config\\opencode\\opencode.jsonc"
+    },
+    {
+      "sourcePath": "Leeway Runtime Fabric/master-publisher/",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\master-publisher"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-01-LEEWAY-CONSTITUTION-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-01-LEEWAY-CONSTITUTION-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-02-LEEWAY-COMPANY-AUTHORITY-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-02-LEEWAY-COMPANY-AUTHORITY-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-03-LEEWAY-RUNTIME-AUTHORITY-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-03-LEEWAY-RUNTIME-AUTHORITY-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-09-LEEWAY-AGENT-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-09-LEEWAY-AGENT-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-14-LEEWAY-TELEMETRY-RECEIPTS-EVIDENCE-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-14-LEEWAY-TELEMETRY-RECEIPTS-EVIDENCE-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-15-LEEWAY-GATES-VALIDATION-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-15-LEEWAY-GATES-VALIDATION-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/standards/BOOK-25-RUNTIME-READINESS-LAW.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\standards\\BOOK-25-RUNTIME-READINESS-LAW.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/LEEWAY_STANDARDS_2_WEEK_TRAINING_BOOK.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\LEEWAY_STANDARDS_2_WEEK_TRAINING_BOOK.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/README.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\README.md"
+    },
+    {
+      "sourcePath": "LeeWay-Standards/ACTIVATE.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\ACTIVATE.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-proof-first-readiness-contract.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\leeway-proof-first-readiness-contract.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-no-pass-without-proof-contract.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\leeway-no-pass-without-proof-contract.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-absolute-proof-law.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\leeway-absolute-proof-law.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-proof-or-blocker-contract.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\leeway-proof-or-blocker-contract.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-owner-identity-contract.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\agent-lee-owner-identity-contract.md"
+    },
+    {
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-live-embodiment-contract.md",
+      "exists": true,
+      "resolvedTo": "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\contracts\\agent-lee-live-embodiment-contract.md"
+    }
+  ],
+  "nodeIssues": [
+    {
+      "node": "n8n-workflow",
+      "issues": [
+        "Containers not running: leeway-n8n-dev"
+      ]
+    }
+  ],
+  "knownGapsFound": [
+    {
+      "node": "runtime-fabric-layer2",
+      "gaps": [
+        "Not implemented — architecture design only"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer3",
+      "gaps": [
+        "Partial capability registry exists in workflow-engine",
+        "No unified capability resolution"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer4",
+      "gaps": [
+        "Not implemented",
+        "Providers currently called directly by agents"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer6",
+      "gaps": [
+        "Partial — execution exists in n8n and OpenCode",
+        "No unified execution fabric"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer7",
+      "gaps": [
+        "Memory exists in agent-lee-coding-mode",
+        "No unified Memory Fabric service"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer10",
+      "gaps": [
+        "Only Docker currently deployed",
+        "Kubernetes/Podman/Native not configured"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer11",
+      "gaps": [
+        "Not implemented",
+        "Network currently uses Docker bridge network"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer12",
+      "gaps": [
+        "Not implemented",
+        "Architecture design phase"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer13",
+      "gaps": [
+        "Post-quantum readiness not yet implemented",
+        "Zero trust not fully deployed"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer14",
+      "gaps": [
+        "Drift validation exists as script",
+        "Not yet automatic"
+      ]
+    },
+    {
+      "node": "runtime-fabric-layer15",
+      "gaps": [
+        "Applications do not yet request execution through Fabric"
+      ]
+    },
+    {
+      "node": "knowledge-fabric",
+      "gaps": [
+        "New layer — architecture defined",
+        "No implementation yet"
+      ]
+    },
+    {
+      "node": "knowledge-fabric-source-graph",
+      "gaps": [
+        "Not yet populated by Graphify"
+      ]
+    },
+    {
+      "node": "knowledge-fabric-documentation-graph",
+      "gaps": [
+        "Not yet populated"
+      ]
+    },
+    {
+      "node": "knowledge-fabric-graph-query-engine",
+      "gaps": [
+        "Interactive graph explorer provides query",
+        "No standalone API"
+      ]
+    },
+    {
+      "node": "knowledge-fabric-capability-graph",
+      "gaps": [
+        "Not yet populated"
+      ]
+    },
+    {
+      "node": "graphify-provider",
+      "gaps": [
+        "Installed as skill — not yet actively populating graph",
+        "Requires invocation"
+      ]
+    },
+    {
+      "node": "presentation-fabric",
+      "gaps": [
+        "New layer — architecture defined",
+        "Interactive graph explorer built",
+        "No automation pipeline yet"
+      ]
+    },
+    {
+      "node": "leeway-ide",
+      "gaps": [
+        "No UI integration",
+        "No Runtime Fabric consumption in app"
+      ]
+    },
+    {
+      "node": "agent-lee-code-mode",
+      "gaps": [
+        "Full embodiment proof pending"
+      ]
+    },
+    {
+      "node": "n8n-workflow",
+      "gaps": [
+        "API key auth not configured",
+        "Workflow listing returns 401"
+      ]
+    },
+    {
+      "node": "code-engine-contract",
+      "gaps": [
+        "OpenCode adapter is configuration-only"
+      ]
+    },
+    {
+      "node": "runtime-contract",
+      "gaps": [
+        "Not connected to live Runtime Fabric endpoint"
+      ]
+    },
+    {
+      "node": "workflow-engine-contract",
+      "gaps": [
+        "No bounded write execution"
+      ]
+    },
+    {
+      "node": "opencode-engineering-toolchain",
+      "gaps": [
+        "Not containerized"
+      ]
+    },
+    {
+      "node": "local-assistant-bridge",
+      "gaps": [
+        "Model endpoint not fully verified"
+      ]
+    },
+    {
+      "node": "cerebral",
+      "gaps": [
+        "Not verified as running container"
+      ]
+    },
+    {
+      "node": "opencode-mcp-servers",
+      "gaps": [
+        "Not all invocation proven"
+      ]
+    },
+    {
+      "node": "mig-002b",
+      "gaps": [
+        "Map is manually maintained"
+      ]
+    },
+    {
+      "node": "mig-006b2",
+      "gaps": [
+        "Workflow listing requires API key",
+        "404 error mapping not testable",
+        "Timeout test failed"
+      ]
+    },
+    {
+      "node": "mig-006c",
+      "gaps": [
+        "Requires API key auth"
+      ]
+    },
+    {
+      "node": "mig-002c",
+      "gaps": [
+        "Auto-sync not yet implemented",
+        "Graphify not yet actively populating"
+      ]
+    }
+  ],
+  "driftDetected": true,
+  "warnings": [
+    "1 expected container(s) not running",
+    "  - leeway-n8n-dev"
+  ]
+}

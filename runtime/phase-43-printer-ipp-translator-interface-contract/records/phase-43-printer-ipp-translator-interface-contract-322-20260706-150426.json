@@ -1,0 +1,203 @@
+﻿{
+    "version":  "LEEWAY_PHASE_43_PRINTER_IPP_TRANSLATOR_INTERFACE_CONTRACT_322",
+    "phase":  43,
+    "timestamp":  "2026-07-06T15:04:28",
+    "verdict":  "LEEWAY_PHASE_43_PRINTER_IPP_TRANSLATOR_INTERFACE_CONTRACT_322_NO_EXECUTE_CLEAN",
+    "translator_interface_contract":  true,
+    "contract_only":  true,
+    "target_protocol":  "IPP_PRINTING_DRAFT_ONLY",
+    "target_asset_name":  "HP OfficeJet Pro 8020 Series",
+    "target_printer_name":  "HP OfficeJet Pro 8020 series",
+    "patch_applied_in_322":  false,
+    "api_routes_created_in_322":  false,
+    "frontend_files_created_in_322":  false,
+    "source_files_created_in_322":  false,
+    "docker_created_in_322":  false,
+    "process_started_in_322":  false,
+    "valid_save_performed_in_322":  false,
+    "enrichment_run_in_322":  false,
+    "print_job_submitted":  false,
+    "printer_queue_mutated":  false,
+    "ipp_request_sent":  false,
+    "protocol_translator_deployed":  false,
+    "iot_bridge_deployed":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "pairing_performed":  false,
+    "physical_action_lane_performed":  false,
+    "browser_opened_by_322":  false,
+    "write_scope":  "PHASE_43_PRINTER_IPP_TRANSLATOR_INTERFACE_CONTRACT_ONLY",
+    "clear_skies":  true,
+    "translator_identity":  {
+                                "proposed_service_name":  "leeway_printer_ipp_translator_locked",
+                                "proposed_host":  "127.0.0.1",
+                                "proposed_port":  7341,
+                                "proposed_container_name":  "leeway_printer_ipp_translator_locked",
+                                "deployment_allowed_in_322":  false,
+                                "service_start_allowed_in_322":  false,
+                                "ipp_network_request_allowed_in_322":  false
+                            },
+    "allowed_future_get_endpoints":  [
+                                         {
+                                             "route":  "/health",
+                                             "method":  "GET",
+                                             "purpose":  "Return translator process health and locked state.",
+                                             "allowed_before_approval":  true,
+                                             "must_return_authorization_flags_false":  true
+                                         },
+                                         {
+                                             "route":  "/capabilities",
+                                             "method":  "GET",
+                                             "purpose":  "Return supported printer protocol capabilities without touching printer.",
+                                             "allowed_before_approval":  true,
+                                             "must_return_authorization_flags_false":  true
+                                         },
+                                         {
+                                             "route":  "/target-printer",
+                                             "method":  "GET",
+                                             "purpose":  "Return configured target printer identity from local configuration only.",
+                                             "allowed_before_approval":  true,
+                                             "must_return_authorization_flags_false":  true
+                                         },
+                                         {
+                                             "route":  "/policy",
+                                             "method":  "GET",
+                                             "purpose":  "Return locked policy and forbidden operations.",
+                                             "allowed_before_approval":  true,
+                                             "must_return_authorization_flags_false":  true
+                                         }
+                                     ],
+    "forbidden_future_post_endpoints_until_separate_approval":  [
+                                                                    {
+                                                                        "route":  "/ipp/validate-job",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would send IPP request"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/ipp/create-job",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would create printer job"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/ipp/send-document",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would send document data"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/ipp/print-job",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would physically print"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/queue/pause",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would mutate print queue"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/queue/resume",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would mutate print queue"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/queue/purge",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would mutate print queue"
+                                                                    },
+                                                                    {
+                                                                        "route":  "/printer/test-page",
+                                                                        "method":  "POST",
+                                                                        "reason":  "would physically print"
+                                                                    }
+                                                                ],
+    "required_locked_response_shape":  {
+                                           "ok":  "boolean",
+                                           "service":  "string",
+                                           "locked":  "boolean true",
+                                           "executionAuthorized":  "boolean false",
+                                           "deviceControlAuthorized":  "boolean false",
+                                           "onboardingAuthorized":  "boolean false",
+                                           "printerActionAuthorized":  "boolean false",
+                                           "ippRequestAuthorized":  "boolean false",
+                                           "physicalActionAuthorized":  "boolean false",
+                                           "policy":  "object",
+                                           "proofPath":  "string optional"
+                                       },
+    "future_approval_required_shape":  {
+                                           "approval_id":  "required for any future non-GET route",
+                                           "request_id":  "required for any future non-GET route",
+                                           "target_printer_id":  "required for any future printer action",
+                                           "action_type":  "must match approved action exactly",
+                                           "single_use_token":  "required for any future physical printer action",
+                                           "expires_at":  "required",
+                                           "lockback_required":  true,
+                                           "receipt_required":  true
+                                       },
+    "translator_implementation_draft_only":  {
+                                                 "proposed_language":  "Python FastAPI or Node.js route worker",
+                                                 "proposed_mode":  "locked_by_default",
+                                                 "allowed_in_next_phase":  "interface_plan_or_stub_contract_only",
+                                                 "deployment_in_322":  false,
+                                                 "source_files_created_in_322":  false,
+                                                 "docker_created_in_322":  false,
+                                                 "process_started_in_322":  false,
+                                                 "allowed_environment_variables_future":  [
+                                                                                              "LEEWAY_PRINTER_TRANSLATOR_LOCKED=true",
+                                                                                              "LEEWAY_PRINTER_TARGET_NAME=HP OfficeJet Pro 8020 series",
+                                                                                              "LEEWAY_PRINTER_ALLOWED_GET_ONLY=true"
+                                                                                          ]
+                                             },
+    "hard_blockers":  [
+                          "No IPP request may be sent in 322.",
+                          "No print job may be submitted in 322.",
+                          "No print queue may be mutated in 322.",
+                          "No translator service may be deployed in 322.",
+                          "No Docker container may be created in 322.",
+                          "No process may be started in 322.",
+                          "No physical action lane may be created in 322."
+                      ],
+    "acceptance_gates_for_323":  [
+                                     "322 translator interface contract clean",
+                                     "321 read-only capability plan clean",
+                                     "translator interface remains GET-only until later approval",
+                                     "all future POST routes blocked by contract",
+                                     "no translator deployed",
+                                     "no service started",
+                                     "no IPP request sent",
+                                     "no print job submitted",
+                                     "no queue mutation",
+                                     "no physical action lane"
+                                 ],
+    "proof_chain":  {
+                        "plan_321_clean":  true,
+                        "contract_320_clean":  true,
+                        "phase_42_closed":  true,
+                        "target_printer_found":  true
+                    },
+    "safety":  {
+                   "no_file_patch_in_322":  true,
+                   "no_source_files_created_in_322":  true,
+                   "no_docker_created_in_322":  true,
+                   "no_process_started_in_322":  true,
+                   "no_save_in_322":  true,
+                   "no_enrichment_run_in_322":  true,
+                   "no_print_job":  true,
+                   "no_test_page":  true,
+                   "no_queue_mutation":  true,
+                   "no_ipp_request":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_pairing":  true,
+                   "no_physical_action":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_desktop_cursor_action":  true,
+                   "no_browser_autonomy_action":  true,
+                   "no_port_scan":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "323-phase-43-printer-ipp-locked-stub-plan-no-execute.ps1"
+}

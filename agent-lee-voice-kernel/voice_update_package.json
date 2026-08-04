@@ -1,0 +1,26 @@
+{
+  "schema": "leeway.voice-kernel.update-package.v1",
+  "packageId": "agent-lee-voice-kernel-update-package",
+  "version": "1.0.0",
+  "agentId": "agent-lee",
+  "engine": "XTTS-v2",
+  "scope": [
+    "voice_enhancement_policy.json",
+    "voice_audio_quality.py",
+    "voice_event_timeline.py",
+    "voice_response_validator.py",
+    "voice_receipts.py",
+    "voice_enhancement_engine.py"
+  ],
+  "applyMode": "immediate",
+  "reloadMode": "hot",
+  "targets": {
+    "voiceKernel": true,
+    "vision": false,
+    "hands": false
+  },
+  "truthLabels": [
+    "HOT_UPDATE_PACKAGE_DEFINED",
+    "VOICE_KERNEL_INCREMENTAL_UPDATE_READY"
+  ]
+}

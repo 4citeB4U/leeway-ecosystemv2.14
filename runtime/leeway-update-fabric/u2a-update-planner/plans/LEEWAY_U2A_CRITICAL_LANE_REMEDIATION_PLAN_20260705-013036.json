@@ -1,0 +1,127 @@
+{
+  "verdict": "LEEWAY_U2A_CRITICAL_LANE_REMEDIATION_PLAN_CREATED",
+  "created_at": "2026-07-05T01:30:36.8389214-05:00",
+  "source_truth": "Critical Lane Lockdown FAST audit: phone, desktop, browser, email, calendar are not proven for autonomous operation.",
+  "enterprise_ready": "NO",
+  "customer_ready_without_disclosure": "NO",
+  "remediation_tracks": [
+    {
+      "priority": 1,
+      "track": "archive_disable_old_backups",
+      "targets": [
+        "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+        "agent-lee-telegram-shell-backup-20260703-144921"
+      ],
+      "objective": "Stop treating old backup containers as active product lanes.",
+      "action_type": "classification_then_disable",
+      "approval_required": false,
+      "behavior_proof_required": "Backup containers are excluded from production truth and customer distribution.",
+      "rollback": "Keep image/archive metadata; do not delete until explicit cleanup approval."
+    },
+    {
+      "priority": 2,
+      "track": "storage_and_conference_health_mapping",
+      "targets": [
+        "leeway-seafile",
+        "leeway-jitsi-meet-jicofo-1",
+        "leeway-jitsi-meet-jvb-1"
+      ],
+      "objective": "Create correct health proof for infra services instead of assuming app /health endpoints.",
+      "action_type": "health_mapping",
+      "approval_required": false,
+      "behavior_proof_required": "Seafile reachable/login/API proof; Jitsi browser-visible room proof.",
+      "rollback": "Revert health mapping only."
+    },
+    {
+      "priority": 3,
+      "track": "desktop_operator_proof",
+      "targets": [
+        "leeway_desktop_runtime",
+        "leeway_device_operator",
+        "CerebralDaemon.py"
+      ],
+      "objective": "Prove Agent Lee can read desktop state and perform approved click/type/open action through existing desktop runtime lane.",
+      "action_type": "native_operator_wiring",
+      "approval_required": true,
+      "behavior_proof_required": "Approved harmless desktop action, screenshot/state receipt, rollback/no-op safety proof.",
+      "rollback": "Disable desktop action endpoint and return to read-only mode."
+    },
+    {
+      "priority": 4,
+      "track": "browser_operator_proof",
+      "targets": "leeway_browser_runtime",
+      "objective": "Prove Agent Lee can operate a controlled Playwright/Chromium session.",
+      "action_type": "browser_operator_wiring",
+      "approval_required": true,
+      "behavior_proof_required": "Open local test page, click harmless button, capture screenshot, write receipt.",
+      "rollback": "Disable browser action endpoint."
+    },
+    {
+      "priority": 5,
+      "track": "email_provider_proof",
+      "targets": "leeway_email_runtime",
+      "objective": "Prove authenticated draft/create/send path with approval gate.",
+      "action_type": "provider_wiring",
+      "approval_required": true,
+      "behavior_proof_required": "Draft proof first. Send proof only after explicit approval.",
+      "rollback": "Disable send endpoint; retain draft-only mode."
+    },
+    {
+      "priority": 6,
+      "track": "calendar_provider_proof",
+      "targets": "leeway_calendar_runtime",
+      "objective": "Prove authenticated read/create/update calendar event path with approval gate.",
+      "action_type": "provider_wiring",
+      "approval_required": true,
+      "behavior_proof_required": "Create test event after explicit approval, verify readback, then delete/cleanup if approved.",
+      "rollback": "Disable write endpoint; keep read-only mode."
+    },
+    {
+      "priority": 7,
+      "track": "phone_provider_or_device_proof",
+      "targets": "leeway_phone_runtime",
+      "objective": "Prove phone/SMS/call lane only with explicit approval and either provider credentials or device bridge policy.",
+      "action_type": "provider_or_device_wiring",
+      "approval_required": true,
+      "behavior_proof_required": "No real call/text until explicit approval. Start with dry-run proof and provider/device readiness check.",
+      "rollback": "Disable phone action endpoint."
+    },
+    {
+      "priority": 8,
+      "track": "license_and_installer_proof",
+      "targets": [
+        "leeway_license_runtime",
+        "leeway_installer_runtime"
+      ],
+      "objective": "Prove customer entitlement, package validation, install/update/rollback workflow.",
+      "action_type": "productization_wiring",
+      "approval_required": false,
+      "behavior_proof_required": "License policy test, package manifest validation, install dry-run, rollback dry-run.",
+      "rollback": "Restore prior policy and installer manifests."
+    },
+    {
+      "priority": 9,
+      "track": "vision_and_image_kernel_proof",
+      "targets": [
+        "agent-lee-vision-kernel",
+        "agent-lee-telegram-vision-lane",
+        "agent-lee-sdxl-lightning-image-lane",
+        "agent-lee-image-to-3d-pattern-lane",
+        "agent-lee-true-character-mesh-lane",
+        "agent-lee-character-cutout-lane"
+      ],
+      "objective": "Restore/disable experimental vision/image/3D lanes based on product readiness.",
+      "action_type": "kernel_classification_and_behavior_proof",
+      "approval_required": false,
+      "behavior_proof_required": "Health proof plus one harmless local inference/generation proof per enabled lane.",
+      "rollback": "Mark unready lanes disabled/experimental."
+    }
+  ],
+  "no_bridge_sprawl_policy": {
+    "active": true,
+    "rule": "Do not create new desktop/phone/browser bridge variants. Merge needed behavior into canonical runtime lanes.",
+    "legacy_bridge_target": "leeway-local-assistant-bridge",
+    "legacy_bridge_action": "review_disable_or_merge"
+  },
+  "next_action": "Run U2B first remediation: archive/disable old backup containers from active truth without deletion."
+}

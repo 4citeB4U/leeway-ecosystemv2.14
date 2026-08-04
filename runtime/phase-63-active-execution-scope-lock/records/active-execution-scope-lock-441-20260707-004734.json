@@ -1,0 +1,792 @@
+﻿{
+    "version":  "LEEWAY_ACTIVE_EXECUTION_SCOPE_LOCK_441",
+    "phase":  63,
+    "timestamp":  "2026-07-07T00:47:34",
+    "verdict":  "LEEWAY_ACTIVE_EXECUTION_SCOPE_LOCK_441_CLEAN_REPAIR_REQUIRED_EXECUTION_STILL_BLOCKED",
+    "scope_lock_only":  true,
+    "runtime_execution_performed":  false,
+    "container_execution_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "package_created":  false,
+    "physical_action_performed":  false,
+    "inherited":  {
+                      "gate_440_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                      "gate_440_clean":  true,
+                      "closeout_439_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                      "binding_437R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-59R-discovery-reassembly-binding-map-repair\\latest\\discovery-reassembly-binding-map-latest.json",
+                      "carry_435C_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-57C-package-carry-forward-manifest\\latest\\package-carry-forward-manifest-latest.json"
+                  },
+    "input_counts":  {
+                         "total_containers":  54,
+                         "execution_critical_candidates":  20,
+                         "support_only_candidates":  17,
+                         "document_only":  7,
+                         "blocked":  47,
+                         "unclassified":  12,
+                         "running":  47,
+                         "backup_or_rollback":  4
+                     },
+    "proposed_active_scope":  [
+                                  {
+                                      "container":  "leeway_context_gateway",
+                                      "image":  "leeway_context_gateway:local",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  },
+                                  {
+                                      "container":  "leeway_api_gateway",
+                                      "image":  "leeway_api_gateway:local",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  },
+                                  {
+                                      "container":  "leeway_runtime_fabric",
+                                      "image":  "leeway-ecosystemv214-runtime-fabric",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  },
+                                  {
+                                      "container":  "leeway_mcp_center",
+                                      "image":  "leeway-ecosystemv214-leeway-mcp-center",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  },
+                                  {
+                                      "container":  "leeway_mcp_agent_center",
+                                      "image":  "leeway-ecosystemv214-leeway-mcp-agent-center",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  },
+                                  {
+                                      "container":  "leeway_agent_center",
+                                      "image":  "leeway-ecosystemv214-leeway-agent-center",
+                                      "status":  "Up 14 hours",
+                                      "families":  [
+                                                       "runtime_fabric"
+                                                   ],
+                                      "reason":  "preferred_runtime_fabric_or_business_runtime_candidate",
+                                      "active_scope_candidate":  true,
+                                      "execution_allowed_now":  false,
+                                      "docker_exec_allowed_now":  false,
+                                      "docker_mutation_allowed_now":  false
+                                  }
+                              ],
+    "deferred_scope":  [
+                           {
+                               "container":  "leeway_device_operator",
+                               "image":  "leeway_device_operator:device-layer-163b",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "device_layer"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_workboard_runtime",
+                               "image":  "leeway_workboard_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_pwa_dashboard",
+                               "image":  "leeway_pwa_dashboard:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_installer_runtime",
+                               "image":  "leeway_installer_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_license_runtime",
+                               "image":  "leeway_license_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_browser_runtime",
+                               "image":  "leeway_browser_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_calendar_runtime",
+                               "image":  "leeway_calendar_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_email_runtime",
+                               "image":  "leeway_email_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-telegram-shell",
+                               "image":  "agent-lee-telegram-shell:plan-aware-20260704-092048",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "telegram_layer"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_artifact_viewer",
+                               "image":  "leeway_artifact_viewer:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_open_notebook",
+                               "image":  "leeway_open_notebook:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_meeting_runtime",
+                               "image":  "leeway_meeting_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_document_runtime",
+                               "image":  "leeway_document_runtime:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "app_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_seafile_storage_gateway",
+                               "image":  "leeway_seafile_storage_gateway:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "runtime_fabric",
+                                                "memory_storage_data"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-sdxl-lightning-image-lane",
+                               "image":  "agent-lee-sdxl-lightning-image-lane:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-image-to-3d-pattern-lane",
+                               "image":  "agent-lee-image-to-3d-pattern-lane:local",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-qwen-voice",
+                               "image":  "agent-lee-qwen-voice:cuda",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent_lee_code_mode",
+                               "image":  "leeway-ecosystemv214-agent-lee",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-jitsi-meet-web-1",
+                               "image":  "ghcr.io/jitsi/web:unstable",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-jitsi-meet-jicofo-1",
+                               "image":  "ghcr.io/jitsi/jicofo:unstable",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-jitsi-meet-jvb-1",
+                               "image":  "ghcr.io/jitsi/jvb:unstable",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-jitsi-meet-prosody-1",
+                               "image":  "ghcr.io/jitsi/prosody:unstable",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "browser_or_interactive_surface"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-ears-kernel",
+                               "image":  "agent-lee-ears-kernel-agent-lee-ears-kernel",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway_ollama",
+                               "image":  "ollama/ollama:latest",
+                               "status":  "Up 14 hours (healthy)",
+                               "families":  [
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-vision-kernel",
+                               "image":  "agent-lee-vision-kernel-agent-lee-vision-kernel",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "agent-lee-voice-kernel",
+                               "image":  "agent-lee-voice-kernel-voice-kernel",
+                               "status":  "Up 14 hours (healthy)",
+                               "families":  [
+                                                "agent_lee_cerebral",
+                                                "model_voice_vision_provider"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-seafile",
+                               "image":  "seafileltd/seafile-mc:latest",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "memory_storage_data"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-seafile-cache",
+                               "image":  "memcached:1.6",
+                               "status":  "Up 14 hours",
+                               "families":  [
+                                                "memory_storage_data"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           },
+                           {
+                               "container":  "leeway-seafile-db",
+                               "image":  "mariadb:10.11",
+                               "status":  "Up 14 hours (healthy)",
+                               "families":  [
+                                                "memory_storage_data"
+                                            ],
+                               "reason":  "not_in_minimal_active_scope_or_requires_later_explicit_scope",
+                               "execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false
+                           }
+                       ],
+    "document_only_scope":  [
+                                {
+                                    "container":  "leeway_device_operator_rollback_163b_20260705-173630",
+                                    "image":  "leeway_device_operator:device-layer-163",
+                                    "status":  "Exited (0) 31 hours ago",
+                                    "families":  [
+                                                     "device_layer",
+                                                     "backup_or_rollback"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "leeway_device_operator_rollback_20260705-173336",
+                                    "image":  "leeway_device_operator:local",
+                                    "status":  "Exited (0) 31 hours ago",
+                                    "families":  [
+                                                     "device_layer",
+                                                     "backup_or_rollback"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+                                    "image":  "agent-lee-telegram-shell:latest",
+                                    "status":  "Exited (137) 3 days ago",
+                                    "families":  [
+                                                     "agent_lee_cerebral",
+                                                     "telegram_layer",
+                                                     "backup_or_rollback"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "agent-lee-true-character-mesh-lane",
+                                    "image":  "agent-lee-true-character-mesh-lane:local",
+                                    "status":  "Exited (255) 14 hours ago",
+                                    "families":  [
+                                                     "agent_lee_cerebral",
+                                                     "model_voice_vision_provider"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "agent-lee-telegram-vision-lane",
+                                    "image":  "agent-lee-telegram-vision-lane:local",
+                                    "status":  "Exited (255) 3 days ago",
+                                    "families":  [
+                                                     "agent_lee_cerebral",
+                                                     "telegram_layer",
+                                                     "model_voice_vision_provider"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "agent-lee-character-cutout-lane",
+                                    "image":  "agent-lee-character-cutout-lane:local",
+                                    "status":  "Exited (255) 14 hours ago",
+                                    "families":  [
+                                                     "agent_lee_cerebral"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                },
+                                {
+                                    "container":  "agent-lee-telegram-shell-backup-20260703-144921",
+                                    "image":  "agent-lee-telegram-shell:latest",
+                                    "status":  "Exited (137) 3 days ago",
+                                    "families":  [
+                                                     "agent_lee_cerebral",
+                                                     "telegram_layer",
+                                                     "backup_or_rollback"
+                                                 ],
+                                    "reason":  "backup_rollback_or_not_running_document_only",
+                                    "execution_allowed_now":  false,
+                                    "docker_exec_allowed_now":  false,
+                                    "docker_mutation_allowed_now":  false
+                                }
+                            ],
+    "classification_repair_required":  [
+                                           {
+                                               "container":  "leeway_executive_runtime",
+                                               "image":  "leeway_executive_runtime:truth-sync",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5340-\u003e5340/tcp, [::]:5340-\u003e5340/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_agent_skills",
+                                               "image":  "leeway_agent_skills:truth-sync",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5327-\u003e5327/tcp, [::]:5327-\u003e5327/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_performance_runtime",
+                                               "image":  "leeway_performance_runtime:local",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5338-\u003e5338/tcp, [::]:5338-\u003e5338/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_desktop_runtime",
+                                               "image":  "leeway_desktop_runtime:local",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5334-\u003e5334/tcp, [::]:5334-\u003e5334/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_phone_runtime",
+                                               "image":  "leeway_phone_runtime:local",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5332-\u003e5332/tcp, [::]:5332-\u003e5332/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_skill_router",
+                                               "image":  "leeway_skill_router:local",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5324-\u003e5324/tcp, [::]:5324-\u003e5324/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_research_lane",
+                                               "image":  "leeway_research_lane:local",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5310-\u003e5310/tcp, [::]:5310-\u003e5310/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway-local-assistant-bridge",
+                                               "image":  "local-assistant-bridge-leeway-local-assistant-bridge",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:8787-\u003e8787/tcp, [::]:8787-\u003e8787/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_media_router",
+                                               "image":  "leeway-ecosystemv214-leeway-media-router",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5301-\u003e5301/tcp, [::]:5301-\u003e5301/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_media_ingestion_layer",
+                                               "image":  "leeway-ecosystemv214-leeway-media-ingestion-layer",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:5300-\u003e5300/tcp, [::]:5300-\u003e5300/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_worker_center",
+                                               "image":  "leeway-ecosystemv214-leeway-worker-center",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:8862-\u003e8862/tcp, [::]:8862-\u003e8862/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           },
+                                           {
+                                               "container":  "leeway_hybrid_fabric",
+                                               "image":  "leeway-ecosystemv214-hybrid-fabric",
+                                               "status":  "Up 14 hours",
+                                               "ports":  "0.0.0.0:8777-\u003e8777/tcp, [::]:8777-\u003e8777/tcp",
+                                               "running_now":  true,
+                                               "reason":  "unclassified_container_must_be_classified_before_active_scope_can_be_final",
+                                               "execution_allowed_now":  false,
+                                               "docker_exec_allowed_now":  false,
+                                               "docker_mutation_allowed_now":  false
+                                           }
+                                       ],
+    "scope_lock_decision":  {
+                                "active_execution_scope_lock_created":  true,
+                                "active_execution_scope_final":  false,
+                                "proposed_active_scope_exists":  true,
+                                "proposed_active_scope_count":  6,
+                                "deferred_scope_count":  29,
+                                "document_only_scope_count":  7,
+                                "classification_repair_required_count":  12,
+                                "unclassified_containers_block_final_scope":  true,
+                                "runtime_execution_allowed_now":  false,
+                                "docker_exec_allowed_now":  false,
+                                "docker_mutation_allowed_now":  false,
+                                "device_control_allowed_now":  false,
+                                "package_creation_allowed_now":  false,
+                                "next_route":  "UNCLASSIFIED_CONTAINER_CLASSIFICATION_REPAIR",
+                                "recommended_next_script":  "441R-unclassified-container-classification-repair-no-execute.ps1"
+                            },
+    "remaining_gates":  [
+                            {
+                                "gate_id":  "UNCLASSIFIED_CONTAINER_CLASSIFICATION_REPAIR",
+                                "status":  "OPEN",
+                                "blocking_execution":  true,
+                                "count":  12,
+                                "description":  "Unclassified containers must be classified before active execution scope can be final.",
+                                "next_script":  "441R-unclassified-container-classification-repair-no-execute.ps1"
+                            },
+                            {
+                                "gate_id":  "STANDARDS_BOUND_EXECUTION_APPROVAL",
+                                "status":  "OPEN",
+                                "blocking_execution":  true,
+                                "description":  "No Standards-bound execution approval exists for the locked scope.",
+                                "next_script":  "442-standards-bound-execution-approval-gate-no-execute.ps1"
+                            },
+                            {
+                                "gate_id":  "SINGLE_USE_RUNTIME_PROOF",
+                                "status":  "OPEN",
+                                "blocking_execution":  true,
+                                "description":  "Any future runtime proof must be single-use and scoped.",
+                                "next_script":  "later"
+                            },
+                            {
+                                "gate_id":  "PACKAGE_CREATION_GATE",
+                                "status":  "OPEN",
+                                "blocking_package_creation":  true,
+                                "description":  "Package creation remains blocked until runtime proof closeout.",
+                                "next_script":  "later"
+                            }
+                        ],
+    "hard_blocks":  [
+                        "runtime_execution",
+                        "agent_lee_runtime_execution",
+                        "container_execution",
+                        "docker_exec",
+                        "docker_mutation",
+                        "docker_start",
+                        "docker_stop",
+                        "docker_restart",
+                        "docker_build",
+                        "docker_compose_up",
+                        "docker_rm",
+                        "docker_prune",
+                        "device_control",
+                        "physical_action",
+                        "telegram_posting",
+                        "model_execution",
+                        "provider_call",
+                        "tool_execution",
+                        "image_generation",
+                        "voice_generation",
+                        "browser_control",
+                        "package_creation",
+                        "sdk_distribution"
+                    ],
+    "next_phase_needs":  [
+                             "441R must classify the unclassified containers without execution.",
+                             "441R must not docker exec.",
+                             "441R must not mutate Docker.",
+                             "441R must not start/stop/restart containers.",
+                             "441R must use names/images/ports/status only.",
+                             "441R must update the active scope decision after classification.",
+                             "Runtime execution remains blocked.",
+                             "Docker exec remains blocked.",
+                             "Docker mutation remains blocked.",
+                             "Packaging/distribution remains paused."
+                         ],
+    "counts":  {
+                   "proposed_active_scope":  6,
+                   "deferred_scope":  29,
+                   "document_only_scope":  7,
+                   "classification_repair_required":  12,
+                   "remaining_gates":  4,
+                   "hard_blocks":  23,
+                   "next_phase_needs":  10
+               },
+    "recommended_next_script":  "441R-unclassified-container-classification-repair-no-execute.ps1"
+}

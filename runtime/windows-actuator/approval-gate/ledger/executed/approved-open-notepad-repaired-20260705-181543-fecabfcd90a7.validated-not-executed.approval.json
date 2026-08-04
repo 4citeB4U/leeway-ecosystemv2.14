@@ -1,0 +1,38 @@
+﻿{
+    "approval_id":  "approved-open-notepad-repaired-20260705-181543-fecabfcd90a7",
+    "created_at":  "2026-07-05T18:15:45",
+    "expires_at":  "2026-07-05T18:25:45",
+    "requested_by":  "script_171B",
+    "decided_at":  "2026-07-05T18:15:45",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "One-time alpha approval to validate open Notepad path after validator repair. Current alpha should validate approval but not physically open Notepad.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "arguments":  [
+
+                                  ]
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  true,
+    "rollback_or_stop":  "Run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 if needed.",
+    "safety_expectation":  {
+                               "expected_result":  "allowed_true_executed_false",
+                               "current_alpha_expected_to_execute":  false,
+                               "no_app_should_open":  true
+                           },
+    "used_at":  "2026-07-05T18:15:47",
+    "execution_result":  "VALIDATED_BUT_NOT_EXECUTED",
+    "response_allowed":  false,
+    "response_executed":  false,
+    "new_notepad_process_ids":  [
+
+                                ],
+    "response_file":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-171B-20260705-181543\\json\\repaired-approved-real-open-notepad-response.json"
+}

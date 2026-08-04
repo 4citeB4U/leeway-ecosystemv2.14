@@ -1,0 +1,26 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_OPERATOR_TO_WINDOWS_DRY_RUN_ACTUATOR_LINK_2026-07-05",
+    "created_at":  "2026-07-05T17:58:26",
+    "active_windows_execution_adapter":  {
+                                             "adapter_url":  "http://127.0.0.1:7331",
+                                             "adapter_id":  "windows-agent-lee-local-actuator-dry-run",
+                                             "physical_execution_enabled":  false,
+                                             "mode":  "dry_run_only",
+                                             "preferred_for":  [
+                                                                   "windows_open_app_dry_run",
+                                                                   "windows_open_url_dry_run",
+                                                                   "windows_mouse_click_dry_run",
+                                                                   "windows_type_text_dry_run",
+                                                                   "windows_screenshot_dry_run",
+                                                                   "windows_print_dry_run",
+                                                                   "windows_shell_command_dry_run"
+                                                               ]
+                                         },
+    "fallbacks":  [
+                      {
+                          "adapter_id":  "windows-agent-lee-local-actuator-contract",
+                          "physical_execution_enabled":  false,
+                          "mode":  "contract_only"
+                      }
+                  ]
+}

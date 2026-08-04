@@ -1,0 +1,448 @@
+﻿{
+    "researchId":  "research-mqj7w5ph-79c58056",
+    "objective":  "Find the strongest evidence from local Leeway receipts/manifests proving what Agent Lee can and cannot do.",
+    "query":  "local receipts manifests Agent Lee abilities limits proof",
+    "sourceMap":  [
+                      {
+                          "id":  "evidence-mqj7we9j-df6db5d4",
+                          "source":  "desktop runtime browser search",
+                          "title":  "Agent Lee local receipts runtime README BYOK core map speech policy - Search",
+                          "url":  "https://www.bing.com/search?q=Agent+Lee+local+receipts+runtime+README+BYOK+core+map+speech+policy\u0026form=QBLH\u0026sp=-1\u0026ghc=1\u0026lq=0\u0026pq=agent+lee+local+receipts+runtime+readme+byok+core+map+speech+poli\u0026sc=8-65\u0026qs=n\u0026sk=\u0026cvid=89451BAD14DB4999A09630BA21CC7A47",
+                          "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166",
+                          "sourceType":  "browser_search",
+                          "status":  "candidate",
+                          "qualityScore":  70,
+                          "relevanceScore":  78,
+                          "freshnessScore":  72,
+                          "keyEvidence":  "Browser search executed for query: Agent Lee local receipts runtime README BYOK core map speech policy",
+                          "supports":  [
+                                           "Agent Lee local receipts runtime README BYOK core map speech policy"
+                                       ],
+                          "confidence":  "medium",
+                          "notes":  "Screenshot captured at E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166\\screenshots\\agent-lee-search-Agent_Lee_local_receipts_runtime_README_BYOK_core_map_speech-1781770074340.png",
+                          "capturedAt":  "2026-06-18T08:07:56.983Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7weq5-da0c97ec",
+                          "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-stateful-research-harness-20260618-030742.json",
+                          "title":  "Latest local proof receipt",
+                          "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-stateful-research-harness-20260618-030742.json",
+                          "sourceType":  "local_receipt",
+                          "status":  "candidate",
+                          "qualityScore":  95,
+                          "relevanceScore":  96,
+                          "freshnessScore":  100,
+                          "keyEvidence":  "The latest receipt shows live local proof is being written to Archive/receipts.",
+                          "supports":  [
+                                           "proof culture",
+                                           "visible receipts"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local receipt evidence.",
+                          "capturedAt":  "2026-06-18T08:07:57.581Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wex3-ec400d96",
+                          "source":  "agent-lee-coding-mode/README.md",
+                          "title":  "Agent Lee README",
+                          "localPath":  "agent-lee-coding-mode/README.md",
+                          "sourceType":  "local_doc",
+                          "status":  "candidate",
+                          "qualityScore":  87,
+                          "relevanceScore":  92,
+                          "freshnessScore":  88,
+                          "keyEvidence":  "README documents the speech style policy and the proof workflow.",
+                          "supports":  [
+                                           "runtime proof",
+                                           "speech policy",
+                                           "validation"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local README evidence.",
+                          "capturedAt":  "2026-06-18T08:07:57.831Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wf0n-12b41d4d",
+                          "source":  "AGENT-LEE-VSCODE-BYOK.md",
+                          "title":  "Agent Lee BYOK guide",
+                          "localPath":  "AGENT-LEE-VSCODE-BYOK.md",
+                          "sourceType":  "local_doc",
+                          "status":  "candidate",
+                          "qualityScore":  86,
+                          "relevanceScore":  90,
+                          "freshnessScore":  86,
+                          "keyEvidence":  "BYOK guide documents the VS Code adapter endpoint and validation prompts.",
+                          "supports":  [
+                                           "VS Code Chat proof",
+                                           "adapter endpoint"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local BYOK evidence.",
+                          "capturedAt":  "2026-06-18T08:07:57.959Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wf9c-9a8746fb",
+                          "source":  "AGENT_LEE_CORE_MAP.md",
+                          "title":  "Agent Lee core map",
+                          "localPath":  "agent-lee-coding-mode/AGENT_LEE_CORE_MAP.md",
+                          "sourceType":  "local_doc",
+                          "status":  "candidate",
+                          "qualityScore":  88,
+                          "relevanceScore":  94,
+                          "freshnessScore":  88,
+                          "keyEvidence":  "Core map links router, runtime, voice, and proof surfaces.",
+                          "supports":  [
+                                           "ability claims",
+                                           "limitations",
+                                           "voice"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local core map evidence.",
+                          "capturedAt":  "2026-06-18T08:07:58.272Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wfgg-9699a05c",
+                          "source":  "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+                          "title":  "Speech style policy",
+                          "localPath":  "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+                          "sourceType":  "local_manifest",
+                          "status":  "candidate",
+                          "qualityScore":  94,
+                          "relevanceScore":  95,
+                          "freshnessScore":  100,
+                          "keyEvidence":  "Speech rules explicitly require natural Leeway style and reject robotic narration.",
+                          "supports":  [
+                                           "speech style",
+                                           "progress lines"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local speech policy evidence.",
+                          "capturedAt":  "2026-06-18T08:07:58.528Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wgar-7449998e",
+                          "source":  "obvious SEO filler",
+                          "title":  "SEO filler",
+                          "url":  "https://example.com/filler",
+                          "sourceType":  "seo_filler",
+                          "status":  "rejected",
+                          "qualityScore":  12,
+                          "relevanceScore":  5,
+                          "freshnessScore":  10,
+                          "keyEvidence":  "No primary evidence.",
+                          "supports":  [
+                                           "none"
+                                       ],
+                          "confidence":  "low",
+                          "notes":  "Rejected for quality.",
+                          "capturedAt":  "2026-06-18T08:07:59.619Z"
+                      }
+                  ],
+    "candidateEvidence":  [
+                              {
+                                  "id":  "evidence-mqj7we9j-df6db5d4",
+                                  "source":  "desktop runtime browser search",
+                                  "title":  "Agent Lee local receipts runtime README BYOK core map speech policy - Search",
+                                  "url":  "https://www.bing.com/search?q=Agent+Lee+local+receipts+runtime+README+BYOK+core+map+speech+policy\u0026form=QBLH\u0026sp=-1\u0026ghc=1\u0026lq=0\u0026pq=agent+lee+local+receipts+runtime+readme+byok+core+map+speech+poli\u0026sc=8-65\u0026qs=n\u0026sk=\u0026cvid=89451BAD14DB4999A09630BA21CC7A47",
+                                  "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166",
+                                  "sourceType":  "browser_search",
+                                  "status":  "candidate",
+                                  "qualityScore":  70,
+                                  "relevanceScore":  78,
+                                  "freshnessScore":  72,
+                                  "keyEvidence":  "Browser search executed for query: Agent Lee local receipts runtime README BYOK core map speech policy",
+                                  "supports":  [
+                                                   "Agent Lee local receipts runtime README BYOK core map speech policy"
+                                               ],
+                                  "confidence":  "medium",
+                                  "notes":  "Screenshot captured at E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166\\screenshots\\agent-lee-search-Agent_Lee_local_receipts_runtime_README_BYOK_core_map_speech-1781770074340.png",
+                                  "capturedAt":  "2026-06-18T08:07:56.983Z"
+                              },
+                              {
+                                  "id":  "evidence-mqj7wf0n-12b41d4d",
+                                  "source":  "AGENT-LEE-VSCODE-BYOK.md",
+                                  "title":  "Agent Lee BYOK guide",
+                                  "localPath":  "AGENT-LEE-VSCODE-BYOK.md",
+                                  "sourceType":  "local_doc",
+                                  "status":  "candidate",
+                                  "qualityScore":  86,
+                                  "relevanceScore":  90,
+                                  "freshnessScore":  86,
+                                  "keyEvidence":  "BYOK guide documents the VS Code adapter endpoint and validation prompts.",
+                                  "supports":  [
+                                                   "VS Code Chat proof",
+                                                   "adapter endpoint"
+                                               ],
+                                  "confidence":  "high",
+                                  "notes":  "Local BYOK evidence.",
+                                  "capturedAt":  "2026-06-18T08:07:57.959Z"
+                              },
+                              {
+                                  "id":  "evidence-mqj7wf9c-9a8746fb",
+                                  "source":  "AGENT_LEE_CORE_MAP.md",
+                                  "title":  "Agent Lee core map",
+                                  "localPath":  "agent-lee-coding-mode/AGENT_LEE_CORE_MAP.md",
+                                  "sourceType":  "local_doc",
+                                  "status":  "candidate",
+                                  "qualityScore":  88,
+                                  "relevanceScore":  94,
+                                  "freshnessScore":  88,
+                                  "keyEvidence":  "Core map links router, runtime, voice, and proof surfaces.",
+                                  "supports":  [
+                                                   "ability claims",
+                                                   "limitations",
+                                                   "voice"
+                                               ],
+                                  "confidence":  "high",
+                                  "notes":  "Local core map evidence.",
+                                  "capturedAt":  "2026-06-18T08:07:58.272Z"
+                              },
+                              {
+                                  "id":  "evidence-mqj7wfgg-9699a05c",
+                                  "source":  "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+                                  "title":  "Speech style policy",
+                                  "localPath":  "agent-lee-coding-mode/runtime/agent-lee-speech-style-policy.json",
+                                  "sourceType":  "local_manifest",
+                                  "status":  "candidate",
+                                  "qualityScore":  94,
+                                  "relevanceScore":  95,
+                                  "freshnessScore":  100,
+                                  "keyEvidence":  "Speech rules explicitly require natural Leeway style and reject robotic narration.",
+                                  "supports":  [
+                                                   "speech style",
+                                                   "progress lines"
+                                               ],
+                                  "confidence":  "high",
+                                  "notes":  "Local speech policy evidence.",
+                                  "capturedAt":  "2026-06-18T08:07:58.528Z"
+                              }
+                          ],
+    "curatedEvidence":  [
+                            {
+                                "id":  "evidence-mqj7weq5-da0c97ec",
+                                "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-stateful-research-harness-20260618-030742.json",
+                                "title":  "Latest local proof receipt",
+                                "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-stateful-research-harness-20260618-030742.json",
+                                "sourceType":  "local_receipt",
+                                "status":  "curated",
+                                "qualityScore":  95,
+                                "relevanceScore":  96,
+                                "freshnessScore":  100,
+                                "keyEvidence":  "The latest receipt shows live local proof is being written to Archive/receipts.",
+                                "supports":  [
+                                                 "proof culture",
+                                                 "visible receipts"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Local receipt evidence.",
+                                "capturedAt":  "2026-06-18T08:07:57.581Z"
+                            },
+                            {
+                                "id":  "evidence-mqj7wex3-ec400d96",
+                                "source":  "agent-lee-coding-mode/README.md",
+                                "title":  "Agent Lee README",
+                                "localPath":  "agent-lee-coding-mode/README.md",
+                                "sourceType":  "local_doc",
+                                "status":  "curated",
+                                "qualityScore":  87,
+                                "relevanceScore":  92,
+                                "freshnessScore":  88,
+                                "keyEvidence":  "README documents the speech style policy and the proof workflow.",
+                                "supports":  [
+                                                 "runtime proof",
+                                                 "speech policy",
+                                                 "validation"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Local README evidence.",
+                                "capturedAt":  "2026-06-18T08:07:57.831Z"
+                            }
+                        ],
+    "rejectedEvidence":  [
+                             {
+                                 "id":  "evidence-mqj7wgar-7449998e",
+                                 "source":  "obvious SEO filler",
+                                 "title":  "SEO filler",
+                                 "url":  "https://example.com/filler",
+                                 "sourceType":  "seo_filler",
+                                 "status":  "rejected",
+                                 "qualityScore":  12,
+                                 "relevanceScore":  5,
+                                 "freshnessScore":  10,
+                                 "keyEvidence":  "No primary evidence.",
+                                 "supports":  [
+                                                  "none"
+                                              ],
+                                 "confidence":  "low",
+                                 "notes":  "Rejected for quality.",
+                                 "capturedAt":  "2026-06-18T08:07:59.619Z"
+                             }
+                         ],
+    "claimChecks":  [
+                        {
+                            "id":  "claim-mqj7wgk3-12ad1d56",
+                            "claim":  "Agent Lee can talk, voice, browse, and keep receipts.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7weq5-da0c97ec",
+                                                "evidence-mqj7wex3-ec400d96",
+                                                "evidence-mqj7wf0n-12b41d4d"
+                                            ],
+                            "counterevidence":  "No stronger local counterevidence found.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "Agent Lee ships conversation, voice, browser, and receipt proof.",
+                            "notes":  "Local proof receipt synthesis.",
+                            "checkedAt":  "2026-06-18T08:07:59.955Z"
+                        },
+                        {
+                            "id":  "claim-mqj7wgq4-18a82162",
+                            "claim":  "Agent Lee does not overclaim vision or real physical action.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7wf9c-9a8746fb",
+                                                "evidence-mqj7wfgg-9699a05c"
+                                            ],
+                            "counterevidence":  "No stronger local counterevidence found.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "Vision remains guarded and physical actions stay simulation-first.",
+                            "notes":  "Local proof receipt synthesis.",
+                            "checkedAt":  "2026-06-18T08:08:00.172Z"
+                        }
+                    ],
+    "openGaps":  [
+
+                 ],
+    "buildDecisions":  [
+                           {
+                               "id":  "decision-mqj7we9j-ec16e3b1",
+                               "kind":  "search",
+                               "decision":  "keep",
+                               "reason":  "browser research surfaced candidate evidence",
+                               "query":  "Agent Lee local receipts runtime README BYOK core map speech policy",
+                               "at":  "2026-06-18T08:07:56.983Z"
+                           },
+                           {
+                               "id":  "decision-mqj7wfsi-3ad775a1",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "Local receipts are the most direct proof of runtime behavior.",
+                               "evidenceId":  "evidence-mqj7weq5-da0c97ec",
+                               "at":  "2026-06-18T08:07:58.962Z"
+                           },
+                           {
+                               "id":  "decision-mqj7wg31-95890839",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "README is the canonical operator doc for the site proof.",
+                               "evidenceId":  "evidence-mqj7wex3-ec400d96",
+                               "at":  "2026-06-18T08:07:59.341Z"
+                           },
+                           {
+                               "id":  "build-mqj7wgug-950a5aa8",
+                               "researchId":  "research-mqj7w5ph-79c58056",
+                               "buildTarget":  "agent-lee-coding-mode/build-sandbox/agent-lee-abilities-site",
+                               "decision":  "apply",
+                               "evidenceIds":  [
+                                                   "evidence-mqj7weq5-da0c97ec",
+                                                   "evidence-mqj7wex3-ec400d96",
+                                                   "evidence-mqj7wf0n-12b41d4d",
+                                                   "evidence-mqj7wf9c-9a8746fb"
+                                               ],
+                               "reason":  "The abilities site should display curated local proof and limits.",
+                               "at":  "2026-06-18T08:08:00.328Z"
+                           }
+                       ],
+    "receipts":  [
+                     {
+                         "kind":  "browser-search",
+                         "ok":  true,
+                         "query":  "Agent Lee local receipts runtime README BYOK core map speech policy",
+                         "runRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166",
+                         "screenshot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770066166\\screenshots\\agent-lee-search-Agent_Lee_local_receipts_runtime_README_BYOK_core_map_speech-1781770074340.png",
+                         "at":  "2026-06-18T08:07:56.983Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7weq5-da0c97ec",
+                         "status":  "candidate",
+                         "qualityScore":  95,
+                         "at":  "2026-06-18T08:07:57.581Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wex3-ec400d96",
+                         "status":  "candidate",
+                         "qualityScore":  87,
+                         "at":  "2026-06-18T08:07:57.831Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wf0n-12b41d4d",
+                         "status":  "candidate",
+                         "qualityScore":  86,
+                         "at":  "2026-06-18T08:07:57.959Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wf9c-9a8746fb",
+                         "status":  "candidate",
+                         "qualityScore":  88,
+                         "at":  "2026-06-18T08:07:58.272Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wfgg-9699a05c",
+                         "status":  "candidate",
+                         "qualityScore":  94,
+                         "at":  "2026-06-18T08:07:58.528Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7weq5-da0c97ec",
+                         "at":  "2026-06-18T08:07:58.962Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7wex3-ec400d96",
+                         "at":  "2026-06-18T08:07:59.341Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wgar-7449998e",
+                         "status":  "rejected",
+                         "qualityScore":  12,
+                         "at":  "2026-06-18T08:07:59.619Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7wgk3-12ad1d56",
+                         "at":  "2026-06-18T08:07:59.955Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7wgq4-18a82162",
+                         "at":  "2026-06-18T08:08:00.172Z"
+                     },
+                     {
+                         "kind":  "build-decision",
+                         "decisionId":  "build-mqj7wgug-950a5aa8",
+                         "at":  "2026-06-18T08:08:00.328Z"
+                     },
+                     {
+                         "kind":  "receipt",
+                         "receiptPath":  "Archive/receipts/agent-lee-research/research-mqj7w5ph-79c58056-mqj7wgvd.json",
+                         "at":  "2026-06-18T08:08:00.369Z"
+                     }
+                 ],
+    "entrySurface":  "vscode-chat",
+    "adapterEndpoint":  "http://127.0.0.1:8787/v1/chat/completions",
+    "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+    "ledgerPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\build-sandbox\\agent-lee-abilities-site\\research-ledger.json",
+    "receiptPath":  "Archive/receipts/agent-lee-research/research-mqj7w5ph-79c58056-mqj7wgvd.json",
+    "createdAt":  "2026-06-18T03:08:00.4922548-05:00",
+    "updatedAt":  "2026-06-18T03:08:00.4922548-05:00"
+}

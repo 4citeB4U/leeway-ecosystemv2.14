@@ -1,0 +1,129 @@
+﻿{
+    "version":  "LEEWAY_MACOS_ACTUATOR_CONTRACT_251",
+    "timestamp":  "2026-07-05T22:25:56",
+    "family":  "macos",
+    "capability_status":  "MACOS_ACTUATOR_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "macos_discover":  false,
+                            "macos_status":  false,
+                            "macos_registry":  false,
+                            "macos_shell_status":  false,
+                            "macos_actuator_status":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/macos/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/macos/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/macos/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/macos/shell/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/macos/actuator/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/shell/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/ssh/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/applescript/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/ui/click",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/ui/type-text",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/ui/hotkey",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/app/open",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/file/read",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/macos/file/write",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_ssh_invoked":  true,
+                   "no_shell_invoked":  true,
+                   "no_applescript_invoked":  true,
+                   "no_remote_host_connected":  true,
+                   "no_file_read":  true,
+                   "no_file_write":  true,
+                   "no_app_open":  true,
+                   "no_click":  true,
+                   "no_text_entry":  true,
+                   "no_hotkey":  true,
+                   "no_process_mutation":  true,
+                   "no_system_mutation":  true,
+                   "no_accessibility_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

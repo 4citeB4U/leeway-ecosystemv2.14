@@ -1,0 +1,16 @@
+{
+  "kind": "company",
+  "name": "The Neighborhood Draft",
+  "data": {
+    "type": "restaurant",
+    "location": "Milwaukee, Wisconsin",
+    "cuisine": "Italian",
+    "phone": "+1 414-885-2028",
+    "website": "https://neighborhooddraft.com/",
+    "address": "5921 West Vliet Street, Milwaukee",
+    "source": "openstreetmap_overpass"
+  },
+  "source": "telegram",
+  "updated_at": "2026-07-04T01:06:17.594663+00:00",
+  "created_at": "2026-07-04T01:03:42.968200+00:00"
+}

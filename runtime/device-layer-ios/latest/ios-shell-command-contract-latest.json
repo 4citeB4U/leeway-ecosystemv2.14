@@ -1,0 +1,60 @@
+﻿{
+    "version":  "LEEWAY_IOS_SHELL_COMMAND_CONTRACT_241",
+    "timestamp":  "2026-07-05T22:02:17",
+    "family":  "ios",
+    "shell_status":  "CONTRACT_ONLY_NOT_ENABLED",
+    "command_classes":  {
+                            "read_only_inventory":  {
+                                                        "approval":  "required_until_ios_read_only_status_lane_is_proven",
+                                                        "examples":  [
+                                                                         "idevice_id -l",
+                                                                         "ideviceinfo"
+                                                                     ],
+                                                        "execute_now":  false
+                                                    },
+                            "pairing_and_trust":  {
+                                                      "approval":  "required",
+                                                      "examples":  [
+                                                                       "idevicepair pair",
+                                                                       "trust prompt handling"
+                                                                   ],
+                                                      "execute_now":  false
+                                                  },
+                            "physical_ui":  {
+                                                "approval":  "required",
+                                                "examples":  [
+                                                                 "tap",
+                                                                 "swipe",
+                                                                 "type text through approved actuator"
+                                                             ],
+                                                "execute_now":  false
+                                            },
+                            "communication":  {
+                                                  "approval":  "required",
+                                                  "examples":  [
+                                                                   "send message",
+                                                                   "start call",
+                                                                   "answer call"
+                                                               ],
+                                                  "execute_now":  false
+                                              },
+                            "file_data":  {
+                                              "approval":  "required",
+                                              "examples":  [
+                                                               "read photos",
+                                                               "read files",
+                                                               "start backup"
+                                                           ],
+                                              "execute_now":  false
+                                          }
+                        },
+    "guardrails":  [
+                       "no iOS tool command without approval id",
+                       "no libimobiledevice/idevice command until explicit actuator lane",
+                       "no phone data read in contract stage",
+                       "no phone UI action in contract stage",
+                       "no pairing/trust mutation in contract stage",
+                       "no backup in contract stage",
+                       "no device mutation in contract stage"
+                   ]
+}

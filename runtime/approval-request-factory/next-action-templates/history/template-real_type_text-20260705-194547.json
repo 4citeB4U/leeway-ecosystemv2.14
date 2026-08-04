@@ -1,0 +1,30 @@
+﻿{
+    "template_id":  "template-real_type_text-20260705-194547",
+    "action":  "real_type_text",
+    "label":  "Approved Type Text Into Controlled Notepad",
+    "risk_level":  "controlled_physical_keyboard",
+    "approval_required":  true,
+    "execution_allowed_now":  false,
+    "creates_pending_approval":  false,
+    "promotes_approval":  false,
+    "executes_action":  false,
+    "recommended_next_script":  "199-create-pending-approval-for-real-type-text-no-execute.ps1",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "payload_template":  {
+                             "target":  "controlled_notepad",
+                             "text":  "Leeway approved type-text proof.",
+                             "expected_effect":  "type_text_into_new_controlled_notepad_window"
+                         },
+    "safety":  {
+                   "one_action_only":  true,
+                   "approval_required":  true,
+                   "lockback_required":  true,
+                   "controlled_target_required":  true,
+                   "no_mouse_click":  true,
+                   "no_shell":  true,
+                   "no_message_send":  true,
+                   "no_docker_prune":  true,
+                   "no_destructive_cleanup":  true
+               }
+}

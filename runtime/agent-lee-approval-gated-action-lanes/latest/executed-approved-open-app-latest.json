@@ -1,0 +1,43 @@
+﻿{
+    "version":  "LEEWAY_EXECUTE_ONE_APPROVED_OPEN_APP_AND_LOCKBACK_284G_R3",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:30:23",
+    "verdict":  "LEEWAY_EXECUTE_ONE_APPROVED_OPEN_APP_AND_LOCKBACK_284G_R3_CLEAN",
+    "recovery_for_284g_property_assignment_failure":  true,
+    "recovery_for_notepad_delta_zero":  false,
+    "execution_id":  "execute-real_open_app-284G-R3-20260706-093022",
+    "execution_performed":  true,
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "target_device_id":  "windows-agent-lee",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "execute_reason":  "single_approved_action_executed_once",
+    "second_execute_performed":  false,
+    "second_execute_reason":  "approved_window_already_consumed",
+    "endpoint_proof_clean":  true,
+    "pre_notepad_count":  1,
+    "post_notepad_count":  2,
+    "notepad_count_delta_observed":  1,
+    "notepad_count_delta_authoritative":  false,
+    "still_locked_after_execution":  true,
+    "lockback_verified":  true,
+    "prior_284g_run":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606",
+    "source_artifacts":  {
+                             "execute_response":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606\\json\\approved-open-app-execute-response.json",
+                             "second_execute_response":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606\\json\\second-approved-open-app-response.json",
+                             "pre_notepad":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606\\json\\pre-execution-notepad-processes.json",
+                             "post_notepad":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606\\json\\post-execution-notepad-processes.json",
+                             "execute_body":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-284G-20260706-092606\\json\\approved-open-app-execute-body.json"
+                         },
+    "safety":  {
+                   "no_execution_in_284g_r3":  true,
+                   "artifact_finalization_only":  true,
+                   "one_approved_action_was_already_executed_in_284g":  true,
+                   "consumed_window_second_call_blocked":  true,
+                   "no_general_unlock":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "285-post-execution-lockback-audit.ps1"
+}

@@ -1,0 +1,20 @@
+{
+  "approval_id": "phone_call-1783127622-7d021ace",
+  "action_type": "phone_call",
+  "status": "PENDING_APPROVAL",
+  "summary": "Phone call requested to Enterprise Audit Test Restaurant at 414-555-0111",
+  "payload": {
+    "target_name": "Enterprise Audit Test Restaurant",
+    "phone_number": "414-555-0111",
+    "purpose": "Ask about a table for two next Wednesday.",
+    "script": "Hello, I am calling to ask whether you have a table for two next Wednesday around 7 PM.",
+    "related_plan_id": null,
+    "requested_by": "enterprise-readiness-audit",
+    "source": "enterprise-readiness-audit"
+  },
+  "requested_by": "enterprise-readiness-audit",
+  "execution_status": "NOT_EXECUTED",
+  "execution_note": "This approval layer only prepares and records actions. Real execution lane is not enabled yet.",
+  "created_at": "2026-07-04T01:13:42.416270+00:00",
+  "updated_at": "2026-07-04T01:13:42.416286+00:00"
+}

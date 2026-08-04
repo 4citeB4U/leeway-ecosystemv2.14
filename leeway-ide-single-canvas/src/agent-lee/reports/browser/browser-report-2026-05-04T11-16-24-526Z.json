@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "targetUrl": "https://example.com",
+  "source": "remote-url",
+  "screenshotPath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-shot-2026-05-04T11-16-24-526Z.png",
+  "reportPath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-report-2026-05-04T11-16-24-526Z.json",
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+  ],
+  "pageErrors": [],
+  "visualDiff": {
+    "comparedTo": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\baselines\\aHR0cHM6Ly9leGFtcGxlLmNvbQ__.png",
+    "diffImagePath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\diffs\\browser-diff-2026-05-04T11-16-24-526Z.png",
+    "changedPixels": 0,
+    "diffRatio": 0,
+    "baselineCreated": false
+  },
+  "accessibility": {
+    "violations": [],
+    "incomplete": 0,
+    "passes": 8
+  },
+  "domSummary": {
+    "title": "Example Domain",
+    "headings": [
+      "Example Domain"
+    ],
+    "buttons": [],
+    "landmarks": [],
+    "forms": 0,
+    "images": 0,
+    "links": 1
+  },
+  "summary": "Visual browser source: remote-url\nTarget URL: https://example.com\nPage title: Example Domain\nHeadings: Example Domain\nButtons: none detected\nLandmarks: none detected\nForms: 0 | Images: 0 | Links: 1\nConsole errors: 1 | Page errors: 0\nA11y violations: 0 | Incomplete checks: 0\nVisual diff ratio: 0.0000 | Changed pixels: 0\nScreenshot: C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-shot-2026-05-04T11-16-24-526Z.png\nBrowser report: C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\reports\\browser\\browser-report-2026-05-04T11-16-24-526Z.json"
+}

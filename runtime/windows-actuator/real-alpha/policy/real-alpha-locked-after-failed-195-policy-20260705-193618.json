@@ -1,0 +1,10 @@
+﻿{
+    "version":  "LEEWAY_EMERGENCY_LOCKBACK_AFTER_FAILED_195_2026-07-05",
+    "created_at":  "2026-07-05T19:36:19",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_FAILED_195",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "read_only_status_enabled":  false,
+    "prior_failed_approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+    "all_real_actions_blocked":  true
+}

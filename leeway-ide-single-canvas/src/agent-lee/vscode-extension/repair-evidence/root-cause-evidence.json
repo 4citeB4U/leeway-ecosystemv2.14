@@ -1,0 +1,1001 @@
+{
+    "staleFolder":  true,
+    "timestamp":  "2026-06-03T14:37:18.0389742-05:00",
+    "vsixExtension":  {
+                          "name":  "agent-lee-leeway-coding-system",
+                          "displayName":  "Agent Lee LeeWay Coding System",
+                          "description":  "Agent Lee with hard-wired workspace and external folder intelligence, Ollama model selection, approval modes, web mode, chat history, memory, law engine, and voice.",
+                          "version":  "1.2.13",
+                          "publisher":  "leeway",
+                          "icon":  "media/leeway-standards-logo.png",
+                          "repository":  {
+                                             "type":  "git",
+                                             "url":  "https://github.com/4citeB4U/.LEEWAY-VACODE.git",
+                                             "directory":  "agent-lee/vscode-extension"
+                                         },
+                          "author":  "Leonard Lee",
+                          "categories":  [
+                                             "Programming Languages",
+                                             "Education",
+                                             "Other"
+                                         ],
+                          "keywords":  [
+                                           "Agent Lee",
+                                           "LeeWay",
+                                           "Coding System",
+                                           "AI Assistant",
+                                           "Engineering"
+                                       ],
+                          "buildIdentity":  {
+                                                "buildHash":  "lee-vscode-20260525-model-purge-12",
+                                                "buildTimestamp":  "2026-05-25T00:00:00.000Z",
+                                                "runtimeBuildId":  "LEEWAY_VSCODE_BUILD_20260525_MODEL_PURGE_12"
+                                            },
+                          "leeway":  {
+                                         "LEEWAY_HEADER":  "DO NOT REMOVE",
+                                         "REGION":  "+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-¦+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇÜ+é-ª+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-++â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇÜ+é-ª+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-++â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó CORE",
+                                         "TAG":  "CORE.RUNTIME.EXTENSION.MANIFEST",
+                                         "DISCOVERY_PIPELINE":  "Voice +â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-á+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-++â¦Æ+óGé¼+í+âGÇÜ+é-ó Intent +â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-á+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-++â¦Æ+óGé¼+í+âGÇÜ+é-ó Location +â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-á+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-++â¦Æ+óGé¼+í+âGÇÜ+é-ó Vertical +â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-á+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-++â¦Æ+óGé¼+í+âGÇÜ+é-ó Ranking +â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼-á+â-ó+óGÇÜ-¼+óGÇP-ó+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+â-ó+óGÇÜ-¼+à-í+â¦Æ+óGé¼+í+âGÇÜ+é-á+â¦Æ+åGÇÖ+âGÇá+óGé¼Gäó+â¦Æ+óGé¼+í+âGÇÜ+é-ó+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-í+â¦Æ+óGé¼+í+âGÇÜ+é-¼+â¦Æ+åGÇÖ+âGÇÜ+é-ó+â¦Æ+é-ó+â-ó+óGé¼+í+é-¼+âGÇª+é-++â¦Æ+óGé¼+í+âGÇÜ+é-ó Render"
+                                     },
+                          "main":  "./out/extension.js",
+                          "engines":  {
+                                          "vscode":  "^1.90.0"
+                                      },
+                          "activationEvents":  [
+                                                   "*",
+                                                   "onCommand:agentLee.openSidebar",
+                                                   "onCommand:agentLee.runtimeStatus",
+                                                   "onView:agentLee.sidebar"
+                                               ],
+                          "contributes":  {
+                                              "chatParticipants":  [
+                                                                       {
+                                                                           "id":  "leeway.agentLee",
+                                                                           "fullName":  "Agent Lee",
+                                                                           "name":  "agentlee",
+                                                                           "description":  "Agent Lee LeeWay front-end engineering assistant",
+                                                                           "isSticky":  true
+                                                                       }
+                                                                   ],
+                                              "viewsContainers":  {
+                                                                      "activitybar":  [
+                                                                                          {
+                                                                                              "id":  "agentLee",
+                                                                                              "title":  "Agent Lee",
+                                                                                              "icon":  "media/leeway-activity.svg"
+                                                                                          }
+                                                                                      ]
+                                                                  },
+                                              "views":  {
+                                                            "agentLee":  [
+                                                                             {
+                                                                                 "id":  "agentLee.sidebar",
+                                                                                 "type":  "webview",
+                                                                                 "name":  "Agent Lee"
+                                                                             }
+                                                                         ]
+                                                        },
+                                              "menus":  {
+                                                            "editor/title":  [
+                                                                                 {
+                                                                                     "command":  "agentLee.openSidebar",
+                                                                                     "group":  "navigation"
+                                                                                 }
+                                                                             ]
+                                                        },
+                                              "configuration":  {
+                                                                    "title":  "Agent Lee",
+                                                                    "properties":  {
+                                                                                       "agentLee.rootPath":  {
+                                                                                                                 "type":  "string",
+                                                                                                                 "default":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+                                                                                                                 "description":  "Absolute path to the standalone Agent Lee runtime root."
+                                                                                                             },
+                                                                                       "agentLee.autoOpenPanelOnStartup":  {
+                                                                                                                               "type":  "boolean",
+                                                                                                                               "default":  true,
+                                                                                                                               "description":  "Open the Agent Lee control panel automatically when VS Code starts."
+                                                                                                                           },
+                                                                                       "agentLee.showStartupReadyPrompt":  {
+                                                                                                                               "type":  "boolean",
+                                                                                                                               "default":  true,
+                                                                                                                               "description":  "Show a ready prompt with quick actions after Agent Lee activates."
+                                                                                                                           },
+                                                                                       "agentLee.forceUiRecoveryAfterUpdate":  {
+                                                                                                                                   "type":  "boolean",
+                                                                                                                                   "default":  true,
+                                                                                                                                   "description":  "Force-open Agent Lee surfaces after the extension version changes."
+                                                                                                                               },
+                                                                                       "agentLee.preferRightSideSurface":  {
+                                                                                                                               "type":  "boolean",
+                                                                                                                               "default":  true,
+                                                                                                                               "description":  "Open Agent Lee in the right-side panel by default when a true right-side sidebar reveal is not available."
+                                                                                                                           }
+                                                                                   }
+                                                                },
+                                              "commands":  [
+                                                               {
+                                                                   "command":  "agentLee.open",
+                                                                   "title":  "Agent Lee: Open Chat"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.openPanel",
+                                                                   "title":  "Agent Lee: Open LeeWay Control Panel"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.visual.openPanel",
+                                                                   "title":  "Agent Lee: Open LVIS Panel",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.visual.systemStatus",
+                                                                   "title":  "Agent Lee: LVIS System Status",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.visual.revealWorkspace",
+                                                                   "title":  "Agent Lee: Reveal LVIS Workspace",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.openSidebar",
+                                                                   "title":  "Agent Lee: Open Sidebar",
+                                                                   "icon":  {
+                                                                                "light":  "media/leeway-standards-button.png",
+                                                                                "dark":  "media/leeway-standards-button.png"
+                                                                            },
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.openRightSurface",
+                                                                   "title":  "Agent Lee: Open Right Surface",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.recoverUi",
+                                                                   "title":  "Agent Lee: Recover UI Surface",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.repairInstallation",
+                                                                   "title":  "Agent Lee: Repair Installation",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.scanSelf",
+                                                                   "title":  "Agent Lee: Scan Agent Lee Self",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.verifySelf",
+                                                                   "title":  "Agent Lee: Verify Agent Lee Self",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.scanWorkspace",
+                                                                   "title":  "Agent Lee: Scan Workspace"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.fixWorkspace",
+                                                                   "title":  "Agent Lee: Fix Workspace"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.verifyWorkspace",
+                                                                   "title":  "Agent Lee: Verify Workspace"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.askLocalModel",
+                                                                   "title":  "Agent Lee: Ask Local Model"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.engineerTask",
+                                                                   "title":  "Agent Lee: Engineer Task"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.inspectWorkspace",
+                                                                   "title":  "Agent Lee: Inspect Workspace"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.stagePatch",
+                                                                   "title":  "Agent Lee: Stage Patch"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.applyApprovedPatch",
+                                                                   "title":  "Agent Lee: Apply Approved Patch"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.runVerification",
+                                                                   "title":  "Agent Lee: Run Verification"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.showReceipts",
+                                                                   "title":  "Agent Lee: Show Engineering Receipts"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.runtimeStatus",
+                                                                   "title":  "Agent Lee: Runtime Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.showInstalledVersion",
+                                                                   "title":  "Agent Lee: Show Installed Version",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.showUpdateChannel",
+                                                                   "title":  "Agent Lee: Show Update Channel",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.installCurrentBuild",
+                                                                   "title":  "Agent Lee: Install Current Build",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.diagnoseRuntime",
+                                                                   "title":  "Agent Lee: Diagnose Runtime",
+                                                                   "category":  "Agent Lee"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.testPersona",
+                                                                   "title":  "Agent Lee: Test Persona"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.openReadme",
+                                                                   "title":  "Agent Lee: Open README"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.installPyCharmTools",
+                                                                   "title":  "Agent Lee: Install PyCharm Tools"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.newChat",
+                                                                   "title":  "Agent Lee: New Chat"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.stopVoice",
+                                                                   "title":  "Agent Lee: Stop Voice"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.executionBrain.createPendingEdit",
+                                                                   "title":  "Agent Lee: Execution Brain Create Pending Edit"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.executionBrain.createRepairPackageDemo",
+                                                                   "title":  "Agent Lee: Create Repair Package Demo"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.speakStatus",
+                                                                   "title":  "Agent Lee: Speak Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.emitEvent",
+                                                                   "title":  "Agent Lee: Emit Live Voice Event"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.handleTranscript",
+                                                                   "title":  "Agent Lee: Handle Live Voice Transcript"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.startTranscriptBridge",
+                                                                   "title":  "Agent Lee: Start Local Transcript Bridge"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.stopTranscriptBridge",
+                                                                   "title":  "Agent Lee: Stop Local Transcript Bridge"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.stopSpeaking",
+                                                                   "title":  "Agent Lee: Stop Speaking"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.pauseTask",
+                                                                   "title":  "Agent Lee: Pause Active Task"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.resumeTask",
+                                                                   "title":  "Agent Lee: Resume Active Task"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.currentStatus",
+                                                                   "title":  "Agent Lee: Current Voice Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.reopenActiveDiff",
+                                                                   "title":  "Agent Lee: Reopen Active Diff"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.sessionSummary",
+                                                                   "title":  "Agent Lee: Voice Session Summary"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.blockFile",
+                                                                   "title":  "Agent Lee: Block File from Voice Edits"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.liveVoice.unblockFile",
+                                                                   "title":  "Agent Lee: Unblock File from Voice Edits"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.start",
+                                                                   "title":  "Agent Lee: Start Coding Session"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.pause",
+                                                                   "title":  "Agent Lee: Pause Coding Session"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.resume",
+                                                                   "title":  "Agent Lee: Resume Coding Session"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.stop",
+                                                                   "title":  "Agent Lee: Stop Coding Session"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.status",
+                                                                   "title":  "Agent Lee: Coding Session Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.summary",
+                                                                   "title":  "Agent Lee: Coding Session Summary"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.session.exportReceipt",
+                                                                   "title":  "Agent Lee: Export Coding Session Receipt"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.setProfile",
+                                                                   "title":  "Agent Lee: Set Performance Profile"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.quietMode",
+                                                                   "title":  "Agent Lee: Quiet Laptop Mode"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.raspberryPiMode",
+                                                                   "title":  "Agent Lee: Raspberry Pi Mode"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.status",
+                                                                   "title":  "Agent Lee: Performance Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.setOverride",
+                                                                   "title":  "Agent Lee: Set Performance Override"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.clearOverrides",
+                                                                   "title":  "Agent Lee: Clear Performance Overrides"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.services",
+                                                                   "title":  "Agent Lee: Performance Services"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.pauseServices",
+                                                                   "title":  "Agent Lee: Pause Services"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.resumeServices",
+                                                                   "title":  "Agent Lee: Resume Services"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.disposeIdleServices",
+                                                                   "title":  "Agent Lee: Dispose Idle Services"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.performance.warmCoreServices",
+                                                                   "title":  "Agent Lee: Warm Core Services"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.runBatch",
+                                                                   "title":  "Agent Lee: Run Index Batch"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.status",
+                                                                   "title":  "Agent Lee: Index Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.pause",
+                                                                   "title":  "Agent Lee: Pause Indexing"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.resume",
+                                                                   "title":  "Agent Lee: Resume Indexing"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.relatedFiles",
+                                                                   "title":  "Agent Lee: Show Related Files"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.dependencyStatus",
+                                                                   "title":  "Agent Lee: Dependency Status"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.missingHeaders",
+                                                                   "title":  "Agent Lee: Missing LeeWay Headers"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.commandMap",
+                                                                   "title":  "Agent Lee: Indexed Command Map"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.indexing.symbolSearch",
+                                                                   "title":  "Agent Lee: Symbol Search (Indexed)"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.acceptHunk",
+                                                                   "title":  "Agent Lee: Accept Hunk"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.rejectHunk",
+                                                                   "title":  "Agent Lee: Reject Hunk"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.explainHunk",
+                                                                   "title":  "Agent Lee: Explain Hunk"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.openDiff",
+                                                                   "title":  "Agent Lee: Open Diff"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.acceptFile",
+                                                                   "title":  "Agent Lee: Accept File"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.rejectFile",
+                                                                   "title":  "Agent Lee: Reject File"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.acceptAll",
+                                                                   "title":  "Agent Lee: Accept All Pending Hunks"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.applyAccepted",
+                                                                   "title":  "Agent Lee: Apply Accepted Hunks"
+                                                               },
+                                                               {
+                                                                   "command":  "agentLee.editBuffer.applyAcceptedAndVerify",
+                                                                   "title":  "Agent Lee: Apply Accepted + Verify"
+                                                               }
+                                                           ]
+                                          },
+                          "scripts":  {
+                                          "sync-release-metadata":  "node ./scripts/sync-release-metadata.mjs",
+                                          "sanitize:release-state":  "node ./scripts/sanitize-release-state.mjs",
+                                          "clean:out":  "node -e \"require(\u0027fs\u0027).rmSync(\u0027out\u0027,{recursive:true,force:true})\"",
+                                          "build:info":  "node ./scripts/write-build-info.mjs",
+                                          "compile":  "npm run clean:out \u0026\u0026 tsc -p ./ \u0026\u0026 npm run bundle \u0026\u0026 npm run build:info",
+                                          "bundle":  "node ./scripts/bundle-extension.mjs",
+                                          "package:vsix":  "npm run sync-release-metadata \u0026\u0026 npm run sanitize:release-state \u0026\u0026 npm run compile \u0026\u0026 node ./scripts/package-release.mjs",
+                                          "package":  "npm run package:vsix",
+                                          "upgrade:host":  "npm run package:vsix \u0026\u0026 powershell -NoProfile -ExecutionPolicy Bypass -Command \"$vsix = Resolve-Path \u0027./agent-lee-leeway-coding-system-\u0027+(node -p \"require(\u0027./package.json\u0027).version\")+\u0027.vsix\u0027; \u0026 \"$env:LOCALAPPDATA\\Programs\\Microsoft VS Code\\bin\\code.cmd\" --install-extension $vsix --force; Write-Host \u0027Installed latest local VSIX. Run: Developer: Reload Window\u0027\"",
+                                          "LEEWAY_CONSTRUCTION_LAW_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayConstructionLawGate.ps1",
+                                          "LEEWAY_IDENTITY_PULSE_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayIdentityPulseGate.ps1",
+                                          "LEEWAY_IDENTITY_MESH_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayIdentityMeshGate.ps1",
+                                          "LEEWAY_TRACER_PACK_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayTracerPackGate.ps1",
+                                          "LEEWAY_APPLICATION_INTEGRITY_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayApplicationIntegrityGate.ps1",
+                                          "LEEWAY_GENERATED_APP_HARNESS_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayGeneratedAppHarness.ps1",
+                                          "LEEWAY_EXTENSION_ASSET_CHECK":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionAssetCheck.ps1",
+                                          "LEEWAY_EXTENSION_DEV_RELOAD":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionDevReload.ps1 -SkipLaunch",
+                                          "LEEWAY_EXTENSION_RELEASE_PACKAGE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionReleasePackage.ps1",
+                                          "LEEWAY_EXTENSION_INSTALLED_CHECK":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayInstalledExtensionCheck.ps1"
+                                      },
+                          "devDependencies":  {
+                                                  "@types/node":  "^20.0.0",
+                                                  "@types/vscode":  "^1.90.0",
+                                                  "@vscode/vsce":  "^2.15.0",
+                                                  "esbuild":  "^0.28.0",
+                                                  "typescript":  "^5.4.0"
+                                              },
+                          "dependencies":  {
+                                               "axe-core":  "^4.11.4",
+                                               "jsdom":  "^29.1.1",
+                                               "pixelmatch":  "^7.2.0",
+                                               "playwright-core":  "^1.59.1",
+                                               "pngjs":  "^7.0.0"
+                                           }
+                      },
+    "extensionList":  "leeway.agent-lee-leeway-coding-system@1.2.12",
+    "codeVersion":  "1.122.1",
+    "installedExtension":  {
+                               "name":  "agent-lee-leeway-coding-system",
+                               "displayName":  "Agent Lee LeeWay Coding System",
+                               "description":  "Agent Lee with hard-wired workspace and external folder intelligence, Ollama model selection, approval modes, web mode, chat history, memory, law engine, and voice.",
+                               "version":  "1.2.12",
+                               "publisher":  "leeway",
+                               "icon":  "media/leeway-standards-logo.png",
+                               "repository":  {
+                                                  "type":  "git",
+                                                  "url":  "https://github.com/4citeB4U/.LEEWAY-VACODE.git",
+                                                  "directory":  "agent-lee/vscode-extension"
+                                              },
+                               "author":  "Leonard Lee",
+                               "categories":  [
+                                                  "Programming Languages",
+                                                  "Education",
+                                                  "Other"
+                                              ],
+                               "keywords":  [
+                                                "Agent Lee",
+                                                "LeeWay",
+                                                "Coding System",
+                                                "AI Assistant",
+                                                "Engineering"
+                                            ],
+                               "buildIdentity":  {
+                                                     "buildHash":  "lee-vscode-20260525-model-purge-12",
+                                                     "buildTimestamp":  "2026-05-25T00:00:00.000Z",
+                                                     "runtimeBuildId":  "LEEWAY_VSCODE_BUILD_20260525_MODEL_PURGE_12"
+                                                 },
+                               "leeway":  {
+                                              "LEEWAY_HEADER":  "DO NOT REMOVE",
+                                              "REGION":  "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ CORE",
+                                              "TAG":  "CORE.RUNTIME.EXTENSION.MANIFEST",
+                                              "DISCOVERY_PIPELINE":  "Voice ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Intent ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Location ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Vertical ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Ranking ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ Render"
+                                          },
+                               "main":  "./out/extension.js",
+                               "engines":  {
+                                               "vscode":  "^1.90.0"
+                                           },
+                               "activationEvents":  [
+                                                        "*",
+                                                        "onCommand:agentLee.openSidebar",
+                                                        "onCommand:agentLee.runtimeStatus",
+                                                        "onView:agentLee.sidebar"
+                                                    ],
+                               "contributes":  {
+                                                   "chatParticipants":  [
+                                                                            {
+                                                                                "id":  "leeway.agentLee",
+                                                                                "fullName":  "Agent Lee",
+                                                                                "name":  "agentlee",
+                                                                                "description":  "Agent Lee LeeWay front-end engineering assistant",
+                                                                                "isSticky":  true
+                                                                            }
+                                                                        ],
+                                                   "viewsContainers":  {
+                                                                           "activitybar":  [
+                                                                                               {
+                                                                                                   "id":  "agentLee",
+                                                                                                   "title":  "Agent Lee",
+                                                                                                   "icon":  "media/leeway-activity.svg"
+                                                                                               }
+                                                                                           ]
+                                                                       },
+                                                   "views":  {
+                                                                 "agentLee":  [
+                                                                                  {
+                                                                                      "id":  "agentLee.sidebar",
+                                                                                      "type":  "webview",
+                                                                                      "name":  "Agent Lee"
+                                                                                  }
+                                                                              ]
+                                                             },
+                                                   "menus":  {
+                                                                 "editor/title":  [
+                                                                                      {
+                                                                                          "command":  "agentLee.openSidebar",
+                                                                                          "group":  "navigation"
+                                                                                      }
+                                                                                  ]
+                                                             },
+                                                   "configuration":  {
+                                                                         "title":  "Agent Lee",
+                                                                         "properties":  {
+                                                                                            "agentLee.rootPath":  {
+                                                                                                                      "type":  "string",
+                                                                                                                      "default":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+                                                                                                                      "description":  "Absolute path to the standalone Agent Lee runtime root."
+                                                                                                                  },
+                                                                                            "agentLee.autoOpenPanelOnStartup":  {
+                                                                                                                                    "type":  "boolean",
+                                                                                                                                    "default":  true,
+                                                                                                                                    "description":  "Open the Agent Lee control panel automatically when VS Code starts."
+                                                                                                                                },
+                                                                                            "agentLee.showStartupReadyPrompt":  {
+                                                                                                                                    "type":  "boolean",
+                                                                                                                                    "default":  true,
+                                                                                                                                    "description":  "Show a ready prompt with quick actions after Agent Lee activates."
+                                                                                                                                },
+                                                                                            "agentLee.forceUiRecoveryAfterUpdate":  {
+                                                                                                                                        "type":  "boolean",
+                                                                                                                                        "default":  true,
+                                                                                                                                        "description":  "Force-open Agent Lee surfaces after the extension version changes."
+                                                                                                                                    },
+                                                                                            "agentLee.preferRightSideSurface":  {
+                                                                                                                                    "type":  "boolean",
+                                                                                                                                    "default":  true,
+                                                                                                                                    "description":  "Open Agent Lee in the right-side panel by default when a true right-side sidebar reveal is not available."
+                                                                                                                                }
+                                                                                        }
+                                                                     },
+                                                   "commands":  [
+                                                                    {
+                                                                        "command":  "agentLee.open",
+                                                                        "title":  "Agent Lee: Open Chat"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.openPanel",
+                                                                        "title":  "Agent Lee: Open LeeWay Control Panel"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.visual.openPanel",
+                                                                        "title":  "Agent Lee: Open LVIS Panel",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.visual.systemStatus",
+                                                                        "title":  "Agent Lee: LVIS System Status",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.visual.revealWorkspace",
+                                                                        "title":  "Agent Lee: Reveal LVIS Workspace",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.openSidebar",
+                                                                        "title":  "Agent Lee: Open Sidebar",
+                                                                        "icon":  {
+                                                                                     "light":  "media/leeway-standards-button.png",
+                                                                                     "dark":  "media/leeway-standards-button.png"
+                                                                                 },
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.openRightSurface",
+                                                                        "title":  "Agent Lee: Open Right Surface",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.recoverUi",
+                                                                        "title":  "Agent Lee: Recover UI Surface",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.repairInstallation",
+                                                                        "title":  "Agent Lee: Repair Installation",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.scanSelf",
+                                                                        "title":  "Agent Lee: Scan Agent Lee Self",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.verifySelf",
+                                                                        "title":  "Agent Lee: Verify Agent Lee Self",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.scanWorkspace",
+                                                                        "title":  "Agent Lee: Scan Workspace"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.fixWorkspace",
+                                                                        "title":  "Agent Lee: Fix Workspace"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.verifyWorkspace",
+                                                                        "title":  "Agent Lee: Verify Workspace"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.askLocalModel",
+                                                                        "title":  "Agent Lee: Ask Local Model"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.engineerTask",
+                                                                        "title":  "Agent Lee: Engineer Task"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.inspectWorkspace",
+                                                                        "title":  "Agent Lee: Inspect Workspace"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.stagePatch",
+                                                                        "title":  "Agent Lee: Stage Patch"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.applyApprovedPatch",
+                                                                        "title":  "Agent Lee: Apply Approved Patch"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.runVerification",
+                                                                        "title":  "Agent Lee: Run Verification"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.showReceipts",
+                                                                        "title":  "Agent Lee: Show Engineering Receipts"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.runtimeStatus",
+                                                                        "title":  "Agent Lee: Runtime Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.showInstalledVersion",
+                                                                        "title":  "Agent Lee: Show Installed Version",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.showUpdateChannel",
+                                                                        "title":  "Agent Lee: Show Update Channel",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.installCurrentBuild",
+                                                                        "title":  "Agent Lee: Install Current Build",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.diagnoseRuntime",
+                                                                        "title":  "Agent Lee: Diagnose Runtime",
+                                                                        "category":  "Agent Lee"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.testPersona",
+                                                                        "title":  "Agent Lee: Test Persona"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.openReadme",
+                                                                        "title":  "Agent Lee: Open README"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.installPyCharmTools",
+                                                                        "title":  "Agent Lee: Install PyCharm Tools"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.newChat",
+                                                                        "title":  "Agent Lee: New Chat"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.stopVoice",
+                                                                        "title":  "Agent Lee: Stop Voice"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.executionBrain.createPendingEdit",
+                                                                        "title":  "Agent Lee: Execution Brain Create Pending Edit"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.executionBrain.createRepairPackageDemo",
+                                                                        "title":  "Agent Lee: Create Repair Package Demo"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.speakStatus",
+                                                                        "title":  "Agent Lee: Speak Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.emitEvent",
+                                                                        "title":  "Agent Lee: Emit Live Voice Event"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.handleTranscript",
+                                                                        "title":  "Agent Lee: Handle Live Voice Transcript"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.startTranscriptBridge",
+                                                                        "title":  "Agent Lee: Start Local Transcript Bridge"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.stopTranscriptBridge",
+                                                                        "title":  "Agent Lee: Stop Local Transcript Bridge"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.stopSpeaking",
+                                                                        "title":  "Agent Lee: Stop Speaking"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.pauseTask",
+                                                                        "title":  "Agent Lee: Pause Active Task"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.resumeTask",
+                                                                        "title":  "Agent Lee: Resume Active Task"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.currentStatus",
+                                                                        "title":  "Agent Lee: Current Voice Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.reopenActiveDiff",
+                                                                        "title":  "Agent Lee: Reopen Active Diff"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.sessionSummary",
+                                                                        "title":  "Agent Lee: Voice Session Summary"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.blockFile",
+                                                                        "title":  "Agent Lee: Block File from Voice Edits"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.liveVoice.unblockFile",
+                                                                        "title":  "Agent Lee: Unblock File from Voice Edits"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.start",
+                                                                        "title":  "Agent Lee: Start Coding Session"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.pause",
+                                                                        "title":  "Agent Lee: Pause Coding Session"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.resume",
+                                                                        "title":  "Agent Lee: Resume Coding Session"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.stop",
+                                                                        "title":  "Agent Lee: Stop Coding Session"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.status",
+                                                                        "title":  "Agent Lee: Coding Session Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.summary",
+                                                                        "title":  "Agent Lee: Coding Session Summary"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.session.exportReceipt",
+                                                                        "title":  "Agent Lee: Export Coding Session Receipt"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.setProfile",
+                                                                        "title":  "Agent Lee: Set Performance Profile"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.quietMode",
+                                                                        "title":  "Agent Lee: Quiet Laptop Mode"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.raspberryPiMode",
+                                                                        "title":  "Agent Lee: Raspberry Pi Mode"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.status",
+                                                                        "title":  "Agent Lee: Performance Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.setOverride",
+                                                                        "title":  "Agent Lee: Set Performance Override"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.clearOverrides",
+                                                                        "title":  "Agent Lee: Clear Performance Overrides"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.services",
+                                                                        "title":  "Agent Lee: Performance Services"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.pauseServices",
+                                                                        "title":  "Agent Lee: Pause Services"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.resumeServices",
+                                                                        "title":  "Agent Lee: Resume Services"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.disposeIdleServices",
+                                                                        "title":  "Agent Lee: Dispose Idle Services"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.performance.warmCoreServices",
+                                                                        "title":  "Agent Lee: Warm Core Services"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.runBatch",
+                                                                        "title":  "Agent Lee: Run Index Batch"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.status",
+                                                                        "title":  "Agent Lee: Index Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.pause",
+                                                                        "title":  "Agent Lee: Pause Indexing"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.resume",
+                                                                        "title":  "Agent Lee: Resume Indexing"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.relatedFiles",
+                                                                        "title":  "Agent Lee: Show Related Files"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.dependencyStatus",
+                                                                        "title":  "Agent Lee: Dependency Status"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.missingHeaders",
+                                                                        "title":  "Agent Lee: Missing LeeWay Headers"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.commandMap",
+                                                                        "title":  "Agent Lee: Indexed Command Map"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.indexing.symbolSearch",
+                                                                        "title":  "Agent Lee: Symbol Search (Indexed)"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.acceptHunk",
+                                                                        "title":  "Agent Lee: Accept Hunk"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.rejectHunk",
+                                                                        "title":  "Agent Lee: Reject Hunk"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.explainHunk",
+                                                                        "title":  "Agent Lee: Explain Hunk"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.openDiff",
+                                                                        "title":  "Agent Lee: Open Diff"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.acceptFile",
+                                                                        "title":  "Agent Lee: Accept File"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.rejectFile",
+                                                                        "title":  "Agent Lee: Reject File"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.acceptAll",
+                                                                        "title":  "Agent Lee: Accept All Pending Hunks"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.applyAccepted",
+                                                                        "title":  "Agent Lee: Apply Accepted Hunks"
+                                                                    },
+                                                                    {
+                                                                        "command":  "agentLee.editBuffer.applyAcceptedAndVerify",
+                                                                        "title":  "Agent Lee: Apply Accepted + Verify"
+                                                                    }
+                                                                ]
+                                               },
+                               "scripts":  {
+                                               "sync-release-metadata":  "node ./scripts/sync-release-metadata.mjs",
+                                               "clean:out":  "node -e \"require(\u0027fs\u0027).rmSync(\u0027out\u0027,{recursive:true,force:true})\"",
+                                               "build:info":  "node ./scripts/write-build-info.mjs",
+                                               "compile":  "npm run clean:out \u0026\u0026 tsc -p ./ \u0026\u0026 npm run bundle \u0026\u0026 npm run build:info",
+                                               "bundle":  "node ./scripts/bundle-extension.mjs",
+                                               "package":  "npm run sync-release-metadata \u0026\u0026 npm run compile \u0026\u0026 node ./scripts/package-release.mjs",
+                                               "upgrade:host":  "npm run package \u0026\u0026 powershell -NoProfile -ExecutionPolicy Bypass -Command \"$vsix = Resolve-Path \u0027./agent-lee-leeway-coding-system-\u0027+(node -p \"require(\u0027./package.json\u0027).version\")+\u0027.vsix\u0027; \u0026 \"$env:LOCALAPPDATA\\Programs\\Microsoft VS Code\\bin\\code.cmd\" --install-extension $vsix --force; Write-Host \u0027Installed latest local VSIX. Run: Developer: Reload Window\u0027\"",
+                                               "LEEWAY_CONSTRUCTION_LAW_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayConstructionLawGate.ps1",
+                                               "LEEWAY_IDENTITY_PULSE_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayIdentityPulseGate.ps1",
+                                               "LEEWAY_IDENTITY_MESH_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayIdentityMeshGate.ps1",
+                                               "LEEWAY_TRACER_PACK_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayTracerPackGate.ps1",
+                                               "LEEWAY_APPLICATION_INTEGRITY_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayApplicationIntegrityGate.ps1",
+                                               "LEEWAY_GENERATED_APP_HARNESS_GATE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayGeneratedAppHarness.ps1",
+                                               "LEEWAY_EXTENSION_ASSET_CHECK":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionAssetCheck.ps1",
+                                               "LEEWAY_EXTENSION_DEV_RELOAD":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionDevReload.ps1 -SkipLaunch",
+                                               "LEEWAY_EXTENSION_RELEASE_PACKAGE":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayExtensionReleasePackage.ps1",
+                                               "LEEWAY_EXTENSION_INSTALLED_CHECK":  "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/Invoke-LeeWayInstalledExtensionCheck.ps1"
+                                           },
+                               "devDependencies":  {
+                                                       "@types/node":  "^20.0.0",
+                                                       "@types/vscode":  "^1.90.0",
+                                                       "@vscode/vsce":  "^2.15.0",
+                                                       "esbuild":  "^0.28.0",
+                                                       "typescript":  "^5.4.0"
+                                                   },
+                               "dependencies":  {
+                                                    "axe-core":  "^4.11.4",
+                                                    "jsdom":  "^29.1.1",
+                                                    "pixelmatch":  "^7.2.0",
+                                                    "playwright-core":  "^1.59.1",
+                                                    "pngjs":  "^7.0.0"
+                                                },
+                               "__metadata":  {
+                                                  "installedTimestamp":  1780513876688,
+                                                  "targetPlatform":  "undefined",
+                                                  "size":  9134535
+                                              }
+                           }
+}

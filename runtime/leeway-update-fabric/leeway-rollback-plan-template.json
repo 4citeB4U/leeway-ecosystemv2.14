@@ -1,0 +1,11 @@
+{
+  "receipt_path": "",
+  "trigger": "validation_failed|manual_revert|runtime_unhealthy|user_rejected",
+  "update_id": "",
+  "restart_containers": [],
+  "affected_lanes": [],
+  "restore_files": [],
+  "validation_after_rollback": [],
+  "rollback_id": "ROLLBACK-YYYYMMDD-HHMMSS",
+  "restore_images": []
+}

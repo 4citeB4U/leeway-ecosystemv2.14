@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: leeway-n8n-dev
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=127.0.0.1
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - N8N_ENCRYPTION_KEY=67b7f273-398a-4258-90fb-aaa116790f5a
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=leeway
+      - N8N_BASIC_AUTH_PASSWORD=d15dfc6b-a1ce-4171-a8c4-0f44ab4d407e
+      - WEBHOOK_URL=http://127.0.0.1:5678
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_VERSION_NOTIFICATIONS_ENABLED=false
+      - NODE_ENV=development
+      - GENERIC_TIMEZONE=UTC
+    volumes:
+      - D:\n8n-data:/home/node/.n8n
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:5678/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      - leeway-n8n-network
+
+networks:
+  leeway-n8n-network:
+    driver: bridge
+    name: leeway-n8n-network

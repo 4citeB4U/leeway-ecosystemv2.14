@@ -1,0 +1,459 @@
+﻿{
+    "version":  "LEEWAY_APPROVAL_REQUEST_FACTORY_CONTRACT_2026-07-05",
+    "created_at":  "2026-07-05T19:17:10",
+    "contract_id":  "approval-request-factory-contract-20260705-191709",
+    "purpose":  "Create pending approval request records only. Never approve, execute, unlock, or patch.",
+    "authority":  {
+                      "master_device_operator":  "leeway_device_operator",
+                      "master_url":  "http://127.0.0.1:5323",
+                      "router_contract":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.json",
+                      "action_catalog":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                      "dashboard":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.json",
+                      "target_approval_ledger_pending":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\pending",
+                      "real_alpha_url":  "http://127.0.0.1:7332",
+                      "real_alpha_device_id":  "windows-agent-lee-real-actuator-alpha"
+                  },
+    "current_posture":  {
+                            "real_alpha_mode":  "APPROVAL_ONLY_LOCKED_AFTER_SCREEN_STATUS_PROOF",
+                            "real_execution_enabled":  false,
+                            "physical_execution_enabled":  false,
+                            "read_only_status_enabled":  false,
+                            "real_alpha_locked":  true,
+                            "all_probe_routes_executed_false":  true
+                        },
+    "factory_rules":  {
+                          "created_requests_must_be_pending":  true,
+                          "factory_may_not_create_approved_records":  true,
+                          "factory_may_not_write_executed_records":  true,
+                          "factory_may_not_call_real_alpha_execution_routes":  true,
+                          "factory_may_not_enable_real_execution":  true,
+                          "factory_may_not_restart_services":  true,
+                          "factory_may_not_patch_code":  true,
+                          "factory_may_not_delete_or_modify_existing_ledger_records":  true,
+                          "each_request_must_have_human_summary":  true,
+                          "each_request_must_have_expiry":  true,
+                          "each_request_must_be_one_time_use":  true,
+                          "dry_run_preview_required_for_physical_actions":  true
+                      },
+    "request_schema":  {
+                           "approval_id":  "generated pending approval id",
+                           "created_at":  "timestamp",
+                           "expires_at":  "timestamp",
+                           "requested_by":  "user or agent",
+                           "target_device_id":  "windows-agent-lee",
+                           "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                           "action":  "real_* action id",
+                           "risk_tier":  "risk tier from template",
+                           "human_summary":  "plain English summary",
+                           "payload":  "action payload",
+                           "approval_state":  "PENDING",
+                           "real_execution_enabled":  false,
+                           "one_time_use":  true,
+                           "used":  false,
+                           "dry_run_preview_required":  "true for physical actions"
+                       },
+    "templates":  [
+                      {
+                          "action":  "real_open_app",
+                          "risk_tier":  "controlled_physical",
+                          "required_fields":  [
+                                                  "app_id",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Factory may create pending request only. It must not approve or execute."
+                      },
+                      {
+                          "action":  "real_open_url",
+                          "risk_tier":  "controlled_physical_network",
+                          "required_fields":  [
+                                                  "url",
+                                                  "browser",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "URL must be explicit and visible to user before approval."
+                      },
+                      {
+                          "action":  "real_browser_search",
+                          "risk_tier":  "controlled_physical_network",
+                          "required_fields":  [
+                                                  "query",
+                                                  "browser",
+                                                  "engine",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Search query must be user-visible before approval."
+                      },
+                      {
+                          "action":  "real_type_text",
+                          "risk_tier":  "controlled_physical_keyboard",
+                          "required_fields":  [
+                                                  "target",
+                                                  "text",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Text must be previewed exactly before approval."
+                      },
+                      {
+                          "action":  "real_hotkey",
+                          "risk_tier":  "controlled_physical_keyboard",
+                          "required_fields":  [
+                                                  "target",
+                                                  "hotkey",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Hotkey must be allowlisted and target-scoped."
+                      },
+                      {
+                          "action":  "real_screen_status",
+                          "risk_tier":  "read_only_status",
+                          "required_fields":  [
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  false,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Read-only status request. No screenshot."
+                      },
+                      {
+                          "action":  "real_mouse_click",
+                          "risk_tier":  "high_risk_physical_pointer",
+                          "required_fields":  [
+                                                  "x",
+                                                  "y",
+                                                  "button",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Not yet proven. Must remain blocked until separate controlled proof."
+                      },
+                      {
+                          "action":  "real_shell_allowed_command",
+                          "risk_tier":  "high_risk_admin",
+                          "required_fields":  [
+                                                  "command_id",
+                                                  "target_device_id",
+                                                  "human_summary",
+                                                  "requested_by"
+                                              ],
+                          "default_state":  "PENDING",
+                          "approval_state_on_create":  "PENDING",
+                          "real_execution_enabled":  false,
+                          "one_time_use":  true,
+                          "dry_run_preview_required":  true,
+                          "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+                          "notes":  "Only allowlisted command IDs. No arbitrary shell."
+                      }
+                  ],
+    "approval_counts_before":  {
+                                   "pending":  3,
+                                   "approved":  10,
+                                   "executed":  10,
+                                   "denied":  0,
+                                   "expired":  0
+                               },
+    "safety":  {
+                   "contract_only":  true,
+                   "pending_templates_only":  true,
+                   "approvals_granted":  0,
+                   "actions_executed":  0,
+                   "no_execution":  true,
+                   "no_unlock":  true,
+                   "no_service_restart":  true,
+                   "no_code_patch":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false,
+                   "physical_ui_action_executed":  false
+               },
+    "verdict":  "LEEWAY_APPROVAL_REQUEST_FACTORY_CONTRACT_CLEAN",
+    "approval_counts_after":  {
+                                  "pending":  3,
+                                  "approved":  10,
+                                  "executed":  10,
+                                  "denied":  0,
+                                  "expired":  0
+                              },
+    "no_approval_mutation":  true,
+    "real_execution_after":  false,
+    "physical_execution_after":  false,
+    "read_only_after":  false,
+    "still_locked_after_factory":  true,
+    "actions":  [
+                    {
+                        "name":  "GET Device Operator Health",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/health -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\device-operator-health.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Device Operator Status",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/status -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\device-operator-status.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Device Operator Admin Dashboard",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/admin/device-layer/dashboard-data -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\device-operator-admin-dashboard.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Dry-Run Actuator Health",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7331/health -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\dryrun-health.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Dry-Run Actuator Status",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7331/status -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\dryrun-status.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Real Alpha Health",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/health -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\real-alpha-health.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Real Alpha Status",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/status -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\real-alpha-status.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Real Alpha Policy",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/policy -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\real-alpha-policy.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Real Alpha Approval Ledger",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/approval-ledger -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\real-alpha-approval-ledger.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Find latest router contract JSON",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-control-plane-router\\latest\\agent-lee-control-plane-router-contract-latest.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Find latest action catalog JSON",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-action-catalog\\latest\\control-plane-action-catalog-latest.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Find latest dashboard JSON",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-dashboard\\latest\\device-layer-dashboard-latest.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe open_app Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/open-app -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-open_app-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe type_text Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/type-text -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-type_text-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe mouse_click Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/mouse-click -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-mouse_click-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe hotkey Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/hotkey -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-hotkey-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe shell_allowed_command Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/shell-allowed-command -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-shell_allowed_command-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Probe screen_status Locked",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/real/screen-status -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\probe-screen_status-locked.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Validate real-alpha locked before factory",
+                        "status":  "PASS",
+                        "detail":  "real=false physical=false read_only=false probes=false",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_open_app",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_open_app.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_open_url",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_open_url.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_browser_search",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_browser_search.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_type_text",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_type_text.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_hotkey",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_hotkey.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_screen_status",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_screen_status.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_mouse_click",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_mouse_click.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write template real_shell_allowed_command",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\templates\\real_shell_allowed_command.pending-template.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Validate factory prerequisites",
+                        "status":  "PASS",
+                        "detail":  "router=true catalog=true dashboard=true real_alpha_locked=true",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write factory contract JSON",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\contracts\\approval-request-factory-contract-20260705-191709.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write latest factory contract JSON",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\latest\\approval-request-factory-contract-latest.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write factory contract Markdown",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\contracts\\approval-request-factory-contract-20260705-191709.md",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Write latest factory contract Markdown",
+                        "status":  "PASS",
+                        "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\latest\\approval-request-factory-contract-latest.md",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Approval Factory Device Heartbeat",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/devices/agent-lee-approval-request-factory/heartbeat -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\factory-device-heartbeat.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "POST Approval Factory Satellite Heartbeat",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/satellites/agent-lee-approval-request-factory/heartbeat -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\factory-satellite-heartbeat.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Admin Dashboard After Approval Factory",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:5323/admin/device-layer/dashboard-data -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\admin-dashboard-after-approval-factory.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "GET Real Alpha Health After Factory",
+                        "status":  "PASS",
+                        "detail":  "http://127.0.0.1:7332/health -\u003e C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-190-20260705-191709\\json\\real-alpha-health-after-factory.json",
+                        "time":  "2026-07-05T19:17:10"
+                    },
+                    {
+                        "name":  "Validate no approval mutation and locked state",
+                        "status":  "PASS",
+                        "detail":  "approval counts unchanged; real=false physical=false read_only=false",
+                        "time":  "2026-07-05T19:17:10"
+                    }
+                ],
+    "warnings":  [
+
+                 ]
+}

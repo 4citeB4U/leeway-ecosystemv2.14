@@ -1,0 +1,63 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_DEVICE_LAYER_UI_RUNTIME_CONTRACT_266",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:05:55",
+    "contract_status":  "READY_FOR_UI_ROUTE_PATCH_PLAN",
+    "canonical_runtime_artifact":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-governed-capability-map-latest.json",
+    "proposed_agent_lee_ui_routes":  [
+                                         {
+                                             "method":  "GET",
+                                             "route":  "/agent-lee/device-layer/capability-map",
+                                             "purpose":  "Return governed Device Layer capability map for UI/runtime display.",
+                                             "execute":  false
+                                         },
+                                         {
+                                             "method":  "GET",
+                                             "route":  "/agent-lee/device-layer/families",
+                                             "purpose":  "Return family cards and readiness state.",
+                                             "execute":  false
+                                         },
+                                         {
+                                             "method":  "GET",
+                                             "route":  "/agent-lee/device-layer/read-only-routes",
+                                             "purpose":  "Return all available read-only route records.",
+                                             "execute":  false
+                                         },
+                                         {
+                                             "method":  "GET",
+                                             "route":  "/agent-lee/device-layer/approval-required-actions",
+                                             "purpose":  "Return future approval-required action catalog, disabled by default.",
+                                             "execute":  false
+                                         },
+                                         {
+                                             "method":  "GET",
+                                             "route":  "/agent-lee/device-layer/lock-state",
+                                             "purpose":  "Return real-alpha lock and probe status.",
+                                             "execute":  false
+                                         }
+                                     ],
+    "forbidden_in_this_phase":  [
+                                    "POST execution routes",
+                                    "open app execution",
+                                    "click execution",
+                                    "typing execution",
+                                    "shell execution",
+                                    "SSH execution",
+                                    "ADB execution",
+                                    "iOS device execution",
+                                    "Tailscale execution",
+                                    "smart home execution",
+                                    "camera stream opening",
+                                    "microphone access",
+                                    "printer job",
+                                    "casting action",
+                                    "any physical action"
+                                ],
+    "approval_model":  {
+                           "pending_to_approved_to_execute_required":  true,
+                           "execute_buttons_hidden_in_phase_38":  true,
+                           "route_patch_plan_required_next":  true,
+                           "execution_lane_added_one_action_at_a_time_after_ui_map":  true
+                       },
+    "recommended_next":  "267-agent-lee-governed-capability-map-ui-route-patch-plan-no-execute.ps1"
+}

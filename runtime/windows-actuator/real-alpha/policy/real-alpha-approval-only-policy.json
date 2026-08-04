@@ -1,0 +1,11 @@
+﻿{
+    "version":  "LEEWAY_LOCK_REAL_ALPHA_BACK_TO_APPROVAL_ONLY_2026-07-05",
+    "created_at":  "2026-07-05T18:24:10",
+    "mode":  "APPROVAL_ONLY_LOCKED",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "approval_validation_available":  true,
+    "all_physical_actions_blocked":  true,
+    "previous_milestone_preserved":  "172 proved approved real_open_app/notepad worked once",
+    "next_extension_requires_new_script":  true
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "leeway.agent-lee.chess-scene-graph.v1",
+  "sceneId": "agent-lee-3d-chess-proof",
+  "projectId": "agent-lee-3d-chess-proof",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "renderer": {
+    "family": "webgl-webxr-ready",
+    "status": "partial",
+    "notes": [
+      "The visible proof is browser-native and 3D-styled.",
+      "True GLB export and device AR preview remain guarded until the backend is available."
+    ]
+  },
+  "camera": {
+    "type": "perspective",
+    "fov": 55,
+    "orbit": {
+      "enabled": true,
+      "lockTarget": "board"
+    }
+  },
+  "lighting": [
+    { "id": "key", "type": "hemisphere", "intensity": 1.0 },
+    { "id": "rim", "type": "directional", "intensity": 0.55 },
+    { "id": "accent", "type": "spot", "intensity": 0.8 }
+  ],
+  "board": {
+    "files": 8,
+    "ranks": 8,
+    "levels": 1,
+    "orientation": "white-bottom",
+    "projection": "isometric"
+  },
+  "assets": {
+    "themes": "themes.json",
+    "rulesEngine": "chess-rules-engine.js"
+  },
+  "xr": {
+    "webxrReady": true,
+    "arMode": "guarded",
+    "notes": [
+      "WebXR is modeled in the manifest.",
+      "The actual device backend is not claimed here."
+    ]
+  },
+  "pieceFamilies": [
+    "knights_and_dragons",
+    "ninjas_and_samurai",
+    "kung_fu_masters",
+    "modern_military",
+    "classic_grandmaster"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "required_endpoints": [
+    "/health",
+    "/status",
+    "/openapi.json",
+    "/skills",
+    "/select",
+    "/execute",
+    "/receipts/latest"
+  ],
+  "skill_groups": [
+    "spec",
+    "plan",
+    "build",
+    "test",
+    "debug",
+    "review",
+    "security",
+    "ship",
+    "documentation",
+    "observability"
+  ],
+  "status": "CONTRACT_READY",
+  "lane": "leeway_agent_skills",
+  "created_at": "2026-07-03T19:43:38.4944921-05:00",
+  "verdict": "LEEWAY_AGENT_SKILLS_LANE_CONTRACT_CREATED",
+  "purpose": "Leeway-native skill registry for Agent Lee workflows."
+}

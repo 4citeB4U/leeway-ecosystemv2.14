@@ -1,0 +1,163 @@
+﻿{
+    "version":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_ACTION_CONTRACT_462G",
+    "phase":  82,
+    "timestamp":  "2026-07-07T18:44:50",
+    "verdict":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_ACTION_CONTRACT_462G_CLEAN_NO_REAL_ACTION",
+    "repaired_from":  "462F-browser-desktop-sandbox-action-contract-no-real-action.ps1",
+    "repair_reason":  "462G resolves 461F by directly using the latest Run-461F visible report text instead of brittle JSON field names.",
+    "contract_only":  true,
+    "sandbox_only":  true,
+    "no_real_action":  true,
+    "no_control":  true,
+    "source_461F_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-461F-20260707-183334\\reports\\LEEWAY_SIMULATION_FIRST_ACTION_PERMIT_LADDER_461F_20260707-183334.txt",
+    "prerequisites":  {
+                          "permit_ladder_461F_clean":  true,
+                          "permit_ladder_report_proof_accepted":  true,
+                          "no_real_action_from_461F":  true,
+                          "no_control_from_461F":  true,
+                          "six_level_ladder_seen":  true,
+                          "no_approval_from_461F":  true,
+                          "no_unlock_from_461F":  true,
+                          "browser_runtime_live_endpoint_reachable_advisory":  false,
+                          "desktop_runtime_live_endpoint_reachable_advisory":  false,
+                          "device_operator_reachable":  true,
+                          "passive_process_probe_count":  54
+                      },
+    "sandbox_surfaces":  [
+                             {
+                                 "id":  "BROWSER_SANDBOX_SURFACE",
+                                 "surface_type":  "browser",
+                                 "allowed_future_scope":  "sandbox page only",
+                                 "blocked_now":  [
+                                                     "open browser",
+                                                     "navigate live browser",
+                                                     "click live UI",
+                                                     "type into live UI",
+                                                     "submit live form",
+                                                     "download",
+                                                     "upload",
+                                                     "send message",
+                                                     "purchase",
+                                                     "change account"
+                                                 ],
+                                 "future_contract_required":  true
+                             },
+                             {
+                                 "id":  "DESKTOP_SANDBOX_SURFACE",
+                                 "surface_type":  "desktop",
+                                 "allowed_future_scope":  "sandbox app/window only",
+                                 "blocked_now":  [
+                                                     "move mouse",
+                                                     "click desktop",
+                                                     "type",
+                                                     "hotkey",
+                                                     "open app",
+                                                     "close app",
+                                                     "move window",
+                                                     "change setting",
+                                                     "run command",
+                                                     "mutate file"
+                                                 ],
+                                 "future_contract_required":  true
+                             }
+                         ],
+    "sandbox_permit_required_fields":  [
+                                           "sandbox_surface_id",
+                                           "target_sandbox_only",
+                                           "exact_action",
+                                           "expected_visible_result",
+                                           "forbidden_boundaries",
+                                           "human_approval_phrase",
+                                           "one_time_scope",
+                                           "preflight_safety_check",
+                                           "proof_after_action",
+                                           "lockback_after_action"
+                                       ],
+    "future_sandbox_action_examples":  [
+                                           {
+                                               "id":  "SANDBOX_BROWSER_CLICK_ON_LOCAL_TEST_PAGE_ONCE",
+                                               "description":  "Future approval may permit one click on a local sandbox test page only.",
+                                               "status_now":  "NOT_APPROVED"
+                                           },
+                                           {
+                                               "id":  "SANDBOX_BROWSER_TYPE_IN_LOCAL_TEST_FIELD_ONCE",
+                                               "description":  "Future approval may permit typing into one local sandbox test input only.",
+                                               "status_now":  "NOT_APPROVED"
+                                           },
+                                           {
+                                               "id":  "SANDBOX_DESKTOP_WINDOW_FOCUS_TEST_ONCE",
+                                               "description":  "Future approval may permit a local fake/sandbox window focus test only.",
+                                               "status_now":  "NOT_APPROVED"
+                                           }
+                                       ],
+    "hard_forbidden_in_462G":  [
+                                   "browser_open",
+                                   "browser_navigation",
+                                   "browser_click",
+                                   "browser_typing",
+                                   "browser_submit",
+                                   "mouse_move",
+                                   "mouse_click",
+                                   "keyboard_input",
+                                   "hotkey",
+                                   "window_control",
+                                   "desktop_control",
+                                   "file_mutation_outside_artifacts",
+                                   "code_execution",
+                                   "runtime_start",
+                                   "runtime_restart",
+                                   "real_action",
+                                   "external_site_action",
+                                   "real_account_action",
+                                   "credential_entry",
+                                   "message_send",
+                                   "purchase",
+                                   "download",
+                                   "upload",
+                                   "device_control",
+                                   "authority_unlock",
+                                   "approval_grant"
+                               ],
+    "no_control_flags":  {
+                             "contract_only":  true,
+                             "sandbox_contract_only":  true,
+                             "runtime_execution_performed":  false,
+                             "post_performed":  false,
+                             "mutation_performed":  false,
+                             "browser_runtime_started":  false,
+                             "desktop_runtime_started":  false,
+                             "browser_open_performed":  false,
+                             "browser_navigation_performed":  false,
+                             "browser_click_performed":  false,
+                             "typing_performed":  false,
+                             "mouse_control_performed":  false,
+                             "keyboard_control_performed":  false,
+                             "window_control_performed":  false,
+                             "desktop_control_performed":  false,
+                             "file_mutation_performed_outside_artifacts":  false,
+                             "code_execution_performed":  false,
+                             "real_action_performed":  false,
+                             "sandbox_action_performed":  false,
+                             "approval_granted":  false,
+                             "authority_unlocked":  false
+                         },
+    "safety":  {
+                   "no_browser_runtime_start":  true,
+                   "no_desktop_runtime_start":  true,
+                   "no_browser_open":  true,
+                   "no_navigation":  true,
+                   "no_click":  true,
+                   "no_typing":  true,
+                   "no_mouse":  true,
+                   "no_keyboard":  true,
+                   "no_window_control":  true,
+                   "no_desktop_control":  true,
+                   "no_file_mutation_outside_artifacts":  true,
+                   "no_code_execution":  true,
+                   "no_sandbox_action":  true,
+                   "no_real_action":  true,
+                   "future_sandbox_action_requires_single_use_approval":  true,
+                   "future_real_action_requires_separate_single_use_approval":  true
+               },
+    "recommended_next_script":  "463-browser-desktop-sandbox-ui-contract-no-real-action.ps1"
+}

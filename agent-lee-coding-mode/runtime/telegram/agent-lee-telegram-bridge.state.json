@@ -1,0 +1,37 @@
+{
+  "bridgeOnline": true,
+  "bridgeStartedAt": "2026-06-29T03:56:54.231Z",
+  "botUsername": "Lee2912bot",
+  "botFirstName": "4cite",
+  "botIdHash": "3161f7934c32fbfebfb0495d5e76a902efaf14f72607230d779278b031d8c50e",
+  "updatedAt": "2026-06-29T03:58:04.781Z",
+  "lastPollAt": "2026-06-29T03:58:04.781Z",
+  "lastPollResult": "no_updates",
+  "lastPollError": "fetch failed",
+  "lastPollErrorAt": "2026-06-29T02:47:03.575Z",
+  "lastIncomingUpdateId": 171858802,
+  "lastIncomingChatIdHash": "b64a9ecd79a4a033fa81cb85f55dab561666bf5cd9fd7552c53fc0fb34ed01ad",
+  "lastIncomingTextHash": "6e3537465787df86d2ce6bd334f373d08f03a10535bce0870e6f54bff8728a19",
+  "lastIncomingTextPreview": "Help with the prior question",
+  "lastIncomingAt": "2026-06-29T03:58:02.200Z",
+  "lastAgentProvider": "agent-lee-8080-openai",
+  "lastOutgoingMessageId": 100,
+  "lastOutgoingTextHash": "55bd25c16f57d506ca3f55cf7fd394c6494d6a10aa3c14a5043618929c66bff9",
+  "lastOutgoingTextPreview": "I'm sorry, but I need more context about which prior question you're referring to. Could you please provide details so I can assist you effectively?",
+  "lastOutgoingAt": "2026-06-29T03:58:04.778Z",
+  "lastConfirmedOffset": 171858803,
+  "lastAgentRouteError": {
+    "route": "agent-lee-8080-openai",
+    "message": "This operation was aborted",
+    "at": "2026-06-29T03:57:14.642Z"
+  },
+  "lastOllamaRouteError": {
+    "route": "ollama-qwen2-5-coder",
+    "message": "fetch failed",
+    "at": "2026-06-28T21:14:14.272Z"
+  },
+  "receiptDir": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-telegram-bridge",
+  "lastInboundReceiptPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-telegram-bridge\\telegram-inbound-mqyotdji-e06cde.json",
+  "lastRoutedReceiptPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-telegram-bridge\\telegram-routed-mqyotfbw-8a3fd0.json",
+  "lastOutgoingReceiptPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-telegram-bridge\\telegram-outbound-mqyotfj9-4dc565.json"
+}

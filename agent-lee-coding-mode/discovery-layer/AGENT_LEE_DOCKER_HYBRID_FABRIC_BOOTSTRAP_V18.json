@@ -1,0 +1,14 @@
+{
+    "schema":  "agent-lee-docker-native-hybrid-fabric-bootstrap-v18",
+    "updatedAt":  "2026-06-28T01:03:23.7128404Z",
+    "status":  "DOCKER_NATIVE_HYBRID_FABRIC_FILES_WRITTEN",
+    "workerDir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker",
+    "worker":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker\\worker.mjs",
+    "dockerfile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\hybrid-fabric-worker\\Dockerfile",
+    "composeOverride":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\docker-compose.hybrid-fabric.yml",
+    "standard":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\leeway-standards\\agent-lee-docker-native-hybrid-fabric-standard.md",
+    "service":  "hybrid-fabric",
+    "container":  "leeway_hybrid_fabric",
+    "port":  8777,
+    "truth":  "Files are written. Next command builds and starts only the hybrid-fabric container with --no-deps."
+}

@@ -1,0 +1,94 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_260",
+    "timestamp":  "2026-07-05T22:51:05",
+    "verdict":  "LEEWAY_NETWORK_MESH_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "network_mesh",
+    "family_status":  "NETWORK_MESH_TAILSCALE_POLICY_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status",
+                               "audio_vision_read_only_discovery_registry_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy"
+                           ],
+    "remaining_families":  [
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "network_mesh_discover":  true,
+                   "network_mesh_status":  true,
+                   "network_mesh_registry":  true,
+                   "tailscale_status":  true,
+                   "tailscale_policy":  true,
+                   "all_network_mesh_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "discovered_count":  0,
+                         "tailscale_cli_invoked":  false,
+                         "tailscale_api_invoked":  false,
+                         "tailnet_authenticated":  false,
+                         "tailnet_joined":  false,
+                         "acl_changed":  false,
+                         "route_advertised":  false,
+                         "exit_node_enabled":  false,
+                         "subnet_router_enabled":  false,
+                         "firewall_mutated":  false,
+                         "dns_mutated":  false,
+                         "network_settings_mutated":  false,
+                         "tunnel_started":  false,
+                         "network_mutation_executed":  false,
+                         "physical_action_executed":  false
+                     },
+    "proof_chain":  {
+                        "contract_256_exists":  true,
+                        "contract_256_clean":  true,
+                        "plan_257_exists":  true,
+                        "plan_257_clean":  true,
+                        "patch_258_exists":  true,
+                        "patch_258_clean":  true,
+                        "audit_259_exists":  true,
+                        "audit_259_clean":  true,
+                        "contract_256_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-tailscale-policy-contract-proof-latest.json",
+                        "plan_257_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-read-only-route-patch-plan-proof-latest.json",
+                        "patch_258_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-read-only-routes-patch-258-latest.json",
+                        "audit_259_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "tailscale_cli_invoked":  false,
+                   "tailscale_api_invoked":  false,
+                   "tailnet_authenticated":  false,
+                   "tailnet_joined":  false,
+                   "acl_changed":  false,
+                   "route_advertised":  false,
+                   "exit_node_enabled":  false,
+                   "subnet_router_enabled":  false,
+                   "firewall_mutated":  false,
+                   "dns_mutated":  false,
+                   "network_settings_mutated":  false,
+                   "tunnel_started":  false,
+                   "network_mutations":  0,
+                   "physical_actions_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "261-smart-home-adapter-contract-no-execute.ps1"
+}

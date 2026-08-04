@@ -1,0 +1,216 @@
+﻿{
+    "version":  "LEEWAY_RUNTIME_FABRIC_GOVERNANCE_RECEIPT_LOCK_445",
+    "phase":  67,
+    "timestamp":  "2026-07-07T00:59:14",
+    "verdict":  "LEEWAY_RUNTIME_FABRIC_GOVERNANCE_RECEIPT_LOCK_445_CLEAN_LOCKED_EXECUTION_STILL_BLOCKED",
+    "receipt_lock_only":  true,
+    "runtime_execution_performed":  false,
+    "container_execution_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "package_created":  false,
+    "physical_action_performed":  false,
+    "inherited":  {
+                      "audit_444_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-66-runtime-fabric-governance-completeness-audit\\latest\\runtime-fabric-governance-completeness-audit-latest.json",
+                      "audit_444_clean":  true,
+                      "repair_443R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65R-runtime-fabric-governance-writeout-evidence-repair\\latest\\runtime-fabric-governance-writeout-evidence-repair-latest.json",
+                      "writeout_443_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\latest\\runtime-fabric-full-layer-governance-writeout-latest.json",
+                      "approval_442_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json",
+                      "scope_441R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                      "gate_440_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                      "discovery_439_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json"
+                  },
+    "receipt_lock_state":  {
+                               "runtime_fabric_governance_receipt_locked":  true,
+                               "locked_at":  "2026-07-07T00:59:14",
+                               "lock_scope":  "Runtime Fabric governance body through 444 completeness audit",
+                               "governance_complete":  true,
+                               "layers_locked":  14,
+                               "evidence_records_locked":  9,
+                               "governance_docs_locked":  5,
+                               "core_evidence_files_hashed":  7,
+                               "governance_doc_files_hashed":  5,
+                               "hash_errors":  0,
+                               "approval_442_preserved_unconsumed":  true,
+                               "owner_approval_for_442A_present":  false,
+                               "runtime_execution_allowed_now":  false,
+                               "docker_exec_allowed_now":  false,
+                               "docker_mutation_allowed_now":  false,
+                               "device_control_allowed_now":  false,
+                               "package_creation_allowed_now":  false,
+                               "final_runtime_fabric_governance_state":  "COMPLETE_LOCKED_EXECUTION_BLOCKED"
+                           },
+    "authority_lock":  {
+                           "authority_order_locked":  [
+                                                          "LeeWay-Standards owns law",
+                                                          "Leeway Runtime Fabric enforces law",
+                                                          "Agent Lee operates under law",
+                                                          "Discovery Layer is closed and governed as Runtime Fabric sublayer",
+                                                          "Docker matrix is classified and blocked",
+                                                          "Active scope is structurally locked but not approved for execution",
+                                                          "442 owner approval gate exists but is unconsumed",
+                                                          "442A remains blocked until exact owner approval"
+                                                      ],
+                           "duplicate_governance_created":  false,
+                           "existing_governance_reused":  true,
+                           "canonical_evidence_location":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime and Archive\\proofs",
+                           "docker_is_not_canonical_evidence_store":  true
+                       },
+    "execution_block_lock":  {
+                                 "runtime_execution":  "BLOCKED",
+                                 "agent_lee_runtime_execution":  "BLOCKED",
+                                 "container_execution":  "BLOCKED",
+                                 "docker_exec":  "BLOCKED",
+                                 "docker_mutation":  "BLOCKED",
+                                 "docker_start_stop_restart_build_compose":  "BLOCKED",
+                                 "device_control":  "BLOCKED",
+                                 "physical_action":  "BLOCKED",
+                                 "telegram_posting":  "BLOCKED",
+                                 "model_provider_call":  "BLOCKED",
+                                 "tool_execution":  "BLOCKED",
+                                 "browser_control":  "BLOCKED",
+                                 "image_generation":  "BLOCKED",
+                                 "voice_generation":  "BLOCKED",
+                                 "package_creation":  "BLOCKED",
+                                 "sdk_distribution":  "BLOCKED"
+                             },
+    "core_evidence_hashes":  [
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-66-runtime-fabric-governance-completeness-audit\\latest\\runtime-fabric-governance-completeness-audit-latest.json",
+                                     "exists":  true,
+                                     "hash":  "25D78F656565CC9ED09FC059882D681EC8E2AF5DDD7F601DF56CA596653BBED1",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65R-runtime-fabric-governance-writeout-evidence-repair\\latest\\runtime-fabric-governance-writeout-evidence-repair-latest.json",
+                                     "exists":  true,
+                                     "hash":  "80244892C90192A114CEF23BE7D2511F1B4EEA68B1AA91DF73FEF4CB57755B99",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\latest\\runtime-fabric-full-layer-governance-writeout-latest.json",
+                                     "exists":  true,
+                                     "hash":  "20B2452662EB8A8DECD37125C30A7536630D583162B8C9CEF10789D2CA924CDA",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json",
+                                     "exists":  true,
+                                     "hash":  "3FEEF7E8EDAA992C6DFAC5A6E703FE1974081109F814AF32EFEB81762ACE0BDE",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                                     "exists":  true,
+                                     "hash":  "823D27F45364AA3B5DCFEEA740CEF4DA1B8E22D75D3160198AF800D4D5AF801A",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-62-docker-high-risk-container-gate-matrix\\latest\\docker-high-risk-container-gate-matrix-latest.json",
+                                     "exists":  true,
+                                     "hash":  "FD4814A6F3090A7F730FE61A6469CDC67C5379F0CC6406E8B3281F70BBEF3312",
+                                     "error":  ""
+                                 },
+                                 {
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-61-discovery-status-proof-closeout-router\\latest\\discovery-status-proof-closeout-latest.json",
+                                     "exists":  true,
+                                     "hash":  "A8B9FFDF03DC974063990EA8D1F41CBAD9519A65B8B3DC6FB4CA3604F0D3720A",
+                                     "error":  ""
+                                 }
+                             ],
+    "governance_doc_hashes":  [
+                                  {
+                                      "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\governance-docs\\runtime-fabric-master-governance-writeout-443.md",
+                                      "exists":  true,
+                                      "hash":  "270269652807F0E96CDAE1478602154CB1883F9E9E2049D839F6082B3043F571",
+                                      "error":  ""
+                                  },
+                                  {
+                                      "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\governance-docs\\discovery-layer-governance-writeout-443.md",
+                                      "exists":  true,
+                                      "hash":  "F8C5E7693AB127ACED423C976BF2F3DE0FD5A63FF3C5A1C7BEDD14AE32436DD8",
+                                      "error":  ""
+                                  },
+                                  {
+                                      "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\governance-docs\\docker-container-gate-governance-writeout-443.md",
+                                      "exists":  true,
+                                      "hash":  "C0574E49B29F22C7E3283EAE3FE44F403D384E4DBB43A5B80F353D7DD0DC043E",
+                                      "error":  ""
+                                  },
+                                  {
+                                      "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\governance-docs\\active-scope-governance-writeout-443.md",
+                                      "exists":  true,
+                                      "hash":  "AE4A8FCFCFE418F737FAB8D4454F1B7558051A13B4BC56CE4AADD4C2C781BB08",
+                                      "error":  ""
+                                  },
+                                  {
+                                      "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-65-runtime-fabric-full-layer-governance-writeout\\governance-docs\\blocked-surfaces-governance-writeout-443.md",
+                                      "exists":  true,
+                                      "hash":  "F50AFB7C966191AAA8C6473AD328E364ED1B2A865507A7C38D35D36FCC86C76D",
+                                      "error":  ""
+                                  }
+                              ],
+    "hash_errors":  [
+
+                    ],
+    "locked_docs":  [
+                        {
+                            "doc":  "locked_master",
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\locked-governance-docs\\runtime-fabric-locked-governance-master-445.md",
+                            "exists":  true
+                        },
+                        {
+                            "doc":  "locked_authority_order",
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\locked-governance-docs\\runtime-fabric-locked-authority-order-445.md",
+                            "exists":  true
+                        },
+                        {
+                            "doc":  "locked_execution_blocks",
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-67-runtime-fabric-governance-receipt-lock\\locked-governance-docs\\runtime-fabric-locked-execution-blocks-445.md",
+                            "exists":  true
+                        }
+                    ],
+    "next_routes":  [
+                        {
+                            "route_id":  "442A_OWNER_APPROVED_SINGLE_USE_RUNTIME_STATUS_PROOF",
+                            "status":  "BLOCKED_PENDING_EXACT_OWNER_APPROVAL",
+                            "description":  "May proceed only if owner provides exact 442 approval statement.",
+                            "script":  "442A-standards-bound-runtime-status-proof-single-use.ps1"
+                        },
+                        {
+                            "route_id":  "RUNTIME_FABRIC_GOVERNANCE_LOCKED_SUMMARY",
+                            "status":  "AVAILABLE",
+                            "description":  "Can produce a human-readable locked governance summary without execution.",
+                            "script":  "446-runtime-fabric-locked-governance-summary-no-execute.ps1"
+                        },
+                        {
+                            "route_id":  "PACKAGE_CREATION_GATE",
+                            "status":  "BLOCKED",
+                            "description":  "Package creation remains blocked until runtime proof closeout.",
+                            "script":  "later"
+                        }
+                    ],
+    "final_decision":  {
+                           "runtime_fabric_governance_final_locked":  true,
+                           "runtime_fabric_governance_complete":  true,
+                           "runtime_execution_allowed_now":  false,
+                           "docker_exec_allowed_now":  false,
+                           "docker_mutation_allowed_now":  false,
+                           "device_control_allowed_now":  false,
+                           "package_creation_allowed_now":  false,
+                           "owner_approval_for_442A_present":  false,
+                           "approval_442_preserved_unconsumed":  true,
+                           "recommended_next_script":  "446-runtime-fabric-locked-governance-summary-no-execute.ps1 or 442A only after exact owner approval"
+                       },
+    "counts":  {
+                   "layers_locked":  14,
+                   "evidence_records_locked":  9,
+                   "governance_docs_locked":  5,
+                   "locked_docs_created":  3,
+                   "core_evidence_hashes":  7,
+                   "governance_doc_hashes":  5,
+                   "hash_errors":  0,
+                   "next_routes":  3
+               }
+}

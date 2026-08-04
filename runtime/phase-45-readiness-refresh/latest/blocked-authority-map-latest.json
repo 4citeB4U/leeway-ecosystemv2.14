@@ -1,0 +1,66 @@
+﻿{
+    "timestamp":  "2026-07-06T18:12:44",
+    "blocked_authority_map":  [
+                                  {
+                                      "authority":  "execution",
+                                      "blocked":  true,
+                                      "reason":  "hold-and-lock active"
+                                  },
+                                  {
+                                      "authority":  "device_control",
+                                      "blocked":  true,
+                                      "reason":  "hold-and-lock active"
+                                  },
+                                  {
+                                      "authority":  "onboarding",
+                                      "blocked":  true,
+                                      "reason":  "hold-and-lock active"
+                                  },
+                                  {
+                                      "authority":  "printer_action",
+                                      "blocked":  true,
+                                      "reason":  "printer lane is locked stub only"
+                                  },
+                                  {
+                                      "authority":  "phone_action",
+                                      "blocked":  true,
+                                      "reason":  "phone lane is draft-only/no action"
+                                  },
+                                  {
+                                      "authority":  "router_action",
+                                      "blocked":  true,
+                                      "reason":  "router lane is read-only/no action"
+                                  },
+                                  {
+                                      "authority":  "network_scan",
+                                      "blocked":  true,
+                                      "reason":  "only passive local inventory allowed"
+                                  },
+                                  {
+                                      "authority":  "port_scan",
+                                      "blocked":  true,
+                                      "reason":  "only passive local inventory allowed"
+                                  },
+                                  {
+                                      "authority":  "bridge_deploy",
+                                      "blocked":  true,
+                                      "reason":  "hold-and-lock active"
+                                  },
+                                  {
+                                      "authority":  "protocol_translator_deploy",
+                                      "blocked":  true,
+                                      "reason":  "hold-and-lock active"
+                                  },
+                                  {
+                                      "authority":  "authority_unlock",
+                                      "blocked":  true,
+                                      "reason":  "future explicit human approval contract required"
+                                  },
+                                  {
+                                      "authority":  "physical_action",
+                                      "blocked":  true,
+                                      "reason":  "future explicit human approval contract required"
+                                  }
+                              ],
+    "blocked_authority_count":  12
+}

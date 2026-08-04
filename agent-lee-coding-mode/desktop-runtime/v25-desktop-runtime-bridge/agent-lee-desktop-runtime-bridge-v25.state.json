@@ -1,0 +1,375 @@
+{
+    "schema":  "agent-lee-desktop-runtime-bridge-v25",
+    "status":  "DESKTOP_BRIDGE_READY",
+    "recordedAt":  "2026-06-28T05:03:42.3459976Z",
+    "bridge":  {
+                   "name":  "agent-lee-desktop-runtime-bridge-v25",
+                   "port":  8792,
+                   "hostEndpoint":  "http://127.0.0.1:8792",
+                   "processId":  43124,
+                   "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                   "proofDir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-desktop-runtime-bridge-v25-20260628-000336"
+               },
+    "truth":  {
+                  "desktopCapability":  "PROVEN_BY_V20_HARNESS_PREVIOUSLY",
+                  "autonomousDesktopBridge":  "V25_STAGED_LOCALHOST_BRIDGE_ACTIVE",
+                  "physicalActions":  "APPROVAL_GATED",
+                  "arbitraryCommands":  "NOT_ALLOWED",
+                  "antivirusBypass":  "NOT_USED"
+              },
+    "system":  {
+                   "recordedAt":  "2026-06-28T05:03:39.8188008Z",
+                   "computerName":  "AGENT-LEE",
+                   "userName":  "Leona",
+                   "domain":  "AGENT-LEE",
+                   "os":  {
+                              "caption":  "Microsoft Windows 11 Home",
+                              "version":  "10.0.26200",
+                              "buildNumber":  "26200",
+                              "architecture":  "64-bit",
+                              "lastBoot":  "\/Date(1782450996498)\/"
+                          },
+                   "computer":  {
+                                    "manufacturer":  "LENOVO",
+                                    "model":  "83NX",
+                                    "totalMemoryGB":  31.43
+                                },
+                   "cpu":  {
+                               "name":  "Intel(R) Core(TM) Ultra 9 275HX",
+                               "cores":  24,
+                               "logicalProcessors":  24
+                           },
+                   "videoControllers":  [
+                                            {
+                                                "Name":  "Intel(R) Graphics",
+                                                "Status":  "OK",
+                                                "AdapterRAM":  2147479552,
+                                                "DriverVersion":  "32.0.101.8243",
+                                                "VideoProcessor":  "Intel(R) Graphics Family"
+                                            },
+                                            {
+                                                "Name":  "NVIDIA GeForce RTX 5060 Laptop GPU",
+                                                "Status":  "OK",
+                                                "AdapterRAM":  4293918720,
+                                                "DriverVersion":  "32.0.15.9201",
+                                                "VideoProcessor":  "NVIDIA GeForce RTX 5060 Laptop GPU"
+                                            }
+                                        ],
+                   "audioDevices":  [
+                                        {
+                                            "Name":  "Nahimic mirroring device",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "Nahimic"
+                                        },
+                                        {
+                                            "Name":  "USB Audio Device",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "(Generic USB Audio)"
+                                        },
+                                        {
+                                            "Name":  "Nahimic Easy Surround device",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "Nahimic"
+                                        },
+                                        {
+                                            "Name":  "NVIDIA High Definition Audio",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "NVIDIA"
+                                        },
+                                        {
+                                            "Name":  "Realtek High Definition Audio(SST)",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "Realtek"
+                                        },
+                                        {
+                                            "Name":  "USB Audio Device",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "(Generic USB Audio)"
+                                        },
+                                        {
+                                            "Name":  "NVIDIA Virtual Audio Device (Wave Extensible) (WDM)",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "NVIDIA"
+                                        },
+                                        {
+                                            "Name":  "Nahimic VAD",
+                                            "Status":  "OK",
+                                            "Manufacturer":  "Nahimic"
+                                        }
+                                    ],
+                   "cameraPnPDevices":  [
+                                            {
+                                                "Name":  "Microphone (HD Webcam eMeet C960)",
+                                                "Status":  "OK",
+                                                "PNPDeviceID":  "SWD\\MMDEVAPI\\{0.0.1.00000000}.{4FB47399-1FA5-4285-BF35-4650C6487184}"
+                                            },
+                                            {
+                                                "Name":  "HD Webcam eMeet C960",
+                                                "Status":  "OK",
+                                                "PNPDeviceID":  "USB\\VID_328F\u0026PID_006D\u0026MI_02\\6\u0026F06B1B5\u00260\u00260002"
+                                            },
+                                            {
+                                                "Name":  "HD Webcam eMeet C960",
+                                                "Status":  "OK",
+                                                "PNPDeviceID":  "USB\\VID_328F\u0026PID_006D\u0026MI_00\\6\u0026F06B1B5\u00260\u00260000"
+                                            },
+                                            {
+                                                "Name":  "Integrated Camera",
+                                                "Status":  "OK",
+                                                "PNPDeviceID":  "USB\\VID_174F\u0026PID_11B5\u0026MI_00\\6\u0026E2F148F\u00261\u00260000"
+                                            },
+                                            {
+                                                "Name":  "Windows Studio Effects Camera",
+                                                "Status":  "OK",
+                                                "PNPDeviceID":  "SWD\\DRIVERENUM\\MEP_CAMERA_COMPONENT\u00265\u002618EF04B2\u00260"
+                                            }
+                                        ],
+                   "printers":  [
+                                    {
+                                        "Name":  "OneNote (Desktop)",
+                                        "Default":  false,
+                                        "WorkOffline":  false,
+                                        "PrinterStatus":  3
+                                    },
+                                    {
+                                        "Name":  "Microsoft Print to PDF",
+                                        "Default":  false,
+                                        "WorkOffline":  false,
+                                        "PrinterStatus":  3
+                                    },
+                                    {
+                                        "Name":  "HP OfficeJet Pro 8020 series",
+                                        "Default":  true,
+                                        "WorkOffline":  false,
+                                        "PrinterStatus":  3
+                                    }
+                                ]
+               },
+    "docker":  {
+                   "recordedAt":  "2026-06-28T05:03:41.1129806Z",
+                   "dockerAvailable":  true,
+                   "containers":  [
+                                      {
+                                          "name":  "leeway_media_router",
+                                          "image":  "leeway-ecosystemv214-leeway-media-router",
+                                          "status":  "Up 17 minutes",
+                                          "ports":  "0.0.0.0:5301-\u003e5301/tcp, [::]:5301-\u003e5301/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_media_ingestion_layer",
+                                          "image":  "leeway-ecosystemv214-leeway-media-ingestion-layer",
+                                          "status":  "Up 29 minutes",
+                                          "ports":  "0.0.0.0:5300-\u003e5300/tcp, [::]:5300-\u003e5300/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_worker_center",
+                                          "image":  "leeway-ecosystemv214-leeway-worker-center",
+                                          "status":  "Up 31 minutes",
+                                          "ports":  "0.0.0.0:8862-\u003e8862/tcp, [::]:8862-\u003e8862/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_mcp_center",
+                                          "image":  "leeway-ecosystemv214-leeway-mcp-center",
+                                          "status":  "Up 31 minutes",
+                                          "ports":  "0.0.0.0:8863-\u003e8863/tcp, [::]:8863-\u003e8863/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_mcp_agent_center",
+                                          "image":  "leeway-ecosystemv214-leeway-mcp-agent-center",
+                                          "status":  "Up 51 minutes",
+                                          "ports":  "0.0.0.0:8861-\u003e8861/tcp, [::]:8861-\u003e8861/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_agent_center",
+                                          "image":  "leeway-ecosystemv214-leeway-agent-center",
+                                          "status":  "Up 51 minutes",
+                                          "ports":  "0.0.0.0:8860-\u003e8860/tcp, [::]:8860-\u003e8860/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_hybrid_fabric",
+                                          "image":  "leeway-ecosystemv214-hybrid-fabric",
+                                          "status":  "Up 4 hours",
+                                          "ports":  "0.0.0.0:8777-\u003e8777/tcp, [::]:8777-\u003e8777/tcp"
+                                      },
+                                      {
+                                          "name":  "agent-lee-creation-kernel",
+                                          "image":  "agent-lee-creation-kernel:local",
+                                          "status":  "Up 5 hours",
+                                          "ports":  "0.0.0.0:8094-\u003e8094/tcp, [::]:8094-\u003e8094/tcp"
+                                      },
+                                      {
+                                          "name":  "agent-lee-vision-kernel",
+                                          "image":  "agent-lee-vision-kernel-agent-lee-vision-kernel",
+                                          "status":  "Up 13 hours",
+                                          "ports":  "0.0.0.0:8093-\u003e8093/tcp, [::]:8093-\u003e8093/tcp"
+                                      },
+                                      {
+                                          "name":  "agent-lee-voice-kernel",
+                                          "image":  "agent-lee-voice-kernel-voice-kernel",
+                                          "status":  "Up 9 hours (healthy)",
+                                          "ports":  "0.0.0.0:8092-\u003e8092/tcp, [::]:8092-\u003e8092/tcp"
+                                      },
+                                      {
+                                          "name":  "agent_lee_code_mode",
+                                          "image":  "leeway-ecosystemv214-agent-lee",
+                                          "status":  "Up 2 days",
+                                          "ports":  "0.0.0.0:8080-\u003e8080/tcp, [::]:8080-\u003e8080/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway-seafile",
+                                          "image":  "seafileltd/seafile-mc:latest",
+                                          "status":  "Up 2 days",
+                                          "ports":  "0.0.0.0:8082-\u003e80/tcp, [::]:8082-\u003e80/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway-seafile-cache",
+                                          "image":  "memcached:1.6",
+                                          "status":  "Up 2 days",
+                                          "ports":  "11211/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway-seafile-db",
+                                          "image":  "mariadb:10.11",
+                                          "status":  "Up 2 days (healthy)",
+                                          "ports":  "3306/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_runtime_fabric",
+                                          "image":  "leeway-ecosystemv214-runtime-fabric",
+                                          "status":  "Up 2 days",
+                                          "ports":  "0.0.0.0:4001-\u003e4001/tcp, [::]:4001-\u003e4001/tcp, 0.0.0.0:8111-\u003e8111/tcp, [::]:8111-\u003e8111/tcp"
+                                      },
+                                      {
+                                          "name":  "leeway_ollama",
+                                          "image":  "ollama/ollama:latest",
+                                          "status":  "Up 2 days (healthy)",
+                                          "ports":  "0.0.0.0:11434-\u003e11434/tcp, [::]:11434-\u003e11434/tcp"
+                                      }
+                                  ],
+                   "endpoints":  {
+                                     "agentLee":  {
+                                                      "ready":  true,
+                                                      "status":  "READY",
+                                                      "url":  "http://127.0.0.1:8080/health",
+                                                      "error":  ""
+                                                  },
+                                     "runtimeFabric":  {
+                                                           "ready":  true,
+                                                           "status":  "READY",
+                                                           "url":  "http://127.0.0.1:4001/runtime/health",
+                                                           "error":  ""
+                                                       },
+                                     "hybridFabric":  {
+                                                          "ready":  true,
+                                                          "status":  "READY",
+                                                          "url":  "http://127.0.0.1:8777/state",
+                                                          "error":  ""
+                                                      },
+                                     "ollama":  {
+                                                    "ready":  true,
+                                                    "status":  "READY",
+                                                    "url":  "http://127.0.0.1:11434/api/tags",
+                                                    "error":  ""
+                                                },
+                                     "agentCenter":  {
+                                                         "ready":  true,
+                                                         "status":  "READY",
+                                                         "url":  "http://127.0.0.1:8860/health",
+                                                         "error":  ""
+                                                     },
+                                     "mcpAgentCenter":  {
+                                                            "ready":  true,
+                                                            "status":  "READY",
+                                                            "url":  "http://127.0.0.1:8861/health",
+                                                            "error":  ""
+                                                        },
+                                     "workerCenter":  {
+                                                          "ready":  true,
+                                                          "status":  "READY",
+                                                          "url":  "http://127.0.0.1:8862/health",
+                                                          "error":  ""
+                                                      },
+                                     "mcpCenter":  {
+                                                       "ready":  true,
+                                                       "status":  "READY",
+                                                       "url":  "http://127.0.0.1:8863/health",
+                                                       "error":  ""
+                                                   },
+                                     "mediaIngestion":  {
+                                                            "ready":  true,
+                                                            "status":  "READY",
+                                                            "url":  "http://127.0.0.1:5300/media-ingestion/health",
+                                                            "error":  ""
+                                                        },
+                                     "mediaRouter":  {
+                                                         "ready":  true,
+                                                         "status":  "READY",
+                                                         "url":  "http://127.0.0.1:5301/health",
+                                                         "error":  ""
+                                                     },
+                                     "voiceKernel":  {
+                                                         "ready":  true,
+                                                         "status":  "READY",
+                                                         "url":  "http://127.0.0.1:8092/health",
+                                                         "error":  ""
+                                                     },
+                                     "visionKernel":  {
+                                                          "ready":  true,
+                                                          "status":  "READY",
+                                                          "url":  "http://127.0.0.1:8093/health",
+                                                          "error":  ""
+                                                      },
+                                     "creationKernel":  {
+                                                            "ready":  true,
+                                                            "status":  "READY",
+                                                            "url":  "http://127.0.0.1:8094/health",
+                                                            "error":  ""
+                                                        }
+                                 }
+               },
+    "camera":  {
+                   "recordedAt":  "2026-06-28T05:03:42.3230004Z",
+                   "ffmpegAvailable":  true,
+                   "directShowDevices":  [
+
+                                         ],
+                   "pnpCameras":  [
+                                      {
+                                          "Name":  "Microphone (HD Webcam eMeet C960)",
+                                          "Status":  "OK",
+                                          "PNPDeviceID":  "SWD\\MMDEVAPI\\{0.0.1.00000000}.{4FB47399-1FA5-4285-BF35-4650C6487184}"
+                                      },
+                                      {
+                                          "Name":  "HD Webcam eMeet C960",
+                                          "Status":  "OK",
+                                          "PNPDeviceID":  "USB\\VID_328F\u0026PID_006D\u0026MI_02\\6\u0026F06B1B5\u00260\u00260002"
+                                      },
+                                      {
+                                          "Name":  "HD Webcam eMeet C960",
+                                          "Status":  "OK",
+                                          "PNPDeviceID":  "USB\\VID_328F\u0026PID_006D\u0026MI_00\\6\u0026F06B1B5\u00260\u00260000"
+                                      },
+                                      {
+                                          "Name":  "Integrated Camera",
+                                          "Status":  "OK",
+                                          "PNPDeviceID":  "USB\\VID_174F\u0026PID_11B5\u0026MI_00\\6\u0026E2F148F\u00261\u00260000"
+                                      },
+                                      {
+                                          "Name":  "Windows Studio Effects Camera",
+                                          "Status":  "OK",
+                                          "PNPDeviceID":  "SWD\\DRIVERENUM\\MEP_CAMERA_COMPONENT\u00265\u002618EF04B2\u00260"
+                                      }
+                                  ],
+                   "cameraProven":  true,
+                   "inventoryFile":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\agent-lee-desktop-runtime-bridge-v25-20260628-000336\\logs\\camera-inventory.txt"
+               },
+    "endpoints":  {
+                      "health":  "http://127.0.0.1:8792/health",
+                      "state":  "http://127.0.0.1:8792/state",
+                      "devices":  "http://127.0.0.1:8792/devices",
+                      "docker":  "http://127.0.0.1:8792/docker",
+                      "camera":  "http://127.0.0.1:8792/camera",
+                      "speak":  "http://127.0.0.1:8792/speak",
+                      "action":  "http://127.0.0.1:8792/action"
+                  }
+}

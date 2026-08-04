@@ -1,0 +1,120 @@
+﻿{
+    "version":  "LEEWAY_LINUX_ACTUATOR_CONTRACT_246",
+    "timestamp":  "2026-07-05T22:14:20",
+    "family":  "linux",
+    "capability_status":  "LINUX_ACTUATOR_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "linux_discover":  false,
+                            "linux_status":  false,
+                            "linux_registry":  false,
+                            "linux_shell_status":  false,
+                            "linux_actuator_status":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/linux/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/linux/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/linux/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/linux/shell/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/linux/actuator/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/shell/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/ssh/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/ui/click",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/ui/type-text",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/ui/hotkey",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/app/open",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/file/read",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/linux/file/write",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_ssh_invoked":  true,
+                   "no_shell_invoked":  true,
+                   "no_remote_host_connected":  true,
+                   "no_file_read":  true,
+                   "no_file_write":  true,
+                   "no_app_open":  true,
+                   "no_click":  true,
+                   "no_text_entry":  true,
+                   "no_hotkey":  true,
+                   "no_process_mutation":  true,
+                   "no_system_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

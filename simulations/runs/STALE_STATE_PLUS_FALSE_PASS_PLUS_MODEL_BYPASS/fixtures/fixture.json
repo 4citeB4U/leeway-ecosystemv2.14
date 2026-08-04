@@ -1,0 +1,8 @@
+{
+  "simulationId": "STALE_STATE_PLUS_FALSE_PASS_PLUS_MODEL_BYPASS",
+  "injectedFaults": [
+    "fake stale service map",
+    "fake PASS report",
+    "fake direct model-call config"
+  ]
+}

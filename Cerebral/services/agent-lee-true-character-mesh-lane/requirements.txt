@@ -1,0 +1,9 @@
+﻿fastapi
+uvicorn[standard]
+pillow
+requests
+trimesh
+numpy
+pygltflib
+onnxruntime
+rembg

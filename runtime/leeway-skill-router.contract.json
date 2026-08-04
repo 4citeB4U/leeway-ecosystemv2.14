@@ -1,0 +1,122 @@
+{
+  "execution_truth": {
+    "research_execution": "BUILT",
+    "approval_queue": "BUILT",
+    "image_generation_execution": "BUILT_BUT_TELEGRAM_ROUTING_MUST_BE_REPAIRED",
+    "email_send_execution": "NOT_BUILT",
+    "calendar_create_execution": "NOT_BUILT",
+    "planning_execution": "BUILT",
+    "document_pdf_execution": "NOT_BUILT",
+    "phone_call_execution": "NOT_BUILT"
+  },
+  "lane": "leeway_skill_router",
+  "routes": {
+    "phone": {
+      "target": "leeway_api_gateway:/approval/request-phone-call",
+      "triggers": [
+        "call",
+        "make the call",
+        "dial",
+        "phone"
+      ],
+      "current_truth": "approval only until leeway_phone_runtime is built"
+    },
+    "self_repair": {
+      "target": "diagnostic skill",
+      "triggers": [
+        "fix yourself",
+        "diagnose",
+        "repair all issues",
+        "what is the cause"
+      ],
+      "rule": "Inspect logs/routes and return receipt."
+    },
+    "planning": {
+      "triggers": [
+        "plan",
+        "dinner",
+        "restaurant",
+        "schedule",
+        "appointment",
+        "outreach"
+      ],
+      "target": "leeway_api_gateway:/plan/date-night or relevant planner"
+    },
+    "approval": {
+      "target": "leeway_api_gateway:/approvals/approve",
+      "triggers": [
+        "approve",
+        "ok i approve",
+        "go ahead",
+        "yes do it"
+      ],
+      "rule": "Resolve pending approval from task state. If ambiguous, ask user."
+    },
+    "email": {
+      "target": "leeway_api_gateway:/approval/request-email",
+      "triggers": [
+        "send email",
+        "email it",
+        "send it to"
+      ],
+      "current_truth": "approval only until leeway_email_runtime is built"
+    },
+    "image": {
+      "target": "agent-lee-sdxl-lightning-image-lane",
+      "triggers": [
+        "create image",
+        "generate image",
+        "make a picture",
+        "draw"
+      ],
+      "rule": "Route before generic brain fallback."
+    },
+    "calendar": {
+      "target": "leeway_api_gateway:/approval/request-calendar-event",
+      "triggers": [
+        "calendar",
+        "schedule it",
+        "create event"
+      ],
+      "current_truth": "approval only until leeway_calendar_runtime is built"
+    },
+    "document_pdf": {
+      "target": "leeway_document_runtime",
+      "triggers": [
+        "pdf",
+        "document",
+        "write this up",
+        "make a file"
+      ],
+      "current_truth": "planned; must not fake artifact"
+    }
+  },
+  "container": "leeway_skill_router",
+  "must_read": [
+    "runtime\\agent-lee-self-discovery.manifest.json",
+    "runtime\\agent-lee-skill-map.manifest.json",
+    "runtime\\agent-lee-capability-index.manifest.json"
+  ],
+  "verdict": "LEEWAY_SKILL_ROUTER_CONTRACT_CREATED",
+  "purpose": "Central Agent Lee skill execution router for Telegram, PWA, phone, email, cursor, and desktop requests.",
+  "created_at": "2026-07-03T22:03:23.2725293-05:00",
+  "state_rules": {
+    "remember_last_generated_image": true,
+    "remember_last_plan": true,
+    "remember_last_document": true,
+    "remember_last_artifact": true,
+    "ambiguous_followup_requires_question": true,
+    "remember_pending_approval": true
+  },
+  "required_endpoints": [
+    "/health",
+    "/status",
+    "/route",
+    "/skills",
+    "/last-task",
+    "/task-state",
+    "/receipts/latest",
+    "/openapi.json"
+  ],
+  "port": 5324
+}

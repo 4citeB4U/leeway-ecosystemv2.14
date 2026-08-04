@@ -1,0 +1,100 @@
+{
+  "purpose": "Agent Lee current research, web search, weather/news/traffic lookup, company research, outreach research, and HTML brief creation.",
+  "created_at": "2026-07-03T19:43:38.4575779-05:00",
+  "lane": "leeway_research_lane",
+  "telegram_routes": {
+    "quick_default": [
+      "weather",
+      "traffic",
+      "simple lookup"
+    ],
+    "deep_default": [
+      "research",
+      "company intelligence",
+      "people intelligence",
+      "current trend"
+    ],
+    "natural_language_triggers": [
+      "search the web",
+      "look this up",
+      "research this",
+      "weather",
+      "news",
+      "traffic",
+      "what happened",
+      "find businesses",
+      "find nonprofits"
+    ]
+  },
+  "status": "CONTRACT_READY_BUILD_NEXT",
+  "proof_gates": [
+    "Container runs",
+    "Telegram can reach /health",
+    "Runtime Fabric can reach /health",
+    "Quick search returns answer",
+    "Deep search writes receipt",
+    "HTML brief writes file",
+    "Agent Lee speaks result back"
+  ],
+  "modes": {
+    "brief": {
+      "output": "self-contained HTML brief plus markdown receipt",
+      "route": "/brief/html",
+      "use_for": [
+        "proposal research",
+        "client research",
+        "meeting prep",
+        "sales outreach"
+      ]
+    },
+    "quick": {
+      "approval_required": false,
+      "use_for": [
+        "weather",
+        "quick lookup",
+        "simple web answer",
+        "fast facts"
+      ],
+      "sources": [
+        "duckduckgo",
+        "basic_web"
+      ],
+      "route": "/search/quick"
+    },
+    "deep": {
+      "approval_required_for": [
+        "paid APIs",
+        "browser cookies",
+        "logged-in sources"
+      ],
+      "use_for": [
+        "company research",
+        "person research",
+        "market research",
+        "AI trend research",
+        "before meeting",
+        "outreach intelligence"
+      ],
+      "sources": [
+        "reddit",
+        "hackernews",
+        "github",
+        "youtube",
+        "polymarket",
+        "web",
+        "optional_social_sources"
+      ],
+      "route": "/search/deep"
+    }
+  },
+  "verdict": "LEEWAY_RESEARCH_LANE_CONTRACT_CREATED",
+  "required_endpoints": [
+    "/health",
+    "/status",
+    "/openapi.json",
+    "/search/quick",
+    "/search/deep",
+    "/brief/html",
+    "/receipts/latest"
+  ]
+}

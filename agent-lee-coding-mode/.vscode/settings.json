@@ -1,0 +1,18 @@
+{
+  "agentLeeCodingMode.endpoint": "http://127.0.0.1:8787/v1/chat/completions",
+  "agentLeeCodingMode.model": "agent-lee-code-mode",
+  "agentLeeCodingMode.mode": "CODING_ONLY",
+  "agentLeeCodingMode.identityFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "agentLeeCodingMode.canonicalIdentityManifest": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\agent-lee-identity.manifest.json",
+  "agentLeeCodingMode.canonicalUniverseManifest": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry\\registry\\leeway-universe.manifest.json",
+  "agentLeeCodingMode.enforceCanonicalIdentity": true,
+  "agentLeeCodingMode.governanceCorpus": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-coding-mode\\linked-leeway-sources\\leeway-governance-corpus.md",
+  "agentLeeCodingMode.leewaySourceRoots": [
+    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards",
+    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench",
+    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.leeway-vscode",
+    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\tools",
+    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\core"
+  ],
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

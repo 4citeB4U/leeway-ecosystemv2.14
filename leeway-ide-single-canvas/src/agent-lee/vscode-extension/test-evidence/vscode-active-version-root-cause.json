@@ -1,0 +1,18 @@
+{
+    "timestamp":  "2026-06-03T15:01:43.5052573-05:00",
+    "codeBinary":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd",
+    "codeVersion":  "1.122.1",
+    "activeExtension":  "leeway.agent-lee-leeway-coding-system@1.2.12",
+    "installedDirs":  [
+                          {
+                              "FullName":  "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.12",
+                              "Name":  "leeway.agent-lee-leeway-coding-system-1.2.12",
+                              "LastWriteTime":  "\/Date(1780515538212)\/"
+                          },
+                          {
+                              "FullName":  "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.13",
+                              "Name":  "leeway.agent-lee-leeway-coding-system-1.2.13",
+                              "LastWriteTime":  "\/Date(1780515443774)\/"
+                          }
+                      ]
+}

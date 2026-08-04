@@ -1,0 +1,100 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_READ_ONLY_ROUTE_PATCH_PLAN_257",
+    "timestamp":  "2026-07-05T22:41:51",
+    "family":  "network_mesh",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "app = FastAPI",
+                   "no_existing_family_anchor":  true
+               },
+    "current_routes":  {
+                           "network_mesh_discover":  false,
+                           "network_mesh_status":  false,
+                           "network_mesh_registry":  false,
+                           "tailscale_status":  false,
+                           "tailscale_policy":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/network-mesh/discover",
+                              "function_name":  "leeway_network_mesh_discover_258",
+                              "read_only":  true,
+                              "network_mutation":  false,
+                              "tailscale_cli":  false,
+                              "tailscale_api":  false,
+                              "purpose":  "Expose mesh inventory stub without Tailscale CLI/API or network mutation."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/network-mesh/status",
+                              "function_name":  "leeway_network_mesh_status_258",
+                              "read_only":  true,
+                              "network_mutation":  false,
+                              "tailscale_cli":  false,
+                              "tailscale_api":  false,
+                              "purpose":  "Expose mesh readiness with all network mutation lanes disabled and approval required."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/network-mesh/registry",
+                              "function_name":  "leeway_network_mesh_registry_258",
+                              "read_only":  true,
+                              "network_mutation":  false,
+                              "tailscale_cli":  false,
+                              "tailscale_api":  false,
+                              "purpose":  "Expose normalized network mesh registry artifact."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/tailscale/status",
+                              "function_name":  "leeway_tailscale_status_258",
+                              "read_only":  true,
+                              "network_mutation":  false,
+                              "tailscale_cli":  false,
+                              "tailscale_api":  false,
+                              "purpose":  "Expose Tailscale contract status without invoking tailscale or contacting Tailscale API."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/tailscale/policy",
+                              "function_name":  "leeway_tailscale_policy_258",
+                              "read_only":  true,
+                              "network_mutation":  false,
+                              "tailscale_cli":  false,
+                              "tailscale_api":  false,
+                              "purpose":  "Expose Tailscale policy contract without mutating ACLs or network settings."
+                          }
+                      ],
+    "safety":  {
+                   "no_tailscale_cli_invocation":  true,
+                   "no_tailscale_api_invocation":  true,
+                   "no_tailnet_authentication":  true,
+                   "no_tailnet_join":  true,
+                   "no_acl_mutation":  true,
+                   "no_route_advertisement":  true,
+                   "no_exit_node_enablement":  true,
+                   "no_subnet_router_enablement":  true,
+                   "no_firewall_mutation":  true,
+                   "no_dns_mutation":  true,
+                   "no_network_settings_mutation":  true,
+                   "no_tunnel_start":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "network_mesh_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-registry-latest.json",
+                          "network_mesh_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-tailscale-policy-latest.json",
+                          "network_mesh_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-tailscale-contract-latest.json",
+                          "network_mesh_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-read-only-route-requirement-latest.json",
+                          "proof_256_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-network-mesh\\latest\\network-mesh-tailscale-policy-contract-proof-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "258-apply-network-mesh-read-only-routes-patch-no-tailscale-execute.ps1"
+}

@@ -1,0 +1,58 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_ROUTE_PATCH_PLAN_222",
+    "timestamp":  "2026-07-05T21:18:16",
+    "family":  "printers",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "/printers/discover"
+               },
+    "current_routes":  {
+                           "discover":  true,
+                           "status":  false,
+                           "registry":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/printers/status",
+                              "function_name":  "leeway_printers_status_223",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "print_job":  false,
+                              "purpose":  "Expose printer family read-only status, discovered count, control disabled, approval required for printing."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/printers/registry",
+                              "function_name":  "leeway_printers_registry_223",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "print_job":  false,
+                              "purpose":  "Expose normalized printer registry artifact."
+                          }
+                      ],
+    "safety":  {
+                   "no_print_job_sent":  true,
+                   "no_queue_mutation":  true,
+                   "no_spooler_mutation":  true,
+                   "no_driver_install":  true,
+                   "no_default_printer_change":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "printer_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-registry-latest.json",
+                          "printer_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-approval-policy-latest.json",
+                          "printer_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-capability-contract-latest.json",
+                          "printer_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-route-requirement-latest.json",
+                          "proof_221_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-printers\\latest\\printer-read-only-discovery-status-contract-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "223-apply-printer-read-only-routes-patch-no-print-execute.ps1"
+}

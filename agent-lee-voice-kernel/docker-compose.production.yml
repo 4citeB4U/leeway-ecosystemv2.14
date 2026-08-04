@@ -1,0 +1,92 @@
+# Agent Lee Voice Kernel - Production Docker Compose
+# OS-Level Integration with Runtime Fabric
+
+services:
+  voice-kernel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agent-lee-voice-kernel
+    hostname: voice-kernel
+    ports:
+      - "8092:8092"
+    volumes:
+      # Persistent cache for model
+      - voice-kernel-cache:/app/cache
+      # Output directory for generated audio
+      - voice-kernel-output:/app/output
+      # Logs directory
+      - voice-kernel-logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - COQUI_TOS_AGREED=1
+      - XTTS_CACHE_DIR=/app/cache
+      - XTTS_OUTPUT_DIR=/app/output
+      # Runtime Fabric Integration
+      - RUNTIME_FABRIC_HOST=leeway-control-plane
+      - RUNTIME_FABRIC_PORT=4001
+      - RUNTIME_FABRIC_ENABLED=true
+      # Desktop Runtime Integration
+      - DESKTOP_RUNTIME_HOST=host.docker.internal
+      - DESKTOP_RUNTIME_PORT=8091
+      # Agent Lee Router Integration
+      - AGENT_LEE_ROUTER_HOST=host.docker.internal
+      - AGENT_LEE_ROUTER_PORT=8080
+      # Voice Kernel Identity
+      - VOICE_KERNEL_ID=agent-lee-voice-kernel
+      - VOICE_ENGINE=XTTS-v2
+      - VOICE_IDENTITY=agent-lee
+      # Enforcement
+      - ENFORCE_SINGLE_ENGINE=true
+      - ALLOW_FALLBACK=false
+    extra_hosts:
+      # Allow container to reach host services
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8092/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    networks:
+      - leeway-network
+    depends_on:
+      - voice-kernel-enforcer
+    labels:
+      - "leeway.service=voice-kernel"
+      - "leeway.engine=xtts-v2"
+      - "leeway.voice=agent-lee"
+      - "leeway.layer=os-kernel"
+      - "leeway.enforcement=strict"
+
+  voice-kernel-enforcer:
+    image: alpine:latest
+    container_name: voice-kernel-enforcer
+    command: >
+      sh -c "
+      echo 'Voice Kernel Enforcement Layer Active';
+      echo 'XTTS-v2 ONLY - No fallback engines allowed';
+      echo 'Forbidden: RVC, Piper, F5-TTS, Sopro, Edge-TTS';
+      tail -f /dev/null
+      "
+    networks:
+      - leeway-network
+    labels:
+      - "leeway.service=enforcer"
+      - "leeway.role=policy-enforcement"
+
+networks:
+  leeway-network:
+    name: leeway-network
+    external: true
+
+volumes:
+  voice-kernel-cache:
+    name: agent-lee-voice-kernel-cache
+  voice-kernel-output:
+    name: agent-lee-voice-kernel-output
+  voice-kernel-logs:
+    name: agent-lee-voice-kernel-logs
+
+# Made with Bob

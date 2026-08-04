@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-02T22:52:21.161Z",
+  "authority": "Leeway Industries",
+  "persona": "Agent Lee",
+  "lane": "hivemind",
+  "sources": [
+    {
+      "sourceRoot": "E:/.Leeway-new-line-of-products/leeway-employment-center",
+      "exists": false,
+      "artifactsRead": 0,
+      "artifactsFound": []
+    },
+    {
+      "sourceRoot": "E:/.Leeway-new-line-of-products/Agent-Lee-The-Sum-of-All-Systems",
+      "exists": false,
+      "artifactsRead": 0,
+      "artifactsFound": []
+    }
+  ],
+  "discoveredArtifacts": [],
+  "agentRoster": [],
+  "intentMap": [
+    {
+      "intent": "document_to_video_pipeline",
+      "keywords": [
+        "pdf",
+        "document",
+        "convert",
+        "pipeline",
+        "movie",
+        "video"
+      ],
+      "nodeSequence": [
+        "pdf_to_story",
+        "story_to_script",
+        "script_to_images",
+        "images_to_movie"
+      ],
+      "ownerAgent": "Agent Lee Orchestrator"
+    },
+    {
+      "intent": "social_distribution",
+      "keywords": [
+        "social",
+        "instagram",
+        "tiktok",
+        "youtube",
+        "facebook",
+        "linkedin",
+        "post"
+      ],
+      "nodeSequence": [
+        "agent_lee_social"
+      ],
+      "ownerAgent": "Dispatch Center"
+    },
+    {
+      "intent": "thumbnail_refinement",
+      "keywords": [
+        "thumbnail",
+        "thumb",
+        "cover"
+      ],
+      "nodeSequence": [
+        "image_to_thumb_raw",
+        "thumb_best_pick"
+      ],
+      "ownerAgent": "Skill Capability Layer"
+    },
+    {
+      "intent": "blog_expansion",
+      "keywords": [
+        "blog",
+        "article",
+        "write-up",
+        "summary"
+      ],
+      "nodeSequence": [
+        "movie_to_blog"
+      ],
+      "ownerAgent": "Persistence + Narrative Cortex"
+    }
+  ]
+}

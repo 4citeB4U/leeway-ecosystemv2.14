@@ -1,0 +1,1778 @@
+[
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5337/health"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5337/status"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5337/work/create"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5337/work/latest"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5337/work"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5337/receipts/latest"
+  },
+  {
+    "container": "leeway_pwa_dashboard",
+    "lane": "dashboard",
+    "host_port": 5337,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5337/"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5336/health"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5336/status"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5336/work/create"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5336/work/latest"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5336/work"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5336/receipts/latest"
+  },
+  {
+    "container": "leeway_installer_runtime",
+    "lane": "installer",
+    "host_port": 5336,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5336/"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5335/health"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5335/status"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5335/work/create"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5335/work/latest"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5335/work"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5335/receipts/latest"
+  },
+  {
+    "container": "leeway_license_runtime",
+    "lane": "license",
+    "host_port": 5335,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5335/"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5334/health"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5334/status"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5334/work/create"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5334/work/latest"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5334/work"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5334/receipts/latest"
+  },
+  {
+    "container": "leeway_desktop_runtime",
+    "lane": "desktop",
+    "host_port": 5334,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5334/"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5333/health"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5333/status"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5333/work/create"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5333/work/latest"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5333/work"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5333/receipts/latest"
+  },
+  {
+    "container": "leeway_browser_runtime",
+    "lane": "browser",
+    "host_port": 5333,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5333/"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5332/health"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5332/status"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5332/work/create"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5332/work/latest"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5332/work"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5332/receipts/latest"
+  },
+  {
+    "container": "leeway_phone_runtime",
+    "lane": "phone",
+    "host_port": 5332,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5332/"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5331/health"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5331/status"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5331/work/create"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5331/work/latest"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5331/work"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5331/receipts/latest"
+  },
+  {
+    "container": "leeway_calendar_runtime",
+    "lane": "calendar",
+    "host_port": 5331,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5331/"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5330/health"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5330/status"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "POST",
+    "path": "/work/create",
+    "url": "http://localhost:5330/work/create"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/work/latest",
+    "url": "http://localhost:5330/work/latest"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/work",
+    "url": "http://localhost:5330/work"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5330/receipts/latest"
+  },
+  {
+    "container": "leeway_email_runtime",
+    "lane": "email",
+    "host_port": 5330,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:5330/"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5324/health"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5324/status"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "POST",
+    "path": "/route",
+    "url": "http://localhost:5324/route"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "POST",
+    "path": "/plan/create",
+    "url": "http://localhost:5324/plan/create"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/plan/latest",
+    "url": "http://localhost:5324/plan/latest"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/plan/{plan_id}",
+    "url": "http://localhost:5324/plan/{plan_id}"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "POST",
+    "path": "/plan/{plan_id}/approve",
+    "url": "http://localhost:5324/plan/{plan_id}/approve"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "POST",
+    "path": "/plan/latest/approve",
+    "url": "http://localhost:5324/plan/latest/approve"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/tasks/active",
+    "url": "http://localhost:5324/tasks/active"
+  },
+  {
+    "container": "leeway_skill_router",
+    "lane": "router",
+    "host_port": 5324,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5324/receipts/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5328/health"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5328/status"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/artifacts/pdf/{filename}",
+    "url": "http://localhost:5328/artifacts/pdf/{filename}"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/artifacts/latest",
+    "url": "http://localhost:5328/artifacts/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/rooms/latest",
+    "url": "http://localhost:5328/rooms/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "POST",
+    "path": "/rooms/create/latest",
+    "url": "http://localhost:5328/rooms/create/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5328/receipts/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/rooms/website/latest",
+    "url": "http://localhost:5328/rooms/website/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/website/latest.html",
+    "url": "http://localhost:5328/website/latest.html"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/rooms/plan/latest",
+    "url": "http://localhost:5328/rooms/plan/latest"
+  },
+  {
+    "container": "leeway_artifact_viewer",
+    "lane": "viewer",
+    "host_port": 5328,
+    "method": "GET",
+    "path": "/plan/latest.html",
+    "url": "http://localhost:5328/plan/latest.html"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5326/health"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5326/status"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/create",
+    "url": "http://localhost:5326/notebook/create"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/latest",
+    "url": "http://localhost:5326/notebook/latest"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/{notebook_id}",
+    "url": "http://localhost:5326/notebook/{notebook_id}"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/readback/{notebook_id}",
+    "url": "http://localhost:5326/notebook/readback/{notebook_id}"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/append",
+    "url": "http://localhost:5326/notebook/append"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/revise",
+    "url": "http://localhost:5326/notebook/revise"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/export/pdf",
+    "url": "http://localhost:5326/notebook/export/pdf"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5326/receipts/latest"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/create-creative",
+    "url": "http://localhost:5326/notebook/create-creative"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/creative",
+    "url": "http://localhost:5326/notebook/creative"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/creative/latest",
+    "url": "http://localhost:5326/notebook/creative/latest"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/creative/{creative_id}",
+    "url": "http://localhost:5326/notebook/creative/{creative_id}"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/creative/{creative_id}/readback",
+    "url": "http://localhost:5326/notebook/creative/{creative_id}/readback"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/creative/{creative_id}/revise",
+    "url": "http://localhost:5326/notebook/creative/{creative_id}/revise"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/notebook/creative/{creative_id}/export/pdf",
+    "url": "http://localhost:5326/notebook/creative/{creative_id}/export/pdf"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/notebook/creative/{creative_id}/package",
+    "url": "http://localhost:5326/notebook/creative/{creative_id}/package"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/creative/create",
+    "url": "http://localhost:5326/creative/create"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative",
+    "url": "http://localhost:5326/creative"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/latest",
+    "url": "http://localhost:5326/creative/latest"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/{creative_id}",
+    "url": "http://localhost:5326/creative/{creative_id}"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/{creative_id}/readback",
+    "url": "http://localhost:5326/creative/{creative_id}/readback"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/creative/{creative_id}/revise",
+    "url": "http://localhost:5326/creative/{creative_id}/revise"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "POST",
+    "path": "/creative/{creative_id}/export/pdf",
+    "url": "http://localhost:5326/creative/{creative_id}/export/pdf"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/{creative_id}/package",
+    "url": "http://localhost:5326/creative/{creative_id}/package"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/{creative_id}/render/website",
+    "url": "http://localhost:5326/creative/{creative_id}/render/website"
+  },
+  {
+    "container": "leeway_open_notebook",
+    "lane": "creation",
+    "host_port": 5326,
+    "method": "GET",
+    "path": "/creative/latest/render/website",
+    "url": "http://localhost:5326/creative/latest/render/website"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5329/health"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5329/status"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "POST",
+    "path": "/meeting/create",
+    "url": "http://localhost:5329/meeting/create"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/meeting/latest",
+    "url": "http://localhost:5329/meeting/latest"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/meeting/{meeting_id}",
+    "url": "http://localhost:5329/meeting/{meeting_id}"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/meeting/{meeting_id}/join",
+    "url": "http://localhost:5329/meeting/{meeting_id}/join"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/meeting/{meeting_id}.ics",
+    "url": "http://localhost:5329/meeting/{meeting_id}.ics"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/rooms/{meeting_id}",
+    "url": "http://localhost:5329/rooms/{meeting_id}"
+  },
+  {
+    "container": "leeway_meeting_runtime",
+    "lane": "meeting",
+    "host_port": 5329,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5329/receipts/latest"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5325/health"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5325/status"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "POST",
+    "path": "/document/create",
+    "url": "http://localhost:5325/document/create"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/documents/latest",
+    "url": "http://localhost:5325/documents/latest"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5325/receipts/latest"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/documents/file/{filename}",
+    "url": "http://localhost:5325/documents/file/{filename}"
+  },
+  {
+    "container": "leeway_document_runtime",
+    "lane": "document",
+    "host_port": 5325,
+    "method": "GET",
+    "path": "/documents/latest/content",
+    "url": "http://localhost:5325/documents/latest/content"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5323/health"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5323/status"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/cursor/profile",
+    "url": "http://localhost:5323/cursor/profile"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/cursor/set-profile",
+    "url": "http://localhost:5323/cursor/set-profile"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/devices/register",
+    "url": "http://localhost:5323/devices/register"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/devices/list",
+    "url": "http://localhost:5323/devices/list"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/channels/register",
+    "url": "http://localhost:5323/channels/register"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/channels/list",
+    "url": "http://localhost:5323/channels/list"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/voice/session/start",
+    "url": "http://localhost:5323/voice/session/start"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/device/action/request",
+    "url": "http://localhost:5323/device/action/request"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "POST",
+    "path": "/license/profile",
+    "url": "http://localhost:5323/license/profile"
+  },
+  {
+    "container": "leeway_device_operator",
+    "lane": "unknown",
+    "host_port": 5323,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5323/receipts/latest"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5321/health"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5321/status"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "POST",
+    "path": "/compress",
+    "url": "http://localhost:5321/compress"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "POST",
+    "path": "/retrieve",
+    "url": "http://localhost:5321/retrieve"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "GET",
+    "path": "/stats",
+    "url": "http://localhost:5321/stats"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "POST",
+    "path": "/learn/failure",
+    "url": "http://localhost:5321/learn/failure"
+  },
+  {
+    "container": "leeway_context_gateway",
+    "lane": "context",
+    "host_port": 5321,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5321/receipts/latest"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5320/health"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5320/status"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/capabilities",
+    "url": "http://localhost:5320/capabilities"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/lanes/health",
+    "url": "http://localhost:5320/lanes/health"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/research/quick",
+    "url": "http://localhost:5320/research/quick"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/research/deep",
+    "url": "http://localhost:5320/research/deep"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/plan/date-night",
+    "url": "http://localhost:5320/plan/date-night"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/approval/request-phone-call",
+    "url": "http://localhost:5320/approval/request-phone-call"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/approval/request-email",
+    "url": "http://localhost:5320/approval/request-email"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/approval/request-calendar-event",
+    "url": "http://localhost:5320/approval/request-calendar-event"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/approvals/pending",
+    "url": "http://localhost:5320/approvals/pending"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/approvals/history",
+    "url": "http://localhost:5320/approvals/history"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/approvals/approve",
+    "url": "http://localhost:5320/approvals/approve"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/approvals/reject",
+    "url": "http://localhost:5320/approvals/reject"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/crm/upsert-contact",
+    "url": "http://localhost:5320/crm/upsert-contact"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/crm/upsert-company",
+    "url": "http://localhost:5320/crm/upsert-company"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/crm/upsert-plan",
+    "url": "http://localhost:5320/crm/upsert-plan"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/crm/search",
+    "url": "http://localhost:5320/crm/search"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/store/receipt",
+    "url": "http://localhost:5320/store/receipt"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/store/research-brief",
+    "url": "http://localhost:5320/store/research-brief"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/store/notebook-export",
+    "url": "http://localhost:5320/store/notebook-export"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/store/generated-image",
+    "url": "http://localhost:5320/store/generated-image"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/store/3d-package",
+    "url": "http://localhost:5320/store/3d-package"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "POST",
+    "path": "/backup/run",
+    "url": "http://localhost:5320/backup/run"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/backup/status",
+    "url": "http://localhost:5320/backup/status"
+  },
+  {
+    "container": "leeway_api_gateway",
+    "lane": "entrypoint",
+    "host_port": 5320,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5320/receipts/latest"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5310/health"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5310/status"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "POST",
+    "path": "/search/quick",
+    "url": "http://localhost:5310/search/quick"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "POST",
+    "path": "/search/deep",
+    "url": "http://localhost:5310/search/deep"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "POST",
+    "path": "/brief/html",
+    "url": "http://localhost:5310/brief/html"
+  },
+  {
+    "container": "leeway_research_lane",
+    "lane": "research",
+    "host_port": 5310,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5310/receipts/latest"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:5314/health"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:5314/status"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/receipt",
+    "url": "http://localhost:5314/store/receipt"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/research-brief",
+    "url": "http://localhost:5314/store/research-brief"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/notebook-export",
+    "url": "http://localhost:5314/store/notebook-export"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/generated-image",
+    "url": "http://localhost:5314/store/generated-image"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/3d-package",
+    "url": "http://localhost:5314/store/3d-package"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/store/upload/{kind}",
+    "url": "http://localhost:5314/store/upload/{kind}"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "POST",
+    "path": "/backup/run",
+    "url": "http://localhost:5314/backup/run"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "GET",
+    "path": "/backup/status",
+    "url": "http://localhost:5314/backup/status"
+  },
+  {
+    "container": "leeway_seafile_storage_gateway",
+    "lane": "storage",
+    "host_port": 5314,
+    "method": "GET",
+    "path": "/receipts/latest",
+    "url": "http://localhost:5314/receipts/latest"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8099/health"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:8099/status"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "POST",
+    "path": "/warmup",
+    "url": "http://localhost:8099/warmup"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "POST",
+    "path": "/image/generate-fast",
+    "url": "http://localhost:8099/image/generate-fast"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "POST",
+    "path": "/image/generate",
+    "url": "http://localhost:8099/image/generate"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/latest",
+    "url": "http://localhost:8099/latest"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/latest/image.png",
+    "url": "http://localhost:8099/latest/image.png"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/latest/candidate_1.png",
+    "url": "http://localhost:8099/latest/candidate_1.png"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/latest/receipt.json",
+    "url": "http://localhost:8099/latest/receipt.json"
+  },
+  {
+    "container": "agent-lee-sdxl-lightning-image-lane",
+    "lane": "image",
+    "host_port": 8099,
+    "method": "GET",
+    "path": "/artifacts/{job_id}/{filename}",
+    "url": "http://localhost:8099/artifacts/{job_id}/{filename}"
+  },
+  {
+    "container": "agent-lee-image-to-3d-pattern-lane",
+    "lane": "image",
+    "host_port": 8101,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8101/health"
+  },
+  {
+    "container": "agent-lee-image-to-3d-pattern-lane",
+    "lane": "image",
+    "host_port": 8101,
+    "method": "GET",
+    "path": "/status",
+    "url": "http://localhost:8101/status"
+  },
+  {
+    "container": "agent-lee-image-to-3d-pattern-lane",
+    "lane": "image",
+    "host_port": 8101,
+    "method": "POST",
+    "path": "/convert/from-path",
+    "url": "http://localhost:8101/convert/from-path"
+  },
+  {
+    "container": "agent-lee-image-to-3d-pattern-lane",
+    "lane": "image",
+    "host_port": 8101,
+    "method": "POST",
+    "path": "/convert/latest-sdxl",
+    "url": "http://localhost:8101/convert/latest-sdxl"
+  },
+  {
+    "container": "agent-lee-image-to-3d-pattern-lane",
+    "lane": "image",
+    "host_port": 8101,
+    "method": "GET",
+    "path": "/artifacts/{job_id}/{filename}",
+    "url": "http://localhost:8101/artifacts/{job_id}/{filename}"
+  },
+  {
+    "container": "agent-lee-qwen-voice",
+    "lane": "voice",
+    "host_port": 8097,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8097/health"
+  },
+  {
+    "container": "agent-lee-qwen-voice",
+    "lane": "voice",
+    "host_port": 8097,
+    "method": "POST",
+    "path": "/speak",
+    "url": "http://localhost:8097/speak"
+  },
+  {
+    "container": "agent-lee-qwen-voice",
+    "lane": "voice",
+    "host_port": 8097,
+    "method": "POST",
+    "path": "/speak-file",
+    "url": "http://localhost:8097/speak-file"
+  },
+  {
+    "container": "agent-lee-ears-kernel",
+    "lane": "hearing",
+    "host_port": 8094,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:8094/"
+  },
+  {
+    "container": "agent-lee-ears-kernel",
+    "lane": "hearing",
+    "host_port": 8094,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8094/health"
+  },
+  {
+    "container": "agent-lee-ears-kernel",
+    "lane": "hearing",
+    "host_port": 8094,
+    "method": "GET",
+    "path": "/ears/status",
+    "url": "http://localhost:8094/ears/status"
+  },
+  {
+    "container": "agent-lee-ears-kernel",
+    "lane": "hearing",
+    "host_port": 8094,
+    "method": "POST",
+    "path": "/ears/route-text",
+    "url": "http://localhost:8094/ears/route-text"
+  },
+  {
+    "container": "agent-lee-ears-kernel",
+    "lane": "hearing",
+    "host_port": 8094,
+    "method": "POST",
+    "path": "/ears/transcribe",
+    "url": "http://localhost:8094/ears/transcribe"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8093/health"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/vision/status",
+    "url": "http://localhost:8093/vision/status"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/vision/manifest",
+    "url": "http://localhost:8093/vision/manifest"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/vision/model",
+    "url": "http://localhost:8093/vision/model"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "POST",
+    "path": "/vision/analyze/image",
+    "url": "http://localhost:8093/vision/analyze/image"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "POST",
+    "path": "/vision/analyze/screen",
+    "url": "http://localhost:8093/vision/analyze/screen"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "POST",
+    "path": "/vision/analyze/camera-frame",
+    "url": "http://localhost:8093/vision/analyze/camera-frame"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "POST",
+    "path": "/vision/room/analyze",
+    "url": "http://localhost:8093/vision/room/analyze"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/vision/receipts/recent",
+    "url": "http://localhost:8093/vision/receipts/recent"
+  },
+  {
+    "container": "agent-lee-vision-kernel",
+    "lane": "vision",
+    "host_port": 8093,
+    "method": "GET",
+    "path": "/vision/reports/latest",
+    "url": "http://localhost:8093/vision/reports/latest"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "GET",
+    "path": "/",
+    "url": "http://localhost:8092/"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "GET",
+    "path": "/health",
+    "url": "http://localhost:8092/health"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "POST",
+    "path": "/tts",
+    "url": "http://localhost:8092/tts"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "GET",
+    "path": "/audio/{filename}",
+    "url": "http://localhost:8092/audio/{filename}"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "GET",
+    "path": "/voice-identity",
+    "url": "http://localhost:8092/voice-identity"
+  },
+  {
+    "container": "agent-lee-voice-kernel",
+    "lane": "unknown",
+    "host_port": 8092,
+    "method": "POST",
+    "path": "/register-runtime-fabric",
+    "url": "http://localhost:8092/register-runtime-fabric"
+  }
+]

@@ -1,0 +1,44 @@
+﻿{
+    "permit_version":  "LEEWAY_PRINTER_STATUS_PERMIT_TEMPLATE_V1",
+    "permit_id":  "PRINTER_STATUS_READINESS_457_TEMPLATE",
+    "target":  "printer",
+    "action":  "read printer status only",
+    "action_type":  "STATUS_ONLY",
+    "risk":  "high",
+    "current_state":  "TEMPLATE_ONLY_NOT_EXECUTABLE",
+    "owner_approval_required_for_real_status":  true,
+    "exact_owner_approval_required_later":  "I, Leonard J Lee, explicitly approve one single-use printer status check only. I understand this does not authorize printing, queue mutation, driver install, device configuration, network scan, discovery scan, phone action, TV action, Docker exec, Docker mutation, package creation, or physical action.",
+    "preconditions":  [
+                          "456 Device Operator readiness proof clean",
+                          "Printer inventory record exists OR manual printer registration record exists",
+                          "No print job requested",
+                          "No queue mutation requested",
+                          "Receipt writer active"
+                      ],
+    "allowed_operations_later_after_approval":  [
+                                                    "GET printer status endpoint",
+                                                    "read known printer record",
+                                                    "write status receipt"
+                                                ],
+    "blocked_operations":  [
+                               "submit print job",
+                               "cancel print job",
+                               "clear queue",
+                               "install driver",
+                               "change printer configuration",
+                               "scan network for printers",
+                               "probe IPP endpoint",
+                               "pair device",
+                               "device handshake",
+                               "physical action"
+                           ],
+    "rollback_plan":  "No mutation allowed. If endpoint fails, stop and write failed receipt.",
+    "simulation_required_before_real_printing":  true,
+    "human_review_required":  true,
+    "expires_after_single_use":  true,
+    "execution_allowed_now":  false,
+    "print_allowed_now":  false,
+    "queue_mutation_allowed_now":  false,
+    "discovery_scan_allowed_now":  false,
+    "device_control_allowed_now":  false
+}

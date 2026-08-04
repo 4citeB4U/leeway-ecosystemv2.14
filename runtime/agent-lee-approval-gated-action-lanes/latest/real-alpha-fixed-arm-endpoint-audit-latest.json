@@ -1,0 +1,42 @@
+﻿{
+    "version":  "LEEWAY_RESTART_REAL_ALPHA_AND_AUDIT_FIXED_ARM_ENDPOINT_284E_R2",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:22:06",
+    "verdict":  "LEEWAY_RESTART_REAL_ALPHA_AND_AUDIT_FIXED_ARM_ENDPOINT_NO_EXECUTE_284E_R2_CLEAN",
+    "restart_performed":  true,
+    "execution_performed":  false,
+    "source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+    "source_directory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service",
+    "stopped_pids":  [
+                         10684
+                     ],
+    "start_process_pid":  13872,
+    "detected_post_pid":  13872,
+    "arm_route_in_openapi":  true,
+    "open_app_route_in_openapi":  true,
+    "arm_endpoint_exists":  true,
+    "invalid_arm_status":  200,
+    "invalid_arm_armed":  false,
+    "invalid_arm_executed":  false,
+    "invalid_arm_reason":  "request_id_mismatch",
+    "post_windows_locked":  true,
+    "post_open_app_executed_without_window":  false,
+    "approved_request":  {
+                             "request_id":  "pending-real_open_app-20260706-002139",
+                             "approval_id":  "approval-real_open_app-20260706-002139",
+                             "action":  "real_open_app",
+                             "app_name":  "notepad.exe",
+                             "approval_state":  "APPROVED",
+                             "execution_state":  "APPROVED_NOT_EXECUTED"
+                         },
+    "safety":  {
+                   "restart_only":  true,
+                   "invalid_arm_probe_only":  true,
+                   "no_valid_arm_window_created":  true,
+                   "no_execution_in_284e_r2":  true,
+                   "open_app_remained_blocked_without_window":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284F-arm-one-approved-action-window-no-execute.ps1"
+}

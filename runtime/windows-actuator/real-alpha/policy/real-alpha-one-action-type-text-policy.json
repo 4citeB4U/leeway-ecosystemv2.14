@@ -1,0 +1,14 @@
+﻿{
+    "version":  "LEEWAY_EXTEND_APPROVED_REAL_TYPE_TEXT_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:39:55",
+    "mode":  "ONE_ACTION_REAL_TYPE_TEXT_ONLY",
+    "real_execution_enabled":  true,
+    "physical_execution_enabled":  true,
+    "enabled_real_action":  "real_type_text",
+    "controlled_target":  "notepad",
+    "approved_text":  "Leeway approved type-text alpha proof.",
+    "approval_required":  true,
+    "one_time_approval_required":  true,
+    "all_other_actions_blocked":  true,
+    "note":  "This proof opens a controlled Notepad target and types the approved text only."
+}

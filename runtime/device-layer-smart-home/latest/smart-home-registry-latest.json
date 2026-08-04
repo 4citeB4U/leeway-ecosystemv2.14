@@ -1,0 +1,52 @@
+﻿{
+    "version":  "LEEWAY_SMART_HOME_ADAPTER_CONTRACT_261",
+    "timestamp":  "2026-07-05T22:53:27",
+    "family":  "smart_home",
+    "registry_status":  "SMART_HOME_REGISTRY_CREATED",
+    "route_surface":  {
+                          "smart_home_discover":  false,
+                          "smart_home_status":  false,
+                          "smart_home_registry":  false,
+                          "smart_home_adapter_status":  false,
+                          "smart_home_policy":  false
+                      },
+    "discovered_count":  0,
+    "normalized_devices":  [
+
+                           ],
+    "adapters":  [
+                     "home_assistant",
+                     "matter",
+                     "zigbee",
+                     "zwave",
+                     "mqtt",
+                     "google_home",
+                     "amazon_alexa",
+                     "apple_homekit",
+                     "philips_hue",
+                     "nest",
+                     "ring",
+                     "smartthings"
+                 ],
+    "home_assistant_api_invoked":  false,
+    "matter_invoked":  false,
+    "zigbee_invoked":  false,
+    "zwave_invoked":  false,
+    "mqtt_invoked":  false,
+    "google_home_api_invoked":  false,
+    "alexa_api_invoked":  false,
+    "homekit_invoked":  false,
+    "cloud_api_invoked":  false,
+    "local_device_api_invoked":  false,
+    "device_command_executed":  false,
+    "lock_unlocked":  false,
+    "door_opened":  false,
+    "garage_opened":  false,
+    "alarm_disarmed":  false,
+    "thermostat_changed":  false,
+    "light_changed":  false,
+    "camera_stream_opened":  false,
+    "speaker_playback_started":  false,
+    "automation_triggered":  false,
+    "physical_actions_executed":  0
+}

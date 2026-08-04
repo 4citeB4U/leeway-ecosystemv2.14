@@ -1,0 +1,47 @@
+﻿{
+    "approval_id":  "approved-real-hotkey-20260705-184430-dfbae7eae1da",
+    "created_at":  "2026-07-05T18:44:32",
+    "expires_at":  "2026-07-05T18:54:32",
+    "requested_by":  "script_180",
+    "decided_at":  "2026-07-05T18:44:32",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_hotkey",
+    "risk_tier":  "controlled_physical_keyboard",
+    "human_summary":  "One-time approval to open a controlled Notepad target and send F5 only.",
+    "payload":  {
+                    "target":  "notepad",
+                    "hotkey":  "F5"
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  true,
+    "rollback_or_stop":  "Close the new Notepad window manually, or run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 to stop the actuator service.",
+    "safety_expectation":  {
+                               "controlled_target_notepad":  true,
+                               "no_file":  true,
+                               "no_save":  true,
+                               "no_shell":  true,
+                               "only_approved_hotkey_should_send":  true,
+                               "approved_hotkey":  "F5",
+                               "no_click":  true,
+                               "no_url":  true,
+                               "no_mouse":  true
+                           },
+    "used_at":  "2026-07-05T18:44:36",
+    "execution_result":  "EXECUTED_REAL_HOTKEY",
+    "response_allowed":  true,
+    "response_executed":  true,
+    "response_reason":  "approved_one_action_real_hotkey_executed",
+    "controlled_notepad_pid":  "21336",
+    "sent_hotkey":  "F5",
+    "notepad_before_count":  5,
+    "notepad_after_count":  6,
+    "new_notepad_process_ids":  [
+                                    21336
+                                ],
+    "response_file":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-180-20260705-184430\\json\\approved-one-action-real-hotkey-response.json"
+}

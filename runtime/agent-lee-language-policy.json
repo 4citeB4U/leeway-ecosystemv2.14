@@ -1,0 +1,27 @@
+﻿{
+    "agent_lee_3d_doctrine":  {
+                                  "enabled":  true,
+                                  "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-3d-skill-pipeline.manifest.json",
+                                  "prompt_rules":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-prompt-rules.json",
+                                  "hard_rules":  [
+                                                     "Use clean asset-reference language for 3D source generation.",
+                                                     "Never rewrite a source-pack prompt into castle, scenery, poster, or action-scene language.",
+                                                     "Reject flat card, relief mesh, red block, distorted blob, missing body, missing wings, and missing tail outputs.",
+                                                     "Use TripoSR as preview only.",
+                                                     "Use Hunyuan3D or TRELLIS for final character asset generation."
+                                                 ]
+                              },
+    "agent_lee_learning_policy":  {
+                                      "enabled":  true,
+                                      "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-learning-memory.manifest.json",
+                                      "hard_rules":  [
+                                                         "Record meaningful mistakes and successes as learning events.",
+                                                         "Search the learning ledger before repeating a pipeline.",
+                                                         "Do not repeat known failed 3D paths.",
+                                                         "Do not repeat known Telegram receipt-only failures.",
+                                                         "Use user corrections as high-priority learning.",
+                                                         "Write receipts for learning events.",
+                                                         "Do not say Telegram can execute a tool unless the real endpoint is wired and reachable."
+                                                     ]
+                                  }
+}

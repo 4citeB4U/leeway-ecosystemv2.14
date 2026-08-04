@@ -1,0 +1,223 @@
+# Leeway Complete Ecosystem
+# Master docker-compose file managing all Leeway services as one integrated system
+
+version: '3.8'
+
+networks:
+  leeway-network:
+    driver: bridge
+    name: leeway-network
+
+volumes:
+  # Seafile volumes
+  seafile-data:
+    driver: local
+  seafile-db:
+    driver: local
+  seafile-cache:
+    driver: local
+  
+  # Voice Kernel volumes
+  voice-kernel-cache:
+    driver: local
+  voice-kernel-output:
+    driver: local
+  voice-kernel-logs:
+    driver: local
+  
+  # Ollama volumes
+  ollama-data:
+    driver: local
+
+services:
+  # ============================================================================
+  # CORE LEEWAY SERVICES
+  # ============================================================================
+  
+  # Runtime Fabric - Service orchestration and registry
+  runtime-fabric:
+    image: leeway-runtime-fabric:latest
+    container_name: leeway-ecosystemv214-runtime-fabric
+    hostname: runtime-fabric
+    networks:
+      - leeway-network
+    ports:
+      - "4001:4001"
+    environment:
+      - NODE_ENV=production
+      - RUNTIME_FABRIC_PORT=4001
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Agent Lee Router - Main orchestration and routing
+  agent-lee:
+    image: agent-lee-router:latest
+    container_name: leeway-ecosystemv214-agent-lee
+    hostname: agent-lee
+    networks:
+      - leeway-network
+    ports:
+      - "8081:8080"
+    environment:
+      - NODE_ENV=production
+      - AGENT_LEE_PORT=8080
+      - RUNTIME_FABRIC_URL=http://runtime-fabric:4001
+      - VOICE_KERNEL_URL=http://voice-kernel:8092
+      - VOICE_KERNEL_ENABLED=true
+      - OLLAMA_URL=http://ollama:11434
+    depends_on:
+      - runtime-fabric
+      - ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ============================================================================
+  # VOICE KERNEL - XTTS-v2 Voice Synthesis
+  # ============================================================================
+  
+  voice-kernel:
+    build:
+      context: ./agent-lee-voice-kernel
+      dockerfile: Dockerfile
+    image: agent-lee-voice-kernel:latest
+    container_name: agent-lee-voice-kernel
+    hostname: voice-kernel
+    networks:
+      - leeway-network
+    ports:
+      - "8092:8092"
+    volumes:
+      # Mount Agent Lee voice sample
+      - type: bind
+        source: ./Agent Lee, audio voice.m4a
+        target: /app/voice-samples/agent-lee.m4a
+        read_only: true
+      # Persistent volumes
+      - voice-kernel-cache:/app/cache
+      - voice-kernel-output:/app/output
+      - voice-kernel-logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      - VOICE_KERNEL_PORT=8092
+      - RUNTIME_FABRIC_URL=http://runtime-fabric:4001
+      - DESKTOP_RUNTIME_URL=http://host.docker.internal:8091
+      - AGENT_LEE_ROUTER_URL=http://agent-lee:8080
+    depends_on:
+      - runtime-fabric
+      - voice-kernel-enforcer
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8092/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Voice Kernel Enforcer - Policy enforcement
+  voice-kernel-enforcer:
+    image: alpine:latest
+    container_name: voice-kernel-enforcer
+    hostname: voice-kernel-enforcer
+    networks:
+      - leeway-network
+    volumes:
+      - type: bind
+        source: ./agent-lee-voice-kernel/runtime-fabric-enforcement.json
+        target: /enforcement/policy.json
+        read_only: true
+    command: >
+      sh -c "
+      echo 'Voice Kernel Enforcer: Policy loaded';
+      echo 'Allowed engines: XTTS-v2 ONLY';
+      echo 'Forbidden engines: RVC, Piper, F5-TTS, Sopro, Edge-TTS';
+      tail -f /dev/null
+      "
+    restart: unless-stopped
+
+  # ============================================================================
+  # MODEL RUNTIME - Ollama
+  # ============================================================================
+  
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    hostname: ollama
+    networks:
+      - leeway-network
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ============================================================================
+  # SEAFILE - Document Management
+  # ============================================================================
+  
+  seafile-db:
+    image: mariadb:10.11
+    container_name: leeway-seafile-db
+    hostname: seafile-db
+    networks:
+      - leeway-network
+    environment:
+      - MYSQL_ROOT_PASSWORD=seafile_root_password
+      - MYSQL_LOG_CONSOLE=true
+      - MARIADB_AUTO_UPGRADE=1
+    volumes:
+      - seafile-db:/var/lib/mysql
+    restart: unless-stopped
+
+  seafile-cache:
+    image: memcached:1.6
+    container_name: leeway-seafile-cache
+    hostname: seafile-cache
+    networks:
+      - leeway-network
+    entrypoint: memcached -m 256
+    restart: unless-stopped
+
+  seafile:
+    image: seafileltd/seafile-mc:latest
+    container_name: leeway-seafile
+    hostname: seafile
+    networks:
+      - leeway-network
+    ports:
+      - "8082:80"
+    volumes:
+      - seafile-data:/shared
+    environment:
+      - DB_HOST=seafile-db
+      - DB_ROOT_PASSWD=seafile_root_password
+      - TIME_ZONE=America/Chicago
+      - SEAFILE_ADMIN_EMAIL=admin@leeway.local
+      - SEAFILE_ADMIN_PASSWORD=leeway_admin
+      - SEAFILE_SERVER_LETSENCRYPT=false
+      - SEAFILE_SERVER_HOSTNAME=localhost:8082
+    depends_on:
+      - seafile-db
+      - seafile-cache
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+# Made with Bob

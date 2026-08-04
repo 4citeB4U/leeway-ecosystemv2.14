@@ -1,0 +1,33 @@
+﻿{
+    "package_json_candidates":  [
+                                    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\package.json",
+                                    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-agent-center\\package.json",
+                                    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-agent-center\\package.json",
+                                    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-center\\package.json",
+                                    "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-worker-center\\package.json"
+                                ],
+    "next_config_candidates":  [
+                                   "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\next.config.ts"
+                               ],
+    "app_page_candidates":  [
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx"
+                            ],
+    "layout_candidates":  [
+                              "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\layout.tsx"
+                          ],
+    "tsconfig_candidates":  [
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\AgentLeeDesktopRuntimeUI\\tsconfig.json",
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\agent-lee-os2\\tsconfig.json",
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\tsconfig.json",
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\tsconfig.json",
+                                "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\tsconfig.json"
+                            ],
+    "tailwind_candidates":  [
+
+                            ],
+    "candidate_package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\package.json",
+    "candidate_frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+    "candidate_app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+    "candidate_component_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\components",
+    "candidate_lib_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\lib"
+}

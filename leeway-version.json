@@ -1,0 +1,84 @@
+{
+  "schema": "leeway.version.v1",
+  "version": "2.1.4",
+  "buildDate": "2026-06-25",
+  "channel": "development",
+  "note": "productionAllowed is false until all production gate checks pass",
+
+  "services": {
+    "runtimeFabric": {
+      "version": "2.1.4",
+      "port": 4001,
+      "transport": "docker",
+      "status": "LIVE"
+    },
+    "router": {
+      "version": "2.1.4",
+      "port": 8081,
+      "portInternalDocker": 8080,
+      "transport": "docker",
+      "status": "LIVE",
+      "note": "External host port is 8081 (Docker-mapped). .env.local 8080 refers to Docker-internal port."
+    },
+    "voiceKernel": {
+      "version": "2.1.4",
+      "port": 8092,
+      "transport": "docker",
+      "status": "LIVE"
+    },
+    "ollama": {
+      "version": "0.x",
+      "port": 11434,
+      "transport": "host",
+      "status": "LIVE",
+      "models": ["qwen3:latest", "qwen2.5-coder:latest"]
+    },
+    "desktopRuntime": {
+      "version": "2.1.4",
+      "port": 8091,
+      "transport": "host",
+      "status": "DEAD",
+      "note": "Code at agent-lee-coding-mode/desktop-runtime/. Start with: start-desktop-runtime.ps1"
+    },
+    "vscodeTurboAdapter": {
+      "version": "2.1.4",
+      "port": 8787,
+      "transport": "host",
+      "status": "DEAD",
+      "note": "Code at .leeway-vscode/agent-lee-vscode-adapter/. Required for official control surface."
+    },
+    "cerebralDaemon": {
+      "version": "unknown",
+      "port": 8765,
+      "transport": "host",
+      "status": "DEAD"
+    },
+    "seafile": {
+      "version": "10.x",
+      "port": 8082,
+      "transport": "docker",
+      "status": "DEGRADED",
+      "note": "Docker container running, HTTP timeout on 8082"
+    },
+    "windowsServiceAgentLee": {
+      "displayName": "Agent Lee Autonomous Runtime",
+      "status": "STOPPED",
+      "startType": "Automatic",
+      "note": "Service exists but is stopped. Start with: Start-Service AgentLee"
+    }
+  },
+
+  "productionAllowed": false,
+  "productionGate": "Run scripts/Invoke-LeeWayProductionReadinessGate.ps1 to evaluate current readiness score",
+  "productionBlockers": [
+    "Desktop Runtime (8091) NOT running",
+    "VSCode Turbo Adapter (8787) NOT running — official control surface missing",
+    "Windows Service 'AgentLee' STOPPED",
+    "Cerebral daemon (8765) NOT running",
+    "OPENAI_BASE_URL in .env.local points to 8080 (stale) — should be 8787 (Turbo Adapter)"
+  ],
+
+  "upliftPassDate": "2026-06-25",
+  "upliftPassBy": "leeway-full-system-99-readiness-uplift-pass",
+  "upliftVerdict": "LEEWAY_FULL_SYSTEM_MAJOR_UPLIFT_PARTIAL"
+}

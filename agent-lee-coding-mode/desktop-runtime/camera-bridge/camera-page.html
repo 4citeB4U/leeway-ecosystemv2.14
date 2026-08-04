@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Lee Camera Bridge</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a1020;
+      --panel: rgba(14, 22, 42, 0.94);
+      --border: rgba(138, 181, 255, 0.24);
+      --text: #eef4ff;
+      --muted: #aac0ea;
+      --accent: #74b8ff;
+      --good: #5de38a;
+      --bad: #ff6e79;
+      --warn: #ffd166;
+    }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top left, rgba(116, 184, 255, 0.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(93, 227, 138, 0.12), transparent 28%),
+        linear-gradient(180deg, #08101e 0%, #050914 100%);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    body {
+      padding: 24px;
+    }
+    .shell {
+      max-width: 1280px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+    header {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: 0.02em;
+    }
+    .sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 760px;
+    }
+    .badge {
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      white-space: nowrap;
+    }
+    .badge.good { color: var(--good); }
+    .badge.warn { color: var(--warn); }
+    .badge.bad { color: var(--bad); }
+    main {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      padding: 20px;
+    }
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 18px;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    button {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(116, 184, 255, 0.15);
+      color: var(--text);
+      border-radius: 14px;
+      padding: 12px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover {
+      border-color: rgba(116, 184, 255, 0.4);
+      background: rgba(116, 184, 255, 0.22);
+    }
+    button.danger {
+      background: rgba(255, 110, 121, 0.14);
+    }
+    button.danger:hover {
+      background: rgba(255, 110, 121, 0.22);
+    }
+    .status {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .status strong {
+      color: var(--text);
+    }
+    video, canvas, .preview {
+      width: 100%;
+      border-radius: 18px;
+      background: #000;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    video {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    canvas {
+      display: none;
+    }
+    .preview {
+      min-height: 240px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      text-align: center;
+      padding: 18px;
+      box-sizing: border-box;
+    }
+    .footer {
+      padding: 0 20px 20px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    code {
+      color: #d7e7ff;
+      font-family: Consolas, "Liberation Mono", monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <h1>Agent Lee Camera Bridge</h1>
+        <div class="sub">
+          Leeway-owned camera eyes. Camera stays off by default. Capture only after an explicit start request.
+        </div>
+      </div>
+      <div id="cameraBadge" class="badge warn">Camera idle</div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="controls">
+          <button id="cameraOpen">Open Camera</button>
+          <button id="cameraCapture">Capture Snapshot</button>
+          <button id="cameraStop" class="danger">Stop Camera</button>
+        </div>
+
+        <div class="status">
+          <div><strong>Permission:</strong> <span id="permissionState">unknown</span></div>
+          <div><strong>Active:</strong> <span id="activeState">false</span></div>
+          <div><strong>Active since:</strong> <span id="activeSince">n/a</span></div>
+          <div><strong>Last capture:</strong> <span id="lastCapture">n/a</span></div>
+        </div>
+
+        <video id="cameraVideo" playsinline autoplay muted></video>
+        <canvas id="captureCanvas"></canvas>
+      </section>
+
+      <section class="panel">
+        <div class="preview" id="previewBox">
+          Camera preview and snapshot metadata appear here after a capture.
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      Required confirm token for runtime requests: <code>I_AUTHORIZE_AGENT_LEE_CAMERA_CAPTURE</code>
+    </div>
+  </div>
+
+  <script>
+    const cameraVideo = document.getElementById("cameraVideo");
+    const captureCanvas = document.getElementById("captureCanvas");
+    const previewBox = document.getElementById("previewBox");
+    const cameraBadge = document.getElementById("cameraBadge");
+    const permissionState = document.getElementById("permissionState");
+    const activeState = document.getElementById("activeState");
+    const activeSince = document.getElementById("activeSince");
+    const lastCapture = document.getElementById("lastCapture");
+
+    const state = {
+      active: false,
+      permissionResult: "unknown",
+      activeSince: 0,
+      lastCaptureAt: 0,
+      stream: null
+    };
+
+    function render() {
+      permissionState.textContent = state.permissionResult;
+      activeState.textContent = String(state.active);
+      activeSince.textContent = state.activeSince ? new Date(state.activeSince).toLocaleString() : "n/a";
+      lastCapture.textContent = state.lastCaptureAt ? new Date(state.lastCaptureAt).toLocaleString() : "n/a";
+      cameraBadge.textContent = state.active ? "Camera active" : "Camera idle";
+      cameraBadge.className = "badge " + (state.active ? "good" : "warn");
+    }
+
+    async function startCamera() {
+      if (state.stream) {
+        return getState();
+      }
+
+      try {
+        state.permissionResult = "requesting";
+        render();
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+        state.stream = stream;
+        cameraVideo.srcObject = stream;
+        await cameraVideo.play();
+        state.active = true;
+        state.permissionResult = "granted";
+        state.activeSince = Date.now();
+        render();
+        previewBox.textContent = "Camera is active. Capture a snapshot when ready.";
+        return getState();
+      } catch (error) {
+        state.permissionResult = "denied";
+        state.active = false;
+        render();
+        throw error;
+      }
+    }
+
+    async function captureSnapshot() {
+      if (!state.stream) {
+        throw new Error("Camera is not active.");
+      }
+
+      const width = cameraVideo.videoWidth || 1280;
+      const height = cameraVideo.videoHeight || 720;
+      const targetWidth = Math.min(640, width);
+      const targetHeight = Math.max(1, Math.round(height * (targetWidth / width)));
+      captureCanvas.width = targetWidth;
+      captureCanvas.height = targetHeight;
+
+      const ctx = captureCanvas.getContext("2d");
+      ctx.drawImage(cameraVideo, 0, 0, targetWidth, targetHeight);
+
+      const dataUrl = captureCanvas.toDataURL("image/jpeg", 0.92);
+      state.lastCaptureAt = Date.now();
+      render();
+
+      previewBox.textContent = `Snapshot captured at ${new Date(state.lastCaptureAt).toLocaleString()} (${targetWidth}x${targetHeight}).`;
+
+      return {
+        ok: true,
+        dataUrl,
+        width: targetWidth,
+        height: targetHeight,
+        permissionResult: state.permissionResult,
+        cameraActiveMs: state.activeSince ? (Date.now() - state.activeSince) : 0,
+        capturedAt: new Date().toISOString()
+      };
+    }
+
+    function stopCamera() {
+      if (state.stream) {
+        for (const track of state.stream.getTracks()) {
+          track.stop();
+        }
+      }
+      state.stream = null;
+      state.active = false;
+      state.permissionResult = "stopped";
+      render();
+      previewBox.textContent = "Camera stopped.";
+      cameraVideo.srcObject = null;
+      return getState();
+    }
+
+    function getState() {
+      return {
+        active: state.active,
+        permissionResult: state.permissionResult,
+        activeSince: state.activeSince,
+        lastCaptureAt: state.lastCaptureAt
+      };
+    }
+
+    document.getElementById("cameraOpen").addEventListener("click", async () => {
+      try {
+        await startCamera();
+      } catch (error) {
+        previewBox.textContent = `Camera open failed: ${error.message}`;
+      }
+    });
+
+    document.getElementById("cameraCapture").addEventListener("click", async () => {
+      try {
+        const result = await captureSnapshot();
+        previewBox.textContent = `Captured ${result.width}x${result.height} JPEG frame.`;
+      } catch (error) {
+        previewBox.textContent = `Snapshot failed: ${error.message}`;
+      }
+    });
+
+    document.getElementById("cameraStop").addEventListener("click", () => {
+      stopCamera();
+    });
+
+    window.agentLeeCameraBridge = {
+      startCamera,
+      captureSnapshot,
+      stopCamera,
+      getState
+    };
+
+    render();
+  </script>
+</body>
+</html>

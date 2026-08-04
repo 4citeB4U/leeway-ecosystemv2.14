@@ -1,0 +1,31 @@
+{
+  "directory": "E:\\.Leeway-new-line-of-products\\leeway-employment-center",
+  "purpose": "Employment center root for employee deployment, contract-governed activations, device limits, avatars, and workforce administration.",
+  "tag": "UI.PUBLIC.EMPLOYMENT_CENTER.ROOT",
+  "region": "🔵 UI",
+  "governedBy": "LeeWay Standards",
+  "ownedBy": "Agent Lee / LeeWay Runtime",
+  "allowedFileTypes": [
+    ".ts",
+    ".tsx",
+    ".js",
+    ".jsx",
+    ".html",
+    ".css",
+    ".md",
+    ".json",
+    ".ps1",
+    ".yml",
+    ".yaml"
+  ],
+  "primaryAgents": [
+    "Agent Lee",
+    "LeeWay Runtime"
+  ],
+  "notifiedAgents": [
+    "Employment Center",
+    "Agent Lee"
+  ],
+  "discoveryPipeline": "Voice → Intent → Location → Vertical → Ranking → Render",
+  "status": "ACTIVE"
+}

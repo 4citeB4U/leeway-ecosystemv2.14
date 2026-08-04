@@ -1,0 +1,10 @@
+﻿fastapi
+uvicorn[standard]
+pillow
+diffusers
+transformers
+accelerate
+safetensors
+huggingface_hub
+requests
+peft

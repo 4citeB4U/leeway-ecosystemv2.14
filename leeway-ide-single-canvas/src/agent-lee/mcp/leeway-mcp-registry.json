@@ -1,0 +1,229 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "MCP",
+    "TAG": "CORE.AGENT_LEE.MCP.LEEWAY_MCP_REGISTRY",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+  "name": "agent-lee-leeway-mcp-registry",
+  "sourceRepo": "https://github.com/4citeB4U/LeeWay-Standards",
+  "executionRule": "All tools are requested through Agent Lee Prime first. Tools do not speak directly to the user.",
+  "tools": [
+    {
+      "id": "leeway-visual-intelligence-system",
+      "name": "LVIS - Leeway Visual Intelligence System",
+      "runtime": "leeway-local",
+      "category": "visual-intelligence",
+      "description": "Leeway-governed visual reconstruction system for SVG, voxel, 3D scene, asset validation, export packaging, and project integration.",
+      "localOnly": true,
+      "forbiddenProviders": ["external-cloud-provider", "non-leeway-provider"],
+      "tools": [
+        "visual.vector.analyzeImage",
+        "visual.vector.traceCandidates",
+        "visual.vector.exportTsx",
+        "visual.voxel.imageToVoxel",
+        "visual.voxel.svgToVoxel",
+        "visual.depth.estimateDepth",
+        "visual.scene.createSceneGraph",
+        "visual.fidelity.scoreAsset",
+        "visual.repair.retryCandidate",
+        "visual.export.packageAsset",
+        "visual.integration.createPendingEdits",
+        "visual.memory.savePreset"
+      ],
+      "route": "leeway-local"
+    },
+    {
+      "id": "frontend-mcp",
+      "category": "UI/UX",
+      "purpose": "Frontend architecture and high-fidelity component scaffolding.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "backend-mcp",
+      "category": "API/Server",
+      "purpose": "Backend logic, database schemas, and server-side API design.",
+      "route": "qwen2.5-coder:14b"
+    },
+    {
+      "id": "memory-mcp",
+      "category": "State",
+      "purpose": "Interfaces with local vector stores and memory.",
+      "route": "qwen3-vl-embedding-local"
+    },
+    {
+      "id": "scheduler-mcp",
+      "category": "Time",
+      "purpose": "Task timing and long-running job scheduling.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "qa-mcp",
+      "category": "Quality",
+      "purpose": "Automated test suites and validation audits.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "creative-mcp",
+      "category": "Media",
+      "purpose": "Creative prompts and media assets.",
+      "route": "qwen2.5vl:7b"
+    },
+    {
+      "id": "ui-builder-mcp",
+      "category": "InsForge",
+      "purpose": "React/Vite UI builder and component generator.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "react-native-mcp",
+      "category": "Mobile",
+      "purpose": "React Native mobile architecture.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "design-system-mcp",
+      "category": "Styling",
+      "purpose": "Design tokens and CSS variables.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "leeway-responsive-ui-mcp",
+      "category": "Performance",
+      "purpose": "Responsive UI audit and fixes across breakpoints.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "leeway-edge-optimizer-mcp",
+      "category": "Performance",
+      "purpose": "Edge-runtime and low-latency optimization.",
+      "route": "qwen2.5-coder:14b"
+    },
+    {
+      "id": "leeway-build-auditor-mcp",
+      "category": "Performance",
+      "purpose": "Build-size and dependency graph validation.",
+      "route": "qwen2.5-coder:14b"
+    },
+    {
+      "id": "leeway-ci-blueprint-mcp",
+      "category": "Performance",
+      "purpose": "GitHub Actions and CI pipeline generation.",
+      "route": "qwen2.5-coder:7b"
+    },
+    {
+      "id": "leeway-full-repo-checker-mcp",
+      "category": "Performance",
+      "purpose": "Deep multi-file full repository audit.",
+      "route": "qwen2.5-coder:14b"
+    },
+    {
+      "id": "fs-nav-agent",
+      "category": "Host",
+      "purpose": "Filesystem navigation, listing, viewing, and grep.",
+      "route": "local-filesystem"
+    },
+    {
+      "id": "mutation-agent",
+      "category": "Host",
+      "purpose": "Controlled code modification and multi-chunk editing.",
+      "route": "vscode-workspace-edit"
+    },
+    {
+      "id": "host-exec-agent",
+      "category": "Host",
+      "purpose": "Native OS terminal command execution with approval.",
+      "route": "vscode-terminal"
+    },
+    {
+      "id": "perception-agent",
+      "category": "Host",
+      "purpose": "Internet search and autonomous browser navigation.",
+      "route": "web-search"
+    },
+    {
+      "id": "media-forge-agent",
+      "category": "Host",
+      "purpose": "Image and asset understanding/synthesis support.",
+      "route": "qwen2.5vl:7b"
+    },
+    {
+      "id": "novelist-recursive",
+      "name": "Novelist / LongWriter",
+      "category": "Publishing",
+      "purpose": "Recursive outline expansion for long-form narrative and scholarly manuscripts.",
+      "route": "agents-mcp/novelist-recursive",
+      "tools": [
+        "recursive_outline_expansion",
+        "world_bible_memory_lock"
+      ]
+    },
+    {
+      "id": "character-consistency",
+      "name": "Character Consistency / StoryDiffusion",
+      "category": "Visual Publishing",
+      "purpose": "Generates consistent character art and preserves a visual seed across illustrations.",
+      "route": "agents-mcp/character-consistency",
+      "tools": [
+        "generate_character_id",
+        "visual_seed_lock"
+      ]
+    },
+    {
+      "id": "scholar-storm",
+      "name": "Scholar Storm",
+      "category": "Research",
+      "purpose": "Research synthesis and scholarly outline generation with citation-aware writing.",
+      "route": "agents-mcp/scholar-storm",
+      "tools": [
+        "storm_research_synthesis",
+        "citation_grounding"
+      ]
+    },
+    {
+      "id": "context-expander",
+      "name": "Context Expander",
+      "category": "Memory",
+      "purpose": "Sliding-window memory for long chapters and large-scale narrative drafting.",
+      "route": "agents-mcp/context-expander",
+      "tools": [
+        "sliding_window_memory",
+        "section_summary_recall"
+      ]
+    },
+    {
+      "id": "cinematic-video",
+      "name": "Cinematic Video / Open-Sora",
+      "category": "Animation",
+      "purpose": "Turns illustrated pages into animated clips and motion-rich book scenes.",
+      "route": "agents-mcp/cinematic-video",
+      "tools": [
+        "image_to_video_latent",
+        "motion_module_apply"
+      ]
+    },
+    {
+      "id": "universal-publisher",
+      "name": "Universal Publisher",
+      "category": "Export",
+      "purpose": "Compiles text, images, and video into EPUB, PDF, and interactive reader artifacts.",
+      "route": "agents-mcp/universal-publisher",
+      "tools": [
+        "compile_multimedia_artifact",
+        "interactive_index_render"
+      ]
+    },
+    {
+      "id": "markmap-mcp",
+      "name": "Markmap MCP",
+      "category": "Navigation",
+      "purpose": "Creates an interactive 3D mind map for book navigation and topic indexing.",
+      "route": "markmap-mcp",
+      "tools": [
+        "build_interactive_index",
+        "render_markmap_scene"
+      ]
+    }
+  ]
+}
+

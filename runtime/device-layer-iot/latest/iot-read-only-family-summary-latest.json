@@ -1,0 +1,68 @@
+﻿{
+    "version":  "LEEWAY_IOT_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_220",
+    "timestamp":  "2026-07-05T21:14:56",
+    "verdict":  "LEEWAY_IOT_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "iot",
+    "family_status":  "IOT_READ_ONLY_DISCOVERY_REGISTRY_STATUS_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status"
+                           ],
+    "remaining_families":  [
+                               "printer_read_only_status_and_approval_contract",
+                               "casting_read_only_status_and_approval_contract",
+                               "camera_microphone_speaker_read_only_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "discover":  true,
+                   "status":  true,
+                   "registry":  true,
+                   "devices":  true,
+                   "all_iot_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "control_enabled":  false,
+                         "iot_action_executed":  false,
+                         "device_state_changed":  false,
+                         "discovered_count":  0
+                     },
+    "proof_chain":  {
+                        "patch_218g_exists":  true,
+                        "patch_218g_clean":  true,
+                        "audit_219_exists":  true,
+                        "audit_219_clean":  true,
+                        "patch_218g_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-read-only-routes-patch-218G-latest.json",
+                        "audit_219_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "physical_actions_executed":  0,
+                   "iot_actions_executed":  0,
+                   "iot_device_state_changed":  false,
+                   "print_jobs_sent":  0,
+                   "casting_started":  0,
+                   "shell_commands_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "221-printer-read-only-discovery-and-status-contract-no-execute.ps1"
+}

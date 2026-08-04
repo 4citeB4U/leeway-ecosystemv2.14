@@ -1,0 +1,22 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "AI",
+    "TAG": "CORE.AGENT_LEE.VOICE.CATALOG",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+  "defaultVoiceId": "agent-lee-default",
+  "voices": [
+    {
+      "id": "agent-lee-default",
+      "label": "Agent Lee Default Voice",
+      "description": "The locked-in LeeWay live clone voice for Agent Lee. This is the absolute baseline and cannot be deleted.",
+      "engine": "f5-clone-local",
+      "referenceAudioPath": "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\default-agent-lee-voice.wav",
+      "referenceText": "OK let's go ahead and create this. I'll speak into the mic for a certain amount of time. And the words that I'm actually going to say are the words I want the clone voice to be able to say.",
+      "isDefault": true,
+      "isLocked": true,
+      "createdAt": "2026-05-09T22:54:00Z"
+    }
+  ]
+}

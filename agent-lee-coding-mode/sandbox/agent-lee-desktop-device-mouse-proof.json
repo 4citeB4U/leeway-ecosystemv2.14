@@ -1,0 +1,133 @@
+﻿{
+    "At":  "2026-06-09T04:47:00.3271605-05:00",
+    "Agent":  "Agent Lee",
+    "Action":  "Bluetooth, printers, and safe mouse movement proof",
+    "BluetoothDevices":  [
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Microsoft Bluetooth LE Enumerator",
+                                 "InstanceId":  "BTH\\MS_BTHLE\\6\u00261FED5926\u00261\u00263"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "ProtoArc KM100-A",
+                                 "InstanceId":  "BTHLE\\DEV_DFA67358A5FE\\7\u0026DFB4422\u00260\u0026DFA67358A5FE"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "ProtoArc KM100-A",
+                                 "InstanceId":  "BTHLE\\DEV_EF17ECD33255\\7\u0026DFB4422\u00260\u0026EF17ECD33255"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Bluetooth LE Generic Attribute Service",
+                                 "InstanceId":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260025"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Device Information Service",
+                                 "InstanceId":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000E"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "ANCOBER",
+                                 "InstanceId":  "BTHENUM\\DEV_80F1667054C5\\7\u002632E0C4C1\u00260\u0026BLUETOOTHDEVICE_80F1667054C5"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "ANCOBER Avrcp Transport",
+                                 "InstanceId":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Microsoft Bluetooth Enumerator",
+                                 "InstanceId":  "BTH\\MS_BTHBRB\\6\u00261FED5926\u00261\u00261"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                                 "InstanceId":  "BTH\\MS_RFCOMM\\6\u00261FED5926\u00261\u00260"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Generic Access Profile",
+                                 "InstanceId":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260001"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Device Information Service",
+                                 "InstanceId":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u0026000A"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Generic Attribute Profile",
+                                 "InstanceId":  "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000A"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Bluetooth LE Generic Attribute Service",
+                                 "InstanceId":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260032"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "ANCOBER Avrcp Transport",
+                                 "InstanceId":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Generic Access Profile",
+                                 "InstanceId":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260001"
+                             },
+                             {
+                                 "Status":  "OK",
+                                 "Class":  "Bluetooth",
+                                 "FriendlyName":  "Realtek Bluetooth Adapter",
+                                 "InstanceId":  "USB\\VID_0BDA\u0026PID_D922\\00E04C885A01"
+                             }
+                         ],
+    "Printers":  [
+                     {
+                         "Name":  "OneNote (Desktop)",
+                         "DriverName":  "Send to Microsoft OneNote 16 Driver",
+                         "PortName":  "nul:",
+                         "PrinterStatus":  0,
+                         "Type":  0,
+                         "Shared":  false
+                     },
+                     {
+                         "Name":  "Microsoft Print to PDF",
+                         "DriverName":  "Microsoft Print To PDF",
+                         "PortName":  "PORTPROMPT:",
+                         "PrinterStatus":  0,
+                         "Type":  0,
+                         "Shared":  false
+                     },
+                     {
+                         "Name":  "HP OfficeJet Pro 8020 series",
+                         "DriverName":  "HP OfficeJet Pro 8020 series PCL-3",
+                         "PortName":  "USB001",
+                         "PrinterStatus":  0,
+                         "Type":  0,
+                         "Shared":  false
+                     }
+                 ],
+    "MouseMoved":  true,
+    "Notes":  [
+
+              ]
+}

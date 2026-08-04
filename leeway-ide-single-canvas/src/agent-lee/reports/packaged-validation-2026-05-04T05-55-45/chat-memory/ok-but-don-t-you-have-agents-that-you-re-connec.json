@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "text": "OK, but don't you have agents that you're connected to? If so, how many agents and how many MCPS?",
+    "timestamp": "2026-05-04T10:04:35.195Z"
+  },
+  {
+    "role": "agent",
+    "text": "I'm sorry, but based on the provided information, there is no mention of any connected agents or MCPs (Micro-Controllers or similar processing units). The codebase you've described seems to be a self-contained application for agent-based development and management within a specific software environment. It includes various tools and utilities for tasks such as web searching, image analysis, file auditing, logging, and more. However, it does not explicitly mention the connection to external agents or MCPs.",
+    "timestamp": "2026-05-04T10:04:51.262Z"
+  }
+]

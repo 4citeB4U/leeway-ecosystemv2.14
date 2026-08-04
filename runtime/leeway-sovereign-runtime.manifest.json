@@ -1,0 +1,35 @@
+{
+  "verdict": "LEEWAY_SOVEREIGN_RUNTIME_MANIFEST_CREATED",
+  "api_gateway": {
+    "host_url": "http://localhost:5320",
+    "container": "leeway_api_gateway",
+    "port": 5320,
+    "docker_url": "http://leeway_api_gateway:5320"
+  },
+  "package_rule": "Export Docker images, runtime contracts, Services source, scripts, and proof receipts into one portable bundle.",
+  "doctrine": "Leeway is a portable sovereign Agent Lee runtime. One internal API gateway fronts all Docker lanes.",
+  "sellable_product_rule": "Before external sale: remove secrets, add license/EULA, add installer, add customer branding config, and prove import on a clean machine.",
+  "lanes": {
+    "storage": {
+      "host_url": "http://localhost:5314",
+      "container": "leeway_seafile_storage_gateway",
+      "port": 5314,
+      "docker_url": "http://leeway_seafile_storage_gateway:5314"
+    },
+    "telegram": {
+      "container": "agent-lee-telegram-shell"
+    },
+    "runtime_fabric": {
+      "port": 4001,
+      "container": "leeway_runtime_fabric",
+      "docker_url": "http://leeway_runtime_fabric:4001"
+    },
+    "research": {
+      "host_url": "http://localhost:5310",
+      "container": "leeway_research_lane",
+      "port": 5310,
+      "docker_url": "http://leeway_research_lane:5310"
+    }
+  },
+  "created_at": "2026-07-03T19:56:34.9514830-05:00"
+}

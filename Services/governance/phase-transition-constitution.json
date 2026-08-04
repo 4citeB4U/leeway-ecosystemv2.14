@@ -1,0 +1,205 @@
+{
+  "$id": "leeway://governance/phase-transition-constitution/v1",
+  "title": "LeeWay Phase Transition Constitution",
+  "description": "Governs which phase transitions are allowed for which entity types, under which conditions, and with what authority requirements. This is the authoritative source consumed by all LeeWay runtimes.",
+  "version": "1.0.0",
+  "created_at": "2026-07-17T04:32:00Z",
+  "authority": "leeway://standards/constitution/supreme-authority",
+
+  "core_rules": [
+    "Creating a plan does not authorize execution.",
+    "Drafting never authorizes risky external action.",
+    "Approval does not automatically mean every prerequisite still passes.",
+    "Before Execution, revalidate: identity, authority, version, capabilities, models, devices, providers, network, health, policy, risk, and expiration.",
+    "Execution completion does not automatically mean success.",
+    "Successful execution moves to Verification.",
+    "Only verified postconditions can move an entity to Maintenance or Completed.",
+    "Failed verification must route to Execution, Drafting, Paused, Failed, Quarantined, or Recovery according to policy.",
+    "Revocation must stop or compensate execution when safely possible.",
+    "A phase transition must be entity-specific and version-specific.",
+    "One plan must never silently change the phase of unrelated plans or the entire ecosystem.",
+    "A transition must produce a receipt before it is considered complete.",
+    "Idempotency: the same transitionId always returns the same result.",
+    "Concurrent transitions to the same entity are resolved by optimistic versioning."
+  ],
+
+  "phases": {
+    "Discovery": {
+      "description": "Entity is being identified, scoped, or catalogued. No execution permitted.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "Drafting": {
+      "description": "Entity is being designed, configured, or planned. Simulation only.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "ApprovalPending": {
+      "description": "Entity is awaiting human or policy approval before execution.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "Approved": {
+      "description": "Entity has been approved but execution has not yet been authorized.",
+      "execution_permitted": false,
+      "risky_action_permitted": false,
+      "note": "Approval is a grant, not an execution ticket. ExecutionPending gate must still validate all prerequisites."
+    },
+    "ExecutionPending": {
+      "description": "All prerequisites are being re-validated before execution begins.",
+      "execution_permitted": false,
+      "risky_action_permitted": false,
+      "requires_revalidation": [
+        "identity", "authority", "version", "capabilities", "models",
+        "devices", "providers", "network", "health", "policy", "risk", "expiration"
+      ]
+    },
+    "Execution": {
+      "description": "Entity is actively executing. In-flight tracking required.",
+      "execution_permitted": true,
+      "risky_action_permitted": "per_risk_ceiling_and_approval",
+      "requires_in_flight_tracking": true
+    },
+    "Paused": {
+      "description": "Execution is temporarily suspended. Resumes to prior phase on manual resume.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "Verification": {
+      "description": "Execution is complete. Postconditions are being evaluated.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "Maintenance": {
+      "description": "Ongoing periodic operations on a stable, verified entity.",
+      "execution_permitted": "maintenance_only",
+      "risky_action_permitted": false
+    },
+    "Completed": {
+      "description": "Entity lifecycle is complete. Archived state.",
+      "execution_permitted": false,
+      "risky_action_permitted": false,
+      "terminal": true
+    },
+    "Failed": {
+      "description": "Entity transitioned to a failed state. Recovery required before any restart.",
+      "execution_permitted": false,
+      "risky_action_permitted": false
+    },
+    "Quarantined": {
+      "description": "Entity was isolated due to a safety, governance, or security violation.",
+      "execution_permitted": false,
+      "risky_action_permitted": false,
+      "requires_governance_authority_to_exit": true
+    },
+    "Recovery": {
+      "description": "Entity is being actively recovered or rolled back.",
+      "execution_permitted": "recovery_only",
+      "risky_action_permitted": false
+    }
+  },
+
+  "allowed_transitions": {
+    "_comment": "Format: { from: [{ to, event, authority_required, risk_ceiling, conditions }] }",
+    "Discovery": [
+      { "to": "Drafting", "event": "entity.created", "authority": "request.transition", "risk_ceiling": "low", "conditions": ["entity_exists"] },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Drafting": [
+      { "to": "ApprovalPending", "event": "draft.complete", "authority": "request.transition", "risk_ceiling": "low", "conditions": ["entity_exists", "version_match"] },
+      { "to": "Discovery", "event": "draft.reset", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Paused", "event": "manual.pause", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "ApprovalPending": [
+      { "to": "Approved", "event": "approval.granted", "authority": "approve.execute", "risk_ceiling": "high", "conditions": ["actor_authorized", "approval_valid", "version_match", "expiry_valid"] },
+      { "to": "Drafting", "event": "approval.changes_requested", "authority": "approve.execute", "risk_ceiling": "low" },
+      { "to": "Failed", "event": "approval.denied", "authority": "approve.execute", "risk_ceiling": "low" },
+      { "to": "Paused", "event": "manual.pause", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Approved": [
+      { "to": "ExecutionPending", "event": "execution.requested", "authority": "execute.capability", "risk_ceiling": "high", "conditions": ["actor_authorized", "approval_valid", "capability_available", "device_connected", "provider_available", "health_check", "expiry_valid", "revocation_clear"] },
+      { "to": "Paused", "event": "manual.pause", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Drafting", "event": "approval.withdrawn", "authority": "approve.execute", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "ExecutionPending": [
+      { "to": "Execution", "event": "prereqs.validated", "authority": "system.governance", "risk_ceiling": "high", "conditions": ["identity", "authority", "version_match", "capabilities", "devices", "providers", "network", "health_check", "policy_allows", "expiry_valid", "revocation_clear"] },
+      { "to": "Failed", "event": "prereqs.failed", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Paused", "event": "manual.pause", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Execution": [
+      { "to": "Verification", "event": "execution.completed", "authority": "system.governance", "risk_ceiling": "low", "conditions": ["no_conflicting_transition"] },
+      { "to": "Failed", "event": "execution.failed", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Paused", "event": "manual.pause", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" },
+      { "to": "Recovery", "event": "execution.rollback_requested", "authority": "system.governance", "risk_ceiling": "medium" }
+    ],
+    "Paused": [
+      { "to": "Drafting", "event": "resume.to_drafting", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "ApprovalPending", "event": "resume.to_approval", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Approved", "event": "resume.to_approved", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Execution", "event": "resume.to_execution", "authority": "approve.execute", "risk_ceiling": "medium", "conditions": ["capability_available", "health_check", "expiry_valid", "revocation_clear"] },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Verification": [
+      { "to": "Maintenance", "event": "verification.passed", "authority": "system.governance", "risk_ceiling": "low", "conditions": ["evidence_present"] },
+      { "to": "Completed", "event": "verification.passed.terminal", "authority": "system.governance", "risk_ceiling": "low", "conditions": ["evidence_present"] },
+      { "to": "Execution", "event": "verification.failed.retry", "authority": "system.governance", "risk_ceiling": "medium", "conditions": ["policy_allows"] },
+      { "to": "Drafting", "event": "verification.failed.redesign", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Failed", "event": "verification.failed.terminal", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Maintenance": [
+      { "to": "Discovery", "event": "cycle.reset", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Drafting", "event": "update.required", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Completed", "event": "lifecycle.complete", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Failed": [
+      { "to": "Recovery", "event": "recovery.initiated", "authority": "system.governance", "risk_ceiling": "medium" },
+      { "to": "Drafting", "event": "redesign.initiated", "authority": "request.transition", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ],
+    "Quarantined": [
+      { "to": "Recovery", "event": "quarantine.recovery_authorized", "authority": "system.governance.supreme", "risk_ceiling": "critical", "conditions": ["policy_allows", "evidence_present", "actor_authorized"] },
+      { "to": "Failed", "event": "quarantine.terminated", "authority": "system.governance.supreme", "risk_ceiling": "low" }
+    ],
+    "Recovery": [
+      { "to": "Drafting", "event": "recovery.completed", "authority": "system.governance", "risk_ceiling": "low", "conditions": ["evidence_present"] },
+      { "to": "Discovery", "event": "recovery.reset", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Failed", "event": "recovery.failed", "authority": "system.governance", "risk_ceiling": "low" },
+      { "to": "Quarantined", "event": "safety.violation", "authority": "system.governance", "risk_ceiling": "critical" }
+    ]
+  },
+
+  "entity_phase_profiles": {
+    "plan": ["Discovery", "Drafting", "ApprovalPending", "Approved", "ExecutionPending", "Execution", "Verification", "Maintenance", "Completed", "Failed", "Paused", "Quarantined", "Recovery"],
+    "task": ["Drafting", "ApprovalPending", "Approved", "ExecutionPending", "Execution", "Verification", "Completed", "Failed", "Paused", "Quarantined", "Recovery"],
+    "skill": ["Discovery", "Drafting", "Approved", "Execution", "Maintenance", "Completed", "Failed", "Quarantined"],
+    "tool": ["Discovery", "Drafting", "Approved", "Execution", "Maintenance", "Completed", "Failed", "Quarantined"],
+    "service": ["Discovery", "Drafting", "Approved", "Execution", "Maintenance", "Failed", "Quarantined", "Recovery"],
+    "model": ["Discovery", "Approved", "Execution", "Maintenance", "Failed", "Quarantined"],
+    "provider": ["Discovery", "Approved", "Execution", "Maintenance", "Failed", "Quarantined"],
+    "device": ["Discovery", "Approved", "Execution", "Maintenance", "Failed", "Quarantined", "Recovery"],
+    "communication": ["Drafting", "ApprovalPending", "Approved", "ExecutionPending", "Execution", "Verification", "Completed", "Failed", "Quarantined"],
+    "physical_action": ["Drafting", "ApprovalPending", "Approved", "ExecutionPending", "Execution", "Verification", "Completed", "Failed", "Paused", "Quarantined", "Recovery"],
+    "external_integration": ["Discovery", "Drafting", "ApprovalPending", "Approved", "ExecutionPending", "Execution", "Verification", "Maintenance", "Completed", "Failed", "Quarantined", "Recovery"],
+    "human_approval_workflow": ["Drafting", "ApprovalPending", "Approved", "Completed", "Failed"],
+    "agent": ["Discovery", "Approved", "Execution", "Maintenance", "Failed", "Quarantined", "Recovery"],
+    "worker": ["Discovery", "Approved", "Execution", "Maintenance", "Failed", "Quarantined", "Recovery"]
+  },
+
+  "immutable_rules": [
+    "Drafting NEVER directly transitions to Execution. ApprovalPending and Approved are mandatory intermediaries for risky actions.",
+    "Quarantined can only be exited by system.governance.supreme authority.",
+    "Completed is a terminal state. No transitions out of Completed.",
+    "All transitions must produce a receipt before the transition is recorded as complete.",
+    "A transition with risk_ceiling=critical always requires explicit human approval.",
+    "The transitionId must be unique across the ecosystem at any point in time.",
+    "Phase state is entity-scoped and version-scoped. Global state changes are prohibited.",
+    "Revocation of an approval must halt or compensate any in-flight execution."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "purpose": "Performance and context compression layer for Agent Lee and the Leeway sovereign runtime.",
+  "safety_rules": {
+    "no_lossy_proof_storage": true,
+    "local_first": true,
+    "reversible_context_required": true,
+    "compression_must_write_receipt": true,
+    "no_secret_leakage_to_external_services": true
+  },
+  "build_order": [
+    "v0.1 local heuristic compression scaffold",
+    "v0.2 optional Headroom library/proxy integration",
+    "v0.3 Runtime Fabric middleware",
+    "v0.4 Code Mode and research-lane compression",
+    "v0.5 dashboard metrics and savings receipts"
+  ],
+  "performance_rules": {
+    "keep_receipts_uncompressed": true,
+    "use_for_output_shaping": true,
+    "use_for_logs": true,
+    "use_for_code_context": true,
+    "use_for_notebook_context": true,
+    "use_for_research_results": true,
+    "keep_originals_retrievable": true,
+    "compress_large_tool_outputs": true
+  },
+  "verdict": "LEEWAY_CONTEXT_GATEWAY_CONTRACT_CREATED",
+  "status": "CONTRACT_READY_BUILD_NEXT",
+  "container_name": "leeway_context_gateway",
+  "host_port": 5321,
+  "lane": "leeway_context_gateway",
+  "doctrine": "Compress what the LLM reads, not what Leeway stores. Receipts and source artifacts remain complete.",
+  "source_pattern": "Headroom-style local-first compression, proxy, MCP, cross-agent memory, reversible retrieval, output shaping, and learning from failed sessions.",
+  "internal_port": 5321,
+  "required_endpoints": [
+    "/health",
+    "/status",
+    "/compress",
+    "/retrieve",
+    "/stats",
+    "/learn/failure",
+    "/receipts/latest",
+    "/openapi.json"
+  ],
+  "created_at": "2026-07-03T20:10:16.5506159-05:00",
+  "integration_points": {
+    "code_mode": "Compress file search, terminal logs, patch diffs, and test output before model reasoning.",
+    "research_lane": "Compress deep search results and research briefs before synthesis.",
+    "leeway_api_gateway": "Compress large request/response payloads before routing to LLM-backed lanes.",
+    "telegram_shell": "Compress long responses for brain context while still sending full artifacts as files.",
+    "open_notebook": "Compress notebook sources, PDFs, and extracted content before chat.",
+    "runtime_fabric": "Compress service health dumps, Docker logs, registry output, and long tool results.",
+    "seafile_gateway": "Store originals and receipts; context gateway stores compact indexes and retrieval pointers."
+  }
+}

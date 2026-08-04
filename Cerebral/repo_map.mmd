@@ -1,0 +1,39 @@
+graph TD
+  subgraph Backend
+    A[vision_llm.py]
+    B[talk.py]
+    C[CerebralDaemon.py]
+    D[tool_router.py]
+    E[websocket_ptt_server.py]
+    F[cerebral_daemon.py]
+    G[cerebral_prime.py]
+    H[API: digital-brain/src/app/api/nodes/route.ts]
+    I[Imports: memory_engine, ...]
+  end
+  subgraph Frontend
+    J[main.tsx]
+    K[App.tsx]
+    L[AgentLee3D.tsx]
+    M[ChatModal.tsx]
+    N[RuntimeBridgeConsole.tsx]
+    O[TelemetryDashboard.tsx]
+    P[SpiritualCanvas.tsx]
+    Q[TaskSpinePanel.tsx]
+    R[services/ai.ts]
+  end
+  subgraph DigitalBrain
+    S[api/nodes/route.ts]
+    T[page.tsx]
+  end
+  J --> K
+  K --> L
+  K --> M
+  K --> N
+  K --> O
+  K --> P
+  K --> Q
+  N --> E
+  F --> C
+  C --> H
+  C --> I
+  S --> T

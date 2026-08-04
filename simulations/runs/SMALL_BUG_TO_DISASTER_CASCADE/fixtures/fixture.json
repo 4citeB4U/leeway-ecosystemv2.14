@@ -1,0 +1,10 @@
+{
+  "simulationId": "SMALL_BUG_TO_DISASTER_CASCADE",
+  "injectedFaults": [
+    "minor stale model-route timestamp",
+    "duplicate registry",
+    "wrong registry read",
+    "false health row",
+    "assistant acts on false health"
+  ]
+}

@@ -1,0 +1,127 @@
+﻿{
+    "version":  "LEEWAY_REAL_WINDOWS_ACTUATOR_APPROVAL_GATE_2026-07-05",
+    "created_at":  "2026-07-05T18:00:21",
+    "policy_id":  "leeway-real-windows-actuator-approval-gate",
+    "mode":  "APPROVAL_GATE_CREATED_REAL_EXECUTION_STILL_DISABLED",
+    "device_operator_url":  "http://127.0.0.1:5323",
+    "windows_device_id":  "windows-agent-lee",
+    "current_actuator_device_id":  "windows-agent-lee-local-actuator-dry-run",
+    "current_actuator_url":  "http://127.0.0.1:7331",
+    "current_mode":  "dry_run_only",
+    "physical_execution_enabled":  false,
+    "real_execution_allowed_now":  false,
+    "owner":  {
+                  "approval_role":  "required_owner",
+                  "name":  "Leonard J Lee"
+              },
+    "doctrine":  {
+                     "all_real_execution_receipts_required":  true,
+                     "no_docker_prune":  true,
+                     "no_unapproved_click_type_or_shell":  true,
+                     "no_hidden_remote_control":  true,
+                     "real_execution_requires_explicit_approval_id":  true,
+                     "windows_actuator_is_child_satellite":  true,
+                     "no_destructive_cleanup":  true,
+                     "leeway_device_operator_is_master":  true
+                 },
+    "approval_states":  [
+                            "PENDING",
+                            "APPROVED",
+                            "DENIED",
+                            "EXPIRED",
+                            "EXECUTED",
+                            "FAILED",
+                            "CANCELLED"
+                        ],
+    "risk_tiers":  {
+                       "safe_read":  {
+                                         "approval_required":  false,
+                                         "examples":  [
+                                                          "health",
+                                                          "status",
+                                                          "capabilities",
+                                                          "allowlist",
+                                                          "receipt_list"
+                                                      ]
+                                     },
+                       "low_risk_preview":  {
+                                                "approval_required":  false,
+                                                "examples":  [
+                                                                 "dry_run_open_app",
+                                                                 "dry_run_open_url",
+                                                                 "dry_run_mouse_click",
+                                                                 "dry_run_type_text",
+                                                                 "dry_run_shell_allowed_command"
+                                                             ]
+                                            },
+                       "controlled_physical":  {
+                                                   "approval_required":  true,
+                                                   "examples":  [
+                                                                    "real_open_app",
+                                                                    "real_open_url",
+                                                                    "real_mouse_move",
+                                                                    "real_mouse_click",
+                                                                    "real_type_text",
+                                                                    "real_hotkey",
+                                                                    "real_screenshot",
+                                                                    "real_file_open",
+                                                                    "real_file_reveal",
+                                                                    "real_print",
+                                                                    "real_cast"
+                                                                ]
+                                               },
+                       "communication_external":  {
+                                                      "approval_required":  true,
+                                                      "examples":  [
+                                                                       "send_email",
+                                                                       "send_sms",
+                                                                       "send_telegram_message",
+                                                                       "send_whatsapp_message",
+                                                                       "dial_phone",
+                                                                       "publish_social_post"
+                                                                   ]
+                                                  },
+                       "high_risk_admin":  {
+                                               "examples":  [
+                                                                "shell_allowed_command_real",
+                                                                "restart_service",
+                                                                "restart_container",
+                                                                "change_system_setting",
+                                                                "install_software",
+                                                                "modify_startup"
+                                                            ],
+                                               "second_confirmation_required":  true,
+                                               "approval_required":  true
+                                           },
+                       "blocked":  {
+                                       "approval_required":  "not_allowed",
+                                       "examples":  [
+                                                        "credential_extraction",
+                                                        "bypass_security",
+                                                        "disable_security_tool",
+                                                        "hidden_surveillance",
+                                                        "stealth_remote_control",
+                                                        "unapproved_keystroke_capture",
+                                                        "unapproved_clipboard_read",
+                                                        "unapproved_clipboard_write",
+                                                        "unapproved_file_delete",
+                                                        "unapproved_mass_message_send",
+                                                        "malware_behavior",
+                                                        "destructive_bulk_cleanup",
+                                                        "docker_prune_without_owner_approval"
+                                                    ]
+                                   }
+                   },
+    "approval_requirements":  {
+                                  "expires_at_required":  true,
+                                  "default_expiration_minutes":  10,
+                                  "one_time_use":  true,
+                                  "max_expiration_minutes":  30,
+                                  "request_file_required":  true,
+                                  "human_readable_summary_required":  true,
+                                  "approval_id_required":  true,
+                                  "target_device_required":  true,
+                                  "receipt_required":  true,
+                                  "rollback_or_stop_instruction_required":  true
+                              }
+}

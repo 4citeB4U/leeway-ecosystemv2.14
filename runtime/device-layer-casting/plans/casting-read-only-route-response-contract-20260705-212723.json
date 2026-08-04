@@ -1,0 +1,50 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_ROUTE_RESPONSE_CONTRACT_227",
+    "timestamp":  "2026-07-05T21:27:23",
+    "family":  "casting",
+    "route_response_contract":  {
+                                    "/casting/status":  {
+                                                            "ok":  "bool",
+                                                            "family":  "casting",
+                                                            "mode":  "READ_ONLY_NO_CAST",
+                                                            "patch":  "LEEWAY_CASTING_READ_ONLY_ROUTES_PATCH_228",
+                                                            "discovery_route_present":  "bool",
+                                                            "status_route_present":  "bool",
+                                                            "registry_route_present":  "bool",
+                                                            "discovered_count":  "int",
+                                                            "control_enabled":  false,
+                                                            "approval_required_for_cast":  true,
+                                                            "physical_action_executed":  false,
+                                                            "cast_session_started":  false,
+                                                            "cast_session_stopped":  false,
+                                                            "pairing_requested":  false,
+                                                            "display_mutated":  false,
+                                                            "tv_wake_sent":  false,
+                                                            "input_switched":  false
+                                                        },
+                                    "/casting/registry":  {
+                                                              "ok":  "bool",
+                                                              "family":  "casting",
+                                                              "registry_status":  "READ_ONLY_REGISTRY_ROUTE_ACTIVE",
+                                                              "discovered_count":  "int",
+                                                              "normalized_targets":  "array",
+                                                              "control_enabled":  false,
+                                                              "physical_action_executed":  false,
+                                                              "cast_session_started":  false,
+                                                              "cast_session_stopped":  false,
+                                                              "pairing_requested":  false,
+                                                              "display_mutated":  false,
+                                                              "tv_wake_sent":  false,
+                                                              "input_switched":  false
+                                                          }
+                                },
+    "non_goals":  [
+                      "no cast start",
+                      "no cast stop",
+                      "no pairing",
+                      "no display mutation",
+                      "no TV wake",
+                      "no input switch",
+                      "no physical action"
+                  ]
+}

@@ -1,0 +1,2313 @@
+﻿{
+    "version":  "LEEWAY_PHASE_41_IDENTITY_CONFIRMATION_PLAN_297",
+    "phase":  41,
+    "timestamp":  "2026-07-06T11:37:33",
+    "verdict":  "LEEWAY_PHASE_41_IDENTITY_CONFIRMATION_PLAN_297_NO_EXECUTE_CLEAN",
+    "plan_only":  true,
+    "no_execution":  true,
+    "no_onboarding":  true,
+    "no_pairing":  true,
+    "no_protocol_translator":  true,
+    "no_iot_bridge":  true,
+    "no_physical_action_lane":  true,
+    "clear_skies":  true,
+    "source_proofs":  {
+                          "phase_40_final_browser_proof":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-onboarding-final-proof\\latest\\device-onboarding-final-browser-proof-latest.json",
+                          "enrichment_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                          "phase_39_final_summary":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\latest\\final-device-action-lane-summary-latest.json"
+                      },
+    "totals":  {
+                   "network_assets":  9,
+                   "bluetooth_assets":  19,
+                   "printer_assets":  3,
+                   "identity_candidates":  31
+               },
+    "phase_41_policy":  {
+                            "phase":  41,
+                            "policy_name":  "LEEWAY_PHASE_41_IDENTITY_CONFIRMATION_BEFORE_ONBOARDING",
+                            "mode":  "IDENTITY_CONFIRMATION_ONLY",
+                            "allowed_now":  [
+                                                "review discovered asset",
+                                                "assign human-friendly name",
+                                                "classify family",
+                                                "confirm room or location",
+                                                "confirm owner",
+                                                "mark ignored",
+                                                "mark read-only monitor",
+                                                "prepare future onboarding request draft"
+                                            ],
+                            "blocked_now":  [
+                                                "device control",
+                                                "Bluetooth pairing",
+                                                "GATT write",
+                                                "printer test page",
+                                                "print job",
+                                                "IoT bridge deployment",
+                                                "protocol translator deployment",
+                                                "MQTT publish",
+                                                "Matter command",
+                                                "Zigbee command",
+                                                "Tuya command",
+                                                "WebOS control",
+                                                "Samsung TV control",
+                                                "robotics bridge",
+                                                "ROS2 command",
+                                                "Real Alpha arm",
+                                                "real open-app",
+                                                "physical execution"
+                                            ],
+                            "required_before_any_onboarding":  [
+                                                                   "asset identity confirmed",
+                                                                   "asset family confirmed",
+                                                                   "asset location confirmed",
+                                                                   "asset trust level confirmed",
+                                                                   "asset disposition selected",
+                                                                   "protocol candidate selected",
+                                                                   "future action scope written",
+                                                                   "human approval request generated separately",
+                                                                   "single-use approval gate used separately"
+                                                               ],
+                            "approval_model":  "NO_ACTIONS_FROM_PHASE_41_PLAN"
+                        },
+    "route_plan":  {
+                       "no_routes_created_in_297":  true,
+                       "future_get_only_routes":  [
+                                                      "GET /api/identity-confirmation/summary",
+                                                      "GET /api/identity-confirmation/candidates",
+                                                      "GET /api/identity-confirmation/candidates/network",
+                                                      "GET /api/identity-confirmation/candidates/bluetooth",
+                                                      "GET /api/identity-confirmation/candidates/printers"
+                                                  ],
+                       "future_write_routes_require_separate_plan":  [
+                                                                         "POST /api/identity-confirmation/mark-reviewed",
+                                                                         "POST /api/identity-confirmation/set-human-name",
+                                                                         "POST /api/identity-confirmation/set-location",
+                                                                         "POST /api/identity-confirmation/set-disposition"
+                                                                     ],
+                       "forbidden_routes":  [
+                                                "POST /api/identity-confirmation/control",
+                                                "POST /api/identity-confirmation/pair",
+                                                "POST /api/identity-confirmation/print",
+                                                "POST /api/identity-confirmation/deploy-bridge",
+                                                "POST /api/identity-confirmation/publish",
+                                                "POST /api/identity-confirmation/arm"
+                                            ]
+                   },
+    "identity_candidates":  [
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-1",
+                                    "asset_id":  "net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                                    "display_name":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                                                              "display_name":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "ipv6_neighbor",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                                              "mac":  "AE:5F:A0:77:4E:B2",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-2",
+                                    "asset_id":  "net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                                    "display_name":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                                                              "display_name":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "ipv6_neighbor",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                                              "mac":  "AE:5F:A0:77:4E:B2",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-3",
+                                    "asset_id":  "net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                                    "display_name":  "2603:6000:b400:5739::1",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                                                              "display_name":  "2603:6000:b400:5739::1",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "ipv6_neighbor",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "2603:6000:b400:5739::1",
+                                                              "mac":  "A0:55:1F:23:76:AE",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-4",
+                                    "asset_id":  "net-172_26_169_72-00_15_5D_F5_62_08",
+                                    "display_name":  "172.26.169.72",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-172_26_169_72-00_15_5D_F5_62_08",
+                                                              "display_name":  "172.26.169.72",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "local_virtual_network_or_container",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "172.26.169.72",
+                                                              "mac":  "00:15:5D:F5:62:08",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-5",
+                                    "asset_id":  "net-192_168_1_189-A6_71_11_E1_DC_78",
+                                    "display_name":  "192.168.1.189",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-192_168_1_189-A6_71_11_E1_DC_78",
+                                                              "display_name":  "192.168.1.189",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "unknown_network_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "192.168.1.189",
+                                                              "mac":  "A6:71:11:E1:DC:78",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-6",
+                                    "asset_id":  "net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                                    "display_name":  "LEOSINSIGHT.lan",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                                                              "display_name":  "LEOSINSIGHT.lan",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "unknown_network_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "192.168.1.183",
+                                                              "mac":  "90:6A:EB:B0:CC:DA",
+                                                              "hostname":  "LEOSINSIGHT.lan",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-7",
+                                    "asset_id":  "net-192_168_1_101-70_A6_CC_E6_81_83",
+                                    "display_name":  "L5CD215DNVY.lan",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-192_168_1_101-70_A6_CC_E6_81_83",
+                                                              "display_name":  "L5CD215DNVY.lan",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "unknown_network_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "192.168.1.101",
+                                                              "mac":  "70:A6:CC:E6:81:83",
+                                                              "hostname":  "L5CD215DNVY.lan",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-8",
+                                    "asset_id":  "net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                                    "display_name":  "Galaxy-Z-Fold6.lan",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                                                              "display_name":  "Galaxy-Z-Fold6.lan",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "unknown_network_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "192.168.1.36",
+                                                              "mac":  "AE:5F:A0:77:4E:B2",
+                                                              "hostname":  "Galaxy-Z-Fold6.lan",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-network-9",
+                                    "asset_id":  "net-192_168_1_1-A0_55_1F_23_76_AE",
+                                    "display_name":  "SAX2V1S.lan",
+                                    "source_family":  "network",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "net-192_168_1_1-A0_55_1F_23_76_AE",
+                                                              "display_name":  "SAX2V1S.lan",
+                                                              "source_family":  "network",
+                                                              "inferred_family":  "unknown_network_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "approval_required",
+                                                              "ip":  "192.168.1.1",
+                                                              "mac":  "A0:55:1F:23:76:AE",
+                                                              "hostname":  "SAX2V1S.lan",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this IP/MAC belongs to a router, phone, computer, TV, printer, IoT device, container, VM, or unknown.",
+                                                                   "Confirm whether this asset is trusted on the local network."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-10",
+                                    "asset_id":  "bt-Microsoft_Bluetooth_LE_Enumerator-1933924596",
+                                    "display_name":  "Microsoft Bluetooth LE Enumerator",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Microsoft_Bluetooth_LE_Enumerator-1933924596",
+                                                              "display_name":  "Microsoft Bluetooth LE Enumerator",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_adapter_or_stack_component",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "system_component_do_not_control",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-11",
+                                    "asset_id":  "bt-ProtoArc_KM100-A-331912956",
+                                    "display_name":  "ProtoArc KM100-A",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-ProtoArc_KM100-A-331912956",
+                                                              "display_name":  "ProtoArc KM100-A",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-12",
+                                    "asset_id":  "bt-ProtoArc_KM100-A--1032483612",
+                                    "display_name":  "ProtoArc KM100-A",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-ProtoArc_KM100-A--1032483612",
+                                                              "display_name":  "ProtoArc KM100-A",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-13",
+                                    "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                                    "display_name":  "Bluetooth LE Generic Attribute Service",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                                                              "display_name":  "Bluetooth LE Generic Attribute Service",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-14",
+                                    "asset_id":  "bt-Device_Information_Service--174547601",
+                                    "display_name":  "Device Information Service",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Device_Information_Service--174547601",
+                                                              "display_name":  "Device Information Service",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-15",
+                                    "asset_id":  "bt-ANCOBER-626928032",
+                                    "display_name":  "ANCOBER",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-ANCOBER-626928032",
+                                                              "display_name":  "ANCOBER",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-16",
+                                    "asset_id":  "bt-ANCOBER_Avrcp_Transport--2688028",
+                                    "display_name":  "ANCOBER Avrcp Transport",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-ANCOBER_Avrcp_Transport--2688028",
+                                                              "display_name":  "ANCOBER Avrcp Transport",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_audio_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "control_blocked_until_audio_profile_approved",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-17",
+                                    "asset_id":  "bt-Microsoft_Bluetooth_Enumerator--2076870047",
+                                    "display_name":  "Microsoft Bluetooth Enumerator",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Microsoft_Bluetooth_Enumerator--2076870047",
+                                                              "display_name":  "Microsoft Bluetooth Enumerator",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_adapter_or_stack_component",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "system_component_do_not_control",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-18",
+                                    "asset_id":  "bt-Bluetooth_Device__RFCOMM_Protocol_TDI_-531347360",
+                                    "display_name":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Bluetooth_Device__RFCOMM_Protocol_TDI_-531347360",
+                                                              "display_name":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_adapter_or_stack_component",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "system_component_do_not_control",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-19",
+                                    "asset_id":  "bt-Generic_Access_Profile--1245420966",
+                                    "display_name":  "Generic Access Profile",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Generic_Access_Profile--1245420966",
+                                                              "display_name":  "Generic Access Profile",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-20",
+                                    "asset_id":  "bt-i2O-698774688",
+                                    "display_name":  "i2O",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-i2O-698774688",
+                                                              "display_name":  "i2O",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-21",
+                                    "asset_id":  "bt-i2O_Avrcp_Transport--2014886532",
+                                    "display_name":  "i2O Avrcp Transport",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-i2O_Avrcp_Transport--2014886532",
+                                                              "display_name":  "i2O Avrcp Transport",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_audio_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "control_blocked_until_audio_profile_approved",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-22",
+                                    "asset_id":  "bt-Device_Information_Service--450619856",
+                                    "display_name":  "Device Information Service",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Device_Information_Service--450619856",
+                                                              "display_name":  "Device Information Service",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-23",
+                                    "asset_id":  "bt-Generic_Attribute_Profile-1258641163",
+                                    "display_name":  "Generic Attribute Profile",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Generic_Attribute_Profile-1258641163",
+                                                              "display_name":  "Generic Attribute Profile",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-24",
+                                    "asset_id":  "bt-i2O_Avrcp_Transport--120040382",
+                                    "display_name":  "i2O Avrcp Transport",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-i2O_Avrcp_Transport--120040382",
+                                                              "display_name":  "i2O Avrcp Transport",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_audio_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "control_blocked_until_audio_profile_approved",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-25",
+                                    "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                                    "display_name":  "Bluetooth LE Generic Attribute Service",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                                                              "display_name":  "Bluetooth LE Generic Attribute Service",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-26",
+                                    "asset_id":  "bt-ANCOBER_Avrcp_Transport--1270933978",
+                                    "display_name":  "ANCOBER Avrcp Transport",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-ANCOBER_Avrcp_Transport--1270933978",
+                                                              "display_name":  "ANCOBER Avrcp Transport",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_audio_device",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "control_blocked_until_audio_profile_approved",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-27",
+                                    "asset_id":  "bt-Generic_Access_Profile--221408879",
+                                    "display_name":  "Generic Access Profile",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Generic_Access_Profile--221408879",
+                                                              "display_name":  "Generic Access Profile",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "possible_ble_peripheral",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "gatt_map_required_before_any_write",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-bluetooth-28",
+                                    "asset_id":  "bt-Realtek_Bluetooth_Adapter-808623461",
+                                    "display_name":  "Realtek Bluetooth Adapter",
+                                    "source_family":  "bluetooth",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "bt-Realtek_Bluetooth_Adapter-808623461",
+                                                              "display_name":  "Realtek Bluetooth Adapter",
+                                                              "source_family":  "bluetooth",
+                                                              "inferred_family":  "bluetooth_adapter_or_stack_component",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "system_component_do_not_control",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  ""
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this Bluetooth asset is a phone, headset, speaker, keyboard, mouse, BLE peripheral, adapter, or unknown.",
+                                                                   "Confirm that no pairing is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-printer-29",
+                                    "asset_id":  "printer-OneNote__Desktop_-nul_",
+                                    "display_name":  "OneNote (Desktop)",
+                                    "source_family":  "printer",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "printer-OneNote__Desktop_-nul_",
+                                                              "display_name":  "OneNote (Desktop)",
+                                                              "source_family":  "printer",
+                                                              "inferred_family":  "virtual_onenote_printer",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "virtual_print_action_requires_approval",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  "OneNote (Desktop)"
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this printer is physical, virtual, PDF, OneNote, network, or unknown.",
+                                                                   "Confirm that no test page or print job is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-printer-30",
+                                    "asset_id":  "printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                                    "display_name":  "Microsoft Print to PDF",
+                                    "source_family":  "printer",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                                                              "display_name":  "Microsoft Print to PDF",
+                                                              "source_family":  "printer",
+                                                              "inferred_family":  "virtual_pdf_printer",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "file_output_action_requires_approval",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  "Microsoft Print to PDF"
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this printer is physical, virtual, PDF, OneNote, network, or unknown.",
+                                                                   "Confirm that no test page or print job is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                },
+                                {
+                                    "identity_candidate_id":  "identity-confirm-printer-31",
+                                    "asset_id":  "printer-HP_OfficeJet_Pro_8020_series-USB001",
+                                    "display_name":  "HP OfficeJet Pro 8020 series",
+                                    "source_family":  "printer",
+                                    "observed_evidence":  {
+                                                              "asset_id":  "printer-HP_OfficeJet_Pro_8020_series-USB001",
+                                                              "display_name":  "HP OfficeJet Pro 8020 series",
+                                                              "source_family":  "printer",
+                                                              "inferred_family":  "printer_or_print_queue",
+                                                              "current_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                              "control_risk":  "print_actions_blocked_until_approval",
+                                                              "ip":  "",
+                                                              "mac":  "",
+                                                              "hostname":  "",
+                                                              "bluetooth_address":  "",
+                                                              "printer_name":  "HP OfficeJet Pro 8020 series"
+                                                          },
+                                    "confirmation_state":  "PENDING_HUMAN_IDENTITY_CONFIRMATION",
+                                    "confidence":  "UNCONFIRMED",
+                                    "required_human_fields":  [
+                                                                  "confirmed_asset_name",
+                                                                  "asset_type",
+                                                                  "location",
+                                                                  "owner_or_responsible_person",
+                                                                  "trust_level",
+                                                                  "disposition"
+                                                              ],
+                                    "allowed_dispositions":  [
+                                                                 "ignore",
+                                                                 "monitor_read_only",
+                                                                 "prepare_future_onboarding_request",
+                                                                 "needs_more_research"
+                                                             ],
+                                    "blocked_dispositions":  [
+                                                                 "control_now",
+                                                                 "pair_now",
+                                                                 "print_now",
+                                                                 "deploy_bridge_now",
+                                                                 "publish_message_now",
+                                                                 "arm_real_alpha_now"
+                                                             ],
+                                    "confirmation_questions":  [
+                                                                   "Confirm this is a real asset you recognize.",
+                                                                   "Assign a human-friendly name.",
+                                                                   "Confirm physical location or room.",
+                                                                   "Confirm asset owner or responsible person.",
+                                                                   "Confirm whether this asset should be ignored, monitored, or prepared for future onboarding.",
+                                                                   "Confirm no control action is authorized yet.",
+                                                                   "Confirm whether this printer is physical, virtual, PDF, OneNote, network, or unknown.",
+                                                                   "Confirm that no test page or print job is authorized during identity confirmation."
+                                                               ],
+                                    "future_only_after_confirmation":  [
+                                                                           "protocol translator plan",
+                                                                           "single asset onboarding request",
+                                                                           "approval-gated capability request",
+                                                                           "manual review receipt",
+                                                                           "separate controlled action lane"
+                                                                       ],
+                                    "still_blocked":  [
+                                                          "device control",
+                                                          "Bluetooth pairing",
+                                                          "GATT writes",
+                                                          "printer actions",
+                                                          "IoT bridge deployment",
+                                                          "MQTT publish",
+                                                          "Real Alpha arm",
+                                                          "real open-app",
+                                                          "physical execution"
+                                                      ]
+                                }
+                            ],
+    "safety":  {
+                   "no_device_control_in_297":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "no_browser_open":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "298-identity-confirmation-ui-contract-no-execute.ps1"
+}

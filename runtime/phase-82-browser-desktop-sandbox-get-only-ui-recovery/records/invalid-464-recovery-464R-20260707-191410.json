@@ -1,0 +1,41 @@
+﻿{
+    "version":  "LEEWAY_464R_INVALID_464_RECOVERY",
+    "phase":  82,
+    "timestamp":  "2026-07-07T19:18:13",
+    "verdict":  "LEEWAY_464R_INVALID_464_RECOVERY_CLEAN_NO_REAL_ACTION",
+    "invalidated_prior_lane":  "464-apply-browser-desktop-sandbox-get-only-ui-no-real-action.ps1",
+    "invalidation_reason":  "Prior 464 was pasted/executed as fragmented interactive commands; functions and path variables were not loaded, zero files were written, and proof paths were null.",
+    "clean_authority":  "463F",
+    "source_463F_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-463F-20260707-190635\\reports\\LEEWAY_BROWSER_DESKTOP_SANDBOX_UI_CONTRACT_463F_20260707-190635.txt",
+    "app_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "expected_file_count":  7,
+    "existing_expected_file_count":  0,
+    "existing_expected_files":  [
+
+                                ],
+    "safe_next_lane":  "464H-apply-browser-desktop-sandbox-get-only-ui-safe-no-real-action.ps1",
+    "safety":  {
+                   "recovery_only":  true,
+                   "no_browser_open":  true,
+                   "no_navigation":  true,
+                   "no_click":  true,
+                   "no_typing":  true,
+                   "no_mouse_control":  true,
+                   "no_keyboard_control":  true,
+                   "no_window_control":  true,
+                   "no_desktop_control":  true,
+                   "no_sandbox_action":  true,
+                   "no_real_action":  true,
+                   "runtime_execution_performed":  false,
+                   "browser_runtime_started":  false,
+                   "desktop_runtime_started":  false,
+                   "post_performed":  false,
+                   "approval_granted":  false,
+                   "authority_unlocked":  false
+               },
+    "live_state":  {
+                       "device_operator_reachable":  true,
+                       "browser_runtime_live_endpoint_reachable_advisory":  false,
+                       "desktop_runtime_live_endpoint_reachable_advisory":  false
+                   }
+}

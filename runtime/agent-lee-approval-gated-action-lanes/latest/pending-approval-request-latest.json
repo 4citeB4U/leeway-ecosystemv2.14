@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_PENDING_APPROVAL_REQUEST_281R",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:21:39",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "request_status":  "PENDING_APPROVAL",
+    "approval_state":  "PENDING",
+    "execution_state":  "NOT_EXECUTED",
+    "execution_performed":  false,
+    "requested_by":  "script_281r",
+    "source":  "agent_lee_approval_gated_action_lane",
+    "lane_id":  "windows_open_app_controlled",
+    "action":  "real_open_app",
+    "action_label":  "Open Notepad",
+    "target_device_id":  "windows-agent-lee",
+    "target_family":  "windows_desktop_control_plane",
+    "risk_level":  "low",
+    "app_name":  "notepad.exe",
+    "payload":  {
+                    "app":  "notepad.exe",
+                    "app_label":  "Notepad",
+                    "args":  [
+
+                             ],
+                    "controlled_target":  true
+                },
+    "governance_required":  {
+                                "promote_to_approved_no_execute":  true,
+                                "blocked_until_execution_validation":  true,
+                                "execute_once_only":  true,
+                                "lockback_required":  true,
+                                "post_execution_audit_required":  true,
+                                "dashboard_update_required":  true
+                            },
+    "current_safety_state":  {
+                                 "ui_no_execute_clean":  true,
+                                 "execution_enabled":  false,
+                                 "execute_buttons_visible":  false,
+                                 "post_execution_routes_added":  false,
+                                 "physical_actions_executed":  0,
+                                 "windows_locked":  true,
+                                 "blocked_probe_executed":  false
+                             },
+    "safety":  {
+                   "pending_only":  true,
+                   "no_execution_in_281r":  true,
+                   "no_approval_granted_in_281r":  true,
+                   "no_execute_buttons_added":  true,
+                   "no_post_execution_routes_added":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "282-promote-pending-open-app-to-approved-no-execute.ps1"
+}

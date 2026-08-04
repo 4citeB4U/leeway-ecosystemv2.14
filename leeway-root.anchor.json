@@ -1,0 +1,27 @@
+﻿{
+    "version":  "LEEWAY_ROOT_ANCHOR_V1",
+    "timestamp":  "2026-07-08T11:15:22",
+    "verdict":  "LEEWAY_ROOT_ANCHOR_CREATED_NO_RECURSE_NO_EXECUTE",
+    "root_policy":  "PATH_NEUTRAL_CUSTODY_AUTHORITY",
+    "leeway_root_runtime_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "custody_root_runtime_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.leeway-custody",
+    "rule":  "Absolute drive paths are runtime facts, not custody authority.",
+    "logical_tokens":  {
+                           "LEEWAY_ROOT":  "{LEEWAY_ROOT}",
+                           "CUSTODY_ROOT":  "{LEEWAY_ROOT}\\.leeway-custody",
+                           "DEVICE_LAYER":  "{LEEWAY_ROOT}\\AgentLee-Device-Layer",
+                           "SYSTEM_SCRIPTS":  "{LEEWAY_ROOT}\\Leeway-System-PowerShell-Scripts",
+                           "RUNTIME_FABRIC":  "{LEEWAY_ROOT}\\Leeway Runtime Fabric",
+                           "STANDARDS_ROOT":  "{LEEWAY_ROOT}\\Leeway Standards"
+                       },
+    "safety":  {
+                   "recursive_scan_performed":  false,
+                   "patch_performed":  false,
+                   "build_performed":  false,
+                   "install_performed":  false,
+                   "post_performed":  false,
+                   "browser_open_performed":  false,
+                   "sandbox_action_performed":  false,
+                   "real_action_performed":  false
+               }
+}

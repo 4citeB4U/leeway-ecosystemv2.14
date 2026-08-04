@@ -1,0 +1,20 @@
+{
+  "apply_steps": [],
+  "title": "",
+  "affected_containers": [],
+  "rollback_steps": [],
+  "risk": "low|medium|high|critical",
+  "approval_required": true,
+  "scope": "laser|lane|regional|system|governance|model",
+  "validation_steps": [],
+  "affected_images": [],
+  "backup_plan": [],
+  "desired_change": "",
+  "success_definition": [],
+  "update_id": "UPDATE-YYYYMMDD-HHMMSS",
+  "receipt_path": "",
+  "affected_files": [],
+  "current_truth": {},
+  "affected_lanes": [],
+  "requested_by": ""
+}

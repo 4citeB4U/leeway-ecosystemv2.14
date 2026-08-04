@@ -1,0 +1,354 @@
+---
+title: LeeWay Ecosystem Map
+---
+graph TB
+  %% Category style definitions
+  classDef standards fill:#1E3A8A,color:#FFFFFF,stroke:#3B82F6,stroke-width:2px
+  classDef fabric-layer fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef runtime fill:#064E3B,color:#FFFFFF,stroke:#10B981,stroke-width:2px
+  classDef knowledge fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef provider fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef presentation fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef ide fill:#1E40AF,color:#FFFFFF,stroke:#3B82F6,stroke-width:2px
+  classDef agent fill:#4C1D95,color:#FFFFFF,stroke:#8B5CF6,stroke-width:2px
+  classDef engine fill:#0F766E,color:#FFFFFF,stroke:#14B8A6,stroke-width:2px
+  classDef contract fill:#1E3A5F,color:#FFFFFF,stroke:#60A5FA,stroke-width:1px
+  classDef tool fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef gateway fill:#78350F,color:#FFFFFF,stroke:#F59E0B,stroke-width:2px
+  classDef archive fill:#451A03,color:#FFFFFF,stroke:#F97316,stroke-width:1px
+  classDef migration fill:#14532D,color:#FFFFFF,stroke:#22C55E,stroke-width:1px
+  classDef api-route fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef model fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+  classDef document fill:#374151,color:#FFFFFF,stroke:#6B7280,stroke-width:1px
+
+  %% Status color definitions
+  classDef status-END-TO-END-VALIDATED fill:#166534,color:#FFFFFF
+  classDef status-DEFINED fill:#6B7280,color:#FFFFFF
+  classDef status-CONFIGURED fill:#818CF8,color:#FFFFFF
+  classDef status-LIVE-READ-ONLY fill:#22C55E,color:#FFFFFF
+  classDef status-MOCK-VALIDATED fill:#60A5FA,color:#FFFFFF
+
+  %% Root-level nodes
+  leeway-standards(LeeWay Standards\n[END_TO_END_VALIDATED]\nstandards)
+  runtime-fabric(Runtime Fabric (Orchestrator)\n[LIVE_READ_ONLY]\nruntime)
+  knowledge-fabric(Knowledge Fabric\n[DEFINED]\nknowledge)
+  presentation-fabric(Presentation Fabric\n[DEFINED]\npresentation)
+  leeway-ide(LeeWay IDE Single Canvas\n[DEFINED]\nide)
+  agent-lee-code-mode(Agent Lee Code Mode\n[LIVE_READ_ONLY]\nagent)
+  n8n-workflow(n8n Workflow Engine\n[LIVE_READ_ONLY]\nengine)
+  hybrid-fabric(Hybrid Fabric\n[LIVE_READ_ONLY]\nruntime)
+  agent-center(Agent Center\n[LIVE_READ_ONLY]\nruntime)
+  mcp-center(MCP Center\n[LIVE_READ_ONLY]\nruntime)
+  mcp-agent-center(MCP Agent Center\n[LIVE_READ_ONLY]\nruntime)
+  worker-center(Worker Center\n[LIVE_READ_ONLY]\nruntime)
+  ollama-model-fabric(Ollama Model Fabric\n[LIVE_READ_ONLY]\nruntime)
+  api-gateway(API Gateway\n[LIVE_READ_ONLY]\ngateway)
+  context-gateway(Context Gateway\n[LIVE_READ_ONLY]\ngateway)
+  desktop-runtime(Desktop Runtime\n[LIVE_READ_ONLY]\nruntime)
+  device-operator(Device Operator\n[LIVE_READ_ONLY]\nruntime)
+  seafile-storage(SeaFile Storage Gateway\n[LIVE_READ_ONLY]\ngateway)
+  jitsi-meet(Jitsi Meet Video Conferencing\n[LIVE_READ_ONLY]\nruntime)
+  cerebral(Cerebral State Service\n[CONFIGURED]\nruntime)
+  archive-data(Archive Data Store\n[LIVE_READ_ONLY]\narchive)
+  business-runtimes(Business Domain Runtimes\n[LIVE_READ_ONLY]\nruntime)
+  triposr-system(TripoSR 3D Reconstruction\n[LIVE_READ_ONLY]\nruntime)
+  telegram-shell(Agent Lee Telegram Shell\n[LIVE_READ_ONLY]\nagent)
+  executive-runtime(Executive Runtime\n[LIVE_READ_ONLY]\nruntime)
+  skill-router(Skill Router\n[LIVE_READ_ONLY]\nruntime)
+  agent-skills(Agent Skills Service\n[LIVE_READ_ONLY]\nruntime)
+  master-publisher-runtime(Master Publisher Runtime\n[LIVE_READ_ONLY]\nengine)
+  api-route-api-leeway-device-local-status(API Route api/leeway/device/local/status\n[DEFINED]\napi-route)
+  api-route-api-leeway-device-wsl-start(API Route api/leeway/device/wsl/start\n[DEFINED]\napi-route)
+  api-route-api-leeway-device-wsl-status(API Route api/leeway/device/wsl/status\n[DEFINED]\napi-route)
+  api-route-api-leeway-graph-data(API Route api/leeway/graph-data\n[DEFINED]\napi-route)
+  api-route-api-leeway-local-status(API Route api/leeway/local-status\n[DEFINED]\napi-route)
+  api-route-api-leeway-local-voice-agent-lee-capture(API Route api/leeway/local-voice/agent-lee-capture\n[DEFINED]\napi-route)
+  api-route-api-leeway-map-data(API Route api/leeway/map-data\n[DEFINED]\napi-route)
+  api-route-api-leeway-master-publisher-path(API Route api/leeway/master-publisher/[...path]\n[DEFINED]\napi-route)
+  api-route-api-leeway-open-notebook-health(API Route api/leeway/open-notebook/health\n[DEFINED]\napi-route)
+  api-route-api-leeway-open-notebook-invoke(API Route api/leeway/open-notebook/invoke\n[DEFINED]\napi-route)
+  api-route-api-leeway-open-notebook-openapi(API Route api/leeway/open-notebook/openapi\n[DEFINED]\napi-route)
+  api-route-api-leeway-open-notebook-routes(API Route api/leeway/open-notebook/routes\n[DEFINED]\napi-route)
+  api-route-api-leeway-runtime-fabric-agent-chat(API Route api/leeway/runtime-fabric/agent-chat\n[DEFINED]\napi-route)
+  api-route-api-leeway-runtime-fabric-config(API Route api/leeway/runtime-fabric/config\n[DEFINED]\napi-route)
+  api-route-api-leeway-runtime-fabric-health(API Route api/leeway/runtime-fabric/health\n[DEFINED]\napi-route)
+  api-route-api-leeway-runtime-fabric-path(API Route api/leeway/runtime-fabric/[...path]\n[DEFINED]\napi-route)
+  model-qwen2-5-coder-7b(Model qwen2.5-coder:7b\n[DEFINED]\nmodel)
+  doc-constitution(LeeWay Constitution Law (BOOK-01)\n[DEFINED]\ndocument)
+  doc-book-company-authority(Company Authority Law (BOOK-02)\n[DEFINED]\ndocument)
+  doc-book-runtime-authority(Runtime Authority Law (BOOK-03)\n[DEFINED]\ndocument)
+  doc-book-agent-law(Agent Law (BOOK-09)\n[DEFINED]\ndocument)
+  doc-book-telemetry-receipts(Telemetry Receipts Evidence Law (BOOK-14)\n[DEFINED]\ndocument)
+  doc-book-gates-validation(Gates Validation Law (BOOK-15)\n[DEFINED]\ndocument)
+  doc-book-runtime-readiness(Runtime Readiness Law (BOOK-25)\n[DEFINED]\ndocument)
+  doc-training-book(LeeWay Standards 2-Week Training Book\n[DEFINED]\ndocument)
+  doc-standards-readme(LeeWay Standards README\n[DEFINED]\ndocument)
+  doc-standards-activate(LeeWay Standards Activation Guide\n[DEFINED]\ndocument)
+  doc-contract-proof-first(Proof-First Readiness Contract\n[DEFINED]\ndocument)
+  doc-contract-no-pass-without-proof(No Pass Without Proof Contract\n[DEFINED]\ndocument)
+  doc-contract-absolute-proof(Absolute Proof and No False Completion Law\n[DEFINED]\ndocument)
+  doc-contract-proof-or-blocker(Proof or Blocker Contract\n[DEFINED]\ndocument)
+  doc-contract-owner-identity(Agent Lee Owner Identity Contract\n[DEFINED]\ndocument)
+  doc-contract-live-embodiment(Agent Lee Live Embodiment Contract\n[DEFINED]\ndocument)
+
+  %% Migration chain
+  mig-001(MIG-001 Foundation\n[END_TO_END_VALIDATED])
+  mig-002(MIG-002 Host Platform\n[END_TO_END_VALIDATED])
+  mig-002b(MIG-002B Living Architecture Map\n[END_TO_END_VALIDATED])
+  mig-003(MIG-003 Module Framework\n[END_TO_END_VALIDATED])
+  mig-004(MIG-004 Runtime Contract\n[END_TO_END_VALIDATED])
+  mig-005(MIG-005 Code Engine\n[END_TO_END_VALIDATED])
+  mig-005a(MIG-005A Engineering Toolchain\n[END_TO_END_VALIDATED])
+  mig-006a(MIG-006A Workflow Engine\n[END_TO_END_VALIDATED])
+  mig-006b(MIG-006B Workflow Validation\n[END_TO_END_VALIDATED])
+  mig-006b1(MIG-006B1 n8n Provisioning\n[END_TO_END_VALIDATED])
+  mig-006b1r(MIG-006B1R Secret Rotation\n[END_TO_END_VALIDATED])
+  mig-006b2(MIG-006B2 Live Adapter\n[END_TO_END_VALIDATED])
+  mig-006c(MIG-006C Bounded Execution\n[DEFINED])
+  mig-002c(MIG-002C Knowledge Fabric + Interactive Graph\n[END_TO_END_VALIDATED])
+  master-publisher-r2-phases-9-10(MP R2 Phases 9-10: Research & Links\n[END_TO_END_VALIDATED])
+  master-publisher-r2-phase11(MP R2 Phase 11: IDE Integration\n[END_TO_END_VALIDATED])
+  master-publisher-r2-phase13(MP R2 Phase 13: Security Fabric\n[END_TO_END_VALIDATED])
+  master-publisher-r2-phase14(MP R2 Phase 14: Docker Classification\n[END_TO_END_VALIDATED])
+
+  %% Relationships
+  leeway-standards ===>|governs| runtime-fabric
+  leeway-standards ===>|governs| agent-lee-code-mode
+  leeway-standards ===>|governs| leeway-ide
+  runtime-fabric ===>|contains| runtime-fabric-layer1
+  runtime-fabric ===>|contains| runtime-fabric-layer2
+  runtime-fabric ===>|contains| runtime-fabric-layer3
+  runtime-fabric ===>|contains| runtime-fabric-layer4
+  runtime-fabric ===>|contains| runtime-fabric-layer5
+  runtime-fabric ===>|contains| runtime-fabric-layer6
+  runtime-fabric ===>|contains| runtime-fabric-layer7
+  runtime-fabric ===>|contains| runtime-fabric-layer8
+  runtime-fabric ===>|contains| runtime-fabric-layer9
+  runtime-fabric ===>|contains| runtime-fabric-layer10
+  runtime-fabric ===>|contains| runtime-fabric-layer11
+  runtime-fabric ===>|contains| runtime-fabric-layer12
+  runtime-fabric ===>|contains| runtime-fabric-layer13
+  runtime-fabric ===>|contains| runtime-fabric-layer14
+  runtime-fabric ===>|contains| runtime-fabric-layer15
+  knowledge-fabric ===>|contains| knowledge-fabric-source-graph
+  knowledge-fabric ===>|contains| knowledge-fabric-runtime-graph
+  knowledge-fabric ===>|contains| knowledge-fabric-migration-graph
+  knowledge-fabric ===>|contains| knowledge-fabric-documentation-graph
+  knowledge-fabric ===>|contains| knowledge-fabric-vector-index
+  knowledge-fabric ===>|contains| knowledge-fabric-graph-query-engine
+  knowledge-fabric ===>|contains| knowledge-fabric-evidence-graph
+  knowledge-fabric ===>|contains| knowledge-fabric-capability-graph
+  knowledge-fabric ===>|feeds| presentation-fabric
+  presentation-fabric ===>|contains| presentation-fabric-interactive-graph
+  presentation-fabric ===>|contains| presentation-fabric-multi-view
+  presentation-fabric ===>|contains| presentation-fabric-time-machine
+  graphify-provider ===>|feeds| knowledge-fabric-source-graph
+  docker-discovery-provider ===>|feeds| knowledge-fabric-runtime-graph
+  migration-engine-provider ===>|feeds| knowledge-fabric-migration-graph
+  runtime-fabric-provider ===>|feeds| knowledge-fabric-runtime-graph
+  runtime-fabric ===>|serves| knowledge-fabric
+  agent-lee-code-mode ===>|uses| presentation-fabric
+  leeway-ide ===>|uses| knowledge-fabric
+  leeway-ide ===>|uses| presentation-fabric
+  runtime-fabric-provider <===>|monitors| runtime-fabric
+  runtime-fabric-layer1 ===>|feeds| runtime-fabric-layer2
+  runtime-fabric-layer2 ===>|feeds| runtime-fabric-layer3
+  runtime-fabric-layer3 ===>|feeds| runtime-fabric-layer4
+  runtime-fabric-layer5 ===>|feeds| runtime-fabric-layer6
+  runtime-fabric-layer4 ===>|feeds| runtime-fabric-layer6
+  runtime-fabric-layer6 ===>|feeds| runtime-fabric-layer7
+  runtime-fabric-layer11 ===>|feeds| runtime-fabric-layer12
+  mig-001 ===>|triggers| mig-002
+  mig-002 ===>|triggers| mig-003
+  mig-003 ===>|triggers| mig-004
+  mig-004 ===>|triggers| mig-005
+  mig-005 ===>|triggers| mig-005a
+  mig-005a ===>|triggers| mig-006a
+  mig-006a ===>|triggers| mig-006b
+  mig-006b ===>|triggers| mig-006b1
+  mig-006b1 ===>|triggers| mig-006b1r
+  mig-006b1r ===>|triggers| mig-006b2
+  mig-002b <===>|parallel-to| mig-002
+  mig-002b ===>|precedes| mig-002c
+  mig-002c ===>|precedes| mig-006c
+  leeway-standards ===>|governs| master-publisher-runtime
+  master-publisher-runtime ===>|uses| ollama-model-fabric
+  master-publisher-runtime ===>|uses| runtime-fabric
+  leeway-ide ===>|uses| master-publisher-runtime
+  master-publisher-runtime <===>|connects| business-runtimes
+  mig-002c ===>|precedes| master-publisher-r2-phases-9-10
+  master-publisher-r2-phases-9-10 ===>|triggers| master-publisher-r2-phase11
+  master-publisher-r2-phase11 ===>|triggers| master-publisher-r2-phase13
+  master-publisher-r2-phase13 ===>|triggers| master-publisher-r2-phase14
+  leeway-ide ===>|contains| api-route-api-leeway-device-local-status
+  leeway-ide ===>|contains| api-route-api-leeway-device-wsl-start
+  leeway-ide ===>|contains| api-route-api-leeway-device-wsl-status
+  leeway-ide ===>|contains| api-route-api-leeway-graph-data
+  leeway-ide ===>|contains| api-route-api-leeway-local-status
+  leeway-ide ===>|contains| api-route-api-leeway-local-voice-agent-lee-capture
+  leeway-ide ===>|contains| api-route-api-leeway-map-data
+  leeway-ide ===>|contains| api-route-api-leeway-master-publisher-path
+  leeway-ide ===>|contains| api-route-api-leeway-open-notebook-health
+  leeway-ide ===>|contains| api-route-api-leeway-open-notebook-invoke
+  leeway-ide ===>|contains| api-route-api-leeway-open-notebook-openapi
+  leeway-ide ===>|contains| api-route-api-leeway-open-notebook-routes
+  leeway-ide ===>|contains| api-route-api-leeway-runtime-fabric-agent-chat
+  leeway-ide ===>|contains| api-route-api-leeway-runtime-fabric-config
+  leeway-ide ===>|contains| api-route-api-leeway-runtime-fabric-health
+  leeway-ide ===>|contains| api-route-api-leeway-runtime-fabric-path
+  master-publisher-runtime <===>|connects| business-runtimes
+  ollama-model-fabric ===>|contains| model-qwen2-5-coder-7b
+  knowledge-fabric-documentation-graph ===>|contains| doc-constitution
+  leeway-standards ===>|governs| doc-constitution
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-company-authority
+  leeway-standards ===>|governs| doc-book-company-authority
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-runtime-authority
+  leeway-standards ===>|governs| doc-book-runtime-authority
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-agent-law
+  leeway-standards ===>|governs| doc-book-agent-law
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-telemetry-receipts
+  leeway-standards ===>|governs| doc-book-telemetry-receipts
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-gates-validation
+  leeway-standards ===>|governs| doc-book-gates-validation
+  knowledge-fabric-documentation-graph ===>|contains| doc-book-runtime-readiness
+  leeway-standards ===>|governs| doc-book-runtime-readiness
+  knowledge-fabric-documentation-graph ===>|contains| doc-training-book
+  leeway-standards ===>|governs| doc-training-book
+  knowledge-fabric-documentation-graph ===>|contains| doc-standards-readme
+  leeway-standards ===>|governs| doc-standards-readme
+  knowledge-fabric-documentation-graph ===>|contains| doc-standards-activate
+  leeway-standards ===>|governs| doc-standards-activate
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-proof-first
+  leeway-standards ===>|governs| doc-contract-proof-first
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-no-pass-without-proof
+  leeway-standards ===>|governs| doc-contract-no-pass-without-proof
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-absolute-proof
+  leeway-standards ===>|governs| doc-contract-absolute-proof
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-proof-or-blocker
+  leeway-standards ===>|governs| doc-contract-proof-or-blocker
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-owner-identity
+  leeway-standards ===>|governs| doc-contract-owner-identity
+  knowledge-fabric-documentation-graph ===>|contains| doc-contract-live-embodiment
+  leeway-standards ===>|governs| doc-contract-live-embodiment
+
+  %% Apply category styles
+  class leeway-standards standards;
+  class runtime-fabric-layer1 fabric-layer;
+  class runtime-fabric-layer2 fabric-layer;
+  class runtime-fabric-layer3 fabric-layer;
+  class runtime-fabric-layer4 fabric-layer;
+  class runtime-fabric-layer5 fabric-layer;
+  class runtime-fabric-layer6 fabric-layer;
+  class runtime-fabric-layer7 fabric-layer;
+  class runtime-fabric-layer8 fabric-layer;
+  class runtime-fabric-layer9 fabric-layer;
+  class runtime-fabric-layer10 fabric-layer;
+  class runtime-fabric-layer11 fabric-layer;
+  class runtime-fabric-layer12 fabric-layer;
+  class runtime-fabric-layer13 fabric-layer;
+  class runtime-fabric-layer14 fabric-layer;
+  class runtime-fabric-layer15 fabric-layer;
+  class runtime-fabric runtime;
+  class knowledge-fabric knowledge;
+  class knowledge-fabric-source-graph knowledge;
+  class knowledge-fabric-runtime-graph knowledge;
+  class knowledge-fabric-migration-graph knowledge;
+  class knowledge-fabric-documentation-graph knowledge;
+  class knowledge-fabric-vector-index knowledge;
+  class knowledge-fabric-graph-query-engine knowledge;
+  class knowledge-fabric-evidence-graph knowledge;
+  class knowledge-fabric-capability-graph knowledge;
+  class graphify-provider provider;
+  class docker-discovery-provider provider;
+  class migration-engine-provider provider;
+  class runtime-fabric-provider provider;
+  class presentation-fabric presentation;
+  class presentation-fabric-interactive-graph presentation;
+  class presentation-fabric-multi-view presentation;
+  class presentation-fabric-time-machine presentation;
+  class leeway-ide ide;
+  class agent-lee-code-mode agent;
+  class n8n-workflow engine;
+  class code-engine-contract contract;
+  class module-framework contract;
+  class runtime-contract contract;
+  class workflow-engine-contract contract;
+  class opencode-engineering-toolchain tool;
+  class hybrid-fabric runtime;
+  class agent-center runtime;
+  class mcp-center runtime;
+  class mcp-agent-center runtime;
+  class worker-center runtime;
+  class ollama-model-fabric runtime;
+  class api-gateway gateway;
+  class context-gateway gateway;
+  class desktop-runtime runtime;
+  class device-operator runtime;
+  class ears-kernel agent;
+  class voice-kernel agent;
+  class vision-kernel agent;
+  class local-assistant-bridge agent;
+  class seafile-storage gateway;
+  class jitsi-meet runtime;
+  class cerebral runtime;
+  class archive-data archive;
+  class business-runtimes runtime;
+  class triposr-system runtime;
+  class telegram-shell agent;
+  class executive-runtime runtime;
+  class skill-router runtime;
+  class agent-skills runtime;
+  class opencode-skills tool;
+  class opencode-mcp-servers tool;
+  class mig-001 migration;
+  class mig-002 migration;
+  class mig-002b migration;
+  class mig-003 migration;
+  class mig-004 migration;
+  class mig-005 migration;
+  class mig-005a migration;
+  class mig-006a migration;
+  class mig-006b migration;
+  class mig-006b1 migration;
+  class mig-006b1r migration;
+  class mig-006b2 migration;
+  class mig-006c migration;
+  class mig-002c migration;
+  class master-publisher-runtime engine;
+  class master-publisher-r2-phases-9-10 migration;
+  class master-publisher-r2-phase11 migration;
+  class master-publisher-r2-phase13 migration;
+  class master-publisher-r2-phase14 migration;
+  class api-route-api-leeway-device-local-status api-route;
+  class api-route-api-leeway-device-wsl-start api-route;
+  class api-route-api-leeway-device-wsl-status api-route;
+  class api-route-api-leeway-graph-data api-route;
+  class api-route-api-leeway-local-status api-route;
+  class api-route-api-leeway-local-voice-agent-lee-capture api-route;
+  class api-route-api-leeway-map-data api-route;
+  class api-route-api-leeway-master-publisher-path api-route;
+  class api-route-api-leeway-open-notebook-health api-route;
+  class api-route-api-leeway-open-notebook-invoke api-route;
+  class api-route-api-leeway-open-notebook-openapi api-route;
+  class api-route-api-leeway-open-notebook-routes api-route;
+  class api-route-api-leeway-runtime-fabric-agent-chat api-route;
+  class api-route-api-leeway-runtime-fabric-config api-route;
+  class api-route-api-leeway-runtime-fabric-health api-route;
+  class api-route-api-leeway-runtime-fabric-path api-route;
+  class model-qwen2-5-coder-7b model;
+  class doc-constitution document;
+  class doc-book-company-authority document;
+  class doc-book-runtime-authority document;
+  class doc-book-agent-law document;
+  class doc-book-telemetry-receipts document;
+  class doc-book-gates-validation document;
+  class doc-book-runtime-readiness document;
+  class doc-training-book document;
+  class doc-standards-readme document;
+  class doc-standards-activate document;
+  class doc-contract-proof-first document;
+  class doc-contract-no-pass-without-proof document;
+  class doc-contract-absolute-proof document;
+  class doc-contract-proof-or-blocker document;
+  class doc-contract-owner-identity document;
+  class doc-contract-live-embodiment document;

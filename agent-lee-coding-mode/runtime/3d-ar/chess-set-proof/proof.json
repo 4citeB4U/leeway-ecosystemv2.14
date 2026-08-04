@@ -1,0 +1,58 @@
+{
+  "proofId": "3d-chess-proof-mqa2id8p-0c08ecc3",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "pipelineStatus": "AR_3D_PIPELINE_PARTIAL",
+  "projectRoot": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof",
+  "manifestPath": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof/project.manifest.json",
+  "scenePath": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof/scene.json",
+  "rulesPath": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof/rules/chess-rules.stub.mjs",
+  "evidencePath": "agent-lee-coding-mode/runtime/3d-ar/chess-set-proof/evidence/research.json",
+  "missingBackends": [
+    "glTF/GLB exporter",
+    "mesh baking pipeline",
+    "AR device preview"
+  ],
+  "browserResearch": {
+    "ok": true,
+    "status": 200,
+    "data": {
+      "ok": true,
+      "tool": "browser.visible.search",
+      "stage": "complete",
+      "query": "Create a 3D chess set concept with multiple selectable themed piece families.",
+      "monitorIndex": 1,
+      "runRoot": "e:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781216725702",
+      "monitor": {
+        "index": 1,
+        "x": 1080,
+        "y": 0,
+        "width": 1707,
+        "height": 1067
+      },
+      "screenshot": "e:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781216725702\\screenshots\\agent-lee-search-Create_a_3D_chess_set_concept_with_multiple_selectable_theme-1781216816127.png",
+      "openedScreenshot": false,
+      "previewPath": "e:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781216725702\\screenshots\\agent-lee-search-Create_a_3D_chess_set_concept_with_multiple_selectable_theme-1781216816127.png",
+      "previewOpenAttempted": false,
+      "previewOpenSkippedReason": "preview disabled",
+      "url": "https://www.bing.com/search?q=Create+a+3D+chess+set+concept+with+multiple+selectable+themed+piece+families.&form=QBLH&sp=-1&ghc=1&lq=0&pq=create+a+3d+chess+set+concept+with+multiple+selectable+themed+piece+families.&sc=0-77&qs=n&sk=&cvid=841CA06CE1584D51B092F73ADB247D59",
+      "title": "Create a 3D chess set concept with multiple selectable themed piece families. - Search",
+      "narration": [
+        "I am opening Microsoft Edge now.",
+        "I am loading Bing so I can search the web.",
+        "I am looking for the search box.",
+        "I found the search box. I am moving my cursor to it.",
+        "I am typing this search query: Create a 3D chess set concept with multiple selectable themed piece families.",
+        "I am pressing Enter to run the search.",
+        "I am waiting for the search results to load.",
+        "The search results are loaded. I am pausing so you can see the page.",
+        "I am capturing a screenshot as proof of what I did.",
+        "Web search complete. I opened the browser, moved my cursor, typed the query, searched the web, and captured proof."
+      ],
+      "error": "",
+      "openScreenshotSkipped": true,
+      "exitCode": 0,
+      "stderr": ""
+    },
+    "raw": "{\"ok\":true,\"tool\":\"browser.visible.search\",\"stage\":\"complete\",\"query\":\"Create a 3D chess set concept with multiple selectable themed piece families.\",\"monitorIndex\":1,\"runRoot\":\"e:\\\\.LeeWay-Produucts-File\\\\Leeway-Ecosystem v2.1.4\\\\agent-lee-coding-mode\\\\desktop-runtime\\\\runs\\\\web-search-1781216725702\",\"monitor\":{\"index\":1,\"x\":1080,\"y\":0,\"width\":1707,\"height\":1067},\"screenshot\":\"e:\\\\.LeeWay-Produucts-File\\\\Leeway-Ecosystem v2.1.4\\\\agent-lee-coding-mode\\\\desktop-runtime\\\\runs\\\\web-search-1781216725702\\\\screenshots\\\\agent-lee-search-Create_a_3D_chess_set_concept_with_multiple_selectable_theme-1781216816127.png\",\"openedScreenshot\":false,\"previewPath\":\"e:\\\\.LeeWay-Produucts-File\\\\Leeway-Ecosystem v2.1.4\\\\agent-lee-coding-mode\\\\desktop-runtime\\\\runs\\\\web-search-1781216725702\\\\screenshots\\\\agent-lee-search-Create_a_3D_chess_set_concept_with_multiple_selectable_theme-1781216816127.png\",\"previewOpenAttempted\":false,\"previewOpenSkippedReason\":\"preview disabled\",\"url\":\"https://www.bing.com/search?q=Create+a+3D+chess+set+concept+with+multiple+selectable+themed+piece+families.&form=QBLH&sp=-1&ghc=1&lq=0&pq=create+a+3d+chess+set+concept+with+multiple+selectable+themed+piece+families.&sc=0-77&qs=n&sk=&cvid=841CA06CE1584D51B092F73ADB247D59\",\"title\":\"Create a 3D chess set concept with multiple selectable themed piece families. - Search\",\"narration\":[\"I am opening Microsoft Edge now.\",\"I am loading Bing so I can search the web.\",\"I am looking for the search box.\",\"I found the search box. I am moving my cursor to it.\",\"I am typing this search query: Create a 3D chess set concept with multiple selectable themed piece families.\",\"I am pressing Enter to run the search.\",\"I am waiting for the search results to load.\",\"The search results are loaded. I am pausing so you can see the page.\",\"I am capturing a screenshot as proof of what I did.\",\"Web search complete. I opened the browser, moved my cursor, typed the query, searched the web, and captured proof.\"],\"error\":\"\",\"openScreenshotSkipped\":true,\"exitCode\":0,\"stderr\":\"\"}"
+  }
+}

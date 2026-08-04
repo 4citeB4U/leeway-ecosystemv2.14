@@ -1,0 +1,29 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_READ_ONLY_ROUTE_REQUIREMENT_221",
+    "timestamp":  "2026-07-05T21:16:42",
+    "family":  "printers",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_GLOBAL_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/printers/status",
+                                         "purpose":  "Return printer family readiness, discovered count, registry path, control disabled, approval required for print.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/printers/registry",
+                                         "purpose":  "Return normalized printer registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no print jobs",
+                      "no driver changes",
+                      "no default printer change",
+                      "no spooler mutation",
+                      "no physical action"
+                  ]
+}

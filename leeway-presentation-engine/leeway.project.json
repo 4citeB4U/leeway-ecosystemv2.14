@@ -1,0 +1,71 @@
+{
+  "projectId": "LEEWAY_PROJECT::PRESENTATION_ENGINE",
+  "displayName": "LeeWay Presentation Engine",
+  "company": "Leeway Industries",
+  "department": "Leeway Innovations",
+  "creatorDeveloper": "Leonard Lee",
+  "role": "GOVERNED_PROJECTION",
+  "runtimeClassification": "FABRIC_CLIENT_APP",
+  "status": "ACTIVE",
+  "sovereigntyLineage": {
+    "standards": "LEEWAY_PROJECT::LEEWAY_STANDARDS",
+    "runtime": "LEEWAY_PROJECT::LEEWAY_VSCODE_RUNTIME",
+    "manifestedBy": "LEEWAY_ENTITY::AGENT_LEE"
+  },
+  "standardsAuthority": {
+    "root": "../LeeWay-Standards",
+    "mode": "canonical-sibling-root",
+    "embeddedStandardsAllowed": false,
+    "vendoredGovernanceAllowed": false
+  },
+  "runtimeAuthority": {
+    "root": "../.leeway-vscode",
+    "name": "Leeway Bridge Runtime",
+    "mode": "canonical-runtime-host"
+  },
+  "archivePolicy": {
+    "root": "../Archive"
+  },
+  "evidence": {
+    "reportsPath": "reports",
+    "receiptsPath": "receipts",
+    "lastProjectionGateReceipt": "receipts/presentation-proof.receipt.json"
+  },
+  "publicSurface": {
+    "exists": true,
+    "path": "./",
+    "entry": "index.html"
+  },
+  "operatingSurfaces": {
+    "publicUi": true,
+    "administrativePortal": false,
+    "reportsSurface": "reports",
+    "receiptsSurface": "receipts",
+    "supportUpdateSurface": "README.md"
+  },
+  "manifestSurfaces": {
+    "presentation": "leeway.presentation.manifest.json",
+    "monetizationNarration": "../agent-lee-coding-mode/runtime/agent-lee-monetization-narration-mode.json"
+  },
+  "compliancePercentage": 100,
+  "capabilities": {
+    "declared": [
+      "presentation-engine",
+      "presentation-launch",
+      "presentation-proof",
+      "monetization-narration"
+    ],
+    "live": [
+      "presentation-engine",
+      "presentation-launch",
+      "presentation-proof",
+      "monetization-narration"
+    ],
+    "reserved": [],
+    "blocked": []
+  },
+  "lawReferences": [
+    "BOOK-17-WORKSPACE-PROJECTION-CONTRACT",
+    "BOOK-40-PUBLIC-UI-ADMIN-UI-REQUIREMENT-LAW"
+  ]
+}

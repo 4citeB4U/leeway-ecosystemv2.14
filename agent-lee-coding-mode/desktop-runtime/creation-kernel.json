@@ -1,0 +1,19 @@
+{
+    "schema":  "agent-lee-creation-kernel-config-v3",
+    "createdAt":  "2026-06-27T23:40:12.9734761Z",
+    "status":  "READY",
+    "containerName":  "agent-lee-creation-kernel",
+    "baseUrl":  "http://127.0.0.1:8094",
+    "healthUrl":  "http://127.0.0.1:8094/health",
+    "statusUrl":  "http://127.0.0.1:8094/status",
+    "imageGenerateUrl":  "http://127.0.0.1:8094/image/generate",
+    "generateAliasUrl":  "http://127.0.0.1:8094/generate",
+    "modelId":  "stabilityai/sdxl-turbo",
+    "deviceMode":  "auto",
+    "optimizationProfile":  "PI_SAFE",
+    "outputCopyMethod":  "docker cp agent-lee-creation-kernel:/outputs/\u003cfile\u003e \u003chost-proof-path\u003e",
+    "volumeMode":  "docker_named_volumes",
+    "role":  "Agent Lee real image creation hands lane",
+    "qwen3VlRole":  "Vision and director lane. It writes or improves prompts. It is not the pixel generator.",
+    "truth":  "Agent Lee should call 8094 for real image generation. No placeholder image should be marked READY."
+}

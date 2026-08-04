@@ -1,0 +1,1230 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_FRONTEND_TARGET_RECONCILIATION_272B",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:32:14",
+    "original_272_frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+    "original_272_app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+    "mismatch_detected":  true,
+    "resolved_frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "resolved_package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\package.json",
+    "resolved_app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+    "resolved_component_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components",
+    "resolved_lib_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib",
+    "resolved_component_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceLayerCapabilityPanel.tsx",
+    "resolved_api_client_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceLayerCapabilityClient.ts",
+    "colocated":  true,
+    "app_page_under_frontend_root":  true,
+    "package_candidates":  [
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+                                   "name":  "agent-lee-coding-mode",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start",
+                                                   "health"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-agent-center\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-agent-center",
+                                   "name":  "leeway-capability-center-runtime",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-agent-center\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-agent-center",
+                                   "name":  "leeway-capability-center-runtime",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-center\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-mcp-center",
+                                   "name":  "leeway-capability-center-runtime",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-worker-center\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\build-worker-center",
+                                   "name":  "leeway-capability-center-runtime",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\center-service\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\capability-center-runtime-v23\\center-service",
+                                   "name":  "leeway-capability-center-runtime",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\media-ingestion-runtime-v24-1\\build-media-ingestion-layer\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\media-ingestion-runtime-v24-1\\build-media-ingestion-layer",
+                                   "name":  "leeway-media-ingestion-layer",
+                                   "score":  10,
+                                   "scripts":  [
+                                                   "start",
+                                                   "dev"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+                                                  "has dev script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\media-router-runtime-v24-2\\build-media-router\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\media-router-runtime-v24-2\\build-media-router",
+                                   "name":  "leeway-media-router",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "start"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\AgentLeeDesktopRuntimeUI\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\AgentLeeDesktopRuntimeUI",
+                                   "name":  "agent-lee-desktop-runtime-ui",
+                                   "score":  45,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "build"
+                                               ],
+                                   "dependency_markers":  [
+                                                              "lucide-react",
+                                                              "react",
+                                                              "tailwindcss",
+                                                              "typescript"
+                                                          ],
+                                   "reason":  [
+                                                  "has react dependency",
+                                                  "has typescript dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral",
+                                   "name":  "",
+                                   "score":  0,
+                                   "scripts":  [
+
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\playwright\\driver\\package\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\playwright\\driver\\package",
+                                   "name":  "playwright-core",
+                                   "score":  0,
+                                   "scripts":  [
+
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.vite\\deps\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.vite\\deps",
+                                   "name":  "",
+                                   "score":  0,
+                                   "scripts":  [
+
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\agent-lee-os2\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\agent-lee-os2",
+                                   "name":  "leeway-innovations-app",
+                                   "score":  45,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "build",
+                                                   "preview",
+                                                   "clean",
+                                                   "lint",
+                                                   "desktop"
+                                               ],
+                                   "dependency_markers":  [
+                                                              "lucide-react",
+                                                              "react",
+                                                              "tailwindcss",
+                                                              "typescript"
+                                                          ],
+                                   "reason":  [
+                                                  "has react dependency",
+                                                  "has typescript dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                                   "name":  "digital-brain",
+                                   "score":  75,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "build",
+                                                   "start",
+                                                   "lint"
+                                               ],
+                                   "dependency_markers":  [
+                                                              "next",
+                                                              "react",
+                                                              "tailwindcss",
+                                                              "typescript"
+                                                          ],
+                                   "reason":  [
+                                                  "has next dependency",
+                                                  "has react dependency",
+                                                  "has typescript dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\vscode-mcp-tooling\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\vscode-mcp-tooling",
+                                   "name":  "vscode-mcp-tooling",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "testsprite",
+                                                   "playwright",
+                                                   "insforge",
+                                                   "stitch"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\core\\sea\\ui\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\core\\sea\\ui",
+                                   "name":  "sea-dashboard",
+                                   "score":  35,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "build",
+                                                   "preview",
+                                                   "lint"
+                                               ],
+                                   "dependency_markers":  "react",
+                                   "reason":  [
+                                                  "has react dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric",
+                                   "name":  "leeway-acf-book78-full-standard",
+                                   "score":  45,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "start:server",
+                                                   "build",
+                                                   "preview",
+                                                   "lint",
+                                                   "test:live",
+                                                   "test:augmentation",
+                                                   "test:real-device-hardening",
+                                                   "test:physical-device-intelligence",
+                                                   "test:hardware-intelligence",
+                                                   "test:hardware-archeology",
+                                                   "test:device-authority",
+                                                   "test:provider-fabric",
+                                                   "test:provider-readiness-gate",
+                                                   "test:provider-binding-audit",
+                                                   "test:provider-fallback",
+                                                   "test:deepseek-security-audit",
+                                                   "test:model-route-active-family",
+                                                   "test:lean-v2-model-council",
+                                                   "model:council:plan",
+                                                   "model:council:bootstrap:core",
+                                                   "model:council:bootstrap:creative",
+                                                   "model:council:test",
+                                                   "test:provider-lifecycle",
+                                                   "test:real-backend-repair",
+                                                   "validate:standards",
+                                                   "test:rigorous",
+                                                   "test:enterprise",
+                                                   "sentinel:prove",
+                                                   "cage:prove",
+                                                   "terminator:prove",
+                                                   "runtime:prove:governance",
+                                                   "fabric:verify:full",
+                                                   "fabric:prove",
+                                                   "fabric:prove:real-device",
+                                                   "fabric:prove:physical",
+                                                   "fabric:prove:providers",
+                                                   "fabric:prove:enterprise",
+                                                   "test:browser",
+                                                   "test:network",
+                                                   "test:gpu",
+                                                   "test:device",
+                                                   "test:iot",
+                                                   "test:security",
+                                                   "test:portability",
+                                                   "test:recovery",
+                                                   "test:agent-api",
+                                                   "test:production",
+                                                   "test:voice",
+                                                   "test:qwen",
+                                                   "test:model-gateway",
+                                                   "fabric:prove:model-gateway",
+                                                   "fabric:prove:backend-activation",
+                                                   "test:voice-qwen-loop",
+                                                   "test:vision-os",
+                                                   "test:qwen-vl",
+                                                   "test:vision-input",
+                                                   "test:vision-memory",
+                                                   "test:vision-context",
+                                                   "test:voice-vision-loop",
+                                                   "test:vision-benchmark",
+                                                   "test:streaming-voice-stack",
+                                                   "test:qwen3-asr",
+                                                   "test:qwen3-tts",
+                                                   "test:webrtc-voice-participant",
+                                                   "test:voice-interruption",
+                                                   "test:voice-cache",
+                                                   "fabric:prove:streaming-voice",
+                                                   "fabric:diagnose:streaming-voice",
+                                                   "fabric:prove:vision",
+                                                   "fabric:prove:voice",
+                                                   "fabric:prove:production",
+                                                   "backend:discover",
+                                                   "backend:health",
+                                                   "backend:report",
+                                                   "test:backend-activation",
+                                                   "test:backend-discovery",
+                                                   "test:backend-health",
+                                                   "test:backend-execution",
+                                                   "fabric:prove:backend-commands",
+                                                   "test:adapter-toy-execution",
+                                                   "fabric:diagnose:backend-plumbing",
+                                                   "test:humanlike-tts",
+                                                   "test:realtime-human-voice",
+                                                   "fabric:prove:agent-lee-human-voice",
+                                                   "test:cleanup-production",
+                                                   "test:asr-device",
+                                                   "test:mic-conversation",
+                                                   "test:agentic-loop",
+                                                   "test:orchestrator",
+                                                   "test:ros2-bridge",
+                                                   "test:edge-microros",
+                                                   "test:digital-twin",
+                                                   "test:memory-consolidation",
+                                                   "test:teacher-eyes",
+                                                   "test:sim-to-real",
+                                                   "test:physical-world-skills",
+                                                   "test:agentic-physical-world",
+                                                   "test:agent-lee-expression",
+                                                   "test:cross-lingual-expression",
+                                                   "test:agent-lee-entity-identity",
+                                                   "test:live-voice-output",
+                                                   "test:agent-lee-complete",
+                                                   "test:self-hosted-platform",
+                                                   "test:docker-self-hosted",
+                                                   "test:resource-governor",
+                                                   "test:model-workload-queue",
+                                                   "test:remote-worker",
+                                                   "test:profiled-runtime-boot",
+                                                   "test:existing-ui-self-hosted",
+                                                   "test:live-self-hosted-runtime",
+                                                   "fabric:prove:self-hosted-enterprise",
+                                                   "test:real-world-inventory",
+                                                   "test:automation-runtime",
+                                                   "test:creation-runtime",
+                                                   "test:image-creation",
+                                                   "test:video-creation",
+                                                   "test:ad-creation",
+                                                   "test:deployment-ownership",
+                                                   "fabric:prove:enterprise-runtimes",
+                                                   "fabric:prove:agentic-physical-world",
+                                                   "fabric:prove:agent-lee-full-sensory",
+                                                   "fabric:prove:agent-lee-complete",
+                                                   "deploy:runtime:github",
+                                                   "deploy:runtime:fly",
+                                                   "deploy:runtime:verify",
+                                                   "deploy:admin:github",
+                                                   "deploy:admin:fly",
+                                                   "deploy:admin:verify",
+                                                   "deploy:skills:prove",
+                                                   "deploy:simulation:prove",
+                                                   "deploy:prove:all",
+                                                   "docker:build",
+                                                   "docker:up",
+                                                   "docker:down",
+                                                   "docker:logs"
+                                               ],
+                                   "dependency_markers":  [
+                                                              "lucide-react",
+                                                              "react",
+                                                              "tailwindcss",
+                                                              "typescript"
+                                                          ],
+                                   "reason":  [
+                                                  "has react dependency",
+                                                  "has typescript dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\canbus\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\canbus",
+                                   "name":  "@leeway/canbus",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\cec\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\cec",
+                                   "name":  "@leeway/cec",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-device\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-device",
+                                   "name":  "leeway-edge-device",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "lint",
+                                                   "device:prove",
+                                                   "device:authority",
+                                                   "start",
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-gpu\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-gpu",
+                                   "name":  "leeway-edge-gpu",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "lint",
+                                                   "gpu:prove",
+                                                   "start",
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-iot\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-iot",
+                                   "name":  "leeway-edge-iot",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "lint",
+                                                   "iot:prove",
+                                                   "start",
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-rtc\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\edge-rtc",
+                                   "name":  "leeway-edge-rtc",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "lint",
+                                                   "rtc:prove",
+                                                   "stt:health",
+                                                   "start",
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\filesystem-access\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\filesystem-access",
+                                   "name":  "leeway-filesystem",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\hid\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\hid",
+                                   "name":  "@leeway/hid",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ipp-cups\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ipp-cups",
+                                   "name":  "@leeway/ipp-cups",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\mdns\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\mdns",
+                                   "name":  "@leeway/mdns",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\modbus\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\modbus",
+                                   "name":  "@leeway/modbus",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\nmea\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\nmea",
+                                   "name":  "@leeway/nmea",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-bluetooth\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-bluetooth",
+                                   "name":  "@leeway/node-bluetooth",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-serial\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-serial",
+                                   "name":  "@leeway/node-serial",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-usb\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\node-usb",
+                                   "name":  "@leeway/node-usb",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ptp-mtp\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ptp-mtp",
+                                   "name":  "@leeway/ptp-mtp",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\snmp\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\snmp",
+                                   "name":  "@leeway/snmp",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ssdp-upnp\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\ssdp-upnp",
+                                   "name":  "@leeway/ssdp-upnp",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\wasm\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\wasm",
+                                   "name":  "leeway-wasm",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webaudio\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webaudio",
+                                   "name":  "leeway-webaudio",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webauthn\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webauthn",
+                                   "name":  "leeway-webauthn",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webbluetooth\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webbluetooth",
+                                   "name":  "@leeway/webbluetooth",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webgpu\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webgpu",
+                                   "name":  "leeway-webgpu",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webnn\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webnn",
+                                   "name":  "leeway-webnn",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webrtc\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webrtc",
+                                   "name":  "leeway-webrtc",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webserial\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webserial",
+                                   "name":  "@leeway/webserial",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webtransport\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webtransport",
+                                   "name":  "leeway-webtransport",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webusb\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webusb",
+                                   "name":  "@leeway/webusb",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webxr\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\webxr",
+                                   "name":  "leeway-webxr",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "serve",
+                                                   "receipt",
+                                                   "check"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\wsd\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\adapters\\wsd",
+                                   "name":  "@leeway/wsd",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "receipt",
+                                                   "serve"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\build-context\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\build-context",
+                                   "name":  "leeway-acf-book78-full-standard",
+                                   "score":  45,
+                                   "scripts":  [
+                                                   "dev",
+                                                   "start:server",
+                                                   "build",
+                                                   "preview",
+                                                   "lint",
+                                                   "test:live",
+                                                   "test:augmentation",
+                                                   "test:real-device-hardening",
+                                                   "test:physical-device-intelligence",
+                                                   "test:hardware-intelligence",
+                                                   "test:hardware-archeology",
+                                                   "test:device-authority",
+                                                   "test:provider-fabric",
+                                                   "test:provider-readiness-gate",
+                                                   "test:provider-binding-audit",
+                                                   "test:provider-fallback",
+                                                   "test:deepseek-security-audit",
+                                                   "test:model-route-active-family",
+                                                   "test:lean-v2-model-council",
+                                                   "model:council:plan",
+                                                   "model:council:bootstrap:core",
+                                                   "model:council:bootstrap:creative",
+                                                   "model:council:test",
+                                                   "test:provider-lifecycle",
+                                                   "test:real-backend-repair",
+                                                   "validate:standards",
+                                                   "test:rigorous",
+                                                   "test:enterprise",
+                                                   "sentinel:prove",
+                                                   "cage:prove",
+                                                   "terminator:prove",
+                                                   "runtime:prove:governance",
+                                                   "fabric:verify:full",
+                                                   "fabric:prove",
+                                                   "fabric:prove:real-device",
+                                                   "fabric:prove:physical",
+                                                   "fabric:prove:providers",
+                                                   "fabric:prove:enterprise",
+                                                   "test:browser",
+                                                   "test:network",
+                                                   "test:gpu",
+                                                   "test:device",
+                                                   "test:iot",
+                                                   "test:security",
+                                                   "test:portability",
+                                                   "test:recovery",
+                                                   "test:agent-api",
+                                                   "test:production",
+                                                   "test:voice",
+                                                   "test:qwen",
+                                                   "test:model-gateway",
+                                                   "fabric:prove:model-gateway",
+                                                   "fabric:prove:backend-activation",
+                                                   "test:voice-qwen-loop",
+                                                   "test:vision-os",
+                                                   "test:qwen-vl",
+                                                   "test:vision-input",
+                                                   "test:vision-memory",
+                                                   "test:vision-context",
+                                                   "test:voice-vision-loop",
+                                                   "test:vision-benchmark",
+                                                   "test:streaming-voice-stack",
+                                                   "test:qwen3-asr",
+                                                   "test:qwen3-tts",
+                                                   "test:webrtc-voice-participant",
+                                                   "test:voice-interruption",
+                                                   "test:voice-cache",
+                                                   "fabric:prove:streaming-voice",
+                                                   "fabric:diagnose:streaming-voice",
+                                                   "fabric:prove:vision",
+                                                   "fabric:prove:voice",
+                                                   "fabric:prove:production",
+                                                   "backend:discover",
+                                                   "backend:health",
+                                                   "backend:report",
+                                                   "test:backend-activation",
+                                                   "test:backend-discovery",
+                                                   "test:backend-health",
+                                                   "test:backend-execution",
+                                                   "fabric:prove:backend-commands",
+                                                   "test:adapter-toy-execution",
+                                                   "fabric:diagnose:backend-plumbing",
+                                                   "test:humanlike-tts",
+                                                   "test:realtime-human-voice",
+                                                   "fabric:prove:agent-lee-human-voice",
+                                                   "test:cleanup-production",
+                                                   "test:asr-device",
+                                                   "test:mic-conversation",
+                                                   "test:agentic-loop",
+                                                   "test:orchestrator",
+                                                   "test:ros2-bridge",
+                                                   "test:edge-microros",
+                                                   "test:digital-twin",
+                                                   "test:memory-consolidation",
+                                                   "test:teacher-eyes",
+                                                   "test:sim-to-real",
+                                                   "test:physical-world-skills",
+                                                   "test:agentic-physical-world",
+                                                   "test:agent-lee-expression",
+                                                   "test:cross-lingual-expression",
+                                                   "test:agent-lee-entity-identity",
+                                                   "test:live-voice-output",
+                                                   "test:agent-lee-complete",
+                                                   "test:self-hosted-platform",
+                                                   "test:docker-self-hosted",
+                                                   "test:resource-governor",
+                                                   "test:model-workload-queue",
+                                                   "test:remote-worker",
+                                                   "test:profiled-runtime-boot",
+                                                   "test:existing-ui-self-hosted",
+                                                   "test:live-self-hosted-runtime",
+                                                   "fabric:prove:self-hosted-enterprise",
+                                                   "test:real-world-inventory",
+                                                   "test:automation-runtime",
+                                                   "test:creation-runtime",
+                                                   "test:image-creation",
+                                                   "test:video-creation",
+                                                   "test:ad-creation",
+                                                   "test:deployment-ownership",
+                                                   "fabric:prove:enterprise-runtimes",
+                                                   "fabric:prove:agentic-physical-world",
+                                                   "fabric:prove:agent-lee-full-sensory",
+                                                   "fabric:prove:agent-lee-complete",
+                                                   "deploy:runtime:github",
+                                                   "deploy:runtime:fly",
+                                                   "deploy:runtime:verify",
+                                                   "deploy:admin:github",
+                                                   "deploy:admin:fly",
+                                                   "deploy:admin:verify",
+                                                   "deploy:skills:prove",
+                                                   "deploy:simulation:prove",
+                                                   "deploy:prove:all",
+                                                   "docker:build",
+                                                   "docker:up",
+                                                   "docker:down",
+                                                   "docker:logs"
+                                               ],
+                                   "dependency_markers":  [
+                                                              "lucide-react",
+                                                              "react",
+                                                              "tailwindcss",
+                                                              "typescript"
+                                                          ],
+                                   "reason":  [
+                                                  "has react dependency",
+                                                  "has typescript dependency",
+                                                  "has dev script",
+                                                  "has build script"
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry",
+                                   "name":  "leeway-edge-capability-layer",
+                                   "score":  0,
+                                   "scripts":  [
+                                                   "status",
+                                                   "check",
+                                                   "serve",
+                                                   "lint",
+                                                   "lane:webxr:status",
+                                                   "lane:webgpu:status",
+                                                   "lane:webrtc:status",
+                                                   "lane:webnn:status",
+                                                   "lane:wasm:status",
+                                                   "lane:webtransport:status",
+                                                   "lane:webaudio:status",
+                                                   "lane:webauthn:status",
+                                                   "lane:filesystem:status"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+
+                                              ]
+                               },
+                               {
+                                   "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\execution-broker\\package.json",
+                                   "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\execution-broker",
+                                   "name":  "@leeway/execution-broker",
+                                   "score":  10,
+                                   "scripts":  [
+                                                   "start",
+                                                   "dev",
+                                                   "test"
+                                               ],
+                                   "dependency_markers":  {
+
+                                                          },
+                                   "reason":  [
+                                                  "has dev script"
+                                              ]
+                               }
+                           ],
+    "app_page_candidates":  [
+                                {
+                                    "app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+                                    "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\package.json",
+                                    "package_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+                                    "score":  175,
+                                    "package_name":  "digital-brain",
+                                    "reason":  [
+                                                   "has next dependency",
+                                                   "has react dependency",
+                                                   "has typescript dependency",
+                                                   "has dev script",
+                                                   "has build script",
+                                                   "app page is under this package root"
+                                               ]
+                                }
+                            ],
+    "safety":  {
+                   "reconciliation_only":  true,
+                   "no_patch_applied":  true,
+                   "no_frontend_files_modified":  true,
+                   "no_execution_enabled":  true,
+                   "execute_buttons_visible":  false,
+                   "physical_actions_executed":  0
+               }
+}

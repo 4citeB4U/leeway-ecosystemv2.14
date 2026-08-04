@@ -1,0 +1,65 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_READ_ONLY_ROUTE_RESPONSE_CONTRACT_232",
+    "timestamp":  "2026-07-05T21:38:52",
+    "family":  "audio_vision",
+    "route_response_contract":  {
+                                    "/audio-vision/discover":  {
+                                                                   "ok":  "bool",
+                                                                   "family":  "audio_vision",
+                                                                   "mode":  "READ_ONLY_NO_CAPTURE",
+                                                                   "patch":  "LEEWAY_AUDIO_VISION_READ_ONLY_ROUTES_PATCH_233",
+                                                                   "discovered_count":  "int",
+                                                                   "cameras":  "array",
+                                                                   "microphones":  "array",
+                                                                   "speakers":  "array",
+                                                                   "control_enabled":  false,
+                                                                   "camera_stream_started":  false,
+                                                                   "microphone_stream_started":  false,
+                                                                   "speaker_playback_started":  false,
+                                                                   "recording_started":  false
+                                                               },
+                                    "/audio-vision/status":  {
+                                                                 "ok":  "bool",
+                                                                 "family":  "audio_vision",
+                                                                 "mode":  "READ_ONLY_NO_CAPTURE",
+                                                                 "discovered_count":  "int",
+                                                                 "camera_count":  "int",
+                                                                 "microphone_count":  "int",
+                                                                 "speaker_count":  "int",
+                                                                 "control_enabled":  false,
+                                                                 "approval_required_for_capture":  true,
+                                                                 "approval_required_for_playback":  true,
+                                                                 "physical_action_executed":  false,
+                                                                 "camera_stream_started":  false,
+                                                                 "microphone_stream_started":  false,
+                                                                 "speaker_playback_started":  false,
+                                                                 "recording_started":  false,
+                                                                 "permission_mutated":  false,
+                                                                 "default_device_mutated":  false
+                                                             },
+                                    "/audio-vision/registry":  {
+                                                                   "ok":  "bool",
+                                                                   "family":  "audio_vision",
+                                                                   "registry_status":  "READ_ONLY_REGISTRY_ROUTE_ACTIVE",
+                                                                   "discovered_count":  "int",
+                                                                   "normalized_devices":  "array",
+                                                                   "control_enabled":  false,
+                                                                   "physical_action_executed":  false,
+                                                                   "camera_stream_started":  false,
+                                                                   "microphone_stream_started":  false,
+                                                                   "speaker_playback_started":  false,
+                                                                   "recording_started":  false
+                                                               }
+                                },
+    "non_goals":  [
+                      "no camera activation",
+                      "no microphone activation",
+                      "no speaker playback",
+                      "no photo capture",
+                      "no video recording",
+                      "no audio recording",
+                      "no permission mutation",
+                      "no default input/output mutation",
+                      "no physical action"
+                  ]
+}

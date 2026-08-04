@@ -1,0 +1,10 @@
+mutation_rules:
+  - id: MUT-001
+    description: "Only level-1 or level-2 may modify model-authority.json or files under /constitution."
+    approval_required: true
+  - id: MUT-002
+    description: "All mutations must include a JSON receipt and ledger entry in Archive/ledgers/work-ledger/"
+    approval_required: false
+  - id: MUT-003
+    description: "Automated patch proposals are allowed but must be reviewed by level-3 before commit."
+    approval_required: true

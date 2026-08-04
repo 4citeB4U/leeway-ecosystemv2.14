@@ -1,0 +1,926 @@
+{
+    "schema":  "agent-lee-hybrid-container-topology-v17-2",
+    "updatedAt":  "2026-06-28T00:50:47.5775605Z",
+    "authority":  "Discovery Fabric",
+    "status":  "CONTAINER_TOPOLOGY_CHECK_REQUIRED",
+    "ecosystem":  {
+                      "composeProject":  "leeway-ecosystemv214",
+                      "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                      "network":  "leeway-ecosystemv214_leeway-net"
+                  },
+    "resolvedContainers":  {
+                               "agentLee":  {
+                                                "requested":  "agent_lee_code_mode",
+                                                "actualName":  "agent_lee_code_mode",
+                                                "exists":  true,
+                                                "running":  true,
+                                                "status":  "running",
+                                                "image":  "leeway-ecosystemv214-agent-lee",
+                                                "id":  "ddae90d7d8a073e08531d685597d6d2dfe476f66b5ad7395319b2577f83fef97",
+                                                "shortId":  "ddae90d7d8a0",
+                                                "created":  "2026-06-26T04:24:52.445164829Z",
+                                                "startedAt":  "2026-06-26T05:17:32.073342723Z",
+                                                "restartPolicy":  "unless-stopped",
+                                                "composeProject":  "leeway-ecosystemv214",
+                                                "composeService":  "agent-lee",
+                                                "networkMode":  "leeway-ecosystemv214_leeway-net",
+                                                "aliases":  [
+                                                                "agent_lee_code_mode",
+                                                                "agent-lee"
+                                                            ],
+                                                "ports":  {
+                                                              "8080/tcp":  [
+                                                                               {
+                                                                                   "HostIp":  "0.0.0.0",
+                                                                                   "HostPort":  "8080"
+                                                                               },
+                                                                               {
+                                                                                   "HostIp":  "::",
+                                                                                   "HostPort":  "8080"
+                                                                               }
+                                                                           ]
+                                                          },
+                                                "env":  [
+                                                            "PORT=8080",
+                                                            "OLLAMA_HOST=http://ollama:11434",
+                                                            "OLLAMA_BASE=http://ollama:11434",
+                                                            "RUNTIME_FABRIC_URL=http://runtime-fabric:4001",
+                                                            "CEREBRAL_BASE=http://host.docker.internal:8765",
+                                                            "WARM_MODELS=",
+                                                            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                                                            "NODE_VERSION=24.17.0",
+                                                            "YARN_VERSION=1.22.22",
+                                                            "NODE_ENV=production",
+                                                            "LEEWAY_ECOSYSTEM_ROOT=/leeway"
+                                                        ]
+                                            },
+                               "runtimeFabric":  {
+                                                     "requested":  "leeway_runtime_fabric",
+                                                     "actualName":  "leeway_runtime_fabric",
+                                                     "exists":  true,
+                                                     "running":  true,
+                                                     "status":  "running",
+                                                     "image":  "leeway-ecosystemv214-runtime-fabric",
+                                                     "id":  "18825c394552b093e23b3806dc6022b13d713625533bcfdefe64a3552e88c47a",
+                                                     "shortId":  "18825c394552",
+                                                     "created":  "2026-06-19T00:49:39.797100606Z",
+                                                     "startedAt":  "2026-06-26T05:17:32.074896007Z",
+                                                     "restartPolicy":  "unless-stopped",
+                                                     "composeProject":  "leeway-ecosystemv214",
+                                                     "composeService":  "runtime-fabric",
+                                                     "networkMode":  "leeway-ecosystemv214_leeway-net",
+                                                     "aliases":  [
+                                                                     "leeway_runtime_fabric",
+                                                                     "runtime-fabric"
+                                                                 ],
+                                                     "ports":  {
+                                                                   "4001/tcp":  [
+                                                                                    {
+                                                                                        "HostIp":  "0.0.0.0",
+                                                                                        "HostPort":  "4001"
+                                                                                    },
+                                                                                    {
+                                                                                        "HostIp":  "::",
+                                                                                        "HostPort":  "4001"
+                                                                                    }
+                                                                                ],
+                                                                   "8111/tcp":  [
+                                                                                    {
+                                                                                        "HostIp":  "0.0.0.0",
+                                                                                        "HostPort":  "8111"
+                                                                                    },
+                                                                                    {
+                                                                                        "HostIp":  "::",
+                                                                                        "HostPort":  "8111"
+                                                                                    }
+                                                                                ]
+                                                               },
+                                                     "env":  [
+                                                                 "LEEWAY_MANAGEMENT_API_PORT=4001",
+                                                                 "OLLAMA_HOST=http://ollama:11434",
+                                                                 "WARM_MODELS=",
+                                                                 "AGENT_LEE_ROUTER_URL=http://agent-lee:8080",
+                                                                 "NODE_ENV=production",
+                                                                 "LEEWAY_MANAGEMENT_API_HOST=0.0.0.0",
+                                                                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                                                                 "NODE_VERSION=24.17.0",
+                                                                 "YARN_VERSION=1.22.22"
+                                                             ]
+                                                 },
+                               "ollama":  {
+                                              "requested":  "ollama",
+                                              "exists":  false,
+                                              "running":  false,
+                                              "status":  "CHECK_REQUIRED",
+                                              "error":  "Exception calling \"Substring\" with \"2\" argument(s): \"Index and length must refer to a location within the string.\r\nParameter name: length\""
+                                          }
+                           },
+    "serviceAliases":  {
+                           "agentLee":  [
+                                            "agent_lee_code_mode",
+                                            "agent-lee"
+                                        ],
+                           "runtimeFabric":  [
+                                                 "leeway_runtime_fabric",
+                                                 "runtime-fabric"
+                                             ],
+                           "ollama":  [
+                                          "ollama"
+                                      ]
+                       },
+    "endpoints":  {
+                      "agentLeeHealth":  {
+                                             "name":  "agent-lee-health",
+                                             "url":  "http://127.0.0.1:8080/health",
+                                             "ready":  false,
+                                             "status":  "CHECK_REQUIRED",
+                                             "response":  {
+                                                              "ok":  true,
+                                                              "router":  "agent-lee-brainfix",
+                                                              "port":  8080,
+                                                              "ollama":  "http://ollama:11434",
+                                                              "ollamaModel":  "qwen3:latest",
+                                                              "runtimeDir":  "/app/runtime",
+                                                              "languagePolicyPath":  "/app/runtime/agent-lee-language-policy.json",
+                                                              "conversationManifestPath":  "/app/runtime/agent-lee-conversation-abilities.manifest.json",
+                                                              "canonical":  true,
+                                                              "agentId":  "agent-lee",
+                                                              "agentMode":  "code-mode",
+                                                              "role":  "supreme-agent-lead",
+                                                              "instanceContract":  "canonical-agent-lee-code-mode",
+                                                              "sourceOfEmbodiment":  "agent-lee-coding-mode",
+                                                              "identityManifestPath":  null,
+                                                              "activeRuntimeAdapterPath":  "Leeway Runtime Fabric/capability-registry/registry/leeway-universe-loader.mjs",
+                                                              "orchestrationManifestPath":  "/app/runtime/agent-lee-orchestration.manifest.json",
+                                                              "orchestrationStatePath":  "/app/runtime/agent-lee-orchestration-state.json",
+                                                              "preferenceLedgerPath":  "/app/runtime/agent-lee-preference-ledger.json",
+                                                              "workLedgerPath":  "/Archive/agent-lee-work-ledger/work-ledger.jsonl",
+                                                              "orchestrationReceiptDir":  "/Archive/receipts/agent-lee-orchestration",
+                                                              "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                              "agentState":  {
+                                                                                 "status":  "CONSTRAINED",
+                                                                                 "authority":  "Agent Lee Prime",
+                                                                                 "constitutionVersion":  "lee-prime-runtime-state.v1",
+                                                                                 "sovereign":  true,
+                                                                                 "modelStateObserved":  "FAILED",
+                                                                                 "receiptStateObserved":  "DEGRADED",
+                                                                                 "executionStateObserved":  "DEGRADED",
+                                                                                 "reason":  "Agent state is constrained by execution health."
+                                                                             },
+                                                              "executionState":  {
+                                                                                     "status":  "DEGRADED",
+                                                                                     "routerState":  "HEALTHY",
+                                                                                     "adapterState":  "FAILED",
+                                                                                     "orchestrationState":  "HEALTHY",
+                                                                                     "routerOnline":  true,
+                                                                                     "adapterOnline":  false,
+                                                                                     "orchestrationOnline":  true,
+                                                                                     "routerPort":  8080,
+                                                                                     "adapterPort":  8787,
+                                                                                     "runtimeFabricPort":  4001
+                                                                                 },
+                                                              "modelState":  {
+                                                                                 "status":  "FAILED",
+                                                                                 "activeModel":  "qwen2.5-coder:14b",
+                                                                                 "warmedModels":  [
+                                                                                                      "qwen2.5-coder:14b",
+                                                                                                      "qwen2.5-coder:7b",
+                                                                                                      "qwen2.5:latest",
+                                                                                                      "qwen2.5vl:7b",
+                                                                                                      "qwen3:latest"
+                                                                                                  ],
+                                                                                 "loadedBackends":  [
+                                                                                                        "qwen2.5-coder:14b",
+                                                                                                        "qwen2.5-coder:7b",
+                                                                                                        "qwen2.5:latest",
+                                                                                                        "qwen2.5vl:7b",
+                                                                                                        "qwen3:latest"
+                                                                                                    ],
+                                                                                 "healthyRoles":  [
+
+                                                                                                  ],
+                                                                                 "degradedRoles":  [
+                                                                                                       "light_conversation_model",
+                                                                                                       "monetization_narration_model",
+                                                                                                       "coding_model",
+                                                                                                       "creative_3d_ar_model",
+                                                                                                       "research_reasoning_model",
+                                                                                                       "vision_model",
+                                                                                                       "security_audit_model"
+                                                                                                   ],
+                                                                                 "backendCount":  4,
+                                                                                 "classificationCounts":  {
+                                                                                                              "SEMI_WARM":  6,
+                                                                                                              "COLD":  1
+                                                                                                          },
+                                                                                 "source":  "live_model_pool"
+                                                                             },
+                                                              "receiptState":  {
+                                                                                   "status":  "DEGRADED",
+                                                                                   "ledgerIntact":  false,
+                                                                                   "chainLength":  7782,
+                                                                                   "lastReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx2o9qd-e6d40d4b.receipt.json",
+                                                                                   "lastReceiptExists":  true,
+                                                                                   "lastStateReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx2o9qd-e6d40d4b.receipt.json",
+                                                                                   "lastStateHash":  "e8728860196584da406590f3ed8eed6777a426d48c8474515d2744bc8fa815bc",
+                                                                                   "lastRecordedAt":  "2026-06-28T00:50:26.245Z"
+                                                                               },
+                                                              "leePrimeRuntimeState":  {
+                                                                                           "schema":  "leeway.agent-lee.runtime-state.v1",
+                                                                                           "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                           "version":  1,
+                                                                                           "recordedAt":  "2026-06-28T00:50:46.468Z",
+                                                                                           "reason":  "orchestration_health_probe",
+                                                                                           "sourceOfTruth":  "agent-lee-coding-mode/runtime/agent-lee-orchestration-runtime.mjs",
+                                                                                           "agentState":  {
+                                                                                                              "status":  "CONSTRAINED",
+                                                                                                              "authority":  "Agent Lee Prime",
+                                                                                                              "constitutionVersion":  "lee-prime-runtime-state.v1",
+                                                                                                              "sovereign":  true,
+                                                                                                              "modelStateObserved":  "FAILED",
+                                                                                                              "receiptStateObserved":  "DEGRADED",
+                                                                                                              "executionStateObserved":  "DEGRADED",
+                                                                                                              "reason":  "Agent state is constrained by execution health."
+                                                                                                          },
+                                                                                           "executionState":  {
+                                                                                                                  "status":  "DEGRADED",
+                                                                                                                  "routerState":  "HEALTHY",
+                                                                                                                  "adapterState":  "FAILED",
+                                                                                                                  "orchestrationState":  "HEALTHY",
+                                                                                                                  "routerOnline":  true,
+                                                                                                                  "adapterOnline":  false,
+                                                                                                                  "orchestrationOnline":  true,
+                                                                                                                  "routerPort":  8080,
+                                                                                                                  "adapterPort":  8787,
+                                                                                                                  "runtimeFabricPort":  4001
+                                                                                                              },
+                                                                                           "modelState":  {
+                                                                                                              "status":  "FAILED",
+                                                                                                              "activeModel":  "qwen2.5-coder:14b",
+                                                                                                              "warmedModels":  [
+                                                                                                                                   "qwen2.5-coder:14b",
+                                                                                                                                   "qwen2.5-coder:7b",
+                                                                                                                                   "qwen2.5:latest",
+                                                                                                                                   "qwen2.5vl:7b",
+                                                                                                                                   "qwen3:latest"
+                                                                                                                               ],
+                                                                                                              "loadedBackends":  [
+                                                                                                                                     "qwen2.5-coder:14b",
+                                                                                                                                     "qwen2.5-coder:7b",
+                                                                                                                                     "qwen2.5:latest",
+                                                                                                                                     "qwen2.5vl:7b",
+                                                                                                                                     "qwen3:latest"
+                                                                                                                                 ],
+                                                                                                              "healthyRoles":  [
+
+                                                                                                                               ],
+                                                                                                              "degradedRoles":  [
+                                                                                                                                    "light_conversation_model",
+                                                                                                                                    "monetization_narration_model",
+                                                                                                                                    "coding_model",
+                                                                                                                                    "creative_3d_ar_model",
+                                                                                                                                    "research_reasoning_model",
+                                                                                                                                    "vision_model",
+                                                                                                                                    "security_audit_model"
+                                                                                                                                ],
+                                                                                                              "backendCount":  4,
+                                                                                                              "classificationCounts":  {
+                                                                                                                                           "SEMI_WARM":  6,
+                                                                                                                                           "COLD":  1
+                                                                                                                                       },
+                                                                                                              "source":  "live_model_pool"
+                                                                                                          },
+                                                                                           "receiptState":  {
+                                                                                                                "status":  "DEGRADED",
+                                                                                                                "ledgerIntact":  false,
+                                                                                                                "chainLength":  7782,
+                                                                                                                "lastReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx2o9qd-e6d40d4b.receipt.json",
+                                                                                                                "lastReceiptExists":  true,
+                                                                                                                "lastStateReceiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx2o9qd-e6d40d4b.receipt.json",
+                                                                                                                "lastStateHash":  "e8728860196584da406590f3ed8eed6777a426d48c8474515d2744bc8fa815bc",
+                                                                                                                "lastRecordedAt":  "2026-06-28T00:50:26.245Z"
+                                                                                                            },
+                                                                                           "stateHash":  "69384de29ff29c79b237982a6b963101e1130088c5af0fc96d1036df69830dd2",
+                                                                                           "ledgerSequence":  7783,
+                                                                                           "previousStateHash":  "e8728860196584da406590f3ed8eed6777a426d48c8474515d2744bc8fa815bc",
+                                                                                           "receiptPath":  "/Archive/receipts/agent-lee-orchestration/lee-prime-runtime-state-mqx2opc4-3f8cefd8.receipt.json"
+                                                                                       }
+                                                          }
+                                         },
+                      "agentLeeRoot":  {
+                                           "name":  "agent-lee-app",
+                                           "url":  "http://127.0.0.1:8080",
+                                           "ready":  true,
+                                           "status":  "READY",
+                                           "response":  {
+                                                            "ok":  true,
+                                                            "message":  "Agent Lee router. See /health for details.",
+                                                            "routes":  "/routes",
+                                                            "health":  "/health"
+                                                        }
+                                       },
+                      "runtimeFabricHealth":  {
+                                                  "name":  "runtime-fabric-health",
+                                                  "url":  "http://127.0.0.1:4001/health",
+                                                  "ready":  false,
+                                                  "status":  "CHECK_REQUIRED",
+                                                  "response":  {
+                                                                   "ok":  true,
+                                                                   "agentId":  "agent-lee",
+                                                                   "canonical":  true,
+                                                                   "agentMode":  "code-mode",
+                                                                   "role":  "supreme-agent-lead",
+                                                                   "instanceContract":  "canonical-agent-lee-code-mode",
+                                                                   "identityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                   "canonicalProof":  {
+                                                                                          "expectedIdentityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                          "matches":  true,
+                                                                                          "canonical":  true,
+                                                                                          "agentMode":  "code-mode",
+                                                                                          "role":  "supreme-agent-lead",
+                                                                                          "instanceContract":  "canonical-agent-lee-code-mode"
+                                                                                      },
+                                                                   "sourceOfEmbodiment":  "agent-lee-coding-mode",
+                                                                   "corePath":  "/agent-lee-coding-mode",
+                                                                   "identityManifestPath":  "/agent-lee-coding-mode/agent-lee-identity.manifest.json",
+                                                                   "universeManifestPath":  "/app/capability-registry/registry/leeway-universe.manifest.json",
+                                                                   "activeRuntimeAdapterPath":  "/app/capability-registry/registry/leeway-universe-loader.mjs",
+                                                                   "router":  {
+                                                                                  "name":  "agent-lee-brainfix",
+                                                                                  "path":  "/agent-lee-coding-mode/router/server-brainfix.mjs",
+                                                                                  "port":  8080,
+                                                                                  "health":  "http://127.0.0.1:8080/health",
+                                                                                  "chat":  "http://127.0.0.1:8080/v1/chat/completions",
+                                                                                  "model":  "deepseek-coder:latest"
+                                                                              },
+                                                                   "desktopRuntime":  {
+                                                                                          "path":  "/agent-lee-coding-mode/desktop-runtime/server.mjs",
+                                                                                          "port":  8091,
+                                                                                          "status":  "http://127.0.0.1:8091/runtime/status"
+                                                                                      },
+                                                                   "voice":  {
+                                                                                 "localVoiceRoute":  "http://127.0.0.1:8765/api/local-voice/agent-lee-capture",
+                                                                                 "daemonPath":  "/app/Cerebral/CerebralDaemon.py",
+                                                                                 "engine":  "local-mic -\u003e faster-whisper -\u003e edge-tts"
+                                                                             },
+                                                                   "sight":  {
+                                                                                 "browserSearchRoute":  "http://127.0.0.1:8091/runtime/web-search",
+                                                                                 "browserProofPath":  "/agent-lee-coding-mode/desktop-runtime/browser-agent.mjs"
+                                                                             },
+                                                                   "terminalFabric":  {
+                                                                                          "status":  "http://127.0.0.1:4001/terminal/status",
+                                                                                          "plan":  "http://127.0.0.1:4001/terminal/plan",
+                                                                                          "execute":  "http://127.0.0.1:4001/terminal/execute",
+                                                                                          "wslStatus":  "http://127.0.0.1:4001/device/wsl/status",
+                                                                                          "wslStart":  "http://127.0.0.1:4001/device/wsl/start"
+                                                                                      },
+                                                                   "skillsUniversity":  {
+                                                                                            "registryPath":  "/LEEWAY-SKILLS-REGISTRY.json",
+                                                                                            "path":  "/app/skills-university",
+                                                                                            "exportsPath":  "/app/skills-university-exports",
+                                                                                            "rootPointerPath":  "/Skills University",
+                                                                                            "registryExists":  false,
+                                                                                            "exists":  false
+                                                                                        },
+                                                                   "universe":  {
+                                                                                    "manifestPath":  "/app/capability-registry/registry/leeway-universe.manifest.json",
+                                                                                    "manifestExists":  true,
+                                                                                    "manifestReadable":  true,
+                                                                                    "manifestError":  null,
+                                                                                    "canonicalAgentLee":  {
+                                                                                                              "agentName":  "Agent Lee",
+                                                                                                              "agentMode":  "code-mode",
+                                                                                                              "role":  "supreme-agent-lead",
+                                                                                                              "canonical":  true,
+                                                                                                              "instanceContract":  "canonical-agent-lee-code-mode",
+                                                                                                              "identityFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+                                                                                                              "embodimentPath":  {
+                                                                                                                                     "relative":  "agent-lee-coding-mode",
+                                                                                                                                     "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode"
+                                                                                                                                 },
+                                                                                                              "identityManifestPath":  {
+                                                                                                                                           "relative":  "agent-lee-coding-mode/agent-lee-identity.manifest.json",
+                                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\agent-lee-identity.manifest.json"
+                                                                                                                                       }
+                                                                                                          },
+                                                                                    "precedence":  [
+                                                                                                       "agent-lee-coding-mode/skills",
+                                                                                                       "Leeway Runtime Fabric/skills",
+                                                                                                       "Leeway Runtime Fabric/skills-university",
+                                                                                                       "Leeway Runtime Fabric/skills-university-exports",
+                                                                                                       "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                       "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                       "leeway-80-bench/skills"
+                                                                                                   ],
+                                                                                    "activeSkillSearchPaths":  [
+                                                                                                                   {
+                                                                                                                       "relative":  "agent-lee-coding-mode/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills",
+                                                                                                                       "source":  "agent-lee-coding-mode",
+                                                                                                                       "role":  "canonical-agent-lee-skill-source"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "runtime-fabric-skill-source"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills-university",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "skills-university-canonical"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills-university-exports",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university-exports",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "skills-university-export-surface"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\stateful-research-harness",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "stateful-research-harness-root-copy"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills\\stateful-research-harness",
+                                                                                                                       "source":  "runtime-fabric",
+                                                                                                                       "role":  "stateful-research-harness-skill-mirror"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "leeway-80-bench/skills",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\skills",
+                                                                                                                       "source":  "benchmark",
+                                                                                                                       "role":  "benchmark-skill-discovery"
+                                                                                                                   }
+                                                                                                               ],
+                                                                                    "activeCapabilitySearchPaths":  [
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/capability-registry",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "canonical-capability-registry"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/capability-augmentation",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-augmentation",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "capability-augmentation-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/provider-fabric",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\provider-fabric",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "provider-fabric-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "leeway-presentation-engine",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-presentation-engine",
+                                                                                                                            "source":  "presentation-engine",
+                                                                                                                            "role":  "presentation-engine-root"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "leeway-cli",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-cli",
+                                                                                                                            "source":  "presentation-cli",
+                                                                                                                            "role":  "presentation-cli-root"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/automation-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\automation-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "automation-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/deployment-ownership-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\deployment-ownership-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "deployment-ownership-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/ledger",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\ledger",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "ledger-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/risk",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\risk",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "risk-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/device-intelligence",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\device-intelligence",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "device-intelligence-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/device-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\device-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "device-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/hardware-intelligence",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\hardware-intelligence",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "hardware-intelligence-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/iot-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\iot-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "iot-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/real-world-hardware",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\real-world-hardware",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "real-world-hardware-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/real-device-hardening",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\real-device-hardening",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "real-device-hardening-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/robotics-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\robotics-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "robotics-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/physical-intelligence-engine",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\physical-intelligence-engine",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "physical-intelligence-engine-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/sim-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\sim-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "sim-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/simulations",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\simulations",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "simulations-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/multimodal-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\multimodal-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "multimodal-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/human-voice-platform",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\human-voice-platform",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "human-voice-platform-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/vision-os",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\vision-os",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "vision-os-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/model-gateway",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\model-gateway",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "model-gateway-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/model-execution-runtime",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\model-execution-runtime",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "model-execution-runtime-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/enterprise-proof",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\enterprise-proof",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "enterprise-proof-lane"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "relative":  "Leeway Runtime Fabric/production-proof",
+                                                                                                                            "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\production-proof",
+                                                                                                                            "source":  "runtime-fabric",
+                                                                                                                            "role":  "production-proof-lane"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                    "activeAgentSearchPaths":  [
+                                                                                                                   {
+                                                                                                                       "relative":  "agent-lee-coding-mode",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+                                                                                                                       "source":  "canonical-agent-lee"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Leeway Runtime Fabric/agent-lee-entity-identity-runtime",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\agent-lee-entity-identity-runtime",
+                                                                                                                       "source":  "runtime-fabric"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "Cerebral",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral",
+                                                                                                                       "source":  "surface"
+                                                                                                                   },
+                                                                                                                   {
+                                                                                                                       "relative":  "leeway-ide-single-canvas",
+                                                                                                                       "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas",
+                                                                                                                       "source":  "surface"
+                                                                                                                   }
+                                                                                                               ],
+                                                                                    "activeToolSearchPaths":  [
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/tools",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\tools",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "agent-lee-coding-mode/tools",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\tools",
+                                                                                                                      "source":  "code-mode"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/server",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\server",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                      "relative":  "Leeway Runtime Fabric/agent-api",
+                                                                                                                      "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\agent-api",
+                                                                                                                      "source":  "runtime-fabric"
+                                                                                                                  }
+                                                                                                              ],
+                                                                                    "activeWorkflowSearchPaths":  [
+                                                                                                                      {
+                                                                                                                          "relative":  "agent-lee-coding-mode/workflows",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\workflows",
+                                                                                                                          "source":  "code-mode"
+                                                                                                                      },
+                                                                                                                      {
+                                                                                                                          "relative":  "leeway-80-bench/workflows",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\workflows",
+                                                                                                                          "source":  "benchmark"
+                                                                                                                      },
+                                                                                                                      {
+                                                                                                                          "relative":  "Leeway Runtime Fabric/standards/skills-university/benchmarks/leeway-80-bench",
+                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\benchmarks\\leeway-80-bench",
+                                                                                                                          "source":  "standards",
+                                                                                                                          "role":  "benchmark-canonical-reference"
+                                                                                                                      }
+                                                                                                                  ],
+                                                                                    "activeBenchmarkSearchPaths":  [
+                                                                                                                       {
+                                                                                                                           "relative":  "leeway-80-bench",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench",
+                                                                                                                           "source":  "benchmark-root"
+                                                                                                                       },
+                                                                                                                       {
+                                                                                                                           "relative":  "leeway-80-bench/skills",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\skills",
+                                                                                                                           "source":  "benchmark-root",
+                                                                                                                           "role":  "benchmark-skill-index"
+                                                                                                                       },
+                                                                                                                       {
+                                                                                                                           "relative":  "Leeway Runtime Fabric/standards/skills-university/benchmarks/leeway-80-bench",
+                                                                                                                           "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\benchmarks\\leeway-80-bench",
+                                                                                                                           "source":  "standards",
+                                                                                                                           "role":  "benchmark-canonical-reference"
+                                                                                                                       }
+                                                                                                                   ],
+                                                                                    "statefulResearchHarnessCopies":  {
+                                                                                                                          "activeCopy":  {
+                                                                                                                                             "relative":  "agent-lee-coding-mode/skills/stateful-research-harness",
+                                                                                                                                             "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills\\stateful-research-harness"
+                                                                                                                                         },
+                                                                                                                          "runtimeFabricRootCopy":  {
+                                                                                                                                                        "relative":  "Leeway Runtime Fabric/stateful-research-harness",
+                                                                                                                                                        "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\stateful-research-harness"
+                                                                                                                                                    },
+                                                                                                                          "runtimeFabricSkillsCopy":  {
+                                                                                                                                                          "relative":  "Leeway Runtime Fabric/skills/stateful-research-harness",
+                                                                                                                                                          "absolute":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills\\stateful-research-harness"
+                                                                                                                                                      }
+                                                                                                                      }
+                                                                                },
+                                                                   "statefulResearchHarness":  {
+                                                                                                   "rootCopy":  {
+                                                                                                                    "path":  "/app/stateful-research-harness",
+                                                                                                                    "exists":  false,
+                                                                                                                    "directSkillMd":  false
+                                                                                                                },
+                                                                                                   "skillsCopy":  {
+                                                                                                                      "path":  "/app/skills/stateful-research-harness",
+                                                                                                                      "exists":  false,
+                                                                                                                      "directSkillMd":  false
+                                                                                                                  },
+                                                                                                   "codeModeCopy":  {
+                                                                                                                        "path":  "/agent-lee-coding-mode/skills/stateful-research-harness",
+                                                                                                                        "exists":  false,
+                                                                                                                        "directSkillMd":  false
+                                                                                                                    }
+                                                                                               },
+                                                                   "benchmarkSkills":  {
+                                                                                           "path":  "/leeway-80-bench/skills",
+                                                                                           "exists":  false
+                                                                                       },
+                                                                   "startScript":  {
+                                                                                       "path":  "/agent-lee-coding-mode/start-agent-lee.ps1",
+                                                                                       "exists":  false
+                                                                                   },
+                                                                   "status":  "ACTIVE_HEALTHY",
+                                                                   "route":  "/runtime/health",
+                                                                   "timestamp":  "2026-06-28T00:50:46.773Z"
+                                                               }
+                                              },
+                      "runtimeFabricRoot":  {
+                                                "name":  "runtime-fabric-root",
+                                                "url":  "http://127.0.0.1:4001",
+                                                "ready":  true,
+                                                "status":  "READY",
+                                                "response":  {
+                                                                 "status":  "LEEWAY_RUNTIME_FABRIC_API_READY",
+                                                                 "service":  "leeway-runtime-fabric",
+                                                                 "profile":  "local-lite",
+                                                                 "routes":  {
+                                                                                "health":  "/runtime/health",
+                                                                                "agentLeeHealth":  "/agent-lee/health",
+                                                                                "runtimeStatus":  "/runtime/status"
+                                                                            },
+                                                                 "time":  "2026-06-28T00:50:46.790Z"
+                                                             }
+                                            },
+                      "runtimeFabricAux8111":  {
+                                                   "name":  "runtime-fabric-aux-8111",
+                                                   "url":  "http://127.0.0.1:8111",
+                                                   "ready":  false,
+                                                   "status":  "CHECK_REQUIRED",
+                                                   "response":  {
+                                                                    "status":  "BLOCKED",
+                                                                    "error":  "The underlying connection was closed: The connection was closed unexpectedly."
+                                                                }
+                                               },
+                      "ollamaTags":  {
+                                         "name":  "ollama-tags",
+                                         "url":  "http://127.0.0.1:11434/api/tags",
+                                         "ready":  true,
+                                         "status":  "READY",
+                                         "response":  {
+                                                          "models":  [
+                                                                         {
+                                                                             "name":  "qwen2.5vl:7b",
+                                                                             "model":  "qwen2.5vl:7b",
+                                                                             "modified_at":  "2026-06-27T03:41:57.455302262Z",
+                                                                             "size":  5969245856,
+                                                                             "digest":  "5ced39dfa4bac325dc183dd1e4febaa1c46b3ea28bce48896c8e69c1e79611cc",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen25vl",
+                                                                                             "families":  [
+                                                                                                              "qwen25vl"
+                                                                                                          ],
+                                                                                             "parameter_size":  "8.3B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  128000,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "vision",
+                                                                                                  "completion"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen2.5-coder:7b",
+                                                                             "model":  "qwen2.5-coder:7b",
+                                                                             "modified_at":  "2026-06-25T21:30:49.761962275Z",
+                                                                             "size":  4683087561,
+                                                                             "digest":  "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen2",
+                                                                                             "families":  [
+                                                                                                              "qwen2"
+                                                                                                          ],
+                                                                                             "parameter_size":  "7.6B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  32768,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "insert"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen2.5-coder:latest",
+                                                                             "model":  "qwen2.5-coder:latest",
+                                                                             "modified_at":  "2026-06-18T19:53:30.459770604Z",
+                                                                             "size":  4683087561,
+                                                                             "digest":  "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen2",
+                                                                                             "families":  [
+                                                                                                              "qwen2"
+                                                                                                          ],
+                                                                                             "parameter_size":  "7.6B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  32768,
+                                                                                             "embedding_length":  3584
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "insert"
+                                                                                              ]
+                                                                         },
+                                                                         {
+                                                                             "name":  "qwen3:latest",
+                                                                             "model":  "qwen3:latest",
+                                                                             "modified_at":  "2026-06-18T19:53:11.471592511Z",
+                                                                             "size":  5225388164,
+                                                                             "digest":  "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+                                                                             "details":  {
+                                                                                             "parent_model":  "",
+                                                                                             "format":  "gguf",
+                                                                                             "family":  "qwen3",
+                                                                                             "families":  [
+                                                                                                              "qwen3"
+                                                                                                          ],
+                                                                                             "parameter_size":  "8.2B",
+                                                                                             "quantization_level":  "Q4_K_M",
+                                                                                             "context_length":  40960,
+                                                                                             "embedding_length":  4096
+                                                                                         },
+                                                                             "capabilities":  [
+                                                                                                  "completion",
+                                                                                                  "tools",
+                                                                                                  "thinking"
+                                                                                              ]
+                                                                         }
+                                                                     ]
+                                                      }
+                                     }
+                  },
+    "qwen":  {
+                 "runtime":  "ollama",
+                 "role":  "ADVISORY_PROCESSOR_NOT_CONTROLLER",
+                 "availableModels":  [
+                                         "qwen2.5vl:7b",
+                                         "qwen2.5-coder:7b",
+                                         "qwen2.5-coder:latest",
+                                         "qwen3:latest"
+                                     ],
+                 "modelAvailable":  true,
+                 "observedTargetModel":  "qwen2.5-coder:7b"
+             },
+    "hybridWorker":  {
+                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\Start-AgentLeeHybridAutonomicFabricV17.ps1",
+                         "present":  true,
+                         "running":  false,
+                         "processId":  null,
+                         "note":  "Script path is now visible. Full live loop can be promoted separately."
+                     },
+    "checks":  {
+                   "agentLeeContainerActualName":  "agent_lee_code_mode",
+                   "runtimeFabricContainerActualName":  "leeway_runtime_fabric",
+                   "ollamaContainerActualName":  "ollama",
+                   "agentLeeContainerRunning":  true,
+                   "runtimeFabricContainerRunning":  true,
+                   "ollamaContainerRunning":  false,
+                   "agentLeeEndpointReady":  true,
+                   "runtimeFabricEndpointReady":  true,
+                   "ollamaEndpointReady":  true,
+                   "qwenModelAvailableInOllama":  true,
+                   "hybridWorkerScriptPresent":  true,
+                   "hybridWorkerRunning":  false
+               },
+    "blocking":  [
+                     "ollamaContainerRunning"
+                 ],
+    "checkRequired":  [
+                          "hybridWorkerRunning"
+                      ],
+    "guardrails":  [
+                       "No Docker build",
+                       "No Docker restart",
+                       "No Docker stop",
+                       "No Docker remove",
+                       "No Docker prune",
+                       "No model retraining",
+                       "No unknown MCP autostart",
+                       "Qwen advisor does not execute actions"
+                   ],
+    "truth":  "Corrected topology uses actual Docker container names: agent_lee_code_mode, leeway_runtime_fabric, and ollama."
+}

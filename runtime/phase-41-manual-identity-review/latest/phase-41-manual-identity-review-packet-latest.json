@@ -1,0 +1,1196 @@
+﻿{
+    "version":  "LEEWAY_PHASE_41_MANUAL_IDENTITY_REVIEW_PACKET_303",
+    "phase":  41,
+    "timestamp":  "2026-07-06T12:57:25",
+    "verdict":  "LEEWAY_PHASE_41_MANUAL_IDENTITY_REVIEW_PACKET_303_NO_EXECUTE_CLEAN",
+    "packet_only":  true,
+    "patch_applied":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "browser_opened_by_303":  false,
+    "no_write_routes":  true,
+    "no_onboarding":  true,
+    "no_pairing":  true,
+    "no_protocol_translator":  true,
+    "no_iot_bridge":  true,
+    "no_physical_action_lane":  true,
+    "clear_skies":  true,
+    "manual_review_url":  "http://localhost:3000/identity-confirmation",
+    "totals":  {
+                   "identity_candidates":  31,
+                   "network_candidates":  9,
+                   "bluetooth_candidates":  19,
+                   "printer_candidates":  3,
+                   "manual_review_items":  31
+               },
+    "review_packet":  [
+                          {
+                              "review_number":  1,
+                              "identity_candidate_id":  "identity-confirm-network-1",
+                              "asset_id":  "net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                              "display_name":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                              "observed_mac":  "AE:5F:A0:77:4E:B2",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  2,
+                              "identity_candidate_id":  "identity-confirm-network-2",
+                              "asset_id":  "net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                              "display_name":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                              "observed_mac":  "AE:5F:A0:77:4E:B2",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  3,
+                              "identity_candidate_id":  "identity-confirm-network-3",
+                              "asset_id":  "net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                              "display_name":  "2603:6000:b400:5739::1",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "2603:6000:b400:5739::1",
+                              "observed_mac":  "A0:55:1F:23:76:AE",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  4,
+                              "identity_candidate_id":  "identity-confirm-network-4",
+                              "asset_id":  "net-172_26_169_72-00_15_5D_F5_62_08",
+                              "display_name":  "172.26.169.72",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "172.26.169.72",
+                              "observed_mac":  "00:15:5D:F5:62:08",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  5,
+                              "identity_candidate_id":  "identity-confirm-network-5",
+                              "asset_id":  "net-192_168_1_189-A6_71_11_E1_DC_78",
+                              "display_name":  "192.168.1.189",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "192.168.1.189",
+                              "observed_mac":  "A6:71:11:E1:DC:78",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  6,
+                              "identity_candidate_id":  "identity-confirm-network-6",
+                              "asset_id":  "net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                              "display_name":  "LEOSINSIGHT.lan",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "192.168.1.183",
+                              "observed_mac":  "90:6A:EB:B0:CC:DA",
+                              "observed_hostname":  "LEOSINSIGHT.lan",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  7,
+                              "identity_candidate_id":  "identity-confirm-network-7",
+                              "asset_id":  "net-192_168_1_101-70_A6_CC_E6_81_83",
+                              "display_name":  "L5CD215DNVY.lan",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "192.168.1.101",
+                              "observed_mac":  "70:A6:CC:E6:81:83",
+                              "observed_hostname":  "L5CD215DNVY.lan",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  8,
+                              "identity_candidate_id":  "identity-confirm-network-8",
+                              "asset_id":  "net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                              "display_name":  "Galaxy-Z-Fold6.lan",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "192.168.1.36",
+                              "observed_mac":  "AE:5F:A0:77:4E:B2",
+                              "observed_hostname":  "Galaxy-Z-Fold6.lan",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  9,
+                              "identity_candidate_id":  "identity-confirm-network-9",
+                              "asset_id":  "net-192_168_1_1-A0_55_1F_23_76_AE",
+                              "display_name":  "SAX2V1S.lan",
+                              "source_family":  "network",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "192.168.1.1",
+                              "observed_mac":  "A0:55:1F:23:76:AE",
+                              "observed_hostname":  "SAX2V1S.lan",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  10,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-10",
+                              "asset_id":  "bt-Microsoft_Bluetooth_LE_Enumerator-1933924596",
+                              "display_name":  "Microsoft Bluetooth LE Enumerator",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  11,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-11",
+                              "asset_id":  "bt-ProtoArc_KM100-A-331912956",
+                              "display_name":  "ProtoArc KM100-A",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  12,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-12",
+                              "asset_id":  "bt-ProtoArc_KM100-A--1032483612",
+                              "display_name":  "ProtoArc KM100-A",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  13,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-13",
+                              "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                              "display_name":  "Bluetooth LE Generic Attribute Service",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  14,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-14",
+                              "asset_id":  "bt-Device_Information_Service--174547601",
+                              "display_name":  "Device Information Service",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  15,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-15",
+                              "asset_id":  "bt-ANCOBER-626928032",
+                              "display_name":  "ANCOBER",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  16,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-16",
+                              "asset_id":  "bt-ANCOBER_Avrcp_Transport--2688028",
+                              "display_name":  "ANCOBER Avrcp Transport",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  17,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-17",
+                              "asset_id":  "bt-Microsoft_Bluetooth_Enumerator--2076870047",
+                              "display_name":  "Microsoft Bluetooth Enumerator",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  18,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-18",
+                              "asset_id":  "bt-Bluetooth_Device__RFCOMM_Protocol_TDI_-531347360",
+                              "display_name":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  19,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-19",
+                              "asset_id":  "bt-Generic_Access_Profile--1245420966",
+                              "display_name":  "Generic Access Profile",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  20,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-20",
+                              "asset_id":  "bt-i2O-698774688",
+                              "display_name":  "i2O",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  21,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-21",
+                              "asset_id":  "bt-i2O_Avrcp_Transport--2014886532",
+                              "display_name":  "i2O Avrcp Transport",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  22,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-22",
+                              "asset_id":  "bt-Device_Information_Service--450619856",
+                              "display_name":  "Device Information Service",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  23,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-23",
+                              "asset_id":  "bt-Generic_Attribute_Profile-1258641163",
+                              "display_name":  "Generic Attribute Profile",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  24,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-24",
+                              "asset_id":  "bt-i2O_Avrcp_Transport--120040382",
+                              "display_name":  "i2O Avrcp Transport",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  25,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-25",
+                              "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                              "display_name":  "Bluetooth LE Generic Attribute Service",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  26,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-26",
+                              "asset_id":  "bt-ANCOBER_Avrcp_Transport--1270933978",
+                              "display_name":  "ANCOBER Avrcp Transport",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  27,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-27",
+                              "asset_id":  "bt-Generic_Access_Profile--221408879",
+                              "display_name":  "Generic Access Profile",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  28,
+                              "identity_candidate_id":  "identity-confirm-bluetooth-28",
+                              "asset_id":  "bt-Realtek_Bluetooth_Adapter-808623461",
+                              "display_name":  "Realtek Bluetooth Adapter",
+                              "source_family":  "bluetooth",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  29,
+                              "identity_candidate_id":  "identity-confirm-printer-29",
+                              "asset_id":  "printer-OneNote__Desktop_-nul_",
+                              "display_name":  "OneNote (Desktop)",
+                              "source_family":  "printer",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "OneNote (Desktop)",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  30,
+                              "identity_candidate_id":  "identity-confirm-printer-30",
+                              "asset_id":  "printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                              "display_name":  "Microsoft Print to PDF",
+                              "source_family":  "printer",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "Microsoft Print to PDF",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          },
+                          {
+                              "review_number":  31,
+                              "identity_candidate_id":  "identity-confirm-printer-31",
+                              "asset_id":  "printer-HP_OfficeJet_Pro_8020_series-USB001",
+                              "display_name":  "HP OfficeJet Pro 8020 series",
+                              "source_family":  "printer",
+                              "confirmation_state":  "PENDING_MANUAL_REVIEW",
+                              "observed_ip":  "",
+                              "observed_mac":  "",
+                              "observed_hostname":  "",
+                              "observed_bluetooth_address":  "",
+                              "observed_printer_name":  "HP OfficeJet Pro 8020 series",
+                              "required_manual_decisions":  [
+                                                                "confirmed_asset_name",
+                                                                "asset_type",
+                                                                "location_or_room",
+                                                                "owner_or_responsible_person",
+                                                                "trust_level",
+                                                                "disposition"
+                                                            ],
+                              "allowed_dispositions":  [
+                                                           "ignore",
+                                                           "monitor_read_only",
+                                                           "prepare_future_onboarding_request",
+                                                           "needs_more_research"
+                                                       ],
+                              "still_blocked":  [
+                                                    "control_now",
+                                                    "pair_now",
+                                                    "print_now",
+                                                    "deploy_translator_now",
+                                                    "deploy_iot_bridge_now",
+                                                    "publish_message_now",
+                                                    "arm_real_alpha_now"
+                                                ],
+                              "manual_review_url":  "http://localhost:3000/identity-confirmation"
+                          }
+                      ],
+    "manual_review_rules":  {
+                                "review_goal":  "Confirm identity before any onboarding or control lane exists.",
+                                "allowed_now":  [
+                                                    "look at candidate",
+                                                    "compare observed evidence",
+                                                    "decide asset type",
+                                                    "decide room/location",
+                                                    "decide trust level",
+                                                    "decide disposition"
+                                                ],
+                                "blocked_now":  [
+                                                    "control",
+                                                    "pair",
+                                                    "print",
+                                                    "deploy translator",
+                                                    "deploy bridge",
+                                                    "publish protocol message",
+                                                    "arm physical action"
+                                                ]
+                            },
+    "recommended_next":  "304-identity-confirmation-human-input-contract-no-execute.ps1"
+}

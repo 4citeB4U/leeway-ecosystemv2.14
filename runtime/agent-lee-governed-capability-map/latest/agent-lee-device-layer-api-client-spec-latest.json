@@ -1,0 +1,60 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_DEVICE_LAYER_API_CLIENT_SPEC_271",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:16:35",
+    "client_name":  "deviceLayerCapabilityClient",
+    "base_url":  "http://127.0.0.1:5323",
+    "methods":  [
+                    {
+                        "name":  "getCapabilityMap",
+                        "method":  "GET",
+                        "path":  "/agent-lee/device-layer/capability-map",
+                        "returns":  "CapabilityMap",
+                        "executes":  false
+                    },
+                    {
+                        "name":  "getFamilies",
+                        "method":  "GET",
+                        "path":  "/agent-lee/device-layer/families",
+                        "returns":  "FamilyList",
+                        "executes":  false
+                    },
+                    {
+                        "name":  "getReadOnlyRoutes",
+                        "method":  "GET",
+                        "path":  "/agent-lee/device-layer/read-only-routes",
+                        "returns":  "ReadOnlyRouteList",
+                        "executes":  false
+                    },
+                    {
+                        "name":  "getApprovalRequiredActions",
+                        "method":  "GET",
+                        "path":  "/agent-lee/device-layer/approval-required-actions",
+                        "returns":  "ApprovalRequiredActionList",
+                        "executes":  false
+                    },
+                    {
+                        "name":  "getLockState",
+                        "method":  "GET",
+                        "path":  "/agent-lee/device-layer/lock-state",
+                        "returns":  "LockState",
+                        "executes":  false
+                    }
+                ],
+    "forbidden_methods":  [
+                              "postExecutionAction",
+                              "executeDeviceAction",
+                              "unlockRealAlpha",
+                              "runShellCommand",
+                              "runAdbCommand",
+                              "runSshCommand",
+                              "runTailscaleCommand",
+                              "runSmartHomeCommand"
+                          ],
+    "error_policy":  {
+                         "on_unreachable":  "show operator unreachable warning",
+                         "on_safety_violation":  "hide all action controls and show safety warning",
+                         "on_missing_route":  "show route warning",
+                         "on_execution_enabled_true":  "hard fail UI into locked warning state"
+                     }
+}

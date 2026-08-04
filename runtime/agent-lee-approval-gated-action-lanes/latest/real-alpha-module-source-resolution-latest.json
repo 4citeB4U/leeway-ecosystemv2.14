@@ -1,0 +1,38 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_MODULE_SOURCE_RESOLUTION_284C_MR",
+    "phase":  39,
+    "timestamp":  "2026-07-06T08:59:01",
+    "verdict":  "LEEWAY_REAL_ALPHA_MODULE_SOURCE_RESOLUTION_NO_EXECUTE_284C_MR_CLEAN",
+    "recovery_for_reserved_pid_variable":  true,
+    "conclusion":  "REAL_ALPHA_MODULE_SOURCE_NOT_RESOLVED_DO_NOT_PATCH",
+    "command_line":  "python  -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 ",
+    "expected_module":  "leeway_real_windows_actuator_alpha",
+    "command_line_has_expected_module":  true,
+    "python_import_found":  false,
+    "python_import_origin":  "",
+    "filename_hit_count":  1,
+    "text_hit_count":  60,
+    "primary_source":  "",
+    "primary_resolved":  false,
+    "primary_looks_correct":  false,
+    "prior_bad_source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\runtime\\.venv\\Lib\\site-packages\\fastapi\\exception_handlers.py",
+    "windows_locked":  true,
+    "open_app_executed_during_resolution":  false,
+    "process_info":  [
+                         {
+                             "pid":  45808,
+                             "process_name":  "python.exe",
+                             "executable_path":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                             "command_line":  "python  -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 "
+                         }
+                     ],
+    "safety":  {
+                   "resolution_only":  true,
+                   "patch_applied":  false,
+                   "no_execution_in_284cmr":  true,
+                   "open_app_remained_blocked":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "Manually run: python -c \"import leeway_real_windows_actuator_alpha,inspect; print(leeway_real_windows_actuator_alpha.__file__)\" from the same shell/environment that starts port 7332."
+}

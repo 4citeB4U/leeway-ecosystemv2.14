@@ -1,0 +1,27 @@
+﻿{
+    "timestamp":  "2026-06-03T13:42:42.1669958-05:00",
+    "latestVsixPath":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.2.13.vsix",
+    "latestVsixVersion":  "1.2.13",
+    "installedBefore":  [
+                            "leeway.agent-lee-leeway-coding-system-1.2.13",
+                            "leeway.agent-lee-leeway-coding-system-1.2.12"
+                        ],
+    "uninstallAttempted":  true,
+    "installAttempted":  true,
+    "installedAfter":  [
+                           "leeway.agent-lee-leeway-coding-system-1.2.13",
+                           "leeway.agent-lee-leeway-coding-system-1.2.12"
+                       ],
+    "installedVersionAfter":  "1.2.13",
+    "commandContributionPresent":  true,
+    "activationEventPresent":  true,
+    "mediaAssetsPresent":  true,
+    "readmeAssetsPresent":  true,
+    "readmeContainsPairedAdminOS":  true,
+    "readmeContainsCurrentVersion":  true,
+    "adapterCrashRisk":  false,
+    "finalVerdict":  "PASS",
+    "caveats":  [
+                    "VS Code must reload before the live extension host can switch to the newly installed version."
+                ]
+}

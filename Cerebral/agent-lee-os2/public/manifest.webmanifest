@@ -1,0 +1,20 @@
+{
+  "name": "Agent Lee Launch",
+  "short_name": "Agent Lee",
+  "description": "Agent Lee local interface for Cerebral with offline-ready PWA support.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#00ffe0",
+  "background_color": "#05070e",
+  "categories": ["utilities", "productivity", "tools"],
+  "icons": [
+    {
+      "src": "/agent-lee-launch-button.svg",
+      "sizes": "256x256",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

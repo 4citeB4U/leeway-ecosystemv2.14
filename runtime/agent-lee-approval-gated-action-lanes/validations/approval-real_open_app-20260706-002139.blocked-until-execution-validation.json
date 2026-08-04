@@ -1,0 +1,30 @@
+﻿{
+    "version":  "LEEWAY_APPROVED_REQUEST_BLOCKED_UNTIL_EXECUTION_VALIDATION_283",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:25:12",
+    "validation_status":  "APPROVED_REQUEST_BLOCKED_UNTIL_EXECUTION",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "request_status":  "APPROVED",
+    "approval_state":  "APPROVED",
+    "execution_state":  "APPROVED_NOT_EXECUTED_BLOCKED_UNTIL_284",
+    "execution_performed":  false,
+    "lane_id":  "windows_open_app_controlled",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "target_device_id":  "windows-agent-lee",
+    "windows_locked":  true,
+    "unauthorized_open_app_executed":  false,
+    "unauthorized_type_text_executed":  false,
+    "blocked_until_execution_validated":  true,
+    "next_allowed_step":  "284-execute-one-approved-action-and-lockback.ps1",
+    "safety":  {
+                   "validation_only":  true,
+                   "no_execution_in_283":  true,
+                   "approved_request_still_blocked":  true,
+                   "no_execute_buttons_added":  true,
+                   "no_post_execution_routes_added":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               }
+}

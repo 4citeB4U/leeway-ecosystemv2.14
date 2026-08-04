@@ -1,0 +1,64 @@
+﻿{
+    "version":  "LEEWAY_IOT_READ_ONLY_ROUTE_PATCH_PLAN_NO_EXECUTE_2026-07-05",
+    "timestamp":  "2026-07-05T20:54:35",
+    "family":  "iot",
+    "contract_name":  "iot_read_only_route_response_contract",
+    "routes":  {
+                   "status":  {
+                                  "route":  "/iot/status",
+                                  "method":  "GET",
+                                  "sample_response":  {
+                                                          "ok":  true,
+                                                          "family":  "iot",
+                                                          "mode":  "READ_ONLY_NO_CONTROL",
+                                                          "discovery_route_present":  true,
+                                                          "status_route_present":  true,
+                                                          "registry_route_present":  true,
+                                                          "devices_route_present":  true,
+                                                          "discovered_count":  0,
+                                                          "control_enabled":  false,
+                                                          "approval_required_for_control":  true,
+                                                          "registry_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-registry-latest.json",
+                                                          "policy_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-approval-policy-latest.json",
+                                                          "contract_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-capability-contract-latest.json"
+                                                      }
+                              },
+                   "registry":  {
+                                    "route":  "/iot/registry",
+                                    "method":  "GET",
+                                    "sample_response":  {
+                                                            "ok":  true,
+                                                            "family":  "iot",
+                                                            "registry_status":  "READ_ONLY_REGISTRY",
+                                                            "discovered_count":  0,
+                                                            "normalized_devices":  [
+
+                                                                                   ],
+                                                            "control_enabled":  false,
+                                                            "source_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-registry-latest.json"
+                                                        }
+                                },
+                   "devices":  {
+                                   "route":  "/iot/devices",
+                                   "method":  "GET",
+                                   "sample_response":  {
+                                                           "ok":  true,
+                                                           "family":  "iot",
+                                                           "count":  0,
+                                                           "devices":  [
+
+                                                                       ],
+                                                           "control_enabled":  false,
+                                                           "source_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-iot\\latest\\iot-registry-latest.json"
+                                                       }
+                               }
+               },
+    "security_rules":  [
+                           "GET only",
+                           "no physical action",
+                           "no hidden control",
+                           "no automatic pairing",
+                           "no background discovery expansion",
+                           "no state mutation"
+                       ]
+}

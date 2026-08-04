@@ -1,0 +1,16 @@
+laws:
+  - id: LAW-001
+    title: Voice Kernel Requirement
+    rule: "All TTS requests must attempt XTTS /tts first. Fallbacks allowed only on XTTS failure."
+  - id: LAW-002
+    title: Receipt Obligation
+    rule: "Every external service call that affects state must write a receipt under Archive/receipts."
+  - id: LAW-003
+    title: Model Authority Enforcement
+    rule: "Model role resolution must consult model-authority.json before environment overrides."
+  - id: LAW-004
+    title: Discovery Canon
+    rule: "Discovery Graph is authoritative for resource discovery; caches must be validated."
+  - id: LAW-005
+    title: Immutable Path
+    rule: "Files under /constitution are change-controlled; changes require governance token."

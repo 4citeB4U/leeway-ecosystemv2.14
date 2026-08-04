@@ -1,0 +1,82 @@
+﻿{
+    "version":  "LEEWAY_WINDOWS_LOCAL_ACTUATOR_SERVICE_CONTRACT_2026-07-05",
+    "created_at":  "2026-07-05T17:43:25",
+    "actuator_id":  "windows-local-actuator-windows-agent-lee",
+    "future_service_url":  "http://127.0.0.1:7331",
+    "status":  "CONTRACT_CREATED_SERVICE_NOT_STARTED",
+    "routes":  {
+                   "safe_read_routes":  [
+                                            "/health",
+                                            "/status",
+                                            "/capabilities",
+                                            "/policy",
+                                            "/allowlist",
+                                            "/monitors",
+                                            "/screen/status",
+                                            "/camera/status",
+                                            "/audio/status",
+                                            "/apps/list-allowlist",
+                                            "/receipts",
+                                            "/receipts/{receipt_id}"
+                                        ],
+                   "approval_gated_routes":  [
+                                                 "/execute/open-app",
+                                                 "/execute/open-url",
+                                                 "/execute/browser-search",
+                                                 "/execute/mouse-move",
+                                                 "/execute/mouse-click",
+                                                 "/execute/type-text",
+                                                 "/execute/hotkey",
+                                                 "/execute/screenshot",
+                                                 "/execute/file-open",
+                                                 "/execute/file-reveal",
+                                                 "/execute/print",
+                                                 "/execute/cast",
+                                                 "/execute/shell-allowed-command"
+                                             ]
+               },
+    "request_model":  {
+                          "execute_shell_allowed_command":  {
+                                                                "parameters":  "object",
+                                                                "approval_required":  true,
+                                                                "command_id":  "allowlist_key"
+                                                            },
+                          "execute_type_text":  {
+                                                    "target_window":  "optional",
+                                                    "text":  "string",
+                                                    "approval_required":  true
+                                                },
+                          "execute_mouse_click":  {
+                                                      "y":  "integer",
+                                                      "button":  "left_right_middle",
+                                                      "approval_required":  true,
+                                                      "x":  "integer"
+                                                  },
+                          "execute_open_url":  {
+                                                   "browser":  "edge_or_chrome",
+                                                   "url":  "http_or_https_url",
+                                                   "approval_required":  "false_for_preview_search_true_for_sensitive_sites"
+                                               },
+                          "execute_open_app":  {
+                                                   "app_id":  "allowlisted_app_id",
+                                                   "args":  "array_of_strings",
+                                                   "approval_required":  "depends_on_app_policy"
+                                               },
+                          "common":  {
+                                         "target_device_id":  "windows-agent-lee",
+                                         "dry_run":  "boolean_default_true",
+                                         "source":  "device_operator_or_shell",
+                                         "request_id":  "string",
+                                         "approval_id":  "string_or_empty",
+                                         "requested_by":  "agent_lee_or_owner"
+                                     }
+                      },
+    "response_model":  {
+                           "receipt_id":  "string",
+                           "executed":  "boolean",
+                           "message":  "string",
+                           "ok":  "boolean",
+                           "receipt_path":  "string",
+                           "dry_run":  "boolean"
+                       }
+}

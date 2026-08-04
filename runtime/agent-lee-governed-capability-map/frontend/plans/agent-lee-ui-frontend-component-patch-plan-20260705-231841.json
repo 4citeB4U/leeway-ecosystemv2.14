@@ -1,0 +1,110 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_UI_FRONTEND_COMPONENT_PATCH_PLAN_272",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:22:55",
+    "plan_status":  "READY_FOR_FRONTEND_COMPONENT_PATCH_NO_EXECUTE",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "frontend_target":  {
+                            "candidate_frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode",
+                            "package_json":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\package.json",
+                            "app_page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+                            "component_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\components",
+                            "lib_dir":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\lib",
+                            "planned_component_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\components\\AgentLeeDeviceLayerCapabilityPanel.tsx",
+                            "planned_api_client_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\lib\\deviceLayerCapabilityClient.ts"
+                        },
+    "files_to_create":  [
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\lib\\deviceLayerCapabilityClient.ts",
+                                "type":  "TypeScript API client",
+                                "purpose":  "GET-only client for /agent-lee/device-layer/* routes.",
+                                "no_post_methods":  true,
+                                "no_execution_methods":  true
+                            },
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\components\\AgentLeeDeviceLayerCapabilityPanel.tsx",
+                                "type":  "React component",
+                                "purpose":  "Render governed Device Layer capability map with locked/no-execute state.",
+                                "no_execute_buttons":  true,
+                                "no_post_forms":  true
+                            }
+                        ],
+    "files_to_modify":  [
+                            {
+                                "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\page.tsx",
+                                "modification":  "Import and render AgentLeeDeviceLayerCapabilityPanel in dashboard/cockpit area.",
+                                "required":  true,
+                                "no_execution_controls":  true
+                            }
+                        ],
+    "required_component_sections":  [
+                                        "locked clean banner",
+                                        "device family cards",
+                                        "read-only route table",
+                                        "approval-required disabled action cards",
+                                        "proof/source path panel",
+                                        "operator unreachable warning",
+                                        "safety hard-fail warning if execution_enabled ever returns true"
+                                    ],
+    "required_api_methods":  [
+                                 "getCapabilityMap",
+                                 "getFamilies",
+                                 "getReadOnlyRoutes",
+                                 "getApprovalRequiredActions",
+                                 "getLockState"
+                             ],
+    "forbidden_frontend_changes":  [
+                                       "execute button",
+                                       "run button",
+                                       "unlock button",
+                                       "approve and execute button",
+                                       "POST action route",
+                                       "server action that executes devices",
+                                       "shell command form",
+                                       "ADB command form",
+                                       "SSH command form",
+                                       "Tailscale command form",
+                                       "smart home command form",
+                                       "camera stream start",
+                                       "microphone start",
+                                       "printer submit",
+                                       "casting start",
+                                       "background polling that triggers action"
+                                   ],
+    "validation_plan":  [
+                            "confirm frontend files exist or create only planned files",
+                            "confirm no POST methods in API client",
+                            "confirm no execute/run/unlock buttons in component",
+                            "confirm TypeScript compile or static syntax check if available",
+                            "confirm Device Operator routes remain no-execute clean",
+                            "confirm Windows real-alpha locked after patch",
+                            "write receipt before and after frontend patch"
+                        ],
+    "safety":  {
+                   "plan_only":  true,
+                   "no_frontend_patch_applied":  true,
+                   "no_execution_enabled":  true,
+                   "execute_buttons_visible":  false,
+                   "post_execution_routes_added":  false,
+                   "action_cards_enabled":  false,
+                   "physical_actions_executed":  0,
+                   "shell_execution":  false,
+                   "network_mutation":  false,
+                   "smart_home_mutation":  false,
+                   "mobile_device_mutation":  false,
+                   "printer_job":  false,
+                   "casting_action":  false,
+                   "camera_or_microphone_access":  false,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "source_contracts":  {
+                             "frontend_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-ui-frontend-governed-device-layer-contract-latest.json",
+                             "component_spec_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-device-layer-capability-panel-component-spec-latest.json",
+                             "state_model_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-device-layer-ui-state-model-latest.json",
+                             "api_client_spec_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-device-layer-api-client-spec-latest.json",
+                             "path_inspection_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-frontend-path-inspection-latest.json"
+                         },
+    "recommended_next":  "273-apply-agent-lee-ui-frontend-component-no-execute.ps1"
+}

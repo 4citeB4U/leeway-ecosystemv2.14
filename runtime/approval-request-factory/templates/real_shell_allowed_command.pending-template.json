@@ -1,0 +1,17 @@
+﻿{
+    "action":  "real_shell_allowed_command",
+    "risk_tier":  "high_risk_admin",
+    "required_fields":  [
+                            "command_id",
+                            "target_device_id",
+                            "human_summary",
+                            "requested_by"
+                        ],
+    "default_state":  "PENDING",
+    "approval_state_on_create":  "PENDING",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "dry_run_preview_required":  true,
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "notes":  "Only allowlisted command IDs. No arbitrary shell."
+}

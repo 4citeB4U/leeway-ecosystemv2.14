@@ -1,0 +1,11 @@
+{
+  "context_id": "ctx-1783127868-2b03badf83f435d7",
+  "source": "enterprise-context-proof",
+  "content_type": "log",
+  "compressed_text": "BEGIN CONTEXT SAMPLE:\nERROR line one\nreceipt path should be preserved.\nThis is a long runtime log line for context compression testing.\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nERROR line one\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nEND CONTEXT SAMPLE:\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nThis is a long runtime log line for context compression testing.\nreceipt path should be preserved.",
+  "before_tokens_estimate": 1995,
+  "after_tokens_estimate": 296,
+  "saved_tokens_estimate": 1699,
+  "reduction_percent_estimate": 85.16,
+  "created_at": "2026-07-04T01:17:48.933457+00:00"
+}

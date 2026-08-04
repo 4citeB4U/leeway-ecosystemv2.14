@@ -1,0 +1,17 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🟢 CORE",
+    "TAG": "CORE.VISUAL.LVIS.WORKFLOW",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "workflow": [
+    "Perception and source intake",
+    "Worker routing through Leeway Runtime",
+    "Deterministic reconstruction and repair loops",
+    "Structural fidelity scoring",
+    "Asset verification",
+    "Manifest export",
+    "Project integration with pending edits and receipts"
+  ]
+}

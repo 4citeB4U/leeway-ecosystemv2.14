@@ -1,0 +1,51 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "created_at":  "2026-07-05T17:28:00",
+    "doctrine":  "AGENT_LEE_CAN_PREPARE; RISKY_ACTIONS_REQUIRE_APPROVAL",
+    "creator_root_authority":  "Leonard J Lee",
+    "safe_auto_actions":  [
+                              "health_check",
+                              "status_check",
+                              "list_devices",
+                              "list_capabilities",
+                              "read_receipts",
+                              "open_local_dashboard",
+                              "generate_artifact_preview",
+                              "draft_message",
+                              "draft_email",
+                              "prepare_upload",
+                              "search_web",
+                              "create_report"
+                          ],
+    "approval_required_actions":  [
+                                      "click_external_submit",
+                                      "send_message",
+                                      "send_sms",
+                                      "send_email",
+                                      "dial_phone",
+                                      "publish_youtube",
+                                      "publish_tiktok",
+                                      "post_social",
+                                      "print_document",
+                                      "cast_to_tv",
+                                      "change_iot_power",
+                                      "share_location",
+                                      "read_contacts",
+                                      "read_private_messages",
+                                      "install_software",
+                                      "delete_file",
+                                      "move_money",
+                                      "sign_contract"
+                                  ],
+    "blocked_without_explicit_owner_override":  [
+                                                    "credential_exfiltration",
+                                                    "bypass_device_security",
+                                                    "stealth_surveillance",
+                                                    "unauthorized_account_access",
+                                                    "malware_behavior",
+                                                    "destructive_bulk_delete",
+                                                    "hidden_remote_control_without_notice"
+                                                ],
+    "receipt_required":  true,
+    "route_receipts_to":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator"
+}

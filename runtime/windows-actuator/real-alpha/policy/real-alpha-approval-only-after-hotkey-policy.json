@@ -1,0 +1,11 @@
+﻿{
+    "version":  "LEEWAY_LOCK_REAL_ALPHA_BACK_AFTER_HOTKEY_PROOF_2026-07-05",
+    "created_at":  "2026-07-05T18:47:02",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_HOTKEY_PROOF",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "approval_validation_available":  true,
+    "all_physical_actions_blocked":  true,
+    "previous_milestone_preserved":  "180 proved approved real_hotkey sent F5 into controlled Notepad target once",
+    "next_extension_requires_new_script":  true
+}

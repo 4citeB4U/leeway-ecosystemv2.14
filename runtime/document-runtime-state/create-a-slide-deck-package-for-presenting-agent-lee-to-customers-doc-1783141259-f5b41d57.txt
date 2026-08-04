@@ -1,0 +1,86 @@
+# Create a slide deck package for presenting Agent Lee to customers
+
+LEEWAY OPEN NOTEBOOK CREATIVE PACKAGE
+
+Creative Type: slide_deck
+Audience: General audience
+Goal: Create a complete usable creative production package.
+Tone: clear, practical, production-ready
+Prompt: Create a slide deck package for presenting Agent Lee to customers
+
+Production Rule:
+This package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.
+
+## Slide Deck Package
+Slide Count Target: 10
+
+## Deck Strategy
+The deck should move from problem to solution to proof to action.
+
+## Slide 1
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 2
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 3
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 4
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 5
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 6
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 7
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 8
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 9
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+## Slide 10
+Title:
+Main point:
+Visual direction:
+Speaker notes:
+
+
+## Storage and Handoff
+- Open Notebook owns this creative package.
+- Export/render lanes create final media from this package.
+- Seafile/storage governor should hold durable files and manifests.
+- Artifact viewer should expose the room link.
+- Skill router should return the actionable link/receipt.

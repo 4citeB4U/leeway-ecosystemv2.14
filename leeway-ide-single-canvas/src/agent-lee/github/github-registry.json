@@ -1,0 +1,25 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "DATA",
+    "TAG": "CORE.AGENT_LEE.GITHUB.GITHUB_REGISTRY",
+    "DISCOVERY_PIPELINE": "Voice -> Intent -> Location -> Vertical -> Ranking -> Render"
+  },
+  "name": "agent-lee-github-control",
+  "enabled": true,
+  "tools": {
+    "git": "git.exe.Source",
+    "gh": "gh.exe.Source"
+  },
+  "rules": [
+    "No direct push to main/master",
+    "Branch first",
+    "Verify before commit",
+    "Commit after verification",
+    "Push branch",
+    "Create PR",
+    "Log all GitHub actions"
+  ],
+  "helper": "C:\Users\Leona\.leeway-vscode\agent-lee\github\\Invoke-AgentLeeGitHub.ps1"
+}
+

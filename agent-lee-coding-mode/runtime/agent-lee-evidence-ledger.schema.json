@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "schema": "leeway.agent-lee.evidence-ledger.schema.v1",
+  "title": "Agent Lee Evidence Ledger Schema",
+  "type": "object",
+  "required": [
+    "researchId",
+    "objective",
+    "query",
+    "sourceMap",
+    "candidateEvidence",
+    "curatedEvidence",
+    "rejectedEvidence",
+    "claimChecks",
+    "openGaps",
+    "buildDecisions",
+    "receipts",
+    "entrySurface",
+    "adapterEndpoint",
+    "canonicalFingerprint",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "researchId": { "type": "string" },
+    "objective": { "type": "string" },
+    "query": { "type": "string" },
+    "sourceMap": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidenceItem" }
+    },
+    "candidateEvidence": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidenceItem" }
+    },
+    "curatedEvidence": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidenceItem" }
+    },
+    "rejectedEvidence": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidenceItem" }
+    },
+    "claimChecks": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/claimCheck" }
+    },
+    "openGaps": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "buildDecisions": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "receipts": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "entrySurface": { "type": "string", "enum": ["vscode-chat"] },
+    "adapterEndpoint": { "type": "string" },
+    "canonicalFingerprint": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  },
+  "definitions": {
+    "evidenceItem": {
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "title",
+        "sourceType",
+        "status",
+        "qualityScore",
+        "relevanceScore",
+        "freshnessScore",
+        "keyEvidence",
+        "supports",
+        "confidence",
+        "notes"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "source": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": ["string", "null"] },
+        "localPath": { "type": ["string", "null"] },
+        "sourceType": { "type": "string" },
+        "status": { "type": "string", "enum": ["candidate", "curated", "rejected", "needs-check"] },
+        "qualityScore": { "type": "number" },
+        "relevanceScore": { "type": "number" },
+        "freshnessScore": { "type": "number" },
+        "keyEvidence": { "type": "string" },
+        "supports": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "claimCheck": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim",
+        "claimType",
+        "evidenceIds",
+        "counterevidence",
+        "freshnessRequirement",
+        "result",
+        "confidence",
+        "finalWording",
+        "notes"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "claim": { "type": "string" },
+        "claimType": { "type": "string" },
+        "evidenceIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "counterevidence": { "type": "string" },
+        "freshnessRequirement": { "type": "string" },
+        "result": { "type": "string", "enum": ["supported", "unsupported", "contradicted", "ambiguous", "needs-review"] },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "finalWording": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

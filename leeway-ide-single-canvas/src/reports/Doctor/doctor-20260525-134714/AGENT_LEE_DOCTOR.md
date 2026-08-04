@@ -1,0 +1,236 @@
+﻿# Agent Lee Doctor Report
+
+- Generated: 2026-05-25T13:47:43.5031442-05:00
+- Extension: `E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension`
+- VSIX: `E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.2.11.vsix`
+- Failed checks: 7
+- LeeWay compliance: 97.85%
+- LeeWay blocking file count: 0
+
+## Checks
+- [PASS] Extension folder exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension
+- [PASS] package.json exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\package.json
+- [PASS] main points to out/extension.js ./out/extension.js
+- [PASS] Activity Bar icon exists media/leeway-activity.svg
+- [PASS] Command registered: agentLee.open 
+- [PASS] Command registered: agentLee.openPanel 
+- [PASS] Command registered: agentLee.openSidebar 
+- [PASS] Command registered: agentLee.scanWorkspace 
+- [PASS] Command registered: agentLee.fixWorkspace 
+- [PASS] Command registered: agentLee.verifyWorkspace 
+- [PASS] Command registered: agentLee.askLocalModel 
+- [PASS] Command registered: agentLee.engineerTask 
+- [PASS] Command registered: agentLee.inspectWorkspace 
+- [PASS] Command registered: agentLee.stagePatch 
+- [PASS] Command registered: agentLee.applyApprovedPatch 
+- [PASS] Command registered: agentLee.runVerification 
+- [PASS] Command registered: agentLee.showReceipts 
+- [PASS] Command registered: agentLee.runtimeStatus 
+- [PASS] Command registered: agentLee.testPersona 
+- [PASS] Activation event includes wildcard startup activation *, onCommand:agentLee.openSidebar, onCommand:agentLee.runtimeStatus, onView:agentLee.sidebar
+- [FAIL] Activation does not rely on stale view/startup assumptions *, onCommand:agentLee.openSidebar, onCommand:agentLee.runtimeStatus, onView:agentLee.sidebar
+- [FAIL] No redundant onCommand activation events onCommand:agentLee.openSidebar, onCommand:agentLee.runtimeStatus
+- [PASS] Activity Bar view container ID is present agentLee
+- [PASS] Sidebar view ID is present agentLee.sidebar
+- [PASS] package.json contributes agentLee.rootPath setting E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\package.json
+- [PASS] agentLee.rootPath default points to standalone root E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\package.json
+- [PASS] extension.ts exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.openPanel E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.scanWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.fixWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.verifyWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.askLocalModel E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.engineerTask E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.inspectWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.stagePatch E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.applyApprovedPatch E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.runVerification E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.showReceipts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.runtimeStatus E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.testPersona E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] package.json view ID matches registered WebviewViewProvider ID E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [FAIL] extension.ts contains AGENT_LEE_UI_VERSION E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [FAIL] Status bar item uses Agent Lee ready/degraded proof text E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [FAIL] Status bar item uses runtimeStatus command and required tooltip E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts creates WebviewPanel for openPanel E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] openPanel uses real chat UI builder E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] sidebar provider uses real chat UI builder E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers WebviewViewProvider E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview HTML calls acquireVsCodeApi exactly once E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview buttons post messages E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview button exists: Engineer Task E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview button exists: Runtime Status E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview button exists: Scan Agent Lee Self E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview button exists: Verify Agent Lee Self E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Webview button exists: Ask Local Model E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: sendMessage E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: askLocalModel E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: engineerTask E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: scanSelf E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: verifySelf E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: runtimeStatus E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: scanWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: verifyWorkspace E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: clearChat E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: openReport E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts handles webview message command/action: openReceipts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Activity Bar/sidebar IDs match package.json E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\package.json
+- [PASS] No activation-blocking await occurs before UI registration E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] LeeWay write policy exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Agent Lee runtime bootstrap exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Model governance exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\model-governance.ts
+- [PASS] Agent governance exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-governance.ts
+- [PASS] Engineering loop exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-engineering-loop.ts
+- [PASS] Engineering prompt exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-engineering-prompt.ts
+- [PASS] Standalone connectivity loader exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Persona runtime bridge exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Standalone Agent Lee source root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee
+- [PASS] VSIX package root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension
+- [PASS] Installed VSIX package root is not treated as runtime root unless it carries standalone directories E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension standaloneDirsPresent=False
+- [PASS] Standalone SDK root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\sdk
+- [PASS] Standalone MCP root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp
+- [PASS] Standalone agents root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\agents
+- [PASS] Standalone governance root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\governance
+- [PASS] Standalone persona system root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\Agent_Lee_Persona_System
+- [PASS] Standalone persona module root exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona
+- [PASS] Standalone SDK manifest exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\sdk\leeway-sdk\manifest.json
+- [PASS] Standalone agent registry exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\agents\registry\agent-registry.json
+- [PASS] Standalone standards canon exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\sdk\standards\leeway-standards-canon.json
+- [PASS] Heritage canon markdown exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\06_HERITAGE\agentlee_heritage_canon.md
+- [PASS] Heritage canon JSON exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\06_HERITAGE\agentlee_heritage_canon.json
+- [PASS] Persona module heritage markdown exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\assets\06_HERITAGE\agentlee_heritage_canon.md
+- [PASS] Persona module heritage JSON exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\assets\06_HERITAGE\agentlee_heritage_canon.json
+- [PASS] Persona manifest exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Persona module manifest exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\assets\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Connectivity loader exports resolveAgentLeeRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getAgentLeeRootResolution E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getAgentLeeRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalSdkRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalStandardsRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalMcpRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalAgentsRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalGovernanceRoot E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports validateStandaloneConnectivity E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadLeewaySdkManifest E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadAgentRegistry E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadMcpRegistry E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadStandardsCanon E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader supports AGENT_LEE_ROOT override E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader reads agentLee.rootPath configuration E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader defines standalone default root E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader uses walk-up discovery E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader avoids trusting installed extension root alone E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Persona manifest references heritage canon E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Persona bridge loads heritage canon E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Runtime prompt includes heritage and governance laws E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Persona bridge uses standalone persona module root E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Persona test is anti-generic E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Core persona uses runtime bridge E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\persona.ts
+- [PASS] Runtime bootstrap exports initializeAgentLeeRuntime E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports assertAgentLeeRuntimeReady E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports getAgentLeeRuntimeState E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports refreshDoctorStatus E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports setDoctorStatus E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports getDoctorStatus E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports formatThroughAgentLee E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports buildModelPromptThroughAgentLee E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports recordAgentLeeRuntimeReceipt E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap declares degraded mode E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap sets AGENT_LEE_RUNTIME_READY flag E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap wires doctor status refresh and report parsing E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap reports resolvedRoot rootSource and missingConnectivityPaths E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Shared governed-file classifier exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Self-scan excludes mcp/adapters E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Self-scan excludes runtime-state.json E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Self-scan excludes persona README E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Live scanner exports scanLeeWayCompliance E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\tools\leeway-scanner.ts
+- [PASS] Live scanner defines unified version E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\tools\leeway-scanner.ts
+- [PASS] Live scanner getFiles supports root and mode E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\tools\leeway-scanner.ts
+- [PASS] extension.ts imports scanLeeWayCompliance E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts imports LEEWAY_SCANNER_VERSION E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] runWorkspaceScan uses unified scanLeeWayCompliance E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] runWorkspaceScan outputs scanner version E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] runWorkspaceScan calls setDoctorStatus for self-scan E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] gatherComplianceResults removed from extension.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Runtime bootstrap refreshDoctorStatus handles compliance reports E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Engineering receipt directory is creatable E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\reports\engineering-runs
+- [PASS] Write path uses LeeWay policy: src\core\file-ops.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\file-ops.ts
+- [PASS] Write path uses LeeWay policy: src\extension.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Write path uses LeeWay policy: src\execution-brain\executionToEditBuffer.adapter.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\execution-brain\executionToEditBuffer.adapter.ts
+- [PASS] Write path uses LeeWay policy: src\edit-buffer\editBuffer.apply.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\edit-buffer\editBuffer.apply.ts
+- [PASS] Governed writes enforce LeeWay compliance E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\file-ops.ts
+- [PASS] Release metadata synchronized 
+- [PASS] Dependencies installed node_modules already exists
+- [PASS] TypeScript compile succeeds 
+- [PASS] out/extension.js exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\out\extension.js
+- [PASS] out/extension.js contains activate/deactivate E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\out\extension.js
+- [PASS] out/extension.js contains initializeAgentLeeRuntime 
+- [PASS] out/extension.js contains registerWebviewViewProvider 
+- [PASS] out/extension.js contains agentLee commands 
+- [PASS] VSIX package builds E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.2.11.vsix
+- [PASS] VSIX file exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.2.11.vsix
+- [PASS] VSIX file count is below 700 Count: 483
+- [PASS] Ollama API reachable 5 model(s) reported
+- [PASS] Required Ollama model present: qwen2.5-coder:1.5b 
+- [PASS] Required Ollama model present: qwen2.5-coder:7b 
+- [PASS] Required Ollama model present: qwen2.5-coder:14b 
+- [PASS] Required Ollama model present: qwen2.5-coder:14b 
+- [PASS] Required Ollama model present: qwen3:latest 
+- [FAIL] Required Ollama model present: qwen3-vl-embedding 
+- [PASS] MCP registry exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.scan E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.fix E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.verify E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.model.route E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: persona.runtime.bridge E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: write.policy E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: engineering.loop E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: sdk.validator E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: agent.registry.loader E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] Persona module file exists: index.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module file exists: persona-module.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\persona-module.ts
+- [PASS] Persona module file exists: prompt-builder.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\prompt-builder.ts
+- [PASS] Persona module file exists: response-formatter.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\response-formatter.ts
+- [PASS] Persona module file exists: voice-modes.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\voice-modes.ts
+- [PASS] Persona module file exists: heritage-loader.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\heritage-loader.ts
+- [PASS] Persona module file exists: persona-validator.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\persona-validator.ts
+- [PASS] Persona module file exists: anti-generic-filter.ts E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\src\anti-generic-filter.ts
+- [PASS] Persona module export present: buildAgentLeeRuntimePrompt E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: formatAgentLeeResponse E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: validateAgentLeePersonaModule E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: testAgentLeePersona E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Extension activation initializes Agent Lee runtime asynchronously E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Command responses use Agent Lee runtime formatter E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Local model prompts route through Agent Lee prompt builder E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Runtime status command exists E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Test persona is diagnostic only E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts routes Agent Lee controlled prompts and summaries through approved wrappers extension.ts routes Agent Lee controlled prompts and summaries through approved wrappers.
+- [PASS] Helper summaries route through Agent Lee runtime: src\edit-buffer\editBuffer.commands.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\session-orchestrator\codingSession.commands.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\execution-brain\verificationRepairToEditBuffer.adapter.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\execution-brain\executionToEditBuffer.adapter.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\indexing\backgroundIndexer.commands.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\performance\performance.commands.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] Helper summaries route through Agent Lee runtime: src\core\agent-engineering-loop.ts Agent Lee runtime-formatted helper summaries only.
+- [PASS] LLMProvider routes prompts through Agent Lee E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\LLMProvider.ts
+- [PASS] Image tool routes prompts through Agent Lee E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\tools\image-tool.ts
+- [PASS] Plugin results route back through Agent Lee E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\plugins\agentLeePluginRouter.ts
+- [PASS] Governance loader uses standalone connectivity loader E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\governance-loader.ts
+- [FAIL] No runtime dependency on external LeeWay-Standards remains E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts:3286:    vscode.Uri.joinPath(context.extensionUri, "media", "leeway-standards-logo.png"); E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts:6526:  const standardsRoot = path.join(root, "LeeWay-Standards");; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\agents\leewayAgentBookClient.ts:14:    if (fs.existsSync(path.join(current, "LeeWay-Standards"))) return current;; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\agents\leewayAgentBookClient.ts:23:  const target = path.join(workspaceRoot, "LeeWay-Standards", relativePath);; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\bridge-runtime\bridgeRuntimeManifestRegistry.ts:70:  if (normalized.includes("\\leeway-agent-lee\\leeway-standards\\") || normalized.includes("\\leeway-standards\\leeway-standards\\")) {; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\bridge-runtime\bridgeRuntimeStateAuthority.ts:30:    if (fs.existsSync(path.join(candidate, ".leeway-vscode")) && fs.existsSync(path.join(candidate, "LeeWay-Standards"))) {; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\extensionRuntimeTruth.ts:242:    "media/leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:45:    expectedFile: "leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:46:    sourcePath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:47:    packagePath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:48:    installedPath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\leeway-application\leewayIdentityPulse.ts:188:    path: "agent-lee/vscode-extension/media/leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayReviewContextBuilder.ts:34:  const hasStandardsImpact = normalizedFiles.some((filePath) => filePath.startsWith("LeeWay-Standards/"));; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayReviewReceiptWriter.ts:33:    standardsAuthority: "LeeWay-Standards",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayRiskRanker.ts:22:  const touchesStandards = context.filesReviewed.some((filePath) => filePath.startsWith("LeeWay-Standards/"));
+- [PASS] LeeWay aggregate compliance reported Score: 97.85
+- [PASS] LeeWay blocking file count is zero Blocking files: 0
+
+## Compliance
+
+Inspected 325 files; 318 are fully marked with header, region, tag, and discovery pipeline.
+Aggregate compliance percentage: 97.85%
+Blocking files: 0
+
+## Blocking Items
+- Activation does not rely on stale view/startup assumptions: *, onCommand:agentLee.openSidebar, onCommand:agentLee.runtimeStatus, onView:agentLee.sidebar
+- No redundant onCommand activation events: onCommand:agentLee.openSidebar, onCommand:agentLee.runtimeStatus
+- extension.ts contains AGENT_LEE_UI_VERSION: E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- Status bar item uses Agent Lee ready/degraded proof text: E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- Status bar item uses runtimeStatus command and required tooltip: E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- Required Ollama model present: qwen3-vl-embedding: 
+- No runtime dependency on external LeeWay-Standards remains: E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts:3286:    vscode.Uri.joinPath(context.extensionUri, "media", "leeway-standards-logo.png"); E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts:6526:  const standardsRoot = path.join(root, "LeeWay-Standards");; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\agents\leewayAgentBookClient.ts:14:    if (fs.existsSync(path.join(current, "LeeWay-Standards"))) return current;; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\agents\leewayAgentBookClient.ts:23:  const target = path.join(workspaceRoot, "LeeWay-Standards", relativePath);; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\bridge-runtime\bridgeRuntimeManifestRegistry.ts:70:  if (normalized.includes("\\leeway-agent-lee\\leeway-standards\\") || normalized.includes("\\leeway-standards\\leeway-standards\\")) {; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\bridge-runtime\bridgeRuntimeStateAuthority.ts:30:    if (fs.existsSync(path.join(candidate, ".leeway-vscode")) && fs.existsSync(path.join(candidate, "LeeWay-Standards"))) {; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\extensionRuntimeTruth.ts:242:    "media/leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:45:    expectedFile: "leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:46:    sourcePath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:47:    packagePath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\core\branding\leewayAssetRegistry.ts:48:    installedPath: `${ASSET_BASE}/leeway-standards-logo.png`,; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\leeway-application\leewayIdentityPulse.ts:188:    path: "agent-lee/vscode-extension/media/leeway-standards-logo.png",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayReviewContextBuilder.ts:34:  const hasStandardsImpact = normalizedFiles.some((filePath) => filePath.startsWith("LeeWay-Standards/"));; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayReviewReceiptWriter.ts:33:    standardsAuthority: "LeeWay-Standards",; E:\.LeeWay-Produucts-File\.Leeway-new-line-of-products\.leeway-vscode\agent-lee\vscode-extension\src\review\leewayRiskRanker.ts:22:  const touchesStandards = context.filesReviewed.some((filePath) => filePath.startsWith("LeeWay-Standards/"));

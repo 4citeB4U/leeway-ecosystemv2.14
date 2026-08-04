@@ -1,0 +1,13 @@
+﻿{
+    "version":  "LEEWAY_LOCK_REAL_ALPHA_BACK_AFTER_SCREEN_STATUS_PROOF_2026-07-05",
+    "created_at":  "2026-07-05T18:56:15",
+    "mode":  "APPROVAL_ONLY_LOCKED_AFTER_SCREEN_STATUS_PROOF",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "read_only_status_enabled":  false,
+    "approval_validation_available":  true,
+    "all_physical_actions_blocked":  true,
+    "screen_status_blocked_after_proof":  true,
+    "previous_milestone_preserved":  "182 returned read-only screen status without screenshot or physical control",
+    "next_extension_requires_new_script":  true
+}

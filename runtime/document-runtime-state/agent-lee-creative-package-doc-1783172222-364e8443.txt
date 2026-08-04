@@ -1,0 +1,56 @@
+# Agent Lee Creative Package
+
+LEEWAY OPEN NOTEBOOK CREATIVE PACKAGE
+
+Creative Type: video_script
+Audience: General audience
+Goal: Create a complete usable creative production package.
+Tone: clear, practical, production-ready
+Prompt: OK. Go ahead, create the website for me. Make sure it's a full professional website. Make sure it has some 3D objects in it. And make sure you draw and create some pictures and put a video in there as well. That the video must explain. The leeway standards. Make it a short video that explains the leeway standards with an avatar in it that talks and everything. Again, the website needs to have. At least. 3.   Different. 3D objects. That reflects the message. Make it a dark theme. Keep it very professional. Make sure I have a proper header and proper footer. Create the website now.
+
+Production Rule:
+This package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.
+
+## Video Production Package
+Estimated Runtime: 5 minutes
+
+## Video Promise
+This video should quickly capture attention, explain the value, and move the viewer toward action.
+
+## Hook
+Start with the strongest visual or verbal hook in the first 3 seconds.
+
+## Scene List
+Scene 1: Hook visual and opening line
+Scene 2: Problem/context
+Scene 3: Main value or story
+Scene 4: Proof/example
+Scene 5: Call to action
+
+## Voiceover Script
+Write the narration here in a concise, high-retention format.
+
+## Shot List
+- Presenter shot
+- Screen recording
+- Product/demo shot
+- B-roll
+- Text overlay
+
+## Captions
+Create short caption lines that match the voiceover beats.
+
+## Thumbnail Prompt
+Describe the thumbnail image, text, emotion, and composition.
+
+## Export Notes
+- 9:16 vertical version
+- 16:9 landscape version
+- 1:1 square version if needed
+
+## Storage and Handoff
+- Open Notebook owns this creative package.
+- Export/render lanes create final media from this package.
+- Seafile/storage governor should hold durable files and manifests.
+- Artifact viewer should expose the room link.
+- Skill router should return the actionable link/receipt.

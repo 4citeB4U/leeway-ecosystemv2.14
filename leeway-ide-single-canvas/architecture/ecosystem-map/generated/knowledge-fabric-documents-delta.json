@@ -1,0 +1,725 @@
+{
+  "timestamp": "2026-07-31T09:12:04.322Z",
+  "status": "PROPOSED",
+  "description": "Document population: 16 confirmed documents from LeeWay Standards, contracts and teaching package; 2 candidates queued for human review.",
+  "proposedNodes": [
+    {
+      "id": "doc-constitution",
+      "name": "LeeWay Constitution Law (BOOK-01)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Supreme law of the LeeWay Ecosystem: LeeWay Standards above every agent, model, worker, container, script, route, runtime and UI component.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-01-LEEWAY-CONSTITUTION-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-01-LEEWAY-CONSTITUTION-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-01-LEEWAY-CONSTITUTION-LAW.md",
+      "sourceHash": "d916c7e982940da7b269308a86f6f777177e1bfa8ad42c72b3a24632df0f26c9",
+      "sourceType": "constitution",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-company-authority",
+      "name": "Company Authority Law (BOOK-02)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Company authority law defining creator and operator authority.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-02-LEEWAY-COMPANY-AUTHORITY-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-02-LEEWAY-COMPANY-AUTHORITY-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-02-LEEWAY-COMPANY-AUTHORITY-LAW.md",
+      "sourceHash": "e86b5d99af97f5ccd4430aadfde32081d31f12e759381d076d1cd8936f5f5dca",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-runtime-authority",
+      "name": "Runtime Authority Law (BOOK-03)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Runtime authority law: Docker is the portable runtime body, not the authority.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-03-LEEWAY-RUNTIME-AUTHORITY-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-03-LEEWAY-RUNTIME-AUTHORITY-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-03-LEEWAY-RUNTIME-AUTHORITY-LAW.md",
+      "sourceHash": "926a7bb8545e29c54a72742c89c5d0c3cf56c30cb02c218e0e5e433eeb534092",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-agent-law",
+      "name": "Agent Law (BOOK-09)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Agent law governing agent identity, contracts and embodiment.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-09-LEEWAY-AGENT-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-09-LEEWAY-AGENT-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-09-LEEWAY-AGENT-LAW.md",
+      "sourceHash": "c07d1d246a7545d4c9b5f1a4cc440ec03dad9e9b439585c009209d798c7118e8",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-telemetry-receipts",
+      "name": "Telemetry Receipts Evidence Law (BOOK-14)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Telemetry, receipts and evidence law: no action proof without receipt.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-14-LEEWAY-TELEMETRY-RECEIPTS-EVIDENCE-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-14-LEEWAY-TELEMETRY-RECEIPTS-EVIDENCE-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-14-LEEWAY-TELEMETRY-RECEIPTS-EVIDENCE-LAW.md",
+      "sourceHash": "de1b79ab70f85b862b0079ca4e8f1a62c19460a26a2b86114be2e628dc895dbe",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-gates-validation",
+      "name": "Gates Validation Law (BOOK-15)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Gates and validation law for proof-before-completion.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-15-LEEWAY-GATES-VALIDATION-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-15-LEEWAY-GATES-VALIDATION-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-15-LEEWAY-GATES-VALIDATION-LAW.md",
+      "sourceHash": "d95ff9ef3b2891016b315762570e2b0a4f77a6453e4192b8f275482f07cf3255",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-book-runtime-readiness",
+      "name": "Runtime Readiness Law (BOOK-25)",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Runtime readiness law covering startup dependency graphs and readiness gates.",
+      "sourcePaths": [
+        "LeeWay-Standards/standards/BOOK-25-RUNTIME-READINESS-LAW.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/standards/BOOK-25-RUNTIME-READINESS-LAW.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/standards/BOOK-25-RUNTIME-READINESS-LAW.md",
+      "sourceHash": "1612816c7ef8aa38a5f6d62bb846f27d0b2a47ce423302a06747b4d266a29912",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-training-book",
+      "name": "LeeWay Standards 2-Week Training Book",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Company teaching package: two-week training curriculum for LeeWay Standards.",
+      "sourcePaths": [
+        "LeeWay-Standards/LEEWAY_STANDARDS_2_WEEK_TRAINING_BOOK.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/LEEWAY_STANDARDS_2_WEEK_TRAINING_BOOK.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/LEEWAY_STANDARDS_2_WEEK_TRAINING_BOOK.md",
+      "sourceHash": "45cc61224fa061941199d25812cb89e013990da40fb44e7a1d8c9f9f033acd91",
+      "sourceType": "white-paper",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-standards-readme",
+      "name": "LeeWay Standards README",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "LeeWay Standards overview and operating manual entry point.",
+      "sourcePaths": [
+        "LeeWay-Standards/README.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/README.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/README.md",
+      "sourceHash": "ac421d7bc1dfde44c69140c410b397b06e8354e816b7059b8a9b2be2d8f1c39c",
+      "sourceType": "white-paper",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-standards-activate",
+      "name": "LeeWay Standards Activation Guide",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Activation guide for bringing LeeWay Standards online.",
+      "sourcePaths": [
+        "LeeWay-Standards/ACTIVATE.md"
+      ],
+      "documentation": [
+        "LeeWay-Standards/ACTIVATE.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "LeeWay-Standards/ACTIVATE.md",
+      "sourceHash": "92ba6be7589898da3704a2819f22428001891e79595d0d8ea727baf71961a05e",
+      "sourceType": "white-paper",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-proof-first",
+      "name": "Proof-First Readiness Contract",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Contract: no PASS/READY/COMPLETE claim without required proof level.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/leeway-proof-first-readiness-contract.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/leeway-proof-first-readiness-contract.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-proof-first-readiness-contract.md",
+      "sourceHash": "adee4c490262e4248aa6daae22c243e9fa62816bf4f01a56043d37cba774d51c",
+      "sourceType": "contract",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-no-pass-without-proof",
+      "name": "No Pass Without Proof Contract",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Contract: no gate passes without proof ledger entries.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/leeway-no-pass-without-proof-contract.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/leeway-no-pass-without-proof-contract.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-no-pass-without-proof-contract.md",
+      "sourceHash": "e0acb40490b492da16a519ba098e17e7f8d8d70bcaeea83715c9c3143a48a599",
+      "sourceType": "contract",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-absolute-proof",
+      "name": "Absolute Proof and No False Completion Law",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Absolute proof law: proof levels 0-5 and downgrade rules.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/leeway-absolute-proof-law.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/leeway-absolute-proof-law.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-absolute-proof-law.md",
+      "sourceHash": "d75d1236821408e25f25b6953266c739ccc2c8e9925cbb7e6020958e97509b36",
+      "sourceType": "law",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-proof-or-blocker",
+      "name": "Proof or Blocker Contract",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Contract: every claim is either proof-backed or a blocker.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/leeway-proof-or-blocker-contract.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/leeway-proof-or-blocker-contract.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/leeway-proof-or-blocker-contract.md",
+      "sourceHash": "86c1af60c4042dbde422dd246f0e8ec26d7bc62dcf230cda9d0f24aa6cfe468b",
+      "sourceType": "contract",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-owner-identity",
+      "name": "Agent Lee Owner Identity Contract",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Owner identity contract for Agent Lee embodiment.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/agent-lee-owner-identity-contract.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/agent-lee-owner-identity-contract.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-owner-identity-contract.md",
+      "sourceHash": "66671b3cae40ef0f8e926ce65c1a658fb42f3ad5c5f1e9e23c7c18247f8b7ad3",
+      "sourceType": "contract",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    },
+    {
+      "id": "doc-contract-live-embodiment",
+      "name": "Agent Lee Live Embodiment Contract",
+      "category": "document",
+      "status": "DEFINED",
+      "truthLevel": "PROVEN",
+      "owner": "leeway-standards",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "description": "Live embodiment contract: ears, eyes, mouth, hands and proofs.",
+      "sourcePaths": [
+        "agent-lee-coding-mode/contracts/agent-lee-live-embodiment-contract.md"
+      ],
+      "documentation": [
+        "agent-lee-coding-mode/contracts/agent-lee-live-embodiment-contract.md"
+      ],
+      "knownGaps": [],
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-live-embodiment-contract.md",
+      "sourceHash": "9672f728d32589bae3fee94d012609d94a3bc333683c0a7b8e7e560f8bbd76d9",
+      "sourceType": "contract",
+      "extractionMethod": "deterministic-native",
+      "verificationStatus": "CONFIRMED",
+      "confidence": "verified",
+      "lastVerified": "2026-07-31T09:12:04.322Z",
+      "evidenceReferences": ""
+    }
+  ],
+  "proposedRelationships": [
+    {
+      "id": "rel-doc-doc-constitution",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-constitution",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-constitution",
+      "from": "leeway-standards",
+      "to": "doc-constitution",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-company-authority",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-company-authority",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-company-authority",
+      "from": "leeway-standards",
+      "to": "doc-book-company-authority",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-runtime-authority",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-runtime-authority",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-runtime-authority",
+      "from": "leeway-standards",
+      "to": "doc-book-runtime-authority",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-agent-law",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-agent-law",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-agent-law",
+      "from": "leeway-standards",
+      "to": "doc-book-agent-law",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-telemetry-receipts",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-telemetry-receipts",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-telemetry-receipts",
+      "from": "leeway-standards",
+      "to": "doc-book-telemetry-receipts",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-gates-validation",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-gates-validation",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-gates-validation",
+      "from": "leeway-standards",
+      "to": "doc-book-gates-validation",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-book-runtime-readiness",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-book-runtime-readiness",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-book-runtime-readiness",
+      "from": "leeway-standards",
+      "to": "doc-book-runtime-readiness",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-training-book",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-training-book",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-training-book",
+      "from": "leeway-standards",
+      "to": "doc-training-book",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-standards-readme",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-standards-readme",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-standards-readme",
+      "from": "leeway-standards",
+      "to": "doc-standards-readme",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-standards-activate",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-standards-activate",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-standards-activate",
+      "from": "leeway-standards",
+      "to": "doc-standards-activate",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-proof-first",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-proof-first",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-proof-first",
+      "from": "leeway-standards",
+      "to": "doc-contract-proof-first",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-no-pass-without-proof",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-no-pass-without-proof",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-no-pass-without-proof",
+      "from": "leeway-standards",
+      "to": "doc-contract-no-pass-without-proof",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-absolute-proof",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-absolute-proof",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-absolute-proof",
+      "from": "leeway-standards",
+      "to": "doc-contract-absolute-proof",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-proof-or-blocker",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-proof-or-blocker",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-proof-or-blocker",
+      "from": "leeway-standards",
+      "to": "doc-contract-proof-or-blocker",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-owner-identity",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-owner-identity",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-owner-identity",
+      "from": "leeway-standards",
+      "to": "doc-contract-owner-identity",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-doc-doc-contract-live-embodiment",
+      "from": "knowledge-fabric-documentation-graph",
+      "to": "doc-contract-live-embodiment",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-standards-doc-doc-contract-live-embodiment",
+      "from": "leeway-standards",
+      "to": "doc-contract-live-embodiment",
+      "type": "governs",
+      "direction": "forward",
+      "status": "DEFINED"
+    }
+  ],
+  "classification": {
+    "CONFIRMED": [
+      "doc-constitution",
+      "doc-book-company-authority",
+      "doc-book-runtime-authority",
+      "doc-book-agent-law",
+      "doc-book-telemetry-receipts",
+      "doc-book-gates-validation",
+      "doc-book-runtime-readiness",
+      "doc-training-book",
+      "doc-standards-readme",
+      "doc-standards-activate",
+      "doc-contract-proof-first",
+      "doc-contract-no-pass-without-proof",
+      "doc-contract-absolute-proof",
+      "doc-contract-proof-or-blocker",
+      "doc-contract-owner-identity",
+      "doc-contract-live-embodiment"
+    ],
+    "STRONG": [],
+    "PROBABLE": [
+      "doc-contract-bluetooth"
+    ],
+    "AMBIGUOUS": [
+      "doc-contract-cursor-rule"
+    ],
+    "REJECTED": []
+  },
+  "reviewQueue": [
+    {
+      "candidateId": "doc-contract-bluetooth",
+      "name": "Agent Lee Bluetooth Discovery Contract",
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-bluetooth-discovery-contract.md",
+      "classification": "PROBABLE",
+      "reason": "Not auto-applied. Classification PROBABLE requires human approval."
+    },
+    {
+      "candidateId": "doc-contract-cursor-rule",
+      "name": "Agent Lee Cursor Separation Rule",
+      "sourcePath": "agent-lee-coding-mode/contracts/agent-lee-cursor-separation-rule.md",
+      "classification": "AMBIGUOUS",
+      "reason": "Not auto-applied. Classification AMBIGUOUS requires human approval."
+    }
+  ]
+}

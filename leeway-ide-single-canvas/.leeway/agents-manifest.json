@@ -1,0 +1,213 @@
+{
+  "leewayVersion": "1.0.0",
+  "manifestType": "agents",
+  "applicationId": "leeway-ide-single-canvas",
+  "authority": "LeeWay-Standards",
+  "agents": [
+    {
+      "agentId": "agent-lee-prime-001",
+      "agentName": "Agent Lee Prime",
+      "manifestation": "agentlee.core",
+      "version": "1.0.0",
+      "status": "system",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Sovereign coordinator and final speaker to the user. Orchestrates all agent activities and maintains runtime governance.",
+      "leewayTag": "CORE.AGENTS.PRIME.AGENT_LEE",
+      "capabilities": [
+        "orchestration",
+        "governance",
+        "voice_interaction",
+        "runtime_coordination",
+        "user_interface"
+      ],
+      "runtimeEndpoint": "/api/leeway/runtime-fabric/agent-chat",
+      "healthEndpoint": "/api/leeway/runtime-fabric/health"
+    },
+    {
+      "agentId": "canvas-supervisor-001",
+      "agentName": "Canvas Supervisor Agent",
+      "manifestation": "agentlee.runtime",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Monitors canvas state, node placement, connections, and zoom/pan operations. Ensures Foundry node compatibility.",
+      "leewayTag": "CORE.AGENTS.SUPERVISOR.CANVAS",
+      "capabilities": [
+        "canvas_monitoring",
+        "node_management",
+        "connection_validation",
+        "state_persistence"
+      ],
+      "dependencies": ["agent-lee-prime-001"],
+      "source": "src/components/UnifiedCanvas.tsx"
+    },
+    {
+      "agentId": "live-wallet-manager-001",
+      "agentName": "Live Wallet Manager Agent",
+      "manifestation": "agentlee.data",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Manages Live Wallet content, handles uploads, drag-to-canvas operations, and save-from-node events.",
+      "leewayTag": "CORE.AGENTS.WALLET.LIVE_MANAGER",
+      "capabilities": [
+        "content_management",
+        "file_upload",
+        "drag_drop_handling",
+        "beast_id_generation"
+      ],
+      "dependencies": ["agent-lee-prime-001"],
+      "source": "src/components/LiveWallet.tsx"
+    },
+    {
+      "agentId": "foundry-node-executor-001",
+      "agentName": "Foundry Node Executor Agent",
+      "manifestation": "agentlee.runtime",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Executes Foundry-compatible nodes, manages scheduling, handles input/output ports, and emits execution receipts.",
+      "leewayTag": "CORE.AGENTS.EXECUTOR.FOUNDRY_NODE",
+      "capabilities": [
+        "node_execution",
+        "scheduling",
+        "port_management",
+        "receipt_generation"
+      ],
+      "dependencies": ["agent-lee-prime-001", "canvas-supervisor-001"],
+      "source": "src/components/NodeRenderer.tsx"
+    },
+    {
+      "agentId": "voice-clone-studio-agent-001",
+      "agentName": "Voice Clone Studio Agent",
+      "manifestation": "agentlee.audio",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Manages voice cloning, live recording, audio synthesis, and voice library operations.",
+      "leewayTag": "CORE.AGENTS.AUDIO.VOICE_CLONE",
+      "capabilities": [
+        "voice_cloning",
+        "audio_recording",
+        "voice_synthesis",
+        "library_management"
+      ],
+      "dependencies": ["agent-lee-prime-001"],
+      "source": "src/components/AudioWorkspace.tsx"
+    },
+    {
+      "agentId": "studio-workspace-router-001",
+      "agentName": "Studio Workspace Router Agent",
+      "manifestation": "agentlee.ui",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Routes between studio workspaces (Code, Writer, Audio, Vision, Video, XR, Devices, Knowledge, Settings).",
+      "leewayTag": "CORE.AGENTS.ROUTER.STUDIO_WORKSPACE",
+      "capabilities": [
+        "workspace_routing",
+        "studio_switching",
+        "palette_management",
+        "navigation"
+      ],
+      "dependencies": ["agent-lee-prime-001"],
+      "source": "src/components/Sidebar.tsx"
+    },
+    {
+      "agentId": "neural-connection-layer-001",
+      "agentName": "Neural Connection Layer Agent",
+      "manifestation": "agentlee.runtime",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Manages visual connections between nodes, validates connection rules, and renders connection paths.",
+      "leewayTag": "CORE.AGENTS.CANVAS.NEURAL_CONNECTION",
+      "capabilities": [
+        "connection_rendering",
+        "connection_validation",
+        "path_calculation",
+        "visual_feedback"
+      ],
+      "dependencies": ["agent-lee-prime-001", "canvas-supervisor-001"],
+      "source": "src/components/NeuralConnectionLayer.tsx"
+    },
+    {
+      "agentId": "settings-controller-001",
+      "agentName": "Settings Controller Agent",
+      "manifestation": "agentlee.core",
+      "version": "1.0.0",
+      "status": "active",
+      "authority": "Leeway Industries / Leeway Innovation",
+      "createdBy": "Leonard Lee",
+      "purpose": "Controls Agent Lee settings, canvas background mode, galactic mesh configuration, and accent colors.",
+      "leewayTag": "CORE.AGENTS.SETTINGS.CONTROLLER",
+      "capabilities": [
+        "settings_management",
+        "canvas_configuration",
+        "theme_control",
+        "preference_persistence"
+      ],
+      "dependencies": ["agent-lee-prime-001"],
+      "source": "src/components/SettingsNodeContent.tsx"
+    }
+  ],
+  "agentSociety": {
+    "model": "layered_orchestration",
+    "sovereignAgent": "agent-lee-prime-001",
+    "layers": [
+      {
+        "name": "Governance Layer",
+        "agents": ["agent-lee-prime-001"],
+        "purpose": "Policy, header alignment, and sovereign coordination"
+      },
+      {
+        "name": "Execution Layer",
+        "agents": [
+          "canvas-supervisor-001",
+          "foundry-node-executor-001",
+          "studio-workspace-router-001"
+        ],
+        "purpose": "Task routing and runtime actions"
+      },
+      {
+        "name": "Data Layer",
+        "agents": ["live-wallet-manager-001"],
+        "purpose": "Content management and asset handling"
+      },
+      {
+        "name": "Specialized Layer",
+        "agents": [
+          "voice-clone-studio-agent-001",
+          "neural-connection-layer-001",
+          "settings-controller-001"
+        ],
+        "purpose": "Domain-specific operations and configurations"
+      }
+    ]
+  },
+  "governance": {
+    "approvalRequired": [
+      "destructive_operations",
+      "deployment_actions",
+      "external_api_calls",
+      "file_system_writes"
+    ],
+    "receiptGeneration": true,
+    "telemetryEnabled": true,
+    "verificationMode": "active"
+  },
+  "metadata": {
+    "createdAt": "2026-06-06T17:59:00.000Z",
+    "updatedAt": "2026-06-06T17:59:00.000Z",
+    "totalAgents": 8,
+    "activeAgents": 7,
+    "systemAgents": 1
+  }
+}

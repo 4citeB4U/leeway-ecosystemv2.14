@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Leeway Device Layer Dashboard Export</title>
+<style>
+body { font-family: Segoe UI, Arial, sans-serif; background: #0f172a; color: #e5e7eb; margin: 24px; }
+.card { background: #111827; border: 1px solid #334155; border-radius: 12px; padding: 18px; margin-bottom: 18px; }
+h1, h2 { color: #f8fafc; }
+.badge-clean { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #064e3b; color: #bbf7d0; font-weight: 700; }
+.badge-warn { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #7c2d12; color: #fed7aa; font-weight: 700; }
+table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+td, th { border-bottom: 1px solid #334155; padding: 8px; text-align: left; }
+th { color: #cbd5e1; }
+code { color: #93c5fd; }
+.small { color: #94a3b8; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>Leeway Device Layer Dashboard Export</h1>
+<div class="card">
+  <div class="badge-clean">LEEWAY_DEVICE_LAYER_DASHBOARD_EXPORT_CLEAN</div>
+  <p class="small">Generated: 07/05/2026 19:00:33</p>
+</div>
+
+<div class="card">
+<h2>Current Posture</h2>
+<table>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Master Device Operator</td><td>leeway_device_operator on port 5323</td></tr>
+<tr><td>Windows Satellite</td><td>windows-agent-lee</td></tr>
+<tr><td>Dry-Run Actuator</td><td>http://127.0.0.1:7331</td></tr>
+<tr><td>Real Alpha Actuator</td><td>http://127.0.0.1:7332</td></tr>
+<tr><td>Real Alpha Mode</td><td>APPROVAL_ONLY_LOCKED_AFTER_SCREEN_STATUS_PROOF</td></tr>
+<tr><td>Real Execution Enabled</td><td>False</td></tr>
+<tr><td>Physical Execution Enabled</td><td>False</td></tr>
+<tr><td>Read-Only Status Enabled</td><td>False</td></tr>
+<tr><td>Lock Probes All False</td><td>True</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Counters</h2>
+<table>
+<tr><th>Counter</th><th>Value</th></tr>
+<tr><td>Approved Approvals</td><td>10</td></tr>
+<tr><td>Executed Approvals</td><td>10</td></tr>
+<tr><td>Pending Approvals</td><td>3</td></tr>
+<tr><td>Denied Approvals</td><td>0</td></tr>
+<tr><td>Expired Approvals</td><td>0</td></tr>
+<tr><td>Proof Receipts</td><td>57</td></tr>
+<tr><td>Real-Alpha Receipts</td><td>81</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Lock Probes</h2>
+<table>
+<tr><th>Probe</th><th>Executed</th></tr>
+<tr><td>screen-status</td><td>False</td></tr>
+<tr><td>shell</td><td>False</td></tr>
+<tr><td>hotkey</td><td>False</td></tr>
+<tr><td>type-text</td><td>False</td></tr>
+<tr><td>mouse-click</td><td>False</td></tr>
+<tr><td>open-app</td><td>False</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>Milestones</h2>
+<table>
+<tr><th>Milestone</th><th>Found</th><th>Verdict</th></tr>
+<tr><td>164_windows_satellite</td><td>True</td><td>LEEWAY_WINDOWS_SATELLITE_REGISTERED</td></tr>
+<tr><td>166_actuator_contract</td><td>True</td><td>LEEWAY_WINDOWS_LOCAL_ACTUATOR_SERVICE_CONTRACT_CREATED</td></tr>
+<tr><td>167b_dryrun_fixed</td><td>True</td><td>LEEWAY_WINDOWS_LOCAL_ACTUATOR_DRY_RUN_LAUNCHER_FIXED</td></tr>
+<tr><td>169_approval_gate</td><td>True</td><td>LEEWAY_REAL_WINDOWS_ACTUATOR_APPROVAL_GATE_CREATED</td></tr>
+<tr><td>170_real_alpha_locked</td><td>True</td><td>LEEWAY_APPROVED_REAL_WINDOWS_ACTUATOR_ALPHA_CREATED_LOCKED</td></tr>
+<tr><td>171c_approval_lookup</td><td>True</td><td>LEEWAY_REAL_ALPHA_APPROVAL_LOOKUP_DIAGNOSED_AND_VALIDATED</td></tr>
+<tr><td>172_open_notepad</td><td>True</td><td>LEEWAY_ONE_ACTION_REAL_OPEN_NOTEPAD_ALPHA_EXECUTED</td></tr>
+<tr><td>173_lock_notepad</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_TO_APPROVAL_ONLY</td></tr>
+<tr><td>174_open_url</td><td>True</td><td>LEEWAY_ONE_ACTION_REAL_OPEN_URL_ALPHA_EXECUTED</td></tr>
+<tr><td>175_lock_url</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_AFTER_URL_PROOF</td></tr>
+<tr><td>176_browser_search</td><td>True</td><td>LEEWAY_ONE_ACTION_REAL_BROWSER_SEARCH_ALPHA_EXECUTED</td></tr>
+<tr><td>177_lock_browser_search</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_AFTER_BROWSER_SEARCH_PROOF</td></tr>
+<tr><td>178_type_text</td><td>True</td><td>LEEWAY_ONE_ACTION_REAL_TYPE_TEXT_ALPHA_EXECUTED</td></tr>
+<tr><td>179_lock_type_text</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_AFTER_TYPE_TEXT_PROOF</td></tr>
+<tr><td>180_hotkey</td><td>True</td><td>LEEWAY_ONE_ACTION_REAL_HOTKEY_ALPHA_EXECUTED</td></tr>
+<tr><td>181_lock_hotkey</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_AFTER_HOTKEY_PROOF</td></tr>
+<tr><td>182_screen_status</td><td>True</td><td>LEEWAY_READ_ONLY_SCREEN_STATUS_ALPHA_EXECUTED</td></tr>
+<tr><td>183_lock_screen_status</td><td>True</td><td>LEEWAY_REAL_ALPHA_LOCKED_BACK_AFTER_SCREEN_STATUS_PROOF</td></tr>
+<tr><td>184_status_summary</td><td>True</td><td>LEEWAY_DEVICE_LAYER_STATUS_SUMMARY_CLEAN</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>Safety</h2>
+<p>No physical action was executed by this export. No Docker prune, destructive cleanup, mouse, keyboard, app open, URL open, screenshot, shell, print, message, or phone action.</p>
+</div>
+</body>
+</html>

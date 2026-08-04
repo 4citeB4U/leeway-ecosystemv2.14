@@ -1,0 +1,1064 @@
+﻿[
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "\"sendMessage\",",
+        "line":  87
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "\"sendMessage\",",
+        "line":  311
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "runtimeRole: \"Proves the send button emits sendMessage and that the extension host still declares a matching handler for the live chat path.\",",
+        "line":  682
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "inputs: [\"composer send action\", \"sendMessage bridge\", \"extension.ts handler map\"],",
+        "line":  683
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "outputs: [\"sendMessage post proof\", \"host handler attestation\"],",
+        "line":  684
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayIdentityPulse.ts",
+        "text":  "\"sendMessage\",",
+        "line":  132
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "\"sendMessage\",",
+        "line":  38
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "\"sendMessage\",",
+        "line":  252
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "runtimeRole: \"Proves the send button emits sendMessage and that the extension host still declares a matching handler for the live chat path.\",",
+        "line":  617
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "inputs: [\"composer send action\", \"sendMessage bridge\", \"extension.ts handler map\"],",
+        "line":  618
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "outputs: [\"sendMessage post proof\", \"host handler attestation\"],",
+        "line":  619
+    },
+    {
+        "pattern":  "sendMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayIdentityPulse.js",
+        "text":  "\"sendMessage\",",
+        "line":  96
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "inputs: [\"src/extension.ts\", \"inline webview script\", \"simulated vscode.postMessage bridge\"],",
+        "line":  668
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\live-voice\\voiceProviderFactory.ts",
+        "text":  "vscode.postMessage({command:\"leewayVoiceInterruptRequested\"});",
+        "line":  36
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\visual-intelligence\\visualPanel.ts",
+        "text":  "function post(command){ vscode.postMessage({ command }); }",
+        "line":  98
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "inputs: [\"src/extension.ts\", \"inline webview script\", \"simulated vscode.postMessage bridge\"],",
+        "line":  603
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\live-voice\\voiceProviderFactory.js",
+        "text":  "vscode.postMessage({command:\"leewayVoiceInterruptRequested\"});",
+        "line":  37
+    },
+    {
+        "pattern":  "vscode.postMessage",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\visual-intelligence\\visualPanel.js",
+        "text":  "function post(command){ vscode.postMessage({ command }); }",
+        "line":  131
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export interface ActionDisclosure {",
+        "line":  11
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export class AgenticActionDisclosure {",
+        "line":  35
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "validateDisclosure(disclosure: ActionDisclosure): { valid: boolean; missingFields: string[] } {",
+        "line":  39
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "requireApprovalIfNeeded(disclosure: ActionDisclosure): void {",
+        "line":  88
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Creator approval required but not granted for action ${disclosure.actionId}. Failing closed.`",
+        "line":  91
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "requireCompleteDisclosure(disclosure: ActionDisclosure): void {",
+        "line":  99
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Incomplete action disclosure. Missing fields: ${validation.missingFields.join(",
+        "line":  104
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Action disclosure not marked complete for action ${disclosure.actionId}. Failing closed.`",
+        "line":  112
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "}): ActionDisclosure {",
+        "line":  140
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "const disclosure: ActionDisclosure = {",
+        "line":  141
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "markComplete(disclosure: ActionDisclosure): ActionDisclosure {",
+        "line":  171
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export const createActionDisclosure = (): AgenticActionDisclosure =\u003e {",
+        "line":  177
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "return new AgenticActionDisclosure();",
+        "line":  178
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "requireActionDisclosure: boolean;",
+        "line":  31
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "async requireActionDisclosure(runId: WorkflowRunId): Promise\u003cvoid\u003e {",
+        "line":  107
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "`AgenticWorkflowAuthority.requireActionDisclosure: Run not found. Failing closed.`",
+        "line":  111
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "\"actionDisclosureRejected\",",
+        "line":  111
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "actionDisclosureRejected: {",
+        "line":  377
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.createActionDisclosure = exports.AgenticActionDisclosure = void 0;",
+        "line":  12
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "class AgenticActionDisclosure {",
+        "line":  13
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Creator approval required but not granted for action ${disclosure.actionId}. Failing closed.`);",
+        "line":  64
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Incomplete action disclosure. Missing fields: ${validation.missingFields.join(\", \")}. Failing closed.`);",
+        "line":  73
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Action disclosure not marked complete for action ${disclosure.actionId}. Failing closed.`);",
+        "line":  76
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.AgenticActionDisclosure = AgenticActionDisclosure;",
+        "line":  116
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "const createActionDisclosure = () =\u003e {",
+        "line":  117
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "return new AgenticActionDisclosure();",
+        "line":  118
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.createActionDisclosure = createActionDisclosure;",
+        "line":  120
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "//# sourceMappingURL=agenticActionDisclosure.js.map",
+        "line":  121
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js.map",
+        "text":  "{\"version\":3,\"file\":\"agenticActionDisclosure.js\",\"sourceRoot\":\"\",\"sources\":[\"../../src/agentic/agenticActionDisclosure.ts\"],\"names\":[],\"mappings\":\"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\"}",
+        "line":  1
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "async requireActionDisclosure(runId) {",
+        "line":  69
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "throw new Error(`AgenticWorkflowAuthority.requireActionDisclosure: Run not found. Failing closed.`);",
+        "line":  72
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "\"actionDisclosureRejected\",",
+        "line":  61
+    },
+    {
+        "pattern":  "actionDisclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "actionDisclosureRejected: {",
+        "line":  317
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "* LEEWAY_VSCODE_AGENTIC_ACTION_DISCLOSURE",
+        "line":  2
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export interface ActionDisclosure {",
+        "line":  11
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export class AgenticActionDisclosure {",
+        "line":  35
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "* Validate that all required fields are present in action disclosure.",
+        "line":  37
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "validateDisclosure(disclosure: ActionDisclosure): { valid: boolean; missingFields: string[] } {",
+        "line":  39
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "const value = (disclosure as any)[field];",
+        "line":  66
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "requireApprovalIfNeeded(disclosure: ActionDisclosure): void {",
+        "line":  88
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "if (disclosure.approvalRequired \u0026\u0026 disclosure.creatorApprovalState !== \"approved\") {",
+        "line":  89
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Creator approval required but not granted for action ${disclosure.actionId}. Failing closed.`",
+        "line":  91
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "* Require complete disclosure before execution.",
+        "line":  97
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "requireCompleteDisclosure(disclosure: ActionDisclosure): void {",
+        "line":  99
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "const validation = this.validateDisclosure(disclosure);",
+        "line":  100
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Incomplete action disclosure. Missing fields: ${validation.missingFields.join(",
+        "line":  104
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "if (!disclosure.isComplete) {",
+        "line":  110
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "`AgenticActionDisclosure: Action disclosure not marked complete for action ${disclosure.actionId}. Failing closed.`",
+        "line":  112
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "* Create a new action disclosure.",
+        "line":  118
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "createDisclosure(input: {",
+        "line":  120
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "}): ActionDisclosure {",
+        "line":  140
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "const disclosure: ActionDisclosure = {",
+        "line":  141
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "return disclosure;",
+        "line":  165
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "* Mark disclosure as complete.",
+        "line":  169
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "markComplete(disclosure: ActionDisclosure): ActionDisclosure {",
+        "line":  171
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "disclosure.isComplete = true;",
+        "line":  172
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "return disclosure;",
+        "line":  173
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "export const createActionDisclosure = (): AgenticActionDisclosure =\u003e {",
+        "line":  177
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticActionDisclosure.ts",
+        "text":  "return new AgenticActionDisclosure();",
+        "line":  178
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticExecutionController.ts",
+        "text":  "| \"ACTION_DISCLOSURE_REQUIRED\"",
+        "line":  16
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticExecutionController.ts",
+        "text":  "TASK_PLAN_DRAFTED: [\"ACTION_DISCLOSURE_REQUIRED\"],",
+        "line":  43
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticExecutionController.ts",
+        "text":  "ACTION_DISCLOSURE_REQUIRED: [",
+        "line":  44
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticGateRunner.ts",
+        "text":  "gateId: \"action-disclosure\",",
+        "line":  117
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticGateRunner.ts",
+        "text":  "gateName: \"Action Disclosure Gate\",",
+        "line":  118
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticGateRunner.ts",
+        "text":  "description: \"Ensure action disclosure is complete\",",
+        "line":  119
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "* - Identifies required action disclosure fields",
+        "line":  7
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\", \"creator-approval\"];",
+        "line":  66
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  85
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\", \"creator-approval\"];",
+        "line":  103
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  121
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  139
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  154
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  156
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  170
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  184
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticIntentClassifier.ts",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  194
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticReceiptWriter.ts",
+        "text":  "| \"disclosure-created\"",
+        "line":  24
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticReceiptWriter.ts",
+        "text":  "| \"disclosure-approved\"",
+        "line":  25
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticStandardsResolver.ts",
+        "text":  "\"action-disclosure\",",
+        "line":  60
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "* - Blocks execution without complete disclosure",
+        "line":  9
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "requireActionDisclosure: boolean;",
+        "line":  31
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "disclosureComplete: boolean;",
+        "line":  46
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "disclosureComplete: false,",
+        "line":  97
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "* Block execution without complete action disclosure.",
+        "line":  105
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "async requireActionDisclosure(runId: WorkflowRunId): Promise\u003cvoid\u003e {",
+        "line":  107
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "`AgenticWorkflowAuthority.requireActionDisclosure: Run not found. Failing closed.`",
+        "line":  111
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "if (!context.disclosureComplete) {",
+        "line":  115
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "`AgenticWorkflowAuthority: Action disclosure incomplete for run ${runId}. Failing closed.`",
+        "line":  117
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "* Mark action disclosure as complete.",
+        "line":  144
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "async markDisclosureComplete(runId: WorkflowRunId): Promise\u003cvoid\u003e {",
+        "line":  146
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "`AgenticWorkflowAuthority.markDisclosureComplete: Run not found.`",
+        "line":  150
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\agentic\\agenticWorkflowAuthority.ts",
+        "text":  "context.disclosureComplete = true;",
+        "line":  153
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "\"actionDisclosureRejected\",",
+        "line":  111
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "actionDisclosureRejected: {",
+        "line":  377
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "subjectObjectId: \"LEEWAY_OBJECT::COMMAND::ACTION_DISCLOSURE_REJECTED\",",
+        "line":  378
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "runtimeRole: \"Defines the public-safe disclosure shape for corruption, rejection, quarantine, or untrusted ingress without leaking private data.\",",
+        "line":  1103
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\leeway-application\\leewayApplicationIdentityGraph.ts",
+        "text":  "runtimeRole: \"Prevents automatic public disclosure or dangerous action without human review and approval.\",",
+        "line":  1116
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "* LEEWAY_VSCODE_AGENTIC_ACTION_DISCLOSURE",
+        "line":  3
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.createActionDisclosure = exports.AgenticActionDisclosure = void 0;",
+        "line":  12
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "class AgenticActionDisclosure {",
+        "line":  13
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "* Validate that all required fields are present in action disclosure.",
+        "line":  15
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "validateDisclosure(disclosure) {",
+        "line":  17
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "const value = disclosure[field];",
+        "line":  42
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "requireApprovalIfNeeded(disclosure) {",
+        "line":  62
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "if (disclosure.approvalRequired \u0026\u0026 disclosure.creatorApprovalState !== \"approved\") {",
+        "line":  63
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Creator approval required but not granted for action ${disclosure.actionId}. Failing closed.`);",
+        "line":  64
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "* Require complete disclosure before execution.",
+        "line":  68
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "requireCompleteDisclosure(disclosure) {",
+        "line":  70
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "const validation = this.validateDisclosure(disclosure);",
+        "line":  71
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Incomplete action disclosure. Missing fields: ${validation.missingFields.join(\", \")}. Failing closed.`);",
+        "line":  73
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "if (!disclosure.isComplete) {",
+        "line":  75
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "throw new Error(`AgenticActionDisclosure: Action disclosure not marked complete for action ${disclosure.actionId}. Failing closed.`);",
+        "line":  76
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "* Create a new action disclosure.",
+        "line":  80
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "createDisclosure(input) {",
+        "line":  82
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "const disclosure = {",
+        "line":  83
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "return disclosure;",
+        "line":  106
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "* Mark disclosure as complete.",
+        "line":  109
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "markComplete(disclosure) {",
+        "line":  111
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "disclosure.isComplete = true;",
+        "line":  112
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "return disclosure;",
+        "line":  113
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.AgenticActionDisclosure = AgenticActionDisclosure;",
+        "line":  116
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "const createActionDisclosure = () =\u003e {",
+        "line":  117
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "return new AgenticActionDisclosure();",
+        "line":  118
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "exports.createActionDisclosure = createActionDisclosure;",
+        "line":  120
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js",
+        "text":  "//# sourceMappingURL=agenticActionDisclosure.js.map",
+        "line":  121
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticActionDisclosure.js.map",
+        "text":  "{\"version\":3,\"file\":\"agenticActionDisclosure.js\",\"sourceRoot\":\"\",\"sources\":[\"../../src/agentic/agenticActionDisclosure.ts\"],\"names\":[],\"mappings\":\";AAAA;;;;;;;;GAQG;;;AA0BH,MAAa,uBAAuB;IAClC;;OAEG;IACH,kBAAkB,CAAC,UAA4B;QAC7C,MAAM,QAAQ,GAAG;YACf,eAAe;YACf,UAAU;YACV,QAAQ;YACR,UAAU;YACV,SAAS;YACT,uBAAuB;YACvB,aAAa;YACb,aAAa;YACb,YAAY;YACZ,eAAe;YACf,kBAAkB;YAClB,iBAAiB;YACjB,YAAY;YACZ,iBAAiB;YACjB,WAAW;YACX,iBAAiB;YACjB,sBAAsB;YACtB,kBAAkB;YAClB,sBAAsB;YACtB,WAAW;SACZ,CAAC;QAEF,MAAM,aAAa,GAAa,EAAE,CAAC;QAEnC,KAAK,MAAM,KAAK,IAAI,QAAQ,EAAE,CAAC;YAC7B,MAAM,KAAK,GAAI,UAAkB,CAAC,KAAK,CAAC,CAAC;YACzC,IAAI,KAAK,KAAK,SAAS,IAAI,KAAK,KAAK,IAAI,EAAE,CAAC;gBAC1C,aAAa,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;YAC5B,CAAC;YACD,yCAAyC;YACzC,IAAI,KAAK,CAAC,OAAO,CAAC,KAAK,CAAC,IAAI,KAAK,CAAC,MAAM,KAAK,CAAC,EAAE,CAAC;gBAC/C,6DAA6D;gBAC7D,IAAI,CAAC,CAAC,aAAa,EAAE,eAAe,EAAE,iBAAiB,CAAC,CAAC,QAAQ,CAAC,KAAK,CAAC,EAAE,CAAC;oBACzE,aAAa,CAAC,IAAI,CAAC,GAAG,KAAK,UAAU,CAAC,CAAC;gBACzC,CAAC;YACH,CAAC;QACH,CAAC;QAED,OAAO;YACL,KAAK,EAAE,aAAa,CAAC,MAAM,KAAK,CAAC;YACjC,aAAa;SACd,CAAC;IACJ,CAAC;IAED;;OAEG;IACH,uBAAuB,CAAC,UAA4B;QAClD,IAAI,UAAU,CAAC,gBAAgB,IAAI,UAAU,CAAC,oBAAoB,KAAK,UAAU,EAAE,CAAC;YAClF,MAAM,IAAI,KAAK,CACb,iFAAiF,UAAU,CAAC,QAAQ,mBAAmB,CACxH,CAAC;QACJ,CAAC;IACH,CAAC;IAED;;OAEG;IACH,yBAAyB,CAAC,UAA4B;QACpD,MAAM,UAAU,GAAG,IAAI,CAAC,kBAAkB,CAAC,UAAU,CAAC,CAAC;QAEvD,IAAI,CAAC,UAAU,CAAC,KAAK,EAAE,CAAC;YACtB,MAAM,IAAI,KAAK,CACb,0EAA0E,UAAU,CAAC,aAAa,CAAC,IAAI,CACrG,IAAI,CACL,mBAAmB,CACrB,CAAC;QACJ,CAAC;QAED,IAAI,CAAC,UAAU,CAAC,UAAU,EAAE,CAAC;YAC3B,MAAM,IAAI,KAAK,CACb,6EAA6E,UAAU,CAAC,QAAQ,mBAAmB,CACpH,CAAC;QACJ,CAAC;IACH,CAAC;IAED;;OAEG;IACH,gBAAgB,CAAC,KAoBhB;QACC,MAAM,UAAU,GAAqB;YACnC,aAAa,EAAE,KAAK,CAAC,aAAa;YAClC,QAAQ,EAAE,KAAK,CAAC,QAAQ;YACxB,MAAM,EAAE,KAAK,CAAC,MAAM;YACpB,QAAQ,EAAE,KAAK,CAAC,QAAQ;YACxB,OAAO,EAAE,KAAK,CAAC,OAAO;YACtB,qBAAqB,EAAE,KAAK,CAAC,qBAAqB;YAClD,WAAW,EAAE,KAAK,CAAC,WAAW;YAC9B,WAAW,EAAE,KAAK,CAAC,WAAW,IAAI,EAAE;YACpC,UAAU,EAAE,KAAK,CAAC,UAAU;YAC5B,aAAa,EAAE,KAAK,CAAC,aAAa,IAAI,EAAE;YACxC,gBAAgB,EAAE,KAAK,CAAC,gBAAgB;YACxC,eAAe,EAAE,KAAK,CAAC,eAAe,IAAI,EAAE;YAC5C,UAAU,EAAE,KAAK,CAAC,UAAU;YAC5B,eAAe,EAAE,KAAK,CAAC,eAAe;YACtC,SAAS,EAAE,KAAK,CAAC,SAAS;YAC1B,eAAe,EAAE,KAAK,CAAC,eAAe;YACtC,oBAAoB,EAAE,KAAK,CAAC,oBAAoB;YAChD,gBAAgB,EAAE,KAAK,CAAC,gBAAgB;YACxC,oBAAoB,EAAE,KAAK,CAAC,oBAAoB,IAAI,SAAS;YAC7D,SAAS,EAAE,IAAI,IAAI,EAAE,CAAC,WAAW,EAAE;YACnC,UAAU,EAAE,KAAK;SAClB,CAAC;QAEF,OAAO,UAAU,CAAC;IACpB,CAAC;IAED;;OAEG;IACH,YAAY,CAAC,UAA4B;QACvC,UAAU,CAAC,UAAU,GAAG,IAAI,CAAC;QAC7B,OAAO,UAAU,CAAC;IACpB,CAAC;CACF;AA5ID,0DA4IC;AAEM,MAAM,sBAAsB,GAAG,GAA4B,EAAE;IAClE,OAAO,IAAI,uBAAuB,EAAE,CAAC;AACvC,CAAC,CAAC;AAFW,QAAA,sBAAsB,0BAEjC\"}",
+        "line":  1
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticExecutionController.js",
+        "text":  "TASK_PLAN_DRAFTED: [\"ACTION_DISCLOSURE_REQUIRED\"],",
+        "line":  17
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticExecutionController.js",
+        "text":  "ACTION_DISCLOSURE_REQUIRED: [",
+        "line":  18
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticGateRunner.js",
+        "text":  "gateId: \"action-disclosure\",",
+        "line":  89
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticGateRunner.js",
+        "text":  "gateName: \"Action Disclosure Gate\",",
+        "line":  90
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticGateRunner.js",
+        "text":  "description: \"Ensure action disclosure is complete\",",
+        "line":  91
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "* - Identifies required action disclosure fields",
+        "line":  8
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\", \"creator-approval\"];",
+        "line":  40
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  57
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\", \"creator-approval\"];",
+        "line":  73
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  89
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  105
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  118
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  120
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  132
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  144
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticIntentClassifier.js",
+        "text":  "requiredGates = [\"action-disclosure\"];",
+        "line":  153
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticStandardsResolver.js",
+        "text":  "\"action-disclosure\",",
+        "line":  38
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "* - Blocks execution without complete disclosure",
+        "line":  10
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "disclosureComplete: false,",
+        "line":  61
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "* Block execution without complete action disclosure.",
+        "line":  67
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "async requireActionDisclosure(runId) {",
+        "line":  69
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "throw new Error(`AgenticWorkflowAuthority.requireActionDisclosure: Run not found. Failing closed.`);",
+        "line":  72
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "if (!context.disclosureComplete) {",
+        "line":  74
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "throw new Error(`AgenticWorkflowAuthority: Action disclosure incomplete for run ${runId}. Failing closed.`);",
+        "line":  75
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "* Mark action disclosure as complete.",
+        "line":  92
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "async markDisclosureComplete(runId) {",
+        "line":  94
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "throw new Error(`AgenticWorkflowAuthority.markDisclosureComplete: Run not found.`);",
+        "line":  97
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\agentic\\agenticWorkflowAuthority.js",
+        "text":  "context.disclosureComplete = true;",
+        "line":  99
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "\"actionDisclosureRejected\",",
+        "line":  61
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "actionDisclosureRejected: {",
+        "line":  317
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "subjectObjectId: \"LEEWAY_OBJECT::COMMAND::ACTION_DISCLOSURE_REJECTED\",",
+        "line":  318
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "runtimeRole: \"Defines the public-safe disclosure shape for corruption, rejection, quarantine, or untrusted ingress without leaking private data.\",",
+        "line":  1038
+    },
+    {
+        "pattern":  "disclosure",
+        "file":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\leeway-application\\leewayApplicationIdentityGraph.js",
+        "text":  "runtimeRole: \"Prevents automatic public disclosure or dangerous action without human review and approval.\",",
+        "line":  1051
+    }
+]

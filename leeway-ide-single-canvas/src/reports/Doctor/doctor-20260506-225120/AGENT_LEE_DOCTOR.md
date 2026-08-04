@@ -1,0 +1,167 @@
+﻿# Agent Lee Doctor Report
+
+- Generated: 2026-05-06T22:51:28.0121744-05:00
+- Extension: `C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension`
+- VSIX: `C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.1.2.vsix`
+- Failed checks: 1
+- LeeWay compliance: 98.96%
+- LeeWay blocking file count: 1
+
+## Checks
+- [PASS] Extension folder exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension
+- [PASS] package.json exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\package.json
+- [PASS] main points to out/extension.js ./out/extension.js
+- [PASS] Activity Bar icon exists media/agent-lee-activitybar.svg
+- [PASS] Command registered: agentLee.open 
+- [PASS] Activation event declared: onCommand:agentLee.open 
+- [PASS] Command registered: agentLee.openSidebar 
+- [PASS] Activation event declared: onCommand:agentLee.openSidebar 
+- [PASS] Command registered: agentLee.scanWorkspace 
+- [PASS] Activation event declared: onCommand:agentLee.scanWorkspace 
+- [PASS] Command registered: agentLee.fixWorkspace 
+- [PASS] Activation event declared: onCommand:agentLee.fixWorkspace 
+- [PASS] Command registered: agentLee.verifyWorkspace 
+- [PASS] Activation event declared: onCommand:agentLee.verifyWorkspace 
+- [PASS] Command registered: agentLee.askLocalModel 
+- [PASS] Activation event declared: onCommand:agentLee.askLocalModel 
+- [PASS] Command registered: agentLee.engineerTask 
+- [PASS] Activation event declared: onCommand:agentLee.engineerTask 
+- [PASS] Command registered: agentLee.inspectWorkspace 
+- [PASS] Activation event declared: onCommand:agentLee.inspectWorkspace 
+- [PASS] Command registered: agentLee.stagePatch 
+- [PASS] Activation event declared: onCommand:agentLee.stagePatch 
+- [PASS] Command registered: agentLee.applyApprovedPatch 
+- [PASS] Activation event declared: onCommand:agentLee.applyApprovedPatch 
+- [PASS] Command registered: agentLee.runVerification 
+- [PASS] Activation event declared: onCommand:agentLee.runVerification 
+- [PASS] Command registered: agentLee.showReceipts 
+- [PASS] Activation event declared: onCommand:agentLee.showReceipts 
+- [PASS] Command registered: agentLee.runtimeStatus 
+- [PASS] Activation event declared: onCommand:agentLee.runtimeStatus 
+- [PASS] Command registered: agentLee.testPersona 
+- [PASS] Activation event declared: onCommand:agentLee.testPersona 
+- [PASS] extension.ts exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.scanWorkspace C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.fixWorkspace C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.verifyWorkspace C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.askLocalModel C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.engineerTask C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.inspectWorkspace C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.stagePatch C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.applyApprovedPatch C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.runVerification C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.showReceipts C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.runtimeStatus C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] extension.ts registers agentLee.testPersona C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] LeeWay write policy exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-write-policy.ts
+- [PASS] Agent Lee runtime bootstrap exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Model governance exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\model-governance.ts
+- [PASS] Agent governance exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-governance.ts
+- [PASS] Engineering loop exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-engineering-loop.ts
+- [PASS] Engineering prompt exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-engineering-prompt.ts
+- [PASS] Standalone connectivity loader exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Persona runtime bridge exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Standalone SDK root exists C:\Users\Leona\.leeway-vscode\agent-lee\sdk
+- [PASS] Standalone MCP root exists C:\Users\Leona\.leeway-vscode\agent-lee\mcp
+- [PASS] Standalone agents root exists C:\Users\Leona\.leeway-vscode\agent-lee\agents
+- [PASS] Standalone governance root exists C:\Users\Leona\.leeway-vscode\agent-lee\governance
+- [PASS] Standalone persona system root exists C:\Users\Leona\.leeway-vscode\agent-lee\Agent_Lee_Persona_System
+- [PASS] Standalone persona module root exists C:\Users\Leona\.leeway-vscode\agent-lee\persona
+- [PASS] Standalone SDK manifest exists C:\Users\Leona\.leeway-vscode\agent-lee\sdk\leeway-sdk\manifest.json
+- [PASS] Standalone agent registry exists C:\Users\Leona\.leeway-vscode\agent-lee\agents\registry\agent-registry.json
+- [PASS] Standalone standards canon exists C:\Users\Leona\.leeway-vscode\agent-lee\sdk\standards\leeway-standards-canon.json
+- [PASS] Heritage canon markdown exists C:\Users\Leona\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\06_HERITAGE\agentlee_heritage_canon.md
+- [PASS] Heritage canon JSON exists C:\Users\Leona\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\06_HERITAGE\agentlee_heritage_canon.json
+- [PASS] Persona module heritage markdown exists C:\Users\Leona\.leeway-vscode\agent-lee\persona\assets\06_HERITAGE\agentlee_heritage_canon.md
+- [PASS] Persona module heritage JSON exists C:\Users\Leona\.leeway-vscode\agent-lee\persona\assets\06_HERITAGE\agentlee_heritage_canon.json
+- [PASS] Persona manifest exists C:\Users\Leona\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Persona module manifest exists C:\Users\Leona\.leeway-vscode\agent-lee\persona\assets\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Connectivity loader exports getAgentLeeRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalSdkRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalStandardsRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalMcpRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalAgentsRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports getInternalGovernanceRoot C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports validateStandaloneConnectivity C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadLeewaySdkManifest C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadAgentRegistry C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadMcpRegistry C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Connectivity loader exports loadStandardsCanon C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\leeway-connectivity-loader.ts
+- [PASS] Persona manifest references heritage canon C:\Users\Leona\.leeway-vscode\agent-lee\Agent_Lee_Persona_System\05_MANIFEST\agentlee_persona_manifest.json
+- [PASS] Persona bridge loads heritage canon C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Runtime prompt includes heritage and governance laws C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Persona bridge uses standalone persona module root C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Persona test is anti-generic C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\persona\persona-runtime-bridge.ts
+- [PASS] Core persona uses runtime bridge C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\persona.ts
+- [PASS] Runtime bootstrap exports initializeAgentLeeRuntime C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports assertAgentLeeRuntimeReady C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports getAgentLeeRuntimeState C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports formatThroughAgentLee C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports buildModelPromptThroughAgentLee C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap exports recordAgentLeeRuntimeReceipt C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap declares degraded mode C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Runtime bootstrap sets AGENT_LEE_RUNTIME_READY flag C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\agent-lee-runtime-bootstrap.ts
+- [PASS] Engineering receipt directory is creatable C:\Users\Leona\.leeway-vscode\reports\engineering-runs
+- [PASS] Write path uses LeeWay policy: src\core\file-ops.ts C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\file-ops.ts
+- [PASS] Write path uses LeeWay policy: src\extension.ts C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Write path uses LeeWay policy: src\execution-brain\executionToEditBuffer.adapter.ts C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\execution-brain\executionToEditBuffer.adapter.ts
+- [PASS] Write path uses LeeWay policy: src\edit-buffer\editBuffer.apply.ts C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\edit-buffer\editBuffer.apply.ts
+- [PASS] Governed writes enforce LeeWay compliance C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\file-ops.ts
+- [PASS] Dependencies installed node_modules already exists
+- [PASS] TypeScript compile succeeds 
+- [PASS] out/extension.js exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.js
+- [PASS] VSIX package builds C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.1.2.vsix
+- [PASS] VSIX file exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.1.2.vsix
+- [PASS] Ollama API reachable 13 model(s) reported
+- [PASS] Required Ollama model present: qwen2.5-coder:1.5b 
+- [PASS] Required Ollama model present: qwen2.5-coder:7b 
+- [PASS] Required Ollama model present: qwen2.5-coder:14b 
+- [PASS] Required Ollama model present: deepseek-coder-v2:16b 
+- [PASS] Required Ollama model present: llama3.1:8b 
+- [PASS] Required Ollama model present: nomic-embed-text 
+- [PASS] MCP registry exists C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.scan C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.fix C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.verify C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: leeway.model.route C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: persona.runtime.bridge C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: write.policy C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: engineering.loop C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: sdk.validator C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] MCP registry tool present: agent.registry.loader C:\Users\Leona\.leeway-vscode\agent-lee\mcp\mcp-registry.json
+- [PASS] Persona module file exists: index.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module file exists: persona-module.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\persona-module.ts
+- [PASS] Persona module file exists: prompt-builder.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\prompt-builder.ts
+- [PASS] Persona module file exists: response-formatter.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\response-formatter.ts
+- [PASS] Persona module file exists: voice-modes.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\voice-modes.ts
+- [PASS] Persona module file exists: heritage-loader.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\heritage-loader.ts
+- [PASS] Persona module file exists: persona-validator.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\persona-validator.ts
+- [PASS] Persona module file exists: anti-generic-filter.ts C:\Users\Leona\.leeway-vscode\agent-lee\persona\src\anti-generic-filter.ts
+- [PASS] Persona module export present: buildAgentLeeRuntimePrompt C:\Users\Leona\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: formatAgentLeeResponse C:\Users\Leona\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: validateAgentLeePersonaModule C:\Users\Leona\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Persona module export present: testAgentLeePersona C:\Users\Leona\.leeway-vscode\agent-lee\persona\index.ts
+- [PASS] Extension activation initializes Agent Lee runtime C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Command responses use Agent Lee runtime formatter C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Local model prompts route through Agent Lee prompt builder C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Runtime status command exists C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] Test persona is diagnostic only C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.ts
+- [PASS] LLMProvider routes prompts through Agent Lee C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\LLMProvider.ts
+- [PASS] Image tool routes prompts through Agent Lee C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\tools\image-tool.ts
+- [PASS] Plugin results route back through Agent Lee C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\plugins\agentLeePluginRouter.ts
+- [PASS] Governance loader uses standalone connectivity loader C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\core\governance-loader.ts
+- [PASS] No runtime dependency on external LeeWay-Standards remains 
+- [PASS] LeeWay aggregate compliance reported Score: 98.96
+- [FAIL] LeeWay blocking file count is zero Blocking files: 1
+
+## Compliance
+
+Inspected 192 files; 190 are fully marked with header, region, tag, and discovery pipeline.
+Aggregate compliance percentage: 98.96%
+Blocking files: 1
+
+## Blocking Compliance Files
+- .\agent-lee\mcp\generated-capability-catalog.json: missing LEEWAY_HEADER, REGION, TAG, DISCOVERY_PIPELINE
+
+## Blocking Items
+- LeeWay blocking file count is zero: Blocking files: 1

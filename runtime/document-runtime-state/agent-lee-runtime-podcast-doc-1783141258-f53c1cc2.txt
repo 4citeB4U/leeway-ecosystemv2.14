@@ -1,0 +1,61 @@
+# Agent Lee Runtime Podcast
+
+LEEWAY OPEN NOTEBOOK CREATIVE PACKAGE
+
+Creative Type: podcast
+Audience: General audience
+Goal: Create a complete usable creative production package.
+Tone: clear, practical, production-ready
+Prompt: Create a podcast package explaining Agent Lee as a full runtime assistant
+
+Production Rule:
+This package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.
+
+## Podcast Package
+Estimated Runtime: 5 minutes
+
+## Episode Promise
+By the end of this episode, the listener should understand the central idea, why it matters, and what action to take next.
+
+## Episode Structure
+1. Cold open
+2. Host introduction
+3. Problem setup
+4. Main teaching segments
+5. Example or story
+6. Practical action steps
+7. Closing call to action
+
+## Cold Open Script
+Open with a sharp question, tension point, or surprising statement that makes the listener care immediately.
+
+## Host Intro Script
+Welcome the listener, name the topic, and state the promise of the episode.
+
+## Segment 1: Problem
+Explain the pain, confusion, opportunity, or market gap.
+
+## Segment 2: Main Idea
+Break down the core idea with clear examples and simple language.
+
+## Segment 3: Application
+Give the listener practical steps they can use immediately.
+
+## Show Notes
+- Key takeaway 1
+- Key takeaway 2
+- Key takeaway 3
+
+## Production Notes
+- Intro music
+- Host voice tone
+- Suggested pauses
+- Sound effect moments
+- Clip-worthy quotes
+
+## Storage and Handoff
+- Open Notebook owns this creative package.
+- Export/render lanes create final media from this package.
+- Seafile/storage governor should hold durable files and manifests.
+- Artifact viewer should expose the room link.
+- Skill router should return the actionable link/receipt.

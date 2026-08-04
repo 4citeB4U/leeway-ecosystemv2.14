@@ -1,0 +1,75 @@
+{
+  "schema": "leeway.agent-lee.chess-themes.v1",
+  "themes": [
+    {
+      "id": "knights_and_dragons",
+      "label": "Knights and Dragons",
+      "palette": {
+        "accent": "#74d5ff",
+        "contrast": "#f4c46c",
+        "lightSquare": "#d7c1a4",
+        "darkSquare": "#5c3a2c"
+      },
+      "pieceFamily": "mythic_rampart",
+      "motif": "high-fantasy armor, dragon scale edges, luminous sigils",
+      "kingTitle": "Dragon Crown",
+      "rookTitle": "Keep Tower"
+    },
+    {
+      "id": "ninjas_and_samurai",
+      "label": "Ninjas and Samurai",
+      "palette": {
+        "accent": "#f1a6ff",
+        "contrast": "#9de2ff",
+        "lightSquare": "#c8cad3",
+        "darkSquare": "#383f54"
+      },
+      "pieceFamily": "shadow_clan",
+      "motif": "quiet steel, lacquer, cloth wrap, precise movement",
+      "kingTitle": "Shogun",
+      "rookTitle": "Guard Tower"
+    },
+    {
+      "id": "kung_fu_masters",
+      "label": "Kung Fu Masters",
+      "palette": {
+        "accent": "#f4d15e",
+        "contrast": "#e96a6a",
+        "lightSquare": "#dbc48a",
+        "darkSquare": "#8b5d3a"
+      },
+      "pieceFamily": "spirit_dojo",
+      "motif": "flow, discipline, balance, ring-light stage presence",
+      "kingTitle": "Grand Master",
+      "rookTitle": "Temple Pillar"
+    },
+    {
+      "id": "modern_military",
+      "label": "Modern Military",
+      "palette": {
+        "accent": "#7af0bf",
+        "contrast": "#ff8f78",
+        "lightSquare": "#d2d7ce",
+        "darkSquare": "#475047"
+      },
+      "pieceFamily": "tactical_force",
+      "motif": "clean hard edges, mission hardware, night-ops status lights",
+      "kingTitle": "Command Node",
+      "rookTitle": "Forward Base"
+    },
+    {
+      "id": "classic_grandmaster",
+      "label": "Classic Grandmaster",
+      "palette": {
+        "accent": "#e8c46b",
+        "contrast": "#73d6ff",
+        "lightSquare": "#d9caa3",
+        "darkSquare": "#6f5539"
+      },
+      "pieceFamily": "classical_tournament",
+      "motif": "heritage wood, tournament brass, clean studio authority",
+      "kingTitle": "King",
+      "rookTitle": "Rook"
+    }
+  ]
+}

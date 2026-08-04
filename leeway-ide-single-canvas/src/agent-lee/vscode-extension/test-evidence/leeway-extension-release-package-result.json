@@ -1,0 +1,32 @@
+﻿{
+    "timestamp":  "2026-06-03T13:41:43.0491005-05:00",
+    "packageVersion":  "1.2.13",
+    "vsixPath":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.2.13.vsix",
+    "requiredPaths":  [
+                          "README.md",
+                          "build/runtime-build-info.json",
+                          "media/leeway-activity.svg",
+                          "media/agent-lee-chat-avatar.svg",
+                          "media/leeway-logo.svg",
+                          "media/leeway-standards-logo.png",
+                          "media/top-right-button-new.png",
+                          "media/bottom-button-for-agent-lee.png",
+                          "media/leeway-standards-button.png",
+                          "media/readme-header.png",
+                          "media/readme-system-flow.png",
+                          "out/extension.js",
+                          "out/plugins/adapters/gmail.adapter.js",
+                          "out/plugins/adapters/vercel.adapter.js",
+                          "package.json"
+                      ],
+    "missingPaths":  [
+
+                     ],
+    "packageChecks":  {
+                          "openSidebarContributed":  true,
+                          "activityBarIcon":  "media/leeway-activity.svg",
+                          "readmeExists":  true,
+                          "compiledEntrypointExists":  true
+                      },
+    "passed":  true
+}

@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-07-04T04:12:53.374674+00:00",
+  "updated_at": "2026-07-04T04:12:53.374699+00:00",
+  "skills": {
+    "longform_story_to_pdf": {
+      "name": "longform_story_to_pdf",
+      "description": "Create a long-form story in leeway_open_notebook, export it through leeway_document_runtime, and deliver artifact through Telegram.",
+      "lanes": [
+        "leeway_open_notebook",
+        "leeway_document_runtime",
+        "leeway_skill_router",
+        "agent-lee-telegram-shell"
+      ],
+      "triggers": [
+        "write story",
+        "4 page story",
+        "fantasy story",
+        "put it in a pdf"
+      ],
+      "approval_required": false,
+      "status": "LIVE_PARTIAL_DELIVERY_PATCH_REQUIRED",
+      "recipe": [
+        "create_notebook",
+        "export_pdf",
+        "return_document_artifact",
+        "telegram_send_document"
+      ]
+    },
+    "readback_exact_notebook": {
+      "name": "readback_exact_notebook",
+      "description": "Read back exact stored notebook content instead of inventing a summary.",
+      "lanes": [
+        "leeway_open_notebook",
+        "leeway_skill_router",
+        "agent-lee-telegram-shell"
+      ],
+      "triggers": [
+        "read it back",
+        "read full story",
+        "read the poem",
+        "what did you write"
+      ],
+      "approval_required": false,
+      "status": "LIVE_AFTER_SKILL_ROUTER_PATCH",
+      "recipe": [
+        "retrieve_latest_notebook",
+        "return_exact_content"
+      ]
+    },
+    "revise_notebook_until_approved": {
+      "name": "revise_notebook_until_approved",
+      "description": "Revise a stored notebook artifact while preserving versions and receipts.",
+      "lanes": [
+        "leeway_open_notebook",
+        "leeway_skill_router"
+      ],
+      "triggers": [
+        "revise it",
+        "make it longer",
+        "change the ending",
+        "edit it"
+      ],
+      "approval_required": false,
+      "status": "LIVE"
+    },
+    "email_artifact_after_approval": {
+      "name": "email_artifact_after_approval",
+      "description": "Email a stored artifact after approval using leeway_email_runtime.",
+      "lanes": [
+        "leeway_email_runtime",
+        "leeway_skill_router",
+        "leeway_api_gateway"
+      ],
+      "triggers": [
+        "email it",
+        "send it to",
+        "send the pdf"
+      ],
+      "approval_required": true,
+      "status": "PLANNED_UNTIL_EMAIL_RUNTIME"
+    },
+    "calendar_event_after_approval": {
+      "name": "calendar_event_after_approval",
+      "description": "Create calendar event after approval using leeway_calendar_runtime.",
+      "lanes": [
+        "leeway_calendar_runtime",
+        "leeway_skill_router",
+        "leeway_api_gateway"
+      ],
+      "triggers": [
+        "add to calendar",
+        "schedule it",
+        "create event"
+      ],
+      "approval_required": true,
+      "status": "PLANNED_UNTIL_CALENDAR_RUNTIME"
+    },
+    "phone_call_after_approval": {
+      "name": "phone_call_after_approval",
+      "description": "Call or SMS through authorized phone/SIP/Android channel after approval.",
+      "lanes": [
+        "leeway_phone_runtime",
+        "leeway_skill_router",
+        "leeway_api_gateway"
+      ],
+      "triggers": [
+        "call",
+        "text",
+        "sms",
+        "dial"
+      ],
+      "approval_required": true,
+      "status": "PLANNED_UNTIL_PHONE_RUNTIME"
+    },
+    "website_preview_iterate": {
+      "name": "website_preview_iterate",
+      "description": "Create website preview, return view link, and keep editing through Telegram.",
+      "lanes": [
+        "leeway_browser_runtime",
+        "leeway_open_notebook",
+        "leeway_skill_router"
+      ],
+      "triggers": [
+        "create website",
+        "make a landing page",
+        "preview site",
+        "edit website"
+      ],
+      "approval_required": false,
+      "status": "PLANNED_UNTIL_BROWSER_RUNTIME"
+    },
+    "three_d_viewer_delivery": {
+      "name": "three_d_viewer_delivery",
+      "description": "Create 3D artifact, return viewer/package link, and deliver preview through Telegram.",
+      "lanes": [
+        "agent-lee-image-to-3d-pattern-lane",
+        "leeway_skill_router",
+        "agent-lee-telegram-shell"
+      ],
+      "triggers": [
+        "3d object",
+        "3d model",
+        "view 3d"
+      ],
+      "approval_required": false,
+      "status": "PARTIAL_EXISTING_3D_LANE_NEEDS_DELIVERY_ROUTE"
+    }
+  }
+}

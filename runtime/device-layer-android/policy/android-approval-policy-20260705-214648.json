@@ -1,0 +1,52 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_APPROVAL_POLICY_236",
+    "timestamp":  "2026-07-05T21:46:48",
+    "family":  "android",
+    "policy_status":  "READ_ONLY_DISCOVERY_ALLOWED_ADB_AND_PHONE_ACTIONS_REQUIRE_APPROVAL",
+    "allowed_without_approval":  [
+                                     "GET /android/discover when implemented",
+                                     "GET /android/status when implemented",
+                                     "GET /android/registry when implemented",
+                                     "GET /android/shell/status when implemented",
+                                     "GET /android/actuator/status when implemented"
+                                 ],
+    "requires_approval":  [
+                              "ADB command execution",
+                              "screen tap",
+                              "screen swipe",
+                              "text entry",
+                              "opening app",
+                              "sending SMS or RCS",
+                              "starting call",
+                              "answering call",
+                              "reading notifications",
+                              "reading contacts",
+                              "reading files or photos",
+                              "installing APK",
+                              "uninstalling app",
+                              "changing settings",
+                              "granting or revoking permissions",
+                              "pairing device",
+                              "wireless ADB connect"
+                          ],
+    "forbidden_without_specific_proof":  [
+                                             "silent phone unlock",
+                                             "silent text sending",
+                                             "silent calling",
+                                             "silent file/photo exfiltration",
+                                             "silent notification scraping",
+                                             "silent contact scraping",
+                                             "installing or uninstalling apps",
+                                             "changing security/privacy settings",
+                                             "bypassing lock screen",
+                                             "credential capture"
+                                         ],
+    "physical_actions_executed":  0,
+    "adb_commands_executed":  0,
+    "taps_executed":  0,
+    "swipes_executed":  0,
+    "texts_sent":  0,
+    "calls_started":  0,
+    "files_read":  0,
+    "device_mutations":  0
+}

@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "TestSprite": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy","Bypass",
+        "-Command",
+        "cd C:\\\\Tools\\\\vscode-mcp-tooling; node src\\\\tool.js testsprite"
+      ]
+    },
+    "Playwright": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy","Bypass",
+        "-Command",
+        "cd C:\\\\Tools\\\\vscode-mcp-tooling; node src\\\\tool.js playwright"
+      ]
+    },
+    "InsForge": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy","Bypass",
+        "-Command",
+        "cd C:\\\\Tools\\\\vscode-mcp-tooling; node src\\\\tool.js insforge"
+      ]
+    },
+    "LeewayleewayStitch": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy","Bypass",
+        "-Command",
+        "cd C:\\\\Tools\\\\vscode-mcp-tooling; node src\\\\tool.js stitch"
+      ]
+    }
+  }
+}
+

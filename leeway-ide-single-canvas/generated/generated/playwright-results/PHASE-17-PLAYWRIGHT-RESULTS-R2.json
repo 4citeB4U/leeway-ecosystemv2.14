@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-07-31T10:02:17.741Z",
+  "totalChecks": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "check": "knowledge-graph page 200",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "3D canvas rendered",
+      "result": "PASS",
+      "detail": "canvas count=1"
+    },
+    {
+      "check": "security overlay toggle",
+      "result": "PASS",
+      "detail": "clicked security button"
+    },
+    {
+      "check": "security GAP filter",
+      "result": "PASS",
+      "detail": "selected Enforcement Gaps"
+    },
+    {
+      "check": "risk filter select",
+      "result": "PASS",
+      "detail": "selected Critical"
+    },
+    {
+      "check": "view selector present",
+      "result": "PASS",
+      "detail": "options count check"
+    },
+    {
+      "check": "view selection switches",
+      "result": "PASS",
+      "detail": "selected=critical"
+    },
+    {
+      "check": "time machine snapshot selection",
+      "result": "PASS",
+      "detail": "before=Foundation after=Foundation"
+    },
+    {
+      "check": "master-publisher page 200",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "master-publisher projects list",
+      "result": "PASS",
+      "detail": "projects text found=3"
+    },
+    {
+      "check": "master-publisher health healthy",
+      "result": "PASS",
+      "detail": "HEALTHY found=1"
+    },
+    {
+      "check": "no console errors",
+      "result": "PASS",
+      "detail": "console errors=0"
+    },
+    {
+      "check": "no OrbitControls exception",
+      "result": "PASS",
+      "detail": "orbitcontrols errors=0"
+    },
+    {
+      "check": "no direct 8876 calls",
+      "result": "PASS",
+      "detail": "direct calls=0"
+    },
+    {
+      "check": "map-data API valid",
+      "result": "PASS",
+      "detail": "nodeCount=120 relCount=118 viewCount=19 snapshotCount=17"
+    }
+  ],
+  "screenshots": [
+    "knowledge-graph-initial-r2.png",
+    "knowledge-graph-security-on-r2.png",
+    "knowledge-graph-time-machine-r2.png",
+    "master-publisher-initial-r2.png"
+  ],
+  "consoleLog": [
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    }
+  ],
+  "networkTrace": [
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "method": "GET"
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "status": 200
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "method": "GET"
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "status": 200
+    }
+  ]
+}

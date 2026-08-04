@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agent Lee V26.22 Production Test UI</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #101827;
+  color: #f8fafc;
+}
+header {
+  padding: 18px 24px;
+  background: #0f172a;
+  border-bottom: 1px solid #334155;
+}
+main {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #1d4ed8; }
+textarea, input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 10px;
+}
+textarea { height: 110px; }
+pre {
+  white-space: pre-wrap;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px;
+  min-height: 520px;
+  overflow: auto;
+}
+.small { color: #94a3b8; font-size: 12px; }
+.good { color: #86efac; }
+.warn { color: #fde68a; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Agent Lee V26.22 Full Live Production Test</h1>
+  <div class="small">Local operator bridge: http://127.0.0.1:8792</div>
+</header>
+<main>
+  <section>
+    <div class="card">
+      <h2>Live Command</h2>
+      <textarea id="cmd">Run full production readiness check. Discover devices, research Milwaukee Bucks current roster trades lineup starting five, create proof assets, create website, and prepare printable report.</textarea>
+      <button onclick="sendCommand()">Send Command</button>
+      <button onclick="health()">Health Check</button>
+    </div>
+
+    <div class="card">
+      <h2>Production Tasks</h2>
+      <button onclick="call('/devices')">Discover Wi-Fi / Bluetooth / LAN Devices</button>
+      <button onclick="call('/screen')">Capture Screen Snapshot</button>
+      <button onclick="call('/browser/research-bucks')">Research Milwaukee Bucks</button>
+      <button onclick="call('/browser/open')">Open Browser + Search</button>
+      <button onclick="call('/desktop/notepad')">Open Notepad + Type Proof</button>
+      <button onclick="call('/create/image')">Create Test Image</button>
+      <button onclick="call('/create/video')">Create Video Frames</button>
+      <button onclick="call('/create/3d')">Create 3D Object</button>
+      <button onclick="call('/website/build')">Build Web Application</button>
+      <button onclick="call('/print/report')">Print Bucks Research Report</button>
+    </div>
+
+    <div class="card">
+      <h2>Your Prompts</h2>
+      <label>Image prompt</label>
+      <input id="imagePrompt" value="Create a cinematic Agent Lee operations command center image.">
+      <label>3D object prompt</label>
+      <input id="objectPrompt" value="Create a clean 3D cube object for Agent Lee proof.">
+      <label>Video prompt</label>
+      <input id="videoPrompt" value="Create animated frames showing Agent Lee moving through research, creation, and printing.">
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h2>Output</h2>
+      <pre id="out">Ready.</pre>
+    </div>
+  </section>
+</main>
+
+<script>
+async function post(path, body) {
+  const r = await fetch("http://127.0.0.1:8792" + path, {
+    method: "POST",
+    headers: {"content-type":"application/json"},
+    body: JSON.stringify(body || {})
+  });
+  return await r.json();
+}
+
+async function get(path) {
+  const r = await fetch("http://127.0.0.1:8792" + path);
+  return await r.json();
+}
+
+function show(x) {
+  document.getElementById("out").textContent = JSON.stringify(x, null, 2);
+}
+
+async function health() {
+  show(await get("/health"));
+}
+
+async function sendCommand() {
+  const command = document.getElementById("cmd").value;
+  const imagePrompt = document.getElementById("imagePrompt").value;
+  const objectPrompt = document.getElementById("objectPrompt").value;
+  const videoPrompt = document.getElementById("videoPrompt").value;
+  show(await post("/command", {command, imagePrompt, objectPrompt, videoPrompt}));
+}
+
+async function call(path) {
+  const imagePrompt = document.getElementById("imagePrompt").value;
+  const objectPrompt = document.getElementById("objectPrompt").value;
+  const videoPrompt = document.getElementById("videoPrompt").value;
+  show(await post(path, {imagePrompt, objectPrompt, videoPrompt}));
+}
+</script>
+</body>
+</html>

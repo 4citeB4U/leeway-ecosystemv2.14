@@ -1,0 +1,11 @@
+{
+  "approval_id": "pending-real_browser_search-20260705-194718",
+  "executed_at": "2026-07-05T20:09:45",
+  "action": "real_browser_search",
+  "query": "Leeway Agent Lee post-execution proof",
+  "search_url": "https://www.bing.com/search?q=Leeway+Agent+Lee+post-execution+proof",
+  "launcher_pid": 28564,
+  "execution_status": "EXECUTED",
+  "used": true,
+  "source": "script_202_isolated_browser_search_module"
+}

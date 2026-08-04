@@ -1,0 +1,560 @@
+﻿[
+    {
+        "timestamp":  "2026-05-03T18:08:30.0630223-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0925380-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0935400-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0945390-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0954551-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\out"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0965667-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0975827-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0985717-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\models"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.0995718-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1005740-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1015713-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\daily"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1025717-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\crashes"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1045720-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\drift"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1055714-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1055714-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\logs\\tools"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1075735-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\reports\\verification"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1085800-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\reports\\compliance"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1095779-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\reports\\mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1105745-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\reports\\web-search"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1115742-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\reports\\image-analysis"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1125744-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1135745-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1145744-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\notes"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1155746-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\plans"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1165744-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\errors"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1175743-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\web-searches"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1185721-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\workspace\\image-analysis"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1195720-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1205718-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\db"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1215737-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\summaries"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1235713-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\receipts"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.1245794-05:00",
+        "name":  "Folder exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\indexes"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2338353-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\package.json"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2358368-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\tsconfig.json"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2368353-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2378349-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\extension.js"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2388354-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\image-tool.ts"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2398347-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\tools\\web-search.ts"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2408347-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\leeway-mcp-registry.json"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2418353-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\models\\model-routing.json"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2428347-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\voice-policy.json"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2438347-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\Speak-AgentLee.ps1"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2448350-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\db\\agent-lee-memory.jsonl"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2458365-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\WORKSPACE_MAP.md"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2478352-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\memory\\STORAGE_POLICY.md"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.2488364-05:00",
+        "name":  "File exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.continue\\config.yaml"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.3045139-05:00",
+        "name":  "Tool available: node",
+        "status":  "PASS",
+        "details":  "C:\\Program Files\\nodejs\\node.exe"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.3095132-05:00",
+        "name":  "Tool available: npm",
+        "status":  "PASS",
+        "details":  "C:\\Program Files\\nodejs\\npm.ps1"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.3115123-05:00",
+        "name":  "Tool available: code",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.3135119-05:00",
+        "name":  "Tool available: ollama",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Ollama\\ollama.exe"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.3145118-05:00",
+        "name":  "Tool available: git",
+        "status":  "PASS",
+        "details":  "C:\\Program Files\\Git\\cmd\\git.exe"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.4149365-05:00",
+        "name":  "package.json BOM",
+        "status":  "PASS",
+        "details":  "No BOM detected"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.4339366-05:00",
+        "name":  "package.json valid JSON",
+        "status":  "PASS",
+        "details":  "Name: agent-lee-leeway-coding-system, version: 0.1.0"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:30.4460886-05:00",
+        "name":  "VS Code commands declared",
+        "status":  "PASS",
+        "details":  "agentLee.ask, agentLee.image, agentLee.search"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:32.9175683-05:00",
+        "name":  "TypeScript compile",
+        "status":  "PASS",
+        "details":  "npm run compile passed"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:33.0120742-05:00",
+        "name":  "VSIX package exists",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-0.1.0.vsix"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:33.3119347-05:00",
+        "name":  "VS Code extension installed",
+        "status":  "PASS",
+        "details":  "Agent Lee extension found"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.4204445-05:00",
+        "name":  "Ollama API",
+        "status":  "PASS",
+        "details":  "localhost:11434 responding"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8917406-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "qwen2.5-coder:1.5b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8927470-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "qwen2.5-coder:7b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8947477-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "qwen2.5-coder:14b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8957338-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "deepseek-coder-v2:16b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8967418-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "llama3.1:8b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8977340-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "nomic-embed-text"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8987335-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "llava:7b"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:35.8997346-05:00",
+        "name":  "Ollama model installed",
+        "status":  "PASS",
+        "details":  "bakllava:latest"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:41.8862553-05:00",
+        "name":  "Ollama model response",
+        "status":  "PASS",
+        "details":  "qwen2.5-coder:7b responded"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.0074045-05:00",
+        "name":  "Continue config wired",
+        "status":  "PASS",
+        "details":  "Agent Lee + Ollama + Qwen detected"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.0093946-05:00",
+        "name":  "Voice/code policy in Continue",
+        "status":  "PASS",
+        "details":  "No-code-read-aloud rule detected"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.0982711-05:00",
+        "name":  "LeeWay MCP registry",
+        "status":  "PASS",
+        "details":  "19 MCP tools registered"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.1950200-05:00",
+        "name":  "Voice policy",
+        "status":  "PASS",
+        "details":  "Code read-aloud protection detected"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.2256994-05:00",
+        "name":  "Speech helper",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\voice\\Speak-AgentLee.ps1"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.5225654-05:00",
+        "name":  "VS Code Speech extension",
+        "status":  "PASS",
+        "details":  "Installed"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.6235036-05:00",
+        "name":  "Icon found",
+        "status":  "PASS",
+        "details":  "C:\\Users\\Leona\\.leeway-vscode\\leeway-standards-button.png"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7941507-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "frontend-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7953527-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "backend-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7963564-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "memory-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7973557-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "scheduler-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7983567-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "qa-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.7993567-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "creative-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8003560-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "ui-builder-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8013556-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "react-native-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8023559-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "design-system-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8023559-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "leeway-responsive-ui-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8033558-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "leeway-edge-optimizer-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8043558-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "leeway-build-auditor-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8063564-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "leeway-ci-blueprint-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8063564-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "leeway-full-repo-checker-mcp"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8073556-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "fs-nav-agent"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8083555-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "mutation-agent"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8093555-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "host-exec-agent"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8113562-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "perception-agent"
+    },
+    {
+        "timestamp":  "2026-05-03T18:08:42.8123557-05:00",
+        "name":  "Agent workspace folder",
+        "status":  "PASS",
+        "details":  "media-forge-agent"
+    }
+]

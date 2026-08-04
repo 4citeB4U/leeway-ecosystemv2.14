@@ -1,0 +1,42 @@
+{
+  "schema": "leeway.agent-lee.first-response-policy.v1",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "enabled": true,
+  "defaultClass": "medium",
+  "qwen3First": false,
+  "noSilentFallback": true,
+  "classes": {
+    "light": {
+      "maxPromptChars": 240,
+      "maxPromptLines": 2,
+      "timeoutMs": 45000,
+      "numPredict": 128,
+      "temperature": 0.18,
+      "stream": true,
+      "partialResponse": false
+    },
+    "medium": {
+      "maxPromptChars": 900,
+      "maxPromptLines": 6,
+      "timeoutMs": 45000,
+      "numPredict": 128,
+      "temperature": 0.16,
+      "stream": true,
+      "partialResponse": false
+    },
+    "heavy": {
+      "maxPromptChars": 999999,
+      "maxPromptLines": 999999,
+      "timeoutMs": 60000,
+      "numPredict": 256,
+      "temperature": 0.12,
+      "stream": true,
+      "partialResponse": false
+    }
+  },
+  "notes": [
+    "Use qwen3 first for the reasoning lane.",
+    "Return the first useful response quickly instead of waiting for a long completion.",
+    "Keep the policy portable across VS Code, CLI, desktop runtime, and server fabric."
+  ]
+}

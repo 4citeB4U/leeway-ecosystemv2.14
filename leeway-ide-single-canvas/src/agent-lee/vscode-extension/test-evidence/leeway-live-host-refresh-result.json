@@ -1,0 +1,20 @@
+﻿{
+    "timestamp":  "2026-05-25T23:41:30.3348388-05:00",
+    "sourceBuildHash":  "E3CAF5CC3AFD168C460427828806109518EAB159779C4423BD7651213620EB98",
+    "installedBuildHash":  "E3CAF5CC3AFD168C460427828806109518EAB159779C4423BD7651213620EB98",
+    "previousLiveHostHash":  "2AEB3B3A5EBAB5730485E8BEB443E58522415610A76D50C3A50CBFC64C65F426",
+    "refreshedLiveHostHash":  "2AEB3B3A5EBAB5730485E8BEB443E58522415610A76D50C3A50CBFC64C65F426",
+    "previousLiveHostTimestamp":  "2026-05-26T04:10:50.629Z",
+    "refreshedLiveHostTimestamp":  "2026-05-26T04:40:50.528Z",
+    "refreshAttempted":  true,
+    "manualReloadRequired":  true,
+    "diagnoseCommandTriggered":  false,
+    "sidebarOpened":  false,
+    "attestationPath":  "C:\\Users\\Leona\\AppData\\Roaming\\Code\\User\\globalStorage\\leeway.agent-lee-leeway-coding-system\\live-host-attestation-current.json",
+    "runningCodeProcessCount":  13,
+    "runningExtensionHostCount":  4,
+    "timestampChanged":  true,
+    "buildHashChanged":  false,
+    "buildHashMatchesCurrent":  false,
+    "finalVerdict":  "FAIL"
+}

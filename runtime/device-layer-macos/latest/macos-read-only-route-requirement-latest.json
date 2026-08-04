@@ -1,0 +1,58 @@
+﻿{
+    "version":  "LEEWAY_MACOS_READ_ONLY_ROUTE_REQUIREMENT_251",
+    "timestamp":  "2026-07-05T22:25:56",
+    "family":  "macos",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_MACOS_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/macos/discover",
+                                         "purpose":  "Return macOS inventory stub without SSH, shell, AppleScript, or host connection.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/macos/status",
+                                         "purpose":  "Return macOS family readiness with shell/AppleScript/actuator disabled and approval required.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/macos/registry",
+                                         "purpose":  "Return normalized macOS registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/macos/shell/status",
+                                         "purpose":  "Return shell disabled status and approval contract.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/macos/actuator/status",
+                                         "purpose":  "Return actuator disabled status and action categories requiring approval.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no SSH connection",
+                      "no shell command",
+                      "no AppleScript execution",
+                      "no remote host connection",
+                      "no file read",
+                      "no file write",
+                      "no app open",
+                      "no click",
+                      "no typing",
+                      "no hotkey",
+                      "no accessibility mutation",
+                      "no service/package/system mutation",
+                      "no physical action"
+                  ]
+}

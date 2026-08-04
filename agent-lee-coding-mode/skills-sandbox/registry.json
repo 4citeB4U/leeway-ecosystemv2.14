@@ -1,0 +1,16 @@
+{
+  "registryId": "agent-lee-skill-sandbox-registry",
+  "owner": "agent-lee-prime",
+  "updatedAt": "2026-06-11T22:25:24.791Z",
+  "skills": [
+    {
+      "skillId": "agent-lee-skill-self-test",
+      "name": "Agent Lee Skill Self Test",
+      "path": "agent-lee-coding-mode/skills-sandbox/agent-lee-skill-self-test",
+      "packageFormat": "SKILL.md + skill.manifest.json + actions.json",
+      "executionCenter": "SANDBOX",
+      "canonicalAttached": false,
+      "status": "CREATED"
+    }
+  ]
+}

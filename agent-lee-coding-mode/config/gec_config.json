@@ -1,0 +1,6 @@
+{
+  "write_enabled": false,
+  "approval_token": "",
+  "auto_promote_threshold": 1,
+  "notes": "This file controls governance gating for HookInjector. Set approval_token via scripts/enable_gec_writes.py or by editing and restart router."
+}

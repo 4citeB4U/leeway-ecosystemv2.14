@@ -1,0 +1,25 @@
+{
+    "schema":  "leeway-agent-lee-3d-game-asset-standard-v13-repaired",
+    "updatedAt":  "2026-06-28T00:08:22.9756317Z",
+    "official":  true,
+    "name":  "Agent Lee Real 3D Game Asset Standard",
+    "port":  8095,
+    "role":  "3D Sculptor lane for game-engine assets",
+    "real3DRequirements":  [
+                               "A real GLB, OBJ, or FBX asset must be produced or validated.",
+                               "Neural Reconstruction requires a real local image-to-3D backend.",
+                               "Procedural OBJ fallback cannot be labeled Neural Reconstruction.",
+                               "Game-ready means asset loads, has geometry, has export path, and is validated for target profile.",
+                               "Roblox, Unity, Unreal, WebXR profiles must be tracked separately.",
+                               "Every 3D asset must write receipt with source image, prompt, output path, file size, vertex count, face count, and validation status."
+                           ],
+    "pipeline":  {
+                     "vision":  "8093 Vision/Qwen3-VL director lane",
+                     "creation":  "8094 Creation Kernel image reference lane",
+                     "threeD":  "8095 3D Game Asset Kernel",
+                     "discovery":  "Discovery Layer live authority",
+                     "standards":  "Leeway Standards governance mirror",
+                     "memory":  "Seafile plus Archive evidence memory"
+                 },
+    "truth":  "No fake 3D READY. If a neural backend is missing, status remains BLOCKED or CHECK_REQUIRED."
+}

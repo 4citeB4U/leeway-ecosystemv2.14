@@ -1,0 +1,34 @@
+﻿{
+    "approval_id":  "approved-real-hotkey-20260705-184430-dfbae7eae1da",
+    "created_at":  "2026-07-05T18:44:32",
+    "expires_at":  "2026-07-05T18:54:32",
+    "requested_by":  "script_180",
+    "decided_at":  "2026-07-05T18:44:32",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_hotkey",
+    "risk_tier":  "controlled_physical_keyboard",
+    "human_summary":  "One-time approval to open a controlled Notepad target and send F5 only.",
+    "payload":  {
+                    "target":  "notepad",
+                    "hotkey":  "F5"
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  false,
+    "rollback_or_stop":  "Close the new Notepad window manually, or run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 to stop the actuator service.",
+    "safety_expectation":  {
+                               "controlled_target_notepad":  true,
+                               "no_file":  true,
+                               "no_save":  true,
+                               "no_shell":  true,
+                               "only_approved_hotkey_should_send":  true,
+                               "approved_hotkey":  "F5",
+                               "no_click":  true,
+                               "no_url":  true,
+                               "no_mouse":  true
+                           }
+}

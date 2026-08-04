@@ -1,0 +1,8 @@
+{
+  "simulationId": "QWEN_AUDIO_TIMEOUT_PLUS_OMNI_HARDWARE_BLOCK_PLUS_EXTERNAL_FALLBACK_PRESSURE",
+  "injectedFaults": [
+    "qwen2-audio CPU timeout state",
+    "qwen2.5-omni hardware block state",
+    "fake external STT/TTS suggestion"
+  ]
+}

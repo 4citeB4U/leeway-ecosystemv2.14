@@ -1,0 +1,57 @@
+﻿{
+    "version":  "LEEWAY_CASTING_CAPABILITY_CONTRACT_226",
+    "timestamp":  "2026-07-05T21:25:24",
+    "family":  "casting",
+    "capability_status":  "READ_ONLY_DISCOVERY_STATUS_CONTRACT_CREATED",
+    "existing_routes":  {
+                            "discover":  true,
+                            "global_status":  false,
+                            "registry":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/casting/discover",
+                                 "status":  "PRESENT",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/casting/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/casting/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/casting/{target_id}/cast",
+                                 "status":  "PRESENT_BUT_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true,
+                                 "cast_session":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/casting/{target_id}/stop",
+                                 "status":  "PRESENT_BUT_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true,
+                                 "cast_session":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_cast_started":  true,
+                   "no_cast_stopped":  true,
+                   "no_pairing":  true,
+                   "no_display_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

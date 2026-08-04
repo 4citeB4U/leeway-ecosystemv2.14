@@ -1,0 +1,139 @@
+{
+  "task_id": "task-1783216319-e4bb165e",
+  "request": "Layer conversion blueprint was cleanly rewritten without markdown fences or code-block markers. Use this version as the productization map.",
+  "source": "powershell-layer-conversion-clean-rewrite",
+  "user_id": "owner",
+  "task_type": "general",
+  "status": "THINKING",
+  "message": "Thinking through the request and preparing the plan.",
+  "current_step": 1,
+  "todo": [
+    {
+      "index": 1,
+      "text": "Capture the request exactly.",
+      "status": "ACTIVE"
+    },
+    {
+      "index": 2,
+      "text": "Classify task type, urgency, risk, and approval requirement.",
+      "status": "PENDING"
+    },
+    {
+      "index": 3,
+      "text": "Check discovery and available runtime lanes.",
+      "status": "PENDING"
+    },
+    {
+      "index": 4,
+      "text": "Create Workboard task and visible status.",
+      "status": "PENDING"
+    },
+    {
+      "index": 5,
+      "text": "Build work breakdown and to-do list.",
+      "status": "PENDING"
+    },
+    {
+      "index": 6,
+      "text": "Route to required runtime lanes.",
+      "status": "PENDING"
+    },
+    {
+      "index": 7,
+      "text": "Create plan or work order.",
+      "status": "PENDING"
+    },
+    {
+      "index": 8,
+      "text": "Execute safe steps.",
+      "status": "PENDING"
+    },
+    {
+      "index": 9,
+      "text": "Validate output.",
+      "status": "PENDING"
+    },
+    {
+      "index": 10,
+      "text": "Write receipt.",
+      "status": "PENDING"
+    },
+    {
+      "index": 11,
+      "text": "Update visible operational trace after major steps.",
+      "status": "PENDING"
+    },
+    {
+      "index": 12,
+      "text": "Validate against original request.",
+      "status": "PENDING"
+    },
+    {
+      "index": 13,
+      "text": "Deliver result or exact blocker.",
+      "status": "PENDING"
+    },
+    {
+      "index": 14,
+      "text": "Store receipt and learning event if needed.",
+      "status": "PENDING"
+    }
+  ],
+  "blocker": "",
+  "artifact_url": "",
+  "artifact_path": "",
+  "metadata": {
+    "created_by": "leeway_executive_runtime",
+    "power_level": 10,
+    "distribution_root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution",
+    "blueprint": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\manifests\\leeway-layer-conversion-blueprint.json",
+    "cleanup_report": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\layer-conversion\\markdown-cleanup-report-20260704-205157.json",
+    "critical_not_done": [
+      {
+        "area": "phone",
+        "ship_mode": "disabled_by_default",
+        "status": "NOT_DONE",
+        "truth": "Phone runtime still requires real Android native device wiring or telephony provider wiring.",
+        "customer_gate": "PHONE_PROVIDER_ENABLED=true and phone operator configured"
+      },
+      {
+        "area": "desktop",
+        "ship_mode": "disabled_by_default",
+        "status": "NOT_DONE",
+        "truth": "Desktop runtime still requires native Windows operator wiring through the existing Cerebral/Desktop lane. Do not create bridge sprawl.",
+        "customer_gate": "DESKTOP_OPERATOR_ENABLED=true and native helper installed"
+      },
+      {
+        "area": "email",
+        "ship_mode": "disabled_by_default",
+        "status": "NOT_DONE",
+        "truth": "Email runtime still requires provider credentials and actual draft/send wiring.",
+        "customer_gate": "EMAIL_PROVIDER_ENABLED=true with provider credentials"
+      },
+      {
+        "area": "docker_desktop",
+        "ship_mode": "prerequisite",
+        "status": "NOT_BUNDLED",
+        "truth": "Docker Desktop is not bundled in this package. Customer machine must provide Docker-compatible runtime.",
+        "customer_gate": "docker version succeeds"
+      },
+      {
+        "area": "installer_exe_iso",
+        "ship_mode": "future_phase",
+        "status": "NOT_DONE",
+        "truth": "Polished EXE or ISO installer is not built yet. This phase creates ZIP/export/import packaging only.",
+        "customer_gate": "release ZIP validates first"
+      },
+      {
+        "area": "native_phone_desktop_control",
+        "ship_mode": "future_phase",
+        "status": "NOT_DONE",
+        "truth": "Native phone and desktop control are not wired yet.",
+        "customer_gate": "native helpers and approval gates implemented"
+      }
+    ],
+    "compose": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\manifests\\docker-compose.leeway.generated.yml"
+  },
+  "created_at": "2026-07-05T01:51:59.248279+00:00",
+  "updated_at": "2026-07-05T01:51:59.248295+00:00"
+}

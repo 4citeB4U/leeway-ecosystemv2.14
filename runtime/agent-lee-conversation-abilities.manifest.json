@@ -1,0 +1,28 @@
+﻿{
+    "agent_lee_3d_skill_pipeline":  {
+                                        "enabled":  true,
+                                        "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-3d-skill-pipeline.manifest.json",
+                                        "overlay":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-3d-runtime-overlay.json",
+                                        "role":  "image_to_3d_planner_and_tool_orchestrator",
+                                        "default_pipeline":  [
+                                                                 "analyze_image",
+                                                                 "validate_source",
+                                                                 "choose_backend",
+                                                                 "reconstruct_3d",
+                                                                 "optimize_mesh",
+                                                                 "validate_asset",
+                                                                 "export_glb",
+                                                                 "write_receipt"
+                                                             ],
+                                        "doctrine_summary":  "Reject bad sources, prefer Hunyuan3D/TRELLIS for final 3D, serialize heavy jobs, never call blobs/cards/shells finished 3D."
+                                    },
+    "agent_lee_learning_memory":  {
+                                      "enabled":  true,
+                                      "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-learning-memory.manifest.json",
+                                      "skill_name":  "agent-lee-learning-memory",
+                                      "role":  "persistent_runtime_learning_for_mistakes_successes_user_corrections_and_telegram_failures",
+                                      "ledger":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\agent-lee-learning-ledger.jsonl",
+                                      "doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\AGENT_LEE_LEARNING_DOCTRINE.md",
+                                      "telegram_failure_doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\AGENT_LEE_TELEGRAM_FAILURES_LEARNED.md"
+                                  }
+}

@@ -1,0 +1,26 @@
+﻿{
+    "version":  "LEEWAY_REAL_WINDOWS_ACTUATOR_APPROVAL_GATE_2026-07-05",
+    "created_at":  "2026-07-05T18:00:21",
+    "verdict":  "REAL_EXECUTION_BLOCKED",
+    "real_execution_enabled":  false,
+    "reason":  "Approval gate is created, but no real actuator is enabled yet.",
+    "blocked_actions":  [
+                            "mouse_move",
+                            "mouse_click",
+                            "keyboard_type",
+                            "hotkey",
+                            "open_app",
+                            "open_url",
+                            "file_open",
+                            "screenshot",
+                            "print",
+                            "cast",
+                            "shell_allowed_command"
+                        ],
+    "required_future_steps":  [
+                                  "170-build-approved-real-windows-actuator-alpha.ps1",
+                                  "explicit owner approval",
+                                  "one-time approval id",
+                                  "receipt verification"
+                              ]
+}

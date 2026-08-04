@@ -1,0 +1,256 @@
+﻿{
+    "version":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_TYPESCRIPT_STATIC_PROOF_467",
+    "phase":  82,
+    "timestamp":  "2026-07-07T19:41:30",
+    "verdict":  "LEEWAY_BROWSER_DESKTOP_SANDBOX_TYPESCRIPT_STATIC_PROOF_467_CLEAN_NO_REAL_ACTION",
+    "proof_type":  "typescript_static_source_only_no_build_no_test",
+    "source_466_report":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-466-20260707-193544\\reports\\LEEWAY_BROWSER_DESKTOP_SANDBOX_API_PROOF_466_20260707-193544.txt",
+    "app_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "file_count":  7,
+    "files_verified":  [
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\browserDesktopSandboxContract.ts",
+                               "kind":  "contract-lib"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\components\\AgentLeeBrowserDesktopSandboxPanel.tsx",
+                               "kind":  "tsx-panel"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox\\page.tsx",
+                               "kind":  "tsx-page-main"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-contract\\page.tsx",
+                               "kind":  "tsx-page-contract"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-hold-and-lock\\page.tsx",
+                               "kind":  "tsx-page-hold"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-proof-chain\\page.tsx",
+                               "kind":  "tsx-page-proof"
+                           },
+                           {
+                               "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\browser-desktop-sandbox\\[...path]\\route.ts",
+                               "kind":  "api-route"
+                           }
+                       ],
+    "static_proof_clean":  true,
+    "file_proofs":  [
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\browserDesktopSandboxContract.ts",
+                            "kind":  "contract-lib",
+                            "exists":  true,
+                            "bytes":  2390,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  5,
+                                                  "close":  5,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  5,
+                                                    "close":  5,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\components\\AgentLeeBrowserDesktopSandboxPanel.tsx",
+                            "kind":  "tsx-panel",
+                            "exists":  true,
+                            "bytes":  4169,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  58,
+                                                  "close":  58,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  18,
+                                                  "close":  18,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  15,
+                                                    "close":  15,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox\\page.tsx",
+                            "kind":  "tsx-page-main",
+                            "exists":  true,
+                            "bytes":  261,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  0,
+                                                    "close":  0,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-contract\\page.tsx",
+                            "kind":  "tsx-page-contract",
+                            "exists":  true,
+                            "bytes":  279,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  0,
+                                                    "close":  0,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-hold-and-lock\\page.tsx",
+                            "kind":  "tsx-page-hold",
+                            "exists":  true,
+                            "bytes":  276,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  0,
+                                                    "close":  0,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\browser-desktop-sandbox-proof-chain\\page.tsx",
+                            "kind":  "tsx-page-proof",
+                            "exists":  true,
+                            "bytes":  276,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  1,
+                                                  "close":  1,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  0,
+                                                    "close":  0,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        },
+                        {
+                            "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\browser-desktop-sandbox\\[...path]\\route.ts",
+                            "kind":  "api-route",
+                            "exists":  true,
+                            "bytes":  2090,
+                            "non_empty":  true,
+                            "brace_balance":  {
+                                                  "open":  19,
+                                                  "close":  19,
+                                                  "balanced":  true
+                                              },
+                            "paren_balance":  {
+                                                  "open":  15,
+                                                  "close":  15,
+                                                  "balanced":  true
+                                              },
+                            "bracket_balance":  {
+                                                    "open":  6,
+                                                    "close":  6,
+                                                    "balanced":  true
+                                                },
+                            "balanced":  true
+                        }
+                    ],
+    "source_checks":  {
+                          "has_next_dependency":  true,
+                          "has_typescript_config":  true,
+                          "has_contract_state_export":  true,
+                          "has_safety_rules_export":  true,
+                          "has_surfaces_export":  true,
+                          "has_permit_fields_export":  true,
+                          "has_summary_function":  true,
+                          "has_panel_default_export":  true,
+                          "has_page_panel_imports":  true,
+                          "has_api_next_imports":  true,
+                          "has_api_get_export":  true,
+                          "has_api_post_export":  true,
+                          "has_api_post_423":  true,
+                          "has_no_approval_grant":  true,
+                          "has_no_authority_unlock":  true,
+                          "has_no_sandbox_action":  true,
+                          "has_no_real_action":  true,
+                          "no_dangerous_runtime_code":  true,
+                          "no_automation_code":  true,
+                          "no_browser_open_code":  true,
+                          "no_network_fetch_code":  true,
+                          "no_direct_dom_control":  true
+                      },
+    "live_state":  {
+                       "device_operator_reachable":  true,
+                       "browser_runtime_live_endpoint_reachable_advisory":  false,
+                       "desktop_runtime_live_endpoint_reachable_advisory":  false,
+                       "passive_process_probe_count":  48
+                   },
+    "safety":  {
+                   "typescript_static_proof_only":  true,
+                   "npm_install_performed":  false,
+                   "build_performed":  false,
+                   "test_performed":  false,
+                   "runtime_execution_performed":  false,
+                   "new_api_route_called":  false,
+                   "post_performed":  false,
+                   "browser_open_performed":  false,
+                   "browser_navigation_performed":  false,
+                   "browser_click_performed":  false,
+                   "typing_performed":  false,
+                   "mouse_control_performed":  false,
+                   "keyboard_control_performed":  false,
+                   "window_control_performed":  false,
+                   "desktop_control_performed":  false,
+                   "sandbox_action_performed":  false,
+                   "real_action_performed":  false,
+                   "approval_granted":  false,
+                   "authority_unlocked":  false
+               },
+    "recommended_next_script":  "468-browser-desktop-sandbox-build-readiness-contract-no-real-action.ps1"
+}

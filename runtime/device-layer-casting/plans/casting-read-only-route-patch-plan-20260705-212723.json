@@ -1,0 +1,59 @@
+﻿{
+    "version":  "LEEWAY_CASTING_READ_ONLY_ROUTE_PATCH_PLAN_227",
+    "timestamp":  "2026-07-05T21:27:23",
+    "family":  "casting",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "/casting/discover"
+               },
+    "current_routes":  {
+                           "discover":  true,
+                           "status":  false,
+                           "registry":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/casting/status",
+                              "function_name":  "leeway_casting_status_228",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "cast_session":  false,
+                              "purpose":  "Expose casting family read-only status, discovered count, control disabled, approval required for casting actions."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/casting/registry",
+                              "function_name":  "leeway_casting_registry_228",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "cast_session":  false,
+                              "purpose":  "Expose normalized casting/display-target registry artifact."
+                          }
+                      ],
+    "safety":  {
+                   "no_cast_started":  true,
+                   "no_cast_stopped":  true,
+                   "no_pairing":  true,
+                   "no_display_mutation":  true,
+                   "no_tv_wake":  true,
+                   "no_input_switch":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "casting_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-registry-latest.json",
+                          "casting_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-approval-policy-latest.json",
+                          "casting_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-capability-contract-latest.json",
+                          "casting_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-route-requirement-latest.json",
+                          "proof_226_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-casting\\latest\\casting-read-only-discovery-status-contract-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "228-apply-casting-read-only-routes-patch-no-cast-execute.ps1"
+}

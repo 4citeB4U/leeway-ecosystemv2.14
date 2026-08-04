@@ -1,0 +1,261 @@
+{
+  "packet_id": "exec-1783198777-7ce0a464",
+  "request": "Create a full story with pictures and put it into a PDF.",
+  "source": "powershell-test",
+  "user_id": "owner",
+  "task_type": "story",
+  "complexity": "serious",
+  "approval_required": false,
+  "required_lanes": [
+    "leeway_open_notebook",
+    "leeway_document_runtime",
+    "agent-lee-sdxl-lightning-image-lane",
+    "leeway_artifact_viewer"
+  ],
+  "workboard_task_id": "",
+  "status_phrase": "I'm up. What are we building?",
+  "visible_trace": {
+    "state": "THINKING",
+    "message": "Request captured. Capability and routing checks are active.",
+    "steps": [
+      {
+        "index": 1,
+        "text": "Capture the request exactly.",
+        "status": "ACTIVE"
+      },
+      {
+        "index": 2,
+        "text": "Classify task type, urgency, risk, and approval requirement.",
+        "status": "PENDING"
+      },
+      {
+        "index": 3,
+        "text": "Check discovery and available runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 4,
+        "text": "Create Workboard task and visible status.",
+        "status": "PENDING"
+      },
+      {
+        "index": 5,
+        "text": "Build work breakdown and to-do list.",
+        "status": "PENDING"
+      },
+      {
+        "index": 6,
+        "text": "Route to required runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 7,
+        "text": "Create title, characters, world, and outline.",
+        "status": "PENDING"
+      },
+      {
+        "index": 8,
+        "text": "Write story draft.",
+        "status": "PENDING"
+      },
+      {
+        "index": 9,
+        "text": "Create cover and scene image plan.",
+        "status": "PENDING"
+      },
+      {
+        "index": 10,
+        "text": "Generate images where available.",
+        "status": "PENDING"
+      },
+      {
+        "index": 11,
+        "text": "Assemble PDF/story package.",
+        "status": "PENDING"
+      },
+      {
+        "index": 12,
+        "text": "Validate exported file exists.",
+        "status": "PENDING"
+      },
+      {
+        "index": 13,
+        "text": "Update visible operational trace after major steps.",
+        "status": "PENDING"
+      },
+      {
+        "index": 14,
+        "text": "Validate against original request.",
+        "status": "PENDING"
+      },
+      {
+        "index": 15,
+        "text": "Deliver result or exact blocker.",
+        "status": "PENDING"
+      },
+      {
+        "index": 16,
+        "text": "Store receipt and learning event if needed.",
+        "status": "PENDING"
+      }
+    ]
+  },
+  "accord_applied": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "workboard": {
+    "ok": false,
+    "error": "ConnectionError(MaxRetryError('HTTPConnectionPool(host=\\'leeway_workboard_runtime\\', port=5339): Max retries exceeded with url: /task/create (Caused by NameResolutionError(\"HTTPConnection(host=\\'leeway_workboard_runtime\\', port=5339): Failed to resolve \\'leeway_workboard_runtime\\' ([Errno -2] Name or service not known)\"))'))"
+  },
+  "discovery": {
+    "health": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"created_at\":\"2026-07-04T20:59:36.918421+00:00\"}"
+    },
+    "capabilities": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"summary\":\"Agent Lee capability registry loaded from Docker discovery.\",\"total_runtime_items\":49,\"running_count\":43,\"entrypoint\":{\"base_url\":\"http://localhost:5320\",\"name\":\"leeway_api_gateway\",\"port\":5320,\"rule\":\"All external requests should route through this gateway when gateway wiring is active.\",\"role\":\"single_entrypoint\"},\"capability_index\":[{\"running\":false,\"lane\":\"discovery\",\"name\":\"leeway_agent_skills\",\"capabilities\":[\"capability_registry\",\"system_discovery\",\"skill_catalog\"],\"ports\":[]},{\"running\":true,\"lane\":\"dashboard\",\"name\":\"leeway_pwa_dashboard\",\"capabilities\":[\"runtime_status_view\",\"task_status_view\",\"mobile_pwa_shell\"],\"ports\":[5337]},{\"running\":true,\"lane\":\"installer\",\"name\":\"leeway_installer_runtime\",\"capabilities\":[\"installer_manifest\",\"deployment_bundle_plan\"],\"ports\":[5336]},{\"running\":true,\"lane\":\"license\",\"name\":\"leeway_license_runtime\",\"capabilities\":[\"license_records\",\"customer_authorization_plan\"],\"ports\":[5335]},{\"running\":true,\"lane\":\"desktop\",\"name\":\"leeway_desktop_runtime\",\"capabilities\":[\"desktop_work_orders\",\"host_control_disabled_until_rewired\"],\"ports\":[5334]},{\"running\":true,\"lane\":\"browser\",\"name\":\"leeway_browser_runtime\",\"capabilities\":[\"browser_work_orders\",\"research_page_plan\",\"playwright_wiring_needed\"],\"ports\":[5333]},{\"running\":true,\"lane\":\"phone\",\"name\":\"leeway_phone_runtime\",\"capabilities\":[\"phone_work_orders\",\"approval_required\",\"device_or_provider_required\"],\"ports\":[5332]},{\"running\":true,\"lane\":\"calendar\",\"name\":\"leeway_calendar_runtime\",\"capabilities\":[\"calendar_work_orders\",\"approval_required\",\"provider_required_for_write\"],\"ports\":[5331]},{\"running\":true,\"lane\":\"email\",\"name\":\"leeway_email_runtime\",\"capabilities\":[\"email_work_orders\",\"approval_required\",\"provider_required_for_send\"],\"ports\":[5330]},{\"running\":true,\"lane\":\"router\",\"name\":\"leeway_skill_router\",\"capabilities\":[\"planning_governor\",\"approval_routing\",\"work_order_dispatch\"],\"ports\":[5324]},{\"running\":true,\"lane\":\"telegram\",\"name\":\"agent-lee-tele"
+    },
+    "containers": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"containers\":[{\"name\":\"leeway_agent_skills\",\"image\":\"leeway_agent_skills:local\",\"lane\":\"discovery\",\"running\":false,\"container_status\":\"Restarting (1) 44 seconds ago\",\"ports_text\":\"\",\"ports\":[],\"probes\":[],\"capability_summary\":[\"capability_registry\",\"system_discovery\",\"skill_catalog\"],\"discovery_status\":\"DISCOVERED_NOT_RUNNING\"},{\"name\":\"leeway_pwa_dashboard\",\"image\":\"leeway_pwa_dashboard:local\",\"lane\":\"dashboard\",\"running\":true,\"container_status\":\"Up 54 minutes\",\"ports_text\":\"0.0.0.0:5337->5337/tcp, [::]:5337->5337/tcp\",\"ports\":[{\"host_port\":5337,\"container_port\":5337,\"protocol\":\"tcp\"}],\"probes\":[{\"host_port\":5337,\"container_port\":5337,\"base_url\":\"http://localhost:5337\",\"health_ok\":true,\"health_status\":\"200\",\"status_ok\":true,\"status_status\":\"200\",\"openapi_ok\":true,\"openapi_status\":\"200\",\"route_count\":7,\"routes\":[{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5337/health\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5337/status\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5337/work/create\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5337/work/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5337/work\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5337/receipts/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/\",\"url\":\"http://localhost:5337/\"}]}],\"capability_summary\":[\"runtime_status_view\",\"task_status_view\",\"mobile_pwa_shell\"],\"discovery_status\":\"DISCOVERED\"},{\"name\":\"leeway_installer_run"
+    },
+    "routes": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"routes\":[{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5337/health\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5337/status\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5337/work/create\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5337/work/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5337/work\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5337/receipts/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/\",\"url\":\"http://localhost:5337/\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5336/health\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5336/status\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5336/work/create\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5336/work/latest\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5336/work\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5336/receipts/latest\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"ins"
+    }
+  },
+  "router_plan": {
+    "ok": true,
+    "status_code": 200,
+    "data": {
+      "ok": true,
+      "skill": "plan_create",
+      "answer": "I hear the move. This is not a quick throwaway job.\nI am treating it like a Leeway build: plan first, tools second, approval before heavy execution.\n\nPlanning depth: HEAVY\nPlan ID: plan-1783198777-34772ce2\n\nTo-do list:\n1. Define story premise, genre, theme, and target emotion.\n2. Create characters, hero/lead, conflict, setting, stakes, and ending.\n3. Outline beginning, middle, turning point, climax, and resolution.\n4. Write the full story without repeated chapters or filler loops.\n5. Run quality check for repetition, arc, emotional payoff, and completeness.\n6. Ask for human review and revise if needed.\n7. Export final story and receipt.\n\nSay: approve the plan, run the plan, or edit the plan.\nPlan room: http://172.26.160.1:5328/rooms/plan/latest",
+      "plan": {
+        "plan_id": "plan-1783198777-34772ce2",
+        "status": "AWAITING_APPROVAL",
+        "source": "powershell-test",
+        "user_id": "owner",
+        "original_request": "Create a full story with pictures and put it into a PDF.",
+        "domain": "story",
+        "planning_depth": "HEAVY",
+        "requires_approval": true,
+        "created_at": "2026-07-04T20:59:37.087666+00:00",
+        "updated_at": "2026-07-04T20:59:37.087720+00:00",
+        "steps": [
+          "Define story premise, genre, theme, and target emotion.",
+          "Create characters, hero/lead, conflict, setting, stakes, and ending.",
+          "Outline beginning, middle, turning point, climax, and resolution.",
+          "Write the full story without repeated chapters or filler loops.",
+          "Run quality check for repetition, arc, emotional payoff, and completeness.",
+          "Ask for human review and revise if needed.",
+          "Export final story and receipt."
+        ],
+        "tools": [
+          {
+            "tool": "leeway_open_notebook",
+            "role": "Create the plan, creative package, version history, and structured content."
+          },
+          {
+            "tool": "leeway_agent_skills",
+            "role": "Select available skills, worker lanes, and capability requirements."
+          },
+          {
+            "tool": "leeway_skill_router",
+            "role": "Coordinate planning, approval, routing, and receipts."
+          },
+          {
+            "tool": "leeway_artifact_viewer",
+            "role": "Expose plan rooms, previews, website rooms, infographic rooms, and delivery links."
+          },
+          {
+            "tool": "leeway_seafile_storage_gateway",
+            "role": "Govern durable storage, manifests, receipts, and memory control."
+          },
+          {
+            "tool": "voice_lane",
+            "role": "Perform narration, rap, singing, or podcast voice when performance mode is available."
+          },
+          {
+            "tool": "document_runtime",
+            "role": "Export written script/package."
+          }
+        ],
+        "mockups": [],
+        "failovers": [
+          {
+            "plan": "Plan A",
+            "rule": "Use the best matching runtime lane and return the intended artifact."
+          },
+          {
+            "plan": "Plan B",
+            "rule": "If a render lane fails, return the plan room, text package, and receipt instead of pretending the final artifact exists."
+          },
+          {
+            "plan": "Plan C",
+            "rule": "If execution is blocked, create a work order for the missing lane and ask Leonard for approval or more data."
+          }
+        ],
+        "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+        "execution": {
+          "approved": false,
+          "started": false,
+          "completed": false,
+          "result": null
+        },
+        "standards": [
+          "Do not pretend the work is complete.",
+          "Plan before major creation.",
+          "Use the correct tool or worker lane.",
+          "Ask for approval before heavy execution.",
+          "Return links, files, receipts, and next actions.",
+          "Keep Agent Lee's public voice poetic, grounded, brief, and disciplined."
+        ],
+        "visual_previews": [],
+        "visual_preview_status": "NOT_REQUIRED"
+      },
+      "plan_id": "plan-1783198777-34772ce2",
+      "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+      "approval_required": true,
+      "receipt": {
+        "verdict": "LEEWAY_PLAN_CREATED_AWAITING_APPROVAL",
+        "lane": "leeway_skill_router",
+        "version": "0.3.0-planning-governor",
+        "kind": "plan_created",
+        "created_at": "2026-07-04T20:59:37.200582+00:00",
+        "plan_id": "plan-1783198777-34772ce2",
+        "domain": "story",
+        "planning_depth": "HEAVY",
+        "requires_approval": true,
+        "plan_url": "http://172.26.160.1:5328/rooms/plan/latest",
+        "receipt_path": "/app/receipts/leeway_skill_router_plan_created_1783198777_8e9ac30b.receipt.json"
+      }
+    }
+  },
+  "created_at": "2026-07-04T20:59:37.319981+00:00",
+  "status": "EXECUTIVE_PACKET_CREATED"
+}

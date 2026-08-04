@@ -1,0 +1,33 @@
+﻿{
+    "version":  "LEEWAY_IOT_READ_ONLY_ROUTES_PATCH_218G",
+    "timestamp":  "2026-07-05T21:12:10",
+    "verdict":  "LEEWAY_IOT_READ_ONLY_ROUTES_PATCH_NO_PHYSICAL_EXECUTE_218G_CLEAN",
+    "family":  "iot",
+    "patch_applied":  true,
+    "patch_already_present":  false,
+    "target_container_file":  "/app/app.py",
+    "backup_container_path":  "/app/app.py.bak-218G-20260705-211206",
+    "backup_local_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-218G-20260705-211206\\patch\\device-operator-source-backup-218G-20260705-211206.py",
+    "patch_local_path":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-218G-20260705-211206\\patch\\leeway-iot-read-only-routes-patch-218G.py",
+    "routes_patched_ok":  true,
+    "iot_routes_read_only_clean":  true,
+    "iot_discover_present":  true,
+    "iot_status_present":  true,
+    "iot_registry_present":  true,
+    "iot_devices_present":  true,
+    "discovered_count_after":  0,
+    "windows_locked_after":  true,
+    "blocked_probe_executed":  false,
+    "safety":  {
+                   "read_only_patch":  true,
+                   "physical_actions_executed":  0,
+                   "iot_actions_executed":  0,
+                   "iot_device_state_changed":  false,
+                   "print_jobs_sent":  0,
+                   "casting_started":  0,
+                   "shell_commands_executed":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "219-iot-read-only-routes-post-patch-audit.ps1"
+}

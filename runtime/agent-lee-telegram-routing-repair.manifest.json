@@ -1,0 +1,32 @@
+﻿{
+    "version":  "1.0.0",
+    "created_at":  "2026-07-03T14:37:24.7088461-05:00",
+    "reject_behavior":  [
+                            "Executing web_search without returning result",
+                            "image job receipt only",
+                            "I caught something but this shell reads text first",
+                            "brain lane returned empty message without retry",
+                            "asking for context when prior Telegram message contains the prompt"
+                        ],
+    "commands_that_must_execute":  {
+                                       "email":  "route to email tool or clearly say not configured without pretending",
+                                       "web_search":  "route to runtime/tool endpoint and return answer",
+                                       "/time":  "runtime/local time with timezone",
+                                       "normal_text":  "route to Agent Lee Code Mode conversation turn",
+                                       "/status":  "live endpoint status, not canned text",
+                                       "/image":  "call SDXL image lane and return PNG, not receipt-only",
+                                       "photo_message":  "download Telegram photo, route to vision lane, reply with visual analysis"
+                                   },
+    "name":  "agent_lee_telegram_routing_repair_manifest",
+    "purpose":  "Define the required repair so Telegram becomes a real Agent Lee client instead of a receipt-only shell.",
+    "learning_manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-learning-memory.manifest.json",
+    "required_routes":  {
+                            "skills_route":  "http://127.0.0.1:8080/agent-lee/skills/route",
+                            "telegram_vision_status":  "http://127.0.0.1:8104/status",
+                            "runtime_health":  "http://127.0.0.1:4001/health",
+                            "image_lane":  "http://127.0.0.1:8099/image/generate-fast",
+                            "telegram_vision_lane":  "http://127.0.0.1:8104/telegram/poll-once",
+                            "conversation":  "http://127.0.0.1:8080/agent-lee/conversation/turn",
+                            "tools_call":  "http://127.0.0.1:8080/agent-lee/tools/call"
+                        }
+}

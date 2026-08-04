@@ -1,0 +1,92 @@
+﻿{
+    "generatedAt":  "2026-05-06T00:41:23.8780184-05:00",
+    "workspaceDir":  "C:\\Users\\Leona\\.leeway-vscode",
+    "extensionDir":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension",
+    "vsixPath":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension\\agent-lee-1.1.0-sovereign-runtime.vsix",
+    "checks":  [
+                   {
+                       "name":  "Extension folder exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension"
+                   },
+                   {
+                       "name":  "package.json exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension\\package.json"
+                   },
+                   {
+                       "name":  "main points to out/extension.js",
+                       "pass":  true,
+                       "detail":  "./out/extension.js"
+                   },
+                   {
+                       "name":  "Activity Bar icon exists",
+                       "pass":  true,
+                       "detail":  "media/leeway-standards-button.png"
+                   },
+                   {
+                       "name":  "Command registered: agentLee.open",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.openSidebar",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.newChat",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.stopVoice",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Dependencies installed",
+                       "pass":  true,
+                       "detail":  "node_modules already exists"
+                   },
+                   {
+                       "name":  "TypeScript compile succeeds",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "out/extension.js exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension\\out\\extension.js"
+                   },
+                   {
+                       "name":  "VSIX package builds",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension\\agent-lee-1.1.0-sovereign-runtime.vsix"
+                   },
+                   {
+                       "name":  "VSIX file exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee-leeway-coding-system\\vscode-extension\\agent-lee-1.1.0-sovereign-runtime.vsix"
+                   },
+                   {
+                       "name":  "Ollama API reachable",
+                       "pass":  true,
+                       "detail":  "13 model(s) reported"
+                   },
+                   {
+                       "name":  "LeeWay compliance above 70",
+                       "pass":  true,
+                       "detail":  "Score: 100"
+                   }
+               ],
+    "leewayCompliance":  {
+                             "inspected":  101,
+                             "compliant":  101,
+                             "score":  100,
+                             "blocking":  false,
+                             "missing":  [
+
+                                         ]
+                         }
+}

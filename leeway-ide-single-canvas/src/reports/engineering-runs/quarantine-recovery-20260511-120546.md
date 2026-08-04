@@ -1,0 +1,47 @@
+﻿# Quarantine Recovery Receipt
+
+- Generated: 2026-05-11T12:05:46.3752840-05:00
+- Workspace: C:\Users\Leona\.leeway-vscode
+- Archive root: C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11
+- Mode: dry-run
+
+## Results
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.backup-command-bootstrap-20260511-104453.ts -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\src\extension.backup-command-bootstrap-20260511-104453.ts
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.backup-rightpanel-20260511-092038.ts -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\src\extension.backup-rightpanel-20260511-092038.ts
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\extension.broken-20260511-085621.ts -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\src\extension.broken-20260511-085621.ts
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\src\visual-intelligence\visualPanel.broken-20260511-085621.ts -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\src\visual-intelligence\visualPanel.broken-20260511-085621.ts
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.backup-command-bootstrap-20260511-104453.js -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.backup-command-bootstrap-20260511-104453.js
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.backup-command-bootstrap-20260511-104453.js.map -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.backup-command-bootstrap-20260511-104453.js.map
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.backup-rightpanel-20260511-092038.js -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.backup-rightpanel-20260511-092038.js
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.backup-rightpanel-20260511-092038.js.map -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.backup-rightpanel-20260511-092038.js.map
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.broken-20260511-085621.js -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.broken-20260511-085621.js
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\extension.broken-20260511-085621.js.map -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\extension.broken-20260511-085621.js.map
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\visual-intelligence\visualPanel.broken-20260511-085621.js -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\visual-intelligence\visualPanel.broken-20260511-085621.js
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\out\visual-intelligence\visualPanel.broken-20260511-085621.js.map -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\compiled-backups\agent-lee\vscode-extension\out\visual-intelligence\visualPanel.broken-20260511-085621.js.map
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\agent-lee-investigate.vsix -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\release-artifacts\agent-lee\vscode-extension\agent-lee-investigate.vsix
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.2.2.vsix -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\release-artifacts\agent-lee\vscode-extension\agent-lee-leeway-coding-system-1.2.2.vsix
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee-leeway-coding-system-v1.1.8-ACTIVATION-FIXED.vsix -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\release-artifacts\agent-lee-leeway-coding-system-v1.1.8-ACTIVATION-FIXED.vsix
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee-leeway-coding-system-v1.1.8-AUTO-UPDATE-FIXED.vsix -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\release-artifacts\agent-lee-leeway-coding-system-v1.1.8-AUTO-UPDATE-FIXED.vsix
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\_vsix_inspect -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\release-artifacts\agent-lee\vscode-extension\_vsix_inspect
+- [planned] C:\Users\Leona\.leeway-vscode\AUTO_UPDATE_FIX_SUMMARY.md -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-docs\AUTO_UPDATE_FIX_SUMMARY.md
+- [planned] C:\Users\Leona\.leeway-vscode\AUTO_UPDATE_IMPLEMENTATION_COMPLETE.md -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-docs\AUTO_UPDATE_IMPLEMENTATION_COMPLETE.md
+- [planned] C:\Users\Leona\.leeway-vscode\EXTENSION_INSTALL_REPORT.md -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-docs\EXTENSION_INSTALL_REPORT.md
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\TEST_VERIFICATION_REPORT.md -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-docs\agent-lee\vscode-extension\TEST_VERIFICATION_REPORT.md
+- [planned] C:\Users\Leona\.leeway-vscode\all buttons.png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\all buttons.png
+- [planned] C:\Users\Leona\.leeway-vscode\bottom button for agent lee .png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\bottom button for agent lee .png
+- [planned] C:\Users\Leona\.leeway-vscode\top  right button .png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\top  right button .png
+- [planned] C:\Users\Leona\.leeway-vscode\readme.md-image-header.png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\readme.md-image-header.png
+- [planned] C:\Users\Leona\.leeway-vscode\readms.md-image-1.png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\readms.md-image-1.png
+- [planned] C:\Users\Leona\.leeway-vscode\leeway-standards-button.png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\leeway-standards-button.png
+- [planned] C:\Users\Leona\.leeway-vscode\LeeWayStandardslogo.png -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\LeeWayStandardslogo.png
+- [planned] C:\Users\Leona\.leeway-vscode\agent-lee\vscode-extension\media\test-extension.ps1 -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\duplicate-media\agent-lee\vscode-extension\media\test-extension.ps1
+- [planned] C:\Users\Leona\.leeway-vscode\reports\packaged-validation-2026-05-06T20-53-13 -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\packaged-validation-2026-05-06T20-53-13
+- [planned] C:\Users\Leona\.leeway-vscode\reports\packaged-validation-2026-05-11T11-48-03 -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\packaged-validation-2026-05-11T11-48-03
+- [planned] C:\Users\Leona\.leeway-vscode\reports\stable-release -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\stable-release
+- [planned] C:\Users\Leona\.leeway-vscode\reports\standalone-migration -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\standalone-migration
+- [planned] C:\Users\Leona\.leeway-vscode\reports\extension-pipeline -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\extension-pipeline
+- [planned] C:\Users\Leona\.leeway-vscode\reports\extension-repair -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\extension-repair
+- [planned] C:\Users\Leona\.leeway-vscode\reports\local-extension -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\local-extension
+- [planned] C:\Users\Leona\.leeway-vscode\reports\truth-audit -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\truth-audit
+- [planned] C:\Users\Leona\.leeway-vscode\reports\vscode-visibility -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\vscode-visibility
+- [planned] C:\Users\Leona\.leeway-vscode\reports\hive-verify -> C:\Users\Leona\.leeway-vscode\_archive\quarantine-2026-05-11\historical-reports\reports\hive-verify

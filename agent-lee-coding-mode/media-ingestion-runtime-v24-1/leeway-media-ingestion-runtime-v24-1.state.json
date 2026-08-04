@@ -1,0 +1,241 @@
+{
+    "schema":  "leeway-media-ingestion-runtime-v24-1",
+    "status":  "REGISTERED_PENDING_CONTAINER_VERIFICATION",
+    "createdAt":  "2026-06-28T04:31:58.1381389Z",
+    "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+    "dockerContainer":  "leeway_media_ingestion_layer",
+    "hostEndpoint":  "http://127.0.0.1:5300",
+    "internalEndpoint":  "http://leeway-media-ingestion-layer:5300",
+    "routes":  {
+                   "health":  "/media-ingestion/health",
+                   "status":  "/media-ingestion/status",
+                   "upload":  "/media-ingestion/upload"
+               },
+    "connectedAreas":  [
+                           "runtime-fabric",
+                           "vision",
+                           "creation",
+                           "audio",
+                           "documents"
+                       ],
+    "mcpContracts":  [
+                         {
+                             "id":  "leeway-media-ingestion-mcp",
+                             "name":  "Leeway Media Ingestion MCP",
+                             "category":  "TRUE_MCP_PACKAGE",
+                             "status":  "contract-ready-runtime-backed",
+                             "runtime":  "node-http-service",
+                             "deploymentLocation":  "runtime-fabric-media-ingestion",
+                             "layer":  "media-ingestion",
+                             "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                             "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                             "capabilities":  [
+                                                  "media_upload",
+                                                  "media_normalization",
+                                                  "event_generation",
+                                                  "receipt_generation",
+                                                  "runtime_fabric_forwarding"
+                                              ],
+                             "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                             "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                             "note":  "Runtime-backed MCP contract for canonical external media intake."
+                         },
+                         {
+                             "id":  "leeway-video-analysis-ingestion-mcp",
+                             "name":  "Leeway Video Analysis Ingestion MCP",
+                             "category":  "MCP_CONTRACT",
+                             "status":  "contract-ready-ingestion-backed",
+                             "runtime":  "node-http-service",
+                             "deploymentLocation":  "runtime-vision-media-bridge",
+                             "layer":  "vision",
+                             "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                             "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                             "capabilities":  [
+                                                  "video_upload",
+                                                  "video_event_intake",
+                                                  "vision_kernel_routing",
+                                                  "frame_analysis_preparation"
+                                              ],
+                             "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                             "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                             "note":  "Prepares uploaded video for future vision analysis workers."
+                         },
+                         {
+                             "id":  "leeway-audio-analysis-ingestion-mcp",
+                             "name":  "Leeway Audio Analysis Ingestion MCP",
+                             "category":  "MCP_CONTRACT",
+                             "status":  "contract-ready-ingestion-backed",
+                             "runtime":  "node-http-service",
+                             "deploymentLocation":  "runtime-audio-media-bridge",
+                             "layer":  "audio",
+                             "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                             "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                             "capabilities":  [
+                                                  "audio_upload",
+                                                  "audio_event_intake",
+                                                  "transcription_preparation",
+                                                  "sound_analysis_preparation"
+                                              ],
+                             "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                             "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                             "note":  "Prepares uploaded audio for audio analysis and creation workflows."
+                         },
+                         {
+                             "id":  "leeway-document-media-ingestion-mcp",
+                             "name":  "Leeway Document Media Ingestion MCP",
+                             "category":  "MCP_CONTRACT",
+                             "status":  "contract-ready-ingestion-backed",
+                             "runtime":  "node-http-service",
+                             "deploymentLocation":  "runtime-document-media-bridge",
+                             "layer":  "documents",
+                             "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                             "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                             "capabilities":  [
+                                                  "document_upload",
+                                                  "pdf_intake",
+                                                  "spreadsheet_intake",
+                                                  "document_event_generation"
+                                              ],
+                             "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                             "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                             "note":  "Prepares uploaded documents for document, PDF, and spreadsheet workers."
+                         }
+                     ],
+    "workers":  [
+                    {
+                        "id":  "leeway-media-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Media Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-runtime-backed",
+                        "runtime":  "docker-http-service",
+                        "deploymentLocation":  "leeway_media_ingestion_layer",
+                        "layer":  "runtime-media-ingestion",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "receive_media",
+                                             "normalize_media",
+                                             "write_media_receipts",
+                                             "forward_runtime_events"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-media-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Media Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_media_receipts",
+                                             "validate_ingestion_policy",
+                                             "track_source_metadata"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-video-analysis-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Video Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "vision-kernel-routing",
+                        "layer":  "vision",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-video-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "video_event_prepare",
+                                             "vision_kernel_route",
+                                             "frame_work_order_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-video-analysis-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Video Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-video-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_video_ingestion",
+                                             "validate_video_source",
+                                             "track_frame_receipts"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-audio-analysis-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Audio Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "audio-runtime-routing",
+                        "layer":  "audio",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-audio-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audio_event_prepare",
+                                             "transcription_route_prepare",
+                                             "sound_analysis_route_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-audio-analysis-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Audio Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-audio-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_audio_ingestion",
+                                             "validate_audio_source",
+                                             "track_audio_receipts"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-document-media-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Document Media Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "document-runtime-routing",
+                        "layer":  "documents",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-document-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "document_event_prepare",
+                                             "pdf_route_prepare",
+                                             "spreadsheet_route_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-document-media-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Document Media Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-document-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_document_ingestion",
+                                             "validate_document_source",
+                                             "track_document_receipts"
+                                         ]
+                    }
+                ],
+    "notes":  [
+                  "Media ingestion is promoted as runtime service and MCP-backed intake layer.",
+                  "It receives external media and prepares events for Runtime Fabric, Vision, Creation, Audio, and Document lanes.",
+                  "Full media analysis and generation still require downstream agents/workers/MCPs."
+              ]
+}

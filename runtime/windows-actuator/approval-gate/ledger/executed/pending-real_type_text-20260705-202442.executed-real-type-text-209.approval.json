@@ -1,0 +1,12 @@
+{
+  "approval_id": "pending-real_type_text-20260705-202442",
+  "executed_at": "2026-07-05T20:31:21",
+  "action": "real_type_text",
+  "target": "controlled_notepad",
+  "text": "Leeway approved type-text proof.",
+  "notepad_pid": 5236,
+  "type_launcher_pid": 32432,
+  "execution_status": "EXECUTED",
+  "used": true,
+  "source": "script_209_isolated_type_text_module"
+}

@@ -1,0 +1,22 @@
+﻿{
+    "approval_id":  "approve-open-app-20260705-180021-21dff4fa5921",
+    "created_at":  "2026-07-05T18:00:21",
+    "expires_at":  "2026-07-05T18:10:21",
+    "requested_by":  "script_169_proof",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "future_real_windows_actuator",
+    "current_dry_run_adapter":  "windows-agent-lee-local-actuator-dry-run",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "Proof request only: would ask permission to open Notepad in a future real actuator. No app is opened now.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "arguments":  [
+
+                                  ]
+                },
+    "approval_state":  "PENDING",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  false,
+    "rollback_or_stop":  "Stop the future real actuator service or deny this approval request."
+}

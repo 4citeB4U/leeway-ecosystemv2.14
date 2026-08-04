@@ -1,0 +1,90 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_READ_ONLY_ROUTE_RESPONSE_CONTRACT_237",
+    "timestamp":  "2026-07-05T21:50:44",
+    "family":  "android",
+    "route_response_contract":  {
+                                    "/android/discover":  {
+                                                              "ok":  "bool",
+                                                              "family":  "android",
+                                                              "mode":  "READ_ONLY_NO_ADB",
+                                                              "patch":  "LEEWAY_ANDROID_READ_ONLY_ROUTES_PATCH_238",
+                                                              "discovered_count":  "int",
+                                                              "android_devices":  "array",
+                                                              "adb_invoked":  false,
+                                                              "phone_connected":  false,
+                                                              "shell_enabled":  false,
+                                                              "actuator_enabled":  false,
+                                                              "physical_action_executed":  false
+                                                          },
+                                    "/android/status":  {
+                                                            "ok":  "bool",
+                                                            "family":  "android",
+                                                            "mode":  "READ_ONLY_NO_ADB",
+                                                            "discovered_count":  "int",
+                                                            "adb_available":  "bool",
+                                                            "adb_invoked":  false,
+                                                            "phone_connected":  false,
+                                                            "shell_enabled":  false,
+                                                            "actuator_enabled":  false,
+                                                            "approval_required_for_shell":  true,
+                                                            "approval_required_for_actuator":  true,
+                                                            "physical_action_executed":  false,
+                                                            "shell_command_executed":  false,
+                                                            "tap_executed":  false,
+                                                            "swipe_executed":  false,
+                                                            "text_sent":  false,
+                                                            "call_started":  false,
+                                                            "file_read":  false,
+                                                            "permission_mutated":  false,
+                                                            "device_mutated":  false
+                                                        },
+                                    "/android/registry":  {
+                                                              "ok":  "bool",
+                                                              "family":  "android",
+                                                              "registry_status":  "READ_ONLY_REGISTRY_ROUTE_ACTIVE",
+                                                              "discovered_count":  "int",
+                                                              "normalized_devices":  "array",
+                                                              "adb_invoked":  false,
+                                                              "phone_connected":  false,
+                                                              "shell_enabled":  false,
+                                                              "actuator_enabled":  false,
+                                                              "physical_action_executed":  false
+                                                          },
+                                    "/android/shell/status":  {
+                                                                  "ok":  "bool",
+                                                                  "family":  "android",
+                                                                  "shell_status":  "DISABLED_CONTRACT_ONLY",
+                                                                  "adb_invoked":  false,
+                                                                  "shell_enabled":  false,
+                                                                  "approval_required":  true,
+                                                                  "shell_command_executed":  false
+                                                              },
+                                    "/android/actuator/status":  {
+                                                                     "ok":  "bool",
+                                                                     "family":  "android",
+                                                                     "actuator_status":  "DISABLED_CONTRACT_ONLY",
+                                                                     "adb_invoked":  false,
+                                                                     "actuator_enabled":  false,
+                                                                     "approval_required":  true,
+                                                                     "physical_action_executed":  false,
+                                                                     "tap_executed":  false,
+                                                                     "swipe_executed":  false,
+                                                                     "text_sent":  false,
+                                                                     "call_started":  false
+                                                                 }
+                                },
+    "non_goals":  [
+                      "no ADB invocation",
+                      "no phone connection",
+                      "no shell command",
+                      "no screen tap",
+                      "no screen swipe",
+                      "no text send",
+                      "no call start",
+                      "no phone data read",
+                      "no app install",
+                      "no settings mutation",
+                      "no permission mutation",
+                      "no physical action"
+                  ]
+}

@@ -1,0 +1,52 @@
+﻿{
+    "version":  "LEEWAY_IOT_EMPTY_DISCOVERY_POLICY_AND_SIMULATED_LOW_RISK_PLAN_2026-07-05",
+    "timestamp":  "2026-07-05T20:52:48",
+    "family":  "iot",
+    "plan_name":  "simulated_low_risk_iot_action_plan",
+    "plan_status":  "SIMULATION_ONLY_NO_REAL_DEVICE",
+    "reason":  "No IoT devices are discovered. Real IoT action proof cannot proceed until a real or simulated adapter is registered.",
+    "simulated_device":  {
+                             "device_id":  "sim-iot-low-risk-light-001",
+                             "device_type":  "simulated_light",
+                             "location":  "simulation",
+                             "discovered":  false,
+                             "real_device":  false,
+                             "control_enabled":  false,
+                             "approval_required":  true
+                         },
+    "simulated_action":  {
+                             "action":  "simulated_identify_or_toggle_test_light",
+                             "risk":  "low_in_simulation_only",
+                             "physical_effect":  "none",
+                             "executes_real_iot_action":  false,
+                             "allowed_now":  false,
+                             "future_approval_lane":  [
+                                                          "create pending simulated approval",
+                                                          "promote to approved",
+                                                          "validate blocked until simulation execution script",
+                                                          "execute simulation only",
+                                                          "prove no real device mutation"
+                                                      ]
+                         },
+    "required_before_real_iot_execution":  [
+                                               "read-only route patch for /iot/status",
+                                               "read-only route patch for /iot/registry",
+                                               "read-only route patch for /iot/devices",
+                                               "real IoT adapter registration or explicit simulated-adapter registration",
+                                               "approval policy update for selected device class",
+                                               "pending approval",
+                                               "approved no-execute validation",
+                                               "one-action execution",
+                                               "lockback/audit/dashboard"
+                                           ],
+    "safety":  {
+                   "simulation_plan_only":  true,
+                   "real_iot_actions_executed":  0,
+                   "simulated_iot_actions_executed":  0,
+                   "real_device_state_changed":  false,
+                   "physical_effect":  "none",
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "217-iot-read-only-route-patch-plan-no-execute.ps1"
+}

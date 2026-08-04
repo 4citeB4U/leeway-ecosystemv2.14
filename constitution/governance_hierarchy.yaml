@@ -1,0 +1,13 @@
+governance:
+  - level: 1
+    authority: "Leonard (Creator)"
+    actions: ["final approval", "constitutional amendments"]
+  - level: 2
+    authority: "Runtime Fabric Maintainers"
+    actions: ["manifest updates", "runtime enforcement"]
+  - level: 3
+    authority: "Agent Lee Operators"
+    actions: ["day-to-day patches", "receipts"]
+  - level: 4
+    authority: "Automated Agents"
+    actions: ["non-destructive edits", "propose changes"]

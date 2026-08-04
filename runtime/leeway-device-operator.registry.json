@@ -1,0 +1,24 @@
+{
+  "docker_url": "http://leeway_device_operator:5323",
+  "host_url": "http://localhost:5323",
+  "container": "leeway_device_operator",
+  "endpoints": {
+    "latest_receipt": "/receipts/latest",
+    "license_profile": "/license/profile",
+    "cursor_profile": "/cursor/profile",
+    "health": "/health",
+    "channels_register": "/channels/register",
+    "devices_list": "/devices/list",
+    "devices_register": "/devices/register",
+    "voice_session_start": "/voice/session/start",
+    "cursor_set_profile": "/cursor/set-profile",
+    "device_action_request": "/device/action/request",
+    "openapi": "/openapi.json",
+    "status": "/status",
+    "channels_list": "/channels/list"
+  },
+  "created_at": "2026-07-03T20:41:25.7940449-05:00",
+  "network": "leeway-ecosystemv214_leeway-net",
+  "image": "leeway_device_operator:local",
+  "service": "leeway_device_operator"
+}

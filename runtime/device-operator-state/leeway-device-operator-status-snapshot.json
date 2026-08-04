@@ -1,0 +1,118 @@
+﻿{
+    "app":  "leeway_device_operator",
+    "version":  "0.1.0-device-operator-control-plane",
+    "purpose":  "Dockerized Leeway control plane for cursor, device channels, phone/email/PWA/Telegram control surfaces, and approved device actions.",
+    "device_model":  {
+                         "docker_control_plane":  true,
+                         "host_or_mobile_adapter_required_for_physical_ui_actions":  true,
+                         "all_actions_route_through_leeway_api_gateway":  true,
+                         "approval_required_for_risky_actions":  true
+                     },
+    "cursor_modes":  {
+                         "blue":  "listening_thinking_safe_navigation",
+                         "green":  "approved_action_active_execution",
+                         "red":  "blocked_needs_approval_risky_action",
+                         "gold":  "owner_admin_mode",
+                         "purple":  "agent_creation_mode"
+                     },
+    "endpoints":  [
+                      "/health",
+                      "/status",
+                      "/cursor/profile",
+                      "/cursor/set-profile",
+                      "/devices/register",
+                      "/devices/list",
+                      "/channels/register",
+                      "/channels/list",
+                      "/voice/session/start",
+                      "/device/action/request",
+                      "/license/profile",
+                      "/receipts/latest",
+                      "/openapi.json"
+                  ],
+    "devices":  {
+                    "devices":  [
+                                    {
+                                        "device_id":  "customer-desktop-default",
+                                        "device_type":  "desktop",
+                                        "platform":  "windows_linux_macos",
+                                        "display_name":  "Customer Desktop Runtime",
+                                        "capabilities":  [
+                                                             "cursor",
+                                                             "screen",
+                                                             "keyboard",
+                                                             "browser",
+                                                             "apps",
+                                                             "files"
+                                                         ],
+                                        "adapter_url":  "",
+                                        "owner":  "customer",
+                                        "registered_at":  "2026-07-04T01:41:24.357239+00:00",
+                                        "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                    },
+                                    {
+                                        "device_id":  "customer-phone-default",
+                                        "device_type":  "phone",
+                                        "platform":  "android_ios",
+                                        "display_name":  "Customer Phone Runtime",
+                                        "capabilities":  [
+                                                             "telegram",
+                                                             "push_to_talk",
+                                                             "phone_number",
+                                                             "sms",
+                                                             "mobile_ui"
+                                                         ],
+                                        "adapter_url":  "",
+                                        "owner":  "customer",
+                                        "registered_at":  "2026-07-04T01:41:24.576057+00:00",
+                                        "status":  "REGISTERED_NOT_PHYSICAL_PROVEN"
+                                    }
+                                ]
+                },
+    "channels":  {
+                     "channels":  [
+                                      {
+                                          "channel_type":  "telegram",
+                                          "channel_name":  "agent_lee_telegram",
+                                          "config":  {
+                                                         "user_interaction":  "text_and_voice",
+                                                         "purpose":  "Primary mobile remote control surface for Agent Lee.",
+                                                         "routes_through":  "leeway_api_gateway"
+                                                     },
+                                          "enabled":  true,
+                                          "registered_at":  "2026-07-04T01:41:23.743703+00:00"
+                                      },
+                                      {
+                                          "channel_type":  "email",
+                                          "channel_name":  "agent_lee_email",
+                                          "config":  {
+                                                         "future_lane":  "leeway_email_runtime",
+                                                         "purpose":  "Dedicated email identity for Agent Lee.",
+                                                         "execution_policy":  "draft_or_send_only_after_approval"
+                                                     },
+                                          "enabled":  true,
+                                          "registered_at":  "2026-07-04T01:41:23.925732+00:00"
+                                      },
+                                      {
+                                          "channel_type":  "phone",
+                                          "channel_name":  "agent_lee_phone_number",
+                                          "config":  {
+                                                         "future_lane":  "leeway_phone_runtime",
+                                                         "options":  [
+                                                                         "sip_provider",
+                                                                         "android_companion_runtime",
+                                                                         "desktop_softphone_control"
+                                                                     ],
+                                                         "purpose":  "Dedicated phone identity for Agent Lee.",
+                                                         "execution_policy":  "call_or_sms_only_after_approval"
+                                                     },
+                                          "enabled":  true,
+                                          "registered_at":  "2026-07-04T01:41:24.165536+00:00"
+                                      }
+                                  ]
+                 },
+    "license_profile":  {
+                            "licensed":  false
+                        },
+    "created_at":  "2026-07-05T22:27:59.934906+00:00"
+}

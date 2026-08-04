@@ -1,0 +1,28 @@
+﻿{
+    "description":  "Persistent learning memory for Agent Lee runtime mistakes, successes, corrections, Telegram failures, and standards.",
+    "ledger":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\agent-lee-learning-ledger.jsonl",
+    "version":  "1.0.0",
+    "telegram_failure_doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\AGENT_LEE_TELEGRAM_FAILURES_LEARNED.md",
+    "created_at":  "2026-07-03T14:37:24.5561726-05:00",
+    "doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\AGENT_LEE_LEARNING_DOCTRINE.md",
+    "name":  "agent-lee-learning-memory",
+    "index":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-learning\\agent-lee-learning-index.json",
+    "triggers":  [
+                     "failure",
+                     "success",
+                     "user_correction",
+                     "source_rejected",
+                     "script_patched",
+                     "lane_health_change",
+                     "receipt_created",
+                     "standard_accepted",
+                     "telegram_receipt_only",
+                     "telegram_tool_failure"
+                 ],
+    "tools":  [
+                  "append_learning_event",
+                  "search_learning_events",
+                  "summarize_lessons",
+                  "write_learning_receipt"
+              ]
+}

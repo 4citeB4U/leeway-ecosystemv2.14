@@ -1,0 +1,98 @@
+﻿{
+    "version":  "LEEWAY_IOS_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_245",
+    "timestamp":  "2026-07-05T22:11:48",
+    "verdict":  "LEEWAY_IOS_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "ios",
+    "family_status":  "IOS_READ_ONLY_DEVICE_SHELL_AND_ACTUATOR_CONTRACT_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status",
+                               "audio_vision_read_only_discovery_registry_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract"
+                           ],
+    "remaining_families":  [
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "ios_discover":  true,
+                   "ios_status":  true,
+                   "ios_registry":  true,
+                   "ios_shell_status":  true,
+                   "ios_actuator_status":  true,
+                   "all_ios_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "discovered_count":  0,
+                         "libimobiledevice_invoked":  false,
+                         "idevice_tools_invoked":  false,
+                         "phone_connected":  false,
+                         "pairing_started":  false,
+                         "trust_prompt_started":  false,
+                         "shell_enabled":  false,
+                         "actuator_enabled":  false,
+                         "physical_action_executed":  false,
+                         "shell_command_executed":  false,
+                         "tap_executed":  false,
+                         "swipe_executed":  false,
+                         "text_sent":  false,
+                         "call_started":  false,
+                         "file_read":  false,
+                         "backup_started":  false,
+                         "app_installed":  false,
+                         "permission_mutated":  false,
+                         "device_mutated":  false
+                     },
+    "proof_chain":  {
+                        "contract_241_exists":  true,
+                        "contract_241_clean":  true,
+                        "plan_242_exists":  true,
+                        "plan_242_clean":  true,
+                        "patch_243_exists":  true,
+                        "patch_243_clean":  true,
+                        "audit_244_exists":  true,
+                        "audit_244_clean":  true,
+                        "contract_241_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-ios\\latest\\ios-device-shell-actuator-contract-proof-latest.json",
+                        "plan_242_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-ios\\latest\\ios-read-only-route-patch-plan-proof-latest.json",
+                        "patch_243_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-ios\\latest\\ios-read-only-routes-patch-243-latest.json",
+                        "audit_244_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-ios\\latest\\ios-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "libimobiledevice_invoked":  false,
+                   "idevice_tools_invoked":  false,
+                   "phone_connected":  false,
+                   "physical_actions_executed":  0,
+                   "shell_commands_executed":  0,
+                   "taps_executed":  0,
+                   "swipes_executed":  0,
+                   "texts_sent":  0,
+                   "calls_started":  0,
+                   "files_read":  0,
+                   "backups_started":  0,
+                   "app_installs":  0,
+                   "permission_mutations":  0,
+                   "device_mutations":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "246-linux-actuator-contract-no-execute.ps1"
+}

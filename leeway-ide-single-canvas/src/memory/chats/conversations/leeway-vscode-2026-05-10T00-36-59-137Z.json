@@ -1,0 +1,87 @@
+[
+  {
+    "role": "agent",
+    "text": "I got you. Show me what's breaking or what you're trying to build, and we'll work it clean.",
+    "timestamp": "2026-05-10T00:36:59.146Z"
+  },
+  {
+    "role": "user",
+    "text": "Hello.",
+    "timestamp": "2026-05-12T07:17:23.663Z"
+  },
+  {
+    "role": "user",
+    "text": "Hello.",
+    "timestamp": "2026-05-12T07:40:01.151Z"
+  },
+  {
+    "role": "user",
+    "text": "What's going on, Agent Lee? How you doing?",
+    "timestamp": "2026-05-12T07:58:31.663Z"
+  },
+  {
+    "role": "agent",
+    "text": "I'm here with you. Talk to me.",
+    "timestamp": "2026-05-12T07:58:31.675Z"
+  },
+  {
+    "role": "user",
+    "text": "What's going on, Agent Lee?",
+    "timestamp": "2026-05-12T08:31:50.403Z"
+  },
+  {
+    "role": "agent",
+    "text": "I have 44 connected capabilities active in this runtime, and I can execute through them instead of only listing them.\n\nActive subsystem families:\n- Agent Lee Internal: agents like agent-registry.json; servers like InsForge, LeewayleewayStitch, Playwright, TestSprite.\n- Workspace: MCPs like Backend Mcp, Creative Mcp, Design System Mcp, Frontend Mcp, Leeway Build Auditor Mcp; agents like Fs Nav Agent, Host Exec Agent, Media Forge Agent, Mutation Agent, Perception Agent.\n- Antigravity: MCPs like backend-mcp, canvas-mcp, creative-mcp, design-system-mcp, frontend-debugger-mcp.\n\nClosest capability matches:\n- agent-registry.json [agent] from Agent Lee Internal | C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\agents\\registry\\agent-registry.json\n- Backend Mcp [mcp] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\backend-mcp\n- Creative Mcp [mcp] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\creative-mcp\n- Design System Mcp [mcp] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\design-system-mcp\n- Frontend Mcp [mcp] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\frontend-mcp\n- Fs Nav Agent [agent] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\fs-nav-agent\n- Host Exec Agent [agent] from Workspace | C:\\Users\\Leona\\.leeway-vscode\\workspace\\agents\\host-exec-agent\n- InsForge [server] from Agent Lee Internal: -NoProfile -ExecutionPolicy Bypass -Command node C:\\\\Tools\\\\vscode-mcp-tooling\\\\src\\\\tool.js insforge | C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\adapters\\vscode-mcp-settings-snippet.json\n\nBuild classes I can help execute include repository features, UI and front-end systems, debugging and defect repair, automation flows, agent and MCP wiring, local toolchain work, validation, and governed packaging. State the target build.\n\nNext directive: inspect, patch, verify.",
+    "timestamp": "2026-05-12T08:31:50.434Z"
+  },
+  {
+    "role": "user",
+    "text": "OK. How's it going, Agent Lee?",
+    "timestamp": "2026-05-12T08:54:45.550Z"
+  },
+  {
+    "role": "user",
+    "text": "Hello. Is it? Tell me something about yourself. For an.",
+    "timestamp": "2026-05-13T18:53:13.907Z"
+  },
+  {
+    "role": "agent",
+    "text": "I work inside this workspace, keep track of the moving parts, and help turn messy problems into clean decisions.\n\nUnder the hood I've got 44 connected capabilities, but the part that matters to you is whether I can stay useful, calm, and real while we work.\n\nSo if you want to talk first, we can talk first.",
+    "timestamp": "2026-05-13T18:53:13.918Z"
+  },
+  {
+    "role": "user",
+    "text": "hello",
+    "timestamp": "2026-05-13T19:00:26.150Z"
+  },
+  {
+    "role": "user",
+    "text": "yo what up",
+    "timestamp": "2026-05-13T19:03:04.149Z"
+  },
+  {
+    "role": "agent",
+    "text": "Hello! Not much, just here to help you with your coding tasks. What do you need assistance with today?",
+    "timestamp": "2026-05-13T19:04:00.103Z"
+  },
+  {
+    "role": "user",
+    "text": "Hello. How's it going, Agent Lee?",
+    "timestamp": "2026-05-14T01:17:48.126Z"
+  },
+  {
+    "role": "agent",
+    "text": "Hello! I'm functioning well, thank you for asking. How can I assist you today? Whether it's inspecting code, planning workflows, or ensuring compliance with LeeWay metadata, I'm here to help.\n\nPlease let me know what specific task or file you need assistance with, and I'll be happy to guide you through the process step-by-step.",
+    "timestamp": "2026-05-14T01:18:46.831Z"
+  },
+  {
+    "role": "user",
+    "text": "Hello, Agent Lee. What's going on, brother?",
+    "timestamp": "2026-05-17T19:15:29.137Z"
+  },
+  {
+    "role": "agent",
+    "text": "I'm here and ready. Tell me what you want me to look at.",
+    "timestamp": "2026-05-17T19:15:29.158Z"
+  }
+]

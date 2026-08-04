@@ -1,0 +1,249 @@
+﻿{
+    "version":  "LEEWAY_SIMULATION_FIRST_ACTION_PERMIT_LADDER_461F",
+    "phase":  82,
+    "timestamp":  "2026-07-07T18:33:39",
+    "verdict":  "LEEWAY_SIMULATION_FIRST_ACTION_PERMIT_LADDER_461F_CLEAN_NO_REAL_ACTION",
+    "repaired_from":  "461-simulation-first-action-permit-ladder-no-real-action.ps1",
+    "repair_reason":  "Original 461 incorrectly required live browser and desktop runtime health endpoints even though 460 had already proved readiness and this lane only writes no-action permit templates.",
+    "permit_ladder_only":  true,
+    "no_real_action":  true,
+    "no_control":  true,
+    "live_endpoint_policy":  "ADVISORY_ONLY_FOR_461F",
+    "prerequisites":  {
+                          "readiness_460_clean":  true,
+                          "hands_readiness_passed":  true,
+                          "browser_readiness_passed_by_460":  true,
+                          "desktop_readiness_passed_by_460":  true,
+                          "device_operator_hands_ready_by_460":  true,
+                          "no_browser_control_seen":  true,
+                          "no_desktop_control_seen":  true,
+                          "browser_runtime_live_endpoint_reachable_advisory":  false,
+                          "desktop_runtime_live_endpoint_reachable_advisory":  false,
+                          "device_operator_reachable":  true,
+                          "passive_process_probe_count":  54
+                      },
+    "permit_ladder":  [
+                          {
+                              "level":  0,
+                              "id":  "OBSERVE_ONLY",
+                              "authority":  "GET_ONLY_READINESS",
+                              "allowed":  [
+                                              "GET health",
+                                              "GET status",
+                                              "read proof artifacts",
+                                              "write permit templates"
+                                          ],
+                              "forbidden":  [
+                                                "browser open",
+                                                "navigation",
+                                                "click",
+                                                "typing",
+                                                "mouse",
+                                                "keyboard",
+                                                "window control",
+                                                "desktop control",
+                                                "real action"
+                                            ],
+                              "requires_human_approval":  false,
+                              "can_execute_real_action":  false,
+                              "lockback_required":  true
+                          },
+                          {
+                              "level":  1,
+                              "id":  "PLAN_ONLY",
+                              "authority":  "CONTRACT_DRAFT",
+                              "allowed":  [
+                                              "draft action plan",
+                                              "name target",
+                                              "name risk",
+                                              "name required proof"
+                                          ],
+                              "forbidden":  [
+                                                "touch browser",
+                                                "touch desktop",
+                                                "send input",
+                                                "navigate",
+                                                "click",
+                                                "type"
+                                            ],
+                              "requires_human_approval":  false,
+                              "can_execute_real_action":  false,
+                              "lockback_required":  true
+                          },
+                          {
+                              "level":  2,
+                              "id":  "SIMULATION_ONLY",
+                              "authority":  "DRY_MODEL_SIMULATION",
+                              "allowed":  [
+                                              "simulate expected action sequence",
+                                              "simulate preflight result",
+                                              "simulate lockback result"
+                                          ],
+                              "forbidden":  [
+                                                "open browser",
+                                                "navigate live browser",
+                                                "click live UI",
+                                                "type into live UI",
+                                                "control real desktop"
+                                            ],
+                              "requires_human_approval":  false,
+                              "can_execute_real_action":  false,
+                              "lockback_required":  true
+                          },
+                          {
+                              "level":  3,
+                              "id":  "DRY_RUN_PERMIT",
+                              "authority":  "NO_TARGET_DRY_RUN",
+                              "allowed":  [
+                                              "test permit shape",
+                                              "validate approval fields",
+                                              "validate proof fields"
+                                          ],
+                              "forbidden":  [
+                                                "real target",
+                                                "live site",
+                                                "live desktop",
+                                                "real app window",
+                                                "external submission"
+                                            ],
+                              "requires_human_approval":  true,
+                              "can_execute_real_action":  false,
+                              "lockback_required":  true
+                          },
+                          {
+                              "level":  4,
+                              "id":  "SANDBOX_ACTION_PERMIT",
+                              "authority":  "SANDBOX_ONLY",
+                              "allowed":  [
+                                              "sandbox page only",
+                                              "sandbox input only",
+                                              "sandbox click only after approval",
+                                              "sandbox proof"
+                                          ],
+                              "forbidden":  [
+                                                "real account",
+                                                "real website",
+                                                "real file mutation",
+                                                "real device action",
+                                                "payments",
+                                                "messages",
+                                                "submissions"
+                                            ],
+                              "requires_human_approval":  true,
+                              "can_execute_real_action":  false,
+                              "lockback_required":  true
+                          },
+                          {
+                              "level":  5,
+                              "id":  "REAL_ACTION_SINGLE_USE_PERMIT",
+                              "authority":  "FUTURE_SINGLE_USE_ONLY",
+                              "allowed":  [
+                                              "one named real action only after explicit future approval"
+                                          ],
+                              "forbidden":  [
+                                                "background action",
+                                                "repeat action",
+                                                "unscoped browsing",
+                                                "credential entry without approval",
+                                                "device control without separate permit"
+                                            ],
+                              "requires_human_approval":  true,
+                              "can_execute_real_action":  true,
+                              "lockback_required":  true,
+                              "status_now":  "NOT_GRANTED_IN_461F"
+                          }
+                      ],
+    "browser_hands_template":  {
+                                   "template_id":  "BROWSER_HANDS_SINGLE_USE_PERMIT_TEMPLATE",
+                                   "version":  "461F",
+                                   "status":  "TEMPLATE_ONLY_NOT_APPROVED",
+                                   "required_fields":  [
+                                                           "target_url_or_surface",
+                                                           "exact_browser_action",
+                                                           "expected_visible_result",
+                                                           "forbidden_boundaries",
+                                                           "human_approval_phrase",
+                                                           "one_time_scope",
+                                                           "preflight_check",
+                                                           "proof_after_action",
+                                                           "lockback_after_action"
+                                                       ],
+                                   "prohibited_without_future_approval":  [
+                                                                              "open browser",
+                                                                              "navigate browser",
+                                                                              "click",
+                                                                              "type",
+                                                                              "submit form",
+                                                                              "download file",
+                                                                              "upload file",
+                                                                              "send message",
+                                                                              "make purchase",
+                                                                              "change account settings"
+                                                                          ]
+                               },
+    "desktop_hands_template":  {
+                                   "template_id":  "DESKTOP_HANDS_SINGLE_USE_PERMIT_TEMPLATE",
+                                   "version":  "461F",
+                                   "status":  "TEMPLATE_ONLY_NOT_APPROVED",
+                                   "required_fields":  [
+                                                           "target_app_or_window",
+                                                           "exact_desktop_action",
+                                                           "expected_visible_result",
+                                                           "forbidden_boundaries",
+                                                           "human_approval_phrase",
+                                                           "one_time_scope",
+                                                           "preflight_check",
+                                                           "proof_after_action",
+                                                           "lockback_after_action"
+                                                       ],
+                                   "prohibited_without_future_approval":  [
+                                                                              "move mouse",
+                                                                              "click",
+                                                                              "type",
+                                                                              "press hotkey",
+                                                                              "open app",
+                                                                              "close app",
+                                                                              "move window",
+                                                                              "change setting",
+                                                                              "mutate file",
+                                                                              "run command"
+                                                                          ]
+                               },
+    "no_control_flags":  {
+                             "runtime_execution_performed":  false,
+                             "post_performed":  false,
+                             "mutation_performed":  false,
+                             "browser_runtime_started":  false,
+                             "desktop_runtime_started":  false,
+                             "browser_open_performed":  false,
+                             "browser_navigation_performed":  false,
+                             "browser_click_performed":  false,
+                             "typing_performed":  false,
+                             "mouse_control_performed":  false,
+                             "keyboard_control_performed":  false,
+                             "window_control_performed":  false,
+                             "desktop_control_performed":  false,
+                             "file_mutation_performed_outside_artifacts":  false,
+                             "code_execution_performed":  false,
+                             "real_action_performed":  false,
+                             "approval_granted":  false,
+                             "authority_unlocked":  false
+                         },
+    "safety":  {
+                   "no_browser_runtime_start":  true,
+                   "no_desktop_runtime_start":  true,
+                   "no_browser_open":  true,
+                   "no_navigation":  true,
+                   "no_click":  true,
+                   "no_typing":  true,
+                   "no_mouse":  true,
+                   "no_keyboard":  true,
+                   "no_window_control":  true,
+                   "no_desktop_control":  true,
+                   "no_file_mutation_outside_artifacts":  true,
+                   "no_code_execution":  true,
+                   "no_real_action":  true,
+                   "future_real_action_requires_single_use_approval":  true
+               },
+    "recommended_next_script":  "462-browser-desktop-sandbox-action-contract-no-real-action.ps1"
+}

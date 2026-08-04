@@ -1,0 +1,47 @@
+# Leeway Runtime Fabric Map
+
+LEEWAY OPEN NOTEBOOK CREATIVE PACKAGE
+
+Creative Type: infographic
+Audience: General audience
+Goal: Create a complete usable creative production package.
+Tone: clear, practical, production-ready
+Prompt: Create an infographic package showing the Leeway runtime fabric
+
+Production Rule:
+This package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.
+
+## Infographic Package
+
+## Headline
+Write a headline that explains the value in under 8 words.
+
+## Visual Thesis
+One sentence explaining what the viewer should understand visually.
+
+## Layout
+Top: headline and hook visual
+Middle: 3 to 6 data/content blocks
+Bottom: action step, brand, source/receipt line
+
+## Data Blocks
+1. Key point or statistic
+2. Supporting point
+3. Comparison or before/after
+4. Practical takeaway
+
+## Icon and Graphic Notes
+- Icon 1
+- Icon 2
+- Arrow/flow direction
+- Color hierarchy
+
+## Export Text Blocks
+Provide short copy blocks ready for designer/image generation.
+
+## Storage and Handoff
+- Open Notebook owns this creative package.
+- Export/render lanes create final media from this package.
+- Seafile/storage governor should hold durable files and manifests.
+- Artifact viewer should expose the room link.
+- Skill router should return the actionable link/receipt.

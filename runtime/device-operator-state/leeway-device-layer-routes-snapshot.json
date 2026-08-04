@@ -1,0 +1,13 @@
+﻿{
+    "ok":  true,
+    "service":  "leeway_device_operator",
+    "routes":  [
+                   "/",
+                   "/health",
+                   "/status",
+                   "/routes",
+                   "/docs",
+                   "/openapi.json",
+                   "/system-health/report"
+               ]
+}

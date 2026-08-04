@@ -1,0 +1,248 @@
+﻿{
+    "version":  "LEEWAY_ONBOARDING_REVIEW_UI_CONTRACT_290",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:46:24",
+    "verdict":  "LEEWAY_ONBOARDING_REVIEW_UI_CONTRACT_290_NO_EXECUTE_CLEAN",
+    "contract_only":  true,
+    "no_execution":  true,
+    "no_ui_patch_in_290":  true,
+    "clear_skies":  true,
+    "source":  {
+                   "enrichment_latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\enrichment\\latest\\network-bluetooth-enrichment-latest.json",
+                   "bridge_plan_latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\universal-iot-bridge\\latest\\universal-iot-bridge-plan-latest.json",
+                   "phase_39_summary_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\latest\\final-device-action-lane-summary-latest.json"
+               },
+    "totals":  {
+                   "network_assets":  9,
+                   "bluetooth_assets":  19,
+                   "printer_assets":  3,
+                   "safe_onboarding_queue_items":  26,
+                   "ui_tabs":  5,
+                   "ui_cards":  5,
+                   "proposed_get_routes":  5
+               },
+    "ui_cards":  [
+                     {
+                         "card_id":  "clear_skies",
+                         "title":  "Clear Skies",
+                         "value":  true,
+                         "status":  "READY_READ_ONLY"
+                     },
+                     {
+                         "card_id":  "network_assets",
+                         "title":  "Network Assets",
+                         "value":  9,
+                         "status":  "DISCOVERED_NOT_ONBOARDED"
+                     },
+                     {
+                         "card_id":  "bluetooth_assets",
+                         "title":  "Bluetooth Assets",
+                         "value":  19,
+                         "status":  "PAIRING_BLOCKED"
+                     },
+                     {
+                         "card_id":  "printer_assets",
+                         "title":  "Printer Assets",
+                         "value":  3,
+                         "status":  "PRINT_ACTIONS_BLOCKED"
+                     },
+                     {
+                         "card_id":  "safe_onboarding_queue",
+                         "title":  "Safe Onboarding Queue",
+                         "value":  26,
+                         "status":  "REVIEW_REQUIRED"
+                     }
+                 ],
+    "ui_tabs":  [
+                    {
+                        "tab_id":  "overview",
+                        "label":  "Overview",
+                        "purpose":  "Show Clear Skies, total assets, queue count, and no-execute state.",
+                        "data_source":  "network-bluetooth-enrichment-latest.json",
+                        "allowed_actions":  [
+                                                "view_summary",
+                                                "refresh_read_only_data"
+                                            ],
+                        "blocked_actions":  [
+                                                "approve_control",
+                                                "execute_device_action",
+                                                "deploy_bridge"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "network",
+                        "label":  "Network Assets",
+                        "purpose":  "Review IP/MAC/hostname identity before onboarding.",
+                        "asset_count":  9,
+                        "allowed_actions":  [
+                                                "view_asset",
+                                                "mark_identity_review_needed",
+                                                "prepare_onboarding_request"
+                                            ],
+                        "blocked_actions":  [
+                                                "port_scan",
+                                                "login_attempt",
+                                                "device_control",
+                                                "credential_use"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "bluetooth",
+                        "label":  "Bluetooth Assets",
+                        "purpose":  "Review Bluetooth inventory before pairing or GATT mapping.",
+                        "asset_count":  19,
+                        "allowed_actions":  [
+                                                "view_asset",
+                                                "classify_asset",
+                                                "prepare_pairing_request"
+                                            ],
+                        "blocked_actions":  [
+                                                "pair_device",
+                                                "gatt_write",
+                                                "hid_control",
+                                                "robot_control",
+                                                "toy_control"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "printers",
+                        "label":  "Printers",
+                        "purpose":  "Review printer queues and drivers without submitting print jobs.",
+                        "asset_count":  3,
+                        "allowed_actions":  [
+                                                "view_printer",
+                                                "review_driver",
+                                                "prepare_print_approval_request"
+                                            ],
+                        "blocked_actions":  [
+                                                "submit_print_job",
+                                                "clear_queue",
+                                                "change_settings",
+                                                "test_page"
+                                            ]
+                    },
+                    {
+                        "tab_id":  "onboarding_queue",
+                        "label":  "Onboarding Queue",
+                        "purpose":  "Show assets that need identity confirmation before any control lane exists.",
+                        "asset_count":  26,
+                        "allowed_actions":  [
+                                                "view_queue_item",
+                                                "prepare_approval_request",
+                                                "defer_asset"
+                                            ],
+                        "blocked_actions":  [
+                                                "execute_control",
+                                                "auto_onboard",
+                                                "deploy_translator_without_approval"
+                                            ]
+                    }
+                ],
+    "api_contract":  {
+                         "base_route":  "/api/device-onboarding",
+                         "route_type":  "GET_ONLY_FOR_290_CONTRACT",
+                         "proposed_routes":  [
+                                                 {
+                                                     "method":  "GET",
+                                                     "path":  "/api/device-onboarding/summary",
+                                                     "reads":  "runtime/sentinel-discovery/enrichment/latest/network-bluetooth-enrichment-latest.json",
+                                                     "writes":  [
+
+                                                                ],
+                                                     "execution":  false
+                                                 },
+                                                 {
+                                                     "method":  "GET",
+                                                     "path":  "/api/device-onboarding/assets/network",
+                                                     "reads":  "enriched_assets.network",
+                                                     "writes":  [
+
+                                                                ],
+                                                     "execution":  false
+                                                 },
+                                                 {
+                                                     "method":  "GET",
+                                                     "path":  "/api/device-onboarding/assets/bluetooth",
+                                                     "reads":  "enriched_assets.bluetooth",
+                                                     "writes":  [
+
+                                                                ],
+                                                     "execution":  false
+                                                 },
+                                                 {
+                                                     "method":  "GET",
+                                                     "path":  "/api/device-onboarding/assets/printers",
+                                                     "reads":  "enriched_assets.printers",
+                                                     "writes":  [
+
+                                                                ],
+                                                     "execution":  false
+                                                 },
+                                                 {
+                                                     "method":  "GET",
+                                                     "path":  "/api/device-onboarding/queue",
+                                                     "reads":  "onboarding_queue",
+                                                     "writes":  [
+
+                                                                ],
+                                                     "execution":  false
+                                                 }
+                                             ],
+                         "forbidden_routes_until_later_approval":  [
+                                                                       "POST /api/device-onboarding/control",
+                                                                       "POST /api/device-onboarding/pair-bluetooth",
+                                                                       "POST /api/device-onboarding/print",
+                                                                       "POST /api/device-onboarding/deploy-iot-bridge",
+                                                                       "POST /api/device-onboarding/mqtt-publish"
+                                                                   ]
+                     },
+    "frontend_contract":  {
+                              "proposed_page":  "/device-onboarding",
+                              "proposed_component":  "AgentLeeDeviceOnboardingReviewPanel",
+                              "proposed_client":  "deviceOnboardingReviewClient",
+                              "ui_mode":  "READ_ONLY_REVIEW",
+                              "must_display":  [
+                                                   "Clear Skies status",
+                                                   "Phase 39 lockback proof",
+                                                   "287 discovery totals",
+                                                   "288R bridge plan status",
+                                                   "289 enriched assets",
+                                                   "safe onboarding queue",
+                                                   "blocked action warnings"
+                                               ],
+                              "must_not_display":  [
+                                                       "raw execute button",
+                                                       "pair now button",
+                                                       "print now button",
+                                                       "deploy bridge button",
+                                                       "mqtt publish button",
+                                                       "general unlock button"
+                                                   ]
+                          },
+    "approval_model":  {
+                           "control_policy":  "NO_CONTROL_FROM_290_UI_CONTRACT",
+                           "next_allowed_transition":  "prepare_approval_request_only",
+                           "physical_actions_require":  [
+                                                            "specific asset identity",
+                                                            "specific protocol",
+                                                            "specific action payload",
+                                                            "single-use approval id",
+                                                            "arm window",
+                                                            "one execution",
+                                                            "lockback audit"
+                                                        ]
+                       },
+    "safety":  {
+                   "no_device_control_in_290":  true,
+                   "no_api_post_routes_in_290_contract":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "291-onboarding-review-ui-patch-plan-no-execute.ps1"
+}

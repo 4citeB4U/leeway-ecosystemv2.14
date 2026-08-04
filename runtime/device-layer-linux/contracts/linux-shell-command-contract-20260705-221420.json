@@ -1,0 +1,64 @@
+﻿{
+    "version":  "LEEWAY_LINUX_SHELL_COMMAND_CONTRACT_246",
+    "timestamp":  "2026-07-05T22:14:20",
+    "family":  "linux",
+    "shell_status":  "CONTRACT_ONLY_NOT_ENABLED",
+    "command_classes":  {
+                            "read_only_inventory":  {
+                                                        "approval":  "required_until_linux_read_only_status_lane_is_proven",
+                                                        "examples":  [
+                                                                         "uname -a",
+                                                                         "lsb_release -a",
+                                                                         "hostnamectl"
+                                                                     ],
+                                                        "execute_now":  false
+                                                    },
+                            "shell_execution":  {
+                                                    "approval":  "required",
+                                                    "examples":  [
+                                                                     "bash command",
+                                                                     "python script",
+                                                                     "systemctl status"
+                                                                 ],
+                                                    "execute_now":  false
+                                                },
+                            "desktop_ui":  {
+                                               "approval":  "required",
+                                               "examples":  [
+                                                                "click",
+                                                                "type text",
+                                                                "hotkey",
+                                                                "open app"
+                                                            ],
+                                               "execute_now":  false
+                                           },
+                            "file_data":  {
+                                              "approval":  "required",
+                                              "examples":  [
+                                                               "read file",
+                                                               "write file",
+                                                               "copy file",
+                                                               "transfer file"
+                                                           ],
+                                              "execute_now":  false
+                                          },
+                            "system_admin":  {
+                                                 "approval":  "required",
+                                                 "examples":  [
+                                                                  "install package",
+                                                                  "restart service",
+                                                                  "change permission"
+                                                              ],
+                                                 "execute_now":  false
+                                             }
+                        },
+    "guardrails":  [
+                       "no Linux shell command without approval id",
+                       "no SSH until explicit actuator lane",
+                       "no file read in contract stage",
+                       "no file write in contract stage",
+                       "no desktop UI action in contract stage",
+                       "no service/package/system mutation in contract stage",
+                       "no sudo in contract stage"
+                   ]
+}

@@ -1,0 +1,165 @@
+﻿{
+    "version":  "LEEWAY_HUMAN_INPUT_WRITE_ROUTE_PATCH_PLAN_305",
+    "phase":  41,
+    "timestamp":  "2026-07-06T13:20:24",
+    "verdict":  "LEEWAY_HUMAN_INPUT_WRITE_ROUTE_PATCH_PLAN_305_NO_EXECUTE_CLEAN",
+    "patch_plan_only":  true,
+    "patch_applied":  false,
+    "routes_created":  false,
+    "write_routes_created":  false,
+    "storage_created":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "browser_opened_by_305":  false,
+    "clear_skies":  true,
+    "write_scope":  "HUMAN_IDENTITY_REVIEW_STATE_ONLY",
+    "proposed_patch_files":  [
+                                 {
+                                     "file_id":  "identity_confirmation_api_route",
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\identity-confirmation\\[...path]\\route.ts",
+                                     "operation":  "UPDATE_ROUTE_WITH_REVIEW_STATE_SAVE_POST",
+                                     "existing_get_routes_preserved":  true,
+                                     "future_post_route":  "POST /api/identity-confirmation/review-state/save",
+                                     "write_scope":  "human_review_state_only",
+                                     "execution":  false,
+                                     "device_control":  false
+                                 },
+                                 {
+                                     "file_id":  "identity_confirmation_client",
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\identityConfirmationClient.ts",
+                                     "operation":  "ADD_SAVE_REVIEW_STATE_CLIENT_FUNCTION",
+                                     "allowed_method":  "POST",
+                                     "post_scope":  "save human-entered identity metadata only",
+                                     "execution":  false,
+                                     "device_control":  false
+                                 },
+                                 {
+                                     "file_id":  "identity_confirmation_panel",
+                                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeIdentityConfirmationPanel.tsx",
+                                     "operation":  "ADD_HUMAN_INPUT_FORM_FIELDS",
+                                     "allowed_submit":  "save review state only",
+                                     "forbidden_submit":  [
+                                                              "control",
+                                                              "pair",
+                                                              "print",
+                                                              "deploy translator",
+                                                              "deploy bridge",
+                                                              "publish",
+                                                              "arm"
+                                                          ],
+                                     "execution":  false,
+                                     "device_control":  false
+                                 }
+                             ],
+    "proposed_storage":  {
+                             "storage_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state",
+                             "latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-41-human-identity-review-state\\latest\\human-identity-review-state-latest.json",
+                             "created_in_305":  false,
+                             "future_created_by":  "306-apply-human-input-review-state-save-route-file-patch-no-execute.ps1",
+                             "storage_type":  "local_json_review_state",
+                             "allowed_contents":  [
+                                                      "identity_candidate_id",
+                                                      "asset_id",
+                                                      "confirmed_asset_name",
+                                                      "asset_type",
+                                                      "location_or_room",
+                                                      "owner_or_responsible_person",
+                                                      "trust_level",
+                                                      "disposition",
+                                                      "notes",
+                                                      "reviewed_by",
+                                                      "reviewed_at"
+                                                  ],
+                             "forbidden_contents":  [
+                                                        "control_command",
+                                                        "pairing_secret",
+                                                        "device_password",
+                                                        "mqtt_payload",
+                                                        "printer_job",
+                                                        "real_alpha_token",
+                                                        "physical_action"
+                                                    ]
+                         },
+    "future_route_contract":  {
+                                  "route_patch_created_in_305":  false,
+                                  "proposed_routes":  [
+                                                          {
+                                                              "method":  "GET",
+                                                              "path":  "/api/identity-confirmation/review-state",
+                                                              "purpose":  "Read human review state only.",
+                                                              "writes":  false,
+                                                              "execution":  false
+                                                          },
+                                                          {
+                                                              "method":  "POST",
+                                                              "path":  "/api/identity-confirmation/review-state/save",
+                                                              "purpose":  "Save human-entered identity confirmation metadata only.",
+                                                              "writes":  true,
+                                                              "execution":  false,
+                                                              "device_control":  false
+                                                          }
+                                                      ],
+                                  "validation_required":  [
+                                                              "candidate must exist in 303 packet",
+                                                              "confirmed_asset_name required",
+                                                              "asset_type must be allowed enum",
+                                                              "location_or_room required",
+                                                              "trust_level must be allowed enum",
+                                                              "disposition must be allowed enum",
+                                                              "notes max 1000 chars",
+                                                              "payload must not include control terms",
+                                                              "payload must not include pairing secrets",
+                                                              "payload must not include print or bridge commands"
+                                                          ]
+                              },
+    "forbidden_content":  [
+                              "real/open-app",
+                              "real/arm-approved-action",
+                              "docker run",
+                              "docker compose",
+                              "pairDevice",
+                              "pair-bluetooth",
+                              "bluetoothPair",
+                              "submitPrint",
+                              "printJob",
+                              "mqttPublish",
+                              "mqtt publish",
+                              "deploy bridge",
+                              "deploy translator",
+                              "\u003eExecute\u003c",
+                              "\u003ePair now\u003c",
+                              "\u003ePrint now\u003c",
+                              "\u003eControl now\u003c",
+                              "\u003eUnlock\u003c"
+                          ],
+    "acceptance_gates":  [
+                             "Only human review-state write route is added",
+                             "All existing GET routes remain",
+                             "POST route cannot control devices",
+                             "POST route cannot pair Bluetooth",
+                             "POST route cannot submit printer jobs",
+                             "POST route cannot deploy translator or IoT bridge",
+                             "POST route cannot publish MQTT or protocol messages",
+                             "POST route cannot arm Real Alpha",
+                             "Storage contains only human identity confirmation metadata",
+                             "31 candidates remain intact",
+                             "Manual review UI clearly says save is not onboarding"
+                         ],
+    "safety":  {
+                   "no_device_control_in_305":  true,
+                   "no_file_patch_in_305":  true,
+                   "no_routes_created_in_305":  true,
+                   "no_storage_created_in_305":  true,
+                   "no_onboarding":  true,
+                   "no_pairing":  true,
+                   "no_protocol_translator":  true,
+                   "no_iot_bridge":  true,
+                   "no_physical_action_lane":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "306-apply-human-input-review-state-save-route-file-patch-no-execute.ps1"
+}

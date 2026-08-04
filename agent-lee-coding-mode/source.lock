@@ -1,0 +1,6 @@
+AGENT_LEE_PACKAGE=C:\Users\Leona\.leeway-vscode\agent-lee-coding-mode
+AGENT_LEE_MODE=CODING_ONLY
+USER_FACING_ASSISTANT=Agent Lee
+LEEWAY_ACTIVE_STANDARDS_ROOT=E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\LeeWay-Standards
+LEEWAY_ARCHIVED_STANDARDS_ROOT=Archive\docs\deprecated-standards-roots\Leeway-Standards
+LEEWAY_SOURCE_ROOTS=E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\LeeWay-Standards|E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\leeway-80-bench|E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\.leeway-vscode|E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\tools|E:\.LeeWay-Produucts-File\Leeway-Ecosystem v2.1.4\core

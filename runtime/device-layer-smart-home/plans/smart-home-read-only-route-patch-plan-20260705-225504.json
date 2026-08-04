@@ -1,0 +1,105 @@
+﻿{
+    "version":  "LEEWAY_SMART_HOME_READ_ONLY_ROUTE_PATCH_PLAN_262",
+    "timestamp":  "2026-07-05T22:55:04",
+    "family":  "smart_home",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "app = FastAPI",
+                   "no_existing_family_anchor":  true
+               },
+    "current_routes":  {
+                           "smart_home_discover":  false,
+                           "smart_home_status":  false,
+                           "smart_home_registry":  false,
+                           "smart_home_adapter_status":  false,
+                           "smart_home_policy":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/smart-home/discover",
+                              "function_name":  "leeway_smart_home_discover_263",
+                              "read_only":  true,
+                              "home_state_mutation":  false,
+                              "adapter_call":  false,
+                              "purpose":  "Expose smart home inventory stub without Home Assistant, Matter, Zigbee, Z-Wave, MQTT, cloud, or local device calls."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/smart-home/status",
+                              "function_name":  "leeway_smart_home_status_263",
+                              "read_only":  true,
+                              "home_state_mutation":  false,
+                              "adapter_call":  false,
+                              "purpose":  "Expose smart home readiness with all command lanes disabled and approval required."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/smart-home/registry",
+                              "function_name":  "leeway_smart_home_registry_263",
+                              "read_only":  true,
+                              "home_state_mutation":  false,
+                              "adapter_call":  false,
+                              "purpose":  "Expose normalized smart home registry artifact."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/smart-home/adapter/status",
+                              "function_name":  "leeway_smart_home_adapter_status_263",
+                              "read_only":  true,
+                              "home_state_mutation":  false,
+                              "adapter_call":  false,
+                              "purpose":  "Expose smart home adapter disabled status without invoking any adapter."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/smart-home/policy",
+                              "function_name":  "leeway_smart_home_policy_263",
+                              "read_only":  true,
+                              "home_state_mutation":  false,
+                              "adapter_call":  false,
+                              "purpose":  "Expose smart home approval policy without device/cloud/local mutation."
+                          }
+                      ],
+    "safety":  {
+                   "no_home_assistant_api_invocation":  true,
+                   "no_matter_invocation":  true,
+                   "no_zigbee_invocation":  true,
+                   "no_zwave_invocation":  true,
+                   "no_mqtt_invocation":  true,
+                   "no_google_home_api_invocation":  true,
+                   "no_alexa_api_invocation":  true,
+                   "no_homekit_invocation":  true,
+                   "no_cloud_api_invocation":  true,
+                   "no_local_device_api_invocation":  true,
+                   "no_device_command":  true,
+                   "no_home_state_mutation":  true,
+                   "no_unlock":  true,
+                   "no_door_open":  true,
+                   "no_garage_open":  true,
+                   "no_alarm_change":  true,
+                   "no_thermostat_change":  true,
+                   "no_light_change":  true,
+                   "no_camera_stream":  true,
+                   "no_microphone_access":  true,
+                   "no_speaker_playback":  true,
+                   "no_automation_trigger":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "smart_home_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-registry-latest.json",
+                          "smart_home_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-approval-policy-latest.json",
+                          "smart_home_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-adapter-contract-latest.json",
+                          "smart_home_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-read-only-route-requirement-latest.json",
+                          "proof_261_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-smart-home\\latest\\smart-home-adapter-contract-proof-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "263-apply-smart-home-read-only-routes-patch-no-device-execute.ps1"
+}

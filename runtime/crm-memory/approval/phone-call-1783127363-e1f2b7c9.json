@@ -1,0 +1,27 @@
+{
+  "kind": "approval",
+  "name": "phone_call-1783127363-e1f2b7c9",
+  "data": {
+    "approval_id": "phone_call-1783127363-e1f2b7c9",
+    "action_type": "phone_call",
+    "status": "PENDING_APPROVAL",
+    "summary": "Phone call requested to Sample Restaurant at 414-555-0100",
+    "payload": {
+      "target_name": "Sample Restaurant",
+      "phone_number": "414-555-0100",
+      "purpose": "Ask about a table for two next Wednesday evening.",
+      "script": "Hello, I am calling to ask whether you have a table for two available next Wednesday around 7 PM.",
+      "related_plan_id": null,
+      "requested_by": "agent_lee",
+      "source": "approval-proof"
+    },
+    "requested_by": "agent_lee",
+    "execution_status": "NOT_EXECUTED",
+    "execution_note": "This approval layer only prepares and records actions. Real execution lane is not enabled yet.",
+    "created_at": "2026-07-04T01:09:23.749871+00:00",
+    "updated_at": "2026-07-04T01:09:23.749884+00:00"
+  },
+  "source": "agent_lee",
+  "updated_at": "2026-07-04T01:09:23.890918+00:00",
+  "created_at": "2026-07-04T01:09:23.890939+00:00"
+}

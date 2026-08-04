@@ -1,0 +1,61 @@
+﻿{
+    "version":  "LEEWAY_APPLY_ONBOARDING_REVIEW_UI_GET_ONLY_PATCH_292",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:50:39",
+    "verdict":  "LEEWAY_APPLY_ONBOARDING_REVIEW_UI_GET_ONLY_PATCH_292_WITH_WARNINGS",
+    "patch_applied":  true,
+    "file_patch_only":  true,
+    "execution_performed":  false,
+    "clear_skies":  true,
+    "frontend_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain",
+    "route":  "/device-onboarding",
+    "files":  {
+                  "api_route":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+                  "api_client":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceOnboardingReviewClient.ts",
+                  "component":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceOnboardingReviewPanel.tsx",
+                  "page":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-onboarding\\page.tsx"
+              },
+    "backups":  [
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\lib\\deviceOnboardingReviewClient.ts",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\components\\AgentLeeDeviceOnboardingReviewPanel.tsx",
+                        "backup":  ""
+                    },
+                    {
+                        "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\device-onboarding\\page.tsx",
+                        "backup":  ""
+                    }
+                ],
+    "static_safety":  {
+                          "api_get_only":  true,
+                          "client_get_only":  true,
+                          "no_real_open_app":  true,
+                          "no_real_arm":  true,
+                          "no_docker_deploy":  true,
+                          "no_bluetooth_pairing":  false,
+                          "no_print_action":  true,
+                          "no_mqtt_publish":  false,
+                          "no_execution_buttons":  true,
+                          "static_clean":  false
+                      },
+    "safety":  {
+                   "no_device_control_in_292":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "293-onboarding-review-ui-post-patch-audit-no-execute.ps1"
+}

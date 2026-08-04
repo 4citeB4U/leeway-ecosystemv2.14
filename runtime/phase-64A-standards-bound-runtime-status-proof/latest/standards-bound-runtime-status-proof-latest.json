@@ -1,0 +1,1367 @@
+﻿{
+    "version":  "LEEWAY_STANDARDS_BOUND_RUNTIME_STATUS_PROOF_442A",
+    "phase":  "64A",
+    "timestamp":  "2026-07-07T02:04:05",
+    "verdict":  "LEEWAY_STANDARDS_BOUND_RUNTIME_STATUS_PROOF_442A_CLEAN_PASSED_GET_ONLY",
+    "exact_owner_approval":  "I, Leonard J Lee, explicitly approve one single-use Standards-bound runtime proof for the locked active scope from 441R. I understand this authorizes only the specific proof defined by the next gate and does not authorize Docker exec, Docker mutation, package creation, device control, Telegram posting, model calls, browser control, image generation, voice generation, or physical action.",
+    "single_use_runtime_status_proof":  true,
+    "get_only":  true,
+    "runtime_contacts_performed":  true,
+    "post_performed":  false,
+    "runtime_mutation_performed":  false,
+    "runtime_execution_performed":  false,
+    "agent_lee_runtime_execution_performed":  false,
+    "skill_execution_performed":  false,
+    "code_mode_execution_performed":  false,
+    "performance_execution_performed":  false,
+    "benchmark_execution_performed":  false,
+    "model_call_performed":  false,
+    "browser_control_performed":  false,
+    "desktop_control_performed":  false,
+    "phone_control_performed":  false,
+    "discovery_scan_performed":  false,
+    "docker_exec_performed":  false,
+    "docker_mutation_performed":  false,
+    "device_control_performed":  false,
+    "telegram_posting_performed":  false,
+    "physical_action_performed":  false,
+    "package_created":  false,
+    "inherited":  {
+                      "gate_442_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64-standards-bound-execution-approval-gate\\latest\\standards-bound-execution-approval-gate-latest.json",
+                      "scope_441R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-63R-unclassified-container-classification-repair\\latest\\unclassified-container-classification-repair-latest.json",
+                      "summary_451_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-73-global-governance-final-summary\\latest\\global-governance-final-summary-latest.json",
+                      "skill_registry_452_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-74-skill-registry-signature-buildout\\latest\\skill-registry-signature-buildout-latest.json",
+                      "agent_449_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-71-agent-lee-governance-receipt-lock\\latest\\agent-lee-governance-receipt-lock-latest.json",
+                      "repair_450R_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-72R-global-governance-security-awareness-repair\\latest\\global-governance-security-awareness-repair-latest.json"
+                  },
+    "endpoint_candidates":  [
+                                {
+                                    "name":  "leeway_api_gateway",
+                                    "container":  "leeway_api_gateway",
+                                    "base_url":  "http://127.0.0.1:5320",
+                                    "role":  "API gateway status",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_context_gateway",
+                                    "container":  "leeway_context_gateway",
+                                    "base_url":  "http://127.0.0.1:5321",
+                                    "role":  "Context gateway status",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_device_operator_status_only",
+                                    "container":  "leeway_device_operator",
+                                    "base_url":  "http://127.0.0.1:5323",
+                                    "role":  "Device operator status only, no device action",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_skill_router",
+                                    "container":  "leeway_skill_router",
+                                    "base_url":  "http://127.0.0.1:5324",
+                                    "role":  "Skill router status only",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_document_runtime",
+                                    "container":  "leeway_document_runtime",
+                                    "base_url":  "http://127.0.0.1:5325",
+                                    "role":  "Document runtime status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_open_notebook",
+                                    "container":  "leeway_open_notebook",
+                                    "base_url":  "http://127.0.0.1:5326",
+                                    "role":  "Open notebook status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_agent_skills",
+                                    "container":  "leeway_agent_skills",
+                                    "base_url":  "http://127.0.0.1:5327",
+                                    "role":  "Agent skills status only",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_artifact_viewer",
+                                    "container":  "leeway_artifact_viewer",
+                                    "base_url":  "http://127.0.0.1:5328",
+                                    "role":  "Artifact viewer status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_meeting_runtime",
+                                    "container":  "leeway_meeting_runtime",
+                                    "base_url":  "http://127.0.0.1:5329",
+                                    "role":  "Meeting runtime status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_email_runtime",
+                                    "container":  "leeway_email_runtime",
+                                    "base_url":  "http://127.0.0.1:5330",
+                                    "role":  "Email runtime status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_calendar_runtime",
+                                    "container":  "leeway_calendar_runtime",
+                                    "base_url":  "http://127.0.0.1:5331",
+                                    "role":  "Calendar runtime status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_phone_runtime",
+                                    "container":  "leeway_phone_runtime",
+                                    "base_url":  "http://127.0.0.1:5332",
+                                    "role":  "Phone runtime status only, no phone action",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_browser_runtime",
+                                    "container":  "leeway_browser_runtime",
+                                    "base_url":  "http://127.0.0.1:5333",
+                                    "role":  "Browser runtime status only, no browser control",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_desktop_runtime",
+                                    "container":  "leeway_desktop_runtime",
+                                    "base_url":  "http://127.0.0.1:5334",
+                                    "role":  "Desktop runtime status only, no desktop control",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_performance_runtime",
+                                    "container":  "leeway_performance_runtime",
+                                    "base_url":  "http://127.0.0.1:5338",
+                                    "role":  "Performance runtime status only, no benchmark",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "leeway_workboard_runtime",
+                                    "container":  "leeway_workboard_runtime",
+                                    "base_url":  "http://127.0.0.1:5339",
+                                    "role":  "Workboard runtime status only",
+                                    "required":  false
+                                },
+                                {
+                                    "name":  "leeway_executive_runtime",
+                                    "container":  "leeway_executive_runtime",
+                                    "base_url":  "http://127.0.0.1:5340",
+                                    "role":  "Executive runtime status only",
+                                    "required":  true
+                                },
+                                {
+                                    "name":  "agent_lee_code_mode",
+                                    "container":  "agent_lee_code_mode",
+                                    "base_url":  "http://127.0.0.1:8080",
+                                    "role":  "Code mode status only, no code execution",
+                                    "required":  true
+                                }
+                            ],
+    "allowed_get_paths":  [
+                              "/health",
+                              "/status",
+                              "/ready",
+                              "/policy",
+                              "/"
+                          ],
+    "proof_results":  [
+                          {
+                              "name":  "leeway_api_gateway",
+                              "base_url":  "http://127.0.0.1:5320",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5320/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_api_gateway\",\"version\":\"0.3.0-approval-executor-front-door\",\"created_at\":\"2026-07-07T07:03:59.480382+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5320/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  411,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_api_gateway\",\"version\":\"0.3.0-approval-executor-front-door\",\"created_at\":\"2026-07-07T07:03:59.480382+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5320/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  15,
+                                                   "body_preview":  "{\"app\":\"leeway_api_gateway\",\"version\":\"0.3.0-approval-executor-front-door\",\"purpose\":\"Single sovereign internal API front door for Agent Lee and Leeway lanes.\",\"routes\":[\"/health\",\"/status\",\"/capabilities\",\"/lanes/health\",\"/research/quick\",\"/research/deep\",\"/plan/date-night\",\"/approval/request-phone-call\",\"/approval/request-email\",\"/approval/request-calendar-event\",\"/approvals/pending\",\"/approvals/approve\",\"/approvals/reject\",\"/approvals/history\",\"/crm/upsert-contact\",\"/crm/upsert-company\",\"/crm",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5320/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  19,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5320/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5320/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  11,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_api_gateway\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_api_gateway",
+                              "role":  "API gateway status"
+                          },
+                          {
+                              "name":  "leeway_context_gateway",
+                              "base_url":  "http://127.0.0.1:5321",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5321/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_context_gateway\",\"version\":\"0.1.0-local-heuristic-compression\",\"created_at\":\"2026-07-07T07:03:59.909988+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5321/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  349,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_context_gateway\",\"version\":\"0.1.0-local-heuristic-compression\",\"created_at\":\"2026-07-07T07:03:59.909988+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5321/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  15,
+                                                   "body_preview":  "{\"app\":\"leeway_context_gateway\",\"version\":\"0.1.0-local-heuristic-compression\",\"purpose\":\"Local-first context compression and retrieval gateway for Leeway sovereign runtime.\",\"endpoints\":[\"/health\",\"/status\",\"/compress\",\"/retrieve\",\"/stats\",\"/learn/failure\",\"/receipts/latest\",\"/openapi.json\"],\"rules\":{\"receipts_remain_complete\":true,\"originals_retrievable\":true,\"external_services_used\":false,\"headroom_full_engine\":\"planned optional v0.2\"},\"context_dir\":\"/context-store\",\"created_at\":\"2026-07-07T07",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5321/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  4,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5321/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5321/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  10,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_context_gateway\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_context_gateway",
+                              "role":  "Context gateway status"
+                          },
+                          {
+                              "name":  "leeway_device_operator_status_only",
+                              "base_url":  "http://127.0.0.1:5323",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5323/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_device_operator\",\"version\":\"0.1.0-device-operator-control-plane\",\"created_at\":\"2026-07-07T07:03:59.991287+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5323/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  29,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_device_operator\",\"version\":\"0.1.0-device-operator-control-plane\",\"created_at\":\"2026-07-07T07:03:59.991287+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5323/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  744,
+                                                   "body_preview":  "{\"app\":\"leeway_device_operator\",\"version\":\"0.1.0-device-operator-control-plane\",\"purpose\":\"Dockerized Leeway control plane for cursor, device channels, phone/email/PWA/Telegram control surfaces, and approved device actions.\",\"device_model\":{\"docker_control_plane\":true,\"host_or_mobile_adapter_required_for_physical_ui_actions\":true,\"all_actions_route_through_leeway_api_gateway\":true,\"approval_required_for_risky_actions\":true},\"cursor_modes\":{\"blue\":\"listening_thinking_safe_navigation\",\"green\":\"app",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5323/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  6,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5323/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5323/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  23,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_device_operator\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_device_operator",
+                              "role":  "Device operator status only, no device action"
+                          },
+                          {
+                              "name":  "leeway_skill_router",
+                              "base_url":  "http://127.0.0.1:5324",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5324/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_skill_router\",\"version\":\"0.3.0-planning-governor\",\"created_at\":\"2026-07-07T07:04:01.150293+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5324/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  400,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_skill_router\",\"version\":\"0.3.0-planning-governor\",\"created_at\":\"2026-07-07T07:04:01.150293+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5324/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  14,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_skill_router\",\"version\":\"0.3.0-planning-governor\",\"truth\":{\"planning_governor\":\"LIVE\",\"major_creation_plan_first\":\"LIVE\",\"approval_before_heavy_execution\":\"LIVE\",\"multi_task_registry\":\"BASIC_LIVE\",\"parallel_worker_execution\":\"NEXT_LEVEL\",\"persona\":\"OG hip-hop poetic public voice preserved through planning responses\"},\"planning_depths\":[\"MICRO\",\"LIGHT\",\"MEDIUM\",\"HEAVY\",\"EXECUTIVE\"],\"created_at\":\"2026-07-07T07:04:01.186949+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5324/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  5,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5324/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5324/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  12,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_skill_router\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_skill_router",
+                              "role":  "Skill router status only"
+                          },
+                          {
+                              "name":  "leeway_document_runtime",
+                              "base_url":  "http://127.0.0.1:5325",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5325/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_document_runtime\",\"version\":\"0.1.0-real-artifact-writer\",\"created_at\":\"2026-07-07T07:04:01.233202+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5325/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  30,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_document_runtime\",\"version\":\"0.1.0-real-artifact-writer\",\"created_at\":\"2026-07-07T07:04:01.233202+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5325/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  13,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_document_runtime\",\"version\":\"0.1.0-real-artifact-writer\",\"purpose\":\"Creates real PDF artifacts for Agent Lee with receipts.\",\"endpoints\":[\"/health\",\"/status\",\"/document/create\",\"/documents/latest\",\"/receipts/latest\",\"/openapi.json\"],\"created_at\":\"2026-07-07T07:04:01.250687+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5325/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5325/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5325/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  12,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_document_runtime\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_document_runtime",
+                              "role":  "Document runtime status only"
+                          },
+                          {
+                              "name":  "leeway_open_notebook",
+                              "base_url":  "http://127.0.0.1:5326",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5326/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_open_notebook\",\"version\":\"0.1.0-longform-workspace\",\"created_at\":\"2026-07-07T07:04:01.620475+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5326/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  374,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_open_notebook\",\"version\":\"0.1.0-longform-workspace\",\"created_at\":\"2026-07-07T07:04:01.620475+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5326/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  11,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_open_notebook\",\"version\":\"0.1.0-longform-workspace\",\"purpose\":\"Durable long-form notebook workspace for stories, poems, reports, revisions, read-back, and export.\",\"endpoints\":[\"/health\",\"/status\",\"/notebook/create\",\"/notebook/{notebook_id}\",\"/notebook/latest\",\"/notebook/readback/{notebook_id}\",\"/notebook/append\",\"/notebook/revise\",\"/notebook/export/pdf\",\"/notebook/create-creative\",\"/notebook/creative\",\"/notebook/creative/latest\",\"/notebook/creative/{creative_id}\",\"/note",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5326/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  8,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5326/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5326/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  11,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_open_notebook\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_open_notebook",
+                              "role":  "Open notebook status only"
+                          },
+                          {
+                              "name":  "leeway_agent_skills",
+                              "base_url":  "http://127.0.0.1:5327",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5327/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"created_at\":\"2026-07-07T07:04:01.703427+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5327/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  29,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"created_at\":\"2026-07-07T07:04:01.703427+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5327/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  26,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"purpose\":\"Agent Lee skill registry and skill composition layer.\",\"skill_count\":8,\"endpoints\":[\"/health\",\"/status\",\"/skills\",\"/skills/register\",\"/skills/{name}\",\"/skills/search\",\"/receipts/latest\",\"/openapi.json\"],\"created_at\":\"2026-07-07T07:04:01.734529+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5327/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5327/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  0,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5327/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  12,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_agent_skills\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_agent_skills",
+                              "role":  "Agent skills status only"
+                          },
+                          {
+                              "name":  "leeway_artifact_viewer",
+                              "base_url":  "http://127.0.0.1:5328",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5328/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_artifact_viewer\",\"version\":\"0.1.0-artifact-room-viewer\",\"created_at\":\"2026-07-07T07:04:01.775518+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5328/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  29,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_artifact_viewer\",\"version\":\"0.1.0-artifact-room-viewer\",\"created_at\":\"2026-07-07T07:04:01.775518+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5328/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  13,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_artifact_viewer\",\"version\":\"0.1.0-artifact-room-viewer\",\"purpose\":\"Viewable rooms and public artifact links for PDFs, notebooks, websites, images, and 3D viewers.\",\"public_base_url\":\"http://172.26.160.1:5328\",\"endpoints\":[\"/health\",\"/status\",\"/artifacts/latest\",\"/artifacts/pdf/{filename}\",\"/rooms/latest\",\"/rooms/create/latest\",\"/receipts/latest\"],\"created_at\":\"2026-07-07T07:04:01.793193+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5328/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  3,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5328/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5328/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  11,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_artifact_viewer\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_artifact_viewer",
+                              "role":  "Artifact viewer status only"
+                          },
+                          {
+                              "name":  "leeway_meeting_runtime",
+                              "base_url":  "http://127.0.0.1:5329",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5329/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"app\":\"leeway_meeting_runtime\",\"version\":\"0.1.0-jitsi-link-runtime\",\"created_at\":\"2026-07-07T07:04:01.837517+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5329/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  30,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_meeting_runtime\",\"version\":\"0.1.0-jitsi-link-runtime\",\"created_at\":\"2026-07-07T07:04:01.837517+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5329/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  13,
+                                                   "body_preview":  "{\"ok\":true,\"app\":\"leeway_meeting_runtime\",\"version\":\"0.1.0-jitsi-link-runtime\",\"purpose\":\"Creates Leeway meeting links, Jitsi-backed rooms, and calendar invite files.\",\"public_base_url\":\"http://172.26.160.1:5329\",\"jitsi_base_url\":\"https://meet.jit.si\",\"endpoints\":[\"/meeting/create\",\"/meeting/latest\",\"/meeting/{meeting_id}\",\"/meeting/{meeting_id}/join\",\"/meeting/{meeting_id}.ics\",\"/rooms/{meeting_id}\",\"/receipts/latest\"],\"truth\":{\"jitsi_link_generation\":\"LIVE\",\"leeway_branded_room\":\"LIVE\",\"ics_ge",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5329/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5329/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5329/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  12,
+                                                   "body_preview":  "{\"ok\":true,\"service\":\"leeway_meeting_runtime\",\"version\":\"2.1.4\",\"health\":\"/health\",\"status\":\"/status\",\"routes\":\"/routes\",\"docs\":\"/docs\",\"openapi\":\"/openapi.json\"}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_meeting_runtime",
+                              "role":  "Meeting runtime status only"
+                          },
+                          {
+                              "name":  "leeway_email_runtime",
+                              "base_url":  "http://127.0.0.1:5330",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5330/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_email_runtime\",\"title\":\"Leeway Email Runtime\",\"lane\":\"email\",\"port\":5330,\"created_at\":\"2026-07-07T07:04:01.911002+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5330/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  46,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_email_runtime\",\"title\":\"Leeway Email Runtime\",\"lane\":\"email\",\"port\":5330,\"created_at\":\"2026-07-07T07:04:01.911002+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5330/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  17,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_email_runtime\",\"title\":\"Leeway Email Runtime\",\"lane\":\"email\",\"port\":5330,\"truth\":{\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"provider_send\":\"REQUIRES_EMAIL_PROVIDER_AND_APPROVAL\",\"approval_required\":\"TRUE\",\"receipt_writing\":\"LIVE\"},\"capabilities\":[\"draft_email_after_approval\",\"send_email_after_provider_connection\",\"store_email_work_order\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T07:04:01.934886+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5330/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  3,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5330/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5330/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  12,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Email Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody {\n  margin:0;\n  background:#07101f;\n  color:#f4f8ff;\n  font-family:Segoe UI, Arial, sans-serif;\n}\nmain {\n  width:min(980px,94vw);\n  margin:0 auto;\n  padding:40px 0;\n}\n.card {\n  border:1px solid #294766;\n  border-radius:24px;\n  background:#101d32;\n  padding:26px;\n}\nh1 {\n  font-size:44px;\n  letter-spacing:-.04em;\n}\ntd {\n  border-bottom:1px solid #294766;\n  padding:10px;\n}\nli {\n  margin:8px 0;\n}\n.",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_email_runtime",
+                              "role":  "Email runtime status only"
+                          },
+                          {
+                              "name":  "leeway_calendar_runtime",
+                              "base_url":  "http://127.0.0.1:5331",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5331/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_calendar_runtime\",\"title\":\"Leeway Calendar Runtime\",\"lane\":\"calendar\",\"port\":5331,\"created_at\":\"2026-07-07T07:04:02.362321+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5331/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  429,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_calendar_runtime\",\"title\":\"Leeway Calendar Runtime\",\"lane\":\"calendar\",\"port\":5331,\"created_at\":\"2026-07-07T07:04:02.362321+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5331/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  26,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_calendar_runtime\",\"title\":\"Leeway Calendar Runtime\",\"lane\":\"calendar\",\"port\":5331,\"truth\":{\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"calendar_write\":\"REQUIRES_CALENDAR_PROVIDER_AND_APPROVAL\",\"approval_required\":\"TRUE\",\"receipt_writing\":\"LIVE\"},\"capabilities\":[\"create_calendar_work_order\",\"generate_event_payload\",\"generate_ics_metadata\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T07:04:02.411177+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5331/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  3,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5331/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5331/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  9,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Calendar Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody {\n  margin:0;\n  background:#07101f;\n  color:#f4f8ff;\n  font-family:Segoe UI, Arial, sans-serif;\n}\nmain {\n  width:min(980px,94vw);\n  margin:0 auto;\n  padding:40px 0;\n}\n.card {\n  border:1px solid #294766;\n  border-radius:24px;\n  background:#101d32;\n  padding:26px;\n}\nh1 {\n  font-size:44px;\n  letter-spacing:-.04em;\n}\ntd {\n  border-bottom:1px solid #294766;\n  padding:10px;\n}\nli {\n  margin:8px 0;\n",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_calendar_runtime",
+                              "role":  "Calendar runtime status only"
+                          },
+                          {
+                              "name":  "leeway_phone_runtime",
+                              "base_url":  "http://127.0.0.1:5332",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5332/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_phone_runtime\",\"title\":\"Leeway Phone Runtime\",\"lane\":\"phone\",\"port\":5332,\"created_at\":\"2026-07-07T07:04:02.449673+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5332/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  29,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_phone_runtime\",\"title\":\"Leeway Phone Runtime\",\"lane\":\"phone\",\"port\":5332,\"created_at\":\"2026-07-07T07:04:02.449673+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5332/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  39,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_phone_runtime\",\"title\":\"Leeway Phone Runtime\",\"lane\":\"phone\",\"port\":5332,\"truth\":{\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"phone_sms_call\":\"REQUIRES_DEVICE_OR_PROVIDER_CONNECTION_AND_APPROVAL\",\"approval_required\":\"TRUE\",\"receipt_writing\":\"LIVE\"},\"capabilities\":[\"create_phone_work_order\",\"call_after_approval\",\"sms_after_approval\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T07:04:02.493043+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5332/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5332/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5332/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  9,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Phone Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody {\n  margin:0;\n  background:#07101f;\n  color:#f4f8ff;\n  font-family:Segoe UI, Arial, sans-serif;\n}\nmain {\n  width:min(980px,94vw);\n  margin:0 auto;\n  padding:40px 0;\n}\n.card {\n  border:1px solid #294766;\n  border-radius:24px;\n  background:#101d32;\n  padding:26px;\n}\nh1 {\n  font-size:44px;\n  letter-spacing:-.04em;\n}\ntd {\n  border-bottom:1px solid #294766;\n  padding:10px;\n}\nli {\n  margin:8px 0;\n}\n.",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_phone_runtime",
+                              "role":  "Phone runtime status only, no phone action"
+                          },
+                          {
+                              "name":  "leeway_browser_runtime",
+                              "base_url":  "http://127.0.0.1:5333",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5333/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_browser_runtime\",\"title\":\"Leeway Browser Runtime\",\"lane\":\"browser\",\"port\":5333,\"created_at\":\"2026-07-07T07:04:02.918822+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5333/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  427,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_browser_runtime\",\"title\":\"Leeway Browser Runtime\",\"lane\":\"browser\",\"port\":5333,\"created_at\":\"2026-07-07T07:04:02.918822+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5333/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  27,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_browser_runtime\",\"title\":\"Leeway Browser Runtime\",\"lane\":\"browser\",\"port\":5333,\"truth\":{\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"browser_automation\":\"SHELL_READY_REQUIRES_PLAYWRIGHT_WIRING\",\"approval_required\":\"TRUE_FOR_EXTERNAL_ACTIONS\",\"receipt_writing\":\"LIVE\"},\"capabilities\":[\"create_browser_work_order\",\"research_page_plan\",\"clicking_after_approval\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T07:04:02.964176+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5333/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  3,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5333/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5333/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  9,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Browser Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody {\n  margin:0;\n  background:#07101f;\n  color:#f4f8ff;\n  font-family:Segoe UI, Arial, sans-serif;\n}\nmain {\n  width:min(980px,94vw);\n  margin:0 auto;\n  padding:40px 0;\n}\n.card {\n  border:1px solid #294766;\n  border-radius:24px;\n  background:#101d32;\n  padding:26px;\n}\nh1 {\n  font-size:44px;\n  letter-spacing:-.04em;\n}\ntd {\n  border-bottom:1px solid #294766;\n  padding:10px;\n}\nli {\n  margin:8px 0;\n}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_browser_runtime",
+                              "role":  "Browser runtime status only, no browser control"
+                          },
+                          {
+                              "name":  "leeway_desktop_runtime",
+                              "base_url":  "http://127.0.0.1:5334",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5334/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_desktop_runtime\",\"title\":\"Leeway Desktop Runtime\",\"lane\":\"desktop\",\"port\":5334,\"created_at\":\"2026-07-07T07:04:03.001688+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5334/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  25,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_desktop_runtime\",\"title\":\"Leeway Desktop Runtime\",\"lane\":\"desktop\",\"port\":5334,\"created_at\":\"2026-07-07T07:04:03.001688+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5334/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  29,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_desktop_runtime\",\"title\":\"Leeway Desktop Runtime\",\"lane\":\"desktop\",\"port\":5334,\"truth\":{\"startup_autovoice\":\"DISABLED\",\"receipt_writing\":\"LIVE\",\"approval_required\":\"TRUE\",\"work_order_storage\":\"LIVE\",\"container\":\"LIVE\",\"host_desktop_control\":\"DISABLED_UNTIL_INTENTIONALLY_REWIRED\"},\"capabilities\":[\"create_desktop_work_order\",\"desktop_action_plan\",\"host_control_after_safe_rewire\",\"return_receipt\"],\"work_order_count\":0,\"created_at\":\"2026-07-07T07:04:03.034582+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5334/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5334/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5334/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  10,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Desktop Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody {\n  margin:0;\n  background:#07101f;\n  color:#f4f8ff;\n  font-family:Segoe UI, Arial, sans-serif;\n}\nmain {\n  width:min(980px,94vw);\n  margin:0 auto;\n  padding:40px 0;\n}\n.card {\n  border:1px solid #294766;\n  border-radius:24px;\n  background:#101d32;\n  padding:26px;\n}\nh1 {\n  font-size:44px;\n  letter-spacing:-.04em;\n}\ntd {\n  border-bottom:1px solid #294766;\n  padding:10px;\n}\nli {\n  margin:8px 0;\n}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_desktop_runtime",
+                              "role":  "Desktop runtime status only, no desktop control"
+                          },
+                          {
+                              "name":  "leeway_performance_runtime",
+                              "base_url":  "http://127.0.0.1:5338",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5338/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_performance_runtime\",\"lane\":\"performance\",\"port\":5338,\"power_level\":10,\"created_at\":\"2026-07-07T07:04:03.078304+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5338/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  34,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_performance_runtime\",\"lane\":\"performance\",\"port\":5338,\"power_level\":10,\"created_at\":\"2026-07-07T07:04:03.078304+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5338/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  40,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_performance_runtime\",\"lane\":\"performance\",\"power_level\":10,\"truth\":{\"rap\":\"LIVE_PARTIAL_QWEN_TTS_CADENCE\",\"songwriting\":\"LIVE\",\"spoken_word\":\"LIVE\",\"singing\":\"SHELL_READY_REQUIRES_SINGING_MODEL\",\"voice_render\":\"USES_AGENT_LEE_QWEN_VOICE\",\"not_fake\":true},\"capabilities\":[\"rap_create\",\"song_create\",\"sing_create_work_order\",\"performance_chunks\",\"audio_chunk_render\",\"receipts\"],\"work_order_count\":2,\"created_at\":\"2026-07-07T07:04:03.123256+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5338/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5338/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5338/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  10,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Performance Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody { margin:0; background:#070a12; color:#f4f8ff; font-family:Segoe UI,Arial; }\nmain { width:min(980px,94vw); margin:0 auto; padding:40px 0; }\n.card { border:1px solid #294766; border-radius:24px; background:#101d32; padding:26px; }\n.badge { color:#58c7ff; font-weight:900; letter-spacing:2px; text-transform:uppercase; }\nh1 { font-size:44px; letter-spacing:-.04em; }\nli { margin:8px 0; }\n\u003c/sty",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_performance_runtime",
+                              "role":  "Performance runtime status only, no benchmark"
+                          },
+                          {
+                              "name":  "leeway_workboard_runtime",
+                              "base_url":  "http://127.0.0.1:5339",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5339/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_workboard_runtime\",\"lane\":\"workboard\",\"port\":5339,\"created_at\":\"2026-07-07T07:04:03.165885+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5339/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  44,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_workboard_runtime\",\"lane\":\"workboard\",\"port\":5339,\"created_at\":\"2026-07-07T07:04:03.165885+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5339/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  75,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_workboard_runtime\",\"lane\":\"workboard\",\"capabilities\":[\"visible_operational_trace\",\"thinking_status\",\"todo_list\",\"step_completion\",\"approval_waiting_state\",\"execution_state\",\"blocker_state\",\"artifact_state\",\"receipts\"],\"task_count\":10,\"created_at\":\"2026-07-07T07:04:03.257646+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5339/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  2,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5339/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5339/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  47,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Workboard\u003c/title\u003e\n\u003cstyle\u003e\nbody { margin:0; background:#07101f; color:#f4f8ff; font-family:Segoe UI,Arial; }\nmain { width:min(1100px,94vw); margin:0 auto; padding:36px 0; }\n.card { border:1px solid #294766; background:#101d32; border-radius:24px; padding:26px; margin-bottom:18px; }\n.badge { color:#58c7ff; font-weight:900; letter-spacing:2px; text-transform:uppercase; }\nh1 { font-size:42px; }\nli { margin:10px 0; }\n.status { color:",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  false,
+                              "container":  "leeway_workboard_runtime",
+                              "role":  "Workboard runtime status only"
+                          },
+                          {
+                              "name":  "leeway_executive_runtime",
+                              "base_url":  "http://127.0.0.1:5340",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:5340/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\"ok\":true,\"runtime\":\"leeway_executive_runtime\",\"lane\":\"executive_operating_layer\",\"port\":5340,\"power_level\":10,\"created_at\":\"2026-07-07T07:04:03.342370+00:00\"}",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:5340/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  45,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_executive_runtime\",\"lane\":\"executive_operating_layer\",\"port\":5340,\"power_level\":10,\"created_at\":\"2026-07-07T07:04:03.342370+00:00\"}",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5340/status",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  27,
+                                                   "body_preview":  "{\"ok\":true,\"runtime\":\"leeway_executive_runtime\",\"power_level\":10,\"accord_count\":20,\"capabilities\":[\"executive_attention_filter\",\"r_and_d_integrity_loop\",\"hypothesis_driven_planning\",\"prototype_discipline\",\"definition_of_done\",\"visible_operational_trace\",\"todo_enforcement\",\"runtime_lane_routing\",\"approval_gate_detection\",\"anti_repetition_persona_guard\",\"automation_builder_intent\",\"accessibility_voice_policy\",\"receipt_generation\"],\"connected_services\":{\"workboard\":\"http://leeway_workboard_runtime:",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5340/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  4,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5340/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  1,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:5340/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  72,
+                                                   "body_preview":  "\u003c!doctype html\u003e\n\u003chtml\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"/\u003e\n\u003ctitle\u003eLeeway Executive Runtime\u003c/title\u003e\n\u003cstyle\u003e\nbody { margin:0; background:#060b14; color:#f3f7ff; font-family:Segoe UI,Arial; }\nmain { width:min(1180px,94vw); margin:0 auto; padding:36px 0; }\n.card { border:1px solid #2d4a69; background:#101b2d; border-radius:24px; padding:26px; margin-bottom:18px; }\n.badge { color:#5ed2ff; font-weight:900; letter-spacing:2px; text-transform:uppercase; }\nh1 { font-size:42px; margin-bottom:6px; }\n.grid { dis",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "leeway_executive_runtime",
+                              "role":  "Executive runtime status only"
+                          },
+                          {
+                              "name":  "agent_lee_code_mode",
+                              "base_url":  "http://127.0.0.1:8080",
+                              "get_only":  true,
+                              "success":  true,
+                              "first_success_url":  "http://127.0.0.1:8080/health",
+                              "first_status_code":  200,
+                              "first_body_preview":  "{\n  \"ok\": true,\n  \"router\": \"agent-lee-brainfix\",\n  \"port\": 8080,\n  \"ollama\": \"http://ollama:11434\",\n  \"ollamaModel\": \"qwen3:latest\",\n  \"runtimeDir\": \"/app/runtime\",\n  \"languagePolicyPath\": \"/app/runtime/agent-lee-language-policy.json\",\n  \"conversationManifestPath\": \"/app/runtime/agent-lee-conversation-abilities.manifest.json\",\n  \"canonical\": true,\n  \"agentId\": \"agent-lee\",\n  \"agentMode\": \"code-mode\",\n  \"role\": \"supreme-agent-lead\",\n  \"instanceContract\": \"canonical-agent-lee-code-mode\",\n  \"sourc",
+                              "attempts":  [
+                                               {
+                                                   "url":  "http://127.0.0.1:8080/health",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  1977,
+                                                   "body_preview":  "{\n  \"ok\": true,\n  \"router\": \"agent-lee-brainfix\",\n  \"port\": 8080,\n  \"ollama\": \"http://ollama:11434\",\n  \"ollamaModel\": \"qwen3:latest\",\n  \"runtimeDir\": \"/app/runtime\",\n  \"languagePolicyPath\": \"/app/runtime/agent-lee-language-policy.json\",\n  \"conversationManifestPath\": \"/app/runtime/agent-lee-conversation-abilities.manifest.json\",\n  \"canonical\": true,\n  \"agentId\": \"agent-lee\",\n  \"agentMode\": \"code-mode\",\n  \"role\": \"supreme-agent-lead\",\n  \"instanceContract\": \"canonical-agent-lee-code-mode\",\n  \"sourc",
+                                                   "error":  ""
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:8080/status",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  5,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:8080/ready",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  0,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:8080/policy",
+                                                   "method":  "GET",
+                                                   "success":  false,
+                                                   "status_code":  404,
+                                                   "elapsed_ms":  0,
+                                                   "body_preview":  "",
+                                                   "error":  "The remote server returned an error: (404) Not Found."
+                                               },
+                                               {
+                                                   "url":  "http://127.0.0.1:8080/",
+                                                   "method":  "GET",
+                                                   "success":  true,
+                                                   "status_code":  200,
+                                                   "elapsed_ms":  11,
+                                                   "body_preview":  "{\n  \"ok\": true,\n  \"message\": \"Agent Lee router. See /health for details.\",\n  \"routes\": \"/routes\",\n  \"health\": \"/health\"\n}",
+                                                   "error":  ""
+                                               }
+                                           ],
+                              "attempts_count":  5,
+                              "post_performed":  false,
+                              "mutation_performed":  false,
+                              "device_control_performed":  false,
+                              "required":  true,
+                              "container":  "agent_lee_code_mode",
+                              "role":  "Code mode status only, no code execution"
+                          }
+                      ],
+    "required_failures":  [
+
+                          ],
+    "optional_failures":  [
+
+                          ],
+    "proof_decision":  {
+                           "single_use_runtime_status_proof":  true,
+                           "exact_owner_approval_present":  true,
+                           "exact_owner_approval_text":  "I, Leonard J Lee, explicitly approve one single-use Standards-bound runtime proof for the locked active scope from 441R. I understand this authorizes only the specific proof defined by the next gate and does not authorize Docker exec, Docker mutation, package creation, device control, Telegram posting, model calls, browser control, image generation, voice generation, or physical action.",
+                           "gate_442_clean":  true,
+                           "scope_441R_final":  true,
+                           "global_governance_451_clean":  true,
+                           "skill_registry_452_clean":  true,
+                           "endpoints_checked":  18,
+                           "required_endpoints_checked":  8,
+                           "required_success":  8,
+                           "required_failures":  0,
+                           "optional_success":  10,
+                           "optional_failures":  0,
+                           "runtime_status_proof_passed":  true,
+                           "runtime_contacts_performed":  true,
+                           "get_only":  true,
+                           "post_performed":  false,
+                           "runtime_mutation_performed":  false,
+                           "skill_execution_performed":  false,
+                           "code_mode_execution_performed":  false,
+                           "performance_execution_performed":  false,
+                           "benchmark_execution_performed":  false,
+                           "model_call_performed":  false,
+                           "browser_control_performed":  false,
+                           "desktop_control_performed":  false,
+                           "phone_control_performed":  false,
+                           "discovery_scan_performed":  false,
+                           "docker_exec_performed":  false,
+                           "docker_mutation_performed":  false,
+                           "device_control_performed":  false,
+                           "physical_action_performed":  false,
+                           "telegram_posting_performed":  false,
+                           "package_created":  false,
+                           "next_route":  "453-runtime-capability-proof-plan-no-execute.ps1"
+                       },
+    "docs":  [
+                 {
+                     "doc":  "standards_bound_runtime_status_proof",
+                     "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-64A-standards-bound-runtime-status-proof\\docs\\standards-bound-runtime-status-proof-442A.md",
+                     "exists":  true
+                 }
+             ],
+    "counts":  {
+                   "endpoints_checked":  18,
+                   "required_endpoints_checked":  8,
+                   "required_success":  8,
+                   "required_failures":  0,
+                   "optional_success":  10,
+                   "optional_failures":  0,
+                   "docs":  1
+               },
+    "recommended_next_script":  "453-runtime-capability-proof-plan-no-execute.ps1"
+}

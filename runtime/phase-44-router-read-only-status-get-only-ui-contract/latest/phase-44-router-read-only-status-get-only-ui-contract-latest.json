@@ -1,0 +1,246 @@
+﻿{
+    "version":  "LEEWAY_PHASE_44_ROUTER_READ_ONLY_STATUS_GET_ONLY_UI_CONTRACT_343",
+    "phase":  44,
+    "timestamp":  "2026-07-06T16:37:43",
+    "verdict":  "LEEWAY_PHASE_44_ROUTER_READ_ONLY_STATUS_GET_ONLY_UI_CONTRACT_343_NO_EXECUTE_CLEAN",
+    "router_read_only_status_get_only_ui_contract":  true,
+    "ui_contract_only":  true,
+    "contract_only":  true,
+    "proposed_page":  "/router-status",
+    "proposed_api_base":  "/api/router-status",
+    "proposed_get_routes":  [
+                                {
+                                    "route":  "/api/router-status/summary",
+                                    "method":  "GET",
+                                    "source":  "Phase 340/341/342 proof artifacts",
+                                    "purpose":  "Show router identity, locked authority, and passive status summary."
+                                },
+                                {
+                                    "route":  "/api/router-status/readiness",
+                                    "method":  "GET",
+                                    "source":  "phase-44-router-read-only-status-readiness-plan-latest.json",
+                                    "purpose":  "Show router readiness checklist and future gates."
+                                },
+                                {
+                                    "route":  "/api/router-status/passive-network",
+                                    "method":  "GET",
+                                    "source":  "saved passive proof artifacts only",
+                                    "purpose":  "Show passive network evidence from proof artifacts only."
+                                },
+                                {
+                                    "route":  "/api/router-status/safety",
+                                    "method":  "GET",
+                                    "source":  "342 no-control interface contract",
+                                    "purpose":  "Show blocked router/network actions and false authority flags."
+                                }
+                            ],
+    "forbidden_routes":  [
+                             {
+                                 "route":  "/api/router-status/login",
+                                 "method":  "POST",
+                                 "reason":  "would use router credentials"
+                             },
+                             {
+                                 "route":  "/api/router-status/admin/open",
+                                 "method":  "POST",
+                                 "reason":  "would open router admin UI"
+                             },
+                             {
+                                 "route":  "/api/router-status/scan",
+                                 "method":  "POST",
+                                 "reason":  "would actively scan network"
+                             },
+                             {
+                                 "route":  "/api/router-status/ports",
+                                 "method":  "POST",
+                                 "reason":  "would scan ports"
+                             },
+                             {
+                                 "route":  "/api/router-status/config/read",
+                                 "method":  "POST",
+                                 "reason":  "would access router config"
+                             },
+                             {
+                                 "route":  "/api/router-status/config/write",
+                                 "method":  "POST",
+                                 "reason":  "would mutate router config"
+                             },
+                             {
+                                 "route":  "/api/router-status/reboot",
+                                 "method":  "POST",
+                                 "reason":  "would reboot router"
+                             },
+                             {
+                                 "route":  "/api/router-status/firmware/update",
+                                 "method":  "POST",
+                                 "reason":  "would mutate firmware"
+                             },
+                             {
+                                 "route":  "/api/router-status/wifi/change",
+                                 "method":  "POST",
+                                 "reason":  "would mutate Wi-Fi settings"
+                             },
+                             {
+                                 "route":  "/api/router-status/dns/change",
+                                 "method":  "POST",
+                                 "reason":  "would mutate DNS settings"
+                             },
+                             {
+                                 "route":  "/api/router-status/dhcp/change",
+                                 "method":  "POST",
+                                 "reason":  "would mutate DHCP settings"
+                             },
+                             {
+                                 "route":  "/api/router-status/firewall/change",
+                                 "method":  "POST",
+                                 "reason":  "would mutate firewall settings"
+                             },
+                             {
+                                 "route":  "/api/router-status/upnp",
+                                 "method":  "POST",
+                                 "reason":  "would query or mutate UPnP"
+                             },
+                             {
+                                 "route":  "/api/router-status/snmp",
+                                 "method":  "POST",
+                                 "reason":  "would query SNMP"
+                             },
+                             {
+                                 "route":  "/api/router-status/bridge/deploy",
+                                 "method":  "POST",
+                                 "reason":  "would deploy bridge"
+                             },
+                             {
+                                 "route":  "/api/router-status/unlock",
+                                 "method":  "POST",
+                                 "reason":  "would change authority state"
+                             }
+                         ],
+    "proposed_files":  [
+                           {
+                               "path":  "src\\app\\api\\router-status\\[...path]\\route.ts",
+                               "purpose":  "GET-only Next.js API route for router status/readiness/passive-network/safety.",
+                               "create_in_343":  false
+                           },
+                           {
+                               "path":  "src\\lib\\routerStatusClient.ts",
+                               "purpose":  "GET-only browser client.",
+                               "create_in_343":  false
+                           },
+                           {
+                               "path":  "src\\components\\AgentLeeRouterStatusPanel.tsx",
+                               "purpose":  "No-action router status panel.",
+                               "create_in_343":  false
+                           },
+                           {
+                               "path":  "src\\app\\router-status\\page.tsx",
+                               "purpose":  "Cockpit page for router read-only status.",
+                               "create_in_343":  false
+                           }
+                       ],
+    "required_ui_safety_copy":  [
+                                    "Locked GET-only router readiness.",
+                                    "This page cannot log into the router, use credentials, open the admin page, scan the network, scan ports, read router config, mutate router config, reboot router, deploy a bridge, or perform physical action.",
+                                    "POST routes are blocked.",
+                                    "Router action authority remains false."
+                                ],
+    "ui_display_cards":  [
+                             "Identity: SAX2V1S Home Router",
+                             "Authority: LOCKED_READ_ONLY_DRAFT_NO_EXECUTE",
+                             "Readiness checklist",
+                             "Passive network facts",
+                             "No-control policy",
+                             "Blocked router actions"
+                         ],
+    "acceptance_gates_for_344":  [
+                                     "343 UI contract clean",
+                                     "342 interface contract clean",
+                                     "341 readiness plan clean",
+                                     "340 router contract clean",
+                                     "Clear Skies intact",
+                                     "GET-only API route only",
+                                     "no POST action route",
+                                     "no router login",
+                                     "no credential use",
+                                     "no admin page open",
+                                     "no network scan",
+                                     "no port scan",
+                                     "no router config read",
+                                     "no router config mutation",
+                                     "no reboot",
+                                     "no bridge deploy"
+                                 ],
+    "target_asset":  "SAX2V1S Home Router",
+    "alternate_asset":  "SAX2V1S.lan",
+    "patch_applied_in_343":  false,
+    "source_files_created_in_343":  false,
+    "frontend_files_created_in_343":  false,
+    "api_routes_created_in_343":  false,
+    "docker_created_in_343":  false,
+    "process_started_in_343":  false,
+    "process_restarted_in_343":  false,
+    "process_stopped_in_343":  false,
+    "valid_save_performed_in_343":  false,
+    "enrichment_run_in_343":  false,
+    "router_login_performed":  false,
+    "router_credentials_used":  false,
+    "router_admin_page_opened":  false,
+    "router_config_read":  false,
+    "router_config_mutated":  false,
+    "router_rebooted":  false,
+    "router_firmware_updated":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "snmp_query_performed":  false,
+    "upnp_query_performed":  false,
+    "upnp_mutation_performed":  false,
+    "mqtt_publish_performed":  false,
+    "protocol_translator_deployed":  false,
+    "iot_bridge_deployed":  false,
+    "onboarding_performed":  false,
+    "device_control_performed":  false,
+    "execution_performed":  false,
+    "physical_action_lane_performed":  false,
+    "write_scope":  "PHASE_44_ROUTER_READ_ONLY_STATUS_GET_ONLY_UI_CONTRACT_ONLY",
+    "passive_probe_summary":  {
+                                  "ip_configuration_probe_count":  5,
+                                  "default_route_probe_count":  2,
+                                  "network_adapter_probe_count":  7
+                              },
+    "proof_chain":  {
+                        "interface_342_clean":  true,
+                        "plan_341_clean":  true,
+                        "contract_340_clean":  true,
+                        "phone_summary_339_clean":  true,
+                        "clear_skies":  true
+                    },
+    "safety":  {
+                   "no_patch_in_343":  true,
+                   "no_process_start_in_343":  true,
+                   "no_process_restart_in_343":  true,
+                   "no_process_stop_in_343":  true,
+                   "no_docker_created_in_343":  true,
+                   "no_save_in_343":  true,
+                   "no_router_login":  true,
+                   "no_router_credentials":  true,
+                   "no_router_admin_page_open":  true,
+                   "no_router_config_read":  true,
+                   "no_router_config_write":  true,
+                   "no_router_reboot":  true,
+                   "no_router_firmware_update":  true,
+                   "no_network_scan":  true,
+                   "no_port_scan":  true,
+                   "no_snmp_query":  true,
+                   "no_upnp_query":  true,
+                   "no_upnp_mutation":  true,
+                   "no_mqtt_publish":  true,
+                   "no_protocol_translator_deploy":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_device_control":  true,
+                   "no_onboarding":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "344-apply-router-read-only-status-get-only-ui-no-execute.ps1"
+}

@@ -1,0 +1,17 @@
+﻿{
+    "version":  "LEEWAY_APPROVE_AND_TEST_REAL_OPEN_NOTEPAD_ALPHA_2026-07-05",
+    "updated_at":  "2026-07-05T18:12:53",
+    "approval_added_by":  "script_171",
+    "approved_count_added":  1,
+    "approved":  [
+                     {
+                         "approval_id":  "approved-open-notepad-20260705-181253-9bd950471de5",
+                         "action":  "real_open_app",
+                         "risk_tier":  "controlled_physical",
+                         "state":  "APPROVED",
+                         "expires_at":  "2026-07-05T18:22:53",
+                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\approval-gate\\ledger\\approved\\approved-open-notepad-20260705-181253-9bd950471de5.approval.json",
+                         "expected_result":  "approval_validates_but_execution_disabled"
+                     }
+                 ]
+}

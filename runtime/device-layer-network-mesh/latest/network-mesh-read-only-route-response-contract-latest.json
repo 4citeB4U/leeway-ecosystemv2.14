@@ -1,0 +1,90 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_MESH_READ_ONLY_ROUTE_RESPONSE_CONTRACT_257",
+    "timestamp":  "2026-07-05T22:41:51",
+    "family":  "network_mesh",
+    "route_response_contract":  {
+                                    "/network-mesh/discover":  {
+                                                                   "ok":  "bool",
+                                                                   "family":  "network_mesh",
+                                                                   "mode":  "READ_ONLY_NO_TAILSCALE_EXECUTE",
+                                                                   "patch":  "LEEWAY_NETWORK_MESH_READ_ONLY_ROUTES_PATCH_258",
+                                                                   "discovered_count":  "int",
+                                                                   "nodes":  "array",
+                                                                   "tailscale_cli_invoked":  false,
+                                                                   "tailscale_api_invoked":  false,
+                                                                   "tailnet_authenticated":  false,
+                                                                   "tailnet_joined":  false,
+                                                                   "network_mutation_executed":  false
+                                                               },
+                                    "/network-mesh/status":  {
+                                                                 "ok":  "bool",
+                                                                 "family":  "network_mesh",
+                                                                 "mode":  "READ_ONLY_NO_TAILSCALE_EXECUTE",
+                                                                 "discovered_count":  "int",
+                                                                 "tailscale_available":  "bool",
+                                                                 "tailscale_cli_invoked":  false,
+                                                                 "tailscale_api_invoked":  false,
+                                                                 "tailnet_authenticated":  false,
+                                                                 "tailnet_joined":  false,
+                                                                 "acl_changed":  false,
+                                                                 "route_advertised":  false,
+                                                                 "exit_node_enabled":  false,
+                                                                 "subnet_router_enabled":  false,
+                                                                 "firewall_mutated":  false,
+                                                                 "dns_mutated":  false,
+                                                                 "network_settings_mutated":  false,
+                                                                 "tunnel_started":  false,
+                                                                 "approval_required_for_tailscale":  true,
+                                                                 "approval_required_for_network_mutation":  true
+                                                             },
+                                    "/network-mesh/registry":  {
+                                                                   "ok":  "bool",
+                                                                   "family":  "network_mesh",
+                                                                   "registry_status":  "READ_ONLY_REGISTRY_ROUTE_ACTIVE",
+                                                                   "discovered_count":  "int",
+                                                                   "normalized_nodes":  "array",
+                                                                   "tailscale_cli_invoked":  false,
+                                                                   "tailscale_api_invoked":  false,
+                                                                   "network_mutation_executed":  false
+                                                               },
+                                    "/tailscale/status":  {
+                                                              "ok":  "bool",
+                                                              "family":  "network_mesh",
+                                                              "tailscale_status":  "DISABLED_CONTRACT_ONLY",
+                                                              "tailscale_cli_invoked":  false,
+                                                              "tailscale_api_invoked":  false,
+                                                              "tailnet_authenticated":  false,
+                                                              "tailnet_joined":  false,
+                                                              "approval_required":  true,
+                                                              "network_mutation_executed":  false
+                                                          },
+                                    "/tailscale/policy":  {
+                                                              "ok":  "bool",
+                                                              "family":  "network_mesh",
+                                                              "policy_status":  "READ_ONLY_POLICY_ROUTE_ACTIVE",
+                                                              "allowed_without_approval":  "array",
+                                                              "requires_approval":  "array",
+                                                              "tailscale_cli_invoked":  false,
+                                                              "tailscale_api_invoked":  false,
+                                                              "acl_changed":  false,
+                                                              "firewall_mutated":  false,
+                                                              "network_settings_mutated":  false
+                                                          }
+                                },
+    "non_goals":  [
+                      "no tailscale CLI invocation",
+                      "no Tailscale API invocation",
+                      "no login",
+                      "no auth key use",
+                      "no tailnet join",
+                      "no ACL mutation",
+                      "no route advertisement",
+                      "no exit node enablement",
+                      "no subnet router enablement",
+                      "no firewall mutation",
+                      "no DNS mutation",
+                      "no tunnel start",
+                      "no network settings mutation",
+                      "no physical action"
+                  ]
+}

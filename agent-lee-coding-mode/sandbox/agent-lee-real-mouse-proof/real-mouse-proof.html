@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agent Lee Real Mouse Proof</title>
+<style>
+  html, body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #070a12;
+    color: white;
+    font-family: Segoe UI, Arial, sans-serif;
+  }
+
+  h1 {
+    margin: 32px 44px 8px;
+    font-size: 44px;
+  }
+
+  .sub {
+    margin: 0 44px;
+    font-size: 22px;
+    color: #b9c6ff;
+  }
+
+  .target {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    margin-left: -130px;
+    margin-top: -130px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 46px;
+    font-weight: 900;
+    background: rgba(255,255,255,0.16);
+    border: 8px solid rgba(255,255,255,0.85);
+    box-shadow: 0 0 35px rgba(255,255,255,0.25);
+    transition: transform 0.08s, background 0.08s, box-shadow 0.08s;
+  }
+
+  .target:hover {
+    transform: scale(1.18);
+    background: rgba(0,255,140,0.62);
+    box-shadow: 0 0 120px rgba(0,255,140,1);
+  }
+
+  #one { left: 22vw; top: 36vh; }
+  #two { left: 50vw; top: 66vh; }
+  #three { left: 78vw; top: 36vh; }
+
+  #cursorDot {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    margin-left: -18px;
+    margin-top: -18px;
+    border-radius: 999px;
+    background: rgba(255, 230, 0, 0.95);
+    box-shadow: 0 0 45px rgba(255, 230, 0, 1);
+    pointer-events: none;
+    z-index: 9999;
+    left: 50vw;
+    top: 50vh;
+  }
+
+  .status {
+    position: fixed;
+    left: 44px;
+    right: 44px;
+    bottom: 34px;
+    padding: 20px 26px;
+    border-radius: 18px;
+    font-size: 28px;
+    background: rgba(0,0,0,0.72);
+  }
+</style>
+</head>
+<body>
+  <h1>Agent Lee Real Mouse Proof</h1>
+  <div class="sub">The yellow dot follows real mouse movement. Targets glow only when the cursor actually crosses them.</div>
+
+  <div class="target" id="one">1</div>
+  <div class="target" id="two">2</div>
+  <div class="target" id="three">3</div>
+  <div id="cursorDot"></div>
+
+  <div class="status" id="status">Waiting for Agent Lee cursor movement...</div>
+
+<script>
+  const dot = document.getElementById("cursorDot");
+  const status = document.getElementById("status");
+
+  document.addEventListener("mousemove", (event) => {
+    dot.style.left = event.clientX + "px";
+    dot.style.top = event.clientY + "px";
+    status.textContent = "Real cursor at X=" + event.clientX + ", Y=" + event.clientY;
+  });
+</script>
+</body>
+</html>

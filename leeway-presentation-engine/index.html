@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeeWay Sovereign Presentation Engine</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dashboard Container (Hidden during Print) -->
+  <div class="dashboard-shell no-print">
+    <header class="dashboard-header">
+      <div class="logo-wrapper">
+        <div class="pulse-ring"></div>
+        <span class="logo-text">LEEWAY</span>
+        <span class="logo-badge">SOVEREIGN PRESENTATION ENGINE</span>
+      </div>
+      <div class="header-actions">
+        <button id="btn-print-deck" class="btn btn-primary">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M18 7H6V3h12v4zm0 5.5c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5-1.5.7-1.5 1.5.7 1.5 1.5 1.5zM16 19H8v-4h8v4zm2-11H6c-1.66 0-3 1.34-3 3v6h4v4h10v-4h4v-6c0-1.66-1.34-3-3-3z"/></svg>
+          Export Deck to PDF
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard-body">
+      <!-- Sidebar Deck Selector -->
+      <aside class="deck-sidebar">
+        <h2 class="sidebar-title">Select Deck</h2>
+        <div id="deck-list" class="deck-list-container">
+          <!-- Dynamic List of Decks -->
+        </div>
+      </aside>
+
+      <!-- Slide Deck Viewport -->
+      <main class="viewport-main">
+        <div id="deck-hero" class="deck-hero-card">
+          <h1 id="hero-title" class="deck-title-main">Loading Decks...</h1>
+          <p id="hero-purpose" class="deck-subtitle"></p>
+          <div class="deck-meta-grid">
+            <div><strong>Audience:</strong> <span id="meta-audience"></span></div>
+            <div><strong>Object ID:</strong> <span id="meta-object-id" class="code-badge"></span></div>
+          </div>
+        </div>
+
+        <!-- Slide Interactive Workspace -->
+        <div class="slide-workspace">
+          <div class="workspace-header">
+            <h3>Interactive Slide View</h3>
+            <div class="slide-nav-controls">
+              <button id="btn-prev-slide" class="btn btn-secondary btn-icon">&larr;</button>
+              <span id="slide-indicator" class="slide-indicator">Slide 1 of 5</span>
+              <button id="btn-next-slide" class="btn btn-secondary btn-icon">&rarr;</button>
+            </div>
+          </div>
+          <div class="active-slide-container">
+            <div id="active-slide-card" class="slide-presentation-card">
+              <span id="active-slide-num" class="slide-num">01</span>
+              <h2 id="active-slide-text" class="slide-header-text">Slide Topic Text</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Architecture Workflow Chart (Dynamic Visual Component) -->
+        <section id="chart-section" class="chart-visualization-card">
+          <h3>Ecosystem Operating Model Chart</h3>
+          <div class="svg-chart-container">
+            <svg viewBox="0 0 800 320" class="workflow-svg">
+              <defs>
+                <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0052D4"/>
+                  <stop offset="100%" stop-color="#4364F7"/>
+                </linearGradient>
+                <linearGradient id="grad-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4a00e0"/>
+                  <stop offset="100%" stop-color="#8e2de2"/>
+                </linearGradient>
+                <linearGradient id="grad-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f857a6"/>
+                  <stop offset="100%" stop-color="#ff5858"/>
+                </linearGradient>
+                <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+                </filter>
+              </defs>
+
+              <!-- Connective Lines -->
+              <path d="M 180,160 L 380,160" stroke="#4364F7" stroke-width="4" stroke-dasharray="8 6" fill="none"/>
+              <path d="M 460,160 L 620,160" stroke="#8e2de2" stroke-width="4" stroke-dasharray="8 6" fill="none"/>
+
+              <!-- Standards Node -->
+              <g filter="url(#shadow)">
+                <rect x="50" y="80" width="130" height="140" rx="16" fill="url(#grad-blue)"/>
+                <text x="115" y="130" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">LEEWAY</text>
+                <text x="115" y="150" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">STANDARDS</text>
+                <text x="115" y="180" text-anchor="middle" fill="#E2E8F0" font-family="Inter" font-size="10" font-weight="500">78 Books of Law</text>
+              </g>
+
+              <!-- Bridge Runtime Node -->
+              <g filter="url(#shadow)">
+                <circle cx="420" cy="160" r="70" fill="url(#grad-teal)"/>
+                <text x="420" y="145" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">BRIDGE</text>
+                <text x="420" y="165" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">RUNTIME</text>
+                <text x="420" y="195" text-anchor="middle" fill="#E2E8F0" font-family="Inter" font-size="10" font-weight="500">Zero-Trust SFU</text>
+              </g>
+
+              <!-- App Node -->
+              <g filter="url(#shadow)">
+                <rect x="620" y="80" width="130" height="140" rx="16" fill="url(#grad-gold)"/>
+                <text x="685" y="130" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">GOVERNED</text>
+                <text x="685" y="150" text-anchor="middle" fill="#FFFFFF" font-family="Outfit" font-size="14" font-weight="700">APPLICATION</text>
+                <text x="685" y="180" text-anchor="middle" fill="#E2E8F0" font-family="Inter" font-size="10" font-weight="500">Traceable Receipts</text>
+              </g>
+
+              <!-- Arrow Heads -->
+              <polygon points="380,160 370,152 370,168" fill="#4364F7"/>
+              <polygon points="620,160 610,152 610,168" fill="#8e2de2"/>
+            </svg>
+          </div>
+        </section>
+
+        <!-- Detailed Slides Outline (List view) -->
+        <section class="slides-outline-card">
+          <h3>Full Presentation Outline</h3>
+          <div id="deck-outline-list" class="slide-outline-container">
+            <!-- Full text outlines -->
+          </div>
+        </section>
+
+        <!-- Proof Mapping Layer -->
+        <section class="proof-mapping-card">
+          <h3>Sovereign Evidence Proof Mapping</h3>
+          <div id="proof-list" class="proof-list-grid">
+            <!-- Dynamic Proof items -->
+          </div>
+        </section>
+
+        <!-- Value & Acknowledgement Section -->
+        <section class="meta-info-card">
+          <div class="info-split">
+            <div class="split-left">
+              <h3>Enterprise Value Alignment</h3>
+              <ul id="value-list" class="value-bullets">
+                <!-- Value bullets -->
+              </ul>
+            </div>
+            <div class="split-right">
+              <h3>Ecosystem Respect & Gratitude</h3>
+              <p id="deck-respect" class="respect-text"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Print Layout (Invisible during Screen, Formatted as Landscape slides for PDF Generation) -->
+  <div id="print-slides-container" class="print-only">
+    <!-- Slides are dynamically cloned here when Print is triggered -->
+  </div>
+
+  <!-- Script Files -->
+  <script>
+    // Fetch and bind JSON decks database
+    let decks = [];
+    let activeDeckIndex = 0;
+    let activeSlideIndex = 0;
+
+    async function loadDecks() {
+      try {
+        const response = await fetch('decks-data.json');
+        decks = await response.json();
+        
+        renderDeckSelector();
+        selectDeck(0);
+      } catch (err) {
+        console.error("Failed to load decks JSON database:", err);
+        document.getElementById('hero-title').innerText = "Database Connection Failed";
+      }
+    }
+
+    function renderDeckSelector() {
+      const listContainer = document.getElementById('deck-list');
+      listContainer.innerHTML = '';
+      decks.forEach((deck, idx) => {
+        const item = document.createElement('div');
+        item.className = `deck-sidebar-item ${idx === activeDeckIndex ? 'active' : ''}`;
+        item.onclick = () => selectDeck(idx);
+        
+        item.innerHTML = `
+          <div class="deck-item-title">${deck.title}</div>
+          <div class="deck-item-meta">${deck.metadata.deckObjectId || 'DECK-' + idx}</div>
+        `;
+        listContainer.appendChild(item);
+      });
+    }
+
+    function selectDeck(index) {
+      activeDeckIndex = index;
+      activeSlideIndex = 0;
+      renderDeckSelector();
+
+      const deck = decks[index];
+      
+      // Update Hero Title
+      document.getElementById('hero-title').innerText = deck.title;
+      document.getElementById('hero-purpose').innerText = deck.metadata.purpose || deck.coreMessage;
+      document.getElementById('meta-audience').innerText = deck.metadata.audience || 'General Enterprise';
+      document.getElementById('meta-object-id').innerText = deck.metadata.deckObjectId || 'LEEWAY-DECK';
+
+      // Render Active Slide
+      updateActiveSlide();
+
+      // Render Presentation Outline list
+      const outlineContainer = document.getElementById('deck-outline-list');
+      outlineContainer.innerHTML = '';
+      deck.slides.forEach((slide, idx) => {
+        const item = document.createElement('div');
+        item.className = 'outline-item';
+        item.innerHTML = `
+          <span class="outline-num">Slide ${String(idx + 1).padStart(2, '0')}</span>
+          <span class="outline-text">${slide}</span>
+        `;
+        outlineContainer.appendChild(item);
+      });
+
+      // Render Proof maps
+      const proofContainer = document.getElementById('proof-list');
+      proofContainer.innerHTML = '';
+      if (deck.proofs && deck.proofs.length > 0) {
+        deck.proofs.forEach(proof => {
+          const card = document.createElement('div');
+          card.className = 'proof-card';
+          card.innerHTML = `
+            <div class="proof-claim">Claim: "${proof.claim}"</div>
+            <div class="proof-artifact">Evidence Path: <span class="path-badge">${proof.artifact}</span></div>
+          `;
+          proofContainer.appendChild(card);
+        });
+      } else {
+        proofContainer.innerHTML = `<div class="no-proof-state">No standard proof mapping required for this strategic deck.</div>`;
+      }
+
+      // Render Value Alignment
+      const valContainer = document.getElementById('value-list');
+      valContainer.innerHTML = '';
+      deck.valueAlignments.forEach(val => {
+        const li = document.createElement('li');
+        li.innerText = val;
+        valContainer.appendChild(li);
+      });
+
+      // Render Respect Text
+      document.getElementById('deck-respect').innerText = deck.respect || 'Designed as an additive governance layer to strengthen modern IT stacks.';
+
+      // Compile Print Slides
+      compilePrintSlides(deck);
+    }
+
+    function updateActiveSlide() {
+      const deck = decks[activeDeckIndex];
+      const totalSlides = deck.slides.length;
+      
+      document.getElementById('slide-indicator').innerText = `Slide ${activeSlideIndex + 1} of ${totalSlides}`;
+      document.getElementById('active-slide-num').innerText = String(activeSlideIndex + 1).padStart(2, '0');
+      document.getElementById('active-slide-text').innerText = deck.slides[activeSlideIndex];
+    }
+
+    function compilePrintSlides(deck) {
+      const printContainer = document.getElementById('print-slides-container');
+      printContainer.innerHTML = '';
+
+      // Cover Page Slide
+      const cover = document.createElement('div');
+      cover.className = 'print-slide-page print-cover';
+      cover.innerHTML = `
+        <div class="print-logo">LEEWAY STANDARDS ORCHESTRATION</div>
+        <h1 class="print-title">${deck.title}</h1>
+        <div class="print-meta-grid">
+          <div><strong>Audience:</strong> ${deck.metadata.audience}</div>
+          <div><strong>Object ID:</strong> ${deck.metadata.deckObjectId}</div>
+          <div><strong>Purpose:</strong> ${deck.metadata.purpose}</div>
+        </div>
+      `;
+      printContainer.appendChild(cover);
+
+      // Core Message / Topics Slide
+      const core = document.createElement('div');
+      core.className = 'print-slide-page';
+      core.innerHTML = `
+        <h2 class="print-slide-header">Executive Core Message</h2>
+        <div class="print-slide-body print-centered">
+          <p class="print-hero-message">${deck.coreMessage || 'Ecosystem governance and orchestration standards.'}</p>
+        </div>
+      `;
+      printContainer.appendChild(core);
+
+      // Slide Outlines (Each outline item gets its own landscape slide page)
+      deck.slides.forEach((slide, idx) => {
+        const page = document.createElement('div');
+        page.className = 'print-slide-page';
+        page.innerHTML = `
+          <div class="print-slide-num">SLIDE ${String(idx + 1).padStart(2, '0')} OF ${deck.slides.length}</div>
+          <h2 class="print-slide-header">${deck.title}</h2>
+          <div class="print-slide-body print-centered">
+            <h3 class="print-slide-content-text">${slide}</h3>
+          </div>
+        `;
+        printContainer.appendChild(page);
+      });
+
+      // Proof Mapping Slide
+      if (deck.proofs && deck.proofs.length > 0) {
+        const proofPage = document.createElement('div');
+        proofPage.className = 'print-slide-page';
+        let proofRows = deck.proofs.map(p => `
+          <div class="print-proof-row">
+            <strong>Claim:</strong> "${p.claim}"<br/>
+            <strong>Evidence:</strong> <code>${p.artifact}</code>
+          </div>
+        `).join('');
+        
+        proofPage.innerHTML = `
+          <h2 class="print-slide-header">Sovereign Proof Matrix</h2>
+          <div class="print-slide-body">
+            <div class="print-proof-grid">${proofRows}</div>
+          </div>
+        `;
+        printContainer.appendChild(proofPage);
+      }
+
+      // Value & Gratitude Slide
+      const finalPage = document.createElement('div');
+      finalPage.className = 'print-slide-page print-final';
+      let valItems = deck.valueAlignments.map(v => `<li>${v}</li>`).join('');
+      finalPage.innerHTML = `
+        <h2 class="print-slide-header">Value Alignment & Ecosystem respect</h2>
+        <div class="print-slide-body print-split-view">
+          <div class="print-split-col">
+            <h4>Value Alignment</h4>
+            <ul>${valItems}</ul>
+          </div>
+          <div class="print-split-col">
+            <h4>Ecosystem Acknowledgements</h4>
+            <p style="font-size: 11pt; line-height: 1.5; color: #CCCCCC;">${deck.respect}</p>
+          </div>
+        </div>
+      `;
+      printContainer.appendChild(finalPage);
+    }
+
+    // Bind Navigation Button Controls
+    document.getElementById('btn-prev-slide').onclick = () => {
+      if (activeSlideIndex > 0) {
+        activeSlideIndex--;
+        updateActiveSlide();
+      }
+    };
+
+    document.getElementById('btn-next-slide').onclick = () => {
+      const deck = decks[activeDeckIndex];
+      if (activeSlideIndex < deck.slides.length - 1) {
+        activeSlideIndex++;
+        updateActiveSlide();
+      }
+    };
+
+    // Print Button
+    document.getElementById('btn-print-deck').onclick = () => {
+      window.print();
+    };
+
+    // Keyboard Arrow navigation support
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        document.getElementById('btn-prev-slide').click();
+      } else if (e.key === 'ArrowRight') {
+        document.getElementById('btn-next-slide').click();
+      }
+    });
+
+    // Run Initializer
+    loadDecks();
+  </script>
+</body>
+</html>

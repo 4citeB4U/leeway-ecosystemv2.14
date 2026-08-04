@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Sovereign-Auditor",
+  "wave": 2,
+  "rank": "Inspector",
+  "primary_function": "Verify random Wave1 nodes and detect topology breach",
+  "tool": "audit_wave2",
+  "uniform": "Restricted"
+}

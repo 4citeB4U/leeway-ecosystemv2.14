@@ -1,0 +1,25 @@
+{
+  "schema": "leeway.agent-lee.latency-budget.v1",
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "targets": {
+    "raw8080Ms": 8000,
+    "adapter8787Ms": 8000,
+    "planMs": 8500,
+    "executeMs": 9000,
+    "warmupMs": 9900,
+    "cacheRefreshMs": 9900
+  },
+  "hotPath": {
+    "prompt": "Say only: Agent Lee online.",
+    "responseMode": "hot_cached_identity_response"
+  },
+  "cachePolicy": {
+    "backgroundWarmupOnly": true,
+    "cachedFabricMayBlockOnOfflineServices": false
+  },
+  "notes": [
+    "Keep the first useful response under ten seconds end-to-end.",
+    "Warmup should refresh cache asynchronously and never block chat.",
+    "Offline fabric nodes must stay recorded as cached blockers, not treated as online."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "selectionId": "AGENT_LEE_QWEN_VISION_MODEL_SELECTION",
+  "provider": "OLLAMA_LOCAL",
+  "containerName": "leeway_ollama",
+  "approvedFamilies": [
+    "qwen3-vl",
+    "qwen2.5-vl",
+    "qwen2-vl",
+    "qwen-vl"
+  ],
+  "preferredFamily": "qwen3-vl",
+  "fallbackFamilies": [
+    "qwen2.5-vl",
+    "qwen2-vl",
+    "qwen-vl"
+  ],
+  "selectedModel": "qwen2.5vl",
+  "selectedModelTag": "qwen2.5vl:7b",
+  "selectionReason": "qwen3-vl was unavailable in local Ollama; qwen2.5vl:7b is now present in the existing leeway_ollama stack and is the newest approved local Qwen vision-capable tag proven by inventory.",
+  "imageInputTestRequired": true,
+  "replacementOfExistingSystem": false,
+  "blockers": [
+    "qwen3-vl was not listed in Ollama tags during the initial inventory",
+    "qwen2.5vl:7b was required as the approved local fallback vision-capable tag"
+  ],
+  "status": "QWEN_VISION_MODEL_SELECTED"
+}

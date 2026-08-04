@@ -1,0 +1,51 @@
+{
+  "migration": "MIG-006A",
+  "target": "LeeWay Workflow Engine",
+  "status": "Implemented",
+  "scope": [
+    "Workflow Engine contract and metadata",
+    "engine lifecycle states",
+    "provider/adapter interface",
+    "n8n adapter discovery",
+    "n8n configuration validation",
+    "Workflow Engine registry",
+    "Runtime Contract linkage",
+    "module registration metadata",
+    "mock adapter validation",
+    "TypeScript build validation",
+    "evidence",
+    "rollback"
+  ],
+  "excluded": [
+    "remove UI-only AutomationCanvas",
+    "execute arbitrary n8n commands",
+    "migrate existing editor",
+    "change opencode.jsonc",
+    "replace server.ts",
+    "integrate OpenCode",
+    "remove Vite",
+    "alter existing Runtime Fabric routes"
+  ],
+  "consumesFromMIG003": [
+    "LeeWayModuleMetadata",
+    "LeeWayModuleContract",
+    "leeWayModuleRegistry"
+  ],
+  "consumesFromMIG004": [
+    "LeeWayRuntimeRequestEnvelope",
+    "LeeWayRuntimeResponseEnvelope"
+  ],
+  "consumesFromMIG005": [
+    "LeeWayCodeEngineProvider"
+  ],
+  "files": [
+    "src\\core\\workflow-engine\\workflow-engine-types.ts",
+    "src\\core\\workflow-engine\\workflow-engine-contract.ts",
+    "src\\core\\workflow-engine\\workflow-engine-registry.ts",
+    "src\\core\\workflow-engine\\n8n-adapter.ts",
+    "src\\core\\workflow-engine\\workflow-engine-mock.ts",
+    "src\\core\\workflow-engine\\index.ts",
+    "migration\\MIG-006-manifest.json"
+  ],
+  "timestampUtc": "2026-07-30T00:16:23.4700691+00:00"
+}

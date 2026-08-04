@@ -1,0 +1,38 @@
+﻿{
+    "projectId":  "LEEWAY_PROJECT::LEEWAY_VSCODE_RUNTIME",
+    "role":  "RUNTIME_HOST",
+    "status":  "ACTIVE",
+    "standardsRootResolved":  {
+                                  "path":  "E:\\.LeeWay-Produucts-File\\.Leeway-new-line-of-products\\LeeWay-Standards",
+                                  "exists":  true
+                              },
+    "runtimeRootResolved":  {
+                                "path":  "E:\\.LeeWay-Produucts-File\\.Leeway-new-line-of-products\\.leeway-vscode",
+                                "exists":  true
+                            },
+    "archiveIsolation":  true,
+    "embeddedStandardsActive":  [
+
+                                ],
+    "vendoredGovernanceActive":  [
+
+                                 ],
+    "edgeLiveClaims":  [
+
+                       ],
+    "forbiddenBridgeLanguage":  [
+
+                                ],
+    "forbiddenVoiceRoutes":  [
+
+                             ],
+    "reportsPathExists":  true,
+    "receiptsPathExists":  true,
+    "packageIdentityStatus":  {
+                                  "state":  "NO_PACKAGE",
+                                  "current":  null,
+                                  "recommended":  null,
+                                  "planPath":  null
+                              },
+    "finalStatus":  "PASS"
+}

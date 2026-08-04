@@ -1,0 +1,281 @@
+{
+  "packet_id": "exec-1783213866-29a1aec6",
+  "request": "Architecture lockdown completed. Load latest canonical architecture and use it as Agent Lee's ecosystem truth map.",
+  "source": "powershell-architecture-lockdown",
+  "user_id": "owner",
+  "task_type": "system",
+  "complexity": "serious",
+  "approval_required": false,
+  "required_lanes": [
+    "leeway_agent_skills",
+    "leeway_skill_router",
+    "leeway_api_gateway"
+  ],
+  "workboard_task_id": "task-1783213866-d1916d7b",
+  "status_phrase": "I'm with you. Let me map it.",
+  "visible_trace": {
+    "state": "THINKING",
+    "message": "Request captured. Capability and routing checks are active.",
+    "steps": [
+      {
+        "index": 1,
+        "text": "Capture the request exactly.",
+        "status": "ACTIVE"
+      },
+      {
+        "index": 2,
+        "text": "Classify task type, urgency, risk, and approval requirement.",
+        "status": "PENDING"
+      },
+      {
+        "index": 3,
+        "text": "Check discovery and available runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 4,
+        "text": "Create Workboard task and visible status.",
+        "status": "PENDING"
+      },
+      {
+        "index": 5,
+        "text": "Build work breakdown and to-do list.",
+        "status": "PENDING"
+      },
+      {
+        "index": 6,
+        "text": "Route to required runtime lanes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 7,
+        "text": "Inventory relevant containers.",
+        "status": "PENDING"
+      },
+      {
+        "index": 8,
+        "text": "Check health routes.",
+        "status": "PENDING"
+      },
+      {
+        "index": 9,
+        "text": "Check capability state.",
+        "status": "PENDING"
+      },
+      {
+        "index": 10,
+        "text": "Create repair recommendations.",
+        "status": "PENDING"
+      },
+      {
+        "index": 11,
+        "text": "Write proof receipt.",
+        "status": "PENDING"
+      },
+      {
+        "index": 12,
+        "text": "Update visible operational trace after major steps.",
+        "status": "PENDING"
+      },
+      {
+        "index": 13,
+        "text": "Validate against original request.",
+        "status": "PENDING"
+      },
+      {
+        "index": 14,
+        "text": "Deliver result or exact blocker.",
+        "status": "PENDING"
+      },
+      {
+        "index": 15,
+        "text": "Store receipt and learning event if needed.",
+        "status": "PENDING"
+      }
+    ]
+  },
+  "accord_applied": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "workboard": {
+    "ok": true,
+    "status_code": 200,
+    "data": {
+      "ok": true,
+      "task": {
+        "task_id": "task-1783213866-d1916d7b",
+        "request": "Architecture lockdown completed. Load latest canonical architecture and use it as Agent Lee's ecosystem truth map.",
+        "source": "powershell-architecture-lockdown",
+        "user_id": "owner",
+        "task_type": "system",
+        "status": "THINKING",
+        "message": "Thinking through the request and preparing the plan.",
+        "current_step": 1,
+        "todo": [
+          {
+            "index": 1,
+            "text": "Capture the request exactly.",
+            "status": "ACTIVE"
+          },
+          {
+            "index": 2,
+            "text": "Classify task type, urgency, risk, and approval requirement.",
+            "status": "PENDING"
+          },
+          {
+            "index": 3,
+            "text": "Check discovery and available runtime lanes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 4,
+            "text": "Create Workboard task and visible status.",
+            "status": "PENDING"
+          },
+          {
+            "index": 5,
+            "text": "Build work breakdown and to-do list.",
+            "status": "PENDING"
+          },
+          {
+            "index": 6,
+            "text": "Route to required runtime lanes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 7,
+            "text": "Inventory relevant containers.",
+            "status": "PENDING"
+          },
+          {
+            "index": 8,
+            "text": "Check health routes.",
+            "status": "PENDING"
+          },
+          {
+            "index": 9,
+            "text": "Check capability state.",
+            "status": "PENDING"
+          },
+          {
+            "index": 10,
+            "text": "Create repair recommendations.",
+            "status": "PENDING"
+          },
+          {
+            "index": 11,
+            "text": "Write proof receipt.",
+            "status": "PENDING"
+          },
+          {
+            "index": 12,
+            "text": "Update visible operational trace after major steps.",
+            "status": "PENDING"
+          },
+          {
+            "index": 13,
+            "text": "Validate against original request.",
+            "status": "PENDING"
+          },
+          {
+            "index": 14,
+            "text": "Deliver result or exact blocker.",
+            "status": "PENDING"
+          },
+          {
+            "index": 15,
+            "text": "Store receipt and learning event if needed.",
+            "status": "PENDING"
+          }
+        ],
+        "blocker": "",
+        "artifact_url": "",
+        "artifact_path": "",
+        "metadata": {
+          "created_by": "leeway_executive_runtime",
+          "power_level": 10,
+          "placeholder_review_count": 17,
+          "distribution_manifest": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\manifests\\leeway-distribution-manifest.json",
+          "latest_architecture": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\leeway-architecture-lockdown\\latest-canonical-architecture.json",
+          "missing_known_count": 1,
+          "secrets_detected_count": 76
+        },
+        "created_at": "2026-07-05T01:11:06.701885+00:00",
+        "updated_at": "2026-07-05T01:11:06.701895+00:00"
+      },
+      "receipt": {
+        "verdict": "LEEWAY_WORKBOARD_TASK_CREATED",
+        "runtime": "leeway_workboard_runtime",
+        "kind": "task_created",
+        "created_at": "2026-07-05T01:11:06.771154+00:00",
+        "task_id": "task-1783213866-d1916d7b",
+        "status": "THINKING",
+        "receipt_path": "/app/receipts/workboard_task_created_1783213866_69f4fb71.receipt.json"
+      }
+    }
+  },
+  "discovery": {
+    "health": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"app\":\"leeway_agent_skills\",\"version\":\"0.1.0-skill-registry\",\"created_at\":\"2026-07-05T01:11:06.823540+00:00\"}"
+    },
+    "capabilities": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"summary\":\"Agent Lee capability registry loaded from Docker discovery.\",\"total_runtime_items\":49,\"running_count\":43,\"entrypoint\":{\"base_url\":\"http://localhost:5320\",\"name\":\"leeway_api_gateway\",\"port\":5320,\"rule\":\"All external requests should route through this gateway when gateway wiring is active.\",\"role\":\"single_entrypoint\"},\"capability_index\":[{\"running\":false,\"lane\":\"discovery\",\"name\":\"leeway_agent_skills\",\"capabilities\":[\"capability_registry\",\"system_discovery\",\"skill_catalog\"],\"ports\":[]},{\"running\":true,\"lane\":\"dashboard\",\"name\":\"leeway_pwa_dashboard\",\"capabilities\":[\"runtime_status_view\",\"task_status_view\",\"mobile_pwa_shell\"],\"ports\":[5337]},{\"running\":true,\"lane\":\"installer\",\"name\":\"leeway_installer_runtime\",\"capabilities\":[\"installer_manifest\",\"deployment_bundle_plan\"],\"ports\":[5336]},{\"running\":true,\"lane\":\"license\",\"name\":\"leeway_license_runtime\",\"capabilities\":[\"license_records\",\"customer_authorization_plan\"],\"ports\":[5335]},{\"running\":true,\"lane\":\"desktop\",\"name\":\"leeway_desktop_runtime\",\"capabilities\":[\"desktop_work_orders\",\"host_control_disabled_until_rewired\"],\"ports\":[5334]},{\"running\":true,\"lane\":\"browser\",\"name\":\"leeway_browser_runtime\",\"capabilities\":[\"browser_work_orders\",\"research_page_plan\",\"playwright_wiring_needed\"],\"ports\":[5333]},{\"running\":true,\"lane\":\"phone\",\"name\":\"leeway_phone_runtime\",\"capabilities\":[\"phone_work_orders\",\"approval_required\",\"device_or_provider_required\"],\"ports\":[5332]},{\"running\":true,\"lane\":\"calendar\",\"name\":\"leeway_calendar_runtime\",\"capabilities\":[\"calendar_work_orders\",\"approval_required\",\"provider_required_for_write\"],\"ports\":[5331]},{\"running\":true,\"lane\":\"email\",\"name\":\"leeway_email_runtime\",\"capabilities\":[\"email_work_orders\",\"approval_required\",\"provider_required_for_send\"],\"ports\":[5330]},{\"running\":true,\"lane\":\"router\",\"name\":\"leeway_skill_router\",\"capabilities\":[\"planning_governor\",\"approval_routing\",\"work_order_dispatch\"],\"ports\":[5324]},{\"running\":true,\"lane\":\"telegram\",\"name\":\"agent-lee-tele"
+    },
+    "containers": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"containers\":[{\"name\":\"leeway_agent_skills\",\"image\":\"leeway_agent_skills:local\",\"lane\":\"discovery\",\"running\":false,\"container_status\":\"Restarting (1) 44 seconds ago\",\"ports_text\":\"\",\"ports\":[],\"probes\":[],\"capability_summary\":[\"capability_registry\",\"system_discovery\",\"skill_catalog\"],\"discovery_status\":\"DISCOVERED_NOT_RUNNING\"},{\"name\":\"leeway_pwa_dashboard\",\"image\":\"leeway_pwa_dashboard:local\",\"lane\":\"dashboard\",\"running\":true,\"container_status\":\"Up 54 minutes\",\"ports_text\":\"0.0.0.0:5337->5337/tcp, [::]:5337->5337/tcp\",\"ports\":[{\"host_port\":5337,\"container_port\":5337,\"protocol\":\"tcp\"}],\"probes\":[{\"host_port\":5337,\"container_port\":5337,\"base_url\":\"http://localhost:5337\",\"health_ok\":true,\"health_status\":\"200\",\"status_ok\":true,\"status_status\":\"200\",\"openapi_ok\":true,\"openapi_status\":\"200\",\"route_count\":7,\"routes\":[{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5337/health\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5337/status\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5337/work/create\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5337/work/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5337/work\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5337/receipts/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/\",\"url\":\"http://localhost:5337/\"}]}],\"capability_summary\":[\"runtime_status_view\",\"task_status_view\",\"mobile_pwa_shell\"],\"discovery_status\":\"DISCOVERED\"},{\"name\":\"leeway_installer_run"
+    },
+    "routes": {
+      "ok": true,
+      "status_code": 200,
+      "text": "{\"ok\":true,\"routes\":[{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5337/health\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5337/status\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5337/work/create\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5337/work/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5337/work\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5337/receipts/latest\"},{\"container\":\"leeway_pwa_dashboard\",\"lane\":\"dashboard\",\"host_port\":5337,\"method\":\"GET\",\"path\":\"/\",\"url\":\"http://localhost:5337/\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/health\",\"url\":\"http://localhost:5336/health\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/status\",\"url\":\"http://localhost:5336/status\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"POST\",\"path\":\"/work/create\",\"url\":\"http://localhost:5336/work/create\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/work/latest\",\"url\":\"http://localhost:5336/work/latest\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/work\",\"url\":\"http://localhost:5336/work\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"installer\",\"host_port\":5336,\"method\":\"GET\",\"path\":\"/receipts/latest\",\"url\":\"http://localhost:5336/receipts/latest\"},{\"container\":\"leeway_installer_runtime\",\"lane\":\"ins"
+    }
+  },
+  "router_plan": {
+    "ok": true,
+    "status_code": 200,
+    "data": {
+      "ok": true,
+      "skill": "micro_answer",
+      "answer": "I can answer that straight. No heavy plan needed.",
+      "domain": "general",
+      "planning_depth": "MICRO",
+      "receipt": {
+        "verdict": "LEEWAY_MICRO_ROUTE_NO_VISIBLE_PLAN_REQUIRED",
+        "lane": "leeway_skill_router",
+        "version": "0.3.0-planning-governor",
+        "kind": "micro_route",
+        "created_at": "2026-07-05T01:11:06.851720+00:00",
+        "domain": "general",
+        "planning_depth": "MICRO",
+        "receipt_path": "/app/receipts/leeway_skill_router_micro_route_1783213866_03858b08.receipt.json"
+      }
+    }
+  },
+  "created_at": "2026-07-05T01:11:06.907609+00:00",
+  "status": "EXECUTIVE_PACKET_CREATED"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://livelywallpaper.net/schemas/v2.json",
+  "title": "Cerebral Commander",
+  "author": "Agent Lee",
+  "description": "Live system health and control UI for Cerebral, running as your desktop background.",
+  "type": "web",
+  "file": "http://localhost:8765",
+  "preview": "cerebral_icon.ico",
+  "aspectRatio": "16:9",
+  "resizable": true,
+  "web": {
+    "allowContextMenu": false,
+    "allowDevTools": false,
+    "muteAudio": false,
+    "backgroundColor": "#181818"
+  },
+  "tags": ["system", "health", "automation", "Cerebral", "Agent Lee"],
+  "version": "1.0.0"
+}

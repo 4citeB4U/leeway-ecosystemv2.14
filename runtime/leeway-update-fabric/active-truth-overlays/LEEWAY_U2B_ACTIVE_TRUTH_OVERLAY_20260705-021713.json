@@ -1,0 +1,57 @@
+{
+  "verdict": "LEEWAY_U2B_ACTIVE_TRUTH_OVERLAY_CREATED",
+  "created_at": "2026-07-05T02:17:19.7148946-05:00",
+  "overlay_type": "archive_disable_backup_containers",
+  "base_architecture": {
+    "Length": 121
+  },
+  "overlay_path": {
+    "Length": 153
+  },
+  "policy": {
+    "no_deletion": true,
+    "no_restart": true,
+    "no_bridge_sprawl": true,
+    "active_runtime_truth_only": true
+  },
+  "archived_disabled_containers": [
+    {
+      "name": "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+      "action": "ARCHIVE_DISABLE_FROM_ACTIVE_TRUTH",
+      "deletion": "NO",
+      "restart": "NO",
+      "production_lane": "NO",
+      "distribution_include": "NO",
+      "keep_for_recovery": "YES",
+      "reason": "Old Telegram shell backup container. Do not count as active product runtime lane.",
+      "docker_exists": true,
+      "docker_state": "exited",
+      "docker_status": "Exited (137) 35 hours ago",
+      "image": "agent-lee-telegram-shell:latest",
+      "role": "agent_interface_telegram",
+      "rollback": "Remove this entry from active-truth overlay if backup must be reclassified as active after explicit approval."
+    },
+    {
+      "name": "agent-lee-telegram-shell-backup-20260703-144921",
+      "action": "ARCHIVE_DISABLE_FROM_ACTIVE_TRUTH",
+      "deletion": "NO",
+      "restart": "NO",
+      "production_lane": "NO",
+      "distribution_include": "NO",
+      "keep_for_recovery": "YES",
+      "reason": "Old Telegram shell backup container. Do not count as active product runtime lane.",
+      "docker_exists": true,
+      "docker_state": "exited",
+      "docker_status": "Exited (137) 35 hours ago",
+      "image": "agent-lee-telegram-shell:latest",
+      "role": "agent_interface_telegram",
+      "rollback": "Remove this entry from active-truth overlay if backup must be reclassified as active after explicit approval."
+    }
+  ],
+  "active_truth_effect": {
+    "backup_containers_removed_from_active_lane_counts": true,
+    "backup_containers_removed_from_customer_distribution_claims": true,
+    "backup_images_retained_for_recovery": true
+  },
+  "next_action": "Run U2C storage/conference health mapping, then U2D desktop operator proof plan."
+}

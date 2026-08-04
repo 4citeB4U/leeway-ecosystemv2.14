@@ -1,0 +1,23 @@
+node_modules
+.vscode
+.leeway-vscode
+Archive
+Archive/
+logs
+tmp
+tmp/
+*.log
+.git
+.gitignore
+npm-debug.log
+.DS_Store
+dist
+build
+coverage
+Leeway Runtime Fabric
+models
+tests
+!Leeway Runtime Fabric/capability-registry/registry/
+!Leeway Runtime Fabric/capability-registry/registry/**
+!Leeway Runtime Fabric/capability-registry/registry/leeway-universe-loader.mjs
+!Leeway Runtime Fabric/capability-registry/registry/leeway-universe.manifest.json

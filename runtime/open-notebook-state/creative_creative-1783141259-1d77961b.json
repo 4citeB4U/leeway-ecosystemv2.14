@@ -1,0 +1,29 @@
+{
+  "creative_id": "creative-1783141259-1d77961b",
+  "creative_type": "slide_deck",
+  "title": "Create a slide deck package for presenting Agent Lee to customers",
+  "prompt": "Create a slide deck package for presenting Agent Lee to customers",
+  "audience": "",
+  "goal": "Create a complete usable creative production package.",
+  "tone": "clear, practical, production-ready",
+  "duration_minutes": 0,
+  "slide_count": 10,
+  "sections": 0,
+  "content": "# Create a slide deck package for presenting Agent Lee to customers\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: slide_deck\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a slide deck package for presenting Agent Lee to customers\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Slide Deck Package\nSlide Count Target: 10\n\n## Deck Strategy\nThe deck should move from problem to solution to proof to action.\n\n## Slide 1\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 2\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 3\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 4\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 5\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 6\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 7\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 8\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 9\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 10\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n",
+  "versions": [
+    {
+      "version": 1,
+      "created_at": "2026-07-04T05:00:59.461277+00:00",
+      "source": "creative-router-proof",
+      "instructions": "initial_create_creative",
+      "content": "# Create a slide deck package for presenting Agent Lee to customers\n\nLEEWAY OPEN NOTEBOOK CREATIVE PACKAGE\n\nCreative Type: slide_deck\nAudience: General audience\nGoal: Create a complete usable creative production package.\nTone: clear, practical, production-ready\nPrompt: Create a slide deck package for presenting Agent Lee to customers\n\nProduction Rule:\nThis package is created inside leeway_open_notebook as the primary creative layer. Render/export lanes may later turn it into PDF, slides, images, video, website, 3D, or delivery artifacts.\n\n## Slide Deck Package\nSlide Count Target: 10\n\n## Deck Strategy\nThe deck should move from problem to solution to proof to action.\n\n## Slide 1\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 2\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 3\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 4\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 5\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 6\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 7\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 8\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 9\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n## Slide 10\nTitle:\nMain point:\nVisual direction:\nSpeaker notes:\n\n\n## Storage and Handoff\n- Open Notebook owns this creative package.\n- Export/render lanes create final media from this package.\n- Seafile/storage governor should hold durable files and manifests.\n- Artifact viewer should expose the room link.\n- Skill router should return the actionable link/receipt.\n"
+    }
+  ],
+  "metadata": {
+    "original_request": "Create a slide deck package for presenting Agent Lee to customers",
+    "router": "leeway_skill_router",
+    "creation_layer": "leeway_open_notebook"
+  },
+  "created_at": "2026-07-04T05:00:59.461285+00:00",
+  "updated_at": "2026-07-04T05:00:59.461287+00:00"
+}

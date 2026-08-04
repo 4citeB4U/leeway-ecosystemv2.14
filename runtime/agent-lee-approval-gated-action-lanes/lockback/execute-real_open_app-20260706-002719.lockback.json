@@ -1,0 +1,12 @@
+﻿{
+    "version":  "LEEWAY_POST_APPROVED_ACTION_LOCKBACK_284",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:27:22",
+    "execution_id":  "execute-real_open_app-20260706-002719",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "action_executed":  false,
+    "windows_locked_after_execution":  true,
+    "post_lockback_probe_executed":  false,
+    "lockback_clean":  true
+}

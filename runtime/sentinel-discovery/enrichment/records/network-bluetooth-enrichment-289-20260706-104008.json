@@ -1,0 +1,1072 @@
+﻿{
+    "version":  "LEEWAY_NETWORK_AND_BLUETOOTH_ENRICHMENT_289",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:40:23",
+    "verdict":  "LEEWAY_NETWORK_AND_BLUETOOTH_ENRICHMENT_289_NO_EXECUTE_CLEAN",
+    "enrichment_only":  true,
+    "no_execution":  true,
+    "clear_skies":  true,
+    "source":  {
+                   "sentinel_latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\latest\\sentinel-discovery-latest.json",
+                   "bridge_plan_latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\universal-iot-bridge\\latest\\universal-iot-bridge-plan-latest.json",
+                   "physical_registry_path":  "C:\\Users\\Leona\\LeeWay-Runtime\\config\\physical_assets_registry.json"
+               },
+    "totals":  {
+                   "enriched_total":  31,
+                   "network_assets":  9,
+                   "bluetooth_assets":  19,
+                   "printer_assets":  3,
+                   "onboarding_queue_items":  26,
+                   "local_interfaces":  5
+               },
+    "local_interfaces":  [
+                             {
+                                 "asset_kind":  "local_network_interface",
+                                 "interface_alias":  "Ethernet",
+                                 "interface_index":  12,
+                                 "ipv4":  [
+                                              "192.168.1.140"
+                                          ],
+                                 "ipv6":  [
+                                              "2603:6000:b400:5739:b2a9:172d:1b99:25b3",
+                                              "2603:6000:b400:5739::1cd4"
+                                          ],
+                                 "ipv4_default_gateway":  "192.168.1.1",
+                                 "dns_servers":  [
+                                                     "2603:6000:b400:5739::1",
+                                                     "2603:6000:b400:5739::1",
+                                                     "192.168.1.1"
+                                                 ],
+                                 "discovery_source":  "Get-NetIPConfiguration",
+                                 "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                             },
+                             {
+                                 "asset_kind":  "local_network_interface",
+                                 "interface_alias":  "vEthernet (WSL (Hyper-V firewall))",
+                                 "interface_index":  26,
+                                 "ipv4":  [
+                                              "172.26.160.1"
+                                          ],
+                                 "ipv6":  [
+
+                                          ],
+                                 "ipv4_default_gateway":  "",
+                                 "dns_servers":  [
+                                                     "fec0:0:0:ffff::1",
+                                                     "fec0:0:0:ffff::2",
+                                                     "fec0:0:0:ffff::3"
+                                                 ],
+                                 "discovery_source":  "Get-NetIPConfiguration",
+                                 "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                             },
+                             {
+                                 "asset_kind":  "local_network_interface",
+                                 "interface_alias":  "Tailscale",
+                                 "interface_index":  37,
+                                 "ipv4":  [
+                                              "100.80.10.39"
+                                          ],
+                                 "ipv6":  [
+                                              "fd7a:115c:a1e0::1901:acb"
+                                          ],
+                                 "ipv4_default_gateway":  "",
+                                 "dns_servers":  [
+                                                     "fec0:0:0:ffff::1",
+                                                     "fec0:0:0:ffff::2",
+                                                     "fec0:0:0:ffff::3"
+                                                 ],
+                                 "discovery_source":  "Get-NetIPConfiguration",
+                                 "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                             },
+                             {
+                                 "asset_kind":  "local_network_interface",
+                                 "interface_alias":  "Wi-Fi",
+                                 "interface_index":  8,
+                                 "ipv4":  [
+                                              "169.254.204.41"
+                                          ],
+                                 "ipv6":  [
+
+                                          ],
+                                 "ipv4_default_gateway":  "",
+                                 "dns_servers":  [
+                                                     "fec0:0:0:ffff::1",
+                                                     "fec0:0:0:ffff::2",
+                                                     "fec0:0:0:ffff::3"
+                                                 ],
+                                 "discovery_source":  "Get-NetIPConfiguration",
+                                 "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                             },
+                             {
+                                 "asset_kind":  "local_network_interface",
+                                 "interface_alias":  "Bluetooth Network Connection",
+                                 "interface_index":  21,
+                                 "ipv4":  [
+                                              "169.254.163.223"
+                                          ],
+                                 "ipv6":  [
+
+                                          ],
+                                 "ipv4_default_gateway":  "",
+                                 "dns_servers":  [
+                                                     "fec0:0:0:ffff::1",
+                                                     "fec0:0:0:ffff::2",
+                                                     "fec0:0:0:ffff::3"
+                                                 ],
+                                 "discovery_source":  "Get-NetIPConfiguration",
+                                 "control_status":  "LOCAL_INTERFACE_READ_ONLY"
+                             }
+                         ],
+    "enriched_assets":  {
+                            "network":  [
+                                            {
+                                                "asset_id":  "net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                                "mac":  "AE:5F:A0:77:4E:B2",
+                                                "oui_prefix":  "AE:5F:A0",
+                                                "reverse_dns_name":  "",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "ipv6_neighbor",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "ipv6_record"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                                "mac":  "AE:5F:A0:77:4E:B2",
+                                                "oui_prefix":  "AE:5F:A0",
+                                                "reverse_dns_name":  "",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "ipv6_neighbor",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "ipv6_record"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "2603:6000:b400:5739::1",
+                                                "mac":  "A0:55:1F:23:76:AE",
+                                                "oui_prefix":  "A0:55:1F",
+                                                "reverse_dns_name":  "",
+                                                "interface":  "Ethernet",
+                                                "state":  "Reachable",
+                                                "classification":  {
+                                                                       "family":  "ipv6_neighbor",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "ipv6_record"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-172_26_169_72-00_15_5D_F5_62_08",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "172.26.169.72",
+                                                "mac":  "00:15:5D:F5:62:08",
+                                                "oui_prefix":  "00:15:5D",
+                                                "reverse_dns_name":  "",
+                                                "interface":  "vEthernet (WSL (Hyper-V firewall))",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "local_virtual_network_or_container",
+                                                                       "confidence":  "medium",
+                                                                       "notes":  [
+                                                                                     "private_lan_address",
+                                                                                     "virtual_adapter_or_container_network"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-192_168_1_189-A6_71_11_E1_DC_78",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "192.168.1.189",
+                                                "mac":  "A6:71:11:E1:DC:78",
+                                                "oui_prefix":  "A6:71:11",
+                                                "reverse_dns_name":  "",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "unknown_network_device",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "private_lan_address"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "192.168.1.183",
+                                                "mac":  "90:6A:EB:B0:CC:DA",
+                                                "oui_prefix":  "90:6A:EB",
+                                                "reverse_dns_name":  "LEOSINSIGHT.lan",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "unknown_network_device",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "private_lan_address"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-192_168_1_101-70_A6_CC_E6_81_83",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "192.168.1.101",
+                                                "mac":  "70:A6:CC:E6:81:83",
+                                                "oui_prefix":  "70:A6:CC",
+                                                "reverse_dns_name":  "L5CD215DNVY.lan",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "unknown_network_device",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "private_lan_address"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "192.168.1.36",
+                                                "mac":  "AE:5F:A0:77:4E:B2",
+                                                "oui_prefix":  "AE:5F:A0",
+                                                "reverse_dns_name":  "Galaxy-Z-Fold6.lan",
+                                                "interface":  "Ethernet",
+                                                "state":  "Stale",
+                                                "classification":  {
+                                                                       "family":  "unknown_network_device",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "private_lan_address"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            },
+                                            {
+                                                "asset_id":  "net-192_168_1_1-A0_55_1F_23_76_AE",
+                                                "asset_kind":  "network_neighbor",
+                                                "ip":  "192.168.1.1",
+                                                "mac":  "A0:55:1F:23:76:AE",
+                                                "oui_prefix":  "A0:55:1F",
+                                                "reverse_dns_name":  "SAX2V1S.lan",
+                                                "interface":  "Ethernet",
+                                                "state":  "Reachable",
+                                                "classification":  {
+                                                                       "family":  "unknown_network_device",
+                                                                       "confidence":  "low",
+                                                                       "notes":  [
+                                                                                     "private_lan_address"
+                                                                                 ]
+                                                                   },
+                                                "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                "control_status":  "CONTROL_BLOCKED_REQUIRES_IDENTITY_AND_APPROVAL_GATE",
+                                                "enrichment_source":  "289_read_only_neighbor_enrichment"
+                                            }
+                                        ],
+                            "bluetooth":  [
+                                              {
+                                                  "asset_id":  "bt-Microsoft_Bluetooth_LE_Enumerator-1933924596",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Microsoft Bluetooth LE Enumerator",
+                                                  "instance_id":  "BTH\\MS_BTHLE\\6\u00261FED5926\u00261\u00263",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_adapter_or_stack_component",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "system_component_do_not_control"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-ProtoArc_KM100-A-331912956",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "ProtoArc KM100-A",
+                                                  "instance_id":  "BTHLE\\DEV_DFA67358A5FE\\7\u0026DFB4422\u00260\u0026DFA67358A5FE",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-ProtoArc_KM100-A--1032483612",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "ProtoArc KM100-A",
+                                                  "instance_id":  "BTHLE\\DEV_EF17ECD33255\\7\u0026DFB4422\u00260\u0026EF17ECD33255",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Bluetooth LE Generic Attribute Service",
+                                                  "instance_id":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260025",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Device_Information_Service--174547601",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Device Information Service",
+                                                  "instance_id":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000E",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-ANCOBER-626928032",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "ANCOBER",
+                                                  "instance_id":  "BTHENUM\\DEV_80F1667054C5\\7\u002632E0C4C1\u00260\u0026BLUETOOTHDEVICE_80F1667054C5",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-ANCOBER_Avrcp_Transport--2688028",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "ANCOBER Avrcp Transport",
+                                                  "instance_id":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_audio_device",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "control_blocked_until_audio_profile_approved"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Microsoft_Bluetooth_Enumerator--2076870047",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Microsoft Bluetooth Enumerator",
+                                                  "instance_id":  "BTH\\MS_BTHBRB\\6\u00261FED5926\u00261\u00261",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_adapter_or_stack_component",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "system_component_do_not_control"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Bluetooth_Device__RFCOMM_Protocol_TDI_-531347360",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Bluetooth Device (RFCOMM Protocol TDI)",
+                                                  "instance_id":  "BTH\\MS_RFCOMM\\6\u00261FED5926\u00261\u00260",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_adapter_or_stack_component",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "system_component_do_not_control"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Generic_Access_Profile--1245420966",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Generic Access Profile",
+                                                  "instance_id":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260001",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-i2O-698774688",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "i2O",
+                                                  "instance_id":  "BTHENUM\\DEV_DE086739775D\\7\u002632E0C4C1\u00260\u0026BLUETOOTHDEVICE_DE086739775D",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-i2O_Avrcp_Transport--2014886532",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "i2O Avrcp Transport",
+                                                  "instance_id":  "BTHENUM\\{0000110C-0000-1000-8000-00805F9B34FB}_VID\u0026000105D6_PID\u0026000A\\7\u002632E0C4C1\u00260\u0026DE086739775D_C00000000",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_audio_device",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "control_blocked_until_audio_profile_approved"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Device_Information_Service--450619856",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Device Information Service",
+                                                  "instance_id":  "BTHLEDEVICE\\{0000180A-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u0026000A",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Generic_Attribute_Profile-1258641163",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Generic Attribute Profile",
+                                                  "instance_id":  "BTHLEDEVICE\\{00001801-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u0026000A",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-i2O_Avrcp_Transport--120040382",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "i2O Avrcp Transport",
+                                                  "instance_id":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_VID\u0026000105D6_PID\u0026000A\\7\u002632E0C4C1\u00260\u0026DE086739775D_C00000000",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_audio_device",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "control_blocked_until_audio_profile_approved"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Bluetooth LE Generic Attribute Service",
+                                                  "instance_id":  "BTHLEDEVICE\\{0000FFF0-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260205AC_PID\u0026024F_REV\u00260100_DFA67358A5FE\\8\u0026327BC079\u00260\u00260032",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-ANCOBER_Avrcp_Transport--1270933978",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "ANCOBER Avrcp Transport",
+                                                  "instance_id":  "BTHENUM\\{0000110E-0000-1000-8000-00805F9B34FB}_LOCALMFG\u0026005D\\7\u002632E0C4C1\u00260\u002680F1667054C5_C00000000",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_audio_device",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "control_blocked_until_audio_profile_approved"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Generic_Access_Profile--221408879",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Generic Access Profile",
+                                                  "instance_id":  "BTHLEDEVICE\\{00001800-0000-1000-8000-00805F9B34FB}_DEV_VID\u00260225A7_PID\u0026FAA0_REV\u00260508_EF17ECD33255\\8\u00261CFC9468\u00260\u00260001",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "possible_ble_peripheral",
+                                                                         "confidence":  "low",
+                                                                         "control_risk":  "gatt_map_required_before_any_write"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              },
+                                              {
+                                                  "asset_id":  "bt-Realtek_Bluetooth_Adapter-808623461",
+                                                  "asset_kind":  "bluetooth_device",
+                                                  "friendly_name":  "Realtek Bluetooth Adapter",
+                                                  "instance_id":  "USB\\VID_0BDA\u0026PID_D922\\00E04C885A01",
+                                                  "status":  "OK",
+                                                  "classification":  {
+                                                                         "family":  "bluetooth_adapter_or_stack_component",
+                                                                         "confidence":  "medium",
+                                                                         "control_risk":  "system_component_do_not_control"
+                                                                     },
+                                                  "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                  "control_status":  "PAIRING_AND_CONTROL_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                  "enrichment_source":  "289_read_only_bluetooth_inventory"
+                                              }
+                                          ],
+                            "printers":  [
+                                             {
+                                                 "asset_id":  "printer-OneNote__Desktop_-nul_",
+                                                 "asset_kind":  "printer",
+                                                 "name":  "OneNote (Desktop)",
+                                                 "driver_name":  "Send to Microsoft OneNote 16 Driver",
+                                                 "port_name":  "nul:",
+                                                 "shared":  false,
+                                                 "published":  false,
+                                                 "classification":  {
+                                                                        "family":  "virtual_onenote_printer",
+                                                                        "confidence":  "high",
+                                                                        "control_risk":  "virtual_print_action_requires_approval"
+                                                                    },
+                                                 "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                 "control_status":  "PRINT_ACTIONS_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                 "enrichment_source":  "289_read_only_printer_profile"
+                                             },
+                                             {
+                                                 "asset_id":  "printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                                                 "asset_kind":  "printer",
+                                                 "name":  "Microsoft Print to PDF",
+                                                 "driver_name":  "Microsoft Print To PDF",
+                                                 "port_name":  "PORTPROMPT:",
+                                                 "shared":  false,
+                                                 "published":  false,
+                                                 "classification":  {
+                                                                        "family":  "virtual_pdf_printer",
+                                                                        "confidence":  "high",
+                                                                        "control_risk":  "file_output_action_requires_approval"
+                                                                    },
+                                                 "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                 "control_status":  "PRINT_ACTIONS_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                 "enrichment_source":  "289_read_only_printer_profile"
+                                             },
+                                             {
+                                                 "asset_id":  "printer-HP_OfficeJet_Pro_8020_series-USB001",
+                                                 "asset_kind":  "printer",
+                                                 "name":  "HP OfficeJet Pro 8020 series",
+                                                 "driver_name":  "HP OfficeJet Pro 8020 series PCL-3",
+                                                 "port_name":  "USB001",
+                                                 "shared":  false,
+                                                 "published":  false,
+                                                 "classification":  {
+                                                                        "family":  "printer_or_print_queue",
+                                                                        "confidence":  "medium",
+                                                                        "control_risk":  "print_actions_blocked_until_approval"
+                                                                    },
+                                                 "onboarding_status":  "DISCOVERED_NOT_ONBOARDED",
+                                                 "control_status":  "PRINT_ACTIONS_BLOCKED_REQUIRES_APPROVAL_GATE",
+                                                 "enrichment_source":  "289_read_only_printer_profile"
+                                             }
+                                         ]
+                        },
+    "onboarding_queue":  [
+                             {
+                                 "queue_id":  "onboard-net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-2603_6000_b400_5739_ae64_4c69_a2d1_500f-AE_5F_A0_77_4E_B2",
+                                 "display_name":  "2603:6000:b400:5739:ae64:4c69:a2d1:500f",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-2603_6000_b400_5739_90b6_b825_bf1d_8ba0-AE_5F_A0_77_4E_B2",
+                                 "display_name":  "2603:6000:b400:5739:90b6:b825:bf1d:8ba0",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-2603_6000_b400_5739__1-A0_55_1F_23_76_AE",
+                                 "display_name":  "2603:6000:b400:5739::1",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-192_168_1_189-A6_71_11_E1_DC_78",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-192_168_1_189-A6_71_11_E1_DC_78",
+                                 "display_name":  "192.168.1.189",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-192_168_1_183-90_6A_EB_B0_CC_DA",
+                                 "display_name":  "LEOSINSIGHT.lan",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-192_168_1_101-70_A6_CC_E6_81_83",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-192_168_1_101-70_A6_CC_E6_81_83",
+                                 "display_name":  "L5CD215DNVY.lan",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-192_168_1_36-AE_5F_A0_77_4E_B2",
+                                 "display_name":  "Galaxy-Z-Fold6.lan",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-net-192_168_1_1-A0_55_1F_23_76_AE",
+                                 "lane":  "iot_network_layer",
+                                 "asset_id":  "net-192_168_1_1-A0_55_1F_23_76_AE",
+                                 "display_name":  "SAX2V1S.lan",
+                                 "proposed_next_step":  "manual_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "device_control",
+                                                         "port_scan",
+                                                         "credential_use",
+                                                         "write_to_device"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-ProtoArc_KM100-A-331912956",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-ProtoArc_KM100-A-331912956",
+                                 "display_name":  "ProtoArc KM100-A",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-ProtoArc_KM100-A--1032483612",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-ProtoArc_KM100-A--1032483612",
+                                 "display_name":  "ProtoArc KM100-A",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--586008514",
+                                 "display_name":  "Bluetooth LE Generic Attribute Service",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Device_Information_Service--174547601",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Device_Information_Service--174547601",
+                                 "display_name":  "Device Information Service",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-ANCOBER-626928032",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-ANCOBER-626928032",
+                                 "display_name":  "ANCOBER",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-ANCOBER_Avrcp_Transport--2688028",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-ANCOBER_Avrcp_Transport--2688028",
+                                 "display_name":  "ANCOBER Avrcp Transport",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Generic_Access_Profile--1245420966",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Generic_Access_Profile--1245420966",
+                                 "display_name":  "Generic Access Profile",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-i2O-698774688",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-i2O-698774688",
+                                 "display_name":  "i2O",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-i2O_Avrcp_Transport--2014886532",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-i2O_Avrcp_Transport--2014886532",
+                                 "display_name":  "i2O Avrcp Transport",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Device_Information_Service--450619856",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Device_Information_Service--450619856",
+                                 "display_name":  "Device Information Service",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Generic_Attribute_Profile-1258641163",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Generic_Attribute_Profile-1258641163",
+                                 "display_name":  "Generic Attribute Profile",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-i2O_Avrcp_Transport--120040382",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-i2O_Avrcp_Transport--120040382",
+                                 "display_name":  "i2O Avrcp Transport",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Bluetooth_LE_Generic_Attribute_Service--482115471",
+                                 "display_name":  "Bluetooth LE Generic Attribute Service",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-ANCOBER_Avrcp_Transport--1270933978",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-ANCOBER_Avrcp_Transport--1270933978",
+                                 "display_name":  "ANCOBER Avrcp Transport",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-bt-Generic_Access_Profile--221408879",
+                                 "lane":  "bluetooth_layer",
+                                 "asset_id":  "bt-Generic_Access_Profile--221408879",
+                                 "display_name":  "Generic Access Profile",
+                                 "proposed_next_step":  "manual_bluetooth_identity_review",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "pairing",
+                                                         "gatt_write",
+                                                         "hid_control",
+                                                         "robot_control",
+                                                         "toy_control"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-printer-OneNote__Desktop_-nul_",
+                                 "lane":  "printer_layer",
+                                 "asset_id":  "printer-OneNote__Desktop_-nul_",
+                                 "display_name":  "OneNote (Desktop)",
+                                 "proposed_next_step":  "manual_printer_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "print_job_submit",
+                                                         "queue_clear",
+                                                         "printer_setting_change",
+                                                         "test_page"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                                 "lane":  "printer_layer",
+                                 "asset_id":  "printer-Microsoft_Print_to_PDF-PORTPROMPT_",
+                                 "display_name":  "Microsoft Print to PDF",
+                                 "proposed_next_step":  "manual_printer_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "print_job_submit",
+                                                         "queue_clear",
+                                                         "printer_setting_change",
+                                                         "test_page"
+                                                     ],
+                                 "priority":  "review"
+                             },
+                             {
+                                 "queue_id":  "onboard-printer-HP_OfficeJet_Pro_8020_series-USB001",
+                                 "lane":  "printer_layer",
+                                 "asset_id":  "printer-HP_OfficeJet_Pro_8020_series-USB001",
+                                 "display_name":  "HP OfficeJet Pro 8020 series",
+                                 "proposed_next_step":  "manual_printer_identity_confirm",
+                                 "approval_required_before_control":  true,
+                                 "blocked_actions":  [
+                                                         "print_job_submit",
+                                                         "queue_clear",
+                                                         "printer_setting_change",
+                                                         "test_page"
+                                                     ],
+                                 "priority":  "review"
+                             }
+                         ],
+    "policy":  {
+                   "physical_control_requires_single_use_approval_gate":  true,
+                   "network_assets_require_identity_confirmation":  true,
+                   "bluetooth_assets_require_pairing_approval_before_control":  true,
+                   "printer_assets_require_print_approval_before_action":  true,
+                   "media_bridge_deferred_until_mdns_or_dnssd_detected":  true
+               },
+    "safety":  {
+                   "no_port_scan_in_289":  true,
+                   "no_bluetooth_pairing_in_289":  true,
+                   "no_gatt_write_in_289":  true,
+                   "no_printer_action_in_289":  true,
+                   "no_iot_control_in_289":  true,
+                   "no_docker_deploy_in_289":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "290-onboarding-review-ui-contract-no-execute.ps1"
+}

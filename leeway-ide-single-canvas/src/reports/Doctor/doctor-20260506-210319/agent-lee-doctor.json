@@ -1,0 +1,899 @@
+﻿{
+    "generatedAt":  "2026-05-06T21:03:27.6934414-05:00",
+    "workspaceDir":  "C:\\Users\\Leona\\.leeway-vscode",
+    "extensionDir":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension",
+    "vsixPath":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.1.2.vsix",
+    "checks":  [
+                   {
+                       "name":  "Extension folder exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension"
+                   },
+                   {
+                       "name":  "package.json exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\package.json"
+                   },
+                   {
+                       "name":  "main points to out/extension.js",
+                       "pass":  true,
+                       "detail":  "./out/extension.js"
+                   },
+                   {
+                       "name":  "Activity Bar icon exists",
+                       "pass":  true,
+                       "detail":  "media/agent-lee-activitybar.svg"
+                   },
+                   {
+                       "name":  "Command registered: agentLee.open",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.open",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.openSidebar",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.openSidebar",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.scanWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.scanWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.fixWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.fixWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.verifyWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.verifyWorkspace",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Command registered: agentLee.askLocalModel",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Activation event declared: onCommand:agentLee.askLocalModel",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "extension.ts exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+                   },
+                   {
+                       "name":  "extension.ts registers agentLee.scanWorkspace",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+                   },
+                   {
+                       "name":  "extension.ts registers agentLee.fixWorkspace",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+                   },
+                   {
+                       "name":  "extension.ts registers agentLee.verifyWorkspace",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+                   },
+                   {
+                       "name":  "extension.ts registers agentLee.askLocalModel",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\src\\extension.ts"
+                   },
+                   {
+                       "name":  "Dependencies installed",
+                       "pass":  true,
+                       "detail":  "node_modules already exists"
+                   },
+                   {
+                       "name":  "TypeScript compile succeeds",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "out/extension.js exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\out\\extension.js"
+                   },
+                   {
+                       "name":  "VSIX package builds",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.1.2.vsix"
+                   },
+                   {
+                       "name":  "VSIX file exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\vscode-extension\\agent-lee-leeway-coding-system-1.1.2.vsix"
+                   },
+                   {
+                       "name":  "Ollama API reachable",
+                       "pass":  true,
+                       "detail":  "13 model(s) reported"
+                   },
+                   {
+                       "name":  "Required Ollama model present: qwen2.5-coder:1.5b",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Required Ollama model present: qwen2.5-coder:7b",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Required Ollama model present: qwen2.5-coder:14b",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Required Ollama model present: deepseek-coder-v2:16b",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Required Ollama model present: llama3.1:8b",
+                       "pass":  true,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "Required Ollama model present: nomic-embed-text",
+                       "pass":  false,
+                       "detail":  ""
+                   },
+                   {
+                       "name":  "MCP registry exists",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json"
+                   },
+                   {
+                       "name":  "MCP registry tool present: leeway.scan",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json"
+                   },
+                   {
+                       "name":  "MCP registry tool present: leeway.fix",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json"
+                   },
+                   {
+                       "name":  "MCP registry tool present: leeway.verify",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json"
+                   },
+                   {
+                       "name":  "MCP registry tool present: leeway.model.route",
+                       "pass":  true,
+                       "detail":  "C:\\Users\\Leona\\.leeway-vscode\\agent-lee\\mcp\\mcp-registry.json"
+                   },
+                   {
+                       "name":  "LeeWay compliance above 70",
+                       "pass":  true,
+                       "detail":  "Score: 76.1"
+                   }
+               ],
+    "leewayCompliance":  {
+                             "inspected":  205,
+                             "compliant":  156,
+                             "score":  76.1,
+                             "blocking":  false,
+                             "blockingFiles":  [
+                                                   {
+                                                       "path":  ".agent-lee\\plans\\2026-05-06T13-06-13-640Z-yes.md",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\AGENTS.md",
+                                                       "header":  true,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  true
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\mcp\\generated-capability-catalog.json",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\VOICE_LOCK.md",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-arctic-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-bryce-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-hfc_male-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-joe-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-john-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-kusal-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-l2arctic-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-libritts_r-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-norman-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-reza_ibrahim-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-ryan-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\voice\\models\\en_US-sam-medium.onnx.json",
+                                                       "header":  false,
+                                                       "region":  true,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\.vscode\\launch.json",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\.vscode\\tasks.json",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\package-lock.json",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\scripts\\Test-AgentLeePerformanceOverrides.ps1",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\LLMProvider.ts",
+                                                       "header":  true,
+                                                       "region":  true,
+                                                       "tag":  true,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\ast.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\browser-engine.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\capability-registry.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\conversation-store.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\drift-filter.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\drift-watch.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\editor-bridge.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\file-intelligence.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\governance-loader.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\law-engine.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\memory.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\model-hive.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\orchestrator.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\persona.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\plan-store.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\remote-context.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\reporting.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\runtime-settings.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\scheduler.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\settings-catalog.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\task-planner.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\core\\voice-adapter.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\image-tool.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\logger.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\permissions.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\router.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\web-search.ts",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   },
+                                                   {
+                                                       "path":  ".\\agent-lee\\vscode-extension\\tsconfig.json",
+                                                       "header":  false,
+                                                       "region":  false,
+                                                       "tag":  false,
+                                                       "discoveryPipeline":  false
+                                                   }
+                                               ],
+                             "missing":  [
+                                             {
+                                                 "path":  ".agent-lee\\plans\\2026-05-06T13-06-13-640Z-yes.md",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\AGENTS.md",
+                                                 "header":  true,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  true
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\mcp\\generated-capability-catalog.json",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\VOICE_LOCK.md",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-arctic-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-bryce-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-hfc_male-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-joe-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-john-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-kusal-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-l2arctic-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-libritts_r-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-norman-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-reza_ibrahim-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-ryan-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\voice\\models\\en_US-sam-medium.onnx.json",
+                                                 "header":  false,
+                                                 "region":  true,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\.vscode\\launch.json",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\.vscode\\tasks.json",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\package-lock.json",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\scripts\\Test-AgentLeePerformanceOverrides.ps1",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\LLMProvider.ts",
+                                                 "header":  true,
+                                                 "region":  true,
+                                                 "tag":  true,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\ast.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\browser-engine.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\capability-registry.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\conversation-store.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\drift-filter.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\drift-watch.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\editor-bridge.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\file-intelligence.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\governance-loader.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\law-engine.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\memory.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\model-hive.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\orchestrator.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\persona.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\plan-store.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\remote-context.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\reporting.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\runtime-settings.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\scheduler.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\settings-catalog.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\task-planner.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\core\\voice-adapter.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\image-tool.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\logger.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\permissions.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\router.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\src\\tools\\web-search.ts",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             },
+                                             {
+                                                 "path":  ".\\agent-lee\\vscode-extension\\tsconfig.json",
+                                                 "header":  false,
+                                                 "region":  false,
+                                                 "tag":  false,
+                                                 "discoveryPipeline":  false
+                                             }
+                                         ]
+                         }
+}

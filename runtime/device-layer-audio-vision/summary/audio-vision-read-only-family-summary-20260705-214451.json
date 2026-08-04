@@ -1,0 +1,84 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_235",
+    "timestamp":  "2026-07-05T21:44:51",
+    "verdict":  "LEEWAY_AUDIO_VISION_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "audio_vision",
+    "family_status":  "AUDIO_VISION_READ_ONLY_DISCOVERY_REGISTRY_STATUS_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status",
+                               "audio_vision_read_only_discovery_registry_status"
+                           ],
+    "remaining_families":  [
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract",
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "audio_vision_discover":  true,
+                   "audio_vision_status":  true,
+                   "audio_vision_registry":  true,
+                   "cameras_discover":  true,
+                   "microphones_discover":  true,
+                   "speakers_discover":  true,
+                   "all_audio_vision_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "control_enabled":  false,
+                         "camera_stream_started":  false,
+                         "microphone_stream_started":  false,
+                         "speaker_playback_started":  false,
+                         "recording_started":  false,
+                         "permission_mutated":  false,
+                         "default_device_mutated":  false,
+                         "discovered_count":  0,
+                         "camera_count":  0,
+                         "microphone_count":  0,
+                         "speaker_count":  0
+                     },
+    "proof_chain":  {
+                        "contract_231_exists":  true,
+                        "contract_231_clean":  true,
+                        "plan_232_exists":  true,
+                        "plan_232_clean":  true,
+                        "patch_233_exists":  true,
+                        "patch_233_clean":  true,
+                        "audit_234_exists":  true,
+                        "audit_234_clean":  true,
+                        "contract_231_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-discovery-status-contract-latest.json",
+                        "plan_232_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-route-patch-plan-proof-latest.json",
+                        "patch_233_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-routes-patch-233-latest.json",
+                        "audit_234_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "physical_actions_executed":  0,
+                   "camera_streams_started":  0,
+                   "microphone_streams_started":  0,
+                   "speaker_playback_started":  0,
+                   "recordings_started":  0,
+                   "permission_mutations":  0,
+                   "default_device_mutations":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "236-android-device-shell-and-actuator-contract-no-execute.ps1"
+}

@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "manifest": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution\\manifests\\leeway-distribution-manifest.json",
+    "architecture": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\leeway-architecture-lockdown\\latest-canonical-architecture.json",
+    "distribution_root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\dist\\Leeway-Ecosystem-Distribution"
+  },
+  "work_type": "distribution_manifest",
+  "title": "Leeway Ecosystem Replicable Distribution",
+  "source": "powershell-architecture-lockdown",
+  "description": "Create a downloadable customer-ready package skeleton with install, start, stop, health, Telegram config, customer env template, canonical architecture manifest, and distribution manifest."
+}

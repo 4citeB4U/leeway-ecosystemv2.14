@@ -1,0 +1,991 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_SOURCE_RECONCILIATION_284C_S",
+    "phase":  39,
+    "timestamp":  "2026-07-06T08:43:31",
+    "verdict":  "LEEWAY_REAL_ALPHA_SOURCE_RECONCILIATION_NO_EXECUTE_CLEAN",
+    "conclusion":  "REAL_ALPHA_SOURCE_TARGET_RESOLVED_READY_FOR_284D_PATCH",
+    "patch_plan_needs_source_correction":  true,
+    "old_primary_candidate_source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\executions\\execute-real_open_app-20260706-002719.execution.json",
+    "old_primary_is_runtime_artifact":  true,
+    "strict_source_candidate_count":  55,
+    "primary_strict_source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-tool-dispatch-loop-repair\\20260628-161029\\server-brainfix.mjs",
+    "strict_source_candidates":  [
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-tool-dispatch-loop-repair\\20260628-161029\\server-brainfix.mjs",
+                                         "length":  193059,
+                                         "last_write_time":  "2026-06-28T15:49:36",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-tool-dispatch-loop-repair\\20260628-154546\\server.mjs",
+                                         "length":  42461,
+                                         "last_write_time":  "2026-06-28T15:20:26",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-speak-listen-routemap-fix\\20260628-172601\\server-brainfix.mjs",
+                                         "length":  194560,
+                                         "last_write_time":  "2026-06-28T16:49:36",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\recovery\\agent-lee-docker-recovery-20260702-215139\\scripts\\test-agent-lee-full-runtime-proof.mjs",
+                                         "length":  27668,
+                                         "last_write_time":  "2026-06-28T17:29:48",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\router-voice-map-20260628-181934\\agent-lee-coding-mode\\router\\server-brainfix.mjs",
+                                         "length":  194922,
+                                         "last_write_time":  "2026-06-28T17:26:07",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\desktop-runtime-voice-fix\\20260629-155016\\server.mjs",
+                                         "length":  44424,
+                                         "last_write_time":  "2026-06-28T15:50:26",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-screenshot-speak-fix\\20260628-164905\\server-brainfix.mjs",
+                                         "length":  194317,
+                                         "last_write_time":  "2026-06-28T16:39:34",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\AgentLeeDesktopRuntimeUI\\AgentLeeRuntimeProfile\\Default\\Extensions\\innfnjgighoafebohpiamhnchmkoilgj\\1.18.4.0_0\\js\\background.js",
+                                         "length":  418599,
+                                         "last_write_time":  "2024-05-28T10:57:26",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\adapters\\mcp\\desktop-commander-agent-mcp\\tools\\open-app.ts",
+                                         "length":  1299,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards\\adapters\\mcp\\desktop-commander-agent-mcp\\index.ts",
+                                         "length":  4171,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-router-ping-patch\\20260628-163921\\server-brainfix.mjs",
+                                         "length":  193853,
+                                         "last_write_time":  "2026-06-28T16:10:35",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\router\\server-brainfix.mjs",
+                                         "length":  195834,
+                                         "last_write_time":  "2026-06-28T19:40:40",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\server.mjs",
+                                         "length":  62497,
+                                         "last_write_time":  "2026-07-01T18:46:44",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\test-agent-lee-full-runtime-proof.mjs",
+                                         "length":  27668,
+                                         "last_write_time":  "2026-06-28T17:29:48",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv\\Lib\\site-packages\\fsspec\\implementations\\arrow.py",
+                                         "length":  8890,
+                                         "last_write_time":  "2026-06-09T11:26:30",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\cerebral_mcp_server.py",
+                                         "length":  16688,
+                                         "last_write_time":  "2026-03-06T01:21:38",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\cerebral_bridge.py",
+                                         "length":  9153,
+                                         "last_write_time":  "2026-06-10T22:03:21",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\tools\\self_test.ps1",
+                                         "length":  810,
+                                         "last_write_time":  "2026-03-02T23:32:43",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\scipy\\io\\tests\\test_netcdf.py",
+                                         "length":  20110,
+                                         "last_write_time":  "2026-03-04T06:09:31",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\fsspec\\implementations\\arrow.py",
+                                         "length":  8831,
+                                         "last_write_time":  "2026-03-04T06:22:01",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\service\\windows_local_actuator_dry_run_service.py",
+                                         "length":  10208,
+                                         "last_write_time":  "2026-07-05T17:47:27",
+                                         "score":  50,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_195d_20260705_193822.py",
+                                         "length":  6688,
+                                         "last_write_time":  "2026-07-05T19:38:22",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_195c_20260705_193525.py",
+                                         "length":  6356,
+                                         "last_write_time":  "2026-07-05T19:35:25",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+                                         "length":  3882,
+                                         "last_write_time":  "2026-07-05T20:31:25",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\scaffold\\windows_local_actuator_service_stub.py",
+                                         "length":  2674,
+                                         "last_write_time":  "2026-07-05T17:43:26",
+                                         "score":  50,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_209_20260705_203116.py",
+                                         "length":  7269,
+                                         "last_write_time":  "2026-07-05T20:31:16",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_202_20260705_200943.py",
+                                         "length":  6724,
+                                         "last_write_time":  "2026-07-05T20:09:43",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\adapters\\mcp\\desktop-commander-agent-mcp\\tools\\open-app.ts",
+                                         "length":  1299,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_209_20260705_203116.py",
+                                         "length":  7269,
+                                         "last_write_time":  "2026-07-05T20:31:16",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_202_20260705_200943.py",
+                                         "length":  6724,
+                                         "last_write_time":  "2026-07-05T20:09:43",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_195d_20260705_193822.py",
+                                         "length":  6688,
+                                         "last_write_time":  "2026-07-05T19:38:22",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Start-AgentLee-AutonomousLoop.ps1",
+                                         "length":  10679,
+                                         "last_write_time":  "2026-07-01T18:55:04",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\service\\windows_local_actuator_dry_run_service.py",
+                                         "length":  10208,
+                                         "last_write_time":  "2026-07-05T17:47:27",
+                                         "score":  50,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\scaffold\\windows_local_actuator_service_stub.py",
+                                         "length":  2674,
+                                         "last_write_time":  "2026-07-05T17:43:26",
+                                         "score":  50,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha_195c_20260705_193525.py",
+                                         "length":  6356,
+                                         "last_write_time":  "2026-07-05T19:35:25",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv\\Lib\\site-packages\\fsspec\\implementations\\arrow.py",
+                                         "length":  8890,
+                                         "last_write_time":  "2026-06-09T11:26:30",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\cerebral_mcp_server.py",
+                                         "length":  16688,
+                                         "last_write_time":  "2026-03-06T01:21:38",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\cerebral_bridge.py",
+                                         "length":  9153,
+                                         "last_write_time":  "2026-06-10T22:03:21",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+                                         "length":  3882,
+                                         "last_write_time":  "2026-07-05T20:31:25",
+                                         "score":  190,
+                                         "matched_patterns":  [
+                                                                  "real/open-app",
+                                                                  "/real/open-app",
+                                                                  "open_app",
+                                                                  "open-app",
+                                                                  "real_execution_enabled",
+                                                                  "physical_execution_enabled"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\scipy\\io\\tests\\test_netcdf.py",
+                                         "length":  20110,
+                                         "last_write_time":  "2026-03-04T06:09:31",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\.venv.broken-20260609-090655\\Lib\\site-packages\\fsspec\\implementations\\arrow.py",
+                                         "length":  8831,
+                                         "last_write_time":  "2026-03-04T06:22:01",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Verify-AgentLee-AutonomousLoop.ps1",
+                                         "length":  10504,
+                                         "last_write_time":  "2026-07-01T18:57:15",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\scripts\\Test-AgentLeeDesktopRuntimeHost.ps1",
+                                         "length":  6864,
+                                         "last_write_time":  "2026-06-28T15:23:03",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\tools\\self_test.ps1",
+                                         "length":  810,
+                                         "last_write_time":  "2026-03-02T23:32:43",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\recovery\\agent-lee-docker-recovery-20260702-215139\\scripts\\Test-AgentLeeDesktopRuntimeHost.ps1",
+                                         "length":  6864,
+                                         "last_write_time":  "2026-06-28T15:23:03",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\adapters\\mcp\\desktop-commander-agent-mcp\\index.ts",
+                                         "length":  4171,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\docs\\deprecated-standards-roots\\Leeway-Standards\\adapters\\mcp\\desktop-commander-agent-mcp\\tools\\open-app.ts",
+                                         "length":  1299,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\docs\\deprecated-standards-roots\\Leeway-Standards\\adapters\\mcp\\desktop-commander-agent-mcp\\index.ts",
+                                         "length":  4171,
+                                         "last_write_time":  "2026-05-01T08:40:12",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\embodiment-repair\\20260628-235226\\runtime.ps1",
+                                         "length":  61021,
+                                         "last_write_time":  "2026-06-28T18:29:59",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runtime.ps1",
+                                         "length":  64358,
+                                         "last_write_time":  "2026-06-29T15:36:24",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\AgentLeeOSController.ps1",
+                                         "length":  23669,
+                                         "last_write_time":  "2026-07-01T23:22:14",
+                                         "score":  30,
+                                         "matched_patterns":  [
+                                                                  "open_app",
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\AgentLeeDockerFabricController.ps1",
+                                         "length":  13505,
+                                         "last_write_time":  "2026-07-01T23:05:27",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\desktop-runtime-voice-fallback-20260628-182852\\runtime.ps1",
+                                         "length":  60211,
+                                         "last_write_time":  "2026-06-28T16:49:18",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-tool-dispatch-loop-repair\\20260628-154546\\runtime.ps1",
+                                         "length":  58471,
+                                         "last_write_time":  "2026-06-28T15:27:02",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     },
+                                     {
+                                         "path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\backups\\agent-lee-screenshot-speak-fix\\20260628-164905\\runtime.ps1",
+                                         "length":  59540,
+                                         "last_write_time":  "2026-06-28T15:57:24",
+                                         "score":  0,
+                                         "matched_patterns":  [
+                                                                  "open-app"
+                                                              ]
+                                     }
+                                 ],
+    "port_7332_process_info":  [
+                                   {
+                                       "local_port":  7332,
+                                       "owning_process":  45808,
+                                       "process_name":  "python.exe",
+                                       "executable_path":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                                       "command_line":  "python  -m uvicorn leeway_real_windows_actuator_alpha:app --host 127.0.0.1 --port 7332 "
+                                   }
+                               ],
+    "docker_containers":  [
+                              {
+                                  "id":  "06f0ee87b61f",
+                                  "name":  "leeway_device_operator",
+                                  "image":  "leeway_device_operator:device-layer-163b",
+                                  "ports":  "0.0.0.0:5323-\u003e5323/tcp, [::]:5323-\u003e5323/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "08158988da4a",
+                                  "name":  "leeway_executive_runtime",
+                                  "image":  "leeway_executive_runtime:truth-sync",
+                                  "ports":  "0.0.0.0:5340-\u003e5340/tcp, [::]:5340-\u003e5340/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "6d850fd0242b",
+                                  "name":  "leeway_agent_skills",
+                                  "image":  "leeway_agent_skills:truth-sync",
+                                  "ports":  "0.0.0.0:5327-\u003e5327/tcp, [::]:5327-\u003e5327/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "ecc3af1b64b7",
+                                  "name":  "leeway_workboard_runtime",
+                                  "image":  "leeway_workboard_runtime:local",
+                                  "ports":  "0.0.0.0:5339-\u003e5339/tcp, [::]:5339-\u003e5339/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "99f227aba707",
+                                  "name":  "leeway_performance_runtime",
+                                  "image":  "leeway_performance_runtime:local",
+                                  "ports":  "0.0.0.0:5338-\u003e5338/tcp, [::]:5338-\u003e5338/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "7aebb53aa221",
+                                  "name":  "leeway_pwa_dashboard",
+                                  "image":  "leeway_pwa_dashboard:local",
+                                  "ports":  "0.0.0.0:5337-\u003e5337/tcp, [::]:5337-\u003e5337/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "388c0e5ec8d1",
+                                  "name":  "leeway_installer_runtime",
+                                  "image":  "leeway_installer_runtime:local",
+                                  "ports":  "0.0.0.0:5336-\u003e5336/tcp, [::]:5336-\u003e5336/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "3bb9d010d60d",
+                                  "name":  "leeway_license_runtime",
+                                  "image":  "leeway_license_runtime:local",
+                                  "ports":  "0.0.0.0:5335-\u003e5335/tcp, [::]:5335-\u003e5335/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "34199029ef63",
+                                  "name":  "leeway_desktop_runtime",
+                                  "image":  "leeway_desktop_runtime:local",
+                                  "ports":  "0.0.0.0:5334-\u003e5334/tcp, [::]:5334-\u003e5334/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "f342c87128ad",
+                                  "name":  "leeway_browser_runtime",
+                                  "image":  "leeway_browser_runtime:local",
+                                  "ports":  "0.0.0.0:5333-\u003e5333/tcp, [::]:5333-\u003e5333/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "eefa623d11ea",
+                                  "name":  "leeway_phone_runtime",
+                                  "image":  "leeway_phone_runtime:local",
+                                  "ports":  "0.0.0.0:5332-\u003e5332/tcp, [::]:5332-\u003e5332/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "bd596130eeaa",
+                                  "name":  "leeway_calendar_runtime",
+                                  "image":  "leeway_calendar_runtime:local",
+                                  "ports":  "0.0.0.0:5331-\u003e5331/tcp, [::]:5331-\u003e5331/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "245b1dab6bdd",
+                                  "name":  "leeway_email_runtime",
+                                  "image":  "leeway_email_runtime:local",
+                                  "ports":  "0.0.0.0:5330-\u003e5330/tcp, [::]:5330-\u003e5330/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "8fe0d8ebf242",
+                                  "name":  "leeway_skill_router",
+                                  "image":  "leeway_skill_router:local",
+                                  "ports":  "0.0.0.0:5324-\u003e5324/tcp, [::]:5324-\u003e5324/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "91afe9397712",
+                                  "name":  "agent-lee-telegram-shell",
+                                  "image":  "agent-lee-telegram-shell:plan-aware-20260704-092048",
+                                  "ports":  "",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "7b8f5e5cedab",
+                                  "name":  "leeway_artifact_viewer",
+                                  "image":  "leeway_artifact_viewer:local",
+                                  "ports":  "0.0.0.0:5328-\u003e5328/tcp, [::]:5328-\u003e5328/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "3e677ecca34a",
+                                  "name":  "leeway_open_notebook",
+                                  "image":  "leeway_open_notebook:local",
+                                  "ports":  "0.0.0.0:5326-\u003e5326/tcp, [::]:5326-\u003e5326/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "157bf1c4709b",
+                                  "name":  "leeway_meeting_runtime",
+                                  "image":  "leeway_meeting_runtime:local",
+                                  "ports":  "0.0.0.0:5329-\u003e5329/tcp, [::]:5329-\u003e5329/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "8891de868f4c",
+                                  "name":  "leeway_document_runtime",
+                                  "image":  "leeway_document_runtime:local",
+                                  "ports":  "0.0.0.0:5325-\u003e5325/tcp, [::]:5325-\u003e5325/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "29b5a2c99707",
+                                  "name":  "leeway_context_gateway",
+                                  "image":  "leeway_context_gateway:local",
+                                  "ports":  "0.0.0.0:5321-\u003e5321/tcp, [::]:5321-\u003e5321/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "4567b60432d5",
+                                  "name":  "leeway_api_gateway",
+                                  "image":  "leeway_api_gateway:local",
+                                  "ports":  "0.0.0.0:5320-\u003e5320/tcp, [::]:5320-\u003e5320/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "8a69dd4b553f",
+                                  "name":  "leeway_research_lane",
+                                  "image":  "leeway_research_lane:local",
+                                  "ports":  "0.0.0.0:5310-\u003e5310/tcp, [::]:5310-\u003e5310/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "155487acdb78",
+                                  "name":  "leeway_seafile_storage_gateway",
+                                  "image":  "leeway_seafile_storage_gateway:local",
+                                  "ports":  "0.0.0.0:5314-\u003e5314/tcp, [::]:5314-\u003e5314/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "247bc03fad13",
+                                  "name":  "agent-lee-sdxl-lightning-image-lane",
+                                  "image":  "agent-lee-sdxl-lightning-image-lane:local",
+                                  "ports":  "0.0.0.0:8099-\u003e8095/tcp, [::]:8099-\u003e8095/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "51485d05d0f3",
+                                  "name":  "agent-lee-true-character-mesh-lane",
+                                  "image":  "agent-lee-true-character-mesh-lane:local",
+                                  "ports":  "0.0.0.0:8103-\u003e8103/tcp, [::]:8103-\u003e8103/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "d8da38d73178",
+                                  "name":  "agent-lee-character-cutout-lane",
+                                  "image":  "agent-lee-character-cutout-lane:local",
+                                  "ports":  "0.0.0.0:8102-\u003e8102/tcp, [::]:8102-\u003e8102/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "965b7c821d62",
+                                  "name":  "agent-lee-image-to-3d-pattern-lane",
+                                  "image":  "agent-lee-image-to-3d-pattern-lane:local",
+                                  "ports":  "0.0.0.0:8101-\u003e8101/tcp, [::]:8101-\u003e8101/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "8b9ea2992e77",
+                                  "name":  "agent-lee-qwen-voice",
+                                  "image":  "agent-lee-qwen-voice:cuda",
+                                  "ports":  "0.0.0.0:8097-\u003e8097/tcp, [::]:8097-\u003e8097/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "0e7776234d81",
+                                  "name":  "agent_lee_code_mode",
+                                  "image":  "leeway-ecosystemv214-agent-lee",
+                                  "ports":  "0.0.0.0:8080-\u003e8080/tcp, [::]:8080-\u003e8080/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "aba5e669b802",
+                                  "name":  "leeway_runtime_fabric",
+                                  "image":  "leeway-ecosystemv214-runtime-fabric",
+                                  "ports":  "0.0.0.0:4001-\u003e4001/tcp, [::]:4001-\u003e4001/tcp, 0.0.0.0:8111-\u003e8111/tcp, [::]:8111-\u003e8111/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "b01d4ae25b90",
+                                  "name":  "leeway-jitsi-meet-web-1",
+                                  "image":  "ghcr.io/jitsi/web:unstable",
+                                  "ports":  "0.0.0.0:8443-\u003e8443/tcp, [::]:8443-\u003e8443/tcp, 0.0.0.0:8008-\u003e8000/tcp, [::]:8008-\u003e8000/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "d0f23375d966",
+                                  "name":  "leeway-jitsi-meet-jicofo-1",
+                                  "image":  "ghcr.io/jitsi/jicofo:unstable",
+                                  "ports":  "127.0.0.1:8888-\u003e8888/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "76356e5127b0",
+                                  "name":  "leeway-jitsi-meet-jvb-1",
+                                  "image":  "ghcr.io/jitsi/jvb:unstable",
+                                  "ports":  "0.0.0.0:10000-\u003e10000/udp, [::]:10000-\u003e10000/udp, 127.0.0.1:8081-\u003e8080/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "81c684938277",
+                                  "name":  "leeway-jitsi-meet-prosody-1",
+                                  "image":  "ghcr.io/jitsi/prosody:unstable",
+                                  "ports":  "5222/tcp, 5269/tcp, 5280/tcp, 5347/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "d70441270455",
+                                  "name":  "leeway-local-assistant-bridge",
+                                  "image":  "local-assistant-bridge-leeway-local-assistant-bridge",
+                                  "ports":  "0.0.0.0:8787-\u003e8787/tcp, [::]:8787-\u003e8787/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "14d88c95c2bd",
+                                  "name":  "agent-lee-ears-kernel",
+                                  "image":  "agent-lee-ears-kernel-agent-lee-ears-kernel",
+                                  "ports":  "0.0.0.0:8094-\u003e8094/tcp, [::]:8094-\u003e8094/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "24870e29147e",
+                                  "name":  "leeway_ollama",
+                                  "image":  "ollama/ollama:latest",
+                                  "ports":  "0.0.0.0:11434-\u003e11434/tcp, [::]:11434-\u003e11434/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "b90801e27e23",
+                                  "name":  "leeway_media_router",
+                                  "image":  "leeway-ecosystemv214-leeway-media-router",
+                                  "ports":  "0.0.0.0:5301-\u003e5301/tcp, [::]:5301-\u003e5301/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "c23c1a6f4520",
+                                  "name":  "leeway_media_ingestion_layer",
+                                  "image":  "leeway-ecosystemv214-leeway-media-ingestion-layer",
+                                  "ports":  "0.0.0.0:5300-\u003e5300/tcp, [::]:5300-\u003e5300/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "5832b7f6e2cb",
+                                  "name":  "leeway_worker_center",
+                                  "image":  "leeway-ecosystemv214-leeway-worker-center",
+                                  "ports":  "0.0.0.0:8862-\u003e8862/tcp, [::]:8862-\u003e8862/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "c69b47d7ed5c",
+                                  "name":  "leeway_mcp_center",
+                                  "image":  "leeway-ecosystemv214-leeway-mcp-center",
+                                  "ports":  "0.0.0.0:8863-\u003e8863/tcp, [::]:8863-\u003e8863/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "a83b52cb97c0",
+                                  "name":  "leeway_mcp_agent_center",
+                                  "image":  "leeway-ecosystemv214-leeway-mcp-agent-center",
+                                  "ports":  "0.0.0.0:8861-\u003e8861/tcp, [::]:8861-\u003e8861/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "1099317041b7",
+                                  "name":  "leeway_agent_center",
+                                  "image":  "leeway-ecosystemv214-leeway-agent-center",
+                                  "ports":  "0.0.0.0:8860-\u003e8860/tcp, [::]:8860-\u003e8860/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "fb972d1ff076",
+                                  "name":  "leeway_hybrid_fabric",
+                                  "image":  "leeway-ecosystemv214-hybrid-fabric",
+                                  "ports":  "0.0.0.0:8777-\u003e8777/tcp, [::]:8777-\u003e8777/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "a8648af22140",
+                                  "name":  "agent-lee-vision-kernel",
+                                  "image":  "agent-lee-vision-kernel-agent-lee-vision-kernel",
+                                  "ports":  "0.0.0.0:8093-\u003e8093/tcp, [::]:8093-\u003e8093/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "63f7c5d71e43",
+                                  "name":  "agent-lee-voice-kernel",
+                                  "image":  "agent-lee-voice-kernel-voice-kernel",
+                                  "ports":  "0.0.0.0:8092-\u003e8092/tcp, [::]:8092-\u003e8092/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "e2c9b4c662e3",
+                                  "name":  "leeway-seafile",
+                                  "image":  "seafileltd/seafile-mc:latest",
+                                  "ports":  "0.0.0.0:8082-\u003e80/tcp, [::]:8082-\u003e80/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "1c062315ff80",
+                                  "name":  "leeway-seafile-cache",
+                                  "image":  "memcached:1.6",
+                                  "ports":  "11211/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              },
+                              {
+                                  "id":  "ed6cd5cf110a",
+                                  "name":  "leeway-seafile-db",
+                                  "image":  "mariadb:10.11",
+                                  "ports":  "3306/tcp",
+                                  "mentions_7332":  false,
+                                  "likely_real_alpha":  false
+                              }
+                          ],
+    "windows_locked":  true,
+    "open_app_executed_during_reconciliation":  false,
+    "safety":  {
+                   "reconciliation_only":  true,
+                   "patch_applied":  false,
+                   "no_execution_in_284cs":  true,
+                   "open_app_remained_blocked":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284D-apply-real-alpha-single-approved-action-window-patch-no-execute.ps1"
+}

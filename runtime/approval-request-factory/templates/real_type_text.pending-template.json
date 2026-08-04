@@ -1,0 +1,18 @@
+﻿{
+    "action":  "real_type_text",
+    "risk_tier":  "controlled_physical_keyboard",
+    "required_fields":  [
+                            "target",
+                            "text",
+                            "target_device_id",
+                            "human_summary",
+                            "requested_by"
+                        ],
+    "default_state":  "PENDING",
+    "approval_state_on_create":  "PENDING",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "dry_run_preview_required":  true,
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "notes":  "Text must be previewed exactly before approval."
+}

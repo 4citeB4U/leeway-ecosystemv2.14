@@ -1,0 +1,15 @@
+
+flask
+psutil
+pywin32
+pygetwindow
+requests
+mcp
+pillow
+python-dotenv
+screeninfo
+flask_cors
+websockets
+numpy
+sounddevice
+faster-whisper

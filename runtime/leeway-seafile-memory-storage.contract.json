@@ -1,0 +1,36 @@
+{
+  "required_rules": {
+    "backup_required": true,
+    "database_and_file_volumes_must_be_identified": true,
+    "restart_policy": "unless-stopped or always",
+    "receipts_required_for_sync_or_backup": true,
+    "secrets_must_not_be_printed_in_receipts": true,
+    "destructive_actions_require_approval": true
+  },
+  "must_store": [
+    "Agent Lee receipts",
+    "research briefs",
+    "Open Notebook exports",
+    "capability contracts",
+    "generated images",
+    "3D object packages",
+    "outreach packets",
+    "legal proof packets",
+    "proposal packages",
+    "runtime backups"
+  ],
+  "lane": "leeway_seafile",
+  "doctrine": "Seafile is the durable Leeway storage and memory-file lane. Important Agent Lee artifacts must be stored, indexed, backed up, and receipt-tracked.",
+  "container_set": [
+    "leeway-seafile",
+    "leeway-seafile-db",
+    "leeway-seafile-cache"
+  ],
+  "expected_roles": {
+    "leeway-seafile": "Seafile web/file service",
+    "leeway-seafile-db": "MariaDB metadata database",
+    "leeway-seafile-cache": "Memcached cache"
+  },
+  "verdict": "LEEWAY_SEAFILE_MEMORY_STORAGE_CONTRACT_CREATED",
+  "created_at": "2026-07-03T19:44:33.0236034-05:00"
+}

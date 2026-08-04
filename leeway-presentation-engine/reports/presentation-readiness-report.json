@@ -1,0 +1,40 @@
+{
+  "schema": "leeway.presentation.readiness-report.v1",
+  "status": "PASS",
+  "timestamp": "2026-06-15T13:10:33.785Z",
+  "scope": "Presentation engine launch, proof, and monetization narration readiness",
+  "checks": [
+    {
+      "name": "index.html exists",
+      "ok": true
+    },
+    {
+      "name": "style.css exists",
+      "ok": true
+    },
+    {
+      "name": "decks-data.json exists",
+      "ok": true
+    },
+    {
+      "name": "package.json exists",
+      "ok": true
+    },
+    {
+      "name": "README.md exists",
+      "ok": true
+    },
+    {
+      "name": "leeway.presentation.manifest.json exists",
+      "ok": true
+    },
+    {
+      "name": "agent monetization narration mode exists",
+      "ok": true
+    },
+    {
+      "name": "project contract exists",
+      "ok": true
+    }
+  ]
+}

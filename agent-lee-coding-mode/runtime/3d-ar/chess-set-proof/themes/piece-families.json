@@ -1,0 +1,58 @@
+{
+  "knights_and_dragons": {
+    "name": "Knights and Dragons",
+    "palette": [
+      "#7f5539",
+      "#c1121f",
+      "#fdf0d5"
+    ],
+    "king": "dragon crown",
+    "queen": "shield mage",
+    "rook": "castle tower",
+    "bishop": "winged knight",
+    "knight": "dragon rider",
+    "pawn": "squire"
+  },
+  "ninjas_and_samurai": {
+    "name": "Ninjas and Samurai",
+    "palette": [
+      "#111827",
+      "#374151",
+      "#f59e0b"
+    ],
+    "king": "shogun",
+    "queen": "shadow tactician",
+    "rook": "fortress gate",
+    "bishop": "blade monk",
+    "knight": "silent infiltrator",
+    "pawn": "apprentice ninja"
+  },
+  "kung_fu_masters": {
+    "name": "Kung Fu Masters",
+    "palette": [
+      "#b91c1c",
+      "#f97316",
+      "#facc15"
+    ],
+    "king": "grandmaster",
+    "queen": "storm palm",
+    "rook": "dojo pillar",
+    "bishop": "flow monk",
+    "knight": "tiger stance",
+    "pawn": "student fighter"
+  },
+  "modern_military": {
+    "name": "Modern Military",
+    "palette": [
+      "#1f2937",
+      "#4b5563",
+      "#84cc16"
+    ],
+    "king": "command unit",
+    "queen": "drone commander",
+    "rook": "armored turret",
+    "bishop": "signal officer",
+    "knight": "recon unit",
+    "pawn": "infantry"
+  }
+}

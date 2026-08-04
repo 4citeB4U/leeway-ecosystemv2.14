@@ -1,0 +1,105 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_READ_ONLY_ROUTE_PATCH_PLAN_232",
+    "timestamp":  "2026-07-05T21:38:52",
+    "family":  "audio_vision",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "app = FastAPI",
+                   "no_existing_family_anchor":  true
+               },
+    "current_routes":  {
+                           "audio_vision_discover":  false,
+                           "audio_vision_status":  false,
+                           "audio_vision_registry":  false,
+                           "cameras_discover":  false,
+                           "microphones_discover":  false,
+                           "speakers_discover":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/audio-vision/discover",
+                              "function_name":  "leeway_audio_vision_discover_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose normalized read-only camera/mic/speaker discovery stub without activating devices."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/audio-vision/status",
+                              "function_name":  "leeway_audio_vision_status_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose audio/vision readiness, discovered counts, control disabled, approval required for capture/playback."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/audio-vision/registry",
+                              "function_name":  "leeway_audio_vision_registry_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose normalized audio/vision registry artifact."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/cameras/discover",
+                              "function_name":  "leeway_cameras_discover_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose read-only camera discovery stub without opening camera."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/microphones/discover",
+                              "function_name":  "leeway_microphones_discover_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose read-only microphone discovery stub without opening microphone."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/speakers/discover",
+                              "function_name":  "leeway_speakers_discover_233",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "capture":  false,
+                              "playback":  false,
+                              "purpose":  "Expose read-only speaker discovery stub without playing audio."
+                          }
+                      ],
+    "safety":  {
+                   "no_camera_activation":  true,
+                   "no_microphone_activation":  true,
+                   "no_speaker_playback":  true,
+                   "no_recording":  true,
+                   "no_permission_mutation":  true,
+                   "no_default_device_mutation":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "audio_vision_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-registry-latest.json",
+                          "audio_vision_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-approval-policy-latest.json",
+                          "audio_vision_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-capability-contract-latest.json",
+                          "audio_vision_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-route-requirement-latest.json",
+                          "proof_231_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-audio-vision\\latest\\audio-vision-read-only-discovery-status-contract-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "233-apply-audio-vision-read-only-routes-patch-no-capture-execute.ps1"
+}

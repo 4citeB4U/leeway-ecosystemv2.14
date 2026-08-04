@@ -1,0 +1,365 @@
+[
+  {
+    "fileName": "leeway-certification-adoption-deck.md",
+    "title": "LeeWay Certification Adoption Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-CERT-0010",
+      "audience": "enterprise transformation teams, procurement, governance leadership",
+      "purpose": "Explain onboarding, pilot execution, and certification pathways"
+    },
+    "coreMessage": "",
+    "slides": [
+      "adoption roadmap",
+      "certification levels",
+      "pilot stages and outcomes",
+      "enterprise rollout model"
+    ],
+    "proofs": [
+      {
+        "claim": "adoption gate chain evidence",
+        "artifact": "Archive/reports/leeway-enterprise-adoption-gate-report.json"
+      },
+      {
+        "claim": "certification model and pilot structure",
+        "artifact": "Archive/reports/leeway-enterprise-certification-model.md"
+      },
+      {
+        "claim": "enterprise pilot operating model",
+        "artifact": "Archive/reports/leeway-enterprise-pilot-program.md"
+      }
+    ],
+    "valueAlignments": [
+      "reduces onboarding ambiguity and governance surprises",
+      "improves procurement confidence with staged controls",
+      "enables repeatable rollout decisions through measurable pilot metrics"
+    ],
+    "respect": "LeeWay adoption model is collaboration-first and strengthens existing enterprise operating models."
+  },
+  {
+    "fileName": "leeway-enterprise-demo-deck.md",
+    "title": "LeeWay Enterprise Demo Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-DEMO-0007",
+      "audience": "enterprise buyers, strategic partners, technical evaluators",
+      "purpose": "Run proof-backed live demonstration flow"
+    },
+    "coreMessage": "",
+    "slides": [],
+    "proofs": [
+      {
+        "claim": "proofArtifact",
+        "artifact": "Archive/reports/leeway-enterprise-demo-checklist.json"
+      },
+      {
+        "claim": "proofArtifact",
+        "artifact": "Archive/reports/leeway-enterprise-demo-flow.md"
+      },
+      {
+        "claim": "proofArtifact",
+        "artifact": "Archive/reports/leeway-survivability-certification-gate-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "improves trust in delivery claims through live artifact verification",
+      "reduces buyer evaluation uncertainty",
+      "shortens technical validation cycles with deterministic checkpoints"
+    ],
+    "respect": "Demo narrative positions LeeWay as an enterprise enhancement layer and not a replacement for customer platforms."
+  },
+  {
+    "fileName": "leeway-enterprise-governance-deck.md",
+    "title": "LeeWay Enterprise Governance Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-GOV-0003",
+      "audience": "compliance, security, platform governance, procurement, risk leadership",
+      "purpose": "Demonstrate control depth, policy enforcement, and evidence readiness"
+    },
+    "coreMessage": "",
+    "slides": [],
+    "proofs": [
+      {
+        "claim": "assistant drift and authority controls",
+        "artifact": "Archive/reports/leeway-assistant-drift-zero-tolerance-report.json"
+      },
+      {
+        "claim": "assistant-body lockdown gate PASS",
+        "artifact": "Archive/reports/leeway-assistant-body-lockdown-final-gate-report.json"
+      },
+      {
+        "claim": "claim-to-proof governance discipline",
+        "artifact": "Archive/reports/leeway-enterprise-claim-proof-map.json"
+      },
+      {
+        "claim": "enterprise evidence gate chain",
+        "artifact": "Archive/reports/leeway-enterprise-adoption-gate-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "lowers governance exposure and policy bypass risk",
+      "reduces manual control validation effort",
+      "strengthens procurement and audit confidence"
+    ],
+    "respect": "LeeWay aligns to enterprise control environments and does not replace legal, audit, or security authority structures."
+  },
+  {
+    "fileName": "leeway-executive-vision-deck.md",
+    "title": "LeeWay Executive Vision Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-EXEC-0001",
+      "audience": "CEOs, CIOs, enterprise executives, strategic partners, investors, government leadership",
+      "purpose": "Explain LeeWay mission and enterprise value with proof-backed positioning"
+    },
+    "coreMessage": "LeeWay is an enterprise governance and orchestration standard that strengthens existing ecosystems with object identity, gate-backed traceability, assistant controls, multimodal governance, and survivability controls.",
+    "slides": [
+      "Enterprise AI fragmentation problem",
+      "LeeWay operating model",
+      "Proven control posture",
+      "Enterprise integration without replacement",
+      "Partnership and adoption path"
+    ],
+    "proofs": [
+      {
+        "claim": "10,299 object reality census governance",
+        "artifact": "Archive/reports/leeway-absolute-object-reality-census.json"
+      },
+      {
+        "claim": "Absolute enterprise standard gate PASS",
+        "artifact": "Archive/reports/leeway-absolute-enterprise-standard-final-gate-report.json"
+      },
+      {
+        "claim": "Total ecosystem unification and no-bypass enforcement",
+        "artifact": "Archive/reports/leeway-no-bypass-total-unification-gate-report.json"
+      },
+      {
+        "claim": "Assistant-body lockdown controls",
+        "artifact": "Archive/reports/leeway-assistant-body-lockdown-final-gate-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "reduces governance drift and audit friction",
+      "reduces incident investigation time with request-to-receipt lineage",
+      "strengthens delivery certainty without replacing enterprise stacks"
+    ],
+    "respect": "LeeWay acknowledges open-source maintainers, GitHub, VS Code, Discord, Hugging Face, Docker, Kubernetes, Ollama, CrewAI, and the model ecosystems from Microsoft, OpenAI, Google/DeepMind, Anthropic, Meta, Mistral, and Qwen.\n\nLeeWay acknowledges Leonard Lee as creator, founder, systems architect, and governance visionary, and recognizes AI assistants as collaborative cognitive equipment under human governance authority."
+  },
+  {
+    "fileName": "leeway-sovereign-orchestration-fabric-deck.md",
+    "title": "LeeWay Sovereign Orchestration Fabric Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-FABRIC-0004",
+      "audience": "infrastructure teams, runtime teams, distributed systems teams",
+      "purpose": "Explain unified orchestration and governed runtime coordination"
+    },
+    "coreMessage": "",
+    "slides": [
+      "unified loop routing",
+      "service attachment and runtime coordination",
+      "automation route control",
+      "ACU visibility and no-bypass posture"
+    ],
+    "proofs": [
+      {
+        "claim": "total ecosystem unification",
+        "artifact": "Archive/reports/leeway-total-unification-matrix.md"
+      },
+      {
+        "claim": "no-bypass route enforcement",
+        "artifact": "Archive/reports/leeway-no-bypass-total-unification-gate-report.json"
+      },
+      {
+        "claim": "runtime process identity governance",
+        "artifact": "Archive/reports/leeway-runtime-process-identity-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "reduces orchestration fragmentation and handoff risk",
+      "improves runtime accountability and recovery readiness",
+      "strengthens scaling confidence in multi-surface systems"
+    ],
+    "respect": "LeeWay orchestration integrates with existing runtime and platform systems and does not replace established enterprise orchestration investments."
+  },
+  {
+    "fileName": "leeway-strategic-alliance-deck.md",
+    "title": "LeeWay Strategic Alliance Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-ALLIANCE-0008",
+      "audience": "Microsoft, Google, Meta, OpenAI, CrewAI, Ollama, enterprise alliance teams",
+      "purpose": "Position collaborative ecosystem fit with proof-backed value paths"
+    },
+    "coreMessage": "",
+    "slides": [],
+    "proofs": [
+      {
+        "claim": "enterprise claim-proof governance",
+        "artifact": "Archive/reports/leeway-enterprise-claim-proof-map.json"
+      },
+      {
+        "claim": "absolute enterprise standard proof",
+        "artifact": "Archive/reports/leeway-absolute-enterprise-standard-final-gate-report.json"
+      },
+      {
+        "claim": "no-bypass enforcement and ACU visibility",
+        "artifact": "Archive/reports/leeway-no-bypass-total-unification-gate-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "enables co-delivery with stronger governance posture",
+      "reduces integration risk in partner-led programs",
+      "supports audit and certification readiness in alliances"
+    ],
+    "respect": "LeeWay explicitly acknowledges contributions from Microsoft, OpenAI, Google/DeepMind, Meta, Anthropic, Mistral, Qwen, CrewAI, Ollama, GitHub, VS Code, Discord, Hugging Face, Docker, Kubernetes, and open-source builders."
+  },
+  {
+    "fileName": "leeway-survivability-reliability-deck.md",
+    "title": "LeeWay Survivability Reliability Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-SURVIVABILITY-0009",
+      "audience": "SRE teams, reliability engineering, infrastructure governance leadership",
+      "purpose": "Demonstrate durability, recovery, and certification controls"
+    },
+    "coreMessage": "",
+    "slides": [
+      "survivability lab",
+      "runtime durability and recovery",
+      "observability and trace continuity",
+      "certification gate evidence"
+    ],
+    "proofs": [
+      {
+        "claim": "survivability certification gate PASS",
+        "artifact": "Archive/reports/leeway-survivability-certification-gate-report.json"
+      },
+      {
+        "claim": "local enterprise gauntlet readiness",
+        "artifact": "Archive/reports/leeway-local-enterprise-gauntlet-readiness-report.md"
+      },
+      {
+        "claim": "tooling closure readiness",
+        "artifact": "Archive/reports/leeway-survivability-tooling-closure-gate-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "reduces downtime and recovery uncertainty",
+      "improves confidence in deployment readiness decisions",
+      "provides certifiable reliability evidence for enterprise stakeholders"
+    ],
+    "respect": "LeeWay survivability posture complements existing SRE practices and reliability tooling."
+  },
+  {
+    "fileName": "leeway-technical-architecture-deck.md",
+    "title": "LeeWay Technical Architecture Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-TECH-0002",
+      "audience": "CTOs, architects, infrastructure engineers, platform engineers, AI engineering teams",
+      "purpose": "Explain architecture, control layers, and deployment integration"
+    },
+    "coreMessage": "",
+    "slides": [
+      "Runtime topology and control plane",
+      "Object identity and traceability spine",
+      "Route governance and no-bypass enforcement",
+      "Multimodal governance stack",
+      "Survivability and operational assurance"
+    ],
+    "proofs": [
+      {
+        "claim": "object lineage and receipt traceability",
+        "artifact": "Archive/reports/leeway-report-receipt-gate-traceability-report.json"
+      },
+      {
+        "claim": "no-bypass enforcement across unified loop",
+        "artifact": "Archive/reports/leeway-no-bypass-total-unification-gate-report.json"
+      },
+      {
+        "claim": "ACU governed visibility",
+        "artifact": "Archive/reports/leeway-acu-total-visibility-gate-report.json"
+      },
+      {
+        "claim": "generated app governance inheritance",
+        "artifact": "Archive/reports/leeway-generated-application-reality-guarantee-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "reduces architecture ambiguity and route drift",
+      "improves deployment governance and change accountability",
+      "compresses audit prep through deterministic evidence linkage"
+    ],
+    "respect": "LeeWay architecture is designed as an additive governance layer that strengthens established enterprise cloud, model, and developer systems."
+  },
+  {
+    "fileName": "leeway-voice-vision-automation-deck.md",
+    "title": "LeeWay Voice Vision Automation Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-MULTIMODAL-0005",
+      "audience": "AI product teams, multimodal researchers, enterprise AI teams",
+      "purpose": "Demonstrate governed multimodal embodiment and operational controls"
+    },
+    "coreMessage": "",
+    "slides": [
+      "voice route governance",
+      "RTC session controls",
+      "vision and automation governance",
+      "multimodal receipts and lineage"
+    ],
+    "proofs": [
+      {
+        "claim": "Qwen route governance and lane control",
+        "artifact": "Archive/reports/leeway-qwen-only-gate-report.json"
+      },
+      {
+        "claim": "voice lane lockdown controls",
+        "artifact": "Archive/reports/leeway-voice-lane-lockdown-report.json"
+      },
+      {
+        "claim": "multimodal automation governance",
+        "artifact": "Archive/reports/leeway-multimodal-automation-ascension-final-gate-report.json"
+      },
+      {
+        "claim": "RTC multimodal control evidence",
+        "artifact": "Archive/reports/leeway-rtc-multimodal-embodiment-strong-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "lowers multimodal governance risk and route ambiguity",
+      "improves compliance posture for voice and vision automation",
+      "reduces downstream incident response time with traceable controls"
+    ],
+    "respect": "LeeWay treats multimodal infrastructure as governed operations and complements existing media and model systems."
+  },
+  {
+    "fileName": "leeway-vscode-application-foundry-deck.md",
+    "title": "LeeWay VS Code Application Foundry Deck",
+    "metadata": {
+      "deckObjectId": "LEEWAY-DECK-FOUNDRY-0006",
+      "audience": "developer platform teams, engineering organizations, modernization leads",
+      "purpose": "Explain governed application generation and inheritance controls"
+    },
+    "coreMessage": "",
+    "slides": [
+      "governed app generation",
+      "object and policy inheritance",
+      "governance-by-default scaffolding",
+      "traceable runtime attachments"
+    ],
+    "proofs": [
+      {
+        "claim": "generated app governance inheritance",
+        "artifact": "Archive/reports/leeway-generated-application-reality-guarantee-report.json"
+      },
+      {
+        "claim": "enterprise generation inheritance gate",
+        "artifact": "Archive/reports/leeway-enterprise-generation-inheritance-gate-report.json"
+      },
+      {
+        "claim": "VS Code multimodal automation generation evidence",
+        "artifact": "Archive/reports/leeway-vscode-multimodal-automation-generation-report.json"
+      }
+    ],
+    "valueAlignments": [
+      "reduces rework from non-governed scaffolds",
+      "improves developer velocity with governance controls embedded",
+      "reduces launch risk through inherited traceability and policy alignment"
+    ],
+    "respect": "LeeWay strengthens developer tooling ecosystems including VS Code and GitHub workflows through additive governance controls."
+  }
+]

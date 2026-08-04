@@ -1,0 +1,32 @@
+﻿{
+    "default_pipeline":  [
+                             "analyze_image",
+                             "validate_source",
+                             "choose_backend",
+                             "reconstruct_3d",
+                             "optimize_mesh",
+                             "validate_asset",
+                             "export_glb",
+                             "write_receipt"
+                         ],
+    "manifest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-3d-skill-pipeline.manifest.json",
+    "enabled":  true,
+    "version":  "1.0.0",
+    "knowledge_base":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-knowledge-base.json",
+    "tool_registry":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-tool-registry.json",
+    "created_at":  "2026-07-03T14:23:31.9987503-05:00",
+    "doctrine":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\AGENT_LEE_IMAGE_TO_3D_DOCTRINE.md",
+    "name":  "agent_lee_3d_runtime_overlay",
+    "runtime_rules":  [
+                          "Read the 3D manifest before image-to-3D tasks.",
+                          "Reject bad sources before reconstruction.",
+                          "Do not call TripoSR for final quality.",
+                          "Prefer Hunyuan3D or TRELLIS for final character assets.",
+                          "Keep live lanes available.",
+                          "Serialize heavy image and 3D jobs with a lock.",
+                          "Return strict JSON for tool plans.",
+                          "Never call a flat card, shell, red block, or blob a finished 3D character."
+                      ],
+    "validation_schema":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-validation-schema.json",
+    "prompt_rules":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-artifacts\\agent-lee-3d-knowledge\\agent-lee-3d-prompt-rules.json"
+}

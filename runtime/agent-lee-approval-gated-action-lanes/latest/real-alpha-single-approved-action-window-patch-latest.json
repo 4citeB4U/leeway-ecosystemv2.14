@@ -1,0 +1,43 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_SINGLE_APPROVED_ACTION_WINDOW_PATCH_284D_R",
+    "phase":  39,
+    "timestamp":  "2026-07-06T09:10:53",
+    "verdict":  "LEEWAY_REAL_ALPHA_SINGLE_APPROVED_ACTION_WINDOW_PATCH_APPLIED_NO_EXECUTE_284D_R_CLEAN",
+    "recovery_for_failed_interactive_284d_paste":  true,
+    "patch_applied":  true,
+    "patch_skipped_already_present":  false,
+    "execution_performed":  false,
+    "restart_performed":  false,
+    "source_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service\\leeway_real_windows_actuator_alpha.py",
+    "source_directory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\windows-actuator\\real-alpha\\service",
+    "backup_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-approval-gated-action-lanes\\backups\\284D-R-20260706-091052\\leeway_real_windows_actuator_alpha.py.before-284D-R-20260706-091052.bak",
+    "patch_marker_present":  true,
+    "arm_endpoint_present":  true,
+    "guarded_open_app_present":  true,
+    "static_patch_clean":  true,
+    "python_compile_ok":  true,
+    "pre_windows_locked":  true,
+    "pre_open_app_executed":  false,
+    "post_windows_locked":  true,
+    "post_open_app_executed":  false,
+    "approved_request":  {
+                             "request_id":  "pending-real_open_app-20260706-002139",
+                             "approval_id":  "approval-real_open_app-20260706-002139",
+                             "action":  "real_open_app",
+                             "app_name":  "notepad.exe",
+                             "approval_state":  "APPROVED",
+                             "execution_state":  "APPROVED_NOT_EXECUTED"
+                         },
+    "safety":  {
+                   "source_patch_only":  true,
+                   "no_execution_in_284d_r":  true,
+                   "no_restart_in_284d_r":  true,
+                   "no_general_unlock":  true,
+                   "no_permanent_enable":  true,
+                   "no_shell_true":  true,
+                   "open_app_remained_blocked_until_restart_and_arm":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284E-restart-real-alpha-and-audit-arm-endpoint-no-execute.ps1"
+}

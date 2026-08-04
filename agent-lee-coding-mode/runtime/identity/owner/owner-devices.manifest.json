@@ -1,0 +1,18 @@
+{
+  "schema": "leeway.agent-lee.owner-devices.manifest.v1",
+  "ownerId": "LEONARD_J_LEE",
+  "ownerName": "Leonard J Lee",
+  "creatorRootAuthority": true,
+  "status": "OWNER_DEVICE_REGISTRY_READY",
+  "updatedAt": "2026-06-26T00:00:00Z",
+  "devices": [],
+  "blockers": [
+    "No Leonard devices have been registered in this manifest yet."
+  ],
+  "registrationPolicy": {
+    "localOnly": true,
+    "consentRequired": true,
+    "rawSensitiveIdentifiersStored": false,
+    "hashPreferred": true
+  }
+}

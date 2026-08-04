@@ -1,0 +1,78 @@
+﻿{
+    "timestamp":  "2026-06-03T13:41:39.5365565-05:00",
+    "extensionDir":  "E:\\.LeeWay-Produucts-File\\.Leeway-Ecosystem\\.leeway-vscode\\agent-lee\\vscode-extension",
+    "packageVersion":  "1.2.13",
+    "requiredAssets":  [
+                           "media/agent-lee-activitybar-icon.svg",
+                           "media/leeway-activity.svg",
+                           "media/agent-lee-chat-avatar.svg",
+                           "media/leeway-logo.svg",
+                           "media/top-right-button-new.png",
+                           "media/bottom-button-for-agent-lee.png",
+                           "media/leeway-standards-button.png",
+                           "media/leeway-standards-logo.png",
+                           "media/readme-header.png",
+                           "media/readme-system-flow.png",
+                           "media/brand-sources/README.md"
+                       ],
+    "packageJsonIconPath":  "media/leeway-activity.svg",
+    "extensionLogoPath":  "media/leeway-standards-logo.png",
+    "readmeImagePaths":  [
+                             "media/leeway-standards-logo.png",
+                             "media/readme-header.png",
+                             "media/readme-system-flow.png"
+                         ],
+    "webviewAssetPaths":  [
+                              "media/agent-lee-chat-avatar.svg",
+                              "media/leeway-logo.svg",
+                              "media/top-right-button-new.png",
+                              "media/bottom-button-for-agent-lee.png",
+                              "media/leeway-standards-button.png",
+                              "media/leeway-standards-logo.png"
+                          ],
+    "activityBarSvg":  {
+                           "exists":  true,
+                           "isValid":  true,
+                           "viewBox":  "0 0 24 24",
+                           "usesCurrentColor":  true,
+                           "hasExternalReferences":  false,
+                           "detail":  "SVG parsed with viewBox 0 0 24 24."
+                       },
+    "missingAssets":  [
+
+                      ],
+    "ignoredAssets":  [
+
+                      ],
+    "packagedAssetsPresent":  {
+                                  "media/agent-lee-activitybar-icon.svg":  true,
+                                  "media/leeway-activity.svg":  true,
+                                  "media/agent-lee-chat-avatar.svg":  true,
+                                  "media/leeway-logo.svg":  true,
+                                  "media/top-right-button-new.png":  true,
+                                  "media/bottom-button-for-agent-lee.png":  true,
+                                  "media/leeway-standards-button.png":  true,
+                                  "media/leeway-standards-logo.png":  true,
+                                  "media/readme-header.png":  true,
+                                  "media/readme-system-flow.png":  true,
+                                  "media/brand-sources/README.md":  true,
+                                  "README.md":  true,
+                                  "package.json":  true
+                              },
+    "installedAssetsPresent":  {
+                                   "media/agent-lee-activitybar-icon.svg":  true,
+                                   "media/leeway-activity.svg":  true,
+                                   "media/agent-lee-chat-avatar.svg":  true,
+                                   "media/leeway-logo.svg":  true,
+                                   "media/top-right-button-new.png":  true,
+                                   "media/bottom-button-for-agent-lee.png":  true,
+                                   "media/leeway-standards-button.png":  true,
+                                   "media/leeway-standards-logo.png":  true,
+                                   "media/readme-header.png":  true,
+                                   "media/readme-system-flow.png":  true,
+                                   "media/brand-sources/README.md":  true,
+                                   "README.md":  true,
+                                   "package.json":  true
+                               },
+    "finalVerdict":  "PASS"
+}

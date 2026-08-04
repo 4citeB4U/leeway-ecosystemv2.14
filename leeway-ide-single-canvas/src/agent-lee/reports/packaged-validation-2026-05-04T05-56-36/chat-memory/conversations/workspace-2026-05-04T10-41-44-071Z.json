@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "text": "test prompt",
+    "timestamp": "2026-05-04T10:41:44.072Z"
+  },
+  {
+    "role": "agent",
+    "text": "test reply",
+    "timestamp": "2026-05-04T10:41:44.073Z"
+  }
+]

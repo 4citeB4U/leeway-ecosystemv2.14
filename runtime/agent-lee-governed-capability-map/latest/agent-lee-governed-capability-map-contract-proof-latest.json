@@ -1,0 +1,31 @@
+﻿{
+    "version":  "LEEWAY_AGENT_LEE_GOVERNED_CAPABILITY_MAP_CONTRACT_266",
+    "phase":  38,
+    "timestamp":  "2026-07-05T23:05:55",
+    "verdict":  "LEEWAY_AGENT_LEE_GOVERNED_CAPABILITY_MAP_CONTRACT_NO_EXECUTE_CLEAN",
+    "device_layer_status":  "FULL_MULTI_FAMILY_DEVICE_LAYER_READY_LOCKED_CLEAN",
+    "final_device_layer_summary_clean":  true,
+    "all_families_clean":  true,
+    "completed_family_count":  11,
+    "remaining_family_count":  0,
+    "all_read_only_routes_ok":  true,
+    "read_only_route_count":  46,
+    "windows_locked":  true,
+    "blocked_probe_executed":  false,
+    "capability_map":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\maps\\agent-lee-governed-capability-map-20260705-230554.json",
+    "capability_map_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-governed-capability-map-latest.json",
+    "ui_contract":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\contracts\\agent-lee-device-layer-ui-runtime-contract-20260705-230554.json",
+    "ui_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\agent-lee-governed-capability-map\\latest\\agent-lee-device-layer-ui-runtime-contract-latest.json",
+    "safety":  {
+                   "contract_only":  true,
+                   "no_execution_enabled":  true,
+                   "physical_actions_executed":  0,
+                   "no_unapproved_real_action":  true,
+                   "no_shell_execution":  true,
+                   "no_network_mutation":  true,
+                   "no_smart_home_mutation":  true,
+                   "no_docker_prune":  true,
+                   "no_destructive_cleanup":  true
+               },
+    "recommended_next":  "267-agent-lee-governed-capability-map-ui-route-patch-plan-no-execute.ps1"
+}

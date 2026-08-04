@@ -1,0 +1,488 @@
+﻿{
+    "version":  "LEEWAY_STANDARDS_LAW_REGISTRY_CONTRACT_403",
+    "phase":  48,
+    "timestamp":  "2026-07-06T22:12:57",
+    "verdict":  "LEEWAY_STANDARDS_LAW_REGISTRY_CONTRACT_403_NO_EXECUTE_CLEAN",
+    "contract_only":  true,
+    "registry_contract_only":  true,
+    "no_execute":  true,
+    "no_patch":  true,
+    "no_path_rewrite":  true,
+    "no_standards_source_creation":  true,
+    "no_package_install":  true,
+    "no_docker_mutation":  true,
+    "no_docker_restart":  true,
+    "no_approval":  true,
+    "no_authority_unlock":  true,
+    "no_device_control":  true,
+    "no_physical_action":  true,
+    "purpose":  "Define the LeeWay-Standards law registry contract, canonical law domains, required law registry entries, evidence-only path classes, portable root variables, and container mount law without mutating Standards source, Docker, packages, runtime, devices, or physical assets.",
+    "todo_checkpoint":  {
+                            "device_layer_complete":  true,
+                            "standards_authority_portability_complete":  true,
+                            "standards_governance_inventory_complete":  true,
+                            "standards_law_registry_contract_in_progress":  true,
+                            "standards_schema_contract_next":  true,
+                            "runtime_fabric_not_started":  true,
+                            "standards_runtime_alignment_not_started":  true,
+                            "agent_lee_binding_not_started":  true
+                        },
+    "inherited":  {
+                      "authority_401_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-48-leeway-standards-authority-container-portability\\latest\\leeway-standards-authority-container-portability-contract-latest.json",
+                      "authority_401_verdict":  "LEEWAY_STANDARDS_AUTHORITY_CONTAINER_PORTABILITY_CONTRACT_401_NO_EXECUTE_CLEAN",
+                      "authority_401_clean":  true,
+                      "inventory_402_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-48-leeway-standards-governance-inventory\\latest\\leeway-standards-governance-inventory-latest.json",
+                      "inventory_402_verdict":  "LEEWAY_STANDARDS_GOVERNANCE_INVENTORY_402_NO_EXECUTE_CLEAN",
+                      "inventory_402_clean":  true,
+                      "inventory_402_standards_files":  3000,
+                      "inventory_402_present_or_partial":  4,
+                      "inventory_402_missing_or_unclassified":  14,
+                      "inventory_402_host_path_signal_files":  146,
+                      "inventory_402_env_root_signal_files":  2,
+                      "inventory_402_container_signal_files":  160
+                  },
+    "resolved_roots":  {
+                           "ecosystem_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+                           "ecosystem_root_source":  "fallback_discovery",
+                           "standards_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards",
+                           "runtime_fabric_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric",
+                           "cerebral_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral",
+                           "runtime_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime",
+                           "archive_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive",
+                           "proof_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-standards",
+                           "standards_root_exists":  true,
+                           "runtime_fabric_root_exists":  true,
+                           "cerebral_root_exists":  true,
+                           "runtime_root_exists":  true,
+                           "archive_root_exists":  true
+                       },
+    "docker_posture":  {
+                           "docker_available":  true,
+                           "docker_compose_available":  true,
+                           "containers_seen":  54,
+                           "images_seen":  82,
+                           "volumes_seen":  27,
+                           "networks_seen":  10,
+                           "read_only_probe_only":  true,
+                           "mutation_performed":  false
+                       },
+    "law_domains":  [
+                        {
+                            "id":  "LAW_DOMAIN_01_SYSTEM",
+                            "name":  "System Law",
+                            "canonical_role":  "Defines ecosystem-wide authority, precedence, and global invariants.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_02_RUNTIME",
+                            "name":  "Runtime Law",
+                            "canonical_role":  "Defines Runtime Fabric enforcement, binding, registration, and execution constraints.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_03_AGENT",
+                            "name":  "Agent Law",
+                            "canonical_role":  "Defines Agent Lee identity, authority, memory, tools, model lanes, and proof behavior.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_04_DEVELOPER",
+                            "name":  "Developer Law",
+                            "canonical_role":  "Defines developer interaction, source mutation rules, approvals, and receipts.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_05_MODEL_LANE",
+                            "name":  "LLM and Model Lane Law",
+                            "canonical_role":  "Defines model providers, local model lanes, external model lanes, containment, and disclosure.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_06_APPLICATION",
+                            "name":  "Application Law",
+                            "canonical_role":  "Defines UI/API application surfaces, GET-only status, policy endpoints, and safe mutation gates.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_07_DEVICE",
+                            "name":  "Device Law",
+                            "canonical_role":  "Defines phone, TV, router, laptop, IoT, camera, microphone, and physical-device authority boundaries.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_08_PHYSICAL_ACTION",
+                            "name":  "Physical Action Law",
+                            "canonical_role":  "Defines physical-world actuation, lockback, single-use approval, proof-before, proof-after, and critical stop rules.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_09_PROOF",
+                            "name":  "Proof Law",
+                            "canonical_role":  "Defines proof chains, evidence, reports, browser proofs, and audit ledgers.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_10_RECEIPT",
+                            "name":  "Receipt Law",
+                            "canonical_role":  "Defines receipts for contracts, source changes, approvals, execution attempts, lockback, and failure.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_11_LOCKBACK",
+                            "name":  "Lockback Law",
+                            "canonical_role":  "Defines required authority restoration and post-action blocked state verification.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        },
+                        {
+                            "id":  "LAW_DOMAIN_12_PORTABILITY",
+                            "name":  "Container and Path Portability Law",
+                            "canonical_role":  "Defines env roots, Docker volumes, path normalization, and host-path evidence-only limits.",
+                            "portable_required":  true,
+                            "container_required":  true,
+                            "source_type":  "canonical_law"
+                        }
+                    ],
+    "canonical_law_registry_entries":  [
+                                           {
+                                               "registry_id":  "standards_authority_manifest",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\authority\\standards-authority.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "runtime_binding_manifest",
+                                               "law_domain":  "LAW_DOMAIN_02_RUNTIME",
+                                               "expected_relative_path":  "LeeWay-Standards\\runtime\\runtime-binding.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "agent_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_03_AGENT",
+                                               "expected_relative_path":  "LeeWay-Standards\\agent\\agent-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "developer_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_04_DEVELOPER",
+                                               "expected_relative_path":  "LeeWay-Standards\\developer\\developer-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "model_lane_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_05_MODEL_LANE",
+                                               "expected_relative_path":  "LeeWay-Standards\\models\\model-lane-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "application_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_06_APPLICATION",
+                                               "expected_relative_path":  "LeeWay-Standards\\applications\\application-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "device_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_07_DEVICE",
+                                               "expected_relative_path":  "LeeWay-Standards\\devices\\device-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "physical_action_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_08_PHYSICAL_ACTION",
+                                               "expected_relative_path":  "LeeWay-Standards\\physical\\physical-action-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "proof_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_09_PROOF",
+                                               "expected_relative_path":  "LeeWay-Standards\\proof\\proof-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "receipt_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_10_RECEIPT",
+                                               "expected_relative_path":  "LeeWay-Standards\\receipts\\receipt-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "lockback_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_11_LOCKBACK",
+                                               "expected_relative_path":  "LeeWay-Standards\\lockback\\lockback-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "portability_law_manifest",
+                                               "law_domain":  "LAW_DOMAIN_12_PORTABILITY",
+                                               "expected_relative_path":  "LeeWay-Standards\\portability\\container-path-portability-law.manifest.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "forbidden_action_registry",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\registries\\forbidden-action.registry.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "capability_vocabulary",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\vocabulary\\capability.vocabulary.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "risk_vocabulary",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\vocabulary\\risk.vocabulary.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "schema_registry",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\schemas\\schema.registry.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "contract_registry",
+                                               "law_domain":  "LAW_DOMAIN_01_SYSTEM",
+                                               "expected_relative_path":  "LeeWay-Standards\\contracts\\contract.registry.json",
+                                               "required":  true
+                                           },
+                                           {
+                                               "registry_id":  "container_mount_registry",
+                                               "law_domain":  "LAW_DOMAIN_12_PORTABILITY",
+                                               "expected_relative_path":  "LeeWay-Standards\\portability\\container-mount.registry.json",
+                                               "required":  true
+                                           }
+                                       ],
+    "evidence_only_classes":  [
+                                  {
+                                      "class_id":  "host_absolute_path",
+                                      "description":  "Windows, Linux, or macOS host-specific absolute path stored for receipt evidence only.",
+                                      "canonical_allowed":  false
+                                  },
+                                  {
+                                      "class_id":  "run_report_path",
+                                      "description":  "Host run report path, evidence only.",
+                                      "canonical_allowed":  false
+                                  },
+                                  {
+                                      "class_id":  "local_script_path",
+                                      "description":  "Local script path, evidence only unless mapped through LEEWAY_SCRIPT_ROOT.",
+                                      "canonical_allowed":  false
+                                  },
+                                  {
+                                      "class_id":  "docker_probe_output",
+                                      "description":  "Docker read-only probe output, evidence only until bound by Runtime Fabric.",
+                                      "canonical_allowed":  false
+                                  },
+                                  {
+                                      "class_id":  "browser_proof_url",
+                                      "description":  "Browser proof URL or localhost endpoint, evidence only unless container-bound.",
+                                      "canonical_allowed":  false
+                                  },
+                                  {
+                                      "class_id":  "temporary_runtime_receipt",
+                                      "description":  "Generated runtime receipt path, evidence only unless registered in proof law.",
+                                      "canonical_allowed":  false
+                                  }
+                              ],
+    "portable_root_variables":  [
+                                    {
+                                        "name":  "LEEWAY_ROOT",
+                                        "required":  true,
+                                        "container_default":  "/opt/leeway",
+                                        "role":  "Ecosystem root"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_STANDARDS_ROOT",
+                                        "required":  true,
+                                        "container_default":  "/opt/leeway/LeeWay-Standards",
+                                        "role":  "Canonical Standards law root"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_RUNTIME_FABRIC_ROOT",
+                                        "required":  true,
+                                        "container_default":  "/opt/leeway/Leeway Runtime Fabric",
+                                        "role":  "Runtime enforcement root"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_PROOF_ROOT",
+                                        "required":  true,
+                                        "container_default":  "/opt/leeway/Archive/proofs",
+                                        "role":  "Proof and receipt root"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_RUNTIME_MODE",
+                                        "required":  true,
+                                        "container_default":  "container",
+                                        "role":  "Runtime mode declaration"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_CONTAINERIZED",
+                                        "required":  true,
+                                        "container_default":  "true",
+                                        "role":  "Containerized runtime flag"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_SCRIPT_ROOT",
+                                        "required":  false,
+                                        "container_default":  "/opt/leeway/scripts",
+                                        "role":  "Optional script/procedure root"
+                                    },
+                                    {
+                                        "name":  "LEEWAY_DATA_ROOT",
+                                        "required":  false,
+                                        "container_default":  "/opt/leeway/data",
+                                        "role":  "Optional durable data root"
+                                    }
+                                ],
+    "container_mount_laws":  [
+                                 {
+                                     "mount_id":  "leeway_root",
+                                     "container_path":  "/opt/leeway",
+                                     "required":  true,
+                                     "mutable":  true,
+                                     "role":  "Ecosystem root mount"
+                                 },
+                                 {
+                                     "mount_id":  "leeway_standards",
+                                     "container_path":  "/opt/leeway/LeeWay-Standards",
+                                     "required":  true,
+                                     "mutable":  true,
+                                     "role":  "Standards law root mount"
+                                 },
+                                 {
+                                     "mount_id":  "leeway_runtime_fabric",
+                                     "container_path":  "/opt/leeway/Leeway Runtime Fabric",
+                                     "required":  true,
+                                     "mutable":  false,
+                                     "role":  "Runtime Fabric root until governed"
+                                 },
+                                 {
+                                     "mount_id":  "leeway_proofs",
+                                     "container_path":  "/opt/leeway/Archive/proofs",
+                                     "required":  true,
+                                     "mutable":  true,
+                                     "role":  "Proof and receipt ledger mount"
+                                 },
+                                 {
+                                     "mount_id":  "leeway_runtime_artifacts",
+                                     "container_path":  "/opt/leeway/runtime",
+                                     "required":  true,
+                                     "mutable":  true,
+                                     "role":  "Generated runtime artifacts"
+                                 },
+                                 {
+                                     "mount_id":  "leeway_models",
+                                     "container_path":  "/opt/leeway/models",
+                                     "required":  false,
+                                     "mutable":  true,
+                                     "role":  "Model storage if local models are used"
+                                 }
+                             ],
+    "law_registry_validation_rules":  [
+                                          "Every canonical law entry must have a registry id.",
+                                          "Every canonical law entry must map to a law domain.",
+                                          "Every canonical law entry must use a relative path under LeeWay-Standards.",
+                                          "Every canonical law entry must be portable across host systems.",
+                                          "Every canonical law entry must be container-addressable.",
+                                          "Host absolute paths are evidence-only unless normalized by portability law.",
+                                          "Receipts may store host paths but must also store relative paths when possible.",
+                                          "Runtime Fabric cannot enforce law not present in the law registry.",
+                                          "Agent Lee cannot claim authority not present in the law registry.",
+                                          "Device authority inherits from Device Layer boundary and physical action law.",
+                                          "Model lanes are model lanes, not sovereign agents.",
+                                          "Docker containers are runtime surfaces, not authority sources.",
+                                          "Container mounts must be registered before they can be enforcement roots.",
+                                          "Unregistered source folders are unclassified and non-authoritative.",
+                                          "Duplicate law files must be reconciled before Runtime Fabric alignment."
+                                      ],
+    "law_registry_hard_blocks":  [
+                                     "source_patch",
+                                     "path_rewrite",
+                                     "standards_file_creation",
+                                     "docker_build",
+                                     "docker_compose_up",
+                                     "docker_restart",
+                                     "docker_stop",
+                                     "docker_rm",
+                                     "docker_prune",
+                                     "package_install",
+                                     "runtime_execution",
+                                     "approval_grant",
+                                     "authority_unlock",
+                                     "device_control",
+                                     "physical_action",
+                                     "network_scan",
+                                     "port_scan",
+                                     "credential_collection"
+                                 ],
+    "next_phase_needs":  [
+                             "Schema contract must define proof, receipt, approval, lockback, risk, capability, and registry schemas.",
+                             "Schema contract must require portable root fields and relative path fields.",
+                             "Schema contract must define evidence-only host path fields.",
+                             "Schema contract must define container mount schema.",
+                             "Schema contract must define runtime binding schema.",
+                             "Schema contract must define Agent Lee binding schema.",
+                             "Schema contract must define Device Layer inheritance schema.",
+                             "Schema contract must define validation status fields.",
+                             "Schema contract must define no-execute contract status fields.",
+                             "Schema contract must define lockback and post-block verification fields."
+                         ],
+    "counts":  {
+                   "law_domains":  12,
+                   "canonical_law_registry_entries":  18,
+                   "evidence_only_classes":  6,
+                   "portable_root_variables":  8,
+                   "container_mount_laws":  6,
+                   "law_registry_validation_rules":  15,
+                   "law_registry_hard_blocks":  18,
+                   "next_phase_needs":  10,
+                   "docker_containers_seen":  54,
+                   "docker_images_seen":  82,
+                   "docker_volumes_seen":  27,
+                   "docker_networks_seen":  10
+               },
+    "patch_applied_in_403":  false,
+    "path_rewrite_performed_in_403":  false,
+    "standards_source_created_in_403":  false,
+    "frontend_files_created_in_403":  false,
+    "api_routes_created_in_403":  false,
+    "source_files_modified_in_403":  false,
+    "packages_installed_in_403":  false,
+    "docker_created_in_403":  false,
+    "docker_started_in_403":  false,
+    "docker_restarted_in_403":  false,
+    "docker_stopped_in_403":  false,
+    "docker_pruned_in_403":  false,
+    "process_started_in_403":  false,
+    "process_restarted_in_403":  false,
+    "process_stopped_in_403":  false,
+    "approval_granted_in_403":  false,
+    "authority_unlocked_in_403":  false,
+    "execution_authorized_in_403":  false,
+    "physical_action_authorized_in_403":  false,
+    "device_control_performed":  false,
+    "physical_action_lane_performed":  false,
+    "recommended_next_script":  "404-leeway-standards-schema-contract-no-execute.ps1"
+}

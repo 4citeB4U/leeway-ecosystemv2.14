@@ -1,0 +1,31 @@
+{
+  "activeConversationId": "agent-lee-2026-05-04T10-53-04-074Z",
+  "conversations": [
+    {
+      "id": "agent-lee-2026-05-04T10-53-04-074Z",
+      "title": "agent-lee conversation",
+      "createdAt": "2026-05-04T10:53:04.074Z",
+      "updatedAt": "2026-05-04T10:53:04.082Z",
+      "workspaceRoot": "c:\\Users\\Leona\\.leeway-vscode\\agent-lee",
+      "active": true
+    },
+    {
+      "id": "workspace-2026-05-04T10-41-44-071Z",
+      "title": "workspace conversation",
+      "createdAt": "2026-05-04T10:41:44.071Z",
+      "updatedAt": "2026-05-04T10:41:44.073Z",
+      "workspaceRoot": "c:/temp/workspace",
+      "active": false
+    },
+    {
+      "id": "recovered-legacy-2026-05-04T01-29-04-350Z",
+      "title": "Recovered legacy conversation",
+      "createdAt": "2026-05-04T01:29:04.350Z",
+      "updatedAt": "2026-05-04T10:04:51.262Z",
+      "workspaceRoot": "",
+      "active": false,
+      "recoveredFromLegacy": true,
+      "source": "legacy-chat-files"
+    }
+  ]
+}

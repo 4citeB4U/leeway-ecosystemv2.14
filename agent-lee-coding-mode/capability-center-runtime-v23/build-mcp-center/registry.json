@@ -1,0 +1,233 @@
+{
+    "schema":  "leeway-mcp-center-registry-v23-1",
+    "centerId":  "leeway-mcp-center",
+    "sourceInventory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-true-agent-worker-mcp-scan-v4-20260627-223626\\leeway-true-agent-worker-mcp-inventory-v4.json",
+    "status":  "WARM_CENTER_READY_DECLARED_WITH_MEDIA_INGESTION_V24_1",
+    "rule":  "MCP package-present does not mean live executor.",
+    "mcpPackages":  [
+                        {
+                            "id":  "agent-registry-mcp",
+                            "name":  "agent-registry-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "desktop-commander-agent-mcp",
+                            "name":  "desktop-commander-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "docs-rag-agent-mcp",
+                            "name":  "docs-rag-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "health-agent-mcp",
+                            "name":  "health-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "insforge-agent-mcp",
+                            "name":  "insforge-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "memory-agent-mcp",
+                            "name":  "memory-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "planner-agent-mcp",
+                            "name":  "planner-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "playwright-agent-mcp",
+                            "name":  "playwright-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "scheduling-agent-mcp",
+                            "name":  "scheduling-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "testsprite-agent-mcp",
+                            "name":  "testsprite-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "validation-agent-mcp",
+                            "name":  "validation-agent-mcp",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "package-present",
+                            "runtime":  "node",
+                            "deploymentLocation":  "adapters/mcp",
+                            "layer":  "mcp-package",
+                            "healthCheck":  "",
+                            "capabilities":  [
+
+                                             ]
+                        },
+                        {
+                            "id":  "leeway-media-ingestion-mcp",
+                            "name":  "Leeway Media Ingestion MCP",
+                            "category":  "TRUE_MCP_PACKAGE",
+                            "status":  "contract-ready-runtime-backed",
+                            "runtime":  "node-http-service",
+                            "deploymentLocation":  "runtime-fabric-media-ingestion",
+                            "layer":  "media-ingestion",
+                            "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                            "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                            "capabilities":  [
+                                                 "media_upload",
+                                                 "media_normalization",
+                                                 "event_generation",
+                                                 "receipt_generation",
+                                                 "runtime_fabric_forwarding"
+                                             ],
+                            "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                            "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                            "note":  "Runtime-backed MCP contract for canonical external media intake."
+                        },
+                        {
+                            "id":  "leeway-video-analysis-ingestion-mcp",
+                            "name":  "Leeway Video Analysis Ingestion MCP",
+                            "category":  "MCP_CONTRACT",
+                            "status":  "contract-ready-ingestion-backed",
+                            "runtime":  "node-http-service",
+                            "deploymentLocation":  "runtime-vision-media-bridge",
+                            "layer":  "vision",
+                            "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                            "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                            "capabilities":  [
+                                                 "video_upload",
+                                                 "video_event_intake",
+                                                 "vision_kernel_routing",
+                                                 "frame_analysis_preparation"
+                                             ],
+                            "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                            "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                            "note":  "Prepares uploaded video for future vision analysis workers."
+                        },
+                        {
+                            "id":  "leeway-audio-analysis-ingestion-mcp",
+                            "name":  "Leeway Audio Analysis Ingestion MCP",
+                            "category":  "MCP_CONTRACT",
+                            "status":  "contract-ready-ingestion-backed",
+                            "runtime":  "node-http-service",
+                            "deploymentLocation":  "runtime-audio-media-bridge",
+                            "layer":  "audio",
+                            "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                            "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                            "capabilities":  [
+                                                 "audio_upload",
+                                                 "audio_event_intake",
+                                                 "transcription_preparation",
+                                                 "sound_analysis_preparation"
+                                             ],
+                            "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                            "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                            "note":  "Prepares uploaded audio for audio analysis and creation workflows."
+                        },
+                        {
+                            "id":  "leeway-document-media-ingestion-mcp",
+                            "name":  "Leeway Document Media Ingestion MCP",
+                            "category":  "MCP_CONTRACT",
+                            "status":  "contract-ready-ingestion-backed",
+                            "runtime":  "node-http-service",
+                            "deploymentLocation":  "runtime-document-media-bridge",
+                            "layer":  "documents",
+                            "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                            "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                            "capabilities":  [
+                                                 "document_upload",
+                                                 "pdf_intake",
+                                                 "spreadsheet_intake",
+                                                 "document_event_generation"
+                                             ],
+                            "sourcePath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\media-ingestion-layer",
+                            "endpoint":  "http://leeway-media-ingestion-layer:5300",
+                            "note":  "Prepares uploaded documents for document, PDF, and spreadsheet workers."
+                        }
+                    ]
+}

@@ -1,0 +1,48 @@
+{
+  "verdict": "LEEWAY_U2A_UPDATE_PLANNER_POLICY_CREATED",
+  "created_at": "2026-07-05T01:30:36.5607629-05:00",
+  "authority": {
+    "top_authority": "Leeway Standards",
+    "primary_operator": "Agent Lee",
+    "planner_root": {
+      "Length": 97
+    },
+    "no_bridge_sprawl": true,
+    "use_existing_desktop_lane": "CerebralDaemon/native desktop lane preferred. Do not create bridge variants."
+  },
+  "required_for_every_remediation": [
+    "current truth",
+    "affected lane",
+    "affected files",
+    "affected containers",
+    "approval requirement",
+    "backup plan",
+    "apply plan",
+    "validation plan",
+    "rollback plan",
+    "receipt path",
+    "behavior proof definition"
+  ],
+  "hard_blocks": [
+    "No phone call or SMS without approval gate.",
+    "No desktop click/type/action without approval gate.",
+    "No email send without approval gate.",
+    "No calendar write without approval gate.",
+    "No browser action against external sites without action log.",
+    "No customer release claim without receipt.",
+    "No new bridge script unless explicitly approved as temporary and scheduled for removal."
+  ],
+  "lane_lock_order": [
+    "archive_disable_old_backups",
+    "storage_and_conference_health_mapping",
+    "desktop_operator_proof",
+    "browser_operator_proof",
+    "email_provider_proof",
+    "calendar_provider_proof",
+    "phone_provider_or_device_proof",
+    "license_runtime_proof",
+    "installer_runtime_proof",
+    "vision_and_image_kernel_proof",
+    "deep_behavior_proof"
+  ]
+}

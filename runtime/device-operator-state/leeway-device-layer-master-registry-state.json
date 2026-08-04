@@ -1,0 +1,105 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_2026-07-05",
+    "timestamp":  "2026-07-05T17:27:59",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "script_root":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts",
+    "device_operator_url":  "http://127.0.0.1:5323",
+    "runtime_device_state":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state",
+    "proof_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+    "checks":  [
+                   {
+                       "name":  "Docker ps leeway_device_operator",
+                       "status":  "PASS",
+                       "detail":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-20260705-172759\\json\\leeway_device_operator_docker_ps.json",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Docker inspect leeway_device_operator",
+                       "status":  "PASS",
+                       "detail":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-20260705-172759\\json\\leeway_device_operator_docker_inspect.json",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Device Operator Root",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/ -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-operator-root-snapshot.txt HTTP 200",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Device Operator Health",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/health -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-operator-health-snapshot.json",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Device Operator Status",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/status -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-operator-status-snapshot.json",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Device Operator Routes",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/routes -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-routes-snapshot.json",
+                       "time":  "2026-07-05T17:27:59"
+                   },
+                   {
+                       "name":  "Device Operator OpenAPI",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/openapi.json -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-openapi-snapshot.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Device Operator Docs",
+                       "status":  "PASS",
+                       "detail":  "http://127.0.0.1:5323/docs -\u003e E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-operator-docs-snapshot.html HTTP 200",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write master registry",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-master-registry.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write satellite contracts",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-satellite-contracts.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write shells registry",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-shells.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write IoT registry",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-iot-registry.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write approval policy",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-approval-policy.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write capability map",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-capability-map.json",
+                       "time":  "2026-07-05T17:28:00"
+                   },
+                   {
+                       "name":  "Write next build plan",
+                       "status":  "PASS",
+                       "detail":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-operator-state\\leeway-device-layer-next-build-plan.json",
+                       "time":  "2026-07-05T17:28:00"
+                   }
+               ],
+    "warnings":  [
+
+                 ],
+    "verdict":  "LEEWAY_DEVICE_LAYER_MASTER_REGISTRY_LOCKED"
+}

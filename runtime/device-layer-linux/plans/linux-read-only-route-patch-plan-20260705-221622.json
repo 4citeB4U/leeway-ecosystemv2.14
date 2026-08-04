@@ -1,0 +1,105 @@
+﻿{
+    "version":  "LEEWAY_LINUX_READ_ONLY_ROUTE_PATCH_PLAN_247",
+    "timestamp":  "2026-07-05T22:16:22",
+    "family":  "linux",
+    "plan_status":  "READY_FOR_APPROVAL_GATED_READ_ONLY_ROUTE_PATCH",
+    "patch_applied":  false,
+    "execute_patch":  false,
+    "target":  {
+                   "service":  "leeway_device_operator",
+                   "container":  "leeway_device_operator",
+                   "target_source_file":  "/app/app.py",
+                   "route_family_anchor":  "app = FastAPI",
+                   "no_existing_family_anchor":  true
+               },
+    "current_routes":  {
+                           "linux_discover":  false,
+                           "linux_status":  false,
+                           "linux_registry":  false,
+                           "linux_shell_status":  false,
+                           "linux_actuator_status":  false
+                       },
+    "routes_to_add":  [
+                          {
+                              "method":  "GET",
+                              "route":  "/linux/discover",
+                              "function_name":  "leeway_linux_discover_248",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "ssh":  false,
+                              "shell":  false,
+                              "remote_connection":  false,
+                              "purpose":  "Expose Linux inventory stub without SSH, shell execution, or host connection."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/linux/status",
+                              "function_name":  "leeway_linux_status_248",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "ssh":  false,
+                              "shell":  false,
+                              "remote_connection":  false,
+                              "purpose":  "Expose Linux readiness with shell/actuator disabled and approval required."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/linux/registry",
+                              "function_name":  "leeway_linux_registry_248",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "ssh":  false,
+                              "shell":  false,
+                              "remote_connection":  false,
+                              "purpose":  "Expose normalized Linux registry artifact."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/linux/shell/status",
+                              "function_name":  "leeway_linux_shell_status_248",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "ssh":  false,
+                              "shell":  false,
+                              "remote_connection":  false,
+                              "purpose":  "Expose Linux shell disabled status and approval requirements."
+                          },
+                          {
+                              "method":  "GET",
+                              "route":  "/linux/actuator/status",
+                              "function_name":  "leeway_linux_actuator_status_248",
+                              "read_only":  true,
+                              "physical_action":  false,
+                              "ssh":  false,
+                              "shell":  false,
+                              "remote_connection":  false,
+                              "purpose":  "Expose Linux actuator disabled status and approval requirements."
+                          }
+                      ],
+    "safety":  {
+                   "no_ssh_invocation":  true,
+                   "no_shell_invocation":  true,
+                   "no_remote_host_connection":  true,
+                   "no_file_read":  true,
+                   "no_file_write":  true,
+                   "no_app_open":  true,
+                   "no_click":  true,
+                   "no_text_entry":  true,
+                   "no_hotkey":  true,
+                   "no_process_mutation":  true,
+                   "no_system_mutation":  true,
+                   "no_physical_action":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "prerequisites":  {
+                          "linux_registry_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-registry-latest.json",
+                          "linux_policy_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-approval-policy-latest.json",
+                          "linux_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-actuator-contract-latest.json",
+                          "linux_route_requirement_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-read-only-route-requirement-latest.json",
+                          "linux_shell_contract_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-shell-command-contract-latest.json",
+                          "proof_246_latest":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-actuator-contract-proof-latest.json"
+                      },
+    "rollback_required":  true,
+    "recommended_next":  "248-apply-linux-read-only-routes-patch-no-shell-execute.ps1"
+}

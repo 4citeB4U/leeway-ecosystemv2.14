@@ -1,0 +1,8 @@
+{
+  "name": "Agent.Logistic-Preparer",
+  "wave": 2,
+  "rank": "Stager",
+  "primary_function": "Stage candidate files in C:\\Cerebral\\staging without execution",
+  "tool": "stage_wave2",
+  "uniform": "Restricted"
+}

@@ -1,0 +1,108 @@
+﻿{
+    "version":  "LEEWAY_IOS_DEVICE_SHELL_ACTUATOR_CONTRACT_241",
+    "timestamp":  "2026-07-05T22:02:17",
+    "family":  "ios",
+    "capability_status":  "SHELL_AND_ACTUATOR_CONTRACT_CREATED_NO_EXECUTE",
+    "existing_routes":  {
+                            "ios_discover":  false,
+                            "ios_status":  false,
+                            "ios_registry":  false,
+                            "ios_shell_status":  false,
+                            "ios_actuator_status":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/ios/discover",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/ios/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/ios/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/ios/shell/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/ios/actuator/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/shell/execute",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/input/tap",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/input/swipe",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/text/send",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/call/start",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/ios/backup/start",
+                                 "status":  "FUTURE_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_libimobiledevice_invoked":  true,
+                   "no_idevice_tools_invoked":  true,
+                   "no_phone_connected":  true,
+                   "no_pairing":  true,
+                   "no_trust_prompt":  true,
+                   "no_tap":  true,
+                   "no_swipe":  true,
+                   "no_text":  true,
+                   "no_call":  true,
+                   "no_file_read":  true,
+                   "no_backup":  true,
+                   "no_permission_mutation":  true,
+                   "no_device_mutation":  true,
+                   "no_physical_action":  true
+               }
+}

@@ -1,0 +1,140 @@
+﻿{
+    "existing_containers":  {
+                                "agent_centers":  [
+                                                      "leeway_agent_center",
+                                                      "leeway_worker_center",
+                                                      "leeway_mcp_center",
+                                                      "leeway_mcp_agent_center"
+                                                  ],
+                                "qwen_voice":  [
+                                                   "agent-lee-qwen-voice"
+                                               ],
+                                "runtime":  [
+                                                "leeway_runtime_fabric",
+                                                "agent_lee_code_mode",
+                                                "leeway_hybrid_fabric"
+                                            ],
+                                "seafile":  [
+                                                "leeway-seafile",
+                                                "leeway-seafile-db",
+                                                "leeway-seafile-cache"
+                                            ],
+                                "qwen_brain":  [
+                                                   "leeway_ollama"
+                                               ],
+                                "media":  [
+                                              "leeway_media_ingestion_layer",
+                                              "leeway_media_router"
+                                          ],
+                                "communication":  [
+                                                      "leeway-jitsi-meet",
+                                                      "web-1",
+                                                      "jicofo-1",
+                                                      "jvb-1",
+                                                      "prosody-1"
+                                                  ],
+                                "kernels":  [
+                                                "agent-lee-ears-kernel",
+                                                "agent-lee-vision-kernel"
+                                            ]
+                            },
+    "on_demand_lanes":  {
+                            "memory_embeddings":  {
+                                                      "local_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\embeddings\\qwen3-vl-embedding",
+                                                      "service":  "leeway-media-ingestion-layer",
+                                                      "purpose":  "Seafile discovery, media indexing, document/image/video retrieval, memory search.",
+                                                      "wake_policy":  "start when indexing, search, or retrieval is requested",
+                                                      "model":  "qwen3-vl-embedding",
+                                                      "endpoint":  "http://127.0.0.1:5300"
+                                                  },
+                            "omni_runtime":  {
+                                                 "wake_policy":  "on-demand only",
+                                                 "backup":  "qwen2-omni",
+                                                 "purpose":  "Multimodal runtime awareness backup. Use for audio/vision fusion and runtime orchestration when needed.",
+                                                 "primary":  "qwen2.5-omni",
+                                                 "local_paths":  {
+                                                                     "qwen25_omni":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen2.5-omni",
+                                                                     "qwen2_omni":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen2-omni"
+                                                                 }
+                                             },
+                            "eyes":  {
+                                         "local_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\vision\\qwen2.5-vl",
+                                         "service":  "agent-lee-vision-kernel",
+                                         "purpose":  "Camera, screenshot, image, visual context, screen reading.",
+                                         "wake_policy":  "start when visual analysis is requested",
+                                         "model":  "qwen2.5-vl",
+                                         "ollama_model":  "qwen2.5vl:7b",
+                                         "endpoint":  "http://127.0.0.1:8093"
+                                     },
+                            "ears":  {
+                                         "local_paths":  {
+                                                             "qwen2_audio":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen2-audio",
+                                                             "qwen2_omni":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen2-omni",
+                                                             "qwen25_omni":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen2.5-omni"
+                                                         },
+                                         "service":  "agent-lee-ears-kernel",
+                                         "purpose":  "Speech/audio understanding. This replaces Windows speech recognition.",
+                                         "wake_policy":  "start when microphone/audio transcription is requested",
+                                         "endpoint":  "http://127.0.0.1:8094",
+                                         "candidates":  [
+                                                            "qwen2-audio",
+                                                            "qwen2-omni",
+                                                            "qwen2.5-omni"
+                                                        ]
+                                     },
+                            "media_router":  {
+                                                 "wake_policy":  "start when media job requested",
+                                                 "endpoint":  "http://127.0.0.1:5301",
+                                                 "purpose":  "Routes media jobs to embedding, vision, voice, ingestion, or output lanes.",
+                                                 "service":  "leeway-media-router"
+                                             }
+                        },
+    "single_entrypoint":  {
+                              "host_endpoint":  "http://127.0.0.1:4001",
+                              "docker_endpoint":  "http://leeway_runtime_fabric:4001",
+                              "service":  "leeway_runtime_fabric",
+                              "purpose":  "One access point for Agent Lee embodiment, model routing, discovery, tools, shells, and runtime status."
+                          },
+    "verdict":  "AGENT_LEE_ON_DEMAND_MODEL_ROLES_DECLARED",
+    "root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "policy":  {
+                   "all_models_loaded_at_once":  false,
+                   "reason":  "RTX laptop GPU and local RAM should not keep every large model hot. Runtime Fabric should route to the needed lane.",
+                   "qwen_family_authority":  true,
+                   "load_strategy":  "on-demand lanes with always-ready core",
+                   "no_bridge_sprawl":  true
+               },
+    "created_at":  "2026-07-02T21:48:19.6207783-05:00",
+    "always_ready_core":  {
+                              "telegram_shell":  {
+                                                     "env_file":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\.env.local",
+                                                     "required_keys":  [
+                                                                           "TELEGRAM_BOT_TOKEN",
+                                                                           "TELEGRAM_CHAT_ID"
+                                                                       ],
+                                                     "purpose":  "Outside-world shell. Agent Lee must be able to send/receive through Telegram without desktop shells."
+                                                 },
+                              "discovery":  {
+                                                "purpose":  "Self-awareness, endpoint map, lane status, and system capability discovery.",
+                                                "service":  "leeway_runtime_fabric"
+                                            },
+                              "mouth":  {
+                                            "docker_endpoint":  "http://agent-lee-qwen-voice:8097",
+                                            "service":  "agent-lee-qwen-voice",
+                                            "purpose":  "Agent Lee cloned speech output.",
+                                            "clone_assets":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\agent-lee-clone",
+                                            "reference_audio":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Agent_Voice_One.m4a",
+                                            "model_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\voice\\qwen3-tts",
+                                            "endpoint":  "http://127.0.0.1:8097"
+                                        },
+                              "brain":  {
+                                            "docker_endpoint":  "http://ollama:11434",
+                                            "service":  "leeway_ollama",
+                                            "purpose":  "Agent Lee reasoning, planning, command interpretation, runtime thinking.",
+                                            "local_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\models\\runtime\\qwen3",
+                                            "model":  "qwen3:latest",
+                                            "endpoint":  "http://127.0.0.1:11434"
+                                        }
+                          },
+    "schema":  "leeway.agentlee.on_demand.registry.v1"
+}

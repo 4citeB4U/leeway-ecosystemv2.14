@@ -1,0 +1,23 @@
+﻿{
+    "approval_id":  "dryrun-pending-real_open_app-20260705-191856-0d5460c3788c",
+    "created_at":  "2026-07-05T19:18:57",
+    "expires_at":  "2026-07-05T19:33:57",
+    "requested_by":  "script_191_dry_run_preview",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "DRY-RUN PREVIEW ONLY: request to open Notepad through real-alpha after separate human approval.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "app_label":  "Notepad"
+                },
+    "approval_state":  "DRY_RUN_PREVIEW_ONLY",
+    "would_be_pending_state":  "PENDING",
+    "real_execution_enabled":  false,
+    "one_time_use":  true,
+    "used":  false,
+    "dry_run_preview_required":  true,
+    "ledger_write_allowed":  false,
+    "execution_allowed":  false
+}

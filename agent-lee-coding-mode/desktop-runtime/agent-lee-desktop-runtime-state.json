@@ -1,0 +1,60 @@
+﻿{
+    "ok":  true,
+    "tool":  "runtime.desktop.status",
+    "hostId":  "agent-lee-desktop-runtime-host",
+    "hostName":  "Agent Lee Desktop Runtime Host",
+    "hostStatus":  "READY",
+    "runtimeRoot":  "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime",
+    "workspaceRoot":  "D:\\Leeway-Ecosystem v2.1.4",
+    "statePath":  "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\agent-lee-desktop-runtime-state.json",
+    "receiptDir":  "D:\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-desktop-runtime",
+    "pointerState":  {
+                         "status":  "CHECK_REQUIRED",
+                         "message":  "Pointer event hook is not yet active.",
+                         "lastEvent":  null,
+                         "updatedAt":  "2026-08-01T21:46:57.1005303Z"
+                     },
+    "routes":  [
+                   "GET /runtime/status",
+                   "GET /runtime/health",
+                   "GET /runtime/voice/status",
+                   "POST /runtime/voice/listen",
+                   "POST /runtime/voice/conversation/once",
+                   "POST /runtime/voice/speak",
+                   "POST /runtime/speak",
+                   "GET /runtime/vision/camera/status",
+                   "POST /runtime/vision/camera/open",
+                   "POST /runtime/vision/camera/snapshot",
+                   "POST /runtime/vision/camera/analyze-snapshot",
+                   "POST /runtime/vision/camera/stop",
+                   "POST /runtime/vision/camera/look-now",
+                   "POST /runtime/desktop/move-cursor",
+                   "POST /runtime/desktop/click",
+                   "POST /runtime/desktop/open-app",
+                   "POST /runtime/desktop/type-text",
+                   "POST /runtime/desktop/open-browser",
+                   "POST /runtime/desktop/search-web",
+                   "POST /runtime/desktop/scroll",
+                   "POST /runtime/desktop/capture-screen",
+                   "POST /runtime/desktop/print",
+                   "POST /runtime/pointer/event",
+                   "POST /runtime/telegram/send",
+                   "POST /runtime/receipt/write"
+               ],
+    "ownerIdentity":  {
+                          "ownerId":  "LEONARD_J_LEE",
+                          "ownerName":  "Leonard J Lee",
+                          "creatorRootAuthority":  true,
+                          "vscodeAuthorityRole":  "none",
+                          "audienceBoundary":  "Leonard J Lee is creator-root authority. Other room participants are audience members unless explicitly enrolled and verified.",
+                          "sourcePath":  "D:\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\identity\\owner\\owner-identity.manifest.json"
+                      },
+    "truthLabels":  [
+                        "DESKTOP_RUNTIME_HOST_READY",
+                        "NO_FAKE_PASS"
+                    ],
+    "blockers":  [
+
+                 ],
+    "updatedAt":  "2026-08-02T13:22:56.084Z"
+}

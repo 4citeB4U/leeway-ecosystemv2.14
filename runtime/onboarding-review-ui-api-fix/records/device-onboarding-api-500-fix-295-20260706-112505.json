@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_ONBOARDING_API_500_FIX_295",
+    "phase":  40,
+    "timestamp":  "2026-07-06T11:25:13",
+    "verdict":  "LEEWAY_DEVICE_ONBOARDING_API_500_FIX_295_WITH_WARNINGS",
+    "api_route_patch_applied":  true,
+    "file_patch_only":  true,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "clear_skies":  true,
+    "route":  "/device-onboarding",
+    "api_route":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Cerebral\\digital-brain\\src\\app\\api\\device-onboarding\\[...path]\\route.ts",
+    "backup":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\onboarding-review-ui-api-fix\\backups\\295-20260706-112505\\route.ts.before-295-20260706-112505.bak",
+    "before":  {
+                   "summary_status":  500,
+                   "summary_body":  "{\"ok\":false,\"error\":\"Unexpected token \u0027﻿\u0027, \\\"﻿{\\r\\n    \\\"v\\\"... is not valid JSON\"}",
+                   "network_status":  500,
+                   "network_body":  "{\"ok\":false,\"error\":\"Unexpected token \u0027﻿\u0027, \\\"﻿{\\r\\n    \\\"v\\\"... is not valid JSON\"}"
+               },
+    "after":  {
+                  "page_reachable":  true,
+                  "summary_ok":  false,
+                  "totals_ok":  false,
+                  "safety_ok":  false,
+                  "network_ok":  false,
+                  "bluetooth_ok":  false,
+                  "printer_ok":  false,
+                  "queue_ok":  false
+              },
+    "static_safety":  {
+                          "api_get_only":  true,
+                          "client_get_only":  true,
+                          "no_real_open_app":  true,
+                          "no_real_arm":  true,
+                          "no_docker_deploy":  true,
+                          "no_bluetooth_pairing_call":  true,
+                          "no_print_action":  true,
+                          "no_mqtt_publish":  true,
+                          "no_execution_buttons":  true,
+                          "static_clean":  true
+                      },
+    "safety":  {
+                   "no_device_control_in_295":  true,
+                   "no_api_post_routes":  true,
+                   "no_bluetooth_onboarding_action":  true,
+                   "no_printer_action":  true,
+                   "no_iot_bridge_deploy":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "296-device-onboarding-final-browser-proof.ps1"
+}

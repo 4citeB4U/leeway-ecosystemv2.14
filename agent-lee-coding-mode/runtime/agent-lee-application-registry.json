@@ -1,0 +1,684 @@
+{
+  "registryId": "LEEWAY_AGENT_LEE_APPLICATION_REGISTRY",
+  "version": "1.0.0",
+  "agentId": "agent-lee",
+  "authorityMode": "canonical-authority",
+  "generatedAt": "2026-06-11T17:48:08.5642476-05:00",
+  "sourceOfTruth": "agent-lee-coding-mode/runtime/agent-lee-application-runtime.mjs",
+  "discoverySources": [
+    "Get-StartApps",
+    "Start Menu shortcut resolution",
+    "Known local executable paths"
+  ],
+  "summary": {
+    "totalApps": 25,
+    "safeToAutoOpen": 18,
+    "requiresConfirmation": 7,
+    "shellAppIdBacked": 6,
+    "fileOpenCapable": 12
+  },
+  "apps": [
+    {
+      "appId": "file-explorer",
+      "displayName": "File Explorer",
+      "aliases": [
+        "explorer",
+        "file explorer",
+        "files"
+      ],
+      "category": "file-manager",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\explorer.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Windows.Explorer",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Canonical file browser. Use for directories and workspace roots, not Paint."
+    },
+    {
+      "appId": "notepad",
+      "displayName": "Notepad",
+      "aliases": [
+        "text editor",
+        "plain text editor"
+      ],
+      "category": "editor",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\system32\\notepad.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".txt",
+        ".md",
+        ".json",
+        ".yaml",
+        ".yml",
+        ".log",
+        ".ps1",
+        ".py",
+        ".js",
+        ".ts",
+        ".cjs",
+        ".mjs"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Safe text editor for proofs and receipts."
+    },
+    {
+      "appId": "paint",
+      "displayName": "Paint",
+      "aliases": [
+        "mspaint",
+        "image editor"
+      ],
+      "category": "image",
+      "launchMethod": "path",
+      "executablePath": "C:\\Users\\Leona\\AppData\\Local\\Microsoft\\WindowsApps\\mspaint.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Paint_8wekyb3d8bbwe!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".bmp",
+        ".webp"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Paint must only receive real image files. Directory or workspace-root opens are blocked by guard code."
+    },
+    {
+      "appId": "visual-studio-code",
+      "displayName": "Visual Studio Code",
+      "aliases": [
+        "vscode",
+        "code"
+      ],
+      "category": "editor",
+      "launchMethod": "path",
+      "executablePath": "C:\\Users\\Leona\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.VisualStudioCode",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".txt",
+        ".md",
+        ".json",
+        ".yaml",
+        ".yml",
+        ".js",
+        ".ts",
+        ".ps1",
+        ".py",
+        ".cjs",
+        ".mjs",
+        ".html",
+        ".css"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Local code editor used by the workspace."
+    },
+    {
+      "appId": "microsoft-edge",
+      "displayName": "Microsoft Edge",
+      "aliases": [
+        "edge",
+        "browser"
+      ],
+      "category": "browser",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "launchArgs": [],
+      "startAppId": "MSEdge",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".html",
+        ".htm",
+        ".pdf"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Default browser for local and remote proofs."
+    },
+    {
+      "appId": "calculator",
+      "displayName": "Calculator",
+      "aliases": [
+        "calc"
+      ],
+      "category": "utility",
+      "launchMethod": "shell-appid",
+      "startAppId": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Safe utility app from Windows StartApps."
+    },
+    {
+      "appId": "terminal",
+      "displayName": "Terminal",
+      "aliases": [
+        "windows terminal",
+        "wt"
+      ],
+      "category": "terminal",
+      "launchMethod": "path",
+      "executablePath": "C:\\Users\\Leona\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.WindowsTerminal_8wekyb3d8bbwe!App",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Terminal is launchable but should be confirmation-gated in proof flows."
+    },
+    {
+      "appId": "command-prompt",
+      "displayName": "Command Prompt",
+      "aliases": [
+        "cmd",
+        "cmd.exe"
+      ],
+      "category": "terminal",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\System32\\cmd.exe",
+      "launchArgs": [],
+      "startAppId": "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\cmd.exe",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Shell entry point for manual operator workflows."
+    },
+    {
+      "appId": "powershell",
+      "displayName": "Windows PowerShell",
+      "aliases": [
+        "powershell.exe",
+        "powershell"
+      ],
+      "category": "terminal",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "launchArgs": [],
+      "startAppId": "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "PowerShell is a privileged operator tool and should stay guarded."
+    },
+    {
+      "appId": "settings",
+      "displayName": "Settings",
+      "aliases": [
+        "windows settings",
+        "ms-settings"
+      ],
+      "category": "system",
+      "launchMethod": "uri",
+      "uri": "ms-settings:",
+      "startAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "System settings should not be launched implicitly in proof loops."
+    },
+    {
+      "appId": "control-panel",
+      "displayName": "Control Panel",
+      "aliases": [
+        "control panel",
+        "control.exe"
+      ],
+      "category": "system",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\System32\\control.exe",
+      "launchArgs": [],
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Legacy system utility, kept behind confirmation."
+    },
+    {
+      "appId": "task-manager",
+      "displayName": "Task Manager",
+      "aliases": [
+        "task manager",
+        "taskmgr"
+      ],
+      "category": "system",
+      "launchMethod": "path",
+      "executablePath": "C:\\Windows\\system32\\taskmgr.exe",
+      "launchArgs": [],
+      "startAppId": "Microsoft.AutoGenerated.{923DD477-5846-686B-A659-0FCCD73851A8}",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Safe diagnostics utility."
+    },
+    {
+      "appId": "snipping-tool",
+      "displayName": "Snipping Tool",
+      "aliases": [
+        "snip",
+        "screen sketch"
+      ],
+      "category": "capture",
+      "launchMethod": "shell-appid",
+      "startAppId": "Microsoft.ScreenSketch_8wekyb3d8bbwe!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Used for screenshots; preview open must stay image-only."
+    },
+    {
+      "appId": "word",
+      "displayName": "Word",
+      "aliases": [
+        "microsoft word"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.WINWORD.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".doc",
+        ".docx",
+        ".rtf",
+        ".txt"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "excel",
+      "displayName": "Excel",
+      "aliases": [
+        "microsoft excel"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.EXCEL.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".xls",
+        ".xlsx",
+        ".csv",
+        ".tsv"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "powerpoint",
+      "displayName": "PowerPoint",
+      "aliases": [
+        "microsoft powerpoint"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.POWERPNT.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".ppt",
+        ".pptx"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "publisher",
+      "displayName": "Publisher",
+      "aliases": [
+        "microsoft publisher"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSPUB.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.MSPUB.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".pub"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "access",
+      "displayName": "Access",
+      "aliases": [
+        "microsoft access"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSACCESS.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.MSACCESS.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".accdb",
+        ".mdb"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "onenote",
+      "displayName": "OneNote",
+      "aliases": [
+        "microsoft onenote"
+      ],
+      "category": "office",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+      "launchArgs": [],
+      "startAppId": "Microsoft.Office.ONENOTE.EXE.15",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".one",
+        ".onepkg"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Resolved from local Office shortcut."
+    },
+    {
+      "appId": "git-bash",
+      "displayName": "Git Bash",
+      "aliases": [
+        "bash",
+        "git bash"
+      ],
+      "category": "terminal",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Git\\git-bash.exe",
+      "launchArgs": [
+        "--cd-to-home"
+      ],
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Launches Git Bash with the standard cd-to-home argument."
+    },
+    {
+      "appId": "git-cmd",
+      "displayName": "Git CMD",
+      "aliases": [
+        "git cmd"
+      ],
+      "category": "terminal",
+      "launchMethod": "path",
+      "executablePath": "C:\\Program Files\\Git\\git-cmd.exe",
+      "launchArgs": [
+        "--cd-to-home"
+      ],
+      "safeToAutoOpen": false,
+      "requiresConfirmation": true,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Launches Git CMD with the standard cd-to-home argument."
+    },
+    {
+      "appId": "media-player",
+      "displayName": "Media Player",
+      "aliases": [
+        "windows media player",
+        "zune music"
+      ],
+      "category": "media",
+      "launchMethod": "shell-appid",
+      "startAppId": "Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": true,
+      "supportedFileExtensions": [
+        ".mp3",
+        ".wav",
+        ".m4a",
+        ".mp4",
+        ".mov"
+      ],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Local media playback app."
+    },
+    {
+      "appId": "microsoft-teams",
+      "displayName": "Microsoft Teams",
+      "aliases": [
+        "teams"
+      ],
+      "category": "communication",
+      "launchMethod": "shell-appid",
+      "startAppId": "MSTeams_8wekyb3d8bbwe!MSTeams",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Observed via Get-StartApps on the local machine."
+    },
+    {
+      "appId": "chatgpt",
+      "displayName": "ChatGPT",
+      "aliases": [
+        "openai chatgpt"
+      ],
+      "category": "ai-assistant",
+      "launchMethod": "shell-appid",
+      "startAppId": "chatgpt.com-DFCB3CE4_ch69rtgtz055j!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Observed via Get-StartApps on the local machine."
+    },
+    {
+      "appId": "codex",
+      "displayName": "Codex",
+      "aliases": [
+        "openai codex"
+      ],
+      "category": "ai-assistant",
+      "launchMethod": "shell-appid",
+      "startAppId": "OpenAI.Codex_2p2nqsd0c76g0!App",
+      "safeToAutoOpen": true,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "NOT_TESTED",
+      "lastLaunchReceipt": null,
+      "notes": "Observed via Get-StartApps on the local machine."
+    },
+    {
+      "appId": "chess-masters",
+      "displayName": "Chess Masters",
+      "aliases": [
+        "chess"
+      ],
+      "category": "game",
+      "launchMethod": "web",
+      "executablePath": "http://127.0.0.1:3003",
+      "launchArgs": [],
+      "startAppId": "ws-chess-masters",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "MIGRATED_2026",
+      "lastLaunchReceipt": null,
+      "notes": "LeeWay Chess Masters universal-frontend candidate (Next 16.2.12). Source leeway-chess-masters (Vite) migrated to leeway-chess-masters-2026; port 3003; OWNER_AUTHORIZED_INTERNAL_USE; CLEAN_INSTALL_DISTRIBUTION_BLOCKED_PENDING_LICENSE."
+    },
+    {
+      "appId": "content-foundry",
+      "displayName": "Content Foundry",
+      "aliases": [
+        "foundry",
+        "beast"
+      ],
+      "category": "content-creation",
+      "launchMethod": "web",
+      "executablePath": "http://127.0.0.1:3004",
+      "launchArgs": [],
+      "startAppId": "ws-content-foundry",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "MIGRATED_2026",
+      "lastLaunchReceipt": null,
+      "notes": "LeeWay Agentic Content Foundry candidate (Next 16.2.12 / Tailwind 4). Source Leeway-agentic-content-foundry (was Next 15.3.3 + Tailwind 3.4.17) migrated to leeway-content-foundry-2026; port 3004; MIT LICENSE."
+    },
+    {
+      "appId": "svg-studio",
+      "displayName": "SVG Studio",
+      "aliases": [
+        "svg",
+        "svg creator"
+      ],
+      "category": "design",
+      "launchMethod": "web",
+      "executablePath": "http://127.0.0.1:3005",
+      "launchArgs": [],
+      "startAppId": "ws-svg-studio",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [
+        "svg",
+        "png",
+        "jpg",
+        "jpeg",
+        "webp"
+      ],
+      "lastLaunchTestStatus": "MIGRATED_2026",
+      "lastLaunchReceipt": null,
+      "notes": "LeeWay SVG Studio candidate (Next 16.2.12; vectorize engine ported to /api/vectorize route). Source leeway-agentic-svg-creator-2 (Vite) migrated to leeway-svg-studio-2026; port 3005; OWNER_AUTHORIZED_INTERNAL_USE; CLEAN_INSTALL_DISTRIBUTION_BLOCKED_PENDING_LICENSE."
+    },
+    {
+      "appId": "writing-marketing-studio",
+      "displayName": "Writing & Marketing Studio",
+      "aliases": [
+        "writing",
+        "marketing",
+        "w&m"
+      ],
+      "category": "content-creation",
+      "launchMethod": "web",
+      "executablePath": "http://127.0.0.1:3006",
+      "launchArgs": [],
+      "startAppId": "ws-writing-marketing-studio",
+      "safeToAutoOpen": false,
+      "requiresConfirmation": false,
+      "requiresAdmin": false,
+      "supportsFileOpen": false,
+      "supportedFileExtensions": [],
+      "lastLaunchTestStatus": "MIGRATED_2026",
+      "lastLaunchReceipt": null,
+      "notes": "LeeWay Writing & Marketing Studio candidate (Next 16.2.12). Source leeway-creative-writing--and-marketing-agent (Vite) migrated to leeway-writing-marketing-studio-2026; port 3006; nested legal-contract-system Next app at port 3007 (dual-surface); OWNER_AUTHORIZED_INTERNAL_USE; CLEAN_INSTALL_DISTRIBUTION_BLOCKED_PENDING_LICENSE."
+    }
+  ],
+  "notes": [
+    "Registry is the source of truth for local application discovery and launch routing.",
+    "Paint must never be handed a directory, the workspace root, or a non-image file.",
+    "Directory opens use File Explorer only when explicitly requested."
+  ]
+}

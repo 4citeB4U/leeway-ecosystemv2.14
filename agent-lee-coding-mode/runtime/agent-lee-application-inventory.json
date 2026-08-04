@@ -1,0 +1,765 @@
+﻿{
+    "inventoryId":  "LEEWAY_AGENT_LEE_APPLICATION_INVENTORY",
+    "version":  "1.0.0",
+    "agentId":  "agent-lee",
+    "scannedAt":  "2026-06-11T17:48:08.6482636-05:00",
+    "workspaceRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+    "registryPath":  "agent-lee-coding-mode/runtime/agent-lee-application-registry.json",
+    "startAppCount":  131,
+    "shortcutCount":  79,
+    "presentCount":  25,
+    "missingCount":  0,
+    "observedApps":  [
+                         {
+                             "appId":  "file-explorer",
+                             "displayName":  "File Explorer",
+                             "launchMethod":  "path",
+                             "category":  "file-manager",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Windows.Explorer",
+                             "executablePath":  "C:\\Windows\\explorer.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5194399-05:00"
+                         },
+                         {
+                             "appId":  "notepad",
+                             "displayName":  "Notepad",
+                             "launchMethod":  "path",
+                             "category":  "editor",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App",
+                             "executablePath":  "C:\\Windows\\system32\\notepad.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5224558-05:00"
+                         },
+                         {
+                             "appId":  "paint",
+                             "displayName":  "Paint",
+                             "launchMethod":  "path",
+                             "category":  "image",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Paint_8wekyb3d8bbwe!App",
+                             "executablePath":  "C:\\Users\\Leona\\AppData\\Local\\Microsoft\\WindowsApps\\mspaint.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5236047-05:00"
+                         },
+                         {
+                             "appId":  "visual-studio-code",
+                             "displayName":  "Visual Studio Code",
+                             "launchMethod":  "path",
+                             "category":  "editor",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.VisualStudioCode",
+                             "executablePath":  "C:\\Users\\Leona\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5255407-05:00"
+                         },
+                         {
+                             "appId":  "microsoft-edge",
+                             "displayName":  "Microsoft Edge",
+                             "launchMethod":  "path",
+                             "category":  "browser",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "MSEdge",
+                             "executablePath":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5275648-05:00"
+                         },
+                         {
+                             "appId":  "calculator",
+                             "displayName":  "Calculator",
+                             "launchMethod":  "shell-appid",
+                             "category":  "utility",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5463282-05:00"
+                         },
+                         {
+                             "appId":  "terminal",
+                             "displayName":  "Terminal",
+                             "launchMethod":  "path",
+                             "category":  "terminal",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "Microsoft.WindowsTerminal_8wekyb3d8bbwe!App",
+                             "executablePath":  "C:\\Users\\Leona\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5473235-05:00"
+                         },
+                         {
+                             "appId":  "command-prompt",
+                             "displayName":  "Command Prompt",
+                             "launchMethod":  "path",
+                             "category":  "terminal",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\cmd.exe",
+                             "executablePath":  "C:\\Windows\\System32\\cmd.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5493724-05:00"
+                         },
+                         {
+                             "appId":  "powershell",
+                             "displayName":  "Windows PowerShell",
+                             "launchMethod":  "path",
+                             "category":  "terminal",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\WindowsPowerShell\\v1.0\\powershell.exe",
+                             "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5502130-05:00"
+                         },
+                         {
+                             "appId":  "settings",
+                             "displayName":  "Settings",
+                             "launchMethod":  "uri",
+                             "category":  "system",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel",
+                             "executablePath":  null,
+                             "uri":  "ms-settings:",
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5507177-05:00"
+                         },
+                         {
+                             "appId":  "control-panel",
+                             "displayName":  "Control Panel",
+                             "launchMethod":  "path",
+                             "category":  "system",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  null,
+                             "executablePath":  "C:\\Windows\\System32\\control.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5507177-05:00"
+                         },
+                         {
+                             "appId":  "task-manager",
+                             "displayName":  "Task Manager",
+                             "launchMethod":  "path",
+                             "category":  "system",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "Microsoft.AutoGenerated.{923DD477-5846-686B-A659-0FCCD73851A8}",
+                             "executablePath":  "C:\\Windows\\system32\\taskmgr.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5517610-05:00"
+                         },
+                         {
+                             "appId":  "snipping-tool",
+                             "displayName":  "Snipping Tool",
+                             "launchMethod":  "shell-appid",
+                             "category":  "capture",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "Microsoft.ScreenSketch_8wekyb3d8bbwe!App",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "Microsoft.ScreenSketch_8wekyb3d8bbwe!App"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5517610-05:00"
+                         },
+                         {
+                             "appId":  "word",
+                             "displayName":  "Word",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.WINWORD.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5527319-05:00"
+                         },
+                         {
+                             "appId":  "excel",
+                             "displayName":  "Excel",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.EXCEL.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5537321-05:00"
+                         },
+                         {
+                             "appId":  "powerpoint",
+                             "displayName":  "PowerPoint",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.POWERPNT.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5568212-05:00"
+                         },
+                         {
+                             "appId":  "publisher",
+                             "displayName":  "Publisher",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.MSPUB.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSPUB.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5600355-05:00"
+                         },
+                         {
+                             "appId":  "access",
+                             "displayName":  "Access",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.MSACCESS.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSACCESS.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5607329-05:00"
+                         },
+                         {
+                             "appId":  "onenote",
+                             "displayName":  "OneNote",
+                             "launchMethod":  "path",
+                             "category":  "office",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.Office.ONENOTE.EXE.15",
+                             "executablePath":  "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5617320-05:00"
+                         },
+                         {
+                             "appId":  "git-bash",
+                             "displayName":  "Git Bash",
+                             "launchMethod":  "path",
+                             "category":  "terminal",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  null,
+                             "executablePath":  "C:\\Program Files\\Git\\git-bash.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5627328-05:00"
+                         },
+                         {
+                             "appId":  "git-cmd",
+                             "displayName":  "Git CMD",
+                             "launchMethod":  "path",
+                             "category":  "terminal",
+                             "safeToAutoOpen":  false,
+                             "requiresConfirmation":  true,
+                             "supportsFileOpen":  false,
+                             "startAppId":  null,
+                             "executablePath":  "C:\\Program Files\\Git\\git-cmd.exe",
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5627328-05:00"
+                         },
+                         {
+                             "appId":  "media-player",
+                             "displayName":  "Media Player",
+                             "launchMethod":  "shell-appid",
+                             "category":  "media",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  true,
+                             "startAppId":  "Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5627328-05:00"
+                         },
+                         {
+                             "appId":  "microsoft-teams",
+                             "displayName":  "Microsoft Teams",
+                             "launchMethod":  "shell-appid",
+                             "category":  "communication",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "MSTeams_8wekyb3d8bbwe!MSTeams",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "MSTeams_8wekyb3d8bbwe!MSTeams"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5637306-05:00"
+                         },
+                         {
+                             "appId":  "chatgpt",
+                             "displayName":  "ChatGPT",
+                             "launchMethod":  "shell-appid",
+                             "category":  "ai-assistant",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "chatgpt.com-DFCB3CE4_ch69rtgtz055j!App",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "chatgpt.com-DFCB3CE4_ch69rtgtz055j!App"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5637306-05:00"
+                         },
+                         {
+                             "appId":  "codex",
+                             "displayName":  "Codex",
+                             "launchMethod":  "shell-appid",
+                             "category":  "ai-assistant",
+                             "safeToAutoOpen":  true,
+                             "requiresConfirmation":  false,
+                             "supportsFileOpen":  false,
+                             "startAppId":  "OpenAI.Codex_2p2nqsd0c76g0!App",
+                             "executablePath":  null,
+                             "uri":  null,
+                             "status":  "present",
+                             "matchedAppIds":  [
+                                                   "OpenAI.Codex_2p2nqsd0c76g0!App"
+                                               ],
+                             "lastDiscoveredAt":  "2026-06-11T17:48:08.5642476-05:00"
+                         }
+                     ],
+    "shortcutInventory":  [
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Access.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Excel.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Lenovo Now.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\OneNote.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\PowerPoint.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Publisher.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Sticky Notes (new).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\User Guide.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Word.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\WSL Settings.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\WSL.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\X-Rite Color Assistant.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\Remote Desktop Connection.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\Steps Recorder.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\Windows Media Player Legacy.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\System Tools\\Character Map.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Component Services.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Computer Management.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\dfrgui.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Disk Cleanup.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Event Viewer.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\iSCSI Initiator.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Memory Diagnostics Tool.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\ODBC Data Sources (32-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\ODBC Data Sources (64-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Performance Monitor.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\RecoveryDrive.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Registry Editor.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Resource Monitor.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\services.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\System Configuration.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\System Information.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Task Scheduler.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools\\Windows Defender Firewall with Advanced Security.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git Bash.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git CMD.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git GUI.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Git\\Git Release Notes.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains\\PyCharm 2026.1.1.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Lenovo\\LegionSpace.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Lenovo\\Lenovo AI Now.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Lenovo\\Lenovo Subscription Marketplace.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office Tools\\Office Language Preferences.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Node.js\\Install Additional Tools for Node.js.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Node.js\\Node.js command prompt.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Node.js\\Node.js.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Node.js\\Uninstall Node.js.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\NVIDIA Corporation\\NVIDIA.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Smart Connect\\Smart Connect.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Task Manager.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell ISE (x86).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell ISE.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Administrative Tools.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Antigravity.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Docker Desktop.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Nahimic Companion.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Ollama.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\OneDrive.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\LiveCaptions.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\Magnify.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\Narrator.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\On-Screen Keyboard.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessibility\\VoiceAccess.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Antigravity\\Antigravity.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\IBM Bob\\IBM Bob.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Ollama\\Ollama.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13\\IDLE (Python 3.13 64-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13\\Python 3.13 (64-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13\\Python 3.13 Manuals (64-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.13\\Python 3.13 Module Docs (64-bit).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Command Prompt.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Control Panel.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools\\Run.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell (x86).lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              },
+                              {
+                                  "path":  "C:\\Users\\Leona\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk",
+                                  "error":  "The variable \u0027$shell\u0027 cannot be retrieved because it has not been set."
+                              }
+                          ],
+    "discoverySources":  [
+                             "Get-StartApps",
+                             "Start Menu shortcut resolution",
+                             "Known local executable paths"
+                         ],
+    "previewOpenAttempted":  false,
+    "previewOpenSkippedReason":  "Discovery is headless and does not open UI.",
+    "previewPath":  null
+}

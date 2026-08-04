@@ -1,0 +1,212 @@
+{
+  "canonicalFingerprint": "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+  "agentId": "agent-lee",
+  "agentMode": "code-mode",
+  "owner": "agent-lee-prime",
+  "classification": "PRODUCTION_RUNTIME",
+  "version": "1.0.0",
+  "createdAt": "2026-06-11T18:43:29.610Z",
+  "updatedAt": "2026-06-11T18:43:29.610Z",
+  "sourceOfTruth": "agent-lee-coding-mode/router/server-brainfix.mjs",
+  "modelPool": {
+    "defaultRole": "light_conversation_model",
+    "roles": [
+      {
+        "roleId": "light_conversation_model",
+        "label": "Light Conversation",
+        "backend": "qwen2.5-coder:7b",
+        "lane": "conversation",
+        "purpose": "Fast chat, short responses, ordinary conversation on the hot lane",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "monetization_narration_model",
+        "label": "Monetization Narration",
+        "backend": "qwen3:latest",
+        "lane": "conversation",
+        "purpose": "Proof-backed presentation copy, monetization narration, and operator-facing pitch framing",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "coding_model",
+        "label": "Coding",
+        "backend": "qwen2.5-coder:7b",
+        "lane": "coding",
+        "purpose": "Medium/heavy code planning and implementation",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "creative_3d_ar_model",
+        "label": "Creative 3D / AR",
+        "backend": "qwen3:latest",
+        "lane": "creative",
+        "purpose": "3D/AR orchestration, asset planning, scene synthesis, toolchain coordination",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "research_reasoning_model",
+        "label": "Research Reasoning",
+        "backend": "qwen3:latest",
+        "lane": "research",
+        "purpose": "Browser research planning, evidence synthesis, and long-horizon reasoning",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "vision_model",
+        "label": "Vision",
+        "backend": "qwen2.5vl:7b",
+        "lane": "vision",
+        "purpose": "Image understanding and visual analysis only when the backend is validated",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      },
+      {
+        "roleId": "security_audit_model",
+        "label": "Defensive Security",
+        "backend": "deepseek-coder:latest",
+        "lane": "validation",
+        "purpose": "Defensive analysis, validation, and standards enforcement",
+        "canonicalAttached": true,
+        "routePolicy": "local-first",
+        "statusPolicy": "honest-status-reporting"
+      }
+    ],
+    "statusClassifications": [
+      "WARM",
+      "SEMI_WARM",
+      "COLD",
+      "RUNNING",
+      "MISSING",
+      "BROKEN"
+    ]
+  },
+  "lanes": [
+    {
+      "laneId": "conversation",
+      "laneKind": "conversation",
+      "status": "ACTIVE",
+      "maxConcurrent": 1,
+      "purpose": "Always responsive live conversation lane"
+    },
+    {
+      "laneId": "coding",
+      "laneKind": "coding",
+      "status": "ACTIVE",
+      "maxConcurrent": 4,
+      "purpose": "Medium/heavy coding lane"
+    },
+    {
+      "laneId": "research",
+      "laneKind": "research",
+      "status": "ACTIVE",
+      "maxConcurrent": 1,
+      "purpose": "Browser research lane"
+    },
+    {
+      "laneId": "creative",
+      "laneKind": "creative",
+      "status": "ACTIVE",
+      "maxConcurrent": 1,
+      "purpose": "3D/AR asset lane"
+    },
+    {
+      "laneId": "simulation",
+      "laneKind": "simulation",
+      "status": "ACTIVE",
+      "maxConcurrent": 2,
+      "purpose": "Simulation and validation lane"
+    },
+    {
+      "laneId": "skill-builder",
+      "laneKind": "skill-builder",
+      "status": "ACTIVE",
+      "maxConcurrent": 1,
+      "purpose": "Skill creation and validation lane"
+    }
+  ],
+  "registrySources": {
+    "skillRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\registries\\leeway-skills-university-registry.json",
+    "toolRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\registries\\leeway-tool-registry.json",
+    "mcpRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\registries\\leeway-mcp-registry.json",
+    "browserRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\registries\\leeway-browser-runtime-registry.json",
+    "simulationRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\standards\\skills-university\\registries\\leeway-simulation-registry.json",
+    "modelEndpointRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\model-execution-runtime\\model-endpoint.registry.json",
+    "applicationRegistry": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-application-registry.json",
+    "applicationInventory": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-application-inventory.json"
+  },
+  "receiptPaths": {
+    "workLedger": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\agent-lee-work-ledger\\work-ledger.jsonl",
+    "orchestrationReceipts": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-orchestration",
+    "simulationReceipts": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\simulations\\receipts",
+    "applicationReceipts": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\receipts\\agent-lee-app-runtime"
+  },
+  "concurrencyLimits": {
+    "totalLanes": 8,
+    "conversation": 1,
+    "coding": 4,
+    "research": 1,
+    "creative": 1,
+    "simulation": 2,
+    "skill-builder": 1
+  },
+  "queuePolicy": {
+    "overflowBehavior": "QUEUED_WITH_RECEIPT",
+    "maxQueueDepth": 12,
+    "noSilentFallback": true,
+    "overloadReceiptsRequired": true
+  },
+  "languagePolicy": {
+    "defaultLanguage": "en",
+    "defaultResponseLanguage": "en",
+    "supportedLanguages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "ja",
+      "ko",
+      "zh"
+    ]
+  },
+  "preferenceLedgerPath": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\runtime\\agent-lee-preference-ledger.json",
+  "conversationRecordingPolicy": {
+    "recordTextSummariesIfEnabled": true,
+    "agentLeePreferenceLearningEnabled": true,
+    "agentLeeLiveMicRecordingEnabled": false,
+    "neverRecordSecretAudio": true,
+    "inspectableLocalOnly": true
+  },
+  "taskRecordingPolicy": {
+    "recordTaskStart": true,
+    "recordLaneAssignment": true,
+    "recordModelSelection": true,
+    "recordToolSelection": true,
+    "recordValidationEvents": true,
+    "recordFinalReceipt": true
+  },
+  "skillCreationPolicy": {
+    "sandboxFirst": true,
+    "sandboxRoot": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills-sandbox\\agent-lee-skill-self-test",
+    "canonicalRegistryMutation": "approval_required",
+    "defaultSandboxSkillId": "agent-lee-skill-self-test"
+  },
+  "physicalActionGuardPolicy": {
+    "simulationFirst": true,
+    "realDeviceActionsRequireExplicitConfirm": true,
+    "approvedDesktopRuntime": "http://127.0.0.1:8091",
+    "directPhysicalActionsDefault": "blocked"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-07-03T19:49:31.7418366-05:00",
+  "host_url": "http://localhost:5310",
+  "container": "leeway_research_lane",
+  "service": "leeway_research_lane",
+  "image": "leeway_research_lane:local",
+  "docker_url": "http://leeway_research_lane:5310",
+  "route_for_telegram_web": "http://leeway_research_lane:5310/search/quick",
+  "endpoints": {
+    "latest_receipt": "/receipts/latest",
+    "deep_search": "/search/deep",
+    "quick_search": "/search/quick",
+    "openapi": "/openapi.json",
+    "html_brief": "/brief/html",
+    "status": "/status",
+    "health": "/health"
+  },
+  "network": "leeway-ecosystemv214_leeway-net"
+}

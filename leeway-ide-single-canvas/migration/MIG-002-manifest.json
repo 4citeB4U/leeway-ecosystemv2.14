@@ -1,0 +1,35 @@
+{
+  "migration": "MIG-002",
+  "target": "LeeWay IDE Host Platform",
+  "status": "Initialized",
+  "framework": "Next.js",
+  "applicationShell": "Next.js App Router",
+  "existingFrontend": "Preserved",
+  "vite": "Preserved",
+  "runtime": "Unmodified",
+  "packageManifest": "Unmodified",
+  "server": "Unmodified",
+  "engines": {
+    "openCode": "Not integrated",
+    "n8n": "Not integrated"
+  },
+  "createdDirectories": [
+    "src\\app",
+    "src\\app\\api",
+    "src\\app\\(modules)",
+    "src\\app\\layouts",
+    "src\\core",
+    "src\\core\\runtime",
+    "src\\core\\modules",
+    "src\\core\\providers",
+    "src\\modules",
+    "src\\styles",
+    "src\\lib"
+  ],
+  "existingDirectories": [
+    "src\\types"
+  ],
+  "adr": "architecture\\ADR-0002.md",
+  "specification": "migration\\MIG-002-nextjs-shell.md",
+  "timestampUtc": "2026-07-29T22:59:26.0018377+00:00"
+}

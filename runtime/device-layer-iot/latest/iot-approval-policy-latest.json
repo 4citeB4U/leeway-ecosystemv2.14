@@ -1,0 +1,37 @@
+﻿{
+    "version":  "LEEWAY_IOT_DISCOVERY_REGISTRY_CONTRACT_NO_EXECUTE_2026-07-05",
+    "timestamp":  "2026-07-05T20:49:40",
+    "family":  "iot",
+    "default_mode":  "DISCOVERY_ONLY_NO_EXECUTE",
+    "risk_level":  "high",
+    "physical_control_default":  "DENY",
+    "read_only_discovery_allowed":  true,
+    "physical_action_requires":  [
+                                     "explicit pending approval",
+                                     "promotion to approved",
+                                     "blocked-until-execution validation",
+                                     "one-action execution script",
+                                     "immediate lockback",
+                                     "post-action audit",
+                                     "dashboard update",
+                                     "receipt"
+                                 ],
+    "always_denied_until_separate_policy":  [
+                                                "door_locks",
+                                                "security_alarms",
+                                                "garage_doors",
+                                                "medical_devices",
+                                                "stoves_ovens_heaters",
+                                                "water_valves",
+                                                "high_voltage_devices",
+                                                "unknown_devices"
+                                            ],
+    "allowed_future_low_risk_proof_candidates":  [
+                                                     "read_device_status",
+                                                     "identify_device",
+                                                     "toggle_noncritical_test_light_after_approval",
+                                                     "set_test_brightness_after_approval"
+                                                 ],
+    "no_execute_now":  true,
+    "actions_executed_by_this_contract":  0
+}

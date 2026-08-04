@@ -1,0 +1,37 @@
+﻿{
+    "approval_id":  "pending-real_browser_search-20260705-194718",
+    "approval_state":  "PENDING",
+    "action":  "real_browser_search",
+    "created_at":  "2026-07-05T19:47:18",
+    "created_by":  "script_199_create_pending_approval_for_real_browser_search_no_execute",
+    "source_template":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\approval-request-factory\\next-action-templates\\latest\\template-real_browser_search-latest.json",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "risk_level":  "controlled_physical_browser",
+    "approval_required":  true,
+    "execution_allowed_now":  false,
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "read_only_status_enabled":  false,
+    "used":  false,
+    "execution_status":  "PENDING_NOT_EXECUTED",
+    "payload":  {
+                    "query":  "Leeway Agent Lee post-execution proof",
+                    "engine":  "bing",
+                    "expected_effect":  "open_browser_search_results"
+                },
+    "safety":  {
+                   "pending_only":  true,
+                   "approvals_promoted":  0,
+                   "actions_executed":  0,
+                   "one_action_only":  true,
+                   "lockback_required":  true,
+                   "no_mouse_click":  true,
+                   "no_keyboard_type":  true,
+                   "no_shell_command":  true,
+                   "no_message_send":  true,
+                   "no_docker_prune":  true,
+                   "no_destructive_cleanup":  true
+               },
+    "next_recommended_script":  "200-promote-pending-browser-search-to-approved-no-execute.ps1"
+}

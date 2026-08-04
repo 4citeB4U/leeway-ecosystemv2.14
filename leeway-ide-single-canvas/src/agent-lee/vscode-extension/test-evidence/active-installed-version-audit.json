@@ -1,0 +1,19 @@
+﻿{
+    "staleVersionPresent":  true,
+    "activeReported":  "leeway.agent-lee-leeway-coding-system@1.2.12",
+    "report":  "active-installed-version-audit",
+    "timestamp":  "2026-06-03T14:05:58.1755263-05:00",
+    "newVersionPresent":  true,
+    "installedVersions":  [
+                              {
+                                  "fullName":  "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.12",
+                                  "name":  "leeway.agent-lee-leeway-coding-system-1.2.12",
+                                  "lastWriteTime":  "2026-06-03T13:43:13.6543513-05:00"
+                              },
+                              {
+                                  "fullName":  "C:\\Users\\Leona\\.vscode\\extensions\\leeway.agent-lee-leeway-coding-system-1.2.13",
+                                  "name":  "leeway.agent-lee-leeway-coding-system-1.2.13",
+                                  "lastWriteTime":  "2026-06-03T13:42:42.1077729-05:00"
+                              }
+                          ]
+}

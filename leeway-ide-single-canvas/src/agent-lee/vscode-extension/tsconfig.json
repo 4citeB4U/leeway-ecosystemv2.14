@@ -1,0 +1,26 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "REGION": "🟠 UTIL",
+    "TAG": "UTIL.TYPESCRIPT.CONFIG.MAIN",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2022",
+    "outDir": "out",
+    "lib": ["ES2022", "DOM"],
+    "jsx": "preserve",
+    "sourceMap": true,
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules",
+    "_archive",
+    "src/**/*.backup-*.ts",
+    "src/**/*.broken-*.ts"
+  ]
+}

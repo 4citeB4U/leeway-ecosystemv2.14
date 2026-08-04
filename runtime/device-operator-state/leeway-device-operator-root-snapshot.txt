@@ -1,0 +1,1 @@
+﻿{"ok":true,"service":"leeway_device_operator","version":"2.1.4","health":"/health","status":"/status","routes":"/routes","docs":"/docs","openapi":"/openapi.json"}

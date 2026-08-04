@@ -1,0 +1,5688 @@
+{
+  "total_docker_items": 49,
+  "capability_index": [
+    {
+      "running": false,
+      "lane": "discovery",
+      "name": "leeway_agent_skills",
+      "capabilities": [
+        "capability_registry",
+        "system_discovery",
+        "skill_catalog"
+      ],
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "dashboard",
+      "name": "leeway_pwa_dashboard",
+      "capabilities": [
+        "runtime_status_view",
+        "task_status_view",
+        "mobile_pwa_shell"
+      ],
+      "ports": [
+        5337
+      ]
+    },
+    {
+      "running": true,
+      "lane": "installer",
+      "name": "leeway_installer_runtime",
+      "capabilities": [
+        "installer_manifest",
+        "deployment_bundle_plan"
+      ],
+      "ports": [
+        5336
+      ]
+    },
+    {
+      "running": true,
+      "lane": "license",
+      "name": "leeway_license_runtime",
+      "capabilities": [
+        "license_records",
+        "customer_authorization_plan"
+      ],
+      "ports": [
+        5335
+      ]
+    },
+    {
+      "running": true,
+      "lane": "desktop",
+      "name": "leeway_desktop_runtime",
+      "capabilities": [
+        "desktop_work_orders",
+        "host_control_disabled_until_rewired"
+      ],
+      "ports": [
+        5334
+      ]
+    },
+    {
+      "running": true,
+      "lane": "browser",
+      "name": "leeway_browser_runtime",
+      "capabilities": [
+        "browser_work_orders",
+        "research_page_plan",
+        "playwright_wiring_needed"
+      ],
+      "ports": [
+        5333
+      ]
+    },
+    {
+      "running": true,
+      "lane": "phone",
+      "name": "leeway_phone_runtime",
+      "capabilities": [
+        "phone_work_orders",
+        "approval_required",
+        "device_or_provider_required"
+      ],
+      "ports": [
+        5332
+      ]
+    },
+    {
+      "running": true,
+      "lane": "calendar",
+      "name": "leeway_calendar_runtime",
+      "capabilities": [
+        "calendar_work_orders",
+        "approval_required",
+        "provider_required_for_write"
+      ],
+      "ports": [
+        5331
+      ]
+    },
+    {
+      "running": true,
+      "lane": "email",
+      "name": "leeway_email_runtime",
+      "capabilities": [
+        "email_work_orders",
+        "approval_required",
+        "provider_required_for_send"
+      ],
+      "ports": [
+        5330
+      ]
+    },
+    {
+      "running": true,
+      "lane": "router",
+      "name": "leeway_skill_router",
+      "capabilities": [
+        "planning_governor",
+        "approval_routing",
+        "work_order_dispatch"
+      ],
+      "ports": [
+        5324
+      ]
+    },
+    {
+      "running": true,
+      "lane": "telegram",
+      "name": "agent-lee-telegram-shell",
+      "capabilities": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "viewer",
+      "name": "leeway_artifact_viewer",
+      "capabilities": [
+        "artifact_rooms",
+        "plan_rooms",
+        "visual_preview_rooms"
+      ],
+      "ports": [
+        5328
+      ]
+    },
+    {
+      "running": true,
+      "lane": "creation",
+      "name": "leeway_open_notebook",
+      "capabilities": [
+        "creative_planning",
+        "open_notebook",
+        "drafts",
+        "creative_packages"
+      ],
+      "ports": [
+        5326
+      ]
+    },
+    {
+      "running": true,
+      "lane": "meeting",
+      "name": "leeway_meeting_runtime",
+      "capabilities": [
+        "meeting_rooms",
+        "jitsi_links",
+        "ics_generation"
+      ],
+      "ports": [
+        5329
+      ]
+    },
+    {
+      "running": true,
+      "lane": "document",
+      "name": "leeway_document_runtime",
+      "capabilities": [
+        "pdf_export",
+        "text_export",
+        "document_receipts"
+      ],
+      "ports": [
+        5325
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_device_operator",
+      "capabilities": "unknown_capability",
+      "ports": [
+        5323
+      ]
+    },
+    {
+      "running": true,
+      "lane": "context",
+      "name": "leeway_context_gateway",
+      "capabilities": "unknown_capability",
+      "ports": [
+        5321
+      ]
+    },
+    {
+      "running": true,
+      "lane": "entrypoint",
+      "name": "leeway_api_gateway",
+      "capabilities": [
+        "single_entrypoint",
+        "api_gateway"
+      ],
+      "ports": [
+        5320
+      ]
+    },
+    {
+      "running": true,
+      "lane": "research",
+      "name": "leeway_research_lane",
+      "capabilities": [
+        "research_lane",
+        "source_collection"
+      ],
+      "ports": [
+        5310
+      ]
+    },
+    {
+      "running": true,
+      "lane": "storage",
+      "name": "leeway_seafile_storage_gateway",
+      "capabilities": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "ports": [
+        5314
+      ]
+    },
+    {
+      "running": false,
+      "lane": "telegram",
+      "name": "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+      "capabilities": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "image",
+      "name": "agent-lee-sdxl-lightning-image-lane",
+      "capabilities": [
+        "image_generation",
+        "visual_rendering"
+      ],
+      "ports": [
+        8099
+      ]
+    },
+    {
+      "running": false,
+      "lane": "unknown",
+      "name": "agent-lee-true-character-mesh-lane",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8103
+      ]
+    },
+    {
+      "running": false,
+      "lane": "vision",
+      "name": "agent-lee-telegram-vision-lane",
+      "capabilities": [
+        "vision_kernel",
+        "camera_analysis"
+      ],
+      "ports": [
+        8104
+      ]
+    },
+    {
+      "running": false,
+      "lane": "unknown",
+      "name": "agent-lee-character-cutout-lane",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8102
+      ]
+    },
+    {
+      "running": true,
+      "lane": "image",
+      "name": "agent-lee-image-to-3d-pattern-lane",
+      "capabilities": [
+        "image_generation",
+        "visual_rendering"
+      ],
+      "ports": [
+        8101
+      ]
+    },
+    {
+      "running": false,
+      "lane": "telegram",
+      "name": "agent-lee-telegram-shell-backup-20260703-144921",
+      "capabilities": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "voice",
+      "name": "agent-lee-qwen-voice",
+      "capabilities": [
+        "tts",
+        "voice_reply",
+        "voice_walkthrough"
+      ],
+      "ports": [
+        8097
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "agent_lee_code_mode",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8080
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_runtime_fabric",
+      "capabilities": "unknown_capability",
+      "ports": [
+        4001,
+        8111
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway-jitsi-meet-web-1",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8443,
+        8008
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway-jitsi-meet-jicofo-1",
+      "capabilities": "unknown_capability",
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway-jitsi-meet-jvb-1",
+      "capabilities": "unknown_capability",
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway-jitsi-meet-prosody-1",
+      "capabilities": "unknown_capability",
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway-local-assistant-bridge",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8787
+      ]
+    },
+    {
+      "running": true,
+      "lane": "hearing",
+      "name": "agent-lee-ears-kernel",
+      "capabilities": [
+        "ears_kernel",
+        "audio_input"
+      ],
+      "ports": [
+        8094
+      ]
+    },
+    {
+      "running": true,
+      "lane": "model",
+      "name": "leeway_ollama",
+      "capabilities": [
+        "local_model_server",
+        "ollama_models"
+      ],
+      "ports": [
+        11434
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_media_router",
+      "capabilities": "unknown_capability",
+      "ports": [
+        5301
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_media_ingestion_layer",
+      "capabilities": "unknown_capability",
+      "ports": [
+        5300
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_worker_center",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8862
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_mcp_center",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8863
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_mcp_agent_center",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8861
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_agent_center",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8860
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "leeway_hybrid_fabric",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8777
+      ]
+    },
+    {
+      "running": true,
+      "lane": "vision",
+      "name": "agent-lee-vision-kernel",
+      "capabilities": [
+        "vision_kernel",
+        "camera_analysis"
+      ],
+      "ports": [
+        8093
+      ]
+    },
+    {
+      "running": true,
+      "lane": "unknown",
+      "name": "agent-lee-voice-kernel",
+      "capabilities": "unknown_capability",
+      "ports": [
+        8092
+      ]
+    },
+    {
+      "running": true,
+      "lane": "storage",
+      "name": "leeway-seafile",
+      "capabilities": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "ports": [
+        8082
+      ]
+    },
+    {
+      "running": true,
+      "lane": "storage",
+      "name": "leeway-seafile-cache",
+      "capabilities": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "ports": []
+    },
+    {
+      "running": true,
+      "lane": "storage",
+      "name": "leeway-seafile-db",
+      "capabilities": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "ports": []
+    }
+  ],
+  "running_count": 43,
+  "api_routes": [
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5337/health"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5337/status"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5337/work/create"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5337/work/latest"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5337/work"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5337/receipts/latest"
+    },
+    {
+      "container": "leeway_pwa_dashboard",
+      "lane": "dashboard",
+      "host_port": 5337,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5337/"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5336/health"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5336/status"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5336/work/create"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5336/work/latest"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5336/work"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5336/receipts/latest"
+    },
+    {
+      "container": "leeway_installer_runtime",
+      "lane": "installer",
+      "host_port": 5336,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5336/"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5335/health"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5335/status"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5335/work/create"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5335/work/latest"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5335/work"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5335/receipts/latest"
+    },
+    {
+      "container": "leeway_license_runtime",
+      "lane": "license",
+      "host_port": 5335,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5335/"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5334/health"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5334/status"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5334/work/create"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5334/work/latest"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5334/work"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5334/receipts/latest"
+    },
+    {
+      "container": "leeway_desktop_runtime",
+      "lane": "desktop",
+      "host_port": 5334,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5334/"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5333/health"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5333/status"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5333/work/create"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5333/work/latest"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5333/work"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5333/receipts/latest"
+    },
+    {
+      "container": "leeway_browser_runtime",
+      "lane": "browser",
+      "host_port": 5333,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5333/"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5332/health"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5332/status"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5332/work/create"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5332/work/latest"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5332/work"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5332/receipts/latest"
+    },
+    {
+      "container": "leeway_phone_runtime",
+      "lane": "phone",
+      "host_port": 5332,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5332/"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5331/health"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5331/status"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5331/work/create"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5331/work/latest"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5331/work"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5331/receipts/latest"
+    },
+    {
+      "container": "leeway_calendar_runtime",
+      "lane": "calendar",
+      "host_port": 5331,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5331/"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5330/health"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5330/status"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "POST",
+      "path": "/work/create",
+      "url": "http://localhost:5330/work/create"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/work/latest",
+      "url": "http://localhost:5330/work/latest"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/work",
+      "url": "http://localhost:5330/work"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5330/receipts/latest"
+    },
+    {
+      "container": "leeway_email_runtime",
+      "lane": "email",
+      "host_port": 5330,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:5330/"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5324/health"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5324/status"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "POST",
+      "path": "/route",
+      "url": "http://localhost:5324/route"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "POST",
+      "path": "/plan/create",
+      "url": "http://localhost:5324/plan/create"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/plan/latest",
+      "url": "http://localhost:5324/plan/latest"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/plan/{plan_id}",
+      "url": "http://localhost:5324/plan/{plan_id}"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "POST",
+      "path": "/plan/{plan_id}/approve",
+      "url": "http://localhost:5324/plan/{plan_id}/approve"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "POST",
+      "path": "/plan/latest/approve",
+      "url": "http://localhost:5324/plan/latest/approve"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/tasks/active",
+      "url": "http://localhost:5324/tasks/active"
+    },
+    {
+      "container": "leeway_skill_router",
+      "lane": "router",
+      "host_port": 5324,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5324/receipts/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5328/health"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5328/status"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/artifacts/pdf/{filename}",
+      "url": "http://localhost:5328/artifacts/pdf/{filename}"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/artifacts/latest",
+      "url": "http://localhost:5328/artifacts/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/rooms/latest",
+      "url": "http://localhost:5328/rooms/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "POST",
+      "path": "/rooms/create/latest",
+      "url": "http://localhost:5328/rooms/create/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5328/receipts/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/rooms/website/latest",
+      "url": "http://localhost:5328/rooms/website/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/website/latest.html",
+      "url": "http://localhost:5328/website/latest.html"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/rooms/plan/latest",
+      "url": "http://localhost:5328/rooms/plan/latest"
+    },
+    {
+      "container": "leeway_artifact_viewer",
+      "lane": "viewer",
+      "host_port": 5328,
+      "method": "GET",
+      "path": "/plan/latest.html",
+      "url": "http://localhost:5328/plan/latest.html"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5326/health"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5326/status"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/create",
+      "url": "http://localhost:5326/notebook/create"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/latest",
+      "url": "http://localhost:5326/notebook/latest"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/{notebook_id}",
+      "url": "http://localhost:5326/notebook/{notebook_id}"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/readback/{notebook_id}",
+      "url": "http://localhost:5326/notebook/readback/{notebook_id}"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/append",
+      "url": "http://localhost:5326/notebook/append"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/revise",
+      "url": "http://localhost:5326/notebook/revise"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/export/pdf",
+      "url": "http://localhost:5326/notebook/export/pdf"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5326/receipts/latest"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/create-creative",
+      "url": "http://localhost:5326/notebook/create-creative"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/creative",
+      "url": "http://localhost:5326/notebook/creative"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/creative/latest",
+      "url": "http://localhost:5326/notebook/creative/latest"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/creative/{creative_id}",
+      "url": "http://localhost:5326/notebook/creative/{creative_id}"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/creative/{creative_id}/readback",
+      "url": "http://localhost:5326/notebook/creative/{creative_id}/readback"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/creative/{creative_id}/revise",
+      "url": "http://localhost:5326/notebook/creative/{creative_id}/revise"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/notebook/creative/{creative_id}/export/pdf",
+      "url": "http://localhost:5326/notebook/creative/{creative_id}/export/pdf"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/notebook/creative/{creative_id}/package",
+      "url": "http://localhost:5326/notebook/creative/{creative_id}/package"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/creative/create",
+      "url": "http://localhost:5326/creative/create"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative",
+      "url": "http://localhost:5326/creative"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/latest",
+      "url": "http://localhost:5326/creative/latest"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/{creative_id}",
+      "url": "http://localhost:5326/creative/{creative_id}"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/{creative_id}/readback",
+      "url": "http://localhost:5326/creative/{creative_id}/readback"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/creative/{creative_id}/revise",
+      "url": "http://localhost:5326/creative/{creative_id}/revise"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "POST",
+      "path": "/creative/{creative_id}/export/pdf",
+      "url": "http://localhost:5326/creative/{creative_id}/export/pdf"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/{creative_id}/package",
+      "url": "http://localhost:5326/creative/{creative_id}/package"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/{creative_id}/render/website",
+      "url": "http://localhost:5326/creative/{creative_id}/render/website"
+    },
+    {
+      "container": "leeway_open_notebook",
+      "lane": "creation",
+      "host_port": 5326,
+      "method": "GET",
+      "path": "/creative/latest/render/website",
+      "url": "http://localhost:5326/creative/latest/render/website"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5329/health"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5329/status"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "POST",
+      "path": "/meeting/create",
+      "url": "http://localhost:5329/meeting/create"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/meeting/latest",
+      "url": "http://localhost:5329/meeting/latest"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/meeting/{meeting_id}",
+      "url": "http://localhost:5329/meeting/{meeting_id}"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/meeting/{meeting_id}/join",
+      "url": "http://localhost:5329/meeting/{meeting_id}/join"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/meeting/{meeting_id}.ics",
+      "url": "http://localhost:5329/meeting/{meeting_id}.ics"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/rooms/{meeting_id}",
+      "url": "http://localhost:5329/rooms/{meeting_id}"
+    },
+    {
+      "container": "leeway_meeting_runtime",
+      "lane": "meeting",
+      "host_port": 5329,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5329/receipts/latest"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5325/health"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5325/status"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "POST",
+      "path": "/document/create",
+      "url": "http://localhost:5325/document/create"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/documents/latest",
+      "url": "http://localhost:5325/documents/latest"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5325/receipts/latest"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/documents/file/{filename}",
+      "url": "http://localhost:5325/documents/file/{filename}"
+    },
+    {
+      "container": "leeway_document_runtime",
+      "lane": "document",
+      "host_port": 5325,
+      "method": "GET",
+      "path": "/documents/latest/content",
+      "url": "http://localhost:5325/documents/latest/content"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5323/health"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5323/status"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/cursor/profile",
+      "url": "http://localhost:5323/cursor/profile"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/cursor/set-profile",
+      "url": "http://localhost:5323/cursor/set-profile"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/devices/register",
+      "url": "http://localhost:5323/devices/register"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/devices/list",
+      "url": "http://localhost:5323/devices/list"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/channels/register",
+      "url": "http://localhost:5323/channels/register"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/channels/list",
+      "url": "http://localhost:5323/channels/list"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/voice/session/start",
+      "url": "http://localhost:5323/voice/session/start"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/device/action/request",
+      "url": "http://localhost:5323/device/action/request"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "POST",
+      "path": "/license/profile",
+      "url": "http://localhost:5323/license/profile"
+    },
+    {
+      "container": "leeway_device_operator",
+      "lane": "unknown",
+      "host_port": 5323,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5323/receipts/latest"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5321/health"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5321/status"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "POST",
+      "path": "/compress",
+      "url": "http://localhost:5321/compress"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "POST",
+      "path": "/retrieve",
+      "url": "http://localhost:5321/retrieve"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "GET",
+      "path": "/stats",
+      "url": "http://localhost:5321/stats"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "POST",
+      "path": "/learn/failure",
+      "url": "http://localhost:5321/learn/failure"
+    },
+    {
+      "container": "leeway_context_gateway",
+      "lane": "context",
+      "host_port": 5321,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5321/receipts/latest"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5320/health"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5320/status"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/capabilities",
+      "url": "http://localhost:5320/capabilities"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/lanes/health",
+      "url": "http://localhost:5320/lanes/health"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/research/quick",
+      "url": "http://localhost:5320/research/quick"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/research/deep",
+      "url": "http://localhost:5320/research/deep"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/plan/date-night",
+      "url": "http://localhost:5320/plan/date-night"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/approval/request-phone-call",
+      "url": "http://localhost:5320/approval/request-phone-call"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/approval/request-email",
+      "url": "http://localhost:5320/approval/request-email"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/approval/request-calendar-event",
+      "url": "http://localhost:5320/approval/request-calendar-event"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/approvals/pending",
+      "url": "http://localhost:5320/approvals/pending"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/approvals/history",
+      "url": "http://localhost:5320/approvals/history"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/approvals/approve",
+      "url": "http://localhost:5320/approvals/approve"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/approvals/reject",
+      "url": "http://localhost:5320/approvals/reject"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/crm/upsert-contact",
+      "url": "http://localhost:5320/crm/upsert-contact"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/crm/upsert-company",
+      "url": "http://localhost:5320/crm/upsert-company"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/crm/upsert-plan",
+      "url": "http://localhost:5320/crm/upsert-plan"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/crm/search",
+      "url": "http://localhost:5320/crm/search"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/store/receipt",
+      "url": "http://localhost:5320/store/receipt"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/store/research-brief",
+      "url": "http://localhost:5320/store/research-brief"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/store/notebook-export",
+      "url": "http://localhost:5320/store/notebook-export"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/store/generated-image",
+      "url": "http://localhost:5320/store/generated-image"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/store/3d-package",
+      "url": "http://localhost:5320/store/3d-package"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "POST",
+      "path": "/backup/run",
+      "url": "http://localhost:5320/backup/run"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/backup/status",
+      "url": "http://localhost:5320/backup/status"
+    },
+    {
+      "container": "leeway_api_gateway",
+      "lane": "entrypoint",
+      "host_port": 5320,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5320/receipts/latest"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5310/health"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5310/status"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "POST",
+      "path": "/search/quick",
+      "url": "http://localhost:5310/search/quick"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "POST",
+      "path": "/search/deep",
+      "url": "http://localhost:5310/search/deep"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "POST",
+      "path": "/brief/html",
+      "url": "http://localhost:5310/brief/html"
+    },
+    {
+      "container": "leeway_research_lane",
+      "lane": "research",
+      "host_port": 5310,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5310/receipts/latest"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:5314/health"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:5314/status"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/receipt",
+      "url": "http://localhost:5314/store/receipt"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/research-brief",
+      "url": "http://localhost:5314/store/research-brief"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/notebook-export",
+      "url": "http://localhost:5314/store/notebook-export"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/generated-image",
+      "url": "http://localhost:5314/store/generated-image"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/3d-package",
+      "url": "http://localhost:5314/store/3d-package"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/store/upload/{kind}",
+      "url": "http://localhost:5314/store/upload/{kind}"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "POST",
+      "path": "/backup/run",
+      "url": "http://localhost:5314/backup/run"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "GET",
+      "path": "/backup/status",
+      "url": "http://localhost:5314/backup/status"
+    },
+    {
+      "container": "leeway_seafile_storage_gateway",
+      "lane": "storage",
+      "host_port": 5314,
+      "method": "GET",
+      "path": "/receipts/latest",
+      "url": "http://localhost:5314/receipts/latest"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8099/health"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:8099/status"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "POST",
+      "path": "/warmup",
+      "url": "http://localhost:8099/warmup"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "POST",
+      "path": "/image/generate-fast",
+      "url": "http://localhost:8099/image/generate-fast"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "POST",
+      "path": "/image/generate",
+      "url": "http://localhost:8099/image/generate"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/latest",
+      "url": "http://localhost:8099/latest"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/latest/image.png",
+      "url": "http://localhost:8099/latest/image.png"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/latest/candidate_1.png",
+      "url": "http://localhost:8099/latest/candidate_1.png"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/latest/receipt.json",
+      "url": "http://localhost:8099/latest/receipt.json"
+    },
+    {
+      "container": "agent-lee-sdxl-lightning-image-lane",
+      "lane": "image",
+      "host_port": 8099,
+      "method": "GET",
+      "path": "/artifacts/{job_id}/{filename}",
+      "url": "http://localhost:8099/artifacts/{job_id}/{filename}"
+    },
+    {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "lane": "image",
+      "host_port": 8101,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8101/health"
+    },
+    {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "lane": "image",
+      "host_port": 8101,
+      "method": "GET",
+      "path": "/status",
+      "url": "http://localhost:8101/status"
+    },
+    {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "lane": "image",
+      "host_port": 8101,
+      "method": "POST",
+      "path": "/convert/from-path",
+      "url": "http://localhost:8101/convert/from-path"
+    },
+    {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "lane": "image",
+      "host_port": 8101,
+      "method": "POST",
+      "path": "/convert/latest-sdxl",
+      "url": "http://localhost:8101/convert/latest-sdxl"
+    },
+    {
+      "container": "agent-lee-image-to-3d-pattern-lane",
+      "lane": "image",
+      "host_port": 8101,
+      "method": "GET",
+      "path": "/artifacts/{job_id}/{filename}",
+      "url": "http://localhost:8101/artifacts/{job_id}/{filename}"
+    },
+    {
+      "container": "agent-lee-qwen-voice",
+      "lane": "voice",
+      "host_port": 8097,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8097/health"
+    },
+    {
+      "container": "agent-lee-qwen-voice",
+      "lane": "voice",
+      "host_port": 8097,
+      "method": "POST",
+      "path": "/speak",
+      "url": "http://localhost:8097/speak"
+    },
+    {
+      "container": "agent-lee-qwen-voice",
+      "lane": "voice",
+      "host_port": 8097,
+      "method": "POST",
+      "path": "/speak-file",
+      "url": "http://localhost:8097/speak-file"
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "lane": "hearing",
+      "host_port": 8094,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:8094/"
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "lane": "hearing",
+      "host_port": 8094,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8094/health"
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "lane": "hearing",
+      "host_port": 8094,
+      "method": "GET",
+      "path": "/ears/status",
+      "url": "http://localhost:8094/ears/status"
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "lane": "hearing",
+      "host_port": 8094,
+      "method": "POST",
+      "path": "/ears/route-text",
+      "url": "http://localhost:8094/ears/route-text"
+    },
+    {
+      "container": "agent-lee-ears-kernel",
+      "lane": "hearing",
+      "host_port": 8094,
+      "method": "POST",
+      "path": "/ears/transcribe",
+      "url": "http://localhost:8094/ears/transcribe"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8093/health"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/vision/status",
+      "url": "http://localhost:8093/vision/status"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/vision/manifest",
+      "url": "http://localhost:8093/vision/manifest"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/vision/model",
+      "url": "http://localhost:8093/vision/model"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "POST",
+      "path": "/vision/analyze/image",
+      "url": "http://localhost:8093/vision/analyze/image"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "POST",
+      "path": "/vision/analyze/screen",
+      "url": "http://localhost:8093/vision/analyze/screen"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "POST",
+      "path": "/vision/analyze/camera-frame",
+      "url": "http://localhost:8093/vision/analyze/camera-frame"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "POST",
+      "path": "/vision/room/analyze",
+      "url": "http://localhost:8093/vision/room/analyze"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/vision/receipts/recent",
+      "url": "http://localhost:8093/vision/receipts/recent"
+    },
+    {
+      "container": "agent-lee-vision-kernel",
+      "lane": "vision",
+      "host_port": 8093,
+      "method": "GET",
+      "path": "/vision/reports/latest",
+      "url": "http://localhost:8093/vision/reports/latest"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "GET",
+      "path": "/",
+      "url": "http://localhost:8092/"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "GET",
+      "path": "/health",
+      "url": "http://localhost:8092/health"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "POST",
+      "path": "/tts",
+      "url": "http://localhost:8092/tts"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "GET",
+      "path": "/audio/{filename}",
+      "url": "http://localhost:8092/audio/{filename}"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "GET",
+      "path": "/voice-identity",
+      "url": "http://localhost:8092/voice-identity"
+    },
+    {
+      "container": "agent-lee-voice-kernel",
+      "lane": "unknown",
+      "host_port": 8092,
+      "method": "POST",
+      "path": "/register-runtime-fabric",
+      "url": "http://localhost:8092/register-runtime-fabric"
+    }
+  ],
+  "containers": [
+    {
+      "name": "leeway_agent_skills",
+      "image": "leeway_agent_skills:local",
+      "lane": "discovery",
+      "running": false,
+      "container_status": "Restarting (1) 44 seconds ago",
+      "ports_text": "",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "capability_registry",
+        "system_discovery",
+        "skill_catalog"
+      ],
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "leeway_pwa_dashboard",
+      "image": "leeway_pwa_dashboard:local",
+      "lane": "dashboard",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5337->5337/tcp, [::]:5337->5337/tcp",
+      "ports": [
+        {
+          "host_port": 5337,
+          "container_port": 5337,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5337,
+          "container_port": 5337,
+          "base_url": "http://localhost:5337",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5337/health"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5337/status"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5337/work/create"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5337/work/latest"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5337/work"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5337/receipts/latest"
+            },
+            {
+              "container": "leeway_pwa_dashboard",
+              "lane": "dashboard",
+              "host_port": 5337,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5337/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "runtime_status_view",
+        "task_status_view",
+        "mobile_pwa_shell"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_installer_runtime",
+      "image": "leeway_installer_runtime:local",
+      "lane": "installer",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5336->5336/tcp, [::]:5336->5336/tcp",
+      "ports": [
+        {
+          "host_port": 5336,
+          "container_port": 5336,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5336,
+          "container_port": 5336,
+          "base_url": "http://localhost:5336",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5336/health"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5336/status"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5336/work/create"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5336/work/latest"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5336/work"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5336/receipts/latest"
+            },
+            {
+              "container": "leeway_installer_runtime",
+              "lane": "installer",
+              "host_port": 5336,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5336/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "installer_manifest",
+        "deployment_bundle_plan"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_license_runtime",
+      "image": "leeway_license_runtime:local",
+      "lane": "license",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5335->5335/tcp, [::]:5335->5335/tcp",
+      "ports": [
+        {
+          "host_port": 5335,
+          "container_port": 5335,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5335,
+          "container_port": 5335,
+          "base_url": "http://localhost:5335",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5335/health"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5335/status"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5335/work/create"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5335/work/latest"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5335/work"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5335/receipts/latest"
+            },
+            {
+              "container": "leeway_license_runtime",
+              "lane": "license",
+              "host_port": 5335,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5335/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "license_records",
+        "customer_authorization_plan"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_desktop_runtime",
+      "image": "leeway_desktop_runtime:local",
+      "lane": "desktop",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5334->5334/tcp, [::]:5334->5334/tcp",
+      "ports": [
+        {
+          "host_port": 5334,
+          "container_port": 5334,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5334,
+          "container_port": 5334,
+          "base_url": "http://localhost:5334",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5334/health"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5334/status"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5334/work/create"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5334/work/latest"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5334/work"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5334/receipts/latest"
+            },
+            {
+              "container": "leeway_desktop_runtime",
+              "lane": "desktop",
+              "host_port": 5334,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5334/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "desktop_work_orders",
+        "host_control_disabled_until_rewired"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_browser_runtime",
+      "image": "leeway_browser_runtime:local",
+      "lane": "browser",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5333->5333/tcp, [::]:5333->5333/tcp",
+      "ports": [
+        {
+          "host_port": 5333,
+          "container_port": 5333,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5333,
+          "container_port": 5333,
+          "base_url": "http://localhost:5333",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5333/health"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5333/status"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5333/work/create"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5333/work/latest"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5333/work"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5333/receipts/latest"
+            },
+            {
+              "container": "leeway_browser_runtime",
+              "lane": "browser",
+              "host_port": 5333,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5333/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "browser_work_orders",
+        "research_page_plan",
+        "playwright_wiring_needed"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_phone_runtime",
+      "image": "leeway_phone_runtime:local",
+      "lane": "phone",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5332->5332/tcp, [::]:5332->5332/tcp",
+      "ports": [
+        {
+          "host_port": 5332,
+          "container_port": 5332,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5332,
+          "container_port": 5332,
+          "base_url": "http://localhost:5332",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5332/health"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5332/status"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5332/work/create"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5332/work/latest"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5332/work"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5332/receipts/latest"
+            },
+            {
+              "container": "leeway_phone_runtime",
+              "lane": "phone",
+              "host_port": 5332,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5332/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "phone_work_orders",
+        "approval_required",
+        "device_or_provider_required"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_calendar_runtime",
+      "image": "leeway_calendar_runtime:local",
+      "lane": "calendar",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5331->5331/tcp, [::]:5331->5331/tcp",
+      "ports": [
+        {
+          "host_port": 5331,
+          "container_port": 5331,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5331,
+          "container_port": 5331,
+          "base_url": "http://localhost:5331",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5331/health"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5331/status"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5331/work/create"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5331/work/latest"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5331/work"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5331/receipts/latest"
+            },
+            {
+              "container": "leeway_calendar_runtime",
+              "lane": "calendar",
+              "host_port": 5331,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5331/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "calendar_work_orders",
+        "approval_required",
+        "provider_required_for_write"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_email_runtime",
+      "image": "leeway_email_runtime:local",
+      "lane": "email",
+      "running": true,
+      "container_status": "Up 54 minutes",
+      "ports_text": "0.0.0.0:5330->5330/tcp, [::]:5330->5330/tcp",
+      "ports": [
+        {
+          "host_port": 5330,
+          "container_port": 5330,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5330,
+          "container_port": 5330,
+          "base_url": "http://localhost:5330",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5330/health"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5330/status"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "POST",
+              "path": "/work/create",
+              "url": "http://localhost:5330/work/create"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/work/latest",
+              "url": "http://localhost:5330/work/latest"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/work",
+              "url": "http://localhost:5330/work"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5330/receipts/latest"
+            },
+            {
+              "container": "leeway_email_runtime",
+              "lane": "email",
+              "host_port": 5330,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:5330/"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "email_work_orders",
+        "approval_required",
+        "provider_required_for_send"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_skill_router",
+      "image": "leeway_skill_router:local",
+      "lane": "router",
+      "running": true,
+      "container_status": "Up About an hour",
+      "ports_text": "0.0.0.0:5324->5324/tcp, [::]:5324->5324/tcp",
+      "ports": [
+        {
+          "host_port": 5324,
+          "container_port": 5324,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5324,
+          "container_port": 5324,
+          "base_url": "http://localhost:5324",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 10,
+          "routes": [
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5324/health"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5324/status"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "POST",
+              "path": "/route",
+              "url": "http://localhost:5324/route"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "POST",
+              "path": "/plan/create",
+              "url": "http://localhost:5324/plan/create"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/plan/latest",
+              "url": "http://localhost:5324/plan/latest"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/plan/{plan_id}",
+              "url": "http://localhost:5324/plan/{plan_id}"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "POST",
+              "path": "/plan/{plan_id}/approve",
+              "url": "http://localhost:5324/plan/{plan_id}/approve"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "POST",
+              "path": "/plan/latest/approve",
+              "url": "http://localhost:5324/plan/latest/approve"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/tasks/active",
+              "url": "http://localhost:5324/tasks/active"
+            },
+            {
+              "container": "leeway_skill_router",
+              "lane": "router",
+              "host_port": 5324,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5324/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "planning_governor",
+        "approval_routing",
+        "work_order_dispatch"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-telegram-shell",
+      "image": "agent-lee-telegram-shell:plan-aware-20260704-092048",
+      "lane": "telegram",
+      "running": true,
+      "container_status": "Up 2 hours",
+      "ports_text": "",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_artifact_viewer",
+      "image": "leeway_artifact_viewer:local",
+      "lane": "viewer",
+      "running": true,
+      "container_status": "Up 2 hours",
+      "ports_text": "0.0.0.0:5328->5328/tcp, [::]:5328->5328/tcp",
+      "ports": [
+        {
+          "host_port": 5328,
+          "container_port": 5328,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5328,
+          "container_port": 5328,
+          "base_url": "http://localhost:5328",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 11,
+          "routes": [
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5328/health"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5328/status"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/artifacts/pdf/{filename}",
+              "url": "http://localhost:5328/artifacts/pdf/{filename}"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/artifacts/latest",
+              "url": "http://localhost:5328/artifacts/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/rooms/latest",
+              "url": "http://localhost:5328/rooms/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "POST",
+              "path": "/rooms/create/latest",
+              "url": "http://localhost:5328/rooms/create/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5328/receipts/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/rooms/website/latest",
+              "url": "http://localhost:5328/rooms/website/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/website/latest.html",
+              "url": "http://localhost:5328/website/latest.html"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/rooms/plan/latest",
+              "url": "http://localhost:5328/rooms/plan/latest"
+            },
+            {
+              "container": "leeway_artifact_viewer",
+              "lane": "viewer",
+              "host_port": 5328,
+              "method": "GET",
+              "path": "/plan/latest.html",
+              "url": "http://localhost:5328/plan/latest.html"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "artifact_rooms",
+        "plan_rooms",
+        "visual_preview_rooms"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_open_notebook",
+      "image": "leeway_open_notebook:local",
+      "lane": "creation",
+      "running": true,
+      "container_status": "Up 2 hours",
+      "ports_text": "0.0.0.0:5326->5326/tcp, [::]:5326->5326/tcp",
+      "ports": [
+        {
+          "host_port": 5326,
+          "container_port": 5326,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5326,
+          "container_port": 5326,
+          "base_url": "http://localhost:5326",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 28,
+          "routes": [
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5326/health"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5326/status"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/create",
+              "url": "http://localhost:5326/notebook/create"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/latest",
+              "url": "http://localhost:5326/notebook/latest"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/{notebook_id}",
+              "url": "http://localhost:5326/notebook/{notebook_id}"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/readback/{notebook_id}",
+              "url": "http://localhost:5326/notebook/readback/{notebook_id}"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/append",
+              "url": "http://localhost:5326/notebook/append"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/revise",
+              "url": "http://localhost:5326/notebook/revise"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/export/pdf",
+              "url": "http://localhost:5326/notebook/export/pdf"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5326/receipts/latest"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/create-creative",
+              "url": "http://localhost:5326/notebook/create-creative"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/creative",
+              "url": "http://localhost:5326/notebook/creative"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/creative/latest",
+              "url": "http://localhost:5326/notebook/creative/latest"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/creative/{creative_id}",
+              "url": "http://localhost:5326/notebook/creative/{creative_id}"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/creative/{creative_id}/readback",
+              "url": "http://localhost:5326/notebook/creative/{creative_id}/readback"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/creative/{creative_id}/revise",
+              "url": "http://localhost:5326/notebook/creative/{creative_id}/revise"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/notebook/creative/{creative_id}/export/pdf",
+              "url": "http://localhost:5326/notebook/creative/{creative_id}/export/pdf"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/notebook/creative/{creative_id}/package",
+              "url": "http://localhost:5326/notebook/creative/{creative_id}/package"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/creative/create",
+              "url": "http://localhost:5326/creative/create"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative",
+              "url": "http://localhost:5326/creative"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/latest",
+              "url": "http://localhost:5326/creative/latest"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/{creative_id}",
+              "url": "http://localhost:5326/creative/{creative_id}"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/{creative_id}/readback",
+              "url": "http://localhost:5326/creative/{creative_id}/readback"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/creative/{creative_id}/revise",
+              "url": "http://localhost:5326/creative/{creative_id}/revise"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "POST",
+              "path": "/creative/{creative_id}/export/pdf",
+              "url": "http://localhost:5326/creative/{creative_id}/export/pdf"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/{creative_id}/package",
+              "url": "http://localhost:5326/creative/{creative_id}/package"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/{creative_id}/render/website",
+              "url": "http://localhost:5326/creative/{creative_id}/render/website"
+            },
+            {
+              "container": "leeway_open_notebook",
+              "lane": "creation",
+              "host_port": 5326,
+              "method": "GET",
+              "path": "/creative/latest/render/website",
+              "url": "http://localhost:5326/creative/latest/render/website"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "creative_planning",
+        "open_notebook",
+        "drafts",
+        "creative_packages"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_meeting_runtime",
+      "image": "leeway_meeting_runtime:local",
+      "lane": "meeting",
+      "running": true,
+      "container_status": "Up 12 hours",
+      "ports_text": "0.0.0.0:5329->5329/tcp, [::]:5329->5329/tcp",
+      "ports": [
+        {
+          "host_port": 5329,
+          "container_port": 5329,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5329,
+          "container_port": 5329,
+          "base_url": "http://localhost:5329",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 9,
+          "routes": [
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5329/health"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5329/status"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "POST",
+              "path": "/meeting/create",
+              "url": "http://localhost:5329/meeting/create"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/meeting/latest",
+              "url": "http://localhost:5329/meeting/latest"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/meeting/{meeting_id}",
+              "url": "http://localhost:5329/meeting/{meeting_id}"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/meeting/{meeting_id}/join",
+              "url": "http://localhost:5329/meeting/{meeting_id}/join"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/meeting/{meeting_id}.ics",
+              "url": "http://localhost:5329/meeting/{meeting_id}.ics"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/rooms/{meeting_id}",
+              "url": "http://localhost:5329/rooms/{meeting_id}"
+            },
+            {
+              "container": "leeway_meeting_runtime",
+              "lane": "meeting",
+              "host_port": 5329,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5329/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "meeting_rooms",
+        "jitsi_links",
+        "ics_generation"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_document_runtime",
+      "image": "leeway_document_runtime:local",
+      "lane": "document",
+      "running": true,
+      "container_status": "Up 12 hours",
+      "ports_text": "0.0.0.0:5325->5325/tcp, [::]:5325->5325/tcp",
+      "ports": [
+        {
+          "host_port": 5325,
+          "container_port": 5325,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5325,
+          "container_port": 5325,
+          "base_url": "http://localhost:5325",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5325/health"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5325/status"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "POST",
+              "path": "/document/create",
+              "url": "http://localhost:5325/document/create"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/documents/latest",
+              "url": "http://localhost:5325/documents/latest"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5325/receipts/latest"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/documents/file/{filename}",
+              "url": "http://localhost:5325/documents/file/{filename}"
+            },
+            {
+              "container": "leeway_document_runtime",
+              "lane": "document",
+              "host_port": 5325,
+              "method": "GET",
+              "path": "/documents/latest/content",
+              "url": "http://localhost:5325/documents/latest/content"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "pdf_export",
+        "text_export",
+        "document_receipts"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_device_operator",
+      "image": "leeway_device_operator:local",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 14 hours",
+      "ports_text": "0.0.0.0:5323->5323/tcp, [::]:5323->5323/tcp",
+      "ports": [
+        {
+          "host_port": 5323,
+          "container_port": 5323,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5323,
+          "container_port": 5323,
+          "base_url": "http://localhost:5323",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 12,
+          "routes": [
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5323/health"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5323/status"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/cursor/profile",
+              "url": "http://localhost:5323/cursor/profile"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/cursor/set-profile",
+              "url": "http://localhost:5323/cursor/set-profile"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/devices/register",
+              "url": "http://localhost:5323/devices/register"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/devices/list",
+              "url": "http://localhost:5323/devices/list"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/channels/register",
+              "url": "http://localhost:5323/channels/register"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/channels/list",
+              "url": "http://localhost:5323/channels/list"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/voice/session/start",
+              "url": "http://localhost:5323/voice/session/start"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/device/action/request",
+              "url": "http://localhost:5323/device/action/request"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "POST",
+              "path": "/license/profile",
+              "url": "http://localhost:5323/license/profile"
+            },
+            {
+              "container": "leeway_device_operator",
+              "lane": "unknown",
+              "host_port": 5323,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5323/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_context_gateway",
+      "image": "leeway_context_gateway:local",
+      "lane": "context",
+      "running": true,
+      "container_status": "Up 15 hours",
+      "ports_text": "0.0.0.0:5321->5321/tcp, [::]:5321->5321/tcp",
+      "ports": [
+        {
+          "host_port": 5321,
+          "container_port": 5321,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5321,
+          "container_port": 5321,
+          "base_url": "http://localhost:5321",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 7,
+          "routes": [
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5321/health"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5321/status"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "POST",
+              "path": "/compress",
+              "url": "http://localhost:5321/compress"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "POST",
+              "path": "/retrieve",
+              "url": "http://localhost:5321/retrieve"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "GET",
+              "path": "/stats",
+              "url": "http://localhost:5321/stats"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "POST",
+              "path": "/learn/failure",
+              "url": "http://localhost:5321/learn/failure"
+            },
+            {
+              "container": "leeway_context_gateway",
+              "lane": "context",
+              "host_port": 5321,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5321/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_api_gateway",
+      "image": "leeway_api_gateway:local",
+      "lane": "entrypoint",
+      "running": true,
+      "container_status": "Up 15 hours",
+      "ports_text": "0.0.0.0:5320->5320/tcp, [::]:5320->5320/tcp",
+      "ports": [
+        {
+          "host_port": 5320,
+          "container_port": 5320,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5320,
+          "container_port": 5320,
+          "base_url": "http://localhost:5320",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 26,
+          "routes": [
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5320/health"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5320/status"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/capabilities",
+              "url": "http://localhost:5320/capabilities"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/lanes/health",
+              "url": "http://localhost:5320/lanes/health"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/research/quick",
+              "url": "http://localhost:5320/research/quick"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/research/deep",
+              "url": "http://localhost:5320/research/deep"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/plan/date-night",
+              "url": "http://localhost:5320/plan/date-night"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/approval/request-phone-call",
+              "url": "http://localhost:5320/approval/request-phone-call"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/approval/request-email",
+              "url": "http://localhost:5320/approval/request-email"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/approval/request-calendar-event",
+              "url": "http://localhost:5320/approval/request-calendar-event"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/approvals/pending",
+              "url": "http://localhost:5320/approvals/pending"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/approvals/history",
+              "url": "http://localhost:5320/approvals/history"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/approvals/approve",
+              "url": "http://localhost:5320/approvals/approve"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/approvals/reject",
+              "url": "http://localhost:5320/approvals/reject"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/crm/upsert-contact",
+              "url": "http://localhost:5320/crm/upsert-contact"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/crm/upsert-company",
+              "url": "http://localhost:5320/crm/upsert-company"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/crm/upsert-plan",
+              "url": "http://localhost:5320/crm/upsert-plan"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/crm/search",
+              "url": "http://localhost:5320/crm/search"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/store/receipt",
+              "url": "http://localhost:5320/store/receipt"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/store/research-brief",
+              "url": "http://localhost:5320/store/research-brief"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/store/notebook-export",
+              "url": "http://localhost:5320/store/notebook-export"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/store/generated-image",
+              "url": "http://localhost:5320/store/generated-image"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/store/3d-package",
+              "url": "http://localhost:5320/store/3d-package"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "POST",
+              "path": "/backup/run",
+              "url": "http://localhost:5320/backup/run"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/backup/status",
+              "url": "http://localhost:5320/backup/status"
+            },
+            {
+              "container": "leeway_api_gateway",
+              "lane": "entrypoint",
+              "host_port": 5320,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5320/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "single_entrypoint",
+        "api_gateway"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_research_lane",
+      "image": "leeway_research_lane:local",
+      "lane": "research",
+      "running": true,
+      "container_status": "Up 15 hours",
+      "ports_text": "0.0.0.0:5310->5310/tcp, [::]:5310->5310/tcp",
+      "ports": [
+        {
+          "host_port": 5310,
+          "container_port": 5310,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5310,
+          "container_port": 5310,
+          "base_url": "http://localhost:5310",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 6,
+          "routes": [
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5310/health"
+            },
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5310/status"
+            },
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "POST",
+              "path": "/search/quick",
+              "url": "http://localhost:5310/search/quick"
+            },
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "POST",
+              "path": "/search/deep",
+              "url": "http://localhost:5310/search/deep"
+            },
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "POST",
+              "path": "/brief/html",
+              "url": "http://localhost:5310/brief/html"
+            },
+            {
+              "container": "leeway_research_lane",
+              "lane": "research",
+              "host_port": 5310,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5310/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "research_lane",
+        "source_collection"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_seafile_storage_gateway",
+      "image": "leeway_seafile_storage_gateway:local",
+      "lane": "storage",
+      "running": true,
+      "container_status": "Up 15 hours",
+      "ports_text": "0.0.0.0:5314->5314/tcp, [::]:5314->5314/tcp",
+      "ports": [
+        {
+          "host_port": 5314,
+          "container_port": 5314,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5314,
+          "container_port": 5314,
+          "base_url": "http://localhost:5314",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 11,
+          "routes": [
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:5314/health"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:5314/status"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/receipt",
+              "url": "http://localhost:5314/store/receipt"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/research-brief",
+              "url": "http://localhost:5314/store/research-brief"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/notebook-export",
+              "url": "http://localhost:5314/store/notebook-export"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/generated-image",
+              "url": "http://localhost:5314/store/generated-image"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/3d-package",
+              "url": "http://localhost:5314/store/3d-package"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/store/upload/{kind}",
+              "url": "http://localhost:5314/store/upload/{kind}"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "POST",
+              "path": "/backup/run",
+              "url": "http://localhost:5314/backup/run"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "GET",
+              "path": "/backup/status",
+              "url": "http://localhost:5314/backup/status"
+            },
+            {
+              "container": "leeway_seafile_storage_gateway",
+              "lane": "storage",
+              "host_port": 5314,
+              "method": "GET",
+              "path": "/receipts/latest",
+              "url": "http://localhost:5314/receipts/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+      "image": "agent-lee-telegram-shell:latest",
+      "lane": "telegram",
+      "running": false,
+      "container_status": "Exited (137) 20 hours ago",
+      "ports_text": "",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "agent-lee-sdxl-lightning-image-lane",
+      "image": "agent-lee-sdxl-lightning-image-lane:local",
+      "lane": "image",
+      "running": true,
+      "container_status": "Up About an hour",
+      "ports_text": "0.0.0.0:8099->8095/tcp, [::]:8099->8095/tcp",
+      "ports": [
+        {
+          "host_port": 8099,
+          "container_port": 8095,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8099,
+          "container_port": 8095,
+          "base_url": "http://localhost:8099",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 10,
+          "routes": [
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8099/health"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:8099/status"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "POST",
+              "path": "/warmup",
+              "url": "http://localhost:8099/warmup"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "POST",
+              "path": "/image/generate-fast",
+              "url": "http://localhost:8099/image/generate-fast"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "POST",
+              "path": "/image/generate",
+              "url": "http://localhost:8099/image/generate"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/latest",
+              "url": "http://localhost:8099/latest"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/latest/image.png",
+              "url": "http://localhost:8099/latest/image.png"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/latest/candidate_1.png",
+              "url": "http://localhost:8099/latest/candidate_1.png"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/latest/receipt.json",
+              "url": "http://localhost:8099/latest/receipt.json"
+            },
+            {
+              "container": "agent-lee-sdxl-lightning-image-lane",
+              "lane": "image",
+              "host_port": 8099,
+              "method": "GET",
+              "path": "/artifacts/{job_id}/{filename}",
+              "url": "http://localhost:8099/artifacts/{job_id}/{filename}"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "image_generation",
+        "visual_rendering"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-true-character-mesh-lane",
+      "image": "agent-lee-true-character-mesh-lane:local",
+      "lane": "unknown",
+      "running": false,
+      "container_status": "Exited (255) 22 hours ago",
+      "ports_text": "0.0.0.0:8103->8103/tcp",
+      "ports": [
+        {
+          "host_port": 8103,
+          "container_port": 8103,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8103,
+          "container_port": 8103,
+          "base_url": "http://localhost:8103",
+          "health_ok": false,
+          "health_status": "000",
+          "status_ok": false,
+          "status_status": "000",
+          "openapi_ok": false,
+          "openapi_status": "000",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "agent-lee-telegram-vision-lane",
+      "image": "agent-lee-telegram-vision-lane:local",
+      "lane": "vision",
+      "running": false,
+      "container_status": "Exited (255) 22 hours ago",
+      "ports_text": "0.0.0.0:8104->8104/tcp",
+      "ports": [
+        {
+          "host_port": 8104,
+          "container_port": 8104,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8104,
+          "container_port": 8104,
+          "base_url": "http://localhost:8104",
+          "health_ok": false,
+          "health_status": "000",
+          "status_ok": false,
+          "status_status": "000",
+          "openapi_ok": false,
+          "openapi_status": "000",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": [
+        "vision_kernel",
+        "camera_analysis"
+      ],
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "agent-lee-character-cutout-lane",
+      "image": "agent-lee-character-cutout-lane:local",
+      "lane": "unknown",
+      "running": false,
+      "container_status": "Exited (255) 22 hours ago",
+      "ports_text": "0.0.0.0:8102->8102/tcp",
+      "ports": [
+        {
+          "host_port": 8102,
+          "container_port": 8102,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8102,
+          "container_port": 8102,
+          "base_url": "http://localhost:8102",
+          "health_ok": false,
+          "health_status": "000",
+          "status_ok": false,
+          "status_status": "000",
+          "openapi_ok": false,
+          "openapi_status": "000",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "agent-lee-image-to-3d-pattern-lane",
+      "image": "agent-lee-image-to-3d-pattern-lane:local",
+      "lane": "image",
+      "running": true,
+      "container_status": "Up 19 hours",
+      "ports_text": "0.0.0.0:8101->8101/tcp, [::]:8101->8101/tcp",
+      "ports": [
+        {
+          "host_port": 8101,
+          "container_port": 8101,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8101,
+          "container_port": 8101,
+          "base_url": "http://localhost:8101",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 5,
+          "routes": [
+            {
+              "container": "agent-lee-image-to-3d-pattern-lane",
+              "lane": "image",
+              "host_port": 8101,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8101/health"
+            },
+            {
+              "container": "agent-lee-image-to-3d-pattern-lane",
+              "lane": "image",
+              "host_port": 8101,
+              "method": "GET",
+              "path": "/status",
+              "url": "http://localhost:8101/status"
+            },
+            {
+              "container": "agent-lee-image-to-3d-pattern-lane",
+              "lane": "image",
+              "host_port": 8101,
+              "method": "POST",
+              "path": "/convert/from-path",
+              "url": "http://localhost:8101/convert/from-path"
+            },
+            {
+              "container": "agent-lee-image-to-3d-pattern-lane",
+              "lane": "image",
+              "host_port": 8101,
+              "method": "POST",
+              "path": "/convert/latest-sdxl",
+              "url": "http://localhost:8101/convert/latest-sdxl"
+            },
+            {
+              "container": "agent-lee-image-to-3d-pattern-lane",
+              "lane": "image",
+              "host_port": 8101,
+              "method": "GET",
+              "path": "/artifacts/{job_id}/{filename}",
+              "url": "http://localhost:8101/artifacts/{job_id}/{filename}"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "image_generation",
+        "visual_rendering"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-telegram-shell-backup-20260703-144921",
+      "image": "agent-lee-telegram-shell:latest",
+      "lane": "telegram",
+      "running": false,
+      "container_status": "Exited (137) 20 hours ago",
+      "ports_text": "",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "telegram_shell",
+        "mobile_operator_interface"
+      ],
+      "discovery_status": "DISCOVERED_NOT_RUNNING"
+    },
+    {
+      "name": "agent-lee-qwen-voice",
+      "image": "agent-lee-qwen-voice:cuda",
+      "lane": "voice",
+      "running": true,
+      "container_status": "Up 20 hours",
+      "ports_text": "0.0.0.0:8097->8097/tcp, [::]:8097->8097/tcp",
+      "ports": [
+        {
+          "host_port": 8097,
+          "container_port": 8097,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8097,
+          "container_port": 8097,
+          "base_url": "http://localhost:8097",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 3,
+          "routes": [
+            {
+              "container": "agent-lee-qwen-voice",
+              "lane": "voice",
+              "host_port": 8097,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8097/health"
+            },
+            {
+              "container": "agent-lee-qwen-voice",
+              "lane": "voice",
+              "host_port": 8097,
+              "method": "POST",
+              "path": "/speak",
+              "url": "http://localhost:8097/speak"
+            },
+            {
+              "container": "agent-lee-qwen-voice",
+              "lane": "voice",
+              "host_port": 8097,
+              "method": "POST",
+              "path": "/speak-file",
+              "url": "http://localhost:8097/speak-file"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "tts",
+        "voice_reply",
+        "voice_walkthrough"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent_lee_code_mode",
+      "image": "leeway-ecosystemv214-agent-lee",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp",
+      "ports": [
+        {
+          "host_port": 8080,
+          "container_port": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8080,
+          "container_port": 8080,
+          "base_url": "http://localhost:8080",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_runtime_fabric",
+      "image": "leeway-ecosystemv214-runtime-fabric",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:4001->4001/tcp, [::]:4001->4001/tcp, 0.0.0.0:8111->8111/tcp, [::]:8111->8111/tcp",
+      "ports": [
+        {
+          "host_port": 4001,
+          "container_port": 4001,
+          "protocol": "tcp"
+        },
+        {
+          "host_port": 8111,
+          "container_port": 8111,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 4001,
+          "container_port": 4001,
+          "base_url": "http://localhost:4001",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        },
+        {
+          "host_port": 8111,
+          "container_port": 8111,
+          "base_url": "http://localhost:8111",
+          "health_ok": false,
+          "health_status": "000",
+          "status_ok": false,
+          "status_status": "000",
+          "openapi_ok": false,
+          "openapi_status": "000",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-jitsi-meet-web-1",
+      "image": "ghcr.io/jitsi/web:unstable",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8443->8443/tcp, [::]:8443->8443/tcp, 0.0.0.0:8008->8000/tcp, [::]:8008->8000/tcp",
+      "ports": [
+        {
+          "host_port": 8443,
+          "container_port": 8443,
+          "protocol": "tcp"
+        },
+        {
+          "host_port": 8008,
+          "container_port": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8443,
+          "container_port": 8443,
+          "base_url": "http://localhost:8443",
+          "health_ok": false,
+          "health_status": "400",
+          "status_ok": false,
+          "status_status": "400",
+          "openapi_ok": false,
+          "openapi_status": "400",
+          "route_count": 0,
+          "routes": []
+        },
+        {
+          "host_port": 8008,
+          "container_port": 8000,
+          "base_url": "http://localhost:8008",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": true,
+          "status_status": "200",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 1,
+          "routes": [
+            {
+              "container": "leeway-jitsi-meet-web-1",
+              "lane": "unknown",
+              "host_port": 8008,
+              "method": "OPENAPI_PARSE_ERROR",
+              "path": "/openapi.json",
+              "url": "http://localhost:8008/openapi.json"
+            }
+          ]
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-jitsi-meet-jicofo-1",
+      "image": "ghcr.io/jitsi/jicofo:unstable",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "127.0.0.1:8888->8888/tcp",
+      "ports": [],
+      "probes": [],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-jitsi-meet-jvb-1",
+      "image": "ghcr.io/jitsi/jvb:unstable",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:10000->10000/udp, [::]:10000->10000/udp, 127.0.0.1:8081->8080/tcp",
+      "ports": [],
+      "probes": [],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-jitsi-meet-prosody-1",
+      "image": "ghcr.io/jitsi/prosody:unstable",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "5222/tcp, 5269/tcp, 5280/tcp, 5347/tcp",
+      "ports": [],
+      "probes": [],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-local-assistant-bridge",
+      "image": "local-assistant-bridge-leeway-local-assistant-bridge",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8787->8787/tcp, [::]:8787->8787/tcp",
+      "ports": [
+        {
+          "host_port": 8787,
+          "container_port": 8787,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8787,
+          "container_port": 8787,
+          "base_url": "http://localhost:8787",
+          "health_ok": false,
+          "health_status": "000",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-ears-kernel",
+      "image": "agent-lee-ears-kernel-agent-lee-ears-kernel",
+      "lane": "hearing",
+      "running": true,
+      "container_status": "Up 20 hours",
+      "ports_text": "0.0.0.0:8094->8094/tcp, [::]:8094->8094/tcp",
+      "ports": [
+        {
+          "host_port": 8094,
+          "container_port": 8094,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8094,
+          "container_port": 8094,
+          "base_url": "http://localhost:8094",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 5,
+          "routes": [
+            {
+              "container": "agent-lee-ears-kernel",
+              "lane": "hearing",
+              "host_port": 8094,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:8094/"
+            },
+            {
+              "container": "agent-lee-ears-kernel",
+              "lane": "hearing",
+              "host_port": 8094,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8094/health"
+            },
+            {
+              "container": "agent-lee-ears-kernel",
+              "lane": "hearing",
+              "host_port": 8094,
+              "method": "GET",
+              "path": "/ears/status",
+              "url": "http://localhost:8094/ears/status"
+            },
+            {
+              "container": "agent-lee-ears-kernel",
+              "lane": "hearing",
+              "host_port": 8094,
+              "method": "POST",
+              "path": "/ears/route-text",
+              "url": "http://localhost:8094/ears/route-text"
+            },
+            {
+              "container": "agent-lee-ears-kernel",
+              "lane": "hearing",
+              "host_port": 8094,
+              "method": "POST",
+              "path": "/ears/transcribe",
+              "url": "http://localhost:8094/ears/transcribe"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "ears_kernel",
+        "audio_input"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_ollama",
+      "image": "ollama/ollama:latest",
+      "lane": "model",
+      "running": true,
+      "container_status": "Up 22 hours (healthy)",
+      "ports_text": "0.0.0.0:11434->11434/tcp, [::]:11434->11434/tcp",
+      "ports": [
+        {
+          "host_port": 11434,
+          "container_port": 11434,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 11434,
+          "container_port": 11434,
+          "base_url": "http://localhost:11434",
+          "health_ok": false,
+          "health_status": "404",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": [
+        "local_model_server",
+        "ollama_models"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_media_router",
+      "image": "leeway-ecosystemv214-leeway-media-router",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:5301->5301/tcp, [::]:5301->5301/tcp",
+      "ports": [
+        {
+          "host_port": 5301,
+          "container_port": 5301,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5301,
+          "container_port": 5301,
+          "base_url": "http://localhost:5301",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_media_ingestion_layer",
+      "image": "leeway-ecosystemv214-leeway-media-ingestion-layer",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:5300->5300/tcp, [::]:5300->5300/tcp",
+      "ports": [
+        {
+          "host_port": 5300,
+          "container_port": 5300,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 5300,
+          "container_port": 5300,
+          "base_url": "http://localhost:5300",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_worker_center",
+      "image": "leeway-ecosystemv214-leeway-worker-center",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8862->8862/tcp, [::]:8862->8862/tcp",
+      "ports": [
+        {
+          "host_port": 8862,
+          "container_port": 8862,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8862,
+          "container_port": 8862,
+          "base_url": "http://localhost:8862",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_mcp_center",
+      "image": "leeway-ecosystemv214-leeway-mcp-center",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8863->8863/tcp, [::]:8863->8863/tcp",
+      "ports": [
+        {
+          "host_port": 8863,
+          "container_port": 8863,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8863,
+          "container_port": 8863,
+          "base_url": "http://localhost:8863",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_mcp_agent_center",
+      "image": "leeway-ecosystemv214-leeway-mcp-agent-center",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8861->8861/tcp, [::]:8861->8861/tcp",
+      "ports": [
+        {
+          "host_port": 8861,
+          "container_port": 8861,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8861,
+          "container_port": 8861,
+          "base_url": "http://localhost:8861",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_agent_center",
+      "image": "leeway-ecosystemv214-leeway-agent-center",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8860->8860/tcp, [::]:8860->8860/tcp",
+      "ports": [
+        {
+          "host_port": 8860,
+          "container_port": 8860,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8860,
+          "container_port": 8860,
+          "base_url": "http://localhost:8860",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway_hybrid_fabric",
+      "image": "leeway-ecosystemv214-hybrid-fabric",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8777->8777/tcp, [::]:8777->8777/tcp",
+      "ports": [
+        {
+          "host_port": 8777,
+          "container_port": 8777,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8777,
+          "container_port": 8777,
+          "base_url": "http://localhost:8777",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": false,
+          "openapi_status": "404",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-vision-kernel",
+      "image": "agent-lee-vision-kernel-agent-lee-vision-kernel",
+      "lane": "vision",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8093->8093/tcp, [::]:8093->8093/tcp",
+      "ports": [
+        {
+          "host_port": 8093,
+          "container_port": 8093,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8093,
+          "container_port": 8093,
+          "base_url": "http://localhost:8093",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 10,
+          "routes": [
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8093/health"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/vision/status",
+              "url": "http://localhost:8093/vision/status"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/vision/manifest",
+              "url": "http://localhost:8093/vision/manifest"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/vision/model",
+              "url": "http://localhost:8093/vision/model"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "POST",
+              "path": "/vision/analyze/image",
+              "url": "http://localhost:8093/vision/analyze/image"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "POST",
+              "path": "/vision/analyze/screen",
+              "url": "http://localhost:8093/vision/analyze/screen"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "POST",
+              "path": "/vision/analyze/camera-frame",
+              "url": "http://localhost:8093/vision/analyze/camera-frame"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "POST",
+              "path": "/vision/room/analyze",
+              "url": "http://localhost:8093/vision/room/analyze"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/vision/receipts/recent",
+              "url": "http://localhost:8093/vision/receipts/recent"
+            },
+            {
+              "container": "agent-lee-vision-kernel",
+              "lane": "vision",
+              "host_port": 8093,
+              "method": "GET",
+              "path": "/vision/reports/latest",
+              "url": "http://localhost:8093/vision/reports/latest"
+            }
+          ]
+        }
+      ],
+      "capability_summary": [
+        "vision_kernel",
+        "camera_analysis"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "agent-lee-voice-kernel",
+      "image": "agent-lee-voice-kernel-voice-kernel",
+      "lane": "unknown",
+      "running": true,
+      "container_status": "Up 20 hours (healthy)",
+      "ports_text": "0.0.0.0:8092->8092/tcp, [::]:8092->8092/tcp",
+      "ports": [
+        {
+          "host_port": 8092,
+          "container_port": 8092,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8092,
+          "container_port": 8092,
+          "base_url": "http://localhost:8092",
+          "health_ok": true,
+          "health_status": "200",
+          "status_ok": false,
+          "status_status": "404",
+          "openapi_ok": true,
+          "openapi_status": "200",
+          "route_count": 6,
+          "routes": [
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "GET",
+              "path": "/",
+              "url": "http://localhost:8092/"
+            },
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "GET",
+              "path": "/health",
+              "url": "http://localhost:8092/health"
+            },
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "POST",
+              "path": "/tts",
+              "url": "http://localhost:8092/tts"
+            },
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "GET",
+              "path": "/audio/{filename}",
+              "url": "http://localhost:8092/audio/{filename}"
+            },
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "GET",
+              "path": "/voice-identity",
+              "url": "http://localhost:8092/voice-identity"
+            },
+            {
+              "container": "agent-lee-voice-kernel",
+              "lane": "unknown",
+              "host_port": 8092,
+              "method": "POST",
+              "path": "/register-runtime-fabric",
+              "url": "http://localhost:8092/register-runtime-fabric"
+            }
+          ]
+        }
+      ],
+      "capability_summary": "unknown_capability",
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-seafile",
+      "image": "seafileltd/seafile-mc:latest",
+      "lane": "storage",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "0.0.0.0:8082->80/tcp, [::]:8082->80/tcp",
+      "ports": [
+        {
+          "host_port": 8082,
+          "container_port": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "probes": [
+        {
+          "host_port": 8082,
+          "container_port": 80,
+          "base_url": "http://localhost:8082",
+          "health_ok": false,
+          "health_status": "502",
+          "status_ok": false,
+          "status_status": "502",
+          "openapi_ok": false,
+          "openapi_status": "502",
+          "route_count": 0,
+          "routes": []
+        }
+      ],
+      "capability_summary": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-seafile-cache",
+      "image": "memcached:1.6",
+      "lane": "storage",
+      "running": true,
+      "container_status": "Up 22 hours",
+      "ports_text": "11211/tcp",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "discovery_status": "DISCOVERED"
+    },
+    {
+      "name": "leeway-seafile-db",
+      "image": "mariadb:10.11",
+      "lane": "storage",
+      "running": true,
+      "container_status": "Up 22 hours (healthy)",
+      "ports_text": "3306/tcp",
+      "ports": [],
+      "probes": [],
+      "capability_summary": [
+        "artifact_storage",
+        "receipt_storage",
+        "durable_memory"
+      ],
+      "discovery_status": "DISCOVERED"
+    }
+  ],
+  "verdict": "LEEWAY_SYSTEM_DISCOVERY_MANIFEST_CREATED",
+  "root": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4",
+  "operating_rules": [
+    "The discovery layer must be refreshed after every new container, route, capability, or runtime update.",
+    "Agent Lee should ask discovery before claiming capability.",
+    "Major tasks should go through planning governor before execution.",
+    "External actions require approval.",
+    "Runtime shells must report truthfully when provider or device wiring is not complete.",
+    "One external entrypoint is leeway_api_gateway on port 5320 when gateway wiring is active."
+  ],
+  "discovery_layer": {
+    "base_url": "http://localhost:5327",
+    "name": "leeway_agent_skills",
+    "port": 5327,
+    "role": "system_discovery_and_capability_registry"
+  },
+  "router": {
+    "base_url": "http://localhost:5324",
+    "name": "leeway_skill_router",
+    "port": 5324,
+    "role": "planning_governor_and_work_router"
+  },
+  "entrypoint": {
+    "base_url": "http://localhost:5320",
+    "name": "leeway_api_gateway",
+    "port": 5320,
+    "rule": "All external requests should route through this gateway when gateway wiring is active.",
+    "role": "single_entrypoint"
+  },
+  "created_at": "2026-07-04T11:08:21.2569139-05:00"
+}

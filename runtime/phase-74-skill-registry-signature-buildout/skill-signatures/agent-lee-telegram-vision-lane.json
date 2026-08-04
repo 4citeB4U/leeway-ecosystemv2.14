@@ -1,0 +1,54 @@
+﻿{
+    "signature_version":  "LEEWAY_SKILL_SIGNATURE_V1",
+    "signature_type":  "container_skill_signature",
+    "skill_id":  "CONTAINER_AGENT-LEE-TELEGRAM-VISION-LANE",
+    "skill_name":  "agent-lee-telegram-vision-lane",
+    "domain":  "Unassigned Skill Container",
+    "description":  "Governed skill container signature for agent-lee-telegram-vision-lane.",
+    "container_or_module":  "agent-lee-telegram-vision-lane",
+    "authority_owner":  "LeeWay Standards \u003e Runtime Fabric \u003e Agent Lee \u003e Skills Universe",
+    "risk_tier":  "critical",
+    "execution_state":  "BLOCKED_GOVERNED_NO_EXECUTE",
+    "input_contract":  {
+                           "status":  "REQUIRES_LATER_CAPABILITY_CONTRACT",
+                           "allowed_now":  "none"
+                       },
+    "output_contract":  {
+                            "status":  "REQUIRES_LATER_CAPABILITY_CONTRACT",
+                            "allowed_now":  "signature_receipt_only"
+                        },
+    "memory_access":  {
+                          "allowed_now":  false,
+                          "notes":  "No memory runtime access in 452."
+                      },
+    "device_access":  {
+                          "allowed_now":  false,
+                          "notes":  "No device control in 452."
+                      },
+    "network_access":  {
+                           "allowed_now":  false,
+                           "notes":  "No network execution in 452."
+                       },
+    "model_provider_access":  {
+                                  "allowed_now":  false,
+                                  "notes":  "No model/provider calls in 452."
+                              },
+    "browser_or_desktop_access":  {
+                                      "allowed_now":  false,
+                                      "notes":  "No browser/desktop operation in 452."
+                                  },
+    "external_messaging_access":  {
+                                      "allowed_now":  false,
+                                      "notes":  "No Telegram/social/external messaging in 452."
+                                  },
+    "hardware_requirement":  "TO_BE_FILLED_BY_LATER_READINESS_PROOF",
+    "discovery_dependency":  "Must be known to Discovery and Runtime Fabric before execution.",
+    "runtime_fabric_dependency":  "Must route through Runtime Fabric gates.",
+    "device_layer_dependency":  "If device-facing, must use Device Layer permit.",
+    "receipt_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-74-skill-registry-signature-buildout\\skill-signatures",
+    "simulation_plan":  "Required before execution. Must produce simulation receipt.",
+    "test_or_benchmark_plan":  "Required before promotion. No benchmark execution now.",
+    "rollback_notes":  "No mutation occurred. Later execution requires rollback notes.",
+    "human_review_required":  true,
+    "execution_allowed_now":  false
+}

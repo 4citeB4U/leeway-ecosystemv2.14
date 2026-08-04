@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Leeway Industries//Agent Lee Meeting Runtime//EN
+BEGIN:VEVENT
+UID:meet-1783139167-8fdcb631@leeway.local
+DTSTAMP:20260704T042607Z
+DTSTART:20260704T140000
+DTEND:20260704T143000
+SUMMARY:Leeway Test Video Meeting
+DESCRIPTION:Proof meeting for Leeway Jitsi-backed meeting runtime.\n\nJoin: http://172.26.160.1:5329/rooms/meet-1783139167-8fdcb631
+URL:http://172.26.160.1:5329/rooms/meet-1783139167-8fdcb631
+END:VEVENT
+END:VCALENDAR

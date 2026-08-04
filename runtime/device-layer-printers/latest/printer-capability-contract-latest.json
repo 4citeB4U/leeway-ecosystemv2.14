@@ -1,0 +1,56 @@
+﻿{
+    "version":  "LEEWAY_PRINTER_CAPABILITY_CONTRACT_221",
+    "timestamp":  "2026-07-05T21:16:42",
+    "family":  "printers",
+    "capability_status":  "READ_ONLY_DISCOVERY_STATUS_CONTRACT_CREATED",
+    "existing_routes":  {
+                            "discover":  true,
+                            "global_status":  false,
+                            "registry":  false
+                        },
+    "canonical_routes":  [
+                             {
+                                 "method":  "GET",
+                                 "route":  "/printers/discover",
+                                 "status":  "PRESENT",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/printers/status",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/printers/registry",
+                                 "status":  "MISSING_RECOMMENDED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "GET",
+                                 "route":  "/printers/{printer_id}/status",
+                                 "status":  "PRESENT_FROM_ROUTE_TABLE_EXPECTED",
+                                 "read_only":  true,
+                                 "physical_action":  false
+                             },
+                             {
+                                 "method":  "POST",
+                                 "route":  "/printers/{printer_id}/print",
+                                 "status":  "PRESENT_BUT_APPROVAL_REQUIRED",
+                                 "read_only":  false,
+                                 "physical_action":  true,
+                                 "print_job":  true
+                             }
+                         ],
+    "safety":  {
+                   "no_print_job_sent":  true,
+                   "no_queue_mutation":  true,
+                   "no_spooler_mutation":  true,
+                   "no_driver_install":  true,
+                   "no_physical_action":  true
+               }
+}

@@ -1,0 +1,545 @@
+﻿{
+    "researchId":  "research-mqj7wker-5904ba6e",
+    "objective":  "Find quality references for chess legal moves, chess engine concepts, 3D chess game design, themed chess sets, and WebGL/WebXR implementation patterns.",
+    "query":  "FIDE laws chess rules Stockfish official docs Three.js Babylon.js MDN WebXR themed chess sets",
+    "sourceMap":  [
+                      {
+                          "id":  "evidence-mqj7wucj-f468cfdc",
+                          "source":  "desktop runtime browser search",
+                          "title":  "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces - Search",
+                          "url":  "https://www.bing.com/search?q=FIDE+Laws+of+Chess+Stockfish+Three.js+Babylon.js+MDN+WebXR+chess+set+themed+pieces\u0026form=QBLH\u0026sp=-1\u0026ghc=1\u0026lq=0\u0026pq=fide+laws+of+chess+stockfish+three.js+babylon.js+mdn+webxr+chess+set+themed+pie\u0026sc=7-79\u0026qs=n\u0026sk=\u0026cvid=D9FB2B6AA8D945C9AD93E66178675224",
+                          "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153",
+                          "sourceType":  "browser_search",
+                          "status":  "candidate",
+                          "qualityScore":  70,
+                          "relevanceScore":  78,
+                          "freshnessScore":  72,
+                          "keyEvidence":  "Browser search executed for query: FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces",
+                          "supports":  [
+                                           "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces"
+                                       ],
+                          "confidence":  "medium",
+                          "notes":  "Screenshot captured at E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153\\screenshots\\agent-lee-search-FIDE_Laws_of_Chess_Stockfish_Three_js_Babylon_js_MDN_WebXR_c-1781770094889.png",
+                          "capturedAt":  "2026-06-18T08:08:17.828Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wv45-c9775057",
+                          "source":  "FIDE Laws of Chess",
+                          "title":  "FIDE Laws of Chess",
+                          "url":  "https://www.fide.com/fide/handbook.html?id=171\u0026view=article",
+                          "sourceType":  "official_doc",
+                          "status":  "candidate",
+                          "qualityScore":  96,
+                          "relevanceScore":  99,
+                          "freshnessScore":  92,
+                          "keyEvidence":  "Official rules define legal moves, castling, promotion, and draw constraints.",
+                          "supports":  [
+                                           "legal moves",
+                                           "castling",
+                                           "promotion"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Primary legal rules source.",
+                          "capturedAt":  "2026-06-18T08:08:18.821Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wvl5-6b2e70b3",
+                          "source":  "Stockfish",
+                          "title":  "Stockfish official repository",
+                          "url":  "https://github.com/official-stockfish/Stockfish",
+                          "sourceType":  "source_code",
+                          "status":  "candidate",
+                          "qualityScore":  94,
+                          "relevanceScore":  97,
+                          "freshnessScore":  90,
+                          "keyEvidence":  "Stockfish represents the engine lane with search plus evaluation, not a fake full chess AI claim.",
+                          "supports":  [
+                                           "engine concept",
+                                           "search and evaluation"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Primary engine concept source.",
+                          "capturedAt":  "2026-06-18T08:08:19.433Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7ww85-05a853ce",
+                          "source":  "Three.js docs",
+                          "title":  "Three.js documentation",
+                          "url":  "https://threejs.org/docs/",
+                          "sourceType":  "official_doc",
+                          "status":  "candidate",
+                          "qualityScore":  94,
+                          "relevanceScore":  95,
+                          "freshnessScore":  88,
+                          "keyEvidence":  "Three.js documents scene setup, camera, materials, loaders, and browser-native 3D patterns.",
+                          "supports":  [
+                                           "3D implementation",
+                                           "WebGL pattern"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Primary 3D browser reference.",
+                          "capturedAt":  "2026-06-18T08:08:20.261Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wwlr-ac967dcb",
+                          "source":  "MDN WebXR",
+                          "title":  "MDN WebXR API guide",
+                          "url":  "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+                          "sourceType":  "documentation",
+                          "status":  "candidate",
+                          "qualityScore":  90,
+                          "relevanceScore":  94,
+                          "freshnessScore":  86,
+                          "keyEvidence":  "WebXR guidance covers immersive and AR-ready browser experiences.",
+                          "supports":  [
+                                           "AR readiness",
+                                           "WebXR implementation"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Primary AR/browser guide.",
+                          "capturedAt":  "2026-06-18T08:08:20.751Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wx59-daa683f6",
+                          "source":  "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof/themes.json",
+                          "title":  "Themed piece families",
+                          "localPath":  "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof/themes.json",
+                          "sourceType":  "local_manifest",
+                          "status":  "candidate",
+                          "qualityScore":  95,
+                          "relevanceScore":  98,
+                          "freshnessScore":  100,
+                          "keyEvidence":  "The local theme catalog defines multiple piece families, titles, palettes, and motifs for the proof.",
+                          "supports":  [
+                                           "theme design basis",
+                                           "piece family differentiation"
+                                       ],
+                          "confidence":  "high",
+                          "notes":  "Local design source.",
+                          "capturedAt":  "2026-06-18T08:08:21.453Z"
+                      },
+                      {
+                          "id":  "evidence-mqj7wxnv-7b154e2c",
+                          "source":  "chess SEO filler",
+                          "title":  "Chess SEO filler",
+                          "url":  "https://example.com/chess-filler",
+                          "sourceType":  "seo_filler",
+                          "status":  "rejected",
+                          "qualityScore":  12,
+                          "relevanceScore":  4,
+                          "freshnessScore":  12,
+                          "keyEvidence":  "No primary support, no real implementation detail, and no authoritative rule surface.",
+                          "supports":  [
+                                           "none"
+                                       ],
+                          "confidence":  "low",
+                          "notes":  "Rejected as thin filler.",
+                          "capturedAt":  "2026-06-18T08:08:22.123Z"
+                      }
+                  ],
+    "candidateEvidence":  [
+                              {
+                                  "id":  "evidence-mqj7wucj-f468cfdc",
+                                  "source":  "desktop runtime browser search",
+                                  "title":  "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces - Search",
+                                  "url":  "https://www.bing.com/search?q=FIDE+Laws+of+Chess+Stockfish+Three.js+Babylon.js+MDN+WebXR+chess+set+themed+pieces\u0026form=QBLH\u0026sp=-1\u0026ghc=1\u0026lq=0\u0026pq=fide+laws+of+chess+stockfish+three.js+babylon.js+mdn+webxr+chess+set+themed+pie\u0026sc=7-79\u0026qs=n\u0026sk=\u0026cvid=D9FB2B6AA8D945C9AD93E66178675224",
+                                  "localPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153",
+                                  "sourceType":  "browser_search",
+                                  "status":  "candidate",
+                                  "qualityScore":  70,
+                                  "relevanceScore":  78,
+                                  "freshnessScore":  72,
+                                  "keyEvidence":  "Browser search executed for query: FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces",
+                                  "supports":  [
+                                                   "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces"
+                                               ],
+                                  "confidence":  "medium",
+                                  "notes":  "Screenshot captured at E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153\\screenshots\\agent-lee-search-FIDE_Laws_of_Chess_Stockfish_Three_js_Babylon_js_MDN_WebXR_c-1781770094889.png",
+                                  "capturedAt":  "2026-06-18T08:08:17.828Z"
+                              }
+                          ],
+    "curatedEvidence":  [
+                            {
+                                "id":  "evidence-mqj7wv45-c9775057",
+                                "source":  "FIDE Laws of Chess",
+                                "title":  "FIDE Laws of Chess",
+                                "url":  "https://www.fide.com/fide/handbook.html?id=171\u0026view=article",
+                                "sourceType":  "official_doc",
+                                "status":  "curated",
+                                "qualityScore":  96,
+                                "relevanceScore":  99,
+                                "freshnessScore":  92,
+                                "keyEvidence":  "Official rules define legal moves, castling, promotion, and draw constraints.",
+                                "supports":  [
+                                                 "legal moves",
+                                                 "castling",
+                                                 "promotion"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Primary legal rules source.",
+                                "capturedAt":  "2026-06-18T08:08:18.821Z"
+                            },
+                            {
+                                "id":  "evidence-mqj7wvl5-6b2e70b3",
+                                "source":  "Stockfish",
+                                "title":  "Stockfish official repository",
+                                "url":  "https://github.com/official-stockfish/Stockfish",
+                                "sourceType":  "source_code",
+                                "status":  "curated",
+                                "qualityScore":  94,
+                                "relevanceScore":  97,
+                                "freshnessScore":  90,
+                                "keyEvidence":  "Stockfish represents the engine lane with search plus evaluation, not a fake full chess AI claim.",
+                                "supports":  [
+                                                 "engine concept",
+                                                 "search and evaluation"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Primary engine concept source.",
+                                "capturedAt":  "2026-06-18T08:08:19.433Z"
+                            },
+                            {
+                                "id":  "evidence-mqj7ww85-05a853ce",
+                                "source":  "Three.js docs",
+                                "title":  "Three.js documentation",
+                                "url":  "https://threejs.org/docs/",
+                                "sourceType":  "official_doc",
+                                "status":  "curated",
+                                "qualityScore":  94,
+                                "relevanceScore":  95,
+                                "freshnessScore":  88,
+                                "keyEvidence":  "Three.js documents scene setup, camera, materials, loaders, and browser-native 3D patterns.",
+                                "supports":  [
+                                                 "3D implementation",
+                                                 "WebGL pattern"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Primary 3D browser reference.",
+                                "capturedAt":  "2026-06-18T08:08:20.261Z"
+                            },
+                            {
+                                "id":  "evidence-mqj7wwlr-ac967dcb",
+                                "source":  "MDN WebXR",
+                                "title":  "MDN WebXR API guide",
+                                "url":  "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+                                "sourceType":  "documentation",
+                                "status":  "curated",
+                                "qualityScore":  90,
+                                "relevanceScore":  94,
+                                "freshnessScore":  86,
+                                "keyEvidence":  "WebXR guidance covers immersive and AR-ready browser experiences.",
+                                "supports":  [
+                                                 "AR readiness",
+                                                 "WebXR implementation"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Primary AR/browser guide.",
+                                "capturedAt":  "2026-06-18T08:08:20.751Z"
+                            },
+                            {
+                                "id":  "evidence-mqj7wx59-daa683f6",
+                                "source":  "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof/themes.json",
+                                "title":  "Themed piece families",
+                                "localPath":  "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof/themes.json",
+                                "sourceType":  "local_manifest",
+                                "status":  "curated",
+                                "qualityScore":  95,
+                                "relevanceScore":  98,
+                                "freshnessScore":  100,
+                                "keyEvidence":  "The local theme catalog defines multiple piece families, titles, palettes, and motifs for the proof.",
+                                "supports":  [
+                                                 "theme design basis",
+                                                 "piece family differentiation"
+                                             ],
+                                "confidence":  "high",
+                                "notes":  "Local design source.",
+                                "capturedAt":  "2026-06-18T08:08:21.453Z"
+                            }
+                        ],
+    "rejectedEvidence":  [
+                             {
+                                 "id":  "evidence-mqj7wxnv-7b154e2c",
+                                 "source":  "chess SEO filler",
+                                 "title":  "Chess SEO filler",
+                                 "url":  "https://example.com/chess-filler",
+                                 "sourceType":  "seo_filler",
+                                 "status":  "rejected",
+                                 "qualityScore":  12,
+                                 "relevanceScore":  4,
+                                 "freshnessScore":  12,
+                                 "keyEvidence":  "No primary support, no real implementation detail, and no authoritative rule surface.",
+                                 "supports":  [
+                                                  "none"
+                                              ],
+                                 "confidence":  "low",
+                                 "notes":  "Rejected as thin filler.",
+                                 "capturedAt":  "2026-06-18T08:08:22.123Z"
+                             }
+                         ],
+    "claimChecks":  [
+                        {
+                            "id":  "claim-mqj7x6t7-e0b0faaa",
+                            "claim":  "The proof respects legal chess moves.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7wv45-c9775057",
+                                                "evidence-mqj7wx59-daa683f6"
+                                            ],
+                            "counterevidence":  "Rejected filler does not outrank primary sources.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "Chess move validation is anchored to the FIDE rules surface.",
+                            "notes":  "Stateful research proof.",
+                            "checkedAt":  "2026-06-18T08:08:33.979Z"
+                        },
+                        {
+                            "id":  "claim-mqj7x8ev-5a3a05e0",
+                            "claim":  "The proof uses a real engine concept instead of pretending to be a finished chess AI.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7wvl5-6b2e70b3"
+                                            ],
+                            "counterevidence":  "Rejected filler does not outrank primary sources.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "Evaluation and search remain the engine lane.",
+                            "notes":  "Stateful research proof.",
+                            "checkedAt":  "2026-06-18T08:08:36.056Z"
+                        },
+                        {
+                            "id":  "claim-mqj7x8l2-61c6bebd",
+                            "claim":  "The themed chess families have a documented design basis.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7wx59-daa683f6"
+                                            ],
+                            "counterevidence":  "Rejected filler does not outrank primary sources.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "The local theme catalog defines the family identities.",
+                            "notes":  "Stateful research proof.",
+                            "checkedAt":  "2026-06-18T08:08:36.278Z"
+                        },
+                        {
+                            "id":  "claim-mqj7x8va-79b5edbf",
+                            "claim":  "The browser proof uses 3D/WebGL implementation patterns.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7ww85-05a853ce",
+                                                "evidence-mqj7wv45-c9775057"
+                                            ],
+                            "counterevidence":  "Rejected filler does not outrank primary sources.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "Three.js style browser-3D patterns guide the scene.",
+                            "notes":  "Stateful research proof.",
+                            "checkedAt":  "2026-06-18T08:08:36.646Z"
+                        },
+                        {
+                            "id":  "claim-mqj7x94n-768b138f",
+                            "claim":  "AR/WebXR readiness is guarded and documented.",
+                            "claimType":  "current fact",
+                            "evidenceIds":  [
+                                                "evidence-mqj7wwlr-ac967dcb",
+                                                "evidence-mqj7wx59-daa683f6"
+                                            ],
+                            "counterevidence":  "Rejected filler does not outrank primary sources.",
+                            "freshnessRequirement":  "high",
+                            "result":  "supported",
+                            "confidence":  "high",
+                            "finalWording":  "WebXR is treated as readiness, not as an overclaim.",
+                            "notes":  "Stateful research proof.",
+                            "checkedAt":  "2026-06-18T08:08:36.984Z"
+                        }
+                    ],
+    "openGaps":  [
+
+                 ],
+    "buildDecisions":  [
+                           {
+                               "id":  "decision-mqj7wuck-5a37f18e",
+                               "kind":  "search",
+                               "decision":  "keep",
+                               "reason":  "browser research surfaced candidate evidence",
+                               "query":  "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces",
+                               "at":  "2026-06-18T08:08:17.828Z"
+                           },
+                           {
+                               "id":  "decision-mqj7wy9u-e0c2f349",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "FIDE is the primary legal-move authority.",
+                               "evidenceId":  "evidence-mqj7wv45-c9775057",
+                               "at":  "2026-06-18T08:08:22.914Z"
+                           },
+                           {
+                               "id":  "decision-mqj7wyvq-6331e63a",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "Stockfish grounds the engine concept.",
+                               "evidenceId":  "evidence-mqj7wvl5-6b2e70b3",
+                               "at":  "2026-06-18T08:08:23.702Z"
+                           },
+                           {
+                               "id":  "decision-mqj7wzqs-f66ceb55",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "Three.js grounds the browser-native 3D implementation pattern.",
+                               "evidenceId":  "evidence-mqj7ww85-05a853ce",
+                               "at":  "2026-06-18T08:08:24.820Z"
+                           },
+                           {
+                               "id":  "decision-mqj7x4w0-28326c27",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "WebXR docs ground the guarded AR readiness claim.",
+                               "evidenceId":  "evidence-mqj7wwlr-ac967dcb",
+                               "at":  "2026-06-18T08:08:31.488Z"
+                           },
+                           {
+                               "id":  "decision-mqj7x5hy-8cc266db",
+                               "kind":  "curation",
+                               "decision":  "curated",
+                               "reason":  "The local theme catalog is the direct proof basis for the themed chess families.",
+                               "evidenceId":  "evidence-mqj7wx59-daa683f6",
+                               "at":  "2026-06-18T08:08:32.278Z"
+                           },
+                           {
+                               "id":  "build-mqj7x9h0-88a65c78",
+                               "researchId":  "research-mqj7wker-5904ba6e",
+                               "buildTarget":  "agent-lee-coding-mode/build-sandbox/agent-lee-3d-chess-proof",
+                               "decision":  "apply",
+                               "evidenceIds":  [
+                                                   "evidence-mqj7wv45-c9775057",
+                                                   "evidence-mqj7wvl5-6b2e70b3",
+                                                   "evidence-mqj7ww85-05a853ce",
+                                                   "evidence-mqj7wwlr-ac967dcb",
+                                                   "evidence-mqj7wx59-daa683f6"
+                                               ],
+                               "reason":  "Curated evidence should shape the 3D chess proof and its claim language.",
+                               "at":  "2026-06-18T08:08:37.428Z"
+                           }
+                       ],
+    "receipts":  [
+                     {
+                         "kind":  "browser-search",
+                         "ok":  true,
+                         "query":  "FIDE Laws of Chess Stockfish Three.js Babylon.js MDN WebXR chess set themed pieces",
+                         "runRoot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153",
+                         "screenshot":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\desktop-runtime\\runs\\web-search-1781770085153\\screenshots\\agent-lee-search-FIDE_Laws_of_Chess_Stockfish_Three_js_Babylon_js_MDN_WebXR_c-1781770094889.png",
+                         "at":  "2026-06-18T08:08:17.828Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wv45-c9775057",
+                         "status":  "candidate",
+                         "qualityScore":  96,
+                         "at":  "2026-06-18T08:08:18.821Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wvl5-6b2e70b3",
+                         "status":  "candidate",
+                         "qualityScore":  94,
+                         "at":  "2026-06-18T08:08:19.433Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7ww85-05a853ce",
+                         "status":  "candidate",
+                         "qualityScore":  94,
+                         "at":  "2026-06-18T08:08:20.261Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wwlr-ac967dcb",
+                         "status":  "candidate",
+                         "qualityScore":  90,
+                         "at":  "2026-06-18T08:08:20.751Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wx59-daa683f6",
+                         "status":  "candidate",
+                         "qualityScore":  95,
+                         "at":  "2026-06-18T08:08:21.453Z"
+                     },
+                     {
+                         "kind":  "inspect",
+                         "evidenceId":  "evidence-mqj7wxnv-7b154e2c",
+                         "status":  "rejected",
+                         "qualityScore":  12,
+                         "at":  "2026-06-18T08:08:22.123Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7wv45-c9775057",
+                         "at":  "2026-06-18T08:08:22.914Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7wvl5-6b2e70b3",
+                         "at":  "2026-06-18T08:08:23.702Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7ww85-05a853ce",
+                         "at":  "2026-06-18T08:08:24.820Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7wwlr-ac967dcb",
+                         "at":  "2026-06-18T08:08:31.488Z"
+                     },
+                     {
+                         "kind":  "curate",
+                         "evidenceId":  "evidence-mqj7wx59-daa683f6",
+                         "at":  "2026-06-18T08:08:32.278Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7x6t7-e0b0faaa",
+                         "at":  "2026-06-18T08:08:33.979Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7x8ev-5a3a05e0",
+                         "at":  "2026-06-18T08:08:36.056Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7x8l2-61c6bebd",
+                         "at":  "2026-06-18T08:08:36.278Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7x8va-79b5edbf",
+                         "at":  "2026-06-18T08:08:36.646Z"
+                     },
+                     {
+                         "kind":  "claim-check",
+                         "claimCheckId":  "claim-mqj7x94n-768b138f",
+                         "at":  "2026-06-18T08:08:36.984Z"
+                     },
+                     {
+                         "kind":  "build-decision",
+                         "decisionId":  "build-mqj7x9h0-88a65c78",
+                         "at":  "2026-06-18T08:08:37.429Z"
+                     },
+                     {
+                         "kind":  "receipt",
+                         "receiptPath":  "Archive/receipts/agent-lee-research/research-mqj7wker-5904ba6e-mqj7x9ru.json",
+                         "at":  "2026-06-18T08:08:38.129Z"
+                     }
+                 ],
+    "entrySurface":  "vscode-chat",
+    "adapterEndpoint":  "http://127.0.0.1:8787/v1/chat/completions",
+    "canonicalFingerprint":  "leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1",
+    "ledgerPath":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\build-sandbox\\agent-lee-3d-chess-proof\\research-ledger.json",
+    "createdAt":  "2026-06-18T03:08:38.8252358-05:00",
+    "updatedAt":  "2026-06-18T03:08:38.8252358-05:00"
+}

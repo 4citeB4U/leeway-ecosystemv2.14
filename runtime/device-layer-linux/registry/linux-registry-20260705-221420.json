@@ -1,0 +1,32 @@
+﻿{
+    "version":  "LEEWAY_LINUX_ACTUATOR_CONTRACT_246",
+    "timestamp":  "2026-07-05T22:14:20",
+    "family":  "linux",
+    "registry_status":  "LINUX_ACTUATOR_REGISTRY_CREATED",
+    "route_surface":  {
+                          "linux_discover":  false,
+                          "linux_status":  false,
+                          "linux_registry":  false,
+                          "linux_shell_status":  false,
+                          "linux_actuator_status":  false
+                      },
+    "discovered_count":  0,
+    "normalized_devices":  [
+
+                           ],
+    "shell_enabled":  false,
+    "actuator_enabled":  false,
+    "ssh_invoked":  false,
+    "shell_invoked":  false,
+    "remote_host_connected":  false,
+    "physical_actions_executed":  0,
+    "commands_executed":  0,
+    "files_read":  0,
+    "files_written":  0,
+    "apps_opened":  0,
+    "clicks_executed":  0,
+    "text_entries_executed":  0,
+    "hotkeys_executed":  0,
+    "process_mutations":  0,
+    "system_mutations":  0
+}

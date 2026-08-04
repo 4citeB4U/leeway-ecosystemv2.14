@@ -1,0 +1,17 @@
+{
+  "document_id": "doc-1783139403-ea5823ce",
+  "title": "Agent Lee Document",
+  "author": "Agent Lee",
+  "format": "pdf",
+  "path": "/documents/agent-lee-document-doc-1783139403-ea5823ce.pdf",
+  "filename": "agent-lee-document-doc-1783139403-ea5823ce.pdf",
+  "text_path": "/documents/agent-lee-document-doc-1783139403-ea5823ce.txt",
+  "text_filename": "agent-lee-document-doc-1783139403-ea5823ce.txt",
+  "artifact_url": "/documents/file/agent-lee-document-doc-1783139403-ea5823ce.pdf",
+  "text_url": "/documents/file/agent-lee-document-doc-1783139403-ea5823ce.txt",
+  "source": "router-repair-proof",
+  "metadata": {
+    "original_request": "Write me a 4 page fantasy story about an agent coming online for the first time and put it in a pdf"
+  },
+  "created_at": "2026-07-04T04:30:03.932221+00:00"
+}

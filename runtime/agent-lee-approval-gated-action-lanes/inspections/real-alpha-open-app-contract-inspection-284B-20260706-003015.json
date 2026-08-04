@@ -1,0 +1,100 @@
+﻿{
+    "version":  "LEEWAY_REAL_ALPHA_OPEN_APP_CONTRACT_INSPECTION_284B",
+    "phase":  39,
+    "timestamp":  "2026-07-06T00:30:15",
+    "verdict":  "LEEWAY_REAL_ALPHA_OPEN_APP_CONTRACT_INSPECTION_NO_EXECUTE_CLEAN",
+    "conclusion":  "REAL_ALPHA_HAS_NO_DISCOVERED_APPROVAL_WINDOW_ENDPOINT_PATCH_PLAN_REQUIRED",
+    "diagnosis_reason":  "real_alpha_locked_after_209_blocks_open_app",
+    "request_id":  "pending-real_open_app-20260706-002139",
+    "approval_id":  "approval-real_open_app-20260706-002139",
+    "action":  "real_open_app",
+    "app_name":  "notepad.exe",
+    "windows_locked":  true,
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "read_only_status_enabled":  false,
+    "supported_approval_endpoint_count":  0,
+    "endpoint_results":  [
+                             {
+                                 "endpoint":  "/real/approve",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/real/unlock",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/real/enable",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/real/execution-window",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/real/approved-action-window",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/real/arm-approved-action",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/admin/approve",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/admin/unlock",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/admin/execution-window",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/admin/arm-approved-action",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/approval/arm",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             },
+                             {
+                                 "endpoint":  "/approval/execute-window",
+                                 "ok":  false,
+                                 "error":  "The remote server returned an error: (404) Not Found.",
+                                 "data":  null
+                             }
+                         ],
+    "open_app_executed_during_inspection":  false,
+    "safety":  {
+                   "inspection_only":  true,
+                   "no_approved_execution_in_284b":  true,
+                   "open_app_remained_blocked":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "284C-real-alpha-single-approved-action-unlock-window-patch-plan-no-execute.ps1"
+}

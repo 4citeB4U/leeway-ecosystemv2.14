@@ -1,0 +1,70 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_SHELL_CONTRACT_PATH_FIX_2026-07-05",
+    "corrected_at":  "2026-07-05T17:41:33",
+    "master_operator":  "leeway_device_operator:5323",
+    "windows_satellite":  "windows-agent-lee",
+    "contract_file_status":  "CORRECTED_PATH_LOCKED",
+    "correct_contract_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-shells\\contracts\\device-layer-shell-contracts.json",
+    "doctrine":  {
+                     "external_sends_require_approval":  true,
+                     "shells_are_not_actuators":  true,
+                     "receipts_required":  true,
+                     "no_unapproved_message_send":  true,
+                     "physical_actions_route_to_satellites":  true,
+                     "no_whatsapp_browser_automation_for_production":  true
+                 },
+    "shells":  {
+                   "email":  {
+                                 "shell_id":  "agent_lee_email",
+                                 "send_policy":  "draft_or_approval_required",
+                                 "route_send":  "http://127.0.0.1:5323/shells/email/send",
+                                 "shell_type":  "communication_shell",
+                                 "role":  "proposal_and_customer_communication"
+                             },
+                   "whatsapp":  {
+                                    "production_adapter":  "whatsapp_business_cloud_api_or_approved_local_bridge",
+                                    "send_policy":  "approval_required",
+                                    "shell_type":  "remote_control_shell",
+                                    "shell_id":  "agent_lee_whatsapp",
+                                    "route_status":  "http://127.0.0.1:5323/shells/whatsapp/status",
+                                    "role":  "business_customer_messaging",
+                                    "route_send":  "http://127.0.0.1:5323/shells/whatsapp/send"
+                                },
+                   "telegram":  {
+                                    "current_runtime":  "agent-lee-telegram-shell",
+                                    "send_policy":  "approval_required",
+                                    "shell_type":  "remote_control_shell",
+                                    "shell_id":  "agent_lee_telegram",
+                                    "route_status":  "http://127.0.0.1:5323/shells/telegram/status",
+                                    "role":  "primary_mobile_remote_control",
+                                    "route_send":  "http://127.0.0.1:5323/shells/telegram/send"
+                                },
+                   "phone":  {
+                                 "shell_id":  "agent_lee_phone",
+                                 "send_policy":  "approval_required",
+                                 "shell_type":  "voice_call_shell",
+                                 "role":  "approved_phone_call_shell"
+                             },
+                   "sms":  {
+                               "shell_id":  "agent_lee_sms",
+                               "send_policy":  "approval_required",
+                               "route_send":  "http://127.0.0.1:5323/shells/sms/send",
+                               "shell_type":  "phone_shell",
+                               "role":  "approved_text_message_shell"
+                           }
+               },
+    "approval_required":  [
+                              "send_telegram_message",
+                              "send_whatsapp_message",
+                              "send_email",
+                              "send_sms",
+                              "dial_phone",
+                              "publish_social_post",
+                              "forward_private_message",
+                              "share_location",
+                              "send_file_to_external_user",
+                              "trigger_physical_device_action",
+                              "print_document",
+                              "cast_to_tv"
+                          ]
+}

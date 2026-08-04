@@ -1,0 +1,17 @@
+{
+  "serviceId": "agent-lee-vision-kernel",
+  "classification": "LOCAL_RUNTIME",
+  "owner": "Leeway Runtime Fabric",
+  "host": "0.0.0.0",
+  "port": 8093,
+  "selectedModel": "qwen2.5vl:7b",
+  "ollamaHost": "http://host.docker.internal:11434",
+  "receiptRoot": "/app/receipts",
+  "reportRoot": "/app/reports",
+  "privacy": {
+    "noUnknownPersonNaming": true,
+    "noProtectedTraitInference": true,
+    "noHiddenRecording": true,
+    "cameraOffByDefault": true
+  }
+}

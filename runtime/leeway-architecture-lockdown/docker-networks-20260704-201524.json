@@ -1,0 +1,112 @@
+[
+  {
+    "CreatedAt": "2026-06-30 23:34:02.463361563 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "3b7a37662da1",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "com.docker.compose.config-hash=9b9f16f43521ff1ed68280f246decdca8fdde664d9fabe0d63cadd6edce50c39,com.docker.compose.network=default,com.docker.compose.project=agent-lee-ears-kernel,com.docker.compose.version=5.1.4",
+    "Name": "agent-lee-ears-kernel_default",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-07-03 18:13:32.035798326 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "d0ca42d9766f",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "",
+    "Name": "bridge",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-06-19 07:16:32.648058397 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "d32f9e217116",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "com.docker.compose.config-hash=e7869dccd0af1856c658cbabad8f131128ffb37f03d845c4244677d8b7adea0c,com.docker.compose.network=default,com.docker.compose.project=docker,com.docker.compose.version=5.1.4",
+    "Name": "docker_default",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-05-02 00:30:44.229945442 +0000 UTC",
+    "Driver": "host",
+    "ID": "18ac3f097fc9",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "",
+    "Name": "host",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-06-18 23:42:18.217549537 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "53244d63db7e",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "com.docker.compose.config-hash=a4a13c51226e066a04058bd85d2f93c583b434d47805d53b35fdad15ace5fb94,com.docker.compose.network=leeway-net,com.docker.compose.project=leeway-ecosystemv214,com.docker.compose.version=5.1.4",
+    "Name": "leeway-ecosystemv214_leeway-net",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-07-01 17:33:08.193548224 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "4579aa867fc1",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "com.docker.compose.config-hash=97f65d0479d46eee7479d78db1980cab1c9116ba5d108975a8d9e5b32c62892c,com.docker.compose.network=meet.jitsi,com.docker.compose.project=leeway-jitsi-meet,com.docker.compose.version=5.1.4",
+    "Name": "leeway-jitsi-meet_meet.jitsi",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-06-22 14:51:24.412115753 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "ecf14c4c92e0",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "",
+    "Name": "leeway-network",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-06-22 01:33:38.128285678 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "5d0dff054c47",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "",
+    "Name": "leeway-seafile-net",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-07-01 16:34:58.196263211 +0000 UTC",
+    "Driver": "bridge",
+    "ID": "00817abac794",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "com.docker.compose.config-hash=fd446b60e89212571665c9b562ece22ac8648840027402d99e04910166a08706,com.docker.compose.network=default,com.docker.compose.project=local-assistant-bridge,com.docker.compose.version=5.1.4",
+    "Name": "local-assistant-bridge_default",
+    "Scope": "local"
+  },
+  {
+    "CreatedAt": "2026-05-02 00:30:44.223522966 +0000 UTC",
+    "Driver": "null",
+    "ID": "a9ca571e894a",
+    "IPv4": "true",
+    "IPv6": "false",
+    "Internal": "false",
+    "Labels": "",
+    "Name": "none",
+    "Scope": "local"
+  }
+]

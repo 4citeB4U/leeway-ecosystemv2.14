@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: leeway-network-latency-profile
+data:
+  latencyMs: "120"
+  jitterMs: "40"
+  packetLossPercent: "3"

@@ -1,0 +1,10 @@
+﻿{
+    "version":  "LEEWAY_EXECUTE_APPROVED_OPEN_APP_ISOLATED_MODULE_THEN_LOCKBACK_2026-07-05",
+    "created_at":  "2026-07-05T19:35:25",
+    "mode":  "ONE_ACTION_APPROVED_OPEN_APP_NOTEPAD_195C",
+    "approval_id":  "pending-real_open_app-20260705-192102-246585f2bd4c",
+    "allowed_action":  "real_open_app",
+    "allowed_app_id":  "notepad",
+    "isolated_module":  "leeway_real_windows_actuator_alpha_195c_20260705_193525",
+    "lockback_required":  true
+}

@@ -1,0 +1,23 @@
+name: Agent Lee Canonical Gate
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+jobs:
+  canonical-gate:
+    runs-on: self-hosted
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run canonical identity gate
+        run: |
+          powershell.exe -ExecutionPolicy Bypass -File ".\agent-lee-coding-mode\tools\validate-agent-lee-canonical-gate.ps1"

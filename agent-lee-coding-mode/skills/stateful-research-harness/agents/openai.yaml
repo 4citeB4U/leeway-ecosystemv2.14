@@ -1,0 +1,5 @@
+interface:
+  display_name: "Stateful Research Harness"
+  short_description: "Leeway research state, evidence curation, and claim verification workflow."
+  icon: "🧭"
+  color: "#073F3D"

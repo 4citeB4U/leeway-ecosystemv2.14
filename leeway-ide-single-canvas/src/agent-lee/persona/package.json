@@ -1,0 +1,14 @@
+{
+  "leeway": {
+    "LEEWAY_HEADER": "DO NOT REMOVE",
+    "TAG": "AI.PERSONA.MODULE.PACKAGE",
+    "REGION": "🧠 AI",
+    "PURPOSE": "Standalone Agent Lee persona module manifest.",
+    "DISCOVERY_PIPELINE": "Voice → Intent → Location → Vertical → Ranking → Render"
+  },
+  "name": "agent-lee-persona-module",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "description": "Mandatory standalone Agent Lee persona runtime module."
+}

@@ -1,0 +1,34 @@
+﻿{
+    "version":  "LEEWAY_AUDIO_VISION_READ_ONLY_DISCOVERY_STATUS_CONTRACT_231",
+    "timestamp":  "2026-07-05T21:37:17",
+    "family":  "audio_vision",
+    "registry_status":  "AUDIO_VISION_READ_ONLY_REGISTRY_CREATED",
+    "discovery_routes":  {
+                             "audio_vision_discover":  false,
+                             "cameras_discover":  false,
+                             "microphones_discover":  false,
+                             "speakers_discover":  false
+                         },
+    "global_status_route_present":  false,
+    "registry_route_present":  false,
+    "discovered_count":  0,
+    "camera_count":  0,
+    "microphone_count":  0,
+    "speaker_count":  0,
+    "normalized_devices":  [
+
+                           ],
+    "source":  {
+                   "audio_vision_route":  "http://127.0.0.1:5323/audio-vision/discover",
+                   "camera_route":  "http://127.0.0.1:5323/cameras/discover",
+                   "microphone_route":  "http://127.0.0.1:5323/microphones/discover",
+                   "speaker_route":  "http://127.0.0.1:5323/speakers/discover",
+                   "raw_capture_dir":  "C:\\Users\\Leona\\Leeway-System-PowerShell-Scripts\\AgentLee-Device-Layer\\Run-231-20260705-213717\\json"
+               },
+    "control_enabled":  false,
+    "camera_streams_started":  0,
+    "microphone_streams_started":  0,
+    "speaker_playback_started":  0,
+    "recordings_started":  0,
+    "physical_actions_executed":  0
+}

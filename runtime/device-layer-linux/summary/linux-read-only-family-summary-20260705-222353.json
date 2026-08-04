@@ -1,0 +1,96 @@
+﻿{
+    "version":  "LEEWAY_LINUX_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_250",
+    "timestamp":  "2026-07-05T22:23:54",
+    "verdict":  "LEEWAY_LINUX_READ_ONLY_DASHBOARD_AND_FAMILY_SUMMARY_CLEAN",
+    "family":  "linux",
+    "family_status":  "LINUX_READ_ONLY_ACTUATOR_CONTRACT_READY",
+    "device_layer_status":  "PARTIAL_MULTI_FAMILY_READY",
+    "completed_families":  [
+                               "windows_desktop_control_plane",
+                               "iot_read_only_discovery_registry_status",
+                               "printer_read_only_discovery_registry_status",
+                               "casting_read_only_discovery_registry_status",
+                               "audio_vision_read_only_discovery_registry_status",
+                               "android_device_shell_and_actuator_contract",
+                               "ios_device_shell_and_actuator_contract",
+                               "linux_actuator_contract"
+                           ],
+    "remaining_families":  [
+                               "macos_actuator_contract",
+                               "network_mesh_tailscale_policy",
+                               "smart_home_adapter_contract"
+                           ],
+    "routes":  {
+                   "linux_discover":  true,
+                   "linux_status":  true,
+                   "linux_registry":  true,
+                   "linux_shell_status":  true,
+                   "linux_actuator_status":  true,
+                   "all_linux_read_only_routes_ok":  true
+               },
+    "route_safety":  {
+                         "read_only_clean":  true,
+                         "discovered_count":  0,
+                         "ssh_invoked":  false,
+                         "shell_invoked":  false,
+                         "remote_host_connected":  false,
+                         "shell_enabled":  false,
+                         "actuator_enabled":  false,
+                         "physical_action_executed":  false,
+                         "shell_command_executed":  false,
+                         "ssh_command_executed":  false,
+                         "file_read":  false,
+                         "file_written":  false,
+                         "app_opened":  false,
+                         "click_executed":  false,
+                         "text_entry_executed":  false,
+                         "hotkey_executed":  false,
+                         "process_mutated":  false,
+                         "system_mutated":  false
+                     },
+    "proof_chain":  {
+                        "contract_246_exists":  true,
+                        "contract_246_clean":  true,
+                        "plan_247_exists":  true,
+                        "plan_247_clean":  true,
+                        "patch_248_exists":  true,
+                        "patch_248_clean":  true,
+                        "audit_249_exists":  true,
+                        "audit_249_clean":  true,
+                        "contract_246_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-actuator-contract-proof-latest.json",
+                        "plan_247_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-read-only-route-patch-plan-proof-latest.json",
+                        "patch_248_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-read-only-routes-patch-248-latest.json",
+                        "audit_249_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\device-layer-linux\\latest\\linux-read-only-routes-post-patch-audit-latest.json"
+                    },
+    "dashboards":  {
+                       "admin_status_ok":  true,
+                       "admin_dashboard_ok":  true
+                   },
+    "windows_lock":  {
+                         "windows_locked":  true,
+                         "blocked_probe_executed":  false,
+                         "real_execution_after":  false,
+                         "physical_execution_after":  false,
+                         "read_only_after":  false
+                     },
+    "safety":  {
+                   "summary_only":  true,
+                   "ssh_invoked":  false,
+                   "shell_invoked":  false,
+                   "remote_host_connected":  false,
+                   "physical_actions_executed":  0,
+                   "shell_commands_executed":  0,
+                   "ssh_commands_executed":  0,
+                   "files_read":  0,
+                   "files_written":  0,
+                   "apps_opened":  0,
+                   "clicks_executed":  0,
+                   "text_entries_executed":  0,
+                   "hotkeys_executed":  0,
+                   "process_mutations":  0,
+                   "system_mutations":  0,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next":  "251-macos-actuator-contract-no-execute.ps1"
+}

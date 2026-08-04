@@ -1,0 +1,45 @@
+{
+  "schema": "leeway.skills.pointer.v1",
+  "owner": "Agent Lee Code Mode",
+  "canonicalUniverseManifest": {
+    "relative": "Leeway Runtime Fabric/capability-registry/registry/leeway-universe.manifest.json",
+    "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\capability-registry\\registry\\leeway-universe.manifest.json"
+  },
+  "activeSkillSourceRoots": [
+    {
+      "relative": "agent-lee-coding-mode/skills",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\agent-lee-coding-mode\\skills"
+    },
+    {
+      "relative": "Leeway Runtime Fabric/skills",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills"
+    },
+    {
+      "relative": "Leeway Runtime Fabric/skills-university",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university"
+    },
+    {
+      "relative": "Leeway Runtime Fabric/skills-university-exports",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\skills-university-exports"
+    },
+    {
+      "relative": "Leeway Runtime Fabric/stateful-research-harness",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric\\stateful-research-harness"
+    },
+    {
+      "relative": "leeway-80-bench/skills",
+      "absolute": "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\leeway-80-bench\\skills"
+    }
+  ],
+  "duplicateIndex": [
+    {
+      "skill": "stateful-research-harness",
+      "active": "agent-lee-coding-mode/skills/stateful-research-harness",
+      "mirrors": [
+        "Leeway Runtime Fabric/stateful-research-harness",
+        "Leeway Runtime Fabric/skills/stateful-research-harness"
+      ]
+    }
+  ],
+  "status": "active"
+}

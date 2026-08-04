@@ -1,0 +1,177 @@
+﻿{
+    "version":  "LEEWAY_288R_POST_RESTART_RUNTIME_CHECK_AND_IOT_BRIDGE_PLAN",
+    "phase":  40,
+    "timestamp":  "2026-07-06T10:38:23",
+    "verdict":  "LEEWAY_288R_POST_RESTART_RUNTIME_CHECK_AND_IOT_BRIDGE_PLAN_NO_EXECUTE_CLEAN",
+    "post_restart_check":  true,
+    "plan_only":  true,
+    "no_device_execution":  true,
+    "runtime":  {
+                    "docker_available":  true,
+                    "device_operator_container_found":  true,
+                    "device_operator_container_started":  false,
+                    "device_operator_reachable":  true,
+                    "real_alpha_started":  true,
+                    "real_alpha_reachable":  true,
+                    "real_alpha_process_count":  1,
+                    "real_alpha_locked_resting":  true
+                },
+    "clear_skies":  true,
+    "source_discovery":  {
+                             "sentinel_latest_path":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\sentinel-discovery\\latest\\sentinel-discovery-latest.json",
+                             "physical_registry_path":  "C:\\Users\\Leona\\LeeWay-Runtime\\config\\physical_assets_registry.json",
+                             "total_assets":  36,
+                             "local_interfaces":  5,
+                             "network_neighbors":  9,
+                             "mdns_assets":  0,
+                             "dns_sd_assets":  0,
+                             "bluetooth_assets":  19,
+                             "printer_assets":  3,
+                             "translator_needs":  3
+                         },
+    "bridge_modules":  [
+                           {
+                               "module_id":  "network_identity_resolver",
+                               "lane":  "iot_network_layer",
+                               "status":  "PLAN_ONLY_READY_FOR_READ_ONLY_ENRICHMENT",
+                               "discovered_assets":  9,
+                               "purpose":  "Resolve IP/MAC/vendor names and classify device families before control.",
+                               "allowed_in_next_pass":  [
+                                                            "read_only_vendor_lookup",
+                                                            "read_only_hostname_lookup",
+                                                            "read_only_port_presence_plan"
+                                                        ],
+                               "blocked_until_approved":  [
+                                                              "device_control",
+                                                              "credential_use",
+                                                              "login_attempts",
+                                                              "port_sweep_execution",
+                                                              "write_to_device"
+                                                          ]
+                           },
+                           {
+                               "module_id":  "bluetooth_inventory_mapper",
+                               "lane":  "bluetooth_layer",
+                               "status":  "PLAN_ONLY_PAIRING_BLOCKED",
+                               "discovered_assets":  19,
+                               "purpose":  "Inventory Bluetooth devices and prepare GATT mapping plan only.",
+                               "allowed_in_next_pass":  [
+                                                            "read_only_pnp_inventory",
+                                                            "paired_device_classification",
+                                                            "manual_name_review"
+                                                        ],
+                               "blocked_until_approved":  [
+                                                              "bluetooth_pairing",
+                                                              "gatt_write",
+                                                              "hid_control",
+                                                              "toy_control",
+                                                              "robot_control"
+                                                          ]
+                           },
+                           {
+                               "module_id":  "printer_read_only_profile",
+                               "lane":  "printer_layer",
+                               "status":  "PLAN_ONLY_PRINT_ACTIONS_BLOCKED",
+                               "discovered_assets":  3,
+                               "purpose":  "Keep printer discovery visible without exposing print actions.",
+                               "allowed_in_next_pass":  [
+                                                            "read_only_printer_inventory",
+                                                            "read_only_driver_inventory",
+                                                            "read_only_port_mapping"
+                                                        ],
+                               "blocked_until_approved":  [
+                                                              "print_job_submit",
+                                                              "printer_setting_change",
+                                                              "queue_clear",
+                                                              "test_page"
+                                                          ]
+                           }
+                       ],
+    "blocked_or_deferred_modules":  [
+                                        {
+                                            "module_id":  "media_casting_bridge",
+                                            "lane":  "media_layer",
+                                            "status":  "DEFERRED_NO_MDNS_OR_DNSSD_ASSETS_DETECTED",
+                                            "reason":  "287 found zero mDNS and zero DNS-SD assets, so a casting bridge would be speculative.",
+                                            "next_safe_step":  "Only add media bridge after a later scan detects Google Cast, AirPlay, DLNA, WebOS, Roku, Samsung, or Matter service records."
+                                        }
+                                    ],
+    "onboarding_steps":  [
+                             {
+                                 "step":  1,
+                                 "lane":  "iot_network_layer",
+                                 "action":  "enrich_network_neighbors",
+                                 "execution_mode":  "NO_EXECUTE_PLAN_ONLY",
+                                 "details":  "Use MAC/OUI and hostname enrichment to separate phones, routers, TVs, printers, and unknown IoT nodes."
+                             },
+                             {
+                                 "step":  2,
+                                 "lane":  "bluetooth_layer",
+                                 "action":  "classify_bluetooth_assets",
+                                 "execution_mode":  "NO_EXECUTE_PLAN_ONLY",
+                                 "details":  "Classify Bluetooth list into adapters, phones, audio, input devices, BLE peripherals, and unknown assets."
+                             },
+                             {
+                                 "step":  3,
+                                 "lane":  "printer_layer",
+                                 "action":  "profile_printer_assets",
+                                 "execution_mode":  "NO_EXECUTE_PLAN_ONLY",
+                                 "details":  "Map printer names, drivers, and ports. Any print action remains approval-gated."
+                             }
+                         ],
+    "bridge_container_plan":  {
+                                  "container_name":  "leeway_iot_bridge",
+                                  "status":  "DO_NOT_DEPLOY_IN_288R",
+                                  "reason":  "Discovery found network, Bluetooth, and printer assets, but no mDNS/DNS-SD media assets. Build translator plan first, not broad control.",
+                                  "planned_ports":  [
+                                                        {
+                                                            "port":  5330,
+                                                            "status":  "reserved_plan_only",
+                                                            "purpose":  "future IoT bridge API"
+                                                        },
+                                                        {
+                                                            "port":  1883,
+                                                            "status":  "reserved_plan_only",
+                                                            "purpose":  "future MQTT broker"
+                                                        }
+                                                    ],
+                                  "docker_compose_written":  false,
+                                  "docker_deploy_performed":  false
+                              },
+    "approval_gate_plan":  {
+                               "required_before_any_control":  [
+                                                                   "device_identity_confirmed",
+                                                                   "protocol_confirmed",
+                                                                   "user_approval_id_created",
+                                                                   "single_use_action_window_armed",
+                                                                   "action_payload_bound_to_specific_device",
+                                                                   "post_action_lockback_audit"
+                                                               ],
+                               "forbidden_without_approval":  [
+                                                                  "light_on_off",
+                                                                  "fan_on_off",
+                                                                  "tv_power",
+                                                                  "cast_media",
+                                                                  "print_job",
+                                                                  "bluetooth_pairing",
+                                                                  "robot_move",
+                                                                  "mower_action",
+                                                                  "mqtt_publish"
+                                                              ],
+                               "inherited_from_phase_39":  "single_use_approval_gate_required_for_physical_actions"
+                           },
+    "recommended_next":  "289-network-and-bluetooth-enrichment-no-execute.ps1",
+    "safety":  {
+                   "no_docker_deploy_in_288r":  true,
+                   "no_container_created":  true,
+                   "no_iot_control":  true,
+                   "no_media_control":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_printer_action":  true,
+                   "no_mqtt_publish":  true,
+                   "no_real_alpha_arm":  true,
+                   "no_real_open_app_call":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               }
+}

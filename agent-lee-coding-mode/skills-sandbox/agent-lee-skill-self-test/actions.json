@@ -1,0 +1,18 @@
+[
+  {
+    "actionId": "agent-lee-skill-self-test.self_test",
+    "purpose": "Return a harmless self-test receipt.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "outputSchema": {
+      "type": "object"
+    }
+  }
+]

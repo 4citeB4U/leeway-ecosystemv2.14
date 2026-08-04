@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: leeway-chaos-pod-kill-marker
+  labels:
+    app: leeway-chaos
+spec:
+  restartPolicy: Never
+  containers:
+    - name: recorder
+      image: busybox
+      command: ["sh", "-c", "echo pod-kill-simulation && sleep 5"]

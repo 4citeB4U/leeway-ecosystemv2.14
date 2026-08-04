@@ -1,0 +1,153 @@
+{
+  "timestamp": "2026-07-31T04:47:34.099Z",
+  "totalChecks": 11,
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "check": "knowledge-graph page 200",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "3D canvas rendered",
+      "result": "PASS",
+      "detail": "canvas count=1"
+    },
+    {
+      "check": "map-data API valid",
+      "result": "PASS",
+      "detail": "{\"status\":200,\"nodeCount\":104,\"relCount\":86,\"viewCount\":19,\"snapshotCount\":15}"
+    },
+    {
+      "check": "security overlay toggle",
+      "result": "PASS",
+      "detail": "clicked security button"
+    },
+    {
+      "check": "view selector present",
+      "result": "PASS",
+      "detail": "options=eye Executive Overview|layers Runtime Fabric|brain Knowledge Fabric|presentation Presentation Fabric|server Service Topology|docker Docker Topology|bolt Capability Graph|agent Agent Lee Brain|timeline Migration Timeline|evidence Evidence Graph|provider Provider Graph|security Security Graph|deploy Deployment Graph|code Code Engine|workflow Workflow Engine|network Distributed Compute|mcp MCP Graph|health Health Dashboard|critical Critical Path"
+    },
+    {
+      "check": "view selection switches",
+      "result": "PASS",
+      "detail": "selected=critical Critical Path"
+    },
+    {
+      "check": "time machine snapshot selection",
+      "result": "PASS",
+      "detail": "before=Foundation after=Foundation rangeCount=1"
+    },
+    {
+      "check": "master-publisher page 200",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "no direct 8876 calls (final)",
+      "result": "PASS",
+      "detail": "direct calls=0"
+    },
+    {
+      "check": "no console errors",
+      "result": "PASS",
+      "detail": "console errors=0"
+    },
+    {
+      "check": "no OrbitControls exception",
+      "result": "PASS",
+      "detail": "orbitcontrols errors=0"
+    }
+  ],
+  "screenshots": [
+    "knowledge-graph-initial.png",
+    "knowledge-graph-security-on.png",
+    "knowledge-graph-time-machine.png",
+    "master-publisher-initial.png"
+  ],
+  "consoleLog": [
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+      "url": "webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js"
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+      "url": "webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js"
+    }
+  ],
+  "networkTrace": [
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "method": "GET"
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "status": 200
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "method": "GET"
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/map-data",
+      "status": 200
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "method": "GET"
+    },
+    {
+      "type": "API",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "method": "GET"
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/api/projects",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "status": 200
+    },
+    {
+      "type": "API_RESPONSE",
+      "url": "http://127.0.0.1:3000/api/leeway/master-publisher/health",
+      "status": 200
+    }
+  ]
+}

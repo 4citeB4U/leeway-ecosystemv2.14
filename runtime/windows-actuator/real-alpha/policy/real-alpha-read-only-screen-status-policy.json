@@ -1,0 +1,11 @@
+﻿{
+    "version":  "LEEWAY_EXTEND_APPROVED_REAL_SCREEN_STATUS_ALPHA_2026-07-05",
+    "created_at":  "2026-07-05T18:52:05",
+    "mode":  "READ_ONLY_SCREEN_STATUS_ALPHA",
+    "real_execution_enabled":  false,
+    "physical_execution_enabled":  false,
+    "enabled_read_only_action":  "real_screen_status",
+    "approval_required":  true,
+    "read_only":  true,
+    "all_physical_actions_blocked":  true
+}

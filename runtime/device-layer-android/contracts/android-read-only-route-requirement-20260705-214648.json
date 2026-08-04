@@ -1,0 +1,55 @@
+﻿{
+    "version":  "LEEWAY_ANDROID_READ_ONLY_ROUTE_REQUIREMENT_236",
+    "timestamp":  "2026-07-05T21:46:48",
+    "family":  "android",
+    "requirement_status":  "PATCH_PLAN_REQUIRED_FOR_ANDROID_READ_ONLY_SURFACES",
+    "routes_to_add_if_missing":  [
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/android/discover",
+                                         "purpose":  "Return Android route/device inventory stub without invoking ADB.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/android/status",
+                                         "purpose":  "Return Android family readiness with ADB disabled and approval required for actuator actions.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/android/registry",
+                                         "purpose":  "Return normalized Android registry artifact.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/android/shell/status",
+                                         "purpose":  "Return shell disabled status and approval contract.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     },
+                                     {
+                                         "method":  "GET",
+                                         "route":  "/android/actuator/status",
+                                         "purpose":  "Return actuator disabled status and action categories requiring approval.",
+                                         "read_only":  true,
+                                         "physical_action":  false
+                                     }
+                                 ],
+    "non_goals":  [
+                      "no ADB invocation",
+                      "no phone connection",
+                      "no screen tap",
+                      "no screen swipe",
+                      "no text send",
+                      "no call start",
+                      "no phone data read",
+                      "no app install",
+                      "no settings or permission mutation",
+                      "no physical action"
+                  ]
+}

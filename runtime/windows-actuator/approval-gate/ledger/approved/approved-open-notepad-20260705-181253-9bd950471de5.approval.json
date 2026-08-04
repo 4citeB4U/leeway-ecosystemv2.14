@@ -1,0 +1,30 @@
+﻿{
+    "approval_id":  "approved-open-notepad-20260705-181253-9bd950471de5",
+    "created_at":  "2026-07-05T18:12:53",
+    "expires_at":  "2026-07-05T18:22:53",
+    "requested_by":  "script_171",
+    "decided_at":  "2026-07-05T18:12:53",
+    "decided_by":  "Leonard J Lee",
+    "target_device_id":  "windows-agent-lee",
+    "target_adapter_id":  "windows-agent-lee-real-actuator-alpha",
+    "action":  "real_open_app",
+    "risk_tier":  "controlled_physical",
+    "human_summary":  "One-time alpha approval to validate open Notepad request path. Current alpha service should validate approval but still not physically open Notepad.",
+    "payload":  {
+                    "app_id":  "notepad",
+                    "arguments":  [
+
+                                  ]
+                },
+    "approval_state":  "APPROVED",
+    "dry_run_preview_required":  true,
+    "real_execution_enabled":  true,
+    "one_time_use":  true,
+    "used":  false,
+    "rollback_or_stop":  "Run Stop-Leeway-Real-Windows-Actuator-Alpha.ps1 if needed.",
+    "safety_expectation":  {
+                               "expected_result":  "allowed_true_executed_false",
+                               "current_alpha_expected_to_execute":  false,
+                               "no_app_should_open":  true
+                           }
+}

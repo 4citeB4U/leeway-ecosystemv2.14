@@ -1,0 +1,38 @@
+# LEEWAY_HEADER - DO NOT REMOVE
+# REGION: CORE
+# TAG: CORE.RUNTIME.EXTENSION.VSCODEIGNORE
+# PURPOSE: Defines the non-shipping VSIX package surface for Agent Lee and excludes stale, debug, and generated artifacts.
+# DISCOVERY_PIPELINE:
+#   Voice -> Intent -> Location -> Vertical -> Ranking -> Render
+.vscode/**
+src/**
+node_modules/**
+dist/**
+scripts/**
+*.map
+*.backup*
+*.broken*
+*.vsix
+_archive/**
+_vsix_inspect/**
+out/**/*.backup-*.js
+out/**/*.backup-*.js.map
+out/**/*.broken-*.js
+out/**/*.broken-*.js.map
+package.backup*.json
+test*.js
+build_test.js
+check.js
+run_test.js
+script.js
+extract_html.js
+run_get_html.js
+ui-*.html
+ui-*.png
+ui-*.json
+output.html
+test-evidence/**
+receipts/**
+runtime/**/*.receipt.*
+runtime/**/*.report.*
+.vscodeignore.backup*

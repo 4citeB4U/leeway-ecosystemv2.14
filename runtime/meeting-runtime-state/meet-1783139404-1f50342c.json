@@ -1,0 +1,18 @@
+{
+  "meeting_id": "meet-1783139404-1f50342c",
+  "title": "Leeway Meeting",
+  "start_time": "",
+  "end_time": "",
+  "timezone": "local",
+  "attendees": [],
+  "description": "Create a video meeting link for my client",
+  "jitsi_url": "https://meet.jit.si/leeway-leeway-meeting-1f50342c",
+  "leeway_link": "http://172.26.160.1:5329/rooms/meet-1783139404-1f50342c",
+  "ics_url": "http://172.26.160.1:5329/meeting/meet-1783139404-1f50342c.ics",
+  "source": "router-repair-proof",
+  "metadata": {
+    "original_request": "Create a video meeting link for my client",
+    "router": "leeway_skill_router"
+  },
+  "created_at": "2026-07-04T04:30:04.206311+00:00"
+}

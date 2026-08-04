@@ -1,0 +1,4637 @@
+{
+  "nodes": [
+    {
+      "id": "leeway-standards",
+      "name": "LeeWay Standards",
+      "category": "standards",
+      "fabricLayer": "Layer 1",
+      "parentId": null,
+      "description": "Living constitution, law system, contract registry, evidence ledger — supreme authority",
+      "responsibilities": [
+        "Identity registry",
+        "Policy enforcement",
+        "Risk assessment",
+        "Governance",
+        "Workspace validation",
+        "Permission validation",
+        "Capability authorization",
+        "Approval gates",
+        "Audit",
+        "Evidence certification"
+      ],
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "Leonard Lee",
+      "version": "2.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "LeeWay-Standards/"
+      ],
+      "contracts": [
+        "leeway-constitution",
+        "books-of-law",
+        "object-id-registry",
+        "contract-registry"
+      ],
+      "ports": [],
+      "containers": [],
+      "dependencies": [],
+      "dependents": [
+        "runtime-fabric-layer1",
+        "leeway-ide",
+        "agent-lee-code-mode",
+        "knowledge-fabric",
+        "presentation-fabric"
+      ],
+      "capabilities": [
+        "Supreme governance",
+        "Identity proof",
+        "Contract verification",
+        "Evidence chain",
+        "Approval authority"
+      ],
+      "governance": [
+        "self-governing"
+      ],
+      "securityControls": [],
+      "evidence": [],
+      "knownGaps": [],
+      "nextMigration": null,
+      "deploymentTargets": [
+        "ALL"
+      ],
+      "executionModes": [],
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "critical",
+      "securityConfidence": "verified"
+    },
+    {
+      "id": "runtime-fabric-layer1",
+      "name": "RF Layer 1 — Standards",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 1",
+      "parentId": "runtime-fabric",
+      "description": "LeeWay Standards — identity, policy, risk, governance, permissions, audit",
+      "responsibilities": [
+        "Identity",
+        "Policy",
+        "Risk",
+        "Governance",
+        "Workspace validation",
+        "Permission validation",
+        "Capability authorization",
+        "Approval gates",
+        "Audit",
+        "Evidence"
+      ],
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "Leonard Lee",
+      "version": "2.0.0",
+      "health": "HEALTHY",
+      "contracts": [
+        "leeway-constitution"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "runtime-fabric-layer2"
+      ],
+      "capabilities": [
+        "Governance",
+        "Identity",
+        "Permission",
+        "Audit",
+        "Evidence"
+      ],
+      "governance": [
+        "self-governing"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "critical",
+      "securityConfidence": "verified"
+    },
+    {
+      "id": "runtime-fabric-layer2",
+      "name": "RF Layer 2 — Execution Planner",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 2",
+      "parentId": "runtime-fabric",
+      "description": "Task planning, dependency resolution, capability matching, provider selection",
+      "responsibilities": [
+        "Task planning",
+        "Dependency resolution",
+        "Capability matching",
+        "Provider selection",
+        "Execution strategy",
+        "Priority",
+        "Scheduling",
+        "Retries",
+        "Timeouts",
+        "Cancellation",
+        "Execution graph generation"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [
+        "runtime-fabric-layer3"
+      ],
+      "capabilities": [
+        "Task planning",
+        "Scheduling",
+        "Provider selection",
+        "Execution graph"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not implemented — architecture design only"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer3",
+      "name": "RF Layer 3 — Capability Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 3",
+      "parentId": "runtime-fabric",
+      "description": "Capability registry, resolution, metadata, versioning, health, discovery, lifecycle",
+      "responsibilities": [
+        "Capability Registry",
+        "Capability Resolution",
+        "Capability Metadata",
+        "Capability Versioning",
+        "Capability Health",
+        "Capability Discovery",
+        "Capability Dependencies",
+        "Capability Lifecycle",
+        "Capability Permissions"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "dependencies": [
+        "runtime-fabric-layer2"
+      ],
+      "dependents": [
+        "runtime-fabric-layer4"
+      ],
+      "capabilities": [
+        "Capability registration",
+        "Resolution",
+        "Versioning",
+        "Health checks"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Partial capability registry exists in workflow-engine",
+        "No unified capability resolution"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer4",
+      "name": "RF Layer 4 — Provider Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 4",
+      "parentId": "runtime-fabric",
+      "description": "Selects execution providers — OpenCode, n8n, Ollama, MCP, Docker, PowerShell, Python, Node, Remote, Container, Native",
+      "responsibilities": [
+        "Provider selection",
+        "Provider routing",
+        "Provider health",
+        "Provider contracts",
+        "Provider lifecycle"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "dependencies": [
+        "runtime-fabric-layer3"
+      ],
+      "dependents": [
+        "runtime-fabric-layer6"
+      ],
+      "capabilities": [
+        "Provider selection",
+        "Provider routing"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not implemented",
+        "Providers currently called directly by agents"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer5",
+      "name": "RF Layer 5 — Service Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 5",
+      "parentId": "runtime-fabric",
+      "description": "Service discovery, health, registry, contracts, routing, startup/shutdown",
+      "responsibilities": [
+        "Service Discovery",
+        "Service Health",
+        "Service Registry",
+        "Service Contracts",
+        "Service Routing",
+        "Service Startup",
+        "Service Shutdown",
+        "Service Version",
+        "Service Ownership"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [
+        "runtime-fabric-layer6"
+      ],
+      "capabilities": [
+        "Service discovery",
+        "Health monitoring",
+        "Service registry",
+        "Service routing"
+      ],
+      "containers": [
+        "leeway_runtime_fabric"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer6",
+      "name": "RF Layer 6 — Execution Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 6",
+      "parentId": "runtime-fabric",
+      "description": "Task execution, parallel execution, streaming, cancellation, rollback, retry, evidence",
+      "responsibilities": [
+        "Task execution",
+        "Parallel execution",
+        "Streaming",
+        "Cancellation",
+        "Rollback",
+        "Retry",
+        "Evidence generation",
+        "Resource monitoring"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "dependencies": [
+        "runtime-fabric-layer4",
+        "runtime-fabric-layer5"
+      ],
+      "dependents": [
+        "runtime-fabric-layer7"
+      ],
+      "capabilities": [
+        "Task execution",
+        "Parallel processing",
+        "Evidence generation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Partial — execution exists in n8n and OpenCode",
+        "No unified execution fabric"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer7",
+      "name": "RF Layer 7 — Memory Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 7",
+      "parentId": "runtime-fabric",
+      "description": "Conversation, task, runtime, long-term, vector, knowledge, identity, evidence, session memory",
+      "responsibilities": [
+        "Conversation Memory",
+        "Task Memory",
+        "Runtime Memory",
+        "Long-term Memory",
+        "Vector Memory",
+        "Knowledge Memory",
+        "Identity Memory",
+        "Evidence Memory",
+        "Session Memory"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "dependencies": [
+        "runtime-fabric-layer6"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Memory storage",
+        "Vector search",
+        "Session management"
+      ],
+      "containers": [
+        "leeway_ollama"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Memory exists in agent-lee-coding-mode",
+        "No unified Memory Fabric service"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer8",
+      "name": "RF Layer 8 — Media Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 8",
+      "parentId": "runtime-fabric",
+      "description": "Voice, vision, audio, video, camera, microphone, streaming, recording, playback",
+      "responsibilities": [
+        "Voice",
+        "Vision",
+        "Audio",
+        "Video",
+        "Camera",
+        "Microphone",
+        "Streaming",
+        "Recording",
+        "Playback"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Speech-to-text",
+        "Text-to-speech",
+        "Camera capture",
+        "Image analysis",
+        "Audio playback"
+      ],
+      "containers": [
+        "agent-lee-ears-kernel",
+        "agent-lee-voice-kernel",
+        "agent-lee-vision-kernel",
+        "leeway_media_router",
+        "leeway_media_ingestion_layer"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer9",
+      "name": "RF Layer 9 — Device Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 9",
+      "parentId": "runtime-fabric",
+      "description": "Windows, Linux, macOS, Android, iOS, embedded, robotics, sensors, GPU, CPU, displays, USB, Bluetooth",
+      "responsibilities": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS",
+        "Embedded",
+        "Robotics",
+        "Sensors",
+        "GPU",
+        "CPU",
+        "Displays",
+        "Input",
+        "Output",
+        "USB",
+        "Bluetooth",
+        "Serial"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Device control",
+        "Hardware abstraction",
+        "Cross-platform"
+      ],
+      "containers": [
+        "leeway_device_operator"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer10",
+      "name": "RF Layer 10 — Deployment Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 10",
+      "parentId": "runtime-fabric",
+      "description": "Docker, Podman, Kubernetes, Native, Windows Service, Linux Service, Remote Worker, Edge Node, LeeWay Cloud, Distributed Node",
+      "responsibilities": [
+        "Docker",
+        "Podman",
+        "Kubernetes",
+        "Native",
+        "Windows Service",
+        "Linux Service",
+        "Remote Worker",
+        "Edge Node",
+        "LeeWay Cloud",
+        "Distributed Node"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Container orchestration",
+        "Service management",
+        "Deployment automation"
+      ],
+      "containers": [],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Only Docker currently deployed",
+        "Kubernetes/Podman/Native not configured"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer11",
+      "name": "RF Layer 11 — Network Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 11",
+      "parentId": "runtime-fabric",
+      "description": "Service mesh, discovery, secure routing, P2P, overlay network, encrypted transport, distributed execution, permissioned mesh",
+      "responsibilities": [
+        "Service Mesh",
+        "Discovery",
+        "Secure Routing",
+        "Peer-to-peer",
+        "Overlay Network",
+        "Encrypted Transport",
+        "Distributed Execution",
+        "Permissioned Mesh"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "dependencies": [
+        "runtime-fabric-layer1",
+        "runtime-fabric-layer10"
+      ],
+      "dependents": [
+        "runtime-fabric-layer12"
+      ],
+      "capabilities": [
+        "Service mesh",
+        "Secure routing",
+        "Overlay network"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not implemented",
+        "Network currently uses Docker bridge network"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer12",
+      "name": "RF Layer 12 — Distributed Compute Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 12",
+      "parentId": "runtime-fabric",
+      "description": "Future-ready distributed execution — LOCAL_NODE, EDGE_NODE, HOME_SERVER, REMOTE_SERVER, LEEWAY_CLOUD, TRUSTED_PEER, SELF_HOSTED_CLUSTER",
+      "responsibilities": [
+        "Distributed scheduling",
+        "Node advertising",
+        "Work dispatch",
+        "Trust verification",
+        "Resource-aware scheduling"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "dependencies": [
+        "runtime-fabric-layer11",
+        "runtime-fabric-layer13"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Distributed scheduling",
+        "Node discovery",
+        "Trust verification",
+        "Resource allocation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not implemented",
+        "Architecture design phase"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer13",
+      "name": "RF Layer 13 — Security Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 13",
+      "parentId": "runtime-fabric",
+      "description": "Encryption, identity, authentication, authorization, secrets, certificates, key rotation, zero trust",
+      "responsibilities": [
+        "Encryption",
+        "Identity",
+        "Authentication",
+        "Authorization",
+        "Secret Management",
+        "Certificate Management",
+        "Key Rotation",
+        "Post-Quantum Readiness",
+        "Secure Bootstrapping",
+        "Secure Provider Communication",
+        "Audit",
+        "Threat Detection",
+        "Zero Trust"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [
+        "runtime-fabric-layer12"
+      ],
+      "capabilities": [
+        "Secret management",
+        "Key rotation",
+        "Authentication",
+        "Authorization",
+        "Encryption"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "securityControls": [
+        "basic-auth",
+        "encryption-key",
+        "secret-redaction",
+        "allowlist"
+      ],
+      "knownGaps": [
+        "Post-quantum readiness not yet implemented",
+        "Zero trust not fully deployed"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "runtime-fabric",
+      "riskClass": "critical",
+      "securityConfidence": "verified"
+    },
+    {
+      "id": "runtime-fabric-layer14",
+      "name": "RF Layer 14 — Observability Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 14",
+      "parentId": "runtime-fabric",
+      "description": "Metrics, tracing, logs, evidence, receipts, health, alerts, drift detection, performance, live topology",
+      "responsibilities": [
+        "Metrics",
+        "Tracing",
+        "Logs",
+        "Evidence",
+        "Receipts",
+        "Health",
+        "Alerts",
+        "Drift Detection",
+        "Performance",
+        "Resource Monitoring",
+        "Live Topology"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Health monitoring",
+        "Drift detection",
+        "Evidence collection",
+        "Receipt generation",
+        "Topology reporting"
+      ],
+      "containers": [
+        "leeway_runtime_fabric"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Drift validation exists as script",
+        "Not yet automatic"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-layer15",
+      "name": "RF Layer 15 — Application Fabric",
+      "category": "fabric-layer",
+      "fabricLayer": "Layer 15",
+      "parentId": "runtime-fabric",
+      "description": "Hosts applications — IDE, Employment Center, SVG Creator, Chess Masters, TripoSR Studio, Desktop Runtime, future apps",
+      "responsibilities": [
+        "Application hosting",
+        "Application lifecycle",
+        "Application registry",
+        "Application contracts"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric-layer1",
+        "runtime-fabric-layer6"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Application hosting",
+        "Runtime provisioning"
+      ],
+      "containers": [
+        "leeway-triposr-web",
+        "leeway_pwa_dashboard"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Applications do not yet request execution through Fabric"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric",
+      "name": "Runtime Fabric (Orchestrator)",
+      "category": "runtime",
+      "fabricLayer": "Cross-layer",
+      "parentId": null,
+      "description": "Execution operating system of LeeWay — orchestrates all 15 layers",
+      "responsibilities": [
+        "Layer orchestration",
+        "Cross-layer routing",
+        "Health aggregation",
+        "Truth endpoints",
+        "Receipt production"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "2.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "leeway-runtime-fabric/"
+      ],
+      "contracts": [
+        "runtime-fabric-contract"
+      ],
+      "ports": [
+        4001,
+        8111
+      ],
+      "containers": [
+        "leeway_runtime_fabric"
+      ],
+      "dependencies": [
+        "leeway-standards"
+      ],
+      "dependents": [
+        "agent-lee-code-mode",
+        "leeway-ide",
+        "knowledge-fabric",
+        "presentation-fabric"
+      ],
+      "capabilities": [
+        "Truth endpoints",
+        "Health checks",
+        "Service routing",
+        "Receipt generation",
+        "Layer coordination"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "runtime-fabric",
+      "riskClass": "critical",
+      "securityConfidence": "verified"
+    },
+    {
+      "id": "knowledge-fabric",
+      "name": "Knowledge Fabric",
+      "category": "knowledge",
+      "fabricLayer": "Cross-layer",
+      "parentId": null,
+      "description": "Intelligence operating system of LeeWay — owns all graph knowledge",
+      "responsibilities": [
+        "Source Graph",
+        "Graphify integration",
+        "Runtime Graph",
+        "Container Graph",
+        "Docker Graph",
+        "Service Graph",
+        "Capability Graph",
+        "Workflow Graph",
+        "Migration Graph",
+        "Evidence Graph",
+        "Deployment Graph",
+        "Security Graph",
+        "Memory Graph",
+        "Documentation Graph",
+        "ADR Graph",
+        "Dependency Graph",
+        "Vector Index",
+        "Semantic Search",
+        "Graph Query Engine",
+        "Knowledge Synchronization",
+        "Knowledge Validation",
+        "Knowledge Receipts"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "sourcePaths": [
+        "architecture/ecosystem-map/"
+      ],
+      "contracts": [
+        "knowledge-fabric-contract"
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "dependents": [
+        "presentation-fabric",
+        "leeway-ide",
+        "graphify-provider"
+      ],
+      "capabilities": [
+        "Graph storage",
+        "Graph query",
+        "Knowledge sync",
+        "Vector search",
+        "Semantic search"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "New layer — architecture defined",
+        "No implementation yet"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "knowledge-fabric-source-graph",
+      "name": "KF — Source Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Source code dependency graph — imports, classes, functions, packages",
+      "responsibilities": [
+        "Import analysis",
+        "Class hierarchy",
+        "Function relationships",
+        "Package structure",
+        "Module ownership"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "dependencies": [
+        "graphify-provider"
+      ],
+      "capabilities": [
+        "Code dependency analysis",
+        "Source relationship mapping"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not yet populated by Graphify"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "knowledge-fabric-runtime-graph",
+      "name": "KF — Runtime Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Runtime topology — services, containers, networks, ports, health",
+      "responsibilities": [
+        "Runtime topology",
+        "Container mapping",
+        "Service mapping",
+        "Health state",
+        "Live ports"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "dependencies": [
+        "runtime-fabric-layer5",
+        "runtime-fabric-layer14"
+      ],
+      "capabilities": [
+        "Runtime topology",
+        "Live health mapping"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-migration-graph",
+      "name": "KF — Migration Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Migration history — all completed migrations, receipts, evidence",
+      "responsibilities": [
+        "Migration tracking",
+        "Receipt indexing",
+        "Evidence linking",
+        "Progress tracking"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "dependencies": [],
+      "capabilities": [
+        "Migration history",
+        "Progress tracking"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-documentation-graph",
+      "name": "KF — Documentation Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Documentation, ADRs, architecture decisions linked to source",
+      "responsibilities": [
+        "Documentation indexing",
+        "ADR linking",
+        "Architecture decisions"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "capabilities": [
+        "Documentation graph",
+        "ADR linking"
+      ],
+      "knownGaps": [
+        "Not yet populated"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-vector-index",
+      "name": "KF — Vector Index",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Vector embeddings for semantic search of all knowledge",
+      "responsibilities": [
+        "Vector embedding",
+        "Semantic search",
+        "Similarity matching"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "dependencies": [
+        "leeway_ollama"
+      ],
+      "capabilities": [
+        "Vector search",
+        "Semantic search"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-graph-query-engine",
+      "name": "KF — Graph Query Engine",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Query engine for searching and traversing the knowledge graph",
+      "responsibilities": [
+        "Graph querying",
+        "Path finding",
+        "Relationship traversal",
+        "Filtering",
+        "Search"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "dependencies": [
+        "knowledge-fabric"
+      ],
+      "capabilities": [
+        "Graph query",
+        "Path finding",
+        "Filtered search"
+      ],
+      "knownGaps": [
+        "Interactive graph explorer provides query",
+        "No standalone API"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-evidence-graph",
+      "name": "KF — Evidence Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "All migration evidence, receipts, and proofs linked to graph nodes",
+      "responsibilities": [
+        "Evidence linking",
+        "Receipt indexing",
+        "Proof chains",
+        "Validation trails"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "dependencies": [
+        "knowledge-fabric-migration-graph"
+      ],
+      "capabilities": [
+        "Evidence linking",
+        "Proof chains",
+        "Validation"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "knowledge-fabric-capability-graph",
+      "name": "KF — Capability Graph",
+      "category": "knowledge",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Capability relationships mapped across all providers and services",
+      "responsibilities": [
+        "Capability mapping",
+        "Provider capability linking",
+        "Dependency mapping"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "dependencies": [
+        "runtime-fabric-layer3"
+      ],
+      "capabilities": [
+        "Capability mapping",
+        "Dependency visualization"
+      ],
+      "knownGaps": [
+        "Not yet populated"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "graphify-provider",
+      "name": "Graphify Knowledge Provider",
+      "category": "provider",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Code analysis engine — contributes source-code dependency graphs as one evidence provider",
+      "responsibilities": [
+        "Source code graph",
+        "Import analysis",
+        "Class hierarchy",
+        "Function relationships",
+        "Package structure",
+        "Filesystem mapping",
+        "Module ownership"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "sourcePaths": [
+        "C:\\Users\\Leona\\.agents\\skills\\graphify"
+      ],
+      "contracts": [
+        "graphify-contract"
+      ],
+      "dependencies": [
+        "knowledge-fabric-source-graph"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Code graph generation",
+        "Dependency analysis",
+        "Structure mapping"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Installed as skill — not yet actively populating graph",
+        "Requires invocation"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "docker-discovery-provider",
+      "name": "Docker Discovery Provider",
+      "category": "provider",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Docker runtime state provider — contributes container topology, health, ports",
+      "responsibilities": [
+        "Container discovery",
+        "Health state",
+        "Port mapping",
+        "Network mapping",
+        "Image tracking"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "contracts": [
+        "docker-discovery-contract"
+      ],
+      "dependencies": [
+        "knowledge-fabric-runtime-graph"
+      ],
+      "capabilities": [
+        "Container discovery",
+        "Health monitoring",
+        "Port mapping"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "migration-engine-provider",
+      "name": "Migration Engine Provider",
+      "category": "provider",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Migration receipts provider — contributes evidence, history, and progress",
+      "responsibilities": [
+        "Receipt reading",
+        "Evidence indexing",
+        "Progress tracking",
+        "History generation"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "contracts": [
+        "migration-engine-contract"
+      ],
+      "dependencies": [
+        "knowledge-fabric-migration-graph"
+      ],
+      "capabilities": [
+        "Receipt management",
+        "Evidence tracking",
+        "Progress reporting"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-fabric-provider",
+      "name": "Runtime Fabric Provider",
+      "category": "provider",
+      "fabricLayer": null,
+      "parentId": "knowledge-fabric",
+      "description": "Runtime Fabric state provider — contributes service health, topology, capability state",
+      "responsibilities": [
+        "Service health reporting",
+        "Topology contribution",
+        "Capability state",
+        "Layer health"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Health reporting",
+        "Topology data",
+        "Layer state"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "presentation-fabric",
+      "name": "Presentation Fabric",
+      "category": "presentation",
+      "fabricLayer": "Cross-layer",
+      "parentId": null,
+      "description": "Visualization operating system — generates all views, diagrams, presentations from Knowledge Fabric",
+      "responsibilities": [
+        "Interactive Graphs",
+        "Architecture Diagrams",
+        "Mind Maps",
+        "Whiteboards",
+        "Mermaid export",
+        "SVG generation",
+        "Documentation",
+        "Reports",
+        "PDF",
+        "PowerPoint",
+        "Tutorials",
+        "Developer Walkthroughs",
+        "Architecture Videos",
+        "Training Videos",
+        "Animated Runtime Flow",
+        "Voice Narration",
+        "Screen Recording",
+        "Demo Generation",
+        "Interactive Presentations"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "sourcePaths": [
+        "architecture/ecosystem-map/viewer.html",
+        "architecture/ecosystem-map/generated/"
+      ],
+      "contracts": [
+        "presentation-fabric-contract"
+      ],
+      "dependencies": [
+        "knowledge-fabric"
+      ],
+      "dependents": [
+        "leeway-ide",
+        "agent-lee-code-mode"
+      ],
+      "capabilities": [
+        "Interactive graph rendering",
+        "Multi-view generation",
+        "Presentation generation",
+        "Export formats",
+        "Voice narration",
+        "Video generation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "New layer — architecture defined",
+        "Interactive graph explorer built",
+        "No automation pipeline yet"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "presentation-fabric-interactive-graph",
+      "name": "PF — Interactive Graph Engine",
+      "category": "presentation",
+      "fabricLayer": null,
+      "parentId": "presentation-fabric",
+      "description": "Interactive force-directed graph explorer — Cytoscape.js based",
+      "responsibilities": [
+        "Force-directed layout",
+        "Zoom/pan",
+        "Node drag",
+        "Search/filter",
+        "Node details",
+        "Multi-view switching",
+        "Time machine",
+        "Mini-map",
+        "Context menu",
+        "Graph export"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "knowledge-fabric"
+      ],
+      "capabilities": [
+        "Force layout",
+        "Interactive exploration",
+        "Node filtering",
+        "Graph export",
+        "Time machine replay"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "presentation-fabric-multi-view",
+      "name": "PF — Multi-View Generator",
+      "category": "presentation",
+      "fabricLayer": null,
+      "parentId": "presentation-fabric",
+      "description": "Generates 20+ synchronized views from single knowledge graph source",
+      "responsibilities": [
+        "View generation",
+        "View synchronization",
+        "View filtering",
+        "View layout"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "knowledge-fabric"
+      ],
+      "capabilities": [
+        "View generation",
+        "Synchronized views",
+        "Filtered views"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "presentation-fabric-time-machine",
+      "name": "PF — Time Machine",
+      "category": "presentation",
+      "fabricLayer": null,
+      "parentId": "presentation-fabric",
+      "description": "Migration history timeline — replay ecosystem state at any point",
+      "responsibilities": [
+        "Timeline navigation",
+        "Snapshot management",
+        "State replay",
+        "Architecture evolution visualization"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "dependencies": [
+        "knowledge-fabric-migration-graph"
+      ],
+      "capabilities": [
+        "Timeline navigation",
+        "State replay",
+        "History visualization"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "leeway-ide",
+      "name": "LeeWay IDE Single Canvas",
+      "category": "ide",
+      "fabricLayer": null,
+      "parentId": null,
+      "description": "IDE that consumes Runtime Fabric truth endpoints and renders as single-canvas nodes",
+      "responsibilities": [
+        "Workspace management",
+        "Editor state",
+        "Project navigation",
+        "UI rendering"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "sourcePaths": [
+        "leeway-ide-single-canvas/src/"
+      ],
+      "contracts": [
+        "ide-contract"
+      ],
+      "ports": [],
+      "containers": [],
+      "dependencies": [
+        "runtime-fabric",
+        "knowledge-fabric",
+        "presentation-fabric"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Single canvas rendering",
+        "Module framework",
+        "Runtime contracts",
+        "Code engine contracts"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MIG-001",
+        "MIG-002",
+        "MIG-003",
+        "MIG-004",
+        "MIG-005"
+      ],
+      "knownGaps": [
+        "No UI integration",
+        "No Runtime Fabric consumption in app"
+      ],
+      "nextMigration": "MIG-006D",
+      "lastVerifiedUtc": "2026-07-29T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "agent-lee-code-mode",
+      "name": "Agent Lee Code Mode",
+      "category": "agent",
+      "fabricLayer": null,
+      "parentId": null,
+      "description": "Supreme agent lead for LeeWay ecosystem coding operations",
+      "responsibilities": [
+        "Code operations",
+        "VS Code adapter",
+        "Router service",
+        "Embodiment"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "2.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "agent-lee-coding-mode/"
+      ],
+      "contracts": [
+        "canonical-agent-lee-code-mode"
+      ],
+      "ports": [
+        8080,
+        8787
+      ],
+      "containers": [
+        "agent_lee_code_mode",
+        "leeway-local-assistant-bridge"
+      ],
+      "dependencies": [
+        "runtime-fabric",
+        "leeway-standards",
+        "knowledge-fabric",
+        "presentation-fabric"
+      ],
+      "dependents": [
+        "agent-center",
+        "mcp-agent-center"
+      ],
+      "capabilities": [
+        "Code operations",
+        "Model routing",
+        "Receipt-backed actions",
+        "Embodiment contracts",
+        "Presentation generation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [],
+      "knownGaps": [
+        "Full embodiment proof pending"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "n8n-workflow",
+      "name": "n8n Workflow Engine",
+      "category": "engine",
+      "fabricLayer": "Layer 6",
+      "parentId": null,
+      "description": "n8n-based workflow automation engine",
+      "responsibilities": [
+        "Workflow execution",
+        "Webhook triggers",
+        "API integration"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        ".env.n8n",
+        "docker-compose.n8n.yml"
+      ],
+      "contracts": [
+        "workflow-engine-contract"
+      ],
+      "ports": [
+        5678
+      ],
+      "containers": [
+        "leeway-n8n-dev"
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "capabilities": [
+        "Workflow CRUD",
+        "Webhook handling",
+        "Encrypted credentials"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "securityControls": [
+        "basic-auth",
+        "encryption-key",
+        "read-only-mode"
+      ],
+      "evidence": [
+        "MIG-006B1",
+        "MIG-006B1R",
+        "MIG-006B2"
+      ],
+      "knownGaps": [
+        "API key auth not configured",
+        "Workflow listing returns 401"
+      ],
+      "nextMigration": "MIG-006C",
+      "lastVerifiedUtc": "2026-07-29T21:45:00Z",
+      "securityStatus": "PARTIALLY_ENFORCED",
+      "trustBoundary": "docker-network",
+      "riskClass": "high",
+      "securityConfidence": "high",
+      "authenticationRequired": true,
+      "authorizationModel": "basic-auth",
+      "roles": [
+        "admin",
+        "editor"
+      ],
+      "securityEvidence": [
+        "MIG-006B1",
+        "MIG-006B1R"
+      ]
+    },
+    {
+      "id": "code-engine-contract",
+      "name": "Code Engine Contract Layer",
+      "category": "contract",
+      "fabricLayer": "Layer 4",
+      "parentId": "leeway-ide",
+      "description": "Code engine contract with OpenCode adapter configuration",
+      "responsibilities": [
+        "Code execution API",
+        "OpenCode integration",
+        "Lifecycle management"
+      ],
+      "status": "DEFINED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "sourcePaths": [
+        "leeway-ide-single-canvas/src/core/code-engine/"
+      ],
+      "contracts": [
+        "code-engine-contract"
+      ],
+      "dependencies": [
+        "leeway-ide"
+      ],
+      "capabilities": [
+        "Code execution",
+        "Adapter registry",
+        "Lifecycle hooks"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MIG-005"
+      ],
+      "knownGaps": [
+        "OpenCode adapter is configuration-only"
+      ],
+      "nextMigration": "MIG-005B",
+      "lastVerifiedUtc": "2026-07-29T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "module-framework",
+      "name": "Module Framework",
+      "category": "contract",
+      "fabricLayer": "Layer 15",
+      "parentId": "leeway-ide",
+      "description": "Module framework with lifecycle, registry, navigation, discovery",
+      "responsibilities": [
+        "Module registration",
+        "Lifecycle management",
+        "Lazy loading",
+        "Inter-module communication"
+      ],
+      "status": "MOCK_VALIDATED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "sourcePaths": [
+        "leeway-ide-single-canvas/src/core/modules/"
+      ],
+      "contracts": [
+        "module-framework-contract"
+      ],
+      "dependencies": [
+        "leeway-ide"
+      ],
+      "capabilities": [
+        "Dynamic module loading",
+        "Lifecycle hooks",
+        "Navigation registry"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MIG-003"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-29T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "runtime-contract",
+      "name": "Runtime Contract Layer",
+      "category": "contract",
+      "fabricLayer": "Cross-layer",
+      "parentId": "leeway-ide",
+      "description": "Runtime contract with types, envelopes, client interface, mock validation",
+      "responsibilities": [
+        "Runtime client API",
+        "Message envelopes",
+        "Health checks"
+      ],
+      "status": "MOCK_VALIDATED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "DEGRADED",
+      "sourcePaths": [
+        "leeway-ide-single-canvas/src/core/runtime/"
+      ],
+      "contracts": [
+        "runtime-contract"
+      ],
+      "dependencies": [
+        "leeway-ide"
+      ],
+      "capabilities": [
+        "Runtime client",
+        "Envelope messaging",
+        "Health checking"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MIG-004"
+      ],
+      "knownGaps": [
+        "Not connected to live Runtime Fabric endpoint"
+      ],
+      "nextMigration": "MIG-006D",
+      "lastVerifiedUtc": "2026-07-29T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "workflow-engine-contract",
+      "name": "Workflow Engine Contract Layer",
+      "category": "contract",
+      "fabricLayer": "Layer 6",
+      "parentId": "leeway-ide",
+      "description": "Workflow engine contract with types, lifecycle, registry, n8n adapter",
+      "responsibilities": [
+        "Workflow registration",
+        "Execution lifecycle",
+        "n8n integration"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "leeway-ide-single-canvas/src/core/workflow-engine/"
+      ],
+      "contracts": [
+        "workflow-engine-contract"
+      ],
+      "dependencies": [
+        "leeway-ide",
+        "n8n-workflow"
+      ],
+      "capabilities": [
+        "Workflow lifecycle",
+        "Adapter registry",
+        "Secret redaction",
+        "Read-only enforcement"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "securityControls": [
+        "allowlist",
+        "secret-redaction"
+      ],
+      "evidence": [
+        "MIG-006A",
+        "MIG-006B",
+        "MIG-006B2"
+      ],
+      "knownGaps": [
+        "No bounded write execution"
+      ],
+      "nextMigration": "MIG-006C",
+      "lastVerifiedUtc": "2026-07-29T21:45:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "opencode-engineering-toolchain",
+      "name": "OpenCode Engineering Toolchain",
+      "category": "tool",
+      "fabricLayer": "Layer 4",
+      "parentId": "leeway-ide",
+      "description": "10 commands, 9 agents, 10 custom TypeScript tools, 4 MCP servers",
+      "responsibilities": [
+        "Code generation",
+        "Analysis",
+        "Validation",
+        "Testing",
+        "Deployment"
+      ],
+      "status": "CONFIGURED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        ".opencode/commands/",
+        ".opencode/agents/",
+        ".opencode/tools/"
+      ],
+      "contracts": [
+        "opencode-engineering-contract"
+      ],
+      "dependencies": [],
+      "capabilities": [
+        "Code scaffolding",
+        "Dependency analysis",
+        "Architecture validation",
+        "Migration execution",
+        "Knowledge provider",
+        "Presentation generation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MIG-005A"
+      ],
+      "knownGaps": [
+        "Not containerized"
+      ],
+      "nextMigration": "MIG-005B",
+      "lastVerifiedUtc": "2026-07-29T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "hybrid-fabric",
+      "name": "Hybrid Fabric",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Hybrid fabric service for cross-runtime orchestration",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_hybrid_fabric"
+      ],
+      "ports": [
+        8777
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "dependents": [
+        "agent-center",
+        "mcp-center"
+      ],
+      "capabilities": [
+        "Cross-routine orchestration",
+        "Hybrid routing"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "agent-center",
+      "name": "Agent Center",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Agent orchestration center",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_agent_center"
+      ],
+      "ports": [
+        8860
+      ],
+      "dependencies": [
+        "hybrid-fabric",
+        "runtime-fabric"
+      ],
+      "dependents": [
+        "mcp-agent-center"
+      ],
+      "capabilities": [
+        "Agent registration",
+        "Agent lifecycle"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "mcp-center",
+      "name": "MCP Center",
+      "category": "runtime",
+      "parentId": null,
+      "description": "MCP tool orchestration center",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_mcp_center"
+      ],
+      "ports": [
+        8863
+      ],
+      "dependencies": [
+        "hybrid-fabric",
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "MCP tool registration",
+        "Tool execution"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "mcp-agent-center",
+      "name": "MCP Agent Center",
+      "category": "runtime",
+      "parentId": null,
+      "description": "MCP agent orchestration center",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_mcp_agent_center"
+      ],
+      "ports": [
+        8861
+      ],
+      "dependencies": [
+        "agent-center",
+        "mcp-center"
+      ],
+      "capabilities": [
+        "Agent-MCP bridging"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "worker-center",
+      "name": "Worker Center",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Worker orchestration center",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_worker_center"
+      ],
+      "ports": [
+        8862
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Worker management",
+        "Task distribution"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "ollama-model-fabric",
+      "name": "Ollama Model Fabric",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Local model serving via Ollama",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_ollama"
+      ],
+      "ports": [
+        11434
+      ],
+      "dependencies": [],
+      "dependents": [
+        "ears-kernel",
+        "voice-kernel",
+        "vision-kernel"
+      ],
+      "capabilities": [
+        "Model serving",
+        "Inference"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "api-gateway",
+      "name": "API Gateway",
+      "category": "gateway",
+      "parentId": null,
+      "description": "LeeWay API Gateway",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_api_gateway"
+      ],
+      "ports": [
+        5320
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "dependents": [
+        "context-gateway"
+      ],
+      "capabilities": [
+        "API routing",
+        "Authentication"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "api-gateway",
+      "riskClass": "critical",
+      "securityConfidence": "verified"
+    },
+    {
+      "id": "context-gateway",
+      "name": "Context Gateway",
+      "category": "gateway",
+      "parentId": null,
+      "description": "LeeWay Context Gateway",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_context_gateway"
+      ],
+      "ports": [
+        5321
+      ],
+      "dependencies": [
+        "api-gateway"
+      ],
+      "capabilities": [
+        "Context routing",
+        "State management"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "api-gateway",
+      "riskClass": "high",
+      "securityConfidence": "high",
+      "authenticationRequired": true
+    },
+    {
+      "id": "desktop-runtime",
+      "name": "Desktop Runtime",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Desktop runtime for voice, camera, screen, browser, mouse, keyboard",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_desktop_runtime"
+      ],
+      "ports": [
+        5334
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Voice I/O",
+        "Camera capture",
+        "Screen observation",
+        "Browser automation"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "device-operator",
+      "name": "Device Operator",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Device operator for physical device control",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_device_operator"
+      ],
+      "ports": [
+        5323
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Device control",
+        "Hardware abstraction"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "ears-kernel",
+      "name": "Agent Lee Ears Kernel",
+      "category": "agent",
+      "parentId": "agent-lee-code-mode",
+      "description": "Speech-to-text kernel",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "agent-lee-ears-kernel"
+      ],
+      "ports": [
+        8094
+      ],
+      "dependencies": [
+        "ollama-model-fabric"
+      ],
+      "capabilities": [
+        "STT",
+        "Audio capture"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "voice-kernel",
+      "name": "Agent Lee Voice Kernel",
+      "category": "agent",
+      "parentId": "agent-lee-code-mode",
+      "description": "Text-to-speech kernel",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "agent-lee-voice-kernel"
+      ],
+      "ports": [
+        8092
+      ],
+      "dependencies": [
+        "ollama-model-fabric"
+      ],
+      "capabilities": [
+        "TTS",
+        "Audio playback"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "vision-kernel",
+      "name": "Agent Lee Vision Kernel",
+      "category": "agent",
+      "parentId": "agent-lee-code-mode",
+      "description": "Computer vision kernel",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "agent-lee-vision-kernel"
+      ],
+      "ports": [
+        8093
+      ],
+      "dependencies": [
+        "ollama-model-fabric"
+      ],
+      "capabilities": [
+        "Image analysis",
+        "Camera capture"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "local-assistant-bridge",
+      "name": "Local Assistant Bridge",
+      "category": "agent",
+      "parentId": "agent-lee-code-mode",
+      "description": "VS Code adapter / Agent Lee Turbo on port 8787",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway-local-assistant-bridge"
+      ],
+      "ports": [
+        8787
+      ],
+      "dependencies": [
+        "agent-lee-code-mode"
+      ],
+      "capabilities": [
+        "VS Code chat adapter",
+        "Model endpoint"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Model endpoint not fully verified"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "PARTIALLY_ENFORCED",
+      "trustBoundary": "runtime-fabric",
+      "riskClass": "high",
+      "securityConfidence": "medium",
+      "authenticationRequired": false,
+      "securityEvidence": [
+        "Model endpoint not fully verified"
+      ]
+    },
+    {
+      "id": "seafile-storage",
+      "name": "SeaFile Storage Gateway",
+      "category": "gateway",
+      "parentId": null,
+      "description": "SeaFile-based storage gateway",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway-seafile",
+        "leeway-seafile-cache",
+        "leeway-seafile-db",
+        "leeway_seafile_storage_gateway"
+      ],
+      "ports": [
+        8082,
+        5314
+      ],
+      "capabilities": [
+        "File storage",
+        "Sync"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "jitsi-meet",
+      "name": "Jitsi Meet Video Conferencing",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Jitsi Meet video conferencing stack",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway-jitsi-meet-web-1",
+        "leeway-jitsi-meet-jicofo-1",
+        "leeway-jitsi-meet-jvb-1",
+        "leeway-jitsi-meet-prosody-1"
+      ],
+      "ports": [
+        8443,
+        8008
+      ],
+      "capabilities": [
+        "Video conferencing",
+        "WebRTC"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "cerebral",
+      "name": "Cerebral State Service",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Embodied agent state, memory, continuity",
+      "status": "CONFIGURED",
+      "truthLevel": "PARTIALLY_PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "ports": [
+        8765,
+        5173
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Agent state",
+        "Memory",
+        "Continuity"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [
+        "Not verified as running container"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "archive-data",
+      "name": "Archive Data Store",
+      "category": "archive",
+      "parentId": null,
+      "description": "Structured archive for receipts, ledgers, manifests, runtime state, proofs",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "Archive/"
+      ],
+      "capabilities": [
+        "Receipt storage",
+        "Ledger management"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "business-runtimes",
+      "name": "Business Domain Runtimes",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Domain-specific runtimes (email, calendar, phone, meeting, document, browser, workboard, performance, installer, license, PWA dashboard, research, artifact viewer, open notebook)",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_email_runtime",
+        "leeway_calendar_runtime",
+        "leeway_phone_runtime",
+        "leeway_meeting_runtime",
+        "leeway_document_runtime",
+        "leeway_browser_runtime",
+        "leeway_workboard_runtime",
+        "leeway_performance_runtime",
+        "leeway_installer_runtime",
+        "leeway_license_runtime",
+        "leeway_pwa_dashboard",
+        "leeway_research_lane",
+        "leeway_artifact_viewer",
+        "leeway_open_notebook"
+      ],
+      "ports": [
+        5330,
+        5331,
+        5332,
+        5329,
+        5325,
+        5333,
+        5339,
+        5338,
+        5336,
+        5335,
+        5337,
+        5310,
+        5328,
+        5326
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Domain-specific operations"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "triposr-system",
+      "name": "TripoSR 3D Reconstruction",
+      "category": "runtime",
+      "parentId": null,
+      "description": "3D reconstruction pipeline",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway-triposr-web",
+        "leeway-triposr-backend",
+        "leeway-triposr-reconstruction"
+      ],
+      "ports": [
+        13000,
+        18000,
+        18103
+      ],
+      "capabilities": [
+        "3D reconstruction"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "telegram-shell",
+      "name": "Agent Lee Telegram Shell",
+      "category": "agent",
+      "parentId": null,
+      "description": "Telegram shell interface",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "agent-lee-telegram-shell"
+      ],
+      "capabilities": [
+        "Telegram messaging",
+        "Bot interface"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "executive-runtime",
+      "name": "Executive Runtime",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Executive orchestration runtime",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_executive_runtime"
+      ],
+      "ports": [
+        5340
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Executive decision",
+        "Orchestration"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "skill-router",
+      "name": "Skill Router",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Skill routing service",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_skill_router"
+      ],
+      "ports": [
+        5324
+      ],
+      "dependencies": [
+        "agent-skills"
+      ],
+      "capabilities": [
+        "Skill routing"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "agent-skills",
+      "name": "Agent Skills Service",
+      "category": "runtime",
+      "parentId": null,
+      "description": "Agent skills runtime service",
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "containers": [
+        "leeway_agent_skills"
+      ],
+      "ports": [
+        5327
+      ],
+      "dependencies": [
+        "runtime-fabric"
+      ],
+      "capabilities": [
+        "Skill management"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "POLICY_DECLARED",
+      "trustBoundary": "leeway-standards",
+      "riskClass": "medium",
+      "securityConfidence": "high"
+    },
+    {
+      "id": "opencode-skills",
+      "name": "OpenCode Skills (13 installed)",
+      "category": "tool",
+      "parentId": "opencode-engineering-toolchain",
+      "description": "13 installed skills for browser, capacity, review, customization, deployment, design, graph, init, loops, Foundry, planning, research, code review",
+      "status": "CONFIGURED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "C:\\Users\\Leona\\.agents\\skills\\"
+      ],
+      "capabilities": [
+        "Browser automation",
+        "AI Foundry",
+        "Graph analysis",
+        "Code review"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "opencode-mcp-servers",
+      "name": "OpenCode MCP Servers (4 configured)",
+      "category": "tool",
+      "parentId": "opencode-engineering-toolchain",
+      "description": "4 MCP servers: GitHub, Context7, Playwright, Docker",
+      "status": "CONFIGURED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "sourcePaths": [
+        "C:\\Users\\Leona\\.config\\opencode\\opencode.jsonc"
+      ],
+      "capabilities": [
+        "GitHub API",
+        "Web context",
+        "Browser testing",
+        "Docker management"
+      ],
+      "knownGaps": [
+        "Not all invocation proven"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "medium"
+    },
+    {
+      "id": "mig-001",
+      "name": "MIG-001 Foundation",
+      "category": "migration",
+      "parentId": null,
+      "description": "Foundation initialization",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-001"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-002",
+      "name": "MIG-002 Host Platform",
+      "category": "migration",
+      "parentId": null,
+      "description": "Host platform",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-002"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-002b",
+      "name": "MIG-002B Living Architecture Map",
+      "category": "migration",
+      "parentId": null,
+      "description": "Living architecture map",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "2.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-002B"
+      ],
+      "knownGaps": [
+        "Map is manually maintained"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-003",
+      "name": "MIG-003 Module Framework",
+      "category": "migration",
+      "parentId": null,
+      "description": "Module framework",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-003"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-004",
+      "name": "MIG-004 Runtime Contract",
+      "category": "migration",
+      "parentId": null,
+      "description": "Runtime contract",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-004"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-005",
+      "name": "MIG-005 Code Engine",
+      "category": "migration",
+      "parentId": null,
+      "description": "Code engine",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-005"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-005a",
+      "name": "MIG-005A Engineering Toolchain",
+      "category": "migration",
+      "parentId": null,
+      "description": "Engineering toolchain",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-005A"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006a",
+      "name": "MIG-006A Workflow Engine",
+      "category": "migration",
+      "parentId": null,
+      "description": "Workflow engine contracts",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-006A"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006b",
+      "name": "MIG-006B Workflow Validation",
+      "category": "migration",
+      "parentId": null,
+      "description": "Workflow adapter validation",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-006B"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006b1",
+      "name": "MIG-006B1 n8n Provisioning",
+      "category": "migration",
+      "parentId": null,
+      "description": "n8n provisioning",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-006B1"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006b1r",
+      "name": "MIG-006B1R Secret Rotation",
+      "category": "migration",
+      "parentId": null,
+      "description": "Secret rotation",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-006B1R"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006b2",
+      "name": "MIG-006B2 Live Adapter",
+      "category": "migration",
+      "parentId": null,
+      "description": "Live read-only adapter proof",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "evidence": [
+        "MIG-006B2"
+      ],
+      "knownGaps": [
+        "Workflow listing requires API key",
+        "404 error mapping not testable",
+        "Timeout test failed"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "mig-006c",
+      "name": "MIG-006C Bounded Execution",
+      "category": "migration",
+      "parentId": null,
+      "description": "Bounded live workflow execution",
+      "status": "DEFINED",
+      "truthLevel": "INFERRED",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "UNKNOWN",
+      "knownGaps": [
+        "Requires API key auth"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "UNKNOWN",
+      "trustBoundary": "unclassified",
+      "riskClass": "unknown",
+      "securityConfidence": "unknown"
+    },
+    {
+      "id": "mig-002c",
+      "name": "MIG-002C Knowledge Fabric + Interactive Graph",
+      "category": "migration",
+      "parentId": null,
+      "description": "Knowledge Fabric architecture, interactive graph engine, time machine",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "1.0.0",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "architecture/ecosystem-map/"
+      ],
+      "evidence": [
+        "MIG-002C"
+      ],
+      "knownGaps": [
+        "Auto-sync not yet implemented",
+        "Graphify not yet actively populating"
+      ],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "master-publisher-runtime",
+      "name": "Master Publisher Runtime",
+      "category": "engine",
+      "parentId": null,
+      "description": "LeeWay publishing orchestrator — project CRUD, AI writing, Ollama integration, Pandoc export, SQLite persistence",
+      "responsibilities": [
+        "Publishing orchestration",
+        "AI-assisted writing",
+        "Multi-format export",
+        "Research source management",
+        "Claim ledger",
+        "Citation validation",
+        "Notebook linking",
+        "Security fabric"
+      ],
+      "status": "LIVE_READ_ONLY",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "0.2.2-r2",
+      "health": "HEALTHY",
+      "sourcePaths": [
+        "Leeway Runtime Fabric/master-publisher/"
+      ],
+      "ports": [
+        8876
+      ],
+      "containers": [],
+      "dependencies": [
+        "ollama-model-fabric",
+        "leeway-ide",
+        "runtime-fabric"
+      ],
+      "dependents": [],
+      "capabilities": [
+        "Project CRUD",
+        "Outline generation",
+        "Section writing",
+        "Manuscript assembly",
+        "Pandoc export (EPUB/DOCX/HTML/JSON)",
+        "Research source storage & search",
+        "Claim creation & validation",
+        "Citation validation",
+        "Notebook linking",
+        "API key security fabric",
+        "Docker service inventory"
+      ],
+      "governance": [
+        "leeway-standards"
+      ],
+      "evidence": [
+        "MP-R2-Phase9",
+        "MP-R2-Phase10",
+        "MP-R2-Phase11",
+        "MP-R2-Phase13",
+        "MP-R2-Phase14"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustBoundary": "api-gateway",
+      "riskClass": "high",
+      "securityConfidence": "verified",
+      "authenticationRequired": true,
+      "authorizationModel": "RBAC",
+      "roles": [
+        "admin",
+        "editor",
+        "viewer"
+      ]
+    },
+    {
+      "id": "master-publisher-r2-phases-9-10",
+      "name": "MP R2 Phases 9-10: Research & Links",
+      "category": "migration",
+      "parentId": null,
+      "description": "Master Publisher R2 — research sources, claims ledger, citation validation, persistent notebook links",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "0.2.0-r2",
+      "health": "HEALTHY",
+      "evidence": [
+        "MP-R2-Phase9",
+        "MP-R2-Phase10"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "master-publisher-r2-phase11",
+      "name": "MP R2 Phase 11: IDE Integration",
+      "category": "migration",
+      "parentId": null,
+      "description": "Master Publisher native Next.js IDE integration — React UI, API proxy, 5 management tabs",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "0.2.1-r2",
+      "health": "HEALTHY",
+      "evidence": [
+        "MP-R2-Phase11"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "master-publisher-r2-phase13",
+      "name": "MP R2 Phase 13: Security Fabric",
+      "category": "migration",
+      "parentId": null,
+      "description": "Master Publisher security fabric — API key auth, RBAC (admin/editor/viewer), key management endpoints",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "0.2.2-r2",
+      "health": "HEALTHY",
+      "evidence": [
+        "MP-R2-Phase13"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    },
+    {
+      "id": "master-publisher-r2-phase14",
+      "name": "MP R2 Phase 14: Docker Classification",
+      "category": "migration",
+      "parentId": null,
+      "description": "Docker service ownership classification — 72 containers, 14 service domains, health assessment",
+      "status": "END_TO_END_VALIDATED",
+      "truthLevel": "PROVEN",
+      "owner": "system",
+      "version": "0.2.2-r2",
+      "health": "HEALTHY",
+      "evidence": [
+        "MP-R2-Phase14"
+      ],
+      "knownGaps": [],
+      "nextMigration": null,
+      "lastVerifiedUtc": "2026-07-30T00:00:00Z",
+      "securityStatus": "NOT_PROVEN",
+      "trustBoundary": "unclassified",
+      "riskClass": "medium",
+      "securityConfidence": "low"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-standards-governs-rf",
+      "from": "leeway-standards",
+      "to": "runtime-fabric",
+      "type": "governs",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-standards-governs-agent",
+      "from": "leeway-standards",
+      "to": "agent-lee-code-mode",
+      "type": "governs",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-standards-governs-ide",
+      "from": "leeway-standards",
+      "to": "leeway-ide",
+      "type": "governs",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-rf-contains-layer1",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer1",
+      "type": "contains",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED"
+    },
+    {
+      "id": "rel-rf-contains-layer2",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer2",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-rf-contains-layer3",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer3",
+      "type": "contains",
+      "direction": "forward",
+      "status": "CONFIGURED"
+    },
+    {
+      "id": "rel-rf-contains-layer4",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer4",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-rf-contains-layer5",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer5",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer6",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer6",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer7",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer7",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer8",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer8",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer9",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer9",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer10",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer10",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer11",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer11",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-rf-contains-layer12",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer12",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-rf-contains-layer13",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer13",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer14",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer14",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-rf-contains-layer15",
+      "from": "runtime-fabric",
+      "to": "runtime-fabric-layer15",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-kf-contains-source-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-source-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-kf-contains-runtime-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-runtime-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-kf-contains-migration-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-migration-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-kf-contains-doc-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-documentation-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-kf-contains-vector-index",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-vector-index",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-kf-contains-query-engine",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-graph-query-engine",
+      "type": "contains",
+      "direction": "forward",
+      "status": "CONFIGURED"
+    },
+    {
+      "id": "rel-kf-contains-evidence-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-evidence-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-kf-contains-capability-graph",
+      "from": "knowledge-fabric",
+      "to": "knowledge-fabric-capability-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "DEFINED"
+    },
+    {
+      "id": "rel-kf-feeds-pf",
+      "from": "knowledge-fabric",
+      "to": "presentation-fabric",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-pf-contains-interactive-graph",
+      "from": "presentation-fabric",
+      "to": "presentation-fabric-interactive-graph",
+      "type": "contains",
+      "direction": "forward",
+      "status": "CONFIGURED"
+    },
+    {
+      "id": "rel-pf-contains-multi-view",
+      "from": "presentation-fabric",
+      "to": "presentation-fabric-multi-view",
+      "type": "contains",
+      "direction": "forward",
+      "status": "CONFIGURED"
+    },
+    {
+      "id": "rel-pf-contains-time-machine",
+      "from": "presentation-fabric",
+      "to": "presentation-fabric-time-machine",
+      "type": "contains",
+      "direction": "forward",
+      "status": "CONFIGURED"
+    },
+    {
+      "id": "rel-graphify-feeds-kf",
+      "from": "graphify-provider",
+      "to": "knowledge-fabric-source-graph",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "CONFIGURED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-docker-feeds-kf",
+      "from": "docker-discovery-provider",
+      "to": "knowledge-fabric-runtime-graph",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-migration-feeds-kf",
+      "from": "migration-engine-provider",
+      "to": "knowledge-fabric-migration-graph",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-rf-provider-feeds-kf",
+      "from": "runtime-fabric-provider",
+      "to": "knowledge-fabric-runtime-graph",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-rf-serves-kf",
+      "from": "runtime-fabric",
+      "to": "knowledge-fabric",
+      "type": "serves",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-agent-uses-pf",
+      "from": "agent-lee-code-mode",
+      "to": "presentation-fabric",
+      "type": "uses",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-ide-uses-kf",
+      "from": "leeway-ide",
+      "to": "knowledge-fabric",
+      "type": "uses",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-ide-uses-pf",
+      "from": "leeway-ide",
+      "to": "presentation-fabric",
+      "type": "uses",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-rf-provider-parent",
+      "from": "runtime-fabric-provider",
+      "to": "runtime-fabric",
+      "type": "monitors",
+      "direction": "bidirectional",
+      "status": "LIVE_READ_ONLY"
+    },
+    {
+      "id": "rel-layer1-layer2",
+      "from": "runtime-fabric-layer1",
+      "to": "runtime-fabric-layer2",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer2-layer3",
+      "from": "runtime-fabric-layer2",
+      "to": "runtime-fabric-layer3",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer3-layer4",
+      "from": "runtime-fabric-layer3",
+      "to": "runtime-fabric-layer4",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer5-layer6",
+      "from": "runtime-fabric-layer5",
+      "to": "runtime-fabric-layer6",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer4-layer6",
+      "from": "runtime-fabric-layer4",
+      "to": "runtime-fabric-layer6",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer6-layer7",
+      "from": "runtime-fabric-layer6",
+      "to": "runtime-fabric-layer7",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-layer11-layer12",
+      "from": "runtime-fabric-layer11",
+      "to": "runtime-fabric-layer12",
+      "type": "feeds",
+      "direction": "forward",
+      "status": "DEFINED",
+      "securityStatus": "INHERITED_ENFORCEMENT",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-001-002",
+      "from": "mig-001",
+      "to": "mig-002",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-002-003",
+      "from": "mig-002",
+      "to": "mig-003",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-003-004",
+      "from": "mig-003",
+      "to": "mig-004",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-004-005",
+      "from": "mig-004",
+      "to": "mig-005",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-005-005a",
+      "from": "mig-005",
+      "to": "mig-005a",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-005a-006a",
+      "from": "mig-005a",
+      "to": "mig-006a",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-006a-006b",
+      "from": "mig-006a",
+      "to": "mig-006b",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-006b-006b1",
+      "from": "mig-006b",
+      "to": "mig-006b1",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-006b1-006b1r",
+      "from": "mig-006b1",
+      "to": "mig-006b1r",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-006b1r-006b2",
+      "from": "mig-006b1r",
+      "to": "mig-006b2",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-002b-parallel",
+      "from": "mig-002b",
+      "to": "mig-002",
+      "type": "parallel-to",
+      "direction": "bidirectional",
+      "status": "END_TO_END_VALIDATED"
+    },
+    {
+      "id": "rel-mig-002b-before-002c",
+      "from": "mig-002b",
+      "to": "mig-002c",
+      "type": "precedes",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mig-002c-before-006c",
+      "from": "mig-002c",
+      "to": "mig-006c",
+      "type": "precedes",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-standards-governs-mp",
+      "from": "leeway-standards",
+      "to": "master-publisher-runtime",
+      "type": "governs",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "DIRECTLY_ENFORCED",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mp-runtime-uses-ollama",
+      "from": "master-publisher-runtime",
+      "to": "ollama-model-fabric",
+      "type": "uses",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-mp-runtime-uses-rf",
+      "from": "master-publisher-runtime",
+      "to": "runtime-fabric",
+      "type": "uses",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-ide-uses-mp",
+      "from": "leeway-ide",
+      "to": "master-publisher-runtime",
+      "type": "uses",
+      "direction": "forward",
+      "status": "LIVE_READ_ONLY",
+      "securityStatus": "NOT_PROVEN",
+      "trustTransition": "cross-boundary"
+    },
+    {
+      "id": "rel-mp-r2-business-runtimes",
+      "from": "master-publisher-runtime",
+      "to": "business-runtimes",
+      "type": "connects",
+      "direction": "bidirectional",
+      "status": "LIVE_READ_ONLY",
+      "description": "Links to Open Notebook (leeway_open_notebook) for notebook persistence"
+    },
+    {
+      "id": "rel-mig-002c-precedes-mp-r2-9-10",
+      "from": "mig-002c",
+      "to": "master-publisher-r2-phases-9-10",
+      "type": "precedes",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mp-r2-9-10-triggers-11",
+      "from": "master-publisher-r2-phases-9-10",
+      "to": "master-publisher-r2-phase11",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mp-r2-11-triggers-13",
+      "from": "master-publisher-r2-phase11",
+      "to": "master-publisher-r2-phase13",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    },
+    {
+      "id": "rel-mp-r2-13-triggers-14",
+      "from": "master-publisher-r2-phase13",
+      "to": "master-publisher-r2-phase14",
+      "type": "triggers",
+      "direction": "forward",
+      "status": "END_TO_END_VALIDATED",
+      "securityStatus": "NOT_APPLICABLE",
+      "trustTransition": "same-boundary"
+    }
+  ],
+  "views": [
+    {
+      "id": "executive-overview",
+      "name": "Executive Overview",
+      "description": "High-level ecosystem view — standards, fabrics, agents, IDE",
+      "category": "executive",
+      "icon": "eye",
+      "nodeFilter": {
+        "categories": [
+          "standards",
+          "runtime",
+          "agent",
+          "ide",
+          "knowledge",
+          "presentation"
+        ]
+      },
+      "relationshipFilter": {
+        "types": [
+          "governs",
+          "serves",
+          "feeds",
+          "contains"
+        ]
+      },
+      "layout": "breadthfirst",
+      "default": true
+    },
+    {
+      "id": "runtime-fabric",
+      "name": "Runtime Fabric",
+      "description": "Runtime Fabric 15 layers and their relationships",
+      "category": "runtime-fabric",
+      "icon": "layers",
+      "nodeFilter": {
+        "fabricLayers": [
+          "Layer 1",
+          "Layer 2",
+          "Layer 3",
+          "Layer 4",
+          "Layer 5",
+          "Layer 6",
+          "Layer 7",
+          "Layer 8",
+          "Layer 9",
+          "Layer 10",
+          "Layer 11",
+          "Layer 12",
+          "Layer 13",
+          "Layer 14",
+          "Layer 15",
+          "Cross-layer"
+        ],
+        "categories": [
+          "fabric-layer",
+          "runtime"
+        ]
+      },
+      "relationshipFilter": {
+        "types": [
+          "contains",
+          "feeds",
+          "governs",
+          "serves"
+        ]
+      }
+    },
+    {
+      "id": "knowledge-fabric",
+      "name": "Knowledge Fabric",
+      "description": "Knowledge Fabric components and providers",
+      "category": "knowledge",
+      "icon": "brain",
+      "nodeFilter": {
+        "categories": [
+          "knowledge",
+          "provider"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "circle"
+    },
+    {
+      "id": "presentation-fabric",
+      "name": "Presentation Fabric",
+      "description": "Presentation Fabric components — interactive graph, multi-view, time machine",
+      "category": "presentation",
+      "icon": "presentation",
+      "nodeFilter": {
+        "categories": [
+          "presentation"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    },
+    {
+      "id": "service-topology",
+      "name": "Service Topology",
+      "description": "All running services, their ports, containers, and health",
+      "category": "service",
+      "icon": "server",
+      "nodeFilter": {
+        "categories": [
+          "runtime",
+          "gateway",
+          "agent",
+          "engine"
+        ]
+      },
+      "relationshipFilter": {
+        "types": [
+          "routes-to",
+          "uses",
+          "serves"
+        ]
+      },
+      "layout": "concentric"
+    },
+    {
+      "id": "docker-topology",
+      "name": "Docker Topology",
+      "description": "All Docker containers, images, ports, and networks",
+      "category": "docker",
+      "icon": "docker",
+      "nodeFilter": {
+        "categories": [
+          "runtime",
+          "gateway",
+          "agent",
+          "engine"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "circle"
+    },
+    {
+      "id": "capability-graph",
+      "name": "Capability Graph",
+      "description": "All capabilities mapped across services and providers",
+      "category": "capability",
+      "icon": "bolt",
+      "nodeFilter": {
+        "categories": [
+          "runtime",
+          "agent",
+          "engine",
+          "gateway"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "concentric"
+    },
+    {
+      "id": "agent-lee-brain",
+      "name": "Agent Lee Brain",
+      "description": "Agent Lee components — kernels, adapters, skills, routers",
+      "category": "agent",
+      "icon": "agent",
+      "nodeFilter": {
+        "includeIds": [
+          "agent-lee-code-mode",
+          "ears-kernel",
+          "voice-kernel",
+          "vision-kernel",
+          "local-assistant-bridge",
+          "telegram-shell",
+          "agent-center",
+          "mcp-agent-center",
+          "agent-skills",
+          "skill-router"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "breadthfirst"
+    },
+    {
+      "id": "migration-timeline",
+      "name": "Migration Timeline",
+      "description": "All completed and planned migrations in chronological order",
+      "category": "migration",
+      "icon": "timeline",
+      "nodeFilter": {
+        "categories": [
+          "migration"
+        ]
+      },
+      "relationshipFilter": {
+        "types": [
+          "triggers",
+          "precedes",
+          "parallel-to"
+        ]
+      },
+      "layout": "grid"
+    },
+    {
+      "id": "evidence-graph",
+      "name": "Evidence Graph",
+      "description": "Evidence chains linking migrations to their artifacts",
+      "category": "evidence",
+      "icon": "evidence",
+      "nodeFilter": {
+        "categories": [
+          "migration"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "concentric"
+    },
+    {
+      "id": "provider-graph",
+      "name": "Provider Graph",
+      "description": "All runtime providers and their relationships",
+      "category": "provider",
+      "icon": "provider",
+      "nodeFilter": {
+        "categories": [
+          "provider",
+          "engine",
+          "tool"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "circle"
+    },
+    {
+      "id": "security-graph",
+      "name": "Security Graph",
+      "description": "Security controls, governance, and trust boundaries",
+      "category": "security",
+      "icon": "security",
+      "nodeFilter": {
+        "categories": [
+          "standards",
+          "fabric-layer"
+        ],
+        "includeIds": [
+          "leeway-standards",
+          "runtime-fabric-layer1",
+          "runtime-fabric-layer13"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "breadthfirst"
+    },
+    {
+      "id": "deployment-graph",
+      "name": "Deployment Graph",
+      "description": "Deployment topology — containers, targets, execution modes",
+      "category": "deployment",
+      "icon": "deploy",
+      "nodeFilter": {
+        "categories": [
+          "fabric-layer"
+        ],
+        "includeIds": [
+          "runtime-fabric-layer10",
+          "runtime-fabric-layer11",
+          "runtime-fabric-layer12"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    },
+    {
+      "id": "code-engine",
+      "name": "Code Engine",
+      "description": "Code execution contracts and providers",
+      "category": "code",
+      "icon": "code",
+      "nodeFilter": {
+        "includeIds": [
+          "code-engine-contract",
+          "opencode-engineering-toolchain",
+          "opencode-skills",
+          "opencode-mcp-servers",
+          "module-framework",
+          "runtime-contract"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "breadthfirst"
+    },
+    {
+      "id": "workflow-engine",
+      "name": "Workflow Engine",
+      "description": "Workflow execution contracts and n8n integration",
+      "category": "workflow",
+      "icon": "workflow",
+      "nodeFilter": {
+        "includeIds": [
+          "workflow-engine-contract",
+          "n8n-workflow"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    },
+    {
+      "id": "distributed-compute",
+      "name": "Distributed Compute",
+      "description": "Distributed execution architecture — nodes, scheduling, trust",
+      "category": "distributed",
+      "icon": "network",
+      "nodeFilter": {
+        "includeIds": [
+          "runtime-fabric-layer11",
+          "runtime-fabric-layer12",
+          "runtime-fabric-layer13"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    },
+    {
+      "id": "mcp-graph",
+      "name": "MCP Graph",
+      "description": "MCP centers and providers",
+      "category": "mcp",
+      "icon": "mcp",
+      "nodeFilter": {
+        "includeIds": [
+          "mcp-center",
+          "mcp-agent-center",
+          "opencode-mcp-servers"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    },
+    {
+      "id": "health-dashboard",
+      "name": "Health Dashboard",
+      "description": "All nodes with health status — HEALTHY, DEGRADED, UNHEALTHY, UNKNOWN",
+      "category": "health",
+      "icon": "health",
+      "nodeFilter": {
+        "statuses": [
+          "LIVE_READ_ONLY",
+          "END_TO_END_VALIDATED",
+          "CONFIGURED",
+          "DEFINED"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "concentric"
+    },
+    {
+      "id": "critical-path",
+      "name": "Critical Path",
+      "description": "Current migration critical path — what to do next",
+      "category": "critical",
+      "icon": "critical",
+      "nodeFilter": {
+        "statuses": [
+          "DEFINED",
+          "CONFIGURED",
+          "BLOCKED"
+        ],
+        "categories": [
+          "migration",
+          "fabric-layer"
+        ]
+      },
+      "relationshipFilter": {},
+      "layout": "grid"
+    }
+  ],
+  "knowledgeProviders": [
+    {
+      "id": "kp-graphify",
+      "name": "Graphify",
+      "providerType": "code-analysis",
+      "description": "Source code dependency analysis — imports, classes, functions, packages",
+      "status": "CONFIGURED",
+      "contributesTo": [
+        "knowledge-fabric-source-graph"
+      ],
+      "syncInterval": "manual",
+      "lastSyncUtc": null,
+      "evidencePath": "C:\\Users\\Leona\\.agents\\skills\\graphify",
+      "contract": "graphify-contract"
+    },
+    {
+      "id": "kp-docker",
+      "name": "Docker Discovery",
+      "providerType": "container-discovery",
+      "description": "Docker runtime state — containers, images, ports, networks, health",
+      "status": "LIVE_READ_ONLY",
+      "contributesTo": [
+        "knowledge-fabric-runtime-graph"
+      ],
+      "syncInterval": "realtime",
+      "lastSyncUtc": "2026-07-30T03:10:00Z",
+      "evidencePath": "architecture/ecosystem-map/generated/drift-report.json",
+      "contract": "docker-discovery-contract"
+    },
+    {
+      "id": "kp-migration-engine",
+      "name": "Migration Engine",
+      "providerType": "receipt-reading",
+      "description": "Migration receipts — evidence, history, progress",
+      "status": "LIVE_READ_ONLY",
+      "contributesTo": [
+        "knowledge-fabric-migration-graph"
+      ],
+      "syncInterval": "on-migration",
+      "lastSyncUtc": "2026-07-30T03:10:00Z",
+      "evidencePath": "evidence/",
+      "contract": "migration-engine-contract"
+    },
+    {
+      "id": "kp-runtime-fabric",
+      "name": "Runtime Fabric Provider",
+      "providerType": "runtime-state",
+      "description": "Runtime Fabric state — service health, topology, layer state",
+      "status": "LIVE_READ_ONLY",
+      "contributesTo": [
+        "knowledge-fabric-runtime-graph"
+      ],
+      "syncInterval": "realtime",
+      "lastSyncUtc": "2026-07-30T03:10:00Z",
+      "contract": "runtime-fabric-contract"
+    },
+    {
+      "id": "kp-ollama",
+      "name": "Ollama Provider",
+      "providerType": "model-serving",
+      "description": "Local model fabric — available models, health, inference",
+      "status": "LIVE_READ_ONLY",
+      "contributesTo": [
+        "knowledge-fabric-vector-index"
+      ],
+      "syncInterval": "realtime",
+      "lastSyncUtc": "2026-07-30T03:10:00Z",
+      "contract": "model-fabric-contract"
+    },
+    {
+      "id": "kp-n8n",
+      "name": "n8n Workflow Provider",
+      "providerType": "workflow-engine",
+      "description": "n8n workflow state — workflows, executions, health",
+      "status": "LIVE_READ_ONLY",
+      "contributesTo": [
+        "knowledge-fabric-migration-graph"
+      ],
+      "syncInterval": "on-demand",
+      "lastSyncUtc": null,
+      "contract": "workflow-engine-contract"
+    }
+  ],
+  "timeMachine": {
+    "enabled": true,
+    "currentSnapshot": "snapshot-20260730-mig002c",
+    "snapshots": [
+      {
+        "snapshotId": "snapshot-20260720-mig001",
+        "timestamp": "2026-07-20T00:00:00Z",
+        "label": "Foundation",
+        "migrationId": "MIG-001",
+        "description": "Foundation initialization — repo, structure, initial contracts",
+        "nodeCount": 5,
+        "relationshipCount": 4,
+        "completionPercent": 5,
+        "receiptPath": "evidence/MIG-001/"
+      },
+      {
+        "snapshotId": "snapshot-20260721-mig002",
+        "timestamp": "2026-07-21T00:00:00Z",
+        "label": "Host Platform",
+        "migrationId": "MIG-002",
+        "description": "Host platform — environment config, Docker setup",
+        "nodeCount": 8,
+        "relationshipCount": 7,
+        "completionPercent": 10,
+        "receiptPath": "evidence/MIG-002/"
+      },
+      {
+        "snapshotId": "snapshot-20260722-mig003",
+        "timestamp": "2026-07-22T00:00:00Z",
+        "label": "Module Framework",
+        "migrationId": "MIG-003",
+        "description": "Module framework — lifecycle, registry, navigation",
+        "nodeCount": 12,
+        "relationshipCount": 11,
+        "completionPercent": 18,
+        "receiptPath": "evidence/MIG-003/"
+      },
+      {
+        "snapshotId": "snapshot-20260723-mig004",
+        "timestamp": "2026-07-23T00:00:00Z",
+        "label": "Runtime Contract",
+        "migrationId": "MIG-004",
+        "description": "Runtime contract — types, envelopes, client interface",
+        "nodeCount": 15,
+        "relationshipCount": 14,
+        "completionPercent": 25,
+        "receiptPath": "evidence/MIG-004/"
+      },
+      {
+        "snapshotId": "snapshot-20260724-mig005",
+        "timestamp": "2026-07-24T00:00:00Z",
+        "label": "Code Engine",
+        "migrationId": "MIG-005",
+        "description": "Code engine contract — OpenCode adapter",
+        "nodeCount": 18,
+        "relationshipCount": 17,
+        "completionPercent": 32,
+        "receiptPath": "evidence/MIG-005/"
+      },
+      {
+        "snapshotId": "snapshot-20260725-mig005a",
+        "timestamp": "2026-07-25T00:00:00Z",
+        "label": "Engineering Toolchain",
+        "migrationId": "MIG-005A",
+        "description": "OpenCode engineering toolchain — 10 commands, 9 agents, 10 tools, 4 MCP",
+        "nodeCount": 20,
+        "relationshipCount": 19,
+        "completionPercent": 38,
+        "receiptPath": "evidence/MIG-005A/"
+      },
+      {
+        "snapshotId": "snapshot-20260726-mig006a",
+        "timestamp": "2026-07-26T00:00:00Z",
+        "label": "Workflow Engine",
+        "migrationId": "MIG-006A",
+        "description": "Workflow engine contracts — lifecycle, registry, n8n adapter",
+        "nodeCount": 24,
+        "relationshipCount": 22,
+        "completionPercent": 45,
+        "receiptPath": "evidence/MIG-006A/"
+      },
+      {
+        "snapshotId": "snapshot-20260727-mig006b",
+        "timestamp": "2026-07-27T00:00:00Z",
+        "label": "Workflow Validation",
+        "migrationId": "MIG-006B",
+        "description": "Workflow adapter validation — secret redaction, allowlist",
+        "nodeCount": 26,
+        "relationshipCount": 25,
+        "completionPercent": 50,
+        "receiptPath": "evidence/MIG-006B/"
+      },
+      {
+        "snapshotId": "snapshot-20260728-mig006b1",
+        "timestamp": "2026-07-28T00:00:00Z",
+        "label": "n8n Provisioning",
+        "migrationId": "MIG-006B1",
+        "description": "n8n Docker runtime provisioning — health, encryption, basic auth",
+        "nodeCount": 28,
+        "relationshipCount": 27,
+        "completionPercent": 55,
+        "receiptPath": "evidence/MIG-006B1/"
+      },
+      {
+        "snapshotId": "snapshot-20260729-mig006b2",
+        "timestamp": "2026-07-29T00:00:00Z",
+        "label": "Live Adapter",
+        "migrationId": "MIG-006B2",
+        "description": "Live read-only adapter proof — 5 of 8 tests pass",
+        "nodeCount": 30,
+        "relationshipCount": 29,
+        "completionPercent": 60,
+        "receiptPath": "evidence/MIG-006B2/"
+      },
+      {
+        "snapshotId": "snapshot-20260729-mig002b",
+        "timestamp": "2026-07-29T22:00:00Z",
+        "label": "Architecture Map",
+        "migrationId": "MIG-002B",
+        "description": "Living architecture map — 55 nodes, 47 relationships, Mermaid, drift validation",
+        "nodeCount": 55,
+        "relationshipCount": 47,
+        "completionPercent": 75,
+        "receiptPath": "evidence/MIG-002B/"
+      },
+      {
+        "snapshotId": "snapshot-20260730-mig002c",
+        "timestamp": "2026-07-30T03:10:00Z",
+        "label": "Knowledge Fabric + Interactive Graph",
+        "migrationId": "MIG-002C",
+        "description": "Knowledge Fabric, Presentation Fabric, interactive graph engine, time machine, 20+ views",
+        "nodeCount": 70,
+        "relationshipCount": 62,
+        "completionPercent": 85,
+        "receiptPath": "evidence/MIG-002C/"
+      },
+      {
+        "snapshotId": "snapshot-20260730-mp-r2",
+        "timestamp": "2026-07-30T08:20:00Z",
+        "label": "Master Publisher R2",
+        "migrationId": "MP-R2",
+        "description": "Master Publisher R2 — research/claims/notebook management, native IDE integration, security fabric, Docker classification (phases 9-14)",
+        "nodeCount": 87,
+        "relationshipCount": 68,
+        "completionPercent": 92,
+        "receiptPath": "LeeWay-Enterprise-Transit-Hub\\_evidence\\"
+      }
+    ]
+  },
+  "metadata": {
+    "mapVersion": "2.0.0",
+    "schemaVersion": "2.0.0",
+    "generatedAtUtc": "2026-07-30T08:20:00Z",
+    "lastMigrationIncluded": "MP-R2",
+    "gitCommit": "8952e84",
+    "projectRoot": "D:\\Leeway-Ecosystem v2.1.4\\leeway-ide-single-canvas",
+    "gitRoot": "D:\\Leeway-Ecosystem v2.1.4",
+    "sourceCount": 20,
+    "nodeCount": 87,
+    "relationshipCount": 68,
+    "viewCount": 19,
+    "providerCount": 6,
+    "snapshotCount": 13,
+    "unverifiedNodeCount": 13,
+    "knownGapCount": 32,
+    "generatorVersion": "MP-R2-v1",
+    "lastDriftValidatedUtc": "2026-07-30T08:20:00Z",
+    "driftReportPath": "generated/drift-report.json",
+    "allContainersRunning": true,
+    "allEvidenceFound": true,
+    "allSourcesResolved": true
+  }
+}

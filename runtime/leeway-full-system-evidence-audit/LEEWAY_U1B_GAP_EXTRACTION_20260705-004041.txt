@@ -1,0 +1,67 @@
+LEEWAY U1B GAP EXTRACTION
+Created: 2026-07-05T00:41:17.9265294-05:00
+Verdict: LEEWAY_U1B_GAP_EXTRACTION_COMPLETE
+
+COUNTS
+Architecture containers: 52
+Docker containers: 52
+Missing containers: 0
+Not running: 5
+No health proof: 3
+Truth limited: 13
+Basic proof: 31
+Placeholder matches: 2
+
+NOT RUNNING CONTAINERS
+- agent-lee-telegram-shell-backup-fullroutes-20260703-150635 | image=agent-lee-telegram-shell:latest | role=agent_interface_telegram | status=Exited (137) 34 hours ago
+- agent-lee-true-character-mesh-lane | image=agent-lee-true-character-mesh-lane:local | role=unclassified_review_required | status=Exited (255) 35 hours ago
+- agent-lee-telegram-vision-lane | image=agent-lee-telegram-vision-lane:local | role=agent_interface_telegram | status=Exited (255) 35 hours ago
+- agent-lee-character-cutout-lane | image=agent-lee-character-cutout-lane:local | role=unclassified_review_required | status=Exited (255) 35 hours ago
+- agent-lee-telegram-shell-backup-20260703-144921 | image=agent-lee-telegram-shell:latest | role=agent_interface_telegram | status=Exited (137) 34 hours ago
+
+RUNNING BUT NO HEALTH PROOF
+- leeway-jitsi-meet-jicofo-1 | ports=8888 | role=conference_room_stack
+- leeway-jitsi-meet-jvb-1 | ports=10000,8081 | role=conference_room_stack
+- leeway-seafile | ports=8082 | role=storage_stack
+
+TRUTH LIMITED LANES
+- leeway_installer_runtime | role=distribution_installer_runtime | lane_truth=PARTIAL_REQUIRES_PACKAGE_BUILDER_WIRING
+- leeway_license_runtime | role=business_license_runtime | lane_truth=PARTIAL_REQUIRES_POLICY_KEYS
+- leeway_desktop_runtime | role=operator_desktop_runtime | lane_truth=PARTIAL_REQUIRES_NATIVE_DESKTOP_OPERATOR_WIRING_AND_APPROVAL
+- leeway_browser_runtime | role=operator_browser_runtime | lane_truth=PARTIAL_REQUIRES_PLAYWRIGHT_OR_BROWSER_OPERATOR_WIRING
+- leeway_phone_runtime | role=provider_phone_runtime | lane_truth=PARTIAL_REQUIRES_DEVICE_OR_TELEPHONY_PROVIDER_AND_APPROVAL
+- leeway_calendar_runtime | role=provider_calendar_runtime | lane_truth=PARTIAL_REQUIRES_CALENDAR_PROVIDER_AND_APPROVAL
+- leeway_email_runtime | role=provider_email_runtime | lane_truth=PARTIAL_REQUIRES_PROVIDER_CREDENTIALS_AND_APPROVAL
+- leeway_device_operator | role=unclassified_review_required | lane_truth=UNKNOWN_REQUIRES_CLASSIFICATION
+- leeway_research_lane | role=unclassified_review_required | lane_truth=UNKNOWN_REQUIRES_CLASSIFICATION
+- agent_lee_code_mode | role=unclassified_review_required | lane_truth=UNKNOWN_REQUIRES_CLASSIFICATION
+- leeway-local-assistant-bridge | role=legacy_bridge_review_required | lane_truth=REVIEW_DO_NOT_EXPAND_BRIDGE_SPRAWL
+- leeway_agent_center | role=unclassified_review_required | lane_truth=UNKNOWN_REQUIRES_CLASSIFICATION
+- leeway_hybrid_fabric | role=unclassified_review_required | lane_truth=UNKNOWN_REQUIRES_CLASSIFICATION
+
+PLACEHOLDER MATCHES
+- : |  | 
+
+REMEDIATION ORDER
+1. [NOT_RUNNING] agent-lee-character-cutout-lane -> Inspect logs, start container, then validate health/status/root endpoint.
+1. [NOT_RUNNING] agent-lee-telegram-shell-backup-20260703-144921 -> Inspect logs, start container, then validate health/status/root endpoint.
+1. [NOT_RUNNING] agent-lee-telegram-shell-backup-fullroutes-20260703-150635 -> Inspect logs, start container, then validate health/status/root endpoint.
+1. [NOT_RUNNING] agent-lee-telegram-vision-lane -> Inspect logs, start container, then validate health/status/root endpoint.
+1. [NOT_RUNNING] agent-lee-true-character-mesh-lane -> Inspect logs, start container, then validate health/status/root endpoint.
+2. [NO_HEALTH_PROOF] leeway-jitsi-meet-jicofo-1 -> Add or expose health/status endpoint, or correct architecture port mapping if service is non-HTTP.
+2. [NO_HEALTH_PROOF] leeway-jitsi-meet-jvb-1 -> Add or expose health/status endpoint, or correct architecture port mapping if service is non-HTTP.
+2. [NO_HEALTH_PROOF] leeway-seafile -> Add or expose health/status endpoint, or correct architecture port mapping if service is non-HTTP.
+3. [TRUTH_LIMITED] agent_lee_code_mode -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_agent_center -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_browser_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_calendar_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_desktop_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_device_operator -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_email_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_hybrid_fabric -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_installer_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_license_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_phone_runtime -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway_research_lane -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+3. [TRUTH_LIMITED] leeway-local-assistant-bridge -> Wire real provider/native/device behavior or mark lane disabled until configured. Add behavior proof.
+4. [PLACEHOLDER_MARKER] : -> Inspect marker and either replace with real implementation, remove stale marker, or document why it is acceptable.

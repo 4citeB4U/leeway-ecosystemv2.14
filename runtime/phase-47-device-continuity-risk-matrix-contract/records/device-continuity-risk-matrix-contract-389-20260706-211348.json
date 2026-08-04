@@ -1,0 +1,740 @@
+﻿{
+    "version":  "LEEWAY_DEVICE_CONTINUITY_RISK_MATRIX_CONTRACT_389",
+    "phase":  47,
+    "timestamp":  "2026-07-06T21:13:51",
+    "verdict":  "LEEWAY_DEVICE_CONTINUITY_RISK_MATRIX_CONTRACT_389_WITH_WARNINGS",
+    "contract_only":  true,
+    "no_execute":  true,
+    "purpose":  "Convert 388 Device Continuity expansion families into a formal risk matrix contract before any future UI, API, installer, package, bridge, ADB, SmartThings, DeX, Apple, casting, screen, or device-control expansion.",
+    "inherited_contract":  {
+                               "source":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\runtime\\phase-47-device-continuity-expansion-contract\\latest\\device-continuity-expansion-contract-latest.json",
+                               "source_verdict":  "LEEWAY_DEVICE_CONTINUITY_EXPANSION_CONTRACT_388_NO_EXECUTE_CLEAN",
+                               "source_clean":  true,
+                               "source_continuity_families":  14,
+                               "source_future_pages":  18,
+                               "source_future_apis":  16,
+                               "source_hard_forbidden":  26,
+                               "source_required_future_gates":  10
+                           },
+    "canonical":  {
+                      "standards_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\LeeWay-Standards",
+                      "runtime_fabric_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Leeway Runtime Fabric",
+                      "device_layer_proof_root":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\device-operator",
+                      "standards_root_exists":  true,
+                      "runtime_fabric_root_exists":  true,
+                      "device_layer_proof_root_exists":  true
+                  },
+    "operational_posture":  {
+                                "state":  "LOCKED_HOLD_NO_ACTION_AUTHORITY",
+                                "inherited_freeze":  "DEVICE_LAYER_PHASE_46_FROZEN_GET_ONLY_NO_ACTION",
+                                "expansion_state":  "PHASE_47_DEVICE_CONTINUITY_RISK_MATRIX_CONTRACT_ONLY",
+                                "approval_granted":  false,
+                                "authority_unlocked":  false,
+                                "execution_authorized":  false,
+                                "device_control_authorized":  false,
+                                "physical_action_authorized":  false
+                            },
+    "risk_counts":  {
+                        "total":  14,
+                        "low":  0,
+                        "medium":  1,
+                        "high":  8,
+                        "critical":  5
+                    },
+    "critical_families":  [
+                              "WIRELESS_DEBUGGING_ADB",
+                              "SMARTTHINGS_HOME_CONTROL",
+                              "CAMERA_MICROPHONE_CONTROL",
+                              "LOCK_ACCESS_CONTROL",
+                              "VEHICLE_DEVICE_BOUNDARY"
+                          ],
+    "high_families":  [
+                          "ANDROID_SAMSUNG_CONTINUITY",
+                          "SAMSUNG_DEX_DISPLAY_CONTROL",
+                          "SMART_VIEW_CASTING",
+                          "QUICK_SHARE_FILE_TRANSFER",
+                          "SCREEN_RECORDING_CAPTURE",
+                          "MULTI_CONTROL_KEYBOARD_MOUSE",
+                          "APPLE_CONTINUITY",
+                          "TV_CASTING_REMOTE_CONTROL"
+                      ],
+    "risk_matrix":  [
+                        {
+                            "id":  "ANDROID_SAMSUNG_CONTINUITY",
+                            "name":  "Android and Samsung Continuity",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Phone-to-PC, phone-to-TV, Android/Samsung continuity capability awareness.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "phone_control",
+                                                       "screen_control",
+                                                       "file_transfer",
+                                                       "wireless_debugging",
+                                                       "casting",
+                                                       "pairing"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "adb_platform_tools",
+                                                              "scrcpy",
+                                                              "Samsung_DeX",
+                                                              "Samsung_Flow",
+                                                              "Windows_Phone_Link"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "WIRELESS_DEBUGGING_ADB",
+                            "name":  "Wireless Debugging and ADB",
+                            "risk_level":  "CRITICAL_AUTHORITY",
+                            "risk_class":  "CRITICAL",
+                            "risk_score":  4,
+                            "purpose":  "Android debug bridge authority and phone control boundary.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "adb_pair",
+                                                       "adb_connect",
+                                                       "adb_shell",
+                                                       "adb_install",
+                                                       "scrcpy_control",
+                                                       "persistent_debug_session"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "adb_platform_tools",
+                                                              "scrcpy"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_TIME_LIMITED_AUTHORITY_UNLOCK_AND_LOCKBACK_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "SAMSUNG_DEX_DISPLAY_CONTROL",
+                            "name":  "Samsung DeX Display Control",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Samsung desktop-mode display and continuity control.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "start_dex",
+                                                       "control_dex_session",
+                                                       "cast_display",
+                                                       "screen_control"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Samsung_DeX_for_PC",
+                                                              "Samsung_Flow"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "SMART_VIEW_CASTING",
+                            "name":  "Smart View Casting",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Phone screen casting and mirror-to-TV or mirror-to-display awareness.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "start_cast",
+                                                       "mirror_screen",
+                                                       "control_display",
+                                                       "send_media_to_tv"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Smart_View",
+                                                              "Miracast",
+                                                              "Wireless_Display"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "SMARTTHINGS_HOME_CONTROL",
+                            "name":  "SmartThings and Smart Home Control",
+                            "risk_level":  "CRITICAL_PHYSICAL_AUTHORITY",
+                            "risk_class":  "CRITICAL",
+                            "risk_score":  6,
+                            "purpose":  "Smart home device inventory and future physical-world control authority.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "toggle_device",
+                                                       "unlock_lock",
+                                                       "control_appliance",
+                                                       "change_automation",
+                                                       "camera_control",
+                                                       "mic_control"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "SmartThings_API",
+                                                              "SmartThings_CLI",
+                                                              "Matter_Thread_Discovery",
+                                                              "Home_Assistant_bridge_if_approved"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_TIME_LIMITED_AUTHORITY_UNLOCK_AND_LOCKBACK_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "NEARBY_DEVICE_DISCOVERY",
+                            "name":  "Nearby Device Discovery",
+                            "risk_level":  "MEDIUM",
+                            "risk_class":  "MEDIUM",
+                            "risk_score":  2,
+                            "purpose":  "Nearby device awareness, discovery panels, and read-only proximity inventory.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "pair_device",
+                                                       "connect_device",
+                                                       "scan_network",
+                                                       "port_scan",
+                                                       "control_device"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Windows_Bluetooth_inventory",
+                                                              "mDNS_read_only",
+                                                              "SSDP_read_only",
+                                                              "Zeroconf_read_only"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "READ_ONLY_DISCOVERY_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "QUICK_SHARE_FILE_TRANSFER",
+                            "name":  "Quick Share and File Transfer",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Phone, PC, and nearby device file movement authority.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "send_file",
+                                                       "receive_file",
+                                                       "auto_accept_transfer",
+                                                       "background_file_movement"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Quick_Share",
+                                                              "Nearby_Share",
+                                                              "Windows_Phone_Link"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "SCREEN_RECORDING_CAPTURE",
+                            "name":  "Screen Recording and Capture",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Screen capture, recording, and mirror proof boundaries.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "start_recording",
+                                                       "capture_screen",
+                                                       "save_screen_video",
+                                                       "stream_screen"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Android_screen_record",
+                                                              "scrcpy_record",
+                                                              "Windows_capture"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "MULTI_CONTROL_KEYBOARD_MOUSE",
+                            "name":  "Multi Control Keyboard and Mouse",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "Cross-device keyboard, mouse, cursor, and control continuity.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "move_cursor",
+                                                       "send_keyboard_input",
+                                                       "control_phone",
+                                                       "control_tablet",
+                                                       "control_tv"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Samsung_Multi_Control",
+                                                              "Windows_Input_Control_if_approved"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "APPLE_CONTINUITY",
+                            "name":  "Apple Continuity",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "iOS, Apple TV, macOS, AirPlay, and local Apple device awareness.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "ios_pair",
+                                                       "ios_backup",
+                                                       "file_transfer",
+                                                       "airplay_cast",
+                                                       "apple_tv_remote_control",
+                                                       "mac_remote_execute"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "pymobiledevice3",
+                                                              "libimobiledevice",
+                                                              "pyatv",
+                                                              "AppleScript",
+                                                              "macOS_Shortcuts",
+                                                              "SSH_over_Tailscale_if_approved"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "TV_CASTING_REMOTE_CONTROL",
+                            "name":  "TV Casting and Remote Control",
+                            "risk_level":  "HIGH",
+                            "risk_class":  "HIGH",
+                            "risk_score":  3,
+                            "purpose":  "TV discovery, casting, screen routing, and remote-control boundary.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "wake_tv",
+                                                       "sleep_tv",
+                                                       "cast_screen",
+                                                       "remote_control",
+                                                       "change_input",
+                                                       "change_settings"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "pyatv",
+                                                              "Samsung_TV_local_API_if_approved",
+                                                              "Chromecast_protocol_awareness",
+                                                              "DLNA_UPnP_read_only"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_SINGLE_USE_CONTRACT_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "CAMERA_MICROPHONE_CONTROL",
+                            "name":  "Camera and Microphone Control",
+                            "risk_level":  "CRITICAL_PRIVACY_AUTHORITY",
+                            "risk_class":  "CRITICAL",
+                            "risk_score":  5,
+                            "purpose":  "Camera/mic inventory, permission boundary, and privacy proof requirements.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "turn_on_camera",
+                                                       "turn_on_microphone",
+                                                       "record_audio",
+                                                       "record_video",
+                                                       "stream_sensor"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "Windows_device_inventory",
+                                                              "browser_permission_status_if_available"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_TIME_LIMITED_AUTHORITY_UNLOCK_AND_LOCKBACK_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "LOCK_ACCESS_CONTROL",
+                            "name":  "Locks and Physical Access Control",
+                            "risk_level":  "CRITICAL_PHYSICAL_AUTHORITY",
+                            "risk_class":  "CRITICAL",
+                            "risk_score":  6,
+                            "purpose":  "Physical lock and access-control governance boundary.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "unlock",
+                                                       "lock",
+                                                       "change_code",
+                                                       "open_door",
+                                                       "change_access_rules"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "SmartThings_API_if_approved",
+                                                              "Matter_Thread_if_approved"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_TIME_LIMITED_AUTHORITY_UNLOCK_AND_LOCKBACK_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        },
+                        {
+                            "id":  "VEHICLE_DEVICE_BOUNDARY",
+                            "name":  "Vehicle Device Boundary",
+                            "risk_level":  "CRITICAL_SAFETY_AUTHORITY",
+                            "risk_class":  "CRITICAL",
+                            "risk_score":  7,
+                            "purpose":  "Vehicle-related device authority boundary.",
+                            "allowed_now_in_389":  [
+                                                       "risk_matrix_contract_drafting",
+                                                       "locked_planning",
+                                                       "read_only_reference"
+                                                   ],
+                            "blocked_now_in_389":  [
+                                                       "vehicle_control",
+                                                       "remote_start",
+                                                       "unlock_vehicle",
+                                                       "location_tracking",
+                                                       "diagnostic_mutation"
+                                                   ],
+                            "future_tools_named_in_388":  [
+                                                              "none_until_dedicated_contract"
+                                                          ],
+                            "requires_human_approval":  true,
+                            "requires_owner_authority":  true,
+                            "requires_single_use_contract":  true,
+                            "requires_lockback":  true,
+                            "requires_receipt":  true,
+                            "requires_before_after_proof":  true,
+                            "future_minimum_gate":  "OWNER_APPROVED_TIME_LIMITED_AUTHORITY_UNLOCK_AND_LOCKBACK_GATE",
+                            "action_authorized_in_389":  false,
+                            "device_control_authorized_in_389":  false,
+                            "physical_action_authorized_in_389":  false,
+                            "authority_unlocked_in_389":  false,
+                            "approval_granted_in_389":  false
+                        }
+                    ],
+    "global_rules":  [
+                         {
+                             "id":  "RULE_001_NO_EXECUTION_IN_389",
+                             "rule":  "389 may write the risk matrix contract only. It may not patch source code, create pages, create APIs, install packages, start services, pair devices, or control devices.",
+                             "severity":  "ABSOLUTE"
+                         },
+                         {
+                             "id":  "RULE_002_CRITICAL_REQUIRES_OWNER_UNLOCK",
+                             "rule":  "Any CRITICAL authority, privacy, physical, or safety family requires a future single-use owner-approved unlock contract and immediate lockback.",
+                             "severity":  "CRITICAL"
+                         },
+                         {
+                             "id":  "RULE_003_HIGH_REQUIRES_SINGLE_USE_CONTRACT",
+                             "rule":  "Any HIGH risk family requires a future named target, named action, single-use contract, receipt, and proof after action.",
+                             "severity":  "HIGH"
+                         },
+                         {
+                             "id":  "RULE_004_NO_BACKGROUND_DEVICE_CONTROL",
+                             "rule":  "No background, persistent, or silent device control is allowed without a future explicit owner-authorized runtime contract.",
+                             "severity":  "CRITICAL"
+                         },
+                         {
+                             "id":  "RULE_005_NO_SENSOR_ACTIVATION",
+                             "rule":  "Camera, microphone, screen capture, screen recording, and sensor activation remain blocked unless future permission and privacy gates pass.",
+                             "severity":  "CRITICAL"
+                         },
+                         {
+                             "id":  "RULE_006_NO_PHYSICAL_WORLD_ACTION",
+                             "rule":  "Locks, vehicles, appliances, SmartThings physical actions, TV remote control, and smart home changes remain blocked.",
+                             "severity":  "CRITICAL"
+                         },
+                         {
+                             "id":  "RULE_007_RECEIPTS_REQUIRED",
+                             "rule":  "Every future meaningful action must write route, timestamp, target, request, result, status, file path, and lockback evidence.",
+                             "severity":  "HIGH"
+                         },
+                         {
+                             "id":  "RULE_008_TRUTHFUL_CAPABILITY_DISCLOSURE",
+                             "rule":  "Agent Lee must truthfully say when a device lane is only planned, locked, unavailable, blocked, or awaiting approval.",
+                             "severity":  "HIGH"
+                         }
+                     ],
+    "future_risk_pages":  [
+                              "/device-continuity-risk-matrix",
+                              "/device-continuity-critical-boundaries",
+                              "/device-continuity-approval-gates",
+                              "/device-continuity-lockback-rules",
+                              "/device-continuity-receipts",
+                              "/device-continuity-family-detail"
+                          ],
+    "future_risk_apis":  [
+                             "/api/device-continuity-risk-matrix/summary",
+                             "/api/device-continuity-risk-matrix/families",
+                             "/api/device-continuity-risk-matrix/critical",
+                             "/api/device-continuity-risk-matrix/high",
+                             "/api/device-continuity-risk-matrix/rules",
+                             "/api/device-continuity-risk-matrix/execute"
+                         ],
+    "hard_blocked_in_389":  [
+                                "source_patch",
+                                "frontend_page_creation",
+                                "api_route_creation",
+                                "package_install",
+                                "docker_create",
+                                "docker_restart",
+                                "docker_stop",
+                                "adb_pair",
+                                "adb_connect",
+                                "adb_shell",
+                                "scrcpy_control",
+                                "dex_launch",
+                                "smart_view_cast",
+                                "smartthings_action",
+                                "quick_share_transfer",
+                                "bluetooth_pairing",
+                                "screen_recording",
+                                "camera_activation",
+                                "microphone_activation",
+                                "router_mutation",
+                                "network_scan",
+                                "port_scan",
+                                "device_control",
+                                "physical_action",
+                                "approval_grant",
+                                "authority_unlock"
+                            ],
+    "patch_applied_in_389":  false,
+    "frontend_files_created_in_389":  false,
+    "api_routes_created_in_389":  false,
+    "source_files_modified_in_389":  false,
+    "packages_installed_in_389":  false,
+    "docker_created_in_389":  false,
+    "process_started_in_389":  false,
+    "process_restarted_in_389":  false,
+    "process_stopped_in_389":  false,
+    "valid_save_performed_in_389":  false,
+    "identity_state_mutated_in_389":  false,
+    "approval_granted_in_389":  false,
+    "authority_unlocked_in_389":  false,
+    "execution_authorized_in_389":  false,
+    "physical_action_authorized_in_389":  false,
+    "adb_action_performed":  false,
+    "dex_action_performed":  false,
+    "smart_view_action_performed":  false,
+    "smartthings_action_performed":  false,
+    "bluetooth_pairing_performed":  false,
+    "quick_share_action_performed":  false,
+    "screen_recording_action_performed":  false,
+    "camera_action_performed":  false,
+    "microphone_action_performed":  false,
+    "network_scan_performed":  false,
+    "port_scan_performed":  false,
+    "execution_performed":  false,
+    "device_control_performed":  false,
+    "onboarding_performed":  false,
+    "physical_action_lane_performed":  false,
+    "live_state":  {
+                       "clear_skies":  true,
+                       "all_existing_pages_ok":  true,
+                       "real_alpha_locked_resting":  true,
+                       "device_operator_reachable":  true,
+                       "readiness_safety_blocks":  true,
+                       "hold_locked":  true,
+                       "links_locked":  true,
+                       "risk_matrix_locked":  true,
+                       "risk_matrix_post_block_status":  423,
+                       "links_post_block_status":  423,
+                       "hold_post_block_status":  423,
+                       "runtime_process_probe_count":  28,
+                       "network_adapter_probe_count":  7,
+                       "docker_probe_count":  47
+                   },
+    "safety":  {
+                   "contract_only":  true,
+                   "no_patch_in_389":  true,
+                   "no_package_install":  true,
+                   "no_adb":  true,
+                   "no_scrcpy":  true,
+                   "no_smartthings_control":  true,
+                   "no_smart_view_cast":  true,
+                   "no_dex_launch":  true,
+                   "no_screen_recording":  true,
+                   "no_quick_share":  true,
+                   "no_bluetooth_pairing":  true,
+                   "no_router_action":  true,
+                   "no_phone_action":  true,
+                   "no_tv_action":  true,
+                   "no_camera_action":  true,
+                   "no_microphone_action":  true,
+                   "no_physical_action":  true,
+                   "no_execution":  true,
+                   "no_authority_unlock":  true,
+                   "no_approval_grant":  true,
+                   "docker_prune":  false,
+                   "destructive_cleanup":  false
+               },
+    "recommended_next_script":  "390-device-continuity-ui-api-stubs-contract-no-execute.ps1"
+}

@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agent Lee Visible Mouse Test</title>
+<style>
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #070a12;
+    color: white;
+    font-family: Segoe UI, Arial, sans-serif;
+    overflow: hidden;
+  }
+  .header {
+    padding: 36px 48px 16px;
+  }
+  h1 {
+    font-size: 44px;
+    margin: 0;
+  }
+  .sub {
+    margin-top: 12px;
+    font-size: 22px;
+    color: #b8c7ff;
+  }
+  .stage {
+    position: relative;
+    margin: 28px 48px;
+    height: 1200px;
+    border: 3px solid rgba(255,255,255,0.28);
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(58,84,180,0.25), rgba(255,255,255,0.05));
+  }
+  .target {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    font-weight: 800;
+    background: rgba(255,255,255,0.15);
+    border: 5px solid rgba(255,255,255,0.65);
+    box-shadow: 0 0 40px rgba(255,255,255,0.2);
+    transition: transform 0.15s, background 0.15s, box-shadow 0.15s;
+  }
+  .target:hover {
+    transform: scale(1.18);
+    background: rgba(0,255,140,0.45);
+    box-shadow: 0 0 80px rgba(0,255,140,0.9);
+  }
+  #t1 { left: 90px; top: 120px; }
+  #t2 { left: 420px; top: 420px; }
+  #t3 { left: 760px; top: 140px; }
+  #t4 { left: 300px; top: 780px; }
+  .status {
+    position: fixed;
+    left: 48px;
+    right: 48px;
+    bottom: 36px;
+    padding: 22px 28px;
+    border-radius: 18px;
+    background: rgba(0,0,0,0.72);
+    font-size: 26px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Agent Lee Visible Mouse Test</h1>
+    <div class="sub">Watch the real cursor move slowly across the targets. Targets glow when hovered.</div>
+  </div>
+  <div class="stage">
+    <div class="target" id="t1">ONE</div>
+    <div class="target" id="t2">TWO</div>
+    <div class="target" id="t3">THREE</div>
+    <div class="target" id="t4">FOUR</div>
+  </div>
+  <div class="status">Agent Lee is about to move the real Windows cursor slowly.</div>
+</body>
+</html>

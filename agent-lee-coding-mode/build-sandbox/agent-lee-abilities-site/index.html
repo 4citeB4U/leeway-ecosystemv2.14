@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Lee Abilities Site</title>
+  <meta name="description" content="A one-page premium pitch for Agent Lee: what he can do, what is guarded, and where the receipts live." />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <header class="shell hero">
+    <div class="eyebrow">Agent Lee / code-mode / canonical</div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">VS Code Chat proof, not brochure copy</p>
+        <h1>I do not just answer. I move through the stack.</h1>
+        <p class="lede">
+          Agent Lee is the Leeway runtime with a voice: I can talk, build, test, open the browser,
+          pull files, run receipts, and keep the work moving. I am not a loose model. I am the
+          Leeway runtime with a voice.
+        </p>
+        <div class="hero-pills">
+          <span>Entry surface: VS Code Chat</span>
+          <span>Canonical fingerprint locked</span>
+          <span>Receipt culture on</span>
+        </div>
+        <div class="hero-actions">
+          <button type="button" data-action="cycle-proof">Cycle the proof line</button>
+          <button type="button" class="ghost" data-action="flip-tone">Flip the stance</button>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="panel-heading">Live runtime proof</div>
+        <div class="signal" id="current-proof-line">Web is up. I’m keeping the build lane moving.</div>
+        <dl class="metrics">
+          <div><dt>Who I am</dt><dd>Agent Lee, supreme agent lead</dd></div>
+          <div><dt>What I pitch</dt><dd>Real work, real receipts, no fluff</dd></div>
+          <div><dt>What is guarded</dt><dd>Vision backend and physical actions until validated</dd></div>
+          <div><dt>What I sell</dt><dd>Conversation, code, voice, browser, validation</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </header>
+
+  <main class="shell stack">
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Abilities grid</p>
+        <h2>What Agent Lee brings to the table</h2>
+      </div>
+
+      <div class="abilities-grid">
+        <article class="ability-card">
+          <h3>Live conversation</h3>
+          <p>Fast, direct, and local-first. I keep the thread moving without turning every reply into a ceremony.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Voice and speech</h3>
+          <p>I can speak progress, stream audio, and keep the tone sharp when the work is active.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Mic and transcription</h3>
+          <p>Local capture is available through the runtime path when the safety gates are clear.</p>
+        </article>
+        <article class="ability-card">
+          <h3>VS Code Chat command surface</h3>
+          <p>The adapter at <code>127.0.0.1:8787</code> is the front door for chat-led proof and tool entry.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Desktop, browser, and files</h3>
+          <p>I can open pages, inspect files, run browser proof, and keep local artifacts visible.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Model orchestration</h3>
+          <p>Different lanes for conversation, coding, research, creative 3D, and validation when the work demands it.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Skills, MCP, and tools</h3>
+          <p>The skill universe is real. The tool registry is not decorative. I use what is wired and I say when it is not.</p>
+        </article>
+        <article class="ability-card">
+          <h3>Runtime Fabric</h3>
+          <p>My receipts travel through runtime lanes, not vibes. What I claim gets stamped and inspectable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <article class="panel">
+        <p class="eyebrow">What I can do now</p>
+        <h2>I sell execution, not adjectives.</h2>
+        <ul class="feature-list">
+          <li>Build a visible app page with responsive layout and live interaction.</li>
+          <li>Validate outputs with receipts, screenshots, and file checks.</li>
+          <li>Keep conversation natural, confident, and useful.</li>
+          <li>Use voice lines that sound like Agent Lee, not automation narration.</li>
+          <li>Surface limitations plainly instead of inflating the lane.</li>
+        </ul>
+      </article>
+
+      <article class="panel guarded">
+        <p class="eyebrow">Guarded / still wiring</p>
+        <h2>Here’s the honest edge.</h2>
+        <ul class="feature-list">
+          <li>Vision backend stays guarded until it is validated end-to-end.</li>
+          <li>Physical or robotic actions default to simulation first.</li>
+          <li>Any device action needs explicit confirmation before I treat it as real.</li>
+          <li>Unsupported renderer payloads do not get a fake green light.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section proof-lane">
+      <div class="section-head">
+        <p class="eyebrow">VS Code Chat proof</p>
+        <h2>Proof starts at the adapter, then lands in files.</h2>
+      </div>
+
+      <div class="proof-layout">
+        <article class="panel proof-card">
+          <p class="label">Adapter entry</p>
+          <p class="line">http://127.0.0.1:8787/v1/chat/completions</p>
+          <p class="label">Canonical identity</p>
+          <p class="line mono">leeway.agent-lee.code-mode.canonical.supreme-agent-lead.v1</p>
+          <p class="label">Working stance</p>
+          <p class="line" id="stance-line">I’ve got the receipts lined up. This one’s not just talk.</p>
+        </article>
+
+        <article class="panel proof-card">
+          <p class="label">Current response lane</p>
+          <p class="line" id="response-line">The abilities site is coming together. I’m making it hit like a real pitch, not a brochure.</p>
+          <p class="label">Proof culture</p>
+          <p class="line">Files, receipts, screenshots, validation. If it is not inspectable, it is not locked.</p>
+          <p class="label">Speech policy</p>
+          <p class="line">Natural. Direct. Leeway-first. Not robotic.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section ledger">
+      <div class="section-head">
+        <p class="eyebrow">Stateful research ledger</p>
+        <h2>Candidate evidence, curated evidence, rejected evidence.</h2>
+      </div>
+      <div class="ledger-shell">
+        <article class="panel ledger-summary">
+          <p class="label">Ledger path</p>
+          <p class="line mono" id="ledger-path">Waiting for a validator receipt.</p>
+          <p class="label">Counts</p>
+          <p class="line" id="ledger-counts">No ledger loaded yet.</p>
+          <p class="label">Claim checks</p>
+          <ul class="feature-list compact" id="ledger-claims"></ul>
+        </article>
+        <article class="panel ledger-evidence">
+          <p class="label">Curated evidence</p>
+          <div class="ledger-cards" id="ledger-cards"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section receipts">
+      <div class="section-head">
+        <p class="eyebrow">Receipt section</p>
+        <h2>Everything gets a path.</h2>
+      </div>
+      <div class="receipt-strip">
+        <div>
+          <span>Project manifest</span>
+          <strong>agent-lee-site.manifest.json</strong>
+        </div>
+        <div>
+          <span>Project output</span>
+          <strong>build-sandbox/agent-lee-abilities-site</strong>
+        </div>
+        <div>
+          <span>Validator receipt</span>
+          <strong>Archive/receipts/agent-lee-vscode-chat-abilities-site-YYYYMMDD-HHMMSS.json</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

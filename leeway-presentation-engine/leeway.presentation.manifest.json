@@ -1,0 +1,36 @@
+{
+  "schema": "leeway.presentation.manifest.v1",
+  "objectId": "LW-ECO-014",
+  "name": "LeeWay Presentation Engine",
+  "owner": "agent-lee-prime",
+  "status": "ACTIVE",
+  "classification": "FABRIC_CLIENT_APP",
+  "projectPath": "leeway-presentation-engine",
+  "projectContractPath": "leeway.project.json",
+  "supportSurface": "README.md",
+  "launchSurface": {
+    "entry": "index.html",
+    "route": "/agent-lee/capabilities/presentation/launch",
+    "receipt": "receipts/presentation-launch.receipt.json"
+  },
+  "proofSurface": {
+    "route": "/agent-lee/capabilities/presentation/proof",
+    "receipt": "receipts/presentation-proof.receipt.json",
+    "sharedReceiptRoot": "../Archive/receipts/leeway-presentation-engine"
+  },
+  "narrationModes": {
+    "monetization": {
+      "modeId": "agent-lee-monetization-narration",
+      "source": "../agent-lee-coding-mode/runtime/agent-lee-monetization-narration-mode.json",
+      "primaryModel": "qwen3:latest",
+      "codingSupportModel": "qwen2.5-coder:7b",
+      "purpose": "Proof-backed presentation copy and operator-facing monetization narration"
+    }
+  },
+  "capabilities": [
+    "presentation-engine",
+    "presentation-launch",
+    "presentation-proof",
+    "monetization-narration"
+  ]
+}
