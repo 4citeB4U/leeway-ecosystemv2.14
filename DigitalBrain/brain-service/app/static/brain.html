@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeeWay Digital Brain</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: #020205; color: #cfd2e0;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif; }
+  canvas { display: block; }
+  #tip { position: fixed; z-index: 30; pointer-events: none; background: rgba(4,5,10,0.86);
+    border: 1px solid rgba(255,255,255,0.16); border-radius: 6px; padding: 5px 9px; font-size: 12px;
+    letter-spacing: 0.02em; color: #e8eaf2; opacity: 0; transition: opacity 0.15s; max-width: 340px; }
+  #tip b { color: #fff; }
+  .hud { position: fixed; z-index: 20; pointer-events: none; }
+  #hudTitle { top: 14px; left: 18px; font-size: 13px; letter-spacing: 0.22em; color: rgba(255,255,255,0.55); text-transform: uppercase; }
+  #hudTitle b { color: rgba(255,255,255,0.85); font-weight: 600; }
+  #hudTitle .core { color: #20D8E6; }
+  #hudButtons { top: 14px; right: 18px; display: flex; gap: 8px; pointer-events: auto; }
+  .hbtn { background: rgba(6,8,16,0.72); border: 1px solid rgba(255,255,255,0.18); color: #c9cde0;
+    font: 12px "Space Grotesk", sans-serif; letter-spacing: 0.08em; padding: 5px 10px; border-radius: 6px; cursor: pointer; }
+  .hbtn:hover { border-color: rgba(32,216,230,0.6); color: #fff; }
+  #hudLegend { bottom: 16px; left: 18px; width: 420px; max-height: 200px; overflow: hidden; }
+  #hudLegend .lg { font-size: 10px; letter-spacing: 0.14em; color: rgba(255,255,255,0.4); margin-bottom: 6px; text-transform: uppercase; }
+  #chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip { font-size: 10px; padding: 2px 7px; border-radius: 9px; border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(10,12,22,0.6); color: rgba(255,255,255,0.72); letter-spacing: 0.03em; }
+  .chip.L { border-color: rgba(255,136,0,0.45); color: rgba(255,170,80,0.9); }
+  .chip.R { border-color: rgba(116,38,255,0.5); color: rgba(190,150,255,0.9); }
+  .panel { position: fixed; z-index: 40; background: rgba(5,7,14,0.86); border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.16); box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px); opacity: 0; transform: translateY(8px) scale(0.985);
+    transition: opacity 0.22s, transform 0.22s; pointer-events: none; }
+  .panel.open { opacity: 1; transform: none; pointer-events: auto; }
+  #corePanel { top: 64px; left: 50%; transform: translateX(-50%) translateY(8px); width: 640px; max-width: calc(100vw - 40px); max-height: 70vh; overflow: auto; }
+  #corePanel.open { transform: translateX(-50%); }
+  #inspector { top: 64px; right: 18px; width: 380px; max-width: calc(100vw - 36px); max-height: 74vh; display: flex; flex-direction: column; }
+  #hwPanel { top: 64px; left: 18px; width: 430px; max-width: calc(100vw - 36px); max-height: 78vh; overflow: auto; }
+  .phead { padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; }
+  .phead .t { font-size: 13px; letter-spacing: 0.1em; color: rgba(255,255,255,0.9); text-transform: uppercase; }
+  .phead .x { cursor: pointer; color: rgba(255,255,255,0.5); font-size: 15px; line-height: 1; padding: 2px 6px; border: 1px solid rgba(255,255,255,0.2); border-radius: 5px; }
+  .phead .x:hover { color: #fff; border-color: rgba(255,255,255,0.6); }
+  .tabs { display: flex; gap: 2px; padding: 6px 10px 0; }
+  .tab { font-size: 11px; letter-spacing: 0.06em; padding: 5px 10px; border-radius: 6px 6px 0 0; cursor: pointer;
+    color: rgba(255,255,255,0.45); border: 1px solid transparent; border-bottom: none; }
+  .tab.on { color: #fff; background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.14); }
+  .pbody { padding: 10px 14px 14px; font-size: 12px; overflow: auto; max-height: 52vh; }
+  .pbody h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.42); margin: 10px 0 4px; }
+  .pbody h4:first-child { margin-top: 0; }
+  .kv { display: grid; grid-template-columns: 110px 1fr; gap: 3px 10px; }
+  .kv .k { color: rgba(255,255,255,0.4); }
+  .kv .v { color: rgba(255,255,255,0.88); word-break: break-word; }
+  .path { color: rgba(32,216,230,0.9); font-size: 11px; word-break: break-all; }
+  pre.pv { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px;
+    padding: 8px; font: 11px/1.5 Consolas, monospace; color: #b9c3d8; white-space: pre-wrap; max-height: 240px; overflow: auto; }
+  .nlist { display: flex; flex-direction: column; gap: 4px; }
+  .nrow { padding: 5px 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; font-size: 11.5px; }
+  .nrow:hover { border-color: rgba(32,216,230,0.55); }
+  .nrow .pred { color: rgba(32,216,230,0.75); font-size: 10px; letter-spacing: 0.06em; }
+  .prow { font-size: 11px; color: rgba(255,255,255,0.6); padding: 3px 0; border-bottom: 1px dashed rgba(255,255,255,0.07); }
+  .prow .pkind { color: rgba(255,170,80,0.85); }
+  .nexus-fns { display: flex; flex-wrap: wrap; gap: 5px; }
+  .nfn { font-size: 10.5px; letter-spacing: 0.05em; padding: 3px 8px; border-radius: 12px;
+    border: 1px solid rgba(32,216,230,0.4); color: rgba(120,235,244,0.9); background: rgba(32,216,230,0.07); }
+  .svc { display: flex; justify-content: space-between; padding: 4px 2px; border-bottom: 1px dashed rgba(255,255,255,0.08); font-size: 11.5px; }
+  .svc .ep { color: rgba(32,216,230,0.8); font-size: 10.5px; }
+  .svc .st { font-size: 10px; letter-spacing: 0.08em; padding: 1px 6px; border-radius: 8px; border: 1px solid rgba(120,235,130,0.4); color: rgba(120,235,130,0.9); }
+  #leader { position: fixed; z-index: 25; left: 0; top: 0; pointer-events: none; }
+  #statusLine { position: fixed; bottom: 14px; right: 18px; z-index: 20; font-size: 11px; letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.35); text-align: right; pointer-events: none; }
+  #hintBar { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); z-index: 20; font-size: 11px;
+    letter-spacing: 0.08em; color: rgba(255,255,255,0.3); text-align: center; pointer-events: none; }
+  #crumbs { position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 21; display: flex; gap: 6px;
+    align-items: center; font-size: 11px; letter-spacing: 0.06em; color: rgba(255,255,255,0.55); pointer-events: none; }
+  #crumbs .crumb { pointer-events: auto; cursor: pointer; padding: 3px 10px; border-radius: 12px;
+    border: 1px solid rgba(32,216,230,0.35); color: rgba(120,235,244,0.9); background: rgba(32,216,230,0.08); }
+  #crumbs .crumb:hover { border-color: rgba(32,216,230,0.8); }
+  #crumbs .sep { color: rgba(255,255,255,0.3); }
+  .err { color: rgba(255,120,120,0.95); }
+  .enterbtn { width: 100%; margin-top: 8px; padding: 7px; border-radius: 8px; cursor: pointer;
+    border: 1px solid rgba(32,216,230,0.5); background: rgba(32,216,230,0.1);
+    color: rgba(150,240,248,0.95); font-size: 11px; letter-spacing: 0.1em; }
+  .enterbtn:hover { background: rgba(32,216,230,0.22); }
+  /* --- spatial navigation shell --- */
+  #navWidget { position: fixed; bottom: 42px; left: 50%; transform: translateX(-50%); z-index: 22;
+    display: flex; gap: 6px; align-items: center; pointer-events: auto;
+    background: rgba(5,7,14,0.72); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px;
+    padding: 5px 8px; backdrop-filter: blur(4px); }
+  #navWidget .nv { padding: 4px 9px; font-size: 10px; letter-spacing: 0.1em; }
+  #navWidget .nv.on { border-color: rgba(32,216,230,0.75); color: #bff6fb; background: rgba(32,216,230,0.14); }
+  #navWidget .nvsep { color: rgba(255,255,255,0.22); font-size: 10px; }
+  #modeChip { font-size: 10px; letter-spacing: 0.14em; color: rgba(32,216,230,0.75); text-transform: uppercase; white-space: nowrap; }
+  #flyHud { position: fixed; top: 62px; left: 50%; transform: translateX(-50%); z-index: 22; display: none;
+    font-size: 11px; letter-spacing: 0.1em; color: rgba(150,240,248,0.95); background: rgba(6,8,16,0.82);
+    border: 1px solid rgba(32,216,230,0.45); padding: 5px 12px; border-radius: 8px; pointer-events: none; }
+  #dbg { position: fixed; left: 18px; top: 54px; z-index: 25; display: none; pointer-events: none;
+    font: 10px/1.55 Consolas, monospace; color: rgba(120,235,244,0.8); background: rgba(4,6,12,0.72);
+    border: 1px solid rgba(32,216,230,0.28); border-radius: 6px; padding: 6px 9px; white-space: pre; }
+  .hemiTag { position: fixed; z-index: 21; pointer-events: none; font-size: 11px; letter-spacing: 0.24em;
+    color: rgba(255,255,255,0.38); text-transform: uppercase; }
+  #tagL { left: 22px; top: 50%; transform: translateY(-50%); }
+  #tagR { right: 22px; top: 50%; transform: translateY(-50%); }
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<canvas id="leader" width="24" height="24"></canvas>
+<div id="tip"></div>
+<div class="hud" id="hudTitle"><b>LEEWAY <span class="core">DIGITAL BRAIN</span></b> · cortex v0.3</div>
+<div class="hud" id="hudButtons">
+  <button class="hbtn" id="btnCore">RUNTIME CORE</button>
+  <button class="hbtn" id="btnHw">HARDWARE</button>
+  <button class="hbtn" id="btnRef">REFRESH PLACEMENTS</button>
+  <button class="hbtn" id="btnSound">SOUND ON</button>
+  <button class="hbtn" id="btnHelp">HELP</button>
+</div>
+<div class="hud" id="hudLegend">
+  <div class="lg">Cortical territories — click nodes to inspect, drag to move, core for runtime nexus</div>
+  <div id="chips"></div>
+</div>
+<div id="statusLine"></div>
+<div id="crumbs"></div>
+<div id="hintBar">left-drag empty · pan — right-drag · orbit — wheel · dolly — shift+drag · pan — dbl-click hemi/region/node · focus — Esc · back — 1/2/3 · focus — V · fly — G · grid</div>
+
+<div class="hud" id="navWidget">
+  <button class="hbtn nv" id="nvBrain" title="Whole brain (A)">BRAIN</button>
+  <button class="hbtn nv" id="nvEco" title="Enter ecosystem hemisphere (1)">ECOSYSTEM</button>
+  <button class="hbtn nv" id="nvFabric" title="Enter Runtime Fabric (2)">FABRIC</button>
+  <button class="hbtn nv" id="nvUser" title="Enter user hemisphere (3)">USER</button>
+  <span class="nvsep">·</span>
+  <button class="hbtn nv" id="nvReset" title="Reset view (R)">RESET</button>
+  <button class="hbtn nv" id="nvFly" title="Fly mode (V)">FLY</button>
+  <button class="hbtn nv" id="nvGrid" title="Navigation grid (G)">GRID</button>
+  <span class="nvsep">·</span>
+  <span id="modeChip">ORBIT·CANVAS</span>
+</div>
+<div id="flyHud">FLY MODE — WASD move · Q/E down/up · drag look · wheel speed · Shift boost · Esc exit</div>
+<pre id="dbg"></pre>
+<div class="hemiTag" id="tagL">LeeWay Ecosystem</div>
+<div class="hemiTag" id="tagR">User Brain</div>
+
+<div class="panel" id="corePanel">
+  <div class="phead"><span class="t" id="coreTitle">Runtime Fabric Nexus</span><span class="x" id="coreClose">✕</span></div>
+  <div class="pbody" id="coreBody"></div>
+</div>
+
+<div class="panel" id="inspector">
+  <div class="phead"><span class="t" id="inspTitle">Node</span><span class="x" id="inspClose">✕</span></div>
+  <div class="tabs" id="inspTabs"></div>
+  <div class="pbody" id="inspBody"></div>
+</div>
+
+<div class="panel" id="hwPanel">
+  <div class="phead"><span class="t">Host Hardware · Device Lanes</span><span class="x" id="hwClose">✕</span></div>
+  <div class="pbody" id="hwBody"></div>
+</div>
+
+<script src="/brain/static/vendor/three.min.js"></script>
+<script>
+"use strict";
+
+/* ============================== globals (probe-stable) ============================== */
+let graphData = { nodes: [], links: [] }, nodeById = new Map();
+const degree = new Map();  // link degree for edge styling (P1-12 live deltas)
+let nodeMeshes = [];       // {group, spr, icon, ring, userData}
+let relEdges = [];         // relationship + route edges
+let filaments = [];        // cross-hemisphere pathways
+let SF = { state: "idle", activeId: null, animating: false, dragId: null, hoverId: null };
+let dimL = 1, dimR = 1;
+let leftPoints = null, rightPoints = null;   // THREE.Group of per-region point clouds
+const regionClouds = [];                      // {region, mat, uDim, count}
+let coreGroup = null;
+let hemiHits = [], regionHits = [];           // invisible pick volumes for hemi/region navigation
+
+const CFG = {
+  fov: 44, near: 0.1, far: 60,
+  left: new THREE.Vector3(-3.4, 0, 0), right: new THREE.Vector3(3.4, 0, 0),
+  coreR: 0.62,
+  colors: {
+    orange: new THREE.Color(0xff8800), gold: new THREE.Color(0xffad1f), amber: new THREE.Color(0xff7a00),
+    hot: new THREE.Color(0xfff4d2), deepO: new THREE.Color(0x6c2900),
+    purple: new THREE.Color(0x7426ff), violet: new THREE.Color(0xa943ff), magenta: new THREE.Color(0xd55cff),
+    deepP: new THREE.Color(0x260046), pale: new THREE.Color(0xf0d8ff), teal: new THREE.Color(0x20d8e6),
+  },
+};
+
+const REGIONS = [
+  { key: "governance", side: "L", label: "Governance", ax: -1.15, ay: 0.10, az: 0.95, r: 0.85 },
+  { key: "development", side: "L", label: "Development", ax: 0.35, ay: 0.45, az: 0.35, r: 0.95 },
+  { key: "applications", side: "L", label: "Applications", ax: 1.05, ay: 0.15, az: 0.80, r: 0.80 },
+  { key: "infrastructure", side: "L", label: "Infrastructure", ax: 0.55, ay: -0.55, az: -0.75, r: 0.75 },
+  { key: "runtime-services", side: "L", label: "Runtime / Services", ax: -0.15, ay: -0.45, az: -0.40, r: 0.90 },
+  { key: "agents", side: "L", label: "Agents", ax: -0.45, ay: 0.95, az: 0.45, r: 0.80 },
+  { key: "skills-mcp", side: "L", label: "Skills / MCPs", ax: -0.95, ay: 0.70, az: -0.25, r: 0.95 },
+  { key: "models", side: "L", label: "Models", ax: -0.25, ay: 0.25, az: -0.80, r: 0.75 },
+  { key: "memory-evidence", side: "L", label: "Memory & Evidence", ax: 1.00, ay: -0.10, az: -0.55, r: 0.80 },
+  { key: "profile", side: "R", label: "Profile", ax: 0.50, ay: 0.85, az: 0.75, r: 0.70 },
+  { key: "conversations", side: "R", label: "Conversations", ax: 0.05, ay: 0.55, az: 0.40, r: 0.75 },
+  { key: "projects", side: "R", label: "Projects", ax: -0.45, ay: 0.45, az: 0.25, r: 0.80 },
+  { key: "documents", side: "R", label: "Documents", ax: -0.95, ay: 0.30, az: -0.35, r: 0.90 },
+  { key: "creations", side: "R", label: "Creations", ax: -0.20, ay: -0.60, az: -0.55, r: 0.75 },
+  { key: "communication", side: "R", label: "Communication", ax: 0.40, ay: -0.15, az: 0.85, r: 0.75 },
+  { key: "media", side: "R", label: "Media", ax: 0.90, ay: -0.45, az: -0.45, r: 0.70 },
+  { key: "memory", side: "R", label: "Memory", ax: -0.70, ay: -0.20, az: -0.85, r: 0.80 },
+  { key: "tasks", side: "R", label: "Tasks", ax: 0.00, ay: -0.80, az: 0.45, r: 0.70 },
+  { key: "history", side: "R", label: "History", ax: -1.05, ay: -0.05, az: -0.30, r: 0.85 },
+];
+
+const TYPE_COLORS = {
+  skill: "#ffb25c", capability: "#ff8800", standard: "#ffad1f", law: "#ffad1f", contract: "#ffd15c",
+  application: "#ffd15c", service: "#ff9a3d", evidence: "#ff7a00", ledger: "#ff8a30", model: "#ffefc4",
+  note: "#b47fff", task: "#a26bff", history: "#c08cff", preference: "#d55cff", proof: "#ff7a00",
+};
+const HUB_COLOR_L = "#fff4d2", HUB_COLOR_R = "#f0d8ff";
+
+function regionByKey(k) { return REGIONS.find(r => r.key === k); }
+function regionCenter(r) {
+  const c = r.side === "L" ? CFG.left : CFG.right;
+  return new THREE.Vector3(c.x + r.ax, c.y + r.ay, c.z + r.az);
+}
+function nodeColor(n, hub) {
+  if (hub) return n.hemisphere === "L" ? HUB_COLOR_L : HUB_COLOR_R;
+  return TYPE_COLORS[n.type] || (n.hemisphere === "L" ? "#ff8800" : "#7426ff");
+}
+
+/* ============================== helpers ============================== */
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function lerp(a, b, t) { return a + (b - a) * t; }
+function lerpTo(cur, target, k) { return Math.abs(target - cur) < 0.004 ? target : lerp(cur, target, k); }
+function randn() { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random();
+  return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+const $ = (id) => document.getElementById(id);
+
+const canvas = $("cv");
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.6));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x020205, 1);
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x020205, 0.028);
+const camera = new THREE.PerspectiveCamera(CFG.fov, window.innerWidth / window.innerHeight, CFG.near, CFG.far);
+
+scene.add(new THREE.AmbientLight(0x8899ff, 0.25));
+const keyLight = new THREE.PointLight(0xffffff, 0.5, 40); keyLight.position.set(2, 4, 6); scene.add(keyLight);
+const rimLight = new THREE.PointLight(0x7426ff, 0.35, 40); rimLight.position.set(-4, -2, -3); scene.add(rimLight);
+
+/* ============================== audio ============================== */
+const Sound = { on: true, ctx: null, master: null, osc: null, lfo: null, noise: null };
+function initAudio() {
+  try {
+    const ctx = Sound.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    Sound.master = ctx.createGain(); Sound.master.gain.value = 0.16; Sound.master.connect(ctx.destination);
+    const o = Sound.osc = ctx.createOscillator(); o.type = "sine"; o.frequency.value = 55; o.detune.value = 6;
+    const lfo = Sound.lfo = ctx.createOscillator(); lfo.frequency.value = 0.16;
+    const lg = ctx.createGain(); lg.gain.value = 1.6; lfo.connect(lg); lg.connect(o.frequency);
+    const og = ctx.createGain(); og.gain.value = 0.5; o.connect(og); og.connect(Sound.master);
+    const buf = ctx.createBuffer(1, ctx.sampleRate * 2, ctx.sampleRate);
+    const d = buf.getChannelData(0);
+    for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * 0.25;
+    const src = ctx.createBufferSource(); src.buffer = buf; src.loop = true;
+    const nf = ctx.createBiquadFilter(); nf.type = "bandpass"; nf.frequency.value = 5200; nf.Q.value = 0.6;
+    const ng = ctx.createGain(); ng.gain.value = 0.03; src.connect(nf); nf.connect(ng); ng.connect(Sound.master);
+    o.start(); lfo.start(); src.start();
+  } catch { Sound.on = false; }
+}
+function tone(freq, dur, type, vol, when) {
+  if (!Sound.on || !Sound.ctx) return;
+  const t0 = Sound.ctx.currentTime + (when || 0);
+  const o = Sound.ctx.createOscillator(), g = Sound.ctx.createGain();
+  o.type = type || "sine"; o.frequency.setValueAtTime(freq, t0);
+  g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(vol || 0.12, t0 + 0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001, t0 + (dur || 0.3));
+  o.connect(g); g.connect(Sound.master); o.start(t0); o.stop(t0 + (dur || 0.3) + 0.05);
+}
+
+/* ============================== textures ============================== */
+function glowTexture(inner, outer) {
+  const c = document.createElement("canvas"); c.width = c.height = 64;
+  const g = c.getContext("2d"); const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  gr.addColorStop(0, inner); gr.addColorStop(0.45, outer); gr.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+  const t = new THREE.CanvasTexture(c); t.needsUpdate = true; return t;
+}
+function labelTexture(text, color, sub) {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 128;
+  const g = c.getContext("2d");
+  g.font = "600 44px 'Space Grotesk','Segoe UI',sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  g.fillStyle = "rgba(4,6,12,0.7)";
+  const w = g.measureText(text).width + 46;
+  g.fillStyle = "rgba(0,0,0,0)"; g.fillRect(0, 0, 512, 128);
+  g.fillStyle = "rgba(4,6,12,0.72)";
+  g.beginPath(); g.roundRect(256 - w / 2, 34, w, 60, 12); g.fill();
+  g.strokeStyle = color; g.lineWidth = 2;
+  g.strokeRect(256 - w / 2, 34, w, 60);
+  g.fillStyle = color; g.fillText(text, 256, 66);
+  if (sub) { g.font = "400 24px 'Space Grotesk',sans-serif"; g.fillStyle = "rgba(255,255,255,0.55)"; g.fillText(sub, 256, 104); }
+  const t = new THREE.CanvasTexture(c); t.needsUpdate = true; return t;
+}
+function nodeSpriteTexture(glyph, color) {
+  const c = document.createElement("canvas"); c.width = c.height = 64;
+  const g = c.getContext("2d");
+  const gr = g.createRadialGradient(32, 32, 4, 32, 32, 32);
+  gr.addColorStop(0, color); gr.addColorStop(0.5, hexA(color, 0.55)); gr.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+  g.fillStyle = "rgba(8,10,20,0.92)"; g.beginPath(); g.arc(32, 32, 15, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = color; g.lineWidth = 2.4; g.stroke();
+  g.fillStyle = "#ffffff"; g.font = "600 15px 'Space Grotesk',sans-serif";
+  g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(glyph.slice(0, 2).toUpperCase(), 32, 33);
+  const t = new THREE.CanvasTexture(c); t.needsUpdate = true; return t;
+}
+function hexA(hex, a) {
+  const h = hex.replace("#", ""); const r = parseInt(h.slice(0, 2), 16), gg = parseInt(h.slice(2, 4), 16), b = parseInt(h.slice(4, 6), 16);
+  return `rgba(${r},${gg},${b},${a})`;
+}
+function glyphFor(n) {
+  if (n.type === "skill") return "SK";
+  if (n.type === "capability") return "CP";
+  if (n.type === "application" || n.type === "service") return "AP";
+  if (n.type === "evidence" || n.type === "ledger" || n.type === "proof") return "EV";
+  if (n.type === "standard" || n.type === "law" || n.type === "contract") return "LAW";
+  if (n.type === "model") return "MD";
+  if (n.type === "note") return "NT";
+  if (n.type === "task") return "TK";
+  if (n.type === "history") return "HI";
+  if (n.type === "preference") return "PR";
+  return n.type ? n.type.slice(0, 2) : "ND";
+}
+
+/* ============================== point shader ============================== */
+function pointMaterial(baseColor) {
+  return new THREE.ShaderMaterial({
+    uniforms: { uTime: { value: 0 }, uDim: { value: 1 },
+      uTex: { value: glowTexture("rgba(255,255,255,0.85)", "rgba(255,255,255,0.25)") } },
+    vertexShader: `
+      attribute vec3 aColor; attribute float aSize; attribute float aPhase;
+      uniform float uTime;
+      varying vec3 vColor; varying float vTw;
+      void main(){
+        vColor = aColor;
+        vec3 p = position;
+        p.y += sin(uTime * 0.28 + aPhase) * 0.06;
+        p.x += sin(uTime * 0.19 + aPhase * 1.7) * 0.05;
+        vTw = 0.75 + 0.25 * sin(uTime * (0.25 + fract(aPhase) * 0.35) + aPhase * 3.0);
+        vec4 mv = modelViewMatrix * vec4(p, 1.0);
+        gl_PointSize = min(aSize * (250.0 / -mv.z), 22.0) * vTw;
+        gl_Position = projectionMatrix * mv;
+      }`,
+    fragmentShader: `
+      uniform sampler2D uTex; uniform float uDim;
+      varying vec3 vColor; varying float vTw;
+      void main(){
+        vec4 t = texture2D(uTex, gl_PointCoord);
+        gl_FragColor = vec4(vColor * (0.62 + 0.38 * vTw) * uDim, t.a * (0.55 + 0.45 * vTw) * uDim);
+      }`,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+  });
+}
+function makePointsCloud(positions, colors, sizes, phases, mat) {
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geo.setAttribute("aColor", new THREE.Float32BufferAttribute(colors, 3));
+  geo.setAttribute("aSize", new THREE.Float32BufferAttribute(sizes, 1));
+  geo.setAttribute("aPhase", new THREE.Float32BufferAttribute(phases, 1));
+  return new THREE.Points(geo, mat);
+}
+
+/* ============================== cortical region clouds ============================== */
+function regionHueShift(r) {
+  const seed = r.key.length + (r.side === "L" ? 28 : 268);
+  return r.side === "L" ? [28 + Math.sin(seed) * 6, 0.98, 0.58] : [268 + Math.sin(seed * 1.3) * 8, 0.96, 0.60];
+}
+function hslColor(h, s, l, a) { return new THREE.Color().setHSL(((h % 360) + 360) % 360 / 360, s, l); }
+
+function buildCortex() {
+  leftPoints = new THREE.Group(); rightPoints = new THREE.Group();
+  const sparseL = [], sparseR = [];
+  const neighborSeeds = [];
+  for (const r of REGIONS) neighborSeeds.push({ r, c: regionCenter(r) });
+
+  for (const r of REGIONS) {
+    const center = regionCenter(r);
+    const [hue, sat, li] = regionHueShift(r);
+    const pts = [], cols = [], sizes = [], phases = [];
+    const n = r.r > 0.85 ? 72 : 58;
+    for (let i = 0; i < n; i++) {
+      const rr = Math.cbrt(Math.random());
+      const u = randn(), v = randn(), w = randn();
+      const rad = rr * r.r;
+      let px = center.x + u * rad * 0.72, py = center.y + v * rad * 0.6, pz = center.z + w * rad * 0.55;
+      const bx = (px - center.x) / r.r, by = (py - center.y) / r.r;
+      const bulge = 1 + 0.28 * Math.exp(-(bx * bx + by * by) * 2.2);
+      px *= bulge; py *= bulge;
+      pts.push(px, py, pz);
+      const lv = li + (Math.random() - 0.5) * 0.22;
+      const h = hue + (Math.random() - 0.5) * 5;
+      const c = hslColor(h, sat, clamp(lv, 0.2, 0.95));
+      cols.push(c.r, c.g, c.b);
+      sizes.push(1.8 + Math.random() * 3.0);
+      phases.push(Math.random() * 100);
+    }
+    const mat = pointMaterial(hslColor(hue, sat, li));
+    const cloud = makePointsCloud(pts, cols, sizes, phases, mat);
+    cloud.userData = { region: r.key, side: r.side };
+    regionClouds.push({ region: r.key, side: r.side, mat, uDim: mat.uniforms.uDim, count: n });
+    (r.side === "L" ? leftPoints : rightPoints).add(cloud);
+  }
+
+  for (let i = 0; i < neighborSeeds.length; i++) {
+    const a = neighborSeeds[i];
+    const others = neighborSeeds.filter(o => o.r.side === a.r.side && o !== a)
+      .sort((p, q) => p.c.distanceTo(a.c) - q.c.distanceTo(a.c)).slice(0, 2);
+    for (const b of others) {
+      const [hue, sat, li] = regionHueShift(a.r);
+      const mat = pointMaterial(hslColor(hue, sat, li));
+      const pts = [], cols = [], sizes = [], phases = [];
+      for (let k = 0; k < 16; k++) {
+        const t = Math.random();
+        const p = a.c.clone().lerp(b.c, t);
+        p.x += randn() * 0.22; p.y += randn() * 0.22; p.z += randn() * 0.16;
+        pts.push(p.x, p.y, p.z);
+        const c = hslColor(hue + (Math.random() - 0.5) * 4, sat, li + (Math.random() - 0.5) * 0.18);
+        cols.push(c.r, c.g, c.b);
+        sizes.push(1.3 + Math.random() * 1.9);
+        phases.push(Math.random() * 100);
+      }
+      const cloud = makePointsCloud(pts, cols, sizes, phases, mat);
+      cloud.userData = { region: a.r.key + "+" + b.r.key, side: a.r.side, tissue: true };
+      (a.r.side === "L" ? leftPoints : rightPoints).add(cloud);
+    }
+  }
+
+  for (let i = 0; i < 130; i++) {
+    const side = Math.random() < 0.5;
+    const c = side ? CFG.left : CFG.right;
+    const ang = Math.random() * Math.PI * 2, rr = 0.4 + Math.random() * 1.9;
+    const px = c.x + Math.cos(ang) * rr, py = c.y + Math.sin(ang) * rr * 0.62, pz = (Math.random() - 0.5) * 1.0;
+    (side ? sparseL : sparseR).push(px, py, pz);
+  }
+  function sparseCloud(list, hue, sat, li) {
+    const mat = pointMaterial(hslColor(hue, sat, li));
+    const n = list.length / 3;
+    const cols = [], sizes = [], phases = [];
+    for (let i = 0; i < n; i++) {
+      const c = hslColor(hue + (Math.random() - 0.5) * 10, sat, li + (Math.random() - 0.5) * 0.3);
+      cols.push(c.r, c.g, c.b); sizes.push(1.2 + Math.random() * 1.8); phases.push(Math.random() * 100);
+    }
+    return makePointsCloud(list, cols, sizes, phases, mat);
+  }
+  leftPoints.add(sparseCloud(sparseL, 28, 0.9, 0.5));
+  rightPoints.add(sparseCloud(sparseR, 268, 0.9, 0.52));
+
+  scene.add(leftPoints); scene.add(rightPoints);
+
+  /* invisible pick volumes: hemisphere + region targets (P1-13 nav) */
+  hemiHits = [];
+  for (const side of ["L", "R"]) {
+    const c = side === "L" ? CFG.left : CFG.right;
+    const h = new THREE.Mesh(new THREE.SphereGeometry(2.35, 14, 10), new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false }));
+    h.position.copy(c);
+    h.userData = { hemi: side };
+    scene.add(h);
+    hemiHits.push(h);
+  }
+  regionHits = [];
+  for (const r of REGIONS) {
+    const m = new THREE.Mesh(new THREE.SphereGeometry(r.r * 1.12, 12, 8), new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false }));
+    m.position.copy(regionCenter(r));
+    m.userData = { region: r.key, side: r.side };
+    scene.add(m);
+    regionHits.push(m);
+  }
+}
+
+/* ============================== deterministic cortical projection (Phase 9) ============================== */
+/* B64 address -> cortical geometry. Deterministic: same address -> same position.
+   Pipeline: words -> 6-bit indices -> 2-bit local coords (4x4x4 cell) -> nested
+   scope transforms (region cell, cluster cell, node cell) -> hemisphere transform
+   (via regionCenter) -> cortical curvature (blob bulge) -> brain-fold displacement
+   (address hash) -> visual offset (dragOffset, added at drag time, never at home). */
+function b64Index(word) {
+  const c = word.charCodeAt(0);
+  if (c >= 65 && c <= 90) return c - 65;         // A-Z -> 0..25
+  if (c >= 97 && c <= 122) return c - 71;        // a-z -> 26..51
+  if (c >= 48 && c <= 57) return c + 4;          // 0-9 -> 52..61
+  if (word === "+") return 62;
+  if (word === "/") return 63;
+  return 0;
+}
+function localCoords(index) {
+  /* CANONICAL (b64_cortex.py to_xyz): x=(b1b0), y=(b3b2), z=(b5b4).
+     index&3 -> x, (index>>2)&3 -> y, (index>>4)&3 -> z. X is the hemi-mirror axis. */
+  return { x: (index & 3), y: ((index >> 2) & 3), z: ((index >> 4) & 3) };
+}
+function hashStr(s) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+  return h;
+}
+/* Recursive scope state (P1-9): when inside an addressed scope, children project
+   their RELATIVE B64 words around the scope origin — a new local 64-field. */
+let scopeWords = null;   // canonical words consumed by the current scope, e.g. ["B","A"] for L:B:A
+let scopeHome = null;    // canonical home of the current scope node (the local universe origin)
+function brainPosition(n) {
+  const reg = regionByKey(n.region) || { key: "documents", side: "R", ax: 0, ay: 0, az: 0, r: 0.7 };
+  const full = (n.brain_address && n.brain_address.path) || "";
+  const words = full.split(":").slice(1);
+  const hemiMirror = (full.startsWith("R")) ? -1 : (reg.side === "R" ? -1 : 1);
+
+  /* LOCAL UNIVERSE: current scope consumed N words; this node has a longer path,
+     so project the relative suffix around the scope origin (galaxy-inside-galaxy). */
+  if (scopeHome && scopeWords && words.length > scopeWords.length) {
+    const rel = words.slice(scopeWords.length);
+    const p = scopeHome.clone();
+    const ls = 0.55;
+    const lc = localCoords(b64Index(rel[0]));
+    p.x += (lc.x - 1.5) * ls * hemiMirror;
+    p.y += (lc.y - 1.5) * ls;
+    p.z += (lc.z - 1.5) * ls * 0.6;
+    const h = hashStr(full);
+    const fold = ls * 0.3;
+    p.x += (((h >>> 0) % 200) / 100 - 1) * fold * hemiMirror;
+    p.y += (((h >>> 8) % 200) / 100 - 1) * fold;
+    p.z += (((h >>> 16) % 200) / 100 - 1) * fold * 0.7;
+    return p;
+  }
+
+  const base = regionCenter(reg);
+  const p = base.clone();
+  if (words.length >= 1) {
+    /* Level 1 (region word): the region's own pin word -> anchor cell within the region blob */
+    const rc = localCoords(b64Index(words[0]));
+    const rs = reg.r * 0.42;
+    p.x += (rc.x - 1.5) * rs * hemiMirror;
+    p.y += (rc.y - 1.5) * rs; p.z += (rc.z - 1.5) * rs * 0.6;
+  }
+  const scales = [reg.r * 0.30, reg.r * 0.16, reg.r * 0.09];
+  for (let i = 1; i < words.length && i <= 3; i++) {
+    const lc = localCoords(b64Index(words[i]));
+    const s = scales[i - 1];
+    p.x += (lc.x - 1.5) * s * hemiMirror;
+    p.y += (lc.y - 1.5) * s; p.z += (lc.z - 1.5) * s * 0.6;
+  }
+  /* cortical curvature: shell bulge towards the rim of the blob */
+  const dx = p.x - base.x, dy = p.y - base.y;
+  const rad = Math.sqrt(dx * dx + dy * dy) / (reg.r || 0.7);
+  const bulge = 0.10 * rad * rad * (0.35 + 0.65 * Math.exp(-(rad - 1.6) * (rad - 1.6) * 1.4));
+  p.z += bulge * 0.7; p.y += bulge * 0.45;
+  /* brain-fold displacement: deterministic per full address */
+  const h = hashStr(full || (n.id || ""));
+  const fold = 0.055 * (reg.r || 0.7);
+  p.x += (((h >>> 0) % 200) / 100 - 1) * fold * hemiMirror;
+  p.y += (((h >>> 8) % 200) / 100 - 1) * fold;
+  p.z += (((h >>> 16) % 200) / 100 - 1) * fold * 0.7;
+  return p;
+}
+
+/* ============================== semantic node layout ============================== */
+function nodeHomePosition(n) {
+  const reg = regionByKey(n.region);
+  const center = regionCenter(reg || { key: "documents", side: "R", ax: 0, ay: 0, az: 0, r: 0.7 });
+  const rad = (reg ? reg.r : 0.7) * 0.62;
+  const p = new THREE.Vector3(center.x + randn() * rad, center.y + randn() * rad * 0.9, center.z + randn() * rad * 0.6);
+  return p;
+}
+
+function layoutNodes() {
+  const byRegion = new Map();
+  for (const n of graphData.nodes) {
+    if (!regionByKey(n.region)) { n.region = n.hemisphere === "L" ? "applications" : "documents"; }
+    if (!byRegion.has(n.region)) byRegion.set(n.region, []);
+    byRegion.get(n.region).push(n);
+  }
+  const degree = new Map();
+  for (const l of graphData.links) {
+    degree.set(l.source, (degree.get(l.source) || 0) + 1);
+    degree.set(l.target, (degree.get(l.target) || 0) + 1);
+  }
+  const hubs = new Set();
+  for (const [region, nodes] of byRegion) {
+    if (!nodes.length) continue;
+    nodes.sort((a, b) => (degree.get(b.id) || 0) - (degree.get(a.id) || 0));
+    hubs.add(nodes[0].id);
+  }
+  const homes = new Map();
+  for (const n of graphData.nodes) {
+    const hasAddr = !!(n.brain_address && n.brain_address.path);
+    const p = hasAddr ? brainPosition(n) : (homes.get(n.region) || nodeHomePosition(n));
+    if (hubs.has(n.id)) { homes.set(n.region, p); }
+    homes.set(n.id, p);
+  }
+  for (const n of graphData.nodes) {
+    n.home = homes.get(n.id) || nodeHomePosition(n);
+    n.hub = hubs.has(n.id);
+  }
+  /* DENSITY FIX: Increased minimum separation + more aggressive iterations */
+  const minSepBase = 0.58;  /* was 0.34 — now ensures proper pick-radius spacing */
+  const maxIterations = 320;  /* was 160 — more aggressive de-collision */
+  for (let iter = 0; iter < maxIterations; iter++) {
+    let moved = 0;
+    for (const [region, nodes] of byRegion) {
+      const reg = regionByKey(region);
+      const center = regionCenter(reg);
+      const maxR = (reg ? reg.r : 0.7) * 1.5;
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const a = nodes[i].home, b = nodes[j].home;
+          const d = a.distanceTo(b);
+          /* Scale minimum separation by node importance */
+          const minSep = minSepBase * (1 + (nodes[i].hub ? 0.15 : 0) + (nodes[j].hub ? 0.15 : 0));
+          if (d < minSep && d > 0.0001) {
+            const push = (minSep - d) / 2 * 0.6;  /* was 0.5 — now more aggressive */
+            const dir = b.clone().sub(a).normalize();
+            a.addScaledVector(dir, -push); b.addScaledVector(dir, push);
+            a.x = clamp(a.x, center.x - maxR, center.x + maxR);
+            a.y = clamp(a.y, center.y - maxR, center.y + maxR);
+            a.z = clamp(a.z, center.z - maxR, center.z + maxR);
+            moved++;
+          }
+        }
+      }
+    }
+    if (moved === 0) break;
+  }
+}
+
+/* ============================== node visuals ============================== */
+function buildNodeVisual(n) {
+  const color = nodeColor(n, n.hub);
+  const tex = nodeSpriteTexture(glyphFor(n), color);
+  const group = new THREE.Group();
+  const spr = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, opacity: 0.78 }));
+  const hub = n.hub;
+  const scale = hub ? 1.25 : n.type === "capability" ? 0.95 : 0.8;
+  spr.scale.set(scale, scale, 1);
+  group.add(spr);
+  const icon = null;
+  let ring = null;
+  if (hub) {
+    ring = new THREE.Mesh(new THREE.RingGeometry(0.62, 0.72, 40), new THREE.MeshBasicMaterial({
+      color, transparent: true, opacity: 0.22, side: THREE.DoubleSide, depthWrite: false }));
+    ring.scale.set(scale, scale, 1);
+    group.add(ring);
+  }
+  const lbl = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: labelTexture(n.label.length > 28 ? n.label.slice(0, 27) + "…" : n.label, color),
+    transparent: true, depthWrite: false, opacity: 0 }));
+  lbl.scale.set(2.4, 0.6, 1); lbl.position.y = 0.85 * scale + 0.5;
+  group.add(lbl);
+  /* PICK RADIUS: Increased to ensure clear deconfliction of click targets */
+  const pickRadius = scale * (hub ? 0.9 : 0.82);  /* was 0.75 */
+  const pick = new THREE.Mesh(new THREE.SphereGeometry(pickRadius, 10, 8), new THREE.MeshBasicMaterial({
+    transparent: true, opacity: 0, depthWrite: false }));
+  group.add(pick);
+
+  const mesh = { group, spr, icon, ring, lbl, pick, userData: { rec: n, side: n.hemisphere === "L" ? "left" : "right", isLeft: n.hemisphere === "L", home: n.home.clone(), dragOffset: new THREE.Vector3(), region: n.region, hub, visible: true, lblVisible: false, pickRadius } };
+  group.userData = mesh;
+  mesh.pick.userData = mesh;
+  group.position.copy(n.home);
+  scene.add(group);
+  nodeMeshes.push(mesh);
+  return mesh;
+}
+
+function buildNodes() {
+  layoutNodes();
+  for (const n of graphData.nodes) {
+    nodeById.set(n.id, n);
+    buildNodeVisual(n);
+  }
+}
+
+/* ============================== edges ============================== */
+function edgeGeometry(a, b, mid) {
+  if (mid) {
+    const curve = new THREE.QuadraticBezierCurve3(a, mid, b);
+    const pts = curve.getPoints(20);
+    const geo = new THREE.BufferGeometry().setFromPoints(pts);
+    return { geo, curve };
+  }
+  const geo = new THREE.BufferGeometry().setFromPoints([a, b]);
+  return { geo, curve: null };
+}
+
+function buildEdge(l) {
+  const sn = nodeById.get(l.source), tn = nodeById.get(l.target);
+  if (!sn || !tn || !sn.home || !tn.home) return;
+  const a = sn.home, b = tn.home;
+  const isRoute = l.kind === "route";
+  const hot = isRoute;
+  const semiCtx = !isRoute && ((degree.get(l.source) || 0) + (degree.get(l.target) || 0)) >= 4;
+  let color, opacity, width;
+  if (hot) { color = CFG.colors.teal; opacity = 0.85; width = 4.2; }
+  else if (semiCtx) { color = sn.hemisphere === "L" ? CFG.colors.gold : CFG.colors.violet; opacity = 0.34; width = 2.1; }
+  else { color = sn.hemisphere === "L" ? CFG.colors.orange : CFG.colors.purple; opacity = 0.16; width = 1.1; }
+
+  const mid = hot ? a.clone().lerp(b, 0.5).add(new THREE.Vector3(0, 0.5, 0)) : null;
+  const { geo, curve } = edgeGeometry(a, b, mid);
+  const line = new THREE.Line(geo, new THREE.LineBasicMaterial({
+    color, transparent: true, opacity, depthWrite: false }));
+  const rec = { link: l, line, s: a, t: b, mid, curve, active: false, speed: 0.55 + Math.random() * 0.5, p: Math.random(), color, opacity, width, isRoute, hot, sn, tn };
+  line.userData = rec;
+  scene.add(line);
+  relEdges.push(rec);
+
+  if (hot) {
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.22, 8), new THREE.MeshBasicMaterial({
+      color, transparent: true, opacity: 0.9, depthWrite: false }));
+    cone.position.copy(b);
+    cone.lookAt(a);
+    cone.userData = rec;
+    scene.add(cone);
+    rec.arrow = cone;
+    const pkt = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: glowTexture("rgba(255,255,255,0.95)", "rgba(32,216,230,0.5)"), transparent: true, depthWrite: false, opacity: 0 }));
+    pkt.scale.setScalar(0.32);
+    scene.add(pkt);
+    rec.packet = pkt;
+  }
+}
+
+function buildEdges() {
+  for (const l of graphData.links) {
+    degree.set(l.source, (degree.get(l.source) || 0) + 1);
+    degree.set(l.target, (degree.get(l.target) || 0) + 1);
+  }
+  for (const l of graphData.links) buildEdge(l);
+}
+
+function movePackets(dt) {
+  for (const e of relEdges) {
+    if (!e.packet) continue;
+    if (!e.hot && !e.active) { e.packet.material.opacity = lerpTo(e.packet.material.opacity, 0, dt * 6); continue; }
+    e.packet.material.opacity = lerpTo(e.packet.material.opacity, 0.95, dt * 8);
+    if (e.curve) e.packet.position.copy(e.curve.getPoint(e.p));
+    else e.packet.position.copy(e.s.clone().lerp(e.t, e.p));
+  }
+}
+
+/* ============================== cross-hemisphere filaments ============================== */
+function buildFilaments() {
+  const n = 26;
+  for (let i = 0; i < n; i++) {
+    const l = new THREE.Vector3(CFG.left.x + randn() * 1.6, randn() * 1.9, randn() * 0.8);
+    const r = new THREE.Vector3(CFG.right.x + randn() * 1.6, randn() * 1.9, randn() * 0.8);
+    const mid = l.clone().lerp(r, 0.5).add(new THREE.Vector3(0, 0, randn() * 0.9));
+    const curve = new THREE.QuadraticBezierCurve3(l, mid, r);
+    const geo = new THREE.BufferGeometry().setFromPoints(curve.getPoints(28));
+    const color = i % 3 === 0 ? CFG.colors.violet : i % 3 === 1 ? CFG.colors.orange : CFG.colors.teal;
+    const mat1 = new THREE.LineBasicMaterial({ color: CFG.colors.orange, transparent: true, opacity: 0.06, depthWrite: false });
+    const mat2 = new THREE.LineBasicMaterial({ color: CFG.colors.purple, transparent: true, opacity: 0.06, depthWrite: false });
+    const l1 = new THREE.Line(geo, mat1);
+    const l2 = new THREE.Line(geo, mat2);
+    scene.add(l1); scene.add(l2);
+    filaments.push({ l1, l2, m1: mat1, m2: mat2, curve, side: "left", speed: 0.3 + Math.random() * 0.5, t: Math.random() });
+  }
+}
+
+/* ============================== recursive scope navigation (P1-9) + lazy loading (P1-10) ============================== */
+function clearDynamicScene() {
+  for (const m of nodeMeshes) { if (m.group) scene.remove(m.group); }
+  for (const e of relEdges) {
+    if (e.line) scene.remove(e.line);
+    if (e.arrow) scene.remove(e.arrow);
+    if (e.packet) scene.remove(e.packet);
+  }
+  for (const f of filaments) { scene.remove(f.l1); scene.remove(f.l2); }
+  for (const rl of regionLabels) scene.remove(rl.spr);
+  regionLabels.length = 0;
+  for (const [, entry] of expanded) {
+    for (const cm of entry.children) {
+      if (cm.userData._t && cm.userData._t.spr) scene.remove(cm.userData._t.spr);
+    }
+  }
+  expanded.clear();
+  nodeMeshes = []; relEdges = []; filaments = []; nodeById = new Map();
+  SF.activeId = null; SF.hoverId = null; SF.animating = false;
+  inspector.classList.remove("open");
+  corePanel.classList.remove("open");
+}
+
+function renderCrumbs() {
+  const host = $("crumbs");
+  if (!Nav.stack.length) { host.innerHTML = ""; return; }
+  host.innerHTML = `<span class="crumb" data-idx="-1">BRAIN</span>` +
+    Nav.stack.map((s, i) => `<span class="sep">›</span><span class="crumb" data-idx="${i}">${escapeHtml(s.label)}</span>`).join("");
+  host.querySelectorAll(".crumb").forEach(el => el.onclick = () => popNavTo(parseInt(el.getAttribute("data-idx"), 10)));
+}
+
+function popNavTo(idx) {
+  const target = idx === -1 ? null : Nav.stack[idx];
+  while (Nav.stack.length > idx + 1) Nav.stack.pop();
+  Nav.focus = null; Nav.follow = null;
+  const scopeId = Nav.stack.length ? Nav.stack[Nav.stack.length - 1].id : null;
+  const curScope = window.__brainStats ? window.__brainStats.scope : null;
+  if (scopeId !== curScope) {
+    Nav.pendingCam = target ? target.cam : null;
+    loadGraph(scopeId);
+  } else {
+    renderCrumbs();
+    if (target && target.cam) navFlyTo(target.cam, 620);
+    else if (!target) navWholeBrain(true);
+    updateModeChip();
+  }
+}
+
+async function loadGraph(scopeId) {
+  clearDynamicScene();
+  const url = scopeId ? "/brain/graph.json?scope=" + encodeURIComponent(scopeId) : "/brain/graph.json";
+  try {
+    const res = await fetch(url);
+    graphData = await res.json();
+  } catch (e) {
+    $("statusLine").textContent = "graph load failed: " + e.message;
+    return;
+  }
+  const bc = (graphData.graph && graphData.graph.breadcrumb) || [];
+  /* P1-9: enter the scope's LOCAL coordinate universe — children project their
+     relative B64 words around the scope origin (scopeHome), not the global field. */
+  scopeWords = null; scopeHome = null;
+  if (scopeId) {
+    const sc = graphData.nodes.find(n => n.id === scopeId);
+    const scAddr = sc && sc.brain_address && sc.brain_address.path;
+    if (scAddr) {
+      scopeHome = brainPosition(sc);
+      scopeWords = scAddr.split(":").slice(1);
+    }
+  }
+  renderCrumbs();
+  buildLabels();
+  buildNodes();
+  buildEdges();
+  buildFilaments();
+  const leftN = graphData.nodes.filter(n => n.hemisphere === "L").length;
+  const rightN = graphData.nodes.filter(n => n.hemisphere === "R").length;
+  const routes = graphData.links.filter(l => l.kind === "route").length;
+  $("statusLine").textContent = scopeId
+    ? `${graphData.nodes.length} objects · ${graphData.links.length} links (${routes} routes) · scope view · lazy children loaded`
+    : `${graphData.nodes.length} objects · ${graphData.links.length} links (${routes} runtime routes) · ${leftN} ecosystem / ${rightN} user`;
+  if (scopeId && bc.length) {
+    const scopeNode = nodeById.get(scopeId);
+    if (scopeNode && scopeNode.home) {
+      navSetFocus({ kind: "scope", id: scopeId, label: scopeNode.label, radius: 2.4 });
+      navFlyToPoint(scopeNode.home, 2.4, 1.0, 780);
+      tone(390, 0.25, "sine", 0.07);
+    }
+  }
+  if (Nav.pendingCam) {
+    const pc = Nav.pendingCam; Nav.pendingCam = null;
+    navFlyTo(pc, 620);
+  } else if (!scopeId && !Nav.stack.length) {
+    navWholeBrain(true);
+  }
+  window.__brainStats = { nodes: graphData.nodes.length, links: graphData.links.length, leftN, rightN, routes,
+    regionClouds: regionClouds.length, nodeMeshes: nodeMeshes.length, relEdges: relEdges.length, filaments: filaments.length,
+    scope: scopeId || null };
+  window.__brainReady = true;
+}
+
+function enterScope(id) {
+  const n = nodeById.get(id);
+  const label = n ? n.label : id;
+  Nav.stack.push({ id, kind: "scope", label, cam: navSnapshot() });
+  loadGraph(id);
+}
+
+/* ============================== live sync (P1-12 / DB-04) ============================== */
+function removeLinks(id) {
+  const keep = [];
+  for (const e of relEdges) {
+    const lk = e && e.rec && e.rec.link;
+    if (!lk) { if (window.__edgeAnomalies === undefined) window.__edgeAnomalies = 0; window.__edgeAnomalies += 1; keep.push(e); continue; }
+    if (lk.source === id || lk.target === id) {
+      scene.remove(e.line);
+      if (e.arrow) scene.remove(e.arrow);
+      if (e.packet) scene.remove(e.packet);
+    } else keep.push(e);
+  }
+  relEdges = keep;
+  graphData.links = graphData.links.filter(l => l.source !== id && l.target !== id);
+  degree.delete(id);
+}
+
+function removeNode(id) {
+  nodeById.delete(id);
+  const mi = nodeMeshes.findIndex(m => m.userData.rec.id === id);
+  if (mi >= 0) { scene.remove(nodeMeshes[mi].group); nodeMeshes.splice(mi, 1); }
+  const ni = graphData.nodes.findIndex(x => x.id === id);
+  if (ni >= 0) graphData.nodes.splice(ni, 1);
+  removeLinks(id);
+}
+
+function refreshStats() {
+  const leftN = graphData.nodes.filter(n => n.hemisphere === "L").length;
+  const rightN = graphData.nodes.filter(n => n.hemisphere === "R").length;
+  const routes = graphData.links.filter(l => l.kind === "route").length;
+  const scopeId = window.__brainStats ? window.__brainStats.scope : null;
+  window.__brainStats = Object.assign({}, window.__brainStats, {
+    nodes: graphData.nodes.length, links: graphData.links.length, leftN, rightN, routes,
+    nodeMeshes: nodeMeshes.length, relEdges: relEdges.length,
+  });
+  $("statusLine").textContent = scopeId
+    ? `${graphData.nodes.length} objects · ${graphData.links.length} links (${routes} routes) · scope view · lazy children loaded · LIVE`
+    : `${graphData.nodes.length} objects · ${graphData.links.length} links (${routes} runtime routes) · ${leftN} ecosystem / ${rightN} user · LIVE`;
+}
+
+function applyDelta(d) {
+  if (!window.__brainReady || !d || !d.op) return;
+  const scopeId = window.__brainStats ? window.__brainStats.scope : null;
+  if (d.op === "delete") {
+    if (nodeById.has(d.node.id)) removeNode(d.node.id);
+    refreshStats();
+    return;
+  }
+  const n = d.node;
+  if (!n || !n.id) return;
+  /* P1-10 laziness: outside the current scope view, only merge nodes the
+     client already knows about (scope payloads stay lazy). */
+  if (scopeId && n.parent_id !== scopeId && !nodeById.has(n.id)) return;
+  if (d.prevId && d.prevId !== n.id && nodeById.has(d.prevId)) removeNode(d.prevId);
+  n.home = (n.brain_address && n.brain_address.path) ? brainPosition(n) : nodeHomePosition(n);
+  const idx = graphData.nodes.findIndex(x => x.id === n.id);
+  if (idx >= 0) graphData.nodes[idx] = n; else graphData.nodes.push(n);
+  nodeById.set(n.id, n);
+  const mi = nodeMeshes.findIndex(m => m.userData.rec.id === n.id);
+  if (mi >= 0) { scene.remove(nodeMeshes[mi].group); nodeMeshes.splice(mi, 1); }
+  buildNodeVisual(n);
+  removeLinks(n.id);
+  for (const l of (d.links || [])) {
+    if (nodeById.has(l.source) && nodeById.has(l.target)) {
+      degree.set(l.source, (degree.get(l.source) || 0) + 1);
+      degree.set(l.target, (degree.get(l.target) || 0) + 1);
+      graphData.links.push(l);
+      buildEdge(l);
+    }
+  }
+  refreshStats();
+}
+
+function connectLive() {
+  const es = new EventSource("/brain/events");
+  window.__sseStats = { received: 0, errors: 0, reconnects: 0, lastId: -1 };
+  es.onmessage = (ev) => {
+    window.__sseStats.received += 1;
+    try { if (ev.lastEventId) window.__sseStats.lastId = Number(ev.lastEventId); } catch { /* noop */ }
+    try { applyDelta(JSON.parse(ev.data)); } catch (e) { console.error("delta:", e); }
+  };
+  es.onerror = () => { window.__sseStats.errors += 1; if (es.readyState === EventSource.CLOSED) window.__sseStats.reconnects += 1; };
+  /* onerror: EventSource auto-reconnects with Last-Event-ID; deltas are idempotent by node id. */
+}
+
+/* ============================== Intelligence Core ============================== */
+function buildCore() {
+  coreGroup = new THREE.Group();
+  const ringColors = [CFG.colors.orange, CFG.colors.gold, CFG.colors.amber, CFG.colors.violet, CFG.colors.purple, CFG.colors.magenta, CFG.colors.teal, CFG.colors.gold];
+  for (let i = 0; i < 8; i++) {
+    const r = CFG.coreR * (0.42 + i * 0.14);
+    const mat = new THREE.MeshBasicMaterial({ color: ringColors[i], transparent: true, opacity: 0.16 + i * 0.035, side: THREE.DoubleSide, depthWrite: false });
+    const ring = new THREE.Mesh(new THREE.RingGeometry(r * 0.94, r, 64), mat);
+    ring.rotation.x = Math.PI / 2 - (i % 3) * 0.22;
+    ring.rotation.y = i * 0.37;
+    ring.userData = { ix: i };
+    coreGroup.add(ring);
+  }
+  const ticks = new THREE.Group();
+  for (let i = 0; i < 36; i++) {
+    const ang = (i / 36) * Math.PI * 2;
+    const r = CFG.coreR * 1.05;
+    const tick = new THREE.Mesh(new THREE.BoxGeometry(0.018, 0.14, 0.018), new THREE.MeshBasicMaterial({
+      color: CFG.colors.teal, transparent: true, opacity: 0.5, depthWrite: false }));
+    tick.position.set(Math.cos(ang) * r, Math.sin(ang) * r * 0.8, 0);
+    tick.userData = { baseAng: ang };
+    ticks.add(tick);
+  }
+  ticks.userData = { rotating: true };
+  coreGroup.add(ticks);
+  const dotRing = new THREE.Group();
+  for (let i = 0; i < 10; i++) {
+    const ang = (i / 10) * Math.PI * 2;
+    const dot = new THREE.Mesh(new THREE.SphereGeometry(0.035, 8, 6), new THREE.MeshBasicMaterial({
+      color: i % 2 ? CFG.colors.hot : CFG.colors.pale, transparent: true, opacity: 0.85, depthWrite: false }));
+    dot.position.set(Math.cos(ang) * CFG.coreR * 0.62, Math.sin(ang) * CFG.coreR * 0.5, 0);
+    dot.userData = { baseAng: ang };
+    dotRing.add(dot);
+  }
+  dotRing.userData = { rotating: true };
+  coreGroup.add(dotRing);
+  const nucleus = new THREE.Mesh(new THREE.SphereGeometry(CFG.coreR * 0.32, 24, 18), new THREE.MeshBasicMaterial({
+    color: 0x0a0c18, transparent: true, opacity: 0.9, depthWrite: false }));
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({
+    map: glowTexture("rgba(32,216,230,0.8)", "rgba(32,216,230,0.22)"), transparent: true, depthWrite: false, opacity: 0.5 }));
+  glow.scale.set(CFG.coreR * 2.2, CFG.coreR * 2.2, 1);
+  nucleus.add(glow);
+  coreGroup.add(nucleus);
+  const hit = new THREE.Mesh(new THREE.SphereGeometry(CFG.coreR * 1.15, 12, 10), new THREE.MeshBasicMaterial({
+    transparent: true, opacity: 0, depthWrite: false }));
+  hit.userData = { core: true };
+  coreGroup.add(hit);
+  scene.add(coreGroup);
+}
+
+/* ============================== region + cluster labels ============================== */
+const regionLabels = [], clusterLabels = [];
+function buildLabels() {
+  for (const r of REGIONS) {
+    const tex = labelTexture(r.label, r.side === "L" ? "#ffad1f" : "#b47fff");
+    const spr = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, opacity: 0 }));
+    spr.scale.set(3.1, 0.78, 1);
+    const c = regionCenter(r);
+    spr.position.set(c.x, c.y - r.r * 0.85 - 0.55, c.z);
+    spr.userData = { region: r.key, side: r.side };
+    scene.add(spr);
+    regionLabels.push({ spr, def: r, opacity: 0 });
+  }
+}
+
+/* ============================== HUD legend chips ============================== */
+function buildChips() {
+  const host = $("chips");
+  host.innerHTML = "";
+  for (const r of REGIONS) {
+    const el = document.createElement("span");
+    el.className = "chip " + r.side;
+    el.textContent = r.label;
+    el.title = r.side === "L" ? "LeeWay ecosystem territory" : "User territory";
+    host.appendChild(el);
+  }
+}
+
+/* ============================== panels ============================== */
+const corePanel = $("corePanel"), coreBody = $("coreBody");
+const inspector = $("inspector"), inspTitle = $("inspTitle"), inspTabs = $("inspTabs"), inspBody = $("inspBody");
+let inspectorTab = "info";
+
+$("coreClose").onclick = closeCore;
+$("inspClose").onclick = closeInspector;
+$("btnCore").onclick = () => { initAudio(); openCore(); };
+$("btnSound").onclick = () => {
+  Sound.on = !Sound.on;
+  $("btnSound").textContent = Sound.on ? "SOUND ON" : "SOUND OFF";
+  if (Sound.on && !Sound.ctx) initAudio();
+};
+$("btnHelp").onclick = () => { if (Sound.ctx) tone(660, 0.12, "triangle", 0.08); };
+
+async function openCore() {
+  if (!Sound.ctx) initAudio();
+  tone(180, 0.5, "sine", 0.1); tone(240, 0.6, "sine", 0.07, 0.06);
+  coreBody.innerHTML = "loading runtime nexus…";
+  corePanel.classList.add("open");
+  SF.state = "deep";
+  try {
+    const res = await fetch("/brain/core");
+    const data = await res.json();
+    const fns = data.nexus.functions.map(f => `<span class="nfn">${f.replace(/-/g, " ").toUpperCase()}</span>`).join("");
+    const svc = data.services.map(s => {
+      const ep = (s.metadata && s.metadata.endpoint) || "";
+      return `<div class="svc"><span>${s.title}${ep ? ` <span class="ep">${ep}</span>` : ""}</span><span class="st">${(s.status || "active").toUpperCase()}</span></div>`;
+    }).join("");
+    coreBody.innerHTML = `
+      <h4>Control path</h4><div class="nlist">${data.nexus.controlPath.map(p => `<div class="nrow" style="cursor:default">${p}</div>`).join("")}</div>
+      <h4>Nexus functions</h4><div class="nexus-fns">${fns}</div>
+      <h4>Governance</h4><div class="kv"><span class="k">authority</span><span class="v">${data.nexus.governance}</span></div>
+      <h4>Runtime services</h4>${svc}
+      <h4>Brain stats</h4><div class="kv">
+        <span class="k">nodes</span><span class="v">${data.stats.nodes}</span>
+        <span class="k">edges</span><span class="v">${data.stats.edges}</span>
+      </div>`;
+  } catch (e) {
+    coreBody.innerHTML = `<div class="err">core query failed: ${e.message}</div>`;
+  }
+}
+function closeCore() { corePanel.classList.remove("open"); if (SF.state === "deep" && !inspector.classList.contains("open")) SF.state = "idle"; }
+
+function openInspector(mesh) {
+  const n = mesh.userData.rec;
+  if (!Sound.ctx) initAudio();
+  tone(520, 0.18, "sine", 0.1);
+  SF.activeId = n.id;
+  SF.state = "expanded";
+  for (const m of nodeMeshes) m.userData.lblVisible = m.userData.rec.id === n.id;
+  inspector.classList.add("open");
+  inspTitle.textContent = n.label + (n.hub ? "  ·  HUB" : "");
+  renderInspector();
+}
+function closeInspector() {
+  inspector.classList.remove("open");
+  if (SF.activeId && nodeById.has(SF.activeId)) {
+    const mesh = nodeMeshes.find(m => m.userData.rec.id === SF.activeId);
+    if (mesh && mesh.userData.exp) collapseNode(mesh);
+    SF.activeId = null;
+    SF.state = corePanel.classList.contains("open") ? "deep" : "idle";
+  }
+}
+function switchTab(name) {
+  inspectorTab = name;
+  renderInspector();
+}
+function renderInspector() {
+  const mesh = nodeMeshes.find(m => m.userData.rec.id === SF.activeId);
+  if (!mesh) return;
+  const n = mesh.userData.rec;
+  const color = nodeColor(n, n.hub);
+  inspTabs.innerHTML = "";
+  for (const t of ["info", "preview", "neighbors", "evidence"]) {
+    const el = document.createElement("span");
+    el.className = "tab" + (t === inspectorTab ? " on" : "");
+    el.textContent = t.toUpperCase();
+    el.onclick = () => switchTab(t);
+    inspTabs.appendChild(el);
+  }
+  inspBody.style.borderTop = `1px solid ${color}55`;
+  if (inspectorTab === "info") {
+    const meta = n.metadata_json ? JSON.parse(n.metadata_json) : null;
+    const ep = meta && meta.endpoint ? `<span class="k">endpoint</span><span class="v">${meta.endpoint}</span>` : "";
+    const addr = n.brain_address && n.brain_address.path;
+    const addrBlock = addr ? `
+      <h4>Cortical address</h4>
+      <div class="kv">
+        <span class="k">b64 path</span><span class="v path">${addr}</span>
+        <span class="k">spatial index</span><span class="v">${n.brain_address.spatial_index}</span>
+        <span class="k">binary</span><span class="v path">${n.brain_address.binary_path}</span>
+      </div>` : "";
+    inspBody.innerHTML = `
+      ${addrBlock}
+      ${(n.formula_state && n.formula_state.status) ? `
+      <h4>Formula state</h4>
+      <div class="kv">
+        <span class="k">status</span><span class="v">${n.formula_state.status}</span>
+        <span class="k">formula</span><span class="v">${n.formula_state.formula_id || "?"}</span>
+        <span class="k">top6</span><span class="v path">${(n.formula_state.base64_top6 || []).join(" ")}</span>
+        <span class="k">selected</span><span class="v">${n.formula_state.selected_b64}</span>
+        <span class="k">policy</span><span class="v">${n.formula_state.policy || "?"}</span>
+        <span class="k">evaluated</span><span class="v">${n.formula_state.evaluated_at ? escapeHtml(n.formula_state.evaluated_at) : "?"}</span>
+      </div>` : (addr ? "" : `
+      <h4>Formula state</h4>
+      <div class="kv"><span class="k">status</span><span class="v">UNPLACED</span></div>`)}
+      <div class="kv">
+        <span class="k">type</span><span class="v">${n.type}${n.subtype ? " · " + n.subtype : ""}</span>
+        <span class="k">territory</span><span class="v">${n.region_label || n.region} <span style="color:rgba(255,255,255,0.4)">/ ${n.cluster || "—"}</span></span>
+        <span class="k">hemisphere</span><span class="v">${n.hemisphere === "L" ? "LeeWay Ecosystem" : "User"}</span>
+        <span class="k">canonical id</span><span class="v">${n.canonical_id || n.id}</span>
+        <span class="k">status</span><span class="v">${n.status || "active"}</span>
+        ${ep}
+      </div>
+      ${(n.child_count > 0 || n.expandable) ? `<button class="enterbtn" id="enterScopeBtn">ENTER SCOPE · ${n.child_count || 0} CHILDREN</button>` : ""}
+      ${n.description ? `<h4>Description</h4><div style="line-height:1.5;color:rgba(255,255,255,0.75)">${n.description}</div>` : ""}
+      ${n.source_path ? `<h4>Source</h4><div class="path">${n.source_path}</div>` : ""}`;
+    const eb = inspBody.querySelector("#enterScopeBtn");
+    if (eb) eb.onclick = () => enterScope(n.id);
+  } else if (inspectorTab === "preview") {
+    inspBody.innerHTML = "loading file preview…";
+    fetch("/brain/preview/" + encodeURIComponent(n.id)).then(r => r.json()).then(d => {
+      if (d.error) { inspBody.innerHTML = `<div class="err">${d.error}${d.reason ? " — " + d.reason : ""}</div>`; return; }
+      inspBody.innerHTML = `
+        <h4>${d.title}</h4>
+        <div class="kv"><span class="k">path</span><span class="v path">${d.path}</span>
+        <span class="k">lines</span><span class="v">${d.totalLines}${d.truncated ? " (truncated)" : ""}</span></div>
+        <pre class="pv">${escapeHtml(d.head)}</pre>`;
+    }).catch(e => { inspBody.innerHTML = `<div class="err">preview failed: ${e.message}</div>`; });
+  } else if (inspectorTab === "neighbors") {
+    inspBody.innerHTML = "loading…";
+    fetch("/brain/neighbors/" + encodeURIComponent(n.id)).then(r => r.json()).then(d => {
+      const edges = d.edges || [];
+      inspBody.innerHTML = `<h4>${edges.length} connection${edges.length === 1 ? "" : "s"}</h4><div class="nlist">` +
+        edges.map(e => {
+          const other = e.source_id === n.id ? e.target_id : e.source_id;
+          const otherN = nodeById.get(other);
+          const label = otherN ? otherN.label : other;
+          return `<div class="nrow" data-id="${other}"><span class="pred">${e.predicate}</span><br>${label}</div>`;
+        }).join("") + `</div>`;
+      inspBody.querySelectorAll(".nrow").forEach(el => el.onclick = () => {
+        const other = el.getAttribute("data-id");
+        const m = nodeMeshes.find(mm => mm.userData.rec.id === other);
+        if (m) openInspector(m);
+      });
+    }).catch(e => { inspBody.innerHTML = `<div class="err">neighbors failed: ${e.message}</div>`; });
+  } else {
+    inspBody.innerHTML = "loading evidence…";
+    fetch("/brain/node/" + encodeURIComponent(n.id)).then(r => r.json()).then(d => {
+      const prov = (d.provenance || []).map(p =>
+        `<div class="prow"><span class="pkind">${p.kind}</span> · ${p.source || ""}<br><span style="color:rgba(255,255,255,0.35)">${escapeHtml(String(p.detail || ""))}</span></div>`).join("");
+      inspBody.innerHTML = `<h4>Provenance</h4>${prov || "<div style='color:rgba(255,255,255,0.35)'>no provenance records</div>"}`;
+    }).catch(e => { inspBody.innerHTML = `<div class="err">evidence failed: ${e.message}</div>`; });
+  }
+}
+function escapeHtml(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+
+/* ============================== expand / collapse ============================== */
+const expanded = new Map(); // id -> {mesh, children[], t}
+function expandNode(mesh) {
+  const n = mesh.userData.rec;
+  SF.animating = true;
+  const childIds = (graphData.links.filter(l => l.source === n.id || l.target === n.id).map(l => l.source === n.id ? l.target : l.source)).slice(0, 12);
+  const children = [];
+  for (const cid of childIds) {
+    const cm = nodeMeshes.find(m => m.userData.rec.id === cid);
+    if (cm) children.push(cm);
+  }
+  expanded.set(n.id, { mesh, children, t: 0 });
+  SF.state = "expanded";
+  tone(430, 0.3, "sine", 0.08); tone(640, 0.35, "sine", 0.05, 0.09);
+  for (const cm of children) {
+    const t = new THREE.Sprite(new THREE.SpriteMaterial({ map: nodeSpriteTexture(glyphFor(cm.userData.rec), nodeColor(cm.userData.rec, false)), transparent: true, opacity: 0 }));
+    t.scale.set(0.9, 0.9, 1);
+    t.userData = { parent: mesh, child: cm, dir: cm.group.position.clone().sub(mesh.group.position).normalize() };
+    scene.add(t);
+    const childT = { spr: t, cm, delay: 0.08 + Math.random() * 0.3 };
+    cm.userData._t = childT;
+  }
+}
+function collapseNode(mesh) {
+  const n = mesh.userData.rec;
+  const entry = expanded.get(n.id);
+  SF.animating = true;
+  if (entry) {
+    for (const cm of entry.children) {
+      if (cm.userData._t && cm.userData._t.spr) { scene.remove(cm.userData._t.spr); cm.userData._t.spr = null; }
+    }
+  }
+  expanded.delete(n.id);
+  tone(320, 0.25, "sine", 0.06);
+  SF.state = "idle";
+}
+
+/* ============================== navigation engine (true 3D world) ============================== */
+const Nav = {
+  mode: "hybrid",                       // hybrid | orbit | canvas | fly
+  theta: 0, phi: 0.16, dist: 12,        // spherical orbit state around Nav.target
+  wishDist: 12, vTheta: 0, vPhi: 0,     // smoothed dolly + inertia (per second)
+  target: new THREE.Vector3(0, 0, 0),
+  anim: null,                           // {a, b, t0, dur, onDone} interruptible camera fly
+  pendingCam: null,                     // camera snapshot to restore after graph rebuild
+  stack: [],                            // [{id, kind, label, cam}] navigation history
+  focus: null,                          // {kind, id, side, label, radius} orbit anchor
+  follow: null,                         // {curve, rec, t, dur} edge path travel
+  fly: { on: false, yaw: 0, pitch: 0, speed: 4.5, keys: {} },
+  grid: 0.55,
+  /* SEMANTIC ZOOM: determine visualization detail level based on distance */
+  zoomLevel: "brain",                   // "brain" | "hemisphere" | "region" | "cluster" | "node" | "neighborhood"
+};
+
+function navSnapshot() { return { theta: Nav.theta, phi: Nav.phi, dist: Nav.dist, target: Nav.target.clone() }; }
+
+function navApply() {
+  camera.position.set(
+    Nav.target.x + Math.sin(Nav.theta) * Math.cos(Nav.phi) * Nav.dist,
+    Nav.target.y + Math.sin(Nav.phi) * Nav.dist,
+    Nav.target.z + Math.cos(Nav.theta) * Math.cos(Nav.phi) * Nav.dist,
+  );
+  camera.lookAt(Nav.target);
+}
+
+function navFitDist(radius, margin) {
+  const vf = CFG.fov * Math.PI / 180;
+  const hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
+  const half = Math.min(hf, vf) / 2;
+  return clamp((radius * (margin || 1)) / Math.tan(half), 1.2, 40);
+}
+
+function navFlyTo(b, dur, onDone) {
+  if (Nav.fly.on) return;
+  Nav.anim = { a: navSnapshot(), b, t0: performance.now(), dur: dur || 650, onDone };
+  Nav.vTheta = 0; Nav.vPhi = 0;
+}
+
+function navFlyToPoint(point, radius, margin, dur) {
+  const s = { theta: Nav.theta, phi: Nav.phi, dist: navFitDist(radius, margin), target: point.clone() };
+  navFlyTo(s, dur || clamp(380 + Math.abs(Nav.dist - s.dist) * 45, 380, 900));
+}
+
+function navWholeBrain(animate) {
+  Nav.focus = null; Nav.follow = null;
+  Nav.anim = null;
+  const s = { theta: 0, phi: 0.16, dist: navFitDist(5.4, 0.74), target: new THREE.Vector3(0, 0, 0) };
+  if (animate) navFlyTo(s, 750);
+  else { Nav.theta = s.theta; Nav.phi = s.phi; Nav.dist = s.dist; Nav.wishDist = s.dist; Nav.target.copy(s.target); }
+  Nav.stack = [];
+  renderCrumbs(); updateModeChip();
+}
+
+function navSetFocus(f) { Nav.focus = f; updateModeChip(); }
+
+function navEnterHemisphere(side) {
+  const c = side === "L" ? CFG.left : CFG.right;
+  const label = side === "L" ? "Ecosystem" : "User";
+  const top = Nav.stack[Nav.stack.length - 1];
+  if (!top || top.kind !== "hemi" || top.id !== side) Nav.stack.push({ id: side, kind: "hemi", label, cam: navSnapshot() });
+  navSetFocus({ kind: "hemi", id: side, side, label, radius: 2.3 });
+  navFlyToPoint(c, 2.3, 1.05, 780);
+  renderCrumbs();
+}
+
+function navEnterRegion(key) {
+  const r = regionByKey(key); if (!r) return;
+  const top = Nav.stack[Nav.stack.length - 1];
+  if (!top || top.kind !== "region" || top.id !== key) Nav.stack.push({ id: key, kind: "region", label: r.label, cam: navSnapshot() });
+  navSetFocus({ kind: "region", id: key, side: r.side, label: r.label, radius: r.r * 1.15 });
+  navFlyToPoint(regionCenter(r), r.r * 1.15, 1.05, 720);
+  renderCrumbs();
+}
+
+function navEnterCore() {
+  const top = Nav.stack[Nav.stack.length - 1];
+  if (!top || top.kind !== "core") Nav.stack.push({ id: "core", kind: "core", label: "Runtime Fabric", cam: navSnapshot() });
+  navSetFocus({ kind: "core", id: "core", label: "Runtime Fabric", radius: 1.3 });
+  navFlyToPoint(new THREE.Vector3(0, 0, 0), 1.3, 1.0, 750);
+  renderCrumbs();
+}
+
+function navFocusNode(mesh) {
+  const n = mesh.userData.rec;
+  const top = Nav.stack[Nav.stack.length - 1];
+  if (!top || top.kind !== "node" || top.id !== n.id) Nav.stack.push({ id: n.id, kind: "node", label: n.label, cam: navSnapshot() });
+  const scale = mesh.userData.hub ? 1.25 : n.type === "capability" ? 0.95 : 0.8;
+  navSetFocus({ kind: "node", id: n.id, side: n.hemisphere === "L" ? "L" : "R", label: n.label, radius: scale * 2.2 });
+  navFlyToPoint(mesh.group.position, scale * 2.2, 1.0, 720);
+  renderCrumbs();
+}
+
+function navFocusPoint(point, radius, margin, kind, id, label) {
+  navSetFocus({ kind, id, label, radius });
+  navFlyToPoint(point, radius, margin, 780);
+}
+
+function navResetOrientation() {
+  navFlyTo({ theta: 0, phi: 0.16, dist: Nav.dist, target: Nav.target.clone() }, 600);
+}
+
+function navFocusSelection() {
+  if (SF.activeId) {
+    const m = nodeMeshes.find(mm => mm.userData.rec.id === SF.activeId);
+    if (m) { navFocusNode(m); return; }
+  }
+  if (Nav.focus) {
+    if (Nav.focus.kind === "hemi") navEnterHemisphere(Nav.focus.id);
+    else if (Nav.focus.kind === "region") navEnterRegion(Nav.focus.id);
+    else if (Nav.focus.kind === "core") navEnterCore();
+    else navWholeBrain(true);
+    return;
+  }
+  navWholeBrain(true);
+}
+
+function navMinDist() {
+  const f = Nav.focus;
+  /* DEEP ZOOM: Allow zooming closer based on focus type */
+  if (!f) return 4.2;
+  if (f.kind === "node") return Math.max(0.6, f.radius * 0.95);   /* Zoom close to individual nodes */
+  if (f.kind === "scope") return Math.max(0.7, f.radius * 1.0);
+  if (f.kind === "region") return Math.max(1.2, f.radius * 0.95);
+  if (f.kind === "hemi") return Math.max(2.2, f.radius * 0.95);
+  if (f.kind === "core") return Math.max(0.8, f.radius * 1.0);
+  return Math.max(0.5, f.radius * 1.15);
+}
+function navMaxDist() {
+  const f = Nav.focus;
+  /* DEEP ZOOM: Expand max distance for whole brain but limit when focused */
+  if (!f) return 34;
+  if (f.kind === "node") return Math.max(8, f.radius * 4.5);      /* Less expansion when focused on node */
+  if (f.kind === "scope") return Math.max(10, f.radius * 5.0);
+  if (f.kind === "region") return Math.max(12, f.radius * 4.8);
+  if (f.kind === "hemi") return Math.max(18, f.radius * 6.0);
+  if (f.kind === "core") return Math.max(8, f.radius * 5.0);
+  return Math.max(9, f.radius * 6);
+}
+
+function navCancelTransitions() { Nav.anim = null; Nav.follow = null; Nav.vTheta = 0; Nav.vPhi = 0; }
+
+function computeZoomLevel() {
+  /* Determine semantic zoom level based on camera distance and focus */
+  const d = Nav.dist;
+  if (Nav.focus) {
+    if (Nav.focus.kind === "node") Nav.zoomLevel = d < 4 ? "neighborhood" : "node";
+    else if (Nav.focus.kind === "scope") Nav.zoomLevel = d < 4 ? "cluster" : "node";
+    else if (Nav.focus.kind === "region") Nav.zoomLevel = d < 3.5 ? "cluster" : "region";
+    else if (Nav.focus.kind === "hemi") Nav.zoomLevel = d < 5 ? "region" : "hemisphere";
+    else if (Nav.focus.kind === "core") Nav.zoomLevel = "cluster";
+  } else {
+    Nav.zoomLevel = d < 6 ? "hemisphere" : "brain";
+  }
+}
+
+function shouldShowNode(nodeId) {
+  /* LOD VISIBILITY: Show nodes based on semantic zoom level */
+  const node = nodeById.get(nodeId);
+  if (!node) return false;
+  const isSelected = nodeId === SF.activeId;
+  const isNeighbor = SF.activeId && isNeighbor(nodeId, SF.activeId);
+  const focusRegion = Nav.focus && Nav.focus.kind === "region" ? Nav.focus.id : null;
+  const inFocusRegion = focusRegion && node.region === focusRegion;
+  const isHub = node.hub;
+  
+  if (isSelected) return true;  /* Always show selected */
+  switch (Nav.zoomLevel) {
+    case "neighborhood":
+      return isNeighbor || isHub;  /* Only show neighbors + hubs */
+    case "node":
+      return isNeighbor || isHub;
+    case "cluster":
+      return inFocusRegion || isHub;
+    case "region":
+      return isHub || (isHub && Nav.focus && Nav.focus.kind === "region" && node.region === Nav.focus.id);
+    case "hemisphere":
+      return isHub && (Nav.focus && Nav.focus.kind === "hemi" ? node.hemisphere === Nav.focus.id : true);
+    default:  /* brain */
+      return isHub;
+  }
+}
+
+function updateModeChip() {
+  const el = $("modeChip");
+  if (Nav.fly.on) el.textContent = "FLY";
+  else if (Nav.focus) el.textContent = "ORBIT · " + (Nav.focus.label || "").toUpperCase();
+  else el.textContent = "ORBIT · CANVAS";
+  for (const id of ["nvBrain", "nvEco", "nvFabric", "nvUser"]) $(id).classList.remove("on");
+  if (Nav.focus && Nav.focus.kind === "hemi") $("nv" + (Nav.focus.id === "L" ? "Eco" : "User")).classList.add("on");
+  else if (Nav.focus && Nav.focus.kind === "core") $("nvFabric").classList.add("on");
+  else if (!Nav.stack.length) $("nvBrain").classList.add("on");
+  $("tagL").style.display = Nav.focus && Nav.focus.kind === "hemi" && Nav.focus.id === "L" ? "block" : "none";
+  $("tagR").style.display = Nav.focus && Nav.focus.kind === "hemi" && Nav.focus.id === "R" ? "block" : "none";
+}
+
+function toggleFly(on) {
+  const want = on === undefined ? !Nav.fly.on : on;
+  if (want && !Nav.fly.on) {
+    Nav.fly.on = true;
+    Nav.fly.speed = 4.5;
+    const dir = camera.getWorldDirection(new THREE.Vector3());
+    Nav.fly.yaw = Math.atan2(-dir.x, -dir.z);
+    Nav.fly.pitch = Math.asin(clamp(dir.y, -1, 1));
+    $("flyHud").style.display = "block";
+    document.body.style.cursor = "crosshair";
+  } else if (!want && Nav.fly.on) {
+    Nav.fly.on = false;
+    $("flyHud").style.display = "none";
+    document.body.style.cursor = "default";
+  }
+  Nav.anim = null;
+  $("nvFly").classList.toggle("on", Nav.fly.on);
+  updateModeChip();
+}
+
+function navFlyStep(dt) {
+  const k = Nav.fly;
+  const speed = k.speed * (k.keys.Shift ? 3.2 : 1);
+  const dir = camera.getWorldDirection(new THREE.Vector3());
+  const right = new THREE.Vector3().crossVectors(dir, camera.up).normalize();
+  const up = new THREE.Vector3().crossVectors(right, dir).normalize();
+  const mv = new THREE.Vector3();
+  if (k.keys.KeyW || k.keys.ArrowUp) mv.add(dir);
+  if (k.keys.KeyS || k.keys.ArrowDown) mv.sub(dir);
+  if (k.keys.KeyD || k.keys.ArrowRight) mv.add(right);
+  if (k.keys.KeyA || k.keys.ArrowLeft) mv.sub(right);
+  if (k.keys.KeyE) mv.add(up);
+  if (k.keys.KeyQ) mv.sub(up);
+  if (mv.lengthSq() > 0.0001) mv.normalize();
+  camera.position.addScaledVector(mv, speed * dt);
+  const look = new THREE.Vector3(
+    -Math.sin(k.yaw) * Math.cos(k.pitch),
+    Math.sin(k.pitch),
+    -Math.cos(k.yaw) * Math.cos(k.pitch),
+  );
+  camera.lookAt(camera.position.clone().add(look));
+  Nav.target.copy(camera.position);
+}
+
+function navFollowEdge(rec) {
+  if (!rec || !rec.curve) return;
+  navCancelTransitions();
+  Nav.follow = { curve: rec.curve, rec, t: 0, dur: 1.15 };
+  rec.active = true;
+  rec.line.material.opacity = 0.95;
+  tone(500, 0.25, "sine", 0.07); tone(720, 0.3, "sine", 0.05, 0.12);
+}
+
+function navFollowStep(dt) {
+  const f = Nav.follow;
+  f.t += dt / f.dur;
+  if (f.t >= 1) {
+    Nav.follow = null;
+    f.rec.active = false;
+    f.rec.line.material.opacity = f.rec.opacity;
+    const dir = new THREE.Vector3();
+    camera.getWorldDirection(dir);
+    Nav.target.copy(camera.position);
+    Nav.dist = Math.max(1.5, Nav.focus && Nav.focus.radius ? Nav.focus.radius * 3 : 6);
+    Nav.wishDist = Nav.dist;
+    camera.position.addScaledVector(dir, Nav.dist);
+    Nav.theta = Math.atan2(dir.x, dir.z);
+    Nav.phi = Math.asin(clamp(dir.y, -0.98, 0.98));
+    return;
+  }
+  const p = f.curve.getPoint(f.t);
+  const q = f.curve.getPoint(Math.min(1, f.t + 0.09));
+  camera.position.copy(p);
+  camera.lookAt(q);
+  Nav.target.copy(p);
+  Nav.dist = 0; Nav.theta = 0; Nav.phi = 0;
+}
+
+function navUpdate(dt) {
+  if (Nav.fly.on) { navFlyStep(dt); return; }
+  if (Nav.follow) { navFollowStep(dt); return; }
+  if (Nav.anim) {
+    const now = performance.now();
+    const t = clamp((now - Nav.anim.t0) / Nav.anim.dur, 0, 1);
+    const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const a = Nav.anim.a, b = Nav.anim.b;
+    let dTheta = b.theta - a.theta;
+    dTheta = ((dTheta % (Math.PI * 2)) + Math.PI * 3) % (Math.PI * 2) - Math.PI;
+    Nav.theta = a.theta + dTheta * e;
+    Nav.phi = lerp(a.phi, b.phi, e);
+    Nav.dist = lerp(a.dist, b.dist, e);
+    Nav.wishDist = Nav.dist;
+    Nav.target.lerpVectors(a.target, b.target, e);
+    if (t >= 1) { const cb = Nav.anim.onDone; Nav.anim = null; if (cb) cb(); }
+  } else {
+    if (Math.abs(Nav.vTheta) > 0.0004 || Math.abs(Nav.vPhi) > 0.0004) {
+      Nav.theta += Nav.vTheta * dt;
+      Nav.phi = clamp(Nav.phi + Nav.vPhi * dt, -1.45, 1.45);
+      Nav.vTheta *= Math.pow(0.08, dt);
+      Nav.vPhi *= Math.pow(0.08, dt);
+    }
+    if (Math.abs(Nav.wishDist - Nav.dist) > 0.002) Nav.dist = lerpTo(Nav.dist, Nav.wishDist, dt * 14);
+  }
+  Nav.phi = clamp(Nav.phi, -1.45, 1.45);
+  navApply();
+}
+
+function navPan(dx, dy) {
+  const right = new THREE.Vector3().setFromMatrixColumn(camera.matrix, 0);
+  const up = new THREE.Vector3().setFromMatrixColumn(camera.matrix, 1);
+  const s = Nav.dist * 0.0016;
+  Nav.target.addScaledVector(right, -dx * s);
+  Nav.target.addScaledVector(up, dy * s);
+}
+
+/* ============================== interaction ============================== */
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+let downPos = null, downNode = null, dragging = null, downTime = 0, downButton = -1;
+let dragCandidate = null;
+let orbitDrag = null, panDrag = null, flyDrag = null, clickTimer = null;
+let scrollDrag = false;  /* FIX: Track scroll vs drag intent separately */
+let dragThreshold = 12;  /* intentional drag threshold */
+
+function releaseDrag() {
+  dragging = null;
+  dragCandidate = null;
+  downNode = null;
+  downPos = null;
+  downTime = 0;
+  downButton = -1;
+  scrollDrag = false;
+  document.body.style.cursor = "default";
+}
+
+function pickNodes(x, y) {
+  pointer.x = (x / window.innerWidth) * 2 - 1;
+  pointer.y = -(y / window.innerHeight) * 2 + 1;
+  raycaster.setFromCamera(pointer, camera);
+  const meshes = [];
+  for (const m of nodeMeshes) meshes.push(m.pick);
+  const hits = raycaster.intersectObjects(meshes, false);
+  const coreHits = raycaster.intersectObjects(coreGroup ? [coreGroup.children[coreGroup.children.length - 1]] : [], false);
+  const regHits = raycaster.intersectObjects(regionHits, false);
+  const hemiHitsArr = raycaster.intersectObjects(hemiHits, false);
+  raycaster.params.Line.threshold = 0.06;
+  const edgeHits = raycaster.intersectObjects(relEdges.map(e => e.line), false);
+  raycaster.params.Line.threshold = 1;
+  return {
+    node: hits.length ? hits[0].object.userData : null,
+    core: coreHits.length ? coreHits[0].object : null,
+    region: regHits.length ? regHits[0].object.userData : null,
+    hemi: hemiHitsArr.length ? hemiHitsArr[0].object.userData : null,
+    edge: edgeHits.length ? edgeHits[0].object.userData : null,
+  };
+}
+
+function updateEdgeGeo(e) {
+  const am = nodeMeshes.find(mm => mm.userData.rec.id === e.sn.id);
+  const bm = nodeMeshes.find(mm => mm.userData.rec.id === e.tn.id);
+  const a = am ? am.group.position : e.sn.home;
+  const b = bm ? bm.group.position : e.tn.home;
+  if (e.curve) {
+    e.curve.v0.copy(a);
+    e.curve.v2.copy(b);
+    e.curve.v1.copy(a.clone().lerp(b, 0.5).add(new THREE.Vector3(0, 0.5, 0)));
+    e.line.geometry.setFromPoints(e.curve.getPoints(20));
+  } else {
+    e.line.geometry.setFromPoints([a, b]);
+  }
+  if (e.arrow) { e.arrow.position.copy(b); e.arrow.lookAt(a); }
+}
+
+function isNeighbor(id, ofId) {
+  for (const l of graphData.links) {
+    if ((l.source === id && l.target === ofId) || (l.target === id && l.source === ofId)) return true;
+  }
+  return false;
+}
+
+function updateDebug() {
+  const el = $("dbg");
+  if (getComputedStyle(el).display === "none") return;
+  const f = Nav.focus;
+  const visible = nodeMeshes.filter(m => m.userData.visible !== false).length;
+  const hidden = nodeMeshes.length - visible;
+  el.textContent =
+    `pos ${camera.position.x.toFixed(2)}, ${camera.position.y.toFixed(2)}, ${camera.position.z.toFixed(2)}` +
+    `\ntarget ${Nav.target.x.toFixed(2)}, ${Nav.target.y.toFixed(2)}, ${Nav.target.z.toFixed(2)}` +
+    `\ndist ${Nav.dist.toFixed(2)} · zoom ${Nav.zoomLevel}` +
+    `\nmode ${Nav.mode}${Nav.fly.on ? "/fly" : ""} · visible ${visible}/${nodeMeshes.length} (${hidden} hidden)` +
+    `\nfocus ${f ? f.kind + ":" + (f.label || f.id) : "none"}` +
+    `\nselected ${SF.activeId || "none"} · hovered ${SF.hoverId || "none"}` +
+    `\nstack ${Nav.stack.map(s => s.label).join(" > ") || "BRAIN"}`;
+}
+
+const tip = $("tip");
+function showTip(mesh, x, y) {
+  const n = mesh.userData.rec;
+  const fs = n.formula_state || {};
+  const addr = n.brain_address && n.brain_address.path;
+  const fsRef = window.__formulaStatus && window.__formulaStatus.policy;
+  const addrHtml = addr
+    ? `<div style="margin-top:4px;font-family:Consolas,monospace;font-size:11px;color:rgba(32,216,230,0.95)">${escapeHtml(addr)}</div>`
+    : `<div style="margin-top:4px;font-family:Consolas,monospace;font-size:11px;color:#ff9d5c">⚠ UNPLACED — no B64 address</div>`;
+  const fsHtml = fs.status
+    ? `<div style="margin-top:3px;font-size:11px;color:rgba(255,255,255,0.6)">${escapeHtml(fs.status)} · sel <b>${escapeHtml(String(fs.selected_b64))}</b> · ${escapeHtml(fs.policy || fsRef || "lw-b1-semantic-v1")}</div>`
+    : "";
+  const lines = `<b>${n.label}</b><br><span style="color:rgba(255,255,255,0.5)">${n.region_label || n.region}${n.hub ? " · HUB" : ""}</span>` +
+    (n.description ? `<br><span style="color:rgba(255,255,255,0.45);font-size:11px">${escapeHtml(n.description).slice(0, 140)}</span>` : "") +
+    addrHtml + fsHtml;
+  tip.innerHTML = lines;
+  tip.style.left = clamp(x + 14, 4, window.innerWidth - 350) + "px";
+  tip.style.top = clamp(y + 12, 4, window.innerHeight - 90) + "px";
+  tip.style.opacity = 1;
+}
+function hideTip() { tip.style.opacity = 0; }
+
+canvas.addEventListener("pointerdown", (e) => {
+  if (e.button !== 0 && e.button !== 1 && e.button !== 2) return;
+  downPos = { x: e.clientX, y: e.clientY };
+  downTime = performance.now();
+  downButton = e.button;
+  downNode = null; dragging = null; dragCandidate = null; orbitDrag = null; panDrag = null; flyDrag = null;
+  if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
+  try { canvas.setPointerCapture(e.pointerId); } catch { /* noop */ }
+  navCancelTransitions();
+  if (Nav.fly.on) {
+    if (e.button === 0) flyDrag = { x: e.clientX, y: e.clientY };
+    return;
+  }
+  const dp = pickNodes(e.clientX, e.clientY);
+  downNode = dp.node ? dp.node : null;
+  dragCandidate = downNode ? downNode : null;
+  const panKey = e.shiftKey;
+  const orbitKey = e.ctrlKey || e.metaKey;
+  if (e.button === 2 || orbitKey) { orbitDrag = { x: e.clientX, y: e.clientY, t: performance.now() }; Nav.vTheta = 0; Nav.vPhi = 0; }
+  else if (e.button === 1 || panKey) { panDrag = { x: e.clientX, y: e.clientY }; document.body.style.cursor = "grabbing"; }
+  else if (!downNode) { panDrag = { x: e.clientX, y: e.clientY }; document.body.style.cursor = "grabbing"; }
+  SF.hoverId = downNode ? downNode.userData.rec.id : null;
+});
+
+window.addEventListener("pointermove", (e) => {
+  if (Nav.fly.on) {
+    if (flyDrag) {
+      const dx = e.clientX - flyDrag.x, dy = e.clientY - flyDrag.y;
+      flyDrag = { x: e.clientX, y: e.clientY };
+      Nav.fly.yaw -= dx * 0.0035;
+      Nav.fly.pitch = clamp(Nav.fly.pitch + dy * 0.0035, -1.4, 1.4);
+    }
+    return;
+  }
+  if (orbitDrag) {
+    const now = performance.now();
+    const dtMs = Math.max(8, now - orbitDrag.t);
+    const dx = e.clientX - orbitDrag.x, dy = e.clientY - orbitDrag.y;
+    orbitDrag = { x: e.clientX, y: e.clientY, t: now };
+    Nav.theta -= dx * 0.0045;
+    Nav.phi = clamp(Nav.phi + dy * 0.0045, -1.45, 1.45);
+    Nav.vTheta = -dx * 0.0045 * (1000 / dtMs);
+    Nav.vPhi = dy * 0.0045 * (1000 / dtMs);
+    return;
+  }
+  if (panDrag) {
+    const dx = e.clientX - panDrag.x, dy = e.clientY - panDrag.y;
+    panDrag = { x: e.clientX, y: e.clientY };
+    navPan(dx, dy);
+    return;
+  }
+  const p = pickNodes(e.clientX, e.clientY);
+  const dragDist = downPos ? Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) : 0;
+
+  if (!dragging && !scrollDrag && downNode && downPos && e.button === 0 && dragCandidate && dragDist > dragThreshold) {
+    dragging = downNode;
+    dragCandidate = null;
+    tone(300, 0.12, "sine", 0.06);
+  }
+
+  if (SF.hoverId !== (p.node ? p.node.userData.rec.id : null)) {
+    SF.hoverId = p.node ? p.node.userData.rec.id : null;
+    hideTip();
+    if (p.node) { tone(380, 0.1, "sine", 0.05); }
+    for (const m of nodeMeshes) m.userData.lblVisible = m.userData.rec.id === SF.hoverId || m.userData.rec.id === SF.activeId;
+  }
+  if (p.node && !dragging && !downNode) {
+    showTip(p.node, e.clientX, e.clientY);
+    document.body.style.cursor = "grab";
+  } else if ((p.core || p.region || p.hemi) && !dragging) {
+    hideTip(); document.body.style.cursor = "pointer";
+  } else if (!dragging) {
+    hideTip(); document.body.style.cursor = "default";
+  }
+  if (dragging) {
+    const n = dragging.userData.rec;
+    const plane = new THREE.Plane().setFromNormalAndCoplanarPoint(camera.getWorldDirection(new THREE.Vector3()), dragging.group.position);
+    pointer.set((e.clientX / window.innerWidth) * 2 - 1, -(e.clientY / window.innerHeight) * 2 + 1);
+    raycaster.setFromCamera(pointer, camera);
+    const hit = new THREE.Vector3();
+    if (raycaster.ray.intersectPlane(plane, hit)) {
+      const reg = regionByKey(n.region);
+      const maxR = (reg ? reg.r : 0.7) * 2.2;
+      const delta = hit.sub(n.home);
+      delta.x = clamp(delta.x, -maxR, maxR); delta.y = clamp(delta.y, -maxR, maxR); delta.z = clamp(delta.z, -maxR, maxR);
+      dragging.userData.dragOffset.copy(delta);
+      dragging.group.position.copy(n.home).add(delta);
+      for (const edge of relEdges) {
+        if (edge.sn && (edge.sn.id === n.id || edge.tn.id === n.id)) updateEdgeGeo(edge);
+      }
+      document.body.style.cursor = "grabbing";
+    }
+  }
+});
+
+window.addEventListener("pointerup", (e) => {
+  if (e.button === 0 || e.button === 1 || e.button === 2) {
+    try { canvas.releasePointerCapture(e.pointerId); } catch { /* noop */ }
+  }
+  if (flyDrag) { flyDrag = null; return; }
+  const wasOrbit = orbitDrag, wasPan = panDrag;
+  orbitDrag = null; panDrag = null; scrollDrag = false;  /* FIX: Clear scroll block */
+  if (wasPan) document.body.style.cursor = "default";
+  if (wasOrbit) return;               // inertia continues via Nav.vTheta/vPhi
+  releaseDrag();
+  const p = pickNodes(e.clientX, e.clientY);
+  const moved = downPos && Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) > 6;
+  if (moved || performance.now() - downTime >= 450 || e.button !== 0) return;
+  if (p.node) {
+    const id = p.node.userData.rec.id;
+    clickTimer = setTimeout(() => {
+      clickTimer = null;
+      if (SF.activeId === id && expanded.has(id)) closeInspector();
+      else {
+        if (SF.activeId && expanded.has(SF.activeId)) {
+          const oldMesh = nodeMeshes.find(m => m.userData.rec.id === SF.activeId);
+          if (oldMesh) collapseNode(oldMesh);
+        }
+        openInspector(p.node);
+        expandNode(p.node);
+      }
+    }, 240);
+  } else if (p.core) {
+    openCore();
+  } else if (p.region) {
+    navEnterRegion(p.region.region);
+  } else if (p.hemi) {
+    navEnterHemisphere(p.hemi.hemi);
+  }
+});
+
+window.addEventListener("pointercancel", () => { releaseDrag(); });
+window.addEventListener("blur", () => { releaseDrag(); });
+
+canvas.addEventListener("dblclick", (e) => {
+  if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
+  const p = pickNodes(e.clientX, e.clientY);
+  if (p.node) {
+    const n = p.node.userData.rec;
+    if (n.child_count > 0 || n.expandable || n.subtype === "region-clusters") enterScope(n.id);
+    else navFocusNode(p.node);
+    return;
+  }
+  if (p.edge && p.edge.curve) { navFollowEdge(p.edge); return; }
+  if (p.region) { navEnterRegion(p.region.region); return; }
+  if (p.core) { navEnterCore(); return; }
+  if (p.hemi) { navEnterHemisphere(p.hemi.hemi); return; }
+  navWholeBrain(true);
+});
+
+window.addEventListener("keydown", (e) => {
+  if (Nav.fly.on) {
+    Nav.fly.keys[e.code] = true;
+    if (e.key === "Escape") { toggleFly(false); return; }
+    return;
+  }
+  if (e.repeat) return;
+  const k = e.key.toLowerCase();
+  if (e.key === "Escape") {
+    releaseDrag();
+    if (navStepBack()) return;
+    closeInspector(); closeCore();
+    scrollDrag = false;
+    return;
+  }
+  if (e.ctrlKey && e.shiftKey && k === "d") {
+    const el = $("dbg");
+    el.style.display = el.style.display === "none" ? "block" : "none";
+    updateDebug();
+    return;
+  }
+  if (k === "m") { $("btnSound").click(); return; }
+  if (k === "a" || k === "0") { navWholeBrain(true); return; }
+  if (k === "1") { navEnterHemisphere("L"); return; }
+  if (k === "2") { navEnterCore(); return; }
+  if (k === "3") { navEnterHemisphere("R"); return; }
+  if (k === "r") { navResetOrientation(); return; }
+  if (k === "f") { navFocusSelection(); return; }
+  if (k === "v") { toggleFly(); return; }
+  if (k === "g") { toggleGrid(); return; }
+});
+window.addEventListener("keyup", (e) => { if (Nav.fly.on) Nav.fly.keys[e.code] = false; });
+
+function navStepBack() {
+  if (Nav.fly.on) { toggleFly(false); return true; }
+  if (Nav.follow) { Nav.follow = null; return true; }
+  if (Nav.anim) { Nav.anim = null; return true; }
+  if (Nav.stack.length) { popNavTo(Nav.stack.length - 2); return true; }
+  return false;
+}
+
+canvas.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scrollDrag = true; setTimeout(() => { scrollDrag = false; }, 200);  /* FIX: Block drag on scroll */
+  if (Nav.fly.on) {
+    Nav.fly.speed = clamp(Nav.fly.speed * (e.deltaY < 0 ? 1.12 : 0.89), 1.2, 16);
+    return;
+  }
+  /* ZOOM FIX: Smart zoom-to-cursor targeting */
+  const p = pickNodes(e.clientX, e.clientY);
+  if (p.node) {
+    /* Zoom toward the target node when scrolling over it */
+    Nav.target.lerp(p.node.userData.rec.home, 0.15);
+  }
+  Nav.anim = null;
+  Nav.wishDist = clamp(Nav.wishDist * Math.pow(1.0012, e.deltaY), navMinDist(), navMaxDist());
+}, { passive: false });
+canvas.addEventListener("contextmenu", (e) => e.preventDefault());
+
+/* ============================== state engine / dimming ============================== */
+function isLeftNode(id) { const m = nodeMeshes.find(g => g.userData.rec.id === id); return m ? m.userData.isLeft : true; }
+function applyStateDim(dt) {
+  /* SEMANTIC ZOOM: Apply visibility + LOD based on zoom level */
+  computeZoomLevel();
+  const hemiFocus = Nav.focus && Nav.focus.kind === "hemi" ? Nav.focus.id : null;
+  const targetL = (SF.activeId && !isLeftNode(SF.activeId)) || hemiFocus === "R" ? 0.34 : 1;
+  const targetR = (SF.activeId && isLeftNode(SF.activeId)) || hemiFocus === "L" ? 0.34 : 1;
+  dimL = lerpTo(dimL, targetL, dt * 2.4);
+  dimR = lerpTo(dimR, targetR, dt * 2.4);
+  const activeRegion = SF.activeId ? (nodeById.get(SF.activeId) || {}).region :
+    (Nav.focus && Nav.focus.kind === "region" ? Nav.focus.id : null);
+  const deepRegion = SF.state === "deep" || (Nav.focus && (Nav.focus.kind === "region" || Nav.focus.kind === "node" || Nav.focus.kind === "scope"));
+  for (const c of regionClouds) {
+    const base = c.side === "L" ? dimL : dimR;
+    const regionDim = deepRegion && activeRegion && activeRegion !== c.region ? 0.5 : 1;
+    c.uDim.value = lerpTo(c.uDim.value, base * regionDim, dt * 2.4);
+  }
+  for (const f of filaments) {
+    f.m1.opacity = 0.06 * dimL; f.m2.opacity = 0.06 * dimR;
+  }
+  const camPos = camera.position;
+  const focusNode = Nav.focus && Nav.focus.kind === "node" ? Nav.focus.id : null;
+  const focusNodeMesh = focusNode ? nodeMeshes.find(m => m.userData.rec.id === focusNode) : null;
+  for (const g of nodeMeshes) {
+    const u = g.userData;
+    /* LOD VISIBILITY CONTROL: Hide nodes based on semantic zoom */
+    const shouldShow = shouldShowNode(u.rec.id);
+    u.visible = shouldShow;
+    const dim = u.isLeft ? dimL : dimR;
+    const regionDim = deepRegion && activeRegion && activeRegion !== u.region ? 0.45 : 1;
+    let targetOpacity = shouldShow ? 0.78 * (0.35 + 0.65 * dim) * (0.35 + 0.65 * regionDim) : 0.05;
+    if (focusNodeMesh && g !== focusNodeMesh) {
+      const d = g.group.position.distanceTo(focusNodeMesh.group.position);
+      if (d > 2.4 && !isNeighbor(g.userData.rec.id, focusNode)) targetOpacity *= 0.35;
+    }
+    /* NEIGHBOR DE-EMPHASIS: Dim neighbors when focused node is selected */
+    if (SF.activeId && g.userData.rec.id !== SF.activeId && isNeighbor(g.userData.rec.id, SF.activeId)) {
+      targetOpacity *= 0.68;  /* Slightly dim neighbors */
+    }
+    g.spr.material.opacity = lerpTo(g.spr.material.opacity, targetOpacity, dt * 2.4);
+    g.group.visible = shouldShow || (focusNodeMesh && g === focusNodeMesh);  /* Always show selected */
+    if (g.ring) {
+      const sel = g.userData.rec.id === SF.activeId || g.userData.rec.id === SF.hoverId || g.userData.rec.id === focusNode;
+      g.ring.material.opacity = lerpTo(g.ring.material.opacity, sel ? 0.62 : 0.22 * dim * regionDim, dt * 3);
+    }
+    /* CLUTTER REDUCTION: Suppress labels in deep zoom; only show for selected/hovered */
+    let lblTarget = u.lblVisible ? 0.92 : 0;
+    if (!lblTarget && !Nav.fly.on) {
+      const d = g.group.position.distanceTo(camPos);
+      if (focusNodeMesh && g === focusNodeMesh) lblTarget = 0.92;  /* Always show selected label */
+      else if (Nav.zoomLevel === "brain" || Nav.zoomLevel === "hemisphere") {
+        /* At far zoom, only show major hubs */
+        if (u.hub && d < 9.5) lblTarget = 0.55;
+      } else if (Nav.zoomLevel === "region") {
+        /* At region level, suppress non-focus labels */
+        if (u.hub && d < 5.5) lblTarget = 0.45;
+      } else if (Nav.zoomLevel === "cluster" || Nav.zoomLevel === "node") {
+        /* At deep levels, only show nearby non-hub nodes */
+        if (d < 2.6) lblTarget = 0.65;  /* was 3.6 */
+      } else if (Nav.zoomLevel === "neighborhood") {
+        /* At neighborhood level, suppress all but selected and very close */
+        if (d < 1.8) lblTarget = 0.55;
+      }
+    }
+    if (g.lbl) g.lbl.material.opacity = lerpTo(g.lbl.material.opacity, lblTarget, dt * 4);
+  }
+}
+
+/* ============================== leader line overlay ============================== */
+const leaderCv = $("leader");
+const lctx = leaderCv.getContext("2d");
+function drawLeader() {
+  leaderCv.width = window.innerWidth; leaderCv.height = window.innerHeight;
+  lctx.clearRect(0, 0, leaderCv.width, leaderCv.height);
+  if (!SF.activeId || !inspector.classList.contains("open")) return;
+  const mesh = nodeMeshes.find(m => m.userData.rec.id === SF.activeId);
+  if (!mesh) return;
+  const v = mesh.group.position.clone().project(camera);
+  if (v.z > 1) return;
+  const sx = (v.x * 0.5 + 0.5) * window.innerWidth;
+  const sy = (-v.y * 0.5 + 0.5) * window.innerHeight;
+  const rect = inspector.getBoundingClientRect();
+  const ex = rect.left + 6, ey = rect.top + 30;
+  const color = nodeColor(mesh.userData.rec, mesh.userData.hub);
+  lctx.strokeStyle = color + "aa"; lctx.lineWidth = 1.2; lctx.setLineDash([4, 5]);
+  lctx.beginPath(); lctx.moveTo(sx, sy); lctx.quadraticCurveTo((sx + ex) / 2, Math.max(sy, ey) - 40, ex, ey); lctx.stroke();
+}
+
+/* ============================== semantic zoom labels ============================== */
+function updateRegionLabels() {
+  const hemiFocus = Nav.focus && Nav.focus.kind === "hemi" ? Nav.focus.id : null;
+  const regionFocus = Nav.focus && Nav.focus.kind === "region" ? Nav.focus.id : null;
+  for (const rl of regionLabels) {
+    const dist = camera.position.distanceTo(rl.spr.position);
+    let show = dist < 16;
+    if (hemiFocus) show = rl.def.side === hemiFocus;
+    if (regionFocus && rl.def.key !== regionFocus) show = false;
+    let target = 0;
+    if (show) {
+      if (regionFocus && rl.def.key === regionFocus) target = 0.95;
+      else if (hemiFocus && rl.def.side === hemiFocus) target = 0.72;
+      else target = dist < 10 ? 0.85 : 0.35 + 0.5 * ((16 - dist) / 6);
+    }
+    rl.opacity = lerpTo(rl.opacity, target, 0.04);
+    rl.spr.material.opacity = rl.opacity;
+    rl.spr.material.depthTest = false;
+  }
+}
+
+/* ============================== animation ============================== */
+const clock = new THREE.Clock();
+let frame = 0;
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.05);
+  frame++;
+  const t = clock.elapsedTime;
+
+  for (const c of regionClouds) c.mat.uniforms.uTime.value = t;
+
+  if (coreGroup) {
+    coreGroup.rotation.y += dt * 0.05;
+    const ticks = coreGroup.children[8];
+    if (ticks && ticks.userData.rotating) ticks.rotation.z += dt * 0.12;
+    const dots = coreGroup.children[9];
+    if (dots && dots.userData.rotating) dots.rotation.z -= dt * 0.22;
+    const nucleus = coreGroup.children[10];
+    if (nucleus) {
+      const s = 1 + Math.sin(t * 0.7) * 0.07;
+      nucleus.scale.set(s, s, s);
+    }
+  }
+
+  for (const e of relEdges) {
+    const isSel = SF.activeId && (e.sn.id === SF.activeId || e.tn.id === SF.activeId);
+    e.active = isSel;
+    if (e.hot || e.active) { e.p += dt * e.speed; if (e.p > 1) e.p -= 1; }
+  }
+
+  for (const f of filaments) { f.t += dt * f.speed; if (f.t > 1) f.t -= 1; }
+
+  for (const m of nodeMeshes) {
+    const u = m.userData;
+    if (m.ring) { m.ring.rotation.z += dt * 0.3; const s = 1 + Math.sin(t * 1.4 + m.group.position.x) * 0.05; m.ring.scale.set(s, s, 1); }
+    if (u.hub) {
+      const s = 1 + Math.sin(t * 1.1) * 0.06;
+      m.group.children[0].scale.setScalar(1.25 * s);
+    }
+  }
+
+  applyStateDim(dt);
+  updateRegionLabels();
+  drawLeader();
+  movePackets(dt);
+
+  const hover = SF.hoverId ? nodeMeshes.find(m => m.userData.rec.id === SF.hoverId) : null;
+  if (hover) {
+    const s = 1 + Math.sin(t * 5) * 0.05;
+    hover.group.children[0].scale.setScalar((hover.userData.hub ? 1.25 : hover.userData.rec.type === "capability" ? 0.95 : 0.8) * s);
+  }
+
+  if (expanded.size) {
+    for (const [id, entry] of expanded) {
+      entry.t += dt;
+      const scale = 1 + Math.min(0.7, entry.t * 2.2) * 0.75;
+      const base = entry.mesh.userData.hub ? 1.25 : entry.mesh.userData.rec.type === "capability" ? 0.95 : 0.8;
+      entry.mesh.group.children[0].scale.setScalar(base * scale);
+      for (const cm of entry.children) {
+        const ct = cm.userData._t;
+        if (!ct || !ct.spr) continue;
+        const p = clamp((entry.t - ct.delay) / 0.5, 0, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        const dir = cm.group.position.clone().sub(entry.mesh.group.position).normalize();
+        ct.spr.position.copy(entry.mesh.group.position).addScaledVector(dir, ease * 1.5);
+        ct.spr.material.opacity = ease * 0.9;
+        const sc = 0.6 + ease * 0.5;
+        ct.spr.scale.setScalar(sc);
+        if (p >= 1 && ct.spr) { scene.remove(ct.spr); ct.spr = null; cm.userData._t = null; }
+      }
+      if (entry.t > 1.6) { SF.animating = false; }
+    }
+  }
+
+  if (dragging) {
+    const rec = dragging.userData.rec;
+    for (const e of relEdges) {
+      if (e.sn === rec || e.tn === rec) updateEdgeGeo(e);
+    }
+    const dir = dragging.group.position.clone().sub(camera.position);
+    dragging.group.children[0].scale.setScalar((dragging.userData.hub ? 1.25 : 0.9) * 1.25);
+  }
+
+  navUpdate(dt);
+  if (gridGroup) {
+    for (const m of gridGroup.userData.mats) m.opacity = lerpTo(m.opacity, Nav.grid * 0.14, dt * 3);
+  }
+  if (starGroup) starGroup.rotation.y += dt * 0.004;
+  updateDebug();
+
+  renderer.render(scene, camera);
+}
+
+/* ============================== boot ============================== */
+async function loadFormulaStatus() {
+  try {
+    const r = await fetch("/brain/formula/status");
+    const s = await r.json();
+    window.__formulaStatus = s;
+    const k = s.kernel && (s.kernel.status || s.kernel.kernel_status);
+    const el = document.createElement("span");
+    el.style.cssText = "margin-left:14px;font-size:11px;letter-spacing:0.4px;opacity:0.85";
+    el.textContent = `kernel ${k || "?"} · ${s.passportCount} passports · policy ${s.policy || "?"}`;
+    $("statusLine").appendChild(el);
+  } catch (e) { window.__formulaStatus = { error: String(e) }; }
+}
+
+function wireRefreshPlacements() {
+  $("btnRef").onclick = async () => {
+    const el = document.createElement("span");
+    el.style.cssText = "margin-left:14px;font-size:11px;color:rgba(32,216,230,0.9)";
+    el.textContent = "placement refresh…";
+    $("statusLine").appendChild(el);
+    try {
+      const r = await fetch("/brain/formula/refresh", { method: "POST" });
+      const d = await r.json();
+      el.textContent = `placement refresh: placed=${d.placedCount} blocked=${d.blockedCount}`;
+    } catch (e) { el.textContent = `placement refresh failed: ${e.message}`; }
+  };
+}
+
+function wireHardwarePanel() {
+  const panel = $("hwPanel");
+  $("hwClose").onclick = () => panel.classList.remove("open");
+  $("btnHw").onclick = async () => {
+    panel.classList.add("open");
+    $("hwBody").innerHTML = "reading host hardware…";
+    try {
+      const r = await fetch("/brain/hardware");
+      const d = await r.json();
+      const s = d.snapshot || {};
+      const fab = s.fabric_status || {};
+      const devRow = (k) => {
+        const dv = fab[k] || {};
+        return `<div class="nrow"><span class="pred">${k.toUpperCase()}</span><br>${dv.available ? "available · " + escapeHtml(String(dv.status || "ok")) : "unavailable · " + escapeHtml(String(dv.error || "offline"))}</div>`;
+      };
+      const alerts = (s.alerts || []).map(a => `<div class="nrow"><span class="pred">${escapeHtml(a.level)}</span><br>${escapeHtml(a.device)} — ${escapeHtml(a.message)}</div>`).join("") || "<div style='color:rgba(32,216,230,0.8)'>no active alerts</div>";
+      const hw = d.history || [];
+      const hwRows = hw.map(h => `${escapeHtml(h.captured_at.slice(11, 19))} cpu ${h.cpu_usage_pct ?? "—"}% · mem ${h.mem_pct}% · disk ${h.disk_brain_pct}%`).join("<br>");
+      $("hwBody").innerHTML = `
+        <h4>Host</h4>
+        <div class="kv">
+          <span class="k">platform</span><span class="v">${escapeHtml(String(s.platform || "?"))}</span>
+          <span class="k">hostname</span><span class="v">${escapeHtml(String(s.hostname || "?"))}</span>
+          <span class="k">kernel</span><span class="v">${escapeHtml(String(s.kernel || "?"))}</span>
+          <span class="k">cpu</span><span class="v">${s.cpu_count ?? "?"} cores · ${s.cpu_usage_pct ?? "—"}% busy</span>
+          <span class="k">memory</span><span class="v">${s.mem_used_mb ?? "?"} / ${s.mem_total_mb ?? "?"} MB (${s.mem_pct ?? "?"}%)</span>
+          <span class="k">disk /brain-data</span><span class="v">${s.disk_brain_used_mb ?? "?"} / ${s.disk_brain_total_mb ?? "?"} MB (${s.disk_brain_pct ?? "?"}%)</span>
+          <span class="k">db size</span><span class="v">${s.db_size_mb ?? "?"} MB</span>
+        </div>
+        <h4>Runtime Fabric device lanes</h4>
+        ${devRow("runtime")}${devRow("wsl")}${devRow("terminal")}
+        <h4>Alerts</h4>
+        ${alerts}
+        <h4>Bounded history (last ${hw.length})</h4>
+        <div style="font-family:Consolas,monospace;font-size:11px;line-height:1.6">${hwRows}</div>`;
+    } catch (e) { $("hwBody").innerHTML = `<div class="err">hardware read failed: ${escapeHtml(e.message)}</div>`; }
+  };
+}
+
+/* ============================== background + grid + nav widget ============================== */
+let starGroup = null, gridGroup = null;
+function buildBackground() {
+  const starGeo = new THREE.BufferGeometry();
+  const starPos = new Float32Array(520 * 3);
+  for (let i = 0; i < 520; i++) {
+    const r = 26 + Math.random() * 16;
+    const th = Math.random() * Math.PI * 2;
+    const ph = Math.acos(2 * Math.random() - 1);
+    starPos[i * 3] = r * Math.sin(ph) * Math.cos(th);
+    starPos[i * 3 + 1] = r * Math.cos(ph);
+    starPos[i * 3 + 2] = r * Math.sin(ph) * Math.sin(th);
+  }
+  starGeo.setAttribute("position", new THREE.BufferAttribute(starPos, 3));
+  const starMat = new THREE.PointsMaterial({ color: 0x9fd8ff, size: 0.07, transparent: true, opacity: 0.5, depthWrite: false });
+  starGroup = new THREE.Points(starGeo, starMat);
+  scene.add(starGroup);
+
+  const gridSpan = 26, step = 0.9, y = -3.6;
+  const pts = [];
+  const half = gridSpan / 2;
+  for (let i = -half; i <= half; i += step) {
+    pts.push(-half, y, i); pts.push(half, y, i);
+    pts.push(i, y, -half); pts.push(i, y, half);
+  }
+  const gridGeo = new THREE.BufferGeometry();
+  gridGeo.setAttribute("position", new THREE.Float32BufferAttribute(pts, 3));
+  const gridLine = new THREE.LineSegments(gridGeo, new THREE.LineBasicMaterial({ color: 0x2a6f8f, transparent: true, opacity: Nav.grid * 0.14 }));
+  const ringGeo = new THREE.RingGeometry(2.4, 2.5, 64);
+  const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({ color: 0x2a6f8f, transparent: true, opacity: Nav.grid * 0.14, side: THREE.DoubleSide, depthWrite: false }));
+  ring.rotation.x = -Math.PI / 2; ring.position.y = y;
+  gridGroup = new THREE.Group();
+  gridGroup.add(gridLine); gridGroup.add(ring);
+  gridGroup.userData.mats = [gridLine.material, ring.material];
+  scene.add(gridGroup);
+}
+
+function toggleGrid() {
+  Nav.grid = Nav.grid > 0.5 ? 0.0 : 0.55;
+  $("nvGrid").classList.toggle("on", Nav.grid > 0.5);
+  tone(300, 0.12, "sine", 0.06);
+}
+
+function wireNavWidget() {
+  $("nvBrain").onclick = () => navWholeBrain(true);
+  $("nvEco").onclick = () => navEnterHemisphere("L");
+  $("nvFabric").onclick = () => navEnterCore();
+  $("nvUser").onclick = () => navEnterHemisphere("R");
+  $("nvReset").onclick = () => navResetOrientation();
+  $("nvFly").onclick = () => toggleFly();
+  $("nvGrid").onclick = () => toggleGrid();
+}
+
+async function boot() {
+  buildChips();
+  initAudio();
+  buildCortex();
+  buildCore();
+  buildBackground();
+  wireNavWidget();
+  const wantDebug = new URLSearchParams(location.search).get("debug") === "1" || localStorage.getItem("brain-debug") === "1";
+  $("dbg").style.display = wantDebug ? "block" : "none";
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    if (!Nav.stack.length) {
+      const s = { theta: Nav.theta, phi: Nav.phi, dist: navFitDist(5.4, 0.74), target: Nav.target.clone() };
+      navFlyTo(s, 650);
+    }
+  });
+  await loadGraph(null);
+  navWholeBrain(false);
+  updateModeChip();
+  connectLive();
+  loadFormulaStatus();
+  wireRefreshPlacements();
+  wireHardwarePanel();
+  animate();
+}
+boot();
+</script>
+</body>
+</html>

@@ -75,3 +75,17 @@ Track H COMPLETE: PASS_BITWARDEN_LITE_FOUNDATION_READY.
 - Secrets: C:\LeeWay\BitwardenLite\local-admin-credentials.json (icacls protected)
 - Unproven: SMTP, desktop/mobile clients, 2FA/SSO/SCIM, admin console, import/export, TLS.
 - Temp crypto artifacts purged after use.
+
+## Status update (TRACKS C-G COMPLETE, 2026-08-09 20:01)
+
+All remaining tracks PASS. Evidence in LeeWay-Audits (each with 00-SUMMARY + 20-*.json receipts, mirrored to Archive\receipts):
+- TRACK C PASS — MODEL-ORCHESTRA-01-20260809-194300\ (10 models, bench 10/10, warmup 36.4s->252-289ms, delegation ses_016e2e77cffe7dicBe9kC9bKTI, routing table, stale routes listed UNAVAILABLE)
+- TRACK D PASS — AGENT-OS-PRESERVATION-01-20260809-194500\ (tree hash 25919BF0..., 119 files, stack 4001/8080/8787/11434/3000/8123 UP, 8091+8765 DOWN)
+- TRACK D.1 PASS — CEREBRAL-DONOR-TRACE-01-20260809-194800\ (donor C:\Cerebral, 11 capability lineage mappings, BackgroundFabric proposal)
+- TRACK E PASS — WORKSPACE-CATALOG-VERIFY-01-20260809-195100\ (5/5 sampled, 0 discrepancies, catalog not rebuilt)
+- TRACK F PASS — DB-NO-MUTATION-VERIFY-01-20260809-200100\ (MariaDB/MSSQL db lists + gitea.db size/mtime/hash identical before/after)
+- TRACK G PASS — HERMES-NO-MUTATION-VERIFY-01-20260809-200100\ (inbox/outbox unchanged)
+
+Run summary: reports\FINISHER-01-RUN-COMPLETE-20260809-200100.md
+state.json: all tracks COMPLETE; forgejo headCommit 3c7ab28; pushed 4266c51.
+Follow-ups: workspace repo git fsck (pack corruption), restart 8091/8765, refresh model routes, BackgroundFabric approval.

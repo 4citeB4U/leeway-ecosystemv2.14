@@ -6,23 +6,60 @@
   "host": "LEONA-PC",
   "workspace": "D:\\Leeway-Ecosystem v2.1.4",
   "auditRoot": "C:\\Users\\Leona\\LeeWay-Audits",
-  "forgejo": {
+    "forgejo": {
     "url": "http://127.0.0.1:3000",
     "repo": "4CITEB4U/leeway-ecosystemv2.14",
     "branch": "main",
     "status": "COMPLETE_PUSHED_VERIFIED",
-    "headCommit": "12df68329e148513dcfaf87ac9ff401fa92c92f6",
-    "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\FORGEJO-DEPLOY-01-20260809-182731"
+    "headCommit": "36656b59d23707baa58374958891bd59dedfc217",
+    "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\FORGEJO-DEPLOY-01-20260809-182731",
+    "gitRepoNote": "workspace repo pack corruption repaired (pack isolated+backed up, forgejo remote wired, fetch OK); pushes via staging mirror; Forgejo restored after Docker Desktop crash 2026-08-09 20:00"
   },
   "tracks": {
     "A": { "name": "B-1 evidence closure", "status": "COMPLETE" },
     "B": { "name": "Forgejo deploy + source push", "status": "COMPLETE" },
-    "C": { "name": "Model orchestra discovery", "status": "PENDING" },
-    "D": { "name": "LeeWay Agent OS preservation", "status": "PENDING" },
-    "D.1": { "name": "Cerebral donor trace + BackgroundFabric", "status": "PENDING" },
-    "E": { "name": "Workspace catalog verify", "status": "PENDING" },
-    "F": { "name": "DB no-mutation verify", "status": "PENDING" },
-    "G": { "name": "Hermes no-mutation verify", "status": "PENDING" },
+    "C": {
+      "name": "Model orchestra discovery",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\MODEL-ORCHESTRA-01-20260809-194300",
+      "receipt": "MODEL-ORCHESTRA-01-20260809-194300",
+      "summary": "10 models discovered/benchmarked; delegation proven via planning lane; routing table incl agent-lee-code-mode @ 8787",
+      "followUps": ["(done 2026-08-09 20:30) updated-model-routes.json refreshed: 6 ACTIVE / 4 UNAVAILABLE vs live /api/tags; qwen2.5-coder 14b/1.5b now installed"]
+    },
+    "D": {
+      "name": "LeeWay Agent OS preservation",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\AGENT-OS-PRESERVATION-01-20260809-194500",
+      "treeHashSha256": "25919BF093D6FD90BCFB7A4A03623250D530BF0D0ED9CF8F283DAD35EC489937",
+      "stackHealth": {"4001": "UP", "8080": "UP", "8787": "UP", "8091": "UP", "8765": "UP", "3002": "UP"},
+      "followUps": ["git fsck/repair workspace repo"]
+    },
+    "D.1": {
+      "name": "Cerebral donor trace + BackgroundFabric",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\CEREBRAL-DONOR-TRACE-01-20260809-194800",
+      "summary": "donor C:\\Cerebral lineage mapped into agent-lee-coding-mode (11 capability mappings); BackgroundFabric proposal delivered",
+      "followUps": ["BackgroundFabric approval + build"]
+    },
+    "E": {
+      "name": "Workspace catalog verify",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\WORKSPACE-CATALOG-VERIFY-01-20260809-195100",
+      "summary": "5/5 sampled entries verified, 0 discrepancies, catalog not rebuilt"
+    },
+    "F": {
+      "name": "DB no-mutation verify",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\DB-NO-MUTATION-VERIFY-01-20260809-200100",
+      "summary": "MariaDB seafile (7 dbs), MSSQL transit-hub (LeeWayTransitHub), gitea.db snapshot before/after - no mutations",
+      "followUps": ["git fsck before workspace repo commits"]
+    },
+    "G": {
+      "name": "Hermes no-mutation verify",
+      "status": "COMPLETE",
+      "evidence": "C:\\Users\\Leona\\LeeWay-Audits\\HERMES-NO-MUTATION-VERIFY-01-20260809-200100",
+      "summary": "inbox/outbox structure + hashes unchanged"
+    },
     "H": {
       "name": "Bitwarden Lite security foundation",
       "status": "PASS_BITWARDEN_LITE_FOUNDATION_READY",
@@ -32,5 +69,7 @@
       "unproven": ["SMTP delivery", "desktop/mobile clients", "2FA/SSO/SCIM", "admin console", "import/export", "TLS"]
     }
   },
+  "runStatus": "ALL_TRACKS_COMPLETE (A-G + H)",
+  "runSummary": "D:\\Leeway-Ecosystem v2.1.4\\orchestration\\opencode\\inbox\\finisher-handoff-01.md + Archive run summary",
   "secretsPolicy": "No secrets in this file. Credentials: C:\\LeeWay\\Forgejo\\credentials\\ + LeeWay-Audits recovery checklist."
 }
