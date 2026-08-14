@@ -1990,6 +1990,19 @@ function animate() {
     if (e.hot || e.active) { e.p += dt * e.speed; if (e.p > 1) e.p -= 1; }
   }
 
+  /* Update edge opacity based on selection state */
+  for (const e of relEdges) {
+    let targetOpacity = e.opacity;
+    if (SF.activeId) {
+      /* When a node is selected, show its connected edges prominently */
+      const isConnected = e.sn.id === SF.activeId || e.tn.id === SF.activeId;
+      targetOpacity = isConnected ? e.opacity * 1.5 : e.opacity * 0.15;
+    }
+    e.line.material.opacity = lerpTo(e.line.material.opacity, targetOpacity, dt * 3);
+    if (e.arrow) e.arrow.material.opacity = e.line.material.opacity;
+    if (e.packet) e.packet.material.opacity = Math.max(e.packet.material.opacity, e.line.material.opacity * 0.8);
+  }
+
   for (const f of filaments) { f.t += dt * f.speed; if (f.t > 1) f.t -= 1; }
 
   for (const m of nodeMeshes) {
