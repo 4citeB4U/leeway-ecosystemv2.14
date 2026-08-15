@@ -37,6 +37,7 @@ SEMANTIC_PAIRS = [
 # the directory actually exists (never fabricated).
 PROJECT_DIRS = {
     "digital-brain": "DigitalBrain",
+    "runtime-fabric": "Leeway Runtime Fabric",
 }
 
 
