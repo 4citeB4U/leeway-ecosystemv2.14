@@ -84,7 +84,7 @@ def ingest(conn, leeway_root_env=None, force=False):
     leeway_root = Path(os.environ.get("LEEWAY_ROOT", leeway_root_env or "."))
     agents_md = leeway_root / "AGENTS.md"
 
-    sources = [agents_md] + [leeway_root / rel for rel in COMPOSE_FILES if (leeway_root / rel).is_file()]
+    sources = [agents_md, Path(__file__).resolve()] + [leeway_root / rel for rel in COMPOSE_FILES if (leeway_root / rel).is_file()]
     newest = max((p.stat().st_mtime_ns for p in sources if p.is_file()), default=0)
     last_scan = store.get_meta(conn, "system_last_scan")
     if not force and last_scan and int(last_scan) >= newest:
