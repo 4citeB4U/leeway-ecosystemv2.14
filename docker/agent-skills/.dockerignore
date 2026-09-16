@@ -1,0 +1,6 @@
+authority/.git
+authority/node_modules
+authority/**/node_modules
+authority/.env
+authority/.env.*
+
