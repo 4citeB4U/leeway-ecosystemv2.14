@@ -1,0 +1,8 @@
+{
+    "documentation":  "https://manual.seafile.com/11.0/maintain/seafile_fsck/",
+    "failureSignals":  0,
+    "productionChanged":  false,
+    "repositoriesChecked":  2,
+    "exit":  0,
+    "mode":  "READ_ONLY_NO_REPAIR"
+}

@@ -1,0 +1,18 @@
+﻿{
+    "removed":  [
+                    "leeway_seafile_app_before_recovery_20260916",
+                    "leeway_seafile_db_before_recovery_20260916",
+                    "leeway_seafile_app_check_20260916",
+                    "leeway_seafile_db_check_20260916",
+                    "leeway_seafile_cache_check_20260916"
+                ],
+    "time":  "2026-09-16T23:21:23.2778332Z",
+    "rollbackArchiveSha256":  "24E70D01BC142C8214D7F53E77B873A1462520D8EAB308B70F03BFC0C41B3FFD",
+    "recoveryVolumesDeleted":  0,
+    "rollbackArchiveReloadVerified":  true,
+    "scriptSHA256":  "63242614077D5BFB66357C4C8F5B5C3CA3EA2271D0958D3C6395FC6AE137FFE6",
+    "originalVolumesDeleted":  0,
+    "imagesDeleted":  0,
+    "status":  "RECOVERY_CLEANUP_VERIFIED",
+    "proof":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL"
+}

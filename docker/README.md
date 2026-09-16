@@ -1,57 +1,33 @@
 # LeeWay Docker execution checkpoint - 2026-09-16
 
-**Maintenance is partially executed. Archive reload succeeded. The guarded retirement process later exited with an error, and intermittent workstation access has prevented final state reconciliation. This is not a production-ready declaration.**
+Executed on the verified LeeWay workstation through Desktop Commander. This is a diagnostic and recovery checkpoint, not production certification or official C3 ingress proof.
 
-## Last stable fleet before recovery probes
+## Completed changes
 
-| Measure | Baseline | Last confirmed |
+| Measure | Before | After |
 |---|---:|---:|
-| Running containers | 54 | 50 |
-| Original stopped/created containers | 52 | 52 retained |
-| Total containers | 106 | 102 |
+| Total containers | 106 | 50 |
+| Running | 54 | 50 |
+| Stopped or created | 52 | 0 |
 
-The table records the fleet before the guarded retirement sequence. Do not treat 102 as a current total: final removal state and temporary recovery-probe cleanup require reconciliation. At the last readable manifest, zero originals had been removed; the retirement process subsequently exited with an error. The running count fell through four-to-one capability-center consolidation and retirement of an isolated idle Ollama duplicate. The skills service was replaced one-for-one. Temporary candidates were removed.
+- Consolidated four byte-identical capability-center servers into one container, preserving four identities, ports 8860-8863, registries and 12 legacy network aliases. Their dispatch route acknowledges requests; it does not execute work.
+- Linked the skills service to the canonical LeeWay-Agent-Skills commit 66c976bb0e79e24503c847ef90929c6fb9d5d818: 100 verified SKILL.md files, eight preserved legacy recipes, persistent local state and read-only live Docker inventory.
+- Removed the isolated idle Ollama duplicate after image archive reload, shared-volume verification and a stable sorted 13-entry model inventory.
+- Preserved and removed all 52 original stopped/created containers: 44 image snapshots and eight root-filesystem export fallbacks. Native archive reload and 52 isolated create-without-start tests passed before original deletion.
+- Retained original volumes and images. No system prune, volume prune, original data-volume deletion, or image deletion was performed. Temporary restore-test anonymous volumes were removed only with their never-started test containers.
 
-## Completed
+## Source and recovery material
 
-- Consolidated four byte-identical capability-center servers into one healthy container. Four identities, ports 8860-8863, registries and 12 legacy network aliases were preserved. These routes display registries and acknowledge dispatch; they do not execute dispatched work.
-- Replaced the legacy skills container with a healthy service that preserves its eight workflow recipes and exposes 100 hash-verified canonical SKILL.md files from LeeWay-Agent-Skills commit `66c976bb0e79e24503c847ef90929c6fb9d5d818`.
-- Added read-only access to the existing Docker Reality inventory through the skills service, and persistent skills/receipt state under the verified ecosystem root. No second execution authority or Docker socket was added to skills.
-- Retired the disconnected, idle Ollama duplicate after image-archive reload verification. The active service's sorted 13-entry model inventory stayed stable during the resumed check; shared model storage was retained. The earlier unsorted comparison failed for an unproven reason and was not represented as a pass.
-- Inspected configuration, mounts, networks and processes across the initial fleet, plus source structures inside 27 Python and nine Node services. These inventories distinguish implemented interfaces from successful end-to-end operations.
-- Fresh upstream-base builds of the centers and skills recipes both passed their contract tests. Centers passed 12 endpoint comparisons, four missing-route checks and four acknowledgement-only dispatch checks. Skills passed canonical authority, legacy-recipe equivalence, live inventory, negative HTTP, tamper and missing-file checks.
-- Recovered and published live app.py source plus reference build inputs for 18 additional services. The local Services source files differed from the running bytes; source-provenance.json records this drift. These 18 reference builds are not fresh-build certified.
-- Preserved unrelated changes in the root repository by publishing from an isolated checkout.
+[Organization and authority map](ORGANIZATION.md), [Seafile deployment](seafile/README.md), [Capability-center source and Compose](capability-centers/README.md), [skills source, pinned submodule and Compose](agent-skills/README.md), [all running services](SERVICE_INVENTORY.md), [execution receipts](evidence/execution-receipts.json), [recovery instructions](recovery/README.md).
+The source audits cover 27 Python services and nine Node services. They record source hashes, interfaces and dependency clues without importing application code. The inventory also inspects the remaining vendor containers and process/mount/network configuration.
+This publication is not a complete fresh-machine rebuild of the entire fleet. The two changed applications have source and build recipes; their fresh upstream-base builds and full contract tests passed. Eighteen additional live service sources and reference build contexts are published in recovered-services with provenance; their fresh builds are not verified. Remaining build contexts still require reconciliation. Private filesystem snapshots, secrets and application data are not committed to this public repository.
 
-Source: [capability centers](capability-centers/), [skills service](agent-skills/), [18 recovered services](recovered-services/), [recovery scripts](recovery/), [baseline and candidate evidence](evidence/). The older component READMEs describe earlier checkpoints; this page records the later confirmed execution state.
+## Remaining production work
 
-For a source-only skills image, use `Dockerfile.rebuild`; the older `Dockerfile` uses a workstation legacy image. Initialize the pinned authority submodule first. Fresh builds require application state and secrets to be supplied separately.
+1. Seafile recovered: the verified application/database pair now passes live HTTP ping, service database authentication, both repository heads and read-only fsck. The first database-only cutover failed and rolled back; the verified pair cutover followed. Original volumes and protected configuration remain preserved. A real user login/upload workflow has not been exercised. See seafile/README.md and evidence/seafile-production-recovery.json.
+2. Six running-service environment references have no running alias. Their end-to-end functions are not repaired by container cleanup:
 
-## Stopped-container recovery: pending final verification
-
-The verified root is `D:\LeeWay\Ecosystem`. The backup set is `Archive/backups/stopped-docker-20260916-154303`.
-
-- Full original configuration was protected with Windows DPAPI CurrentUser and its decryption checked.
-- 44 stopped containers were committed as image snapshots. Eight whose original image metadata was unavailable were preserved as root-filesystem exports.
-- The shared-layer image archive is 19,125,731,328 bytes.
-- Its completed SHA-256 is `072A3ACF8F52E49A322B2B58AD80E960B9038E993081F1572F9ADA8AE9F23D3B`.
-- Docker archive reload verification completed successfully, recorded at 2026-09-16T21:46:54Z in the preservation receipt.
-- The guarded retirement process started. Its output explicitly confirmed isolated recreation for at least 34 containers, then reported process exit code 1. The remaining output and final manifest must be reconciled before claiming completion or rerunning anything.
-- Original volumes, images and bind-mounted data were retained. Git does not contain private filesystem archives, secrets or application data.
-
-The next operator must read the tail of Desktop Commander process 33324 and the current preservation-manifest.json / restore-tests.json before doing anything else. Do not rerun completed preservation or repeat deletion blindly. The archive is already verified. The saved workstation scripts are `Restore-LeeWayPreservedDocker-v1.ps1` and `Invoke-LeeWayStoppedDockerRetirement-v1.ps1` under `Archive/operator-scripts`. The retirement script requires archive verification and all isolated recreation checks before deletion.
-
-## Remaining production blockers
-
-Seafile returns HTTP 502 and is unhealthy. MariaDB responds, but `ccnet_db` and `seafile_db` have no tables. `seahub_db` has 100 tables and no `auth_user` entries. No schema reset or administrator creation was performed.
-
-A preserved, unused volume named `leeway-seafile-db-data` was subsequently found. Inspection on a separate clone found 12 ccnet tables, 39 seafile tables, 110 seahub tables, one existing email account and two repositories. A cloned application/database/cache stack on an internal network became Docker-healthy. An internal API ping returned HTTP 200, service database authentication passed, and both repository head objects matched the cloned current data files. The vendor's read-only fsck completed for both repositories with exit 0 and zero failure signals. See the [Seafile 11 integrity-check documentation](https://manual.seafile.com/11.0/maintain/seafile_fsck/).
-
-Production Seafile has NOT been switched. The recovered database root credential differs from the current database container's environment, although the application service credential works. Reconcile that on the clone before any promotion. The candidate test's host-side probe could not establish access through its internal network; the internal ping, database query and fsck are separate confirmed evidence. Source volumes were retained.
-
-Six running-service settings refer to names with no running Docker alias:
-
-| Running service | Setting | Missing endpoint name |
+| Source | Setting | Missing endpoint name |
 |---|---|---|
 | leeway_agent_workstation | WORKBOARD_BASE | leeway_workboard_runtime |
 | agent_lee_code_mode | AGENT_LEE_VOICE_SERVICE | agent-lee-qwen-voice |
@@ -60,18 +36,20 @@ Six running-service settings refer to names with no running Docker alias:
 | leeway_media_router | LEEWAY_AGENT_LEE_URL | agent-lee |
 | leeway_media_ingestion_layer | LEEWAY_AGENT_LEE_URL | agent-lee |
 
-Eight phone/email/calendar/browser/desktop/license/installer/PWA runtimes explicitly identify themselves as work-order shells without completed provider/device execution. Further consolidation requires reconciling their state ownership and client contracts.
+3. Eight phone/email/calendar/browser/desktop/license/installer/PWA runtimes explicitly state that they are work-order shells, not completed provider/device execution. They are candidates for a shared service after state ownership and client contracts are reconciled.
+4. 40 running containers lack Docker health checks. A successful GET or a green container check does not establish business-workflow correctness.
+5. Historical C:/E: bindings, relocated Compose labels, and the legacy skills architecture manifest still need source/data reconciliation. The July architecture snapshot was deliberately not promoted to live truth.
+6. Shared writable mounts remain and need ownership review. Sharing does not by itself prove conflicting writes:
+- leeway-triposr-backend:/opt/leeway/receipts / leeway-triposr-reconstruction:/opt/leeway/receipts
+- leeway-triposr-backend:/var/lib/leeway/outputs / leeway-triposr-reconstruction:/var/lib/leeway/outputs
+- leeway_artifact_viewer:/documents / leeway_document_runtime:/documents
+- leeway_artifact_viewer:/notebooks / leeway_open_notebook:/notebooks
+- leeway_context_gateway:/app/receipts / leeway_api_gateway:/app/receipts / leeway_research_lane:/app/briefs / leeway_research_lane:/app/receipts
 
-Forty running containers lack Docker health checks. Read-only checks found successful HTTP responses from 34 custom services after using the correct workstation and web routes. Forgejo MCP has a passing TCP health check but no `/health` route; Docker Reality is internal and was verified through the skills inventory bridge. None of these checks proves a complete business workflow.
+## Evidence and continuity boundaries
 
-Historical C:/E: bindings, relocated Compose labels, shared writable data ownership and full-fleet source/build publication remain unresolved. The stale July skills architecture manifest was not promoted to current truth.
-
-## Proof boundaries
-
-- These are `DIAGNOSTIC_ONLY_NOT_OFFICIAL` maintenance results. Official C3 ingress completion is not established.
-- Formula health reported PASS, but Formula selection/execution was NOT_EXECUTED for these maintenance decisions.
-- Learning Ledger was NOT_UPDATED in this pass.
-- The correct baseline receipt is `docker-consolidation-discovery-20260916-152839.json`; earlier nested-array output reporting one container is superseded.
-- Source audits, recovery scripts, fresh-build result files and the 18 recovered build contexts are published in this branch. Later Seafile recovery evidence and final retirement results still require publication.
-- The native Docker API-version field is Server.APIVersion; the workstation restore helper was corrected before its successful recreation checks.
-- Desktop Commander access recovered after the first HTTP 504, then became intermittent again. No unobserved action or final state is assumed.
+- Correct baseline is 106 containers in docker-consolidation-discovery-20260916-152839.json. Earlier discovery output with a nested-array count of one is superseded, not authoritative.
+- All 52 original recreation tests passed. Retirement was interrupted by an unavailable backup path; the resume reconciled 11 already absent containers and removed the remaining 41. Two of the prior absences were not recorded in the last saved manifest, so their removal timing is not asserted. Progress was then saved using verified temporary files and replacement backups. An unsorted Ollama comparison failed; its cause was not proven. The resumed operation separately verified sorted model identities and archive reload.
+- C0 -> C1 -> C2 -> C3 CURRENT -> C4 -> C5 -> C6 remains the continuity path. These direct diagnostics do not establish official C3 completion.
+- Formula health reported PASS, but Formula selection/execution was NOT_EXECUTED for these maintenance decisions. Learning Ledger was NOT_UPDATED in this maintenance pass.
+- Root repository unrelated changes were preserved; publication used an isolated checkout and branch.

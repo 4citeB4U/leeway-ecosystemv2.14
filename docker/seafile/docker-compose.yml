@@ -1,0 +1,127 @@
+{
+    "networks":  {
+                     "seafile-net":  {
+                                         "name":  "leeway-seafile-network",
+                                         "external":  true
+                                     }
+                 },
+    "volumes":  {
+                    "seafile-db":  {
+                                       "name":  "leeway-seafile-db-recovery-clone-20260916",
+                                       "external":  true
+                                   },
+                    "seafile-data":  {
+                                         "name":  "leeway-seafile-data-recovery-clone-20260916",
+                                         "external":  true
+                                     }
+                },
+    "name":  "seafile",
+    "services":  {
+                     "leeway-seafile-db":  {
+                                               "image":  "mariadb@sha256:5a5c675881ef3fd1c1da9b0a3bfd6ee82edbe39cd9e32e06be18034c37235e0e",
+                                               "container_name":  "leeway-seafile-db",
+                                               "restart":  "unless-stopped",
+                                               "networks":  [
+                                                                "seafile-net"
+                                                            ],
+                                               "entrypoint":  [
+                                                                  "docker-entrypoint.sh"
+                                                              ],
+                                               "command":  [
+                                                               "mariadbd"
+                                                           ],
+                                               "environment":  {
+                                                                   "MYSQL_ROOT_PASSWORD":  "${LEEWAY_SEAFILE_LEEWAY_SEAFILE_DB_MYSQL_ROOT_PASSWORD:?Set this value in the private .env file}",
+                                                                   "MYSQL_LOG_CONSOLE":  "true",
+                                                                   "MARIADB_AUTO_UPGRADE":  "1"
+                                                               },
+                                               "volumes":  [
+                                                               {
+                                                                   "read_only":  false,
+                                                                   "target":  "/var/lib/mysql",
+                                                                   "source":  "seafile-db",
+                                                                   "type":  "volume"
+                                                               }
+                                                           ],
+                                               "healthcheck":  {
+                                                                   "retries":  5,
+                                                                   "interval":  "30000000000ns",
+                                                                   "timeout":  "10000000000ns",
+                                                                   "test":  [
+                                                                                "CMD",
+                                                                                "healthcheck.sh",
+                                                                                "--connect",
+                                                                                "--innodb_initialized"
+                                                                            ]
+                                                               }
+                                           },
+                     "leeway-seafile-cache":  {
+                                                  "image":  "memcached@sha256:85c0ab87f71b8b3ade708271177a8e5efca5e93c00287b6f25a2d74a27180bfa",
+                                                  "container_name":  "leeway-seafile-cache",
+                                                  "restart":  "unless-stopped",
+                                                  "networks":  [
+                                                                   "seafile-net"
+                                                               ],
+                                                  "entrypoint":  [
+                                                                     "memcached",
+                                                                     "-m",
+                                                                     "256"
+                                                                 ]
+                                              },
+                     "leeway-seafile":  {
+                                            "image":  "seafileltd/seafile-mc@sha256:f1e19cc1cdd52ed8ec883de114acaa1e932941515dd6571fce0c0ff02248c4cf",
+                                            "container_name":  "leeway-seafile",
+                                            "restart":  "unless-stopped",
+                                            "networks":  [
+                                                             "seafile-net"
+                                                         ],
+                                            "command":  [
+                                                            "/sbin/my_init",
+                                                            "--",
+                                                            "/scripts/enterpoint.sh"
+                                                        ],
+                                            "environment":  {
+                                                                "TIME_ZONE":  "America/Chicago",
+                                                                "SEAFILE_ADMIN_EMAIL":  "${LEEWAY_SEAFILE_LEEWAY_SEAFILE_SEAFILE_ADMIN_EMAIL:?Set this value in the private .env file}",
+                                                                "SEAFILE_ADMIN_PASSWORD":  "${LEEWAY_SEAFILE_LEEWAY_SEAFILE_SEAFILE_ADMIN_PASSWORD:?Set this value in the private .env file}",
+                                                                "SEAFILE_SERVER_LETSENCRYPT":  "false",
+                                                                "SEAFILE_SERVER_HOSTNAME":  "127.0.0.1:8082",
+                                                                "DB_HOST":  "leeway-seafile-db",
+                                                                "DB_ROOT_PASSWD":  "${LEEWAY_SEAFILE_LEEWAY_SEAFILE_DB_ROOT_PASSWD:?Set this value in the private .env file}",
+                                                                "SEAFILE_SERVER":  "seafile-server",
+                                                                "SEAFILE_VERSION":  "11.0.13"
+                                                            },
+                                            "volumes":  [
+                                                            {
+                                                                "read_only":  false,
+                                                                "target":  "/shared",
+                                                                "source":  "seafile-data",
+                                                                "type":  "volume"
+                                                            }
+                                                        ],
+                                            "ports":  [
+                                                          "8082:80"
+                                                      ],
+                                            "depends_on":  {
+                                                               "leeway-seafile-db":  {
+                                                                                         "condition":  "service_healthy"
+                                                                                     },
+                                                               "leeway-seafile-cache":  {
+                                                                                            "condition":  "service_started"
+                                                                                        }
+                                                           },
+                                            "healthcheck":  {
+                                                                "retries":  5,
+                                                                "interval":  "30000000000ns",
+                                                                "timeout":  "10000000000ns",
+                                                                "start_period":  "60000000000ns",
+                                                                "test":  [
+                                                                             "CMD",
+                                                                             "curl",
+                                                                             "-f",
+                                                                             "http://localhost/api2/ping/"
+                                                                         ]
+                                                            }
+                                        }
+                 }
+}
