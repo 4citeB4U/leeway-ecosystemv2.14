@@ -59,7 +59,7 @@ $context=docker context inspect $contextName|Out-String|ConvertFrom-Json
 $endpoint=$context[0].Endpoints.docker.Host
 if($endpoint -notmatch '^npipe:'){throw 'This authority script requires the verified Windows Docker named-pipe adapter'}
 $pipeName=($endpoint -split '/')[-1]
-$api=docker version --format '{{.Server.ApiVersion}}'
+$api=docker version --format '{{.Server.APIVersion}}'
 $body=[Text.Encoding]::UTF8.GetBytes(($request|ConvertTo-Json -Depth 60 -Compress))
 $crlf=[string][char]13+[char]10
 $header='POST /v'+$api+'/containers/create?name='+[Uri]::EscapeDataString($name)+' HTTP/1.1'+$crlf+'Host: docker'+$crlf+'Content-Type: application/json'+$crlf+'Content-Length: '+$body.Length+$crlf+'Connection: close'+$crlf+$crlf
