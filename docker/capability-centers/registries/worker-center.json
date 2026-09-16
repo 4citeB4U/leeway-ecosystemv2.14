@@ -1,0 +1,268 @@
+{
+    "schema":  "leeway-worker-center-registry-v23-1",
+    "centerId":  "leeway-worker-center",
+    "sourceInventory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-true-agent-worker-mcp-scan-v4-20260627-223626\\leeway-true-agent-worker-mcp-inventory-v4.json",
+    "status":  "WARM_CENTER_READY_DECLARED_WITH_MEDIA_INGESTION_V24_1",
+    "workers":  [
+                    {
+                        "id":  "agent-lee-creation-kernel",
+                        "name":  "agent-lee-creation-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "Up 3 hours",
+                        "runtime":  "docker",
+                        "deploymentLocation":  "docker",
+                        "layer":  "runtime",
+                        "healthCheck":  "",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "agent-lee-vision-kernel",
+                        "name":  "agent-lee-vision-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "Up 12 hours",
+                        "runtime":  "docker",
+                        "deploymentLocation":  "docker",
+                        "layer":  "runtime",
+                        "healthCheck":  "",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "agent-lee-voice-kernel",
+                        "name":  "agent-lee-voice-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "Up 8 hours (healthy)",
+                        "runtime":  "docker",
+                        "deploymentLocation":  "docker",
+                        "layer":  "runtime",
+                        "healthCheck":  "",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "creation-kernel",
+                        "name":  "creation-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "ready",
+                        "runtime":  "http-service",
+                        "deploymentLocation":  "local-runtime",
+                        "layer":  "runtime",
+                        "healthCheck":  "http://127.0.0.1:8094/health",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "hybrid-fabric",
+                        "name":  "hybrid-fabric",
+                        "category":  "TRUE_WORKER",
+                        "status":  "ready",
+                        "runtime":  "http-service",
+                        "deploymentLocation":  "local-runtime",
+                        "layer":  "runtime",
+                        "healthCheck":  "http://127.0.0.1:8777/state",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "leeway_hybrid_fabric",
+                        "name":  "leeway_hybrid_fabric",
+                        "category":  "TRUE_WORKER",
+                        "status":  "Up 2 hours",
+                        "runtime":  "docker",
+                        "deploymentLocation":  "docker",
+                        "layer":  "runtime",
+                        "healthCheck":  "",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "leeway_runtime_fabric",
+                        "name":  "leeway_runtime_fabric",
+                        "category":  "TRUE_WORKER",
+                        "status":  "Up 46 hours",
+                        "runtime":  "docker",
+                        "deploymentLocation":  "docker",
+                        "layer":  "runtime",
+                        "healthCheck":  "",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "runtime-fabric",
+                        "name":  "runtime-fabric",
+                        "category":  "TRUE_WORKER",
+                        "status":  "ready",
+                        "runtime":  "http-service",
+                        "deploymentLocation":  "local-runtime",
+                        "layer":  "runtime",
+                        "healthCheck":  "http://127.0.0.1:4001/runtime/health",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "vision-kernel",
+                        "name":  "vision-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "ready",
+                        "runtime":  "http-service",
+                        "deploymentLocation":  "local-runtime",
+                        "layer":  "runtime",
+                        "healthCheck":  "http://127.0.0.1:8093/health",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "voice-kernel",
+                        "name":  "voice-kernel",
+                        "category":  "TRUE_WORKER",
+                        "status":  "ready",
+                        "runtime":  "http-service",
+                        "deploymentLocation":  "local-runtime",
+                        "layer":  "runtime",
+                        "healthCheck":  "http://127.0.0.1:8092/health",
+                        "capabilities":  [
+
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-media-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Media Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-runtime-backed",
+                        "runtime":  "docker-http-service",
+                        "deploymentLocation":  "leeway_media_ingestion_layer",
+                        "layer":  "runtime-media-ingestion",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "hostHealthCheck":  "http://127.0.0.1:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "receive_media",
+                                             "normalize_media",
+                                             "write_media_receipts",
+                                             "forward_runtime_events"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-media-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Media Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_media_receipts",
+                                             "validate_ingestion_policy",
+                                             "track_source_metadata"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-video-analysis-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Video Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "vision-kernel-routing",
+                        "layer":  "vision",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-video-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "video_event_prepare",
+                                             "vision_kernel_route",
+                                             "frame_work_order_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-video-analysis-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Video Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-video-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_video_ingestion",
+                                             "validate_video_source",
+                                             "track_frame_receipts"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-audio-analysis-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Audio Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "audio-runtime-routing",
+                        "layer":  "audio",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-audio-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audio_event_prepare",
+                                             "transcription_route_prepare",
+                                             "sound_analysis_route_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-audio-analysis-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Audio Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-audio-analysis-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_audio_ingestion",
+                                             "validate_audio_source",
+                                             "track_audio_receipts"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-document-media-ingestion-mcp-execution-worker",
+                        "name":  "Leeway Document Media Ingestion Execution Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered-ingestion-backed",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "document-runtime-routing",
+                        "layer":  "documents",
+                        "healthCheck":  "http://leeway-media-ingestion-layer:5300/media-ingestion/health",
+                        "supportsMcp":  "leeway-document-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "document_event_prepare",
+                                             "pdf_route_prepare",
+                                             "spreadsheet_route_prepare"
+                                         ]
+                    },
+                    {
+                        "id":  "leeway-document-media-ingestion-mcp-audit-worker",
+                        "name":  "Leeway Document Media Ingestion Audit Worker",
+                        "category":  "TRUE_WORKER",
+                        "status":  "registered",
+                        "runtime":  "logical-worker",
+                        "deploymentLocation":  "worker-center",
+                        "layer":  "audit",
+                        "healthCheck":  "http://leeway-worker-center:8862/health",
+                        "supportsMcp":  "leeway-document-media-ingestion-mcp",
+                        "capabilities":  [
+                                             "audit_document_ingestion",
+                                             "validate_document_source",
+                                             "track_document_receipts"
+                                         ]
+                    }
+                ]
+}

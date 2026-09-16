@@ -1,0 +1,101 @@
+services:
+  leeway-agent-center:
+    container_name: leeway_agent_center
+    build:
+      context: ./legacy/build-agent-center
+    restart: unless-stopped
+    environment:
+      CENTER_ID: leeway-agent-center
+      CENTER_TYPE: Leeway Agent Center
+      PORT: "8860"
+      REGISTRY_PATH: /app/registry.json
+    ports:
+      - "8860:8860"
+    labels:
+      com.leeway.layer: capability-center-runtime-v23
+      com.leeway.center: agent-center
+      com.leeway.service: leeway-agent-center
+      com.leeway.role: regular-agents
+      com.leeway.count: "9"
+    networks:
+      leeway-net:
+        aliases:
+          - leeway-agent-center
+          - agent-center
+
+  leeway-mcp-agent-center:
+    container_name: leeway_mcp_agent_center
+    build:
+      context: ./legacy/build-mcp-agent-center
+    restart: unless-stopped
+    environment:
+      CENTER_ID: leeway-mcp-agent-center
+      CENTER_TYPE: Leeway MCP Agent Center
+      PORT: "8861"
+      REGISTRY_PATH: /app/registry.json
+    ports:
+      - "8861:8861"
+    labels:
+      com.leeway.layer: capability-center-runtime-v23
+      com.leeway.center: mcp-agent-center
+      com.leeway.service: leeway-mcp-agent-center
+      com.leeway.role: mcp-agents
+      com.leeway.count: "21"
+    networks:
+      leeway-net:
+        aliases:
+          - leeway-mcp-agent-center
+          - mcp-agent-center
+
+  leeway-worker-center:
+    container_name: leeway_worker_center
+    build:
+      context: ./legacy/build-worker-center
+    restart: unless-stopped
+    environment:
+      CENTER_ID: leeway-worker-center
+      CENTER_TYPE: Leeway Worker Center
+      PORT: "8862"
+      REGISTRY_PATH: /app/registry.json
+    ports:
+      - "8862:8862"
+    labels:
+      com.leeway.layer: capability-center-runtime-v23
+      com.leeway.center: worker-center
+      com.leeway.service: leeway-worker-center
+      com.leeway.role: workers
+      com.leeway.count: "10"
+    networks:
+      leeway-net:
+        aliases:
+          - leeway-worker-center
+          - worker-center
+
+  leeway-mcp-center:
+    container_name: leeway_mcp_center
+    build:
+      context: ./legacy/build-mcp-center
+    restart: unless-stopped
+    environment:
+      CENTER_ID: leeway-mcp-center
+      CENTER_TYPE: Leeway MCP Center
+      PORT: "8863"
+      REGISTRY_PATH: /app/registry.json
+    ports:
+      - "8863:8863"
+    labels:
+      com.leeway.layer: capability-center-runtime-v23
+      com.leeway.center: mcp-center
+      com.leeway.service: leeway-mcp-center
+      com.leeway.role: mcp-packages
+      com.leeway.count: "11"
+    networks:
+      leeway-net:
+        aliases:
+          - leeway-mcp-center
+          - mcp-center
+
+networks:
+  leeway-net:
+    external: true
+    name: leeway-ecosystemv214_leeway-net

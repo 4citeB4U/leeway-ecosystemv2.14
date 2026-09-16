@@ -1,0 +1,43 @@
+{
+  "name": "leeway-capability-centers",
+  "services": {
+    "capability-centers": {
+      "container_name": "leeway_capability_centers",
+      "image": "leeway-capability-centers:consolidated-20260916",
+      "build": {
+        "context": "."
+      },
+      "restart": "unless-stopped",
+      "ports": [
+        "8860:8860",
+        "8861:8861",
+        "8862:8862",
+        "8863:8863"
+      ],
+      "networks": {
+        "leeway-net": {
+          "aliases": [
+            "leeway_agent_center",
+            "leeway-agent-center",
+            "agent-center",
+            "leeway_mcp_agent_center",
+            "leeway-mcp-agent-center",
+            "mcp-agent-center",
+            "leeway_worker_center",
+            "leeway-worker-center",
+            "worker-center",
+            "leeway_mcp_center",
+            "leeway-mcp-center",
+            "mcp-center"
+          ]
+        }
+      }
+    }
+  },
+  "networks": {
+    "leeway-net": {
+      "external": true,
+      "name": "leeway-ecosystemv214_leeway-net"
+    }
+  }
+}

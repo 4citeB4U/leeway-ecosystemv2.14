@@ -1,0 +1,208 @@
+{
+    "schema":  "leeway-agent-center-registry-v23-1",
+    "centerId":  "leeway-agent-center",
+    "sourceInventory":  "E:\\.LeeWay-Produucts-File\\Leeway-Ecosystem v2.1.4\\Archive\\proofs\\leeway-true-agent-worker-mcp-scan-v4-20260627-223626\\leeway-true-agent-worker-mcp-inventory-v4.json",
+    "rule":  "Agent Lee and Agent Lee Prime are merged into one canonical primary agent identity.",
+    "status":  "WARM_CENTER_READY_DECLARED",
+    "agents":  [
+                   {
+                       "id":  "agent-lee",
+                       "name":  "Agent Lee",
+                       "mergedFrom":  [
+                                          "agent-lee",
+                                          "agent-lee-prime"
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "primary-orchestrating-agent",
+                       "status":  "registered",
+                       "runtime":  "agent-lee-runtime",
+                       "deploymentLocation":  "local-runtime",
+                       "layer":  "primary-agent",
+                       "healthCheck":  "http://127.0.0.1:8080/health",
+                       "capabilities":  [
+                                            "conversation",
+                                            "routing",
+                                            "agent_center_access",
+                                            "mcp_agent_center_access",
+                                            "worker_center_access",
+                                            "mcp_center_access",
+                                            "llm_routing",
+                                            "governed_execution",
+                                            "standards_alignment"
+                                        ]
+                   },
+                   {
+                       "id":  "attestation-marshal-agent",
+                       "name":  "LeeWay Attestation Marshal Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "service.identity.attestation",
+                                            "mcp.binding.review",
+                                            "connector.auth.proof",
+                                            "security.identity.attestation",
+                                            "security.worker.manifest.review",
+                                            "security.bridge.identity.verify",
+                                            "security.identity.quarantine"
+                                        ]
+                   },
+                   {
+                       "id":  "fs-nav-agent",
+                       "name":  "LeeWay File Navigator Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "ui.web-research.intake",
+                                            "file.route.discovery",
+                                            "workspace.context.selection"
+                                        ]
+                   },
+                   {
+                       "id":  "host-exec-agent",
+                       "name":  "LeeWay Host Execution Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "ui.app-forge.execution",
+                                            "ui.worker-center.dispatch",
+                                            "host.command.proposal",
+                                            "creative.build.runtime",
+                                            "preview.runtime.control",
+                                            "project.export.runtime"
+                                        ]
+                   },
+                   {
+                       "id":  "media-forge-agent",
+                       "name":  "LeeWay Media Forge Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "ui.creator-studio.operations",
+                                            "brand.safe.asset.generation",
+                                            "creative.handoff.governance",
+                                            "creative.animation.execution",
+                                            "creative.svg.canvas.execution"
+                                        ]
+                   },
+                   {
+                       "id":  "memory-warden-agent",
+                       "name":  "LeeWay Memory Warden Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "memory.isolation",
+                                            "provenance.enforcement",
+                                            "recall.integrity",
+                                            "security.memory.provenance",
+                                            "security.memory.poisoning.detect",
+                                            "security.recall.integrity.review",
+                                            "security.memory.replay"
+                                        ]
+                   },
+                   {
+                       "id":  "perception-agent",
+                       "name":  "LeeWay Perception Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "ui.visual.state.reading",
+                                            "device.signal.interpretation",
+                                            "before-after.validation"
+                                        ]
+                   },
+                   {
+                       "id":  "shield-governor-agent",
+                       "name":  "LeeWay Shield Governor Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "approval.gating",
+                                            "permission.review",
+                                            "protected.action.enforcement",
+                                            "security.zone.enforce",
+                                            "security.plugin.approval",
+                                            "security.protected-action.review",
+                                            "security.incident.receipts"
+                                        ]
+                   },
+                   {
+                       "id":  "threat-sentinel-agent",
+                       "name":  "LeeWay Threat Sentinel Agent",
+                       "mergedFrom":  [
+
+                                      ],
+                       "category":  "TRUE_REGULAR_LEEWAY_AGENT",
+                       "role":  "specialist-agent",
+                       "status":  "",
+                       "runtime":  "",
+                       "deploymentLocation":  "",
+                       "layer":  "",
+                       "healthCheck":  "",
+                       "capabilities":  [
+                                            "drift.hunting",
+                                            "runtime.anomaly.review",
+                                            "quarantine.recommendation",
+                                            "security.drift.hunt",
+                                            "security.rogue-workflow.detect",
+                                            "security.cross-zone.anomaly.review",
+                                            "security.quarantine.recommend"
+                                        ]
+                   }
+               ]
+}
