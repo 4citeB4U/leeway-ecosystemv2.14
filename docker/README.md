@@ -1,6 +1,6 @@
-# LeeWay Docker execution checkpoint — 2026-09-16
+# LeeWay Docker execution checkpoint â€” 2026-09-16
 
-**Maintenance is partially executed. Workstation access timed out before stopped-container recovery verification and retirement could finish. This is not a production-ready declaration.**
+**Maintenance is in progress. Workstation access recovered after a gateway timeout. Archive verification is running, with guarded recreation and retirement queued behind its matching success receipt. This is not a production-ready declaration.**
 
 ## Last confirmed state
 
@@ -14,7 +14,7 @@ The 52 original stopped containers have not been issued removal commands. The ru
 
 ## Completed
 
-- Consolidated four byte-identical capability-center servers into one healthy container. Four identities, ports 8860–8863, registries and 12 legacy network aliases were preserved. These routes display registries and acknowledge dispatch; they do not execute dispatched work.
+- Consolidated four byte-identical capability-center servers into one healthy container. Four identities, ports 8860â€“8863, registries and 12 legacy network aliases were preserved. These routes display registries and acknowledge dispatch; they do not execute dispatched work.
 - Replaced the legacy skills container with a healthy service that preserves its eight workflow recipes and exposes 100 hash-verified canonical SKILL.md files from LeeWay-Agent-Skills commit `66c976bb0e79e24503c847ef90929c6fb9d5d818`.
 - Added read-only access to the existing Docker Reality inventory through the skills service, and persistent skills/receipt state under the verified ecosystem root. No second execution authority or Docker socket was added to skills.
 - Retired the disconnected, idle Ollama duplicate after image-archive reload verification. The active service's sorted 13-entry model inventory stayed stable during the resumed check; shared model storage was retained. The earlier unsorted comparison failed for an unproven reason and was not represented as a pass.

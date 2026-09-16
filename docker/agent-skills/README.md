@@ -19,7 +19,9 @@ Initialize the pinned Git submodule before building:
 git submodule update --init docker/agent-skills/authority
 ```
 
-The normal Dockerfile reuses the verified workstation legacy image. Dockerfile.rebuild is a source-only reconstruction recipe using pinned direct Python requirements; fresh-base reconstruction is not yet tested. Never claim this backup alone supplies application data or secrets.
+The normal Dockerfile reuses the verified workstation legacy image. Dockerfile.rebuild is a source-only reconstruction recipe using pinned direct Python requirements; fresh-base reconstruction passed the full contract checks on 2026-09-16. Never claim this backup alone supplies application data or secrets.
 
 Candidate tests verify canonical identity and file hashes, eight-recipe equivalence, live Docker inventory, path rejection, read-only HTTP behavior, tamper rejection and missing-file failure.
 
+
+Compose selects Dockerfile.rebuild for a source build from python:3.12-slim. The legacy-base Dockerfile remains as a recovery alternative. Fresh candidates passed the same authority, recipe-equivalence, live-inventory and negative tests. The live service retains the earlier verified image; no extra live cutover was necessary.
