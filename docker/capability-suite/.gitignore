@@ -1,0 +1,6 @@
+configuration/
+state/
+test-state/
+candidate.json
+__pycache__/
+

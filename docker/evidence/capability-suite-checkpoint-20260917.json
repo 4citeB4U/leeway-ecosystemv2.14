@@ -1,0 +1,16 @@
+﻿{
+    "blocker":  "Original E: state inaccessible; Docker Desktop D: mount stale; empty canonical copies do not prove complete history",
+    "time":  "2026-09-17T00:12:45.0891232Z",
+    "productionContainers":  50,
+    "stopped":  0,
+    "productionChanged":  false,
+    "running":  50,
+    "candidateRemoved":  true,
+    "status":  "SOURCE_AND_CANDIDATE_VERIFIED_DEPLOYMENT_BLOCKED",
+    "scriptSHA256":  "6E926E8A1B2EA59DEC00911118FC564275D62C4FA840162698A358D361048B6E",
+    "originalDataDeleted":  false,
+    "proof":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+    "formulaExecution":  "NOT_EXECUTED",
+    "learningLedger":  "NOT_UPDATED",
+    "candidateFixtureVolumesRemoved":  true
+}

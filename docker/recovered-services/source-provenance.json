@@ -1,0 +1,164 @@
+[
+    {
+        "name":  "leeway_device_operator",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "535489d018b20b2b9260033f07d1228b46c7822888ab69125712244a327915c7",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_performance_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "45ac48c1f3914d4ba184ad659efcafd0b79bb4838dbf2a9c2cf7aefb4d8994d2",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_pwa_dashboard",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "b54b73924f0668d0db690963c40ed0cdc88faaa2e3bbd5b9aa6c2744280757d4",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_installer_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "247e1a1479b606bb87e11e6b1212e1f2bb31f0a58edffe8116ae0af94fc39481",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_license_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "532a37ac95f001240ce6230c6562341e71960415c09bbb81ee7bd053a524469f",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_desktop_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "7abdc06c42883884957f0a646238da2afa0f4a42b2aa0852a7f9789ea378155f",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_browser_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "b5bd5c9a3249ab2a98cfaa17a96213fa0be12e94709e77b147a475bdcd4733df",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_phone_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "6855ad92155dce92476f36fbe0d1482050c153c95c91f2c2d3715372d36d332d",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_calendar_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "ec1c8aa3c75c778d4e06abfc159fe03e8a1b8a94179418668bbffc0545e0ee18",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_email_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "c20bd1cbc7c1659212bfbfd167ceac0717c498ed68ed042725620a5be712c539",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_artifact_viewer",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "f1f1a2e3f2afdf3482d36407a0f21c12ff3f2ac7c8aa1636e1b960ab92d67339",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_open_notebook",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "cca88bb2b8896977722871c8cb4efd0a38096d9b1f8a5378a5f706f74101692f",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_meeting_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "6e6fe6269589a23c570a728129e5447ebc6de54a99e63297b6e72b24f599c98c",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_document_runtime",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "bb07cfbfad9c12f11b721bfbd53e3dcf3091c5f8fb95f58542aee37528f9b09a",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_context_gateway",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "40eed38262d05e1ce3c086e046cf8ab198e9a6aad37cd82c26b7a6797bcf0d43",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_api_gateway",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "d89f7aec9f549d008cd9ba8b10560ae0dc18c57758330c8e8c4b43958748f6bb",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_research_lane",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "fdd81876a684b12d2c65296ec0d193bd98bc5cb1cf100cc2b0bf4bdada147bbb",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    },
+    {
+        "name":  "leeway_seafile_storage_gateway",
+        "dockerfileSource":  "EXISTING_SERVICES_REFERENCE",
+        "requirementsSource":  "LIVE_CONTAINER",
+        "appSource":  "LIVE_CONTAINER",
+        "appSHA256":  "58fd481b43661d8f42f47778c2e2b41e4e000d836bda631a8954b89c9fb6b652",
+        "referenceAppMatchesLive":  false,
+        "freshBuildVerified":  false
+    }
+]

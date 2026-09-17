@@ -1,0 +1,4454 @@
+{
+  "schema": "leeway.live.fleet.audit.v1",
+  "time": "2026-09-16T23:21:42.164Z",
+  "proof": "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+  "counts": {
+    "total": 50,
+    "running": 50,
+    "stopped": 0,
+    "healthy": 10,
+    "unhealthy": 0,
+    "runningWithoutHealthcheck": 40
+  },
+  "containers": [
+    {
+      "id": "dde591d3dbb8a902856989e187cec81e27c25198356ba0e352a49147967d66be",
+      "name": "leeway-seafile",
+      "imageTag": "sha256:f1e19cc1cdd52ed8ec883de114acaa1e932941515dd6571fce0c0ff02248c4cf",
+      "imageId": "sha256:f1e19cc1cdd52ed8ec883de114acaa1e932941515dd6571fce0c0ff02248c4cf",
+      "repoDigests": [
+        "seafileltd/seafile-mc@sha256:f1e19cc1cdd52ed8ec883de114acaa1e932941515dd6571fce0c0ff02248c4cf"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "/sbin/my_init",
+      "workingDirectory": "/opt/seafile",
+      "ports": {
+        "80/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8082"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8082"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-seafile-network",
+          "aliases": [
+            "leeway-seafile"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-seafile-data-recovery-clone-20260916",
+          "sourceId": "39afa58f45a4ede0d95d35086c07883be7eabc0df958dad47c51fc7f4b9f247a",
+          "destination": "/shared",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "DB_HOST",
+        "DB_ROOT_PASSWD",
+        "DEBIAN_FRONTEND",
+        "LANG",
+        "LANGUAGE",
+        "LC_ALL",
+        "PATH",
+        "SEAFILE_ADMIN_EMAIL",
+        "SEAFILE_ADMIN_PASSWORD",
+        "SEAFILE_SERVER",
+        "SEAFILE_SERVER_HOSTNAME",
+        "SEAFILE_SERVER_LETSENCRYPT",
+        "SEAFILE_VERSION",
+        "TIME_ZONE"
+      ],
+      "compose": {
+        "project": "seafile",
+        "service": "leeway-seafile",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "f474d44403ded6d5cdd1e5d43473644ee7ae6bdb8f183600ee24325737683aab",
+      "name": "leeway-seafile-db",
+      "imageTag": "sha256:5a5c675881ef3fd1c1da9b0a3bfd6ee82edbe39cd9e32e06be18034c37235e0e",
+      "imageId": "sha256:5a5c675881ef3fd1c1da9b0a3bfd6ee82edbe39cd9e32e06be18034c37235e0e",
+      "repoDigests": [
+        "mariadb@sha256:5a5c675881ef3fd1c1da9b0a3bfd6ee82edbe39cd9e32e06be18034c37235e0e"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "",
+      "ports": {
+        "3306/tcp": null
+      },
+      "networks": [
+        {
+          "network": "leeway-seafile-network",
+          "aliases": [
+            "leeway-seafile-db"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-seafile-db-recovery-clone-20260916",
+          "sourceId": "112c7b67de6763dde767d0c75e819f490c916e1a78c5ac8efd99cab78b776e00",
+          "destination": "/var/lib/mysql",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GOSU_VERSION",
+        "LANG",
+        "MARIADB_AUTO_UPGRADE",
+        "MARIADB_VERSION",
+        "MYSQL_LOG_CONSOLE",
+        "MYSQL_ROOT_PASSWORD",
+        "PATH"
+      ],
+      "compose": {
+        "project": "seafile",
+        "service": "leeway-seafile-db",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "8b978c44769d56370f85de2791f8711ba1d829988d021df19e99c7c290f4a135",
+      "name": "leeway_agent_skills",
+      "imageTag": "leeway-agent-skills:canonical-linked-20260916",
+      "imageId": "sha256:e08fb7b755a547286dc5072e8e746e73ef7ca1edbeb79c596cbaf1b46ea8de61",
+      "repoDigests": [
+        "leeway-agent-skills@sha256:e08fb7b755a547286dc5072e8e746e73ef7ca1edbeb79c596cbaf1b46ea8de61"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5327/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5327"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5327"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_agent_skills",
+            "agent-skills"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "fc405d037a79e8bb37f411b4e9200aee60ed4d9c7ab4e6b5b29547a39e57b382",
+          "destination": "/skills",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "d0402e06734f0e9c1b3c289f6dd10a7617185cbc828c76002037ef0ad2e95a8e",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_ARCHITECTURE_PATH",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_SKILLS_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-agent-skills",
+        "service": "agent-skills",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "2d324ff0da591ec0bbd6254d8727827207c0182f5f8a40cba76c270ef0466650",
+      "name": "leeway_capability_centers",
+      "imageTag": "leeway-capability-centers:consolidated-20260916",
+      "imageId": "sha256:831f32c1ee67a644a4993fdbbe3cea3079b880cc7369d7ab2109e6371863f5ab",
+      "repoDigests": [
+        "leeway-capability-centers@sha256:831f32c1ee67a644a4993fdbbe3cea3079b880cc7369d7ab2109e6371863f5ab"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8860/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8860"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8860"
+          }
+        ],
+        "8861/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8861"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8861"
+          }
+        ],
+        "8862/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8862"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8862"
+          }
+        ],
+        "8863/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8863"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8863"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_capability_centers",
+            "capability-centers",
+            "leeway_agent_center",
+            "leeway-agent-center",
+            "agent-center",
+            "leeway_mcp_agent_center",
+            "leeway-mcp-agent-center",
+            "mcp-agent-center",
+            "leeway_worker_center",
+            "leeway-worker-center",
+            "worker-center",
+            "leeway_mcp_center",
+            "leeway-mcp-center",
+            "mcp-center"
+          ]
+        }
+      ],
+      "mounts": [],
+      "environmentNames": [
+        "NODE_VERSION",
+        "PATH",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-capability-centers",
+        "service": "capability-centers",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "101c9ff232658b0e1f92fdabe47ef492ab6423251a94c62c68ca88d180fe9a94",
+      "name": "leeway_digital_brain",
+      "imageTag": "leeway-digital-brain:canonical",
+      "imageId": "sha256:64bdbccda81b8fb6ebecb04db737e56c4e4178bd3aee96180e62d9a8407ef19b",
+      "repoDigests": [
+        "leeway-digital-brain@sha256:64bdbccda81b8fb6ebecb04db737e56c4e4178bd3aee96180e62d9a8407ef19b"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "8770/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8770"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_digital_brain",
+            "digital-brain"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-ecosystemv214_leeway_digital_brain_data",
+          "sourceId": "72a6d78d31add075ac3c38fe0ff457251b873471f272da99c30190341a329d26",
+          "destination": "/brain-data",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "c0e20365fa26d46380e9cc6985062382ed3f0c04964a37e9f1869bd982939308",
+          "destination": "/leeway-inventory",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "98e6360f4582085711280fd40a7139dcb3d4f691c4332a538487e3bb079be611",
+          "destination": "/leeway-root",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "508e9f1d9b22d5705a4eda7b70c585c6b32dc4d5598ab93de256eb10001e71a1",
+          "destination": "/host-drives/C",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "77d65d598159cf6098bd5066d59b77edb60331c876bdfcd62866a7a7a392710e",
+          "destination": "/host-drives/D",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "49968e7463f474b83326a2bc3e6abeb8644b01102e7527dbc2992ba87934a275",
+          "destination": "/host-drives/E",
+          "readOnly": true
+        }
+      ],
+      "environmentNames": [
+        "BRAIN_DATA_DIR",
+        "BRAIN_EMBEDDING_MODEL",
+        "BRAIN_FILESYSTEM_EVENT_TOKEN",
+        "BRAIN_FORCE_RESCAN",
+        "BRAIN_FORMULA",
+        "BRAIN_LIVE_SYNC",
+        "BRAIN_LLM_MODEL",
+        "DOCKER_REALITY_URL",
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_DRIVE_C",
+        "LEEWAY_DRIVE_D",
+        "LEEWAY_DRIVE_E",
+        "LEEWAY_FABRIC_URL",
+        "LEEWAY_INVENTORY_DIR",
+        "LEEWAY_ROOT",
+        "LEEWAY_ROOT_HOST_ABS",
+        "OBSIDIAN_VAULT",
+        "OLLAMA_BASE_URL",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION",
+        "WD8_MOUNT"
+      ],
+      "compose": {
+        "project": "digitalbrain",
+        "service": "digital-brain",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "98e34cbdb7a0a8b7045f3440dc69add3d4ababc13d1e34753a78da5c3165f041",
+      "name": "leeway_docker_reality",
+      "imageTag": "leeway-docker-reality:canonical",
+      "imageId": "sha256:a9d9bd45f345cfb86eaa95d6d0914055dbe305ba3a60241f3a59f2a6cd0302b9",
+      "repoDigests": [
+        "leeway-docker-reality@sha256:a9d9bd45f345cfb86eaa95d6d0914055dbe305ba3a60241f3a59f2a6cd0302b9"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "python",
+      "workingDirectory": "/app",
+      "ports": {
+        "8781/tcp": null
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_docker_reality",
+            "docker-reality"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "71329c4cc6e32171553fa81d044eb31d1a3aac52ba9376c4a99f4505c494cf5b",
+          "destination": "/var/run/docker.sock",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "BIND_HOST",
+        "BIND_PORT",
+        "DOCKER_SOCKET",
+        "GPG_KEY",
+        "LANG",
+        "PATH",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": "digitalbrain",
+        "service": "docker-reality",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": true
+    },
+    {
+      "id": "a8dcbaf38cc77958fc8cfbaee8be00f8dfff9f075519a91dfc2412312af8182a",
+      "name": "leeway_runtime_fabric",
+      "imageTag": "leeway-runtime-fabric:workstation-canonical",
+      "imageId": "sha256:6b4d5ded0757ffa525695838074515ade29921c0b66b45a740b092cbaed7c19a",
+      "repoDigests": [
+        "leeway-runtime-fabric@sha256:6b4d5ded0757ffa525695838074515ade29921c0b66b45a740b092cbaed7c19a"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "4001/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "4001"
+          }
+        ],
+        "8111/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8111"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_runtime_fabric",
+            "runtime-fabric"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-agent-workstation-runtime-pids",
+          "sourceId": "e852ac04af003f06666f430a62956637d71a2a364e3215b718f9d27db58a866e",
+          "destination": "/app/.pids",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway-agent-workstation-runtime-receipts",
+          "sourceId": "4e5d301860935936d2e062ac0065efab2800b857ab1fed33e1c4d1f643b3e40d",
+          "destination": "/app/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway-agent-workstation-secrets",
+          "sourceId": "f55d085e1847aed378fcbc3e92b9ed8e1636e67dcfc9d5091c6697e066ac37ce",
+          "destination": "/run/secrets",
+          "readOnly": true
+        }
+      ],
+      "environmentNames": [
+        "AGENT_CENTER_BASE",
+        "AGENT_LEE_ROUTER_URL",
+        "BRAIN_INGEST_TOKEN_FILE",
+        "DIGITAL_BRAIN_BASE",
+        "LEEWAY_MANAGEMENT_API_HOST",
+        "LEEWAY_MANAGEMENT_API_PORT",
+        "LEEWAY_MODEL_ALIASES_JSON",
+        "LEEWAY_MODEL_VAULT_PATH",
+        "NODE_ENV",
+        "NODE_VERSION",
+        "OLLAMA_HOST",
+        "PATH",
+        "WARM_MODELS",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-agent-workstation",
+        "service": "runtime-fabric",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "138593ed992a264bbdbb58cbd71859b8edcb597de33916d4eac3669086604a45",
+      "name": "leeway_agent_workstation",
+      "imageTag": "leeway-agent-workstation:canonical",
+      "imageId": "sha256:873da8bed8ffac80654d54a004be0a32027ca08dc83268dadeebd3e9c418be2e",
+      "repoDigests": [
+        "leeway-agent-workstation@sha256:873da8bed8ffac80654d54a004be0a32027ca08dc83268dadeebd3e9c418be2e"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5340/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "5340"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_agent_workstation",
+            "workstation"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-agent-workstation-brain-outbox",
+          "sourceId": "9bb8af80382944fe23d7c7ee1cc7ac677f6f6ce3245599bfbb807ad74236c5ca",
+          "destination": "/brain-root",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway-agent-workstation-state",
+          "sourceId": "c40b52670b14befe7be7c5532cae6956a0ea49dfd851e20536fca25a8f131434",
+          "destination": "/state",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AGENT_CENTER_BASE",
+        "BRAIN_OUTBOX_ROOT",
+        "DIGITAL_BRAIN_BASE",
+        "NODE_VERSION",
+        "OPEN_NOTEBOOK_BASE",
+        "PATH",
+        "PORT",
+        "RUNTIME_FABRIC_BASE",
+        "STATE_ROOT",
+        "WORKBOARD_BASE",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-agent-workstation",
+        "service": "workstation",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "c8c1486c8453d58d87f9e5e5612e29dde7953dfc3f47c46d64767440dd1b18ac",
+      "name": "agent_lee_code_mode",
+      "imageTag": "leeway-agent-lee-candidate:formula-v2-align-20260831-184320",
+      "imageId": "sha256:9d48716631d4fd68da3c003fd0d78f1b02bb4edc3027450d686fec2fbafba18b",
+      "repoDigests": [
+        "leeway-agent-lee-candidate@sha256:9d48716631d4fd68da3c003fd0d78f1b02bb4edc3027450d686fec2fbafba18b"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/usr/local/bin/docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8080/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8080"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8080"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "agent_lee_code_mode",
+            "agent-lee-code-mode"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_agent_lee_code_mode_leeway-config_v214",
+          "sourceId": "a04576bbb7ebc58a2a5e2ee9198b2e725d297a7a54f05231f56c76fc00e18618",
+          "destination": "/leeway-config",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AGENT_LEE_BRAIN_MODEL",
+        "AGENT_LEE_BRAIN_SERVICE",
+        "AGENT_LEE_CAN_SEND_TEXT",
+        "AGENT_LEE_DEFAULT_TEXT_CHANNEL",
+        "AGENT_LEE_MESSAGING_PROVIDER",
+        "AGENT_LEE_MODEL",
+        "AGENT_LEE_MODEL_POLICY",
+        "AGENT_LEE_OPENAI_BASE_URL",
+        "AGENT_LEE_TELEGRAM_BOT_TOKEN",
+        "AGENT_LEE_TELEGRAM_BRIDGE_ENABLED",
+        "AGENT_LEE_TELEGRAM_BRIDGE_PATH",
+        "AGENT_LEE_TELEGRAM_BRIDGE_PID_PATH",
+        "AGENT_LEE_TELEGRAM_BRIDGE_STATE",
+        "AGENT_LEE_TELEGRAM_CHAT_ID",
+        "AGENT_LEE_TELEGRAM_DEFAULT_METHOD",
+        "AGENT_LEE_TELEGRAM_DISCOVERY_ENABLED",
+        "AGENT_LEE_TELEGRAM_DISCOVERY_MANIFEST",
+        "AGENT_LEE_TELEGRAM_ENABLED",
+        "AGENT_LEE_TELEGRAM_MODE",
+        "AGENT_LEE_TELEGRAM_OPERATIONS_ENABLED",
+        "AGENT_LEE_TELEGRAM_OPERATION_MANIFEST",
+        "AGENT_LEE_TELEGRAM_OPERATION_SCRIPT",
+        "AGENT_LEE_TELEGRAM_REQUIRE_APPROVAL",
+        "AGENT_LEE_TELEGRAM_SEND_TEXT_ENABLED",
+        "AGENT_LEE_TEXT_PROVIDER",
+        "AGENT_LEE_VOICE_SERVICE",
+        "ALLOWED_USERS",
+        "CEREBRAL_BASE",
+        "EMAIL",
+        "LEEWAY_AGENT_ENTRYPOINT",
+        "LEEWAY_AGENT_LEE_CORE",
+        "LEEWAY_DISCOVERY_ENDPOINTS",
+        "LEEWAY_ECOSYSTEM_ROOT",
+        "LEEWAY_MODEL_REGISTRY",
+        "LEEWAY_RUNTIME_FABRIC",
+        "LEEWAY_TELEGRAM_BOT_TOKEN",
+        "LEEWAY_TELEGRAM_CHAT_ID",
+        "LEONARD_TELEGRAM_CHAT_ID",
+        "NODE_ENV",
+        "NODE_VERSION",
+        "OLLAMA_BASE",
+        "OLLAMA_HOST",
+        "OPENAI_API_KEY",
+        "OPENAI_BASE_URL",
+        "OPENAI_MODEL",
+        "PATH",
+        "PORT",
+        "RUNTIME_FABRIC_URL",
+        "TELEGRAM_API_BASE",
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_BOT_URL",
+        "TELEGRAM_BOT_USERNAME",
+        "TELEGRAM_CHAT_ID",
+        "TELEGRAM_TARGET_CHAT_ID",
+        "TELEGRAM_USER_CHAT_ID",
+        "TG_CHAT_ID",
+        "WARM_MODELS",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-agent-lee",
+        "service": "agent-lee-code-mode",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "2ae28e083d8f4697ba449b99c3ab18b2763561827c9359bb7684ea4fbf9a6476",
+      "name": "leeway-n8n-dev",
+      "imageTag": "n8nio/n8n:latest",
+      "imageId": "sha256:5f7856f4fc7cd935230f7596e39fdb3d5eda0e379c5b40b699b9c0eb35ebd0bf",
+      "repoDigests": [
+        "n8nio/n8n@sha256:5f7856f4fc7cd935230f7596e39fdb3d5eda0e379c5b40b699b9c0eb35ebd0bf"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "tini",
+      "workingDirectory": "/home/node",
+      "ports": {
+        "5678/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5678"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5678"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-n8n-network",
+          "aliases": [
+            "leeway-n8n-dev",
+            "n8n"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-n8n-data",
+          "sourceId": "f02b8d9ae92ed11d4e347360b0b4971977267dfe048e80d838ebadaa5957b013",
+          "destination": "/home/node/.n8n",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GENERIC_TIMEZONE",
+        "N8N_BASIC_AUTH_ACTIVE",
+        "N8N_BASIC_AUTH_PASSWORD",
+        "N8N_BASIC_AUTH_USER",
+        "N8N_DIAGNOSTICS_ENABLED",
+        "N8N_ENCRYPTION_KEY",
+        "N8N_HOST",
+        "N8N_PORT",
+        "N8N_PROTOCOL",
+        "N8N_RELEASE_TYPE",
+        "N8N_VERSION_NOTIFICATIONS_ENABLED",
+        "NODE_ENV",
+        "NODE_FUNCTION_ALLOW_BUILTIN",
+        "NODE_FUNCTION_ALLOW_EXTERNAL",
+        "NODE_PATH",
+        "NODE_VERSION",
+        "NPM_CONFIG_UPDATE_NOTIFIER",
+        "PATH",
+        "SHELL",
+        "WEBHOOK_URL"
+      ],
+      "compose": {
+        "project": "leeway-ide-single-canvas",
+        "service": "n8n",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "eeb131c0150b351c6244909d8938795709a1f8507da7c808e33141d8018288da",
+      "name": "agent-lee-voice-kernel",
+      "imageTag": "agent-lee-voice-kernel-voice-kernel",
+      "imageId": "sha256:b9e9904eb60c8ef056b106bb68ce9e0c865a551921f15d9dd3c937fdfe68c3d3",
+      "repoDigests": [
+        "agent-lee-voice-kernel-voice-kernel@sha256:b9e9904eb60c8ef056b106bb68ce9e0c865a551921f15d9dd3c937fdfe68c3d3",
+        "agent-lee-voice-kernel@sha256:b9e9904eb60c8ef056b106bb68ce9e0c865a551921f15d9dd3c937fdfe68c3d3"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "/bin/sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8092/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8092"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8092"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-network",
+          "aliases": [
+            "agent-lee-voice-kernel",
+            "voice-kernel"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "agent-lee-voice-kernel-cache",
+          "sourceId": "1385974b57dd19ec38639585572e81cf23812f48673c7e1e9a4f097649f6a5eb",
+          "destination": "/app/cache",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "agent-lee-voice-kernel-logs",
+          "sourceId": "066bd3f44e356aedd8e6b8ab8cbbeac81072bccbc484905a9d99c0465265b01d",
+          "destination": "/app/logs",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "agent-lee-voice-kernel-output",
+          "sourceId": "fe8974044f5b5ce09357c7907dac2326e0bca0fd718c3b19a658026e7576c4d3",
+          "destination": "/app/output",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "COQUI_TOS_AGREED",
+        "GPG_KEY",
+        "LANG",
+        "PATH",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION",
+        "XTTS_CACHE_DIR",
+        "XTTS_OUTPUT_DIR"
+      ],
+      "compose": {
+        "project": "agent-lee-voice-kernel",
+        "service": "voice-kernel",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "9793ea1ecb7cfdc30aea864df04151a19c729ae86a3ef106dfce34a8e4b672af",
+      "name": "leeway-seafile-cache",
+      "imageTag": "memcached:1.6",
+      "imageId": "sha256:85c0ab87f71b8b3ade708271177a8e5efca5e93c00287b6f25a2d74a27180bfa",
+      "repoDigests": [
+        "memcached@sha256:85c0ab87f71b8b3ade708271177a8e5efca5e93c00287b6f25a2d74a27180bfa"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "memcached",
+      "workingDirectory": "",
+      "ports": {
+        "11211/tcp": null
+      },
+      "networks": [
+        {
+          "network": "leeway-seafile-network",
+          "aliases": [
+            "leeway-seafile-cache",
+            "leeway-seafile-cache"
+          ]
+        }
+      ],
+      "mounts": [],
+      "environmentNames": [
+        "MEMCACHED_SHA1",
+        "MEMCACHED_URL",
+        "MEMCACHED_VERSION",
+        "PATH"
+      ],
+      "compose": {
+        "project": "seafile",
+        "service": "leeway-seafile-cache",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "ad32395b4c65fa089e5f9d9015d928230f220b7313af9cdd7e41bdeb4dd8866a",
+      "name": "leeway_hybrid_fabric",
+      "imageTag": "leeway-ecosystemv214-hybrid-fabric",
+      "imageId": "sha256:40b33b0660a602646b4be1246dcc79521c515302a554ebabe96df238d0bf281f",
+      "repoDigests": [
+        "leeway-ecosystemv214-hybrid-fabric@sha256:40b33b0660a602646b4be1246dcc79521c515302a554ebabe96df238d0bf281f"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8777/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8777"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8777"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_hybrid_fabric",
+            "hybrid-fabric",
+            "hybrid-fabric",
+            "leeway-hybrid-fabric"
+          ]
+        },
+        {
+          "network": "leeway-seafile-net",
+          "aliases": [
+            "leeway_hybrid_fabric",
+            "hybrid-fabric",
+            "hybrid-fabric-seafile-bridge"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-ecosystemv214_leeway_hybrid_fabric_state",
+          "sourceId": "ad6819d58cfc9bfc7698bd5ee628d8066864c5526e6bccdf3847eff44490d568",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "8d9130ce5bfcbbfa5b5f708507f6b13def2977583cb68928f12e1291b33d1b5f",
+          "destination": "/var/run/docker.sock",
+          "readOnly": true
+        }
+      ],
+      "environmentNames": [
+        "ADVISOR_EVERY_CYCLES",
+        "HYBRID_INTERVAL_MS",
+        "NODE_ENV",
+        "NODE_VERSION",
+        "PATH",
+        "PREFERRED_QWEN_MODEL",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-ecosystemv214",
+        "service": "hybrid-fabric",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": true
+    },
+    {
+      "id": "56a96cce939c99159b397ac7ca60790970fcef3545993b9f5343ca5aa65d3e3e",
+      "name": "leeway-opencode-control-mcp",
+      "imageTag": "leeway/opencode-control-mcp:1.0",
+      "imageId": "sha256:7c5a87cf533a800574bc76dc3c793f6063bd55fd8777f415fec97f0db12d8609",
+      "repoDigests": [
+        "leeway/opencode-control-mcp@sha256:7c5a87cf533a800574bc76dc3c793f6063bd55fd8777f415fec97f0db12d8609"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8811/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8811"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ai",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-opencode-control-receipts",
+          "sourceId": "4fcee765db1488fb3970b4e6af68a3d776d13a77e24344b839392720067828e1",
+          "destination": "/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway-opencode-control-secrets",
+          "sourceId": "6c68e75ad484d635161e0122c1834c0aba0e37f1ed9d7a4ad629896f5f18be76",
+          "destination": "/secrets",
+          "readOnly": true
+        }
+      ],
+      "environmentNames": [
+        "LEEWAY_CONTROL_PORT",
+        "LEEWAY_CONTROL_TOKEN_FILE",
+        "LEEWAY_OPENCODE_PASSWORD_FILE",
+        "LEEWAY_OPENCODE_URL",
+        "LEEWAY_OPENCODE_USER_FILE",
+        "LEEWAY_RECEIPT_FILE",
+        "NODE_ENV",
+        "NODE_VERSION",
+        "PATH",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "8a3565952ede7b33ddfa5d40330cea10d8091f7a8708814ec540af2960299e6c",
+      "name": "leeway-forgejo-mcp",
+      "imageTag": "leeway/forgejo-mcp:2.0",
+      "imageId": "sha256:7c4247b5bcaa5ffac87ebfba9a4a2ce53fbda8de8d87bc00154214e88e37f1d7",
+      "repoDigests": [
+        "leeway/forgejo-mcp@sha256:7c4247b5bcaa5ffac87ebfba9a4a2ce53fbda8de8d87bc00154214e88e37f1d7"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "python",
+      "workingDirectory": "/app",
+      "ports": {
+        "8790/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8790"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ai",
+          "aliases": []
+        },
+        {
+          "network": "leeway-forgejo",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "ccb762a8088dbfcd8089353d7f9b999ac044f6eb106f9e488f043bce4ceb5006",
+          "destination": "/app/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "7fb15fe9e9fe972fce189d4704c91877796827e2b22187b8491bfa040ea1437c",
+          "destination": "/run/secrets/forgejo.json",
+          "readOnly": true
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_FORGEJO_BRANCH",
+        "LEEWAY_FORGEJO_CREDENTIALS",
+        "LEEWAY_FORGEJO_OWNER",
+        "LEEWAY_FORGEJO_REPO",
+        "LEEWAY_FORGEJO_URL",
+        "LEEWAY_MCP_HOST",
+        "LEEWAY_MCP_PORT",
+        "LEEWAY_MCP_TRANSPORT",
+        "LEEWAY_RECEIPTS",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "0355168796aff09b4fae63ee2e4e0058e78eb58379f930cf0dbc1cdb67f50111",
+      "name": "leeway_ollama",
+      "imageTag": "ollama/ollama:latest",
+      "imageId": "sha256:77f1a2a54460f0380f2611e1464233d9b82cb6e58afc8f60abec0061049d2d82",
+      "repoDigests": [
+        "ollama/ollama@sha256:77f1a2a54460f0380f2611e1464233d9b82cb6e58afc8f60abec0061049d2d82"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/bin/ollama",
+      "workingDirectory": "",
+      "ports": {
+        "11434/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "11434"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ai",
+          "aliases": []
+        },
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_ollama",
+            "ollama"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway-ecosystemv214_leeway_brain_data",
+          "sourceId": "9356db4b62e861fdb99fe9c6ef4465d65b96f55733addfd37e07a6ef830e4a56",
+          "destination": "/root/.ollama",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "LD_LIBRARY_PATH",
+        "NVIDIA_DRIVER_CAPABILITIES",
+        "NVIDIA_VISIBLE_DEVICES",
+        "OLLAMA_CONTEXT_LENGTH",
+        "OLLAMA_HOST",
+        "OLLAMA_KEEP_ALIVE",
+        "OLLAMA_MAX_LOADED_MODELS",
+        "OLLAMA_MAX_QUEUE",
+        "OLLAMA_NUM_PARALLEL",
+        "PATH"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "88723cec12aab2983926482c624e877d3ed7d039474b72f74cbe0b100005aa5e",
+      "name": "leeway-gravitino",
+      "imageTag": "apache/gravitino:1.3.0",
+      "imageId": "sha256:4ff340f1160600ecac8126c2a0c4b88ea2178d3f1954966af559bab526485af6",
+      "repoDigests": [
+        "apache/gravitino@sha256:4ff340f1160600ecac8126c2a0c4b88ea2178d3f1954966af559bab526485af6"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/bin/bash",
+      "workingDirectory": "/opt/gravitino",
+      "ports": {
+        "8090/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "18090"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-data-fabric-net",
+          "aliases": [
+            "leeway-gravitino",
+            "leeway-gravitino"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_gravitino_metadata_v1",
+          "sourceId": "71cbaf85c48f62a8e61f3b0781b12fc628d90a7b88b6648f2b1f81afabf10893",
+          "destination": "/opt/gravitino/data/jdbc",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GRAVITINO_MEM",
+        "GRAVITINO_USE_WEB_V2",
+        "JAVA_HOME",
+        "JAVA_VERSION",
+        "LANG",
+        "LANGUAGE",
+        "LC_ALL",
+        "PATH"
+      ],
+      "compose": {
+        "project": "data-fabric",
+        "service": "leeway-gravitino",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "352fe6d17c132c556e0b36d3a8b7ccd9d10a2c1dc62ffd91027c9e4b5764ab5d",
+      "name": "leeway-bitwarden-lite",
+      "imageTag": "ghcr.io/bitwarden/lite",
+      "imageId": "sha256:be200b8701ea0e1bad94553285769e87225c681d578b7438677aa86eebc18840",
+      "repoDigests": [
+        "ghcr.io/bitwarden/lite@sha256:be200b8701ea0e1bad94553285769e87225c681d578b7438677aa86eebc18840"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8123"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "bridge",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "cafa4060d77f0c526c74bddd74570a8ad6732318a5cfcff3f97d8faecf2d83ea",
+          "destination": "/data",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "8d3f188f3c6a17853434fc9896cbc9a3968e4cc42058f82c8995d6f78e7184fe",
+          "destination": "/etc/bitwarden",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "APP_UID",
+        "ASPNETCORE_ENVIRONMENT",
+        "ASPNETCORE_HTTP_PORTS",
+        "ASPNET_VERSION",
+        "BW_DB_FILE",
+        "BW_DB_PROVIDER",
+        "BW_DOMAIN",
+        "BW_ENABLE_ADMIN",
+        "BW_ENABLE_API",
+        "BW_ENABLE_EVENTS",
+        "BW_ENABLE_ICONS",
+        "BW_ENABLE_IDENTITY",
+        "BW_ENABLE_IPV6",
+        "BW_ENABLE_NOTIFICATIONS",
+        "BW_ENABLE_SCIM",
+        "BW_ENABLE_SSO",
+        "BW_INSTALLATION_ID",
+        "BW_INSTALLATION_KEY",
+        "DOTNET_RUNNING_IN_CONTAINER",
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT",
+        "DOTNET_VERSION",
+        "PATH",
+        "globalSettings__attachment__baseDirectory",
+        "globalSettings__baseServiceUri__internalAdmin",
+        "globalSettings__baseServiceUri__internalApi",
+        "globalSettings__baseServiceUri__internalEvents",
+        "globalSettings__baseServiceUri__internalIcons",
+        "globalSettings__baseServiceUri__internalIdentity",
+        "globalSettings__baseServiceUri__internalNotifications",
+        "globalSettings__baseServiceUri__internalScim",
+        "globalSettings__baseServiceUri__internalSso",
+        "globalSettings__baseServiceUri__internalVault",
+        "globalSettings__dataProtection__directory",
+        "globalSettings__identityServer__certificatePassword",
+        "globalSettings__licenseDirectory",
+        "globalSettings__liteDeployment",
+        "globalSettings__logDirectoryByProject",
+        "globalSettings__logRollBySizeLimit",
+        "globalSettings__pushRelayBaseUri",
+        "globalSettings__selfHosted",
+        "globalSettings__send__baseDirectory"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "584bb5a2ceb53175aa9517d1ff0f9ffb97626ea642318704d43ca607ca1903aa",
+      "name": "leeway-forgejo",
+      "imageTag": "codeberg.org/forgejo/forgejo:16",
+      "imageId": "sha256:2fdfe28b5c68f82f49580e227b84e2afb43af0250e0631a54a386ef3b1d9b759",
+      "repoDigests": [
+        "codeberg.org/forgejo/forgejo@sha256:2fdfe28b5c68f82f49580e227b84e2afb43af0250e0631a54a386ef3b1d9b759"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/usr/bin/entrypoint",
+      "workingDirectory": "/",
+      "ports": {
+        "22/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "2222"
+          }
+        ],
+        "3000/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "3000"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-forgejo",
+          "aliases": [
+            "leeway-forgejo",
+            "forgejo"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f5f97555c533b464226c7a081eee170a0006dc6a808a10eeaf6841664e7521e4",
+          "destination": "/data",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "FORGEJO____APP_NAME",
+        "FORGEJO__repository__DEFAULT_BRANCH",
+        "FORGEJO__repository__DEFAULT_PRIVATE",
+        "FORGEJO__repository__FORCE_PRIVATE",
+        "FORGEJO__security__DISABLE_GIT_HOOKS",
+        "FORGEJO__server__DOMAIN",
+        "FORGEJO__server__HTTP_PORT",
+        "FORGEJO__server__ROOT_URL",
+        "FORGEJO__server__SSH_DOMAIN",
+        "FORGEJO__server__SSH_PORT",
+        "FORGEJO__service__DEFAULT_ORG_VISIBILITY",
+        "FORGEJO__service__DEFAULT_USER_VISIBILITY",
+        "FORGEJO__service__DISABLE_REGISTRATION",
+        "FORGEJO__service__REQUIRE_SIGNIN_VIEW",
+        "GITEA_CUSTOM",
+        "PATH",
+        "TZ",
+        "USER",
+        "USER_GID",
+        "USER_UID"
+      ],
+      "compose": {
+        "project": "forgejo",
+        "service": "forgejo",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "6cb58378979a8db57390849909a548aa25a5c707bec817e10ba6eb830314b44a",
+      "name": "leeway-transit-hub-web",
+      "imageTag": "leeway-transit-hub-web-transit-hub-web",
+      "imageId": "sha256:545d74a113dab76b38bffbf9ffff117382ee8c1dcc9052f49ea4a42d6761085e",
+      "repoDigests": [
+        "leeway-transit-hub-web-transit-hub-web@sha256:545d74a113dab76b38bffbf9ffff117382ee8c1dcc9052f49ea4a42d6761085e"
+      ],
+      "state": "running",
+      "health": "healthy",
+      "restart": "unless-stopped",
+      "executable": "/docker-entrypoint.sh",
+      "workingDirectory": "/",
+      "ports": {
+        "80/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8088"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8088"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-transit-hub-web_default",
+          "aliases": [
+            "leeway-transit-hub-web",
+            "transit-hub-web"
+          ]
+        }
+      ],
+      "mounts": [],
+      "environmentNames": [
+        "ACME_VERSION",
+        "DYNPKG_RELEASE",
+        "NGINX_VERSION",
+        "NJS_RELEASE",
+        "NJS_VERSION",
+        "PATH",
+        "PKG_RELEASE"
+      ],
+      "compose": {
+        "project": "leeway-transit-hub-web",
+        "service": "transit-hub-web",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "1e8586ef1b0e226dbcb867ad1d43151f2e60b156d37d3d9d8298ca4d3bb90d4a",
+      "name": "leeway-transit-hub-sqlserver-dev",
+      "imageTag": "mcr.microsoft.com/mssql/server:2025-latest",
+      "imageId": "sha256:86cc6144ef39bb0fbed2329e1ad79b13ee82e7b2e4739213a0db0800e668a74a",
+      "repoDigests": [
+        "mcr.microsoft.com/mssql/server@sha256:86cc6144ef39bb0fbed2329e1ad79b13ee82e7b2e4739213a0db0800e668a74a"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/opt/mssql/bin/launch_sqlservr.sh",
+      "workingDirectory": "",
+      "ports": {
+        "1433/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "15433"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "15433"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "sqlserver_default",
+          "aliases": [
+            "leeway-transit-hub-sqlserver-dev",
+            "sqlserver"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_transit_hub_sqlserver_data_v1",
+          "sourceId": "7bb3f17d0c2910d3fc98b3f4a448ab4b4457298813de92d7dca4bc732cd35399",
+          "destination": "/var/opt/mssql",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "ACCEPT_EULA",
+        "MSSQL_PID",
+        "MSSQL_RPC_PORT",
+        "MSSQL_SA_PASSWORD",
+        "PATH"
+      ],
+      "compose": {
+        "project": "sqlserver",
+        "service": "sqlserver",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "0f7e0a3e53ab52dc95554a8b90b77ec19e3ceec5b749eed2a1bd4244d50386d3",
+      "name": "leeway-triposr-web",
+      "imageTag": "leeway-triposr-tool-web-output-proxy-explicit-port:20260726t150912z",
+      "imageId": "sha256:4c1d0ebe0e88cffeed1f9ea85982c93482deb0722f3c1d6d67dea0250b8000ad",
+      "repoDigests": [
+        "leeway-triposr-tool-web-output-proxy-explicit-port@sha256:4c1d0ebe0e88cffeed1f9ea85982c93482deb0722f3c1d6d67dea0250b8000ad"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "node",
+      "workingDirectory": "/app",
+      "ports": {
+        "3000/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "13000"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "13000"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway-triposr-web",
+            "web",
+            "triposr-web",
+            "leeway-triposr-web"
+          ]
+        },
+        {
+          "network": "leeway-triposr-candidate-internal",
+          "aliases": [
+            "leeway-triposr-web",
+            "web",
+            "web"
+          ]
+        }
+      ],
+      "mounts": [],
+      "environmentNames": [
+        "BACKEND_PORT",
+        "DEVELOPMENT_GEOMETRY_FALLBACK",
+        "HOSTNAME",
+        "LEEWAY_LLM_MODEL",
+        "LEEWAY_OLLAMA_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_MODEL",
+        "LEEWAY_RECONSTRUCTION_REVISION",
+        "LEEWAY_RECONSTRUCTION_SHA256",
+        "LEEWAY_RUNTIME_BASE_URL",
+        "LEEWAY_VISION_BASE_URL",
+        "LEEWAY_VISION_MODEL",
+        "MODEL_ROOT",
+        "NEXT_TELEMETRY_DISABLED",
+        "NODE_ENV",
+        "NODE_VERSION",
+        "OUTPUT_DIRECTORY",
+        "PATH",
+        "PORT",
+        "RECEIPT_DIRECTORY",
+        "RECONSTRUCTION_BACKEND_URL",
+        "RECONSTRUCTION_PORT",
+        "WEB_PORT",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-triposr-tool-triposr-candidate",
+        "service": "web",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "0a2ed26f6316be00860a379fb8041cc0fc27c98a10b313e994de8fd433a68fca",
+      "name": "leeway-triposr-backend",
+      "imageTag": "leeway-triposr-tool-backend-artifact-dns:20260726t084523z",
+      "imageId": "sha256:ae694d4030e5f864a17184504b8e2d8161ef44738c0d46011acdc23cf8c79ec8",
+      "repoDigests": [
+        "leeway-triposr-tool-backend-artifact-dns@sha256:ae694d4030e5f864a17184504b8e2d8161ef44738c0d46011acdc23cf8c79ec8"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "python",
+      "workingDirectory": "/app",
+      "ports": {
+        "8000/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "18000"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "18000"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway-triposr-backend",
+            "backend",
+            "triposr-backend",
+            "leeway-triposr-backend"
+          ]
+        },
+        {
+          "network": "leeway-triposr-candidate-internal",
+          "aliases": [
+            "leeway-triposr-backend",
+            "backend",
+            "backend",
+            "triposr-backend"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_runtime_receipts",
+          "sourceId": "b5caac232b1d6823b326866f8c87d96d648fed6326d454559d6b8efb7cd10a96",
+          "destination": "/opt/leeway/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway_reconstruction_outputs",
+          "sourceId": "82a671ff7d0b960985492ae0627cccd2db48bcb32561a2c4a625afc516b2dd7b",
+          "destination": "/var/lib/leeway/outputs",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "BACKEND_PORT",
+        "DEVELOPMENT_GEOMETRY_FALLBACK",
+        "GPG_KEY",
+        "HOST",
+        "LEEWAY_LLM_MODEL",
+        "LEEWAY_OLLAMA_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_MODEL",
+        "LEEWAY_RECONSTRUCTION_REVISION",
+        "LEEWAY_RECONSTRUCTION_SHA256",
+        "LEEWAY_RUNTIME_BASE_URL",
+        "LEEWAY_VISION_BASE_URL",
+        "LEEWAY_VISION_MODEL",
+        "MODEL_ROOT",
+        "OUTPUT_DIRECTORY",
+        "PATH",
+        "PORT",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION",
+        "RECEIPT_DIRECTORY",
+        "RECONSTRUCTION_PORT",
+        "WEB_PORT"
+      ],
+      "compose": {
+        "project": "leeway-triposr-tool-triposr-candidate",
+        "service": "backend",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "b0d8aaeacbd8380f7ae8a147e901bc3d40bbb4398a1260cb88b2901ad7600f24",
+      "name": "leeway-triposr-reconstruction",
+      "imageTag": "leeway-recovery-snapshots/agent-lee-true-character-mesh-lane:20260720-000052",
+      "imageId": "sha256:7b4f4e1d7050d256fa3738caea9f6c634112ed00ec8627b416ecbece779050eb",
+      "repoDigests": [
+        "leeway-recovery-snapshots/agent-lee-true-character-mesh-lane@sha256:7b4f4e1d7050d256fa3738caea9f6c634112ed00ec8627b416ecbece779050eb"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/opt/nvidia/nvidia_entrypoint.sh",
+      "workingDirectory": "/srv",
+      "ports": {
+        "8103/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "18103"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "18103"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway-triposr-reconstruction",
+            "reconstruction",
+            "triposr-reconstruction",
+            "leeway-triposr-reconstruction"
+          ]
+        },
+        {
+          "network": "leeway-triposr-candidate-internal",
+          "aliases": [
+            "leeway-triposr-reconstruction",
+            "reconstruction",
+            "reconstruction"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_model_vault",
+          "sourceId": "dd95f1c6e9554a75f6b4f05c0399a6537424bbf3d387de4fbc298725c93d130d",
+          "destination": "/opt/leeway/models",
+          "readOnly": true
+        },
+        {
+          "type": "volume",
+          "volume": "leeway_runtime_receipts",
+          "sourceId": "b5caac232b1d6823b326866f8c87d96d648fed6326d454559d6b8efb7cd10a96",
+          "destination": "/opt/leeway/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway_reconstruction_outputs",
+          "sourceId": "82a671ff7d0b960985492ae0627cccd2db48bcb32561a2c4a625afc516b2dd7b",
+          "destination": "/var/lib/leeway/outputs",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AGENT_LEE_APP_NAME",
+        "AGENT_LEE_ARTIFACT_ROOT",
+        "AGENT_LEE_FORCE_CPU_TRIPOSR",
+        "AGENT_LEE_TRIPOSR_ROOT",
+        "BACKEND_PORT",
+        "CUDA_HOME",
+        "CUDA_VERSION",
+        "CUDA_VISIBLE_DEVICES",
+        "DEBIAN_FRONTEND",
+        "DEVELOPMENT_GEOMETRY_FALLBACK",
+        "DEVICE",
+        "HF_HOME",
+        "LD_LIBRARY_PATH",
+        "LEEWAY_LLM_MODEL",
+        "LEEWAY_OLLAMA_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_BASE_URL",
+        "LEEWAY_RECONSTRUCTION_MODEL",
+        "LEEWAY_RECONSTRUCTION_REVISION",
+        "LEEWAY_RECONSTRUCTION_SHA256",
+        "LEEWAY_RUNTIME_BASE_URL",
+        "LEEWAY_VISION_BASE_URL",
+        "LEEWAY_VISION_MODEL",
+        "LIBRARY_PATH",
+        "MODEL_ROOT",
+        "NCCL_VERSION",
+        "NVARCH",
+        "NVIDIA_DRIVER_CAPABILITIES",
+        "NVIDIA_PRODUCT_NAME",
+        "NVIDIA_REQUIRE_CUDA",
+        "NVIDIA_VISIBLE_DEVICES",
+        "NV_CUDA_COMPAT_PACKAGE",
+        "NV_CUDA_CUDART_DEV_VERSION",
+        "NV_CUDA_CUDART_VERSION",
+        "NV_CUDA_LIB_VERSION",
+        "NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE",
+        "NV_CUDA_NSIGHT_COMPUTE_VERSION",
+        "NV_LIBCUBLAS_DEV_PACKAGE",
+        "NV_LIBCUBLAS_DEV_PACKAGE_NAME",
+        "NV_LIBCUBLAS_DEV_VERSION",
+        "NV_LIBCUBLAS_PACKAGE",
+        "NV_LIBCUBLAS_PACKAGE_NAME",
+        "NV_LIBCUBLAS_VERSION",
+        "NV_LIBCUSPARSE_DEV_VERSION",
+        "NV_LIBCUSPARSE_VERSION",
+        "NV_LIBNCCL_DEV_PACKAGE",
+        "NV_LIBNCCL_DEV_PACKAGE_NAME",
+        "NV_LIBNCCL_DEV_PACKAGE_VERSION",
+        "NV_LIBNCCL_PACKAGE",
+        "NV_LIBNCCL_PACKAGE_NAME",
+        "NV_LIBNCCL_PACKAGE_VERSION",
+        "NV_LIBNPP_DEV_PACKAGE",
+        "NV_LIBNPP_DEV_VERSION",
+        "NV_LIBNPP_PACKAGE",
+        "NV_LIBNPP_VERSION",
+        "NV_NVML_DEV_VERSION",
+        "NV_NVPROF_DEV_PACKAGE",
+        "NV_NVPROF_VERSION",
+        "NV_NVTX_VERSION",
+        "OUTPUT_DIRECTORY",
+        "PATH",
+        "RECEIPT_DIRECTORY",
+        "RECONSTRUCTION_PORT",
+        "TORCH_HOME",
+        "TRANSFORMERS_CACHE",
+        "TRIPOSR_REPOSITORY_ROOT",
+        "WEB_PORT"
+      ],
+      "compose": {
+        "project": "leeway-triposr-tool-triposr-candidate",
+        "service": "reconstruction",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "06f0ee87b61febb3e616938389aedae7714573ef43b8373e9730d121d22f3400",
+      "name": "leeway_device_operator",
+      "imageTag": "leeway_device_operator:device-layer-163b",
+      "imageId": "sha256:8d7f07bd52490becd2272a910ffdfc217edd7e2e41310d56876bc7c02303dfec",
+      "repoDigests": [
+        "leeway_device_operator@sha256:8d7f07bd52490becd2272a910ffdfc217edd7e2e41310d56876bc7c02303dfec"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5323/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5323"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5323"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "80f0d1bcae58346fb741cbc780a426170dd93d4315ef860aec7fcbddf76e22a1",
+          "destination": "/device-state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f9ef53a2ae13b27929a13d01b67af321b2234b10c05fbebd82d44fdbdb17f5c7",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_API_GATEWAY_URL",
+        "LEEWAY_DEVICE_STATE_DIR",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "99f227aba7073ed87aeb146d4b07ac264bfed27710ad1d8dd4e6101973319616",
+      "name": "leeway_performance_runtime",
+      "imageTag": "leeway_performance_runtime:local",
+      "imageId": "sha256:dce9aac2bcc554d64a20dff616703a783a3233d905d8242423cc2bcb2c8fdbb1",
+      "repoDigests": [
+        "leeway_performance_runtime@sha256:dce9aac2bcc554d64a20dff616703a783a3233d905d8242423cc2bcb2c8fdbb1"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5338/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5338"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5338"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "77e21550272cec929c4bd31ed8a42fae3cc9276f7c7f48b4b4bcdfb45647c1cf",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "ae35ce4e05105901032bffeb2aca347e37d7310af6abc2dbfd9443dc8e25dd9c",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AGENT_LEE_VOICE_URL",
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_PERFORMANCE_STATE",
+        "LEEWAY_POWER_LEVEL",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "7aebb53aa2212ee6defb62f444a734563d80e10b3bae3b5ba494f55e4b51080c",
+      "name": "leeway_pwa_dashboard",
+      "imageTag": "leeway_pwa_dashboard:local",
+      "imageId": "sha256:5f6d5fba188c4076761c4de4417ded18768886ccfbd24a6f4ca679f11f7b7484",
+      "repoDigests": [
+        "leeway_pwa_dashboard@sha256:5f6d5fba188c4076761c4de4417ded18768886ccfbd24a6f4ca679f11f7b7484"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5337/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5337"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5337"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "e29d867144a1fd0618df3c39cf1b4ad21ae81d0f2e8527ad137ea414b707763c",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "3b1eb7c7aa9db91dfd1390e50bd6870be9a311a80e158c857a57c0a6ea679ab1",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "388c0e5ec8d15196cb8f716eec04e7bb0643bcf6e60b4a50642537dd6842e8b4",
+      "name": "leeway_installer_runtime",
+      "imageTag": "leeway_installer_runtime:local",
+      "imageId": "sha256:8111514fc192699d943082f1d4926646fb453b15d1b31d566461474f3198dc13",
+      "repoDigests": [
+        "leeway_installer_runtime@sha256:8111514fc192699d943082f1d4926646fb453b15d1b31d566461474f3198dc13"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5336/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5336"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5336"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "0a037bd40489c65268d0420e3a748b02f4eb8b628161cbdc9481205c6dddbe51",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "2cda1d760e35f4fa96ce6a2d6190cf2d7486a768c9b2398741ced39baca1c68b",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "3bb9d010d60d51b415ec14aa72d446064f938449b573cf18034a6549b48d8add",
+      "name": "leeway_license_runtime",
+      "imageTag": "leeway_license_runtime:local",
+      "imageId": "sha256:291f2b2ff07b935681565e0445ca0232f25efe8327096c62ae186eae75d348ad",
+      "repoDigests": [
+        "leeway_license_runtime@sha256:291f2b2ff07b935681565e0445ca0232f25efe8327096c62ae186eae75d348ad"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5335/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5335"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5335"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "54d6e014e83673baad4049329366c45850ccc44bc8d15b42f1b2e734f27235de",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "478561c3ca15687443d35f711e3d51c7197d4b399d683f0c89987a776860b5bd",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "34199029ef63de65d009105f1397a1e2c2bd8bb63140517a96fdb50eb1bbef41",
+      "name": "leeway_desktop_runtime",
+      "imageTag": "leeway_desktop_runtime:local",
+      "imageId": "sha256:13cc736f04dc920e95b59fa1bc01bf0c369821a15dac8b0a41554c2adb075ea2",
+      "repoDigests": [
+        "leeway_desktop_runtime@sha256:13cc736f04dc920e95b59fa1bc01bf0c369821a15dac8b0a41554c2adb075ea2"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5334/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5334"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5334"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f4fcee5b3d1acab0187ada19e672d2d46e80b7f2a4b78f912f1d1e22a58ce888",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "2e1de8fc23f99ecbafea2d91a64737b00a63bb318b71c082733aeee5b3f5f28d",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "f342c87128adda99952c502998ba3464c0b7c536024c68fd02f3d8f07fa01865",
+      "name": "leeway_browser_runtime",
+      "imageTag": "leeway_browser_runtime:local",
+      "imageId": "sha256:5991d77d4a10b371d818dcde9e7cad6f7c1c22ec046c65eda32991c3f509b914",
+      "repoDigests": [
+        "leeway_browser_runtime@sha256:5991d77d4a10b371d818dcde9e7cad6f7c1c22ec046c65eda32991c3f509b914"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5333/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5333"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5333"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "710efd636a5722d7aedfdec2fb4c320386707ae16455370823eb80e022ad9b33",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "0f0194d708bb8cf54c14fea53cd26da4202fa6f7f6a8f38fdd3daa4075a44c92",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "eefa623d11ea58850fcae8ac54700587247abfe352aa1a790425026ec8c68a0c",
+      "name": "leeway_phone_runtime",
+      "imageTag": "leeway_phone_runtime:local",
+      "imageId": "sha256:1c6af8a54959fb8de3894774be139953c4170cafd7d7a774e44cdb3333953878",
+      "repoDigests": [
+        "leeway_phone_runtime@sha256:1c6af8a54959fb8de3894774be139953c4170cafd7d7a774e44cdb3333953878"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5332/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5332"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5332"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "49e9a7ef88a8834e7662af7d37b2213d7f8dd7be8b7de24dea3139f60f78c4d3",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "0eaa1740c85b7a1673e7f4c2a7a7b0ea48354f16d61ec1b36445af2ae1297ab6",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "bd596130eeaa75872fc3b0780140323f3c81e4c7bed2b60e6bb51c2130b0429e",
+      "name": "leeway_calendar_runtime",
+      "imageTag": "leeway_calendar_runtime:local",
+      "imageId": "sha256:aa3694eb216ea9699d5a75439d0dc410ac97a670b937eceb2ce9ab9703ae05b7",
+      "repoDigests": [
+        "leeway_calendar_runtime@sha256:aa3694eb216ea9699d5a75439d0dc410ac97a670b937eceb2ce9ab9703ae05b7"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5331/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5331"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5331"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f0bb36a493786cb0953a1e9d32d30fbd02e316bde084c0291288939ed05bcf6a",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "3e1f8c30c191de28cc0cfc3bf21e5ee87a2f9c87e2168f9f6aed31d60a03f39b",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "245b1dab6bddd2267465ae8d0f7ae75b08dde4a90c3550eedf5809977611fb0a",
+      "name": "leeway_email_runtime",
+      "imageTag": "leeway_email_runtime:local",
+      "imageId": "sha256:7ad6f6c80353153c8fa5595afb0d67f3acd15838152eec09726cc5e25325a560",
+      "repoDigests": [
+        "leeway_email_runtime@sha256:7ad6f6c80353153c8fa5595afb0d67f3acd15838152eec09726cc5e25325a560"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5330/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5330"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5330"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f6c7782d9eabb110946e4990c7a7250e2b8386f7ad3049aca486723fa7c29da2",
+          "destination": "/state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "a2d2a5ce47fa52340412346acfbb909dedb45fb5b00754149ad59d36e586b02e",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RUNTIME_CAPABILITIES_JSON",
+        "LEEWAY_RUNTIME_LANE",
+        "LEEWAY_RUNTIME_NAME",
+        "LEEWAY_RUNTIME_PORT",
+        "LEEWAY_RUNTIME_STATE",
+        "LEEWAY_RUNTIME_TITLE",
+        "LEEWAY_RUNTIME_TRUTH_JSON",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "7b8f5e5cedabdd093a389647cc7a02c000d21707518757e9d9b78d3b022684e7",
+      "name": "leeway_artifact_viewer",
+      "imageTag": "leeway_artifact_viewer:local",
+      "imageId": "sha256:fb863282832e456cb72fb071c2cf3b0328092e235960f2bfeaedbce6a28dfb46",
+      "repoDigests": [
+        "leeway_artifact_viewer@sha256:fb863282832e456cb72fb071c2cf3b0328092e235960f2bfeaedbce6a28dfb46"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5328/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5328"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5328"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "1d78ddb4d752d18a65b6e2e238bf667f56865d543cbe69e90062c5c821663182",
+          "destination": "/documents",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "40fd5bfd34ef6e6b14a50a2a5d2639a84927d3db171d5998e13bd69864b4646c",
+          "destination": "/notebooks",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "3c1daabb162103db4f2e5299b5a7bf6c29ab6d88a669537195a096f5fd3c14b4",
+          "destination": "/skill-state",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "9d86a406494615d953b6afea5f1bb593a4db71c5f7b9ca9b2b11e9f8461786e3",
+          "destination": "/viewer-state",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_DOCUMENTS_DIR",
+        "LEEWAY_NOTEBOOKS_DIR",
+        "LEEWAY_OPEN_NOTEBOOK_URL",
+        "LEEWAY_PUBLIC_BASE_URL",
+        "LEEWAY_SKILL_STATE_DIR",
+        "LEEWAY_VIEWER_STATE",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "3e677ecca34a3cdec4542851fbbfd7802f78e5a39fbfe54cf3bdaf118217d77f",
+      "name": "leeway_open_notebook",
+      "imageTag": "leeway_open_notebook:local",
+      "imageId": "sha256:b818ed461d0436f55814fe722f312c942227e99f221e5fa65619693b34e3b945",
+      "repoDigests": [
+        "leeway_open_notebook@sha256:b818ed461d0436f55814fe722f312c942227e99f221e5fa65619693b34e3b945"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5326/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5326"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5326"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "40fd5bfd34ef6e6b14a50a2a5d2639a84927d3db171d5998e13bd69864b4646c",
+          "destination": "/notebooks",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "5f200c32cd7874b0517c375b436f50465b330640be3dd4075738cb1a796c0817",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_DOCUMENT_RUNTIME_URL",
+        "LEEWAY_NOTEBOOK_DIR",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "157bf1c4709b6522e19ceb86468046de71e8123de21a04d93be5eaadc3932d95",
+      "name": "leeway_meeting_runtime",
+      "imageTag": "leeway_meeting_runtime:local",
+      "imageId": "sha256:c58c2ee2f3fdfb8d7e8906a7a6d5565411d1994ee999083c92b592ed4c5b3c29",
+      "repoDigests": [
+        "leeway_meeting_runtime@sha256:c58c2ee2f3fdfb8d7e8906a7a6d5565411d1994ee999083c92b592ed4c5b3c29"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5329/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5329"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5329"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "361d87fccbed265b70617884dadaa61a0e335184182afcdcf6ed0e0e9a161e62",
+          "destination": "/meetings",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f20f38325c4ca1475d9ce5c97cb2181fd2ebbc529c5eff8c328b32de1a9bf4f0",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_JITSI_BASE_URL",
+        "LEEWAY_MEETING_STATE",
+        "LEEWAY_PUBLIC_BASE_URL",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "8891de868f4cd5d38b333003ac7f82c133b00346d1006b15f2c017c53b1f7c0d",
+      "name": "leeway_document_runtime",
+      "imageTag": "leeway_document_runtime:local",
+      "imageId": "sha256:fe88385cac83edb34dcd7161aa8869fe396dd43f110a845d313eae20c2a47272",
+      "repoDigests": [
+        "leeway_document_runtime@sha256:fe88385cac83edb34dcd7161aa8869fe396dd43f110a845d313eae20c2a47272"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5325/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5325"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5325"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "1d78ddb4d752d18a65b6e2e238bf667f56865d543cbe69e90062c5c821663182",
+          "destination": "/documents",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "77b5f696ced1dc097c96c993feb6dbcb64afd1db0ffc789584dbbc16207faed9",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_DOC_DIR",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "29b5a2c99707a962709535ec2e316dca5b13ec9b98ab4f48c821c39b203b41a5",
+      "name": "leeway_context_gateway",
+      "imageTag": "leeway_context_gateway:local",
+      "imageId": "sha256:f6c8eaf48ff76be3f75f2f4a63f810b690adb4d3585426d3a70009abdfa076f1",
+      "repoDigests": [
+        "leeway_context_gateway@sha256:f6c8eaf48ff76be3f75f2f4a63f810b690adb4d3585426d3a70009abdfa076f1"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5321/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5321"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5321"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "e65cf0a4f22057e04751487e63f47fbfd8bf1b2f7c1f4c164e5da583816ca816",
+          "destination": "/context-store",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f8d6a9be3e551c210c4f087ee2a4783c3d3320682f1feacc340ac4ce25f39a4f",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_CONTEXT_DIR",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "4567b60432d5bffe0373387f1d03c83d6a2d0b69279a3bc5ce7c660e13c5c4e8",
+      "name": "leeway_api_gateway",
+      "imageTag": "leeway_api_gateway:local",
+      "imageId": "sha256:e9c74361aa8b94ff6c175d1f76684d6bc2319160b9ac57bfe6cfa5de960426c0",
+      "repoDigests": [
+        "leeway_api_gateway@sha256:e9c74361aa8b94ff6c175d1f76684d6bc2319160b9ac57bfe6cfa5de960426c0"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5320/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5320"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5320"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "dd14e3acf9660c71edbe71f51e124fac1f49d6011034286fa8fd14d4163d3fea",
+          "destination": "/app/approvals",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "df4efa4654c35e03869c7c475f0f2baf81166fc78db7eb468eeb963189bfabb5",
+          "destination": "/app/crm",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f8d6a9be3e551c210c4f087ee2a4783c3d3320682f1feacc340ac4ce25f39a4f",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_API_GATEWAY_PORT",
+        "LEEWAY_APPROVAL_DIR",
+        "LEEWAY_CRM_DIR",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_RESEARCH_URL",
+        "LEEWAY_RUNTIME_FABRIC_URL",
+        "LEEWAY_STORAGE_URL",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "8a69dd4b553febb65867e28c5adb699cf7d77528ebb006338926602e6c759b56",
+      "name": "leeway_research_lane",
+      "imageTag": "leeway_research_lane:local",
+      "imageId": "sha256:a0ef86b549516371cd020864058a42d42bb1fc89152197a67622fbb492146218",
+      "repoDigests": [
+        "leeway_research_lane@sha256:a0ef86b549516371cd020864058a42d42bb1fc89152197a67622fbb492146218"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5310/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5310"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5310"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f8d6a9be3e551c210c4f087ee2a4783c3d3320682f1feacc340ac4ce25f39a4f",
+          "destination": "/app/briefs",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f8d6a9be3e551c210c4f087ee2a4783c3d3320682f1feacc340ac4ce25f39a4f",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_BRIEF_DIR",
+        "LEEWAY_LANE_NAME",
+        "LEEWAY_RECEIPT_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "155487acdb784dbec936d47379b6579e7f0d9d4df6f30766451acc25e50836ae",
+      "name": "leeway_seafile_storage_gateway",
+      "imageTag": "leeway_seafile_storage_gateway:local",
+      "imageId": "sha256:28e79b458a7b74c8dbe805b32f88a8c6e5175d7965cddfcadaa03ec9f3b731cf",
+      "repoDigests": [
+        "leeway_seafile_storage_gateway@sha256:28e79b458a7b74c8dbe805b32f88a8c6e5175d7965cddfcadaa03ec9f3b731cf"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "5314/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5314"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5314"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "78c940f3b2d91c16d57923f39dbb20bfcfa95171d66a2be480cf02e94a906dc9",
+          "destination": "/gateway-store",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "e264232ec04a5428ec887305dea528c3a9b532548ed8f380423eb1efe4171eac",
+          "destination": "/runtime",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "8709619409288717bfced3cbc0c0bcdd53cee567365f2ec8c7507d83b3f11916",
+          "destination": "/seafile-shared",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "5dbacccf43489788d8f1bb768f2888d7e44020e0b940a092a189df9102a20788",
+          "destination": "/app/receipts",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "LEEWAY_LANE_NAME",
+        "LEEWAY_RECEIPT_DIR",
+        "LEEWAY_SEAFILE_SHARED",
+        "LEEWAY_STORAGE_DIR",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": null,
+        "service": null,
+        "sourceExists": true,
+        "sourceLabelPresent": false
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "b01d4ae25b9028a243d599733ac046609b35aa2ac51fb4d08377e73d877c3706",
+      "name": "leeway-jitsi-meet-web-1",
+      "imageTag": "ghcr.io/jitsi/web:unstable",
+      "imageId": "sha256:f202a120e240fabd36e1af99f2fc025a95b4e2e81faf713206bb9f8706412598",
+      "repoDigests": [
+        "ghcr.io/jitsi/web@sha256:f202a120e240fabd36e1af99f2fc025a95b4e2e81faf713206bb9f8706412598"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/init",
+      "workingDirectory": "",
+      "ports": {
+        "8000/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8008"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8008"
+          }
+        ],
+        "8443/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8443"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8443"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-jitsi-meet_meet.jitsi",
+          "aliases": [
+            "leeway-jitsi-meet-web-1",
+            "web"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "c8dd370626c8cf3e60f054ca94299aaaf9752cb2a0a2cafef24878e94e440e42",
+          "destination": "/config",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "7c4700360ac7ad314a450d83ac2bfc541b3220f0e20009e56c3257fad5eb1be1",
+          "destination": "/storage",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "655b604f8590a801cb55151383e182e8835a083b4f0a120385f80ab52cf300c8",
+          "destination": "/usr/share/jitsi-meet/load-test",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "1ab8a0831cfc4b58359d58eb30829f8fb614d6d32c6bf38dac3bb4d7a90b8507",
+          "destination": "/usr/share/jitsi-meet/transcripts",
+          "readOnly": true
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "8cce152a42689a025bd66226ab3b06ceb3e99c8bc641af762afb7b4b8c85a7f5",
+          "destination": "/var/spool/cron/crontabs",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AMPLITUDE_ID",
+        "ANALYTICS_SCRIPT_URLS",
+        "ANALYTICS_WHITELISTED_EVENTS",
+        "AUDIO_QUALITY_OPUS_BITRATE",
+        "AUTO_CAPTION_ON_RECORD",
+        "BOSH_RELATIVE",
+        "BRANDING_DATA_URL",
+        "BWE_ESTIMATOR_ENGINE",
+        "CHROME_EXTENSION_BANNER_JSON",
+        "CODEC_ORDER_JVB",
+        "CODEC_ORDER_JVB_MOBILE",
+        "CODEC_ORDER_P2P",
+        "CODEC_ORDER_P2P_MOBILE",
+        "COLIBRI_WEBSOCKET_JVB_LOOKUP_NAME",
+        "COLIBRI_WEBSOCKET_PORT",
+        "COLIBRI_WEBSOCKET_REGEX",
+        "CONFCODE_URL",
+        "CORS_HEADER_ACCESS_CONTROL_ALLOW_ORIGIN",
+        "CSP_HEADER",
+        "DEFAULT_LANGUAGE",
+        "DEPLOYMENTINFO_ENVIRONMENT",
+        "DEPLOYMENTINFO_ENVIRONMENT_TYPE",
+        "DEPLOYMENTINFO_REGION",
+        "DEPLOYMENTINFO_SHARD",
+        "DESKTOP_SHARING_FRAMERATE_AUTO",
+        "DESKTOP_SHARING_FRAMERATE_MAX",
+        "DESKTOP_SHARING_FRAMERATE_MIN",
+        "DIALIN_NUMBERS_URL",
+        "DIALOUT_AUTH_URL",
+        "DIALOUT_CODES_URL",
+        "DISABLE_AUDIO_LEVELS",
+        "DISABLE_COLIBRI_WEBSOCKET_JVB_LOOKUP",
+        "DISABLE_DEEP_LINKING",
+        "DISABLE_GRANT_MODERATOR",
+        "DISABLE_HTTPS",
+        "DISABLE_KICKOUT",
+        "DISABLE_LOCAL_RECORDING",
+        "DISABLE_POLLS",
+        "DISABLE_PRIVATE_CHAT",
+        "DISABLE_PROFILE",
+        "DISABLE_REACTIONS",
+        "DISABLE_REMOTE_VIDEO_MENU",
+        "DISABLE_START_FOR_ALL",
+        "DROPBOX_APPKEY",
+        "DROPBOX_REDIRECT_URI",
+        "DYNAMIC_BRANDING_URL",
+        "E2EPING_MAX_CONFERENCE_SIZE",
+        "E2EPING_MAX_MESSAGE_PER_SECOND",
+        "E2EPING_NUM_REQUESTS",
+        "ENABLE_ADAPTIVE_MODE",
+        "ENABLE_AUDIO_PROCESSING",
+        "ENABLE_AUTH",
+        "ENABLE_AUTH_DOMAIN",
+        "ENABLE_AUTOMATIC_GAIN_CONTROL",
+        "ENABLE_BREAKOUT_ROOMS",
+        "ENABLE_CALENDAR",
+        "ENABLE_CLOSE_PAGE",
+        "ENABLE_COLIBRI_WEBSOCKET",
+        "ENABLE_COLIBRI_WEBSOCKET_UNSAFE_REGEX",
+        "ENABLE_E2EPING",
+        "ENABLE_FILE_RECORDING_SHARING",
+        "ENABLE_GUESTS",
+        "ENABLE_HSTS",
+        "ENABLE_HTTP_REDIRECT",
+        "ENABLE_IPV6",
+        "ENABLE_JAAS_COMPONENTS",
+        "ENABLE_LETSENCRYPT",
+        "ENABLE_LIVESTREAMING",
+        "ENABLE_LIVESTREAMING_DATA_PRIVACY_LINK",
+        "ENABLE_LIVESTREAMING_HELP_LINK",
+        "ENABLE_LIVESTREAMING_TERMS_LINK",
+        "ENABLE_LIVESTREAMING_VALIDATOR_REGEXP_STRING",
+        "ENABLE_LOAD_TEST_CLIENT",
+        "ENABLE_LOCAL_RECORDING_NOTIFY_ALL_PARTICIPANT",
+        "ENABLE_LOCAL_RECORDING_SELF_START",
+        "ENABLE_NOISY_MIC_DETECTION",
+        "ENABLE_NO_AUDIO_DETECTION",
+        "ENABLE_OCTO",
+        "ENABLE_OPUS_RED",
+        "ENABLE_P2P",
+        "ENABLE_PREJOIN_PAGE",
+        "ENABLE_RECORDING",
+        "ENABLE_REMB",
+        "ENABLE_REQUIRE_DISPLAY_NAME",
+        "ENABLE_SERVICE_RECORDING",
+        "ENABLE_SIMULCAST",
+        "ENABLE_STATS_ID",
+        "ENABLE_STEREO",
+        "ENABLE_SUBDOMAINS",
+        "ENABLE_TALK_WHILE_MUTED",
+        "ENABLE_TCC",
+        "ENABLE_TRANSCRIPTIONS",
+        "ENABLE_VLA",
+        "ENABLE_WELCOME_PAGE",
+        "ENABLE_XMPP_WEBSOCKET",
+        "ETHERPAD_PUBLIC_URL",
+        "ETHERPAD_URL_BASE",
+        "GOOGLE_ANALYTICS_ID",
+        "GOOGLE_API_APP_CLIENT_ID",
+        "HIDE_PREJOIN_DISPLAY_NAME",
+        "HIDE_PREJOIN_EXTRA_BUTTONS",
+        "HIDE_PREMEETING_BUTTONS",
+        "INVITE_SERVICE_URL",
+        "JVB_PREFER_SCTP",
+        "LETSENCRYPT_ACME_SERVER",
+        "LETSENCRYPT_DOMAIN",
+        "LETSENCRYPT_EMAIL",
+        "LETSENCRYPT_USE_STAGING",
+        "MATOMO_ENDPOINT",
+        "MATOMO_SITE_ID",
+        "MICROSOFT_API_APP_CLIENT_ID",
+        "NGINX_KEEPALIVE_TIMEOUT",
+        "NGINX_RESOLVER",
+        "NGINX_WORKER_CONNECTIONS",
+        "NGINX_WORKER_PROCESSES",
+        "P2P_PREFERRED_CODEC",
+        "P2P_STUN_SERVERS",
+        "PATH",
+        "PEOPLE_SEARCH_URL",
+        "PREFERRED_LANGUAGE",
+        "PUBLIC_URL",
+        "RESOLUTION",
+        "RESOLUTION_MIN",
+        "RESOLUTION_WIDTH",
+        "RESOLUTION_WIDTH_MIN",
+        "RTCSTATS_ENABLED",
+        "RTCSTATS_POLL_INTERVAL",
+        "RTCSTATS_SEND_SDP",
+        "RTCSTATS_STORE_LOGS",
+        "RTCSTATS_URL_BASE",
+        "RTC_VISUALIZER_PATH",
+        "RTC_VISUALIZER_URL_BASE",
+        "S6_BEHAVIOUR_IF_STAGE2_FAILS",
+        "S6_READ_ONLY_ROOT",
+        "START_AUDIO_MUTED",
+        "START_AUDIO_ONLY",
+        "START_SILENT",
+        "START_VIDEO_MUTED",
+        "START_WITH_AUDIO_MUTED",
+        "START_WITH_VIDEO_MUTED",
+        "TOKEN_AUTH_URL",
+        "TOOLBAR_BUTTONS",
+        "TRANSLATION_LANGUAGES",
+        "TRANSLATION_LANGUAGES_HEAD",
+        "TZ",
+        "USE_APP_LANGUAGE",
+        "VIDEOQUALITY_BITRATE_AV1_FULL",
+        "VIDEOQUALITY_BITRATE_AV1_HIGH",
+        "VIDEOQUALITY_BITRATE_AV1_LOW",
+        "VIDEOQUALITY_BITRATE_AV1_SS_HIGH",
+        "VIDEOQUALITY_BITRATE_AV1_STANDARD",
+        "VIDEOQUALITY_BITRATE_AV1_ULTRA",
+        "VIDEOQUALITY_BITRATE_H264_FULL",
+        "VIDEOQUALITY_BITRATE_H264_HIGH",
+        "VIDEOQUALITY_BITRATE_H264_LOW",
+        "VIDEOQUALITY_BITRATE_H264_SS_HIGH",
+        "VIDEOQUALITY_BITRATE_H264_STANDARD",
+        "VIDEOQUALITY_BITRATE_H264_ULTRA",
+        "VIDEOQUALITY_BITRATE_VP8_FULL",
+        "VIDEOQUALITY_BITRATE_VP8_HIGH",
+        "VIDEOQUALITY_BITRATE_VP8_LOW",
+        "VIDEOQUALITY_BITRATE_VP8_SS_HIGH",
+        "VIDEOQUALITY_BITRATE_VP8_STANDARD",
+        "VIDEOQUALITY_BITRATE_VP8_ULTRA",
+        "VIDEOQUALITY_BITRATE_VP9_FULL",
+        "VIDEOQUALITY_BITRATE_VP9_HIGH",
+        "VIDEOQUALITY_BITRATE_VP9_LOW",
+        "VIDEOQUALITY_BITRATE_VP9_SS_HIGH",
+        "VIDEOQUALITY_BITRATE_VP9_STANDARD",
+        "VIDEOQUALITY_BITRATE_VP9_ULTRA",
+        "VIDEOQUALITY_PREFERRED_CODEC",
+        "WHITEBOARD_COLLAB_SERVER_PUBLIC_URL",
+        "WHITEBOARD_COLLAB_SERVER_URL_BASE",
+        "XMPP_AUTH_DOMAIN",
+        "XMPP_BOSH_URL_BASE",
+        "XMPP_DOMAIN",
+        "XMPP_GUEST_DOMAIN",
+        "XMPP_HIDDEN_DOMAIN",
+        "XMPP_MUC_DOMAIN",
+        "XMPP_PORT",
+        "XMPP_RECORDER_DOMAIN"
+      ],
+      "compose": {
+        "project": "leeway-jitsi-meet",
+        "service": "web",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "d0f23375d96629bb2a664c1b5bc7ffb3e7cafd2551e953364609b872645f20f4",
+      "name": "leeway-jitsi-meet-jicofo-1",
+      "imageTag": "ghcr.io/jitsi/jicofo:unstable",
+      "imageId": "sha256:2fc8cfb22ef9f1156bb8d85978c6b7090303b7c3af04b516d8db775be595dda9",
+      "repoDigests": [
+        "ghcr.io/jitsi/jicofo@sha256:2fc8cfb22ef9f1156bb8d85978c6b7090303b7c3af04b516d8db775be595dda9"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/init",
+      "workingDirectory": "",
+      "ports": {
+        "8888/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8888"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-jitsi-meet_meet.jitsi",
+          "aliases": [
+            "leeway-jitsi-meet-jicofo-1",
+            "jicofo"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "fa6f1714610434fe467c5f76ed727fa365df1785a3b825525e3bc7dfa350700a",
+          "destination": "/config",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AUTH_TYPE",
+        "BRIDGE_AVG_PARTICIPANT_STRESS",
+        "BRIDGE_STRESS_THRESHOLD",
+        "ENABLE_AUTH",
+        "ENABLE_AUTO_LOGIN",
+        "ENABLE_AUTO_OWNER",
+        "ENABLE_CODEC_AV1",
+        "ENABLE_CODEC_H264",
+        "ENABLE_CODEC_OPUS_RED",
+        "ENABLE_CODEC_VP8",
+        "ENABLE_CODEC_VP9",
+        "ENABLE_JVB_XMPP_SERVER",
+        "ENABLE_MODERATOR_CHECKS",
+        "ENABLE_OCTO",
+        "ENABLE_OCTO_SCTP",
+        "ENABLE_RECORDING",
+        "ENABLE_SCTP",
+        "ENABLE_SHARED_DOCUMENT_RANDOM_NAME",
+        "ENABLE_TRANSCRIPTIONS",
+        "ENABLE_VISITORS",
+        "JIBRI_BREWERY_MUC",
+        "JIBRI_PENDING_TIMEOUT",
+        "JIBRI_REQUEST_RETRIES",
+        "JICOFO_AUTH_LIFETIME",
+        "JICOFO_AUTH_PASSWORD",
+        "JICOFO_AUTH_TYPE",
+        "JICOFO_BRIDGE_REGION_GROUPS",
+        "JICOFO_CONF_INITIAL_PARTICIPANT_WAIT_TIMEOUT",
+        "JICOFO_CONF_MAX_AUDIO_SENDERS",
+        "JICOFO_CONF_MAX_VIDEO_SENDERS",
+        "JICOFO_CONF_SINGLE_PARTICIPANT_TIMEOUT",
+        "JICOFO_CONF_SOURCE_SIGNALING_DELAYS",
+        "JICOFO_CONF_SSRC_REWRITING",
+        "JICOFO_CONF_STRIP_SIMULCAST",
+        "JICOFO_ENABLE_AUTH",
+        "JICOFO_ENABLE_BRIDGE_HEALTH_CHECKS",
+        "JICOFO_ENABLE_HEALTH_CHECKS",
+        "JICOFO_ENABLE_ICE_FAILURE_DETECTION",
+        "JICOFO_ENABLE_LOAD_REDISTRIBUTION",
+        "JICOFO_ENABLE_REST",
+        "JICOFO_HEALTH_CHECKS_USE_PRESENCE",
+        "JICOFO_ICE_FAILURE_INTERVAL",
+        "JICOFO_ICE_FAILURE_MIN_ENDPOINTS",
+        "JICOFO_ICE_FAILURE_THRESHOLD",
+        "JICOFO_MAX_MEMORY",
+        "JICOFO_MULTI_STREAM_BACKWARD_COMPAT",
+        "JICOFO_OCTO_REGION",
+        "JICOFO_RESTART_REQUEST_INTERVAL",
+        "JICOFO_RESTART_REQUEST_MAX",
+        "JICOFO_TRUSTED_DOMAINS",
+        "JIGASI_BREWERY_MUC",
+        "JIGASI_SIP_URI",
+        "JIGASI_TRUSTED_DOMAINS",
+        "JVB_BREWERY_MUC",
+        "JVB_XMPP_AUTH_DOMAIN",
+        "JVB_XMPP_INTERNAL_MUC_DOMAIN",
+        "JVB_XMPP_PORT",
+        "JVB_XMPP_SERVER",
+        "MAX_BRIDGE_PARTICIPANTS",
+        "MAX_SSRCS_PER_USER",
+        "MAX_SSRC_GROUPS_PER_USER",
+        "OCTO_BRIDGE_SELECTION_STRATEGY",
+        "PATH",
+        "PROSODY_VISITORS_MUC_PREFIX",
+        "S6_BEHAVIOUR_IF_STAGE2_FAILS",
+        "S6_READ_ONLY_ROOT",
+        "SENTRY_DSN",
+        "SENTRY_ENVIRONMENT",
+        "SENTRY_RELEASE",
+        "TZ",
+        "VISITORS_MAX_PARTICIPANTS",
+        "VISITORS_MAX_VISITORS_PER_NODE",
+        "VISITORS_XMPP_AUTH_DOMAIN",
+        "VISITORS_XMPP_DOMAIN",
+        "VISITORS_XMPP_SERVER",
+        "XMPP_AUTH_DOMAIN",
+        "XMPP_DOMAIN",
+        "XMPP_HIDDEN_DOMAIN",
+        "XMPP_INTERNAL_MUC_DOMAIN",
+        "XMPP_MUC_DOMAIN",
+        "XMPP_PORT",
+        "XMPP_RECORDER_DOMAIN",
+        "XMPP_SERVER"
+      ],
+      "compose": {
+        "project": "leeway-jitsi-meet",
+        "service": "jicofo",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "76356e5127b08f8cb0f82e990a6ac638de2429b2e4aeae096f07cee717e3a1fd",
+      "name": "leeway-jitsi-meet-jvb-1",
+      "imageTag": "ghcr.io/jitsi/jvb:unstable",
+      "imageId": "sha256:674917a30d5a0c8aadb36b246e2ce6e5aef2d57f6aca5996559449d17d2b0169",
+      "repoDigests": [
+        "ghcr.io/jitsi/jvb@sha256:674917a30d5a0c8aadb36b246e2ce6e5aef2d57f6aca5996559449d17d2b0169"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/init",
+      "workingDirectory": "",
+      "ports": {
+        "10000/udp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "10000"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "10000"
+          }
+        ],
+        "8080/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8081"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-jitsi-meet_meet.jitsi",
+          "aliases": [
+            "leeway-jitsi-meet-jvb-1",
+            "jvb"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "202334add606bfa4d54c8b980d8b5f9c3da5fd54e5f441a1444518d4e78bab73",
+          "destination": "/config",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AUTOSCALER_SIDECAR_GROUP_NAME",
+        "AUTOSCALER_SIDECAR_HOST_ID",
+        "AUTOSCALER_SIDECAR_INSTANCE_ID",
+        "AUTOSCALER_SIDECAR_KEY_FILE",
+        "AUTOSCALER_SIDECAR_KEY_ID",
+        "AUTOSCALER_SIDECAR_PORT",
+        "AUTOSCALER_SIDECAR_REGION",
+        "AUTOSCALER_SIDECAR_SHUTDOWN_POLLING_INTERVAL",
+        "AUTOSCALER_SIDECAR_STATS_POLLING_INTERVAL",
+        "COLIBRI_REST_ENABLED",
+        "DISABLE_AWS_HARVESTER",
+        "DOCKER_HOST_ADDRESS",
+        "ENABLE_COLIBRI_WEBSOCKET",
+        "ENABLE_JVB_XMPP_SERVER",
+        "ENABLE_OCTO",
+        "ENABLE_SCTP",
+        "JVB_ADVERTISE_IPS",
+        "JVB_ADVERTISE_PRIVATE_CANDIDATES",
+        "JVB_AUTH_PASSWORD",
+        "JVB_AUTH_USER",
+        "JVB_BREWERY_MUC",
+        "JVB_CC_TRUST_BWE",
+        "JVB_DISABLE_STUN",
+        "JVB_DISABLE_XMPP",
+        "JVB_INSTANCE_ID",
+        "JVB_LOG_FILE",
+        "JVB_MUC_NICKNAME",
+        "JVB_OCTO_BIND_ADDRESS",
+        "JVB_OCTO_REGION",
+        "JVB_OCTO_RELAY_ID",
+        "JVB_PORT",
+        "JVB_REQUIRE_VALID_ADDRESS",
+        "JVB_STUN_SERVERS",
+        "JVB_USE_USRSCTP",
+        "JVB_WS_DOMAIN",
+        "JVB_WS_SERVER_ID",
+        "JVB_WS_TLS",
+        "JVB_XMPP_AUTH_DOMAIN",
+        "JVB_XMPP_INTERNAL_MUC_DOMAIN",
+        "JVB_XMPP_PORT",
+        "JVB_XMPP_SERVER",
+        "PATH",
+        "PUBLIC_URL",
+        "S6_BEHAVIOUR_IF_STAGE2_FAILS",
+        "S6_READ_ONLY_ROOT",
+        "SENTRY_DSN",
+        "SENTRY_ENVIRONMENT",
+        "SENTRY_RELEASE",
+        "SHUTDOWN_REST_ENABLED",
+        "TZ",
+        "VIDEOBRIDGE_MAX_MEMORY",
+        "XMPP_AUTH_DOMAIN",
+        "XMPP_INTERNAL_MUC_DOMAIN",
+        "XMPP_PORT",
+        "XMPP_SERVER"
+      ],
+      "compose": {
+        "project": "leeway-jitsi-meet",
+        "service": "jvb",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "81c68493827747a63593b2b0b27f30cc16ea3839c12909fb98b21845e7a0a2af",
+      "name": "leeway-jitsi-meet-prosody-1",
+      "imageTag": "ghcr.io/jitsi/prosody:unstable",
+      "imageId": "sha256:c1ec48cdded308b55981e9b45d01869668bea1b2bcfcc79d622eb98fb3d87464",
+      "repoDigests": [
+        "ghcr.io/jitsi/prosody@sha256:c1ec48cdded308b55981e9b45d01869668bea1b2bcfcc79d622eb98fb3d87464"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "/init",
+      "workingDirectory": "",
+      "ports": {
+        "5222/tcp": null,
+        "5269/tcp": null,
+        "5280/tcp": null,
+        "5347/tcp": null
+      },
+      "networks": [
+        {
+          "network": "leeway-jitsi-meet_meet.jitsi",
+          "aliases": [
+            "leeway-jitsi-meet-prosody-1",
+            "prosody",
+            "xmpp.meet.jitsi"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "685d9a1cc64d3598d924ad35a17d80be17807fd1b3a98d533abacf17a875bcea",
+          "destination": "/config",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "48a14087ee9755b2e43402045c6f98f62dfe94a5828697e8d90d53e748358908",
+          "destination": "/prosody-plugins-custom",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "14c3a18220ac4a526d664e73727dab091ac795beb066ee7534a6de9cf521f57e",
+          "destination": "/var/lib/prosody",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AUTH_TYPE",
+        "DISABLE_POLLS",
+        "ENABLE_AUTH",
+        "ENABLE_AV_MODERATION",
+        "ENABLE_BREAKOUT_ROOMS",
+        "ENABLE_END_CONFERENCE",
+        "ENABLE_GUESTS",
+        "ENABLE_IPV6",
+        "ENABLE_JAAS_COMPONENTS",
+        "ENABLE_LOBBY",
+        "ENABLE_RECORDING",
+        "ENABLE_S2S",
+        "ENABLE_TRANSCRIPTIONS",
+        "ENABLE_VISITORS",
+        "ENABLE_XMPP_WEBSOCKET",
+        "GC_GEN_MAX_TH",
+        "GC_GEN_MIN_TH",
+        "GC_INC_SPEED",
+        "GC_INC_STEP_SIZE",
+        "GC_INC_TH",
+        "GC_TYPE",
+        "GLOBAL_CONFIG",
+        "GLOBAL_MODULES",
+        "JIBRI_RECORDER_PASSWORD",
+        "JIBRI_RECORDER_USER",
+        "JIBRI_SIP_BREWERY_MUC",
+        "JIBRI_XMPP_PASSWORD",
+        "JIBRI_XMPP_USER",
+        "JICOFO_AUTH_PASSWORD",
+        "JICOFO_COMPONENT_SECRET",
+        "JIGASI_TRANSCRIBER_PASSWORD",
+        "JIGASI_TRANSCRIBER_USER",
+        "JIGASI_XMPP_PASSWORD",
+        "JIGASI_XMPP_USER",
+        "JVB_AUTH_PASSWORD",
+        "JVB_AUTH_USER",
+        "JWT_ACCEPTED_AUDIENCES",
+        "JWT_ACCEPTED_ISSUERS",
+        "JWT_ALLOW_EMPTY",
+        "JWT_APP_ID",
+        "JWT_APP_SECRET",
+        "JWT_ASAP_KEYSERVER",
+        "JWT_AUTH_TYPE",
+        "JWT_ENABLE_DOMAIN_VERIFICATION",
+        "JWT_SIGN_TYPE",
+        "JWT_TOKEN_AUTH_MODULE",
+        "LDAP_AUTH_METHOD",
+        "LDAP_BASE",
+        "LDAP_BINDDN",
+        "LDAP_BINDPW",
+        "LDAP_FILTER",
+        "LDAP_START_TLS",
+        "LDAP_TLS_CACERT_DIR",
+        "LDAP_TLS_CACERT_FILE",
+        "LDAP_TLS_CHECK_PEER",
+        "LDAP_TLS_CIPHERS",
+        "LDAP_URL",
+        "LDAP_USE_TLS",
+        "LDAP_VERSION",
+        "LOG_LEVEL",
+        "MATRIX_LOBBY_BYPASS",
+        "MATRIX_UVS_AUTH_TOKEN",
+        "MATRIX_UVS_ISSUER",
+        "MATRIX_UVS_SYNC_POWER_LEVELS",
+        "MATRIX_UVS_URL",
+        "MAX_PARTICIPANTS",
+        "PATH",
+        "PROSODY_ADMINS",
+        "PROSODY_AUTH_TYPE",
+        "PROSODY_C2S_LIMIT",
+        "PROSODY_C2S_REQUIRE_ENCRYPTION",
+        "PROSODY_DISABLE_C2S_LIMIT",
+        "PROSODY_DISABLE_S2S_LIMIT",
+        "PROSODY_ENABLE_FILTER_MESSAGES",
+        "PROSODY_ENABLE_METRICS",
+        "PROSODY_ENABLE_MUC_RESOURCE_VALIDATE",
+        "PROSODY_ENABLE_RATE_LIMITS",
+        "PROSODY_ENABLE_RECORDING_METADATA",
+        "PROSODY_ENABLE_S2S",
+        "PROSODY_ENABLE_STANZA_COUNTS",
+        "PROSODY_GUEST_AUTH_TYPE",
+        "PROSODY_HTTP_PORT",
+        "PROSODY_LOG_CONFIG",
+        "PROSODY_METRICS_ALLOWED_CIDR",
+        "PROSODY_MODE",
+        "PROSODY_MUC_RESOURCE_VALIDATE_ANONYMOUS_STRICT",
+        "PROSODY_MUC_RESOURCE_VALIDATE_ANON_METHODS",
+        "PROSODY_RATE_LIMIT_ALLOW_RANGES",
+        "PROSODY_RATE_LIMIT_CACHE_SIZE",
+        "PROSODY_RATE_LIMIT_LOGIN_RATE",
+        "PROSODY_RATE_LIMIT_SESSION_RATE",
+        "PROSODY_RATE_LIMIT_TIMEOUT",
+        "PROSODY_RESERVATION_ENABLED",
+        "PROSODY_RESERVATION_REST_BASE_URL",
+        "PROSODY_S2S_LIMIT",
+        "PROSODY_S2S_PORT",
+        "PROSODY_TRUSTED_PROXIES",
+        "PROSODY_VISITORS_MUC_PREFIX",
+        "PROSODY_VISITORS_S2S_VHOSTS",
+        "PROSODY_VISITOR_INDEX",
+        "PUBLIC_URL",
+        "S6_BEHAVIOUR_IF_STAGE2_FAILS",
+        "S6_READ_ONLY_ROOT",
+        "STUN_HOST",
+        "STUN_PORT",
+        "TURNS_HOST",
+        "TURNS_PORT",
+        "TURN_CREDENTIALS",
+        "TURN_HOST",
+        "TURN_PASSWORD",
+        "TURN_PORT",
+        "TURN_TRANSPORT",
+        "TURN_TTL",
+        "TURN_USERNAME",
+        "TZ",
+        "VISITORS_MAX_VISITORS_PER_NODE",
+        "VISITORS_XMPP_DOMAIN",
+        "VISITORS_XMPP_PORT",
+        "VISITORS_XMPP_SERVER",
+        "WAIT_FOR_HOST_DISABLE_AUTO_OWNERS",
+        "XMPP_AUTH_DOMAIN",
+        "XMPP_BREAKOUT_MUC_MODULES",
+        "XMPP_CONFIGURATION",
+        "XMPP_DOMAIN",
+        "XMPP_GUEST_DOMAIN",
+        "XMPP_HIDDEN_DOMAIN",
+        "XMPP_INTERNAL_MUC_DOMAIN",
+        "XMPP_INTERNAL_MUC_MODULES",
+        "XMPP_LOBBY_MUC_MODULES",
+        "XMPP_MODULES",
+        "XMPP_MUC_CONFIGURATION",
+        "XMPP_MUC_DOMAIN",
+        "XMPP_MUC_MODULES",
+        "XMPP_PORT",
+        "XMPP_RECORDER_DOMAIN",
+        "XMPP_SERVER_S2S_PORT",
+        "XMPP_SPEAKERSTATS_MODULES"
+      ],
+      "compose": {
+        "project": "leeway-jitsi-meet",
+        "service": "prosody",
+        "sourceExists": true,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "14d88c95c2bd95cd6e026803e333376afba8d404edad5bfc2008e6fa8e9996f4",
+      "name": "agent-lee-ears-kernel",
+      "imageTag": "agent-lee-ears-kernel-agent-lee-ears-kernel",
+      "imageId": "sha256:7325e34961fd90373631acfe815735855c7fdbdd677884138d4681816fe93f7a",
+      "repoDigests": [
+        "agent-lee-ears-kernel-agent-lee-ears-kernel@sha256:7325e34961fd90373631acfe815735855c7fdbdd677884138d4681816fe93f7a"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "8094/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8094"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8094"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "agent-lee-ears-kernel_default",
+          "aliases": [
+            "agent-lee-ears-kernel",
+            "agent-lee-ears-kernel"
+          ]
+        },
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        }
+      ],
+      "mounts": [
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "f1de8dd41ae24a8dc438591680f92b0181e2223e82515be4cf7492873441f4ba",
+          "destination": "/runtime/ears/audio",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "43165fdfc3407b24cfc4e6462cc865844266c36f46e8ffcb8593cd136c24bbfd",
+          "destination": "/runtime/ears/transcripts",
+          "readOnly": false
+        },
+        {
+          "type": "bind",
+          "volume": null,
+          "sourceId": "01f7587771529d037b1f26044b165b0153bcdd700e182ce8a48347fbc8078db9",
+          "destination": "/runtime/operator-os/inbox",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "AGENTLEE_EARS_AUDIO",
+        "AGENTLEE_EARS_MODEL",
+        "AGENTLEE_EARS_TRANSCRIPTS",
+        "AGENTLEE_OPERATOR_INBOX",
+        "GPG_KEY",
+        "LANG",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONUNBUFFERED",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION"
+      ],
+      "compose": {
+        "project": "agent-lee-ears-kernel",
+        "service": "agent-lee-ears-kernel",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "b90801e27e23fd10e6f226e1ef0a628b5ea3f03502c5cdbb882b7c727dbd1326",
+      "name": "leeway_media_router",
+      "imageTag": "leeway-ecosystemv214-leeway-media-router",
+      "imageId": "sha256:387a1be9f8312b9b59c944dff5f924a17b9382bb3ba12b7ca0fb26786ec08dfa",
+      "repoDigests": [
+        "leeway-ecosystemv214-leeway-media-router@sha256:387a1be9f8312b9b59c944dff5f924a17b9382bb3ba12b7ca0fb26786ec08dfa"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5301/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5301"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5301"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_media_router",
+            "leeway-media-router",
+            "leeway-media-router",
+            "media-router",
+            "agent-lee-media-router"
+          ]
+        }
+      ],
+      "mounts": [],
+      "environmentNames": [
+        "LEEWAY_AGENT_CENTER_URL",
+        "LEEWAY_AGENT_LEE_URL",
+        "LEEWAY_MCP_AGENT_CENTER_URL",
+        "LEEWAY_MCP_CENTER_URL",
+        "LEEWAY_MEDIA_INGESTION_URL",
+        "LEEWAY_MEDIA_ROUTER_PORT",
+        "LEEWAY_RUNTIME_FABRIC_URL",
+        "LEEWAY_WORKER_CENTER_URL",
+        "NODE_VERSION",
+        "PATH",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-ecosystemv214",
+        "service": "leeway-media-router",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "c23c1a6f4520933b9c2b9ab0dfcbdbfde154bd4d5ecc9dce46b5d3341c053aa0",
+      "name": "leeway_media_ingestion_layer",
+      "imageTag": "leeway-ecosystemv214-leeway-media-ingestion-layer",
+      "imageId": "sha256:8931afe3264e6f55332064a14d2535995655f236f91a008daeb0c9cfb098adcb",
+      "repoDigests": [
+        "leeway-ecosystemv214-leeway-media-ingestion-layer@sha256:8931afe3264e6f55332064a14d2535995655f236f91a008daeb0c9cfb098adcb"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "docker-entrypoint.sh",
+      "workingDirectory": "/app",
+      "ports": {
+        "5300/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "5300"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "5300"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": [
+            "leeway_media_ingestion_layer",
+            "leeway-media-ingestion-layer",
+            "leeway-media-ingestion-layer",
+            "media-ingestion-layer",
+            "media-ingestion"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "leeway_media_ingestion_data",
+          "sourceId": "8ede357b07b8010f642380a44858e3f76d6ac8646fe8b01cede45ecc00c66a5e",
+          "destination": "/app/Archive/media-ingestion",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "leeway_media_ingestion_receipts",
+          "sourceId": "05ed10df25e290a1ffef26245b20c9f8e005e7ffff87ef52e169360dbe0f3539",
+          "destination": "/app/Archive/receipts/media-ingestion",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "LEEWAY_AGENT_LEE_URL",
+        "LEEWAY_MEDIA_INGESTION_PORT",
+        "LEEWAY_ROOT",
+        "LEEWAY_RUNTIME_FABRIC_URL",
+        "NODE_VERSION",
+        "PATH",
+        "YARN_VERSION"
+      ],
+      "compose": {
+        "project": "leeway-ecosystemv214",
+        "service": "leeway-media-ingestion-layer",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    },
+    {
+      "id": "a8648af221403f6fd4abcbd2a95bd03cdb4494415b48eb06f0094370e6cfa35c",
+      "name": "agent-lee-vision-kernel",
+      "imageTag": "agent-lee-vision-kernel-agent-lee-vision-kernel",
+      "imageId": "sha256:38aef20ebffb3e35141967045ee45a9b1d627817cf139f6a8ff8bad50a5702c8",
+      "repoDigests": [
+        "agent-lee-vision-kernel-agent-lee-vision-kernel@sha256:38aef20ebffb3e35141967045ee45a9b1d627817cf139f6a8ff8bad50a5702c8"
+      ],
+      "state": "running",
+      "health": "not-configured",
+      "restart": "unless-stopped",
+      "executable": "uvicorn",
+      "workingDirectory": "/app",
+      "ports": {
+        "8093/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "8093"
+          },
+          {
+            "HostIp": "::",
+            "HostPort": "8093"
+          }
+        ]
+      },
+      "networks": [
+        {
+          "network": "leeway-ecosystemv214_leeway-net",
+          "aliases": []
+        },
+        {
+          "network": "leeway-network",
+          "aliases": [
+            "agent-lee-vision-kernel",
+            "agent-lee-vision-kernel"
+          ]
+        }
+      ],
+      "mounts": [
+        {
+          "type": "volume",
+          "volume": "agent-lee-vision-kernel_agent-lee-vision-kernel-receipts",
+          "sourceId": "aa96abce0a59ea1bf4f8fcf61b0228be435fd43bcf0e5cae2492def798a53884",
+          "destination": "/app/receipts",
+          "readOnly": false
+        },
+        {
+          "type": "volume",
+          "volume": "agent-lee-vision-kernel_agent-lee-vision-kernel-reports",
+          "sourceId": "f37610b6c1119cfa6cfc9795ef331752230c8e4dd55070316a4c2bae477ee4bd",
+          "destination": "/app/reports",
+          "readOnly": false
+        }
+      ],
+      "environmentNames": [
+        "GPG_KEY",
+        "LANG",
+        "OLLAMA_HOST",
+        "PATH",
+        "PYTHON_SHA256",
+        "PYTHON_VERSION",
+        "VISION_RECEIPT_ROOT"
+      ],
+      "compose": {
+        "project": "agent-lee-vision-kernel",
+        "service": "agent-lee-vision-kernel",
+        "sourceExists": false,
+        "sourceLabelPresent": true
+      },
+      "privileged": false,
+      "dockerSocketMounted": false
+    }
+  ],
+  "declaredEnvironmentDependencies": [
+    {
+      "from": "leeway_runtime_fabric",
+      "environmentName": "AGENT_CENTER_BASE",
+      "to": "leeway_agent_center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_runtime_fabric",
+      "environmentName": "AGENT_LEE_ROUTER_URL",
+      "to": "agent-lee-code-mode",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_runtime_fabric",
+      "environmentName": "DIGITAL_BRAIN_BASE",
+      "to": "leeway_digital_brain",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_agent_workstation",
+      "environmentName": "AGENT_CENTER_BASE",
+      "to": "leeway_agent_center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_agent_workstation",
+      "environmentName": "RUNTIME_FABRIC_BASE",
+      "to": "leeway_runtime_fabric",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_agent_workstation",
+      "environmentName": "OPEN_NOTEBOOK_BASE",
+      "to": "leeway_open_notebook",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_agent_workstation",
+      "environmentName": "WORKBOARD_BASE",
+      "to": "leeway_workboard_runtime",
+      "runningAliasPresent": false
+    },
+    {
+      "from": "leeway_agent_workstation",
+      "environmentName": "DIGITAL_BRAIN_BASE",
+      "to": "leeway_digital_brain",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "agent_lee_code_mode",
+      "environmentName": "AGENT_LEE_VOICE_SERVICE",
+      "to": "agent-lee-qwen-voice",
+      "runningAliasPresent": false
+    },
+    {
+      "from": "leeway-opencode-control-mcp",
+      "environmentName": "LEEWAY_OPENCODE_URL",
+      "to": "leeway-opencode-server",
+      "runningAliasPresent": false
+    },
+    {
+      "from": "leeway-forgejo-mcp",
+      "environmentName": "LEEWAY_FORGEJO_URL",
+      "to": "leeway-forgejo",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-web",
+      "environmentName": "LEEWAY_OLLAMA_BASE_URL",
+      "to": "leeway_ollama",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-web",
+      "environmentName": "LEEWAY_VISION_BASE_URL",
+      "to": "agent-lee-vision-kernel",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-web",
+      "environmentName": "LEEWAY_RUNTIME_BASE_URL",
+      "to": "agent_lee_code_mode",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-backend",
+      "environmentName": "LEEWAY_OLLAMA_BASE_URL",
+      "to": "leeway_ollama",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-backend",
+      "environmentName": "LEEWAY_RUNTIME_BASE_URL",
+      "to": "agent_lee_code_mode",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-backend",
+      "environmentName": "LEEWAY_VISION_BASE_URL",
+      "to": "agent-lee-vision-kernel",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-reconstruction",
+      "environmentName": "LEEWAY_RUNTIME_BASE_URL",
+      "to": "agent_lee_code_mode",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-reconstruction",
+      "environmentName": "LEEWAY_VISION_BASE_URL",
+      "to": "agent-lee-vision-kernel",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway-triposr-reconstruction",
+      "environmentName": "LEEWAY_OLLAMA_BASE_URL",
+      "to": "leeway_ollama",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_device_operator",
+      "environmentName": "LEEWAY_API_GATEWAY_URL",
+      "to": "leeway_api_gateway",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_performance_runtime",
+      "environmentName": "AGENT_LEE_VOICE_URL",
+      "to": "agent-lee-qwen-voice",
+      "runningAliasPresent": false
+    },
+    {
+      "from": "leeway_artifact_viewer",
+      "environmentName": "LEEWAY_OPEN_NOTEBOOK_URL",
+      "to": "leeway_open_notebook",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_open_notebook",
+      "environmentName": "LEEWAY_DOCUMENT_RUNTIME_URL",
+      "to": "leeway_document_runtime",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_api_gateway",
+      "environmentName": "LEEWAY_RESEARCH_URL",
+      "to": "leeway_research_lane",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_api_gateway",
+      "environmentName": "LEEWAY_STORAGE_URL",
+      "to": "leeway_seafile_storage_gateway",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_api_gateway",
+      "environmentName": "LEEWAY_RUNTIME_FABRIC_URL",
+      "to": "leeway_runtime_fabric",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_WORKER_CENTER_URL",
+      "to": "leeway-worker-center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_AGENT_CENTER_URL",
+      "to": "leeway-agent-center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_MCP_CENTER_URL",
+      "to": "leeway-mcp-center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_AGENT_LEE_URL",
+      "to": "agent-lee",
+      "runningAliasPresent": false
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_MCP_AGENT_CENTER_URL",
+      "to": "leeway-mcp-agent-center",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_router",
+      "environmentName": "LEEWAY_MEDIA_INGESTION_URL",
+      "to": "leeway-media-ingestion-layer",
+      "runningAliasPresent": true
+    },
+    {
+      "from": "leeway_media_ingestion_layer",
+      "environmentName": "LEEWAY_AGENT_LEE_URL",
+      "to": "agent-lee",
+      "runningAliasPresent": false
+    }
+  ],
+  "sharedWritableMounts": [
+    {
+      "sourceId": "b5caac232b1d6823b326866f8c87d96d648fed6326d454559d6b8efb7cd10a96",
+      "writers": [
+        {
+          "container": "leeway-triposr-backend",
+          "destination": "/opt/leeway/receipts"
+        },
+        {
+          "container": "leeway-triposr-reconstruction",
+          "destination": "/opt/leeway/receipts"
+        }
+      ]
+    },
+    {
+      "sourceId": "82a671ff7d0b960985492ae0627cccd2db48bcb32561a2c4a625afc516b2dd7b",
+      "writers": [
+        {
+          "container": "leeway-triposr-backend",
+          "destination": "/var/lib/leeway/outputs"
+        },
+        {
+          "container": "leeway-triposr-reconstruction",
+          "destination": "/var/lib/leeway/outputs"
+        }
+      ]
+    },
+    {
+      "sourceId": "1d78ddb4d752d18a65b6e2e238bf667f56865d543cbe69e90062c5c821663182",
+      "writers": [
+        {
+          "container": "leeway_artifact_viewer",
+          "destination": "/documents"
+        },
+        {
+          "container": "leeway_document_runtime",
+          "destination": "/documents"
+        }
+      ]
+    },
+    {
+      "sourceId": "40fd5bfd34ef6e6b14a50a2a5d2639a84927d3db171d5998e13bd69864b4646c",
+      "writers": [
+        {
+          "container": "leeway_artifact_viewer",
+          "destination": "/notebooks"
+        },
+        {
+          "container": "leeway_open_notebook",
+          "destination": "/notebooks"
+        }
+      ]
+    },
+    {
+      "sourceId": "f8d6a9be3e551c210c4f087ee2a4783c3d3320682f1feacc340ac4ce25f39a4f",
+      "writers": [
+        {
+          "container": "leeway_context_gateway",
+          "destination": "/app/receipts"
+        },
+        {
+          "container": "leeway_api_gateway",
+          "destination": "/app/receipts"
+        },
+        {
+          "container": "leeway_research_lane",
+          "destination": "/app/briefs"
+        },
+        {
+          "container": "leeway_research_lane",
+          "destination": "/app/receipts"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Environment URLs and literal source hosts are not a complete dynamic dependency graph.",
+    "Running and health checks do not prove end-to-end functionality.",
+    "Bind source identifiers are hashes; private encrypted configuration retains exact recovery bindings."
+  ]
+}

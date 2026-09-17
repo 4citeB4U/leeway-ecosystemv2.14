@@ -1,0 +1,110 @@
+[
+    {
+        "tests":  {
+                      "status":  "PASS",
+                      "endpointComparisons":  12,
+                      "negativeRoutes":  4,
+                      "acknowledgementChecks":  4,
+                      "results":  [
+                                      {
+                                          "port":  8860,
+                                          "path":  "/health",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8860,
+                                          "path":  "/registry",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8860,
+                                          "path":  "/entities",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8860,
+                                          "failureRoute404":  "PASS",
+                                          "dispatchAcknowledgementOnly":  "PASS"
+                                      },
+                                      {
+                                          "port":  8861,
+                                          "path":  "/health",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8861,
+                                          "path":  "/registry",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8861,
+                                          "path":  "/entities",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8861,
+                                          "failureRoute404":  "PASS",
+                                          "dispatchAcknowledgementOnly":  "PASS"
+                                      },
+                                      {
+                                          "port":  8862,
+                                          "path":  "/health",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8862,
+                                          "path":  "/registry",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8862,
+                                          "path":  "/entities",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8862,
+                                          "failureRoute404":  "PASS",
+                                          "dispatchAcknowledgementOnly":  "PASS"
+                                      },
+                                      {
+                                          "port":  8863,
+                                          "path":  "/health",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8863,
+                                          "path":  "/registry",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8863,
+                                          "path":  "/entities",
+                                          "result":  "PASS"
+                                      },
+                                      {
+                                          "port":  8863,
+                                          "failureRoute404":  "PASS",
+                                          "dispatchAcknowledgementOnly":  "PASS"
+                                      }
+                                  ]
+                  },
+        "status":  "PASS",
+        "service":  "capability-centers",
+        "image":  "sha256:a4746391f06d094f0a02588d45b063befcb4782ab97348a12a96ca46bca8b472"
+    },
+    {
+        "tests":  {
+                      "status":  "PASS",
+                      "canonicalSkills":  100,
+                      "preservedLegacyRecipes":  8,
+                      "liveDockerInventory":  true,
+                      "negativeHttpTests":  3,
+                      "hashTamperRejected":  true,
+                      "missingFileRejected":  true,
+                      "formulaExecuted":  false
+                  },
+        "status":  "PASS",
+        "service":  "agent-skills",
+        "image":  "sha256:4705ab6043296f99c27d8c4d6f4b379dcaba4b547bd6d840bf30ec43cef83ce0"
+    }
+]

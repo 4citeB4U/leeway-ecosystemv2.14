@@ -1,0 +1,597 @@
+﻿{
+    "AtUtc":  "2026-09-17T04:43:16.8871568Z",
+    "Status":  "STORAGE_RESTORED_EIGHT_TO_ONE_VERIFIED",
+    "Scope":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+    "Running":  43,
+    "Stopped":  0,
+    "UnrelatedContainerIdsPreserved":  42,
+    "AccessibleWindowsMounts":  49,
+    "Mounts":  [
+                   {
+                       "Destination":  "/config",
+                       "Drive":  "D",
+                       "Accessible":  true,
+                       "Name":  "leeway_capability_suite"
+                   },
+                   {
+                       "Destination":  "/data",
+                       "Drive":  "D",
+                       "Accessible":  true,
+                       "Name":  "leeway_capability_suite"
+                   },
+                   {
+                       "Destination":  "/skills",
+                       "Drive":  "D",
+                       "Accessible":  true,
+                       "Name":  "leeway_agent_skills"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "D",
+                       "Accessible":  true,
+                       "Name":  "leeway_agent_skills"
+                   },
+                   {
+                       "Destination":  "/leeway-root",
+                       "Drive":  "D",
+                       "Accessible":  true,
+                       "Name":  "leeway_digital_brain"
+                   },
+                   {
+                       "Destination":  "/host-drives/C",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway_digital_brain"
+                   },
+                   {
+                       "Destination":  "/host-drives/E",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_digital_brain"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-forgejo-mcp"
+                   },
+                   {
+                       "Destination":  "/run/secrets/forgejo.json",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-forgejo-mcp"
+                   },
+                   {
+                       "Destination":  "/data",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-bitwarden-lite"
+                   },
+                   {
+                       "Destination":  "/etc/bitwarden",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-bitwarden-lite"
+                   },
+                   {
+                       "Destination":  "/data",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-forgejo"
+                   },
+                   {
+                       "Destination":  "/device-state",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_device_operator"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_device_operator"
+                   },
+                   {
+                       "Destination":  "/state",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_performance_runtime"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_performance_runtime"
+                   },
+                   {
+                       "Destination":  "/documents",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_artifact_viewer"
+                   },
+                   {
+                       "Destination":  "/notebooks",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_artifact_viewer"
+                   },
+                   {
+                       "Destination":  "/skill-state",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_artifact_viewer"
+                   },
+                   {
+                       "Destination":  "/viewer-state",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_artifact_viewer"
+                   },
+                   {
+                       "Destination":  "/notebooks",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_open_notebook"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_open_notebook"
+                   },
+                   {
+                       "Destination":  "/meetings",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_meeting_runtime"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_meeting_runtime"
+                   },
+                   {
+                       "Destination":  "/documents",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_document_runtime"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_document_runtime"
+                   },
+                   {
+                       "Destination":  "/context-store",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_context_gateway"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_context_gateway"
+                   },
+                   {
+                       "Destination":  "/app/approvals",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_api_gateway"
+                   },
+                   {
+                       "Destination":  "/app/crm",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_api_gateway"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_api_gateway"
+                   },
+                   {
+                       "Destination":  "/app/briefs",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_research_lane"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_research_lane"
+                   },
+                   {
+                       "Destination":  "/gateway-store",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_seafile_storage_gateway"
+                   },
+                   {
+                       "Destination":  "/runtime",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_seafile_storage_gateway"
+                   },
+                   {
+                       "Destination":  "/app/receipts",
+                       "Drive":  "E",
+                       "Accessible":  true,
+                       "Name":  "leeway_seafile_storage_gateway"
+                   },
+                   {
+                       "Destination":  "/config",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-web-1"
+                   },
+                   {
+                       "Destination":  "/storage",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-web-1"
+                   },
+                   {
+                       "Destination":  "/usr/share/jitsi-meet/load-test",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-web-1"
+                   },
+                   {
+                       "Destination":  "/usr/share/jitsi-meet/transcripts",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-web-1"
+                   },
+                   {
+                       "Destination":  "/var/spool/cron/crontabs",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-web-1"
+                   },
+                   {
+                       "Destination":  "/config",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-jicofo-1"
+                   },
+                   {
+                       "Destination":  "/config",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-jvb-1"
+                   },
+                   {
+                       "Destination":  "/config",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-prosody-1"
+                   },
+                   {
+                       "Destination":  "/prosody-plugins-custom",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-prosody-1"
+                   },
+                   {
+                       "Destination":  "/var/lib/prosody",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "leeway-jitsi-meet-prosody-1"
+                   },
+                   {
+                       "Destination":  "/runtime/ears/audio",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "agent-lee-ears-kernel"
+                   },
+                   {
+                       "Destination":  "/runtime/ears/transcripts",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "agent-lee-ears-kernel"
+                   },
+                   {
+                       "Destination":  "/runtime/operator-os/inbox",
+                       "Drive":  "C",
+                       "Accessible":  true,
+                       "Name":  "agent-lee-ears-kernel"
+                   }
+               ],
+    "SkillsAuthority":  {
+                            "repository":  "4citeB4U/LeeWay-Agent-Skills",
+                            "commit":  "66c976bb0e79e24503c847ef90929c6fb9d5d818",
+                            "verification":  "PINNED_FILE_HASHES_VERIFIED",
+                            "skill_count":  100,
+                            "execution_enabled":  false,
+                            "legacy_workflows":  "/skills",
+                            "canonical_instructions":  "/authority/skills",
+                            "live_docker_inventory":  "/authority/runtime",
+                            "formula_execution":  "NOT_EXECUTED_BY_THIS_ADAPTER"
+                        },
+    "SkillsRuntimeTotal":  43,
+    "Cutover":  {
+                    "Status":  "PROMOTED_AND_ORIGINALS_RETIRED",
+                    "CandidateImage":  "sha256:5bb71cbcfbcdc32be833c34f75b348c50e3819222312e9de7e7e88bf83eaac95",
+                    "ArchiveSHA256":  "4D76CA4EB30502A67563D254F007BBDED301AB64E5E974367CA1D73D3F7C593D",
+                    "ArchiveReloadVerified":  true,
+                    "Checks":  [
+                                   {
+                                       "Port":  5332,
+                                       "WorkId":  "work-1789619946-39462f7d",
+                                       "Name":  "leeway_phone_runtime"
+                                   },
+                                   {
+                                       "Port":  5330,
+                                       "WorkId":  "work-1789619946-2b35ed37",
+                                       "Name":  "leeway_email_runtime"
+                                   },
+                                   {
+                                       "Port":  5331,
+                                       "WorkId":  "work-1789619946-ef1ddd26",
+                                       "Name":  "leeway_calendar_runtime"
+                                   },
+                                   {
+                                       "Port":  5333,
+                                       "WorkId":  "work-1789619946-6365d91a",
+                                       "Name":  "leeway_browser_runtime"
+                                   },
+                                   {
+                                       "Port":  5334,
+                                       "WorkId":  "work-1789619946-1c36adad",
+                                       "Name":  "leeway_desktop_runtime"
+                                   },
+                                   {
+                                       "Port":  5335,
+                                       "WorkId":  "work-1789619946-e377cba4",
+                                       "Name":  "leeway_license_runtime"
+                                   },
+                                   {
+                                       "Port":  5336,
+                                       "WorkId":  "work-1789619946-9c718a37",
+                                       "Name":  "leeway_installer_runtime"
+                                   },
+                                   {
+                                       "Port":  5337,
+                                       "WorkId":  "work-1789619947-b01a3f28",
+                                       "Name":  "leeway_pwa_dashboard"
+                                   }
+                               ],
+                    "RestartPersistence":  true,
+                    "ReplacementId":  "3768113b2aa32cc40fd1811b057cfee04780af9f351bb8cdd6cde7795e93e6f9",
+                    "LegacyDnsVerified":  true,
+                    "RollbackRehearsals":  [
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_phone_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_email_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_calendar_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_browser_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_desktop_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_license_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_installer_runtime:20260916-233813"
+                                               },
+                                               {
+                                                   "Created":  true,
+                                                   "Started":  false,
+                                                   "Tag":  "leeway-rollback/leeway_pwa_dashboard:20260916-233813"
+                                               }
+                                           ],
+                    "ScriptSHA256":  "21C848C62C2D0B3295A25613F35FAE02DF84F3743495F9CCA965138D2C1C5AF6",
+                    "RetirementScriptSHA256":  "25DB9E179A1A12F4AA9B786D172D63293B84C52F6E9E9029B90C42F6E7902A98"
+                },
+    "Health":  [
+                   {
+                       "Name":  "/leeway_capability_suite",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway-seafile",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway-seafile-db",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway_agent_skills",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway_capability_centers",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway_digital_brain",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway_docker_reality",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_runtime_fabric",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_agent_workstation",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/agent_lee_code_mode",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-n8n-dev",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/agent-lee-voice-kernel",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway-seafile-cache",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_hybrid_fabric",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-opencode-control-mcp",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-forgejo-mcp",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway_ollama",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-gravitino",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-bitwarden-lite",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-forgejo",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-transit-hub-web",
+                       "DockerHealth":  "healthy"
+                   },
+                   {
+                       "Name":  "/leeway-transit-hub-sqlserver-dev",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-triposr-web",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-triposr-backend",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-triposr-reconstruction",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_device_operator",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_performance_runtime",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_artifact_viewer",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_open_notebook",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_meeting_runtime",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_document_runtime",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_context_gateway",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_api_gateway",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_research_lane",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_seafile_storage_gateway",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-jitsi-meet-web-1",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-jitsi-meet-jicofo-1",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-jitsi-meet-jvb-1",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway-jitsi-meet-prosody-1",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/agent-lee-ears-kernel",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_media_router",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/leeway_media_ingestion_layer",
+                       "DockerHealth":  null
+                   },
+                   {
+                       "Name":  "/agent-lee-vision-kernel",
+                       "DockerHealth":  null
+                   }
+               ],
+    "Formula":  "NOT_EXECUTED",
+    "LearningLedger":  "NOT_UPDATED",
+    "ScriptSHA256":  "881A3D36D397F9C453F4CC9ABB0153D9AA212249B4B66D23DA1D2B322C782CDF",
+    "SeafileRestartRepair":  {
+                                 "Status":  "SEAHUB_PING_VERIFIED",
+                                 "Scope":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+                                 "Change":  "Preserved stale PID file; started Seahub using vendor script",
+                                 "DatabaseChanged":  false,
+                                 "ScriptSHA256":  "5C782BEE0A589377061D8911FD0FE1F4B342A81471F3A51B297486D32ACCB05B"
+                             },
+    "FinalVerifiedAtUtc":  "2026-09-17T04:46:44.6058299Z"
+}

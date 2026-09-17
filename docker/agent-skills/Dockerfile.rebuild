@@ -1,0 +1,14 @@
+# REGION: LeeWay skills source reconstruction
+# TAG: LEEWAY-SKILLS-SOURCE-REBUILD-V1
+# WHO: Agent Lee; WHAT: source-only image recipe; WHY: avoid dependence on a local image.
+# WHERE: Docker; WHEN: recovery; HOW: preserved source and requirements; ROLE: operator; LICENSE: MIT.
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r /app/requirements.txt
+COPY legacy_app.py entry.py authority_projection.py authority-manifest.json /app/
+COPY authority/ /canonical-agent-skills/
+EXPOSE 5327
+HEALTHCHECK --interval=30s --timeout=8s --start-period=10s --retries=3 CMD ["python","-c","import urllib.request; urllib.request.urlopen('http://127.0.0.1:5327/authority',timeout=5).read()"]
+CMD ["uvicorn","entry:app","--host","0.0.0.0","--port","5327"]
+

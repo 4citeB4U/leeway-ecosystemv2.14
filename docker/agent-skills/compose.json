@@ -1,0 +1,43 @@
+{
+    "name":  "leeway-agent-skills",
+    "services":  {
+                     "agent-skills":  {
+                                          "container_name":  "leeway_agent_skills",
+                                          "image":  "leeway-agent-skills:canonical-linked-20260916",
+                                          "build":  {
+                                                        "context":  ".",
+                                                        "dockerfile":  "Dockerfile.rebuild"
+                                                    },
+                                          "restart":  "unless-stopped",
+                                          "ports":  [
+                                                        "5327:5327"
+                                                    ],
+                                          "environment":  {
+                                                              "LEEWAY_SKILLS_DIR":  "/skills",
+                                                              "LEEWAY_RECEIPT_DIR":  "/app/receipts",
+                                                              "LEEWAY_ARCHITECTURE_PATH":  "/architecture-unverified/latest-canonical-architecture.json"
+                                                          },
+                                          "volumes":  [
+                                                          {
+                                                              "type":  "bind",
+                                                              "source":  "${LEEWAY_ROOT:?Set verified LeeWay root}/runtime/container-fabric/agent-skills-state/skills",
+                                                              "target":  "/skills"
+                                                          },
+                                                          {
+                                                              "type":  "bind",
+                                                              "source":  "${LEEWAY_ROOT:?Set verified LeeWay root}/runtime/container-fabric/agent-skills-state/receipts",
+                                                              "target":  "/app/receipts"
+                                                          }
+                                                      ],
+                                          "networks":  [
+                                                           "leeway-net"
+                                                       ]
+                                      }
+                 },
+    "networks":  {
+                     "leeway-net":  {
+                                        "external":  true,
+                                        "name":  "leeway-ecosystemv214_leeway-net"
+                                    }
+                 }
+}

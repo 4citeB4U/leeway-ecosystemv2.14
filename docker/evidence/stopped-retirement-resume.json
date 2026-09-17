@@ -1,0 +1,129 @@
+{
+    "alreadyAbsentCount":  11,
+    "originalVolumesDeleted":  0,
+    "scriptSHA256":  "99A4D8EFBD123A9F9128F5B589EA9CE2656DB97ADA8427A48671B4E4AC8B6FB7",
+    "learningLedger":  "NOT_UPDATED",
+    "nativeArchiveReloadVerified":  true,
+    "formulaExecution":  "NOT_EXECUTED",
+    "archiveSha256":  "072A3ACF8F52E49A322B2B58AD80E960B9038E993081F1572F9ADA8AE9F23D3B",
+    "restoreCreateTests":  52,
+    "removedThisResume":  41,
+    "schema":  "leeway.stopped.docker.retirement.v2",
+    "removed":  [
+                    "leeway_digital_brain_pre_reality_20260916-131153",
+                    "leeway_runtime_fabric_pre_d_source_20260903-141544",
+                    "leeway_agent_workstation_pre_d_source_20260903-141544",
+                    "leeway_runtime_fabric_wrong-entrypoint-overlay-20260903",
+                    "leeway_digital_brain_pre_d_source_20260903-141544",
+                    "leeway_digital_brain_pre_runtime_fabric_route-20260903",
+                    "leeway_digital_brain_pre_api_ingest-20260903-1833",
+                    "leeway_digital_brain_failed_partial-root-20260903-1829",
+                    "leeway_agent_workstation_pre_brain_api-20260903-1834",
+                    "leeway_digital_brain_pre_workstation_20260903_1827",
+                    "7bdfc2fa7d51_agent_lee_code_mode",
+                    "leeway_runtime_fabric_pre_workstation_bridge-20260903",
+                    "leeway-sfu-ph05c",
+                    "leeway-sfu-ph05b",
+                    "agent-lee-sdxl-lightning-image-lane",
+                    "leeway-opencode-server",
+                    "leeway-trino",
+                    "stoic_cori",
+                    "leeway_runtime_fabric_preR10R7_20260817-100508",
+                    "leeway_runtime_fabric_bigintbug_20260812",
+                    "lucid_kapitsa",
+                    "agent-lee-telegram-shell",
+                    "agent-lee-telegram-shell-voice-r1-20260802-1910",
+                    "agent_lee_code_mode_preB4R9R2_20260817-053557",
+                    "leeway_runtime_fabric_pre_formula_20260802",
+                    "runtime-fabric-canary-mig008b",
+                    "agent-lee-canary-mig008b",
+                    "agent-lee-true-character-mesh-lane",
+                    "agent-lee-telegram-vision-lane",
+                    "agent-lee-image-to-3d-pattern-lane",
+                    "agent-lee-character-cutout-lane",
+                    "leeway_runtime_fabric_canary",
+                    "leeway_executive_runtime",
+                    "leeway_skill_router",
+                    "agent_lee_code_mode_recovery_candidate_d12_porttest_20260724-054110",
+                    "agent_lee_code_mode_recovery_candidate_d12_porttest_20260724-053548",
+                    "agent_lee_code_mode_recovery_candidate_d12_porttest_20260724-052659",
+                    "agent_lee_code_mode_cold_rollback_d19",
+                    "agent-lee-qwen-volume-loader-20260716-122112",
+                    "leeway_device_operator_rollback_163b_20260705-173630",
+                    "leeway_workboard_runtime",
+                    "agent-lee-telegram-shell-prevoice-20260802-1850",
+                    "leeway_device_operator_rollback_20260705-173336",
+                    "agent-lee-telegram-shell-backup-fullroutes-20260703-150635",
+                    "agent-lee-sdxl-lightning-image-lane-d39fr4r6r4r2-backup-20260726-155702",
+                    "agent-lee-true-character-mesh-lane-d39fr4r6r4r2-backup-20260726-155702",
+                    "agent-lee-telegram-vision-lane-d39fr4r6r4r2-backup-20260726-155702",
+                    "agent-lee-character-cutout-lane-d39fr4r6r4r2-backup-20260726-155702",
+                    "agent-lee-image-to-3d-pattern-lane-d39fr4r6r4r2-backup-20260726-155702",
+                    "agent-lee-telegram-shell-backup-20260703-144921",
+                    "agent-lee-qwen-voice-bind-backup-20260716-122301",
+                    "leeway-local-assistant-bridge"
+                ],
+    "previouslyAbsent":  [
+                             {
+                                 "name":  "leeway_digital_brain_pre_reality_20260916-131153",
+                                 "id":  "94c22bba5cc126b24f9581a36fde5a0530eb789ef3c2411ffaaf35813c524831",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_runtime_fabric_pre_d_source_20260903-141544",
+                                 "id":  "50202c3c264b474cb9b439e8bbc9fc281f18fee7fb72dd3051bbf8f2e050c219",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_agent_workstation_pre_d_source_20260903-141544",
+                                 "id":  "796e76bb38069857c729c35603cd29bdcdd9effec34692e303366146e2a11690",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_runtime_fabric_wrong-entrypoint-overlay-20260903",
+                                 "id":  "a1dd279861507996181461e005a7285c98f71e7e9bdb34e60b76027dcaad4dd0",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_digital_brain_pre_d_source_20260903-141544",
+                                 "id":  "14fc33e65b0a0832b1a5fb1259de2f678d91dbbf34ee6e69c4d103e112b303af",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_digital_brain_pre_runtime_fabric_route-20260903",
+                                 "id":  "a1a22bd7d6a7b66b01613a0acd31e5991291f8fff70ca50601e301b749a1ef73",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_digital_brain_pre_api_ingest-20260903-1833",
+                                 "id":  "9977031230e1bbb83d3c311ba8c79000dd194a867ffe31f4b9a5c35cf270a0f7",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_digital_brain_failed_partial-root-20260903-1829",
+                                 "id":  "1754aaff3d5907e07d37f72aa4da0b776a70e89ed6ad55cda6ae9ed79eddc52d",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_agent_workstation_pre_brain_api-20260903-1834",
+                                 "id":  "cd5cc0742bbab9a214ededbb1f38412fef93869148cf885d4c7ddbd3dfa121af",
+                                 "previouslyRecordedRemoved":  true
+                             },
+                             {
+                                 "name":  "leeway_digital_brain_pre_workstation_20260903_1827",
+                                 "id":  "81f7591ba00abc3141145c089adabeeeef7fbb5da0b42a78492bbe708e70517e",
+                                 "previouslyRecordedRemoved":  false
+                             },
+                             {
+                                 "name":  "7bdfc2fa7d51_agent_lee_code_mode",
+                                 "id":  "50256350ff7ff5c5b5ba7f89d7d7a306d04bdc6aa7c164e368fd8d5e9bd116dc",
+                                 "previouslyRecordedRemoved":  false
+                             }
+                         ],
+    "removedCount":  52,
+    "proof":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+    "imagesDeleted":  0,
+    "containersStartedByRestoreTests":  0,
+    "status":  "VERIFIED",
+    "time":  "2026-09-16T23:00:35.6820876Z"
+}

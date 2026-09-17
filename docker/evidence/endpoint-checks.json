@@ -1,0 +1,291 @@
+{
+  "time": "2026-09-16T21:20:15.609Z",
+  "scope": "GET health availability; does not prove business operations",
+  "results": [
+    {
+      "name": "leeway_agent_skills",
+      "route": "/health",
+      "containerPort": "5327/tcp",
+      "hostPort": "5327",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_capability_centers",
+      "route": "/health",
+      "containerPort": "8860/tcp",
+      "hostPort": "8860",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_digital_brain",
+      "route": "/brain/health",
+      "containerPort": "8770/tcp",
+      "hostPort": "8770",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_docker_reality",
+      "result": "NO_PUBLISHED_TCP_PORT",
+      "route": "/health"
+    },
+    {
+      "name": "leeway_runtime_fabric",
+      "route": "/health",
+      "containerPort": "4001/tcp",
+      "hostPort": "4001",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_agent_workstation",
+      "route": "/api/health",
+      "containerPort": "5340/tcp",
+      "hostPort": "5340",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "agent_lee_code_mode",
+      "route": "/health",
+      "containerPort": "8080/tcp",
+      "hostPort": "8080",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "agent-lee-voice-kernel",
+      "route": "/health",
+      "containerPort": "8092/tcp",
+      "hostPort": "8092",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_hybrid_fabric",
+      "route": "/health",
+      "containerPort": "8777/tcp",
+      "hostPort": "8777",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway-opencode-control-mcp",
+      "route": "/health",
+      "containerPort": "8811/tcp",
+      "hostPort": "8811",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway-forgejo-mcp",
+      "route": "/health",
+      "containerPort": "8790/tcp",
+      "hostPort": "8790",
+      "httpStatus": 404,
+      "result": "HTTP_NON_SUCCESS"
+    },
+    {
+      "name": "leeway-triposr-web",
+      "route": "/",
+      "containerPort": "3000/tcp",
+      "hostPort": "13000",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway-triposr-backend",
+      "route": "/health",
+      "containerPort": "8000/tcp",
+      "hostPort": "18000",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway-triposr-reconstruction",
+      "route": "/health",
+      "containerPort": "8103/tcp",
+      "hostPort": "18103",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_device_operator",
+      "route": "/health",
+      "containerPort": "5323/tcp",
+      "hostPort": "5323",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_performance_runtime",
+      "route": "/health",
+      "containerPort": "5338/tcp",
+      "hostPort": "5338",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_pwa_dashboard",
+      "route": "/health",
+      "containerPort": "5337/tcp",
+      "hostPort": "5337",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_installer_runtime",
+      "route": "/health",
+      "containerPort": "5336/tcp",
+      "hostPort": "5336",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_license_runtime",
+      "route": "/health",
+      "containerPort": "5335/tcp",
+      "hostPort": "5335",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_desktop_runtime",
+      "route": "/health",
+      "containerPort": "5334/tcp",
+      "hostPort": "5334",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_browser_runtime",
+      "route": "/health",
+      "containerPort": "5333/tcp",
+      "hostPort": "5333",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_phone_runtime",
+      "route": "/health",
+      "containerPort": "5332/tcp",
+      "hostPort": "5332",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_calendar_runtime",
+      "route": "/health",
+      "containerPort": "5331/tcp",
+      "hostPort": "5331",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_email_runtime",
+      "route": "/health",
+      "containerPort": "5330/tcp",
+      "hostPort": "5330",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_artifact_viewer",
+      "route": "/health",
+      "containerPort": "5328/tcp",
+      "hostPort": "5328",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_open_notebook",
+      "route": "/health",
+      "containerPort": "5326/tcp",
+      "hostPort": "5326",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_meeting_runtime",
+      "route": "/health",
+      "containerPort": "5329/tcp",
+      "hostPort": "5329",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_document_runtime",
+      "route": "/health",
+      "containerPort": "5325/tcp",
+      "hostPort": "5325",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_context_gateway",
+      "route": "/health",
+      "containerPort": "5321/tcp",
+      "hostPort": "5321",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_api_gateway",
+      "route": "/health",
+      "containerPort": "5320/tcp",
+      "hostPort": "5320",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_research_lane",
+      "route": "/health",
+      "containerPort": "5310/tcp",
+      "hostPort": "5310",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_seafile_storage_gateway",
+      "route": "/health",
+      "containerPort": "5314/tcp",
+      "hostPort": "5314",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "agent-lee-ears-kernel",
+      "route": "/health",
+      "containerPort": "8094/tcp",
+      "hostPort": "8094",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_media_router",
+      "route": "/health",
+      "containerPort": "5301/tcp",
+      "hostPort": "5301",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "leeway_media_ingestion_layer",
+      "route": "/health",
+      "containerPort": "5300/tcp",
+      "hostPort": "5300",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    },
+    {
+      "name": "agent-lee-vision-kernel",
+      "route": "/health",
+      "containerPort": "8093/tcp",
+      "hostPort": "8093",
+      "httpStatus": 200,
+      "result": "HTTP_RESPONDS"
+    }
+  ]
+}

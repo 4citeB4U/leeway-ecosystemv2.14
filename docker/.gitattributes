@@ -1,0 +1,2 @@
+# Preserve recovered source bytes, including original CRLF.
+* -text

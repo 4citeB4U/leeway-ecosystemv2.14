@@ -1,0 +1,3 @@
+[submodule "docker/agent-skills/authority"]
+	path = docker/agent-skills/authority
+	url = https://github.com/4citeB4U/LeeWay-Agent-Skills.git

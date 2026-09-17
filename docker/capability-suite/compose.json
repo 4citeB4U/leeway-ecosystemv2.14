@@ -1,0 +1,78 @@
+﻿{
+    "networks":  {
+                     "leeway-net":  {
+                                        "name":  "leeway-ecosystemv214_leeway-net",
+                                        "external":  true
+                                    }
+                 },
+    "name":  "leeway-capability-suite",
+    "services":  {
+                     "capability_suite":  {
+                                              "image":  "leeway-capability-suite:20260917",
+                                              "restart":  "unless-stopped",
+                                              "networks":  {
+                                                               "leeway-net":  {
+                                                                                  "aliases":  [
+                                                                                                  "leeway_phone_runtime",
+                                                                                                  "leeway_email_runtime",
+                                                                                                  "leeway_calendar_runtime",
+                                                                                                  "leeway_browser_runtime",
+                                                                                                  "leeway_desktop_runtime",
+                                                                                                  "leeway_license_runtime",
+                                                                                                  "leeway_installer_runtime",
+                                                                                                  "leeway_pwa_dashboard"
+                                                                                              ]
+                                                                              }
+                                                           },
+                                              "build":  ".",
+                                              "ports":  [
+                                                            "5332:5332",
+                                                            "5330:5330",
+                                                            "5331:5331",
+                                                            "5333:5333",
+                                                            "5334:5334",
+                                                            "5335:5335",
+                                                            "5336:5336",
+                                                            "5337:5337"
+                                                        ],
+                                              "volumes":  [
+                                                              {
+                                                                  "read_only":  true,
+                                                                  "target":  "/config",
+                                                                  "bind":  {
+                                                                               "create_host_path":  false
+                                                                           },
+                                                                  "source":  "./configuration",
+                                                                  "type":  "bind"
+                                                              },
+                                                              {
+                                                                  "bind":  {
+                                                                               "create_host_path":  false
+                                                                           },
+                                                                  "target":  "/data",
+                                                                  "source":  "./state",
+                                                                  "type":  "bind"
+                                                              }
+                                                          ],
+                                              "container_name":  "leeway_capability_suite",
+                                              "healthcheck":  {
+                                                                  "retries":  3,
+                                                                  "interval":  "20s",
+                                                                  "timeout":  "10s",
+                                                                  "start_period":  "20s",
+                                                                  "test":  [
+                                                                               "CMD",
+                                                                               "python",
+                                                                               "/app/healthcheck.py"
+                                                                           ]
+                                                              },
+                                              "labels":  {
+                                                             "leeway.object.id":  "leeway.capability-suite",
+                                                             "leeway.execution.scope":  "work-order-management"
+                                                         },
+                                              "profiles":  [
+                                                               "data-custody-verified"
+                                                           ]
+                                          }
+                 }
+}

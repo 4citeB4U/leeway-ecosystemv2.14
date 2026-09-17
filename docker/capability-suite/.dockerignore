@@ -1,0 +1,7 @@
+*
+!requirements.txt
+!lane.py
+!server.py
+!healthcheck.py
+!Dockerfile
+
