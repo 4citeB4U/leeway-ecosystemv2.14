@@ -1,0 +1,114 @@
+﻿[
+    {
+        "port":  5332,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5332",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_phone_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_phone_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_phone_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_phone_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_phone_runtime"
+                        },
+        "name":  "leeway_phone_runtime"
+    },
+    {
+        "port":  5330,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5330",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_email_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_email_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_email_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_email_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_email_runtime"
+                        },
+        "name":  "leeway_email_runtime"
+    },
+    {
+        "port":  5331,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5331",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_calendar_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_calendar_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_calendar_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_calendar_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_calendar_runtime"
+                        },
+        "name":  "leeway_calendar_runtime"
+    },
+    {
+        "port":  5333,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5333",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_browser_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_browser_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_browser_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_browser_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_browser_runtime"
+                        },
+        "name":  "leeway_browser_runtime"
+    },
+    {
+        "port":  5334,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5334",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_desktop_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_desktop_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_desktop_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_desktop_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_desktop_runtime"
+                        },
+        "name":  "leeway_desktop_runtime"
+    },
+    {
+        "port":  5335,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5335",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_license_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_license_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_license_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_license_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_license_runtime"
+                        },
+        "name":  "leeway_license_runtime"
+    },
+    {
+        "port":  5336,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5336",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_installer_runtime",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_installer_runtime/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_installer_runtime",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_installer_runtime/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_installer_runtime"
+                        },
+        "name":  "leeway_installer_runtime"
+    },
+    {
+        "port":  5337,
+        "environment":  {
+                            "LEEWAY_RUNTIME_PORT":  "5337",
+                            "LEEWAY_RUNTIME_TRUTH_JSON":  "{\"provider_execution\":\"UNVERIFIED\"}",
+                            "LEEWAY_RUNTIME_LANE":  "leeway_pwa_dashboard",
+                            "LEEWAY_RUNTIME_STATE":  "/data/leeway_pwa_dashboard/state",
+                            "LEEWAY_RUNTIME_NAME":  "leeway_pwa_dashboard",
+                            "LEEWAY_RECEIPT_DIR":  "/data/leeway_pwa_dashboard/receipts",
+                            "LEEWAY_RUNTIME_CAPABILITIES_JSON":  "[]",
+                            "LEEWAY_RUNTIME_TITLE":  "leeway_pwa_dashboard"
+                        },
+        "name":  "leeway_pwa_dashboard"
+    }
+]

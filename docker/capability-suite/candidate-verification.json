@@ -1,0 +1,88 @@
+﻿{
+    "serverProcesses":  1,
+    "time":  "2026-09-17T00:07:20.6175471Z",
+    "formulaExecution":  "NOT_EXECUTED",
+    "data":  "ISOLATED_TEST_FIXTURES",
+    "restartPersistence":  true,
+    "historicalDataRestored":  false,
+    "status":  "CANDIDATE_VERIFIED_NOT_PROMOTED",
+    "scriptSHA256":  "E096E7B86B9F7DF77273C30AEF6F55DBC59F5AADCD08D2A14CBE8A249DE8D20F",
+    "productionChanged":  false,
+    "proof":  "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+    "storageFailureReturns503":  true,
+    "checks":  [
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_phone_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_email_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_calendar_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_browser_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_desktop_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_license_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_installer_runtime",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   },
+                   {
+                       "hostHeaderIsolation":  true,
+                       "name":  "leeway_pwa_dashboard",
+                       "health":  true,
+                       "receiptIdentity":  true,
+                       "invalidPayload422":  true,
+                       "workOrderCreated":  true,
+                       "status":  true
+                   }
+               ],
+    "lanes":  8
+}

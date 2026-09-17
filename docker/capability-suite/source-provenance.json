@@ -1,0 +1,50 @@
+[
+    {
+        "name":  "leeway_phone_runtime",
+        "id":  "eefa623d11ea58850fcae8ac54700587247abfe352aa1a790425026ec8c68a0c",
+        "sourceSHA256":  "6855AD92155DCE92476F36FBE0D1482050C153C95C91F2C2D3715372D36D332D",
+        "image":  "sha256:1c6af8a54959fb8de3894774be139953c4170cafd7d7a774e44cdb3333953878"
+    },
+    {
+        "name":  "leeway_email_runtime",
+        "id":  "245b1dab6bddd2267465ae8d0f7ae75b08dde4a90c3550eedf5809977611fb0a",
+        "sourceSHA256":  "C20BD1CBC7C1659212BFBFD167CEAC0717C498ED68ED042725620A5BE712C539",
+        "image":  "sha256:7ad6f6c80353153c8fa5595afb0d67f3acd15838152eec09726cc5e25325a560"
+    },
+    {
+        "name":  "leeway_calendar_runtime",
+        "id":  "bd596130eeaa75872fc3b0780140323f3c81e4c7bed2b60e6bb51c2130b0429e",
+        "sourceSHA256":  "EC1C8AA3C75C778D4E06ABFC159FE03E8A1B8A94179418668BBFFC0545E0EE18",
+        "image":  "sha256:aa3694eb216ea9699d5a75439d0dc410ac97a670b937eceb2ce9ab9703ae05b7"
+    },
+    {
+        "name":  "leeway_browser_runtime",
+        "id":  "f342c87128adda99952c502998ba3464c0b7c536024c68fd02f3d8f07fa01865",
+        "sourceSHA256":  "B5BD5C9A3249AB2A98CFAA17A96213FA0BE12E94709E77B147A475BDCD4733DF",
+        "image":  "sha256:5991d77d4a10b371d818dcde9e7cad6f7c1c22ec046c65eda32991c3f509b914"
+    },
+    {
+        "name":  "leeway_desktop_runtime",
+        "id":  "34199029ef63de65d009105f1397a1e2c2bd8bb63140517a96fdb50eb1bbef41",
+        "sourceSHA256":  "7ABDC06C42883884957F0A646238DA2AFA0F4A42B2AA0852A7F9789EA378155F",
+        "image":  "sha256:13cc736f04dc920e95b59fa1bc01bf0c369821a15dac8b0a41554c2adb075ea2"
+    },
+    {
+        "name":  "leeway_license_runtime",
+        "id":  "3bb9d010d60d51b415ec14aa72d446064f938449b573cf18034a6549b48d8add",
+        "sourceSHA256":  "532A37AC95F001240CE6230C6562341E71960415C09BBB81EE7BD053A524469F",
+        "image":  "sha256:291f2b2ff07b935681565e0445ca0232f25efe8327096c62ae186eae75d348ad"
+    },
+    {
+        "name":  "leeway_installer_runtime",
+        "id":  "388c0e5ec8d15196cb8f716eec04e7bb0643bcf6e60b4a50642537dd6842e8b4",
+        "sourceSHA256":  "247E1A1479B606BB87E11E6B1212E1F2BB31F0A58EDFFE8116AE0AF94FC39481",
+        "image":  "sha256:8111514fc192699d943082f1d4926646fb453b15d1b31d566461474f3198dc13"
+    },
+    {
+        "name":  "leeway_pwa_dashboard",
+        "id":  "7aebb53aa2212ee6defb62f444a734563d80e10b3bae3b5ba494f55e4b51080c",
+        "sourceSHA256":  "B54B73924F0668D0DB690963C40ED0CDC88FAAA2E3BBD5B9AA6C2744280757D4",
+        "image":  "sha256:5f6d5fba188c4076761c4de4417ded18768886ccfbd24a6f4ca679f11f7b7484"
+    }
+]

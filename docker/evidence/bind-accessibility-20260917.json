@@ -1,0 +1,506 @@
+﻿[
+    {
+        "sourceDrive":  "D",
+        "name":  "leeway_agent_skills",
+        "destination":  "/skills",
+        "containerAccessible":  false,
+        "hostPathExists":  true,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "D",
+        "name":  "leeway_agent_skills",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  true,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "D",
+        "name":  "leeway_digital_brain",
+        "destination":  "/leeway-root",
+        "containerAccessible":  false,
+        "hostPathExists":  true,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway_digital_brain",
+        "destination":  "/host-drives/C",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_digital_brain",
+        "destination":  "/host-drives/E",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-forgejo-mcp",
+        "destination":  "/app/receipts",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-forgejo-mcp",
+        "destination":  "/run/secrets/forgejo.json",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-bitwarden-lite",
+        "destination":  "/data",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-bitwarden-lite",
+        "destination":  "/etc/bitwarden",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-forgejo",
+        "destination":  "/data",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_device_operator",
+        "destination":  "/device-state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_device_operator",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_performance_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_performance_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_pwa_dashboard",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_pwa_dashboard",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_installer_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_installer_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_license_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_license_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_desktop_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_desktop_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_browser_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_browser_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_phone_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_phone_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_calendar_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_calendar_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_email_runtime",
+        "destination":  "/state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_email_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_artifact_viewer",
+        "destination":  "/documents",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_artifact_viewer",
+        "destination":  "/notebooks",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_artifact_viewer",
+        "destination":  "/skill-state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_artifact_viewer",
+        "destination":  "/viewer-state",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_open_notebook",
+        "destination":  "/notebooks",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_open_notebook",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_meeting_runtime",
+        "destination":  "/meetings",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_meeting_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_document_runtime",
+        "destination":  "/documents",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_document_runtime",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_context_gateway",
+        "destination":  "/context-store",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_context_gateway",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_api_gateway",
+        "destination":  "/app/approvals",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_api_gateway",
+        "destination":  "/app/crm",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_api_gateway",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_research_lane",
+        "destination":  "/app/briefs",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_research_lane",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_seafile_storage_gateway",
+        "destination":  "/gateway-store",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_seafile_storage_gateway",
+        "destination":  "/runtime",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "E",
+        "name":  "leeway_seafile_storage_gateway",
+        "destination":  "/app/receipts",
+        "containerAccessible":  false,
+        "hostPathExists":  false,
+        "reason":  "STAT_FAILED"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-web-1",
+        "destination":  "/config",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-web-1",
+        "destination":  "/storage",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-web-1",
+        "destination":  "/usr/share/jitsi-meet/load-test",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-web-1",
+        "destination":  "/usr/share/jitsi-meet/transcripts",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-web-1",
+        "destination":  "/var/spool/cron/crontabs",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-jicofo-1",
+        "destination":  "/config",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-jvb-1",
+        "destination":  "/config",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-prosody-1",
+        "destination":  "/config",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-prosody-1",
+        "destination":  "/prosody-plugins-custom",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "leeway-jitsi-meet-prosody-1",
+        "destination":  "/var/lib/prosody",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "agent-lee-ears-kernel",
+        "destination":  "/runtime/ears/audio",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "agent-lee-ears-kernel",
+        "destination":  "/runtime/ears/transcripts",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    },
+    {
+        "sourceDrive":  "C",
+        "name":  "agent-lee-ears-kernel",
+        "destination":  "/runtime/operator-os/inbox",
+        "containerAccessible":  true,
+        "hostPathExists":  true,
+        "reason":  "ACCESSIBLE"
+    }
+]

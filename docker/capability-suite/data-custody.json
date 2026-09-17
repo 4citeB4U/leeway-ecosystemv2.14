@@ -1,0 +1,58 @@
+[
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_phone_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_email_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_calendar_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_browser_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_desktop_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_license_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_installer_runtime",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    },
+    {
+        "historicalDataRestored":  false,
+        "originalBindData":  "INACCESSIBLE_E_DRIVE",
+        "name":  "leeway_pwa_dashboard",
+        "candidateData":  "ISOLATED_EMPTY_TEST_FIXTURE",
+        "canonicalStateDirectoryExists":  true
+    }
+]

@@ -1,3 +1,5 @@
+> **2026-09-17 functional-readiness correction:** A new bind-mount audit found 44 inaccessible Windows mounts across 20 running containers. Docker Desktop's existing D: and E: mounts report No such device; Windows and a fresh read-only WSL mount can read D:, while E: is absent. Process-running counts and earlier health checks do not establish data availability. See [all 50 containers and actual contents](CONTAINER_CONTENTS.md), [mount evidence](evidence/bind-accessibility-20260917.json), and the [tested eight-module consolidation candidate](capability-suite/README.md). The candidate is not deployed because original E: history is unverified. Production remains 50 running, zero stopped; temporary test containers were removed.
+
 # LeeWay Docker execution checkpoint - 2026-09-16
 
 Executed on the verified LeeWay workstation through Desktop Commander. This is a diagnostic and recovery checkpoint, not production certification or official C3 ingress proof.
