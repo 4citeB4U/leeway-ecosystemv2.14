@@ -1,3 +1,6 @@
+﻿## Current checkpoint: September 17
+43 running, zero stopped. Storage repaired and eight-to-one consolidation deployed. See [current status](CURRENT_STATUS.md), [43-container inventory](CONTAINER_CONTENTS.md), and [live evidence](evidence/consolidation-live-20260917.json). Earlier sections below describe prior checkpoints.
+
 > **2026-09-17 functional-readiness correction:** A new bind-mount audit found 44 inaccessible Windows mounts across 20 running containers. Docker Desktop's existing D: and E: mounts report No such device; Windows and a fresh read-only WSL mount can read D:, while E: is absent. Process-running counts and earlier health checks do not establish data availability. See [all 50 containers and actual contents](CONTAINER_CONTENTS.md), [mount evidence](evidence/bind-accessibility-20260917.json), and the [tested eight-module consolidation candidate](capability-suite/README.md). The candidate is not deployed because original E: history is unverified. Production remains 50 running, zero stopped; temporary test containers were removed.
 
 # LeeWay Docker execution checkpoint - 2026-09-16
@@ -55,3 +58,4 @@ This publication is not a complete fresh-machine rebuild of the entire fleet. Th
 - C0 -> C1 -> C2 -> C3 CURRENT -> C4 -> C5 -> C6 remains the continuity path. These direct diagnostics do not establish official C3 completion.
 - Formula health reported PASS, but Formula selection/execution was NOT_EXECUTED for these maintenance decisions. Learning Ledger was NOT_UPDATED in this maintenance pass.
 - Root repository unrelated changes were preserved; publication used an isolated checkout and branch.
+

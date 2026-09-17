@@ -1,3 +1,6 @@
+﻿## Current checkpoint: September 17
+43 running, zero stopped. Storage repaired and eight-to-one consolidation deployed. See [current status](../CURRENT_STATUS.md), [43-container inventory](../CONTAINER_CONTENTS.md), and [live evidence](../evidence/consolidation-live-20260917.json). Earlier sections below describe prior checkpoints.
+
 # LeeWay capability suite - verified candidate, not deployed
 
 One Python server hosts eight separately configured work-order modules: phone, email, calendar, browser, desktop, license, installer and PWA. Routing uses the local listening port, so a Host header cannot select another module. Each module has its own state and receipt directory.
@@ -21,3 +24,4 @@ compose.json uses the data-custody-verified profile and refuses to auto-create m
 The saved PowerShell preparation and test scripts are diagnostic operator records, not a production cutover script. Do not run docker compose against the legacy ports while the eight originals still own them.
 
 The source image remains available as leeway-capability-suite:20260917. Legacy ports and aliases are represented in compose.json. Source provenance and the explicit data boundary are recorded alongside this file.
+
