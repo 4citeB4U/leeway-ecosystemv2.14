@@ -1,16 +1,19 @@
 import asyncio
+import hashlib
+import hmac
 import json
 import os
 import threading
 from pathlib import Path
 
-from fastapi import FastAPI, Query, Request
+from fastapi import FastAPI, Query, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import (
     adaptive_body,
+    context_projection,
     b64_cortex,
     ecosystem_analytics,
     hardware_learning,
@@ -114,6 +117,644 @@ async def brain_events(request: Request):
     )
 
 
+@app.post("/brain/integrations/workstation/events", status_code=201)
+async def ingest_workstation_event(payload: dict, request: Request, response: Response):
+    """Governed, idempotent ingestion for Agent Workstation trace events.
+
+    This route is intentionally separate from filesystem live-sync: a partial
+    projection must never be treated as the complete LeeWay root. Private
+    workspace content is rejected; only its hash and trace metadata may enter
+    Digital Brain. Shared blackboard content is bounded and may be indexed.
+    """
+    configured_token = os.environ.get("BRAIN_INGEST_TOKEN", "")
+    if not configured_token:
+        try:
+            configured_token = Path(
+                os.environ.get("BRAIN_INGEST_TOKEN_FILE", "/run/secrets/brain_ingest_token")
+            ).read_text(encoding="utf-8").strip()
+        except OSError:
+            configured_token = ""
+    supplied_token = request.headers.get("x-leeway-brain-token", "")
+    if not configured_token or not hmac.compare_digest(configured_token, supplied_token):
+        response.status_code = 403
+        return {"status": "BRAIN_INGEST_NOT_AUTHORIZED"}
+
+    event_id = str(payload.get("eventId") or "")
+    correlation_id = str(payload.get("correlationId") or "")
+    agent_id = str(payload.get("agentId") or "")
+    key = str(payload.get("key") or "")
+    scope = str(payload.get("scope") or "")
+    operation = str(payload.get("operation") or "")
+    authority_route = str(payload.get("authorityRoute") or "")
+    value = payload.get("value")
+    value_hash = payload.get("valueSha256")
+    if not event_id.startswith("workstation-") or len(event_id) > 160:
+        response.status_code = 400
+        return {"status": "INVALID_EVENT_ID"}
+    if not correlation_id or len(correlation_id) > 80:
+        response.status_code = 400
+        return {"status": "INVALID_CORRELATION_ID"}
+    if not agent_id or len(agent_id) > 80 or not key or len(key) > 256:
+        response.status_code = 400
+        return {"status": "INVALID_AGENT_OR_KEY"}
+    if scope not in ("private", "shared") or operation not in ("set", "remove"):
+        response.status_code = 400
+        return {"status": "INVALID_EVENT_SCOPE_OR_OPERATION"}
+    if authority_route != "runtime-fabric":
+        response.status_code = 403
+        return {"status": "RUNTIME_FABRIC_AUTHORITY_REQUIRED"}
+    if scope == "private" and value is not None:
+        response.status_code = 400
+        return {"status": "PRIVATE_CONTENT_REJECTED"}
+    if value is not None and len(str(value).encode("utf-8")) > 65536:
+        response.status_code = 413
+        return {"status": "SHARED_CONTENT_TOO_LARGE"}
+
+    canonical = {
+        "eventId": event_id,
+        "correlationId": correlation_id,
+        "capturedAt": str(payload.get("capturedAt") or store.time_stamp()),
+        "agentId": agent_id,
+        "operation": operation,
+        "key": key,
+        "scope": scope,
+        "valueSha256": value_hash,
+        "valueBytes": int(payload.get("valueBytes") or 0),
+        "value": str(value) if scope == "shared" and value is not None else None,
+        "projection": "leeway.agent.primary-workstation",
+        "authorityRoute": "runtime-fabric",
+    }
+    event_hash = hashlib.sha256(
+        json.dumps(canonical, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    node_id = f"workspace-event::{event_id}"
+    conn = _conn()
+    try:
+        existing = store.get_node(conn, node_id)
+        if existing:
+            try:
+                prior = json.loads(existing["metadata_json"] or "{}")
+            except (json.JSONDecodeError, TypeError):
+                prior = {}
+            if prior.get("eventSha256") != event_hash:
+                response.status_code = 409
+                return {"status": "EVENT_ID_CONFLICT", "nodeId": node_id}
+            response.status_code = 200
+            return {"status": "ALREADY_INGESTED", "nodeId": node_id, "eventSha256": event_hash}
+
+        description = (
+            str(value)[:500] if scope == "shared" and value is not None
+            else f"Private workspace mutation; content withheld; sha256={value_hash or 'none'}"
+        )
+        node = {
+            "id": node_id,
+            "canonical_id": node_id,
+            "domain": "workspace",
+            "type": "agent-event",
+            "subtype": scope,
+            "title": f"{agent_id}: {key}",
+            "description": description,
+            "source": "agent-workstation",
+            "source_path": f"leeway-workstation://agent/{agent_id}/event/{event_id}",
+            "source_anchor": "system::digital-brain",
+            "tags_json": json.dumps(["agent-workstation", agent_id, scope, operation, "live"], ensure_ascii=False),
+            "status": "active",
+            "confidence": 1.0,
+            "metadata_json": json.dumps({**canonical, "eventSha256": event_hash}, ensure_ascii=False),
+            "created_at": canonical["capturedAt"],
+            "source_kind": "governed-workstation-event",
+        }
+        store.upsert_node(conn, node)
+        store.add_provenance(
+            conn, node_id, "workstation-event", canonical["authorityRoute"],
+            json.dumps({"correlationId": correlation_id, "eventSha256": event_hash, "scope": scope}, ensure_ascii=False),
+        )
+        conn.commit()
+        row = store.get_node(conn, node_id)
+        live_sync.publish({"op": "create", "node": live_sync.node_payload(row), "links": []})
+        return {
+            "status": "INGESTED",
+            "nodeId": node_id,
+            "eventId": event_id,
+            "correlationId": correlation_id,
+            "eventSha256": event_hash,
+            "privateContentStored": False if scope == "private" else None,
+        }
+    finally:
+        conn.close()
+
+
+# =====================================================================
+# LEEWAY_WD_STORAGE_EVENT_IDENTITY_ADAPTER_V2
+# Runtime-compatible storage ingress.
+# Identity law: HemisphereID == canonical Brain NodeID.
+# =====================================================================
+
+def _leeway_storage_upsert_edge_v2(conn, parent_id, child_id, captured_at, transaction_id):
+    import hashlib as _hashlib
+    import inspect as _inspect
+    import json as _json
+    import re as _re
+
+    edge_id = _hashlib.sha256(
+        ("leeway-storage-edge-v2|" + str(parent_id) + "|" + str(child_id)).encode("utf-8")
+    ).hexdigest()
+
+    metadata_obj = {
+        "authority": "leeway-storage-twin",
+        "transactionId": transaction_id,
+        "parent": parent_id,
+        "child": child_id,
+    }
+    metadata = _json.dumps(metadata_obj, ensure_ascii=False)
+
+    edge = {
+        "id": edge_id,
+        "edge_id": edge_id,
+        "source": parent_id,
+        "source_id": parent_id,
+        "from": parent_id,
+        "from_id": parent_id,
+        "from_node": parent_id,
+        "from_node_id": parent_id,
+        "src": parent_id,
+        "parent": parent_id,
+        "parent_id": parent_id,
+        "target": child_id,
+        "target_id": child_id,
+        "to": child_id,
+        "to_id": child_id,
+        "to_node": child_id,
+        "to_node_id": child_id,
+        "dst": child_id,
+        "child": child_id,
+        "child_id": child_id,
+        "type": "contains",
+        "edge_type": "contains",
+        "relation": "contains",
+        "kind": "contains",
+        "label": "contains",
+        "confidence": 1.0,
+        "weight": 1.0,
+        "metadata": metadata,
+        "metadata_json": metadata,
+        "details": metadata,
+        "created_at": captured_at,
+        "updated_at": captured_at,
+        "timestamp": captured_at,
+    }
+
+    store_error = ""
+    fn = getattr(store, "upsert_edge", None)
+    if callable(fn):
+        try:
+            sig = _inspect.signature(fn)
+            params = list(sig.parameters.values())
+            if len(params) == 2:
+                fn(conn, edge)
+                return {"mode": "store.upsert_edge", "edgeId": edge_id, "storeError": ""}
+
+            aliases = dict(edge)
+            aliases["edge"] = edge
+            kwargs = {}
+            for p in params[1:]:
+                if p.name in aliases:
+                    kwargs[p.name] = aliases[p.name]
+                elif p.default is _inspect.Parameter.empty:
+                    raise RuntimeError("UNSUPPORTED_UPSERT_EDGE_PARAM:" + p.name)
+            fn(conn, **kwargs)
+            return {"mode": "store.upsert_edge", "edgeId": edge_id, "storeError": ""}
+        except Exception as exc:
+            store_error = type(exc).__name__ + ":" + str(exc)
+
+    tables = [
+        str(r[0]) for r in conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
+        ).fetchall()
+    ]
+    preferred = []
+    for name in ("edges", "links", "relations", "node_edges", "brain_edges"):
+        if name in tables and name not in preferred:
+            preferred.append(name)
+    for name in tables:
+        low = name.lower()
+        if ("edge" in low or "link" in low or "relation" in low) and name not in preferred:
+            preferred.append(name)
+
+    source_aliases = ("source_id", "source", "parent_id", "parent", "from_id", "from_node_id", "src_id", "src")
+    target_aliases = ("target_id", "target", "child_id", "child", "to_id", "to_node_id", "dst_id", "dst")
+    id_aliases = ("edge_id", "id")
+    type_aliases = ("edge_type", "relation_type", "type", "relation", "kind", "label")
+    meta_aliases = ("metadata_json", "metadata", "details")
+    created_aliases = ("created_at", "created_utc", "timestamp", "at_utc")
+    updated_aliases = ("updated_at", "updated_utc")
+
+    def _pick(names, aliases):
+        for a in aliases:
+            if a in names:
+                return a
+        return None
+
+    errors = []
+    for table in preferred:
+        if not _re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", table):
+            continue
+        try:
+            qtable = table.replace('"', '""')
+            info = conn.execute('PRAGMA table_info("' + qtable + '")').fetchall()
+            if not info:
+                continue
+            names = [str(r[1]).lower() for r in info]
+            original = {str(r[1]).lower(): str(r[1]) for r in info}
+            src = _pick(names, source_aliases)
+            dst = _pick(names, target_aliases)
+            if not src or not dst:
+                continue
+
+            values = {
+                src: parent_id,
+                dst: child_id,
+            }
+            eid = _pick(names, id_aliases)
+            etype = _pick(names, type_aliases)
+            emeta = _pick(names, meta_aliases)
+            ecreated = _pick(names, created_aliases)
+            eupdated = _pick(names, updated_aliases)
+            if eid:
+                row = next(r for r in info if str(r[1]).lower() == eid)
+                declared = str(row[2] or "").upper()
+                is_pk = bool(row[5])
+                if not (is_pk and "INT" in declared):
+                    values[eid] = edge_id
+            if etype:
+                values[etype] = "contains"
+            if emeta:
+                values[emeta] = metadata
+            if ecreated:
+                values[ecreated] = captured_at
+            if eupdated:
+                values[eupdated] = captured_at
+            for alias in ("confidence", "weight"):
+                if alias in names:
+                    values[alias] = 1.0
+
+            incompatible = False
+            for r in info:
+                n = str(r[1]).lower()
+                declared = str(r[2] or "").upper()
+                notnull = bool(r[3])
+                default = r[4]
+                pk = bool(r[5])
+                if n in values:
+                    continue
+                if pk and "INT" in declared:
+                    continue
+                if notnull and default is None:
+                    incompatible = True
+                    break
+            if incompatible:
+                continue
+
+            cols = list(values.keys())
+            quoted = ['"' + original[c].replace('"', '""') + '"' for c in cols]
+            placeholders = ",".join(["?"] * len(cols))
+            sql = 'INSERT OR IGNORE INTO "' + qtable + '" (' + ",".join(quoted) + ') VALUES (' + placeholders + ')'
+            conn.execute(sql, [values[c] for c in cols])
+
+            qsrc = '"' + original[src].replace('"', '""') + '"'
+            qdst = '"' + original[dst].replace('"', '""') + '"'
+            exists = conn.execute(
+                'SELECT 1 FROM "' + qtable + '" WHERE ' + qsrc + '=? AND ' + qdst + '=? LIMIT 1',
+                (parent_id, child_id),
+            ).fetchone()
+            if exists:
+                return {
+                    "mode": "sqlite:" + table,
+                    "edgeId": edge_id,
+                    "storeError": store_error,
+                }
+        except Exception as exc:
+            errors.append(table + ":" + type(exc).__name__ + ":" + str(exc))
+
+    raise RuntimeError(
+        "LEEWAY_STORAGE_EDGE_PERSIST_FAIL|store=" + store_error + "|tables=" + ";".join(errors[:8])
+    )
+
+
+def _leeway_storage_provenance_v2(conn, node_id, transaction_id, object_id, logical_path, event_hash, root_id):
+    import inspect as _inspect
+    import json as _json
+    fn = getattr(store, "add_provenance", None)
+    if not callable(fn):
+        return "NOT_AVAILABLE"
+    details = _json.dumps(
+        {
+            "TransactionID": transaction_id,
+            "ObjectID": object_id,
+            "LogicalPath": logical_path,
+            "eventSha256": event_hash,
+            "parent": root_id,
+        },
+        ensure_ascii=False,
+    )
+    try:
+        sig = _inspect.signature(fn)
+        params = list(sig.parameters.values())
+        if len(params) == 5:
+            fn(conn, node_id, "wd-storage-event", "leeway-storage-twin", details)
+            return "STORE_POSITIONAL"
+        aliases = {
+            "node_id": node_id,
+            "node": node_id,
+            "id": node_id,
+            "source_kind": "wd-storage-event",
+            "kind": "wd-storage-event",
+            "source": "leeway-storage-twin",
+            "source_id": "leeway-storage-twin",
+            "details": details,
+            "metadata": details,
+            "metadata_json": details,
+        }
+        kwargs = {}
+        for p in params[1:]:
+            if p.name in aliases:
+                kwargs[p.name] = aliases[p.name]
+            elif p.default is _inspect.Parameter.empty:
+                return "SKIPPED_UNSUPPORTED_PARAM:" + p.name
+        fn(conn, **kwargs)
+        return "STORE_KWARGS"
+    except Exception as exc:
+        return "SKIPPED_ERROR:" + type(exc).__name__ + ":" + str(exc)
+
+
+
+# ============================================================================
+# LEEWAY_WD_SYNC_EVENTS_FALLBACK_V5
+#
+# Durable event persistence for the canonical WD storage ingress.
+# The public live_sync.publish call remains the live SSE publication path.
+# ============================================================================
+
+def _leeway_storage_sync_fallback_v5(
+    conn,
+    sync_count_before,
+    event_hash,
+    node_id,
+    canonical,
+):
+    import json as _leeway_json_v5
+
+    sync_count_after = conn.execute(
+        "SELECT COUNT(*) FROM sync_events"
+    ).fetchone()[0]
+
+    if sync_count_after != sync_count_before:
+        return False
+
+    sync_detail = {
+        "op": "create",
+        "nodeId": node_id,
+        "leewayStorage": canonical,
+    }
+
+    sync_path = canonical.get("LogicalPath") or ""
+    sync_hash = canonical.get("ObjectID") or ""
+    sync_parent = canonical.get("RootID") or ""
+
+    sync_at = (
+        canonical.get("AtUtc")
+        or canonical.get("capturedAt")
+        or canonical.get("atUtc")
+        or ""
+    )
+
+    conn.execute(
+        "INSERT INTO sync_events "
+        "(event_id, op, node_id, prev_node_id, path, prev_path, "
+        "hash, prev_hash, size, mtime_ns, parent_id, prev_parent_id, "
+        "b64_path, prev_b64_path, detail_json, captured_at) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            "wd-storage::" + event_hash,
+            "create",
+            node_id,
+            None,
+            sync_path,
+            None,
+            sync_hash,
+            None,
+            None,
+            None,
+            sync_parent,
+            None,
+            None,
+            None,
+            _leeway_json_v5.dumps(
+                sync_detail,
+                ensure_ascii=False,
+            ),
+            sync_at,
+        ),
+    )
+
+    conn.commit()
+    return True
+
+@app.post("/brain/integrations/storage/events", status_code=201)
+async def ingest_leeway_storage_event_v2(payload: dict, request: Request, response: Response):
+    import hashlib as _hashlib
+    import hmac as _hmac
+    import json as _json
+    import os as _os
+    import re as _re
+    from pathlib import Path as _Path
+
+    configured_token = _os.environ.get("BRAIN_INGEST_TOKEN", "")
+    if not configured_token:
+        try:
+            configured_token = _Path(
+                _os.environ.get("BRAIN_INGEST_TOKEN_FILE", "/run/secrets/brain_ingest_token")
+            ).read_text(encoding="utf-8").strip()
+        except OSError:
+            configured_token = ""
+    supplied_token = request.headers.get("x-leeway-brain-token", "")
+    if not configured_token or not _hmac.compare_digest(configured_token, supplied_token):
+        response.status_code = 403
+        return {"status": "BRAIN_INGEST_NOT_AUTHORIZED"}
+
+    event_name = str(payload.get("Event") or "")
+    transaction_id = str(payload.get("TransactionID") or "")
+    hemisphere_id = str(payload.get("HemisphereID") or "").upper()
+    object_id = str(payload.get("ObjectID") or "").upper()
+    logical_path = str(payload.get("LogicalPath") or "")
+    captured_at = str(payload.get("AtUtc") or store.time_stamp())
+    root_id = str(payload.get("RootID") or "storage::wd::1F0E5W9U")
+    expected_root = "storage::wd::1F0E5W9U"
+
+    if event_name != "HEMISPHERE_STORAGE_MIRROR_COMMITTED":
+        response.status_code = 400
+        return {"status": "UNSUPPORTED_STORAGE_EVENT"}
+    if root_id != expected_root:
+        response.status_code = 400
+        return {"status": "INVALID_STORAGE_ROOT"}
+    if not transaction_id or len(transaction_id) > 160:
+        response.status_code = 400
+        return {"status": "INVALID_TRANSACTION_ID"}
+    if not _re.fullmatch(r"[A-F0-9]{64}", hemisphere_id):
+        response.status_code = 400
+        return {"status": "INVALID_HEMISPHERE_ID"}
+    if not _re.fullmatch(r"[A-F0-9]{64}", object_id):
+        response.status_code = 400
+        return {"status": "INVALID_OBJECT_ID"}
+    normalized_parts = logical_path.replace("\\", "/").split("/")
+    if (
+        not logical_path
+        or len(logical_path) > 4096
+        or logical_path.startswith(("/", "\\"))
+        or _re.match(r"^[A-Za-z]:", logical_path)
+        or ".." in normalized_parts
+    ):
+        response.status_code = 400
+        return {"status": "INVALID_LOGICAL_PATH"}
+
+    canonical = {
+        "Event": event_name,
+        "TransactionID": transaction_id,
+        "HemisphereID": hemisphere_id,
+        "ObjectID": object_id,
+        "LogicalPath": logical_path,
+        "AtUtc": captured_at,
+        "RootID": root_id,
+        "ParentID": root_id,
+        "Authority": "leeway-storage-twin",
+    }
+    event_hash = _hashlib.sha256(
+        _json.dumps(canonical, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    node_id = hemisphere_id
+    conn = _conn()
+    try:
+        existing = store.get_node(conn, node_id)
+        if existing:
+            try:
+                prior = _json.loads(existing["metadata_json"] or "{}")
+            except (_json.JSONDecodeError, TypeError):
+                prior = {}
+            same_identity = (
+                str(prior.get("ObjectID") or prior.get("objectId") or "").upper() == object_id
+                and str(prior.get("LogicalPath") or prior.get("logicalPath") or "") == logical_path
+            )
+            if same_identity:
+                response.status_code = 200
+                return {
+                    "status": "ALREADY_INGESTED",
+                    "nodeId": node_id,
+                    "transactionId": transaction_id,
+                    "eventSha256": event_hash,
+                }
+            response.status_code = 409
+            return {"status": "HEMISPHERE_ID_CONFLICT", "nodeId": node_id}
+
+        title = logical_path.replace("\\", "/").rstrip("/").split("/")[-1]
+        metadata = {
+            **canonical,
+            "eventSha256": event_hash,
+            "parent": root_id,
+            "parent_id": root_id,
+        }
+        node = {
+            "id": node_id,
+            "canonical_id": node_id,
+            "domain": "data-fabric",
+            "type": "storage-hemisphere",
+            "subtype": "reconstruction-object",
+            "title": title or node_id,
+            "description": "LeeWay WD storage hemisphere; ObjectID=" + object_id,
+            "source": "leeway-storage-twin",
+            "source_path": "leeway-storage://wd/1F0E5W9U/" + logical_path.replace("\\", "/"),
+            "source_anchor": root_id,
+            "tags_json": _json.dumps(["leeway", "storage", "wd", "hemisphere", "reconstruction", "live"], ensure_ascii=False),
+            "status": "active",
+            "confidence": 1.0,
+            "metadata_json": _json.dumps(metadata, ensure_ascii=False),
+            "created_at": captured_at,
+            "source_kind": "governed-wd-storage-event",
+        }
+
+        store.upsert_node(conn, node)
+        edge_result = _leeway_storage_upsert_edge_v2(
+            conn, root_id, node_id, captured_at, transaction_id
+        )
+        provenance_mode = _leeway_storage_provenance_v2(
+            conn, node_id, transaction_id, object_id, logical_path, event_hash, root_id
+        )
+        conn.commit()
+        row = store.get_node(conn, node_id)
+        if row is None:
+            raise RuntimeError("LEEWAY_STORAGE_NODE_NOT_FOUND_AFTER_COMMIT")
+
+        link = {
+            "source": root_id,
+            "source_id": root_id,
+            "parent": root_id,
+            "parent_id": root_id,
+            "target": node_id,
+            "target_id": node_id,
+            "child": node_id,
+            "child_id": node_id,
+            "type": "contains",
+            "relation": "contains",
+        }
+        _leeway_sync_count_before = conn.execute("SELECT COUNT(*) FROM sync_events").fetchone()[0]
+
+        live_sync.publish(
+            {
+                "op": "create",
+                "node": live_sync.node_payload(row),
+                "links": [link],
+                "leewayStorage": canonical,
+            }
+        )
+
+        _leeway_storage_sync_fallback_v5(
+            conn,
+            _leeway_sync_count_before,
+            event_hash,
+            node_id,
+            canonical,
+        )
+        return {
+            "status": "INGESTED",
+            "nodeId": node_id,
+            "hemisphereId": hemisphere_id,
+            "objectId": object_id,
+            "logicalPath": logical_path,
+            "parentId": root_id,
+            "transactionId": transaction_id,
+            "eventSha256": event_hash,
+            "edgeMode": edge_result.get("mode"),
+            "provenanceMode": provenance_mode,
+        }
+    except Exception as exc:
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+        response.status_code = 500
+        return {
+            "status": "STORAGE_INGEST_INTERNAL_ERROR",
+            "errorType": type(exc).__name__,
+            "error": str(exc)[:1500],
+            "nodeId": node_id,
+            "transactionId": transaction_id,
+        }
+    finally:
+        conn.close()
+
+# =====================================================================
+# END LEEWAY_WD_STORAGE_EVENT_IDENTITY_ADAPTER_V2
+# =====================================================================
+
 @app.get("/brain/hardware")
 def brain_hardware():
     """P3-19: latest hardware/device snapshot + bounded history + alerts."""
@@ -160,7 +801,76 @@ def index():
 
 @app.get("/brain/diagnostic")
 def diagnostic():
-    return FileResponse(STATIC / "graph.html")
+    storage = storage_diagnostic()
+    return {
+        "status": storage["status"],
+        "uiAuthority": "/brain/static/brain.html",
+        "graph": "/brain/graph.json",
+        "events": "/brain/events",
+        "context": "/brain/context",
+        "storage": "/brain/storage/diagnostic",
+        "note": storage["note"],
+    }
+
+
+@app.get("/brain/storage/diagnostic")
+def storage_diagnostic():
+    """Report the physical WD scope separately from the bounded graph projection."""
+    inventory_dir = Path(os.environ.get("LEEWAY_INVENTORY_DIR", "/leeway-inventory"))
+    summary_path = inventory_dir / "D-Drive-Inventory-20260910-114937" / "summary.json"
+    if not summary_path.is_file():
+        candidates = sorted(inventory_dir.glob("*/summary.json"))
+        summary_path = candidates[-1] if candidates else summary_path
+
+    summary = {}
+    if summary_path.is_file():
+        try:
+            summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            summary = {}
+
+    wd8 = Path(os.environ.get("WD8_MOUNT", "/wd8"))
+    root = Path(os.environ.get("LEEWAY_ROOT", "/leeway-root"))
+    scanned_root = str(summary.get("scanned_root", ""))
+    full_drive_inventory = scanned_root.upper() in {"D:\\", "D:/"}
+    try:
+        wd8_is_root = wd8.is_dir() and any(p.name == "System Volume Information" for p in wd8.iterdir())
+    except OSError:
+        wd8_is_root = False
+    inventory_errors = int(summary.get("errors") or 0)
+    coverage = "FULL_D_DRIVE_INVENTORY" if full_drive_inventory else "UNKNOWN"
+    if full_drive_inventory and inventory_errors:
+        coverage = "FULL_D_DRIVE_INVENTORY_WITH_ERRORS"
+    status = "PASS" if full_drive_inventory and wd8_is_root and inventory_errors == 0 else "BLOCKED"
+    return {
+        "status": status,
+        "coverage": coverage,
+        "note": "The graph is a bounded projection; full-drive counts come only from the read-only D: inventory.",
+        "physical_source": scanned_root or "UNAVAILABLE",
+        "container_mount": str(wd8),
+        "lee_way_root": str(root),
+        "mount_represents_drive_root": wd8_is_root,
+        "inventory": {
+            "directories": summary.get("directory_count"),
+            "files": summary.get("file_count"),
+            "file_bytes": summary.get("total_file_bytes"),
+            "drive_size_bytes": summary.get("drive_size_bytes"),
+            "drive_free_bytes": summary.get("drive_free_bytes"),
+            "errors": summary.get("errors"),
+            "finished": summary.get("finished"),
+            "source": str(summary_path),
+        },
+        "graph_projection": {
+            "bounded": True,
+            "source": str(root),
+            "warning": "Do not interpret graph node totals as total D: file or directory counts.",
+        },
+    }
+
+
+@app.get("/brain/context")
+def brain_context(scope: str | None = None):
+    return context_projection.build(scope=scope)
 
 
 @app.get("/brain/health")

@@ -129,6 +129,11 @@ def evaluate_alerts(snapshot):
         alerts.append({"device": "memory", "level": "WARN", "message": f"memory {snapshot['mem_pct']}% >= {ALERT_MEM_PCT}%"})
     if (snapshot.get("disk_brain_pct") or 0) >= ALERT_DISK_PCT:
         alerts.append({"device": "disk:/brain-data", "level": "WARN", "message": f"disk {snapshot['disk_brain_pct']}% >= {ALERT_DISK_PCT}%"})
+    wd8 = snapshot.get("wd8") or {}
+    if wd8.get("available") and (wd8.get("used_pct") or 0) >= ALERT_DISK_PCT:
+        alerts.append({"device": "disk:/wd8", "level": "WARN", "message": f"WD8 disk {wd8['used_pct']}% >= {ALERT_DISK_PCT}%"})
+    elif not wd8.get("available"):
+        alerts.append({"device": "disk:/wd8", "level": "WARN", "message": wd8.get("error", "WD8 mount unavailable")})
     fab = snapshot.get("fabric_status") or {}
     if isinstance(fab, dict) and not fab.get("runtime", {}).get("available"):
         alerts.append({"device": "fabric:runtime", "level": "WARN", "message": "Runtime Fabric device lane unavailable"})
@@ -141,6 +146,19 @@ def _snapshot(conn):
     cpu = _read_proc_cpu()
     disk_brain = shutil.disk_usage("/brain-data")
     disk_root = shutil.disk_usage("/leeway-root")
+    wd8_mount = os.environ.get("WD8_MOUNT", "/wd8")
+    try:
+        wd8_disk = shutil.disk_usage(wd8_mount)
+        wd8 = {
+            "available": True,
+            "mount": wd8_mount,
+            "total_mb": int(wd8_disk.total / (1024 * 1024)),
+            "used_mb": int(wd8_disk.used / (1024 * 1024)),
+            "free_mb": int(wd8_disk.free / (1024 * 1024)),
+            "used_pct": round(100.0 * wd8_disk.used / wd8_disk.total, 1) if wd8_disk.total else 0.0,
+        }
+    except OSError as exc:
+        wd8 = {"available": False, "mount": wd8_mount, "error": str(exc)[:160]}
     db_path = os.environ.get("BRAIN_DATA_DIR", "/brain-data") + "/digital-brain.sqlite"
     db_size = os.path.getsize(db_path) / (1024 * 1024) if os.path.exists(db_path) else 0.0
     devices = _fabric_devices()
@@ -160,6 +178,7 @@ def _snapshot(conn):
         "disk_root_total_mb": int(disk_root.total / (1024 * 1024)),
         "disk_root_used_mb": int(disk_root.used / (1024 * 1024)),
         "disk_root_pct": round(100.0 * disk_root.used / disk_root.total, 1) if disk_root.total else 0.0,
+        "wd8": wd8,
         "fabric_status": devices,
         "db_size_mb": round(db_size, 2),
         "alerts": [],

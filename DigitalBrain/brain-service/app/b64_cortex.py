@@ -193,9 +193,10 @@ def verify_q69_golden_table():
     """Compare this mirror against the canonical-generated fixture file."""
     here = os.path.dirname(os.path.abspath(__file__))
     candidates = [
-        os.path.normpath(os.path.join(here, "..", "..", "tests", "fixtures", "q69_golden_table.json")),
+        os.path.normpath(os.path.join(here, "..", "fixtures", "q69_golden_table.json")),
+        "/app/fixtures/q69_golden_table.json",
+        "/leeway-root/DigitalBrain/brain-service/fixtures/q69_golden_table.json",
         "/leeway-root/DigitalBrain/tests/fixtures/q69_golden_table.json",
-        "/app/tests/fixtures/q69_golden_table.json",
     ]
     fixture = next((c for c in candidates if os.path.exists(c)), None)
     if fixture is None:

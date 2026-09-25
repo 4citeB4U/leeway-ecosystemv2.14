@@ -110,7 +110,8 @@ def host_to_container(path_text):
             return leeway_root
         if p.startswith(hr + "/"):
             return leeway_root + p[len(hr):]
-    return p if not p.startswith(("C:/", "D:/", "E:/")) else None
+    from pathlib import PureWindowsPath
+    return None if PureWindowsPath(p).is_absolute() else p
 
 
 def _fs_children(conn, node):

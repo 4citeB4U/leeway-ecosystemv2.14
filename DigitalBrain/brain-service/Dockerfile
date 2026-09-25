@@ -11,18 +11,20 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
+COPY fixtures ./fixtures
 
 RUN useradd --system --create-home --shell /usr/sbin/nologin brain \
-    && mkdir -p /brain-data \
-    && mkdir -p /obsidian-vault \
+    && mkdir -p /brain-data /obsidian-vault \
     && chown -R brain:brain /app /brain-data /obsidian-vault
 
 USER brain
-
 EXPOSE 8770
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+  CMD python -c "import urllib.request; r=urllib.request.urlopen('http://127.0.0.1:8770/brain/health',timeout=3); raise SystemExit(0 if r.status==200 else 1)"
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8770"]
