@@ -103,3 +103,36 @@ Until local inspection resumes:
 - LOCAL_RUNTIME: BLOCKED
 - VERITAS: NOT_RUN
 - RECEIPT: branch + commits only; no runtime recovery receipt yet
+
+
+## GitHub artifact recovery scan — 2026-09-24
+
+Global GitHub code search was performed for high-value D: artifacts.
+
+### Not found in GitHub code search — local/container recovery required
+
+- `.leeway-root`
+- `compose.recovery.agent-lee.yaml`
+- `compose.healthcheck.agent-lee.override.yaml`
+- `docker-compose.agent-lee-on-demand.override.yml`
+- `S4R-runtime-formula-authority.json`
+- `X5-Formula-MultiVariable-Controller-v1.5.0.ps1`
+- `FORMULA-AUTHORITY-RECOVERY-MANIFEST.json`
+
+These are therefore **not safe to recreate from filenames alone**. Search C:/E:, Docker/WSL/container filesystems, Forgejo, archives, receipts, and recovered trees first.
+
+### Runtime source recovered from GitHub
+
+The Agent Lee runtime lineage is present in surviving repositories, including:
+
+- `4citeB4U/Leeway-Runtime-Fabric`
+  - `standards/vscode-extension/src/core/agent-lee-runtime-bootstrap.ts`
+  - `orchestrator/runtime.mjs`
+  - Runtime discovery/gap-closure audits
+  - PowerShell doctor/gate scripts
+  - `ledger/append.mjs`
+- `4citeB4U/LEEWAY-VSCODE`
+  - `agent-lee/vscode-extension/src/core/agent-lee-runtime-bootstrap.ts`
+  - Agent Lee command/router/runtime sources
+
+The old ledger target `ledger-chain.jsonl` is referenced by surviving source, but the historical ledger payload itself must still be recovered from local/runtime evidence if it is not committed.
