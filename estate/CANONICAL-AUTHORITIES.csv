@@ -1,0 +1,12 @@
+Authority,Repository,Role,State
+Governance,4citeB4U/LeeWay-Standards,Constitutional governance,CANONICAL
+Formula,4citeB4U/Leeway-formula-live,Mathematical control fabric,CANONICAL
+Runtime,4citeB4U/Leeway-Runtime-Fabric,Runtime authority,CANONICAL
+AgentLee,4citeB4U/Agent-Lee-The-Sum-of-All-Systems,Agent Lee lineage/consolidation target,CANDIDATE_PRIMARY
+Skills,4citeB4U/LeeWay-Agent-Skills,Skills and MCP capability authority,CANONICAL
+Device,4citeB4U/LEEWAY-DEVICE-BRIDGE,Native device execution authority,CANONICAL
+RTC,4citeB4U/LeeWay-Edge-RTC,Real-time communications authority,CANONICAL
+GPU,4citeB4U/LeeWay-Edge-GPU,GPU and compute authority,CANONICAL
+IDE,4citeB4U/LEEWAY-VSCODE,Engineering and IDE authority,CANONICAL
+Presentation,4citeB4U/RapidWebDev,Public presentation surface,PRESERVE
+Resume,4citeB4U/Leonard-Lee-Resume,Professional resume,PRESERVE
