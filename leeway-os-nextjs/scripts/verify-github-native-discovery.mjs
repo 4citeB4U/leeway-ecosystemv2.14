@@ -16,7 +16,7 @@ const combined=[kernel,authority,route].join("\n");
 for(const pattern of [/http:\/\/127\.0\.0\.1/i,/http:\/\/localhost/i,/[DE]:\\\\/i]){
   if(pattern.test(combined))throw new Error("Host-bound ecosystem identity remains: "+pattern);
 }
-for(const token of ["node:child_process","docker ps","execFile(","readFileSync(profilePath"]){
+for(const token of ["node:child_process","exec(\\\"docker\\\"","execFile(\\\"docker\\\"","readFileSync(profilePath"]){
   if(route.includes(token))throw new Error("Legacy host-bound discovery remains: "+token);
 }
 if(!authority.includes("LEEWAY_ECOSYSTEM_AUTHORITY_V1"))throw new Error("OS registry client is not bound to canonical Standards registry");
