@@ -1,6 +1,26 @@
-const KERNEL_BASE = process.env.LEEWAY_KERNEL_BASE || "http://127.0.0.1:4002";
+const KERNEL_BASE = String(process.env.LEEWAY_KERNEL_BASE || "").trim();
+
+export function kernelBinding() {
+  return {
+    configured: Boolean(KERNEL_BASE),
+    endpoint: KERNEL_BASE || null,
+    environment: "LEEWAY_KERNEL_BASE"
+  };
+}
 
 export async function kernelFetch(path: string, init?: RequestInit, timeoutMs = 5000): Promise<{ ok: boolean; status: number; body: unknown }> {
+  if (!KERNEL_BASE) {
+    return {
+      ok: false,
+      status: 0,
+      body: {
+        status: "BLOCKED",
+        reason: "LEEWAY_KERNEL_BASE_NOT_CONFIGURED",
+        exactFix: "Bind an authorized Runtime Kernel endpoint through LEEWAY_KERNEL_BASE. Localhost is not assumed."
+      }
+    };
+  }
+
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), timeoutMs);
   try {

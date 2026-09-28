@@ -1,0 +1,33 @@
+name: LeeWay OS GitHub-native discovery
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'leeway-os-nextjs/**'
+      - '.github/workflows/leeway-os-github-native.yml'
+  pull_request:
+    paths:
+      - 'leeway-os-nextjs/**'
+      - '.github/workflows/leeway-os-github-native.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: leeway-os-nextjs/package-lock.json
+      - name: Verify GitHub-native authority boundaries
+        run: node leeway-os-nextjs/scripts/verify-github-native-discovery.mjs
+      - name: Install LeeWay OS dependencies
+        working-directory: leeway-os-nextjs
+        run: npm ci
+      - name: Build preserved LeeWay OS frontend and BFF
+        working-directory: leeway-os-nextjs
+        run: npm run build
