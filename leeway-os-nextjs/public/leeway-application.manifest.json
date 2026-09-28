@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "applicationId": "leeway-os",
+  "repository": {
+    "fullName": "4citeB4U/leeway-ecosystemv2.14",
+    "approvedCommit": null,
+    "commitPolicy": "SELF_COMMIT_RESOLVED_AT_CONSUMPTION"
+  },
+  "authorityRole": "PRIMARY_OPERATING_SYSTEM_EXPERIENCE",
+  "capabilities": [
+    "desktop-shell",
+    "app-launcher",
+    "workspaces",
+    "evidence-center",
+    "agent-surface",
+    "control-center",
+    "ecosystem-authority-discovery"
+  ],
+  "dependencies": [
+    "standards",
+    "federate-web",
+    "runtime-fabric",
+    "skills",
+    "formula",
+    "device-bridge"
+  ],
+  "surfaces": {
+    "repository": "https://github.com/4citeB4U/leeway-ecosystemv2.14",
+    "currentServerApp": "leeway-os-nextjs",
+    "futureStaticProjection": "GITHUB_PAGES_TARGET_NOT_YET_VERIFIED"
+  },
+  "runtimeBindings": {
+    "persistentExecution": "runtime-fabric",
+    "deviceExecution": "device-bridge"
+  },
+  "evidence": {
+    "veritasRequired": true,
+    "receiptRequired": true,
+    "formulaExecutionClaim": "NOT_EXECUTED_BY_APPLICATION_MANIFEST"
+  },
+  "migration": {
+    "law": "PRESERVE_EXACT_FRONTEND_AND_ADAPT_RUNTIME_BEHIND_IT",
+    "docker": "OPTIONAL_DEVELOPMENT_QUALIFICATION_ADAPTER",
+    "driveIdentity": "FORBIDDEN",
+    "localhostIdentity": "FORBIDDEN",
+    "recoveryBranches": "EVIDENCE_ONLY_SELECTIVE_PROMOTION"
+  }
+}
