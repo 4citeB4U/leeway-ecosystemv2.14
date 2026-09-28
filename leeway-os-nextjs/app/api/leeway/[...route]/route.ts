@@ -1,42 +1,25 @@
 import { NextRequest } from "next/server";
-import { execFile } from "node:child_process";
-import { promisify } from "node:util";
-import fs from "node:fs";
-import path from "node:path";
-import { kernelFetch } from "@/src/lib/kernel-client";
+import { kernelBinding, kernelFetch } from "@/src/lib/kernel-client";
+import {
+  ECOSYSTEM_AUTHORITY_URL,
+  authorityById,
+  loadEcosystemAuthority,
+  publicApplicationAuthorities,
+  runtimeBindingFor,
+  type LeeWayAuthority
+} from "@/src/lib/ecosystem-authority";
 import { makeEnvelope, correlationFrom } from "@/src/lib/bff-envelope";
-
-const exec = promisify(execFile);
 
 export const dynamic = "force-dynamic";
 
 const VERSION = {
   app: "leeway-os-nextjs",
-  version: "0.1.0-mig008b",
+  version: "0.1.0-mig008b-github-authority",
   stack: "next.js-app-router + react + typescript",
-  kernel: "leeway-runtime-kernel (4002)",
-  frontendAuthority: "CANONICAL_FACE_OF_LEEWAY_OPERATING_SYSTEM"
+  frontendAuthority: "CANONICAL_FACE_OF_LEEWAY_OPERATING_SYSTEM",
+  ecosystemAuthority: ECOSYSTEM_AUTHORITY_URL,
+  migrationLaw: "PRESERVE_EXACT_FRONTEND_AND_ADAPT_RUNTIME_BEHIND_IT"
 };
-
-const SERVICES = [
-  { id: "runtime-fabric", name: "Runtime Fabric", endpoint: "http://127.0.0.1:4001", status: "CONNECTED_WITH_GAPS", note: "container /health ok; /runtime/status 500 (stale image, rebuild pending)" },
-  { id: "runtime-kernel", name: "Runtime Kernel", endpoint: "http://127.0.0.1:4002", status: "LIVE", note: "kernel service from MIG-008A" },
-  { id: "master-publisher", name: "Master Publisher", endpoint: "http://127.0.0.1:8876", status: "CONNECTED_WITH_GAPS", note: "root 404; /api/projects 500 disk I/O (documented gap)" },
-  { id: "cerebral", name: "Cerebral", endpoint: "http://127.0.0.1:8765", status: "LIVE", note: "daemon responds" },
-  { id: "desktop-runtime", name: "Desktop Runtime", endpoint: "http://127.0.0.1:8091", status: "LIVE", note: "server.mjs running" },
-  { id: "ollama", name: "Model Fabric (Ollama)", endpoint: "http://127.0.0.1:11434", status: "LIVE", note: "listening" }
-];
-
-const APPLICATIONS = [
-  { id: "workspaces", name: "Workspaces", status: "DEFINED_NOT_CONNECTED" },
-  { id: "marketplace", name: "Marketplace", status: "DEFINED_NOT_CONNECTED" },
-  { id: "files", name: "LeeWay Files", status: "DEFINED_NOT_CONNECTED" },
-  { id: "communications", name: "Communications", status: "DEFINED_NOT_CONNECTED" },
-  { id: "device-center", name: "Device Center", status: "DEFINED_NOT_CONNECTED" },
-  { id: "evidence-center", name: "Evidence Center", status: "LIVE_READ_ONLY", note: "backed by kernel /receipts/latest" },
-  { id: "agent-interaction", name: "Agent Lee Interaction", status: "LIVE_READ_ONLY", note: "requests created through kernel" },
-  { id: "github-import", name: "GitHub Import Tool", status: "DEFINED_NOT_CONNECTED" }
-];
 
 const WORKS = [
   { id: "first-workspace", name: "First Workspace", status: "DEFINED_NOT_CONNECTED" },
@@ -44,20 +27,23 @@ const WORKS = [
   { id: "workspace-3", name: "Workspace 3", status: "DEFINED_NOT_CONNECTED" }
 ];
 
-async function dockerPs(): Promise<{ ok: boolean; containers: unknown[]; error?: string }> {
-  try {
-    const { stdout } = await exec("docker", ["ps", "--format", "{{.Names}}\t{{.Image}}\t{{.Status}}"], { timeout: 8000, windowsHide: true });
-    const containers = stdout
-      .split(/\r?\n/)
-      .filter(Boolean)
-      .map((line) => {
-        const [name, image, status] = line.split("\t");
-        return { name, image, status };
-      });
-    return { ok: true, containers };
-  } catch (err) {
-    return { ok: false, containers: [], error: String((err as Error).message) };
-  }
+function authorityView(a: LeeWayAuthority | null) {
+  if (!a) return null;
+  const binding = runtimeBindingFor(a.id);
+  return {
+    id: a.id,
+    name: a.name,
+    role: a.role,
+    authorityClass: a.authorityClass,
+    repository: `https://github.com/${a.repo}`,
+    approvedCommit: a.approvedCommit || null,
+    pages: a.pages || null,
+    visibility: a.visibility,
+    capabilities: a.capabilities || [],
+    dependencies: a.dependencies || [],
+    executionEligible: a.executionEligible !== false,
+    runtimeBinding: binding
+  };
 }
 
 async function probe(url: string, timeoutMs = 3000): Promise<{ ok: boolean; status: number; body?: unknown }> {
@@ -79,21 +65,38 @@ async function probe(url: string, timeoutMs = 3000): Promise<{ ok: boolean; stat
   }
 }
 
-async function securityProfile() {
-  const evRoot = "D:\\Leeway-Ecosystem v2.1.4\\LeeWay-Enterprise-Transit-Hub\\_evidence\\MIG-008B-P0-LeeWay-OS-Live-Embodiment-20260801-181012";
-  const profilePath = path.join(evRoot, "LEEWAY-SECURITY-PROFILE.json");
-  try {
-    const raw = fs.readFileSync(profilePath, "utf8");
-    return { profile: JSON.parse(raw), source: "LEEWAY-SECURITY-PROFILE.json" };
-  } catch {
-    return { profile: null, source: "not-yet-generated (Phase 8 pending)" };
+async function runtimeAuthorityState(a: LeeWayAuthority) {
+  const base = runtimeBindingFor(a.id);
+  if (!base.configured || !base.endpoint) {
+    return { ...authorityView(a), runtimeState: "UNBOUND", runtimeProof: "NOT_EXECUTED" };
   }
+
+  const healthPath =
+    a.id === "runtime-fabric" ? "/runtime/health" :
+    a.id === "formula" ? "/runtime/formula/v1/health" :
+    null;
+
+  if (!healthPath) {
+    return { ...authorityView(a), runtimeState: "CONFIGURED_UNVERIFIED", runtimeProof: "NOT_EXECUTED" };
+  }
+
+  const result = await probe(`${base.endpoint}${healthPath}`);
+  return {
+    ...authorityView(a),
+    runtimeState: result.ok ? "HEALTH_ENDPOINT_PASS" : "HEALTH_ENDPOINT_BLOCKED",
+    runtimeProof: result.ok ? "OBSERVED_RUNTIME_HEALTH" : "RUNTIME_HEALTH_NOT_PROVEN",
+    http: result.status,
+    health: result.body
+  };
 }
 
 export async function GET(req: NextRequest, { params }: { params: { route: string[] } }) {
   const corr = correlationFrom(req);
   const route = params.route.join("/");
   const parts = params.route;
+
+  const authority = await loadEcosystemAuthority();
+  const registry = authority.registry;
 
   const notFound = () =>
     Response.json(
@@ -129,36 +132,87 @@ export async function GET(req: NextRequest, { params }: { params: { route: strin
 
   switch (parts[0]) {
     case "health": {
-      const r = await kernelFetch("/health");
+      const k = await kernelFetch("/health");
+      const status = authority.ok && k.ok ? "ok" : "degraded";
       return Response.json(
-        makeEnvelope(route, corr, r.body, { proof: r.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING", status: r.ok ? "ok" : "degraded", degradedReasons: r.ok ? [] : ["kernel unreachable"] }),
+        makeEnvelope(route, corr, {
+          ecosystemAuthority: { ok: authority.ok, source: authority.source, error: authority.error || null },
+          runtimeKernel: { ...kernelBinding(), observedHealthy: k.ok, body: k.body }
+        }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status,
+          degradedReasons: [
+            ...(authority.ok ? [] : [`authority registry unavailable: ${authority.error || authority.status}`]),
+            ...(k.ok ? [] : ["runtime kernel not proven"])
+          ]
+        }),
         { status: 200, headers: bffHeaders(corr) }
       );
     }
-    case "readiness":
-      return kernel("/runtime/status", "PROOF_LEVEL_3_RUNTIME_ENDPOINT");
+
+    case "readiness": {
+      const runtime = authorityById(registry, "runtime-fabric");
+      return Response.json(
+        makeEnvelope(route, corr, {
+          registry: { ok: authority.ok, source: authority.source },
+          runtimeAuthority: authorityView(runtime),
+          kernelBinding: kernelBinding()
+        }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status: authority.ok ? "ok" : "degraded",
+          degradedReasons: authority.ok ? [] : ["canonical Standards registry unavailable"]
+        }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
+    }
+
     case "version":
       return Response.json(makeEnvelope(route, corr, VERSION, { proof: "PROOF_LEVEL_0_DOCUMENT" }), { status: 200, headers: bffHeaders(corr) });
+
+    case "ecosystem":
+      return Response.json(
+        makeEnvelope(route, corr, registry, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status: authority.ok ? "ok" : "degraded",
+          degradedReasons: authority.ok ? [] : [authority.error || "registry unavailable"]
+        }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
+
     case "session":
       return kernel("/sessions?limit=200", "PROOF_LEVEL_3_RUNTIME_ENDPOINT");
+
     case "agent-lee": {
       const h = await kernelFetch("/health");
       const s = await kernelFetch("/sessions?limit=1");
       const data = {
         identity: h.ok ? h.body : null,
         sessions: s.ok ? (s.body as { count?: number }).count ?? null : null,
-        officialPath: "VS Code Chat -> 8787 -> 8080 -> 4001 (proven through kernel when fired)"
+        officialPath: "LeeWay OS -> Standards authority registry -> Runtime Fabric / governed capability -> Veritas -> receipt",
+        kernelBinding: kernelBinding()
       };
       return Response.json(
         makeEnvelope(route, corr, data, {
           proof: h.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING",
           status: h.ok ? "ok" : "degraded",
-          degradedReasons: h.ok ? [] : ["kernel unreachable"]
+          degradedReasons: h.ok ? [] : ["runtime kernel not configured or unreachable"]
         }),
         { status: 200, headers: bffHeaders(corr) }
       );
     }
+
     case "runtime": {
+      if (parts[1] === "authority") {
+        const runtime = authorityById(registry, "runtime-fabric");
+        return Response.json(
+          makeEnvelope(route, corr, runtime ? await runtimeAuthorityState(runtime) : null, {
+            proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+            status: authority.ok && runtime ? "ok" : "degraded",
+            degradedReasons: runtime ? [] : ["Runtime Fabric authority not resolved"]
+          }),
+          { status: 200, headers: bffHeaders(corr) }
+        );
+      }
       if (parts[1] === "requests") {
         if (parts[2]) {
           const r = await kernelFetch(`/requests/${parts[2]}`);
@@ -177,75 +231,130 @@ export async function GET(req: NextRequest, { params }: { params: { route: strin
         );
         return Response.json(
           makeEnvelope(route, corr, { pendingCount: pending.length, pending }, {
-            proof: "PROOF_LEVEL_3_RUNTIME_ENDPOINT",
+            proof: r.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING",
             status: r.ok ? "ok" : "degraded",
-            degradedReasons: r.ok ? [] : ["kernel unreachable"],
-            blockers: r.ok ? [] : ["approvals derived from kernel request states; no dedicated approval service"]
+            degradedReasons: r.ok ? [] : ["runtime request store unavailable"]
           }),
           { status: 200, headers: bffHeaders(corr) }
         );
       }
-      return kernel("/runtime/status", "PROOF_LEVEL_3_RUNTIME_ENDPOINT");
+      return kernel("/runtime/status", "PROOF_LEVEL_3_RUNTIME_ENDPOINT", ["Bind LEEWAY_KERNEL_BASE to an authorized Runtime Kernel endpoint."]);
     }
+
     case "services": {
-      const probes = await Promise.all(SERVICES.map((s) => probe(s.endpoint).then((p) => ({ ...s, live: p.ok, http: p.status }))));
+      if (!registry) {
+        return Response.json(makeEnvelope(route, corr, { services: [] }, {
+          proof: "AUTHORITY_REGISTRY_PENDING",
+          status: "degraded",
+          degradedReasons: [authority.error || "registry unavailable"]
+        }), { status: 200, headers: bffHeaders(corr) });
+      }
+      const services = await Promise.all(
+        registry.requiredCoreIds.map((id) => authorityById(registry, id)).filter(Boolean).map((a) => runtimeAuthorityState(a as LeeWayAuthority))
+      );
       return Response.json(
-        makeEnvelope(route, corr, { services: probes }, {
-          proof: "PROOF_LEVEL_3_RUNTIME_ENDPOINT",
-          status: probes.every((p) => p.live) ? "ok" : "degraded",
-          degradedReasons: probes.filter((p) => !p.live).map((p) => `${p.id} unreachable`)
+        makeEnvelope(route, corr, { services }, {
+          proof: "GITHUB_AUTHORITY_REGISTRY_OBSERVED",
+          status: "ok",
+          blockers: ["Repository authority is separate from runtime health. UNBOUND/CONFIGURED_UNVERIFIED entries are not execution proof."]
         }),
         { status: 200, headers: bffHeaders(corr) }
       );
     }
-    case "providers": {
-      const r = await kernelFetch("/model/status");
-      const ms = (r.body as { status?: string; models?: string[] }) || {};
-      const providers = [{ id: "ollama", type: "local-model-fabric", endpoint: "http://127.0.0.1:11434", status: ms.status === "MODEL_APPLIANCE_PARTIAL" ? "LIVE" : ms.status || "UNKNOWN", models: ms.models || [] }];
-      return Response.json(makeEnvelope(route, corr, { providers }, { proof: r.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING", status: r.ok ? "ok" : "degraded", degradedReasons: r.ok ? [] : ["kernel unreachable"] }), { status: 200, headers: bffHeaders(corr) });
-    }
+
+    case "providers":
     case "models": {
       const r = await kernelFetch("/model/status");
       const ms = (r.body as { status?: string; models?: string[] }) || {};
-      return Response.json(makeEnvelope(route, corr, ms, { proof: r.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING", status: r.ok ? "ok" : "degraded", degradedReasons: r.ok ? [] : ["kernel unreachable"] }), { status: 200, headers: bffHeaders(corr) });
+      return Response.json(
+        makeEnvelope(route, corr, parts[0] === "providers"
+          ? { providers: [{ id: "configured-model-fabric", type: "runtime-model-provider", status: ms.status || "UNPROVEN", models: ms.models || [] }] }
+          : ms,
+        {
+          proof: r.ok ? "PROOF_LEVEL_3_RUNTIME_ENDPOINT" : "HOST_RUNTIME_PENDING",
+          status: r.ok ? "ok" : "degraded",
+          degradedReasons: r.ok ? [] : ["model provider state unavailable until Runtime Kernel is bound"]
+        }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
     }
+
     case "containers": {
-      const d = await dockerPs();
       return Response.json(
-        makeEnvelope(route, corr, d, {
-          proof: d.ok ? "PROOF_LEVEL_2_COMMAND_VALIDATION" : "HOST_RUNTIME_PENDING",
-          status: d.ok ? "ok" : "degraded",
-          degradedReasons: d.ok ? [] : [`docker ps failed: ${d.error}`],
-          blockers: d.ok ? [] : ["docker ps is read-only; no docker mutation exposed"]
+        makeEnvelope(route, corr, {
+          dockerRole: registry?.executionLaw?.dockerRole || "OPTIONAL_DEVELOPMENT_QUALIFICATION_PACKAGING_ADAPTER",
+          dockerIsAuthority: false,
+          mutationExposed: false
+        }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "PROOF_LEVEL_0_DOCUMENT",
+          blockers: ["LeeWay OS no longer executes docker ps as ecosystem discovery. Container diagnostics belong behind an authorized host/runtime adapter."]
         }),
         { status: 200, headers: bffHeaders(corr) }
       );
     }
+
     case "devices": {
-      const desktop = await probe("http://127.0.0.1:8091/runtime/status");
-      const cerebral = await probe("http://127.0.0.1:8765");
-      const devices = [
-        { id: "desktop-runtime", name: "Desktop Runtime", endpoint: "http://127.0.0.1:8091", status: desktop.ok ? "LIVE" : "UNREACHABLE", http: desktop.status },
-        { id: "cerebral", name: "Cerebral", endpoint: "http://127.0.0.1:8765", status: cerebral.ok ? "LIVE" : "UNREACHABLE", http: cerebral.status }
-      ];
+      const device = authorityById(registry, "device-bridge");
+      const binding = runtimeBindingFor("device-bridge");
       return Response.json(
-        makeEnvelope(route, corr, { devices }, {
-          proof: "PROOF_LEVEL_3_RUNTIME_ENDPOINT",
-          status: devices.every((d) => d.status === "LIVE") ? "ok" : "degraded",
-          degradedReasons: devices.filter((d) => d.status !== "LIVE").map((d) => `${d.id} unreachable`),
-          blockers: ["camera/mic/body capabilities require explicit consent tokens; not exposed via browser by default"]
+        makeEnvelope(route, corr, {
+          authority: authorityView(device),
+          runtimeBinding: binding,
+          physicalState: "UNVERIFIED_UNTIL_NATIVE_HANDSHAKE"
+        }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status: authority.ok && device ? "ok" : "degraded",
+          degradedReasons: device ? [] : ["Device Bridge authority unavailable"],
+          blockers: ["Repository discovery does not prove a paired or authorized physical device."]
         }),
         { status: 200, headers: bffHeaders(corr) }
       );
     }
-    case "applications":
-      return Response.json(makeEnvelope(route, corr, { applications: APPLICATIONS }, { proof: "PROOF_LEVEL_0_DOCUMENT", status: "ok", blockers: APPLICATIONS.filter((a) => a.status === "DEFINED_NOT_CONNECTED").map((a) => `${a.id} not connected to a runtime backend`), degradedReasons: APPLICATIONS.filter((a) => a.status === "DEFINED_NOT_CONNECTED").map((a) => `${a.id} DEFINED_NOT_CONNECTED`) }), { status: 200, headers: bffHeaders(corr) });
+
+    case "applications": {
+      const applications = publicApplicationAuthorities(registry).map(authorityView);
+      return Response.json(
+        makeEnvelope(route, corr, { applications }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status: authority.ok ? "ok" : "degraded",
+          degradedReasons: authority.ok ? [] : ["canonical application registry unavailable"]
+        }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
+    }
+
+    case "open-source": {
+      const thankYou = "https://4citeb4u.github.io/LeeWay-Agent-Skills/thank-you.html";
+      return Response.json(
+        makeEnvelope(route, corr, {
+          dedication: thankYou,
+          lineageRegistry: "https://github.com/4citeB4U/LeeWay-Agent-Skills/blob/main/config/open-source-lineage-v1.json",
+          authority: registry?.openSourceLineage || null
+        }, { proof: "GITHUB_PROVENANCE_AUTHORITY" }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
+    }
+
     case "workspaces":
       return Response.json(makeEnvelope(route, corr, { workspaces: WORKS }, { proof: "PROOF_LEVEL_0_DOCUMENT", status: "ok", degradedReasons: WORKS.map((w) => `${w.id} DEFINED_NOT_CONNECTED`) }), { status: 200, headers: bffHeaders(corr) });
-    case "security": {
-      const prof = await securityProfile();
-      return Response.json(makeEnvelope(route, corr, prof, { proof: "PROOF_LEVEL_0_DOCUMENT" }), { status: 200, headers: bffHeaders(corr) });
-    }
+
+    case "security":
+      return Response.json(
+        makeEnvelope(route, corr, {
+          source: authority.source,
+          truthLaws: registry?.truthLaws || [],
+          dockerRole: registry?.executionLaw?.dockerRole || null,
+          recoveryRole: registry?.executionLaw?.recoveryRole || null,
+          pagesRole: registry?.executionLaw?.pagesRole || null,
+          formulaExecutionClaim: "NOT_EXECUTED_BY_SECURITY_VIEW"
+        }, {
+          proof: authority.ok ? "GITHUB_AUTHORITY_REGISTRY_OBSERVED" : "AUTHORITY_REGISTRY_PENDING",
+          status: authority.ok ? "ok" : "degraded",
+          degradedReasons: authority.ok ? [] : ["Standards registry unavailable"]
+        }),
+        { status: 200, headers: bffHeaders(corr) }
+      );
+
     default:
       return notFound();
   }
