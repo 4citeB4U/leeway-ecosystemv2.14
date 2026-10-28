@@ -31,7 +31,7 @@ An actual native signup backend needs purpose-specific consent, email verificati
 
 ## Northwest DNS/mail preservation
 
-The owner supplied (not independently verified in live DNS) for leewayindustrues.com:
+LIVE DNS: UNVERIFIED. The owner supplied (not independently verified in live DNS) for leewayindustrues.com:
 - Root, www, mail and wildcard A records: 66.223.49.89 (60-second TTL).
 - MX: mailserver.businessidentity.llc, priority 10.
 - SPF TXT: v=spf1 a mx include:spf.postal.businessidentity.llc ~all.
