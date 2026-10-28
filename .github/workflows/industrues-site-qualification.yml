@@ -1,0 +1,35 @@
+# LEEWAY HEADER — DO NOT REMOVE
+# REGION: LEEWAY.INDUSTRUES.SITE.CI
+# TAG: LEEWAY.INDUSTRUES.SOURCE_GATE.V1
+# 5WH:
+# WHAT = Validate public IndusTrues site with local, non-mutating Node source tests.
+# WHY = Stop fake signups, accidental email DNS changes and wrong product status from being promoted.
+# WHO = LeeWay source governance.
+# WHERE = .github/workflows/industrues-site-qualification.yml
+# WHEN = 2026-10-28
+# HOW = Node 22 browser-independent static tests plus JS syntax check.
+# AUTHORITY: SOURCE ONLY; public DNS, email delivery and production remain independently unverified.
+# LICENSE: Original LeeWay source.
+name: LeeWay IndusTrues public site source gate
+on:
+  pull_request:
+    paths:
+      - 'site/**'
+      - 'tests/site-smoke.test.mjs'
+      - '.github/workflows/industrues-site-qualification.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  truth-first-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax-check email inquiry
+        run: node --check site/assets/app.js
+      - name: Verify branding and negative-path source gates
+        run: node --test tests/site-smoke.test.mjs
