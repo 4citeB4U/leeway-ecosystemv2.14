@@ -47,6 +47,27 @@ If choosing Render or another external origin, verify preview and HTTPS first, t
 
 rapidwebdevelop.com is a SEPARATE technical/historical domain under Cloudflare recovery; never conflate their nameservers, registrars or zones.
 
+
+## Verified owner-provided mailbox client configuration (not a credential)
+
+Business address: leonard.lee@leewayindustrues.com. This remains the public contact for the LeeWay IndusTrues site.
+
+| Direction | Host | Port | Security | Auth |
+| --- | --- | --- | --- | --- |
+| IMAP inbound (recommended) | mailserver.businessidentity.llc | 993 | SSL/TLS | Full address and mailbox-specific password |
+| POP3 inbound (optional) | mailserver.businessidentity.llc | 995 | SSL/TLS | Full address and mailbox-specific password |
+| SMTP outbound | mailserver.businessidentity.llc | 465 | SSL/TLS | Full address and mailbox-specific password; authentication required |
+
+These endpoint settings were supplied by Northwest's account assistant, not probed in a live email send/receive test. Do NOT put the mailbox password, webmail session tokens, or any login magic link in GitHub, public frontend JavaScript or hosting environment variables. The static website never logs into or sends directly from this mailbox.
+
+For desktop use, configure an actual IMAP/SMTP client such as Outlook or Thunderbird. For mobile, the Gmail app supports third-party IMAP accounts. **Gmail on the web is not an IMAP inbox for third-party domains**: Google's incoming "Check mail from other accounts" was POP-based, no longer accepts new users after Q1 2026, and existing POP and third-party "Send as" connections are scheduled to end January 2027; do not build a production mailbox workflow around those features. Official: https://support.google.com/mail/answer/16604719 and https://support.google.com/mail/answer/17101213 .
+
+Email deliverability tests required: inbound external sender → exact Northwest inbox; SMTP authenticated sender → independent destination; reply to sender; SPF/DKIM/DMARC pass via message headers; negative auth test; monitor bounce/junk. None are claimed completed.
+
+## Real Render preview — separate from Northwest domain
+
+On 2026-10-28 Render accepted the static preview named leeway-industrues-preview at https://leeway-industrues-preview.onrender.com . Deployment ID dep-dbh4u7mc6qcc73fseh80, service ID srv-dbh4u76c6qcc73fseg00, commit 6101c61e4069c9c8d9a792a1d7dfff3e824ead6e; Render reported deployment status LIVE. This is a hosted PREVIEW, not a Northwest DNS cutover, mailbox connectivity test, product enrollment, independent Veritas approval or permission to use live customer data. Auto-deploy was disabled.
+
 ## Deployment candidate
 
 This is a standalone static site under site/ (index.html and assets). For Render static preview:
