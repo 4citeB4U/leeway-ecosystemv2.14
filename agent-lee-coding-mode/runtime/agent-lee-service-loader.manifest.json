@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "leeway.agentlee.pywin32-loader.v1",
+  "purpose": "Bind the existing hyphenated AgentLee service source to a Python-importable pywin32 module name without changing the legacy implementation.",
+  "legacy": {
+    "path": "agent-lee-service.py",
+    "gitBlob": "cddec9c4b408eb8c7d9e15c0a65bc8f67fd18764",
+    "sha256": "13A70B962553E3C38351CE4C3E46DA82B1090DCD4A24B3B65B7EE483CDD82682",
+    "class": "AgentLeeService"
+  },
+  "loader": {
+    "path": "agent_lee_service.py",
+    "sha256": "289C4452223446E57793699DAE30D03F19DDE744F9BB4EA91BD8939581C65E20",
+    "pythonClass": "agent_lee_service.AgentLeeService"
+  },
+  "production": {
+    "deploymentAuthorized": false,
+    "requires": [
+      "Creator-v2 signed deployment manifest",
+      "final installation path and source hash parity",
+      "pre-state backup and rollback validation",
+      "controlled Windows service start/readback acceptance"
+    ]
+  }
+}
