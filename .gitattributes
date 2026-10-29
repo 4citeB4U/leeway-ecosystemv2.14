@@ -1,0 +1,5 @@
+# AgentLee deployment hashes are byte-level authority inputs. Keep these
+# source artifacts LF-normalized across Windows and hosted CI checkouts.
+agent-lee-coding-mode/runtime/agent-lee-service.py text eol=lf
+agent-lee-coding-mode/runtime/agent_lee_service.py text eol=lf
+agent-lee-coding-mode/runtime/agent-lee-service-loader.manifest.json text eol=lf
