@@ -2,14 +2,14 @@ name: Agent Lee Canonical Gate
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "**"
-  pull_request:
 
 jobs:
   canonical-gate:
-    runs-on: self-hosted
+    # This gate validates an installed, multi-repository LeeWay workspace and
+    # must not run on an arbitrary pull-request checkout. It remains a real
+    # Windows qualification, dispatched only after a labeled canonical host is
+    # online and selected by its owner.
+    runs-on: [self-hosted, windows, leeway-canonical]
     defaults:
       run:
         shell: pwsh

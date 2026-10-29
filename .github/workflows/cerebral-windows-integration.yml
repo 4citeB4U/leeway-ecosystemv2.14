@@ -1,0 +1,29 @@
+name: Cerebral Windows Integration
+
+on:
+  workflow_dispatch:
+
+jobs:
+  live-cerebral-smoke:
+    name: Live Cerebral smoke (self-hosted Windows)
+    runs-on: [self-hosted, windows, cerebral]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required installed assets and service
+        shell: pwsh
+        run: |
+          if (-not (Test-Path 'C:\Cerebral\bin\piper\piper.exe')) { throw 'CEREBRAL_PIPER_MISSING' }
+          if (-not (Test-Path 'C:\Cerebral\models\voices\en_US-lessac-medium.onnx')) { throw 'CEREBRAL_VOICE_MODEL_MISSING' }
+          if (-not (Test-NetConnection -ComputerName 127.0.0.1 -Port 8765 -InformationLevel Quiet)) { throw 'CEREBRAL_SERVICE_NOT_RUNNING' }
+      - name: Run service smoke checks
+        shell: pwsh
+        working-directory: Cerebral
+        run: python tests/smoke_test.py
+      - name: Run direct voice integration check
+        shell: pwsh
+        working-directory: Cerebral
+        run: python tests/tts_direct_test.py
+      - name: Run installed voice/import integration
+        shell: pwsh
+        working-directory: Cerebral
+        run: python test_imports.py
